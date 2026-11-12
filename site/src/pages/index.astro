@@ -1,0 +1,160 @@
+---
+// SPDX-License-Identifier: Apache-2.0
+import Layout from "../layouts/Layout.astro";
+import SearchBox from "../components/SearchBox.astro";
+import T from "../components/T.astro";
+import { siteConfig, categoryGroups, categoryTints } from "../config";
+import { loadCatalog } from "../lib/load-data";
+import { ui, uiT, catPair, groupPair } from "../i18n";
+
+const { categories, issues } = loadCatalog();
+const bySlug = new Map(categories.map((c) => [c.slug, c]));
+const groups = categoryGroups
+  .map((g) => ({
+    ...g,
+    nameEn: groupPair(g.id, g.name).en,
+    cats: g.slugs.map((s) => bySlug.get(s)).filter(Boolean),
+  }))
+  .filter((g) => g.cats.length);
+
+const ungrouped = categories.filter(
+  (c) => !categoryGroups.some((g) => g.slugs.includes(c.slug)),
+);
+if (ungrouped.length) {
+  groups.push({
+    id: "other",
+    name: groupPair("other").zh,
+    nameEn: groupPair("other").en,
+    slugs: ungrouped.map((c) => c.slug),
+    cats: ungrouped,
+  });
+}
+
+const productCount = categories.reduce((n, c) => n + c.products.length, 0);
+const ossCount = categories.reduce(
+  (n, c) => n + c.products.filter((p) => p.open_source).length,
+  0,
+);
+---
+
+<Layout
+  title={uiT("homeTitle", "zh", { name: ui.zh.siteName, tagline: ui.zh.tagline })}
+  titleEn={uiT("homeTitle", "en", { name: ui.en.siteName, tagline: ui.en.tagline })}
+  description={ui.zh.description}
+  descriptionEn={ui.en.description}
+  canonicalPath="/"
+  home
+>
+  <section class="relative" data-hero>
+    <div class="mx-auto max-w-6xl px-4 py-12 sm:px-5 sm:py-16 lg:py-20">
+      <div class="grid items-end gap-8 lg:grid-cols-[1fr_minmax(0,28rem)]">
+        <div>
+          <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-[3.6rem] lg:leading-[1.1]">
+            <T zh={ui.zh.siteName} en={ui.en.siteName} />
+          </h1>
+          <p class="mt-4 max-w-xl text-[1.05rem] leading-relaxed text-ink-soft">
+            <T zh={ui.zh.tagline} en={ui.en.tagline} />
+          </p>
+          <div class="stat-row mt-8">
+            <div>
+              <span class="num">{categories.length}</span>
+              <span class="lbl"><T zh={ui.zh.statCategories} en={ui.en.statCategories} /></span>
+            </div>
+            <div>
+              <span class="num">{productCount}</span>
+              <span class="lbl"><T zh={ui.zh.statApps} en={ui.en.statApps} /></span>
+            </div>
+            <div>
+              <span class="num">{ossCount}</span>
+              <span class="lbl"><T zh={ui.zh.statOss} en={ui.en.statOss} /></span>
+            </div>
+          </div>
+        </div>
+        <div class="w-full">
+          <SearchBox autofocus id="site-search-hero" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="categories" class="mx-auto max-w-6xl px-4 pb-12 sm:px-5">
+    <div class="mb-6 flex flex-wrap items-center justify-between gap-3">
+      <h2 class="text-lg font-extrabold tracking-tight">
+        <T
+          zh={uiT("catalogTitle", "zh", { n: categories.length })}
+          en={uiT("catalogTitle", "en", { n: categories.length })}
+        />
+      </h2>
+      <nav class="group-jump" aria-label={ui.zh.jumpGroup} data-i18n="aria-label" data-zh={ui.zh.jumpGroup} data-en={ui.en.jumpGroup}>
+        {groups.map((g) => (
+          <a href={`#group-${g.id}`}><T zh={g.name} en={g.nameEn} /></a>
+        ))}
+      </nav>
+    </div>
+
+    {groups.map((group) => (
+      <div class="mb-10 scroll-mt-24" id={`group-${group.id}`}>
+        <h3 class="mb-3 text-sm font-semibold text-muted">
+          <T zh={group.name} en={group.nameEn} />
+        </h3>
+        <div class="dir-grid">
+          {group.cats.map((cat) => {
+            const oss = cat!.products.filter((p) => p.open_source).length;
+            const free = cat!.products.filter((p) => p.pricing_model === "完全免费").length;
+            const tint = categoryTints[cat!.slug] || "#EEF1F6";
+            const names = catPair(cat!.slug, cat!.name);
+            return (
+              <a href={cat!.href} class="dir-card">
+                <span class="dir-cover" style={`--tile: ${tint}`}>
+                  <img
+                    src={`/categories/${cat!.slug}.svg`}
+                    alt=""
+                    width="480"
+                    height="260"
+                    loading="lazy"
+                  />
+                </span>
+                <span class="dir-body">
+                  <span class="dir-name"><T zh={names.zh} en={names.en} /></span>
+                  <span class="dir-meta">
+                    <T
+                      zh={uiT("metaApps", "zh", { n: cat!.products.length })}
+                      en={uiT("metaApps", "en", { n: cat!.products.length })}
+                    />
+                    {oss ? (
+                      <>
+                        {" · "}
+                        <T
+                          zh={uiT("metaOss", "zh", { n: oss })}
+                          en={uiT("metaOss", "en", { n: oss })}
+                        />
+                      </>
+                    ) : null}
+                    {free ? (
+                      <>
+                        {" · "}
+                        <T
+                          zh={uiT("metaFree", "zh", { n: free })}
+                          en={uiT("metaFree", "en", { n: free })}
+                        />
+                      </>
+                    ) : null}
+                  </span>
+                </span>
+              </a>
+            );
+          })}
+        </div>
+      </div>
+    ))}
+  </section>
+
+  {issues.length > 0 && import.meta.env.DEV && (
+    <section class="mx-auto max-w-6xl px-4 pb-8 text-xs text-warn">
+      <p class="font-medium"><T zh={ui.zh.buildHints} en={ui.en.buildHints} /></p>
+      <ul class="mt-1 list-disc pl-5">
+        {issues.map((i) => <li>{i}</li>)}
+      </ul>
+    </section>
+  )}
+</Layout>

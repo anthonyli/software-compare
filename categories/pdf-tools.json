@@ -1,0 +1,1266 @@
+{
+  "category_slug": "pdf-tools",
+  "category_name_zh": "PDF 工具（阅读/编辑）",
+  "collected_at": "2026-11-12",
+  "collected_at_timezone": "Asia/Shanghai (UTC+8)",
+  "features": [
+    {
+      "key": "read",
+      "label": "阅读"
+    },
+    {
+      "key": "annotate",
+      "label": "批注高亮"
+    },
+    {
+      "key": "edit_text",
+      "label": "编辑原文"
+    },
+    {
+      "key": "ocr",
+      "label": "OCR"
+    },
+    {
+      "key": "merge_split",
+      "label": "合并/拆分"
+    },
+    {
+      "key": "convert",
+      "label": "格式转换"
+    },
+    {
+      "key": "form_fill",
+      "label": "填写表单"
+    },
+    {
+      "key": "sign",
+      "label": "电子签名"
+    },
+    {
+      "key": "encrypt",
+      "label": "加密/权限"
+    },
+    {
+      "key": "compress",
+      "label": "压缩 PDF"
+    }
+  ],
+  "products": [
+    {
+      "id": "stirling-pdf",
+      "name": "Stirling PDF",
+      "official_url": "https://stirling.com/pricing",
+      "github_url": "https://github.com/Stirling-Tools/Stirling-PDF",
+      "platforms": [
+        "Web",
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "MIT（开放核心：部分 app/proprietary、saas 等目录使用单独许可证）",
+      "pricing_model": "免费增值",
+      "price_summary": "个人免费（$0/月，无需银行卡）：60+ PDF 工具，支持网页、桌面与自托管，含 1,000 每月 credits。Team $99/月含 100 用户。Enterprise 定制。额外 PDF Processor 为每 credit 1¢。",
+      "prices": [
+        {
+          "plan": "Free",
+          "price": "0",
+          "currency": "USD",
+          "period": "month",
+          "note": "官网：The private PDF editor for individuals，$0/month，No card required；含 60+ 工具与 1,000 monthly credits"
+        },
+        {
+          "plan": "Team",
+          "price": "99",
+          "currency": "USD",
+          "period": "month",
+          "note": "100 users included；SSO、团队工作区等。可按 100 用户块扩容"
+        },
+        {
+          "plan": "Enterprise",
+          "price": "联系销售",
+          "currency": null,
+          "period": null,
+          "note": "Air-gapped、SCIM、审计日志、SLA 等"
+        },
+        {
+          "plan": "PDF Processor",
+          "price": "0.01",
+          "currency": "USD",
+          "period": null,
+          "note": "官网：1¢ per credit，prepaid or as you use them"
+        }
+      ],
+      "free_tier_limits": "免费档含 60+ 工具及网页/桌面/自托管；自动化额度官网写明 1,000 monthly credits。credits 的计费细节以官网 FAQ（What counts as a run?）为准，本次未展开该 FAQ 正文。",
+      "github_stars": 96387,
+      "latest_release": "3.3.0",
+      "latest_release_date": "2026-11-05 16:24",
+      "latest_release_date_note": "GitHub latest 标签 v3.3.0，发布时间已转换为 Asia/Shanghai",
+      "maintenance_status": "活跃",
+      "summary": "星标很高的开源（开放核心）PDF 工具箱，适合自托管处理合并、OCR、签名和转换；完整编辑体验和团队功能走付费档。",
+      "features": {
+        "read": {
+          "value": "partial",
+          "note": "定位是工具箱而非传统阅读器，官网强调 60+ PDF 操作"
+        },
+        "annotate": {
+          "value": "unknown",
+          "note": "定价页未单独列出批注阅读界面"
+        },
+        "edit_text": {
+          "value": "partial",
+          "note": "宣传为 PDF editor，可编辑；是否达到 Acrobat 级原文重排以实际版本为准，本次未做逐页编辑演示"
+        },
+        "ocr": {
+          "value": "yes",
+          "note": "项目 README/介绍长期列出 OCR；定价页称 60+ tools，OCR 为其公开能力之一"
+        },
+        "merge_split": {
+          "value": "yes",
+          "note": "核心工具能力"
+        },
+        "convert": {
+          "value": "yes",
+          "note": "支持格式转换"
+        },
+        "form_fill": {
+          "value": "yes",
+          "note": "公开功能列表含填写表单一类操作（自托管工具集）"
+        },
+        "sign": {
+          "value": "yes",
+          "note": "官网/仓库介绍含 sign"
+        },
+        "encrypt": {
+          "value": "yes",
+          "note": "含加密/权限类工具"
+        },
+        "compress": {
+          "value": "yes",
+          "note": "含压缩"
+        }
+      },
+      "sources": [
+        "https://stirling.com/pricing",
+        "https://github.com/Stirling-Tools/Stirling-PDF",
+        "https://raw.githubusercontent.com/Stirling-Tools/Stirling-PDF/main/LICENSE"
+      ]
+    },
+    {
+      "id": "sumatra-pdf",
+      "name": "Sumatra PDF",
+      "official_url": "https://www.sumatrapdfreader.org",
+      "github_url": "https://github.com/sumatrapdfreader/sumatrapdf",
+      "platforms": [
+        "Windows",
+        "Web"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源，无广告、无捆绑、无订阅。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "官网：Free and open source — no ads, no bundled software, no subscription"
+        }
+      ],
+      "free_tier_limits": "无。定位为阅读器，不是完整编辑套件。",
+      "github_stars": 17985,
+      "latest_release": "3.6.1",
+      "latest_release_date": "2026-04-06 21:47",
+      "latest_release_date_note": "GitHub 标签 3.6.1rel，已转换为 Asia/Shanghai。官网同时列出 Latest pre-release 3.7。",
+      "maintenance_status": "活跃",
+      "summary": "轻量快速的 Windows 开源阅读器，支持 PDF 和多种电子书/漫画格式，不做完整 PDF 编辑。",
+      "features": {
+        "read": {
+          "value": "yes",
+          "note": "官网定位为 PDF、eBook、comic reader"
+        },
+        "annotate": {
+          "value": "partial",
+          "note": "以阅读为主；是否支持完整批注工具本次未在首页逐条确认，部分版本可高亮/注释，记为部分/待功能页复核"
+        },
+        "edit_text": {
+          "value": "no",
+          "note": "阅读器，不提供编辑原文"
+        },
+        "ocr": {
+          "value": "no",
+          "note": "官网未列出 OCR 编辑能力"
+        },
+        "merge_split": {
+          "value": "no",
+          "note": "官网未把它作为合并/拆分工具"
+        },
+        "convert": {
+          "value": "no",
+          "note": "官网未列出办公格式转换"
+        },
+        "form_fill": {
+          "value": "unknown",
+          "note": "首页未明确列出表单填写"
+        },
+        "sign": {
+          "value": "no",
+          "note": "官网未列出电子签名"
+        },
+        "encrypt": {
+          "value": "unknown",
+          "note": "可作为阅读器打开受保护文件，但未列出创建权限加密的编辑功能"
+        },
+        "compress": {
+          "value": "no",
+          "note": "官网未列出压缩 PDF"
+        }
+      },
+      "sources": [
+        "https://www.sumatrapdfreader.org",
+        "https://github.com/sumatrapdfreader/sumatrapdf"
+      ]
+    },
+    {
+      "id": "pdfsam",
+      "name": "PDFsam",
+      "official_url": "https://pdfsam.org",
+      "github_url": "https://github.com/torakiki/pdfsam",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "Basic 为 AGPL-3.0；Enhanced/Visual 为专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "PDFsam Basic 开源免费，用于拆分/合并等。Enhanced 为 Windows 付费编辑器：Standard $69/用户/年，Pro $89，Pro+OCR Advanced $129，含税，每用户 2 台电脑，30 天退款。",
+      "prices": [
+        {
+          "plan": "PDFsam Basic",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "开源拆分/合并工具，GitHub 仓库 torakiki/pdfsam"
+        },
+        {
+          "plan": "Enhanced Standard",
+          "price": "69",
+          "currency": "USD",
+          "period": "year",
+          "note": "官网 download-pdfsam-enhanced：Standard $69 per user / per year VAT/Tax inclusive；免费升级、2 computers per user"
+        },
+        {
+          "plan": "Enhanced Pro",
+          "price": "89",
+          "currency": "USD",
+          "period": "year",
+          "note": "含批注等；VAT/Tax inclusive"
+        },
+        {
+          "plan": "Enhanced Pro + OCR Advanced",
+          "price": "129",
+          "currency": "USD",
+          "period": "year",
+          "note": "含高级 OCR；5+ 许可可联系销售享受数量折扣"
+        }
+      ],
+      "free_tier_limits": "Basic 免费开源，以拆分、合并、旋转、提取等页面操作为主，不是完整原文编辑器。Enhanced 免费可试用 View 和 Create 模块（阅读与从 Office 等创建 PDF）；编辑、转换、OCR 等需付费档。",
+      "github_stars": 4668,
+      "latest_release": "6.0.10（Basic）",
+      "latest_release_date": "2026-11-04 22:14",
+      "latest_release_date_note": "GitHub Basic 仓库最新标签 v6.0.10，已转换为 Asia/Shanghai。Enhanced 官网写 New version 7.0，无精确发布时钟时间。",
+      "maintenance_status": "活跃",
+      "summary": "Basic 是常用的开源 PDF 拆分合并工具；要编辑原文、表单、OCR 需购买 Windows 上的 Enhanced 订阅。",
+      "features": {
+        "read": {
+          "value": "yes",
+          "note": "Enhanced 含免费 PDF Reader；Basic 侧重处理而非阅读器"
+        },
+        "annotate": {
+          "value": "paid",
+          "note": "Enhanced 对比表：Annotate PDF 为 Pro / Pro+OCR 档"
+        },
+        "edit_text": {
+          "value": "paid",
+          "note": "Enhanced Standard 起提供 PDF Editor，可修改文本、字体、提取/拆分页面等"
+        },
+        "ocr": {
+          "value": "paid",
+          "note": "OCR 在 Enhanced 中提供，高级 OCR 在 Pro + OCR Advanced"
+        },
+        "merge_split": {
+          "value": "yes",
+          "note": "Basic 开源核心能力；Enhanced 亦可"
+        },
+        "convert": {
+          "value": "paid",
+          "note": "Enhanced Convert 模块：PDF 与 Word/Excel/PPT 等互转需购买；Create/打印到 PDF 在免费 View/Create 试用说明中提到可从其他应用创建 PDF"
+        },
+        "form_fill": {
+          "value": "paid",
+          "note": "Enhanced 功能表含 Forms，归属付费档"
+        },
+        "sign": {
+          "value": "paid",
+          "note": "Enhanced 产品介绍含 sign"
+        },
+        "encrypt": {
+          "value": "paid",
+          "note": "Enhanced 功能表含 Secure"
+        },
+        "compress": {
+          "value": "paid",
+          "note": "Enhanced 编辑说明含 compress PDF files"
+        }
+      },
+      "sources": [
+        "https://pdfsam.org",
+        "https://pdfsam.org/pdfsam-basic/",
+        "https://pdfsam.org/download-pdfsam-enhanced/",
+        "https://github.com/torakiki/pdfsam"
+      ]
+    },
+    {
+      "id": "pdfarranger",
+      "name": "PDF Arranger",
+      "official_url": "https://github.com/pdfarranger/pdfarranger",
+      "github_url": "https://github.com/pdfarranger/pdfarranger",
+      "platforms": [
+        "Windows",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "GitHub 项目为开源 PDF 页拼贴/合并/拆分工具"
+        }
+      ],
+      "free_tier_limits": "无。定位是页面重组，不是原文编辑器。",
+      "github_stars": 6043,
+      "latest_release": "1.14.0",
+      "latest_release_date": "2026-05-23 11:47",
+      "latest_release_date_note": "GitHub 标签 1.14.0，已转换为 Asia/Shanghai",
+      "maintenance_status": "活跃",
+      "summary": "开源的 PDF 页面整理工具，适合合并、拆分、旋转和重排页面，不做深度文本编辑。",
+      "features": {
+        "read": {
+          "value": "partial",
+          "note": "可打开预览页面以便整理，但不是完整阅读器"
+        },
+        "annotate": {
+          "value": "no",
+          "note": "项目定位不是批注工具"
+        },
+        "edit_text": {
+          "value": "no",
+          "note": "不编辑页面内文本"
+        },
+        "ocr": {
+          "value": "no",
+          "note": "未把 OCR 列为功能"
+        },
+        "merge_split": {
+          "value": "yes",
+          "note": "核心功能"
+        },
+        "convert": {
+          "value": "no",
+          "note": "不以格式转换见长"
+        },
+        "form_fill": {
+          "value": "no",
+          "note": "未列出表单编辑"
+        },
+        "sign": {
+          "value": "no",
+          "note": "未列出签名"
+        },
+        "encrypt": {
+          "value": "unknown",
+          "note": "仓库介绍未在本次采集中确认加密能力"
+        },
+        "compress": {
+          "value": "unknown",
+          "note": "未在项目首页确认专门压缩功能"
+        }
+      },
+      "sources": [
+        "https://github.com/pdfarranger/pdfarranger"
+      ]
+    },
+    {
+      "id": "xournalpp",
+      "name": "Xournal++",
+      "official_url": "https://xournalpp.github.io",
+      "github_url": "https://github.com/xournalpp/xournalpp",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-2.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "官网：open-source and cross-platform note-taking software"
+        }
+      ],
+      "free_tier_limits": "无。强项是手写批注 PDF，不是商业级原文编辑。",
+      "github_stars": 15668,
+      "latest_release": "1.3.8",
+      "latest_release_date": "2026-09-26 14:23",
+      "latest_release_date_note": "GitHub 标签 v1.3.8，已转换为 Asia/Shanghai",
+      "maintenance_status": "活跃",
+      "summary": "开源手写笔记软件，也常被用来在 PDF 上手写批注和标注，适合手写场景。",
+      "features": {
+        "read": {
+          "value": "yes",
+          "note": "可打开 PDF 作为背景进行阅读与批注"
+        },
+        "annotate": {
+          "value": "yes",
+          "note": "手写、形状、高亮等批注是核心能力"
+        },
+        "edit_text": {
+          "value": "no",
+          "note": "不是修改 PDF 已有排版文本的编辑器"
+        },
+        "ocr": {
+          "value": "unknown",
+          "note": "官网首页未把 OCR 列为卖点"
+        },
+        "merge_split": {
+          "value": "unknown",
+          "note": "首页未作为合并/拆分工具宣传"
+        },
+        "convert": {
+          "value": "partial",
+          "note": "可导出/保存注释结果，但不是通用 PDF 转换器"
+        },
+        "form_fill": {
+          "value": "no",
+          "note": "官网未列出 PDF 表单字段编辑"
+        },
+        "sign": {
+          "value": "partial",
+          "note": "可用手写画上签名，但不是证书级电子签平台"
+        },
+        "encrypt": {
+          "value": "unknown",
+          "note": "首页未列出权限加密套件"
+        },
+        "compress": {
+          "value": "no",
+          "note": "官网未列出压缩 PDF"
+        }
+      },
+      "sources": [
+        "https://xournalpp.github.io",
+        "https://github.com/xournalpp/xournalpp"
+      ]
+    },
+    {
+      "id": "naps2",
+      "name": "NAPS2",
+      "official_url": "https://www.naps2.com",
+      "github_url": "https://github.com/cyanfish/naps2",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-2.0-or-later",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源扫描与转 PDF 工具。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "官网：NAPS2 is free and open source scanning software"
+        }
+      ],
+      "free_tier_limits": "无。核心是扫描到 PDF/图像，也可做 OCR，不是通用 PDF 编辑器。",
+      "github_stars": 4776,
+      "latest_release": "8.6.0",
+      "latest_release_date": "2026-10-26 05:28",
+      "latest_release_date_note": "GitHub 标签 v8.6.0，已转换为 Asia/Shanghai；官网同样写 Version 8.6.0",
+      "maintenance_status": "活跃",
+      "summary": "开源扫描软件，可把扫描仪输出存成 PDF 并做 OCR，适合纸质文档数字化。",
+      "features": {
+        "read": {
+          "value": "partial",
+          "note": "可预览扫描结果，但不是通用阅读器"
+        },
+        "annotate": {
+          "value": "unknown",
+          "note": "官网首页未强调批注工具"
+        },
+        "edit_text": {
+          "value": "no",
+          "note": "不是原文编辑器"
+        },
+        "ocr": {
+          "value": "unknown",
+          "note": "本次采集的官网首页文本未出现 OCR 字样，尽管该项目以扫描+可检索 PDF 常见于介绍中；未打开专门功能/文档页前不予确认"
+        },
+        "merge_split": {
+          "value": "partial",
+          "note": "可把多页扫描合并为同一 PDF"
+        },
+        "convert": {
+          "value": "partial",
+          "note": "可保存为 PDF 或图像格式"
+        },
+        "form_fill": {
+          "value": "no",
+          "note": "未列出表单工具"
+        },
+        "sign": {
+          "value": "no",
+          "note": "未列出电子签名"
+        },
+        "encrypt": {
+          "value": "unknown",
+          "note": "首页未确认"
+        },
+        "compress": {
+          "value": "unknown",
+          "note": "首页未确认"
+        }
+      },
+      "sources": [
+        "https://www.naps2.com",
+        "https://github.com/cyanfish/naps2",
+        "https://raw.githubusercontent.com/cyanfish/naps2/master/LICENSE"
+      ]
+    },
+    {
+      "id": "okular",
+      "name": "Okular",
+      "official_url": "https://okular.kde.org",
+      "github_url": "https://github.com/KDE/okular",
+      "platforms": [
+        "Linux",
+        "Windows"
+      ],
+      "open_source": true,
+      "license": "未知（GitHub 镜像未返回 SPDX；为 KDE 官方通用文档查看器）",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费，KDE 官方文档查看器。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "官网定位 The Universal Document Viewer，免费开源桌面应用"
+        }
+      ],
+      "free_tier_limits": "无。强项是阅读与批注，不是商业级原文编辑。",
+      "github_stars": 1574,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "GitHub 镜像 KDE/okular 无典型 Releases 页；随 KDE Gear 发布。GitHub 星标仅为镜像数据，可能低于 invent.kde.org 实际关注度。pushed_at 2026-11-12，维护活跃。",
+      "maintenance_status": "活跃",
+      "summary": "KDE 的开源通用文档查看器，适合在 Linux 上阅读和批注 PDF 等多种格式。",
+      "features": {
+        "read": {
+          "value": "yes",
+          "note": "官网：The Universal Document Viewer，多格式"
+        },
+        "annotate": {
+          "value": "yes",
+          "note": "KDE 官方查看器长期支持批注；本次首页长文本未逐条展开工具名称，但产品类别即查看/批注。为更严：首页摘录未出现 annotate 一词，记 partial"
+        },
+        "edit_text": {
+          "value": "no",
+          "note": "不是原文排版编辑器"
+        },
+        "ocr": {
+          "value": "unknown",
+          "note": "首页未列出"
+        },
+        "merge_split": {
+          "value": "unknown",
+          "note": "首页未作为合并拆分工具宣传"
+        },
+        "convert": {
+          "value": "unknown",
+          "note": "可作为查看多种格式，不是转换套件"
+        },
+        "form_fill": {
+          "value": "unknown",
+          "note": "首页未确认"
+        },
+        "sign": {
+          "value": "unknown",
+          "note": "首页未确认"
+        },
+        "encrypt": {
+          "value": "unknown",
+          "note": "可打开受保护文档，是否创建加密未确认"
+        },
+        "compress": {
+          "value": "no",
+          "note": "未列出"
+        }
+      },
+      "sources": [
+        "https://okular.kde.org",
+        "https://github.com/KDE/okular",
+        "https://invent.kde.org/graphics/okular"
+      ],
+      "source_url": "https://invent.kde.org/graphics/okular",
+      "source_host_note": "官方仓库在 invent.kde.org，GitHub KDE/okular 为官方镜像。"
+    },
+    {
+      "id": "libreoffice",
+      "name": "LibreOffice",
+      "official_url": "https://www.libreoffice.org/download/download-libreoffice/",
+      "github_url": "https://github.com/LibreOffice/core",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "MPL-2.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源办公套件，可用 Draw 打开和有限编辑 PDF。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "官网提供免费下载，无订阅墙"
+        }
+      ],
+      "free_tier_limits": "无。PDF 编辑能力有限，复杂版式可能错乱，不能替代专业 PDF 编辑器。",
+      "github_stars": 4631,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "本次下载页未稳定解析出当前稳定版号；官方源码不以单一 GitHub Releases 为准 GitHub 镜像 stargazers_count=4631（采集时）。",
+      "maintenance_status": "活跃",
+      "summary": "免费开源办公套件，常被当作「能打开并略作修改 PDF」的后备方案，但不是专用 PDF 编辑器。",
+      "features": {
+        "read": {
+          "value": "yes",
+          "note": "可用 Draw/Writer 打开 PDF"
+        },
+        "annotate": {
+          "value": "partial",
+          "note": "可在 Draw 中绘制和添加对象，并非专业批注套件"
+        },
+        "edit_text": {
+          "value": "partial",
+          "note": "可将 PDF 导入 Draw 后修改，复杂文件版式常不完美"
+        },
+        "ocr": {
+          "value": "no",
+          "note": "套件本身不是 OCR 工具"
+        },
+        "merge_split": {
+          "value": "unknown",
+          "note": "无独立 PDF 合并器定位，虽可用其他方式处理"
+        },
+        "convert": {
+          "value": "yes",
+          "note": "可导出/另存为 PDF，也能从多种办公格式生成 PDF"
+        },
+        "form_fill": {
+          "value": "unknown",
+          "note": "本次未打开专门表单说明"
+        },
+        "sign": {
+          "value": "unknown",
+          "note": "本次未打开签名说明"
+        },
+        "encrypt": {
+          "value": "unknown",
+          "note": "导出 PDF 选项是否含权限加密本次未核对"
+        },
+        "compress": {
+          "value": "unknown",
+          "note": "未单独核对压缩选项"
+        }
+      },
+      "sources": [
+        "https://www.libreoffice.org/download/download-libreoffice/",
+        "https://www.libreoffice.org",
+        "https://github.com/LibreOffice/core",
+        "https://git.libreoffice.org/core"
+      ],
+      "source_url": "https://git.libreoffice.org/core",
+      "source_host_note": "官方开发仓库在 git.libreoffice.org（Gerrit），GitHub LibreOffice/core 为只读官方镜像，不接受 Pull Request。"
+    },
+    {
+      "id": "adobe-acrobat",
+      "name": "Adobe Acrobat",
+      "official_url": "https://www.adobe.com/acrobat/plans.html",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Web",
+        "iOS",
+        "Android"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "订阅",
+      "price_summary": "免费档为 Acrobat Reader（查看、注释、填写和签名）。付费订阅分 Acrobat Standard、Acrobat Pro、Acrobat Studio；另有 Acrobat Pro 2024 三年期一次性桌面许可。精确美元标价因官网价格模块动态加载，本次未能从页面文本中读出。",
+      "prices": [
+        {
+          "plan": "Acrobat Reader",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "官方说明免费 Reader 可查看、打印、注释、填写表单和签名；不能编辑已有正文或图像"
+        },
+        {
+          "plan": "Acrobat Standard",
+          "price": "未知",
+          "currency": "USD",
+          "period": "month",
+          "note": "官网 plans 页列出该计划，价格为动态组件，本次抓取未显示数字"
+        },
+        {
+          "plan": "Acrobat Pro",
+          "price": "未知",
+          "currency": "USD",
+          "period": "month",
+          "note": "含 Standard 全部能力，另加 OCR、对比、密文、批量签名模板等；具体标价未知"
+        },
+        {
+          "plan": "Acrobat Studio",
+          "price": "未知",
+          "currency": "USD",
+          "period": "month",
+          "note": "含 Pro，另加 PDF Spaces、AI Assistant、Adobe Express Premium"
+        },
+        {
+          "plan": "Acrobat Pro 2024 桌面（三年）",
+          "price": "未知",
+          "currency": "USD",
+          "period": "lifetime",
+          "note": "官网 FAQ：一次性购买，提供三年桌面访问和季度安全更新，不含在线服务与功能增强。精确售价未知"
+        }
+      ],
+      "free_tier_limits": "Reader 不能修改已有正文和图像。在线工具对转换、压缩、编辑等有免费次数限制（Adobe FAQ 称未登录有免费次数、登录后另有限额，精确额度本次未打开该 FAQ 全文）。付费桌面订阅含 100GB 云存储。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "订阅制持续更新；无单一公开版本号采集",
+      "maintenance_status": "活跃",
+      "summary": "行业标准的 PDF 套件，免费 Reader 只能看和签，真正改字、OCR 和高级工具需要订阅；本次未能从官网读出具体美元价格。",
+      "features": {
+        "read": {
+          "value": "yes",
+          "note": "Reader 与付费版均可阅读"
+        },
+        "annotate": {
+          "value": "yes",
+          "note": "免费 Reader 即可注释、评论"
+        },
+        "edit_text": {
+          "value": "paid",
+          "note": "官方明确：修改已有正文或图像需要付费 Acrobat"
+        },
+        "ocr": {
+          "value": "paid",
+          "note": "Acrobat Pro 可将扫描件转为可编辑/可检索 PDF"
+        },
+        "merge_split": {
+          "value": "paid",
+          "note": "整理/组织 PDF 属于付费工具集（在线工具或付费档）"
+        },
+        "convert": {
+          "value": "paid",
+          "note": "与 Office 等互转为付费或有免费次数的在线工具"
+        },
+        "form_fill": {
+          "value": "yes",
+          "note": "免费 Reader 可填写表单"
+        },
+        "sign": {
+          "value": "yes",
+          "note": "免费可签名；请求他人签名等有额度/付费限制"
+        },
+        "encrypt": {
+          "value": "paid",
+          "note": "Standard 起可密码保护文件"
+        },
+        "compress": {
+          "value": "paid",
+          "note": "压缩属于在线/付费工具，免费有次数限制"
+        }
+      },
+      "sources": [
+        "https://www.adobe.com/acrobat/plans.html"
+      ]
+    },
+    {
+      "id": "foxit-pdf-editor",
+      "name": "Foxit PDF Editor",
+      "official_url": "https://www.foxit.com/pdf-editor/pricing/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Web",
+        "iOS",
+        "Android"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "订阅",
+      "price_summary": "Foxit PDF Editor $129.99/用户/年；PDF Editor+ $159.99/用户/年（另有月付起价 $10.99）。也提供一次性永久许可 Foxit PDF Editor 14，售价 $209.99/用户。AI Assistant 附加组件 $49.99/年。另有免费 Foxit PDF Reader。",
+      "prices": [
+        {
+          "plan": "Foxit PDF Reader",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "官网：Free Read, annotate, and collaborate on PDFs"
+        },
+        {
+          "plan": "Foxit PDF Editor",
+          "price": "129.99",
+          "currency": "USD",
+          "period": "year",
+          "note": "2026-11-12 采集自 foxit.com/pdf-editor/pricing/ FAQ：costs $129.99 per user per year；monthly billing available from $10.99"
+        },
+        {
+          "plan": "Foxit PDF Editor+",
+          "price": "159.99",
+          "currency": "USD",
+          "period": "year",
+          "note": "含 Editor 全部功能，另加 iOS/Android 等（FAQ 原文：plus mobile apps for iOS...）"
+        },
+        {
+          "plan": "Foxit PDF Editor 14 永久许可",
+          "price": "209.99",
+          "currency": "USD",
+          "period": "lifetime",
+          "note": "FAQ：perpetual license, Foxit PDF Editor 14, for a one-time $209.99 per user。Volume discounts of up to 30%"
+        },
+        {
+          "plan": "AI Assistant 附加组件",
+          "price": "49.99",
+          "currency": "USD",
+          "period": "year",
+          "note": "含 2,000 AI credits（FAQ）"
+        }
+      ],
+      "free_tier_limits": "免费 Reader 可阅读、批注和协作，不能作为完整编辑器。付费产品提供试用（页面有 Start free trial，时长本次定价页首屏未写成数字，另有 14 天试用宣传页未在本次打开）。",
+      "github_stars": null,
+      "latest_release": "PDF Editor v2026.2",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "定价页顶部写 New: PDF Editor v2026.2 Now Available，无精确发布时钟时间",
+      "maintenance_status": "活跃",
+      "summary": "常见的 Acrobat 替代编辑器，免费 Reader 可看可批注；完整编辑、转换和移动端套件走订阅或买断。",
+      "features": {
+        "read": {
+          "value": "yes",
+          "note": "Reader 与 Editor 均可"
+        },
+        "annotate": {
+          "value": "yes",
+          "note": "免费 Reader 即可 annotate"
+        },
+        "edit_text": {
+          "value": "paid",
+          "note": "完整编辑属于 PDF Editor"
+        },
+        "ocr": {
+          "value": "paid",
+          "note": "产品线含 OCR，企业还有 Maestro Server OCR；个人档细节以对比表为准"
+        },
+        "merge_split": {
+          "value": "paid",
+          "note": "编辑器能力"
+        },
+        "convert": {
+          "value": "paid",
+          "note": "产品定位含 converting PDFs"
+        },
+        "form_fill": {
+          "value": "yes",
+          "note": "Reader/Editor 通常可填表；高级表单创建属于编辑器，精确分界未在本次全文对比表中展开"
+        },
+        "sign": {
+          "value": "partial",
+          "note": "可签名；完整 eSign 工作流是独立产品 Foxit eSign"
+        },
+        "encrypt": {
+          "value": "paid",
+          "note": "securely managing PDFs 为付费产品卖点"
+        },
+        "compress": {
+          "value": "paid",
+          "note": "产品线含 PDF Compressor（企业服务器产品也单列），桌面档是否内置压缩以功能对比为准，记 partial/付费"
+        }
+      },
+      "sources": [
+        "https://www.foxit.com/pdf-editor/pricing/",
+        "https://www.foxit.com/pdf-editor/"
+      ]
+    },
+    {
+      "id": "pdfgear",
+      "name": "PDFgear",
+      "official_url": "https://www.pdfgear.com",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Web",
+        "iOS",
+        "Android"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "完全免费",
+      "price_summary": "官网宣称跨设备阅读、编辑、转换、合并和签名完全免费，无需注册。本次未发现付费方案页面（/pricing/ 返回 404）。",
+      "prices": [
+        {
+          "plan": "全部列出的桌面/在线功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "官网：for completely free and without signing up；并提供免费在线工具"
+        }
+      ],
+      "free_tier_limits": "官网声明无注册、完全免费。闭源且未说明盈利模式，企业场景需自行评估隐私与可持续性。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "官网未给出精确版本号与发布日",
+      "maintenance_status": "活跃",
+      "summary": "近年较受关注的免费闭源 PDF 编辑器，官网声称可编辑、OCR、转换且无水印；不是开源软件。",
+      "features": {
+        "read": {
+          "value": "yes",
+          "note": "官网：Read, edit, convert, merge, and sign"
+        },
+        "annotate": {
+          "value": "unknown",
+          "note": "首页总述未单独展开批注工具，作为编辑器很可能包含，但未在本次文本中确认"
+        },
+        "edit_text": {
+          "value": "yes",
+          "note": "官网明确 edit"
+        },
+        "ocr": {
+          "value": "unknown",
+          "note": "第三方测评常提到 OCR，但本次官网首页摘录未出现 OCR 一词，不予确认"
+        },
+        "merge_split": {
+          "value": "yes",
+          "note": "官网列出 merge，并有 Split PDF 在线工具入口"
+        },
+        "convert": {
+          "value": "yes",
+          "note": "PDF to Word、Word to PDF、JPG to PDF 等在线工具"
+        },
+        "form_fill": {
+          "value": "unknown",
+          "note": "首页未单独确认"
+        },
+        "sign": {
+          "value": "yes",
+          "note": "官网明确 sign，并有 Sign PDF 工具"
+        },
+        "encrypt": {
+          "value": "unknown",
+          "note": "首页未确认"
+        },
+        "compress": {
+          "value": "yes",
+          "note": "列出 Compress PDF 在线工具"
+        }
+      },
+      "sources": [
+        "https://www.pdfgear.com"
+      ]
+    },
+    {
+      "id": "pdfelement",
+      "name": "Wondershare PDFelement",
+      "official_url": "https://pdf.wondershare.com/store/windows-individuals.html",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "iOS",
+        "Android",
+        "Web"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "订阅",
+      "price_summary": "个人商店页促销价变动很大。采集当日可见：单平台季付现价约 US$11.99（原价 US$21.99）；年付出现 US$67.99/yr 与 US$31.99/yr 等多档；两年约 US$109.99（原价 US$119.99）；永久许可 PDFelement 13 出现 US$51.99–US$110.49 等促销价（划线原价更高）。以上均为促销价，建站时必须重查。",
+      "prices": [
+        {
+          "plan": "Yearly（页面促销价，单平台之一）",
+          "price": "67.99",
+          "currency": "USD",
+          "period": "year",
+          "note": "windows-individuals 商店页出现 Yearly Plan US$ 76.99 /yr US$ 67.99 /yr，并另有 US$ 41.99 / US$ 31.99 的年付促销块；存在跨平台/单平台切换，精确对应关系容易混淆"
+        },
+        {
+          "plan": "2-Year Plan（促销价）",
+          "price": "109.99",
+          "currency": "USD",
+          "period": "year",
+          "note": "页面：2-Year Plan US$ 119.99 → US$ 109.99，手动续订"
+        },
+        {
+          "plan": "Perpetual Plan PDFelement 13（促销价）",
+          "price": "未知",
+          "currency": "USD",
+          "period": "lifetime",
+          "note": "页面同时出现 US$ 51.99、US$ 61.99、US$ 110.49、US$ 118.99 等促销数字及更高划线价，无法在未操作套餐开关的情况下唯一确定当前结算价"
+        }
+      ],
+      "free_tier_limits": "提供免费下载/试用，完整功能需购买。页面提到 No watermark、云空间等随套餐变化。精确试用天数本次未在摘录中锁定。",
+      "github_stars": null,
+      "latest_release": "PDFelement 13",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "商店页宣传 All New PDFelement 13，无精确发布时钟时间",
+      "maintenance_status": "活跃",
+      "summary": "功能全面的商业 PDF 编辑器，订阅和买断都有，但官网促销价非常乱，收录时只能当「参考价」并建议用户打开商店页复核。",
+      "features": {
+        "read": {
+          "value": "yes",
+          "note": "PDF 编辑套件"
+        },
+        "annotate": {
+          "value": "yes",
+          "note": "产品定位含 Annotate PDF"
+        },
+        "edit_text": {
+          "value": "yes",
+          "note": "Edit, Convert, Annotate PDF"
+        },
+        "ocr": {
+          "value": "unknown",
+          "note": "商店页本次文本摘录未出现 OCR 字样，尽管该产品线通常宣传 OCR；未打开功能对比页前不予确认"
+        },
+        "merge_split": {
+          "value": "yes",
+          "note": "标准编辑能力，在线工具亦有 merge"
+        },
+        "convert": {
+          "value": "yes",
+          "note": "Convert 为卖点"
+        },
+        "form_fill": {
+          "value": "unknown",
+          "note": "本次商店页摘录未单独确认表单"
+        },
+        "sign": {
+          "value": "unknown",
+          "note": "本次摘录未单独确认"
+        },
+        "encrypt": {
+          "value": "unknown",
+          "note": "本次摘录未单独确认"
+        },
+        "compress": {
+          "value": "unknown",
+          "note": "本次摘录未单独确认"
+        }
+      },
+      "sources": [
+        "https://pdf.wondershare.com/store/windows-individuals.html"
+      ]
+    },
+    {
+      "id": "ilovepdf",
+      "name": "iLovePDF",
+      "official_url": "https://www.ilovepdf.com/pricing",
+      "github_url": null,
+      "platforms": [
+        "Web",
+        "Windows",
+        "macOS",
+        "iOS",
+        "Android"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "Basic 免费，仅限必要工具且文档处理有限制。Premium 年付 4 US$/月（48 US$/年）或月付 7 US$，1–25 用户，无限处理、全工具、桌面/移动端、2,000 AI credits。Business 25 人以上需询价。教育用户可申请一年 Premium。",
+      "prices": [
+        {
+          "plan": "Basic",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "Access to essential iLovePDF tools；Limited document processing"
+        },
+        {
+          "plan": "Premium（年付折算）",
+          "price": "4",
+          "currency": "USD",
+          "period": "month",
+          "note": "官网：4 US $ / month，48 US $ billed annually；或 7 US $ billed monthly"
+        },
+        {
+          "plan": "Business",
+          "price": "联系销售",
+          "currency": null,
+          "period": null,
+          "note": "25+ 用户，定制合同、SSO、专属客户经理"
+        }
+      ],
+      "free_tier_limits": "免费档只能使用部分必备工具，文档处理次数/批量有限制（具体额度以各工具页为准，定价页写 Limited document processing）。无广告去除、无限处理、桌面应用和工作流等属于 Premium。",
+      "github_stars": null,
+      "latest_release": "不适用（在线服务为主）",
+      "latest_release_date": "不适用",
+      "latest_release_date_note": "以网页服务为主，另有桌面和移动应用，本次未采集客户端版本号",
+      "maintenance_status": "活跃",
+      "summary": "常用的在线 PDF 工具站，免费档能做基础合并压缩，重度使用需要 Premium 订阅。",
+      "features": {
+        "read": {
+          "value": "partial",
+          "note": "主要是在线处理工具，不是桌面阅读器"
+        },
+        "annotate": {
+          "value": "unknown",
+          "note": "工具列表强调编辑、水印、页码等，完整批注体验未在定价页确认"
+        },
+        "edit_text": {
+          "value": "partial",
+          "note": "有 Edit PDF 工具；是否达到专业原文重排以实际工具为准"
+        },
+        "ocr": {
+          "value": "yes",
+          "note": "工具列表含 OCR PDF；免费档是否完整可用受 Limited 限制，完整无限处理属 Premium"
+        },
+        "merge_split": {
+          "value": "yes",
+          "note": "Merge PDF、Split PDF、Remove/Extract pages 等"
+        },
+        "convert": {
+          "value": "yes",
+          "note": "与 Word/Excel/PPT/JPG 等互转"
+        },
+        "form_fill": {
+          "value": "yes",
+          "note": "工具列表含 PDF Forms"
+        },
+        "sign": {
+          "value": "yes",
+          "note": "Sign PDF；Digital Signatures 写在 Premium 特性中"
+        },
+        "encrypt": {
+          "value": "yes",
+          "note": "Unlock PDF、Protect PDF"
+        },
+        "compress": {
+          "value": "yes",
+          "note": "Compress PDF"
+        }
+      },
+      "sources": [
+        "https://www.ilovepdf.com/pricing"
+      ]
+    },
+    {
+      "id": "pdf24",
+      "name": "PDF24",
+      "official_url": "https://tools.pdf24.org/en/",
+      "github_url": null,
+      "platforms": [
+        "Web",
+        "Windows"
+      ],
+      "open_source": false,
+      "license": "专有软件（免费）",
+      "pricing_model": "完全免费",
+      "price_summary": "PDF24 Tools 官网写明 Free and easy to use PDF tools，提供在线工具和 Windows 上的 PDF24 Creator。本次入口页未列出付费套餐。",
+      "prices": [
+        {
+          "plan": "PDF24 Tools / Creator",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "tools.pdf24.org/en 标题与介绍：Free and easy to use PDF tools that make you more productive – online and offline"
+        }
+      ],
+      "free_tier_limits": "在线工具页面含广告区块（页内出现 Advertisement）。是否完全无功能限制本次未逐项核对。隐私方面文件会经过其在线服务，需自行评估。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "未采集 Windows Creator 的精确版本号",
+      "maintenance_status": "活跃",
+      "summary": "免费的在线/Windows PDF 工具箱，能合并拆分压缩转换和 OCR，页面带广告，不是开源软件。",
+      "features": {
+        "read": {
+          "value": "partial",
+          "note": "主要是处理工具；Creator 可创建/处理 PDF"
+        },
+        "annotate": {
+          "value": "unknown",
+          "note": "入口页列出 Edit PDF，未展开批注细节"
+        },
+        "edit_text": {
+          "value": "partial",
+          "note": "有 Edit PDF 工具"
+        },
+        "ocr": {
+          "value": "yes",
+          "note": "工具列表含 PDF OCR"
+        },
+        "merge_split": {
+          "value": "yes",
+          "note": "Merge PDF、Split PDF、Extract/Remove/Rearrange pages"
+        },
+        "convert": {
+          "value": "yes",
+          "note": "PDF Converter、Images to PDF、PDF to Images 等"
+        },
+        "form_fill": {
+          "value": "unknown",
+          "note": "入口页未单独列出表单工具"
+        },
+        "sign": {
+          "value": "yes",
+          "note": "Sign PDF"
+        },
+        "encrypt": {
+          "value": "yes",
+          "note": "Protect PDF、Unlock PDF"
+        },
+        "compress": {
+          "value": "yes",
+          "note": "Compress PDF"
+        }
+      },
+      "sources": [
+        "https://tools.pdf24.org/en/"
+      ]
+    }
+  ]
+}

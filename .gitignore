@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+site/node_modules/
+
+# Build output
+dist/
+site/dist/
+site/.astro/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Packaged preview build
+site-dist.zip
+
+# OS junk
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs and caches
+*.log
+npm-debug.log*
+.npm
+.cache/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Editor
+*.swp
+*~

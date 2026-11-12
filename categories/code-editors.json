@@ -1,0 +1,1076 @@
+{
+  "category_slug": "code-editors",
+  "category_name_zh": "代码编辑器",
+  "collected_at": "2026-11-12",
+  "timezone": "Asia/Shanghai",
+  "features": [
+    {
+      "key": "extensions",
+      "label": "插件/扩展生态"
+    },
+    {
+      "key": "lsp",
+      "label": "LSP/语言服务器"
+    },
+    {
+      "key": "git_integration",
+      "label": "Git 集成"
+    },
+    {
+      "key": "integrated_terminal",
+      "label": "集成终端"
+    },
+    {
+      "key": "debugger",
+      "label": "调试器"
+    },
+    {
+      "key": "ai_assistant",
+      "label": "AI 编程助手"
+    },
+    {
+      "key": "multi_cursor",
+      "label": "多光标"
+    },
+    {
+      "key": "remote_dev",
+      "label": "远程开发"
+    },
+    {
+      "key": "live_share",
+      "label": "协作编辑"
+    },
+    {
+      "key": "customizable",
+      "label": "高度可定制"
+    }
+  ],
+  "products": [
+    {
+      "id": "vscode",
+      "name": "Visual Studio Code",
+      "official_url": "https://code.visualstudio.com",
+      "github_url": "https://github.com/microsoft/vscode",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "完全免费",
+      "price_summary": "编辑器官方二进制免费。源码以 MIT 为主，但微软官方构建含商标、遥测与产品许可，与 VSCodium 等纯开源构建不同。GitHub Copilot 等 AI 是单独产品/订阅，不计入编辑器本身价格。",
+      "prices": [
+        {
+          "plan": "VS Code 编辑器",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "官方二进制免费；Copilot 等扩展是单独订阅，未计入此条"
+        }
+      ],
+      "free_tier_limits": "编辑器本身无付费墙；部分 AI 功能需另外的 GitHub Copilot 等订阅",
+      "github_stars": 195319,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "本轮未拉取 GitHub Release 标签",
+      "summary": "最流行的免费代码编辑器，扩展生态极大；官方安装包并非完全无遥测的纯开源构建。",
+      "features": {
+        "extensions": {
+          "value": "yes"
+        },
+        "lsp": {
+          "value": "yes"
+        },
+        "git_integration": {
+          "value": "yes"
+        },
+        "integrated_terminal": {
+          "value": "yes"
+        },
+        "debugger": {
+          "value": "yes"
+        },
+        "ai_assistant": {
+          "value": "paid",
+          "note": "常见为 GitHub Copilot 等单独订阅，不是编辑器内置免费能力"
+        },
+        "multi_cursor": {
+          "value": "yes"
+        },
+        "remote_dev": {
+          "value": "yes",
+          "note": "Remote Development 等官方扩展"
+        },
+        "live_share": {
+          "value": "yes",
+          "note": "Live Share 扩展"
+        },
+        "customizable": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://code.visualstudio.com/",
+        "https://github.com/microsoft/vscode"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "vscodium",
+      "name": "VSCodium",
+      "official_url": "https://vscodium.com",
+      "github_url": "https://github.com/VSCodium/vscodium",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费，提供去掉微软商标、遥测和产品许可的 VS Code 二进制构建。",
+      "prices": [
+        {
+          "plan": "软件",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无付费墙；部分仅在微软市场提供的扩展可能无法直接使用，需自行配置市场或替代源",
+      "github_stars": 34071,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "仓库约在 2026-10-31 仍有推送；本轮未拉取 Release 标签",
+      "summary": "VS Code 的纯开源二进制发行版，功能接近上游，但默认不含微软遥测与部分市场限制。",
+      "features": {
+        "extensions": {
+          "value": "partial",
+          "note": "兼容 VS Code 扩展机制，但默认扩展市场与官方构建不同"
+        },
+        "lsp": {
+          "value": "yes"
+        },
+        "git_integration": {
+          "value": "yes"
+        },
+        "integrated_terminal": {
+          "value": "yes"
+        },
+        "debugger": {
+          "value": "yes"
+        },
+        "ai_assistant": {
+          "value": "paid",
+          "note": "可安装第三方/自备密钥方案，不是内置免费 Copilot"
+        },
+        "multi_cursor": {
+          "value": "yes"
+        },
+        "remote_dev": {
+          "value": "partial",
+          "note": "部分微软专有远程扩展可能不可用"
+        },
+        "live_share": {
+          "value": "partial",
+          "note": "微软专有 Live Share 可能不可用"
+        },
+        "customizable": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://vscodium.com/",
+        "https://github.com/VSCodium/vscodium"
+      ],
+      "archived": false,
+      "last_push_at": "2026-10-31",
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "neovim",
+      "name": "Neovim",
+      "official_url": "https://neovim.io",
+      "github_url": "https://github.com/neovim/neovim",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "BSD"
+      ],
+      "open_source": true,
+      "license": "Other（GitHub SPDX 为 Other；项目历史混合 Apache/Vim 许可，本轮未打开 LICENSE 全文核对）",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费的开源文本编辑器。",
+      "prices": [
+        {
+          "plan": "软件",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无付费墙",
+      "github_stars": 103612,
+      "latest_release": "v0.12.6",
+      "latest_release_date": "2026-10-09 23:43",
+      "latest_release_date_note": "GitHub published_at 2026-10-09T15:43:25Z，已转换为 Asia/Shanghai（仓库同时有 nightly 与 stable 标签，此处取最近的正式版本 v0.12.6，而非 nightly）",
+      "summary": "高度可扩展的 Vim 系编辑器，默认集成 LSP 与 Lua 配置，完全免费。",
+      "features": {
+        "extensions": {
+          "value": "yes",
+          "note": "插件生态丰富，但是手动配置为主"
+        },
+        "lsp": {
+          "value": "yes",
+          "note": "官网强调内置 LSP 客户端"
+        },
+        "git_integration": {
+          "value": "partial",
+          "note": "通常通过插件，不是单一内置 GUI"
+        },
+        "integrated_terminal": {
+          "value": "yes"
+        },
+        "debugger": {
+          "value": "partial",
+          "note": "可通过 nvim-dap 等插件，不是开箱 GUI 调试器"
+        },
+        "ai_assistant": {
+          "value": "partial",
+          "note": "可通过插件接入，非官方内置订阅"
+        },
+        "multi_cursor": {
+          "value": "yes",
+          "note": "官网提到 Multicursor"
+        },
+        "remote_dev": {
+          "value": "partial",
+          "note": "可经 SSH 等使用，无 VS Code 那种官方 Remote 套件"
+        },
+        "live_share": {
+          "value": "no"
+        },
+        "customizable": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://neovim.io/",
+        "https://github.com/neovim/neovim"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "vim",
+      "name": "Vim",
+      "official_url": "https://www.vim.org",
+      "github_url": "https://github.com/vim/vim",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "多种 Unix"
+      ],
+      "open_source": true,
+      "license": "Vim License",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源。",
+      "prices": [
+        {
+          "plan": "软件",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无付费墙",
+      "github_stars": 41316,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "本轮未拉取 GitHub Release 标签",
+      "summary": "经典开源文本编辑器，无处不在，学习曲线陡，可通过脚本高度扩展。",
+      "features": {
+        "extensions": {
+          "value": "yes",
+          "note": "传统 script/插件生态"
+        },
+        "lsp": {
+          "value": "partial",
+          "note": "需插件，不是历史默认内置"
+        },
+        "git_integration": {
+          "value": "partial",
+          "note": "通常靠插件"
+        },
+        "integrated_terminal": {
+          "value": "partial",
+          "note": "新版本有终端支持，体验因构建而异"
+        },
+        "debugger": {
+          "value": "partial",
+          "note": "依赖插件或外部工具"
+        },
+        "ai_assistant": {
+          "value": "partial",
+          "note": "仅能通过插件"
+        },
+        "multi_cursor": {
+          "value": "partial",
+          "note": "不是默认核心模型，可用插件或多点编辑技巧"
+        },
+        "remote_dev": {
+          "value": "partial",
+          "note": "经 SSH 编辑远程文件"
+        },
+        "live_share": {
+          "value": "no"
+        },
+        "customizable": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://www.vim.org/",
+        "https://github.com/vim/vim"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "emacs",
+      "name": "GNU Emacs",
+      "official_url": "https://www.gnu.org/software/emacs/",
+      "github_url": "https://github.com/emacs-mirror/emacs",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "BSD"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费的 GNU 软件。GitHub 仓库是官方 git.sv.gnu.org 的镜像，星标不能代表项目热度。",
+      "prices": [
+        {
+          "plan": "软件",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无付费墙",
+      "github_stars": 5247,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "本轮未记录 gnu.org 最新发行编号与日期",
+      "summary": "可扩展到极致的开源编辑器/环境，生态完整，学习成本高。",
+      "features": {
+        "extensions": {
+          "value": "yes"
+        },
+        "lsp": {
+          "value": "yes",
+          "note": "eglot 等，具体默认程度因版本而异"
+        },
+        "git_integration": {
+          "value": "yes",
+          "note": "Magit 等著名包"
+        },
+        "integrated_terminal": {
+          "value": "yes"
+        },
+        "debugger": {
+          "value": "yes"
+        },
+        "ai_assistant": {
+          "value": "partial",
+          "note": "可通过包接入，非官方订阅产品"
+        },
+        "multi_cursor": {
+          "value": "partial",
+          "note": "有相关包"
+        },
+        "remote_dev": {
+          "value": "yes",
+          "note": "TRAMP 等"
+        },
+        "live_share": {
+          "value": "partial",
+          "note": "有社区协作包，不是单一官方产品"
+        },
+        "customizable": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://www.gnu.org/software/emacs/",
+        "https://github.com/emacs-mirror/emacs"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "notepad-plus-plus",
+      "name": "Notepad++",
+      "official_url": "https://notepad-plus-plus.org",
+      "github_url": "https://github.com/notepad-plus-plus/notepad-plus-plus",
+      "platforms": [
+        "Windows"
+      ],
+      "open_source": true,
+      "license": "GPL（官网写明由 GNU General Public License 约束；GitHub SPDX 为 Other，本轮按官网记录）",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源的 Windows 代码编辑器/记事本替代。官网当前版本 8.9.9.1。",
+      "prices": [
+        {
+          "plan": "软件",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无付费墙；仅 Windows",
+      "github_stars": 29863,
+      "latest_release": "8.9.9.1",
+      "latest_release_date": null,
+      "latest_release_date_note": "官网首页显示 Current Version 8.9.9.1，未在摘录中给出发布时刻",
+      "summary": "Windows 上非常普及的免费开源编辑器，轻量、启动快，适合日常改代码和文本。",
+      "features": {
+        "extensions": {
+          "value": "yes",
+          "note": "插件系统"
+        },
+        "lsp": {
+          "value": "partial",
+          "note": "可通过插件，不是 VS Code 那种默认 LSP 工作区"
+        },
+        "git_integration": {
+          "value": "partial",
+          "note": "多靠插件"
+        },
+        "integrated_terminal": {
+          "value": "partial",
+          "note": "可通过插件，不是默认核心 IDE 终端"
+        },
+        "debugger": {
+          "value": "no"
+        },
+        "ai_assistant": {
+          "value": "no"
+        },
+        "multi_cursor": {
+          "value": "partial",
+          "note": "有多编辑/多选相关能力，完整程度未核完"
+        },
+        "remote_dev": {
+          "value": "no"
+        },
+        "live_share": {
+          "value": "no"
+        },
+        "customizable": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://notepad-plus-plus.org/",
+        "https://github.com/notepad-plus-plus/notepad-plus-plus"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "zed",
+      "name": "Zed",
+      "official_url": "https://zed.dev",
+      "github_url": "https://github.com/zed-industries/zed",
+      "platforms": [
+        "macOS",
+        "Linux",
+        "Windows"
+      ],
+      "open_source": true,
+      "license": "Other（GitHub SPDX 为 Other，本轮未打开 LICENSE 全文核对）",
+      "pricing_model": "免费增值",
+      "price_summary": "编辑器开源且可免费使用。官网有独立 Pricing 入口，说明存在付费档（多与 AI/团队功能相关），但本轮从体积很大的首页中未能提取出具体美元价，故付费档金额为未知。",
+      "prices": [
+        {
+          "plan": "编辑器",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        },
+        {
+          "plan": "付费档（AI/团队等）",
+          "price": "未知",
+          "currency": "USD",
+          "period": null,
+          "note": "官网有 Pricing 页面，本轮未成功提取金额"
+        }
+      ],
+      "free_tier_limits": "编辑器本身可免费使用；AI 额度等限制以定价页为准，本轮未抄录",
+      "github_stars": 94783,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "本轮未拉取 GitHub Release 标签",
+      "summary": "追求高性能的开源代码编辑器，内置协作与 AI 方向，付费档价格本轮未读出。",
+      "features": {
+        "extensions": {
+          "value": "yes",
+          "note": "官网导航含 Extensions"
+        },
+        "lsp": {
+          "value": "yes"
+        },
+        "git_integration": {
+          "value": "yes"
+        },
+        "integrated_terminal": {
+          "value": "yes"
+        },
+        "debugger": {
+          "value": "unknown"
+        },
+        "ai_assistant": {
+          "value": "paid",
+          "note": "存在付费 AI 相关档，免费额度未核完"
+        },
+        "multi_cursor": {
+          "value": "yes"
+        },
+        "remote_dev": {
+          "value": "unknown"
+        },
+        "live_share": {
+          "value": "yes",
+          "note": "官方强调协作编辑，具体是否全部免费未核完"
+        },
+        "customizable": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://zed.dev/",
+        "https://github.com/zed-industries/zed"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "helix",
+      "name": "Helix",
+      "official_url": "https://helix-editor.com",
+      "github_url": "https://github.com/helix-editor/helix",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "MPL-2.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费的开源模态编辑器。",
+      "prices": [
+        {
+          "plan": "软件",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无付费墙",
+      "github_stars": 46890,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "本轮未拉取 GitHub Release 标签",
+      "summary": "以多光标和内置 LSP/Tree-sitter 为核心的现代模态编辑器，配置简洁，完全免费。",
+      "features": {
+        "extensions": {
+          "value": "partial",
+          "note": "插件生态仍在演进，不如 VS Code 成熟，本轮按部分计"
+        },
+        "lsp": {
+          "value": "yes"
+        },
+        "git_integration": {
+          "value": "partial"
+        },
+        "integrated_terminal": {
+          "value": "no"
+        },
+        "debugger": {
+          "value": "unknown"
+        },
+        "ai_assistant": {
+          "value": "no"
+        },
+        "multi_cursor": {
+          "value": "yes",
+          "note": "官网写明 multiple selections / cursors 是核心原语"
+        },
+        "remote_dev": {
+          "value": "partial",
+          "note": "可经 SSH 使用"
+        },
+        "live_share": {
+          "value": "no"
+        },
+        "customizable": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://helix-editor.com/",
+        "https://github.com/helix-editor/helix"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "lapce",
+      "name": "Lapce",
+      "official_url": "https://lap.dev/lapce/",
+      "github_url": "https://github.com/lapce/lapce",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费的开源代码编辑器。仓库约在 2026-10-09 仍有推送。",
+      "prices": [
+        {
+          "plan": "软件",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无付费墙",
+      "github_stars": 39007,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "本轮未拉取 GitHub Release 标签；last push 约 2026-10-09",
+      "summary": "用 Rust 编写的开源代码编辑器，追求原生性能，生态仍小于 VS Code。",
+      "features": {
+        "extensions": {
+          "value": "partial"
+        },
+        "lsp": {
+          "value": "yes"
+        },
+        "git_integration": {
+          "value": "yes"
+        },
+        "integrated_terminal": {
+          "value": "yes"
+        },
+        "debugger": {
+          "value": "unknown"
+        },
+        "ai_assistant": {
+          "value": "unknown"
+        },
+        "multi_cursor": {
+          "value": "unknown"
+        },
+        "remote_dev": {
+          "value": "unknown"
+        },
+        "live_share": {
+          "value": "no"
+        },
+        "customizable": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://lap.dev/lapce/",
+        "https://github.com/lapce/lapce"
+      ],
+      "archived": false,
+      "last_push_at": "2026-10-09",
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "intellij-idea",
+      "name": "IntelliJ IDEA",
+      "official_url": "https://www.jetbrains.com/idea/",
+      "github_url": "https://github.com/JetBrains/intellij-community",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "Other（Community 源码在 intellij-community，GitHub SPDX 为 Other，一般为 Apache-2.0，本轮未打开 LICENSE 全文；Ultimate 为专有软件）",
+      "pricing_model": "免费增值",
+      "price_summary": "IntelliJ IDEA Community 开源免费。Ultimate 为付费订阅。本轮打开的购买页未能提取出具体美元/欧元标价（价格常随地区变化），故 Ultimate 金额为未知。github_stars 仅为 Community 仓库。",
+      "prices": [
+        {
+          "plan": "Community",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "开源社区版"
+        },
+        {
+          "plan": "Ultimate",
+          "price": "未知",
+          "currency": null,
+          "period": null,
+          "note": "付费订阅，https://www.jetbrains.com/idea/buy/ 本轮未解析出金额"
+        }
+      ],
+      "free_tier_limits": "Community 可用但功能少于 Ultimate（尤其 Web/企业框架等），具体差异以官方对照表为准，本轮未逐项抄录",
+      "github_stars": 20730,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "本轮未记录官方构建号",
+      "summary": "强大的 Java/多语言 IDE，社区版免费开源，Ultimate 订阅解锁完整 Web 与企业功能。",
+      "features": {
+        "extensions": {
+          "value": "yes"
+        },
+        "lsp": {
+          "value": "partial",
+          "note": "自身语言引擎为主，也可对接 LSP"
+        },
+        "git_integration": {
+          "value": "yes"
+        },
+        "integrated_terminal": {
+          "value": "yes"
+        },
+        "debugger": {
+          "value": "yes"
+        },
+        "ai_assistant": {
+          "value": "paid",
+          "note": "JetBrains AI 等为附加订阅，细节未核价"
+        },
+        "multi_cursor": {
+          "value": "yes"
+        },
+        "remote_dev": {
+          "value": "unknown",
+          "note": "完整远程开发多出现在商业功能中，Community 边界本轮未逐项核对"
+        },
+        "live_share": {
+          "value": "unknown"
+        },
+        "customizable": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://www.jetbrains.com/idea/",
+        "https://www.jetbrains.com/idea/buy/",
+        "https://github.com/JetBrains/intellij-community"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "netbeans",
+      "name": "Apache NetBeans",
+      "official_url": "https://netbeans.apache.org",
+      "github_url": "https://github.com/apache/netbeans",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "pricing_model": "完全免费",
+      "price_summary": "Apache 开源 IDE，完全免费。",
+      "prices": [
+        {
+          "plan": "软件",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无付费墙",
+      "github_stars": 3153,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "本轮未拉取 GitHub Release 标签",
+      "summary": "Apache 旗下的免费开源 IDE，长期用于 Java 及其他语言开发。",
+      "features": {
+        "extensions": {
+          "value": "yes"
+        },
+        "lsp": {
+          "value": "unknown"
+        },
+        "git_integration": {
+          "value": "yes"
+        },
+        "integrated_terminal": {
+          "value": "unknown"
+        },
+        "debugger": {
+          "value": "yes"
+        },
+        "ai_assistant": {
+          "value": "no"
+        },
+        "multi_cursor": {
+          "value": "unknown"
+        },
+        "remote_dev": {
+          "value": "unknown"
+        },
+        "live_share": {
+          "value": "no"
+        },
+        "customizable": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://netbeans.apache.org/",
+        "https://github.com/apache/netbeans"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "pulsar",
+      "name": "Pulsar",
+      "official_url": "https://pulsar-edit.dev",
+      "github_url": "https://github.com/pulsar-edit/pulsar",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "Other（GitHub SPDX 为 Other，本轮未打开 LICENSE 全文核对）",
+      "pricing_model": "完全免费",
+      "price_summary": "Atom 编辑器的社区延续版，完全免费开源。",
+      "prices": [
+        {
+          "plan": "软件",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无付费墙",
+      "github_stars": 4203,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "本轮未拉取 GitHub Release 标签",
+      "summary": "Atom 停更后的开源社区分支，保持可hack的编辑器体验，生态规模已不如 VS Code。",
+      "features": {
+        "extensions": {
+          "value": "yes",
+          "note": "继承 Atom 包生态的一部分"
+        },
+        "lsp": {
+          "value": "partial"
+        },
+        "git_integration": {
+          "value": "yes"
+        },
+        "integrated_terminal": {
+          "value": "yes"
+        },
+        "debugger": {
+          "value": "unknown"
+        },
+        "ai_assistant": {
+          "value": "no"
+        },
+        "multi_cursor": {
+          "value": "yes"
+        },
+        "remote_dev": {
+          "value": "unknown"
+        },
+        "live_share": {
+          "value": "unknown"
+        },
+        "customizable": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://pulsar-edit.dev/",
+        "https://github.com/pulsar-edit/pulsar"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "kate",
+      "name": "Kate",
+      "official_url": "https://kate-editor.org",
+      "github_url": "https://github.com/KDE/kate",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "未知（GitHub 镜像未提供 SPDX；官方源在 invent.kde.org，本轮未打开许可证全文）",
+      "pricing_model": "完全免费",
+      "price_summary": "KDE 的免费开源高级文本编辑器。GitHub 是镜像，星标偏低，不能代表项目规模。",
+      "prices": [
+        {
+          "plan": "软件",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无付费墙",
+      "github_stars": 1165,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "随 KDE 发布周期更新，本轮未记录具体版本日期",
+      "summary": "KDE 出品的免费高级文本/代码编辑器，跨平台，适合日常开发与纯文本编辑。",
+      "features": {
+        "extensions": {
+          "value": "partial"
+        },
+        "lsp": {
+          "value": "yes"
+        },
+        "git_integration": {
+          "value": "yes"
+        },
+        "integrated_terminal": {
+          "value": "yes"
+        },
+        "debugger": {
+          "value": "unknown"
+        },
+        "ai_assistant": {
+          "value": "no"
+        },
+        "multi_cursor": {
+          "value": "unknown"
+        },
+        "remote_dev": {
+          "value": "unknown"
+        },
+        "live_share": {
+          "value": "no"
+        },
+        "customizable": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://kate-editor.org/",
+        "https://github.com/KDE/kate"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "sublime-text",
+      "name": "Sublime Text",
+      "official_url": "https://www.sublimetext.com",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "付费",
+      "price_summary": "当前版本为 Sublime Text 4，Build 4215（官网 changelog 日期 2026-09-25）。可免费下载评估，官网写明持续使用需购买许可，且目前没有强制的评估时限。具体许可售价本轮打开的下载页未列出美元金额，故价格为未知。",
+      "prices": [
+        {
+          "plan": "评估使用",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "无强制时限，但持续使用需购买许可"
+        },
+        {
+          "plan": "许可",
+          "price": "未知",
+          "currency": null,
+          "period": null,
+          "note": "https://www.sublimetext.com/download 确认需购买许可，但未给出金额；需打开购买页才能核价"
+        }
+      ],
+      "free_tier_limits": "可无限期评估，但许可条款要求持续使用需付费；无强制时间锁",
+      "github_stars": null,
+      "latest_release": "Build 4215",
+      "latest_release_date": "2026-09-25",
+      "latest_release_date_note": "官网 changelog：Build 4215，25 Sep 2026，未提供时刻",
+      "summary": "以速度和多光标闻名的商业编辑器，可以先免费评估，正式使用需要买许可。",
+      "features": {
+        "extensions": {
+          "value": "yes",
+          "note": "Package Control 生态"
+        },
+        "lsp": {
+          "value": "partial",
+          "note": "通过 LSP 包，不是全部语言开箱即用"
+        },
+        "git_integration": {
+          "value": "yes",
+          "note": "changelog 提到 git status 等"
+        },
+        "integrated_terminal": {
+          "value": "partial",
+          "note": "Build 4215 changelog 提到 open_terminal 命令打开外部终端，不一定是内嵌 IDE 终端"
+        },
+        "debugger": {
+          "value": "partial",
+          "note": "依赖包"
+        },
+        "ai_assistant": {
+          "value": "no"
+        },
+        "multi_cursor": {
+          "value": "yes"
+        },
+        "remote_dev": {
+          "value": "no"
+        },
+        "live_share": {
+          "value": "no"
+        },
+        "customizable": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://www.sublimetext.com/download"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    }
+  ]
+}

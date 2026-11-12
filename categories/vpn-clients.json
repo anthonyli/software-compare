@@ -1,0 +1,1438 @@
+{
+  "category_slug": "vpn-clients",
+  "category_name_zh": "VPN 客户端",
+  "collected_at": "2026-11-12",
+  "timezone": "Asia/Shanghai",
+  "features": [
+    {
+      "key": "split_tunneling",
+      "label": "分裂隧道"
+    },
+    {
+      "key": "kill_switch",
+      "label": "Kill Switch"
+    },
+    {
+      "key": "multi_hop",
+      "label": "多跳/双重 VPN"
+    },
+    {
+      "key": "wireguard",
+      "label": "WireGuard 协议"
+    },
+    {
+      "key": "openvpn",
+      "label": "OpenVPN 协议"
+    },
+    {
+      "key": "no_logs",
+      "label": "无日志政策（官方声明）"
+    },
+    {
+      "key": "independent_audit",
+      "label": "独立审计"
+    },
+    {
+      "key": "open_source_client",
+      "label": "客户端开源"
+    },
+    {
+      "key": "self_host",
+      "label": "自建服务器"
+    },
+    {
+      "key": "obfuscation",
+      "label": "混淆/伪装"
+    },
+    {
+      "key": "device_limit",
+      "label": "多设备同时连接"
+    }
+  ],
+  "products": [
+    {
+      "id": "mullvad",
+      "name": "Mullvad VPN",
+      "official_url": "https://mullvad.net",
+      "github_url": "https://github.com/mullvad/mullvadvpn-app",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "订阅",
+      "price_summary": "所有期限均为每月 5 欧元（含 VAT）。官网同时给出约合 5.55 美元、4.18 英镑等对照。无按月降价或终身会员。客户端开源。",
+      "prices": [
+        {
+          "plan": "所有期限（1 个月 / 1 年 / 10 年）",
+          "price": "5",
+          "currency": "EUR",
+          "period": "month",
+          "note": "含 VAT；期限只影响一次支付时长，月费相同。官网显示约合 5.55 美元"
+        }
+      ],
+      "free_tier_limits": "无免费使用档（可生成账号再付费）",
+      "github_stars": 7774,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "本轮未拉取 GitHub Release 标签",
+      "summary": "以匿名账号和固定月费著称的 VPN，客户端开源，价格不因年付而下降。",
+      "features": {
+        "split_tunneling": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "kill_switch": {
+          "value": "yes"
+        },
+        "multi_hop": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "wireguard": {
+          "value": "yes"
+        },
+        "openvpn": {
+          "value": "unknown",
+          "note": "当前默认协议以 WireGuard 为主，OpenVPN 是否仍提供本轮未核完"
+        },
+        "no_logs": {
+          "value": "yes",
+          "note": "官方声明无日志"
+        },
+        "independent_audit": {
+          "value": "unknown",
+          "note": "Mullvad 历史上有审计，本轮未打开最新审计页逐条核对"
+        },
+        "open_source_client": {
+          "value": "yes"
+        },
+        "self_host": {
+          "value": "no",
+          "note": "是商业 VPN 服务，不是自建软件"
+        },
+        "obfuscation": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "device_limit": {
+          "value": "unknown",
+          "note": "官网定价页摘录未写同时连接台数"
+        }
+      },
+      "sources": [
+        "https://mullvad.net/en/pricing",
+        "https://github.com/mullvad/mullvadvpn-app"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "ivpn",
+      "name": "IVPN",
+      "official_url": "https://www.ivpn.net",
+      "github_url": "https://github.com/ivpn/desktop-app",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "订阅",
+      "price_summary": "定价以美元计。官网定价页列出 Standard、Plus、Pro 三档；提取到的标价为 Standard 2/6/60 美元与 Plus 3/8/80 美元，并出现 1 Week 字样，对应关系按“周/月/年”理解但标签在摘录中不完整。Standard/Plus 为 5 台设备，Pro 为 10 台设备。Pro 的价格未清晰提取。30 天退款，可匿名注册。",
+      "prices": [
+        {
+          "plan": "Standard（提取到的三档标价）",
+          "price": "6",
+          "currency": "USD",
+          "period": "month",
+          "note": "页面同时出现 2、6、60 美元；60 美元很可能是年付。因期限标签摘录不完整，请以 https://www.ivpn.net/en/pricing/ 为准"
+        },
+        {
+          "plan": "Plus（提取到的三档标价）",
+          "price": "8",
+          "currency": "USD",
+          "period": "month",
+          "note": "页面同时出现 3、8、80 美元；80 美元很可能是年付。期限标签摘录不完整"
+        },
+        {
+          "plan": "Pro",
+          "price": "未知",
+          "currency": "USD",
+          "period": null,
+          "note": "确认存在（10 台设备，含 Portmaster Pro 等），具体标价未清晰提取"
+        }
+      ],
+      "free_tier_limits": "无长期免费档；可用一周短期限测试（据页面提示）",
+      "github_stars": 550,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "本轮未拉取 GitHub Release 标签",
+      "summary": "注重匿名注册和审计的付费 VPN，客户端开源，分 Standard/Plus/Pro，设备数 5 或 10 台。",
+      "features": {
+        "split_tunneling": {
+          "value": "unknown"
+        },
+        "kill_switch": {
+          "value": "yes",
+          "note": "官网写明 Kill switch with network firewall integration"
+        },
+        "multi_hop": {
+          "value": "unknown"
+        },
+        "wireguard": {
+          "value": "yes",
+          "note": "官网写明量子抗性 WireGuard 连接"
+        },
+        "openvpn": {
+          "value": "unknown"
+        },
+        "no_logs": {
+          "value": "yes",
+          "note": "官方声明不保留连接日志或会话数据"
+        },
+        "independent_audit": {
+          "value": "yes",
+          "note": "官网写明自 2019 年起每年第三方安全审计"
+        },
+        "open_source_client": {
+          "value": "yes",
+          "note": "Android/iOS/macOS/Windows/Linux/CLI"
+        },
+        "self_host": {
+          "value": "no"
+        },
+        "obfuscation": {
+          "value": "yes",
+          "note": "官网写明 v2Ray、obfsproxy"
+        },
+        "device_limit": {
+          "value": "yes",
+          "note": "Standard/Plus 5 台，Pro 10 台"
+        }
+      },
+      "sources": [
+        "https://www.ivpn.net/en/pricing/",
+        "https://github.com/ivpn/desktop-app"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "mozilla-vpn",
+      "name": "Mozilla VPN",
+      "official_url": "https://www.mozilla.org/en-US/products/vpn/",
+      "github_url": "https://github.com/mozilla-mobile/mozilla-vpn-client",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS"
+      ],
+      "open_source": true,
+      "license": "Other（GitHub SPDX 为 Other，本轮未打开 LICENSE 全文核对）",
+      "pricing_model": "订阅",
+      "price_summary": "年付折合 4.99 美元/月，合计 59.88 美元；月付 9.99 美元/月。提供 30 天退款保证。",
+      "prices": [
+        {
+          "plan": "Annual",
+          "price": "59.88",
+          "currency": "USD",
+          "period": "year",
+          "note": "页面显示 4.99 美元/月，合计 59.88 美元，宣称节省 50%"
+        },
+        {
+          "plan": "Monthly",
+          "price": "9.99",
+          "currency": "USD",
+          "period": "month"
+        }
+      ],
+      "free_tier_limits": "无长期免费档（有退款保证）",
+      "github_stars": 668,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "本轮未拉取 GitHub Release 标签",
+      "summary": "Mozilla 出品的 VPN，客户端开源，按月或按年订阅。",
+      "features": {
+        "split_tunneling": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "kill_switch": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "multi_hop": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "wireguard": {
+          "value": "unknown"
+        },
+        "openvpn": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "no_logs": {
+          "value": "unknown",
+          "note": "Mozilla 通常有隐私政策，本轮未打开无日志专项页核对"
+        },
+        "independent_audit": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "open_source_client": {
+          "value": "yes"
+        },
+        "self_host": {
+          "value": "no"
+        },
+        "obfuscation": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "device_limit": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        }
+      },
+      "sources": [
+        "https://www.mozilla.org/en-US/products/vpn/",
+        "https://vpn.mozilla.org",
+        "https://github.com/mozilla-mobile/mozilla-vpn-client"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "outline",
+      "name": "Outline VPN",
+      "official_url": "https://getoutline.org",
+      "github_url": "https://github.com/OutlineFoundation/outline-apps",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "pricing_model": "完全免费",
+      "price_summary": "软件完全免费开源，用于自建 VPN 服务器；需自备云主机，主机费用由云厂商收取，不属于 Outline 订阅。",
+      "prices": [
+        {
+          "plan": "客户端与服务端软件",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "自建服务器的云主机费用另计，不由 Outline 收取"
+        }
+      ],
+      "free_tier_limits": "无软件付费墙；可用性取决于自建服务器",
+      "github_stars": 9281,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "本轮未拉取 GitHub Release 标签",
+      "summary": "开源自建 VPN 工具包，方便为团队搭建自己的接入点，不是现成的商业 VPN 订阅。",
+      "features": {
+        "split_tunneling": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "kill_switch": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "multi_hop": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "wireguard": {
+          "value": "unknown",
+          "note": "历史上基于 Shadowsocks，本轮未核对其是否已支持 WireGuard"
+        },
+        "openvpn": {
+          "value": "no"
+        },
+        "no_logs": {
+          "value": "partial",
+          "note": "日志策略取决于你自己的服务器配置，不是商业无日志承诺"
+        },
+        "independent_audit": {
+          "value": "unknown"
+        },
+        "open_source_client": {
+          "value": "yes"
+        },
+        "self_host": {
+          "value": "yes",
+          "note": "核心定位就是自建服务器"
+        },
+        "obfuscation": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "device_limit": {
+          "value": "yes",
+          "note": "由自建服务器容量决定，无官方席位上限"
+        }
+      },
+      "sources": [
+        "https://getoutline.org/",
+        "https://github.com/OutlineFoundation/outline-apps"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "wireguard",
+      "name": "WireGuard",
+      "official_url": "https://www.wireguard.com",
+      "github_url": "https://github.com/WireGuard/wireguard-tools",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS",
+        "BSD 等"
+      ],
+      "open_source": true,
+      "license": "GPL-2.0",
+      "pricing_model": "完全免费",
+      "price_summary": "免费开源的 VPN 协议与官方工具；GitHub 上的 wireguard-tools 是镜像，星标不能代表项目热度。需要自建或使用第三方服务。",
+      "prices": [
+        {
+          "plan": "协议与官方工具",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无付费墙；本身不提供现成的公共 VPN 服务",
+      "github_stars": 741,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "官方源在 git.zx2c4.com，GitHub 为镜像；本轮未记录最新标签",
+      "summary": "现代、精简的开源 VPN 协议，是许多商业客户端的底层技术，本身不是订阅服务。",
+      "features": {
+        "split_tunneling": {
+          "value": "partial",
+          "note": "取决于具体客户端/路由配置"
+        },
+        "kill_switch": {
+          "value": "partial",
+          "note": "取决于具体客户端实现"
+        },
+        "multi_hop": {
+          "value": "no"
+        },
+        "wireguard": {
+          "value": "yes"
+        },
+        "openvpn": {
+          "value": "no"
+        },
+        "no_logs": {
+          "value": "partial",
+          "note": "协议本身不定义服务日志政策"
+        },
+        "independent_audit": {
+          "value": "unknown",
+          "note": "协议层面有公开分析，本轮未引用具体审计报告"
+        },
+        "open_source_client": {
+          "value": "yes"
+        },
+        "self_host": {
+          "value": "yes"
+        },
+        "obfuscation": {
+          "value": "no"
+        },
+        "device_limit": {
+          "value": "yes",
+          "note": "由自建配置决定"
+        }
+      },
+      "sources": [
+        "https://www.wireguard.com/",
+        "https://github.com/WireGuard/wireguard-tools"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "openvpn",
+      "name": "OpenVPN (Community)",
+      "official_url": "https://openvpn.net/community/",
+      "github_url": "https://github.com/OpenVPN/openvpn",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS 等"
+      ],
+      "open_source": true,
+      "license": "Other（GitHub SPDX 为 Other，社区版通常为 GPL，本轮未打开 LICENSE 全文核对）",
+      "pricing_model": "免费增值",
+      "price_summary": "Community 开源软件免费，可自建。OpenVPN Inc. 另有商业云/Access Server 产品，本轮未从社区页提取商业标价，故商业档金额为未知。",
+      "prices": [
+        {
+          "plan": "OpenVPN Community",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        },
+        {
+          "plan": "OpenVPN 商业云/Access Server 等",
+          "price": "未知",
+          "currency": null,
+          "period": null,
+          "note": "与社区版是不同产品线，本轮未核价"
+        }
+      ],
+      "free_tier_limits": "社区版无软件授权费；官方托管与企业产品另计",
+      "github_stars": 14810,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "本轮未拉取 GitHub Release 标签；社区页为脚本渲染，文本提取不完整",
+      "summary": "历史最长的开源 VPN 协议与社区软件，可自建；公司同时出售商业托管产品。",
+      "features": {
+        "split_tunneling": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "kill_switch": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "multi_hop": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "wireguard": {
+          "value": "no",
+          "note": "此条记录 Community OpenVPN 协议栈，不是 WireGuard"
+        },
+        "openvpn": {
+          "value": "yes"
+        },
+        "no_logs": {
+          "value": "partial",
+          "note": "自建时由运营者决定"
+        },
+        "independent_audit": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "open_source_client": {
+          "value": "yes"
+        },
+        "self_host": {
+          "value": "yes"
+        },
+        "obfuscation": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "device_limit": {
+          "value": "yes",
+          "note": "自建无固定席位上限"
+        }
+      },
+      "sources": [
+        "https://openvpn.net/community/",
+        "https://community.openvpn.net",
+        "https://github.com/OpenVPN/openvpn"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "softether",
+      "name": "SoftEther VPN",
+      "official_url": "https://www.softether.org",
+      "github_url": "https://github.com/SoftEtherVPN/SoftEtherVPN",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "部分其他"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源的多协议 VPN 软件，可自建。",
+      "prices": [
+        {
+          "plan": "软件",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无软件付费墙",
+      "github_stars": 13733,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "本轮未拉取 GitHub Release 标签",
+      "summary": "开源多协议 VPN 服务器/客户端，适合自建远程接入和站点互连。",
+      "features": {
+        "split_tunneling": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "kill_switch": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "multi_hop": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "wireguard": {
+          "value": "unknown"
+        },
+        "openvpn": {
+          "value": "yes",
+          "note": "可作为兼容协议之一，细节以官方规格为准"
+        },
+        "no_logs": {
+          "value": "partial",
+          "note": "自建由运营者决定"
+        },
+        "independent_audit": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "open_source_client": {
+          "value": "yes"
+        },
+        "self_host": {
+          "value": "yes"
+        },
+        "obfuscation": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "device_limit": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://www.softether.org/",
+        "https://github.com/SoftEtherVPN/SoftEtherVPN"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "amnezia",
+      "name": "AmneziaVPN",
+      "official_url": "https://amnezia.org",
+      "github_url": "https://github.com/amnezia-vpn/amnezia-client",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "完全免费",
+      "price_summary": "客户端开源免费，用于部署自己的 VPN 服务器；云主机费用另计。官网为脚本渲染，本轮未从首页提取到额外订阅价。",
+      "prices": [
+        {
+          "plan": "客户端软件",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "自建服务器的云资源费用另计"
+        }
+      ],
+      "free_tier_limits": "无软件付费墙",
+      "github_stars": 15902,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "本轮未拉取 GitHub Release 标签",
+      "summary": "开源自建 VPN 客户端，强调在受限网络环境下部署自己的服务器。",
+      "features": {
+        "split_tunneling": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "kill_switch": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "multi_hop": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "wireguard": {
+          "value": "unknown"
+        },
+        "openvpn": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "no_logs": {
+          "value": "partial",
+          "note": "取决于自建服务器"
+        },
+        "independent_audit": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "open_source_client": {
+          "value": "yes"
+        },
+        "self_host": {
+          "value": "yes"
+        },
+        "obfuscation": {
+          "value": "unknown",
+          "note": "项目定位常与协议伪装相关，但本轮未打开功能对照表核实具体协议名"
+        },
+        "device_limit": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://amnezia.org/",
+        "https://amnezia.org/en",
+        "https://github.com/amnezia-vpn/amnezia-client"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "proton-vpn",
+      "name": "Proton VPN",
+      "official_url": "https://protonvpn.com",
+      "github_url": "https://github.com/ProtonVPN/win-app",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS",
+        "浏览器扩展"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "免费增值",
+      "price_summary": "有免费档。VPN Plus 促销 3.49 美元/月，首 24 个月一次性 83.76 美元，之后每 12 个月 83.88 美元（划线月费 9.99 美元）。Proton Unlimited 促销 7.99 美元/月，首 24 个月 191.76 美元，之后每 12 个月 119.88 美元（划线 12.99 美元/月）。页面还出现过首月 1 美元的特别优惠。客户端多个官方仓库开源（此处用 Windows 客户端星标作参考）。",
+      "prices": [
+        {
+          "plan": "Proton Free",
+          "price": "0",
+          "currency": "USD",
+          "period": "month"
+        },
+        {
+          "plan": "VPN Plus（首 24 个月促销）",
+          "price": "83.76",
+          "currency": "USD",
+          "period": "24 months",
+          "note": "折合 3.49 美元/月；划线 9.99 美元/月。之后按年 83.88 美元续费"
+        },
+        {
+          "plan": "VPN Plus（续费）",
+          "price": "83.88",
+          "currency": "USD",
+          "period": "year"
+        },
+        {
+          "plan": "Proton Unlimited（首 24 个月促销）",
+          "price": "191.76",
+          "currency": "USD",
+          "period": "24 months",
+          "note": "折合 7.99 美元/月；划线 12.99 美元/月。之后按年 119.88 美元续费"
+        },
+        {
+          "plan": "Proton Unlimited（续费）",
+          "price": "119.88",
+          "currency": "USD",
+          "period": "year"
+        }
+      ],
+      "free_tier_limits": "免费档可使用基础 VPN；流媒体、Secure Core、更高速度等需 Plus（官网注明部分功能需升级到 Plus）。免费档的速度/国家限制细节本轮未逐项抄录",
+      "github_stars": 2614,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "官方还有 android-app（约 4294 星）和 proton-vpn-gtk-app 等仓库；此处 github_stars 取 win-app。本轮未拉取 Release",
+      "summary": "Proton 出品的 VPN，有免费档，Plus 与 Unlimited 常有两年促销，官方桌面/移动客户端开源。",
+      "features": {
+        "split_tunneling": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "kill_switch": {
+          "value": "unknown"
+        },
+        "multi_hop": {
+          "value": "paid",
+          "note": "官网提到 Secure Core，需付费档"
+        },
+        "wireguard": {
+          "value": "unknown"
+        },
+        "openvpn": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "no_logs": {
+          "value": "yes",
+          "note": "官方宣传无日志，本轮未打开最新审计 PDF 复核"
+        },
+        "independent_audit": {
+          "value": "unknown",
+          "note": "历史上有审计，本轮未打开报告页"
+        },
+        "open_source_client": {
+          "value": "yes"
+        },
+        "self_host": {
+          "value": "no"
+        },
+        "obfuscation": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "device_limit": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://protonvpn.com/",
+        "https://proton.me/pricing",
+        "https://github.com/ProtonVPN/win-app"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "tailscale",
+      "name": "Tailscale",
+      "official_url": "https://tailscale.com",
+      "github_url": "https://github.com/tailscale/tailscale",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS 等"
+      ],
+      "open_source": true,
+      "license": "BSD-3-Clause",
+      "pricing_model": "免费增值",
+      "price_summary": "Personal 0 美元，永久免费，仅限非商用：无限用户设备、最多 6 名用户、最多 3 个 ACL 组、起始 50 个 tagged resources、每月 1000 分钟临时资源。Standard 每用户每月 8 美元（无限用户）。Premium 每用户每月 18 美元。额外 tagged resource 1 美元/月；Mullvad 附加组件每 5 台设备 5 美元/月。企业为定制价。14 天企业试用。",
+      "prices": [
+        {
+          "plan": "Personal",
+          "price": "0",
+          "currency": "USD",
+          "period": null,
+          "note": "非商用，最多 6 用户，用户设备不限，50 个 tagged resources 等"
+        },
+        {
+          "plan": "Standard",
+          "price": "8",
+          "currency": "USD",
+          "period": "month",
+          "note": "每用户每月"
+        },
+        {
+          "plan": "Premium",
+          "price": "18",
+          "currency": "USD",
+          "period": "month",
+          "note": "每用户每月"
+        },
+        {
+          "plan": "Mullvad 附加组件",
+          "price": "5",
+          "currency": "USD",
+          "period": "month",
+          "note": "每 5 台设备每月"
+        },
+        {
+          "plan": "额外 tagged resource",
+          "price": "1",
+          "currency": "USD",
+          "period": "month",
+          "note": "超出每月免费的 50 个之后"
+        }
+      ],
+      "free_tier_limits": "Personal：非商用，最多 6 用户，无限用户设备，最多 3 个 ACL 组，50 个 tagged resources，每月 1000 分钟临时资源",
+      "github_stars": 38985,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "本轮未拉取 GitHub Release 标签",
+      "summary": "基于 WireGuard 的组网/远程访问平台，个人非商用免费，团队按用户订阅；开源客户端。",
+      "features": {
+        "split_tunneling": {
+          "value": "unknown"
+        },
+        "kill_switch": {
+          "value": "unknown"
+        },
+        "multi_hop": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "wireguard": {
+          "value": "yes"
+        },
+        "openvpn": {
+          "value": "no"
+        },
+        "no_logs": {
+          "value": "unknown",
+          "note": "有官方隐私政策，本轮未把“无日志 VPN”标签套用到其协调服务"
+        },
+        "independent_audit": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "open_source_client": {
+          "value": "yes"
+        },
+        "self_host": {
+          "value": "partial",
+          "note": "可用 Headscale 等社区控制服务器自建，但官方服务是托管协调节点；本条不把第三方项目算作官方功能"
+        },
+        "obfuscation": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "device_limit": {
+          "value": "yes",
+          "note": "Personal 用户设备不限，用户数上限 6"
+        }
+      },
+      "sources": [
+        "https://tailscale.com/pricing",
+        "https://github.com/tailscale/tailscale"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "pia",
+      "name": "Private Internet Access",
+      "official_url": "https://www.privateinternetaccess.com",
+      "github_url": "https://github.com/pia-foss/desktop",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS"
+      ],
+      "open_source": true,
+      "license": "Other（GitHub SPDX 为 Other，本轮未打开 LICENSE 全文核对）",
+      "pricing_model": "订阅",
+      "price_summary": "1 个月 11.95 美元/月，到期仍按 11.95 美元月付续费。1 年折合 3.99 美元/月，首年及之后按年 47.88 美元。3 年+4 个月促销折合 2.03 美元/月，之后每 3 年 81.20 美元续费。新用户 30 天退款。桌面客户端仓库开源。",
+      "prices": [
+        {
+          "plan": "1 个月",
+          "price": "11.95",
+          "currency": "USD",
+          "period": "month",
+          "note": "到期按 11.95 美元/月自动续费"
+        },
+        {
+          "plan": "1 年",
+          "price": "47.88",
+          "currency": "USD",
+          "period": "year",
+          "note": "折合 3.99 美元/月；首年及之后按年 47.88 美元续费"
+        },
+        {
+          "plan": "3 年 + 4 个月促销",
+          "price": "81.20",
+          "currency": "USD",
+          "period": "3 years",
+          "note": "折合 2.03 美元/月；之后每 3 年 81.20 美元续费。页面标注 Early Access: 83% Off"
+        }
+      ],
+      "free_tier_limits": "无长期免费档，新用户有 30 天退款",
+      "github_stars": 337,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "本轮未拉取 GitHub Release 标签",
+      "summary": "老牌商业 VPN，桌面客户端开源，常见一到三年促销价，月费与年费差距大。",
+      "features": {
+        "split_tunneling": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "kill_switch": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "multi_hop": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "wireguard": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "openvpn": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "no_logs": {
+          "value": "yes",
+          "note": "官网导航含 No Logs Policy，本轮未打开政策全文复核每一句"
+        },
+        "independent_audit": {
+          "value": "unknown"
+        },
+        "open_source_client": {
+          "value": "yes",
+          "note": "pia-foss/desktop 等官方仓库"
+        },
+        "self_host": {
+          "value": "no"
+        },
+        "obfuscation": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "device_limit": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://www.privateinternetaccess.com/buy-vpn-online",
+        "https://github.com/pia-foss/desktop"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "nordvpn",
+      "name": "NordVPN",
+      "official_url": "https://nordvpn.com",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "订阅",
+      "price_summary": "官网定价页在本轮请求中返回 403（Cloudflare），未能核实当前美元/欧元标价，故价格为未知。",
+      "prices": [
+        {
+          "plan": "个人订阅",
+          "price": "未知",
+          "currency": null,
+          "period": null,
+          "note": "https://nordvpn.com/pricing/ 本轮被 Cloudflare 拦截，未读到价目"
+        }
+      ],
+      "free_tier_limits": "未在本轮打开的页面中确认免费档",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "专有软件，本轮未记录客户端版本号",
+      "summary": "市场占有率很高的商业 VPN，但官网定价页本轮无法抓取，价格未核实。",
+      "features": {
+        "split_tunneling": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "kill_switch": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "multi_hop": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "wireguard": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "openvpn": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "no_logs": {
+          "value": "unknown",
+          "note": "官方有无日志宣传，本轮未能打开定价/政策页复核"
+        },
+        "independent_audit": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "open_source_client": {
+          "value": "no"
+        },
+        "self_host": {
+          "value": "no"
+        },
+        "obfuscation": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "device_limit": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        }
+      },
+      "sources": [
+        "https://nordvpn.com/pricing/"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "expressvpn",
+      "name": "ExpressVPN",
+      "official_url": "https://www.expressvpn.com",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "订阅",
+      "price_summary": "官网当前展示 2 年+4 个月套餐（美元）：Basic 折合 2.99 美元/月，首 28 个月实付 83.72 美元（划线 419.72），之后按年 99.95 美元续费；Advanced 折合 4.19 美元/月，首 28 个月 117.32 美元（划线 475.72），之后按年 119.95 美元；Express Pro 折合 7.19 美元/月，首 28 个月 201.32 美元（划线 643.72），之后按年 199.95 美元。30 天退款。促销价变化很快。",
+      "prices": [
+        {
+          "plan": "Basic（首 28 个月促销）",
+          "price": "83.72",
+          "currency": "USD",
+          "period": "28 months",
+          "note": "折合 2.99 美元/月；之后按年 99.95 美元自动续费"
+        },
+        {
+          "plan": "Basic（续费）",
+          "price": "99.95",
+          "currency": "USD",
+          "period": "year"
+        },
+        {
+          "plan": "Advanced（首 28 个月促销）",
+          "price": "117.32",
+          "currency": "USD",
+          "period": "28 months",
+          "note": "折合 4.19 美元/月；之后按年 119.95 美元"
+        },
+        {
+          "plan": "Advanced（续费）",
+          "price": "119.95",
+          "currency": "USD",
+          "period": "year"
+        },
+        {
+          "plan": "Express Pro（首 28 个月促销）",
+          "price": "201.32",
+          "currency": "USD",
+          "period": "28 months",
+          "note": "折合 7.19 美元/月；之后按年 199.95 美元"
+        },
+        {
+          "plan": "Express Pro（续费）",
+          "price": "199.95",
+          "currency": "USD",
+          "period": "year"
+        }
+      ],
+      "free_tier_limits": "无长期免费档，有 30 天退款",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "专有软件，本轮未记录客户端版本号",
+      "summary": "定位高端的商业 VPN，当前主推两年加四个月的分层促销，续费年价明显高于首购。",
+      "features": {
+        "split_tunneling": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "kill_switch": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "multi_hop": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "wireguard": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "openvpn": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "no_logs": {
+          "value": "unknown",
+          "note": "官方有相关宣传，本轮未打开政策全文"
+        },
+        "independent_audit": {
+          "value": "unknown"
+        },
+        "open_source_client": {
+          "value": "no"
+        },
+        "self_host": {
+          "value": "no"
+        },
+        "obfuscation": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "device_limit": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        }
+      },
+      "sources": [
+        "https://www.expressvpn.com/order",
+        "https://www.expressvpn.com/pricing"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "surfshark",
+      "name": "Surfshark",
+      "official_url": "https://surfshark.com",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "订阅",
+      "price_summary": "本轮打开官网定价页时显示新加坡元：Starter 与 One 均为 3.18 新元/月再加 3 个月，前 27 个月合计 85.86 新元；One+ 为 5.08 新元/月，前 27 个月 137.16 新元。可能含 VAT。美元价未在该次抓取中出现，价格随地区变化。",
+      "prices": [
+        {
+          "plan": "Starter（首 27 个月，含额外 3 个月）",
+          "price": "85.86",
+          "currency": "SGD",
+          "period": "27 months",
+          "note": "折合 3.18 新元/月；本次抓取货币为 SGD，美元价未知"
+        },
+        {
+          "plan": "One（首 27 个月）",
+          "price": "85.86",
+          "currency": "SGD",
+          "period": "27 months",
+          "note": "折合 3.18 新元/月"
+        },
+        {
+          "plan": "One+（首 27 个月）",
+          "price": "137.16",
+          "currency": "SGD",
+          "period": "27 months",
+          "note": "折合 5.08 新元/月"
+        }
+      ],
+      "free_tier_limits": "无长期免费档，页面提到 30 天退款",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "专有软件，本轮未记录客户端版本号",
+      "summary": "商业 VPN，常把 VPN 与身份保护打成套餐，本轮看到的是新元促销价，美元价未核实。",
+      "features": {
+        "split_tunneling": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "kill_switch": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "multi_hop": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "wireguard": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "openvpn": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "no_logs": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "independent_audit": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "open_source_client": {
+          "value": "no"
+        },
+        "self_host": {
+          "value": "no"
+        },
+        "obfuscation": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "device_limit": {
+          "value": "unknown",
+          "note": "Surfshark 通常宣传无限设备，但本轮未在该页摘录中核到原文，故不擅自勾选"
+        }
+      },
+      "sources": [
+        "https://surfshark.com/pricing"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "windscribe",
+      "name": "Windscribe",
+      "official_url": "https://windscribe.com",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS",
+        "浏览器扩展"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "升级页确认有免费与 Pro。月付 9.00 美元；年付 69 美元（折合 5.75 美元/月）。另有 Build A Plan，每个地点每月 1.00 美元。免费档具体流量限额在该页摘录中未完整出现，记为未知。",
+      "prices": [
+        {
+          "plan": "Free",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "免费档存在；流量/地点限制未在已摘录升级页文本中完整确认"
+        },
+        {
+          "plan": "Pro 月付",
+          "price": "9.00",
+          "currency": "USD",
+          "period": "month",
+          "note": "Billed $9.00 USD every month"
+        },
+        {
+          "plan": "Pro 年付",
+          "price": "69",
+          "currency": "USD",
+          "period": "year",
+          "note": "折合 5.75 美元/月"
+        },
+        {
+          "plan": "Build A Plan",
+          "price": "1.00",
+          "currency": "USD",
+          "period": "month",
+          "note": "每个地点每月 1 美元"
+        }
+      ],
+      "free_tier_limits": "有免费档；具体流量/服务器限制本轮未能从升级页摘录完整确认",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "专有软件，本轮未记录客户端版本号",
+      "summary": "有免费档的商业 VPN，也可按年付 Pro 或按地点自助拼套餐。",
+      "features": {
+        "split_tunneling": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "kill_switch": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "multi_hop": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "wireguard": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "openvpn": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "no_logs": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "independent_audit": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "open_source_client": {
+          "value": "no"
+        },
+        "self_host": {
+          "value": "no"
+        },
+        "obfuscation": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "device_limit": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://windscribe.com/upgrade"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    }
+  ],
+  "notes": "自建类（Outline、WireGuard、OpenVPN Community、SoftEther、Amnezia）与商业订阅 VPN 放在同一对照里，便于区分“软件免费/需要自建服务器”和“付费接入现成网络”。功能项不涉及绕过审查的操作说明。"
+}

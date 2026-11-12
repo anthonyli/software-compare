@@ -1,0 +1,1094 @@
+{
+  "category_slug": "antivirus-security",
+  "category_name_zh": "杀毒/安全软件",
+  "collected_at": "2026-11-12",
+  "timezone": "Asia/Shanghai",
+  "features": [
+    {
+      "key": "realtime_protection",
+      "label": "实时防护"
+    },
+    {
+      "key": "malware_scan",
+      "label": "恶意软件扫描"
+    },
+    {
+      "key": "ransomware_protection",
+      "label": "勒索软件防护"
+    },
+    {
+      "key": "firewall",
+      "label": "防火墙"
+    },
+    {
+      "key": "web_protection",
+      "label": "网页防护"
+    },
+    {
+      "key": "phishing_protection",
+      "label": "钓鱼防护"
+    },
+    {
+      "key": "email_scan",
+      "label": "电子邮件扫描"
+    },
+    {
+      "key": "heuristic",
+      "label": "行为/启发式检测"
+    },
+    {
+      "key": "vpn_bundle",
+      "label": "VPN 捆绑"
+    },
+    {
+      "key": "password_manager",
+      "label": "密码管理器捆绑"
+    },
+    {
+      "key": "game_mode",
+      "label": "游戏模式"
+    },
+    {
+      "key": "cross_platform",
+      "label": "跨平台桌面"
+    }
+  ],
+  "products": [
+    {
+      "id": "clamav",
+      "name": "ClamAV",
+      "official_url": "https://www.clamav.net",
+      "github_url": "https://github.com/Cisco-Talos/clamav",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-2.0",
+      "pricing_model": "完全免费",
+      "price_summary": "开源杀毒引擎，完全免费；常见于邮件网关和按需扫描，不是典型的消费者实时套装。",
+      "prices": [
+        {
+          "plan": "引擎与工具",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无付费墙",
+      "github_stars": 7544,
+      "latest_release": "1.5.4",
+      "latest_release_date": "2026-08-07 23:40",
+      "latest_release_date_note": "GitHub published_at 2026-08-07T15:40:34Z，已转换为 Asia/Shanghai；官网亦写 latest stable release is version 1.5.4",
+      "summary": "Cisco Talos 维护的开源杀毒引擎，适合网关和按需扫描，不是开箱即用的消费级实时套装。",
+      "features": {
+        "realtime_protection": {
+          "value": "partial",
+          "note": "提供多线程扫描守护进程，但不是典型的消费级桌面实时防护套装"
+        },
+        "malware_scan": {
+          "value": "yes",
+          "note": "按需/守护进程扫描，检测木马、病毒等"
+        },
+        "ransomware_protection": {
+          "value": "unknown"
+        },
+        "firewall": {
+          "value": "no"
+        },
+        "web_protection": {
+          "value": "no"
+        },
+        "phishing_protection": {
+          "value": "unknown"
+        },
+        "email_scan": {
+          "value": "yes",
+          "note": "官网强调邮件网关扫描场景"
+        },
+        "heuristic": {
+          "value": "unknown"
+        },
+        "vpn_bundle": {
+          "value": "no"
+        },
+        "password_manager": {
+          "value": "no"
+        },
+        "game_mode": {
+          "value": "no"
+        },
+        "cross_platform": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://www.clamav.net",
+        "https://github.com/Cisco-Talos/clamav"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "portmaster",
+      "name": "Portmaster",
+      "official_url": "https://safing.io",
+      "github_url": "https://github.com/safing/portmaster",
+      "platforms": [
+        "Windows",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "免费增值",
+      "price_summary": "应用防火墙本身免费开源。官网博客 2026-02-24 写明 Portmaster Pro 现价 80 欧元/年。SPN 等高级网络功能是否另计本轮未逐项打开定价页核对。",
+      "prices": [
+        {
+          "plan": "Portmaster（基础应用防火墙）",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "官网写明 free and open-source"
+        },
+        {
+          "plan": "Portmaster Pro",
+          "price": "80",
+          "currency": "EUR",
+          "period": "year",
+          "note": "来源：Safing 博客 “Portmaster Pro price drop: €80/year starting today”（2026-02-24）"
+        }
+      ],
+      "free_tier_limits": "核心应用防火墙与连接监控免费；Pro/SPN 的完整功能边界以官网定价与博客为准，本轮未打开完整对照表",
+      "github_stars": 14062,
+      "latest_release": "2.2.1",
+      "latest_release_date": "2026-07-17",
+      "latest_release_date_note": "官网博客 “Split Tunneling arrives in Portmaster 2.2.1” 标注 17 Jul 2026；未提供时刻。本轮未拉取 GitHub Release",
+      "summary": "开源应用防火墙，可按应用管控联网并拦截跟踪器；不是传统杀毒软件，Pro 按年收费。",
+      "features": {
+        "realtime_protection": {
+          "value": "partial",
+          "note": "实时监控并拦截网络连接，不是恶意软件签名扫描"
+        },
+        "malware_scan": {
+          "value": "no",
+          "note": "定位是应用防火墙/隐私，而非 AV 引擎"
+        },
+        "ransomware_protection": {
+          "value": "no"
+        },
+        "firewall": {
+          "value": "yes",
+          "note": "系统级与按应用规则"
+        },
+        "web_protection": {
+          "value": "partial",
+          "note": "可在 DNS 层拦截广告和跟踪器"
+        },
+        "phishing_protection": {
+          "value": "unknown"
+        },
+        "email_scan": {
+          "value": "no"
+        },
+        "heuristic": {
+          "value": "no"
+        },
+        "vpn_bundle": {
+          "value": "paid",
+          "note": "官方有 SPN 等网络隐私产品，具体是否捆绑在 Pro 本轮未逐项核对"
+        },
+        "password_manager": {
+          "value": "no"
+        },
+        "game_mode": {
+          "value": "unknown"
+        },
+        "cross_platform": {
+          "value": "partial",
+          "note": "Windows 与 Linux，无官方 macOS 桌面（据下载页）"
+        }
+      },
+      "sources": [
+        "https://safing.io",
+        "https://github.com/safing/portmaster"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "wazuh",
+      "name": "Wazuh",
+      "official_url": "https://wazuh.com",
+      "github_url": "https://github.com/wazuh/wazuh",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "云工作负载"
+      ],
+      "open_source": true,
+      "license": "Other（GitHub SPDX 为 Other，本轮未打开 LICENSE 全文核对）",
+      "pricing_model": "免费增值",
+      "price_summary": "开源 XDR/SIEM 平台，软件本身无授权费；提供托管云试用与商业支持/咨询，具体云价本轮未从首页读出。",
+      "prices": [
+        {
+          "plan": "自托管开源平台",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "官网强调 no license cost"
+        },
+        {
+          "plan": "Wazuh Cloud / 商业支持",
+          "price": "未知",
+          "currency": null,
+          "period": null,
+          "note": "有 Free Cloud Trial 与付费服务，具体价目未在首页展示"
+        }
+      ],
+      "free_tier_limits": "自托管社区版无授权费；云托管与专家服务另计",
+      "github_stars": 17694,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "本轮未拉取 GitHub Release 标签",
+      "summary": "开源 XDR/SIEM，面向端点和云工作负载，不是面向家庭用户的一键杀毒软件。",
+      "features": {
+        "realtime_protection": {
+          "value": "partial",
+          "note": "有主动响应和监测，但是企业安全平台而非消费级 AV"
+        },
+        "malware_scan": {
+          "value": "yes",
+          "note": "官网列出 Malware Detection"
+        },
+        "ransomware_protection": {
+          "value": "unknown"
+        },
+        "firewall": {
+          "value": "no"
+        },
+        "web_protection": {
+          "value": "unknown"
+        },
+        "phishing_protection": {
+          "value": "unknown"
+        },
+        "email_scan": {
+          "value": "unknown"
+        },
+        "heuristic": {
+          "value": "yes",
+          "note": "相关与检测、威胁狩猎"
+        },
+        "vpn_bundle": {
+          "value": "no"
+        },
+        "password_manager": {
+          "value": "no"
+        },
+        "game_mode": {
+          "value": "no"
+        },
+        "cross_platform": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://wazuh.com",
+        "https://github.com/wazuh/wazuh"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "crowdsec",
+      "name": "CrowdSec",
+      "official_url": "https://www.crowdsec.net",
+      "github_url": "https://github.com/crowdsecurity/crowdsec",
+      "platforms": [
+        "Linux",
+        "Windows",
+        "FreeBSD",
+        "Kubernetes 等"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "免费增值",
+      "price_summary": "开源 IDS/IPS 引擎免费。商业威胁情报/封锁名单在官网定价页写明：Live Exploit 等从 2000 美元/月起（SMB）；Platinum Blocklists 从 1900 美元/月起（SMB）。这是企业情报产品，不是消费级杀毒订阅。",
+      "prices": [
+        {
+          "plan": "开源引擎",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        },
+        {
+          "plan": "Live Exploit Tracker 等（SMB 起价）",
+          "price": "2000",
+          "currency": "USD",
+          "period": "month",
+          "note": "官网写作 Starting at $2k /month for SMB，按公司规模；另有 OEM 价"
+        },
+        {
+          "plan": "Platinum Blocklists（SMB 起价）",
+          "price": "1900",
+          "currency": "USD",
+          "period": "month",
+          "note": "官网写作 Starting at $1900 /month for SMB"
+        }
+      ],
+      "free_tier_limits": "开源引擎可自用；高质量商业封锁名单和部分控制台能力需付费",
+      "github_stars": 15562,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "本轮未拉取 GitHub Release 标签",
+      "summary": "开源协作式 IDS/IPS，适合服务器和基础设施防护，消费级桌面杀毒不是其定位。",
+      "features": {
+        "realtime_protection": {
+          "value": "partial",
+          "note": "实时检测并封禁恶意 IP，面向服务/基础设施"
+        },
+        "malware_scan": {
+          "value": "no",
+          "note": "不是本地文件杀毒引擎"
+        },
+        "ransomware_protection": {
+          "value": "no"
+        },
+        "firewall": {
+          "value": "partial",
+          "note": "可与防火墙/反向代理/CDN 集成封禁"
+        },
+        "web_protection": {
+          "value": "partial",
+          "note": "常用于保护 Web 服务"
+        },
+        "phishing_protection": {
+          "value": "no"
+        },
+        "email_scan": {
+          "value": "no"
+        },
+        "heuristic": {
+          "value": "yes"
+        },
+        "vpn_bundle": {
+          "value": "no"
+        },
+        "password_manager": {
+          "value": "no"
+        },
+        "game_mode": {
+          "value": "no"
+        },
+        "cross_platform": {
+          "value": "partial",
+          "note": "以服务器/Linux 为主，也有 Windows 等支持"
+        }
+      },
+      "sources": [
+        "https://www.crowdsec.net",
+        "https://docs.crowdsec.net",
+        "https://github.com/crowdsecurity/crowdsec"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "opensnitch",
+      "name": "OpenSnitch",
+      "official_url": "https://github.com/evilsocket/opensnitch",
+      "github_url": "https://github.com/evilsocket/opensnitch",
+      "platforms": [
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费的 Linux 应用防火墙。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无付费档；仅 Linux",
+      "github_stars": 14286,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "仓库约在 2026-07-26 仍有推送；本轮未拉取 Release 标签",
+      "summary": "Linux 开源应用防火墙，拦截未知出站连接，不是杀毒引擎。",
+      "features": {
+        "realtime_protection": {
+          "value": "partial",
+          "note": "实时拦截未知出站连接"
+        },
+        "malware_scan": {
+          "value": "no"
+        },
+        "ransomware_protection": {
+          "value": "no"
+        },
+        "firewall": {
+          "value": "yes"
+        },
+        "web_protection": {
+          "value": "no"
+        },
+        "phishing_protection": {
+          "value": "no"
+        },
+        "email_scan": {
+          "value": "no"
+        },
+        "heuristic": {
+          "value": "no"
+        },
+        "vpn_bundle": {
+          "value": "no"
+        },
+        "password_manager": {
+          "value": "no"
+        },
+        "game_mode": {
+          "value": "no"
+        },
+        "cross_platform": {
+          "value": "no",
+          "note": "仅 Linux"
+        }
+      },
+      "sources": [
+        "https://github.com/evilsocket/opensnitch"
+      ],
+      "archived": false,
+      "last_push_at": "2026-07-26",
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "lulu",
+      "name": "LuLu",
+      "official_url": "https://objective-see.org/products/lulu.html",
+      "github_url": "https://github.com/objective-see/LuLu",
+      "platforms": [
+        "macOS"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费的 macOS 出站防火墙，需 macOS 10.15+。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无付费档；仅 macOS",
+      "github_stars": 13561,
+      "latest_release": "4.5.7",
+      "latest_release_date": null,
+      "latest_release_date_note": "官网产品页显示 Download v4.5.7 · macOS 10.15+，未在摘录中给出发布时刻",
+      "summary": "Objective-See 出品的免费开源 macOS 防火墙，用于拦截未知出站连接。",
+      "features": {
+        "realtime_protection": {
+          "value": "partial",
+          "note": "实时拦截未知出站连接"
+        },
+        "malware_scan": {
+          "value": "no"
+        },
+        "ransomware_protection": {
+          "value": "no"
+        },
+        "firewall": {
+          "value": "yes"
+        },
+        "web_protection": {
+          "value": "no"
+        },
+        "phishing_protection": {
+          "value": "no"
+        },
+        "email_scan": {
+          "value": "no"
+        },
+        "heuristic": {
+          "value": "no"
+        },
+        "vpn_bundle": {
+          "value": "no"
+        },
+        "password_manager": {
+          "value": "no"
+        },
+        "game_mode": {
+          "value": "no"
+        },
+        "cross_platform": {
+          "value": "no",
+          "note": "仅 macOS"
+        }
+      },
+      "sources": [
+        "https://objective-see.org/products/lulu.html",
+        "https://github.com/objective-see/LuLu"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "microsoft-defender",
+      "name": "Microsoft Defender",
+      "official_url": "https://www.microsoft.com/windows/comprehensive-security",
+      "github_url": null,
+      "platforms": [
+        "Windows"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "完全免费",
+      "price_summary": "Windows 安全中心中的 Defender Antivirus 随 Windows 提供，无需额外购买。Microsoft 365 / Defender for Business 等是不同产品，本条只记录随 Windows 附带的消费者防护。",
+      "prices": [
+        {
+          "plan": "Windows 内置 Defender Antivirus",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "随 Windows 提供，本轮未把 Microsoft 365 安全附加包计入此条价格"
+        }
+      ],
+      "free_tier_limits": "作为 Windows 组件提供；跨平台家庭套装或微软 365 安全附加功能不在此“完全免费”声明内",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "随 Windows 更新，无独立消费者版本号可在本轮记录",
+      "summary": "Windows 内置的杀毒与安全中心组件，对大多数个人电脑是默认免费防护。",
+      "features": {
+        "realtime_protection": {
+          "value": "yes"
+        },
+        "malware_scan": {
+          "value": "yes"
+        },
+        "ransomware_protection": {
+          "value": "yes",
+          "note": "Windows 安全中心提供勒索软件相关防护（受控文件夹访问等），具体名称以系统界面为准"
+        },
+        "firewall": {
+          "value": "yes",
+          "note": "与 Windows Defender 防火墙同属 Windows 安全中心"
+        },
+        "web_protection": {
+          "value": "yes",
+          "note": "SmartScreen 等"
+        },
+        "phishing_protection": {
+          "value": "yes"
+        },
+        "email_scan": {
+          "value": "partial",
+          "note": "可扫描本地下载/附件，完整邮件网关是企业产品"
+        },
+        "heuristic": {
+          "value": "yes"
+        },
+        "vpn_bundle": {
+          "value": "no"
+        },
+        "password_manager": {
+          "value": "no"
+        },
+        "game_mode": {
+          "value": "unknown"
+        },
+        "cross_platform": {
+          "value": "no",
+          "note": "此条按 Windows 内置组件记录；其他系统上的微软安全产品未在本轮核对"
+        }
+      },
+      "sources": [
+        "https://www.microsoft.com/windows/comprehensive-security",
+        "https://www.microsoft.com/en-us/windows/comprehensive-security"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "bitdefender",
+      "name": "Bitdefender",
+      "official_url": "https://www.bitdefender.com",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Android",
+        "iOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "订阅",
+      "price_summary": "消费级套餐。官网 Antivirus Plus 多平台页可见：1 成员 1 设备 USD 24.99；最多 3 设备 USD 29.99；Total Security Individual USD 59.99。页面注明 First year price，另加税，并提供 30 天试用。这些很可能是首年促销价。",
+      "prices": [
+        {
+          "plan": "Antivirus Plus Multiplatform（1 设备）",
+          "price": "24.99",
+          "currency": "USD",
+          "period": "year",
+          "note": "官网摘录 avpm/1/1 USD 24.99；标注 First year price，另加税"
+        },
+        {
+          "plan": "Antivirus Plus Multiplatform（最多 3 设备）",
+          "price": "29.99",
+          "currency": "USD",
+          "period": "year",
+          "note": "官网摘录 avpm/3/1 USD 29.99；First year price"
+        },
+        {
+          "plan": "Total Security Individual",
+          "price": "59.99",
+          "currency": "USD",
+          "period": "year",
+          "note": "官网摘录 ts_i/5/1 USD 59.99；设备和期限细节未在摘录中完整展开"
+        }
+      ],
+      "free_tier_limits": "主推 30 天试用；是否另有长期免费扫描工具本轮未在该产品页确认",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "专有软件，本轮未记录客户端版本号",
+      "summary": "评分很高的商业杀毒套装，覆盖多平台，官网展示的价格多为首年价。",
+      "features": {
+        "realtime_protection": {
+          "value": "yes"
+        },
+        "malware_scan": {
+          "value": "yes"
+        },
+        "ransomware_protection": {
+          "value": "yes",
+          "note": "官网强调多层勒索软件防护"
+        },
+        "firewall": {
+          "value": "unknown",
+          "note": "不同套餐可能不同，本轮未打开完整对照表"
+        },
+        "web_protection": {
+          "value": "yes"
+        },
+        "phishing_protection": {
+          "value": "yes",
+          "note": "官网提到 scam/网页防护"
+        },
+        "email_scan": {
+          "value": "unknown"
+        },
+        "heuristic": {
+          "value": "yes",
+          "note": "官网提到行为检测 Advanced Threat Defense"
+        },
+        "vpn_bundle": {
+          "value": "unknown",
+          "note": "可能在更高套餐，未核完"
+        },
+        "password_manager": {
+          "value": "unknown"
+        },
+        "game_mode": {
+          "value": "unknown"
+        },
+        "cross_platform": {
+          "value": "yes",
+          "note": "Windows/Mac/Android/iOS"
+        }
+      },
+      "sources": [
+        "https://www.bitdefender.com/en-us/consumer/antivirus"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "malwarebytes",
+      "name": "Malwarebytes",
+      "official_url": "https://www.malwarebytes.com",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Android",
+        "iOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "官网定价页（采集时）：Standard 3 台设备起 59.99 美元/年；Plus（含 VPN）3 台起 79.99 美元/年；Ultimate 划线 279.99、现价 139.99 美元/年（1 名成人 + 3 台设备，含身份保护）。家庭档 Standard 10 台 119.99 美元/年，Plus Family 149.99，Ultimate Family 划线 399.99、现价 199.99 美元/年（2 成人、10 名儿童、10 台设备）。价格会随促销变化。",
+      "prices": [
+        {
+          "plan": "Standard（3 设备）",
+          "price": "59.99",
+          "currency": "USD",
+          "period": "year",
+          "note": "Starts from $59.99/yr, Protects 3 devices"
+        },
+        {
+          "plan": "Plus（3 设备，含 VPN）",
+          "price": "79.99",
+          "currency": "USD",
+          "period": "year"
+        },
+        {
+          "plan": "Ultimate（促销价）",
+          "price": "139.99",
+          "currency": "USD",
+          "period": "year",
+          "note": "划线价 279.99；1 名成人 + 3 台设备；页面写 Save 50% today"
+        },
+        {
+          "plan": "Standard Family（10 设备）",
+          "price": "119.99",
+          "currency": "USD",
+          "period": "year"
+        },
+        {
+          "plan": "Plus Family（10 设备）",
+          "price": "149.99",
+          "currency": "USD",
+          "period": "year"
+        },
+        {
+          "plan": "Ultimate Family（促销价）",
+          "price": "199.99",
+          "currency": "USD",
+          "period": "year",
+          "note": "划线价 399.99；2 成人、10 名儿童、10 台设备"
+        }
+      ],
+      "free_tier_limits": "历史上提供免费按需扫描，本轮未在定价页完整确认免费实时防护是否仍开放，故免费实时能力记为未知",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "专有软件，本轮未记录客户端版本号",
+      "summary": "商业反恶意软件套装，标准、Plus（VPN）和 Ultimate（身份保护）分层订阅，常有五折促销。",
+      "features": {
+        "realtime_protection": {
+          "value": "yes",
+          "note": "付费设备安全档；免费档是否含实时防护本轮未确认"
+        },
+        "malware_scan": {
+          "value": "yes"
+        },
+        "ransomware_protection": {
+          "value": "unknown"
+        },
+        "firewall": {
+          "value": "unknown"
+        },
+        "web_protection": {
+          "value": "yes"
+        },
+        "phishing_protection": {
+          "value": "unknown"
+        },
+        "email_scan": {
+          "value": "unknown"
+        },
+        "heuristic": {
+          "value": "unknown"
+        },
+        "vpn_bundle": {
+          "value": "paid",
+          "note": "从 Plus 档开始包含 VPN"
+        },
+        "password_manager": {
+          "value": "no"
+        },
+        "game_mode": {
+          "value": "unknown"
+        },
+        "cross_platform": {
+          "value": "yes",
+          "note": "文案覆盖 PC、平板和手机"
+        }
+      },
+      "sources": [
+        "https://www.malwarebytes.com/pricing"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "kaspersky",
+      "name": "Kaspersky",
+      "official_url": "https://www.kaspersky.com",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Android",
+        "iOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "订阅",
+      "price_summary": "消费级有 Standard / Plus / Premium 等档（官网家庭安全页列出 12/17/24 项防护特征）。具体美元价在本轮抓取的页面文本中未能读出，记为未知。部分地区对卡巴斯基产品有合规或渠道限制，建站时需单独标注。",
+      "prices": [
+        {
+          "plan": "Standard",
+          "price": "未知",
+          "currency": null,
+          "period": null,
+          "note": "官网确认有该计划，金额未出现在已抓取文本中"
+        },
+        {
+          "plan": "Plus",
+          "price": "未知",
+          "currency": null,
+          "period": null
+        },
+        {
+          "plan": "Premium",
+          "price": "未知",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "未在已抓取家庭安全页中确认长期免费档",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "专有软件，本轮未记录客户端版本号",
+      "summary": "老牌商业杀毒套装，分层订阅，但本轮未能从官网上读出具体标价。",
+      "features": {
+        "realtime_protection": {
+          "value": "yes"
+        },
+        "malware_scan": {
+          "value": "yes"
+        },
+        "ransomware_protection": {
+          "value": "unknown"
+        },
+        "firewall": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "web_protection": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "phishing_protection": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "email_scan": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "heuristic": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "vpn_bundle": {
+          "value": "unknown",
+          "note": "有独立 Kaspersky VPN 产品入口，是否捆在 Plus/Premium 未核完"
+        },
+        "password_manager": {
+          "value": "unknown"
+        },
+        "game_mode": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "cross_platform": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://www.kaspersky.com/home-security"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "norton",
+      "name": "Norton",
+      "official_url": "https://us.norton.com",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Android",
+        "iOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "订阅",
+      "price_summary": "官网定价页 HTML 中出现多个 MSRP，如 29.99、59.99、94.99、119.99、189.99、79.99、399.99、299.99、179.99 美元等，但本轮未能把 SKU 可靠对应到具体计划名称，故不把这些数字直接写成某套餐价格。",
+      "prices": [
+        {
+          "plan": "消费级套餐（具体档位未可靠对应）",
+          "price": "未知",
+          "currency": "USD",
+          "period": "year",
+          "note": "定价页可见多档 MSRP（约 29.99–399.99 美元），SKU 与计划名未能可靠解析"
+        }
+      ],
+      "free_tier_limits": "未确认长期免费档",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "专有软件，本轮未记录客户端版本号",
+      "summary": "主流商业安全套装，常捆绑 VPN 与身份保护，具体套餐价因页面结构未能在本轮可靠对应。",
+      "features": {
+        "realtime_protection": {
+          "value": "yes"
+        },
+        "malware_scan": {
+          "value": "yes"
+        },
+        "ransomware_protection": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "firewall": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "web_protection": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "phishing_protection": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "email_scan": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "heuristic": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "vpn_bundle": {
+          "value": "unknown",
+          "note": "Norton 产品线常含 VPN，但未在本轮对照表中核实哪一档包含"
+        },
+        "password_manager": {
+          "value": "unknown"
+        },
+        "game_mode": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "cross_platform": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://us.norton.com"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "eset",
+      "name": "ESET",
+      "official_url": "https://www.eset.com",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Android"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "订阅",
+      "price_summary": "官网定价页 HTML 中出现多个 data-price，如 39.99、44.99、49.99、54.99、59.99 美元以及 2/3 年对应价，并有 2 年约 15% 优惠等说明。因本轮未能把价格可靠对应到 NOD32 / Internet Security 等具体产品名，不把某一数字写成某一产品的确定售价。",
+      "prices": [
+        {
+          "plan": "消费级套餐（产品名与价格未可靠对应）",
+          "price": "未知",
+          "currency": "USD",
+          "period": "year",
+          "note": "定价页可见约 39.99 美元起的多档年价，但产品名称映射未可靠解析"
+        }
+      ],
+      "free_tier_limits": "未确认长期免费档",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "专有软件，本轮未记录客户端版本号",
+      "summary": "以轻量著称的商业杀毒产品线，官网有明确标价，但本轮未能把价位准确落到具体产品名。",
+      "features": {
+        "realtime_protection": {
+          "value": "yes"
+        },
+        "malware_scan": {
+          "value": "yes"
+        },
+        "ransomware_protection": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "firewall": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "web_protection": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "phishing_protection": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "email_scan": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "heuristic": {
+          "value": "yes"
+        },
+        "vpn_bundle": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "password_manager": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "game_mode": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "cross_platform": {
+          "value": "partial",
+          "note": "常见 Windows/macOS/Android；iOS 是否包含未核完"
+        }
+      },
+      "sources": [
+        "https://www.eset.com"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    }
+  ],
+  "notes": "本类同时收录消费级杀毒套装与开源防火墙/XDR/IDS（Portmaster、OpenSnitch、LuLu、Wazuh、CrowdSec、ClamAV）。后几者不是传统家用杀毒，但同属桌面/主机安全，便于对照免费与开源选项。"
+}

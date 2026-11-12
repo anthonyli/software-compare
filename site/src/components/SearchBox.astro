@@ -1,0 +1,290 @@
+---
+// SPDX-License-Identifier: Apache-2.0
+import { ui } from "../i18n";
+interface Props {
+  compact?: boolean;
+  autofocus?: boolean;
+  id?: string;
+}
+const { compact = false, autofocus = false, id } = Astro.props;
+const inputId = id || (compact ? "site-search-header" : "site-search-hero");
+const listId = `${inputId}-list`;
+---
+
+<div
+  class:list={["search-root", compact ? "search-compact" : "search-hero"]}
+  data-search
+  data-primary={compact ? undefined : "true"}
+>
+  <label class="sr-only" for={inputId}><span class="t-zh">{ui.zh.searchSoftware}</span><span class="t-en">{ui.en.searchSoftware}</span></label>
+  <div class="search-field">
+    <svg class="search-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+      <circle cx="7" cy="7" r="4.5" stroke="currentColor" stroke-width="1.4"></circle>
+      <path d="M10.4 10.4L14 14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"></path>
+    </svg>
+    <input
+      id={inputId}
+      type="search"
+      name="q"
+      autocomplete="off"
+      placeholder={ui.zh.searchPlaceholder}
+      data-search-input
+      data-i18n="placeholder"
+      data-zh={ui.zh.searchPlaceholder}
+      data-en={ui.en.searchPlaceholder}
+      role="combobox"
+      aria-expanded="false"
+      aria-autocomplete="list"
+      aria-controls={listId}
+      aria-keyshortcuts="/"
+      autofocus={autofocus}
+    />
+    <kbd class="search-kbd" aria-hidden="true">/</kbd>
+    {!compact && (
+      <button type="button" class="search-submit" data-search-submit>
+        <span class="t-zh">{ui.zh.search}</span><span class="t-en">{ui.en.search}</span>
+        <span aria-hidden="true">→</span>
+      </button>
+    )}
+  </div>
+  <div
+    class="search-results"
+    data-search-results
+    id={listId}
+    role="listbox"
+    hidden
+  >
+  </div>
+</div>
+
+<script>
+  type Hit = {
+    name: string;
+    summary: string;
+    summary_en?: string;
+    category_name: string;
+    category_name_en?: string;
+    href: string;
+    pricing_model: string;
+    pricing_model_en?: string;
+    open_source: boolean;
+  };
+
+  function currentLang(): string {
+    return document.documentElement.lang === "en" ? "en" : "zh-CN";
+  }
+
+  let index: Hit[] | null = null;
+  let loading: Promise<Hit[]> | null = null;
+
+  async function loadIndex(): Promise<Hit[]> {
+    if (index) return index;
+    if (!loading) {
+      loading = fetch("/search-index.json")
+        .then((r) => r.json())
+        .then((data) => {
+          index = data.products as Hit[];
+          return index;
+        });
+    }
+    return loading;
+  }
+
+  function escapeHtml(text: string): string {
+    return text.replace(/[&<>"']/g, (c) => (
+      { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c] as string
+    ));
+  }
+
+  function highlight(text: string, q: string): string {
+    const esc = escapeHtml(text);
+    if (!q) return esc;
+    const parts = q.trim().split(/\s+/).filter(Boolean).map((s) =>
+      s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"),
+    );
+    if (!parts.length) return esc;
+    try {
+      return esc.replace(new RegExp(`(${parts.join("|")})`, "gi"), "<mark>$1</mark>");
+    } catch {
+      return esc;
+    }
+  }
+
+  function search(items: Hit[], q: string): Hit[] {
+    const tokens = q.trim().toLowerCase().split(/\s+/).filter(Boolean);
+    if (!tokens.length) return [];
+    return items
+      .map((item) => {
+        const hay = `${item.name} ${item.summary} ${item.summary_en || ""} ${item.category_name} ${item.category_name_en || ""} ${item.pricing_model} ${item.pricing_model_en || ""} ${item.open_source ? "开源 open source oss" : ""}`.toLowerCase();
+        const ok = tokens.every((t) => hay.includes(t));
+        const score = ok
+          ? (item.name.toLowerCase().startsWith(tokens[0]) ? 0 : item.name.toLowerCase().includes(tokens[0]) ? 1 : 2)
+          : 99;
+        return { item, score, ok };
+      })
+      .filter((x) => x.ok)
+      .sort((a, b) => a.score - b.score || a.item.name.localeCompare(b.item.name, "zh-CN"))
+      .slice(0, 12)
+      .map((x) => x.item);
+  }
+
+  function isShown(el: HTMLElement): boolean {
+    let p: HTMLElement | null = el;
+    while (p) {
+      const c = getComputedStyle(p);
+      if (c.display === "none" || c.visibility === "hidden" || Number(c.opacity) === 0) return false;
+      if (
+        p.classList.contains("header-search") &&
+        document.body.classList.contains("is-home") &&
+        !document.body.classList.contains("is-scrolled")
+      ) {
+        return false;
+      }
+      p = p.parentElement;
+    }
+    return true;
+  }
+
+  function preferredInput(): HTMLInputElement | null {
+    const inputs = [...document.querySelectorAll("[data-search-input]")] as HTMLInputElement[];
+    const visible = inputs.filter(isShown);
+    return (
+      visible.find((el) => el.closest("[data-primary]")) ||
+      visible[0] ||
+      null
+    );
+  }
+
+  type RootState = { active: number; hits: Hit[]; q: string };
+
+  const states = new WeakMap<Element, RootState>();
+
+  function closeBox(root: Element) {
+    const box = root.querySelector("[data-search-results]") as HTMLElement;
+    const input = root.querySelector("[data-search-input]") as HTMLInputElement;
+    box.hidden = true;
+    box.innerHTML = "";
+    root.classList.remove("is-open");
+    input.setAttribute("aria-expanded", "false");
+    input.removeAttribute("aria-activedescendant");
+    const st = states.get(root);
+    if (st) st.active = -1;
+  }
+
+  function render(root: Element, hits: Hit[], q: string, active: number) {
+    const box = root.querySelector("[data-search-results]") as HTMLElement;
+    const input = root.querySelector("[data-search-input]") as HTMLInputElement;
+    const listId = box.id;
+    if (!q.trim()) {
+      closeBox(root);
+      return;
+    }
+    box.hidden = false;
+    root.classList.add("is-open");
+    input.setAttribute("aria-expanded", "true");
+    if (!hits.length) {
+      const empty = currentLang() === "en"
+        ? `No results for “${escapeHtml(q)}”`
+        : `没有找到「${escapeHtml(q)}」`;
+      box.innerHTML = `<div class="px-3 py-3 text-sm text-muted">${empty}</div>`;
+      input.removeAttribute("aria-activedescendant");
+      return;
+    }
+    const idx = Math.max(0, Math.min(active, hits.length - 1));
+    states.set(root, { active: idx, hits, q });
+    box.innerHTML = hits
+      .map(
+        (h, i) => `<a href="${h.href}" class="search-hit${i === idx ? " is-active" : ""}" role="option" id="${listId}-opt-${i}" aria-selected="${i === idx ? "true" : "false"}">
+          <div class="flex items-baseline justify-between gap-2">
+            <span class="font-medium tracking-tight">${highlight(h.name, q)}</span>
+            <span class="shrink-0 text-xs text-muted">${escapeHtml(currentLang() === "en" ? (h.category_name_en || h.category_name) : h.category_name)}</span>
+          </div>
+          <div class="mt-0.5 line-clamp-1 text-xs text-muted">${highlight((currentLang() === "en" ? (h.summary_en || h.summary) : h.summary) || (currentLang() === "en" ? (h.pricing_model_en || h.pricing_model) : h.pricing_model), q)}</div>
+        </a>`,
+      )
+      .join("");
+    input.setAttribute("aria-activedescendant", `${listId}-opt-${idx}`);
+    const activeEl = box.querySelector(".is-active") as HTMLElement | null;
+    activeEl?.scrollIntoView({ block: "nearest" });
+  }
+
+  document.querySelectorAll("[data-search]").forEach((root) => {
+    const input = root.querySelector("[data-search-input]") as HTMLInputElement;
+    let timer = 0;
+    const run = async (keepActive = false) => {
+      const q = input.value;
+      const items = await loadIndex();
+      const hits = search(items, q);
+      const prev = states.get(root);
+      const active = keepActive && prev ? prev.active : 0;
+      render(root, hits, q, active);
+    };
+    input.addEventListener("input", () => {
+      window.clearTimeout(timer);
+      timer = window.setTimeout(() => run(false), 80);
+    });
+    input.addEventListener("focus", () => run(true));
+    input.addEventListener("keydown", (e) => {
+      const st = states.get(root);
+      const box = root.querySelector("[data-search-results]") as HTMLElement;
+      if (e.key === "Escape") {
+        e.preventDefault();
+        if (!box.hidden) closeBox(root);
+        else input.blur();
+        return;
+      }
+      if (!st || box.hidden || !st.hits.length) return;
+      if (e.key === "ArrowDown") {
+        e.preventDefault();
+        render(root, st.hits, st.q, st.active + 1);
+      } else if (e.key === "ArrowUp") {
+        e.preventDefault();
+        render(root, st.hits, st.q, st.active - 1);
+      } else if (e.key === "Enter") {
+        const hit = st.hits[st.active];
+        if (hit) {
+          e.preventDefault();
+          window.location.href = hit.href;
+        }
+      }
+    });
+
+    const submit = root.querySelector("[data-search-submit]") as HTMLButtonElement | null;
+    submit?.addEventListener("click", (e) => {
+      e.preventDefault();
+      const st = states.get(root);
+      if (st && st.hits.length) {
+        window.location.href = st.hits[Math.max(0, st.active)].href;
+        return;
+      }
+      input.focus();
+      run(false);
+    });
+
+  });
+
+  document.addEventListener("click", (e) => {
+    document.querySelectorAll("[data-search]").forEach((root) => {
+      if (!root.contains(e.target as Node)) closeBox(root);
+    });
+  });
+
+  window.addEventListener("compare-lang", () => {
+    document.querySelectorAll("[data-search]").forEach((root) => {
+      const input = root.querySelector("[data-search-input]") as HTMLInputElement | null;
+      if (input && input.value.trim()) input.dispatchEvent(new Event("input"));
+    });
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key !== "/" || e.metaKey || e.ctrlKey || e.altKey) return;
+    const t = e.target as HTMLElement | null;
+    const tag = t?.tagName;
+    if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT" || t?.isContentEditable) return;
+    const input = preferredInput();
+    if (!input) return;
+    e.preventDefault();
+    input.focus();
+    input.select();
+  });
+</script>

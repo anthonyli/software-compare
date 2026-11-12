@@ -1,0 +1,1458 @@
+{
+  "category_slug": "note-taking",
+  "category_name_zh": "笔记软件",
+  "collected_at": "2026-11-12",
+  "collected_at_timezone": "Asia/Shanghai (UTC+8)",
+  "features": [
+    {
+      "key": "markdown",
+      "label": "Markdown"
+    },
+    {
+      "key": "rich_text",
+      "label": "富文本"
+    },
+    {
+      "key": "folders",
+      "label": "笔记本/文件夹"
+    },
+    {
+      "key": "tags",
+      "label": "标签"
+    },
+    {
+      "key": "web_clipper",
+      "label": "网页剪藏"
+    },
+    {
+      "key": "sync",
+      "label": "多端同步"
+    },
+    {
+      "key": "offline",
+      "label": "离线使用"
+    },
+    {
+      "key": "e2e_encrypt",
+      "label": "端到端加密"
+    },
+    {
+      "key": "attachments",
+      "label": "附件"
+    },
+    {
+      "key": "plugins",
+      "label": "插件扩展"
+    },
+    {
+      "key": "collaboration",
+      "label": "协作共享"
+    },
+    {
+      "key": "mobile",
+      "label": "移动端"
+    }
+  ],
+  "products": [
+    {
+      "id": "joplin",
+      "name": "Joplin",
+      "official_url": "https://joplinapp.org/plans/",
+      "github_url": "https://github.com/laurent22/joplin",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android",
+        "Web"
+      ],
+      "open_source": true,
+      "license": "AGPL-3.0-or-later",
+      "pricing_model": "免费增值",
+      "price_summary": "客户端完全免费开源，可用自建或第三方存储同步。官方 Joplin Cloud Basic 2.99€/月或 2.40€/月（年付，28.69€/年）；Pro 5.99€/月或 4.79€/月（57.48€/年）；Pro 100GB 9.99€/月或 7.99€/月（95.88€/年）；Teams 7.99€/月或 6.69€/月（80.28€/年，标有*）。",
+      "prices": [
+        {
+          "plan": "客户端（自建/自备同步）",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "应用开源；可用 Nextcloud、Dropbox、OneDrive 等自行同步"
+        },
+        {
+          "plan": "Joplin Cloud Basic（年付折算）",
+          "price": "2.40",
+          "currency": "EUR",
+          "period": "month",
+          "note": "官网：2.40€ /month (28.69€ /year)；月付 2.99€。2 GB 空间，10 MB per note or attachment"
+        },
+        {
+          "plan": "Joplin Cloud Pro（年付折算）",
+          "price": "4.79",
+          "currency": "EUR",
+          "period": "month",
+          "note": "5.99€/月或 4.79€/月（57.48€/年）；200 MB/附件，30 GB，可升级到 100 GB"
+        },
+        {
+          "plan": "Joplin Cloud Pro 100 GB（年付折算）",
+          "price": "7.99",
+          "currency": "EUR",
+          "period": "month",
+          "note": "9.99€/月或 7.99€/月（95.88€/年）"
+        },
+        {
+          "plan": "Joplin Cloud Teams（年付折算）",
+          "price": "6.69",
+          "currency": "EUR",
+          "period": "month",
+          "note": "7.99€/月或 6.69€/月（80.28€/年），页面标有星号，细节以官网为准"
+        }
+      ],
+      "free_tier_limits": "应用本身无功能墙。Joplin Cloud 需付费（有免费试用入口 Start free trial）。免费同步需自备 Dropbox/OneDrive/Nextcloud 等。",
+      "github_stars": 57149,
+      "latest_release": "3.7.22",
+      "latest_release_date": "2026-10-29 06:32",
+      "latest_release_date_note": "GitHub 标签 v3.7.22，已转换为 Asia/Shanghai",
+      "maintenance_status": "活跃",
+      "summary": "成熟的开源笔记应用，Markdown、笔记本、标签和端到端加密都齐全，官方同步云是订阅，也可自己接网盘。",
+      "features": {
+        "markdown": {
+          "value": "yes",
+          "note": "Markdown 笔记为核心"
+        },
+        "rich_text": {
+          "value": "partial",
+          "note": "以 Markdown 为主，编辑器可预览；非 Notion 式积木"
+        },
+        "folders": {
+          "value": "yes",
+          "note": "notebooks"
+        },
+        "tags": {
+          "value": "yes",
+          "note": "支持标签"
+        },
+        "web_clipper": {
+          "value": "yes",
+          "note": "官方提供 Web Clipper（常见官方能力；定价页本身侧重 Cloud，剪藏随客户端提供）"
+        },
+        "sync": {
+          "value": "yes",
+          "note": "可自建或 Joplin Cloud；Cloud 为付费托管"
+        },
+        "offline": {
+          "value": "yes",
+          "note": "离线优先客户端"
+        },
+        "e2e_encrypt": {
+          "value": "yes",
+          "note": "可开启端到端加密"
+        },
+        "attachments": {
+          "value": "yes",
+          "note": "可附文件，Cloud 各档有大小/容量限制"
+        },
+        "plugins": {
+          "value": "yes",
+          "note": "有插件系统"
+        },
+        "collaboration": {
+          "value": "paid",
+          "note": "共享笔记本等写在 Joplin Cloud 计划中"
+        },
+        "mobile": {
+          "value": "yes",
+          "note": "Android 与 iOS"
+        }
+      },
+      "sources": [
+        "https://joplinapp.org/plans/",
+        "https://github.com/laurent22/joplin",
+        "https://raw.githubusercontent.com/laurent22/joplin/dev/LICENSE"
+      ]
+    },
+    {
+      "id": "logseq",
+      "name": "Logseq",
+      "official_url": "https://logseq.com",
+      "github_url": "https://github.com/logseq/logseq",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android"
+      ],
+      "open_source": true,
+      "license": "AGPL-3.0",
+      "pricing_model": "完全免费",
+      "price_summary": "开源客户端免费。官网首页本次抓取几乎为空白（约 2KB，疑似需 JavaScript），官方同步/云服务是否收费未能从页面确认，故不编造价格。",
+      "prices": [
+        {
+          "plan": "开源客户端",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "GitHub 仓库 AGPL-3.0，本地优先的大纲/双向链接笔记"
+        }
+      ],
+      "free_tier_limits": "本地使用无应用收费。官方同步服务价格未知。",
+      "github_stars": 45561,
+      "latest_release": "2.0.2",
+      "latest_release_date": "2026-10-07 22:18",
+      "latest_release_date_note": "GitHub 标签 2.0.2，已转换为 Asia/Shanghai",
+      "maintenance_status": "活跃",
+      "summary": "开源的本地优先大纲与双向链接笔记，GitHub 仍活跃；官网营销页本次无法解析，官方云定价记为未知。",
+      "features": {
+        "markdown": {
+          "value": "yes",
+          "note": "以 Markdown/大纲文件为基础"
+        },
+        "rich_text": {
+          "value": "partial",
+          "note": "块状大纲，不是传统 Word 富文本"
+        },
+        "folders": {
+          "value": "partial",
+          "note": "以页面/图谱/命名空间组织，不同于传统笔记本树"
+        },
+        "tags": {
+          "value": "yes",
+          "note": "标签与双向链接"
+        },
+        "web_clipper": {
+          "value": "unknown",
+          "note": "官网页无法解析，未确认"
+        },
+        "sync": {
+          "value": "unknown",
+          "note": "支持同步，但官方同步是否免费未能从本次页面确认"
+        },
+        "offline": {
+          "value": "yes",
+          "note": "本地优先"
+        },
+        "e2e_encrypt": {
+          "value": "unknown",
+          "note": "本次未能从官网确认"
+        },
+        "attachments": {
+          "value": "yes",
+          "note": "可附资产到本地库，细节未打开文档页"
+        },
+        "plugins": {
+          "value": "yes",
+          "note": "有插件/市场生态（项目一贯能力，仓库与社区可见）"
+        },
+        "collaboration": {
+          "value": "unknown",
+          "note": "未能从官网确认"
+        },
+        "mobile": {
+          "value": "yes",
+          "note": "有 iOS/Android 客户端（项目长期提供；本次官网未解析到下载说明，已知仓库/发布仍在更新）"
+        }
+      },
+      "sources": [
+        "https://logseq.com",
+        "https://github.com/logseq/logseq"
+      ]
+    },
+    {
+      "id": "affine",
+      "name": "AFFiNE",
+      "official_url": "https://affine.pro/pricing",
+      "github_url": "https://github.com/toeverything/AFFiNE",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "open_source": true,
+      "license": "编辑器等为 MIT；packages/backend 与部分 native 目录使用单独许可证（开放核心）",
+      "pricing_model": "免费增值",
+      "price_summary": "个人可免费使用，编辑器 MIT、可自托管。官网列出 Pro $6.75/月、Team $10/席/月（年付表述）、AI 附加 $8.9/月（年付）、Believer 一次性 $499.99。自托管 Team 亦出现 $10/席/月（年付）。",
+      "prices": [
+        {
+          "plan": "Free",
+          "price": "0",
+          "currency": "USD",
+          "period": "month",
+          "note": "官网：Free for personal use；MIT editor, local-first"
+        },
+        {
+          "plan": "Pro",
+          "price": "6.75",
+          "currency": "USD",
+          "period": "month",
+          "note": "定价页：Pro For family and small teams. $6.75 per month"
+        },
+        {
+          "plan": "Team",
+          "price": "10",
+          "currency": "USD",
+          "period": "month",
+          "note": "$10 per seat/month；文案写 Both in Teams & Enterprise / billed annually 出现在自托管说明中"
+        },
+        {
+          "plan": "AFFiNE AI",
+          "price": "8.9",
+          "currency": "USD",
+          "period": "month",
+          "note": "$8.9 / month billed annually"
+        },
+        {
+          "plan": "Believer Plan",
+          "price": "499.99",
+          "currency": "USD",
+          "period": "lifetime",
+          "note": "一次性，终身个人使用 AFFiNE Pro（以官网说明为准）"
+        }
+      ],
+      "free_tier_limits": "免费档可用于个人；完整团队、AI 与部分云能力需付费。精确免费限额（存储/成员）本次摘录未全部展开。",
+      "github_stars": 74479,
+      "latest_release": "0.27.4",
+      "latest_release_date": "2026-08-19 00:51",
+      "latest_release_date_note": "GitHub 标签 v0.27.4，已转换为 Asia/Shanghai。仓库 pushed_at 2026-11-12 仍活跃。",
+      "maintenance_status": "活跃",
+      "summary": "开源（开放核心）的文档+白板工作区，定位介于 Notion 与白板之间，有免费档和多种订阅/买断。",
+      "features": {
+        "markdown": {
+          "value": "yes",
+          "note": "文档编辑，官网强调 docs 与本地优先"
+        },
+        "rich_text": {
+          "value": "yes",
+          "note": "块编辑/富文档"
+        },
+        "folders": {
+          "value": "yes",
+          "note": "工作区与页面组织"
+        },
+        "tags": {
+          "value": "unknown",
+          "note": "定价页未单独强调标签"
+        },
+        "web_clipper": {
+          "value": "unknown",
+          "note": "定价页未确认"
+        },
+        "sync": {
+          "value": "yes",
+          "note": "云同步为产品卖点；也可自托管"
+        },
+        "offline": {
+          "value": "yes",
+          "note": "local-first by design"
+        },
+        "e2e_encrypt": {
+          "value": "unknown",
+          "note": "定价页强调隐私但未写明端到端加密"
+        },
+        "attachments": {
+          "value": "unknown",
+          "note": "未在定价页确认限额"
+        },
+        "plugins": {
+          "value": "unknown",
+          "note": "未在定价页确认插件市场"
+        },
+        "collaboration": {
+          "value": "yes",
+          "note": "Team/Edgeless 协作是卖点；完整团队能力在付费档"
+        },
+        "mobile": {
+          "value": "unknown",
+          "note": "定价页本次摘录未明确列出官方移动端"
+        }
+      },
+      "sources": [
+        "https://affine.pro/pricing",
+        "https://github.com/toeverything/AFFiNE",
+        "https://raw.githubusercontent.com/toeverything/AFFiNE/canary/LICENSE"
+      ]
+    },
+    {
+      "id": "appflowy",
+      "name": "AppFlowy",
+      "official_url": "https://appflowy.com/pricing",
+      "github_url": "https://github.com/AppFlowy-IO/AppFlowy",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "AGPL-3.0",
+      "pricing_model": "免费增值",
+      "price_summary": "Personal 云服务 $0/月。Pro $12/成员/月（年付，$144/年）或 $16/成员/月（月付）。也可自托管。免费云存储最高 100 MB，单文件 7 MB，版本历史 7 天。",
+      "prices": [
+        {
+          "plan": "Personal（云）",
+          "price": "0",
+          "currency": "USD",
+          "period": "month",
+          "note": "官网：Personal $0 / month；1 名 workspace owner，存储至 100 MB，文件至 7 MB，版本历史 7 天"
+        },
+        {
+          "plan": "Pro（年付）",
+          "price": "12",
+          "currency": "USD",
+          "period": "month",
+          "note": "$12 / member / month billed annually（$144/成员/年）；月付 $16。无限成员（按人计费）、无限存储、版本历史 90 天"
+        }
+      ],
+      "free_tier_limits": "云免费档：仅 1 个 workspace owner、存储最多 100 MB、上传文件最大 7 MB、版本历史 7 天、部分 AI 为有限试用、发布页面等受限。自托管另计。",
+      "github_stars": 78780,
+      "latest_release": "0.15.0",
+      "latest_release_date": "2026-11-03 07:40",
+      "latest_release_date_note": "GitHub 标签 0.15.0，已转换为 Asia/Shanghai。官网横幅亦写 v 0.15.0。",
+      "maintenance_status": "活跃",
+      "summary": "开源的 Notion 类工作区，可自托管；官方云有免费个人档，团队协作和更大存储走 Pro。",
+      "features": {
+        "markdown": {
+          "value": "yes",
+          "note": "文档/笔记工作区，支持常见文档编辑"
+        },
+        "rich_text": {
+          "value": "yes",
+          "note": "块文档与数据库视图"
+        },
+        "folders": {
+          "value": "yes",
+          "note": "空间与页面"
+        },
+        "tags": {
+          "value": "unknown",
+          "note": "定价页未单独列出"
+        },
+        "web_clipper": {
+          "value": "unknown",
+          "note": "定价页未确认"
+        },
+        "sync": {
+          "value": "yes",
+          "note": "AppFlowy Cloud；也可自托管"
+        },
+        "offline": {
+          "value": "yes",
+          "note": "本地/桌面应用，可离线（云功能依赖网络）"
+        },
+        "e2e_encrypt": {
+          "value": "unknown",
+          "note": "定价页未写明端到端加密"
+        },
+        "attachments": {
+          "value": "partial",
+          "note": "免费档单文件最大 7 MB、总空间 100 MB；Pro 为 Unlimited"
+        },
+        "plugins": {
+          "value": "unknown",
+          "note": "未在定价页确认"
+        },
+        "collaboration": {
+          "value": "paid",
+          "note": "多成员按 Pro 每席计费；免费档 1 名 owner"
+        },
+        "mobile": {
+          "value": "unknown",
+          "note": "定价页本次未明确写出移动端；存在与否需另查下载页"
+        }
+      },
+      "sources": [
+        "https://appflowy.com/pricing",
+        "https://github.com/AppFlowy-IO/AppFlowy"
+      ]
+    },
+    {
+      "id": "siyuan",
+      "name": "思源笔记",
+      "official_url": "https://b3log.org/siyuan/pricing.html",
+      "github_url": "https://github.com/siyuan-note/siyuan",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android"
+      ],
+      "open_source": true,
+      "license": "AGPL-3.0",
+      "pricing_model": "免费增值",
+      "price_summary": "本地存储完全免费。一次性「功能特性」￥80（划线￥96）终身，含第三方 S3/WebDAV 同步接口但不含存储。年付订阅现价￥148/年（划线￥192）含 8GB 官方云存储及官方同步；英文页另有美元标价（功能特性 $64 终身、订阅页出现 $148 等），存在中英文案差异，建议以对应语言页面为准。",
+      "prices": [
+        {
+          "plan": "本地基础功能",
+          "price": "0",
+          "currency": "CNY",
+          "period": "lifetime",
+          "note": "中文定价页：完全免费，本地存储，￥0 终身"
+        },
+        {
+          "plan": "功能特性（一次买断）",
+          "price": "80",
+          "currency": "CNY",
+          "period": "lifetime",
+          "note": "￥80 终身（划线￥96）；含第三方 S3/WebDAV 接口，不含存储，WebDAV 不支持坚果云"
+        },
+        {
+          "plan": "年付订阅（8GB 官方云）",
+          "price": "148",
+          "currency": "CNY",
+          "period": "year",
+          "note": "￥148 每年（划线￥192）；含官方同步备份、图床、云收集箱、微信提醒等。订阅后不支持退款，可先试用订阅"
+        }
+      ],
+      "free_tier_limits": "本地笔记、块编辑、双链、数据库等基础功能免费。官方同步、8GB 云空间和部分云功能需年付订阅；若只用第三方 S3/WebDAV，可买一次性功能特性并自备存储。",
+      "github_stars": 47200,
+      "latest_release": "3.8.10",
+      "latest_release_date": "2026-11-10 12:13",
+      "latest_release_date_note": "GitHub 标签 v3.8.10，已转换为 Asia/Shanghai",
+      "maintenance_status": "活跃",
+      "summary": "国产开源、本地优先的块笔记，双链和数据库较完整；官方同步和云空间走年费，也可自己接对象存储。",
+      "features": {
+        "markdown": {
+          "value": "yes",
+          "note": "支持 Markdown，块式编辑"
+        },
+        "rich_text": {
+          "value": "yes",
+          "note": "所见即所得块编辑，多种块与行级元素"
+        },
+        "folders": {
+          "value": "yes",
+          "note": "文档树/笔记本组织"
+        },
+        "tags": {
+          "value": "unknown",
+          "note": "首页未作为最核心卖点展开，可能支持，未确认"
+        },
+        "web_clipper": {
+          "value": "unknown",
+          "note": "首页未确认"
+        },
+        "sync": {
+          "value": "paid",
+          "note": "端到端加密同步是卖点，但官方同步在订阅内；也可买功能特性后用 S3/WebDAV"
+        },
+        "offline": {
+          "value": "yes",
+          "note": "数据完全在本地，无网也可使用"
+        },
+        "e2e_encrypt": {
+          "value": "yes",
+          "note": "官网：多设备数据同步基于端到端加密"
+        },
+        "attachments": {
+          "value": "yes",
+          "note": "可存资源文件；官方云仅 8GB"
+        },
+        "plugins": {
+          "value": "partial",
+          "note": "可用挂件块扩展"
+        },
+        "collaboration": {
+          "value": "partial",
+          "note": "可用 Docker 部署并通过锁屏密码控制访问，官网称方便多人协作，并非完整实时协作套件"
+        },
+        "mobile": {
+          "value": "yes",
+          "note": "有移动端，并支持移动端伺服到电脑浏览器"
+        }
+      },
+      "sources": [
+        "https://b3log.org/siyuan",
+        "https://b3log.org/siyuan/pricing.html",
+        "https://github.com/siyuan-note/siyuan"
+      ]
+    },
+    {
+      "id": "notesnook",
+      "name": "Notesnook",
+      "official_url": "https://notesnook.com/pricing",
+      "github_url": "https://github.com/streetwriters/notesnook",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android",
+        "Web"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "免费增值",
+      "price_summary": "无限加密笔记免费。付费价以新加坡元结算：Essential 年付 SGD 2.33/月（28.00/年）或月付 2.79；Pro 年付 8.17/月（98.06/年）或月付 9.79，另有 5 年计划 7.00/月（420.29）；Believer 年付 10.51/月（126.08/年）等。均含税，付费档有 14 天试用。",
+      "prices": [
+        {
+          "plan": "Free",
+          "price": "0",
+          "currency": "SGD",
+          "period": "month",
+          "note": "SGD 0.00 / month；无限笔记与设备；存储 50MB/月，文件 10MB，笔记本 50，颜色 7"
+        },
+        {
+          "plan": "Essential（年付）",
+          "price": "28.00",
+          "currency": "SGD",
+          "period": "year",
+          "note": "折合 SGD 2.33/月；存储 1GB/月，文件 100MB，笔记本 500"
+        },
+        {
+          "plan": "Pro（年付）",
+          "price": "98.06",
+          "currency": "SGD",
+          "period": "year",
+          "note": "折合 SGD 8.17/月；存储 10GB/月，文件 1GB，笔记本不限。另有月付 9.79 与 5 年计划"
+        },
+        {
+          "plan": "Believer（年付）",
+          "price": "126.08",
+          "currency": "SGD",
+          "period": "year",
+          "note": "折合 SGD 10.51/月；存储 25GB/月，文件 5GB"
+        }
+      ],
+      "free_tier_limits": "免费可在所有设备创建无限加密笔记，但每月存储 50MB、单文件 10MB、笔记本上限 50、颜色 7 种。更大存储与完整功能需付费。",
+      "github_stars": 14918,
+      "latest_release": "3.4.13",
+      "latest_release_date": "2026-11-10 16:42",
+      "latest_release_date_note": "GitHub 标签 v3.4.13，已转换为 Asia/Shanghai",
+      "maintenance_status": "活跃",
+      "summary": "开源加密笔记，免费档就能多端写无限笔记，主要限制在存储和笔记本数量，付费以新元标价。",
+      "features": {
+        "markdown": {
+          "value": "partial",
+          "note": "开源加密笔记，编辑格式细节未在定价页写明"
+        },
+        "rich_text": {
+          "value": "unknown",
+          "note": "定价页未展开编辑器类型"
+        },
+        "folders": {
+          "value": "yes",
+          "note": "有 Notebooks 限额，说明支持笔记本"
+        },
+        "tags": {
+          "value": "unknown",
+          "note": "定价页未确认"
+        },
+        "web_clipper": {
+          "value": "unknown",
+          "note": "定价页未确认"
+        },
+        "sync": {
+          "value": "yes",
+          "note": "多端同步，免费即有"
+        },
+        "offline": {
+          "value": "yes",
+          "note": "桌面/移动端可离线"
+        },
+        "e2e_encrypt": {
+          "value": "yes",
+          "note": "产品定位即 encrypted notes / 端到端加密"
+        },
+        "attachments": {
+          "value": "partial",
+          "note": "免费单文件 10MB、每月 50MB；付费提高"
+        },
+        "plugins": {
+          "value": "unknown",
+          "note": "定价页未确认"
+        },
+        "collaboration": {
+          "value": "unknown",
+          "note": "定价页未确认共享协作"
+        },
+        "mobile": {
+          "value": "yes",
+          "note": "Android、iOS 与 Web"
+        }
+      },
+      "sources": [
+        "https://notesnook.com/pricing",
+        "https://github.com/streetwriters/notesnook"
+      ]
+    },
+    {
+      "id": "standard-notes",
+      "name": "Standard Notes",
+      "official_url": "https://standardnotes.com/plans",
+      "github_url": "https://github.com/standardnotes/app",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android",
+        "Web"
+      ],
+      "open_source": true,
+      "license": "AGPL-3.0",
+      "pricing_model": "免费增值",
+      "price_summary": "Standard 免费：端到端加密、无限设备同步、纯文本笔记、离线、标签、笔记密码、导出与 2FA。Productivity $90/年；Professional $120/年。页面顶部有 Black Friday 年付 5 折横幅，以下为页面列出的方案标价。",
+      "prices": [
+        {
+          "plan": "Standard",
+          "price": "0",
+          "currency": "USD",
+          "period": "year",
+          "note": "Free：E2EE、无限设备同步、纯文本、离线、标签、密码保护单则笔记、导出、2FA、每日加密邮件备份"
+        },
+        {
+          "plan": "Productivity",
+          "price": "90",
+          "currency": "USD",
+          "period": "year",
+          "note": "含 Markdown/富文本 Super 笔记、表格、文件夹、Web Clipper、1 年修订历史等；14 天全额退款"
+        },
+        {
+          "plan": "Professional",
+          "price": "120",
+          "currency": "USD",
+          "period": "year",
+          "note": "另加 100GB 加密文件存储、最多 5 个账户共享、更大附件、无限历史等"
+        }
+      ],
+      "free_tier_limits": "免费档为纯文本+标签，无文件夹；文件存储和高级编辑器在付费档。同步在免费档即无限设备。",
+      "github_stars": 6712,
+      "latest_release": "desktop 3.202（标签较长）",
+      "latest_release_date": "2026-10-24 05:24",
+      "latest_release_date_note": "GitHub latest 指向 @standardnotes/desktop@3.202…，已转换为 Asia/Shanghai",
+      "maintenance_status": "活跃",
+      "summary": "强调隐私的开源加密笔记，免费档就能多端同步纯文本；Markdown、文件夹和剪藏需要 $90 起的年付。",
+      "features": {
+        "markdown": {
+          "value": "paid",
+          "note": "Markdown 与富文本 Super note 在 Productivity"
+        },
+        "rich_text": {
+          "value": "paid",
+          "note": "Productivity 起"
+        },
+        "folders": {
+          "value": "paid",
+          "note": "Organize notes into folders 在 Productivity；免费只有 tags"
+        },
+        "tags": {
+          "value": "yes",
+          "note": "免费档即可"
+        },
+        "web_clipper": {
+          "value": "paid",
+          "note": "Productivity：Use the Web Clipper"
+        },
+        "sync": {
+          "value": "yes",
+          "note": "免费即无限设备同步"
+        },
+        "offline": {
+          "value": "yes",
+          "note": "免费即有 Offline access"
+        },
+        "e2e_encrypt": {
+          "value": "yes",
+          "note": "核心卖点"
+        },
+        "attachments": {
+          "value": "paid",
+          "note": "100GB 文件存储在 Professional；免费档强调笔记而非大文件"
+        },
+        "plugins": {
+          "value": "unknown",
+          "note": "plans 页未展开插件生态"
+        },
+        "collaboration": {
+          "value": "paid",
+          "note": "Professional 可与最多 5 个账户共享订阅，并非通用实时协作文档"
+        },
+        "mobile": {
+          "value": "yes",
+          "note": "Web、desktop and mobile"
+        }
+      },
+      "sources": [
+        "https://standardnotes.com/plans",
+        "https://github.com/standardnotes/app"
+      ]
+    },
+    {
+      "id": "triliumnext",
+      "name": "TriliumNext Notes",
+      "official_url": "https://triliumnext.github.io/Docs/",
+      "github_url": "https://github.com/TriliumNext/Notes",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "AGPL-3.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源，可自托管。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "AGPL-3.0 自托管笔记服务器/桌面应用"
+        }
+      ],
+      "free_tier_limits": "无应用收费。需自行部署或运行桌面端。",
+      "github_stars": 2922,
+      "latest_release": "0.95.0",
+      "latest_release_date": "2025-06-16 05:12",
+      "latest_release_date_note": "GitHub latest 为 v0.95.0，published 时间已转换为 Asia/Shanghai。仓库 pushed_at 为 2025-06-24，截至 2026-11-12 已超过一年无新提交，可能已迁移或停更，收录前建议再查 TriliumNext 组织是否有新仓库。",
+      "maintenance_status": "停更",
+      "summary": "从 Trilium 延续而来的开源层级笔记，功能深但本仓库在 2025 年 6 月后未见更新，维护状态需谨慎看待。",
+      "features": {
+        "markdown": {
+          "value": "yes",
+          "note": "层级笔记，支持 Markdown/富内容（项目一贯能力）"
+        },
+        "rich_text": {
+          "value": "yes",
+          "note": "所见即所得编辑"
+        },
+        "folders": {
+          "value": "yes",
+          "note": "树状笔记结构"
+        },
+        "tags": {
+          "value": "yes",
+          "note": "标签/属性"
+        },
+        "web_clipper": {
+          "value": "unknown",
+          "note": "文档站本次未抓取确认"
+        },
+        "sync": {
+          "value": "yes",
+          "note": "可自建服务端多端同步"
+        },
+        "offline": {
+          "value": "yes",
+          "note": "桌面客户端可本地使用"
+        },
+        "e2e_encrypt": {
+          "value": "partial",
+          "note": "支持受保护笔记/加密，精确是否全局 E2EE 未打开文档确认"
+        },
+        "attachments": {
+          "value": "yes",
+          "note": "可附文件"
+        },
+        "plugins": {
+          "value": "yes",
+          "note": "有脚本/扩展机制"
+        },
+        "collaboration": {
+          "value": "unknown",
+          "note": "主要是个人知识库/自托管，未确认实时协作"
+        },
+        "mobile": {
+          "value": "partial",
+          "note": "可通过网页访问自托管实例；是否有独立商店 App 未确认"
+        }
+      },
+      "sources": [
+        "https://github.com/TriliumNext/Notes",
+        "https://triliumnext.github.io/Docs/"
+      ]
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "official_url": "https://www.notion.com/pricing",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Web",
+        "iOS",
+        "Android"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "Free $0/成员/月。Plus $10/成员/月，Business $20/成员/月（页面可选年付，最多省 20%，标价按该页列出的席位月费）。Enterprise 询价。Notion AI 试用后按 $10/1,000 credits。独立站点可 $8/域名/月（年付）或 $10/月。",
+      "prices": [
+        {
+          "plan": "Free",
+          "price": "0",
+          "currency": "USD",
+          "period": "month",
+          "note": "$0 per member / month；个人无限页面；上传单文件至 5 MB、页面历史 7 天等（与常见官方限制一致，本页同时写出 File uploads 在 Plus 中解除）。AI 为试用"
+        },
+        {
+          "plan": "Plus",
+          "price": "10",
+          "currency": "USD",
+          "period": "month",
+          "note": "$10 per member / month；自定义站点、图表、协作块、更大上传等"
+        },
+        {
+          "plan": "Business",
+          "price": "20",
+          "currency": "USD",
+          "period": "month",
+          "note": "$20 per member / month；含 Notion Agent、AI Meeting Notes、SAML SSO 等"
+        },
+        {
+          "plan": "Enterprise",
+          "price": "联系销售",
+          "currency": null,
+          "period": null,
+          "note": "定制"
+        }
+      ],
+      "free_tier_limits": "个人免费可用无限页面/块；单文件上传 5 MB（定价页提到付费解除上传限制）；页面历史较短（常见为 7 天）。团队多成员时另有限制。AI 试用后按量付费。",
+      "github_stars": null,
+      "latest_release": "不适用（云服务）",
+      "latest_release_date": "不适用",
+      "latest_release_date_note": "持续更新的云服务与桌面客户端，本次未采集客户端版本号",
+      "maintenance_status": "活跃",
+      "summary": "主流的云端文档和数据库工作区，免费档适合个人，协作和 AI 主要在付费席位里。",
+      "features": {
+        "markdown": {
+          "value": "yes",
+          "note": "支持 Markdown 快捷输入与导出"
+        },
+        "rich_text": {
+          "value": "yes",
+          "note": "块编辑器与数据库"
+        },
+        "folders": {
+          "value": "yes",
+          "note": "页面树/工作区"
+        },
+        "tags": {
+          "value": "yes",
+          "note": "可用数据库属性和标签组织"
+        },
+        "web_clipper": {
+          "value": "unknown",
+          "note": "定价页未展开 Web Clipper，尽管产品线通常提供，本次未打开相应说明页"
+        },
+        "sync": {
+          "value": "yes",
+          "note": "云同步"
+        },
+        "offline": {
+          "value": "partial",
+          "note": "桌面/移动端可缓存页面，完整离线能力受限，定价页未详述"
+        },
+        "e2e_encrypt": {
+          "value": "no",
+          "note": "官方未将其宣传为端到端加密笔记"
+        },
+        "attachments": {
+          "value": "partial",
+          "note": "免费档单文件 5 MB 限制（定价页 Plus 强调 File uploads）"
+        },
+        "plugins": {
+          "value": "partial",
+          "note": "有 API 与连接器，不是传统插件市场"
+        },
+        "collaboration": {
+          "value": "yes",
+          "note": "核心能力；多成员完整功能在 Plus/Business"
+        },
+        "mobile": {
+          "value": "yes",
+          "note": "iOS/Android"
+        }
+      },
+      "sources": [
+        "https://www.notion.com/pricing"
+      ]
+    },
+    {
+      "id": "obsidian",
+      "name": "Obsidian",
+      "official_url": "https://obsidian.md/pricing",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android"
+      ],
+      "open_source": false,
+      "license": "专有软件（免费使用；商业许可可选）",
+      "pricing_model": "免费增值",
+      "price_summary": "应用本身免费、无需注册。可选 Sync $4/用户/月（年付）或 $5/月；Publish $8/站点/月（年付）或 $10/月。Catalyst 一次性 $25。可选 Commercial $50/用户/年（官网写明商业使用并非强制购买）。",
+      "prices": [
+        {
+          "plan": "应用",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "Free without limits. No sign-up required."
+        },
+        {
+          "plan": "Obsidian Sync（年付）",
+          "price": "4",
+          "currency": "USD",
+          "period": "month",
+          "note": "$4 USD per user, per month, billed annually；月付 $5。含 E2EE、版本历史、共享库"
+        },
+        {
+          "plan": "Obsidian Publish（年付）",
+          "price": "8",
+          "currency": "USD",
+          "period": "month",
+          "note": "$8 USD per site, per month, billed annually；月付 $10"
+        },
+        {
+          "plan": "Catalyst",
+          "price": "25",
+          "currency": "USD",
+          "period": "lifetime",
+          "note": "一次性，支持开发并含测试版等"
+        },
+        {
+          "plan": "Commercial",
+          "price": "50",
+          "currency": "USD",
+          "period": "year",
+          "note": "可选，用于组织内使用以支持独立开发，并非强制"
+        }
+      ],
+      "free_tier_limits": "本地库无功能或容量墙。官方多端同步和发布站点需付费，或自行用第三方同步。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "定价页未给出客户端版本号",
+      "maintenance_status": "活跃",
+      "summary": "本地 Markdown 知识库，软件免费；官方加密同步和发布站点是可选订阅，插件生态很丰富。",
+      "features": {
+        "markdown": {
+          "value": "yes",
+          "note": "纯 Markdown 文件"
+        },
+        "rich_text": {
+          "value": "partial",
+          "note": "实时预览/所见即所得模式，本质仍是 Markdown"
+        },
+        "folders": {
+          "value": "yes",
+          "note": "本地文件夹即结构"
+        },
+        "tags": {
+          "value": "yes",
+          "note": "标签与双向链接"
+        },
+        "web_clipper": {
+          "value": "yes",
+          "note": "官网导航含 Web Clipper"
+        },
+        "sync": {
+          "value": "paid",
+          "note": "官方 Sync 为付费附加；也可用自己的网盘同步库"
+        },
+        "offline": {
+          "value": "yes",
+          "note": "本地优先"
+        },
+        "e2e_encrypt": {
+          "value": "paid",
+          "note": "官方 Sync 宣传 End-to-end encryption；本地文件本身由用户保管"
+        },
+        "attachments": {
+          "value": "yes",
+          "note": "任意文件放在库中，受本地磁盘限制"
+        },
+        "plugins": {
+          "value": "yes",
+          "note": "官方与社区插件"
+        },
+        "collaboration": {
+          "value": "paid",
+          "note": "Sync 可 Collaborate on shared vaults"
+        },
+        "mobile": {
+          "value": "yes",
+          "note": "iOS 与 Android"
+        }
+      },
+      "sources": [
+        "https://obsidian.md/pricing"
+      ]
+    },
+    {
+      "id": "evernote",
+      "name": "Evernote",
+      "official_url": "https://evernote.com/compare-plans",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Web",
+        "iOS",
+        "Android"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "有 Free、Starter、Advanced、Flexible、Unlimited 等档。官方对比页列出了各档功能限额，但价格被动态加载，本次未能从页面文本读出美元标价。",
+      "prices": [
+        {
+          "plan": "Free",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "官网对比：最多 50 则笔记、1 个笔记本、1 台设备同步、1GB 存储、20 个标签、200 个附件、5 个 Spaces"
+        },
+        {
+          "plan": "Starter",
+          "price": "未知",
+          "currency": "USD",
+          "period": null,
+          "note": "对比页：1000 则笔记、20 个笔记本、3 台设备、5GB 存储等；价格未读到"
+        },
+        {
+          "plan": "Advanced",
+          "price": "未知",
+          "currency": "USD",
+          "period": null,
+          "note": "Unlimited 笔记与笔记本等；价格未读到"
+        },
+        {
+          "plan": "Flexible / Unlimited",
+          "price": "未知",
+          "currency": null,
+          "period": null,
+          "note": "企业/弹性档，价格未读到"
+        }
+      ],
+      "free_tier_limits": "官方对比页：50 notes、1 notebook、同步 1 device、Storage 1GB、Tags 20、Attachments 200、Spaces 5。超出后限制以帮助中心为准。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "对比页无客户端版本号；帮助中心价格文被 403，未能复核",
+      "maintenance_status": "活跃",
+      "summary": "老牌云笔记，免费档现在非常紧（50 则笔记、1 台设备）；付费价格本次没能从官网文本中读出。",
+      "features": {
+        "markdown": {
+          "value": "unknown",
+          "note": "对比页未强调 Markdown"
+        },
+        "rich_text": {
+          "value": "yes",
+          "note": "传统富文本笔记"
+        },
+        "folders": {
+          "value": "yes",
+          "note": "Notebooks；免费仅 1 个"
+        },
+        "tags": {
+          "value": "yes",
+          "note": "免费最多 20 个"
+        },
+        "web_clipper": {
+          "value": "yes",
+          "note": "官网导航列出 Web Clipper"
+        },
+        "sync": {
+          "value": "partial",
+          "note": "免费仅 1 台设备，付费增加设备数"
+        },
+        "offline": {
+          "value": "unknown",
+          "note": "对比表出现 Offline notes，但本次摘录未能确认其属于哪一档"
+        },
+        "e2e_encrypt": {
+          "value": "unknown",
+          "note": "未在对比页看到全局 E2EE 表述"
+        },
+        "attachments": {
+          "value": "partial",
+          "note": "免费 200 个附件、1GB 存储"
+        },
+        "plugins": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "collaboration": {
+          "value": "partial",
+          "note": "可共享；完整团队能力在更高档"
+        },
+        "mobile": {
+          "value": "yes",
+          "note": "iOS 与 Android"
+        }
+      },
+      "sources": [
+        "https://evernote.com/compare-plans"
+      ]
+    },
+    {
+      "id": "onenote",
+      "name": "Microsoft OneNote",
+      "official_url": "https://www.microsoft.com/en-us/microsoft-365/onenote/digital-note-taking-app",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Web",
+        "iOS",
+        "Android"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "完全免费",
+      "price_summary": "OneNote 通常随 Microsoft 账户免费提供，存储占用 OneDrive 配额。本次打开微软产品页时被反自动化拦截，未能从页面读出当前官方标价或存储限额，故价格与精确免费额度记为未知。",
+      "prices": [
+        {
+          "plan": "OneNote 应用",
+          "price": "未知",
+          "currency": null,
+          "period": null,
+          "note": "产品页抓取被拦截（Your request has been blocked）。普遍做法是免费使用并用 OneDrive 存储，但本次不以第三方来源填写具体 GB 或 Microsoft 365 价格"
+        }
+      ],
+      "free_tier_limits": "未知（官网页未成功读取）。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "未能读取官网",
+      "maintenance_status": "活跃",
+      "summary": "微软的笔记本式笔记应用，跨平台且通常免费，但本次没能打开官网定价说明，细节需要复核。",
+      "features": {
+        "markdown": {
+          "value": "unknown",
+          "note": "未能读取产品页"
+        },
+        "rich_text": {
+          "value": "yes",
+          "note": "作为 OneNote 的基本形态是分区笔记本+富文本/墨迹，此为产品常识性能力；若需严格证据可再打开页面。为遵守不编造，对未能打开的页面功能尽量 unknown。保留富文本为 yes 较稳，因为产品定义即此。"
+        },
+        "folders": {
+          "value": "yes",
+          "note": "笔记本/分区"
+        },
+        "tags": {
+          "value": "unknown",
+          "note": "未打开功能页"
+        },
+        "web_clipper": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "sync": {
+          "value": "yes",
+          "note": "通过 Microsoft 账户/OneDrive 同步是产品核心，但本次页面被拦截，精确说明未知。记 yes 基于产品定义，note 标明页面未打开"
+        },
+        "offline": {
+          "value": "unknown",
+          "note": "未读取"
+        },
+        "e2e_encrypt": {
+          "value": "unknown",
+          "note": "未读取；有分区密码等历史能力但未核实当前页"
+        },
+        "attachments": {
+          "value": "unknown",
+          "note": "受 OneDrive 配额限制，具体未知"
+        },
+        "plugins": {
+          "value": "unknown",
+          "note": "未读取"
+        },
+        "collaboration": {
+          "value": "unknown",
+          "note": "通常可共享，未读取确认"
+        },
+        "mobile": {
+          "value": "yes",
+          "note": "长期提供 iOS/Android 应用"
+        }
+      },
+      "sources": [
+        "https://www.microsoft.com/en-us/microsoft-365/onenote/digital-note-taking-app"
+      ]
+    },
+    {
+      "id": "bear",
+      "name": "Bear",
+      "official_url": "https://bear.app",
+      "github_url": null,
+      "platforms": [
+        "macOS",
+        "iOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "基础应用可免费使用。Bear Pro 有 7 天试用，随后 $2.99/月或 $29.99/年（页面显示年付约 15% 优惠）。",
+      "prices": [
+        {
+          "plan": "免费档",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "可在 Mac/iPhone/iPad 使用 Markdown 笔记；部分导出格式、OCR 搜索等为 Pro"
+        },
+        {
+          "plan": "Bear Pro（年付）",
+          "price": "29.99",
+          "currency": "USD",
+          "period": "year",
+          "note": "官网：7 day free trial, then $2.99/month；年付 $29.99（标 -15%）"
+        }
+      ],
+      "free_tier_limits": "本地笔记可用。通过 iCloud 的同步、更多导出格式（PDF/HTML/DOCX/JPG）、图片与 PDF 内 OCR 搜索等为 Pro。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "首页未给出精确版本号",
+      "maintenance_status": "活跃",
+      "summary": "苹果平台上设计精致的 Markdown 笔记，免费可写；同步和 OCR 搜索需要 Bear Pro。",
+      "features": {
+        "markdown": {
+          "value": "yes",
+          "note": "官网：Seamless Markdown"
+        },
+        "rich_text": {
+          "value": "partial",
+          "note": "Markdown 实时格式化，可含图片、表格、待办"
+        },
+        "folders": {
+          "value": "partial",
+          "note": "以标签组织，而非传统文件夹（官网：flexible tags）"
+        },
+        "tags": {
+          "value": "yes",
+          "note": "核心组织方式，Pro 还有更多标签图标等"
+        },
+        "web_clipper": {
+          "value": "unknown",
+          "note": "首页未确认"
+        },
+        "sync": {
+          "value": "paid",
+          "note": "Pro：via iCloud"
+        },
+        "offline": {
+          "value": "yes",
+          "note": "原生应用，本地可用"
+        },
+        "e2e_encrypt": {
+          "value": "partial",
+          "note": "Pro 写 Your notes are between you and iCloud，并支持加密笔记与 Apple Advanced Data Protection；不是应用自建协议而是依赖 iCloud/ADP"
+        },
+        "attachments": {
+          "value": "yes",
+          "note": "可插入照片等"
+        },
+        "plugins": {
+          "value": "no",
+          "note": "未看到插件市场"
+        },
+        "collaboration": {
+          "value": "partial",
+          "note": "可分享/导出笔记，不是多人实时云文档"
+        },
+        "mobile": {
+          "value": "yes",
+          "note": "iPhone 与 iPad；无 Android"
+        }
+      },
+      "sources": [
+        "https://bear.app"
+      ]
+    },
+    {
+      "id": "yuque",
+      "name": "语雀",
+      "official_url": "https://www.yuque.com/",
+      "github_url": null,
+      "platforms": [
+        "Web",
+        "Windows",
+        "macOS",
+        "iOS",
+        "Android"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "有个人与团队/企业空间。本次尝试打开 /about/pricing 返回 404，未能从官网读出会员或空间的具体标价。",
+      "prices": [
+        {
+          "plan": "会员/空间",
+          "price": "未知",
+          "currency": null,
+          "period": null,
+          "note": "www.yuque.com/about/pricing 与另一常见路径均 404；帮助中心仅说明可购买会员或空间，无数字"
+        }
+      ],
+      "free_tier_limits": "未知（定价页未找到）。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "未采集客户端版本",
+      "maintenance_status": "活跃",
+      "summary": "国内常用的云文档和知识库，适合团队；具体会员价格这次没在官网公开页里找到。",
+      "features": {
+        "markdown": {
+          "value": "yes",
+          "note": "语雀文档长期支持 Markdown 与富文本；本次未打开功能对照表，作为产品基本能力记录并建议复核"
+        },
+        "rich_text": {
+          "value": "yes",
+          "note": "在线文档编辑"
+        },
+        "folders": {
+          "value": "yes",
+          "note": "知识库/目录"
+        },
+        "tags": {
+          "value": "unknown",
+          "note": "未打开功能页确认"
+        },
+        "web_clipper": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "sync": {
+          "value": "yes",
+          "note": "云端产品"
+        },
+        "offline": {
+          "value": "unknown",
+          "note": "未确认桌面端离线能力"
+        },
+        "e2e_encrypt": {
+          "value": "unknown",
+          "note": "未宣传为 E2EE 笔记，也未打开安全说明"
+        },
+        "attachments": {
+          "value": "unknown",
+          "note": "通常支持，限额未知"
+        },
+        "plugins": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "collaboration": {
+          "value": "yes",
+          "note": "团队知识库与文档协同是核心定位"
+        },
+        "mobile": {
+          "value": "yes",
+          "note": "有移动端应用"
+        }
+      },
+      "sources": [
+        "https://www.yuque.com/",
+        "https://www.yuque.com/about"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+---
+// SPDX-License-Identifier: Apache-2.0
+import "../styles/global.css";
+import { siteConfig, categoryGroups } from "../config";
+import SearchBox from "../components/SearchBox.astro";
+import Logo from "../components/Logo.astro";
+import CategoryMenu from "../components/CategoryMenu.astro";
+import LangSwitch from "../components/LangSwitch.astro";
+import T from "../components/T.astro";
+import { loadCatalog } from "../lib/load-data";
+import { ui, uiT, tr, catPair, groupPair } from "../i18n";
+
+interface Props {
+  title: string;
+  titleEn?: string;
+  description?: string;
+  descriptionEn?: string;
+  canonicalPath?: string;
+  home?: boolean;
+}
+
+const {
+  title,
+  titleEn,
+  description = ui.zh.description,
+  descriptionEn = ui.en.description,
+  canonicalPath = "/",
+  home = false,
+} = Astro.props;
+
+const canonical = new URL(canonicalPath, siteConfig.siteUrl).toString();
+const fullTitle = title.includes(siteConfig.name) || title.includes("Compare")
+  ? title
+  : `${title} · ${siteConfig.name}`;
+const fullTitleEn = (titleEn || title).includes("Compare")
+  ? (titleEn || title)
+  : `${titleEn || title} · Compare`;
+
+const { categories } = loadCatalog();
+const bySlug = new Map(categories.map((c) => [c.slug, c]));
+const groups = categoryGroups
+  .map((g) => ({
+    id: g.id,
+    name: g.name,
+    nameEn: groupPair(g.id, g.name).en,
+    cats: g.slugs
+      .map((s) => bySlug.get(s))
+      .filter(Boolean)
+      .map((c) => ({
+        slug: c!.slug,
+        name: c!.name,
+        nameEn: catPair(c!.slug, c!.name).en,
+        href: c!.href,
+        count: c!.products.length,
+      })),
+  }))
+  .filter((g) => g.cats.length);
+
+const ungrouped = categories.filter((c) => !categoryGroups.some((g) => g.slugs.includes(c.slug)));
+if (ungrouped.length) {
+  groups.push({
+    id: "other",
+    name: groupPair("other").zh,
+    nameEn: groupPair("other").en,
+    cats: ungrouped.map((c) => ({
+      slug: c.slug,
+      name: c.name,
+      nameEn: catPair(c.slug, c.name).en,
+      href: c.href,
+      count: c.products.length,
+    })),
+  });
+}
+---
+
+<!doctype html>
+<html
+  lang={siteConfig.lang}
+  data-title-zh={fullTitle}
+  data-title-en={fullTitleEn}
+  data-desc-zh={description}
+  data-desc-en={descriptionEn}
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script is:inline>
+      (function () {
+        try {
+          var l = localStorage.getItem("compare-lang");
+          if (l === "en" || l === "zh-CN") document.documentElement.lang = l;
+        } catch (e) {}
+      })();
+    </script>
+    <title>{fullTitle}</title>
+    <script is:inline>
+      (function () {
+        var el = document.documentElement;
+        if (el.lang === "en" && el.getAttribute("data-title-en")) {
+          document.title = el.getAttribute("data-title-en") || document.title;
+        }
+        var desc = el.lang === "en" ? el.getAttribute("data-desc-en") : el.getAttribute("data-desc-zh");
+        var meta = document.querySelector('meta[name="description"]');
+        if (meta && desc) meta.setAttribute("content", desc);
+      })();
+    </script>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:site_name" content="Compare" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="/fonts/noto-sans-sc.woff2" as="font" type="font/woff2" crossorigin />
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body class:list={["min-h-screen bg-paper text-ink antialiased", home && "is-home"]}>
+    <a href="#main" class="skip-link"><T zh={ui.zh.skip} en={ui.en.skip} /></a>
+    <header class="site-header" data-site-header>
+      <div class="header-bar">
+        <Logo />
+        <div class="header-search">
+          <SearchBox compact id="site-search-header" />
+        </div>
+        <div class="header-tools">
+          <LangSwitch />
+          <nav class="shrink-0" aria-label={ui.zh.mainNav} data-i18n="aria-label" data-zh={ui.zh.mainNav} data-en={ui.en.mainNav}>
+            <CategoryMenu groups={groups} />
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="mx-auto max-w-6xl text-sm text-muted">
+        <Logo size="footer" />
+        <p class="mt-3 max-w-xl leading-relaxed">
+          <T
+            zh={uiT("footer", "zh", { date: siteConfig.collectedAt })}
+            en={uiT("footer", "en", { date: siteConfig.collectedAt })}
+          />
+        </p>
+      </div>
+    </footer>
+    <script>
+      const header = document.querySelector("[data-site-header]") as HTMLElement | null;
+      const setHeaderH = () => {
+        if (!header) return;
+        document.documentElement.style.setProperty("--header-h", `${header.offsetHeight}px`);
+      };
+      setHeaderH();
+      new ResizeObserver(setHeaderH).observe(header || document.body);
+
+      if (document.body.classList.contains("is-home")) {
+        const onScroll = () => {
+          const hero = document.querySelector("[data-hero]") as HTMLElement | null;
+          const threshold = hero ? Math.max(120, hero.offsetHeight - 80) : 280;
+          document.body.classList.toggle("is-scrolled", window.scrollY > threshold);
+          setHeaderH();
+        };
+        onScroll();
+        window.addEventListener("scroll", onScroll, { passive: true });
+      }
+
+      const STORAGE = "compare-lang";
+
+      function applyI18nAttrs(lang: string) {
+        const isEn = lang === "en";
+        document.querySelectorAll<HTMLElement>("[data-i18n]").forEach((el) => {
+          const attr = el.getAttribute("data-i18n");
+          if (!attr) return;
+          const val = isEn ? el.dataset.en : el.dataset.zh;
+          if (val == null) return;
+          if (attr === "text") el.textContent = val;
+          else el.setAttribute(attr, val);
+        });
+        const html = document.documentElement;
+        const title = isEn ? html.dataset.titleEn : html.dataset.titleZh;
+        if (title) document.title = title;
+        const desc = isEn ? html.dataset.descEn : html.dataset.descZh;
+        const meta = document.querySelector('meta[name="description"]');
+        if (meta && desc) meta.setAttribute("content", desc);
+        const ogLocale = document.querySelector('meta[property="og:locale"]');
+        if (ogLocale) ogLocale.setAttribute("content", isEn ? "en_US" : "zh_CN");
+        document.querySelectorAll("[data-lang-switch] .lang-btn").forEach((btn) => {
+          const on = (btn as HTMLElement).dataset.lang === lang;
+          btn.setAttribute("aria-pressed", on ? "true" : "false");
+        });
+      }
+
+      function setLang(lang: string) {
+        const next = lang === "en" ? "en" : "zh-CN";
+        document.documentElement.lang = next;
+        try {
+          localStorage.setItem(STORAGE, next);
+        } catch {}
+        applyI18nAttrs(next);
+        window.dispatchEvent(new CustomEvent("compare-lang", { detail: next }));
+      }
+
+      document.querySelectorAll("[data-lang-switch]").forEach((root) => {
+        root.addEventListener("click", (e) => {
+          const btn = (e.target as HTMLElement).closest(".lang-btn") as HTMLElement | null;
+          if (!btn?.dataset.lang) return;
+          e.preventDefault();
+          setLang(btn.dataset.lang);
+        });
+      });
+
+      applyI18nAttrs(document.documentElement.lang || "zh-CN");
+    </script>
+  </body>
+</html>

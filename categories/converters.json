@@ -1,0 +1,896 @@
+{
+  "category_slug": "converters",
+  "category_name_zh": "格式转换（音视频/文件转换）",
+  "collected_at": "2026-11-12",
+  "collected_at_timezone": "Asia/Shanghai (UTC+8)",
+  "features": [
+    {
+      "key": "video",
+      "label": "视频转换"
+    },
+    {
+      "key": "audio",
+      "label": "音频转换"
+    },
+    {
+      "key": "image",
+      "label": "图片转换"
+    },
+    {
+      "key": "document",
+      "label": "文档转换"
+    },
+    {
+      "key": "batch",
+      "label": "批量转换"
+    },
+    {
+      "key": "hw_accel",
+      "label": "硬件加速"
+    },
+    {
+      "key": "extract_audio",
+      "label": "提取音轨"
+    },
+    {
+      "key": "compress",
+      "label": "压缩/改分辨率"
+    },
+    {
+      "key": "presets",
+      "label": "预设档位"
+    },
+    {
+      "key": "gui",
+      "label": "图形界面"
+    }
+  ],
+  "products": [
+    {
+      "id": "ffmpeg",
+      "name": "FFmpeg",
+      "official_url": "https://www.ffmpeg.org",
+      "github_url": "https://github.com/FFmpeg/FFmpeg",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "LGPL-2.1 或可选 GPL（官方法律页；GitHub 镜像返回 NOASSERTION）",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源的命令行音视频转换框架。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "官网：A complete, cross-platform solution to record, convert and stream audio and video"
+        }
+      ],
+      "free_tier_limits": "无。默认是命令行，无官方 GUI。",
+      "github_stars": 67109,
+      "latest_release": "8.1",
+      "latest_release_date": "2026-03-16",
+      "latest_release_date_note": "官网新闻 March 16th, 2026：FFmpeg 8.1 “Hoare”。GitHub 镜像无典型 Releases 页。日期无时钟时间。",
+      "maintenance_status": "活跃",
+      "summary": "音视频转换的事实标准引擎，完全免费，几乎能处理所有格式，但需要命令行或第三方图形界面。",
+      "features": {
+        "video": {
+          "value": "yes",
+          "note": "核心能力"
+        },
+        "audio": {
+          "value": "yes",
+          "note": "核心能力"
+        },
+        "image": {
+          "value": "partial",
+          "note": "可处理图像序列/部分图像格式，不是专门看图转换器"
+        },
+        "document": {
+          "value": "no",
+          "note": "不转换 Office/PDF 文档"
+        },
+        "batch": {
+          "value": "yes",
+          "note": "可用脚本批量"
+        },
+        "hw_accel": {
+          "value": "yes",
+          "note": "支持多种硬件加速编码器，具体取决于编译与硬件"
+        },
+        "extract_audio": {
+          "value": "yes",
+          "note": "可剥离音轨"
+        },
+        "compress": {
+          "value": "yes",
+          "note": "转码、改比特率与分辨率"
+        },
+        "presets": {
+          "value": "partial",
+          "note": "有编码预设，需自己写命令或用前端"
+        },
+        "gui": {
+          "value": "no",
+          "note": "官方为 CLI"
+        }
+      },
+      "sources": [
+        "https://www.ffmpeg.org",
+        "https://github.com/FFmpeg/FFmpeg",
+        "https://git.ffmpeg.org/ffmpeg.git"
+      ],
+      "source_url": "https://git.ffmpeg.org/ffmpeg.git",
+      "source_host_note": "官方仓库在 git.ffmpeg.org，GitHub FFmpeg/FFmpeg 为官方镜像。"
+    },
+    {
+      "id": "handbrake",
+      "name": "HandBrake",
+      "official_url": "https://handbrake.fr",
+      "github_url": "https://github.com/HandBrake/HandBrake",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-2.0（项目惯例；GitHub 本次返回 NOASSERTION，未再读 LICENSE 文件）",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源视频转码器。官网 It's free!",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "handbrake.fr：Free and Open Source；Download HandBrake 1.11.2"
+        }
+      ],
+      "free_tier_limits": "无。主要做视频转码，不是通用文档转换。",
+      "github_stars": 24984,
+      "latest_release": "1.11.2",
+      "latest_release_date": "2026-06-08 03:08",
+      "latest_release_date_note": "GitHub 标签 1.11.2，已转换为 Asia/Shanghai。官网同样写 1.11.2。",
+      "maintenance_status": "活跃",
+      "summary": "最常用的开源视频压缩/转换图形工具，预设丰富，适合把视频转到通用格式。",
+      "features": {
+        "video": {
+          "value": "yes",
+          "note": "核心"
+        },
+        "audio": {
+          "value": "partial",
+          "note": "随视频处理音轨，不是独立音频格式工厂"
+        },
+        "image": {
+          "value": "no",
+          "note": "不是图片转换器"
+        },
+        "document": {
+          "value": "no",
+          "note": "不转换文档"
+        },
+        "batch": {
+          "value": "yes",
+          "note": "队列/批量转码"
+        },
+        "hw_accel": {
+          "value": "yes",
+          "note": "支持硬件编码器（依平台）"
+        },
+        "extract_audio": {
+          "value": "partial",
+          "note": "可配置音轨输出，不是专门的音频提取器"
+        },
+        "compress": {
+          "value": "yes",
+          "note": "主业即压缩/转码"
+        },
+        "presets": {
+          "value": "yes",
+          "note": "大量官方预设"
+        },
+        "gui": {
+          "value": "yes",
+          "note": "官方图形界面，也有 CLI"
+        }
+      },
+      "sources": [
+        "https://handbrake.fr",
+        "https://github.com/HandBrake/HandBrake"
+      ]
+    },
+    {
+      "id": "pandoc",
+      "name": "Pandoc",
+      "official_url": "https://pandoc.org",
+      "github_url": "https://github.com/jgm/pandoc",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-2.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源的通用文档转换器。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "开源命令行文档转换工具"
+        }
+      ],
+      "free_tier_limits": "无。强项是 Markdown/文档互转，不是音视频转码。",
+      "github_stars": 46930,
+      "latest_release": "3.14",
+      "latest_release_date": "2026-11-12 12:32",
+      "latest_release_date_note": "GitHub 标签 3.14，已转换为 Asia/Shanghai",
+      "maintenance_status": "活跃",
+      "summary": "文档格式转换的标准开源工具，Markdown、HTML、DOCX、LaTeX 等互转非常强，不管视频。",
+      "features": {
+        "video": {
+          "value": "no",
+          "note": "不转换视频"
+        },
+        "audio": {
+          "value": "no",
+          "note": "不转换音频"
+        },
+        "image": {
+          "value": "partial",
+          "note": "文档中的图片会随转换处理，不是图片格式工厂"
+        },
+        "document": {
+          "value": "yes",
+          "note": "核心能力"
+        },
+        "batch": {
+          "value": "yes",
+          "note": "可脚本批量"
+        },
+        "hw_accel": {
+          "value": "na",
+          "note": "与音视频硬件加速无关"
+        },
+        "extract_audio": {
+          "value": "no",
+          "note": "无"
+        },
+        "compress": {
+          "value": "no",
+          "note": "不是媒体压缩器"
+        },
+        "presets": {
+          "value": "partial",
+          "note": "有模板与默认参数，不是手刹式媒体预设"
+        },
+        "gui": {
+          "value": "no",
+          "note": "官方以 CLI 为主，存在第三方 GUI"
+        }
+      },
+      "sources": [
+        "https://pandoc.org",
+        "https://github.com/jgm/pandoc"
+      ]
+    },
+    {
+      "id": "imagemagick",
+      "name": "ImageMagick",
+      "official_url": "https://imagemagick.org",
+      "github_url": "https://github.com/ImageMagick/ImageMagick",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "ImageMagick License（GitHub 返回 NOASSERTION）",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源的图像处理与转换工具集。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "开源图像处理套件"
+        }
+      ],
+      "free_tier_limits": "无。主要是图片，不是视频编辑器。",
+      "github_stars": 17849,
+      "latest_release": "7.1.2-35",
+      "latest_release_date": "2026-11-01 07:28",
+      "latest_release_date_note": "GitHub 标签 7.1.2-35，已转换为 Asia/Shanghai",
+      "maintenance_status": "活跃",
+      "summary": "强大的开源图片转换和处理工具，适合批量和脚本，命令行门槛较高。",
+      "features": {
+        "video": {
+          "value": "partial",
+          "note": "可处理部分视频帧/动图，不是完整视频转码器"
+        },
+        "audio": {
+          "value": "no",
+          "note": "不管音频"
+        },
+        "image": {
+          "value": "yes",
+          "note": "核心"
+        },
+        "document": {
+          "value": "partial",
+          "note": "可与 PDF/PS 等栅格化转换，不是 Office 转换器"
+        },
+        "batch": {
+          "value": "yes",
+          "note": "批处理/脚本"
+        },
+        "hw_accel": {
+          "value": "unknown",
+          "note": "未确认硬件加速细节"
+        },
+        "extract_audio": {
+          "value": "no",
+          "note": "无"
+        },
+        "compress": {
+          "value": "yes",
+          "note": "可压缩、改分辨率、改格式"
+        },
+        "presets": {
+          "value": "partial",
+          "note": "可通过脚本封装预设"
+        },
+        "gui": {
+          "value": "partial",
+          "note": "以 CLI 为主，有少量 GUI 前端"
+        }
+      },
+      "sources": [
+        "https://imagemagick.org",
+        "https://github.com/ImageMagick/ImageMagick"
+      ]
+    },
+    {
+      "id": "staxrip",
+      "name": "StaxRip",
+      "official_url": "https://github.com/staxrip/staxrip",
+      "github_url": "https://github.com/staxrip/staxrip",
+      "platforms": [
+        "Windows"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源的 Windows 视频编码前端。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "GitHub 项目，开源视频编码 GUI"
+        }
+      ],
+      "free_tier_limits": "无。仅 Windows，依赖 FFmpeg 等编码器。",
+      "github_stars": 3039,
+      "latest_release": "2.52.6",
+      "latest_release_date": "2026-09-27 19:12",
+      "latest_release_date_note": "GitHub 标签 v2.52.6，已转换为 Asia/Shanghai。仓库 stargazers_count=3039，SPDX MIT。",
+      "maintenance_status": "活跃",
+      "summary": "Windows 上功能很深的开源视频编码前端，适合对编码参数有要求的用户。",
+      "features": {
+        "video": {
+          "value": "yes",
+          "note": "视频编码前端"
+        },
+        "audio": {
+          "value": "partial",
+          "note": "处理视频中的音轨"
+        },
+        "image": {
+          "value": "no",
+          "note": "不是图片转换器"
+        },
+        "document": {
+          "value": "no",
+          "note": "无"
+        },
+        "batch": {
+          "value": "yes",
+          "note": "面向批量编码"
+        },
+        "hw_accel": {
+          "value": "yes",
+          "note": "通常可调用硬件编码器，细节见项目文档"
+        },
+        "extract_audio": {
+          "value": "yes",
+          "note": "可处理/抽取音轨"
+        },
+        "compress": {
+          "value": "yes",
+          "note": "转码压缩"
+        },
+        "presets": {
+          "value": "yes",
+          "note": "编码预设"
+        },
+        "gui": {
+          "value": "yes",
+          "note": "Windows GUI"
+        }
+      },
+      "sources": [
+        "https://github.com/staxrip/staxrip"
+      ]
+    },
+    {
+      "id": "vlc",
+      "name": "VLC media player",
+      "official_url": "https://www.videolan.org/vlc/",
+      "github_url": "https://github.com/videolan/vlc",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android"
+      ],
+      "open_source": true,
+      "license": "GPL-2.0-or-later",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源播放器，内置转换/保存功能。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "VideoLAN 官方免费分发"
+        }
+      ],
+      "free_tier_limits": "无。转换功能不如专用转码器全面。",
+      "github_stars": 20432,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "本次未采集 VLC 版本号。GitHub 镜像 stargazers_count=20432。",
+      "maintenance_status": "活跃",
+      "summary": "最常用的开源播放器之一，也能做简单格式转换，但不是专业转码工具。",
+      "features": {
+        "video": {
+          "value": "yes",
+          "note": "可将媒体转换为其他格式（媒体菜单/流输出）"
+        },
+        "audio": {
+          "value": "yes",
+          "note": "可转换或提取音频"
+        },
+        "image": {
+          "value": "partial",
+          "note": "可截图，不是图片格式工厂"
+        },
+        "document": {
+          "value": "no",
+          "note": "无"
+        },
+        "batch": {
+          "value": "partial",
+          "note": "能力有限，不如专用工具"
+        },
+        "hw_accel": {
+          "value": "partial",
+          "note": "播放可硬解，转换硬编未在本次核实"
+        },
+        "extract_audio": {
+          "value": "yes",
+          "note": "可保存音频"
+        },
+        "compress": {
+          "value": "partial",
+          "note": "可转码，控制项不如 HandBrake 丰富"
+        },
+        "presets": {
+          "value": "partial",
+          "note": "有一些封装/编码选项"
+        },
+        "gui": {
+          "value": "yes",
+          "note": "图形界面"
+        }
+      },
+      "sources": [
+        "https://www.videolan.org/vlc/",
+        "https://github.com/videolan/vlc",
+        "https://code.videolan.org/videolan/vlc"
+      ],
+      "source_url": "https://code.videolan.org/videolan/vlc",
+      "source_host_note": "官方仓库在 code.videolan.org，GitHub videolan/vlc 为官方镜像（仓库说明：Code here: https://code.videolan.org/videolan/vlc）。"
+    },
+    {
+      "id": "format-factory",
+      "name": "格式工厂 Format Factory",
+      "official_url": "https://www.pcfreetime.com/",
+      "github_url": null,
+      "platforms": [
+        "Windows"
+      ],
+      "open_source": false,
+      "license": "专有软件（免费）",
+      "pricing_model": "完全免费",
+      "price_summary": "官网提供免费下载。介绍为音视频转换器，并含剪切、合并、PDF 和压缩包解压等。本次未看到付费档。",
+      "prices": [
+        {
+          "plan": "格式工厂",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "pcfreetime.com 提供 Download Now / 免费下载；页面另有 Buy Online 入口，但本次首页未列出正价套餐数字"
+        }
+      ],
+      "free_tier_limits": "免费使用。页面较陈旧，需注意捆绑/广告风险，本次未安装验证。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "官网首页未解析出当前版本号",
+      "maintenance_status": "活跃",
+      "summary": "国内常用的 Windows 免费格式转换器，功能杂、界面老，能转音视频和部分文档，但不是开源软件。",
+      "features": {
+        "video": {
+          "value": "yes",
+          "note": "官网：audio and video converter"
+        },
+        "audio": {
+          "value": "yes",
+          "note": "音频转换"
+        },
+        "image": {
+          "value": "unknown",
+          "note": "同站另有 Picosmos 做图片，格式工厂本身是否含图片转换未在摘录中锁定"
+        },
+        "document": {
+          "value": "yes",
+          "note": "介绍含 PDF joiner、PDF to DOC/TXT/Html and image files"
+        },
+        "batch": {
+          "value": "unknown",
+          "note": "作为转换器通常支持批量，首页未点名"
+        },
+        "hw_accel": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "extract_audio": {
+          "value": "unknown",
+          "note": "未点名，但作为 AV 转换器很可能支持"
+        },
+        "compress": {
+          "value": "partial",
+          "note": "可转码；另含 Zip/RAR/7z 解压"
+        },
+        "presets": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "gui": {
+          "value": "yes",
+          "note": "Windows 图形界面"
+        }
+      },
+      "sources": [
+        "https://www.pcfreetime.com/"
+      ]
+    },
+    {
+      "id": "uniconverter",
+      "name": "Wondershare UniConverter",
+      "official_url": "https://uniconverter.wondershare.com/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "订阅",
+      "price_summary": "商业音视频转换与增强套件。本次未打开商店页，精确价格未知。",
+      "prices": [
+        {
+          "plan": "UniConverter 订阅/许可",
+          "price": "未知",
+          "currency": null,
+          "period": null,
+          "note": "请以 wondershare 商店页为准，促销频繁"
+        }
+      ],
+      "free_tier_limits": "通常有试用或功能/水印限制，未核实。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "未采集",
+      "maintenance_status": "活跃",
+      "summary": "功能较多的商业转换器，带编辑和增强，价格需看万兴商店页。",
+      "features": {
+        "video": {
+          "value": "yes",
+          "note": "核心"
+        },
+        "audio": {
+          "value": "yes",
+          "note": "核心"
+        },
+        "image": {
+          "value": "unknown",
+          "note": "未打开功能页"
+        },
+        "document": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "batch": {
+          "value": "unknown",
+          "note": "未打开官方功能页确认"
+        },
+        "hw_accel": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "extract_audio": {
+          "value": "unknown",
+          "note": "未打开官方功能页确认"
+        },
+        "compress": {
+          "value": "yes",
+          "note": "作为转换器的基本能力"
+        },
+        "presets": {
+          "value": "unknown",
+          "note": "未打开官方功能页确认"
+        },
+        "gui": {
+          "value": "yes",
+          "note": "图形界面"
+        }
+      },
+      "sources": [
+        "https://uniconverter.wondershare.com/"
+      ]
+    },
+    {
+      "id": "cloudconvert",
+      "name": "CloudConvert",
+      "official_url": "https://cloudconvert.com/",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "在线转换服务，有免费额度与付费套餐。本次未打开 pricing 页读取数字，价格未知。",
+      "prices": [
+        {
+          "plan": "免费额度",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "通常按每日次数计，精确额度未核实"
+        },
+        {
+          "plan": "付费方案",
+          "price": "未知",
+          "currency": null,
+          "period": null,
+          "note": "请以 cloudconvert.com/pricing 为准"
+        }
+      ],
+      "free_tier_limits": "未知（需打开定价页）。",
+      "github_stars": null,
+      "latest_release": "不适用",
+      "latest_release_date": "不适用",
+      "latest_release_date_note": "在线服务",
+      "maintenance_status": "活跃",
+      "summary": "功能很广的在线转换网站，文档、音视频、图片都能转，免费有额度，文件会上传到云端。",
+      "features": {
+        "video": {
+          "value": "yes",
+          "note": "在线媒体转换"
+        },
+        "audio": {
+          "value": "yes",
+          "note": "在线音频转换"
+        },
+        "image": {
+          "value": "yes",
+          "note": "图片转换"
+        },
+        "document": {
+          "value": "yes",
+          "note": "文档转换是卖点"
+        },
+        "batch": {
+          "value": "yes",
+          "note": "可一次多个文件，限额视套餐"
+        },
+        "hw_accel": {
+          "value": "na",
+          "note": "云端处理，用户侧无本地硬编选项可谈"
+        },
+        "extract_audio": {
+          "value": "yes",
+          "note": "可做音频提取类任务"
+        },
+        "compress": {
+          "value": "yes",
+          "note": "可压缩/转码"
+        },
+        "presets": {
+          "value": "partial",
+          "note": "有格式与参数选项"
+        },
+        "gui": {
+          "value": "yes",
+          "note": "网页界面"
+        }
+      },
+      "sources": [
+        "https://cloudconvert.com/"
+      ]
+    },
+    {
+      "id": "adobe-media-encoder",
+      "name": "Adobe Media Encoder",
+      "official_url": "https://www.adobe.com/products/media-encoder.html",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "订阅",
+      "price_summary": "随 Adobe 视频工作流提供的专业编码器，通常包含在 Premiere 等订阅中。本次未读取单独售价。",
+      "prices": [
+        {
+          "plan": "Creative Cloud 相关订阅",
+          "price": "未知",
+          "currency": "USD",
+          "period": "month",
+          "note": "请以 Adobe 计划页为准"
+        }
+      ],
+      "free_tier_limits": "无长期独立免费完整版。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "未采集",
+      "maintenance_status": "活跃",
+      "summary": "Adobe 生态的专业媒体编码器，适合和 Premiere、After Effects 一起做交付转码。",
+      "features": {
+        "video": {
+          "value": "yes",
+          "note": "专业视频编码"
+        },
+        "audio": {
+          "value": "yes",
+          "note": "音轨编码"
+        },
+        "image": {
+          "value": "partial",
+          "note": "可输出图像序列等"
+        },
+        "document": {
+          "value": "no",
+          "note": "无"
+        },
+        "batch": {
+          "value": "yes",
+          "note": "队列编码是核心"
+        },
+        "hw_accel": {
+          "value": "yes",
+          "note": "支持硬件编码（依系统）"
+        },
+        "extract_audio": {
+          "value": "yes",
+          "note": "可只输出音频"
+        },
+        "compress": {
+          "value": "yes",
+          "note": "转码压缩"
+        },
+        "presets": {
+          "value": "yes",
+          "note": "大量广播/平台预设"
+        },
+        "gui": {
+          "value": "yes",
+          "note": "图形界面"
+        }
+      },
+      "sources": [
+        "https://www.adobe.com/products/media-encoder.html"
+      ]
+    },
+    {
+      "id": "permute",
+      "name": "Permute",
+      "official_url": "https://software.charliemonroe.net/permute/",
+      "github_url": null,
+      "platforms": [
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "付费",
+      "price_summary": "Mac 上常用的媒体转换器。本次未打开购买页读取价格。",
+      "prices": [
+        {
+          "plan": "Permute 许可",
+          "price": "未知",
+          "currency": "USD",
+          "period": "lifetime",
+          "note": "请以开发者网站或 Mac App Store 为准"
+        }
+      ],
+      "free_tier_limits": "可能有试用，未核实。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "未采集",
+      "maintenance_status": "活跃",
+      "summary": "界面简洁的 Mac 音视频转换器，适合把文件快速转到常用格式，价格需看开发者站点。",
+      "features": {
+        "video": {
+          "value": "yes",
+          "note": "媒体转换"
+        },
+        "audio": {
+          "value": "yes",
+          "note": "音频转换"
+        },
+        "image": {
+          "value": "unknown",
+          "note": "未打开功能页"
+        },
+        "document": {
+          "value": "no",
+          "note": "通常不管办公文档"
+        },
+        "batch": {
+          "value": "unknown",
+          "note": "未打开功能页确认"
+        },
+        "hw_accel": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "extract_audio": {
+          "value": "unknown",
+          "note": "未打开功能页确认"
+        },
+        "compress": {
+          "value": "yes",
+          "note": "转码"
+        },
+        "presets": {
+          "value": "unknown",
+          "note": "未打开功能页确认"
+        },
+        "gui": {
+          "value": "yes",
+          "note": "Mac 图形界面"
+        }
+      },
+      "sources": [
+        "https://software.charliemonroe.net/permute/"
+      ]
+    }
+  ]
+}

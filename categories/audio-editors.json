@@ -1,0 +1,1140 @@
+{
+  "category_slug": "audio-editors",
+  "category_name_zh": "音频编辑",
+  "collected_at": "2026-11-12",
+  "collected_at_timezone": "Asia/Shanghai (UTC+8)",
+  "features": [
+    {
+      "key": "waveform",
+      "label": "波形编辑"
+    },
+    {
+      "key": "multitrack",
+      "label": "多轨混音"
+    },
+    {
+      "key": "plugins",
+      "label": "效果器/插件"
+    },
+    {
+      "key": "noise_reduce",
+      "label": "降噪"
+    },
+    {
+      "key": "spectral",
+      "label": "频谱编辑"
+    },
+    {
+      "key": "record",
+      "label": "录音"
+    },
+    {
+      "key": "batch",
+      "label": "批量处理"
+    },
+    {
+      "key": "midi",
+      "label": "MIDI/音序"
+    },
+    {
+      "key": "podcast",
+      "label": "播客工具"
+    },
+    {
+      "key": "export_formats",
+      "label": "多格式导出"
+    }
+  ],
+  "products": [
+    {
+      "id": "audacity",
+      "name": "Audacity",
+      "official_url": "https://www.audacityteam.org",
+      "github_url": "https://github.com/audacity/audacity",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "未知（GitHub 返回 NOASSERTION；长期以 GPL 开源，现由 Muse 集团维护，精确 SPDX 未在本次读取 LICENSE）",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源。",
+      "prices": [
+        {
+          "plan": "软件本身",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "开源/免费分发，无强制订阅"
+        }
+      ],
+      "free_tier_limits": "软件免费。MuseHub 插件、云存储等为可选增值，本次未打开其价目。",
+      "github_stars": 19036,
+      "latest_release": "4.0.2",
+      "latest_release_date": "2026-11-02 18:01",
+      "latest_release_date_note": "GitHub 标签 Audacity-4.0.2，已转换为 Asia/Shanghai。官网提供 Download Audacity 4.0.2，并可选 MuseHub 或 Download without MuseHub。",
+      "maintenance_status": "活跃",
+      "summary": "全球使用最广的开源音频编辑器，4.x 换了新界面；插件和云存储可能走 MuseHub，需自行区分。",
+      "features": {
+        "waveform": {
+          "value": "yes",
+          "note": "波形编辑器"
+        },
+        "multitrack": {
+          "value": "partial",
+          "note": "可多轨排列，但不是完整 DAW 调音台"
+        },
+        "plugins": {
+          "value": "yes",
+          "note": "效果器；MuseHub 上另有付费插件促销，软件本身含效果"
+        },
+        "noise_reduce": {
+          "value": "unknown",
+          "note": "官网首页本次未点名降噪，尽管历史上是常用功能"
+        },
+        "spectral": {
+          "value": "unknown",
+          "note": "首页未确认频谱编辑"
+        },
+        "record": {
+          "value": "yes",
+          "note": "官网：audio editing and recording app"
+        },
+        "batch": {
+          "value": "unknown",
+          "note": "首页未确认"
+        },
+        "midi": {
+          "value": "no",
+          "note": "不是 MIDI 音序 DAW"
+        },
+        "podcast": {
+          "value": "partial",
+          "note": "常用于语音清理，但不是专门播客制作套件"
+        },
+        "export_formats": {
+          "value": "yes",
+          "note": "多格式导出是标准能力"
+        }
+      },
+      "sources": [
+        "https://www.audacityteam.org",
+        "https://github.com/audacity/audacity"
+      ]
+    },
+    {
+      "id": "ardour",
+      "name": "Ardour",
+      "official_url": "https://ardour.org",
+      "github_url": "https://github.com/Ardour/ardour",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "未知（GitHub 返回 NOASSERTION；项目为开源 DAW）",
+      "pricing_model": "完全免费",
+      "price_summary": "开源 DAW，可自行编译或从官网获取。官网另有付费下载/支持选项，本次首页未列出具体美元价格，故付费获取渠道价格未知。",
+      "prices": [
+        {
+          "plan": "软件本身",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "开源/免费分发，无强制订阅"
+        }
+      ],
+      "free_tier_limits": "可免费使用开源版本。付费官方安装包/支持的价格未知。",
+      "github_stars": 5421,
+      "latest_release": "9.10",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "官网写 Ardour 9.10 is out，并介绍该版本新特性。GitHub 镜像无典型 Releases 页，故无精确 published_at 转换。",
+      "maintenance_status": "活跃",
+      "summary": "面向录音、编辑、缩混和母带的开源专业 DAW，功能深度接近商业工作站。",
+      "features": {
+        "waveform": {
+          "value": "yes",
+          "note": "录音与编辑"
+        },
+        "multitrack": {
+          "value": "yes",
+          "note": "完整多轨混音架构"
+        },
+        "plugins": {
+          "value": "yes",
+          "note": "插入效果、动态、EQ 等，支持插件"
+        },
+        "noise_reduce": {
+          "value": "unknown",
+          "note": "可通过插件实现，官网未单列"
+        },
+        "spectral": {
+          "value": "unknown",
+          "note": "未确认专用频谱编辑器"
+        },
+        "record": {
+          "value": "yes",
+          "note": "官网：Record, Edit, and Mix；Press record"
+        },
+        "batch": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "midi": {
+          "value": "yes",
+          "note": "明确支持 MIDI 编辑与量化等"
+        },
+        "podcast": {
+          "value": "partial",
+          "note": "可用于播客后期，但定位是通用专业 DAW"
+        },
+        "export_formats": {
+          "value": "yes",
+          "note": "可 master 并导出"
+        }
+      },
+      "sources": [
+        "https://ardour.org",
+        "https://github.com/Ardour/ardour"
+      ]
+    },
+    {
+      "id": "lmms",
+      "name": "LMMS",
+      "official_url": "https://lmms.io",
+      "github_url": "https://github.com/LMMS/lmms",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-2.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源。",
+      "prices": [
+        {
+          "plan": "软件本身",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "开源/免费分发，无强制订阅"
+        }
+      ],
+      "free_tier_limits": "无付费墙。",
+      "github_stars": 10644,
+      "latest_release": "1.2.2",
+      "latest_release_date": "2020-07-04 20:35",
+      "latest_release_date_note": "GitHub 最近正式版标签 v1.2.2 发布于 2020-07-04（已转换时区）。仓库 pushed_at 为 2026-11-10，开发仍在继续，但稳定版已多年未发。",
+      "maintenance_status": "活跃",
+      "summary": "免费开源的编曲/制作工具，内置合成器和音序器，更像制作人 DAW 而不是播客波形编辑器。稳定版停留在 1.2.2。",
+      "features": {
+        "waveform": {
+          "value": "partial",
+          "note": "偏音序与采样，不是 Audacity 式波形编辑器"
+        },
+        "multitrack": {
+          "value": "yes",
+          "note": "多轨编曲与混音"
+        },
+        "plugins": {
+          "value": "yes",
+          "note": "内置多种合成器/效果，Windows 上支持 VST"
+        },
+        "noise_reduce": {
+          "value": "no",
+          "note": "不是修复型编辑器"
+        },
+        "spectral": {
+          "value": "no",
+          "note": "未作为频谱编辑器宣传"
+        },
+        "record": {
+          "value": "partial",
+          "note": "可用 MIDI/键鼠演奏；音频录音不是主卖点，未确认"
+        },
+        "batch": {
+          "value": "no",
+          "note": "未宣传批处理"
+        },
+        "midi": {
+          "value": "yes",
+          "note": "钢琴卷帘、MIDI 导入、音序是核心"
+        },
+        "podcast": {
+          "value": "no",
+          "note": "面向音乐制作"
+        },
+        "export_formats": {
+          "value": "yes",
+          "note": "可导出歌曲/混音"
+        }
+      },
+      "sources": [
+        "https://lmms.io",
+        "https://github.com/LMMS/lmms"
+      ]
+    },
+    {
+      "id": "tenacity",
+      "name": "Tenacity",
+      "official_url": "https://github.com/tenacityteam/tenacity",
+      "github_url": "https://github.com/tenacityteam/tenacity",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "未知（GitHub 返回 NOASSERTION；Audacity 分支，通常沿用 GPL）",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源。",
+      "prices": [
+        {
+          "plan": "软件本身",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "开源/免费分发，无强制订阅"
+        }
+      ],
+      "free_tier_limits": "无付费墙。",
+      "github_stars": 828,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "GitHub 无典型 Releases 列表页；pushed_at 2026-11-11，仍有提交。",
+      "maintenance_status": "活跃",
+      "summary": "Audacity 的开源分支，目标是保持社区驱动的音频编辑器；星标和发布信息不如主项目完整。",
+      "features": {
+        "waveform": {
+          "value": "yes",
+          "note": "音频编辑器分支"
+        },
+        "multitrack": {
+          "value": "partial",
+          "note": "与 Audacity 类似的多轨"
+        },
+        "plugins": {
+          "value": "unknown",
+          "note": "未打开文档"
+        },
+        "noise_reduce": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "spectral": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "record": {
+          "value": "yes",
+          "note": "作为录音编辑器继承该能力"
+        },
+        "batch": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "midi": {
+          "value": "no",
+          "note": "不是 DAW 音序器"
+        },
+        "podcast": {
+          "value": "partial",
+          "note": "可用于语音"
+        },
+        "export_formats": {
+          "value": "unknown",
+          "note": "未打开文档确认"
+        }
+      },
+      "sources": [
+        "https://github.com/tenacityteam/tenacity"
+      ]
+    },
+    {
+      "id": "qtractor",
+      "name": "Qtractor",
+      "official_url": "https://github.com/rncbc/qtractor",
+      "github_url": "https://github.com/rncbc/qtractor",
+      "platforms": [
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-2.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源。",
+      "prices": [
+        {
+          "plan": "软件本身",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "开源/免费分发，无强制订阅"
+        }
+      ],
+      "free_tier_limits": "无付费墙。",
+      "github_stars": 607,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "GitHub 无典型 Releases 页；pushed_at 2026-11-12，维护活跃。",
+      "maintenance_status": "活跃",
+      "summary": "Linux 上的开源多轨 DAW，面向 JACK/LV2 生态的音频与 MIDI 制作。",
+      "features": {
+        "waveform": {
+          "value": "yes",
+          "note": "音频轨编辑"
+        },
+        "multitrack": {
+          "value": "yes",
+          "note": "多轨 DAW"
+        },
+        "plugins": {
+          "value": "yes",
+          "note": "Linux 插件生态（LV2 等），细节见项目文档"
+        },
+        "noise_reduce": {
+          "value": "unknown",
+          "note": "可通过插件，未单列"
+        },
+        "spectral": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "record": {
+          "value": "yes",
+          "note": "DAW 录音"
+        },
+        "batch": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "midi": {
+          "value": "yes",
+          "note": "音频+MIDI DAW"
+        },
+        "podcast": {
+          "value": "partial",
+          "note": "通用 DAW"
+        },
+        "export_formats": {
+          "value": "yes",
+          "note": "可导出工程/混音"
+        }
+      },
+      "sources": [
+        "https://github.com/rncbc/qtractor"
+      ]
+    },
+    {
+      "id": "reaper",
+      "name": "REAPER",
+      "official_url": "https://www.reaper.fm/purchase.php",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "付费",
+      "price_summary": "单一完整版本。折扣许可 $60，商业许可 $225。个人使用、年营业额不超过 2 万美元的商业使用，或教育/非营利组织可买 $60。含免费升级至 8.99。60 天全功能评估，无功能限制。许可可装多台电脑但同一时间只用一台。",
+      "prices": [
+        {
+          "plan": "Discounted license",
+          "price": "60",
+          "currency": "USD",
+          "period": "lifetime",
+          "note": "官网 purchase.php：$60 discounted license。个人，或年收入不超过 USD $20,000 的商业使用，或教育/非营利"
+        },
+        {
+          "plan": "Commercial license",
+          "price": "225",
+          "currency": "USD",
+          "period": "lifetime",
+          "note": "$225 commercial license。价格不含 VAT/地方税"
+        }
+      ],
+      "free_tier_limits": "60 天全功能评估，过期后需购买。无功能阉割的免费档。",
+      "github_stars": null,
+      "latest_release": "7.85",
+      "latest_release_date": "2026-11-05",
+      "latest_release_date_note": "官网：DOWNLOAD REAPER VERSION 7.85: November 5, 2026，无时钟时间",
+      "maintenance_status": "活跃",
+      "summary": "价格相对友好的专业 DAW，一个版本包含全部功能，有 60 天试用，$60 或 $225 买断。",
+      "features": {
+        "waveform": {
+          "value": "yes",
+          "note": "完整音频编辑"
+        },
+        "multitrack": {
+          "value": "yes",
+          "note": "完整多轨"
+        },
+        "plugins": {
+          "value": "yes",
+          "note": "广泛插件支持，可扩展脚本"
+        },
+        "noise_reduce": {
+          "value": "unknown",
+          "note": "可用插件实现，官首页未单列自带降噪"
+        },
+        "spectral": {
+          "value": "unknown",
+          "note": "未在首页确认专用频谱编辑"
+        },
+        "record": {
+          "value": "yes",
+          "note": "完整录音工具集"
+        },
+        "batch": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "midi": {
+          "value": "yes",
+          "note": "完整 MIDI 录音与编辑"
+        },
+        "podcast": {
+          "value": "partial",
+          "note": "可做播客后期，但是通用 DAW"
+        },
+        "export_formats": {
+          "value": "yes",
+          "note": "广泛格式与渲染"
+        }
+      },
+      "sources": [
+        "https://www.reaper.fm",
+        "https://www.reaper.fm/purchase.php"
+      ]
+    },
+    {
+      "id": "ocenaudio",
+      "name": "ocenaudio",
+      "official_url": "https://www.ocenaudio.com/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": false,
+      "license": "专有软件（免费）",
+      "pricing_model": "完全免费",
+      "price_summary": "官网提供 Free Download，版本 3.22.2。闭源免费音频编辑器。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "ocenaudio.com：Free Download Windows 10+ (64-bit) Other Platforms"
+        }
+      ],
+      "free_tier_limits": "官网未列出付费档。是否完全无限制本次首页未详细说明。",
+      "github_stars": null,
+      "latest_release": "3.22.2",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "首页写 ocenaudio 3.22.2，无发布时钟时间",
+      "maintenance_status": "活跃",
+      "summary": "跨平台免费（闭源）音频编辑器，界面相对现代，适合轻度波形编辑和录音。",
+      "features": {
+        "waveform": {
+          "value": "yes",
+          "note": "音频编辑器"
+        },
+        "multitrack": {
+          "value": "unknown",
+          "note": "首页仅写 Easy, fast and powerful audio editor，未确认多轨"
+        },
+        "plugins": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "noise_reduce": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "spectral": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "record": {
+          "value": "unknown",
+          "note": "作为编辑器通常可录音，首页未点名"
+        },
+        "batch": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "midi": {
+          "value": "no",
+          "note": "不是 DAW"
+        },
+        "podcast": {
+          "value": "partial",
+          "note": "可用于语音"
+        },
+        "export_formats": {
+          "value": "unknown",
+          "note": "未打开功能页"
+        }
+      },
+      "sources": [
+        "https://www.ocenaudio.com/"
+      ]
+    },
+    {
+      "id": "adobe-audition",
+      "name": "Adobe Audition",
+      "official_url": "https://www.adobe.com/products/audition.html",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "订阅",
+      "price_summary": "Adobe Creative Cloud 订阅应用。本次未能从 Adobe 页面读取精确美元标价。",
+      "prices": [
+        {
+          "plan": "Creative Cloud 订阅",
+          "price": "未知",
+          "currency": "USD",
+          "period": "month",
+          "note": "请以 Adobe 计划页为准"
+        }
+      ],
+      "free_tier_limits": "通常有试用，无长期完整免费档。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "未采集",
+      "maintenance_status": "活跃",
+      "summary": "专业波形与多轨音频工作站，适合播客、修复和后期，价格需看 Adobe 官网。",
+      "features": {
+        "waveform": {
+          "value": "yes",
+          "note": "专业波形编辑"
+        },
+        "multitrack": {
+          "value": "yes",
+          "note": "多轨会话"
+        },
+        "plugins": {
+          "value": "yes",
+          "note": "效果器与第三方插件"
+        },
+        "noise_reduce": {
+          "value": "yes",
+          "note": "产品长期以修复/降噪为卖点；本次未重新打开功能页复核"
+        },
+        "spectral": {
+          "value": "yes",
+          "note": "产品长期提供频谱频率修复；本次未重新打开功能页复核"
+        },
+        "record": {
+          "value": "yes",
+          "note": "录音"
+        },
+        "batch": {
+          "value": "unknown",
+          "note": "未打开功能页确认批处理"
+        },
+        "midi": {
+          "value": "no",
+          "note": "不是作曲 DAW"
+        },
+        "podcast": {
+          "value": "yes",
+          "note": "面向播客与对白"
+        },
+        "export_formats": {
+          "value": "yes",
+          "note": "多格式"
+        }
+      },
+      "sources": [
+        "https://www.adobe.com/products/audition.html"
+      ]
+    },
+    {
+      "id": "garageband",
+      "name": "GarageBand",
+      "official_url": "https://www.apple.com/mac/garageband/",
+      "github_url": null,
+      "platforms": [
+        "macOS",
+        "iOS"
+      ],
+      "open_source": false,
+      "license": "专有软件（免费）",
+      "pricing_model": "完全免费",
+      "price_summary": "苹果免费提供的音乐创作应用。本次未重新抓取产品页正文。",
+      "prices": [
+        {
+          "plan": "GarageBand",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "通过 App Store 免费获取，以苹果页面为准"
+        }
+      ],
+      "free_tier_limits": "仅限苹果设备；功能比 Logic Pro 少，但应用本身免费。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "未采集",
+      "maintenance_status": "活跃",
+      "summary": "Mac 和 iOS 上的免费入门 DAW，适合作曲和播客录音，不是专业修复工具。",
+      "features": {
+        "waveform": {
+          "value": "partial",
+          "note": "以音轨和乐段为主"
+        },
+        "multitrack": {
+          "value": "yes",
+          "note": "多轨"
+        },
+        "plugins": {
+          "value": "yes",
+          "note": "自带乐器和效果"
+        },
+        "noise_reduce": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "spectral": {
+          "value": "no",
+          "note": "不是频谱修复器"
+        },
+        "record": {
+          "value": "yes",
+          "note": "音频与 MIDI 录音"
+        },
+        "batch": {
+          "value": "no",
+          "note": "未作为批处理工具"
+        },
+        "midi": {
+          "value": "yes",
+          "note": "软件乐器与 MIDI"
+        },
+        "podcast": {
+          "value": "partial",
+          "note": "可录播客，功能相对基础"
+        },
+        "export_formats": {
+          "value": "yes",
+          "note": "可分享/导出"
+        }
+      },
+      "sources": [
+        "https://www.apple.com/mac/garageband/"
+      ]
+    },
+    {
+      "id": "logic-pro",
+      "name": "Logic Pro",
+      "official_url": "https://www.apple.com/logic-pro/",
+      "github_url": null,
+      "platforms": [
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "付费",
+      "price_summary": "苹果专业 DAW，通常为 App Store 买断。本次未抓取当前标价，价格未知。",
+      "prices": [
+        {
+          "plan": "Logic Pro",
+          "price": "未知",
+          "currency": "USD",
+          "period": "lifetime",
+          "note": "请以 Mac App Store / apple.com/logic-pro 为准"
+        }
+      ],
+      "free_tier_limits": "可能有试用，未核实。无长期免费完整版。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "未采集",
+      "maintenance_status": "活跃",
+      "summary": "Mac 上的专业音乐制作工作站，功能远超 GarageBand，售价需看 App Store。",
+      "features": {
+        "waveform": {
+          "value": "yes",
+          "note": "专业音频编辑"
+        },
+        "multitrack": {
+          "value": "yes",
+          "note": "完整多轨"
+        },
+        "plugins": {
+          "value": "yes",
+          "note": "大量自带插件与乐器"
+        },
+        "noise_reduce": {
+          "value": "unknown",
+          "note": "未打开功能页"
+        },
+        "spectral": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "record": {
+          "value": "yes",
+          "note": "专业录音"
+        },
+        "batch": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "midi": {
+          "value": "yes",
+          "note": "完整 MIDI 与作曲工具"
+        },
+        "podcast": {
+          "value": "partial",
+          "note": "可用于后期，定位是音乐 DAW"
+        },
+        "export_formats": {
+          "value": "yes",
+          "note": "专业交付"
+        }
+      },
+      "sources": [
+        "https://www.apple.com/logic-pro/"
+      ]
+    },
+    {
+      "id": "fl-studio",
+      "name": "FL Studio",
+      "official_url": "https://www.image-line.com/fl-studio/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "付费",
+      "price_summary": "按版本档买断（含后续版本更新是其传统政策）。本次未打开商店页读取各版本美元价格。",
+      "prices": [
+        {
+          "plan": "各版本许可",
+          "price": "未知",
+          "currency": "USD",
+          "period": "lifetime",
+          "note": "请以 image-line.com 商店为准"
+        }
+      ],
+      "free_tier_limits": "有试用，通常保存/导出受限，精确限制未核实。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "未采集",
+      "maintenance_status": "活跃",
+      "summary": "流行的编曲 DAW，以音序器和插件生态见长，不是播客修复工具，具体售价需看官网。",
+      "features": {
+        "waveform": {
+          "value": "partial",
+          "note": "有 Edison 等波形编辑，但主界面是音序器"
+        },
+        "multitrack": {
+          "value": "yes",
+          "note": "混音台与多轨"
+        },
+        "plugins": {
+          "value": "yes",
+          "note": "大量内置与第三方插件"
+        },
+        "noise_reduce": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "spectral": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "record": {
+          "value": "yes",
+          "note": "音频与 MIDI"
+        },
+        "batch": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "midi": {
+          "value": "yes",
+          "note": "核心能力"
+        },
+        "podcast": {
+          "value": "no",
+          "note": "面向电子音乐制作"
+        },
+        "export_formats": {
+          "value": "yes",
+          "note": "可渲染导出"
+        }
+      },
+      "sources": [
+        "https://www.image-line.com/fl-studio/"
+      ]
+    },
+    {
+      "id": "izotope-rx",
+      "name": "iZotope RX",
+      "official_url": "https://www.izotope.com/en/products/rx.html",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "付费",
+      "price_summary": "专业音频修复套件，有多个档位。本次未打开商店页读取价格。",
+      "prices": [
+        {
+          "plan": "RX 各档",
+          "price": "未知",
+          "currency": "USD",
+          "period": null,
+          "note": "请以 izotope.com 产品页为准，可能为买断或订阅"
+        }
+      ],
+      "free_tier_limits": "可能有试用或 Elements 入门档，未核实。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "未采集",
+      "maintenance_status": "活跃",
+      "summary": "业界常用的音频修复和降噪套件，偏对白和录音修复，不是通用作曲 DAW。",
+      "features": {
+        "waveform": {
+          "value": "yes",
+          "note": "修复型波形编辑"
+        },
+        "multitrack": {
+          "value": "partial",
+          "note": "以模块/独立应用为主，不是完整 DAW 调音台"
+        },
+        "plugins": {
+          "value": "yes",
+          "note": "可作为插件插在其他 DAW 中"
+        },
+        "noise_reduce": {
+          "value": "yes",
+          "note": "核心卖点"
+        },
+        "spectral": {
+          "value": "yes",
+          "note": "频谱修复是核心卖点"
+        },
+        "record": {
+          "value": "unknown",
+          "note": "不是以录音棚 DAW 为定位"
+        },
+        "batch": {
+          "value": "unknown",
+          "note": "未打开官方功能页确认批处理模块名称"
+        },
+        "midi": {
+          "value": "no",
+          "note": "不是音序器"
+        },
+        "podcast": {
+          "value": "yes",
+          "note": "广泛用于播客和影视对白修复"
+        },
+        "export_formats": {
+          "value": "yes",
+          "note": "可导出处理后的音频"
+        }
+      },
+      "sources": [
+        "https://www.izotope.com/en/products/rx.html"
+      ]
+    },
+    {
+      "id": "zrythm",
+      "name": "Zrythm",
+      "official_url": "https://www.zrythm.org/",
+      "github_url": "https://github.com/zrythm/zrythm",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "未知（GitHub 返回 NOASSERTION；可获取源码。官方安装包分免费档与付费档）",
+      "pricing_model": "免费增值",
+      "price_summary": "官方下载页提供源码和安装包。Basic 免费，限 25 轨和基础插件，仅 v1.0.0。Snapshot 展示价 $18（无限轨、含 Z Series 插件、仅 v1.0.0）。Bundle 展示价 $31（含全部 v1 与 v2）。Subscription 展示价 $50/年（全部发行版和 nightly）。页面声明这些货币价格为估算，实际以日元结算。另有 v2 Alpha 可供测试。采集日期 2026-11-12。",
+      "prices": [
+        {
+          "plan": "Basic 安装包",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "官网 Download：Up to 25 tracks，Basic plugins，Web user manual，Access to v1.0.0"
+        },
+        {
+          "plan": "Snapshot",
+          "price": "18",
+          "currency": "USD",
+          "period": "once",
+          "note": "展示价 $18；无限轨；Basic & Z Series plugins；仅 v1.0.0。页面：Prices in this currency are estimates. All purchases are in Japanese Yen."
+        },
+        {
+          "plan": "Bundle",
+          "price": "31",
+          "currency": "USD",
+          "period": "once",
+          "note": "展示价 $31；含全部 v1 与 v2 发行版。同样是日元结算的估算美元价。"
+        },
+        {
+          "plan": "Subscription",
+          "price": "50",
+          "currency": "USD",
+          "period": "year",
+          "note": "展示价 $50/year；全部发行版与 nightly。日元结算的估算美元价。"
+        }
+      ],
+      "free_tier_limits": "Basic 安装包限 25 轨、基础插件、网页手册，且仅访问 v1.0.0。源码可从 Git 获取。",
+      "github_stars": 3200,
+      "latest_release": "1.0.0",
+      "latest_release_date": "2024-11-21 22:23",
+      "latest_release_date_note": "GitHub 正式版 v1.0.0，published_at 2024-11-21T14:23:39Z，已转换为 Asia/Shanghai。官网另有 v2 Alpha available for testing。仓库 pushed_at 为 2026-11-12，开发活跃。",
+      "maintenance_status": "活跃",
+      "summary": "界面较新的开源 DAW，可免费使用基础安装包（限 25 轨），完整安装包按日元收费，源码公开。",
+      "features": {
+        "waveform": {
+          "value": "yes",
+          "note": "音频轨编辑的 DAW"
+        },
+        "multitrack": {
+          "value": "yes",
+          "note": "多轨工作站；免费档限 25 轨"
+        },
+        "plugins": {
+          "value": "yes",
+          "note": "基础插件免费；Z Series 插件在付费安装包"
+        },
+        "noise_reduce": {
+          "value": "unknown",
+          "note": "未打开功能页"
+        },
+        "spectral": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "record": {
+          "value": "yes",
+          "note": "DAW 录音"
+        },
+        "batch": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "midi": {
+          "value": "yes",
+          "note": "MIDI 与自动化是产品方向"
+        },
+        "podcast": {
+          "value": "partial",
+          "note": "通用 DAW，不是播客套件"
+        },
+        "export_formats": {
+          "value": "yes",
+          "note": "可导出/交付工程"
+        }
+      },
+      "sources": [
+        "https://www.zrythm.org/en/download.html",
+        "https://github.com/zrythm/zrythm"
+      ]
+    },
+    {
+      "id": "hydrogen",
+      "name": "Hydrogen",
+      "official_url": "http://www.hydrogen-music.org",
+      "github_url": "https://github.com/hydrogen-music/hydrogen",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-2.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源的鼓机/节奏制作工具。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "GPL-2.0 开源"
+        }
+      ],
+      "free_tier_limits": "无付费墙。定位是鼓机，不是通用波形编辑器或完整 DAW。",
+      "github_stars": 1354,
+      "latest_release": "1.2.7",
+      "latest_release_date": "2026-10-02 21:08",
+      "latest_release_date_note": "GitHub 标签 1.2.7 Patch Release，published_at 2026-10-02T13:08:22Z，已转换为 Asia/Shanghai。说明含面向即将到来的 2.0 的兼容性改进。仓库 pushed_at 2026-11-09。",
+      "maintenance_status": "活跃",
+      "summary": "跨平台开源鼓机，适合做节奏和 MIDI 鼓组，不是用来修人声或做播客降噪的编辑器。",
+      "features": {
+        "waveform": {
+          "value": "partial",
+          "note": "以步进编曲和采样鼓为主，不是通用波形编辑器"
+        },
+        "multitrack": {
+          "value": "partial",
+          "note": "多声部/鼓轨，不是完整缩混 DAW"
+        },
+        "plugins": {
+          "value": "unknown",
+          "note": "未打开功能页确认插件宿主能力"
+        },
+        "noise_reduce": {
+          "value": "no",
+          "note": "不是修复工具"
+        },
+        "spectral": {
+          "value": "no",
+          "note": "不是频谱编辑器"
+        },
+        "record": {
+          "value": "partial",
+          "note": "可录制模式/MIDI，不是多轨录音棚"
+        },
+        "batch": {
+          "value": "no",
+          "note": "未作为批处理工具"
+        },
+        "midi": {
+          "value": "yes",
+          "note": "鼓机与 MIDI 是核心，GitHub 描述含 midi"
+        },
+        "podcast": {
+          "value": "no",
+          "note": "面向节奏制作"
+        },
+        "export_formats": {
+          "value": "unknown",
+          "note": "通常可导出音频/MIDI，本次未打开手册确认"
+        }
+      },
+      "sources": [
+        "http://www.hydrogen-music.org",
+        "https://github.com/hydrogen-music/hydrogen"
+      ]
+    }
+  ]
+}

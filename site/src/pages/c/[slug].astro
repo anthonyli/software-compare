@@ -1,0 +1,444 @@
+---
+// SPDX-License-Identifier: Apache-2.0
+import Layout from "../../layouts/Layout.astro";
+import ExtLinks from "../../components/ExtLinks.astro";
+import FilterMenu from "../../components/FilterMenu.astro";
+import T from "../../components/T.astro";
+import { siteConfig } from "../../config";
+import { loadCatalog, formatStars, featClass, sourceRepoButton, type Category } from "../../lib/load-data";
+import {
+  formatPriceDisplay,
+  cleanPublicText,
+  maintenanceWarning,
+} from "../../lib/display";
+import {
+  ui,
+  uiT,
+  tr,
+  catPair,
+  groupPair,
+  featurePair,
+  featureValueShort,
+  featureValueFull,
+  platformEn,
+  maintenanceEn,
+  pricingEn,
+} from "../../i18n";
+
+export function getStaticPaths() {
+  return loadCatalog().categories.map((category) => ({
+    params: { slug: category.slug },
+    props: { category },
+  }));
+}
+
+const { category } = Astro.props as { category: Category };
+const catNames = catPair(category.slug, category.name);
+const groupNames = groupPair(category.groupId, category.groupName);
+const platforms = [...new Set(category.products.flatMap((p) => p.platforms))].sort((a, b) =>
+  a.localeCompare(b, "zh-CN"),
+);
+const statuses = [...new Set(category.products.map((p) => p.maintenance_status).filter(Boolean))] as string[];
+const desc = uiT("categoryDesc", "zh", { name: catNames.zh, n: category.products.length });
+const descEn = uiT("categoryDesc", "en", { name: catNames.en, n: category.products.length });
+const ossCount = category.products.filter((p) => p.open_source).length;
+
+const sortedProducts = [...category.products].sort((a, b) => {
+  const sa = a.github_stars ?? -1;
+  const sb = b.github_stars ?? -1;
+  if (sb !== sa) return sb - sa;
+  return a.name.localeCompare(b.name, "zh-CN");
+});
+---
+
+<Layout
+  title={uiT("categoryTitle", "zh", { name: catNames.zh })}
+  titleEn={uiT("categoryTitle", "en", { name: catNames.en })}
+  description={desc}
+  descriptionEn={descEn}
+  canonicalPath={category.href}
+>
+  <div class="mx-auto max-w-[80rem] px-4 pt-8 sm:px-5">
+    <nav class="text-sm text-muted" aria-label={ui.zh.breadcrumb} data-i18n="aria-label" data-zh={ui.zh.breadcrumb} data-en={ui.en.breadcrumb}>
+      <a href="/" class="hover:text-ink"><T zh={ui.zh.siteName} en={ui.en.siteName} /></a>
+      <span class="px-1.5 text-line-strong">/</span>
+      <span><T zh={groupNames.zh} en={groupNames.en} /></span>
+      <span class="px-1.5 text-line-strong">/</span>
+      <span class="text-ink"><T zh={catNames.zh} en={catNames.en} /></span>
+    </nav>
+    <header class="mt-5 mb-6">
+      <h1 class="text-3xl font-extrabold tracking-tight sm:text-4xl">
+        <T zh={catNames.zh} en={catNames.en} />
+      </h1>
+      <p class="mt-2 text-sm text-muted">
+        <T
+          zh={uiT("catSubtitle", "zh", { n: category.products.length, oss: ossCount, date: category.collected_at })}
+          en={uiT("catSubtitle", "en", { n: category.products.length, oss: ossCount, date: category.collected_at })}
+        />
+      </p>
+    </header>
+  </div>
+
+  <form id="filters" class="filter-bar" aria-label={ui.zh.filter} data-i18n="aria-label" data-zh={ui.zh.filter} data-en={ui.en.filter}>
+    <div class="filter-overlay" data-filter-overlay hidden></div>
+    <div class="filter-bar-inner">
+      <button type="button" class="filter-chip drawer-open" data-drawer-open>
+        <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M2 4h12M4 8h8M6 12h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+        <T zh={ui.zh.filter} en={ui.en.filter} />
+      </button>
+      <div class="filter-main" data-filter-main>
+        <div class="filter-drawer-title"><T zh={ui.zh.filter} en={ui.en.filter} /></div>
+        <label class="filter-chip">
+          <input type="checkbox" name="free" class="sr-only" /> <T zh={ui.zh.fullyFree} en={ui.en.fullyFree} />
+        </label>
+        <label class="filter-chip">
+          <input type="checkbox" name="oss" class="sr-only" /> <T zh={ui.zh.openSource} en={ui.en.openSource} />
+        </label>
+        <FilterMenu
+          name="platform"
+          label={ui.zh.platform}
+          labelEn={ui.en.platform}
+          value=""
+          options={[{ value: "", label: ui.zh.all, labelEn: ui.en.all }, ...platforms.map((p) => ({ value: p, label: p, labelEn: platformEn(p) }))]}
+        />
+        <FilterMenu
+          name="status"
+          label={ui.zh.status}
+          labelEn={ui.en.status}
+          value=""
+          options={[{ value: "", label: ui.zh.all, labelEn: ui.en.all }, ...statuses.map((s) => ({ value: s, label: s, labelEn: maintenanceEn(s) }))]}
+        />
+      </div>
+      <FilterMenu
+        name="sort"
+        label={ui.zh.sort}
+        labelEn={ui.en.sort}
+        value="stars"
+        align="right"
+        options={[
+          { value: "stars", label: ui.zh.sortStars, labelEn: ui.en.sortStars },
+          { value: "name", label: ui.zh.sortName, labelEn: ui.en.sortName },
+        ]}
+      />
+      <span
+        class="ml-auto text-xs text-muted tabular-nums"
+        data-count
+        data-count-zh={ui.zh.showing}
+        data-count-en={ui.en.showing}
+      ></span>
+    </div>
+  </form>
+
+  <div class="mx-auto max-w-[80rem] px-4 sm:px-5">
+    <div class="matrix-shell mt-4 hidden md:block" data-matrix-shell>
+      <p class="scroll-cue"><T zh={ui.zh.scrollFeatures} en={ui.en.scrollFeatures} /></p>
+      <div class="matrix-wrap" data-matrix-wrap>
+        <table class="matrix-table" id="matrix">
+          <thead>
+            <tr>
+              <th class="sticky-col"><T zh={ui.zh.software} en={ui.en.software} /></th>
+              <th><T zh={ui.zh.price} en={ui.en.price} /></th>
+              {category.features.map((f) => {
+                const lab = featurePair(category.slug, f.key, f.label);
+                return (
+                  <th class="feat-h" title={lab.zh} data-i18n="title" data-zh={lab.zh} data-en={lab.en}>
+                    <T zh={lab.zh} en={lab.en} />
+                  </th>
+                );
+              })}
+            </tr>
+          </thead>
+          <tbody>
+            {sortedProducts.map((p) => {
+              const warn = maintenanceWarning(p);
+              const src = sourceRepoButton(p);
+              const priceZh = formatPriceDisplay(p, "zh");
+              const priceEn = formatPriceDisplay(p, "en");
+              return (
+                <tr
+                  data-name={p.name}
+                  data-stars={p.github_stars ?? -1}
+                  data-free={p.pricing_model === "完全免费" ? "1" : "0"}
+                  data-oss={p.open_source ? "1" : "0"}
+                  data-platforms={p.platforms.join(",")}
+                  data-status={p.maintenance_status || ""}
+                >
+                  <td class="sticky-col">
+                    <div class="flex items-start justify-between gap-2">
+                      <div class="min-w-0">
+                        <a href={p.href} class="product-name" title={p.name}>{p.name}</a>
+                        <div class="mt-1 flex flex-wrap items-center gap-1">
+                          {p.open_source && <span class="chip chip-oss"><T zh={ui.zh.openSource} en={ui.en.openSource} /></span>}
+                          {p.pricing_model === "完全免费" && <span class="chip chip-free"><T zh={ui.zh.fullyFree} en={ui.en.fullyFree} /></span>}
+                          {warn && <span class="chip chip-warn"><T zh={warn} en={maintenanceEn(warn)} /></span>}
+                          {p.github_stars != null && (
+                            <span
+                              class="stars-quiet"
+                              title={`${p.github_stars.toLocaleString("zh-CN")} 星`}
+                              data-i18n="title"
+                              data-zh={uiT("starsCount", "zh", { n: p.github_stars.toLocaleString("zh-CN") })}
+                              data-en={uiT("starsCount", "en", { n: p.github_stars.toLocaleString("en-US") })}
+                            >
+                              ★ <span class="t-zh">{formatStars(p.github_stars, "zh")}</span><span class="t-en">{formatStars(p.github_stars, "en")}</span>
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                      <ExtLinks official={p.official_url} github={p.github_url} sourceUrl={src?.url} sourceLabel={src?.label} iconOnly />
+                    </div>
+                  </td>
+                  <td class="price-cell" title={priceZh.caveat} data-i18n="title" data-zh={priceZh.caveat} data-en={priceEn.caveat}>
+                    <T zh={priceZh.tableCell} en={priceEn.tableCell} />
+                  </td>
+                  {category.features.map((f) => {
+                    const cell = p.features[f.key] || { value: "unknown", note: "" };
+                    const v = (cell.value || "unknown").toLowerCase();
+                    const empty = v === "unknown" || v === "na";
+                    const noteZh = cleanPublicText(cell.note);
+                    const full = featureValueFull[cell.value] || { zh: cell.value, en: cell.value };
+                    const short = featureValueShort[cell.value] || { zh: cell.value, en: cell.value };
+                    const titleZh = full.zh + (noteZh ? ` · ${noteZh}` : "");
+                    const titleEn = full.en + (noteZh ? ` · ${tr(noteZh)}` : "");
+                    return (
+                      <td class="text-center">
+                        {empty ? (
+                          <span class="feat-empty" title={titleZh} data-i18n="title" data-zh={titleZh} data-en={titleEn}>—</span>
+                        ) : (
+                          <span class:list={["feat", featClass(cell.value)]} title={titleZh} data-i18n="title" data-zh={titleZh} data-en={titleEn}>
+                            <T zh={short.zh} en={short.en} />
+                          </span>
+                        )}
+                      </td>
+                    );
+                  })}
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card-list md:hidden" id="card-list" data-card-list>
+      {sortedProducts.map((p) => {
+        const warn = maintenanceWarning(p);
+        const src = sourceRepoButton(p);
+        const priceZh = formatPriceDisplay(p, "zh");
+        const priceEn = formatPriceDisplay(p, "en");
+        return (
+          <article
+            class="product-card"
+            data-name={p.name}
+            data-stars={p.github_stars ?? -1}
+            data-free={p.pricing_model === "完全免费" ? "1" : "0"}
+            data-oss={p.open_source ? "1" : "0"}
+            data-platforms={p.platforms.join(",")}
+            data-status={p.maintenance_status || ""}
+          >
+            <div class="flex items-start justify-between gap-3">
+              <a href={p.href} class="card-title" title={p.name}>{p.name}</a>
+              {p.github_stars != null && (
+                <span class="stars-quiet shrink-0">★ <span class="t-zh">{formatStars(p.github_stars, "zh")}</span><span class="t-en">{formatStars(p.github_stars, "en")}</span></span>
+              )}
+            </div>
+            <div class="mt-1.5 flex flex-wrap items-center gap-1">
+              {p.open_source && <span class="chip chip-oss"><T zh={ui.zh.openSource} en={ui.en.openSource} /></span>}
+              {p.pricing_model === "完全免费" && <span class="chip chip-free"><T zh={ui.zh.fullyFree} en={ui.en.fullyFree} /></span>}
+              {warn && <span class="chip chip-warn"><T zh={warn} en={maintenanceEn(warn)} /></span>}
+            </div>
+            <p class="mt-2 text-sm text-ink-soft"><T zh={priceZh.tableCell} en={priceEn.tableCell} /></p>
+            {p.platforms.length > 0 && (
+              <p class="mt-1 text-xs text-muted">
+                <span class="t-zh">{p.platforms.join(" · ")}</span>
+                <span class="t-en">{p.platforms.map((x) => platformEn(x)).join(" · ")}</span>
+              </p>
+            )}
+            <div class="feat-mini">
+              {category.features.map((f) => {
+                const cell = p.features[f.key] || { value: "unknown", note: "" };
+                const v = (cell.value || "unknown").toLowerCase();
+                const empty = v === "unknown" || v === "na";
+                const lab = featurePair(category.slug, f.key, f.label);
+                const short = featureValueShort[cell.value] || { zh: cell.value, en: cell.value };
+                return (
+                  <>
+                    <span class="fk" title={lab.zh} data-i18n="title" data-zh={lab.zh} data-en={lab.en}>
+                      <T zh={lab.zh} en={lab.en} />
+                    </span>
+                    {empty ? (
+                      <span class="feat-empty">—</span>
+                    ) : (
+                      <span class:list={["feat", featClass(cell.value)]}>
+                        <T zh={short.zh} en={short.en} />
+                      </span>
+                    )}
+                  </>
+                );
+              })}
+            </div>
+            <div class="mt-3">
+              <ExtLinks official={p.official_url} github={p.github_url} sourceUrl={src?.url} sourceLabel={src?.label} />
+            </div>
+          </article>
+        );
+      })}
+    </div>
+
+    <div id="empty-filter" class="empty-state" hidden>
+      <p><T zh={ui.zh.emptyFilter} en={ui.en.emptyFilter} /></p>
+      <button type="button" class="btn btn-secondary btn-sm" data-reset>
+        <T zh={ui.zh.clearFilters} en={ui.en.clearFilters} />
+      </button>
+    </div>
+
+    <p class="mt-4 text-xs text-muted"><T zh={ui.zh.legend} en={ui.en.legend} /></p>
+    <p class="mt-1 text-xs text-muted"><T zh={ui.zh.caveat} en={ui.en.caveat} /></p>
+  </div>
+</Layout>
+
+<script>
+  const form = document.getElementById("filters") as HTMLFormElement | null;
+  const table = document.getElementById("matrix") as HTMLTableElement | null;
+  const cardList = document.getElementById("card-list") as HTMLElement | null;
+  const emptyEl = document.getElementById("empty-filter") as HTMLElement | null;
+  const shell = document.querySelector("[data-matrix-shell]") as HTMLElement | null;
+  const wrap = document.querySelector("[data-matrix-wrap]") as HTMLElement | null;
+
+  const tableRows = table ? ([...table.tBodies[0].rows] as HTMLTableRowElement[]) : [];
+  const cards = cardList ? ([...cardList.querySelectorAll(".product-card")] as HTMLElement[]) : [];
+  const units = tableRows.length ? tableRows : cards;
+
+  function matches(el: HTMLElement, free: boolean, oss: boolean, platform: string, status: string) {
+    if (free && el.dataset.free !== "1") return false;
+    if (oss && el.dataset.oss !== "1") return false;
+    if (platform) {
+      const list = (el.dataset.platforms || "").split(",").filter(Boolean);
+      if (!list.includes(platform)) return false;
+    }
+    if (status && el.dataset.status !== status) return false;
+    return true;
+  }
+
+  function compare(a: HTMLElement, b: HTMLElement, sort: string) {
+    if (sort === "stars") {
+      const d = Number(b.dataset.stars) - Number(a.dataset.stars);
+      if (d !== 0) return d;
+    }
+    return (a.dataset.name || "").localeCompare(b.dataset.name || "", "zh-CN");
+  }
+
+  function apply() {
+    if (!form) return;
+    const fd = new FormData(form);
+    const free = fd.get("free") === "on";
+    const oss = fd.get("oss") === "on";
+    const platform = String(fd.get("platform") || "");
+    const status = String(fd.get("status") || "");
+    const sort = String(fd.get("sort") || "stars");
+
+    const visRows = tableRows.filter((r) => matches(r, free, oss, platform, status)).sort((a, b) => compare(a, b, sort));
+    const visCards = cards.filter((r) => matches(r, free, oss, platform, status)).sort((a, b) => compare(a, b, sort));
+
+    if (table) {
+      const body = table.tBodies[0];
+      visRows.forEach((r) => body.appendChild(r));
+      tableRows.forEach((r) => {
+        r.hidden = !visRows.includes(r);
+      });
+    }
+    if (cardList) {
+      visCards.forEach((c) => cardList.appendChild(c));
+      cards.forEach((c) => {
+        c.hidden = !visCards.includes(c);
+      });
+    }
+
+    const visibleN = tableRows.length ? visRows.length : visCards.length;
+    const totalN = units.length;
+    const countEl = form.querySelector("[data-count]") as HTMLElement | null;
+    if (countEl) {
+      const lang = document.documentElement.lang === "en" ? "en" : "zh";
+      const tpl = (lang === "en" ? countEl.dataset.countEn : countEl.dataset.countZh) || "显示 {n} / {total}";
+      countEl.textContent = tpl.replace("{n}", String(visibleN)).replace("{total}", String(totalN));
+    }
+
+    const empty = visibleN === 0;
+    if (emptyEl) emptyEl.hidden = !empty;
+    if (shell) shell.style.display = empty ? "none" : "";
+    if (cardList) {
+      if (empty) cardList.style.display = "none";
+      else cardList.style.display = "";
+    }
+    updateScrollCue();
+  }
+
+  function updateScrollCue() {
+    if (!shell || !wrap) return;
+    const can = wrap.scrollWidth > wrap.clientWidth + 4;
+    shell.classList.toggle("can-scroll", can);
+    const atEnd = wrap.scrollLeft + wrap.clientWidth >= wrap.scrollWidth - 4;
+    shell.classList.toggle("at-end", atEnd);
+  }
+
+  if (form) {
+    form.addEventListener("change", apply);
+    form.addEventListener("submit", (e) => e.preventDefault());
+    form.querySelector("[data-reset]")?.addEventListener("click", () => {
+      form.reset();
+      apply();
+    });
+    emptyEl?.querySelector("[data-reset]")?.addEventListener("click", () => {
+      form.reset();
+      apply();
+    });
+    apply();
+  }
+  if (wrap) {
+    wrap.addEventListener("scroll", updateScrollCue, { passive: true });
+    window.addEventListener("resize", updateScrollCue);
+    updateScrollCue();
+  }
+
+  const setFilterH = () => {
+    if (!form) return;
+    document.documentElement.style.setProperty("--filter-h", `${form.offsetHeight}px`);
+  };
+  setFilterH();
+  if (form) new ResizeObserver(setFilterH).observe(form);
+
+  window.addEventListener("compare-lang", () => apply());
+
+  const drawerBtn = document.querySelector("[data-drawer-open]") as HTMLButtonElement | null;
+  const drawerMain = document.querySelector("[data-filter-main]") as HTMLElement | null;
+  const overlay = document.querySelector("[data-filter-overlay]") as HTMLElement | null;
+  const closeDrawer = () => {
+    drawerMain?.classList.remove("is-open");
+    overlay?.classList.remove("is-open");
+    if (overlay) overlay.hidden = true;
+    drawerBtn?.setAttribute("aria-expanded", "false");
+  };
+  const openDrawer = () => {
+    drawerMain?.classList.add("is-open");
+    if (overlay) {
+      overlay.hidden = false;
+      overlay.classList.add("is-open");
+    }
+    drawerBtn?.setAttribute("aria-expanded", "true");
+  };
+  drawerBtn?.setAttribute("aria-expanded", "false");
+  drawerBtn?.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    if (drawerMain?.classList.contains("is-open")) closeDrawer();
+    else openDrawer();
+  });
+  overlay?.addEventListener("click", closeDrawer);
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeDrawer();
+  });
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 768) closeDrawer();
+  });
+</script>

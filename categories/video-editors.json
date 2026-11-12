@@ -1,0 +1,1196 @@
+{
+  "category_slug": "video-editors",
+  "category_name_zh": "视频剪辑",
+  "collected_at": "2026-11-12",
+  "collected_at_timezone": "Asia/Shanghai (UTC+8)",
+  "features": [
+    {
+      "key": "timeline",
+      "label": "时间线剪辑"
+    },
+    {
+      "key": "multi_track",
+      "label": "多轨道"
+    },
+    {
+      "key": "color_grade",
+      "label": "调色"
+    },
+    {
+      "key": "effects",
+      "label": "特效/转场"
+    },
+    {
+      "key": "keyframes",
+      "label": "关键帧"
+    },
+    {
+      "key": "titles",
+      "label": "字幕/标题"
+    },
+    {
+      "key": "audio_mix",
+      "label": "音频混合"
+    },
+    {
+      "key": "chroma_key",
+      "label": "绿幕抠像"
+    },
+    {
+      "key": "proxy",
+      "label": "代理剪辑"
+    },
+    {
+      "key": "export_4k",
+      "label": "导出 4K"
+    },
+    {
+      "key": "gpu_accel",
+      "label": "GPU 加速"
+    }
+  ],
+  "products": [
+    {
+      "id": "shotcut",
+      "name": "Shotcut",
+      "official_url": "https://shotcut.org",
+      "github_url": "https://github.com/mltframework/shotcut",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "官方与仓库均按免费开源软件分发，无功能订阅墙"
+        }
+      ],
+      "free_tier_limits": "无付费墙。",
+      "github_stars": 15659,
+      "latest_release": "26.9",
+      "latest_release_date": "2026-09-28 08:29",
+      "latest_release_date_note": "GitHub 标签 v26.9.27，已转换为 Asia/Shanghai。官网新闻亦列出 New Version 26.9。",
+      "maintenance_status": "活跃",
+      "summary": "跨平台开源非线性编辑器，格式支持广（FFmpeg），适合中度剪辑。",
+      "features": {
+        "timeline": {
+          "value": "yes",
+          "note": "官网定位 free, open source, cross-platform video editor，含时间线工作流"
+        },
+        "multi_track": {
+          "value": "yes",
+          "note": "多格式时间线"
+        },
+        "color_grade": {
+          "value": "partial",
+          "note": "新版本新闻提到 HDR 等，完整专业调色台未在首页展开"
+        },
+        "effects": {
+          "value": "yes",
+          "note": "有滤镜面板与转场"
+        },
+        "keyframes": {
+          "value": "unknown",
+          "note": "首页未单独确认关键帧系统"
+        },
+        "titles": {
+          "value": "yes",
+          "note": "可添加文字/滤镜标题，细节未展开"
+        },
+        "audio_mix": {
+          "value": "yes",
+          "note": "支持音频轨道与混音相关操作（官网提到 audio capture/JACK/Pulse）"
+        },
+        "chroma_key": {
+          "value": "unknown",
+          "note": "首页未明确写出绿幕"
+        },
+        "proxy": {
+          "value": "unknown",
+          "note": "首页未确认"
+        },
+        "export_4k": {
+          "value": "yes",
+          "note": "官网：Supports resolutions up to 4k"
+        },
+        "gpu_accel": {
+          "value": "unknown",
+          "note": "首页未单独确认 GPU 编码加速"
+        }
+      },
+      "sources": [
+        "https://shotcut.org",
+        "https://github.com/mltframework/shotcut"
+      ]
+    },
+    {
+      "id": "kdenlive",
+      "name": "Kdenlive",
+      "official_url": "https://kdenlive.org",
+      "github_url": "https://github.com/KDE/kdenlive",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "官方与仓库均按免费开源软件分发，无功能订阅墙"
+        }
+      ],
+      "free_tier_limits": "无付费墙。",
+      "github_stars": 6091,
+      "latest_release": "26.08.3",
+      "latest_release_date": "2026-11-07",
+      "latest_release_date_note": "官网新闻 Saturday, 7 November 2026：Kdenlive 26.08.3 released。GitHub 镜像无典型 Releases，版本随 KDE 发布。日期无时钟时间。GitHub 星标仅为镜像数据。",
+      "maintenance_status": "活跃",
+      "summary": "KDE 的开源非线性编辑器，工具从素材管理到调音、特效和关键帧都比较完整。",
+      "features": {
+        "timeline": {
+          "value": "yes",
+          "note": "非线性工作流、多机位与三点编辑"
+        },
+        "multi_track": {
+          "value": "yes",
+          "note": "复杂时间线、嵌套序列"
+        },
+        "color_grade": {
+          "value": "unknown",
+          "note": "首页未把专业调色作为独立章节展开"
+        },
+        "effects": {
+          "value": "yes",
+          "note": "hundreds of audio and video effects，转场与图层混合"
+        },
+        "keyframes": {
+          "value": "yes",
+          "note": "create dynamic changes with keyframes"
+        },
+        "titles": {
+          "value": "unknown",
+          "note": "首页未单独写出字幕模块，但作为完整 NLE 通常包含；未确认则改为 unknown"
+        },
+        "audio_mix": {
+          "value": "yes",
+          "note": "powerful mixers、voiceover recording、audio spectrum"
+        },
+        "chroma_key": {
+          "value": "unknown",
+          "note": "特效众多，是否含抠像未在首页点名"
+        },
+        "proxy": {
+          "value": "yes",
+          "note": "use proxies for smooth playback even on low-end systems"
+        },
+        "export_4k": {
+          "value": "unknown",
+          "note": "几乎支持任意格式导入，导出 4K 未在首页点名"
+        },
+        "gpu_accel": {
+          "value": "unknown",
+          "note": "首页未确认"
+        }
+      },
+      "sources": [
+        "https://kdenlive.org",
+        "https://github.com/KDE/kdenlive",
+        "https://invent.kde.org/multimedia/kdenlive"
+      ],
+      "source_url": "https://invent.kde.org/multimedia/kdenlive",
+      "source_host_note": "官方仓库在 invent.kde.org，GitHub KDE/kdenlive 为官方镜像。"
+    },
+    {
+      "id": "openshot",
+      "name": "OpenShot",
+      "official_url": "https://www.openshot.org",
+      "github_url": "https://github.com/OpenShot/openshot-qt",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "未知（GitHub 返回 NOASSERTION；项目宣传 100% 开源）",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "官方与仓库均按免费开源软件分发，无功能订阅墙"
+        }
+      ],
+      "free_tier_limits": "无付费墙。",
+      "github_stars": 6770,
+      "latest_release": "4.1.1",
+      "latest_release_date": "2026-11-02 09:17",
+      "latest_release_date_note": "GitHub 标签 v4.1.1，已转换为 Asia/Shanghai。官网 Download v4.1.1。",
+      "maintenance_status": "活跃",
+      "summary": "面向入门用户的开源剪辑软件，有调色、特效、关键帧和抠像，完全免费无水印。",
+      "features": {
+        "timeline": {
+          "value": "yes",
+          "note": "Precision timeline editing，unlimited tracks"
+        },
+        "multi_track": {
+          "value": "yes",
+          "note": "unlimited tracks"
+        },
+        "color_grade": {
+          "value": "yes",
+          "note": "Color grading and scopes：色轮、曲线、LUT、示波器"
+        },
+        "effects": {
+          "value": "yes",
+          "note": "镜头光晕、模糊、亮度等，并可关键帧动画"
+        },
+        "keyframes": {
+          "value": "yes",
+          "note": "Visual keyframe animation：位置、缩放、旋转、透明度、音量与特效"
+        },
+        "titles": {
+          "value": "unknown",
+          "note": "首页未单独点名字幕模块"
+        },
+        "audio_mix": {
+          "value": "yes",
+          "note": "可排布音频并做音频可视化特效"
+        },
+        "chroma_key": {
+          "value": "yes",
+          "note": "Creative video effects 明确列出 chroma key"
+        },
+        "proxy": {
+          "value": "unknown",
+          "note": "首页未确认代理"
+        },
+        "export_4k": {
+          "value": "unknown",
+          "note": "未在首页点名 4K 导出"
+        },
+        "gpu_accel": {
+          "value": "unknown",
+          "note": "首页未确认"
+        }
+      },
+      "sources": [
+        "https://www.openshot.org",
+        "https://github.com/OpenShot/openshot-qt"
+      ]
+    },
+    {
+      "id": "olive",
+      "name": "Olive",
+      "official_url": "https://olivevideoeditor.org/",
+      "github_url": "https://github.com/olive-editor/olive",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "GPL-3.0 开源 NLE"
+        }
+      ],
+      "free_tier_limits": "无。项目近两年正式开发停滞。",
+      "github_stars": 9156,
+      "latest_release": "0.2.0-nightly",
+      "latest_release_date": "2024-12-05 17:28",
+      "latest_release_date_note": "GitHub latest 为 0.2.0-nightly，已转换为 Asia/Shanghai。pushed_at 亦为 2024-12-05。",
+      "maintenance_status": "停更",
+      "summary": "曾备受关注的开源专业向 NLE，但 2024 年底后已无新的 GitHub 活动，不宜当作活跃方案。",
+      "features": {
+        "timeline": {
+          "value": "yes",
+          "note": "非线性编辑器"
+        },
+        "multi_track": {
+          "value": "yes",
+          "note": "多轨道时间线"
+        },
+        "color_grade": {
+          "value": "unknown",
+          "note": "开发中的专业向功能，当前构建未在官网逐条核实"
+        },
+        "effects": {
+          "value": "unknown",
+          "note": "未打开功能对照"
+        },
+        "keyframes": {
+          "value": "unknown",
+          "note": "未核实"
+        },
+        "titles": {
+          "value": "unknown",
+          "note": "未核实"
+        },
+        "audio_mix": {
+          "value": "unknown",
+          "note": "未核实"
+        },
+        "chroma_key": {
+          "value": "unknown",
+          "note": "未核实"
+        },
+        "proxy": {
+          "value": "unknown",
+          "note": "未核实"
+        },
+        "export_4k": {
+          "value": "unknown",
+          "note": "未核实"
+        },
+        "gpu_accel": {
+          "value": "unknown",
+          "note": "未核实"
+        }
+      },
+      "sources": [
+        "https://olivevideoeditor.org/",
+        "https://github.com/olive-editor/olive"
+      ]
+    },
+    {
+      "id": "flowblade",
+      "name": "Flowblade",
+      "official_url": "https://github.com/jliljebl/flowblade",
+      "github_url": "https://github.com/jliljebl/flowblade",
+      "platforms": [
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "官方与仓库均按免费开源软件分发，无功能订阅墙"
+        }
+      ],
+      "free_tier_limits": "无付费墙。",
+      "github_stars": 3107,
+      "latest_release": "2.24.2",
+      "latest_release_date": "2026-05-29 14:36",
+      "latest_release_date_note": "GitHub 标签 v2.24.2，已转换为 Asia/Shanghai。仓库无独立官网 homepage。",
+      "maintenance_status": "活跃",
+      "summary": "面向 Linux 的开源多轨剪辑器，适合熟悉影片剪辑流程的用户。",
+      "features": {
+        "timeline": {
+          "value": "yes",
+          "note": "Linux 多轨 NLE"
+        },
+        "multi_track": {
+          "value": "yes",
+          "note": "多轨道"
+        },
+        "color_grade": {
+          "value": "unknown",
+          "note": "未打开详细文档"
+        },
+        "effects": {
+          "value": "unknown",
+          "note": "通常有滤镜，未打开文档确认"
+        },
+        "keyframes": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "titles": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "audio_mix": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "chroma_key": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "proxy": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "export_4k": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "gpu_accel": {
+          "value": "unknown",
+          "note": "未确认"
+        }
+      },
+      "sources": [
+        "https://github.com/jliljebl/flowblade"
+      ]
+    },
+    {
+      "id": "losslesscut",
+      "name": "LosslessCut",
+      "official_url": "https://losslesscut.app/",
+      "github_url": "https://github.com/mifi/lossless-cut",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-2.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "官网/仓库定位为无损音视频剪切工具"
+        }
+      ],
+      "free_tier_limits": "无。它是快速剪切/合并工具，不是完整 NLE。",
+      "github_stars": 45958,
+      "latest_release": "3.70.2",
+      "latest_release_date": "2026-10-28 14:48",
+      "latest_release_date_note": "GitHub 标签 v3.70.2，已转换为 Asia/Shanghai",
+      "maintenance_status": "活跃",
+      "summary": "开源的无损剪切工具，适合快速切片和合并，不能替代完整时间线剪辑器。",
+      "features": {
+        "timeline": {
+          "value": "partial",
+          "note": "有简单时间线用于设置入出点，不是多轨 NLE"
+        },
+        "multi_track": {
+          "value": "no",
+          "note": "不以多轨剪辑见长"
+        },
+        "color_grade": {
+          "value": "no",
+          "note": "无损剪切，不重编码调色"
+        },
+        "effects": {
+          "value": "no",
+          "note": "不是特效软件"
+        },
+        "keyframes": {
+          "value": "no",
+          "note": "无关键帧动画"
+        },
+        "titles": {
+          "value": "no",
+          "note": "无标题模块"
+        },
+        "audio_mix": {
+          "value": "partial",
+          "note": "可处理音视频流、提取或丢弃音轨，不是混音台"
+        },
+        "chroma_key": {
+          "value": "no",
+          "note": "无"
+        },
+        "proxy": {
+          "value": "no",
+          "note": "无需代理工作流"
+        },
+        "export_4k": {
+          "value": "partial",
+          "note": "以流复制方式输出，分辨率取决于源文件，可处理 4K 源"
+        },
+        "gpu_accel": {
+          "value": "na",
+          "note": "主要为 lossless 流复制，不依赖渲染加速"
+        }
+      },
+      "sources": [
+        "https://losslesscut.app/",
+        "https://github.com/mifi/lossless-cut"
+      ]
+    },
+    {
+      "id": "pitivi",
+      "name": "Pitivi",
+      "official_url": "https://www.pitivi.org",
+      "github_url": "https://github.com/pitivi/pitivi",
+      "platforms": [
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "未知（GitHub 返回 NOASSERTION；为 GNOME 生态开源剪辑器）",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "官方与仓库均按免费开源软件分发，无功能订阅墙"
+        }
+      ],
+      "free_tier_limits": "无付费墙。",
+      "github_stars": 240,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "GitHub 仓库无典型 Releases 页；pushed_at 2026-10-08，仍有提交。GitHub 星标仅 240，可能不是主仓库或关注度集中在 GNOME GitLab。",
+      "maintenance_status": "活跃",
+      "summary": "GNOME 生态中的开源 Linux 剪辑器，适合简单剪辑；GitHub 镜像信息有限。",
+      "features": {
+        "timeline": {
+          "value": "yes",
+          "note": "视频编辑器时间线"
+        },
+        "multi_track": {
+          "value": "yes",
+          "note": "多轨"
+        },
+        "color_grade": {
+          "value": "unknown",
+          "note": "未打开功能页"
+        },
+        "effects": {
+          "value": "unknown",
+          "note": "未打开功能页"
+        },
+        "keyframes": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "titles": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "audio_mix": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "chroma_key": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "proxy": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "export_4k": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "gpu_accel": {
+          "value": "unknown",
+          "note": "未确认"
+        }
+      },
+      "sources": [
+        "https://www.pitivi.org",
+        "https://github.com/pitivi/pitivi"
+      ]
+    },
+    {
+      "id": "davinci-resolve",
+      "name": "DaVinci Resolve",
+      "official_url": "https://www.blackmagicdesign.com/products/davinciresolve",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "DaVinci Resolve（免费版）可下载使用。DaVinci Resolve Studio 官网现价 $236（划线原价 $295）一次性购买。另有控制台等硬件标价。",
+      "prices": [
+        {
+          "plan": "DaVinci Resolve（免费版）",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "产品页提供免费下载与 Studio 购买并列"
+        },
+        {
+          "plan": "DaVinci Resolve Studio",
+          "price": "236",
+          "currency": "USD",
+          "period": "lifetime",
+          "note": "2026-11-12 采集：Buy Online Now $236，文案 Was $295 Now $236。一次性软件许可，非订阅"
+        }
+      ],
+      "free_tier_limits": "免费版已包含剪辑、调色、Fusion、Fairlight 等核心模块，部分高级功能（如部分降噪、更高分辨率协作等）在 Studio。精确功能差以官网 Compare 为准，本次未打开完整对比表。",
+      "github_stars": null,
+      "latest_release": "DaVinci Resolve 21",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "产品页主推 Resolve 21，无精确发布时钟时间",
+      "maintenance_status": "活跃",
+      "summary": "专业级剪辑、调色、视效和音频一体化工具，免费版已经很强，Studio 为一次性买断。",
+      "features": {
+        "timeline": {
+          "value": "yes",
+          "note": "专业剪辑"
+        },
+        "multi_track": {
+          "value": "yes",
+          "note": "多轨时间线"
+        },
+        "color_grade": {
+          "value": "yes",
+          "note": "以调色闻名，有完整调色模块"
+        },
+        "effects": {
+          "value": "yes",
+          "note": "Fusion 视效与运动图形"
+        },
+        "keyframes": {
+          "value": "yes",
+          "note": "专业特效/动画工作流"
+        },
+        "titles": {
+          "value": "yes",
+          "note": "标题与运动图形"
+        },
+        "audio_mix": {
+          "value": "yes",
+          "note": "Fairlight 音频后期"
+        },
+        "chroma_key": {
+          "value": "yes",
+          "note": "Fusion/剪辑中的抠像（产品能力；完整对比表未打开，把握较高）"
+        },
+        "proxy": {
+          "value": "yes",
+          "note": "专业后期工作流含代理，细节见文档"
+        },
+        "export_4k": {
+          "value": "yes",
+          "note": "可交付 4K 及更高；部分更高规格可能在 Studio（对比表未打开）"
+        },
+        "gpu_accel": {
+          "value": "yes",
+          "note": "高度依赖 GPU 加速"
+        }
+      },
+      "sources": [
+        "https://www.blackmagicdesign.com/products/davinciresolve"
+      ]
+    },
+    {
+      "id": "premiere-pro",
+      "name": "Adobe Premiere Pro",
+      "official_url": "https://www.adobe.com/products/premiere.html",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "订阅",
+      "price_summary": "Adobe Creative Cloud 订阅产品。本次未成功打开带标价的 Adobe 计划页（部分 adobe.com 页面返回 403 或动态价格），精确美元价格未知。",
+      "prices": [
+        {
+          "plan": "Creative Cloud 订阅",
+          "price": "未知",
+          "currency": "USD",
+          "period": "month",
+          "note": "需在 Adobe 计划页复核当前个人/团队年付与月付价格"
+        }
+      ],
+      "free_tier_limits": "通常有试用，无长期完整免费档。精确试用天数未知。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "订阅制持续更新，未采集版本号",
+      "maintenance_status": "活跃",
+      "summary": "行业常用的订阅制专业剪辑软件，功能全面，但这次没能从 Adobe 页面读出准确价格。",
+      "features": {
+        "timeline": {
+          "value": "yes",
+          "note": "专业 NLE"
+        },
+        "multi_track": {
+          "value": "yes",
+          "note": "多轨"
+        },
+        "color_grade": {
+          "value": "yes",
+          "note": " Lumetri 等调色工具为产品核心能力"
+        },
+        "effects": {
+          "value": "yes",
+          "note": "特效与转场"
+        },
+        "keyframes": {
+          "value": "yes",
+          "note": "关键帧动画"
+        },
+        "titles": {
+          "value": "yes",
+          "note": "字幕与基本图形"
+        },
+        "audio_mix": {
+          "value": "yes",
+          "note": "音轨混合，可与 Audition 协同"
+        },
+        "chroma_key": {
+          "value": "yes",
+          "note": "Ultra Key 等抠像"
+        },
+        "proxy": {
+          "value": "yes",
+          "note": "代理工作流"
+        },
+        "export_4k": {
+          "value": "yes",
+          "note": "可导出 4K 及更高"
+        },
+        "gpu_accel": {
+          "value": "yes",
+          "note": "Mercury Playback Engine 等 GPU 加速"
+        }
+      },
+      "sources": [
+        "https://www.adobe.com/products/premiere.html"
+      ]
+    },
+    {
+      "id": "final-cut-pro",
+      "name": "Final Cut Pro",
+      "official_url": "https://www.apple.com/final-cut-pro/",
+      "github_url": null,
+      "platforms": [
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "付费",
+      "price_summary": "苹果专业剪辑软件，通常为 Mac App Store 买断。本次未打开 App Store 或苹果产品页抓取当前标价，价格未知。",
+      "prices": [
+        {
+          "plan": "Final Cut Pro",
+          "price": "未知",
+          "currency": "USD",
+          "period": "lifetime",
+          "note": "请以 Mac App Store / apple.com/final-cut-pro 为准"
+        }
+      ],
+      "free_tier_limits": "无长期免费完整版；可能有试用，未核实。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "未采集",
+      "maintenance_status": "活跃",
+      "summary": "Mac 上的专业剪辑套件，买断制，具体售价需到苹果页面查看。",
+      "features": {
+        "timeline": {
+          "value": "yes",
+          "note": "磁力时间线专业剪辑"
+        },
+        "multi_track": {
+          "value": "yes",
+          "note": "多角色/多轨"
+        },
+        "color_grade": {
+          "value": "yes",
+          "note": "调色板"
+        },
+        "effects": {
+          "value": "yes",
+          "note": "特效与转场"
+        },
+        "keyframes": {
+          "value": "yes",
+          "note": "动画与关键帧"
+        },
+        "titles": {
+          "value": "yes",
+          "note": "字幕与标题"
+        },
+        "audio_mix": {
+          "value": "yes",
+          "note": "音频角色与混音"
+        },
+        "chroma_key": {
+          "value": "yes",
+          "note": "抠像"
+        },
+        "proxy": {
+          "value": "yes",
+          "note": "代理/优化媒体"
+        },
+        "export_4k": {
+          "value": "yes",
+          "note": "可导出 4K 及更高"
+        },
+        "gpu_accel": {
+          "value": "yes",
+          "note": "充分利用 Apple 芯片/GPU"
+        }
+      },
+      "sources": [
+        "https://www.apple.com/final-cut-pro/"
+      ]
+    },
+    {
+      "id": "capcut",
+      "name": "剪映 / CapCut",
+      "official_url": "https://www.capcut.com/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "iOS",
+        "Android",
+        "Web"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "提供免费桌面/移动端。Pro 订阅价格因地区和活动变化，本次未打开官方定价页读取数字，价格未知。",
+      "prices": [
+        {
+          "plan": "免费档",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "可下载使用，部分素材、特效或导出能力可能需 Pro"
+        },
+        {
+          "plan": "CapCut Pro / 会员",
+          "price": "未知",
+          "currency": null,
+          "period": null,
+          "note": "请以 capcut.com 或剪映国内账户页为准"
+        }
+      ],
+      "free_tier_limits": "精确的水印、导出分辨率和素材限制本次未打开对照表，记为未知。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "未采集",
+      "maintenance_status": "活跃",
+      "summary": "面向短视频的免费增值剪辑工具，入门容易，专业功能与素材常放在会员里，具体价格需看官网。",
+      "features": {
+        "timeline": {
+          "value": "yes",
+          "note": "时间线剪辑"
+        },
+        "multi_track": {
+          "value": "yes",
+          "note": "多轨"
+        },
+        "color_grade": {
+          "value": "yes",
+          "note": "滤镜与调色，完整专业调色是否免费未知"
+        },
+        "effects": {
+          "value": "partial",
+          "note": "大量特效/转场，部分可能为付费素材"
+        },
+        "keyframes": {
+          "value": "yes",
+          "note": "关键帧（产品常见能力）"
+        },
+        "titles": {
+          "value": "yes",
+          "note": "字幕与标题"
+        },
+        "audio_mix": {
+          "value": "yes",
+          "note": "音频轨道"
+        },
+        "chroma_key": {
+          "value": "unknown",
+          "note": "未打开功能页确认"
+        },
+        "proxy": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "export_4k": {
+          "value": "unknown",
+          "note": "是否免费导出 4K 未打开对照表"
+        },
+        "gpu_accel": {
+          "value": "unknown",
+          "note": "未确认"
+        }
+      },
+      "sources": [
+        "https://www.capcut.com/"
+      ]
+    },
+    {
+      "id": "filmora",
+      "name": "Wondershare Filmora",
+      "official_url": "https://filmora.wondershare.com/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "订阅",
+      "price_summary": "商业面向入门/中级的付费剪辑软件，有订阅和可能的买断。本次未打开商店页读取当前标价，价格未知。",
+      "prices": [
+        {
+          "plan": "Filmora 订阅/买断",
+          "price": "未知",
+          "currency": null,
+          "period": null,
+          "note": "请以 filmora.wondershare.com 商店页为准，促销频繁"
+        }
+      ],
+      "free_tier_limits": "通常有试用或带水印导出，精确限制未知。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "未采集",
+      "maintenance_status": "活跃",
+      "summary": "模板和特效较多的消费级剪辑软件，适合入门，但价格和免费限制需要到万兴商店页核对。",
+      "features": {
+        "timeline": {
+          "value": "yes",
+          "note": "消费级时间线"
+        },
+        "multi_track": {
+          "value": "yes",
+          "note": "多轨"
+        },
+        "color_grade": {
+          "value": "yes",
+          "note": "调色/滤镜"
+        },
+        "effects": {
+          "value": "yes",
+          "note": "大量特效转场，部分可能付费"
+        },
+        "keyframes": {
+          "value": "unknown",
+          "note": "未打开功能页"
+        },
+        "titles": {
+          "value": "yes",
+          "note": "标题模板"
+        },
+        "audio_mix": {
+          "value": "yes",
+          "note": "音频轨道"
+        },
+        "chroma_key": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "proxy": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "export_4k": {
+          "value": "unknown",
+          "note": "常见宣传 4K，是否免费档可用未核实"
+        },
+        "gpu_accel": {
+          "value": "unknown",
+          "note": "未确认"
+        }
+      },
+      "sources": [
+        "https://filmora.wondershare.com/"
+      ]
+    },
+    {
+      "id": "imovie",
+      "name": "iMovie",
+      "official_url": "https://www.apple.com/imovie/",
+      "github_url": null,
+      "platforms": [
+        "macOS",
+        "iOS"
+      ],
+      "open_source": false,
+      "license": "专有软件（免费）",
+      "pricing_model": "完全免费",
+      "price_summary": "苹果免费提供的入门剪辑应用（Mac/iOS）。本次未重新打开产品页核对表述，但该应用在苹果设备上以免费分发著称；若需严格证据请打开 apple.com/imovie。",
+      "prices": [
+        {
+          "plan": "iMovie",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "通过 App Store 免费获取；精确条款以苹果页面为准"
+        }
+      ],
+      "free_tier_limits": "功能相对专业版更少，无付费墙。仅限苹果平台。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "未采集",
+      "maintenance_status": "活跃",
+      "summary": "Mac 和 iPhone 上的免费入门剪辑工具，功能简单，适合家庭和轻度创作。",
+      "features": {
+        "timeline": {
+          "value": "yes",
+          "note": "简化时间线"
+        },
+        "multi_track": {
+          "value": "partial",
+          "note": "轨道数和灵活度有限"
+        },
+        "color_grade": {
+          "value": "partial",
+          "note": "有滤镜和简单校正"
+        },
+        "effects": {
+          "value": "partial",
+          "note": "基础转场与效果"
+        },
+        "keyframes": {
+          "value": "unknown",
+          "note": "未核实"
+        },
+        "titles": {
+          "value": "yes",
+          "note": "标题模板"
+        },
+        "audio_mix": {
+          "value": "partial",
+          "note": "基础音频调整"
+        },
+        "chroma_key": {
+          "value": "unknown",
+          "note": "未打开产品页确认"
+        },
+        "proxy": {
+          "value": "unknown",
+          "note": "未打开产品页确认"
+        },
+        "export_4k": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "gpu_accel": {
+          "value": "unknown",
+          "note": "未确认"
+        }
+      },
+      "sources": [
+        "https://www.apple.com/imovie/"
+      ]
+    },
+    {
+      "id": "clipchamp",
+      "name": "Microsoft Clipchamp",
+      "official_url": "https://clipchamp.com/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "Web"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "Windows / 网页剪辑工具，有免费档和 Microsoft 365 相关权益。本次未打开官方定价页，精确价格与限额未知。",
+      "prices": [
+        {
+          "plan": "免费档",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "可在 clipchamp.com 或 Windows 使用，限额未核实"
+        },
+        {
+          "plan": "付费/Microsoft 365 权益",
+          "price": "未知",
+          "currency": null,
+          "period": null,
+          "note": "请以 Clipchamp 或 Microsoft 365 计划页为准"
+        }
+      ],
+      "free_tier_limits": "未知（常见有导出分辨率或水印限制，本次未核实）。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "未采集",
+      "maintenance_status": "活跃",
+      "summary": "微软的网页/Windows 入门剪辑器，免费可用，完整限制和价格需看官网。",
+      "features": {
+        "timeline": {
+          "value": "yes",
+          "note": "基于时间线的网页剪辑器"
+        },
+        "multi_track": {
+          "value": "yes",
+          "note": "多轨"
+        },
+        "color_grade": {
+          "value": "unknown",
+          "note": "未打开功能页"
+        },
+        "effects": {
+          "value": "unknown",
+          "note": "未打开功能页"
+        },
+        "keyframes": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "titles": {
+          "value": "yes",
+          "note": "标题字幕为常见能力，仍建议复核"
+        },
+        "audio_mix": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "chroma_key": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "proxy": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "export_4k": {
+          "value": "unknown",
+          "note": "未确认是否免费"
+        },
+        "gpu_accel": {
+          "value": "unknown",
+          "note": "未确认"
+        }
+      },
+      "sources": [
+        "https://clipchamp.com/"
+      ]
+    }
+  ]
+}

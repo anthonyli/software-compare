@@ -1,0 +1,1220 @@
+{
+  "category_slug": "screenshot-tools",
+  "category_name_zh": "截图工具",
+  "collected_at": "2026-11-12",
+  "collected_at_timezone": "Asia/Shanghai (UTC+8)",
+  "features": [
+    {
+      "key": "region_capture",
+      "label": "区域截图"
+    },
+    {
+      "key": "window_capture",
+      "label": "窗口截图"
+    },
+    {
+      "key": "scrolling_capture",
+      "label": "滚动长截图"
+    },
+    {
+      "key": "delay_timer",
+      "label": "延时截图"
+    },
+    {
+      "key": "annotation",
+      "label": "标注编辑"
+    },
+    {
+      "key": "ocr",
+      "label": "OCR 识别"
+    },
+    {
+      "key": "pin_to_screen",
+      "label": "贴图钉屏"
+    },
+    {
+      "key": "color_picker",
+      "label": "取色器"
+    },
+    {
+      "key": "cloud_share",
+      "label": "上传分享"
+    },
+    {
+      "key": "history",
+      "label": "历史记录"
+    }
+  ],
+  "products": [
+    {
+      "id": "sharex",
+      "name": "ShareX",
+      "official_url": "https://getsharex.com",
+      "github_url": "https://github.com/ShareX/ShareX",
+      "platforms": [
+        "Windows"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费，开源、无广告、无需账号。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "官网：Free forever. Open source. No account required."
+        }
+      ],
+      "free_tier_limits": "无",
+      "github_stars": 40981,
+      "latest_release": "22.4.0",
+      "latest_release_date": "2026-11-08 12:17",
+      "latest_release_date_note": "GitHub published_at 2026-11-08T04:17:24Z，已转换为 Asia/Shanghai",
+      "maintenance_status": "活跃",
+      "summary": "Windows 开源截图与分享套件，区域/滚动截图、OCR、贴图和大量上传目标都很完整。",
+      "features": {
+        "region_capture": {
+          "value": "yes",
+          "note": "官网 Region capture 支持自选区域"
+        },
+        "window_capture": {
+          "value": "yes",
+          "note": "官网列出 Capture an active window"
+        },
+        "scrolling_capture": {
+          "value": "yes",
+          "note": "官网明确支持 Scrolling screenshot"
+        },
+        "delay_timer": {
+          "value": "yes",
+          "note": "官网列出 Auto capture"
+        },
+        "annotation": {
+          "value": "yes",
+          "note": "区域截图内置矩形、箭头、文字、高亮等标注工具"
+        },
+        "ocr": {
+          "value": "yes",
+          "note": "官网提供 Recognize text (OCR)"
+        },
+        "pin_to_screen": {
+          "value": "yes",
+          "note": "官网功能列表含 Pin to screen"
+        },
+        "color_picker": {
+          "value": "yes",
+          "note": "官网生产力工具含 Color picker"
+        },
+        "cloud_share": {
+          "value": "yes",
+          "note": "支持 Imgur、Amazon S3、Google Cloud Storage、自定义图床等"
+        },
+        "history": {
+          "value": "unknown",
+          "note": "官网首页未单独列出截图历史管理器"
+        }
+      },
+      "sources": [
+        "https://getsharex.com",
+        "https://github.com/ShareX/ShareX",
+        "https://github.com/ShareX/ShareX/releases/tag/v22.4.0"
+      ]
+    },
+    {
+      "id": "flameshot",
+      "name": "Flameshot",
+      "official_url": "https://flameshot.org",
+      "github_url": "https://github.com/flameshot-org/flameshot",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源。官网写明 free and open-source, cross-platform。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "官方定位为免费开源截图软件，另设捐赠入口"
+        }
+      ],
+      "free_tier_limits": "无",
+      "github_stars": 31519,
+      "latest_release": "15.0.0",
+      "latest_release_date": "2026-11-08 00:42",
+      "latest_release_date_note": "GitHub published_at 2026-11-07T16:42:38Z，已转换为 Asia/Shanghai",
+      "maintenance_status": "活跃",
+      "summary": "跨平台开源截图工具，截完即可在屏幕上标注，界面轻量；官网未把滚动长截图和 OCR 列为功能。",
+      "features": {
+        "region_capture": {
+          "value": "yes",
+          "note": "官网介绍通过拖拽选择区域后标注并保存"
+        },
+        "window_capture": {
+          "value": "unknown",
+          "note": "官网首页提到 window，但未把独立窗口截图模式写清楚"
+        },
+        "scrolling_capture": {
+          "value": "no",
+          "note": "官网功能介绍未列出滚动长截图"
+        },
+        "delay_timer": {
+          "value": "unknown",
+          "note": "本次未在官网首页确认延时截图"
+        },
+        "annotation": {
+          "value": "yes",
+          "note": "官网强调 on-screen annotations"
+        },
+        "ocr": {
+          "value": "no",
+          "note": "官网首页未列出 OCR"
+        },
+        "pin_to_screen": {
+          "value": "unknown",
+          "note": "官网首页未明确写出贴图钉屏"
+        },
+        "color_picker": {
+          "value": "unknown",
+          "note": "官网出现 color 字样，但是否为独立取色器未写明"
+        },
+        "cloud_share": {
+          "value": "unknown",
+          "note": "官网当前首页未列出内置图床上传"
+        },
+        "history": {
+          "value": "unknown",
+          "note": "官网未列出历史记录"
+        }
+      },
+      "sources": [
+        "https://flameshot.org",
+        "https://github.com/flameshot-org/flameshot",
+        "https://github.com/flameshot-org/flameshot/releases/tag/v15.0.0"
+      ]
+    },
+    {
+      "id": "greenshot",
+      "name": "Greenshot",
+      "official_url": "https://getgreenshot.org",
+      "github_url": "https://github.com/greenshot/greenshot",
+      "platforms": [
+        "Windows"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "完全免费",
+      "price_summary": "Windows 版完全免费开源。官网称 completely free and open source。",
+      "prices": [
+        {
+          "plan": "Windows 开源版",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "getgreenshot.org 写明 completely free and open source"
+        }
+      ],
+      "free_tier_limits": "无（指 Windows 开源版）。旧 Mac 版是否仍分发及定价本次未在官网确认。",
+      "github_stars": 5253,
+      "latest_release": "1.3.328",
+      "latest_release_date": "2026-10-19 18:30",
+      "latest_release_date_note": "GitHub 最近非预发布版本 Greenshot 1.3.328，published_at 2026-10-19T10:30:32Z，已转换为 Asia/Shanghai。另有 1.4.x continuous 预发布构建。",
+      "maintenance_status": "活跃",
+      "summary": "轻量的 Windows 开源截图工具，支持区域/窗口/全屏和标注；滚动捕获官网仅写明针对 Internet Explorer。",
+      "features": {
+        "region_capture": {
+          "value": "yes",
+          "note": "官网：selected region"
+        },
+        "window_capture": {
+          "value": "yes",
+          "note": "官网：window or fullscreen"
+        },
+        "scrolling_capture": {
+          "value": "partial",
+          "note": "官网写明可从 Internet Explorer 捕获完整滚动网页，未说明其他浏览器"
+        },
+        "delay_timer": {
+          "value": "unknown",
+          "note": "官网简介未提及延时截图"
+        },
+        "annotation": {
+          "value": "yes",
+          "note": "官网：annotate, highlight or obfuscate"
+        },
+        "ocr": {
+          "value": "unknown",
+          "note": "官网简介未列出 OCR"
+        },
+        "pin_to_screen": {
+          "value": "unknown",
+          "note": "官网简介未列出贴图"
+        },
+        "color_picker": {
+          "value": "unknown",
+          "note": "官网简介未列出取色器"
+        },
+        "cloud_share": {
+          "value": "yes",
+          "note": "官网提到可上传 Flickr、Picasa 等，也可发送到 Office 或邮件"
+        },
+        "history": {
+          "value": "unknown",
+          "note": "官网未列出历史记录"
+        }
+      },
+      "sources": [
+        "https://getgreenshot.org",
+        "https://github.com/greenshot/greenshot",
+        "https://github.com/greenshot/greenshot/releases/tag/v1.3.328"
+      ]
+    },
+    {
+      "id": "ksnip",
+      "name": "ksnip",
+      "official_url": "https://github.com/ksnip/ksnip",
+      "github_url": "https://github.com/ksnip/ksnip",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源，无付费档。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "GitHub README 描述为跨平台开源截图标注工具"
+        }
+      ],
+      "free_tier_limits": "无。OCR 需通过插件启用，且 README 写明支持 Windows 与 Linux/Unix。",
+      "github_stars": 3381,
+      "latest_release": "1.10.1",
+      "latest_release_date": "2023-03-15 17:43",
+      "latest_release_date_note": "最近正式版 GitHub published_at 2023-03-15T09:43:53Z，已转换为 Asia/Shanghai。另有 continuous 预发布构建（published_at 2026-10-21T10:18:47Z）。README 出现 v1.11.0 字样，但 Releases 中未见该正式标签。作者正在寻找共同维护者。",
+      "maintenance_status": "活跃",
+      "summary": "跨平台开源截图标注工具，功能清单较完整，但最近正式版停在 2023 年，目前主要依靠 continuous 构建。",
+      "features": {
+        "region_capture": {
+          "value": "yes",
+          "note": "README：custom rectangular area"
+        },
+        "window_capture": {
+          "value": "yes",
+          "note": "README：window that currently has focus / under mouse cursor（部分 Wayland/macOS 组合有限制）"
+        },
+        "scrolling_capture": {
+          "value": "no",
+          "note": "README 功能列表与截图类型表未列出滚动长截图"
+        },
+        "delay_timer": {
+          "value": "yes",
+          "note": "README：Customizable capture delay for all capture options"
+        },
+        "annotation": {
+          "value": "yes",
+          "note": "笔、标记、矩形、椭圆、文字、贴纸等"
+        },
+        "ocr": {
+          "value": "partial",
+          "note": "README：OCR support through plugin（Windows and Linux/Unix），非开箱即用"
+        },
+        "pin_to_screen": {
+          "value": "yes",
+          "note": "README：Pin screenshots in frameless windows that stay atop other windows"
+        },
+        "color_picker": {
+          "value": "unknown",
+          "note": "README 未单独列出取色器"
+        },
+        "cloud_share": {
+          "value": "yes",
+          "note": "可匿名或登录上传 Imgur，也支持 FTP 与自定义脚本"
+        },
+        "history": {
+          "value": "partial",
+          "note": "支持多标签打开多张截图，但未描述持久历史库"
+        }
+      },
+      "sources": [
+        "https://github.com/ksnip/ksnip",
+        "https://raw.githubusercontent.com/ksnip/ksnip/master/README.md",
+        "https://github.com/ksnip/ksnip/releases/tag/v1.10.1"
+      ]
+    },
+    {
+      "id": "shutter",
+      "name": "Shutter",
+      "official_url": "https://shutter-project.org",
+      "github_url": "https://github.com/shutter-project/shutter",
+      "platforms": [
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源，GPL v3。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "官网：free, open-source, licensed under GPL v3"
+        }
+      ],
+      "free_tier_limits": "无",
+      "github_stars": 648,
+      "latest_release": "0.99.7",
+      "latest_release_date": "2026-05-10 00:47",
+      "latest_release_date_note": "GitHub published_at 2026-05-09T16:47:13Z，已转换为 Asia/Shanghai；官网新闻页写 Published: May 9, 2026",
+      "maintenance_status": "活跃",
+      "summary": "Linux 上功能较全的开源截图工具，自带编辑器、倒计时捕获菜单，以及网站整页捕获和上传分享。",
+      "features": {
+        "region_capture": {
+          "value": "yes",
+          "note": "官网：Capture a Specific Area"
+        },
+        "window_capture": {
+          "value": "yes",
+          "note": "官网：Capture a Window，也可从窗口列表选择"
+        },
+        "scrolling_capture": {
+          "value": "partial",
+          "note": "官网提供 Capture a Website（经 gnome-web-photo 捕获整个网站），不是应用窗口滚动拼接"
+        },
+        "delay_timer": {
+          "value": "yes",
+          "note": "捕获菜单或 tooltip 时有用户可定义 countdown"
+        },
+        "annotation": {
+          "value": "yes",
+          "note": "内置编辑器：文字、箭头、矩形、椭圆、马赛克、序号、裁剪"
+        },
+        "ocr": {
+          "value": "unknown",
+          "note": "官网未列出 OCR"
+        },
+        "pin_to_screen": {
+          "value": "unknown",
+          "note": "官网未列出贴图钉屏"
+        },
+        "color_picker": {
+          "value": "unknown",
+          "note": "官网未列出取色器"
+        },
+        "cloud_share": {
+          "value": "yes",
+          "note": "内置上传到图床并生成论坛/Wiki 可用链接"
+        },
+        "history": {
+          "value": "partial",
+          "note": "官网提到 tabbed interface 管理多张截图"
+        }
+      },
+      "sources": [
+        "https://shutter-project.org",
+        "https://github.com/shutter-project/shutter",
+        "https://github.com/shutter-project/shutter/releases/tag/v0.99.7"
+      ]
+    },
+    {
+      "id": "snow-shot",
+      "name": "Snow Shot",
+      "official_url": "https://snowshot.top",
+      "github_url": "https://github.com/mg-chao/snow-shot",
+      "platforms": [
+        "Windows",
+        "macOS"
+      ],
+      "open_source": true,
+      "license": "主程序 GPL-3.0-or-later（仓库为多许可证，部分目录 Apache-2.0）",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源。官网写明 Free, open-source screenshots & recording。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "LICENSE.md 声明 SPDX-License-Identifier: GPL-3.0-or-later；snow_shot/ 等核心目录为 GPL-3.0-or-later"
+        }
+      ],
+      "free_tier_limits": "无",
+      "github_stars": 6969,
+      "latest_release": "1.5.4",
+      "latest_release_date": "2026-11-11 01:19",
+      "latest_release_date_note": "GitHub 发布名 Snow Shot 1.5.4，published_at 2026-11-10T17:19:44Z，已转换为 Asia/Shanghai",
+      "maintenance_status": "活跃",
+      "summary": "较新的 Windows/macOS 开源截图录屏工具，官网突出标注、滚动截图、本地 OCR 和贴图。",
+      "features": {
+        "region_capture": {
+          "value": "yes",
+          "note": "官网演示 Region capture"
+        },
+        "window_capture": {
+          "value": "yes",
+          "note": "官网页面出现 window 相关捕获说明"
+        },
+        "scrolling_capture": {
+          "value": "yes",
+          "note": "官网明确 scrolling screenshots"
+        },
+        "delay_timer": {
+          "value": "yes",
+          "note": "官网英文页出现 delay 相关说明"
+        },
+        "annotation": {
+          "value": "yes",
+          "note": "官网 Annotation：箭头、框选、高亮等"
+        },
+        "ocr": {
+          "value": "yes",
+          "note": "官网：Local OCR，本地文字识别"
+        },
+        "pin_to_screen": {
+          "value": "yes",
+          "note": "官网：pin references / Pin to screen"
+        },
+        "color_picker": {
+          "value": "unknown",
+          "note": "官网首页未明确列出取色器"
+        },
+        "cloud_share": {
+          "value": "unknown",
+          "note": "官网强调开源与本地工作流，未列出官方云分享"
+        },
+        "history": {
+          "value": "yes",
+          "note": "官网功能演示含 History"
+        }
+      },
+      "sources": [
+        "https://snowshot.top",
+        "https://github.com/mg-chao/snow-shot",
+        "https://github.com/mg-chao/snow-shot/blob/main/LICENSE.md",
+        "https://github.com/mg-chao/snow-shot/releases/tag/v1.5.4_snow-shot"
+      ]
+    },
+    {
+      "id": "satty",
+      "name": "Satty",
+      "official_url": "https://satty-org.github.io/Satty/",
+      "github_url": "https://github.com/Satty-org/Satty",
+      "platforms": [
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "MPL-2.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "文档定位为现代截图标注工具，常与 grim 等 Wayland 截图程序配合"
+        }
+      ],
+      "free_tier_limits": "无。本身偏标注前端，区域/窗口捕获通常依赖外部截图工具。",
+      "github_stars": 2500,
+      "latest_release": "0.22.0",
+      "latest_release_date": "2026-08-03 15:51",
+      "latest_release_date_note": "GitHub published_at 2026-08-03T07:51:54Z，已转换为 Asia/Shanghai",
+      "maintenance_status": "活跃",
+      "summary": "面向 Linux/Wayland 的开源截图标注工具，强调全屏标注和后期裁剪，捕获能力多依赖外部工具。",
+      "features": {
+        "region_capture": {
+          "value": "partial",
+          "note": "文档称可全屏标注后裁剪（类似 Flameshot），捕获本身常配合其他工具"
+        },
+        "window_capture": {
+          "value": "unknown",
+          "note": "官方文档未单独列出窗口截图模式"
+        },
+        "scrolling_capture": {
+          "value": "no",
+          "note": "文档未提及滚动长截图"
+        },
+        "delay_timer": {
+          "value": "unknown",
+          "note": "文档未确认延时截图"
+        },
+        "annotation": {
+          "value": "yes",
+          "note": "项目定位即 Modern Screenshot Annotation"
+        },
+        "ocr": {
+          "value": "no",
+          "note": "文档未列出 OCR"
+        },
+        "pin_to_screen": {
+          "value": "unknown",
+          "note": "文档未列出贴图"
+        },
+        "color_picker": {
+          "value": "unknown",
+          "note": "文档未明确列出独立取色器"
+        },
+        "cloud_share": {
+          "value": "no",
+          "note": "文档未列出云上传"
+        },
+        "history": {
+          "value": "unknown",
+          "note": "文档未列出历史记录"
+        }
+      },
+      "sources": [
+        "https://satty-org.github.io/Satty/",
+        "https://github.com/Satty-org/Satty",
+        "https://github.com/Satty-org/Satty/releases/tag/v0.22.0"
+      ]
+    },
+    {
+      "id": "snagit",
+      "name": "Snagit",
+      "official_url": "https://www.techsmith.com/store/snagit",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "订阅",
+      "price_summary": "个人版 $39.00/用户/年（年付）。商务版此前在团队页标为 $48.00/用户/年，本次主要复核了个人商店页。",
+      "prices": [
+        {
+          "plan": "Snagit Individual",
+          "price": "39.00",
+          "currency": "USD",
+          "period": "year",
+          "note": "2026-11-12 采集自 https://www.techsmith.com/store/snagit，页面显示 $39.00"
+        },
+        {
+          "plan": "Snagit Business",
+          "price": "48.00",
+          "currency": "USD",
+          "period": "year",
+          "note": "与此前已核对的官网团队页一致：$48.00 per user per year billed yearly；本次未重新打开团队页逐字复核"
+        }
+      ],
+      "free_tier_limits": "以付费订阅为主；TechSmith 提供试用（具体限制以官网当时说明为准）。无长期免费功能档。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "商店页与产品页未给出精确版本号和发布时钟时间",
+      "maintenance_status": "活跃",
+      "summary": "面向文档和培训的截图与简短录屏套件，官方明确支持滚动窗口/网页捕获和标注，按年订阅。",
+      "features": {
+        "region_capture": {
+          "value": "yes",
+          "note": "官网产品页将其定位为 screen capture software，可 capture your screen"
+        },
+        "window_capture": {
+          "value": "yes",
+          "note": "滚动捕获说明中写明 scrolling windows；产品为屏幕/窗口捕获套件"
+        },
+        "scrolling_capture": {
+          "value": "yes",
+          "note": "官网 Snagit Features：Scrolling Capture Grab long, scrolling windows or webpages into a single image"
+        },
+        "delay_timer": {
+          "value": "unknown",
+          "note": "本次打开的产品/商店页未单独确认延时截图"
+        },
+        "annotation": {
+          "value": "yes",
+          "note": "官网：create annotated screenshots... annotate images with arrows and callouts"
+        },
+        "ocr": {
+          "value": "unknown",
+          "note": "本次打开的产品页与商店页未出现 OCR / Grab Text 字样"
+        },
+        "pin_to_screen": {
+          "value": "unknown",
+          "note": "本次未在产品页确认贴图"
+        },
+        "color_picker": {
+          "value": "unknown",
+          "note": "本次未在产品页确认取色器"
+        },
+        "cloud_share": {
+          "value": "yes",
+          "note": "可通过 TechSmith Screencast 云托管分享"
+        },
+        "history": {
+          "value": "unknown",
+          "note": "产品页未在本次采集文本中明确写出截图历史库"
+        }
+      },
+      "sources": [
+        "https://www.techsmith.com/store/snagit",
+        "https://www.techsmith.com/snagit.html",
+        "https://www.techsmith.com/store/snagit/teams"
+      ]
+    },
+    {
+      "id": "snipaste",
+      "name": "Snipaste",
+      "official_url": "https://www.snipaste.com",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "个人使用免费。专业版：桌面版单设备 $8.99 / 45 元（买断），3 设备 $19.99 / 99 元；微软商店版 10 台 Windows 设备 $19.99 / 99 元。公司使用 2.x 需专业版或改用 1.x。",
+      "prices": [
+        {
+          "plan": "个人免费（Snipaste 2.x）",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "官网：always free for personal use；2.x 对公司使用需专业版，1.x 对公司仍免费但停在 1.16.2"
+        },
+        {
+          "plan": "跨平台桌面专业版（1 台设备）",
+          "price": "8.99",
+          "currency": "USD",
+          "period": "lifetime",
+          "note": "www.snipaste.com：Cross-platform Desktop PRO 1 device $8.99；中文站同步标价 45 元"
+        },
+        {
+          "plan": "跨平台桌面专业版（3 台设备）",
+          "price": "19.99",
+          "currency": "USD",
+          "period": "lifetime",
+          "note": "官网 $19.99；中文站 99 元。授权为大版本买断，子版本免费更新"
+        },
+        {
+          "plan": "微软商店专业版（最多 10 台 Windows 设备）",
+          "price": "19.99",
+          "currency": "USD",
+          "period": "lifetime",
+          "note": "与微软账号绑定，与桌面版授权不互通；中文站 99 元"
+        }
+      ],
+      "free_tier_limits": "个人免费可用区域截图、窗口/界面元素检测、延时截图、贴图、取色、历史回放和标注。OCR/条码识别、Active window capture 等为专业版。从 2.0 起免费版主要只做缺陷修复，新功能加入专业版。公司使用 2.x 需购买专业版。",
+      "github_stars": null,
+      "latest_release": "Snipaste 2.x（精确小版本未知）；旧线 1.16.2 已停更",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "官网提供 Snipaste 2 桌面版/商店版下载，但本次未读到 2.x 的精确发布日；1.16.2 为旧版本线",
+      "maintenance_status": "活跃",
+      "summary": "以「截图 + 贴图」见长的跨平台工具，个人免费；OCR 和部分高级捕获属于专业版买断授权。",
+      "features": {
+        "region_capture": {
+          "value": "yes",
+          "note": "官方专业版对比：Region capture 免费与专业版均有"
+        },
+        "window_capture": {
+          "value": "partial",
+          "note": "免费版有 Window detection / 界面元素检测；Active window capture 为专业版"
+        },
+        "scrolling_capture": {
+          "value": "unknown",
+          "note": "官网与专业版对比表未将滚动长截图单列为功能项（Super-snip 为专业版，但官方未解释是否即长截图）"
+        },
+        "delay_timer": {
+          "value": "yes",
+          "note": "官方对比表：Delayed capture 免费可用"
+        },
+        "annotation": {
+          "value": "yes",
+          "note": "中文官网列出矩形、椭圆、线条、箭头、铅笔、马克笔、文字、马赛克、模糊等"
+        },
+        "ocr": {
+          "value": "paid",
+          "note": "官方对比表：Text Extraction 仅专业版"
+        },
+        "pin_to_screen": {
+          "value": "yes",
+          "note": "核心功能，免费可用；按 F3 将截图贴回屏幕"
+        },
+        "color_picker": {
+          "value": "yes",
+          "note": "中文官网：取色器（F1 , C , F3）"
+        },
+        "cloud_share": {
+          "value": "partial",
+          "note": "Native share（Windows 10+）为专业版；非自有云工作区"
+        },
+        "history": {
+          "value": "yes",
+          "note": "中文官网：历史记录回放（, / .）；对比表 History replay 免费可用"
+        }
+      },
+      "sources": [
+        "https://www.snipaste.com",
+        "https://zh.snipaste.com/",
+        "https://github.com/Snipaste/feedback/wiki/PRO",
+        "https://github.com/Snipaste/feedback/wiki/%E4%B8%93%E4%B8%9A%E7%89%88"
+      ]
+    },
+    {
+      "id": "pixpin",
+      "name": "PixPin",
+      "official_url": "https://pixpin.cn/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "核心功能免费。中国区专业版 ¥18/月或 ¥168/年，团队版 ¥48/月或 ¥468/年；国际站专业版 $3/月或 $30/年，团队版 $8/月或 $80/年。",
+      "prices": [
+        {
+          "plan": "基础版",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "截图、贴图、标注、OCR、长截图、录屏/GIF 等核心功能免费，无需注册，无广告，也可公司内免费使用"
+        },
+        {
+          "plan": "专业版（中国区年付）",
+          "price": "168",
+          "currency": "CNY",
+          "period": "year",
+          "note": "2026-11-12 采集自 pixpin.cn：月付 ¥18，年付 ¥168"
+        },
+        {
+          "plan": "专业版（中国区月付）",
+          "price": "18",
+          "currency": "CNY",
+          "period": "month",
+          "note": "pixpin.cn 标价"
+        },
+        {
+          "plan": "专业版（国际站年付）",
+          "price": "30",
+          "currency": "USD",
+          "period": "year",
+          "note": "pixpin.com 显示 $3/月或 $30/年；同页团队版 $8/月或 $80/年"
+        },
+        {
+          "plan": "团队版（中国区年付）",
+          "price": "468",
+          "currency": "CNY",
+          "period": "year",
+          "note": "pixpin.cn：月付 ¥48，年付 ¥468"
+        }
+      ],
+      "free_tier_limits": "截图、贴图、标注、本地 OCR、长截图、录屏与 GIF 免费。AI 翻译、表格/文档/公式识别、录屏键鼠与剪辑、长截图自动裁剪、智能擦除、云端配置同步等为会员功能，部分可试用。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "官网未在本次采集中给出精确版本号与发布时钟时间",
+      "maintenance_status": "活跃",
+      "summary": "面向中文用户的免费增值截图工具，贴图和本地 OCR 很完整，长截图也免费；AI 识别和云同步走会员。",
+      "features": {
+        "region_capture": {
+          "value": "yes",
+          "note": "官网核心功能，可自动识别窗口与界面元素"
+        },
+        "window_capture": {
+          "value": "yes",
+          "note": "官网：自动识别窗口与界面元素"
+        },
+        "scrolling_capture": {
+          "value": "yes",
+          "note": "官网：长截图，滚动即拼接；免费可用。长截图自动裁剪为会员功能"
+        },
+        "delay_timer": {
+          "value": "unknown",
+          "note": "官网 FAQ 与首页未单独确认延时截图"
+        },
+        "annotation": {
+          "value": "yes",
+          "note": "形状、聚光灯、画笔、荧光笔、箭头、文字、水印、序号、马赛克等，免费可用"
+        },
+        "ocr": {
+          "value": "yes",
+          "note": "基础 OCR 免费且官方称全程本地完成；表格/文档/公式识别为会员功能"
+        },
+        "pin_to_screen": {
+          "value": "yes",
+          "note": "核心贴图功能，免费可用，可钉图片、文字、颜色和文件"
+        },
+        "color_picker": {
+          "value": "yes",
+          "note": "可贴出颜色值并显示 RGB/HSV/HSL/HEX"
+        },
+        "cloud_share": {
+          "value": "paid",
+          "note": "云端配置同步为会员功能；非截图文件云盘分享"
+        },
+        "history": {
+          "value": "unknown",
+          "note": "官网未明确列出截图历史库（可 Ctrl+3 恢复最近关闭的贴图）"
+        }
+      },
+      "sources": [
+        "https://pixpin.cn/",
+        "https://pixpin.com/zh-hans/",
+        "https://pixpin.com/zh-hans/pro/"
+      ]
+    },
+    {
+      "id": "cleanshot-x",
+      "name": "CleanShot X",
+      "official_url": "https://cleanshot.com/pricing",
+      "github_url": null,
+      "platforms": [
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "付费",
+      "price_summary": "Basic $35 买断（含 1 年更新，可选 $19/年续更，1 GB 云空间）。Pro $10/用户/月（年付），含无限云空间与团队功能。需 macOS 13+。无免费功能档，购买后 30 天退款。",
+      "prices": [
+        {
+          "plan": "CleanShot Basic",
+          "price": "35",
+          "currency": "USD",
+          "period": "lifetime",
+          "note": "2026-11-12 采集自 cleanshot.com/pricing：Pay once, use forever；含 1 年更新，可选续更 $19/年；Cloud 1 GB"
+        },
+        {
+          "plan": "CleanShot Pro",
+          "price": "10",
+          "currency": "USD",
+          "period": "month",
+          "note": "per user/mo, billed annually；无限云空间、自定义域名、SSO/SCIM 等。页面另有月付开关，本次未单独记录月付标价"
+        }
+      ],
+      "free_tier_limits": "无免费功能档。官网写 30-Day Money-Back Guarantee；无独立长期试用档（Setapp 渠道除外，本次未打开 Setapp 页面）。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "功能页与定价页未给出精确版本号；changelog 入口存在但本次未逐条采集最新版本日期",
+      "maintenance_status": "活跃",
+      "summary": "Mac 上完成度很高的付费截图与录屏工具，标注、OCR、贴图、滚动截图和云分享都较完整，但没有长期免费版。",
+      "features": {
+        "region_capture": {
+          "value": "yes",
+          "note": "功能页：Capture Area"
+        },
+        "window_capture": {
+          "value": "yes",
+          "note": "功能页：Capture Window / Window screenshots"
+        },
+        "scrolling_capture": {
+          "value": "yes",
+          "note": "功能页：Scrolling Capture"
+        },
+        "delay_timer": {
+          "value": "yes",
+          "note": "功能页：Self-Timer Capture"
+        },
+        "annotation": {
+          "value": "yes",
+          "note": "内置编辑器：箭头、模糊、像素化、聚光灯、序号、画笔、高亮、形状、文字等"
+        },
+        "ocr": {
+          "value": "yes",
+          "note": "功能页：Text recognition (OCR)"
+        },
+        "pin_to_screen": {
+          "value": "yes",
+          "note": "功能页：Floating Screenshots"
+        },
+        "color_picker": {
+          "value": "yes",
+          "note": "功能页：Use the color picker to pick colors from your screen"
+        },
+        "cloud_share": {
+          "value": "yes",
+          "note": "官方 Cloud 一键上传分享；Basic 1 GB，Pro 无限"
+        },
+        "history": {
+          "value": "yes",
+          "note": "功能页：Capture history"
+        }
+      },
+      "sources": [
+        "https://cleanshot.com/pricing",
+        "https://cleanshot.com/features"
+      ]
+    },
+    {
+      "id": "picpick",
+      "name": "PicPick",
+      "official_url": "https://picpick.app/en/pricing/",
+      "github_url": null,
+      "platforms": [
+        "Windows"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "个人非商业使用免费。专业版年费现价 $30/年（划线价 $36，限时优惠）；买断现价单用户 $79（划线价 $99），5 人团队 $295（划线价 $395）。每许可可装 2 台电脑，不可共享。",
+      "prices": [
+        {
+          "plan": "Free（个人非商业）",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "官网：Personal use is always free；手动更新、无技术支持；商业使用需 Pro"
+        },
+        {
+          "plan": "Professional 年费",
+          "price": "30",
+          "currency": "USD",
+          "period": "year",
+          "note": "2026-11-12 采集自 picpick.app/en/pricing/：Professional $36 $30 per year Limited time offer；含自动更新、优先支持和去广告"
+        },
+        {
+          "plan": "Professional 永久许可（1 用户）",
+          "price": "79.00",
+          "currency": "USD",
+          "period": "lifetime",
+          "note": "picpick.app/en/buy/：Lifetime Limited time offer，单用户划线价 $99.00、现价 $79.00；每用户最多装 2 台电脑"
+        },
+        {
+          "plan": "Professional 永久许可（5 用户 Team）",
+          "price": "295.00",
+          "currency": "USD",
+          "period": "lifetime",
+          "note": "买页 Team 划线价 $395.00、现价 $295.00 one-time · 5 users；另有 Enterprise 现价 $2,900 不限用户数"
+        }
+      ],
+      "free_tier_limits": "免费版仅限个人非商业用途，功能含截图、编辑和设计工具，但手动更新且无技术支持。商业/客户项目/任何营利场景需 Pro 许可。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "定价页未给出当前版本号与发布时钟时间",
+      "maintenance_status": "活跃",
+      "summary": "Windows 免费增值截图与图像工具箱，个人免费，商业使用需年费或限时买断；滚动截图、标注和取色器都在官方功能列表中。",
+      "features": {
+        "region_capture": {
+          "value": "yes",
+          "note": "官网：fixed regions, freehand, Region"
+        },
+        "window_capture": {
+          "value": "yes",
+          "note": "官网：active window / Window control"
+        },
+        "scrolling_capture": {
+          "value": "yes",
+          "note": "官网：scrolling pages / Scrolling window"
+        },
+        "delay_timer": {
+          "value": "yes",
+          "note": "官网 Screen Capture 选项含 Delayed capture"
+        },
+        "annotation": {
+          "value": "yes",
+          "note": "Ribbon 风格编辑器：文字、箭头、形状、高亮、图章等"
+        },
+        "ocr": {
+          "value": "unknown",
+          "note": "功能页本次采集文本未列出 OCR"
+        },
+        "pin_to_screen": {
+          "value": "unknown",
+          "note": "功能页本次采集文本未列出贴图钉屏"
+        },
+        "color_picker": {
+          "value": "yes",
+          "note": "官网 Design Tools：Color picker, pixel ruler, magnifier 等"
+        },
+        "cloud_share": {
+          "value": "yes",
+          "note": "可直接发送到 Google Drive、Dropbox、OneDrive、FTP、邮件或社交媒体并生成链接"
+        },
+        "history": {
+          "value": "unknown",
+          "note": "官网提到 Repeat last capture 和 auto-save，但未明确历史库"
+        }
+      },
+      "sources": [
+        "https://picpick.app/en/",
+        "https://picpick.app/en/pricing/",
+        "https://picpick.app/en/buy/"
+      ]
+    },
+    {
+      "id": "faststone-capture",
+      "name": "FastStone Capture",
+      "official_url": "https://www.faststone.org/FSCaptureDetail.htm",
+      "github_url": null,
+      "platforms": [
+        "Windows"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "付费",
+      "price_summary": "一次性购买 $29.95 USD，提供 30 天试用。官网强调无广告、无间谍软件。",
+      "prices": [
+        {
+          "plan": "FastStone Capture（一次性授权）",
+          "price": "29.95",
+          "currency": "USD",
+          "period": "lifetime",
+          "note": "2026-11-12 采集自官网产品页：One-time purchase $29.95 USD；并提供 30-day trial"
+        }
+      ],
+      "free_tier_limits": "30 天试用；试用结束后需购买。官网未描述长期免费功能档。",
+      "github_stars": null,
+      "latest_release": "11.3",
+      "latest_release_date": "2026-07-29",
+      "latest_release_date_note": "官网产品页写明 Version 11.3 2026-07-29，未提供时钟时间，故不转换时区",
+      "maintenance_status": "活跃",
+      "summary": "Windows 付费买断的轻量截图与录屏工具，官方支持滚动窗口、OCR、贴图和标注，有 30 天试用。",
+      "features": {
+        "region_capture": {
+          "value": "yes",
+          "note": "官网：rectangular / freehand / fixed-size regions"
+        },
+        "window_capture": {
+          "value": "yes",
+          "note": "官网：windows, objects, menus, full screen"
+        },
+        "scrolling_capture": {
+          "value": "yes",
+          "note": "官网：scrolling windows / web pages"
+        },
+        "delay_timer": {
+          "value": "yes",
+          "note": "官网提到 timer / using a timer"
+        },
+        "annotation": {
+          "value": "yes",
+          "note": "标注文本、箭头、高亮、水印等；录屏也支持绘制注释"
+        },
+        "ocr": {
+          "value": "yes",
+          "note": "官网：Capture text from images or screenshots using OCR"
+        },
+        "pin_to_screen": {
+          "value": "yes",
+          "note": "官网：Pin screenshots on top of other windows；更新日志亦多次提到 Pin to Screen"
+        },
+        "color_picker": {
+          "value": "partial",
+          "note": "更新日志提到可在橡皮擦等工具中 pick a screen color，但未单独把取色器列为卖点"
+        },
+        "cloud_share": {
+          "value": "unknown",
+          "note": "官网主要写保存到文件/剪贴板/打印机/邮件，未确认官方云分享"
+        },
+        "history": {
+          "value": "unknown",
+          "note": "官网未明确列出历史记录库"
+        }
+      },
+      "sources": [
+        "https://www.faststone.org/FSCaptureDetail.htm"
+      ]
+    },
+    {
+      "id": "shottr",
+      "name": "Shottr",
+      "official_url": "https://shottr.cc",
+      "github_url": null,
+      "platforms": [
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "可长期免费使用，30 天后会偶尔提示购买。Basic 一次性 $12（需商业使用授权）；Friends Club 一次性 $30。不是订阅。需 macOS Catalina 及以上。",
+      "prices": [
+        {
+          "plan": "Free",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "shottr.cc/purchase.html：可免费下载使用，30 天后开始偶尔提示考虑升级。多数功能对免费用户开放"
+        },
+        {
+          "plan": "Basic Tier",
+          "price": "12",
+          "currency": "USD",
+          "period": "lifetime",
+          "note": "2026-11-12 采集：购买页写 Buy for $12，并说明 This is a single-time purchase, not a subscription。License required for commercial use。页面曾出现 Black Friday $9 的注释/旧文案，当前可见主按钮为 $12"
+        },
+        {
+          "plan": "Friends Club",
+          "price": "30",
+          "currency": "USD",
+          "period": "lifetime",
+          "note": "Join for $30；实验功能与更好支持。官方说明不可从 Basic 升级补差价"
+        }
+      ],
+      "free_tier_limits": "大多数功能免费可用，30 天后会偶尔弹出购买提示。商业使用需购买授权。",
+      "github_stars": null,
+      "latest_release": "1.10.0",
+      "latest_release_date": "2026-11-09",
+      "latest_release_date_note": "官网 Release Notes 写 Nov 9, 2026 v1.10；未提供时钟时间，故不转换时区。首页同时写 Shottr v1.10.0 is out",
+      "maintenance_status": "活跃",
+      "summary": "轻量的 Mac 截图标注工具，免费可用但会提示购买；支持滚动截图、OCR 和标注，商业使用需 $12 买断授权。",
+      "features": {
+        "region_capture": {
+          "value": "yes",
+          "note": "定位为 Mac 截图标注工具，首页提供下载与区域截图工作流；v1.10 新增 Advanced Area Capture"
+        },
+        "window_capture": {
+          "value": "unknown",
+          "note": "官网未单独把窗口截图写成独立卖点"
+        },
+        "scrolling_capture": {
+          "value": "yes",
+          "note": "官网：scrolling screenshots；可截长网页或对话"
+        },
+        "delay_timer": {
+          "value": "unknown",
+          "note": "官网未明确列出延时截图"
+        },
+        "annotation": {
+          "value": "yes",
+          "note": "文字、手绘、高亮、聚光灯等 markup"
+        },
+        "ocr": {
+          "value": "yes",
+          "note": "官网：Text recognition (OCR) & QR，可将文字复制到剪贴板"
+        },
+        "pin_to_screen": {
+          "value": "partial",
+          "note": "可把截图用作 references / 临时存储；未用「浮动贴图」一词，故记为部分"
+        },
+        "color_picker": {
+          "value": "unknown",
+          "note": "以测量和标注见长，官网未单独列出取色器"
+        },
+        "cloud_share": {
+          "value": "yes",
+          "note": "支持 Shottr Cloud 或自有 S3 上传（首页写 S3 upload capabilities）"
+        },
+        "history": {
+          "value": "yes",
+          "note": "v1.10 发行说明：Restore previous screenshot，最近截图可恢复且标注仍可编辑"
+        }
+      },
+      "sources": [
+        "https://shottr.cc",
+        "https://shottr.cc/purchase.html",
+        "https://shottr.cc/kb/faq"
+      ]
+    }
+  ]
+}

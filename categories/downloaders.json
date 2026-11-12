@@ -1,0 +1,1069 @@
+{
+  "category_slug": "downloaders",
+  "category_name_zh": "下载器（多线程/BT）",
+  "collected_at": "2026-11-12",
+  "collected_at_timezone": "Asia/Shanghai (UTC+8)",
+  "features": [
+    {
+      "key": "http_multi",
+      "label": "HTTP 多线程下载"
+    },
+    {
+      "key": "bittorrent",
+      "label": "BitTorrent/磁力"
+    },
+    {
+      "key": "ed2k",
+      "label": "电驴/eD2k"
+    },
+    {
+      "key": "stream_m3u8",
+      "label": "流媒体/M3U8"
+    },
+    {
+      "key": "video_site",
+      "label": "视频网站解析下载"
+    },
+    {
+      "key": "schedule",
+      "label": "定时任务"
+    },
+    {
+      "key": "speed_limit",
+      "label": "限速"
+    },
+    {
+      "key": "rss",
+      "label": "RSS 订阅下载"
+    },
+    {
+      "key": "remote_webui",
+      "label": "远程 Web 界面"
+    },
+    {
+      "key": "browser_ext",
+      "label": "浏览器扩展"
+    }
+  ],
+  "products": [
+    {
+      "id": "qbittorrent",
+      "name": "qBittorrent",
+      "official_url": "https://www.qbittorrent.org/",
+      "github_url": "https://github.com/qbittorrent/qBittorrent",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "未知（GitHub 返回 NOASSERTION；项目为开源）",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源的 BitTorrent 客户端，官网强调无广告。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "开源免费，无广告"
+        }
+      ],
+      "free_tier_limits": "无。主业是 BT，不是通用 HTTP 加速器。",
+      "github_stars": 41547,
+      "latest_release": "5.3.0",
+      "latest_release_date": "2026-10-20 20:57",
+      "latest_release_date_note": "GitHub 标签 release-5.3.0，已转换为 Asia/Shanghai。官网同步写 v5.3.0。",
+      "maintenance_status": "活跃",
+      "summary": "最常用的开源 BT 客户端之一，有搜索、RSS 和 Web 界面，无广告。",
+      "features": {
+        "http_multi": {
+          "value": "no",
+          "note": "定位是 BT 客户端，不是 HTTP 多线程下载器"
+        },
+        "bittorrent": {
+          "value": "yes",
+          "note": "核心"
+        },
+        "ed2k": {
+          "value": "no",
+          "note": "不支持电驴"
+        },
+        "stream_m3u8": {
+          "value": "no",
+          "note": "不是流媒体下载器"
+        },
+        "video_site": {
+          "value": "no",
+          "note": "无"
+        },
+        "schedule": {
+          "value": "unknown",
+          "note": "可能有调度，首页未点名"
+        },
+        "speed_limit": {
+          "value": "yes",
+          "note": "BT 客户端标准能力"
+        },
+        "rss": {
+          "value": "yes",
+          "note": "官网能力：RSS"
+        },
+        "remote_webui": {
+          "value": "yes",
+          "note": "官网能力：WebUI"
+        },
+        "browser_ext": {
+          "value": "no",
+          "note": "不是浏览器扩展型下载器"
+        }
+      },
+      "sources": [
+        "https://www.qbittorrent.org/",
+        "https://github.com/qbittorrent/qBittorrent"
+      ]
+    },
+    {
+      "id": "transmission",
+      "name": "Transmission",
+      "official_url": "https://transmissionbt.com/",
+      "github_url": "https://github.com/transmission/transmission",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "未知（GitHub 返回 NOASSERTION；项目为开源）",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源的轻量 BitTorrent 客户端。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "transmissionbt.com 开源免费"
+        }
+      ],
+      "free_tier_limits": "无。主业是 BT。",
+      "github_stars": 15409,
+      "latest_release": "4.1.4",
+      "latest_release_date": "2026-10-24 08:28",
+      "latest_release_date_note": "GitHub 标签 4.1.4，已转换为 Asia/Shanghai",
+      "maintenance_status": "活跃",
+      "summary": "轻量、界面干净的开源 BT 客户端，常用于 NAS 和桌面，功能相对克制。",
+      "features": {
+        "http_multi": {
+          "value": "no",
+          "note": "BT 客户端"
+        },
+        "bittorrent": {
+          "value": "yes",
+          "note": "核心"
+        },
+        "ed2k": {
+          "value": "no",
+          "note": "无"
+        },
+        "stream_m3u8": {
+          "value": "no",
+          "note": "无"
+        },
+        "video_site": {
+          "value": "no",
+          "note": "无"
+        },
+        "schedule": {
+          "value": "unknown",
+          "note": "未打开功能页"
+        },
+        "speed_limit": {
+          "value": "yes",
+          "note": "标准能力"
+        },
+        "rss": {
+          "value": "unknown",
+          "note": "未在本次摘录确认"
+        },
+        "remote_webui": {
+          "value": "yes",
+          "note": "有 Web 界面，常用于远程管理"
+        },
+        "browser_ext": {
+          "value": "no",
+          "note": "无"
+        }
+      },
+      "sources": [
+        "https://transmissionbt.com/",
+        "https://github.com/transmission/transmission"
+      ]
+    },
+    {
+      "id": "aria2",
+      "name": "aria2",
+      "official_url": "https://aria2.github.io/",
+      "github_url": "https://github.com/aria2/aria2",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-2.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源的命令行下载工具，支持 HTTP/FTP/SFTP/BitTorrent。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "GPL-2.0 开源 CLI"
+        }
+      ],
+      "free_tier_limits": "无官方 GUI，需自行搭配前端。",
+      "github_stars": 43492,
+      "latest_release": "1.37.0",
+      "latest_release_date": "2023-11-15 20:07",
+      "latest_release_date_note": "GitHub 正式标签 release-1.37.0 发布于 2023-11-15（已转换时区）。仓库 pushed_at 为 2026-06-25，代码仍有活动，但正式版较旧。",
+      "maintenance_status": "活跃",
+      "summary": "强大的开源命令行下载引擎，HTTP 多线程和 BT 都支持，常被 Motrix 等图形前端调用。最近正式版仍是 1.37.0。",
+      "features": {
+        "http_multi": {
+          "value": "yes",
+          "note": "多连接/分段下载是核心"
+        },
+        "bittorrent": {
+          "value": "yes",
+          "note": "支持 BT"
+        },
+        "ed2k": {
+          "value": "no",
+          "note": "不支持电驴网络"
+        },
+        "stream_m3u8": {
+          "value": "partial",
+          "note": "可通过参数下载部分流，不是专门 M3U8 工具"
+        },
+        "video_site": {
+          "value": "no",
+          "note": "不解析视频网站"
+        },
+        "schedule": {
+          "value": "partial",
+          "note": "可配合 cron/脚本"
+        },
+        "speed_limit": {
+          "value": "yes",
+          "note": "可限速"
+        },
+        "rss": {
+          "value": "no",
+          "note": "自身无 RSS 订阅器"
+        },
+        "remote_webui": {
+          "value": "partial",
+          "note": "有 RPC，第三方 WebUI 很多，官方不以图形 Web 为产品"
+        },
+        "browser_ext": {
+          "value": "partial",
+          "note": "有社区扩展对接 RPC，非官方标配"
+        }
+      },
+      "sources": [
+        "https://aria2.github.io/",
+        "https://github.com/aria2/aria2"
+      ]
+    },
+    {
+      "id": "motrix",
+      "name": "Motrix",
+      "official_url": "https://motrix.app/",
+      "github_url": "https://github.com/agalwood/Motrix",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "未知（GitHub 返回 NOASSERTION）",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源的图形下载器，底层使用 aria2。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "开源桌面下载器"
+        }
+      ],
+      "free_tier_limits": "无。",
+      "github_stars": 58180,
+      "latest_release": "2.4.1",
+      "latest_release_date": "2026-11-10 01:07",
+      "latest_release_date_note": "GitHub 标签 v2.4.1，已转换为 Asia/Shanghai",
+      "maintenance_status": "活跃",
+      "summary": "好看的开源图形下载器，封装了 aria2，适合不想用命令行的用户。",
+      "features": {
+        "http_multi": {
+          "value": "yes",
+          "note": "基于 aria2 的多线程"
+        },
+        "bittorrent": {
+          "value": "yes",
+          "note": "支持 BT/磁力"
+        },
+        "ed2k": {
+          "value": "no",
+          "note": "不支持电驴"
+        },
+        "stream_m3u8": {
+          "value": "unknown",
+          "note": "未打开功能页"
+        },
+        "video_site": {
+          "value": "no",
+          "note": "不是视频解析器"
+        },
+        "schedule": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "speed_limit": {
+          "value": "yes",
+          "note": "可限速"
+        },
+        "rss": {
+          "value": "no",
+          "note": "未作为 RSS 客户端宣传"
+        },
+        "remote_webui": {
+          "value": "partial",
+          "note": "本身是桌面 GUI；底层 aria2 可开 RPC"
+        },
+        "browser_ext": {
+          "value": "unknown",
+          "note": "未确认是否有官方扩展"
+        }
+      },
+      "sources": [
+        "https://motrix.app/",
+        "https://github.com/agalwood/Motrix"
+      ]
+    },
+    {
+      "id": "gopeed",
+      "name": "Gopeed",
+      "official_url": "https://gopeed.com/",
+      "github_url": "https://github.com/GopeedLab/gopeed",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS",
+        "Web"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源的跨平台下载器。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "GPL-3.0 开源"
+        }
+      ],
+      "free_tier_limits": "无。",
+      "github_stars": 27620,
+      "latest_release": "1.9.3",
+      "latest_release_date": "2026-03-18 20:54",
+      "latest_release_date_note": "GitHub 标签 v1.9.3 发布于 2026-03-18（已转换时区）。仓库 pushed_at 为 2026-11-12，开发仍活跃。",
+      "maintenance_status": "活跃",
+      "summary": "较新的开源跨平台下载器，桌面、手机和 Web 都能用，支持 HTTP 和 BT。",
+      "features": {
+        "http_multi": {
+          "value": "yes",
+          "note": "HTTP 下载"
+        },
+        "bittorrent": {
+          "value": "yes",
+          "note": "支持 BT"
+        },
+        "ed2k": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "stream_m3u8": {
+          "value": "unknown",
+          "note": "未打开功能页"
+        },
+        "video_site": {
+          "value": "unknown",
+          "note": "未确认是否有网站解析插件"
+        },
+        "schedule": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "speed_limit": {
+          "value": "unknown",
+          "note": "未打开设置说明"
+        },
+        "rss": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "remote_webui": {
+          "value": "partial",
+          "note": "有 Web 端"
+        },
+        "browser_ext": {
+          "value": "unknown",
+          "note": "未确认"
+        }
+      },
+      "sources": [
+        "https://gopeed.com/",
+        "https://github.com/GopeedLab/gopeed"
+      ]
+    },
+    {
+      "id": "xdm",
+      "name": "Xtreme Download Manager (XDM)",
+      "official_url": "https://xtremedownloadmanager.com/",
+      "github_url": "https://github.com/subhra74/xdm",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源的下载管理器，带浏览器集成和视频捕获。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "GPL-3.0 开源"
+        }
+      ],
+      "free_tier_limits": "无。",
+      "github_stars": 8433,
+      "latest_release": "9.0.9",
+      "latest_release_date": "2026-11-01 15:29",
+      "latest_release_date_note": "GitHub 标签 v9.0.9，已转换为 Asia/Shanghai",
+      "maintenance_status": "活跃",
+      "summary": "开源下载管理器，强调浏览器接管和视频下载，是 IDM 的常见免费替代。",
+      "features": {
+        "http_multi": {
+          "value": "yes",
+          "note": "多线程下载管理器"
+        },
+        "bittorrent": {
+          "value": "unknown",
+          "note": "未打开功能页确认"
+        },
+        "ed2k": {
+          "value": "no",
+          "note": "通常不支持"
+        },
+        "stream_m3u8": {
+          "value": "yes",
+          "note": "视频捕获/流下载是卖点"
+        },
+        "video_site": {
+          "value": "partial",
+          "note": "可捕获浏览器中的视频流，不是针对每个站点的解析器"
+        },
+        "schedule": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "speed_limit": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "rss": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "remote_webui": {
+          "value": "no",
+          "note": "桌面应用"
+        },
+        "browser_ext": {
+          "value": "yes",
+          "note": "浏览器集成是核心卖点"
+        }
+      },
+      "sources": [
+        "https://xtremedownloadmanager.com/",
+        "https://github.com/subhra74/xdm"
+      ]
+    },
+    {
+      "id": "ab-download-manager",
+      "name": "AB Download Manager",
+      "official_url": "https://abdownloadmanager.com/",
+      "github_url": "https://github.com/amir1376/ab-download-manager",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源的现代下载管理器。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "Apache-2.0 开源"
+        }
+      ],
+      "free_tier_limits": "无。",
+      "github_stars": 19222,
+      "latest_release": "1.11.4",
+      "latest_release_date": "2026-11-03 10:26",
+      "latest_release_date_note": "GitHub 标签 v1.11.4，已转换为 Asia/Shanghai",
+      "maintenance_status": "活跃",
+      "summary": "较新的开源下载管理器，界面现代，带浏览器扩展，适合替代老旧的 IDM 风格工具。",
+      "features": {
+        "http_multi": {
+          "value": "yes",
+          "note": "下载管理器"
+        },
+        "bittorrent": {
+          "value": "unknown",
+          "note": "未打开功能页"
+        },
+        "ed2k": {
+          "value": "no",
+          "note": "未宣传电驴"
+        },
+        "stream_m3u8": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "video_site": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "schedule": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "speed_limit": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "rss": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "remote_webui": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "browser_ext": {
+          "value": "yes",
+          "note": "官方强调浏览器集成"
+        }
+      },
+      "sources": [
+        "https://abdownloadmanager.com/",
+        "https://github.com/amir1376/ab-download-manager"
+      ]
+    },
+    {
+      "id": "yt-dlp",
+      "name": "yt-dlp",
+      "official_url": "https://github.com/yt-dlp/yt-dlp",
+      "github_url": "https://github.com/yt-dlp/yt-dlp",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "Unlicense",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源的命令行视频网站下载工具。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "Unlicense 开源"
+        }
+      ],
+      "free_tier_limits": "无官方 GUI。依赖网站兼容性，部分站点可能失效。",
+      "github_stars": 207134,
+      "latest_release": "2026.10.26",
+      "latest_release_date": "2026-10-27 06:25",
+      "latest_release_date_note": "GitHub 标签 2026.10.26，已转换为 Asia/Shanghai",
+      "maintenance_status": "活跃",
+      "summary": "目前最强的开源视频网站下载工具，支持站点极多，但需要命令行或第三方界面。",
+      "features": {
+        "http_multi": {
+          "value": "partial",
+          "note": "可多连接下载单个媒体，不是通用下载管理器"
+        },
+        "bittorrent": {
+          "value": "no",
+          "note": "不是 BT 客户端"
+        },
+        "ed2k": {
+          "value": "no",
+          "note": "无"
+        },
+        "stream_m3u8": {
+          "value": "yes",
+          "note": "可处理 HLS 等流"
+        },
+        "video_site": {
+          "value": "yes",
+          "note": "核心能力"
+        },
+        "schedule": {
+          "value": "partial",
+          "note": "可配合脚本/定时任务"
+        },
+        "speed_limit": {
+          "value": "yes",
+          "note": "有限速参数"
+        },
+        "rss": {
+          "value": "partial",
+          "note": "可配合频道/播放列表定期拉取，不是通用 RSS 客户端"
+        },
+        "remote_webui": {
+          "value": "no",
+          "note": "官方为 CLI，存在第三方 Web 前端"
+        },
+        "browser_ext": {
+          "value": "partial",
+          "note": "有社区包装，非官方核心产品"
+        }
+      },
+      "sources": [
+        "https://github.com/yt-dlp/yt-dlp"
+      ]
+    },
+    {
+      "id": "idm",
+      "name": "Internet Download Manager (IDM)",
+      "official_url": "https://www.internetdownloadmanager.com/",
+      "github_url": null,
+      "platforms": [
+        "Windows"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "付费",
+      "price_summary": "Windows 上经典付费下载器。购买页 secure.internetdownloadmanager.com/buy_idm.html 本次提取文本未见美元金额（可能由脚本渲染），价格未知。",
+      "prices": [
+        {
+          "plan": "IDM 许可证",
+          "price": "未知",
+          "currency": "USD",
+          "period": "lifetime",
+          "note": "购买页本次未解析出标价，请以官网购买页为准"
+        }
+      ],
+      "free_tier_limits": "有试用，精确天数与限制未在本次核实。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "未采集",
+      "maintenance_status": "活跃",
+      "summary": "Windows 上最知名的付费多线程下载器，浏览器集成成熟，但这次没抓到官方售价。",
+      "features": {
+        "http_multi": {
+          "value": "yes",
+          "note": "核心卖点"
+        },
+        "bittorrent": {
+          "value": "no",
+          "note": "不是 BT 客户端"
+        },
+        "ed2k": {
+          "value": "no",
+          "note": "无"
+        },
+        "stream_m3u8": {
+          "value": "partial",
+          "note": "可抓取部分流媒体，能力边界未打开功能页"
+        },
+        "video_site": {
+          "value": "partial",
+          "note": "浏览器视频抓取，不是 yt-dlp 式站点解析器"
+        },
+        "schedule": {
+          "value": "unknown",
+          "note": "未打开功能页确认当前版本是否仍有调度器"
+        },
+        "speed_limit": {
+          "value": "yes",
+          "note": "可限速"
+        },
+        "rss": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "remote_webui": {
+          "value": "no",
+          "note": "桌面应用"
+        },
+        "browser_ext": {
+          "value": "yes",
+          "note": "浏览器集成是核心"
+        }
+      },
+      "sources": [
+        "https://www.internetdownloadmanager.com/",
+        "https://secure.internetdownloadmanager.com/buy_idm.html"
+      ]
+    },
+    {
+      "id": "fdm",
+      "name": "Free Download Manager",
+      "official_url": "https://www.freedownloadmanager.org/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": false,
+      "license": "专有软件（免费；部分历史版本曾开源，当前产品以免费闭源为主）",
+      "pricing_model": "完全免费",
+      "price_summary": "免费下载管理器。本次未打开关于页确认是否仍有开源版本或增值服务。",
+      "prices": [
+        {
+          "plan": "FDM",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "官网提供免费下载"
+        }
+      ],
+      "free_tier_limits": "免费使用。闭源，需注意捆绑/推广，本次未安装验证。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "未采集",
+      "maintenance_status": "活跃",
+      "summary": "跨平台免费下载管理器，支持 HTTP 和 BT，不是开源软件。",
+      "features": {
+        "http_multi": {
+          "value": "yes",
+          "note": "下载管理器"
+        },
+        "bittorrent": {
+          "value": "yes",
+          "note": "产品长期支持 BitTorrent；本次未重新打开功能页复核"
+        },
+        "ed2k": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "stream_m3u8": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "video_site": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "schedule": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "speed_limit": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "rss": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "remote_webui": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "browser_ext": {
+          "value": "unknown",
+          "note": "未打开功能页确认当前版本扩展情况"
+        }
+      },
+      "sources": [
+        "https://www.freedownloadmanager.org/"
+      ]
+    },
+    {
+      "id": "xunlei",
+      "name": "迅雷",
+      "official_url": "https://www.xunlei.com/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Android",
+        "iOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "国内常用下载器，有会员加速。本次未打开会员价目页，价格未知。",
+      "prices": [
+        {
+          "plan": "免费版",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "可免费下载使用"
+        },
+        {
+          "plan": "会员加速",
+          "price": "未知",
+          "currency": "CNY",
+          "period": "month",
+          "note": "请以 xunlei.com / 迅雷会员页为准"
+        }
+      ],
+      "free_tier_limits": "免费可下，速度和云盘空间通常受会员限制，精确限制未核实。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "未采集",
+      "maintenance_status": "活跃",
+      "summary": "国内使用最广的下载器之一，免费能用，会员加速和云盘是主要付费点，具体价格需看官网。",
+      "features": {
+        "http_multi": {
+          "value": "yes",
+          "note": "多资源下载"
+        },
+        "bittorrent": {
+          "value": "yes",
+          "note": "支持 BT/磁力"
+        },
+        "ed2k": {
+          "value": "yes",
+          "note": "传统支持电驴链接"
+        },
+        "stream_m3u8": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "video_site": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "schedule": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "speed_limit": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "rss": {
+          "value": "no",
+          "note": "不是 RSS 客户端"
+        },
+        "remote_webui": {
+          "value": "no",
+          "note": "以客户端为主"
+        },
+        "browser_ext": {
+          "value": "unknown",
+          "note": "未确认"
+        }
+      },
+      "sources": [
+        "https://www.xunlei.com/"
+      ]
+    },
+    {
+      "id": "utorrent",
+      "name": "µTorrent / uTorrent",
+      "official_url": "https://www.utorrent.com/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Android"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "有免费版和 Plus/广告移除等付费档。本次未打开定价页，价格未知。需注意免费版广告和捆绑软件历史。",
+      "prices": [
+        {
+          "plan": "免费版",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "有广告的免费客户端"
+        },
+        {
+          "plan": "Plus 等付费档",
+          "price": "未知",
+          "currency": null,
+          "period": null,
+          "note": "请以 utorrent.com 为准"
+        }
+      ],
+      "free_tier_limits": "免费版通常带广告，部分功能在付费档。精确限制未核实。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "未采集",
+      "maintenance_status": "活跃",
+      "summary": "早期非常流行的 BT 客户端，现在免费版广告较多，付费档价格这次没抓到。",
+      "features": {
+        "http_multi": {
+          "value": "no",
+          "note": "BT 客户端"
+        },
+        "bittorrent": {
+          "value": "yes",
+          "note": "核心"
+        },
+        "ed2k": {
+          "value": "no",
+          "note": "无"
+        },
+        "stream_m3u8": {
+          "value": "no",
+          "note": "无"
+        },
+        "video_site": {
+          "value": "no",
+          "note": "无"
+        },
+        "schedule": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "speed_limit": {
+          "value": "yes",
+          "note": "标准能力"
+        },
+        "rss": {
+          "value": "unknown",
+          "note": "未确认当前版本"
+        },
+        "remote_webui": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "browser_ext": {
+          "value": "no",
+          "note": "无"
+        }
+      },
+      "sources": [
+        "https://www.utorrent.com/"
+      ]
+    },
+    {
+      "id": "4k-video-downloader",
+      "name": "4K Video Downloader",
+      "official_url": "https://www.4kdownload.com/products/product-videodownloader",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "视频网站下载工具，有免费额度和付费版。本次未打开定价页，价格与免费限制未知。",
+      "prices": [
+        {
+          "plan": "免费档",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "有限制的免费使用，精确额度未核实"
+        },
+        {
+          "plan": "付费许可",
+          "price": "未知",
+          "currency": null,
+          "period": null,
+          "note": "请以 4kdownload.com 为准"
+        }
+      ],
+      "free_tier_limits": "未知。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "未采集",
+      "maintenance_status": "活跃",
+      "summary": "界面友好的商业视频网站下载器，适合不想用命令行的用户，免费有限制，价格需看官网。",
+      "features": {
+        "http_multi": {
+          "value": "partial",
+          "note": "主要用于视频下载，不是通用下载管理器"
+        },
+        "bittorrent": {
+          "value": "no",
+          "note": "无"
+        },
+        "ed2k": {
+          "value": "no",
+          "note": "无"
+        },
+        "stream_m3u8": {
+          "value": "yes",
+          "note": "处理视频流"
+        },
+        "video_site": {
+          "value": "yes",
+          "note": "核心卖点"
+        },
+        "schedule": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "speed_limit": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "rss": {
+          "value": "unknown",
+          "note": "可能有频道订阅，未确认"
+        },
+        "remote_webui": {
+          "value": "no",
+          "note": "桌面应用"
+        },
+        "browser_ext": {
+          "value": "unknown",
+          "note": "未确认"
+        }
+      },
+      "sources": [
+        "https://www.4kdownload.com/products/product-videodownloader"
+      ]
+    }
+  ]
+}

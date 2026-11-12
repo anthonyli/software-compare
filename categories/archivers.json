@@ -1,0 +1,941 @@
+{
+  "category_slug": "archivers",
+  "category_name_zh": "压缩解压",
+  "collected_at": "2026-11-12",
+  "collected_at_timezone": "Asia/Shanghai (UTC+8)",
+  "features": [
+    {
+      "key": "zip",
+      "label": "ZIP 压缩/解压"
+    },
+    {
+      "key": "rar_extract",
+      "label": "解压 RAR"
+    },
+    {
+      "key": "rar_create",
+      "label": "创建 RAR"
+    },
+    {
+      "key": "seven_zip",
+      "label": "7z 压缩/解压"
+    },
+    {
+      "key": "tar_gz",
+      "label": "TAR/GZ 等 UNIX 包"
+    },
+    {
+      "key": "iso",
+      "label": "ISO 镜像"
+    },
+    {
+      "key": "encryption",
+      "label": "加密压缩"
+    },
+    {
+      "key": "split",
+      "label": "分卷压缩"
+    },
+    {
+      "key": "repair",
+      "label": "修复损坏压缩包"
+    },
+    {
+      "key": "context_menu",
+      "label": "资源管理器右键菜单"
+    },
+    {
+      "key": "preview",
+      "label": "不解压预览"
+    }
+  ],
+  "products": [
+    {
+      "id": "7zip",
+      "name": "7-Zip",
+      "official_url": "https://www.7-zip.org/",
+      "github_url": "https://github.com/ip7z/7zip",
+      "platforms": [
+        "Windows"
+      ],
+      "open_source": true,
+      "license": "主要为 GNU LGPL，部分代码 BSD 3-clause，以及 unRAR 许可限制（官网 License）",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费。官网：7-Zip is free software with open source。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "7-zip.org：Free software with open source"
+        }
+      ],
+      "free_tier_limits": "无。官方主程序面向 Windows。可解 RAR 但不能创建 RAR。",
+      "github_stars": 4489,
+      "latest_release": "26.06",
+      "latest_release_date": "2026-11-07 19:45",
+      "latest_release_date_note": "官网写 26.06 (2026-11-06)。GitHub ip7z/7zip 标签 26.06 发布于 2026-11-07 11:45 UTC，已转换为 Asia/Shanghai。",
+      "maintenance_status": "活跃",
+      "summary": "Windows 上最常用的免费压缩工具，7z 格式压缩率高，能解绝大多数格式，但不能创建 RAR。",
+      "features": {
+        "zip": {
+          "value": "yes",
+          "note": "官网：Pack 包含 ZIP"
+        },
+        "rar_extract": {
+          "value": "yes",
+          "note": "Unpack 包含 RAR"
+        },
+        "rar_create": {
+          "value": "no",
+          "note": "官网未将 RAR 列入 Pack 列表，仅 Unpack"
+        },
+        "seven_zip": {
+          "value": "yes",
+          "note": "原生 7z，Pack 与 Unpack"
+        },
+        "tar_gz": {
+          "value": "yes",
+          "note": "Pack：XZ/BZIP2/GZIP/TAR；Unpack 另含多种 UNIX 包"
+        },
+        "iso": {
+          "value": "yes",
+          "note": "Unpack 包含 ISO"
+        },
+        "encryption": {
+          "value": "yes",
+          "note": "官网：Strong AES-256 encryption in 7z and ZIP formats"
+        },
+        "split": {
+          "value": "unknown",
+          "note": "作为常见能力，官网首页摘录未点名分卷"
+        },
+        "repair": {
+          "value": "unknown",
+          "note": "首页未点名修复"
+        },
+        "context_menu": {
+          "value": "yes",
+          "note": "Windows 资源管理器集成是默认体验"
+        },
+        "preview": {
+          "value": "yes",
+          "note": "可在管理器中浏览压缩包内容"
+        }
+      },
+      "sources": [
+        "https://www.7-zip.org/",
+        "https://github.com/ip7z/7zip"
+      ]
+    },
+    {
+      "id": "peazip",
+      "name": "PeaZip",
+      "official_url": "https://peazip.github.io/",
+      "github_url": "https://github.com/peazip/PeaZip",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "LGPL-3.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源的跨平台压缩工具。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "LGPL-3.0 开源"
+        }
+      ],
+      "free_tier_limits": "无。",
+      "github_stars": 8129,
+      "latest_release": "11.4.0",
+      "latest_release_date": "2026-10-17 14:08",
+      "latest_release_date_note": "GitHub 标签 11.4.0，已转换为 Asia/Shanghai",
+      "maintenance_status": "活跃",
+      "summary": "跨平台开源压缩工具，界面比 7-Zip 更现代，支持大量格式和加密。",
+      "features": {
+        "zip": {
+          "value": "yes",
+          "note": "支持 ZIP"
+        },
+        "rar_extract": {
+          "value": "yes",
+          "note": "开源前端通常调用 7z/unrar 解 RAR；未打开格式表则仍标 yes 并注明需以官方格式列表为准"
+        },
+        "rar_create": {
+          "value": "no",
+          "note": "创建 RAR 需要 WinRAR 授权算法，开源工具一般不能创建"
+        },
+        "seven_zip": {
+          "value": "yes",
+          "note": "支持 7z"
+        },
+        "tar_gz": {
+          "value": "yes",
+          "note": "支持 TAR/GZ 等"
+        },
+        "iso": {
+          "value": "unknown",
+          "note": "需看格式表，本次未打开完整格式页"
+        },
+        "encryption": {
+          "value": "yes",
+          "note": "加密压缩是常见卖点"
+        },
+        "split": {
+          "value": "unknown",
+          "note": "本次未打开官方格式/功能页确认分卷"
+        },
+        "repair": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "context_menu": {
+          "value": "yes",
+          "note": "可集成系统菜单（依平台安装选项）"
+        },
+        "preview": {
+          "value": "yes",
+          "note": "可浏览压缩包"
+        }
+      },
+      "sources": [
+        "https://peazip.github.io/",
+        "https://github.com/peazip/PeaZip"
+      ]
+    },
+    {
+      "id": "nanazip",
+      "name": "NanaZip",
+      "official_url": "https://github.com/M2Team/NanaZip",
+      "github_url": "https://github.com/M2Team/NanaZip",
+      "platforms": [
+        "Windows"
+      ],
+      "open_source": true,
+      "license": "未知（GitHub 返回 NOASSERTION）",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源，面向现代 Windows 的 7-Zip 衍生版。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "GitHub / Microsoft Store 分发的开源压缩工具"
+        }
+      ],
+      "free_tier_limits": "无。仅 Windows。",
+      "github_stars": 16217,
+      "latest_release": "7.0.1882.0",
+      "latest_release_date": "2026-10-27 00:06",
+      "latest_release_date_note": "GitHub 标签，已转换为 Asia/Shanghai",
+      "maintenance_status": "活跃",
+      "summary": "面向 Windows 11 的开源 7-Zip 现代化分支，右键菜单和界面更贴近新系统。",
+      "features": {
+        "zip": {
+          "value": "yes",
+          "note": "继承 7-Zip 能力"
+        },
+        "rar_extract": {
+          "value": "yes",
+          "note": "可解 RAR（与 7-Zip 类似）"
+        },
+        "rar_create": {
+          "value": "no",
+          "note": "不能创建 RAR"
+        },
+        "seven_zip": {
+          "value": "yes",
+          "note": "核心"
+        },
+        "tar_gz": {
+          "value": "yes",
+          "note": "继承 7-Zip"
+        },
+        "iso": {
+          "value": "yes",
+          "note": "通常可打开 ISO"
+        },
+        "encryption": {
+          "value": "yes",
+          "note": "AES 加密"
+        },
+        "split": {
+          "value": "unknown",
+          "note": "未打开功能说明"
+        },
+        "repair": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "context_menu": {
+          "value": "yes",
+          "note": "现代化资源管理器集成是卖点"
+        },
+        "preview": {
+          "value": "yes",
+          "note": "可浏览压缩包"
+        }
+      },
+      "sources": [
+        "https://github.com/M2Team/NanaZip"
+      ]
+    },
+    {
+      "id": "keka",
+      "name": "Keka",
+      "official_url": "https://www.keka.io/",
+      "github_url": "https://github.com/aonez/keka",
+      "platforms": [
+        "macOS"
+      ],
+      "open_source": true,
+      "license": "未知（GitHub license 字段为 '-'）",
+      "pricing_model": "完全免费",
+      "price_summary": "Mac 开源压缩工具。也可从 App Store 付费购买以支持开发。本次 keka.io 抓取几乎无正文（244 字节），商店价格未知。",
+      "prices": [
+        {
+          "plan": "官网/GitHub 版本",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "开源项目可免费下载"
+        },
+        {
+          "plan": "Mac App Store",
+          "price": "未知",
+          "currency": "USD",
+          "period": null,
+          "note": "官网本次未能读取 App Store 标价"
+        }
+      ],
+      "free_tier_limits": "直接下载版通常完整可用；App Store 版为付费支持渠道，价格未知。",
+      "github_stars": 7649,
+      "latest_release": "1.6.8",
+      "latest_release_date": "2026-09-24 14:39",
+      "latest_release_date_note": "GitHub 标签 v1.6.8，已转换为 Asia/Shanghai。官网本次几乎为空。",
+      "maintenance_status": "活跃",
+      "summary": "Mac 上很常用的开源压缩工具，界面简洁，官网这次没抓到价格和功能细表。",
+      "features": {
+        "zip": {
+          "value": "yes",
+          "note": "作为压缩工具的基本格式；官网正文未读到，记为项目常规能力"
+        },
+        "rar_extract": {
+          "value": "unknown",
+          "note": "官网未读到格式表"
+        },
+        "rar_create": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "seven_zip": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "tar_gz": {
+          "value": "unknown",
+          "note": "官网本次几乎无正文，未复核格式表"
+        },
+        "iso": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "encryption": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "split": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "repair": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "context_menu": {
+          "value": "yes",
+          "note": "可集成到 Finder，细节未打开帮助页"
+        },
+        "preview": {
+          "value": "unknown",
+          "note": "未确认"
+        }
+      },
+      "sources": [
+        "https://www.keka.io/",
+        "https://github.com/aonez/keka"
+      ]
+    },
+    {
+      "id": "ark",
+      "name": "Ark",
+      "official_url": "https://apps.kde.org/ark/",
+      "github_url": "https://github.com/KDE/ark",
+      "platforms": [
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "未知（KDE 项目，GitHub 镜像无标准 Releases）",
+      "pricing_model": "完全免费",
+      "price_summary": "KDE 自带的免费开源压缩工具。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "KDE 应用，随桌面或独立安装"
+        }
+      ],
+      "free_tier_limits": "无。主要在 Linux/KDE。",
+      "github_stars": 144,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "GitHub 镜像无典型 Releases 页，本次未采集 KDE 发布日期。GitHub 镜像 stargazers_count=144。",
+      "maintenance_status": "活跃",
+      "summary": "KDE 桌面自带的开源压缩管理器，能处理常见 Linux 压缩格式。",
+      "features": {
+        "zip": {
+          "value": "yes",
+          "note": "支持常见压缩格式"
+        },
+        "rar_extract": {
+          "value": "partial",
+          "note": "取决于是否安装 unrar 插件"
+        },
+        "rar_create": {
+          "value": "no",
+          "note": "一般不能创建 RAR"
+        },
+        "seven_zip": {
+          "value": "partial",
+          "note": "取决于后端插件"
+        },
+        "tar_gz": {
+          "value": "yes",
+          "note": "Linux 压缩工具核心能力"
+        },
+        "iso": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "encryption": {
+          "value": "unknown",
+          "note": "未打开文档"
+        },
+        "split": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "repair": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "context_menu": {
+          "value": "yes",
+          "note": "可集成 Dolphin 等文件管理器"
+        },
+        "preview": {
+          "value": "yes",
+          "note": "可浏览压缩包"
+        }
+      },
+      "sources": [
+        "https://apps.kde.org/ark/",
+        "https://github.com/KDE/ark",
+        "https://invent.kde.org/utilities/ark"
+      ],
+      "source_url": "https://invent.kde.org/utilities/ark",
+      "source_host_note": "官方仓库在 invent.kde.org，GitHub KDE/ark 为官方镜像。"
+    },
+    {
+      "id": "file-roller",
+      "name": "File Roller",
+      "official_url": "https://gitlab.gnome.org/GNOME/file-roller",
+      "github_url": "https://github.com/GNOME/file-roller",
+      "platforms": [
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-2.0（GitHub 镜像 SPDX；官方仓库在 GNOME GitLab）",
+      "pricing_model": "完全免费",
+      "price_summary": "GNOME 自带的免费开源归档管理器。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "GNOME 桌面组件"
+        }
+      ],
+      "free_tier_limits": "无。主要在 Linux/GNOME。",
+      "github_stars": 69,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "官方代码在 GNOME GitLab，本次未采集版本号。GitHub 镜像 stargazers_count=69。",
+      "maintenance_status": "活跃",
+      "summary": "GNOME 桌面自带的压缩解压工具，适合日常解压 ZIP、TAR 等。",
+      "features": {
+        "zip": {
+          "value": "yes",
+          "note": "核心"
+        },
+        "rar_extract": {
+          "value": "partial",
+          "note": "需额外后端"
+        },
+        "rar_create": {
+          "value": "no",
+          "note": "通常不能创建 RAR"
+        },
+        "seven_zip": {
+          "value": "partial",
+          "note": "取决于后端"
+        },
+        "tar_gz": {
+          "value": "yes",
+          "note": "核心"
+        },
+        "iso": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "encryption": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "split": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "repair": {
+          "value": "no",
+          "note": "不是修复工具"
+        },
+        "context_menu": {
+          "value": "yes",
+          "note": "集成文件管理器"
+        },
+        "preview": {
+          "value": "yes",
+          "note": "可浏览归档"
+        }
+      },
+      "sources": [
+        "https://gitlab.gnome.org/GNOME/file-roller",
+        "https://github.com/GNOME/file-roller"
+      ],
+      "source_url": "https://gitlab.gnome.org/GNOME/file-roller",
+      "source_host_note": "官方仓库在 gitlab.gnome.org，GitHub GNOME/file-roller 为只读官方镜像。"
+    },
+    {
+      "id": "winrar",
+      "name": "WinRAR",
+      "official_url": "https://www.win-rar.com/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "Android"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "付费",
+      "price_summary": "有试用。能创建 RAR 是其核心差异。商店页本次被重定向到营销页，未读到美元/欧元标价，价格未知。",
+      "prices": [
+        {
+          "plan": "WinRAR 许可证",
+          "price": "未知",
+          "currency": null,
+          "period": "lifetime",
+          "note": "shop 页面本次未解析出价格，请以 win-rar.com 商店为准"
+        }
+      ],
+      "free_tier_limits": "官网提供试用。传统上试用过期后仍可使用但会提示购买，精确当前政策未在本次正文确认。",
+      "github_stars": null,
+      "latest_release": "7.23",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "官网写 latest released official version is WinRAR 7.23，另有 7.30 beta 2，页面注明 last updated 27 October 2026。7.23 的精确日历日未单列。",
+      "maintenance_status": "活跃",
+      "summary": "最经典的付费压缩软件，几乎是创建 RAR 的标准工具，试用政策宽松，但正版价格这次没抓到。",
+      "features": {
+        "zip": {
+          "value": "yes",
+          "note": "支持 ZIP"
+        },
+        "rar_extract": {
+          "value": "yes",
+          "note": "核心"
+        },
+        "rar_create": {
+          "value": "yes",
+          "note": "核心差异化功能"
+        },
+        "seven_zip": {
+          "value": "unknown",
+          "note": "是否创建 7z 未打开功能页确认"
+        },
+        "tar_gz": {
+          "value": "unknown",
+          "note": "未打开格式表"
+        },
+        "iso": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "encryption": {
+          "value": "yes",
+          "note": "加密压缩"
+        },
+        "split": {
+          "value": "yes",
+          "note": "分卷是 RAR 常见能力"
+        },
+        "repair": {
+          "value": "yes",
+          "note": "修复损坏压缩包是长期卖点"
+        },
+        "context_menu": {
+          "value": "yes",
+          "note": "资源管理器集成"
+        },
+        "preview": {
+          "value": "yes",
+          "note": "可浏览压缩包"
+        }
+      },
+      "sources": [
+        "https://www.win-rar.com/"
+      ]
+    },
+    {
+      "id": "bandizip",
+      "name": "Bandizip",
+      "official_url": "https://www.bandisoft.com/bandizip/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "有免费版和 Professional。官网 v7.47（2026-10-13）。Professional 功能包括密码管理、修复、密码恢复、图像预览和反恶意软件等。美元价格未出现在首页，价格未知。",
+      "prices": [
+        {
+          "plan": "免费版",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "官网提供免费下载"
+        },
+        {
+          "plan": "Professional",
+          "price": "未知",
+          "currency": null,
+          "period": null,
+          "note": "bandisoft.com 首页列出 Pro 功能，未给出美元/韩元标价"
+        }
+      ],
+      "free_tier_limits": "免费版可用日常压缩解压。密码管理、修复、密码恢复、图像预览、反恶意软件等为 Professional 功能（官网首页）。",
+      "github_stars": null,
+      "latest_release": "7.47",
+      "latest_release_date": "2026-10-13",
+      "latest_release_date_note": "官网：v7.47 October 13, 2026，无时钟时间",
+      "maintenance_status": "活跃",
+      "summary": "界面现代的免费增值压缩工具，免费版就能日常使用，专业版有修复和密码工具，但价格这次没抓到。",
+      "features": {
+        "zip": {
+          "value": "yes",
+          "note": "核心"
+        },
+        "rar_extract": {
+          "value": "yes",
+          "note": "支持解常见格式，含 RAR"
+        },
+        "rar_create": {
+          "value": "unknown",
+          "note": "未在首页确认是否可创建 RAR"
+        },
+        "seven_zip": {
+          "value": "unknown",
+          "note": "首页未逐条列出 7z"
+        },
+        "tar_gz": {
+          "value": "unknown",
+          "note": "未打开格式表"
+        },
+        "iso": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "encryption": {
+          "value": "yes",
+          "note": "支持加密；部分高级密码功能在 Pro"
+        },
+        "split": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "repair": {
+          "value": "paid",
+          "note": "官网将 repair 列为 Professional 功能"
+        },
+        "context_menu": {
+          "value": "yes",
+          "note": "资源管理器集成"
+        },
+        "preview": {
+          "value": "paid",
+          "note": "Image Preview 列为 Professional 功能；常规文件列表预览是否免费未知"
+        }
+      },
+      "sources": [
+        "https://www.bandisoft.com/bandizip/"
+      ]
+    },
+    {
+      "id": "winzip",
+      "name": "WinZip",
+      "official_url": "https://www.winzip.com/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "订阅",
+      "price_summary": "传统商业压缩软件，现多为订阅。本次未打开购买页，价格未知。",
+      "prices": [
+        {
+          "plan": "WinZip 方案",
+          "price": "未知",
+          "currency": null,
+          "period": null,
+          "note": "请以 winzip.com 商店为准"
+        }
+      ],
+      "free_tier_limits": "通常有试用，精确限制未核实。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "未采集",
+      "maintenance_status": "活跃",
+      "summary": "老牌商业压缩软件，现在功能扩展到备份和分享，价格需看官网。",
+      "features": {
+        "zip": {
+          "value": "yes",
+          "note": "核心品牌能力"
+        },
+        "rar_extract": {
+          "value": "unknown",
+          "note": "未打开功能页"
+        },
+        "rar_create": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "seven_zip": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "tar_gz": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "iso": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "encryption": {
+          "value": "yes",
+          "note": "加密是长期卖点"
+        },
+        "split": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "repair": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "context_menu": {
+          "value": "yes",
+          "note": "资源管理器集成"
+        },
+        "preview": {
+          "value": "unknown",
+          "note": "未确认"
+        }
+      },
+      "sources": [
+        "https://www.winzip.com/"
+      ]
+    },
+    {
+      "id": "the-unarchiver",
+      "name": "The Unarchiver",
+      "official_url": "https://theunarchiver.com/",
+      "github_url": null,
+      "platforms": [
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "部分开源（解压内核历史上开源，应用分发以免费软件为主；精确许可证未复核）",
+      "pricing_model": "完全免费",
+      "price_summary": "Mac 上常用的免费解压工具。本次未重新打开站点核对其是否完全开源或是否有付费 Pro 衍生应用。",
+      "prices": [
+        {
+          "plan": "The Unarchiver",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "Mac App Store / 官网免费下载，以官网为准"
+        }
+      ],
+      "free_tier_limits": "定位为解压工具，创建压缩包能力弱或没有。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "未采集",
+      "maintenance_status": "活跃",
+      "summary": "Mac 上非常常用的免费解压工具，格式支持广，但主要是解开而不是创建高级压缩包。",
+      "features": {
+        "zip": {
+          "value": "yes",
+          "note": "可解 ZIP"
+        },
+        "rar_extract": {
+          "value": "yes",
+          "note": "可解 RAR 是常用原因"
+        },
+        "rar_create": {
+          "value": "no",
+          "note": "定位是 Unarchiver"
+        },
+        "seven_zip": {
+          "value": "yes",
+          "note": "通常可解 7z"
+        },
+        "tar_gz": {
+          "value": "yes",
+          "note": "可解 TAR/GZ"
+        },
+        "iso": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "encryption": {
+          "value": "partial",
+          "note": "可打开加密包，不是创建加密压缩的工具"
+        },
+        "split": {
+          "value": "partial",
+          "note": "或可解开分卷，未确认创建"
+        },
+        "repair": {
+          "value": "no",
+          "note": "不是修复工具"
+        },
+        "context_menu": {
+          "value": "yes",
+          "note": "可关联归档文件"
+        },
+        "preview": {
+          "value": "unknown",
+          "note": "未确认"
+        }
+      },
+      "sources": [
+        "https://theunarchiver.com/"
+      ]
+    },
+    {
+      "id": "betterzip",
+      "name": "BetterZip",
+      "official_url": "https://macitbetter.com/",
+      "github_url": null,
+      "platforms": [
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "付费",
+      "price_summary": "Mac 上的专业压缩工具。本次未打开购买页，价格未知。",
+      "prices": [
+        {
+          "plan": "BetterZip 许可",
+          "price": "未知",
+          "currency": "USD",
+          "period": "lifetime",
+          "note": "请以 macitbetter.com 为准"
+        }
+      ],
+      "free_tier_limits": "可能有试用，未核实。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "未采集",
+      "maintenance_status": "活跃",
+      "summary": "面向 Mac 的专业压缩软件，可预览和编辑压缩包内容，价格需看开发者网站。",
+      "features": {
+        "zip": {
+          "value": "yes",
+          "note": "核心"
+        },
+        "rar_extract": {
+          "value": "unknown",
+          "note": "未打开功能页"
+        },
+        "rar_create": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "seven_zip": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "tar_gz": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "iso": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "encryption": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "split": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "repair": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "context_menu": {
+          "value": "unknown",
+          "note": "未打开功能页确认"
+        },
+        "preview": {
+          "value": "yes",
+          "note": "预览压缩包是产品卖点"
+        }
+      },
+      "sources": [
+        "https://macitbetter.com/"
+      ]
+    }
+  ]
+}

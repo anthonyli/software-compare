@@ -1,0 +1,1285 @@
+{
+  "category_slug": "file-sync",
+  "category_name_zh": "文件同步/网盘同步",
+  "collected_at": "2026-11-12",
+  "collected_at_timezone": "Asia/Shanghai (UTC+8)",
+  "features": [
+    {
+      "key": "realtime",
+      "label": "实时同步"
+    },
+    {
+      "key": "selective",
+      "label": "选择性同步"
+    },
+    {
+      "key": "p2p_lan",
+      "label": "P2P/局域网直连"
+    },
+    {
+      "key": "e2e_encrypt",
+      "label": "端到端加密"
+    },
+    {
+      "key": "versions",
+      "label": "文件版本/回收站"
+    },
+    {
+      "key": "conflict",
+      "label": "冲突处理"
+    },
+    {
+      "key": "self_host",
+      "label": "可自建服务器"
+    },
+    {
+      "key": "mobile",
+      "label": "手机客户端"
+    },
+    {
+      "key": "share_link",
+      "label": "分享链接"
+    },
+    {
+      "key": "block_level",
+      "label": "块级/增量同步"
+    },
+    {
+      "key": "ignore_rules",
+      "label": "忽略规则"
+    }
+  ],
+  "products": [
+    {
+      "id": "syncthing",
+      "name": "Syncthing",
+      "official_url": "https://syncthing.net/",
+      "github_url": "https://github.com/syncthing/syncthing",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android"
+      ],
+      "open_source": true,
+      "license": "MPL-2.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源的 P2P 文件同步，无中央服务器。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "开源；设备之间直接同步，不强制云存储费"
+        }
+      ],
+      "free_tier_limits": "无官方托管云盘。需至少两台设备在线。官方 iOS 客户端情况需另行确认。",
+      "github_stars": 90408,
+      "latest_release": "2.1.7",
+      "latest_release_date": "2026-10-21 14:09",
+      "latest_release_date_note": "GitHub 标签 v2.1.7，已转换为 Asia/Shanghai",
+      "maintenance_status": "活跃",
+      "summary": "不经过中央服务器的开源同步工具，适合在自己的电脑和 NAS 之间同步，隐私好，没有官方云空间。",
+      "features": {
+        "realtime": {
+          "value": "yes",
+          "note": "持续同步"
+        },
+        "selective": {
+          "value": "yes",
+          "note": "可选择文件夹，并有忽略规则"
+        },
+        "p2p_lan": {
+          "value": "yes",
+          "note": "核心卖点，局域网可直连"
+        },
+        "e2e_encrypt": {
+          "value": "yes",
+          "note": "设备间 TLS；数据不经过开发者服务器"
+        },
+        "versions": {
+          "value": "yes",
+          "note": "有版本控制/文件版本功能"
+        },
+        "conflict": {
+          "value": "yes",
+          "note": "冲突文件会保留副本"
+        },
+        "self_host": {
+          "value": "yes",
+          "note": "完全自持，无必须的中央云"
+        },
+        "mobile": {
+          "value": "partial",
+          "note": "有 Android 官方/官方支持应用；iOS 情况本次未核实"
+        },
+        "share_link": {
+          "value": "no",
+          "note": "不是网盘分享链接产品"
+        },
+        "block_level": {
+          "value": "yes",
+          "note": "按块传输变更"
+        },
+        "ignore_rules": {
+          "value": "yes",
+          "note": ".stignore 忽略规则"
+        }
+      },
+      "sources": [
+        "https://syncthing.net/",
+        "https://github.com/syncthing/syncthing"
+      ]
+    },
+    {
+      "id": "nextcloud",
+      "name": "Nextcloud",
+      "official_url": "https://nextcloud.com/",
+      "github_url": "https://github.com/nextcloud/server",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS",
+        "Web"
+      ],
+      "open_source": true,
+      "license": "AGPL-3.0",
+      "pricing_model": "免费增值",
+      "price_summary": "社区版可完全免费自建。nextcloud.com/pricing 面向企业订阅，本次未能从页面提取清晰的对外标价列表，企业价格未知。",
+      "prices": [
+        {
+          "plan": "自建社区版",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "AGPL 开源，可自行部署"
+        },
+        {
+          "plan": "Nextcloud Enterprise / 官方托管",
+          "price": "未知",
+          "currency": null,
+          "period": null,
+          "note": "定价页偏企业方案，本次未提取到可引用的公开数字"
+        }
+      ],
+      "free_tier_limits": "自建版功能取决于自己的服务器与应用。官方托管/企业支持需付费，价格未知。",
+      "github_stars": 37489,
+      "latest_release": "33.0.10",
+      "latest_release_date": "2026-10-15 16:37",
+      "latest_release_date_note": "GitHub 标签 v33.0.10，已转换为 Asia/Shanghai",
+      "maintenance_status": "活跃",
+      "summary": "最完整的开源自建网盘与协作套件，能替代很多商业网盘，但需要自己维护服务器。",
+      "features": {
+        "realtime": {
+          "value": "partial",
+          "note": "客户端同步；协作文档可近实时"
+        },
+        "selective": {
+          "value": "yes",
+          "note": "桌面客户端支持选择文件夹"
+        },
+        "p2p_lan": {
+          "value": "no",
+          "note": "以客户端-服务器为主，不是 Syncthing 式 P2P"
+        },
+        "e2e_encrypt": {
+          "value": "partial",
+          "note": "有可选的端到端加密应用，不是默认全开"
+        },
+        "versions": {
+          "value": "yes",
+          "note": "文件版本与回收站"
+        },
+        "conflict": {
+          "value": "yes",
+          "note": "同步冲突处理"
+        },
+        "self_host": {
+          "value": "yes",
+          "note": "核心卖点"
+        },
+        "mobile": {
+          "value": "yes",
+          "note": "官方 Android/iOS"
+        },
+        "share_link": {
+          "value": "yes",
+          "note": "分享链接、密码和过期是核心"
+        },
+        "block_level": {
+          "value": "yes",
+          "note": "桌面客户端有分块/增量同步能力"
+        },
+        "ignore_rules": {
+          "value": "yes",
+          "note": "可排除文件"
+        }
+      },
+      "sources": [
+        "https://nextcloud.com/",
+        "https://nextcloud.com/pricing",
+        "https://github.com/nextcloud/server"
+      ]
+    },
+    {
+      "id": "seafile",
+      "name": "Seafile",
+      "official_url": "https://www.seafile.com/",
+      "github_url": "https://github.com/haiwen/seafile",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS",
+        "Web"
+      ],
+      "open_source": true,
+      "license": "未知（GitHub 返回 NOASSERTION；社区版开源、专业版另有商业许可）",
+      "pricing_model": "免费增值",
+      "price_summary": "可自建。官网有云服务与企业/本地部署。云和商业许可价格本次未从定价页完整提取，价格未知。",
+      "prices": [
+        {
+          "plan": "社区自建",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "开源社区版可自建"
+        },
+        {
+          "plan": "云服务/企业版",
+          "price": "未知",
+          "currency": null,
+          "period": null,
+          "note": "seafile.com 定价页本次未完整提取数字"
+        }
+      ],
+      "free_tier_limits": "社区版可自建。官方云与企业功能价格及限额未知。",
+      "github_stars": 15451,
+      "latest_release": "9.0.5",
+      "latest_release_date": "2024-02-27",
+      "latest_release_date_note": "GitHub haiwen/seafile 最近正式标签为 v9.0.5（2024-02-27）。仓库 pushed_at 为 2026-11-11，仍有活动。该仓库可能不是全部服务器组件的发版处，版本号可能滞后，请以官网为准。",
+      "maintenance_status": "活跃",
+      "summary": "偏文件同步的开源自建网盘，同步效率较好，也有官方云和企业版，商业价格这次没抓全。",
+      "features": {
+        "realtime": {
+          "value": "yes",
+          "note": "文件同步是核心"
+        },
+        "selective": {
+          "value": "yes",
+          "note": "选择性同步"
+        },
+        "p2p_lan": {
+          "value": "no",
+          "note": "客户端-服务器架构"
+        },
+        "e2e_encrypt": {
+          "value": "partial",
+          "note": "支持加密资料库，细节见官网"
+        },
+        "versions": {
+          "value": "yes",
+          "note": "版本与快照是卖点"
+        },
+        "conflict": {
+          "value": "yes",
+          "note": "同步冲突处理"
+        },
+        "self_host": {
+          "value": "yes",
+          "note": "可自建"
+        },
+        "mobile": {
+          "value": "yes",
+          "note": "有移动客户端"
+        },
+        "share_link": {
+          "value": "yes",
+          "note": "文件分享"
+        },
+        "block_level": {
+          "value": "yes",
+          "note": "块级同步是传统卖点"
+        },
+        "ignore_rules": {
+          "value": "unknown",
+          "note": "未打开客户端文档"
+        }
+      },
+      "sources": [
+        "https://www.seafile.com/",
+        "https://github.com/haiwen/seafile"
+      ]
+    },
+    {
+      "id": "rclone",
+      "name": "rclone",
+      "official_url": "https://rclone.org/",
+      "github_url": "https://github.com/rclone/rclone",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源的命令行云存储同步/挂载工具。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "MIT 开源"
+        }
+      ],
+      "free_tier_limits": "无官方 GUI（有社区界面）。不是即时双向同步网盘客户端。",
+      "github_stars": 60975,
+      "latest_release": "1.76.0",
+      "latest_release_date": "2026-11-07 00:29",
+      "latest_release_date_note": "GitHub 标签 v1.76.0，已转换为 Asia/Shanghai",
+      "maintenance_status": "活跃",
+      "summary": "强大的开源命令行工具，能对接几十种网盘和对象存储，适合备份和挂载，不是开箱即用的桌面同步盘。",
+      "features": {
+        "realtime": {
+          "value": "partial",
+          "note": "有 bisync/mount/同步命令，默认不是一直驻留的网盘客户端"
+        },
+        "selective": {
+          "value": "yes",
+          "note": "过滤和路径选择很强"
+        },
+        "p2p_lan": {
+          "value": "no",
+          "note": "主要对接云端/远程存储，不是设备互相同步"
+        },
+        "e2e_encrypt": {
+          "value": "yes",
+          "note": "可启用加密后端"
+        },
+        "versions": {
+          "value": "partial",
+          "note": "取决于后端是否支持版本"
+        },
+        "conflict": {
+          "value": "partial",
+          "note": "bisync 有冲突处理，需按文档使用"
+        },
+        "self_host": {
+          "value": "partial",
+          "note": "可对接自建存储，自身不是网盘服务器"
+        },
+        "mobile": {
+          "value": "no",
+          "note": "没有官方手机同步客户端"
+        },
+        "share_link": {
+          "value": "partial",
+          "note": "取决于后端"
+        },
+        "block_level": {
+          "value": "partial",
+          "note": "部分后端支持校验与增量，不一定是块级"
+        },
+        "ignore_rules": {
+          "value": "yes",
+          "note": "过滤规则非常完整"
+        }
+      },
+      "sources": [
+        "https://rclone.org/",
+        "https://github.com/rclone/rclone"
+      ]
+    },
+    {
+      "id": "unison",
+      "name": "Unison",
+      "official_url": "https://github.com/bcpierce00/unison",
+      "github_url": "https://github.com/bcpierce00/unison",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源的双向文件同步工具。",
+      "prices": [
+        {
+          "plan": "全部功能",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "开源双向同步"
+        }
+      ],
+      "free_tier_limits": "无。更像按需同步工具，不是网盘。",
+      "github_stars": 5581,
+      "latest_release": "2.54.0",
+      "latest_release_date": "2026-05-01 08:33",
+      "latest_release_date_note": "GitHub 标签 v2.54.0，已转换为 Asia/Shanghai。stargazers_count=5581。",
+      "maintenance_status": "活跃",
+      "summary": "经典的开源双向同步工具，适合两台电脑对等同步，不是带分享链接的云盘。",
+      "features": {
+        "realtime": {
+          "value": "partial",
+          "note": "可配合触发/重复运行，不是典型始终在线网盘"
+        },
+        "selective": {
+          "value": "yes",
+          "note": "可配置路径"
+        },
+        "p2p_lan": {
+          "value": "yes",
+          "note": "两台机器直接同步，可通过局域网或 SSH"
+        },
+        "e2e_encrypt": {
+          "value": "partial",
+          "note": "经 SSH 传输时可加密通道"
+        },
+        "versions": {
+          "value": "no",
+          "note": "不是网盘版本库"
+        },
+        "conflict": {
+          "value": "yes",
+          "note": "双向同步的冲突检测是核心"
+        },
+        "self_host": {
+          "value": "yes",
+          "note": "完全自持"
+        },
+        "mobile": {
+          "value": "no",
+          "note": "桌面/服务器工具"
+        },
+        "share_link": {
+          "value": "no",
+          "note": "无"
+        },
+        "block_level": {
+          "value": "unknown",
+          "note": "未打开算法说明"
+        },
+        "ignore_rules": {
+          "value": "yes",
+          "note": "可忽略路径"
+        }
+      },
+      "sources": [
+        "https://github.com/bcpierce00/unison"
+      ]
+    },
+    {
+      "id": "owncloud",
+      "name": "ownCloud",
+      "official_url": "https://owncloud.com/",
+      "github_url": "https://github.com/owncloud/core",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS",
+        "Web"
+      ],
+      "open_source": true,
+      "license": "AGPL-3.0（owncloud/core；企业产品另有商业许可）",
+      "pricing_model": "免费增值",
+      "price_summary": "社区版可自建。企业版与官方托管价格本次未提取，价格未知。",
+      "prices": [
+        {
+          "plan": "社区自建",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "开源社区版"
+        },
+        {
+          "plan": "Enterprise / 官方云",
+          "price": "未知",
+          "currency": null,
+          "period": null,
+          "note": "请以 owncloud.com 为准"
+        }
+      ],
+      "free_tier_limits": "自建社区版可用。企业功能与托管价格未知。",
+      "github_stars": 8849,
+      "latest_release": "11.1.0",
+      "latest_release_date": "2026-11-03 17:51",
+      "latest_release_date_note": "GitHub 标签 v11.1.0，已转换为 Asia/Shanghai。stargazers_count=8849。注意 ownCloud Infinite Scale 等新产品线可能不在 core 仓库发版。",
+      "maintenance_status": "活跃",
+      "summary": "Nextcloud 的前身项目，仍提供开源自建网盘和企业产品，商业价格这次没抓到。",
+      "features": {
+        "realtime": {
+          "value": "partial",
+          "note": "客户端同步"
+        },
+        "selective": {
+          "value": "yes",
+          "note": "选择性同步"
+        },
+        "p2p_lan": {
+          "value": "no",
+          "note": "客户端-服务器"
+        },
+        "e2e_encrypt": {
+          "value": "unknown",
+          "note": "企业功能可能包含加密，未打开功能页"
+        },
+        "versions": {
+          "value": "yes",
+          "note": "版本与回收站是网盘标准能力"
+        },
+        "conflict": {
+          "value": "yes",
+          "note": "同步冲突处理"
+        },
+        "self_host": {
+          "value": "yes",
+          "note": "可自建"
+        },
+        "mobile": {
+          "value": "yes",
+          "note": "有移动客户端"
+        },
+        "share_link": {
+          "value": "yes",
+          "note": "分享链接"
+        },
+        "block_level": {
+          "value": "unknown",
+          "note": "未确认当前客户端实现"
+        },
+        "ignore_rules": {
+          "value": "unknown",
+          "note": "未确认"
+        }
+      },
+      "sources": [
+        "https://owncloud.com/",
+        "https://github.com/owncloud/core"
+      ]
+    },
+    {
+      "id": "dropbox",
+      "name": "Dropbox",
+      "official_url": "https://www.dropbox.com/plans",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS",
+        "Web"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "官网计划页：Plus $9.99/月（1 人，2 TB，提到 30 天恢复）；Standard $15/用户/月；Advanced $24/用户/月。页面有年付开关，以上为本次读取到的展示价，未确认是否已切换为年付折算月价。另有免费基础档，容量未在本次摘录锁定。",
+      "prices": [
+        {
+          "plan": "Plus",
+          "price": "9.99",
+          "currency": "USD",
+          "period": "month",
+          "note": "dropbox.com/plans：Plus $9.99 / month，1 person，2 TB。页面存在 yearly billing 开关，采集时请复核是否为月付原价。采集日期 2026-11-12"
+        },
+        {
+          "plan": "Standard",
+          "price": "15",
+          "currency": "USD",
+          "period": "month",
+          "note": "$15 / user / month，团队档"
+        },
+        {
+          "plan": "Advanced",
+          "price": "24",
+          "currency": "USD",
+          "period": "month",
+          "note": "$24 / user / month，团队档"
+        }
+      ],
+      "free_tier_limits": "有免费基础空间，精确 GB 数本次计划页摘录未锁定。Plus 提到 30-day restore。",
+      "github_stars": null,
+      "latest_release": "不适用",
+      "latest_release_date": "不适用",
+      "latest_release_date_note": "在线服务",
+      "maintenance_status": "活跃",
+      "summary": "最经典的商业网盘同步服务，客户端成熟，个人 Plus 约 9.99 美元/月（2 TB），团队更贵。",
+      "features": {
+        "realtime": {
+          "value": "yes",
+          "note": "桌面同步"
+        },
+        "selective": {
+          "value": "yes",
+          "note": "选择性同步/智能同步"
+        },
+        "p2p_lan": {
+          "value": "partial",
+          "note": "局域网加速历史上存在，当前是否默认开启未复核"
+        },
+        "e2e_encrypt": {
+          "value": "no",
+          "note": "传输与存储加密，但默认不是用户掌控的端到端加密网盘"
+        },
+        "versions": {
+          "value": "yes",
+          "note": "版本与恢复；时长视套餐，Plus 页提到 30-day restore"
+        },
+        "conflict": {
+          "value": "yes",
+          "note": "冲突副本"
+        },
+        "self_host": {
+          "value": "no",
+          "note": "公共云服务"
+        },
+        "mobile": {
+          "value": "yes",
+          "note": "官方手机应用"
+        },
+        "share_link": {
+          "value": "yes",
+          "note": "分享链接"
+        },
+        "block_level": {
+          "value": "yes",
+          "note": "增量同步"
+        },
+        "ignore_rules": {
+          "value": "yes",
+          "note": "可排除文件"
+        }
+      },
+      "sources": [
+        "https://www.dropbox.com/plans"
+      ]
+    },
+    {
+      "id": "google-drive",
+      "name": "Google Drive / Google 云端硬盘",
+      "official_url": "https://www.google.com/drive/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Android",
+        "iOS",
+        "Web"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "有免费空间，额外容量走 Google One。本次未打开 Google One 价目页，付费价格与免费容量未知。",
+      "prices": [
+        {
+          "plan": "免费档",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "有免费存储，精确容量未在本次核实"
+        },
+        {
+          "plan": "Google One",
+          "price": "未知",
+          "currency": null,
+          "period": "month",
+          "note": "请以 one.google.com 为准"
+        }
+      ],
+      "free_tier_limits": "未知（需打开官方配额页）。与 Gmail、Photos 共享存储是常见政策，以官网为准。",
+      "github_stars": null,
+      "latest_release": "不适用",
+      "latest_release_date": "不适用",
+      "latest_release_date_note": "在线服务",
+      "maintenance_status": "活跃",
+      "summary": "使用最广的云盘之一，和谷歌文档协作很强，免费有容量上限，扩容价格需看 Google One。",
+      "features": {
+        "realtime": {
+          "value": "yes",
+          "note": "电脑备份/同步客户端"
+        },
+        "selective": {
+          "value": "yes",
+          "note": "可选择要同步的文件夹"
+        },
+        "p2p_lan": {
+          "value": "no",
+          "note": "经谷歌云"
+        },
+        "e2e_encrypt": {
+          "value": "no",
+          "note": "非用户掌控的默认 E2EE 网盘"
+        },
+        "versions": {
+          "value": "yes",
+          "note": "版本记录，时长视文件类型和套餐"
+        },
+        "conflict": {
+          "value": "yes",
+          "note": "同步冲突处理"
+        },
+        "self_host": {
+          "value": "no",
+          "note": "公共云"
+        },
+        "mobile": {
+          "value": "yes",
+          "note": "官方应用"
+        },
+        "share_link": {
+          "value": "yes",
+          "note": "分享是核心"
+        },
+        "block_level": {
+          "value": "unknown",
+          "note": "未打开技术说明"
+        },
+        "ignore_rules": {
+          "value": "unknown",
+          "note": "未确认忽略规则能力"
+        }
+      },
+      "sources": [
+        "https://www.google.com/drive/"
+      ]
+    },
+    {
+      "id": "onedrive",
+      "name": "Microsoft OneDrive",
+      "official_url": "https://www.microsoft.com/microsoft-365/onedrive/online-cloud-storage",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Android",
+        "iOS",
+        "Web"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "有免费空间，付费通常捆绑 Microsoft 365。本次未打开价目页，价格与免费容量未知。",
+      "prices": [
+        {
+          "plan": "免费档",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "有免费存储，精确容量未核实"
+        },
+        {
+          "plan": "Microsoft 365 / 独立扩容",
+          "price": "未知",
+          "currency": null,
+          "period": null,
+          "note": "请以 Microsoft 官方计划页为准"
+        }
+      ],
+      "free_tier_limits": "未知。",
+      "github_stars": null,
+      "latest_release": "不适用",
+      "latest_release_date": "不适用",
+      "latest_release_date_note": "在线服务",
+      "maintenance_status": "活跃",
+      "summary": "Windows 内置的网盘同步，和 Office 文档协作紧密，具体免费额度和 365 价格需看微软官网。",
+      "features": {
+        "realtime": {
+          "value": "yes",
+          "note": "系统级同步"
+        },
+        "selective": {
+          "value": "yes",
+          "note": "文件按需/选择文件夹"
+        },
+        "p2p_lan": {
+          "value": "no",
+          "note": "经微软云"
+        },
+        "e2e_encrypt": {
+          "value": "no",
+          "note": "默认不是用户掌控 E2EE"
+        },
+        "versions": {
+          "value": "yes",
+          "note": "版本历史与回收站"
+        },
+        "conflict": {
+          "value": "yes",
+          "note": "同步冲突处理"
+        },
+        "self_host": {
+          "value": "no",
+          "note": "公共云；企业或可对接私有部署，不在本次范围"
+        },
+        "mobile": {
+          "value": "yes",
+          "note": "官方应用"
+        },
+        "share_link": {
+          "value": "yes",
+          "note": "分享链接"
+        },
+        "block_level": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "ignore_rules": {
+          "value": "unknown",
+          "note": "未确认"
+        }
+      },
+      "sources": [
+        "https://www.microsoft.com/microsoft-365/onedrive/online-cloud-storage"
+      ]
+    },
+    {
+      "id": "mega",
+      "name": "MEGA",
+      "official_url": "https://mega.io/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS",
+        "Web"
+      ],
+      "open_source": false,
+      "license": "客户端部分开源、服务专有（精确范围未复核）",
+      "pricing_model": "免费增值",
+      "price_summary": "以零知识加密为卖点的网盘。有免费空间和付费套餐。本次未打开定价页，价格与免费容量未知。",
+      "prices": [
+        {
+          "plan": "免费档",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "有免费存储，精确容量未核实"
+        },
+        {
+          "plan": "付费套餐",
+          "price": "未知",
+          "currency": null,
+          "period": null,
+          "note": "请以 mega.io/pricing 或等价页面为准"
+        }
+      ],
+      "free_tier_limits": "未知。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "未采集客户端版本",
+      "maintenance_status": "活跃",
+      "summary": "强调加密的商业网盘，有免费额度，适合在意隐私但不想自建的人，价格需看官网。",
+      "features": {
+        "realtime": {
+          "value": "yes",
+          "note": "桌面同步客户端"
+        },
+        "selective": {
+          "value": "yes",
+          "note": "可选择同步"
+        },
+        "p2p_lan": {
+          "value": "no",
+          "note": "经 MEGA 云"
+        },
+        "e2e_encrypt": {
+          "value": "yes",
+          "note": "产品以零知识/客户端加密为卖点"
+        },
+        "versions": {
+          "value": "unknown",
+          "note": "未打开功能页"
+        },
+        "conflict": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "self_host": {
+          "value": "no",
+          "note": "公共云"
+        },
+        "mobile": {
+          "value": "yes",
+          "note": "官方应用"
+        },
+        "share_link": {
+          "value": "yes",
+          "note": "分享链接，可带密码/有效期等，细节未打开页"
+        },
+        "block_level": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "ignore_rules": {
+          "value": "unknown",
+          "note": "未确认"
+        }
+      },
+      "sources": [
+        "https://mega.io/"
+      ]
+    },
+    {
+      "id": "resilio-sync",
+      "name": "Resilio Sync",
+      "official_url": "https://www.resilio.com/sync/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "P2P 同步工具（原 BitTorrent Sync）。有免费与付费档。本次未打开定价页，价格未知。",
+      "prices": [
+        {
+          "plan": "免费档",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "有免费使用档，限制未核实"
+        },
+        {
+          "plan": "Pro / 商业",
+          "price": "未知",
+          "currency": null,
+          "period": null,
+          "note": "请以 resilio.com 为准"
+        }
+      ],
+      "free_tier_limits": "未知。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "未采集",
+      "maintenance_status": "活跃",
+      "summary": "商业 P2P 同步工具，不必把文件放到公共网盘，适合文件夹直同步，付费档价格需看官网。",
+      "features": {
+        "realtime": {
+          "value": "yes",
+          "note": "文件夹同步"
+        },
+        "selective": {
+          "value": "yes",
+          "note": "可选择共享文件夹"
+        },
+        "p2p_lan": {
+          "value": "yes",
+          "note": "核心卖点"
+        },
+        "e2e_encrypt": {
+          "value": "yes",
+          "note": "传输加密，密钥在分享方"
+        },
+        "versions": {
+          "value": "unknown",
+          "note": "未打开功能页"
+        },
+        "conflict": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "self_host": {
+          "value": "partial",
+          "note": "无中央文件托管，但软件本身不是开源自建网盘"
+        },
+        "mobile": {
+          "value": "yes",
+          "note": "有移动应用"
+        },
+        "share_link": {
+          "value": "partial",
+          "note": "以密钥/链接分享文件夹，不是网盘公开链接"
+        },
+        "block_level": {
+          "value": "yes",
+          "note": "P2P 分块传输是传统能力"
+        },
+        "ignore_rules": {
+          "value": "unknown",
+          "note": "未确认"
+        }
+      },
+      "sources": [
+        "https://www.resilio.com/sync/"
+      ]
+    },
+    {
+      "id": "proton-drive",
+      "name": "Proton Drive",
+      "official_url": "https://proton.me/drive",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Android",
+        "iOS",
+        "Web"
+      ],
+      "open_source": false,
+      "license": "客户端部分开源、服务专有（精确范围未复核）",
+      "pricing_model": "免费增值",
+      "price_summary": "Proton 加密网盘，有免费空间，付费通常捆绑 Proton 订阅。本次未打开定价页，价格与容量未知。",
+      "prices": [
+        {
+          "plan": "免费档",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "有免费存储，精确容量未核实"
+        },
+        {
+          "plan": "Proton 付费方案",
+          "price": "未知",
+          "currency": null,
+          "period": null,
+          "note": "请以 proton.me/pricing 或 Drive 计划页为准"
+        }
+      ],
+      "free_tier_limits": "未知。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "未采集",
+      "maintenance_status": "活跃",
+      "summary": "Proton 出的加密网盘，和邮件套餐常一起买，适合注重隐私的用户，具体容量和价格需看官网。",
+      "features": {
+        "realtime": {
+          "value": "yes",
+          "note": "有桌面同步客户端"
+        },
+        "selective": {
+          "value": "unknown",
+          "note": "未打开客户端说明"
+        },
+        "p2p_lan": {
+          "value": "no",
+          "note": "经 Proton 云"
+        },
+        "e2e_encrypt": {
+          "value": "yes",
+          "note": "端到端加密是核心卖点"
+        },
+        "versions": {
+          "value": "unknown",
+          "note": "未打开功能页"
+        },
+        "conflict": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "self_host": {
+          "value": "no",
+          "note": "公共云"
+        },
+        "mobile": {
+          "value": "yes",
+          "note": "官方应用"
+        },
+        "share_link": {
+          "value": "yes",
+          "note": "可分享，细节未打开页"
+        },
+        "block_level": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "ignore_rules": {
+          "value": "unknown",
+          "note": "未确认"
+        }
+      },
+      "sources": [
+        "https://proton.me/drive"
+      ]
+    },
+    {
+      "id": "nutstore",
+      "name": "坚果云",
+      "official_url": "https://www.nutstore.net/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS",
+        "Web"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "国内常用同步网盘。打开了 nutstore.net，但 jianguoyun.com/s/price 等价目页本次失败（501/空页），套餐价格未知。",
+      "prices": [
+        {
+          "plan": "免费档",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "有免费使用，精确容量与流量限制未核实"
+        },
+        {
+          "plan": "付费套餐",
+          "price": "未知",
+          "currency": "CNY",
+          "period": null,
+          "note": "官方价目页本次未能读取，请以坚果云“服务与价格”页为准"
+        }
+      ],
+      "free_tier_limits": "未知。历史上常用流量+容量限制模式，以官网当前规则为准。",
+      "github_stars": null,
+      "latest_release": "未知",
+      "latest_release_date": "未知",
+      "latest_release_date_note": "未采集",
+      "maintenance_status": "活跃",
+      "summary": "国内很常用的文件同步网盘，适合办公备份，但这次没能打开价目页，不能写死价格。",
+      "features": {
+        "realtime": {
+          "value": "yes",
+          "note": "同步网盘"
+        },
+        "selective": {
+          "value": "unknown",
+          "note": "未打开客户端说明确认"
+        },
+        "p2p_lan": {
+          "value": "no",
+          "note": "经坚果云服务器"
+        },
+        "e2e_encrypt": {
+          "value": "unknown",
+          "note": "未打开安全说明"
+        },
+        "versions": {
+          "value": "unknown",
+          "note": "官网营销摘录不足，未打开功能页确认版本历史规则"
+        },
+        "conflict": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "self_host": {
+          "value": "no",
+          "note": "公共云服务"
+        },
+        "mobile": {
+          "value": "yes",
+          "note": "有手机应用"
+        },
+        "share_link": {
+          "value": "yes",
+          "note": "分享"
+        },
+        "block_level": {
+          "value": "unknown",
+          "note": "未确认"
+        },
+        "ignore_rules": {
+          "value": "unknown",
+          "note": "未确认"
+        }
+      },
+      "sources": [
+        "https://www.nutstore.net/"
+      ]
+    },
+    {
+      "id": "mutagen",
+      "name": "Mutagen",
+      "official_url": "https://mutagen.io/",
+      "github_url": "https://github.com/mutagen-io/mutagen",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "未知（GitHub 返回 NOASSERTION；官网写 open-source）",
+      "pricing_model": "完全免费",
+      "price_summary": "开源同步与网络转发工具。官网强调开源。页面同时宣布 Mutagen 已加入 Docker，未列出单独付费档。",
+      "prices": [
+        {
+          "plan": "软件本身",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "mutagen.io：Open-source。本次未见独立订阅价"
+        }
+      ],
+      "free_tier_limits": "面向开发者的代码/容器同步，不是消费级网盘。无官方手机网盘客户端。",
+      "github_stars": 4579,
+      "latest_release": "0.18.1",
+      "latest_release_date": "2025-02-25 06:22",
+      "latest_release_date_note": "GitHub 标签 v0.18.1，published_at 2025-02-24T22:22:07Z，已转换为 Asia/Shanghai。仓库 pushed_at 2026-04-22，仍视为活跃。",
+      "maintenance_status": "活跃",
+      "summary": "给远程开发和容器用的开源实时同步工具，适合把本地编辑器和云端代码连起来，不是普通网盘。",
+      "features": {
+        "realtime": {
+          "value": "yes",
+          "note": "官网：real-time file synchronization；fast two-way file synchronization"
+        },
+        "selective": {
+          "value": "yes",
+          "note": "可配置同步范围；有 ignores 等设置"
+        },
+        "p2p_lan": {
+          "value": "partial",
+          "note": "可在本地、服务器、容器之间同步，不是消费级 P2P 网盘"
+        },
+        "e2e_encrypt": {
+          "value": "unknown",
+          "note": "官网未在首页点名端到端加密型号"
+        },
+        "versions": {
+          "value": "no",
+          "note": "不是网盘版本库"
+        },
+        "conflict": {
+          "value": "unknown",
+          "note": "双向同步通常需处理冲突，本次未打开文档确认策略"
+        },
+        "self_host": {
+          "value": "yes",
+          "note": "工具完全由用户部署，无必须的中央云盘"
+        },
+        "mobile": {
+          "value": "no",
+          "note": "面向桌面/服务器与容器开发"
+        },
+        "share_link": {
+          "value": "no",
+          "note": "不是网盘分享产品"
+        },
+        "block_level": {
+          "value": "partial",
+          "note": "官网：differential file transfers"
+        },
+        "ignore_rules": {
+          "value": "yes",
+          "note": "官网明确提供 ignores 设置"
+        }
+      },
+      "sources": [
+        "https://mutagen.io/",
+        "https://github.com/mutagen-io/mutagen"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1251 @@
+{
+  "category_slug": "remote-desktop",
+  "category_name_zh": "远程桌面",
+  "collected_at": "2026-11-12",
+  "timezone": "Asia/Shanghai",
+  "features": [
+    {
+      "key": "unattended_access",
+      "label": "无人值守访问"
+    },
+    {
+      "key": "file_transfer",
+      "label": "文件传输"
+    },
+    {
+      "key": "clipboard_sync",
+      "label": "剪贴板同步"
+    },
+    {
+      "key": "multi_monitor",
+      "label": "多显示器"
+    },
+    {
+      "key": "audio",
+      "label": "音频传输"
+    },
+    {
+      "key": "e2e_encryption",
+      "label": "端到端加密"
+    },
+    {
+      "key": "self_host",
+      "label": "自建服务器"
+    },
+    {
+      "key": "mobile_control",
+      "label": "移动端控制"
+    },
+    {
+      "key": "free_for_commercial",
+      "label": "免费商用"
+    },
+    {
+      "key": "session_recording",
+      "label": "会话录制"
+    },
+    {
+      "key": "wake_on_lan",
+      "label": "远程开机/WOL"
+    }
+  ],
+  "products": [
+    {
+      "id": "rustdesk",
+      "name": "RustDesk",
+      "official_url": "https://rustdesk.com",
+      "github_url": "https://github.com/rustdesk/rustdesk",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android"
+      ],
+      "open_source": true,
+      "license": "AGPL-3.0",
+      "pricing_model": "免费增值",
+      "price_summary": "开源客户端与开源自建服务器免费。自建 Pro：Individual 11.88 美元/月（按年），1 个登录用户；Basic 与 Customized 均为 23.88 美元/月（按年）。额外用户每个 1.20 美元，额外设备每台 0.12 美元。官网还提到 Individual 含 20 台托管设备（摘录略有截断，请以定价页为准）。",
+      "prices": [
+        {
+          "plan": "开源自建（Server OSS）",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        },
+        {
+          "plan": "Individual Pro（年付折合）",
+          "price": "11.88",
+          "currency": "USD",
+          "period": "month",
+          "note": "按年计费；1 个登录用户"
+        },
+        {
+          "plan": "Basic / Customized Pro（年付折合）",
+          "price": "23.88",
+          "currency": "USD",
+          "period": "month",
+          "note": "按年计费；额外用户 1.20 美元，额外设备 0.12 美元"
+        }
+      ],
+      "free_tier_limits": "开源客户端和开源自建服务器可用；中继/高级管理功能在 Pro。是否允许免费使用公共服务器及商用限制以官网条款为准，本轮未打开 ToS 全文",
+      "github_stars": 129156,
+      "latest_release": "1.5.3",
+      "latest_release_date": "2026-11-09 17:43",
+      "latest_release_date_note": "GitHub published_at 2026-11-09T09:43:52Z，已转换为 Asia/Shanghai",
+      "summary": "星标很高的开源远程桌面，可完全自建；可选付费 Pro 管理服务器。",
+      "features": {
+        "unattended_access": {
+          "value": "yes"
+        },
+        "file_transfer": {
+          "value": "yes"
+        },
+        "clipboard_sync": {
+          "value": "yes"
+        },
+        "multi_monitor": {
+          "value": "yes"
+        },
+        "audio": {
+          "value": "unknown"
+        },
+        "e2e_encryption": {
+          "value": "unknown",
+          "note": "官方强调加密，本轮未打开安全白皮书逐条核对“端到端”表述"
+        },
+        "self_host": {
+          "value": "yes"
+        },
+        "mobile_control": {
+          "value": "yes",
+          "note": "有 Android 客户端；iOS 是否完整控制本轮未核完"
+        },
+        "free_for_commercial": {
+          "value": "unknown",
+          "note": "AGPL 源码可自用，商用条款与公共服务器限制未核 ToS"
+        },
+        "session_recording": {
+          "value": "unknown"
+        },
+        "wake_on_lan": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://rustdesk.com/",
+        "https://rustdesk.com/pricing/",
+        "https://github.com/rustdesk/rustdesk"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "guacamole",
+      "name": "Apache Guacamole",
+      "official_url": "https://guacamole.apache.org",
+      "github_url": "https://github.com/apache/guacamole-client",
+      "platforms": [
+        "Web（连接 Windows/Linux/macOS 等远程机）"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "pricing_model": "完全免费",
+      "price_summary": "Apache 开源项目，软件完全免费，需自建网关。github_stars 仅为 guacamole-client 仓库，不能代表整个项目。",
+      "prices": [
+        {
+          "plan": "软件",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无软件付费墙；需要自己的服务器",
+      "github_stars": 1752,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "本轮未拉取 GitHub Release 标签",
+      "summary": "无需安装客户端的开源 HTML5 远程桌面网关，支持 RDP/VNC/SSH，适合自建。",
+      "features": {
+        "unattended_access": {
+          "value": "yes"
+        },
+        "file_transfer": {
+          "value": "unknown"
+        },
+        "clipboard_sync": {
+          "value": "unknown"
+        },
+        "multi_monitor": {
+          "value": "unknown"
+        },
+        "audio": {
+          "value": "unknown"
+        },
+        "e2e_encryption": {
+          "value": "partial",
+          "note": "通常终止于网关，是否端到端取决于部署"
+        },
+        "self_host": {
+          "value": "yes"
+        },
+        "mobile_control": {
+          "value": "partial",
+          "note": "通过移动浏览器访问，不是独立官方商店应用（本轮未核应用商店）"
+        },
+        "free_for_commercial": {
+          "value": "yes",
+          "note": "Apache 2.0"
+        },
+        "session_recording": {
+          "value": "unknown"
+        },
+        "wake_on_lan": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://guacamole.apache.org/",
+        "https://github.com/apache/guacamole-client"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "remmina",
+      "name": "Remmina",
+      "official_url": "https://remmina.org",
+      "github_url": "https://github.com/FreeRDP/Remmina",
+      "platforms": [
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-2.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费的 Linux 远程桌面客户端。GitHub 仓库是 GitLab 官方源的镜像，推送时间可能滞后。",
+      "prices": [
+        {
+          "plan": "软件",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无付费墙；主要是 Linux 客户端，不是远程协助 SaaS",
+      "github_stars": 2580,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "官方源在 GitLab/remmina.org；GitHub 镜像 last push 约 2026-02-08，不代表项目停更。本轮未记录 GitLab 最新标签",
+      "summary": "Linux 上常用的开源远程桌面客户端，支持 RDP、VNC 等多种协议。",
+      "features": {
+        "unattended_access": {
+          "value": "partial",
+          "note": "取决于远端是否已运行相应服务，本身不提供中继账号"
+        },
+        "file_transfer": {
+          "value": "unknown"
+        },
+        "clipboard_sync": {
+          "value": "unknown"
+        },
+        "multi_monitor": {
+          "value": "unknown"
+        },
+        "audio": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "e2e_encryption": {
+          "value": "partial",
+          "note": "取决于所用协议（如 RDP/SSH）"
+        },
+        "self_host": {
+          "value": "na",
+          "note": "它是客户端，连接到你已有的 RDP/VNC/SSH 服务"
+        },
+        "mobile_control": {
+          "value": "no"
+        },
+        "free_for_commercial": {
+          "value": "yes"
+        },
+        "session_recording": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "wake_on_lan": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        }
+      },
+      "sources": [
+        "https://remmina.org/",
+        "https://github.com/FreeRDP/Remmina"
+      ],
+      "archived": false,
+      "last_push_at": "2026-02-08",
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "tigervnc",
+      "name": "TigerVNC",
+      "official_url": "https://tigervnc.org",
+      "github_url": "https://github.com/TigerVNC/tigervnc",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-2.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费的高性能 VNC 实现，含客户端与服务器。官网指引到 GitHub Releases 下载。",
+      "prices": [
+        {
+          "plan": "软件",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无付费墙；需自行暴露/转发端口或搭配其他隧道，官方不提供中继 SaaS",
+      "github_stars": 7719,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "本轮未拉取 GitHub Release 标签",
+      "summary": "开源 VNC 客户端/服务器，适合局域网或自建远程访问，没有官方云中继。",
+      "features": {
+        "unattended_access": {
+          "value": "yes",
+          "note": "在服务器端已运行的前提下"
+        },
+        "file_transfer": {
+          "value": "unknown"
+        },
+        "clipboard_sync": {
+          "value": "unknown"
+        },
+        "multi_monitor": {
+          "value": "unknown"
+        },
+        "audio": {
+          "value": "unknown"
+        },
+        "e2e_encryption": {
+          "value": "partial",
+          "note": "官网提到 TLS 加密与高级认证扩展"
+        },
+        "self_host": {
+          "value": "yes"
+        },
+        "mobile_control": {
+          "value": "no",
+          "note": "官方桌面端为主"
+        },
+        "free_for_commercial": {
+          "value": "yes"
+        },
+        "session_recording": {
+          "value": "unknown"
+        },
+        "wake_on_lan": {
+          "value": "no"
+        }
+      },
+      "sources": [
+        "https://tigervnc.org/",
+        "https://github.com/TigerVNC/tigervnc"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "ultravnc",
+      "name": "UltraVNC",
+      "official_url": "https://uvnc.com",
+      "github_url": "https://github.com/ultravnc/UltraVNC",
+      "platforms": [
+        "Windows"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "完全免费",
+      "price_summary": "官网写明免费开源的 Windows 远程桌面软件。",
+      "prices": [
+        {
+          "plan": "软件",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无付费墙；主要面向 Windows",
+      "github_stars": 1543,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "本轮未拉取 GitHub Release 标签",
+      "summary": "老牌 Windows 开源 VNC 软件，含服务器、查看器和中继等配套工具。",
+      "features": {
+        "unattended_access": {
+          "value": "yes"
+        },
+        "file_transfer": {
+          "value": "unknown"
+        },
+        "clipboard_sync": {
+          "value": "unknown"
+        },
+        "multi_monitor": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "audio": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "e2e_encryption": {
+          "value": "partial",
+          "note": "有 SecureVNC 等配套，细节未核完"
+        },
+        "self_host": {
+          "value": "yes"
+        },
+        "mobile_control": {
+          "value": "no"
+        },
+        "free_for_commercial": {
+          "value": "yes",
+          "note": "GPL-3.0，商用需遵守开源许可"
+        },
+        "session_recording": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "wake_on_lan": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        }
+      },
+      "sources": [
+        "https://uvnc.com/",
+        "https://github.com/ultravnc/UltraVNC"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "meshcentral",
+      "name": "MeshCentral",
+      "official_url": "https://meshcentral.com",
+      "github_url": "https://github.com/Ylianst/MeshCentral",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费的自建远程管理和远程桌面服务器。官网首页提取不完整，信息以 GitHub/项目站为准。",
+      "prices": [
+        {
+          "plan": "软件",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无软件付费墙，需自建",
+      "github_stars": 7682,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "本轮未拉取 GitHub Release 标签",
+      "summary": "开源自建远程管理和远程桌面平台，适合 IT 管理自己的设备舰队。",
+      "features": {
+        "unattended_access": {
+          "value": "yes"
+        },
+        "file_transfer": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "clipboard_sync": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "multi_monitor": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "audio": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "e2e_encryption": {
+          "value": "unknown"
+        },
+        "self_host": {
+          "value": "yes"
+        },
+        "mobile_control": {
+          "value": "unknown"
+        },
+        "free_for_commercial": {
+          "value": "yes",
+          "note": "Apache-2.0"
+        },
+        "session_recording": {
+          "value": "unknown"
+        },
+        "wake_on_lan": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://meshcentral.com/",
+        "https://github.com/Ylianst/MeshCentral"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "sunshine",
+      "name": "Sunshine",
+      "official_url": "https://docs.lizardbyte.dev/projects/sunshine/latest/",
+      "github_url": "https://github.com/SunshineStream/Sunshine",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费的开源游戏串流主机（配合 Moonlight 客户端）。仓库曾从 LizardByte/Sunshine 重定向到 SunshineStream/Sunshine。",
+      "prices": [
+        {
+          "plan": "软件",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无付费墙；定位是游戏/桌面串流主机，不是通用远程协助 SaaS",
+      "github_stars": 43291,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "本轮未拉取 GitHub Release 标签",
+      "summary": "开源的桌面/游戏串流服务器，通常与 Moonlight 搭配，适合低延迟自建串流。",
+      "features": {
+        "unattended_access": {
+          "value": "partial",
+          "note": "取决于主机是否登录及网络穿透配置，不是传统远程支持产品"
+        },
+        "file_transfer": {
+          "value": "no"
+        },
+        "clipboard_sync": {
+          "value": "unknown"
+        },
+        "multi_monitor": {
+          "value": "unknown"
+        },
+        "audio": {
+          "value": "yes"
+        },
+        "e2e_encryption": {
+          "value": "unknown"
+        },
+        "self_host": {
+          "value": "yes"
+        },
+        "mobile_control": {
+          "value": "partial",
+          "note": "可通过 Moonlight 移动客户端连接"
+        },
+        "free_for_commercial": {
+          "value": "yes",
+          "note": "GPL-3.0，需遵守开源许可"
+        },
+        "session_recording": {
+          "value": "unknown"
+        },
+        "wake_on_lan": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://docs.lizardbyte.dev/projects/sunshine/latest/",
+        "https://github.com/SunshineStream/Sunshine"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "moonlight",
+      "name": "Moonlight",
+      "official_url": "https://moonlight-stream.org",
+      "github_url": "https://github.com/moonlight-stream/moonlight-qt",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS",
+        "其他多种客户端"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费的开源游戏串流客户端，可连接 Sunshine 或 NVIDIA GameStream 主机。github_stars 为 moonlight-qt 仓库。",
+      "prices": [
+        {
+          "plan": "软件",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无付费墙；需要一台已配置的串流主机",
+      "github_stars": 19484,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "本轮未拉取 GitHub Release 标签",
+      "summary": "开源游戏串流客户端，能把电脑画面低延迟投到各种设备上，本身不做中继账号。",
+      "features": {
+        "unattended_access": {
+          "value": "partial",
+          "note": "取决于主机端"
+        },
+        "file_transfer": {
+          "value": "no"
+        },
+        "clipboard_sync": {
+          "value": "unknown"
+        },
+        "multi_monitor": {
+          "value": "unknown"
+        },
+        "audio": {
+          "value": "yes"
+        },
+        "e2e_encryption": {
+          "value": "unknown"
+        },
+        "self_host": {
+          "value": "na",
+          "note": "它是客户端，主机通常是 Sunshine 或 NVIDIA"
+        },
+        "mobile_control": {
+          "value": "yes",
+          "note": "官方列出 iOS/Android 等客户端"
+        },
+        "free_for_commercial": {
+          "value": "yes",
+          "note": "GPL-3.0，需遵守开源许可"
+        },
+        "session_recording": {
+          "value": "no"
+        },
+        "wake_on_lan": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://moonlight-stream.org/",
+        "https://github.com/moonlight-stream/moonlight-qt"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "freerdp",
+      "name": "FreeRDP",
+      "official_url": "https://www.freerdp.com",
+      "github_url": "https://github.com/FreeRDP/FreeRDP",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费的开源 RDP 实现。官网宣布最新博文为 3.33.1 发布。",
+      "prices": [
+        {
+          "plan": "软件",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无付费墙；是协议实现/客户端（及 shadow server），不是中继 SaaS",
+      "github_stars": 14011,
+      "latest_release": "3.33.1",
+      "latest_release_date": null,
+      "latest_release_date_note": "官网首页 “Latest Post 3.33.1 release” 确认该版本，未在摘录中给出准确发布时间",
+      "summary": "开源 RDP 客户端实现，常被 Linux 桌面和其他工具集成，用于连接 Windows 远程桌面。",
+      "features": {
+        "unattended_access": {
+          "value": "partial",
+          "note": "取决于远端 RDP 是否已开启"
+        },
+        "file_transfer": {
+          "value": "unknown"
+        },
+        "clipboard_sync": {
+          "value": "unknown"
+        },
+        "multi_monitor": {
+          "value": "unknown"
+        },
+        "audio": {
+          "value": "unknown"
+        },
+        "e2e_encryption": {
+          "value": "partial",
+          "note": "沿用 RDP 自身的传输安全"
+        },
+        "self_host": {
+          "value": "na",
+          "note": "连接已有的 RDP 服务；项目也含 shadow server 组件"
+        },
+        "mobile_control": {
+          "value": "no",
+          "note": "此仓库以桌面实现为主"
+        },
+        "free_for_commercial": {
+          "value": "yes",
+          "note": "Apache-2.0"
+        },
+        "session_recording": {
+          "value": "unknown"
+        },
+        "wake_on_lan": {
+          "value": "no"
+        }
+      },
+      "sources": [
+        "https://www.freerdp.com/",
+        "https://github.com/FreeRDP/FreeRDP"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "teamviewer",
+      "name": "TeamViewer",
+      "official_url": "https://www.teamviewer.com",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "官网有个人使用与商业许可分层。本轮打开的定价页为大量前端脚本，未能提取出具体套餐美元/欧元金额，故商业价为未知。个人非商用是否仍免费需以官网当前条款为准，本轮未能从脚本页确认完整条件。",
+      "prices": [
+        {
+          "plan": "个人使用",
+          "price": "未知",
+          "currency": null,
+          "period": null,
+          "note": "产品线包含 Personal use，具体是否完全免费及限制条件未能从脚本定价页确认"
+        },
+        {
+          "plan": "商业许可",
+          "price": "未知",
+          "currency": null,
+          "period": null,
+          "note": "https://www.teamviewer.com 定价页本轮未能解析出金额"
+        }
+      ],
+      "free_tier_limits": "未在本轮从官方定价页可靠确认",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "专有软件，本轮未记录客户端版本号",
+      "summary": "最知名的远程协助商业软件之一，商用需授权，但本轮未能从官网定价页读出具体价格。",
+      "features": {
+        "unattended_access": {
+          "value": "yes"
+        },
+        "file_transfer": {
+          "value": "yes"
+        },
+        "clipboard_sync": {
+          "value": "yes"
+        },
+        "multi_monitor": {
+          "value": "unknown"
+        },
+        "audio": {
+          "value": "unknown"
+        },
+        "e2e_encryption": {
+          "value": "unknown",
+          "note": "官方有安全宣传，本轮未打开白皮书核对术语"
+        },
+        "self_host": {
+          "value": "no"
+        },
+        "mobile_control": {
+          "value": "yes"
+        },
+        "free_for_commercial": {
+          "value": "no"
+        },
+        "session_recording": {
+          "value": "unknown"
+        },
+        "wake_on_lan": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://www.teamviewer.com/en/pricing/",
+        "https://www.teamviewer.com/apac/pricing/overview/?tab=Single"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "anydesk",
+      "name": "AnyDesk",
+      "official_url": "https://anydesk.com",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "官网定价/下单页本轮返回 403，未能核实套餐价格。存在面向个人与商业的产品线，具体免费范围与标价均为未知。",
+      "prices": [
+        {
+          "plan": "个人/商业套餐",
+          "price": "未知",
+          "currency": null,
+          "period": null,
+          "note": "https://anydesk.com/en/pricing 与 /en/order 本轮被拦截（403）"
+        }
+      ],
+      "free_tier_limits": "未能从官网本轮抓取中确认",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "专有软件，本轮未记录客户端版本号",
+      "summary": "轻量商业远程桌面，以低延迟著称，但官网价目本轮无法打开。",
+      "features": {
+        "unattended_access": {
+          "value": "yes"
+        },
+        "file_transfer": {
+          "value": "unknown"
+        },
+        "clipboard_sync": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "multi_monitor": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "audio": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "e2e_encryption": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "self_host": {
+          "value": "unknown"
+        },
+        "mobile_control": {
+          "value": "yes"
+        },
+        "free_for_commercial": {
+          "value": "no"
+        },
+        "session_recording": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "wake_on_lan": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        }
+      },
+      "sources": [
+        "https://anydesk.com/en/pricing"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "chrome-remote-desktop",
+      "name": "Chrome Remote Desktop",
+      "official_url": "https://remotedesktop.google.com",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS",
+        "Chrome"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "完全免费",
+      "price_summary": "Google 提供的远程桌面服务，通过 Google 账号使用，本轮打开的产品页未列出收费套餐，按免费消费者服务记录。企业级 Google 远程产品不在此条。",
+      "prices": [
+        {
+          "plan": "消费者服务",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "产品页未列出个人订阅价；需 Google 账号"
+        }
+      ],
+      "free_tier_limits": "本轮页面为脚本应用，未提取到设备数量等限制的明文",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "随浏览器/应用更新，本轮无独立版本号",
+      "summary": "谷歌提供的免费远程桌面，设置简单，依赖 Google 账号，功能相对精简。",
+      "features": {
+        "unattended_access": {
+          "value": "yes"
+        },
+        "file_transfer": {
+          "value": "unknown"
+        },
+        "clipboard_sync": {
+          "value": "unknown"
+        },
+        "multi_monitor": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "audio": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "e2e_encryption": {
+          "value": "unknown"
+        },
+        "self_host": {
+          "value": "no"
+        },
+        "mobile_control": {
+          "value": "yes"
+        },
+        "free_for_commercial": {
+          "value": "unknown",
+          "note": "个人服务免费，商用条款未在本轮打开"
+        },
+        "session_recording": {
+          "value": "no"
+        },
+        "wake_on_lan": {
+          "value": "no"
+        }
+      },
+      "sources": [
+        "https://remotedesktop.google.com/"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "splashtop",
+      "name": "Splashtop",
+      "official_url": "https://www.splashtop.com",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Android",
+        "iOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "订阅",
+      "price_summary": "远程访问产品线起价 Solo 6 美元/月，按年 72 美元，面向个人，含无人值守等。Pro 8.25 美元/用户/月，按年 99 美元/用户。Performance 13 美元/用户/月，按年 149 美元/用户。另有 SOS 远程支持起价 22 美元/月（并发技术员许可，按年计费）。还有教育产品如 29.99 美元/教师/年，与个人远程访问不是同一档。",
+      "prices": [
+        {
+          "plan": "Solo（年付）",
+          "price": "72",
+          "currency": "USD",
+          "period": "year",
+          "note": "页面写 6 美元/月，按年 72 美元，个人用户"
+        },
+        {
+          "plan": "Pro（年付）",
+          "price": "99",
+          "currency": "USD",
+          "period": "year",
+          "note": "8.25 美元/用户/月，按年 99 美元/用户"
+        },
+        {
+          "plan": "Performance（年付）",
+          "price": "149",
+          "currency": "USD",
+          "period": "year",
+          "note": "13 美元/用户/月，按年 149 美元/用户"
+        },
+        {
+          "plan": "SOS 远程支持（起价）",
+          "price": "22",
+          "currency": "USD",
+          "period": "month",
+          "note": "按并发技术员许可，按年计费；具体年总价未在摘录中展开"
+        }
+      ],
+      "free_tier_limits": "主推免费试用，未在摘录中确认长期免费个人档",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "专有软件，本轮未记录客户端版本号",
+      "summary": "面向个人和团队的商业远程访问，Solo 年付 72 美元起，还有按用户的 Pro/Performance 档。",
+      "features": {
+        "unattended_access": {
+          "value": "yes",
+          "note": "Solo 页描述含 Unattended"
+        },
+        "file_transfer": {
+          "value": "unknown"
+        },
+        "clipboard_sync": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "multi_monitor": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "audio": {
+          "value": "unknown"
+        },
+        "e2e_encryption": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "self_host": {
+          "value": "no"
+        },
+        "mobile_control": {
+          "value": "yes"
+        },
+        "free_for_commercial": {
+          "value": "no"
+        },
+        "session_recording": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "wake_on_lan": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        }
+      },
+      "sources": [
+        "https://www.splashtop.com/pricing"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "todesk",
+      "name": "ToDesk",
+      "official_url": "https://www.todesk.com",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS",
+        "鸿蒙"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "官网中文首页将个人版作为可下载使用的产品，并另有团队版与企业版（商业授权、带宽保障等）。尝试打开 /price.html 返回 404，本轮未能核实会员/团队的具体人民币或美元价。",
+      "prices": [
+        {
+          "plan": "个人版",
+          "price": "未知",
+          "currency": null,
+          "period": null,
+          "note": "首页定位含免费使用宣传，但具体免费限制与是否完全免费未能从价目页确认（价目 URL 404）"
+        },
+        {
+          "plan": "团队版 / 企业版",
+          "price": "未知",
+          "currency": null,
+          "period": null,
+          "note": "官网确认存在，金额未找到有效定价页"
+        }
+      ],
+      "free_tier_limits": "未能从有效价目页确认",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "专有软件，本轮未记录客户端版本号",
+      "summary": "在中文用户中很常见的远程桌面，个人与团队/企业分版，但本轮未能打开有效标价页。",
+      "features": {
+        "unattended_access": {
+          "value": "yes"
+        },
+        "file_transfer": {
+          "value": "yes",
+          "note": "首页提到拖拽与复制粘贴文件传输"
+        },
+        "clipboard_sync": {
+          "value": "yes"
+        },
+        "multi_monitor": {
+          "value": "yes",
+          "note": "首页提到多屏与虚拟屏"
+        },
+        "audio": {
+          "value": "unknown"
+        },
+        "e2e_encryption": {
+          "value": "unknown"
+        },
+        "self_host": {
+          "value": "no"
+        },
+        "mobile_control": {
+          "value": "yes"
+        },
+        "free_for_commercial": {
+          "value": "no",
+          "note": "企业版强调商业授权"
+        },
+        "session_recording": {
+          "value": "unknown"
+        },
+        "wake_on_lan": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://www.todesk.com/"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "nomachine",
+      "name": "NoMachine",
+      "official_url": "https://www.nomachine.com",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "官网区分 Everybody（含 Personal Edition）与企业产品（Enterprise Desktop、Terminal Server、Cloud Server 等）。个人版可免费下载；企业订阅价本轮未从首页提取到具体金额。页面提到个人使用也可免费（并有试用或使用限制相关表述，需看购买页）。",
+      "prices": [
+        {
+          "plan": "NoMachine Personal Edition",
+          "price": "未知",
+          "currency": null,
+          "period": null,
+          "note": "可免费下载；是否完全无限制免费需看官方许可，本轮未打开购买页读出金额或限制全文"
+        },
+        {
+          "plan": "企业产品线",
+          "price": "未知",
+          "currency": null,
+          "period": null,
+          "note": "产品众多，首页未给出统一标价"
+        }
+      ],
+      "free_tier_limits": "个人版可免费使用的具体连接数/时间限制未在首页摘录中完整确认",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "专有软件，本轮未记录客户端版本号",
+      "summary": "以高画质远程桌面著称的商业软件，个人版可下载使用，企业版按产品线收费，具体价未在本轮核实。",
+      "features": {
+        "unattended_access": {
+          "value": "unknown"
+        },
+        "file_transfer": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "clipboard_sync": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "multi_monitor": {
+          "value": "unknown"
+        },
+        "audio": {
+          "value": "unknown"
+        },
+        "e2e_encryption": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "self_host": {
+          "value": "partial",
+          "note": "可在自有机器上安装服务器/客户端，企业还有 Cloud Server 产品"
+        },
+        "mobile_control": {
+          "value": "yes",
+          "note": "产品导航含 NoMachine for Mobile"
+        },
+        "free_for_commercial": {
+          "value": "no"
+        },
+        "session_recording": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        },
+        "wake_on_lan": {
+          "value": "unknown",
+          "note": "本轮未在官网功能表中核对此项"
+        }
+      },
+      "sources": [
+        "https://www.nomachine.com/"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    }
+  ]
+}

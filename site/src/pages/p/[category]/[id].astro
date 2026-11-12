@@ -1,0 +1,300 @@
+---
+// SPDX-License-Identifier: Apache-2.0
+import Layout from "../../../layouts/Layout.astro";
+import ExtLinks from "../../../components/ExtLinks.astro";
+import T from "../../../components/T.astro";
+import { siteConfig } from "../../../config";
+import {
+  loadCatalog,
+  formatStars,
+  featClass,
+  sourceRepoButton,
+  type Category,
+  type Product,
+} from "../../../lib/load-data";
+import {
+  cleanPublicText,
+  formatPriceDisplay,
+  formatHeroPrice,
+  isUnknownish,
+  sourceLinkLabel,
+} from "../../../lib/display";
+import {
+  ui,
+  uiT,
+  tr,
+  catPair,
+  featurePair,
+  featureValueShort,
+  featureValueFull,
+  platformEn,
+  maintenanceEn,
+} from "../../../i18n";
+
+export function getStaticPaths() {
+  return loadCatalog().categories.flatMap((category) =>
+    category.products.map((product) => ({
+      params: { category: category.slug, id: product.id },
+      props: { category, product },
+    })),
+  );
+}
+
+const { category, product } = Astro.props as { category: Category; product: Product };
+const catNames = catPair(category.slug, category.name);
+const summaryZh = cleanPublicText(product.summary);
+const summaryEn = tr(summaryZh);
+const desc =
+  summaryZh || uiT("productDesc", "zh", { name: product.name, category: catNames.zh });
+const descEn =
+  summaryEn || uiT("productDesc", "en", { name: product.name, category: catNames.en });
+const collected = product.collected_at || category.collected_at || siteConfig.collectedAt;
+const sourceBtn = sourceRepoButton(product);
+const priceZh = formatPriceDisplay(product, "zh");
+const priceEn = formatPriceDisplay(product, "en");
+const heroPriceZh = formatHeroPrice(product, "zh");
+const heroPriceEn = formatHeroPrice(product, "en");
+const releaseNoteZh = cleanPublicText(product.latest_release_date_note);
+const licenseText = cleanPublicText(product.license);
+const freeLimitsZh = cleanPublicText(product.free_tier_limits);
+const priceSummaryZh = priceZh.summary && !isUnknownish(priceZh.summary) ? cleanPublicText(product.price_summary) : "";
+
+const showLicense = licenseText && !isUnknownish(licenseText);
+const showStatus = product.maintenance_status && !isUnknownish(product.maintenance_status);
+const showStars = product.github_stars != null;
+const showRelease = !isUnknownish(product.latest_release) || !isUnknownish(product.latest_release_date);
+const hasMeta = product.open_source || showLicense || showStatus || showStars || showRelease;
+
+const sourceLinks = (product.sources || []).filter(Boolean);
+const hostNoteZh = cleanPublicText(product.source_host_note);
+---
+
+<Layout
+  title={uiT("productTitle", "zh", { name: product.name })}
+  titleEn={uiT("productTitle", "en", { name: product.name })}
+  description={desc}
+  descriptionEn={descEn}
+  canonicalPath={product.href}
+>
+  <div class="mx-auto max-w-3xl px-4 py-10 sm:px-5">
+    <nav class="text-sm text-muted" aria-label={ui.zh.breadcrumb} data-i18n="aria-label" data-zh={ui.zh.breadcrumb} data-en={ui.en.breadcrumb}>
+      <a href="/" class="hover:text-accent"><T zh={ui.zh.siteName} en={ui.en.siteName} /></a>
+      <span class="px-1.5 text-line-strong">/</span>
+      <a href={category.href} class="hover:text-accent"><T zh={catNames.zh} en={catNames.en} /></a>
+      <span class="px-1.5 text-line-strong">/</span>
+      <span class="text-ink">{product.name}</span>
+    </nav>
+
+    <header class="detail-hero mt-6">
+      <h1 class="text-3xl font-extrabold tracking-tight sm:text-4xl">{product.name}</h1>
+      {summaryZh && (
+        <p class="mt-3 max-w-2xl text-[1.02rem] leading-relaxed text-ink-soft">
+          <T zh={summaryZh} en={summaryEn || summaryZh} />
+        </p>
+      )}
+      <div class="mt-5 flex flex-wrap items-center gap-3">
+        {heroPriceZh && <p class="hero-price"><T zh={heroPriceZh} en={heroPriceEn} /></p>}
+        {product.platforms.length > 0 && (
+          <div class="flex flex-wrap gap-1.5">
+            {product.platforms.map((p) => (
+              <span class="pill"><T zh={p} en={platformEn(p)} /></span>
+            ))}
+          </div>
+        )}
+      </div>
+      <div class="mt-6">
+        <ExtLinks
+          official={product.official_url}
+          github={product.github_url}
+          sourceUrl={sourceBtn?.url}
+          sourceLabel={sourceBtn?.label}
+          size="md"
+          primaryOfficial
+        />
+      </div>
+    </header>
+
+    <section class="mt-12">
+      <h2 class="section-title"><T zh={ui.zh.features} en={ui.en.features} /></h2>
+      <ul class="feature-list">
+        {category.features.map((f) => {
+          const cell = product.features[f.key] || { value: "unknown", note: "" };
+          const v = (cell.value || "unknown").toLowerCase();
+          const empty = v === "unknown" || v === "na";
+          const noteZh = cleanPublicText(cell.note);
+          const lab = featurePair(category.slug, f.key, f.label);
+          const short = featureValueShort[cell.value] || { zh: cell.value, en: cell.value };
+          const full = featureValueFull[cell.value] || { zh: cell.value, en: cell.value };
+          return (
+            <li class="feature-row">
+              <div class="min-w-0">
+                <div class="text-sm"><T zh={lab.zh} en={lab.en} /></div>
+                {noteZh && <p class="mt-0.5 text-xs text-muted"><T zh={noteZh} en={tr(noteZh)} /></p>}
+              </div>
+              {empty ? (
+                <span class="feat-empty shrink-0" title={full.zh} data-i18n="title" data-zh={full.zh} data-en={full.en}>—</span>
+              ) : (
+                <span
+                  class:list={["feat shrink-0", featClass(cell.value)]}
+                  title={full.zh}
+                  data-i18n="title"
+                  data-zh={full.zh}
+                  data-en={full.en}
+                >
+                  <T zh={short.zh} en={short.en} />
+                </span>
+              )}
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+
+    {(priceSummaryZh || product.prices.length > 0 || freeLimitsZh) && (
+      <section class="mt-12">
+        <h2 class="section-title"><T zh={ui.zh.pricingLimits} en={ui.en.pricingLimits} /></h2>
+        <div class="price-panel">
+        {priceSummaryZh && (
+          <p class="text-sm leading-relaxed text-ink-soft">
+            <T zh={priceSummaryZh} en={tr(priceSummaryZh)} />
+          </p>
+        )}
+        {product.prices.length > 0 && (
+          <div class="mt-4 overflow-x-auto">
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th><T zh={ui.zh.plan} en={ui.en.plan} /></th>
+                  <th><T zh={ui.zh.price} en={ui.en.price} /></th>
+                  <th><T zh={ui.zh.note} en={ui.en.note} /></th>
+                </tr>
+              </thead>
+              <tbody>
+                {priceZh.rows.map((pr, i) => {
+                  const enRow = priceEn.rows[i];
+                  const zhAmt = pr.isPaid
+                    ? `${pr.amount}${pr.period && pr.period !== "—" ? (pr.period === ui.zh.lifetime ? ` ${ui.zh.lifetime}` : `/${pr.period}`) : ""}`
+                    : pr.amount;
+                  const enAmt = enRow
+                    ? enRow.isPaid
+                      ? `${enRow.amount}${enRow.period && enRow.period !== "—" ? (enRow.period === ui.en.lifetime ? ` ${ui.en.lifetime}` : `/${enRow.period}`) : ""}`
+                      : enRow.amount
+                    : zhAmt;
+                  return (
+                    <tr>
+                      <td><T zh={pr.plan} en={enRow?.plan || tr(pr.plan)} /></td>
+                      <td><T zh={zhAmt} en={enAmt} /></td>
+                      <td class="text-muted"><T zh={pr.note || "—"} en={enRow?.note || tr(pr.note) || "—"} /></td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        )}
+        <p class="mt-3 text-xs text-muted"><T zh={ui.zh.caveat} en={ui.en.caveat} /></p>
+        {freeLimitsZh && !isUnknownish(freeLimitsZh) && (
+          <div class="mt-5">
+            <h3 class="text-xs font-semibold text-muted"><T zh={ui.zh.freeLimits} en={ui.en.freeLimits} /></h3>
+            <p class="mt-1 text-sm leading-relaxed text-ink-soft">
+              <T zh={freeLimitsZh} en={tr(freeLimitsZh)} />
+            </p>
+          </div>
+        )}
+        </div>
+      </section>
+    )}
+
+    {hasMeta && (
+      <section class="mt-12">
+        <h2 class="section-title"><T zh={ui.zh.overview} en={ui.en.overview} /></h2>
+        <dl class="meta-list">
+          <dt><T zh={ui.zh.openSource} en={ui.en.openSource} /></dt>
+          <dd><T zh={product.open_source ? ui.zh.yes : ui.zh.no} en={product.open_source ? ui.en.yes : ui.en.no} /></dd>
+          {showLicense && (
+            <>
+              <dt><T zh={ui.zh.license} en={ui.en.license} /></dt>
+              <dd>{licenseText}</dd>
+            </>
+          )}
+          {showStatus && (
+            <>
+              <dt><T zh={ui.zh.maintStatus} en={ui.en.maintStatus} /></dt>
+              <dd><T zh={product.maintenance_status!} en={maintenanceEn(product.maintenance_status)} /></dd>
+            </>
+          )}
+          {showStars && (
+            <>
+              <dt><T zh={ui.zh.stars} en={ui.en.stars} /></dt>
+              <dd>
+                <span class="t-zh">{formatStars(product.github_stars, "zh")}</span>
+                <span class="t-en">{formatStars(product.github_stars, "en")}</span>
+              </dd>
+            </>
+          )}
+          {showRelease && (
+            <>
+              <dt><T zh={ui.zh.latestVersion} en={ui.en.latestVersion} /></dt>
+              <dd>
+                {product.latest_release && !isUnknownish(product.latest_release) ? product.latest_release : ""}
+                {product.latest_release_date && !isUnknownish(product.latest_release_date) && (
+                  <span class="text-muted">{product.latest_release ? " · " : ""}{product.latest_release_date}</span>
+                )}
+              </dd>
+            </>
+          )}
+        </dl>
+        {releaseNoteZh && (
+          <p class="mt-3 text-xs text-muted"><T zh={releaseNoteZh} en={tr(releaseNoteZh)} /></p>
+        )}
+      </section>
+    )}
+
+    {(product.source_host_note || product.source_url || product.source_repo_url) && !product.github_url && (
+      <section class="mt-12">
+        <h2 class="section-title"><T zh={ui.zh.sourceHosting} en={ui.en.sourceHosting} /></h2>
+        {hostNoteZh && !isUnknownish(hostNoteZh) && (
+          <p class="text-sm text-ink-soft"><T zh={hostNoteZh} en={tr(hostNoteZh)} /></p>
+        )}
+        {(product.source_repo_url || product.source_url) && (
+          <p class="mt-1 text-sm">
+            <a
+              href={product.source_repo_url || product.source_url!}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="prose-link"
+            >
+              {sourceLinkLabel(product.source_repo_url || product.source_url!)}
+            </a>
+          </p>
+        )}
+      </section>
+    )}
+
+    {sourceLinks.length > 0 && (
+      <details class="sources-details mt-12">
+        <summary><T zh={ui.zh.sources} en={ui.en.sources} /></summary>
+        <ul class="mt-3 space-y-1.5 text-sm">
+          {sourceLinks.map((s) => (
+            <li>
+              {s.startsWith("http") ? (
+                <a href={s} target="_blank" rel="noopener noreferrer" class="prose-link">
+                  {sourceLinkLabel(s)}
+                </a>
+              ) : (
+                <span class="text-muted"><T zh={s} en={tr(s)} /></span>
+              )}
+            </li>
+          ))}
+        </ul>
+      </details>
+    )}
+
+    <p class="mt-12 text-xs text-muted">
+      <T
+        zh={uiT("collectedOn", "zh", { date: collected })}
+        en={uiT("collectedOn", "en", { date: collected })}
+      />
+    </p>
+  </div>
+</Layout>

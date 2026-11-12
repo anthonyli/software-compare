@@ -1,0 +1,1012 @@
+{
+  "category_slug": "launchers",
+  "category_name_zh": "启动器/效率启动工具",
+  "collected_at": "2026-11-12",
+  "timezone": "Asia/Shanghai",
+  "features": [
+    {
+      "key": "app_launch",
+      "label": "应用启动"
+    },
+    {
+      "key": "file_search",
+      "label": "文件搜索"
+    },
+    {
+      "key": "clipboard_history",
+      "label": "剪贴板历史"
+    },
+    {
+      "key": "calculator",
+      "label": "计算器"
+    },
+    {
+      "key": "plugins",
+      "label": "插件/扩展"
+    },
+    {
+      "key": "hotkey",
+      "label": "自定义热键"
+    },
+    {
+      "key": "window_management",
+      "label": "窗口管理"
+    },
+    {
+      "key": "scripting",
+      "label": "脚本/自动化"
+    },
+    {
+      "key": "snippets",
+      "label": "片段 Snippets"
+    },
+    {
+      "key": "web_search",
+      "label": "网页快速搜索"
+    },
+    {
+      "key": "ai_features",
+      "label": "AI 功能"
+    }
+  ],
+  "products": [
+    {
+      "id": "powertoys",
+      "name": "Microsoft PowerToys (Command Palette / PowerToys Run)",
+      "official_url": "https://learn.microsoft.com/en-us/windows/powertoys/",
+      "github_url": "https://github.com/microsoft/PowerToys",
+      "platforms": [
+        "Windows"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源的 Windows 工具集。启动器现为 Command Palette（前身为 PowerToys Run）。星标属于整个 PowerToys 仓库，不是单独启动器模块。",
+      "prices": [
+        {
+          "plan": "软件",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无付费墙；仅 Windows",
+      "github_stars": 140907,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "本轮未拉取 GitHub Release 标签",
+      "summary": "微软开源的 Windows 效率工具箱，其中的 Command Palette/PowerToys Run 可快速启动应用和查找文件。",
+      "features": {
+        "app_launch": {
+          "value": "yes"
+        },
+        "file_search": {
+          "value": "yes"
+        },
+        "clipboard_history": {
+          "value": "partial",
+          "note": "PowerToys 工具集含相关能力，是否都在启动器内未逐项核对"
+        },
+        "calculator": {
+          "value": "yes"
+        },
+        "plugins": {
+          "value": "yes"
+        },
+        "hotkey": {
+          "value": "yes"
+        },
+        "window_management": {
+          "value": "yes",
+          "note": "FancyZones 等是工具集的一部分"
+        },
+        "scripting": {
+          "value": "unknown"
+        },
+        "snippets": {
+          "value": "unknown"
+        },
+        "web_search": {
+          "value": "unknown"
+        },
+        "ai_features": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://learn.microsoft.com/en-us/windows/powertoys/",
+        "https://github.com/microsoft/PowerToys"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "flow-launcher",
+      "name": "Flow Launcher",
+      "official_url": "https://www.flowlauncher.com",
+      "github_url": "https://github.com/Flow-Launcher/Flow.Launcher",
+      "platforms": [
+        "Windows"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费开源的 Windows 启动器。",
+      "prices": [
+        {
+          "plan": "软件",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无付费墙",
+      "github_stars": 16015,
+      "latest_release": "v2.1.4",
+      "latest_release_date": "2026-09-20 19:11",
+      "latest_release_date_note": "GitHub published_at 2026-09-20T11:11:21Z，已转换为 Asia/Shanghai；官网亦写 Download v2.1.4 - Sep 20, 2026",
+      "summary": "Windows 上很活跃的开源启动器，支持应用/文件/书签搜索和丰富插件。",
+      "features": {
+        "app_launch": {
+          "value": "yes",
+          "note": "官网：Open Apps"
+        },
+        "file_search": {
+          "value": "yes",
+          "note": "可使用 Everything 或 Windows Search"
+        },
+        "clipboard_history": {
+          "value": "unknown",
+          "note": "常见于插件，是否默认内置本轮未核完"
+        },
+        "calculator": {
+          "value": "unknown"
+        },
+        "plugins": {
+          "value": "yes"
+        },
+        "hotkey": {
+          "value": "yes",
+          "note": "默认识别为 Alt+Space，可自定义"
+        },
+        "window_management": {
+          "value": "unknown"
+        },
+        "scripting": {
+          "value": "partial",
+          "note": "可通过插件/命令"
+        },
+        "snippets": {
+          "value": "unknown"
+        },
+        "web_search": {
+          "value": "yes",
+          "note": "官网：Web Searches"
+        },
+        "ai_features": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://www.flowlauncher.com/",
+        "https://github.com/Flow-Launcher/Flow.Launcher"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "ulauncher",
+      "name": "Ulauncher",
+      "official_url": "https://ulauncher.io",
+      "github_url": "https://github.com/Ulauncher/Ulauncher",
+      "platforms": [
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "Other（GitHub SPDX 为 Other，本轮未打开 LICENSE 全文核对）",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费的 Linux 应用启动器。",
+      "prices": [
+        {
+          "plan": "软件",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无付费墙；仅 Linux",
+      "github_stars": 4540,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "本轮未拉取 GitHub Release 标签",
+      "summary": "面向 Linux 桌面的开源启动器，支持模糊搜索、扩展和主题。",
+      "features": {
+        "app_launch": {
+          "value": "yes"
+        },
+        "file_search": {
+          "value": "yes",
+          "note": "官网提到目录浏览，输入 ~ 或 /"
+        },
+        "clipboard_history": {
+          "value": "unknown"
+        },
+        "calculator": {
+          "value": "unknown"
+        },
+        "plugins": {
+          "value": "yes",
+          "note": "官网：Shortcuts & extensions"
+        },
+        "hotkey": {
+          "value": "yes"
+        },
+        "window_management": {
+          "value": "no"
+        },
+        "scripting": {
+          "value": "yes",
+          "note": "可把脚本做成快捷方式/扩展"
+        },
+        "snippets": {
+          "value": "unknown"
+        },
+        "web_search": {
+          "value": "yes"
+        },
+        "ai_features": {
+          "value": "no"
+        }
+      },
+      "sources": [
+        "https://ulauncher.io/",
+        "https://github.com/Ulauncher/Ulauncher"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "albert",
+      "name": "Albert",
+      "official_url": "https://albertlauncher.github.io",
+      "github_url": "https://github.com/albertlauncher/albert",
+      "platforms": [
+        "Linux",
+        "macOS"
+      ],
+      "open_source": true,
+      "license": "Other（GitHub SPDX 为 Other，本轮未打开 LICENSE 全文核对）",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费的开源键盘启动器，官网提供 Linux 与 macOS 安装说明。",
+      "prices": [
+        {
+          "plan": "软件",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无付费墙",
+      "github_stars": 8008,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "本轮未拉取 GitHub Release 标签",
+      "summary": "追求低延迟的开源键盘启动器，插件可用 C++/Python 编写。",
+      "features": {
+        "app_launch": {
+          "value": "yes"
+        },
+        "file_search": {
+          "value": "unknown"
+        },
+        "clipboard_history": {
+          "value": "unknown"
+        },
+        "calculator": {
+          "value": "unknown"
+        },
+        "plugins": {
+          "value": "yes",
+          "note": "C++ / Python 扩展"
+        },
+        "hotkey": {
+          "value": "yes"
+        },
+        "window_management": {
+          "value": "unknown"
+        },
+        "scripting": {
+          "value": "yes"
+        },
+        "snippets": {
+          "value": "unknown"
+        },
+        "web_search": {
+          "value": "unknown"
+        },
+        "ai_features": {
+          "value": "no"
+        }
+      },
+      "sources": [
+        "https://albertlauncher.github.io/",
+        "https://github.com/albertlauncher/albert"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "wox",
+      "name": "Wox",
+      "official_url": "https://www.woxlauncher.com",
+      "github_url": "https://github.com/Wox-launcher/Wox",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费的跨平台开源启动器。官网显示最新 v2.5.0，时间为 November 2026（未给具体日）。",
+      "prices": [
+        {
+          "plan": "软件",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无付费墙",
+      "github_stars": 27632,
+      "latest_release": "v2.5.0",
+      "latest_release_date": "2026-11",
+      "latest_release_date_note": "官网写 Latest v2.5.0 · November 2026，未提供具体日期与时刻",
+      "summary": "跨平台开源启动器，定位为 Raycast/Alfred 的免费替代，内置应用、文件、剪贴板和 AI 等能力。",
+      "features": {
+        "app_launch": {
+          "value": "yes"
+        },
+        "file_search": {
+          "value": "yes"
+        },
+        "clipboard_history": {
+          "value": "yes",
+          "note": "官网：Clipboard Recall copied text and images"
+        },
+        "calculator": {
+          "value": "unknown"
+        },
+        "plugins": {
+          "value": "yes",
+          "note": "有 Plugin Store"
+        },
+        "hotkey": {
+          "value": "yes"
+        },
+        "window_management": {
+          "value": "partial",
+          "note": "官网提到 switch windows"
+        },
+        "scripting": {
+          "value": "unknown"
+        },
+        "snippets": {
+          "value": "unknown"
+        },
+        "web_search": {
+          "value": "unknown"
+        },
+        "ai_features": {
+          "value": "yes",
+          "note": "官网功能介绍含 AI，具体模型/是否需自备密钥未核完"
+        }
+      },
+      "sources": [
+        "https://www.woxlauncher.com/",
+        "https://github.com/Wox-launcher/Wox"
+      ],
+      "archived": false,
+      "last_push_at": "2026-11-12",
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "ueli",
+      "name": "Ueli",
+      "official_url": "https://ueli.app",
+      "github_url": "https://github.com/oliverschwendener/ueli",
+      "platforms": [
+        "Windows",
+        "macOS"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费的跨平台开源键盘启动器。本轮官网首页提取几乎为空（仅标题），功能描述主要依据项目定位，未核的功能保持未知。",
+      "prices": [
+        {
+          "plan": "软件",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无付费墙",
+      "github_stars": 4616,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "本轮未拉取 GitHub Release 标签；官网页面几乎未抓到正文",
+      "summary": "开源跨平台键盘启动器，官网本轮几乎没有抓到功能正文，故功能矩阵多标未知。",
+      "features": {
+        "app_launch": {
+          "value": "yes",
+          "note": "作为 keystroke launcher 的基本定位"
+        },
+        "file_search": {
+          "value": "unknown"
+        },
+        "clipboard_history": {
+          "value": "unknown"
+        },
+        "calculator": {
+          "value": "unknown"
+        },
+        "plugins": {
+          "value": "unknown"
+        },
+        "hotkey": {
+          "value": "yes"
+        },
+        "window_management": {
+          "value": "unknown"
+        },
+        "scripting": {
+          "value": "unknown"
+        },
+        "snippets": {
+          "value": "unknown"
+        },
+        "web_search": {
+          "value": "unknown"
+        },
+        "ai_features": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://ueli.app/",
+        "https://github.com/oliverschwendener/ueli"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "quicksilver",
+      "name": "Quicksilver",
+      "official_url": "https://qsapp.com",
+      "github_url": "https://github.com/quicksilver/Quicksilver",
+      "platforms": [
+        "macOS"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "pricing_model": "完全免费",
+      "price_summary": "官网写明 Open Source，Free forever。",
+      "prices": [
+        {
+          "plan": "软件",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无付费墙；仅 macOS",
+      "github_stars": 2942,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "本轮未拉取 GitHub Release 标签",
+      "summary": "历史悠久的 macOS 开源启动器，强调用动作组合完成任务，永久免费。",
+      "features": {
+        "app_launch": {
+          "value": "yes"
+        },
+        "file_search": {
+          "value": "yes"
+        },
+        "clipboard_history": {
+          "value": "unknown"
+        },
+        "calculator": {
+          "value": "unknown"
+        },
+        "plugins": {
+          "value": "yes"
+        },
+        "hotkey": {
+          "value": "yes"
+        },
+        "window_management": {
+          "value": "unknown"
+        },
+        "scripting": {
+          "value": "yes"
+        },
+        "snippets": {
+          "value": "unknown"
+        },
+        "web_search": {
+          "value": "unknown"
+        },
+        "ai_features": {
+          "value": "no"
+        }
+      },
+      "sources": [
+        "https://qsapp.com/",
+        "https://github.com/quicksilver/Quicksilver"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "rofi",
+      "name": "Rofi",
+      "official_url": "https://github.com/davatorium/rofi",
+      "github_url": "https://github.com/davatorium/rofi",
+      "platforms": [
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "Other（GitHub SPDX 为 Other，本轮未打开 LICENSE 全文核对）",
+      "pricing_model": "完全免费",
+      "price_summary": "完全免费的 Linux 窗口切换器/启动器，常见于平铺窗口管理器环境。",
+      "prices": [
+        {
+          "plan": "软件",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无付费墙；仅 Linux（X11/Wayland 支持范围以项目文档为准，本轮未展开）",
+      "github_stars": 16537,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "本轮未拉取 GitHub Release 标签",
+      "summary": "Linux 上非常流行的开源启动器/窗口切换器，轻量、可脚本化，没有图形设置向导。",
+      "features": {
+        "app_launch": {
+          "value": "yes"
+        },
+        "file_search": {
+          "value": "partial",
+          "note": "可通过模式/脚本实现"
+        },
+        "clipboard_history": {
+          "value": "partial",
+          "note": "通常结合独立剪贴板工具"
+        },
+        "calculator": {
+          "value": "partial",
+          "note": "可通过模式/脚本"
+        },
+        "plugins": {
+          "value": "yes",
+          "note": "模式与脚本"
+        },
+        "hotkey": {
+          "value": "yes",
+          "note": "由窗口管理器/绑定配置"
+        },
+        "window_management": {
+          "value": "yes",
+          "note": "本身也是窗口切换器"
+        },
+        "scripting": {
+          "value": "yes"
+        },
+        "snippets": {
+          "value": "partial"
+        },
+        "web_search": {
+          "value": "partial"
+        },
+        "ai_features": {
+          "value": "no"
+        }
+      },
+      "sources": [
+        "https://github.com/davatorium/rofi"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "raycast",
+      "name": "Raycast",
+      "official_url": "https://www.raycast.com",
+      "github_url": null,
+      "platforms": [
+        "macOS",
+        "Windows",
+        "iOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "有免费档。个人月付：Pro 10 美元/月，Plus 20 美元/月，Max 50 美元/月；年付 Pro 96 美元、Plus 192 美元、Max 480 美元。团队免费档 0 美元/用户；团队月付 Pro 15 / Plus 25 / Max 65 美元/用户，年付 144 / 240 / 624 美元/用户。企业为定制。学生可获 Pro 五折。付费档包含 AI，官网写明不提供不含 AI 的 Pro。",
+      "prices": [
+        {
+          "plan": "Free",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        },
+        {
+          "plan": "Pro（个人月付）",
+          "price": "10",
+          "currency": "USD",
+          "period": "month"
+        },
+        {
+          "plan": "Plus（个人月付）",
+          "price": "20",
+          "currency": "USD",
+          "period": "month"
+        },
+        {
+          "plan": "Max（个人月付）",
+          "price": "50",
+          "currency": "USD",
+          "period": "month"
+        },
+        {
+          "plan": "Pro（个人年付）",
+          "price": "96",
+          "currency": "USD",
+          "period": "year"
+        },
+        {
+          "plan": "Plus（个人年付）",
+          "price": "192",
+          "currency": "USD",
+          "period": "year"
+        },
+        {
+          "plan": "Max（个人年付）",
+          "price": "480",
+          "currency": "USD",
+          "period": "year"
+        },
+        {
+          "plan": "Teams Free",
+          "price": "0",
+          "currency": "USD",
+          "period": "month",
+          "note": "每用户；官网写免费团队计划不会过期"
+        },
+        {
+          "plan": "Teams Pro（年付）",
+          "price": "144",
+          "currency": "USD",
+          "period": "year",
+          "note": "每用户；月付为 15 美元/用户/月"
+        },
+        {
+          "plan": "Teams Plus（年付）",
+          "price": "240",
+          "currency": "USD",
+          "period": "year",
+          "note": "每用户；月付 25 美元"
+        },
+        {
+          "plan": "Teams Max（年付）",
+          "price": "624",
+          "currency": "USD",
+          "period": "year",
+          "note": "每用户；月付 65 美元"
+        }
+      ],
+      "free_tier_limits": "免费档含核心功能（官网列出包括 Clipboard History 等）；AI 与部分高级能力在付费档。具体免费/付费边界以定价对照表为准",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "专有软件，本轮未记录客户端版本号",
+      "summary": "macOS（及 Windows/iOS）上主流的商业启动器，免费档已经很好用，Pro 及以上主要加 AI 与团队能力。",
+      "features": {
+        "app_launch": {
+          "value": "yes"
+        },
+        "file_search": {
+          "value": "yes"
+        },
+        "clipboard_history": {
+          "value": "yes",
+          "note": "官网免费档核心功能包含 Clipboard History"
+        },
+        "calculator": {
+          "value": "yes"
+        },
+        "plugins": {
+          "value": "yes",
+          "note": "有 Store 与社区扩展；团队扩展在团队计划"
+        },
+        "hotkey": {
+          "value": "yes"
+        },
+        "window_management": {
+          "value": "yes"
+        },
+        "scripting": {
+          "value": "yes"
+        },
+        "snippets": {
+          "value": "yes"
+        },
+        "web_search": {
+          "value": "yes"
+        },
+        "ai_features": {
+          "value": "paid",
+          "note": "包含在付费 Pro/Plus/Max；免费档不含"
+        }
+      },
+      "sources": [
+        "https://www.raycast.com/pricing"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "alfred",
+      "name": "Alfred",
+      "official_url": "https://www.alfredapp.com",
+      "github_url": null,
+      "platforms": [
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "基础版可免费使用。Powerpack 为一次性买断：Single License 34 英镑（Alfred 5 单用户许可，购买含免费升级到 Alfred 6）；Mega Supporter 59 英镑（单用户，免费终身升级）。商店页标题为 Buy the Alfred 5 Powerpack。",
+      "prices": [
+        {
+          "plan": "Alfred 基础版",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        },
+        {
+          "plan": "Powerpack Single License",
+          "price": "34",
+          "currency": "GBP",
+          "period": null,
+          "note": "单用户 v5 许可，购买后可免费升级到 Alfred 6"
+        },
+        {
+          "plan": "Mega Supporter",
+          "price": "59",
+          "currency": "GBP",
+          "period": null,
+          "note": "单用户，免费终身升级"
+        }
+      ],
+      "free_tier_limits": "免费档可做基础启动与搜索；剪贴板历史、工作流、片段等高级功能在 Powerpack。具体对照以官网为准，本轮未打开功能对照全文",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "商店页在销售 Alfred 5 Powerpack 并预告/升级到 Alfred 6；具体构建号本轮未记录",
+      "summary": "macOS 经典启动器，基础免费，Powerpack 买断后解锁工作流和剪贴板等能力。",
+      "features": {
+        "app_launch": {
+          "value": "yes"
+        },
+        "file_search": {
+          "value": "yes"
+        },
+        "clipboard_history": {
+          "value": "paid",
+          "note": "通常属于 Powerpack，本轮按付费档记录"
+        },
+        "calculator": {
+          "value": "yes"
+        },
+        "plugins": {
+          "value": "paid",
+          "note": "Workflows 属于 Powerpack"
+        },
+        "hotkey": {
+          "value": "yes"
+        },
+        "window_management": {
+          "value": "unknown"
+        },
+        "scripting": {
+          "value": "paid",
+          "note": "工作流/脚本在 Powerpack"
+        },
+        "snippets": {
+          "value": "paid"
+        },
+        "web_search": {
+          "value": "yes"
+        },
+        "ai_features": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://www.alfredapp.com/shop/"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "listary",
+      "name": "Listary",
+      "official_url": "https://www.listary.com",
+      "github_url": null,
+      "platforms": [
+        "Windows"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "官网强调可免费下载，并写 “it’s 100% free”，同时另有 Listary Pro 入口。本轮未打开 Pro 价格页，故 Pro 金额为未知。",
+      "prices": [
+        {
+          "plan": "Listary（免费档）",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "官网多次提供 Free Download，并有 100% free 表述"
+        },
+        {
+          "plan": "Listary Pro",
+          "price": "未知",
+          "currency": null,
+          "period": null,
+          "note": "官网有 Pro 入口（Discover Listary Pro），金额未在首页给出"
+        }
+      ],
+      "free_tier_limits": "免费档可用文件搜索与应用启动等；Pro 增量功能未在首页完整列出",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "首页提到 Listary V7 Beta，未给出稳定版构建号与日期",
+      "summary": "Windows 上以文件搜索见长的启动器，有免费档，Pro 的具体售价本轮未核实。",
+      "features": {
+        "app_launch": {
+          "value": "yes"
+        },
+        "file_search": {
+          "value": "yes"
+        },
+        "clipboard_history": {
+          "value": "unknown"
+        },
+        "calculator": {
+          "value": "unknown"
+        },
+        "plugins": {
+          "value": "unknown"
+        },
+        "hotkey": {
+          "value": "yes"
+        },
+        "window_management": {
+          "value": "no"
+        },
+        "scripting": {
+          "value": "partial",
+          "note": "可运行系统命令"
+        },
+        "snippets": {
+          "value": "unknown"
+        },
+        "web_search": {
+          "value": "unknown"
+        },
+        "ai_features": {
+          "value": "no"
+        }
+      },
+      "sources": [
+        "https://www.listary.com/"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    },
+    {
+      "id": "launchbar",
+      "name": "LaunchBar",
+      "official_url": "https://www.obdev.at/products/launchbar/index.html",
+      "github_url": null,
+      "platforms": [
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "可免费下载。官网写明除 30 天试用外，也可长期免费使用，但会偶尔提示休息（short break）。购买许可的具体金额本轮未打开商店页，故为未知。",
+      "prices": [
+        {
+          "plan": "免费使用（会偶尔提示休息）",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "30 天试用后仍可免费使用，但会偶尔邀请休息；见官网 “Use LaunchBar for free!”"
+        },
+        {
+          "plan": "许可",
+          "price": "未知",
+          "currency": null,
+          "period": null,
+          "note": "有 Buy 入口，本轮未打开商店页读取金额"
+        }
+      ],
+      "free_tier_limits": "可长期免费使用，但会偶尔被要求暂停；完整无打扰使用需购买许可（金额未知）",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "产品为 LaunchBar 6，本轮未记录具体构建号",
+      "summary": "macOS 上历史很长的键盘启动器，可免费但会偶尔打断，买许可后可完整使用，售价未核实。",
+      "features": {
+        "app_launch": {
+          "value": "yes"
+        },
+        "file_search": {
+          "value": "yes"
+        },
+        "clipboard_history": {
+          "value": "yes",
+          "note": "官网提到 clipboard history"
+        },
+        "calculator": {
+          "value": "yes"
+        },
+        "plugins": {
+          "value": "yes",
+          "note": "script-based actions"
+        },
+        "hotkey": {
+          "value": "yes"
+        },
+        "window_management": {
+          "value": "unknown"
+        },
+        "scripting": {
+          "value": "yes",
+          "note": "AppleScript、JavaScript、Ruby、Python、PHP 等"
+        },
+        "snippets": {
+          "value": "yes",
+          "note": "Text Snippets"
+        },
+        "web_search": {
+          "value": "yes",
+          "note": "Google / Wikipedia / DuckDuckGo 等实时建议"
+        },
+        "ai_features": {
+          "value": "no"
+        }
+      },
+      "sources": [
+        "https://www.obdev.at/products/launchbar/index.html"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": "活跃"
+    }
+  ]
+}

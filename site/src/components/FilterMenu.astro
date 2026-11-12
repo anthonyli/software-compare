@@ -1,0 +1,185 @@
+---
+// SPDX-License-Identifier: Apache-2.0
+interface Option {
+  value: string;
+  label: string;
+  labelEn?: string;
+}
+
+interface Props {
+  name: string;
+  label: string;
+  labelEn?: string;
+  options: Option[];
+  value?: string;
+  align?: "left" | "right";
+}
+
+const { name, label, labelEn = label, options, value = "", align = "left" } = Astro.props;
+const current = options.find((o) => o.value === value) || options[0];
+const currentEn = current?.labelEn || current?.label || "";
+---
+
+<div class:list={["fmenu", align === "right" && "fmenu-right"]} data-filter-menu>
+  <button
+    type="button"
+    class="fmenu-btn"
+    data-fmenu-btn
+    aria-haspopup="listbox"
+    aria-expanded="false"
+    aria-label={`${label}：${current?.label || ""}`}
+    data-i18n="aria-label"
+    data-zh={`${label}：${current?.label || ""}`}
+    data-en={`${labelEn}: ${currentEn}`}
+    data-label-zh={label}
+    data-label-en={labelEn}
+  >
+    <span class="fmenu-label"><span class="t-zh">{label}</span><span class="t-en">{labelEn}</span></span>
+    <span class="fmenu-value" data-fmenu-value><span class="t-zh">{current?.label}</span><span class="t-en">{currentEn}</span></span>
+    <svg class="fmenu-caret" width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true">
+      <path d="M1.5 1.75L6 6.25L10.5 1.75" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+  </button>
+  <input type="hidden" name={name} value={current?.value ?? value} data-fmenu-input />
+  <div class="fmenu-panel" data-fmenu-panel hidden role="listbox" aria-label={label} data-i18n="aria-label" data-zh={label} data-en={labelEn}>
+    {options.map((o) => (
+      <button
+        type="button"
+        class="fmenu-option"
+        role="option"
+        data-value={o.value}
+        data-label={o.label}
+        data-label-en={o.labelEn || o.label}
+        aria-selected={o.value === (current?.value ?? value) ? "true" : "false"}
+        tabindex="-1"
+      >
+        <span class="fmenu-check" aria-hidden="true">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+            <path d="M3.2 8.3L6.4 11.5L12.8 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </span>
+        <span><span class="t-zh">{o.label}</span><span class="t-en">{o.labelEn || o.label}</span></span>
+      </button>
+    ))}
+  </div>
+</div>
+
+<script>
+  function closeMenu(root: Element) {
+    const btn = root.querySelector("[data-fmenu-btn]") as HTMLButtonElement | null;
+    const panel = root.querySelector("[data-fmenu-panel]") as HTMLElement | null;
+    if (!btn || !panel) return;
+    panel.hidden = true;
+    btn.setAttribute("aria-expanded", "false");
+  }
+
+  function openMenu(root: Element) {
+    document.querySelectorAll("[data-filter-menu]").forEach((el) => {
+      if (el !== root) closeMenu(el);
+    });
+    const cat = document.querySelector("[data-cat-panel]") as HTMLElement | null;
+    const catBtn = document.querySelector("[data-cat-btn]") as HTMLButtonElement | null;
+    if (cat && catBtn) {
+      cat.hidden = true;
+      catBtn.setAttribute("aria-expanded", "false");
+    }
+    const btn = root.querySelector("[data-fmenu-btn]") as HTMLButtonElement;
+    const panel = root.querySelector("[data-fmenu-panel]") as HTMLElement;
+    panel.hidden = false;
+    btn.setAttribute("aria-expanded", "true");
+    const selected = panel.querySelector('[aria-selected="true"]') as HTMLElement | null;
+    (selected || (panel.querySelector(".fmenu-option") as HTMLElement | null))?.focus();
+  }
+
+  function selectOption(root: Element, option: HTMLElement) {
+    const input = root.querySelector("[data-fmenu-input]") as HTMLInputElement;
+    const valueEl = root.querySelector("[data-fmenu-value]") as HTMLElement;
+    const btn = root.querySelector("[data-fmenu-btn]") as HTMLButtonElement;
+    const value = option.dataset.value ?? "";
+    const labelZh = option.dataset.label ?? option.textContent ?? "";
+    const labelEn = option.dataset.labelEn || labelZh;
+    input.value = value;
+    valueEl.innerHTML = `<span class="t-zh"></span><span class="t-en"></span>`;
+    const zhEl = valueEl.querySelector(".t-zh") as HTMLElement | null;
+    const enEl = valueEl.querySelector(".t-en") as HTMLElement | null;
+    if (zhEl) zhEl.textContent = labelZh;
+    if (enEl) enEl.textContent = labelEn;
+    const groupZh = btn.dataset.labelZh || btn.getAttribute("aria-label")?.split("：")[0] || "";
+    const groupEn = btn.dataset.labelEn || groupZh;
+    btn.setAttribute("aria-label", `${groupZh}：${labelZh}`);
+    btn.dataset.zh = `${groupZh}：${labelZh}`;
+    btn.dataset.en = `${groupEn}: ${labelEn}`;
+    if (document.documentElement.lang === "en") btn.setAttribute("aria-label", `${groupEn}: ${labelEn}`);
+    root.querySelectorAll(".fmenu-option").forEach((el) => {
+      el.setAttribute("aria-selected", el === option ? "true" : "false");
+    });
+    closeMenu(root);
+    btn.focus();
+    input.dispatchEvent(new Event("change", { bubbles: true }));
+  }
+
+  document.querySelectorAll("[data-filter-menu]").forEach((root) => {
+    const btn = root.querySelector("[data-fmenu-btn]") as HTMLButtonElement;
+    const panel = root.querySelector("[data-fmenu-panel]") as HTMLElement;
+    const options = () => [...panel.querySelectorAll(".fmenu-option")] as HTMLElement[];
+
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      if (panel.hidden) openMenu(root);
+      else {
+        closeMenu(root);
+        btn.focus();
+      }
+    });
+
+    btn.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+        e.preventDefault();
+        openMenu(root);
+      }
+    });
+
+    panel.addEventListener("keydown", (e) => {
+      const items = options();
+      const i = items.indexOf(document.activeElement as HTMLElement);
+      if (e.key === "ArrowDown") {
+        e.preventDefault();
+        items[Math.min(i + 1, items.length - 1)]?.focus();
+      } else if (e.key === "ArrowUp") {
+        e.preventDefault();
+        items[Math.max(i - 1, 0)]?.focus();
+      } else if (e.key === "Home") {
+        e.preventDefault();
+        items[0]?.focus();
+      } else if (e.key === "End") {
+        e.preventDefault();
+        items[items.length - 1]?.focus();
+      } else if (e.key === "Escape") {
+        e.preventDefault();
+        closeMenu(root);
+        btn.focus();
+      } else if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        const active = document.activeElement as HTMLElement;
+        if (active?.classList.contains("fmenu-option")) selectOption(root, active);
+      } else if (e.key === "Tab") {
+        closeMenu(root);
+      }
+    });
+
+    panel.addEventListener("click", (e) => {
+      const opt = (e.target as HTMLElement).closest(".fmenu-option") as HTMLElement | null;
+      if (opt) {
+        e.preventDefault();
+        selectOption(root, opt);
+      }
+    });
+  });
+
+  document.addEventListener("click", (e) => {
+    document.querySelectorAll("[data-filter-menu]").forEach((root) => {
+      if (!root.contains(e.target as Node)) closeMenu(root);
+    });
+  });
+</script>

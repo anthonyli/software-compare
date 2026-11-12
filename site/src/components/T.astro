@@ -1,0 +1,22 @@
+---
+// SPDX-License-Identifier: Apache-2.0
+import { tr } from "../i18n";
+
+interface Props {
+  zh?: string | null;
+  en?: string | null;
+  class?: string;
+}
+
+const zh = (Astro.props.zh ?? "").toString();
+const en = (Astro.props.en ?? tr(zh)).toString();
+const className = Astro.props.class;
+---
+
+{className ? (
+  <span class={className}
+    ><span class="t-zh">{zh}</span><span class="t-en">{en}</span></span
+  >
+) : (
+  <><span class="t-zh">{zh}</span><span class="t-en">{en}</span></>
+)}
