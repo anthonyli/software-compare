@@ -16,15 +16,18 @@
 Clean product-cover design, off-white subtle grid background, a large white rounded card in the center featuring a geometric bold letter C monogram with two vertical comparison bars in the opening, wordmark "Compare" beside it and small Chinese caption "软件对比" underneath. Light, airy, generous whitespace, soft natural light, editorial SaaS aesthetic, no neon, no cyberpunk, no watermark, 16:9.
 ```
 
-## 分类封面统一规范
+## 分类封面规范（独立于主封面）
 
-分类封面不是主封面：保留现有卡片的 `480 × 260` 比例和各类别独立图案，不加入主封面的文字锁定组合；类别名继续由页面的中英文文本显示，避免在图中重复文字。
+完整的原 17 类提示词及共用前缀已另存：[category-cover-prompts.md](./category-cover-prompts.md)。新增分类也应使用该共用前缀，不使用本页的主封面提示词。
 
-- 浅米底 `#F5F4ED`，24 px 浅灰网格 `#DEDED7`。
-- 居中白色圆角卡：`x=30, y=22, width=420, height=216, rx=28`，轻量阴影。
-- 统一黑色 `#242424`、中性灰 `#C9C9C2` 与浅灰图形填色 `#F0F0EB`，不用不同批次的彩色背景、点阵或彩色描边。
-- 各类别图案统一缩放和留白；右上角使用几何 C 与双对比柱作为小型品牌签名。
-- 所有资源为原创、静态、可编辑 SVG；无外部字体、图片、脚本、商标素材或网络请求。
-- 新增类别时必须新增同名 `site/public/categories/<slug>.svg`，沿用此规范，并通过资源完整性及桌面/手机加载测试。
+**上面的中英文提示词只用于将来的 16:9 主封面，不用于分类封面。** 分类封面以项目最早的 17 张插画（例如 cleaners、screen-recorders、code-editors）为视觉基准，不改成白卡网格或品牌海报。
 
-主封面将来按上述原文生成时，应人工核对 `Compare` / `软件对比` 的拼写、中文字形与 C 内两根对比柱，不能用分类卡片比例替代 16:9。
+- 保留 `480 × 260` 比例、原来的各类别浅彩底色和 22 px 点阵纹理。
+- 主体采用白色实体几何图形、少量柔和灰色层次、黑色符号细节与自然轻阴影。
+- 不使用粗黑描边包围全部白色实体，不加 C 品牌角标、居中外层白卡或新网格背景。
+- 图案表达具体类别，类别名继续由页面中英文文本显示，不嵌入图片。
+- 保留原始 17 张素材；新增类别沿用同一背景、点阵及柔和阴影结构。
+- 所有资源为原创静态 SVG，无外部字体、图片、脚本或第三方品牌标志。
+- 新增类别时补充同名 `site/public/categories/<slug>.svg`，执行资源完整性、桌面和手机加载回归。
+
+主封面将来按原文生成时，另行核对 `Compare` / `软件对比` 的字形、C 内两根对比柱以及 16:9 比例，不要把这个设计替换到分类封面上。

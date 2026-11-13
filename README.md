@@ -41,3 +41,5 @@ npm run dev
 ## 许可与贡献
 
 本项目采用 [Apache License 2.0](LICENSE)。欢迎贡献：修正展示问题、补充翻译、改进无障碍和样式都可以。新增或修改产品数据时，请附上可核验的来源，并避免写入未证实的价格或功能。
+
+新增分类请遵循 [贡献流程](CONTRIBUTING.md) 和 [分类封面制作与验收](docs/design/category-cover-workflow.md)，封面、配色/场景说明与视觉验收缺一不可。
