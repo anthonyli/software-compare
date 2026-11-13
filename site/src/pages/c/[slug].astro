@@ -1,5 +1,6 @@
 ---
 // SPDX-License-Identifier: Apache-2.0
+import AiComparisonGuide from '../../components/AiComparisonGuide.astro';
 import Layout from "../../layouts/Layout.astro";
 import ExtLinks from "../../components/ExtLinks.astro";
 import FilterMenu from "../../components/FilterMenu.astro";
@@ -77,6 +78,7 @@ const sortedProducts = [...category.products].sort((a, b) => {
         />
       </p>
       <GitHubFreshness/>
+      <AiComparisonGuide slug={category.slug}/>
     </header>
   </div>
 

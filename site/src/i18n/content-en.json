@@ -1294,5 +1294,10 @@
   "免费地图下载及高级功能限制需查对应平台；云备份和跨平台购买涉及账号，使用云服务会改变数据去向。": "Check platform-specific limits on free map downloads and advanced features. Cloud backup and cross-platform purchases involve an account; cloud services change where data is sent.",
   "可配置的离线地图与导航工具，支持徒步、骑行和 GPS 轨迹；功能与插件需按平台核对。": "A configurable offline map and navigation tool for walking, cycling and GPS tracks; check feature and plugin availability for each platform.",
   "徒步登山与户外导航": "Hiking & outdoor navigation",
-  "比较地图与路线工具，不提供路线安全保证。离线地图需提前下载；GPS、道路和山径数据可能有误。分享轨迹前检查起终点及位置隐私；未进行实地测试。": "This compares mapping tools, not route safety. Download offline maps beforehand; GPS, road and trail data may be inaccurate. Check start/end points and location privacy before sharing tracks. No field testing was performed."
+  "比较地图与路线工具，不提供路线安全保证。离线地图需提前下载；GPS、道路和山径数据可能有误。分享轨迹前检查起终点及位置隐私；未进行实地测试。": "This compares mapping tools, not route safety. Download offline maps beforehand; GPS, road and trail data may be inaccurate. Check start/end points and location privacy before sharing tracks. No field testing was performed.",
+  "AI 聊天助手": "AI chat assistants",
+  "按产品形态与场景比较，不是模型质量排名。云端助手通常即开即用；本地聊天客户端与模型运行器需先配置模型。离线仅限本地模型与本地操作，云模型、搜索与插件会改变数据去向。代码许可不覆盖模型权重；订阅不等于 API 额度。硬件需求取决于模型、量化与上下文，不能保证 M4 16GB 运行所有模型。仅核实官方资料，未安装实测。": "Compare product types and use cases, not model quality. Hosted assistants are usually ready to use; local chat clients and model runtimes require model setup. Offline use only covers local models and operations: cloud models, search and plugins change where data goes. Code licenses do not cover model weights; subscriptions do not imply API credits. Hardware needs depend on the model, quantization and context; not every model fits an M4 with 16GB. Official documentation reviewed; no hands-on testing.",
+  "迁移保留原始资料；此项尚未核实，不视为不支持。": "Original data retained during migration; this capability is unverified, not unsupported.",
+  "支持聊天；需先选择和配置本地或云模型。": "Supports chat after selecting and configuring a local or cloud model.",
+  "AI 编程工具": "AI coding tools"
 }
