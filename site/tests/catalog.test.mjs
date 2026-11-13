@@ -46,3 +46,14 @@ test('requested screen recorders have complete feature rows', () => {
   assert.deepEqual(Object.keys(items[0].features).sort(), c.feature_keys.map(f => f.key).sort());
  }
 });
+test('every category has a self-contained, correctly sized SVG cover', () => {
+ for (const c of categories) {
+  const id = slug(c);
+  const path = new URL(`site/public/categories/${id}.svg`, root);
+  assert(fs.existsSync(path), `Missing category cover: ${id}`);
+  const svg = fs.readFileSync(path, 'utf8');
+  assert.match(svg, /viewBox="0 0 480 260"/, id);
+  assert.match(svg, /<\/svg>/, id);
+  assert.doesNotMatch(svg, /<script\b|<foreignObject\b|(?:href|src)\s*=\s*["'](?:https?:|\/\/)/i, id);
+ }
+});

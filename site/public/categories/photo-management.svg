@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Original Compare illustration. No external fonts, images or third-party marks. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" fill="none" style="--accent:#EBA476" aria-hidden="true">
+<defs><pattern id="dots" width="22" height="22"><circle cx="2" cy="2" r="1" fill="#17201C" opacity=".13"/></pattern></defs>
+<rect width="480" height="260" fill="#FFF0E7"/>
+<circle cx="420" cy="30" r="110" fill="white" opacity=".35"/>
+<circle cx="30" cy="260" r="110" fill="white" opacity=".25"/>
+<rect width="480" height="260" fill="url(#dots)"/>
+<g stroke="#17201C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><rect x="79" y="66" width="202" height="137" rx="13" fill="var(--accent)" transform="rotate(-8 180 135)"/><rect x="172" y="58" width="226" height="154" rx="13" fill="white"/><circle cx="335" cy="100" r="19" fill="var(--accent)"/><path d="M191 190l55-62 40 43 27-25 65 44Z" fill="var(--accent)"/></g>
+</svg>
