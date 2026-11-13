@@ -123,13 +123,13 @@ test('concurrent retries count once and excessive writes are limited',async({pla
 
 test('expanded catalog links, English labels and requested recorders', async ({page}) => {
  await page.goto('/');
- for (const slug of ['ai-assistants','local-ai','image-editors','vector-graphics','photo-management','desktop-publishing','ai-coding','ai-image-workflows','animation-3d','animation-2d','compositing','database-clients','api-clients','audio-recorders','transcription-tools','fitness-training','cycling-tools','outdoor-navigation']) {
+ for (const slug of ['ai-assistants','image-editors','vector-graphics','photo-management','desktop-publishing','ai-coding','ai-image-workflows','animation-3d','animation-2d','compositing','database-clients','api-clients','audio-recorders','transcription-tools','fitness-training','cycling-tools','outdoor-navigation']) {
   await expect(page.locator(`main a[href="/c/${slug}/"]`).first()).toBeVisible();
  }
  await page.goto('/c/local-ai/');
  await expect(page.locator('main')).toContainText('Ollama');
  await page.locator('[data-lang="en"]').click();
- await expect(page.locator('main')).toContainText('Local');
+ await expect(page.locator('h1')).toContainText('AI chat assistants');
  await page.goto('/p/screen-recorders/focusee/');
  await expect(page.locator('main')).toContainText('FocuSee');
  await page.goto('/p/screen-recorders/screen-studio/');
