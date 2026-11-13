@@ -114,6 +114,44 @@
         "https://penpot.app/pricing",
         "https://github.com/penpot/penpot"
       ]
+    },
+    {
+      "id": "adobe-illustrator",
+      "name": "Adobe Illustrator",
+      "official_url": "https://www.adobe.com/products/illustrator.html",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "订阅制",
+      "price_summary": "付费订阅；价格、试用和生成额度依地区及方案，以下单页面为准。",
+      "prices": [],
+      "free_tier_limits": "AI 原生文件迁移需验证；共享审阅不等于多人同时编辑，桌面版不提供自托管。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "商业矢量绘图与插画工具；Inkscape 偏 SVG，Penpot 偏界面原型，不能直接视为同类等价。",
+      "features": {
+        "svg": {
+          "value": "yes"
+        },
+        "prototyping": {
+          "value": "no"
+        },
+        "collaboration": {
+          "value": "partial"
+        },
+        "self_host": {
+          "value": "no"
+        }
+      },
+      "sources": [
+        "https://www.adobe.com/products/illustrator.html",
+        "https://helpx.adobe.com/illustrator/using/svg.html"
+      ]
     }
   ]
 }

@@ -160,6 +160,84 @@
         "https://www.digikam.org/about/",
         "https://apps.kde.org/digikam/"
       ]
+    },
+    {
+      "id": "art",
+      "name": "ART",
+      "official_url": "https://artraweditor.github.io/",
+      "github_url": "https://github.com/artraweditor/ART",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "完全免费",
+      "price_summary": "官网版本免费；第三方素材和服务另计。",
+      "prices": [],
+      "free_tier_limits": "独立处理配置使用 .arp；XMP 元数据互通不代表能重现 Lightroom 调整。平台包和相机支持需核对。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "RAW 开发工具，含局部蒙版和处理配置；补充 Lightroom 的照片显影用途，而非云图库。",
+      "features": {
+        "raw": {
+          "value": "yes"
+        },
+        "catalog": {
+          "value": "partial"
+        },
+        "non_destructive": {
+          "value": "yes"
+        },
+        "tethering": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://artraweditor.github.io/",
+        "https://github.com/artraweditor/ART",
+        "https://artraweditor.github.io/Downloads.html"
+      ]
+    },
+    {
+      "id": "adobe-lightroom-classic",
+      "name": "Adobe Lightroom Classic",
+      "official_url": "https://www.adobe.com/products/photoshop-lightroom-classic.html",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "订阅制",
+      "price_summary": "付费订阅；价格、试用和生成额度依地区及方案，以下单页面为准。",
+      "prices": [],
+      "free_tier_limits": "订阅软件；联机拍摄依赖相机型号，第三方 RAW 工具不会自动重现其调整和预设。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "本地目录、RAW 显影和摄影批量工作流；与云端 Lightroom 区分。",
+      "features": {
+        "raw": {
+          "value": "yes"
+        },
+        "catalog": {
+          "value": "yes"
+        },
+        "non_destructive": {
+          "value": "yes"
+        },
+        "tethering": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://www.adobe.com/products/photoshop-lightroom-classic.html",
+        "https://helpx.adobe.com/lightroom-classic/help/import-photos-tethered-camera.html"
+      ]
     }
   ]
 }

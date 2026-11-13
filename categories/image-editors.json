@@ -116,6 +116,160 @@
         "https://krita.org/en/about/license/",
         "https://krita.org/en/download/"
       ]
+    },
+    {
+      "id": "pinta",
+      "name": "Pinta",
+      "official_url": "https://www.pinta-project.com/",
+      "github_url": "https://github.com/PintaProject/Pinta",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "完全免费",
+      "price_summary": "官网版本免费；第三方素材和服务另计。",
+      "prices": [],
+      "free_tier_limits": "使用 .NET/GTK 技术栈；复杂 PSD 和专业印前兼容性未验证。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "适合轻量修图、图层和绘画；不是完整 Photoshop 工作流替代。",
+      "features": {
+        "layers": {
+          "value": "yes"
+        },
+        "painting": {
+          "value": "yes"
+        },
+        "animation": {
+          "value": "unknown"
+        },
+        "plugins": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://www.pinta-project.com/",
+        "https://www.pinta-project.com/user-guide/",
+        "https://github.com/PintaProject/Pinta"
+      ]
+    },
+    {
+      "id": "photodemon",
+      "name": "PhotoDemon",
+      "official_url": "https://photodemon.org/",
+      "github_url": "https://github.com/tannerhelland/PhotoDemon",
+      "platforms": [
+        "Windows"
+      ],
+      "open_source": true,
+      "license": "BSD-2-Clause",
+      "pricing_model": "完全免费",
+      "price_summary": "官网版本免费；第三方素材和服务另计。",
+      "prices": [],
+      "free_tier_limits": "仅原生 Windows；可导入 PSD 不代表所有图层效果、智能对象或往返保存无损。第三方库另有许可。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "便携式照片编辑器，含图层、笔刷、宏与批处理；适合 Windows 批量修图。",
+      "features": {
+        "layers": {
+          "value": "yes"
+        },
+        "painting": {
+          "value": "yes"
+        },
+        "animation": {
+          "value": "unknown"
+        },
+        "plugins": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://photodemon.org/",
+        "https://photodemon.org/license/"
+      ]
+    },
+    {
+      "id": "pixelitor",
+      "name": "Pixelitor",
+      "official_url": "https://pixelitor.sourceforge.io/",
+      "github_url": "https://github.com/lbalazscs/Pixelitor",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "完全免费",
+      "price_summary": "官网版本免费；第三方素材和服务另计。",
+      "prices": [],
+      "free_tier_limits": "运行包和源码的 Java 要求随版本变化；实验性非破坏编辑不等于完整 PSD 兼容。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "Java 桌面图像编辑器，提供图层、蒙版、文字层和滤镜；适合本地修图实验。",
+      "features": {
+        "layers": {
+          "value": "yes"
+        },
+        "painting": {
+          "value": "unknown"
+        },
+        "animation": {
+          "value": "unknown"
+        },
+        "plugins": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://pixelitor.sourceforge.io/",
+        "https://github.com/lbalazscs/Pixelitor"
+      ]
+    },
+    {
+      "id": "adobe-photoshop",
+      "name": "Adobe Photoshop",
+      "official_url": "https://www.adobe.com/products/photoshop.html",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "订阅制",
+      "price_summary": "付费订阅；价格、试用和生成额度依地区及方案，以下单页面为准。",
+      "prices": [],
+      "free_tier_limits": "桌面版需订阅和账户；云端及生成式功能另有联网、额度与条款限制。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "图层合成、修图与绘画的商业对照项；与 GIMP、Krita 等按具体任务比较。",
+      "features": {
+        "layers": {
+          "value": "yes"
+        },
+        "painting": {
+          "value": "yes"
+        },
+        "animation": {
+          "value": "partial"
+        },
+        "plugins": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://www.adobe.com/products/photoshop.html",
+        "https://helpx.adobe.com/photoshop/using/creating-frame-animations.html"
+      ]
     }
   ]
 }

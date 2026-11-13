@@ -68,6 +68,44 @@
         "https://natrongithub.github.io/",
         "https://github.com/NatronGitHub/Natron"
       ]
+    },
+    {
+      "id": "adobe-after-effects",
+      "name": "Adobe After Effects",
+      "official_url": "https://www.adobe.com/products/aftereffects.html",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "订阅制",
+      "price_summary": "付费订阅；价格、试用和生成额度依地区及方案，以下单页面为准。",
+      "prices": [],
+      "free_tier_limits": "AEP、表达式、模板和第三方插件不应假设可迁移到 Natron；不是非线性剪辑软件的直接替代。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "以图层和时间轴为主的动效及视觉合成工具；Natron 的节点合成仅覆盖部分任务。",
+      "features": {
+        "node_compositing": {
+          "value": "no"
+        },
+        "chroma_key": {
+          "value": "yes"
+        },
+        "tracking_2d": {
+          "value": "yes"
+        },
+        "openfx": {
+          "value": "no"
+        }
+      },
+      "sources": [
+        "https://www.adobe.com/products/aftereffects.html",
+        "https://helpx.adobe.com/after-effects/using/tracking-stabilizing-motion-cs5.html"
+      ]
     }
   ]
 }
