@@ -1,0 +1,165 @@
+{
+  "category_slug": "photo-management",
+  "category_name_zh": "摄影后期与照片管理",
+  "collected_at": "2026-11-13",
+  "collected_at_timezone": "Asia/Shanghai (UTC+8)",
+  "features": [
+    {
+      "key": "raw",
+      "label": "RAW 显影"
+    },
+    {
+      "key": "catalog",
+      "label": "照片目录与管理"
+    },
+    {
+      "key": "non_destructive",
+      "label": "非破坏编辑"
+    },
+    {
+      "key": "tethering",
+      "label": "联机拍摄"
+    }
+  ],
+  "products": [
+    {
+      "id": "darktable",
+      "name": "darktable",
+      "official_url": "https://www.darktable.org/",
+      "github_url": "https://github.com/darktable-org/darktable",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0-or-later",
+      "pricing_model": "完全免费",
+      "price_summary": "官网提供免费开源版本。",
+      "prices": [
+        {
+          "plan": "软件本身",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无试用期限；字体、素材和第三方插件的授权需分别确认。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "把照片目录与非破坏 RAW 显影结合，适合评估 Lightroom 工作流替代；相机支持和目录迁移需单独验证。",
+      "features": {
+        "raw": {
+          "value": "yes"
+        },
+        "catalog": {
+          "value": "yes"
+        },
+        "non_destructive": {
+          "value": "yes"
+        },
+        "tethering": {
+          "value": "yes",
+          "note": "具体相机兼容性以项目支持列表为准。"
+        }
+      },
+      "sources": [
+        "https://www.darktable.org/about/",
+        "https://www.darktable.org/install/"
+      ]
+    },
+    {
+      "id": "rawtherapee",
+      "name": "RawTherapee",
+      "official_url": "https://www.rawtherapee.com/",
+      "github_url": "https://github.com/Beep6581/RawTherapee",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "完全免费",
+      "price_summary": "官网提供免费开源版本。",
+      "prices": [
+        {
+          "plan": "软件本身",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无试用期限；字体、素材和第三方插件的授权需分别确认。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "专注 RAW 显影、颜色和细节调整；可替代部分 Camera Raw 工作流，不将其当作完整 Lightroom 云目录。",
+      "features": {
+        "raw": {
+          "value": "yes"
+        },
+        "catalog": {
+          "value": "unknown",
+          "note": "本轮未核实完整目录管理能力。"
+        },
+        "non_destructive": {
+          "value": "yes"
+        },
+        "tethering": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://www.rawtherapee.com/"
+      ]
+    },
+    {
+      "id": "digikam",
+      "name": "digiKam",
+      "official_url": "https://www.digikam.org/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "未知（开源已确认，具体许可证本轮未核实）",
+      "pricing_model": "完全免费",
+      "price_summary": "官网提供免费开源版本。",
+      "prices": [
+        {
+          "plan": "软件本身",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "开源软件；调用外部分享服务或插件时需另查服务条款和数据去向。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "以相册、标签、评级与检索整理照片和视频，并含 RAW 导入和编辑工具，适合 Bridge 类素材管理需求。",
+      "features": {
+        "raw": {
+          "value": "yes"
+        },
+        "catalog": {
+          "value": "yes"
+        },
+        "non_destructive": {
+          "value": "unknown"
+        },
+        "tethering": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://www.digikam.org/about/",
+        "https://apps.kde.org/digikam/"
+      ]
+    }
+  ]
+}

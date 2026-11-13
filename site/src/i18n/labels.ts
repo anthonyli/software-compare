@@ -2,6 +2,12 @@
 
 /** Category display names, keyed by slug. */
 export const categoryNames: Record<string, { zh: string; en: string }> = {
+  "ai-assistants": { zh: "AI 助手", en: "AI assistants" },
+  "local-ai": { zh: "本地 AI", en: "Local AI" },
+  "image-editors": { zh: "图像编辑与绘画", en: "Image editing & painting" },
+  "vector-graphics": { zh: "矢量与界面设计", en: "Vector & interface design" },
+  "photo-management": { zh: "摄影与 RAW 处理", en: "Photography & RAW processing" },
+  "desktop-publishing": { zh: "桌面排版", en: "Desktop publishing" },
   "note-taking": { zh: "笔记软件", en: "Note-taking" },
   "screenshot-tools": { zh: "截图工具", en: "Screenshot tools" },
   "pdf-tools": { zh: "PDF 工具（阅读/编辑）", en: "PDF tools (read/edit)" },
@@ -22,6 +28,8 @@ export const categoryNames: Record<string, { zh: string; en: string }> = {
 };
 
 export const groupNames: Record<string, { zh: string; en: string }> = {
+  ai: { zh: "AI 工具", en: "AI tools" },
+  creative: { zh: "设计与摄影", en: "Design & photography" },
   office: { zh: "办公效率", en: "Productivity" },
   media: { zh: "影音媒体", en: "Media" },
   files: { zh: "文件工具", en: "Files" },

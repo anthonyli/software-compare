@@ -1,0 +1,166 @@
+{
+  "category_slug": "ai-assistants",
+  "category_name_zh": "AI 对话与研究助手",
+  "collected_at": "2026-11-13",
+  "timezone": "Asia/Shanghai",
+  "notes": "此类比较云端应用而非模型性能。提示词与上传内容需交由服务商处理，隐私和训练设置请查各服务条款；受支持地区、年龄、账户和套餐限制。仅核实官网资料，未进行输出质量或性能测试。",
+  "features": [
+    {
+      "key": "chat",
+      "label": "文本对话"
+    },
+    {
+      "key": "web_research",
+      "label": "联网搜索/研究"
+    },
+    {
+      "key": "image_generation",
+      "label": "图像生成"
+    },
+    {
+      "key": "local_inference",
+      "label": "本地离线推理"
+    },
+    {
+      "key": "free_plan",
+      "label": "免费档"
+    }
+  ],
+  "products": [
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT",
+      "official_url": "https://chatgpt.com/pricing/",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "专有服务条款（非开源）",
+      "pricing_model": "免费增值",
+      "price_summary": "提供 Free 与付费订阅。当前公开页面未返回可核实的本地化金额，具体价格以账户所在地区结算页为准。",
+      "prices": [],
+      "free_tier_limits": "免费档上传、图像、语音和深度研究有使用限制；不将订阅视为无限使用或 API 额度。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "面向写作、资料整理和日常问答的云端 AI 助手；不是可离线运行的本地模型。",
+      "features": {
+        "chat": {
+          "value": "yes",
+          "note": "支持文本对话"
+        },
+        "web_research": {
+          "value": "partial",
+          "note": "免费档深度研究有额度限制"
+        },
+        "image_generation": {
+          "value": "partial",
+          "note": "免费档图像生成有限额"
+        },
+        "local_inference": {
+          "value": "no",
+          "note": "本条收录的是托管服务，不是本地部署模型"
+        },
+        "free_plan": {
+          "value": "yes",
+          "note": "提供 Free 档"
+        }
+      },
+      "sources": [
+        "https://chatgpt.com/pricing/"
+      ]
+    },
+    {
+      "id": "claude",
+      "name": "Claude",
+      "official_url": "https://claude.com/pricing",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "专有服务条款（非开源）",
+      "pricing_model": "免费增值",
+      "price_summary": "提供 Free、Pro 等订阅；不同档位的额度和附加服务不同，价格、税费以官网结算为准。",
+      "prices": [],
+      "free_tier_limits": "Free 有周期性额度限制；对话长度、文件大小和模型影响额度消耗。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "面向写作、代码及文件工作的云端助手，支持 Artifacts；需要核对所选套餐的使用限额。",
+      "features": {
+        "chat": {
+          "value": "yes",
+          "note": "官网列出网页对话"
+        },
+        "web_research": {
+          "value": "yes",
+          "note": "Free 包含网页搜索；深度研究能力与额度需按套餐核对"
+        },
+        "image_generation": {
+          "value": "unknown",
+          "note": "本次未核实通用图像生成能力"
+        },
+        "local_inference": {
+          "value": "no",
+          "note": "本条收录的是 Claude 托管服务"
+        },
+        "free_plan": {
+          "value": "yes",
+          "note": "提供 Free 档"
+        }
+      },
+      "sources": [
+        "https://claude.com/pricing"
+      ]
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini",
+      "official_url": "https://gemini.google/subscriptions/",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "专有服务条款（非开源）",
+      "pricing_model": "免费增值",
+      "price_summary": "提供免费档及 Google AI 订阅；官网按地区显示套餐，具体价格以所在地页面和结算为准。",
+      "prices": [],
+      "free_tier_limits": "免费档需要 Google 账户；模型、创作和研究额度按套餐变化，部分服务有地区限制。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "Google 的云端 AI 助手，适合问答、研究与图像创作；功能可用性依地区和套餐而变。",
+      "features": {
+        "chat": {
+          "value": "yes",
+          "note": "Gemini app 提供 AI 助手"
+        },
+        "web_research": {
+          "value": "yes",
+          "note": "免费档列出 Deep Research；仍受用量限制"
+        },
+        "image_generation": {
+          "value": "yes",
+          "note": "免费档列出图像生成与编辑"
+        },
+        "local_inference": {
+          "value": "no",
+          "note": "本条是 Gemini 云端应用，不是可下载模型"
+        },
+        "free_plan": {
+          "value": "yes",
+          "note": "提供使用 Google 账户的免费档"
+        }
+      },
+      "sources": [
+        "https://gemini.google/subscriptions/"
+      ]
+    }
+  ]
+}

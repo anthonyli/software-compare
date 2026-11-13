@@ -1,0 +1,119 @@
+{
+  "category_slug": "vector-graphics",
+  "category_name_zh": "矢量与界面设计",
+  "collected_at": "2026-11-13",
+  "collected_at_timezone": "Asia/Shanghai (UTC+8)",
+  "features": [
+    {
+      "key": "svg",
+      "label": "SVG 矢量绘制"
+    },
+    {
+      "key": "prototyping",
+      "label": "交互原型"
+    },
+    {
+      "key": "collaboration",
+      "label": "团队协作"
+    },
+    {
+      "key": "self_host",
+      "label": "自托管服务"
+    }
+  ],
+  "products": [
+    {
+      "id": "inkscape",
+      "name": "Inkscape",
+      "official_url": "https://inkscape.org/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0-or-later（完整二进制）",
+      "pricing_model": "完全免费",
+      "price_summary": "官网提供免费开源版本。",
+      "prices": [
+        {
+          "plan": "软件本身",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无试用期限；字体、素材和第三方插件的授权需分别确认。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "适合图标、标志、插画和图表的 Illustrator 替代选项；原生 SVG，不能据此推断 AI 文件完全兼容。",
+      "features": {
+        "svg": {
+          "value": "yes"
+        },
+        "prototyping": {
+          "value": "unknown"
+        },
+        "collaboration": {
+          "value": "unknown"
+        },
+        "self_host": {
+          "value": "na",
+          "note": "桌面软件，不是协作服务器。"
+        }
+      },
+      "sources": [
+        "https://github.com/inkscape/inkscape",
+        "https://gitlab.com/inkscape/inkscape/-/raw/master/COPYING"
+      ]
+    },
+    {
+      "id": "penpot",
+      "name": "Penpot",
+      "official_url": "https://penpot.app/",
+      "github_url": "https://github.com/penpot/penpot",
+      "platforms": [
+        "Web"
+      ],
+      "open_source": true,
+      "license": "MPL-2.0",
+      "pricing_model": "免费增值",
+      "price_summary": "开源代码可自托管；云端有免费 Professional 与付费方案，以官网为准。",
+      "prices": [
+        {
+          "plan": "Professional (Cloud)",
+          "price": "$0",
+          "currency": "USD",
+          "period": "每用户/月"
+        }
+      ],
+      "free_tier_limits": "云端免费档受存储容量等条件约束；更多空间、历史与组织治理有付费方案。自托管不等于零运行成本。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "偏重 UI 界面、矢量设计与交互原型，可考虑替代 XD/Figma 工作流；不是专业印前 Illustrator 的等价替代。",
+      "features": {
+        "svg": {
+          "value": "yes"
+        },
+        "prototyping": {
+          "value": "yes"
+        },
+        "collaboration": {
+          "value": "yes"
+        },
+        "self_host": {
+          "value": "yes",
+          "note": "自托管仍需服务器与运维。"
+        }
+      },
+      "sources": [
+        "https://penpot.app/features",
+        "https://penpot.app/pricing",
+        "https://github.com/penpot/penpot"
+      ]
+    }
+  ]
+}

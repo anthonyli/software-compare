@@ -120,3 +120,18 @@ test('concurrent retries count once and excessive writes are limited',async({pla
  expect((await (await api.get('/api/votes?ids=sunshine')).json()).votes[0].count).toBe(initial+1);
  await api.dispose();
 });
+
+test('expanded catalog links, English labels and requested recorders', async ({page}) => {
+ await page.goto('/');
+ for (const slug of ['ai-assistants','local-ai','image-editors','vector-graphics','photo-management','desktop-publishing']) {
+  await expect(page.locator(`main a[href="/c/${slug}/"]`).first()).toBeVisible();
+ }
+ await page.goto('/c/local-ai/');
+ await expect(page.locator('main')).toContainText('Ollama');
+ await page.locator('[data-lang="en"]').click();
+ await expect(page.locator('main')).toContainText('Local');
+ await page.goto('/p/screen-recorders/focusee/');
+ await expect(page.locator('main')).toContainText('FocuSee');
+ await page.goto('/p/screen-recorders/screen-studio/');
+ await expect(page.locator('main')).toContainText('Screen Studio');
+});
