@@ -30,7 +30,7 @@ jobs:
       - run: npm ci
         working-directory: site
       - name: Sync GitHub only (keep official-site data unchanged)
-        if: github.event_name != 'push'
+        # Also refresh newly added repositories before publishing main pushes.
         run: node scripts/sync-github.mjs
         env:
           GITHUB_TOKEN: ${{ github.token }}
