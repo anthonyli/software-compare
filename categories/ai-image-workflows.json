@@ -1,10 +1,14 @@
 {
   "category_slug": "ai-image-workflows",
   "category_name_zh": "AI 图像生成与工作流",
-  "collected_at": "2026-11-13",
+  "collected_at": "2026-11-14",
   "timezone": "Asia/Shanghai",
   "notes": "工具开源不代表所有模型可免费商用。需分别核对权重、节点、素材及 API 许可，云端节点会改变数据去向。M4 16GB 不保证所有模型或工作流可用；仅核实文档，未下载模型、运行生成或制作视频。",
   "features": [
+    {
+      "key": "text_to_image",
+      "label": "文字生成图像"
+    },
     {
       "key": "local_generation",
       "label": "本地生成"
@@ -68,6 +72,10 @@
         "cloud_api": {
           "value": "yes",
           "note": "可选付费 API 节点；不等于全部数据留在本机"
+        },
+        "text_to_image": {
+          "value": "yes",
+          "note": "根据提示词生成图像；效果与额度依模型或套餐"
         }
       },
       "sources": [
@@ -116,11 +124,212 @@
         "cloud_api": {
           "value": "yes",
           "note": "官方模型列表包含 API-only 模型"
+        },
+        "text_to_image": {
+          "value": "yes",
+          "note": "根据提示词生成图像；效果与额度依模型或套餐"
         }
       },
       "sources": [
         "https://github.com/invoke-ai/InvokeAI",
         "https://invoke.ai/start-here/system-requirements/"
+      ]
+    },
+    {
+      "id": "midjourney",
+      "name": "Midjourney",
+      "official_url": "https://www.midjourney.com/",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "专有服务条款（非开源）；输出权利另见服务条款",
+      "pricing_model": "订阅 / 用量计费",
+      "price_summary": "Basic 月付 10 美元；Standard 30、Pro 60、Mega 120 美元/月，年付条件另见官网。",
+      "prices": [],
+      "free_tier_limits": "输入发送云端。隐私 Stealth 仅 Pro/Mega；公司年营收超过100万美元需 Pro/Mega 才符合所列商业使用条件。额度按 GPU 时间与模式区分，不能把 Relax 当作所有任务无限。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "云端视觉创作工具；适合概念图与插画，不是本地节点工作流。",
+      "features": {
+        "local_generation": {
+          "value": "no",
+          "note": "此条目是云端服务，不是本地模型运行器"
+        },
+        "node_workflows": {
+          "value": "unknown",
+          "note": "未核实节点编排功能"
+        },
+        "model_management": {
+          "value": "unknown",
+          "note": "未核实用户模型管理能力"
+        },
+        "cloud_api": {
+          "value": "unknown",
+          "note": "API 产品与网页订阅是否共用额度未核实"
+        },
+        "inpainting": {
+          "value": "unknown",
+          "note": "本轮仅核实套餐资料，编辑功能范围待核实"
+        },
+        "text_to_image": {
+          "value": "yes",
+          "note": "根据提示词生成图像；效果与额度依模型或套餐"
+        }
+      },
+      "sources": [
+        "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans"
+      ]
+    },
+    {
+      "id": "adobe-firefly",
+      "name": "Adobe Firefly",
+      "official_url": "https://www.adobe.com/products/firefly.html",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "专有服务条款（非开源）；输出权利另见服务条款",
+      "pricing_model": "订阅 / 用量计费",
+      "price_summary": "订阅与生成额度依套餐和模型；具体地区金额以官网为准。",
+      "prices": [],
+      "free_tier_limits": "素材发送云端；Adobe 模型与合作模型条款和额度可能不同。勿把应用订阅理解为任意模型、素材与输出均可无限商用。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "云端生成与图片编辑，适合已有 Adobe 创作流程的用户。",
+      "features": {
+        "local_generation": {
+          "value": "no",
+          "note": "此条目是云端服务，不是本地模型运行器"
+        },
+        "node_workflows": {
+          "value": "partial",
+          "note": "官方列出 Firefly Graph；访问条件与套餐另核实"
+        },
+        "model_management": {
+          "value": "unknown",
+          "note": "未核实用户模型管理能力"
+        },
+        "cloud_api": {
+          "value": "unknown",
+          "note": "API 产品与网页订阅是否共用额度未核实"
+        },
+        "inpainting": {
+          "value": "yes",
+          "note": "官方列出对象移除、图片编辑与扩图"
+        },
+        "text_to_image": {
+          "value": "yes",
+          "note": "根据提示词生成图像；效果与额度依模型或套餐"
+        }
+      },
+      "sources": [
+        "https://www.adobe.com/products/firefly.html",
+        "https://www.adobe.com/products/firefly/plans.html"
+      ]
+    },
+    {
+      "id": "recraft",
+      "name": "Recraft",
+      "official_url": "https://www.recraft.ai/",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "专有服务条款（非开源）；输出权利另见服务条款",
+      "pricing_model": "订阅 / 用量计费",
+      "price_summary": "免费与付费套餐；订阅额度会到期，API Units 另计。具体金额以官网为准。",
+      "prices": [],
+      "free_tier_limits": "免费档作品公开、归 Recraft 所有且不授予商用许可；付费期间生成作品私密并授予商业权利。上传和提示词由云端处理。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "云端图像与矢量生成、编辑工具，适合品牌视觉和程序化图像管线。",
+      "features": {
+        "local_generation": {
+          "value": "no",
+          "note": "此条目是云端服务，不是本地模型运行器"
+        },
+        "node_workflows": {
+          "value": "unknown",
+          "note": "未核实节点编排功能"
+        },
+        "model_management": {
+          "value": "unknown",
+          "note": "未核实用户模型管理能力"
+        },
+        "cloud_api": {
+          "value": "yes",
+          "note": "图像/矢量生成与编辑 API；按 API Units 计费"
+        },
+        "inpainting": {
+          "value": "yes",
+          "note": "官方 API 支持局部重绘与扩图"
+        },
+        "text_to_image": {
+          "value": "yes",
+          "note": "根据提示词生成图像；效果与额度依模型或套餐"
+        }
+      },
+      "sources": [
+        "https://www.recraft.ai/pricing"
+      ]
+    },
+    {
+      "id": "jimeng",
+      "name": "即梦 AI",
+      "official_url": "https://jimeng.jianying.com/",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "专有服务条款（非开源）；输出权利另见服务条款",
+      "pricing_model": "订阅 / 用量计费",
+      "price_summary": "会员与积分制；首期促销价不等于续费价，生成消耗与会员权益以官网为准。",
+      "prices": [],
+      "free_tier_limits": "提示词和上传素材由云端处理。商用输出、素材授权及公开分享条件本轮未完整核实，勿上传无权使用或敏感内容。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "中文提示词驱动的云端生图与智能画布；适合图像改造和多元素拼合。",
+      "features": {
+        "local_generation": {
+          "value": "no",
+          "note": "此条目是云端服务，不是本地模型运行器"
+        },
+        "node_workflows": {
+          "value": "unknown",
+          "note": "未核实节点编排功能"
+        },
+        "model_management": {
+          "value": "unknown",
+          "note": "未核实用户模型管理能力"
+        },
+        "cloud_api": {
+          "value": "unknown",
+          "note": "API 产品与网页订阅是否共用额度未核实"
+        },
+        "inpainting": {
+          "value": "yes",
+          "note": "智能画布列出局部重绘、扩图、消除和抠图"
+        },
+        "text_to_image": {
+          "value": "yes",
+          "note": "根据提示词生成图像；效果与额度依模型或套餐"
+        }
+      },
+      "sources": [
+        "https://jimeng.jianying.com/"
       ]
     }
   ]

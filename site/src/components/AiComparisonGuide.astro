@@ -1,29 +1,6 @@
 ---
 import T from './T.astro';
 const { slug } = Astro.props;
-const guides = {
- 'ai-assistants': [
-  ['先选使用方式', 'Choose how to use it', 'ChatGPT、Claude、Gemini 是云端助手；LM Studio、Jan 是可选模型的聊天客户端；Ollama 偏向模型运行器与 API。不要把它们当作同一种模型排名。', 'ChatGPT, Claude and Gemini are hosted assistants; LM Studio and Jan are model-selectable chat clients; Ollama focuses on model runtime and API workflows. These are not interchangeable entries in a model ranking.'],
-  ['再看任务与数据', 'Then check tasks and data', '日常问答看上手成本；资料整理看文档问答与联网搜索的实际限制；私密资料看所选模型、插件与服务的数据去向，不仅看“开源”标签。', 'For everyday chat, consider setup effort. For research, check document and search limits. For private material, check where the selected model, plugins and services send data, not just the open-source label.'],
-  ['最后算完整成本', 'Check total cost', '分别看订阅、API 用量和本地硬件；本地免费不等于无限性能。模型许可与应用许可分开核对，未知项不是“不支持”。', 'Separate subscriptions, API usage and local hardware costs. Free local software does not mean unlimited performance. Check model and app licenses separately; unknown does not mean unsupported.'],
- ],
- 'ai-coding': [
-  ['先选工作入口', 'Choose your workflow', '区分 IDE 内补全/编辑、终端结对编程与可执行任务的 Agent；先看是否融入你现有编辑器和 Git 流程，再看功能数量。', 'Distinguish IDE completion/editing, terminal pair programming and task-executing agents. Check fit with your editor and Git workflow before counting features.'],
-  ['重点看操作边界', 'Inspect action boundaries', '跨文件修改、终端命令和测试执行应分别比较。能执行命令不代表一定能修复问题；批准策略、差异审查与回滚方式需要单独核实。', 'Compare multi-file edits, shell commands and test execution separately. Command access does not guarantee a fix. Verify approval policies, diff review and rollback options independently.'],
-  ['代码发给谁、费用算哪里', 'Where code goes and who bills you', '核对代码上下文会发送给哪些模型/API、本地模型是否可接入，以及订阅是否包含模型额度。M4 16GB 能运行客户端，不代表能顺畅运行任意本地编码模型。', 'Check which model/API receives code context, whether local models can be connected, and whether the subscription includes model usage. Running the client on an M4 with 16GB does not guarantee smooth operation of every local coding model.'],
- ],
- 'ai-image-workflows': [
-  ['按制作流程比较', 'Compare production workflows', '先区分节点编排与图形化创作入口，再看文生图、图生图、局部重绘等需求；能加载模型不代表所有工作流开箱即用。', 'Distinguish node-based composition from a graphical creation interface, then check text-to-image, image-to-image and inpainting needs. Loading models does not make every workflow ready to use.'],
-  ['把依赖算进去', 'Include dependencies', '核对模型权重、插件和自定义节点的许可与安装成本；应用开源不代表所有模型、素材与输出都可无条件商用。', 'Check model weights, plugins and custom nodes for licenses and setup costs. An open-source app does not grant unconditional commercial rights to every model, asset or output.'],
-  ['硬件与隐私分开验证', 'Verify hardware and privacy separately', '按模型、分辨率、批量大小核对内存/显存需求。是否本地处理取决于工作流和节点；尚未实测时不承诺 M4 16GB 的生成速度或兼容性。', 'Check memory/VRAM needs for the model, resolution and batch size. Local processing depends on the workflow and nodes. Without testing, do not assume M4 16GB speed or compatibility.'],
- ],
-};
-const rows = guides[slug as keyof typeof guides];
+const isAi = ['ai-assistants', 'ai-coding', 'ai-image-workflows'].includes(slug);
 ---
-{rows && <aside class="mt-5 rounded-xl border border-line bg-white p-4" data-ai-comparison-guide>
- <h2 class="font-bold"><T zh="怎么比较：先选场景，再看差异" en="How to compare: use cases before feature counts" /></h2>
- <div class="mt-3 grid gap-4 md:grid-cols-3">
- {rows.map(([zh,en,body,bodyEn]) => <section><h3 class="text-sm font-semibold"><T zh={zh} en={en}/></h3><p class="mt-1 text-sm text-muted"><T zh={body} en={bodyEn}/></p></section>)}
- </div>
- <p class="mt-3 text-xs text-muted"><T zh="下表是官网资料对照，不是实测评分；勾选数量、Star 和点赞都不等于质量。选择相同任务、模型版本和预算后，才适合做实际效果测试。" en="The table compares documented capabilities, not benchmark scores. Checkmarks, stars and votes are not quality ratings. For practical testing, keep the task, model version and budget comparable."/></p>
-</aside>}
+{isAi && <p class="mt-4 text-sm text-muted" data-ai-comparison-guide><T zh="直接比较下表中的工具能力与限制。未知不等于不支持；本表依据官方文档，不是实测排名。价格、额度、模型与数据政策请以链接中的当前官方说明为准。" en="Compare capabilities and limits in the table below. Unknown does not mean unsupported. This is a documentation comparison, not a benchmark. Check current official sources for pricing, quotas, models and data policies."/></p>}

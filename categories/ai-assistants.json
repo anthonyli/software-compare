@@ -1,7 +1,7 @@
 {
   "category_slug": "ai-assistants",
   "category_name_zh": "AI 聊天助手",
-  "collected_at": "2026-11-13",
+  "collected_at": "2026-11-14",
   "timezone": "Asia/Shanghai",
   "notes": "按产品形态与场景比较，不是模型质量排名。云端助手通常即开即用；本地聊天客户端与模型运行器需先配置模型。离线仅限本地模型与本地操作，云模型、搜索与插件会改变数据去向。代码许可不覆盖模型权重；订阅不等于 API 额度。硬件需求取决于模型、量化与上下文，不能保证 M4 16GB 运行所有模型。仅核实官方资料，未安装实测。",
   "features": [
@@ -14,16 +14,24 @@
       "label": "联网搜索/研究"
     },
     {
+      "key": "document_chat",
+      "label": "文档问答"
+    },
+    {
       "key": "image_generation",
       "label": "图像生成"
+    },
+    {
+      "key": "free_plan",
+      "label": "免费档"
     },
     {
       "key": "local_inference",
       "label": "本地离线推理"
     },
     {
-      "key": "free_plan",
-      "label": "免费档"
+      "key": "cloud_models",
+      "label": "可选云模型"
     },
     {
       "key": "local_api",
@@ -32,14 +40,6 @@
     {
       "key": "model_download",
       "label": "模型下载管理"
-    },
-    {
-      "key": "document_chat",
-      "label": "文档问答"
-    },
-    {
-      "key": "cloud_models",
-      "label": "可选云模型"
     }
   ],
   "products": [
@@ -420,6 +420,450 @@
       },
       "sources": [
         "https://github.com/janhq/jan"
+      ]
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "official_url": "https://chat.deepseek.com/",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "专有应用/服务条款（非开源）；模型权重许可另计",
+      "pricing_model": "免费聊天 / API 另计",
+      "price_summary": "官方下载页说明聊天可免费使用；API 平台按独立规则收费，不将聊天权益视作 API 额度。",
+      "prices": [],
+      "free_tier_limits": "会处理提示词、上传文件与聊天历史。免费服务不代表无限容量；文件大小、联网额度及图像生成本轮未充分核实。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "DeepSeek 官方云端聊天助手；与开放模型权重及独立 API 平台区分收录。",
+      "features": {
+        "chat": {
+          "value": "yes",
+          "note": "云端文本对话。"
+        },
+        "web_research": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        },
+        "image_generation": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        },
+        "local_inference": {
+          "value": "no",
+          "note": "本条为托管聊天服务，不是本地模型运行器。"
+        },
+        "free_plan": {
+          "value": "yes",
+          "note": "官方下载页提供免费聊天。"
+        },
+        "local_api": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        },
+        "model_download": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        },
+        "document_chat": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        },
+        "cloud_models": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        }
+      },
+      "sources": [
+        "https://www.deepseek.com/",
+        "https://www.deepseek.com/en/download/",
+        "https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html"
+      ]
+    },
+    {
+      "id": "doubao",
+      "name": "豆包",
+      "official_url": "https://www.doubao.com/",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "专有应用/服务条款（非开源）；模型权重许可另计",
+      "pricing_model": "以官方当前方案为准",
+      "price_summary": "本轮未取得完整公开价格与额度表；以产品内当前方案为准，不标为永久无限免费。",
+      "prices": [],
+      "free_tier_limits": "对话、上传资料由服务端处理，生成文件可存云盘；图片发布会改变可见范围。各端版本功能不同，操作电脑需另外授权。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "字节跳动云端助手，结合文本/语音对话、搜索、图片生成及文件处理。",
+      "features": {
+        "chat": {
+          "value": "yes",
+          "note": "云端文本对话。"
+        },
+        "web_research": {
+          "value": "yes",
+          "note": "隐私政策确认支持实时搜索请求。"
+        },
+        "image_generation": {
+          "value": "yes",
+          "note": "政策明确提供 AI 生图，额度需另查。"
+        },
+        "local_inference": {
+          "value": "no",
+          "note": "本条为托管聊天服务，不是本地模型运行器。"
+        },
+        "free_plan": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        },
+        "local_api": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        },
+        "model_download": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        },
+        "document_chat": {
+          "value": "partial",
+          "note": "支持文件输入与文档处理，各端功能存在差异。"
+        },
+        "cloud_models": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        }
+      },
+      "sources": [
+        "https://www.doubao.com/legal/privacy",
+        "https://www.doubao.com/legal/terms",
+        "https://www.doubao.com/download"
+      ]
+    },
+    {
+      "id": "qianwen",
+      "name": "千问",
+      "official_url": "https://www.qianwen.com/",
+      "github_url": null,
+      "platforms": [
+        "Web",
+        "Windows",
+        "macOS",
+        "iOS",
+        "Android"
+      ],
+      "open_source": false,
+      "license": "专有应用/服务条款（非开源）；模型权重许可另计",
+      "pricing_model": "以官方当前方案为准",
+      "price_summary": "本轮未核实当前价格及免费用量；不把开放模型权重或 API 试用额度视为聊天产品权益。",
+      "prices": [],
+      "free_tier_limits": "输入文本、图片、语音与文件加密上传服务端；少量去标识输入可能用于模型优化，可联系退出。知识库内容未经单独授权不用于训练。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "阿里云端 AI 助手，提供文档阅读、翻译、PPT 与知识库问答；不是本地 Qwen 模型运行器。",
+      "features": {
+        "chat": {
+          "value": "yes",
+          "note": "云端文本对话。"
+        },
+        "web_research": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        },
+        "image_generation": {
+          "value": "yes",
+          "note": "政策明确提供 AI 生图，各版本功能可能不同。"
+        },
+        "local_inference": {
+          "value": "no",
+          "note": "本条为托管聊天服务，不是本地模型运行器。"
+        },
+        "free_plan": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        },
+        "local_api": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        },
+        "model_download": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        },
+        "document_chat": {
+          "value": "yes",
+          "note": "支持文档阅读及基于云端知识库的问答。"
+        },
+        "cloud_models": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        }
+      },
+      "sources": [
+        "https://www.qianwen.com/",
+        "https://terms.alicdn.com/legal-agreement/terms/privacy_policy_full/20231011201849846/20231011201849846.html"
+      ]
+    },
+    {
+      "id": "kimi",
+      "name": "Kimi",
+      "official_url": "https://www.kimi.com/",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "专有应用/服务条款（非开源）；模型权重许可另计",
+      "pricing_model": "会员 / 用量额度",
+      "price_summary": "提供会员权益和按用量消耗的 Agent 额度池；API 与会员额度不可默认互通，具体金额以当前会员页为准。",
+      "prices": [],
+      "free_tier_limits": "Agent、深度研究及文档功能消耗额度；创意生成可能需安装插件。上传资料受隐私政策约束；普通对话不具备桌面操作权限，Work 的授权另计。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "面向资料处理与研究任务的云端助手，支持联网搜索、文件理解及 PPT/文档/表格 Agent。",
+      "features": {
+        "chat": {
+          "value": "yes",
+          "note": "云端文本对话。"
+        },
+        "web_research": {
+          "value": "yes",
+          "note": "内置搜索，可按问题联网检索。"
+        },
+        "image_generation": {
+          "value": "partial",
+          "note": "需要相应创意设计插件，受额度与权限限制。"
+        },
+        "local_inference": {
+          "value": "no",
+          "note": "本条为托管聊天服务，不是本地模型运行器。"
+        },
+        "free_plan": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        },
+        "local_api": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        },
+        "model_download": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        },
+        "document_chat": {
+          "value": "yes",
+          "note": "官方支持 PDF、Word、Excel、PPT、TXT 等文件理解。"
+        },
+        "cloud_models": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        }
+      },
+      "sources": [
+        "https://www.kimi.com/help/others/capability",
+        "https://www.kimi.com/help/features/search",
+        "https://www.kimi.com/help/membership/membership-update-rules",
+        "https://www.kimi.com/user/agreement/userPrivacy?version=v2"
+      ]
+    },
+    {
+      "id": "tencent-yuanbao",
+      "name": "腾讯元宝",
+      "official_url": "https://yuanbao.tencent.com/",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "专有应用/服务条款（非开源）；模型权重许可另计",
+      "pricing_model": "以官方当前方案为准",
+      "price_summary": "本轮未核实完整当前收费与免费额度规则；不把腾讯云元宝搜索 API 定价套用到消费端助手。",
+      "prices": [],
+      "free_tier_limits": "能力依据腾讯发布的官方 App 介绍，Web 与移动端可能有差异。数据保留、训练设置和详细隐私政策本轮未取得可核实正文；避免上传未经授权的敏感资料。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "结合微信及腾讯内容生态的云端助手，提供搜索、文档精读与图片创作。",
+      "features": {
+        "chat": {
+          "value": "yes",
+          "note": "云端文本对话。"
+        },
+        "web_research": {
+          "value": "yes",
+          "note": "腾讯官方 App 介绍确认联网搜索及微信内容信源。"
+        },
+        "image_generation": {
+          "value": "yes",
+          "note": "官方 App 介绍提供 AI 绘图与图片编辑。"
+        },
+        "local_inference": {
+          "value": "no",
+          "note": "本条为托管聊天服务，不是本地模型运行器。"
+        },
+        "free_plan": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        },
+        "local_api": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        },
+        "model_download": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        },
+        "document_chat": {
+          "value": "yes",
+          "note": "官方 App 介绍提供文档精读；各端限制另查。"
+        },
+        "cloud_models": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        }
+      },
+      "sources": [
+        "https://yuanbao.tencent.com/",
+        "https://apps.apple.com/cn/app/%E5%85%83%E5%AE%9D-%E8%85%BE%E8%AE%AF%E5%85%A8%E8%83%BDai%E5%8A%A9%E6%89%8B/id6480446430"
+      ]
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "official_url": "https://www.perplexity.ai/",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "专有应用/服务条款（非开源）；模型权重许可另计",
+      "pricing_model": "免费增值",
+      "price_summary": "提供免费及付费订阅；Pro 扩展 Research、上传、模型与生成能力，具体金额以地区结算页为准。",
+      "prices": [],
+      "free_tier_limits": "高级查询、文件上传与生成能力受套餐额度影响；个人方案可在设置退出数据训练，企业规则不同。引用来源仍须人工核实。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "以带来源的搜索研究为重点，可上传资料并按套餐选择不同云端模型。",
+      "features": {
+        "chat": {
+          "value": "yes",
+          "note": "云端文本对话。"
+        },
+        "web_research": {
+          "value": "yes",
+          "note": "搜索与带引用的研究为核心功能。"
+        },
+        "image_generation": {
+          "value": "partial",
+          "note": "高级图像生成权益依套餐。"
+        },
+        "local_inference": {
+          "value": "no",
+          "note": "本条为托管聊天服务，不是本地模型运行器。"
+        },
+        "free_plan": {
+          "value": "yes",
+          "note": "官方套餐对照列有 Free 方案。"
+        },
+        "local_api": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        },
+        "model_download": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        },
+        "document_chat": {
+          "value": "partial",
+          "note": "支持文件上传，套餐决定上传额度。"
+        },
+        "cloud_models": {
+          "value": "partial",
+          "note": "可用模型及高级访问次数取决于套餐。"
+        }
+      },
+      "sources": [
+        "https://www.perplexity.ai/help-center/en/articles/10352901-what-is-perplexity-pro",
+        "https://www.perplexity.ai/help-center/en/articles/11187416-which-perplexity-subscription-plan-is-right-for-you",
+        "https://www.perplexity.ai/en-GB/hub/legal/privacy-notice"
+      ]
+    },
+    {
+      "id": "duck-ai",
+      "name": "Duck.ai",
+      "official_url": "https://duck.ai/",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "专有应用/服务条款（非开源）；模型权重许可另计",
+      "pricing_model": "免费增值",
+      "price_summary": "免费版有使用限制；DuckDuckGo 订阅提供更高额度及额外模型，非无限免费。",
+      "prices": [],
+      "free_tier_limits": "官方称默认不存储聊天、不用于训练；请求仍发送至模型提供商，短期处理和缓存依供应商规则，不能视为离线或绝对零留存。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "DuckDuckGo 提供的多模型云端聊天入口，重视数据隔离与隐私控制。",
+      "features": {
+        "chat": {
+          "value": "yes",
+          "note": "云端文本对话。"
+        },
+        "web_research": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        },
+        "image_generation": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        },
+        "local_inference": {
+          "value": "no",
+          "note": "本条为托管聊天服务，不是本地模型运行器。"
+        },
+        "free_plan": {
+          "value": "yes",
+          "note": "提供有使用限制的免费版。"
+        },
+        "local_api": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        },
+        "model_download": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        },
+        "document_chat": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        },
+        "cloud_models": {
+          "value": "yes",
+          "note": "可在支持的云端聊天模型中选择。"
+        }
+      },
+      "sources": [
+        "https://duckduckgo.com/duckduckgo-help-pages/duckai",
+        "https://duckduckgo.com/duckduckgo-help-pages/duckai/usage-limits",
+        "https://duckduckgo.com/duckduckgo-help-pages/duckai/ai-chat-privacy"
       ]
     }
   ]
