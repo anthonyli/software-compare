@@ -1,0 +1,109 @@
+{
+  "category_slug": "audio-recorders",
+  "category_name_zh": "录音与应用音频采集",
+  "collected_at": "2026-11-13",
+  "timezone": "Asia/Shanghai",
+  "notes": "此类侧重采集录音，不替代多轨剪辑/混音工具。录制会议、通话或他人声音前应取得适用的许可；仅核实官方资料，未实际录音或测试音质。",
+  "features": [
+    {
+      "key": "microphone",
+      "label": "麦克风录音"
+    },
+    {
+      "key": "app_audio",
+      "label": "应用音频采集"
+    },
+    {
+      "key": "system_audio",
+      "label": "全部系统声音"
+    },
+    {
+      "key": "broadcast",
+      "label": "直播/广播输出"
+    }
+  ],
+  "products": [
+    {
+      "id": "audio-hijack",
+      "name": "Audio Hijack",
+      "official_url": "https://rogueamoeba.com/audiohijack/",
+      "github_url": null,
+      "platforms": [
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "付费 / 免费试用",
+      "summary": "面向播客、应用声音采集和音频路由的 Mac 录音工具，可组合多个音频处理模块。",
+      "price_summary": "商业软件提供免费试用，完整版需购买许可证；未核实当前结算金额，不将免费下载视为永久免费。",
+      "prices": [],
+      "free_tier_limits": "免费试用不是无限制免费版；具体试用限制及当前 macOS 要求请在下载前核对官网。录音保存为文件，网络广播或分享会改变数据去向。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "features": {
+        "microphone": {
+          "value": "yes",
+          "note": "支持麦克风、混音器等输入设备"
+        },
+        "app_audio": {
+          "value": "yes",
+          "note": "可指定应用作为音频源"
+        },
+        "system_audio": {
+          "value": "yes",
+          "note": "提供全部系统音频源"
+        },
+        "broadcast": {
+          "value": "yes",
+          "note": "官网列出直播与互联网广播能力"
+        }
+      },
+      "sources": [
+        "https://rogueamoeba.com/audiohijack/"
+      ]
+    },
+    {
+      "id": "piezo",
+      "name": "Piezo",
+      "official_url": "https://rogueamoeba.com/piezo/",
+      "github_url": null,
+      "platforms": [
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "付费 / 免费试用",
+      "summary": "操作简洁的 Mac 录音工具，选择应用或输入设备后录制，适合不需要复杂路由的用户。",
+      "price_summary": "商业软件提供免费试用，完整版需购买许可证；未核实当前结算金额，不将免费下载视为永久免费。",
+      "prices": [],
+      "free_tier_limits": "免费试用不是无限制免费版；具体试用限制及当前 macOS 要求请在下载前核对官网。录音保存为文件，网络广播或分享会改变数据去向。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "features": {
+        "microphone": {
+          "value": "yes",
+          "note": "支持选择麦克风等音频设备"
+        },
+        "app_audio": {
+          "value": "yes",
+          "note": "支持从应用录音，并提供 VoIP 双声道录音用途"
+        },
+        "system_audio": {
+          "value": "unknown",
+          "note": "本次官网未核实一次捕获全部系统音频"
+        },
+        "broadcast": {
+          "value": "unknown",
+          "note": "本次官网未核实直播推流"
+        }
+      },
+      "sources": [
+        "https://rogueamoeba.com/piezo/"
+      ]
+    }
+  ]
+}

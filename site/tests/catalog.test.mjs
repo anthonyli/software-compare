@@ -4,7 +4,7 @@ import fs from 'node:fs';
 const root = new URL('../../', import.meta.url);
 const read = file => JSON.parse(fs.readFileSync(new URL(file, root), 'utf8'));
 const categories = [...read('data.json').categories, ...fs.readdirSync(new URL('categories/', root)).filter(f => f.endsWith('.json')).map(f => read(`categories/${f}`))];
-const added = ['ai-assistants','local-ai','image-editors','vector-graphics','photo-management','desktop-publishing','ai-coding','ai-image-workflows','animation-3d','animation-2d','compositing','database-clients','api-clients'];
+const added = ['ai-assistants','local-ai','image-editors','vector-graphics','photo-management','desktop-publishing','ai-coding','ai-image-workflows','animation-3d','animation-2d','compositing','database-clients','api-clients','audio-recorders','transcription-tools','fitness-training','cycling-tools','outdoor-navigation'];
 const slug = c => c.category_slug || c.id;
 const config = fs.readFileSync(new URL('site/src/config.ts', root), 'utf8');
 const translations = read('site/src/i18n/content-en.json');

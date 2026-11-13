@@ -1,0 +1,134 @@
+{
+  "category_slug": "cycling-tools",
+  "category_name_zh": "骑行与耐力运动分析",
+  "collected_at": "2026-11-13",
+  "collected_at_timezone": "Asia/Shanghai (UTC+8)",
+  "notes": "关注骑行数据、训练日历与功率分析，不是户外离线导航分类。分析结果依赖输入质量和设备数据，不能当作医疗判断或安全训练保证。",
+  "features": [
+    {
+      "key": "activity_import",
+      "label": "活动数据导入"
+    },
+    {
+      "key": "power_analysis",
+      "label": "功率数据分析"
+    },
+    {
+      "key": "training_calendar",
+      "label": "训练日历"
+    },
+    {
+      "key": "indoor_trainer",
+      "label": "室内骑行台连接"
+    },
+    {
+      "key": "cloud_sync",
+      "label": "云端/服务器同步"
+    }
+  ],
+  "products": [
+    {
+      "id": "goldencheetah",
+      "name": "GoldenCheetah",
+      "official_url": "https://www.goldencheetah.org/",
+      "github_url": "https://github.com/GoldenCheetah/GoldenCheetah",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "完全免费",
+      "price_summary": "软件免费开源；设备、服务器和第三方服务可能另收费。",
+      "prices": [
+        {
+          "plan": "免费档",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "软件免费，本地桌面使用与可选云服务上传/下载应区分。功率、心率或骑行台功能依赖相应数据/兼容设备；启用云连接会向选定服务传输数据。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "面向骑行者、铁三选手及教练的桌面分析软件，导入码表/活动文件后分析功率和训练指标，也可连接兼容骑行台。",
+      "features": {
+        "activity_import": {
+          "value": "yes"
+        },
+        "power_analysis": {
+          "value": "yes"
+        },
+        "training_calendar": {
+          "value": "yes"
+        },
+        "indoor_trainer": {
+          "value": "yes",
+          "note": "支持 ANT/BTLE 骑行台，须核对具体设备。"
+        },
+        "cloud_sync": {
+          "value": "partial",
+          "note": "可选上传/下载至外部服务，不等于所有数据只留本地。"
+        }
+      },
+      "sources": [
+        "https://www.goldencheetah.org/",
+        "https://raw.githubusercontent.com/GoldenCheetah/GoldenCheetah/master/README.md"
+      ]
+    },
+    {
+      "id": "intervals-icu",
+      "name": "Intervals.icu",
+      "official_url": "https://www.intervals.icu/",
+      "github_url": null,
+      "platforms": [
+        "Web",
+        "iOS",
+        "Android"
+      ],
+      "open_source": false,
+      "license": "专有服务（未核实开源授权）",
+      "pricing_model": "免费增值",
+      "price_summary": "提供免费档及付费升级；当前地区价格以官网或应用商店为准。",
+      "prices": [
+        {
+          "plan": "免费档",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "核心工具免费，Supporter 提供额外功能。需账号；可手动上传文件或授权设备平台同步。隐私政策说明活动/健康数据传至德国、芬兰及欧盟云区域；默认私密不等于仅本地保存。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "云端骑行及多运动分析平台，支持活动导入、功率曲线和训练日历；适合汇总多个运动设备/平台的数据。",
+      "features": {
+        "activity_import": {
+          "value": "yes"
+        },
+        "power_analysis": {
+          "value": "yes"
+        },
+        "training_calendar": {
+          "value": "yes"
+        },
+        "indoor_trainer": {
+          "value": "unknown",
+          "note": "本轮未核实直接控制骑行台，不将第三方同步当作硬件连接。"
+        },
+        "cloud_sync": {
+          "value": "yes",
+          "note": "云端账号处理活动和健康数据，可授权第三方同步；分享与教练权限需单独检查。"
+        }
+      },
+      "sources": [
+        "https://www.intervals.icu/",
+        "https://www.intervals.icu/pricing/",
+        "https://www.intervals.icu/privacy-policy/"
+      ]
+    }
+  ]
+}

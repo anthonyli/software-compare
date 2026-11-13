@@ -1,0 +1,115 @@
+{
+  "category_slug": "outdoor-navigation",
+  "category_name_zh": "徒步登山与户外导航",
+  "collected_at": "2026-11-13",
+  "timezone": "Asia/Shanghai",
+  "notes": "比较地图与路线工具，不提供路线安全保证。离线地图需提前下载；GPS、道路和山径数据可能有误。分享轨迹前检查起终点及位置隐私；未进行实地测试。",
+  "features": [
+    {
+      "key": "offline_maps",
+      "label": "离线地图"
+    },
+    {
+      "key": "walking_routes",
+      "label": "步行路线规划"
+    },
+    {
+      "key": "cycling_routes",
+      "label": "骑行路线规划"
+    },
+    {
+      "key": "track_recording",
+      "label": "轨迹记录"
+    }
+  ],
+  "products": [
+    {
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "open_source": true,
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "features": {
+        "offline_maps": {
+          "value": "yes",
+          "note": ""
+        },
+        "walking_routes": {
+          "value": "yes",
+          "note": ""
+        },
+        "cycling_routes": {
+          "value": "yes",
+          "note": ""
+        },
+        "track_recording": {
+          "value": "yes",
+          "note": ""
+        }
+      },
+      "id": "organic-maps",
+      "name": "Organic Maps",
+      "official_url": "https://organicmaps.app/",
+      "github_url": "https://github.com/organicmaps/organicmaps",
+      "license": "Apache-2.0（代码）；地图数据另有许可",
+      "pricing_model": "完全免费",
+      "price_summary": "免费开源，接受捐赠；地图数据再分发遵循单独许可。",
+      "free_tier_limits": "离线使用需先下载地图；定位依赖设备，地图详细程度因地区和 OSM 数据而异。",
+      "summary": "用于徒步和骑行的手机离线地图，支持路线规划及轨迹记录；官方声明无广告和跟踪。",
+      "sources": [
+        "https://organicmaps.app/",
+        "https://github.com/organicmaps/organicmaps"
+      ]
+    },
+    {
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "open_source": true,
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "features": {
+        "offline_maps": {
+          "value": "yes",
+          "note": ""
+        },
+        "walking_routes": {
+          "value": "yes",
+          "note": ""
+        },
+        "cycling_routes": {
+          "value": "yes",
+          "note": ""
+        },
+        "track_recording": {
+          "value": "yes",
+          "note": ""
+        }
+      },
+      "id": "osmand",
+      "name": "OsmAnd",
+      "official_url": "https://osmand.net/",
+      "github_url": "https://github.com/osmandapp/OsmAnd",
+      "license": "GPL-3.0-or-later（仓库代码）；美术/UI 含 CC-BY-NC-ND 及专有许可",
+      "pricing_model": "免费档 / 付费扩展",
+      "price_summary": "提供免费版、Maps+ 和 Pro；平台和购买渠道影响功能及费用。",
+      "free_tier_limits": "免费地图下载及高级功能限制需查对应平台；云备份和跨平台购买涉及账号，使用云服务会改变数据去向。",
+      "summary": "可配置的离线地图与导航工具，支持徒步、骑行和 GPS 轨迹；功能与插件需按平台核对。",
+      "sources": [
+        "https://github.com/osmandapp/OsmAnd",
+        "https://github.com/osmandapp/OsmAnd/blob/master/LICENSE",
+        "https://osmand.net/docs/user/purchases/",
+        "https://osmand.net/docs/user/plugins/trip-recording/"
+      ]
+    }
+  ]
+}

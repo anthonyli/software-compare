@@ -4,11 +4,11 @@
 
 [Live site](https://compare.pageon.cc)
 
-Compare desktop software on price, free-tier limits, and features.
+Compare desktop, mobile and web tools on price, free-tier limits, and features.
 
 ## What this is
 
-Compare (软件对比) is a static site for comparing desktop software on price, free-tier limits, platforms, and features. It covers productivity, media, file, system, security, and developer tools. The brand mark is a letter-C monogram with the Compare wordmark; the Chinese product name is 软件对比.
+Compare (软件对比) is a static site for comparing desktop, mobile and web tools on price, free-tier limits, platforms, and features. It covers productivity, AI, creation, development, fitness and outdoor activities. The brand mark is a letter-C monogram with the Compare wordmark; the Chinese product name is 软件对比.
 
 The site is generated at build time with Astro. Anonymous likes and community ranking use Cloudflare Pages Functions and D1. GitHub Actions refreshes GitHub metadata daily; official-site facts are not automatically updated. Source code and data are available in the [GitHub repository](https://github.com/anthonyli/software-compare).
 

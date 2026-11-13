@@ -1,0 +1,135 @@
+{
+  "category_slug": "fitness-training",
+  "category_name_zh": "健身与训练记录",
+  "collected_at": "2026-11-13",
+  "collected_at_timezone": "Asia/Shanghai (UTC+8)",
+  "notes": "比较训练记录、计划和数据管理软件，不提供医疗或个体训练建议。体重、身体测量和训练照片可能涉及健康隐私，启用同步前核对数据接收方和分享设置。",
+  "features": [
+    {
+      "key": "workout_routines",
+      "label": "训练计划记录"
+    },
+    {
+      "key": "body_tracking",
+      "label": "身体数据记录"
+    },
+    {
+      "key": "nutrition_log",
+      "label": "饮食记录"
+    },
+    {
+      "key": "self_host",
+      "label": "自托管服务"
+    },
+    {
+      "key": "cloud_sync",
+      "label": "云端/服务器同步"
+    }
+  ],
+  "products": [
+    {
+      "id": "wger",
+      "name": "wger",
+      "official_url": "https://wger.de/",
+      "github_url": "https://github.com/wger-project/wger",
+      "platforms": [
+        "Web",
+        "Android",
+        "iOS"
+      ],
+      "open_source": true,
+      "license": "AGPL-3.0-or-later",
+      "pricing_model": "完全免费",
+      "price_summary": "软件免费开源；设备、服务器和第三方服务可能另收费。",
+      "prices": [
+        {
+          "plan": "免费档",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "软件免费；使用官方实例会把记录交给该服务，自托管则存入自选服务器，需自行保护账号、备份与访问权限。不是默认纯本地应用。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "可自托管的训练、饮食和体重记录工具；适合想选择自己的数据服务器、并愿意承担维护的人。",
+      "features": {
+        "workout_routines": {
+          "value": "yes"
+        },
+        "body_tracking": {
+          "value": "yes"
+        },
+        "nutrition_log": {
+          "value": "yes"
+        },
+        "self_host": {
+          "value": "yes",
+          "note": "官方提供 Docker 自托管方案；服务器运维另计。"
+        },
+        "cloud_sync": {
+          "value": "yes",
+          "note": "客户端连接所选 wger 实例；服务器位置由部署方式决定。"
+        }
+      },
+      "sources": [
+        "https://raw.githubusercontent.com/wger-project/wger/master/README.md"
+      ]
+    },
+    {
+      "id": "hevy",
+      "name": "Hevy",
+      "official_url": "https://www.hevyapp.com/",
+      "github_url": null,
+      "platforms": [
+        "iOS",
+        "Android",
+        "Web"
+      ],
+      "open_source": false,
+      "license": "专有服务（未核实开源授权）",
+      "pricing_model": "免费增值",
+      "price_summary": "提供免费档及付费升级；当前地区价格以官网或应用商店为准。",
+      "prices": [
+        {
+          "plan": "免费档",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "官方功能指南列免费档最多 4 个训练例程、7 个自定义动作、3 个月历史查看；Pro 放宽限制。账号跨设备同步不是纯本地保存，需检查个人资料/训练分享设置与隐私政策。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "以力量训练组数、次数和重量记录为主，提供例行计划、进度图表与社交功能；移动端也可配合支持的手表。",
+      "features": {
+        "workout_routines": {
+          "value": "partial",
+          "note": "免费档最多 4 个例程，Pro 不限例程数。"
+        },
+        "body_tracking": {
+          "value": "partial",
+          "note": "免费记录体重和腰围，更多测量需 Pro。"
+        },
+        "nutrition_log": {
+          "value": "unknown"
+        },
+        "self_host": {
+          "value": "unknown"
+        },
+        "cloud_sync": {
+          "value": "yes",
+          "note": "官方指南确认跨设备记录；账号服务与社交分享需检查隐私设置。"
+        }
+      },
+      "sources": [
+        "https://www.hevyapp.com/",
+        "https://help.hevyapp.com/hc/en-us/articles/33106320824727-Everything-You-Need-to-Know-About-the-Hevy-App-2026-Features-Guide",
+        "https://www.hevyapp.com/legal/privacy-policy",
+        "https://www.iubenda.com/privacy-policy/75379905"
+      ]
+    }
+  ]
+}

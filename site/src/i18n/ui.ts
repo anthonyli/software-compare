@@ -84,7 +84,7 @@ export const ui = {
     productDesc: "{name}的价格、功能与是否免费，属于{category}。",
     tagline: "对照价格、免费限制与功能，选出适合你的工具",
     description:
-      "对比常用电脑软件的价格、免费限制、平台和功能差异，覆盖办公、影音、文件、系统、安全和开发工具。数据采集于 2026-11-12。",
+      "对比桌面、手机和网页工具的价格、免费限制、平台和功能，覆盖办公、AI、创作、开发、运动和户外等场景。各条目单独标注资料日期。",
     siteName: "软件对比",
     brandSub: "软件对比",
   },
@@ -172,7 +172,7 @@ export const ui = {
     productDesc: "{name} — price, features, and free tier, in {category}.",
     tagline: "Compare price, free-tier limits, and features — find the tool that fits you",
     description:
-      "Compare popular desktop software on price, free-tier limits, platforms, and features. Covers productivity, media, files, system, security, and developer tools. Data collected on 2026-11-12.",
+      "Compare desktop, mobile and web tools on price, free-tier limits, platforms and features across productivity, AI, creation, development, fitness and outdoor activities. Each entry shows its source date.",
     siteName: "Compare",
     brandSub: "Software compare",
   },
