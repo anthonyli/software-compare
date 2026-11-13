@@ -8,7 +8,7 @@ Compare desktop software on price, free-tier limits, and features.
 
 Compare（软件对比）是一个静态对照站，用来比较常用电脑软件的价格、免费档限制、平台和功能差异，覆盖办公、影音、文件、系统、安全和开发工具。站点品牌标志是字母 C 的组合标志与 Compare 字标，中文产品名为「软件对比」。
 
-本仓库用 Astro 在构建时读取数据，生成纯静态页面，不需要服务器或数据库。源代码与数据发布在 https://github.com/anthonyli/software-compare 。
+本仓库用 Astro 在构建时读取数据，生成静态页面；匿名点赞与社区人气排名由 Cloudflare Worker 和 D1 提供。GitHub 数据每日通过 GitHub Actions 更新，官网资料暂不自动更新。源代码与数据发布在 https://github.com/anthonyli/software-compare 。
 
 ## 本地运行
 
@@ -18,7 +18,7 @@ npm install
 npm run dev
 ```
 
-其他命令：`npm run build` 输出到 `site/dist/`，`npm run preview` 预览构建结果。
+完整本地站点运行在 `http://localhost:8787`，包含本地 D1 和点赞 API。其他命令：`npm run build` 输出到 `site/dist/`，`npm run preview` 仅预览静态构建结果。Cloudflare 配置、GitHub Actions 密钥和测试说明见 [部署指南](site/README.md)。
 
 站点名称、分组和展示用文案在 `site/src/config.ts` 与 `site/src/i18n/`。不要在 `site/` 里改原始数据文件。
 
@@ -30,6 +30,7 @@ npm run dev
 
 - `data.json`（录屏、清理等品类）
 - `categories/*.json`（其余品类）
+- `github-data.json`（自动同步的 GitHub 快照，与原始资料日期分别展示）
 
 `cleaners.csv` 与 `screen-recorders.csv` 是这两类的可选表格副本，构建时不会读取。数据更新后重新构建即可。
 
@@ -43,7 +44,7 @@ npm run dev
 
 Compare (软件对比) is a static site for comparing desktop software on price, free-tier limits, platforms, and features. It covers productivity, media, file, system, security, and developer tools. The brand mark is a letter-C monogram with the Compare wordmark; the Chinese product name is 软件对比.
 
-The site is generated at build time with Astro from the data files in this repository. No server or database is required. Source and data are published at https://github.com/anthonyli/software-compare.
+The site is generated at build time with Astro. Anonymous likes and community ranking use a Cloudflare Worker and D1. GitHub Actions refreshes GitHub metadata daily; official-site facts are not automatically updated. Source and data are published at https://github.com/anthonyli/software-compare.
 
 ## Running locally
 
@@ -53,7 +54,7 @@ npm install
 npm run dev
 ```
 
-Use `npm run build` to write `site/dist/`, and `npm run preview` to preview the build.
+The complete local site runs at `http://localhost:8787`, including the local votes database and API. Use `npm run build` to write `site/dist/`; `npm run preview` serves static files only. See [deployment instructions](site/README.md) for configuration and tests.
 
 Site name, category groups, and UI copy live in `site/src/config.ts` and `site/src/i18n/`. Do not edit the raw data files from inside `site/`.
 
@@ -65,6 +66,7 @@ The build reads:
 
 - `data.json` (screen recorders, cleaners, and similar)
 - `categories/*.json` (the remaining categories)
+- `github-data.json` (automatically refreshed GitHub metadata with separate timestamps)
 
 `cleaners.csv` and `screen-recorders.csv` are optional tabular copies of those two categories. The build does not read them. Rebuild after data updates.
 

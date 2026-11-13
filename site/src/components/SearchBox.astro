@@ -81,10 +81,18 @@ const listId = `${inputId}-list`;
     if (index) return index;
     if (!loading) {
       loading = fetch("/search-index.json")
-        .then((r) => r.json())
+        .then((r) => {
+          if (!r.ok) throw new Error(`Search index: ${r.status}`);
+          return r.json();
+        })
         .then((data) => {
+          if (!Array.isArray(data.products)) throw new Error("Invalid search index");
           index = data.products as Hit[];
           return index;
+        })
+        .catch((error) => {
+          loading = null;
+          throw error;
         });
     }
     return loading;
@@ -158,8 +166,10 @@ const listId = `${inputId}-list`;
   type RootState = { active: number; hits: Hit[]; q: string };
 
   const states = new WeakMap<Element, RootState>();
+  const requests = new WeakMap<Element, number>();
 
   function closeBox(root: Element) {
+    requests.set(root, (requests.get(root) || 0) + 1);
     const box = root.querySelector("[data-search-results]") as HTMLElement;
     const input = root.querySelector("[data-search-input]") as HTMLInputElement;
     box.hidden = true;
@@ -167,8 +177,7 @@ const listId = `${inputId}-list`;
     root.classList.remove("is-open");
     input.setAttribute("aria-expanded", "false");
     input.removeAttribute("aria-activedescendant");
-    const st = states.get(root);
-    if (st) st.active = -1;
+    states.delete(root);
   }
 
   function render(root: Element, hits: Hit[], q: string, active: number) {
@@ -183,6 +192,7 @@ const listId = `${inputId}-list`;
     root.classList.add("is-open");
     input.setAttribute("aria-expanded", "true");
     if (!hits.length) {
+      states.set(root, { active: -1, hits: [], q });
       const empty = currentLang() === "en"
         ? `No results for “${escapeHtml(q)}”`
         : `没有找到「${escapeHtml(q)}」`;
@@ -213,14 +223,39 @@ const listId = `${inputId}-list`;
     let timer = 0;
     const run = async (keepActive = false) => {
       const q = input.value;
-      const items = await loadIndex();
-      const hits = search(items, q);
-      const prev = states.get(root);
-      const active = keepActive && prev ? prev.active : 0;
-      render(root, hits, q, active);
+      if (!q.trim()) {
+        closeBox(root);
+        return;
+      }
+      const request = (requests.get(root) || 0) + 1;
+      requests.set(root, request);
+      const isCurrent = () => requests.get(root) === request && input.value === q && document.activeElement === input;
+      try {
+        const items = await loadIndex();
+        if (!isCurrent()) return;
+        const hits = search(items, q);
+        const prev = states.get(root);
+        const active = keepActive && prev ? prev.active : 0;
+        render(root, hits, q, active);
+      } catch {
+        if (!isCurrent()) return;
+        closeBox(root);
+        const box = root.querySelector("[data-search-results]") as HTMLElement;
+        box.hidden = false;
+        root.classList.add("is-open");
+        input.setAttribute("aria-expanded", "true");
+        const message = document.createElement("div");
+        message.className = "px-3 py-3 text-sm text-muted";
+        message.setAttribute("role", "status");
+        message.textContent = currentLang() === "en"
+          ? "Search is unavailable. Type again to retry."
+          : "搜索暂时不可用，请重新输入重试。";
+        box.replaceChildren(message);
+      }
     };
     input.addEventListener("input", () => {
       window.clearTimeout(timer);
+      closeBox(root);
       timer = window.setTimeout(() => run(false), 80);
     });
     input.addEventListener("focus", () => run(true));
@@ -229,11 +264,12 @@ const listId = `${inputId}-list`;
       const box = root.querySelector("[data-search-results]") as HTMLElement;
       if (e.key === "Escape") {
         e.preventDefault();
+        window.clearTimeout(timer);
         if (!box.hidden) closeBox(root);
         else input.blur();
         return;
       }
-      if (!st || box.hidden || !st.hits.length) return;
+      if (!st || st.q !== input.value || box.hidden || !st.hits.length) return;
       if (e.key === "ArrowDown") {
         e.preventDefault();
         render(root, st.hits, st.q, st.active + 1);
@@ -253,7 +289,7 @@ const listId = `${inputId}-list`;
     submit?.addEventListener("click", (e) => {
       e.preventDefault();
       const st = states.get(root);
-      if (st && st.hits.length) {
+      if (st && st.q === input.value && st.hits.length) {
         window.location.href = st.hits[Math.max(0, st.active)].href;
         return;
       }

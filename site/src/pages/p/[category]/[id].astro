@@ -3,6 +3,9 @@
 import Layout from "../../../layouts/Layout.astro";
 import ExtLinks from "../../../components/ExtLinks.astro";
 import T from "../../../components/T.astro";
+import VoteButton from '../../../components/VoteButton.astro';
+import VoteStatus from '../../../components/VoteStatus.astro';
+import GitHubFreshness from '../../../components/GitHubFreshness.astro';
 import { siteConfig } from "../../../config";
 import {
   loadCatalog,
@@ -112,6 +115,8 @@ const hostNoteZh = cleanPublicText(product.source_host_note);
           primaryOfficial
         />
       </div>
+      <div class="mt-4"><VoteButton id={product.id} name={product.name}/></div>
+      <VoteStatus/>
     </header>
 
     <section class="mt-12">
@@ -217,9 +222,13 @@ const hostNoteZh = cleanPublicText(product.source_host_note);
               <dd>{licenseText}</dd>
             </>
           )}
+          {product.github_url && product.archived !== null && (<>
+            <dt><T zh="GitHub 仓库" en="GitHub repository"/></dt>
+            <dd><T zh={product.archived ? '已归档' : '未归档'} en={product.archived ? 'Archived' : 'Not archived'}/></dd>
+          </>)}
           {showStatus && (
             <>
-              <dt><T zh={ui.zh.maintStatus} en={ui.en.maintStatus} /></dt>
+              <dt><T zh="维护状态（资料采集时）" en="Maintenance at collection" /></dt>
               <dd><T zh={product.maintenance_status!} en={maintenanceEn(product.maintenance_status)} /></dd>
             </>
           )}
@@ -296,5 +305,6 @@ const hostNoteZh = cleanPublicText(product.source_host_note);
         en={uiT("collectedOn", "en", { date: collected })}
       />
     </p>
+    {product.github_url && <GitHubFreshness url={product.github_url}/>}
   </div>
 </Layout>

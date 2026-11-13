@@ -1,0 +1,21 @@
+import fs from 'node:fs/promises';
+import os from 'node:os';
+import path from 'node:path';
+import {spawnSync} from 'node:child_process';
+
+for (const name of ['CLOUDFLARE_API_TOKEN','CLOUDFLARE_ACCOUNT_ID','COOKIE_SECRET']) {
+  if(!process.env[name]) throw new Error(`Missing ${name}`);
+}
+if(process.env.COOKIE_SECRET.length<32) throw new Error('COOKIE_SECRET must have at least 32 characters.');
+const directory=await fs.mkdtemp(path.join(os.tmpdir(),'software-compare-secrets-'));
+const file=path.join(directory,'secrets.json');
+try {
+  await fs.writeFile(file,JSON.stringify({COOKIE_SECRET:process.env.COOKIE_SECRET}),{mode:0o600});
+  for(const args of [
+    ['d1','migrations','apply','DB','--remote','--config','wrangler.deploy.json'],
+    ['deploy','--config','wrangler.deploy.json','--secrets-file',file],
+  ]) {
+    const result=spawnSync('npm',['exec','wrangler','--',...args],{stdio:'inherit'});
+    if(result.status!==0) throw new Error('Cloudflare deployment failed.');
+  }
+} finally {await fs.rm(directory,{recursive:true,force:true});}

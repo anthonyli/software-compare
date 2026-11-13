@@ -91,7 +91,7 @@ const currentEn = current?.labelEn || current?.label || "";
     (selected || (panel.querySelector(".fmenu-option") as HTMLElement | null))?.focus();
   }
 
-  function selectOption(root: Element, option: HTMLElement) {
+  function selectOption(root: Element, option: HTMLElement, userInitiated = true) {
     const input = root.querySelector("[data-fmenu-input]") as HTMLInputElement;
     const valueEl = root.querySelector("[data-fmenu-value]") as HTMLElement;
     const btn = root.querySelector("[data-fmenu-btn]") as HTMLButtonElement;
@@ -114,14 +114,27 @@ const currentEn = current?.labelEn || current?.label || "";
       el.setAttribute("aria-selected", el === option ? "true" : "false");
     });
     closeMenu(root);
-    btn.focus();
-    input.dispatchEvent(new Event("change", { bubbles: true }));
+    if (userInitiated) {
+      btn.focus();
+      input.dispatchEvent(new Event("change", { bubbles: true }));
+    }
   }
 
   document.querySelectorAll("[data-filter-menu]").forEach((root) => {
     const btn = root.querySelector("[data-fmenu-btn]") as HTMLButtonElement;
     const panel = root.querySelector("[data-fmenu-panel]") as HTMLElement;
     const options = () => [...panel.querySelectorAll(".fmenu-option")] as HTMLElement[];
+    const input = root.querySelector("[data-fmenu-input]") as HTMLInputElement;
+    // Hidden inputs update their defaultValue when value changes, so capture it now.
+    const initialValue = input.value;
+    input.form?.addEventListener("reset", (event) => {
+      queueMicrotask(() => {
+        if (event.defaultPrevented) return;
+        const initial = options().find((option) => option.dataset.value === initialValue);
+        if (initial) selectOption(root, initial, false);
+        input.dispatchEvent(new Event("change", { bubbles: true }));
+      });
+    });
 
     btn.addEventListener("click", (e) => {
       e.preventDefault();

@@ -3,6 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { categoryGroups, siteConfig } from "../config";
+import { githubEntry, syncTime } from './github-data';
 
 export type FeatureDef = { key: string; label: string };
 export type FeatureVal = { value: string; note: string };
@@ -128,6 +129,7 @@ function normalizeProduct(
   cat: { slug: string; name: string; collected_at: string },
 ): Product {
   const id = asStr(raw.id);
+  const synced = githubEntry(asStrOrNull(raw.github_url));
   return {
     id,
     name: asStr(raw.name, id),
@@ -146,21 +148,21 @@ function normalizeProduct(
     price_summary: asStr(raw.price_summary),
     prices: normalizePrices(raw.prices),
     free_tier_limits: asStrOrNull(raw.free_tier_limits),
-    github_stars:
+    github_stars: synced?.repository?.stars ?? (
       typeof raw.github_stars === "number" && Number.isFinite(raw.github_stars)
         ? raw.github_stars
-        : null,
-    latest_release: asStrOrNull(raw.latest_release),
-    latest_release_date: asStrOrNull(raw.latest_release_date),
-    latest_release_date_note: asStrOrNull(raw.latest_release_date_note),
+        : null),
+    latest_release: synced?.release?.tag ?? asStrOrNull(raw.latest_release),
+    latest_release_date: synced?.release ? syncTime(synced.release.published_at).slice(0,10) : asStrOrNull(raw.latest_release_date),
+    latest_release_date_note: synced?.release ? null : asStrOrNull(raw.latest_release_date_note),
     maintenance_status: asStrOrNull(raw.maintenance_status),
     summary: asStr(raw.summary),
     features: normalizeFeatures(raw.features),
     sources: Array.isArray(raw.sources)
       ? raw.sources.map((x) => String(x)).filter(Boolean)
       : [],
-    archived: typeof raw.archived === "boolean" ? raw.archived : null,
-    last_push_at: asStrOrNull(raw.last_push_at),
+    archived: synced?.repository?.archived ?? (typeof raw.archived === "boolean" ? raw.archived : null),
+    last_push_at: synced?.repository ? synced.repository.pushed_at : asStrOrNull(raw.last_push_at),
     collected_at: asStr(raw.collected_at, cat.collected_at),
     category_slug: cat.slug,
     category_name: cat.name,

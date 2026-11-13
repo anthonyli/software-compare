@@ -6,7 +6,7 @@ export const siteConfig = {
   tagline: "对照价格、免费限制与功能，选出适合你的工具",
   description:
     "对比常用电脑软件的价格、免费限制、平台和功能差异，覆盖办公、影音、文件、系统、安全和开发工具。数据采集于 2026-11-12。",
-  siteUrl: "https://software-compare.example",
+  siteUrl: process.env.PUBLIC_SITE_URL || "http://localhost:4321",
   collectedAt: "2026-11-12",
   timezone: "Asia/Shanghai (UTC+8)",
   lang: "zh-CN",

@@ -4,6 +4,9 @@ import Layout from "../../layouts/Layout.astro";
 import ExtLinks from "../../components/ExtLinks.astro";
 import FilterMenu from "../../components/FilterMenu.astro";
 import T from "../../components/T.astro";
+import VoteButton from '../../components/VoteButton.astro';
+import VoteStatus from '../../components/VoteStatus.astro';
+import GitHubFreshness from '../../components/GitHubFreshness.astro';
 import { siteConfig } from "../../config";
 import { loadCatalog, formatStars, featClass, sourceRepoButton, type Category } from "../../lib/load-data";
 import {
@@ -44,9 +47,6 @@ const descEn = uiT("categoryDesc", "en", { name: catNames.en, n: category.produc
 const ossCount = category.products.filter((p) => p.open_source).length;
 
 const sortedProducts = [...category.products].sort((a, b) => {
-  const sa = a.github_stars ?? -1;
-  const sb = b.github_stars ?? -1;
-  if (sb !== sa) return sb - sa;
   return a.name.localeCompare(b.name, "zh-CN");
 });
 ---
@@ -76,6 +76,7 @@ const sortedProducts = [...category.products].sort((a, b) => {
           en={uiT("catSubtitle", "en", { n: category.products.length, oss: ossCount, date: category.collected_at })}
         />
       </p>
+      <GitHubFreshness/>
     </header>
   </div>
 
@@ -115,13 +116,18 @@ const sortedProducts = [...category.products].sort((a, b) => {
         name="sort"
         label={ui.zh.sort}
         labelEn={ui.en.sort}
-        value="stars"
+        value="likes"
         align="right"
         options={[
+          { value: "likes", label: "社区人气", labelEn: "Community likes" },
           { value: "stars", label: ui.zh.sortStars, labelEn: ui.en.sortStars },
           { value: "name", label: ui.zh.sortName, labelEn: ui.en.sortName },
         ]}
       />
+      <div class="view-switch" role="group" aria-label="展示方式" data-i18n="aria-label" data-zh="展示方式" data-en="View">
+        <button type="button" data-view="table" aria-pressed="true"><T zh="表格" en="Table"/></button>
+        <button type="button" data-view="cards" aria-pressed="false"><T zh="卡片" en="Cards"/></button>
+      </div>
       <span
         class="ml-auto text-xs text-muted tabular-nums"
         data-count
@@ -132,7 +138,9 @@ const sortedProducts = [...category.products].sort((a, b) => {
   </form>
 
   <div class="mx-auto max-w-[80rem] px-4 sm:px-5">
-    <div class="matrix-shell mt-4 hidden md:block" data-matrix-shell>
+    <VoteStatus/>
+    <p class="mt-3 text-xs text-muted"><T zh="社区人气按匿名点赞数排序，同票按名称排序；每个浏览器可为同一软件点赞一次，也可取消。" en="Community ranking sorts by anonymous likes, then name. Each browser can like a product once and undo its vote."/></p>
+    <div class="matrix-shell mt-4" data-matrix-shell>
       <p class="scroll-cue"><T zh={ui.zh.scrollFeatures} en={ui.en.scrollFeatures} /></p>
       <div class="matrix-wrap" data-matrix-wrap>
         <table class="matrix-table" id="matrix">
@@ -158,6 +166,8 @@ const sortedProducts = [...category.products].sort((a, b) => {
               const priceEn = formatPriceDisplay(p, "en");
               return (
                 <tr
+                  data-product-id={p.id}
+                  data-likes="0"
                   data-name={p.name}
                   data-stars={p.github_stars ?? -1}
                   data-free={p.pricing_model === "完全免费" ? "1" : "0"}
@@ -185,6 +195,7 @@ const sortedProducts = [...category.products].sort((a, b) => {
                             </span>
                           )}
                         </div>
+                        <VoteButton id={p.id} name={p.name}/>
                       </div>
                       <ExtLinks official={p.official_url} github={p.github_url} sourceUrl={src?.url} sourceLabel={src?.label} iconOnly />
                     </div>
@@ -221,7 +232,7 @@ const sortedProducts = [...category.products].sort((a, b) => {
       </div>
     </div>
 
-    <div class="card-list md:hidden" id="card-list" data-card-list>
+    <div class="card-list mt-4" id="card-list" data-card-list>
       {sortedProducts.map((p) => {
         const warn = maintenanceWarning(p);
         const src = sourceRepoButton(p);
@@ -230,6 +241,8 @@ const sortedProducts = [...category.products].sort((a, b) => {
         return (
           <article
             class="product-card"
+            data-product-id={p.id}
+            data-likes="0"
             data-name={p.name}
             data-stars={p.github_stars ?? -1}
             data-free={p.pricing_model === "完全免费" ? "1" : "0"}
@@ -278,7 +291,8 @@ const sortedProducts = [...category.products].sort((a, b) => {
                 );
               })}
             </div>
-            <div class="mt-3">
+            <div class="mt-3 flex flex-wrap items-center gap-2">
+              <VoteButton id={p.id} name={p.name}/>
               <ExtLinks official={p.official_url} github={p.github_url} sourceUrl={src?.url} sourceLabel={src?.label} />
             </div>
           </article>
@@ -322,6 +336,10 @@ const sortedProducts = [...category.products].sort((a, b) => {
   }
 
   function compare(a: HTMLElement, b: HTMLElement, sort: string) {
+    if (sort === "likes") {
+      const d = Number(b.dataset.likes || 0) - Number(a.dataset.likes || 0);
+      if (d !== 0) return d;
+    }
     if (sort === "stars") {
       const d = Number(b.dataset.stars) - Number(a.dataset.stars);
       if (d !== 0) return d;
@@ -336,7 +354,7 @@ const sortedProducts = [...category.products].sort((a, b) => {
     const oss = fd.get("oss") === "on";
     const platform = String(fd.get("platform") || "");
     const status = String(fd.get("status") || "");
-    const sort = String(fd.get("sort") || "stars");
+    const sort = String(fd.get("sort") || "likes");
 
     const visRows = tableRows.filter((r) => matches(r, free, oss, platform, status)).sort((a, b) => compare(a, b, sort));
     const visCards = cards.filter((r) => matches(r, free, oss, platform, status)).sort((a, b) => compare(a, b, sort));
@@ -409,6 +427,28 @@ const sortedProducts = [...category.products].sort((a, b) => {
   if (form) new ResizeObserver(setFilterH).observe(form);
 
   window.addEventListener("compare-lang", () => apply());
+  window.addEventListener("compare-votes", () => {
+    const active = document.activeElement as HTMLElement | null;
+    apply();
+    if (active?.matches('[data-vote-id]')) active.focus({preventScroll:true});
+  });
+  const viewButtons = [...document.querySelectorAll<HTMLButtonElement>('[data-view]')];
+  const media = window.matchMedia('(min-width: 768px)');
+  let preferredView: string | null = null;
+  try { preferredView = localStorage.getItem('compare-view'); } catch {}
+  function setView() {
+    const view = preferredView === 'cards' || preferredView === 'table' ? preferredView : media.matches ? 'table' : 'cards';
+    document.documentElement.dataset.compareView = view;
+    viewButtons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.view === view)));
+    updateScrollCue();
+  }
+  viewButtons.forEach(button => button.addEventListener('click', () => {
+    preferredView = button.dataset.view!;
+    try { localStorage.setItem('compare-view', preferredView); } catch {}
+    setView();
+  }));
+  media.addEventListener('change', setView);
+  setView();
 
   const drawerBtn = document.querySelector("[data-drawer-open]") as HTMLButtonElement | null;
   const drawerMain = document.querySelector("[data-filter-main]") as HTMLElement | null;

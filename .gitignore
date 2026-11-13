@@ -22,6 +22,13 @@ Desktop.ini
 
 # Logs and caches
 *.log
+.wrangler/
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+wrangler.deploy.json
+test-results/
+playwright-report/
 npm-debug.log*
 .npm
 .cache/

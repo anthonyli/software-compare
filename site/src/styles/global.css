@@ -1041,10 +1041,13 @@ body:not(.is-home) .header-search {
 }
 
 /* Mobile cards */
-.card-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+/* Keep responsive utilities such as md:hidden above the component defaults. */
+@layer components {
+  .card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
 }
 
 .product-card {
@@ -1053,6 +1056,35 @@ body:not(.is-home) .header-search {
   box-shadow: var(--shadow-card);
   padding: 1.1rem 1.15rem 1.15rem;
   border: 0;
+}
+
+/* Both views are available on desktop; narrow screens default to cards. */
+[data-matrix-shell] { display: none; }
+@media (min-width: 768px) {
+  [data-matrix-shell] { display: block; }
+  [data-card-list] { display: none; }
+}
+html[data-compare-view="table"] [data-matrix-shell] { display: block; }
+html[data-compare-view="table"] [data-card-list] { display: none; }
+html[data-compare-view="cards"] [data-matrix-shell] { display: none; }
+html[data-compare-view="cards"] [data-card-list] { display: flex; }
+.view-switch { display: inline-flex; border: 1px solid var(--color-line-strong); border-radius: var(--radius-pill); padding: 2px; background: var(--color-cream); }
+.view-switch button { padding: .4rem .7rem; border-radius: var(--radius-pill); font-size: .8rem; cursor: pointer; }
+.view-switch button[aria-pressed="true"] { background: var(--color-ink); color: var(--color-cream); }
+.vote-button { display: inline-flex; align-items: center; gap: .35rem; min-height: 36px; padding: .35rem .65rem; border: 1px solid var(--color-line-strong); border-radius: var(--radius-pill); background: var(--color-cream); color: var(--color-ink); font-size: .8rem; white-space: nowrap; cursor: pointer; }
+.sticky-col .vote-button { margin-top: .5rem; }
+.vote-button[aria-pressed="true"] { background: var(--color-ink); color: var(--color-cream); border-color: var(--color-ink); }
+.vote-button:disabled { cursor: wait; opacity: .6; }
+.vote-button:not(:disabled):hover { border-color: var(--color-ink); }
+[data-vote-count] { font-variant-numeric: tabular-nums; }
+.vote-status { margin-top: .75rem; font-size: .85rem; color: var(--color-warn); }
+.vote-status button { margin-left: .5rem; cursor: pointer; }
+.vote-status[hidden] { display: none; }
+.header-github { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; flex-shrink: 0; border-radius: 50%; }
+.header-github:hover { background: var(--color-paper-deep); }
+@media (max-width: 639px) {
+  .header-bar { column-gap: .5rem; }
+  .header-tools { gap: .3rem; }
 }
 
 .product-card .card-title {

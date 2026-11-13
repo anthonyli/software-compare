@@ -1,0 +1,25 @@
+---
+import T from './T.astro';
+import {githubSnapshot, githubEntry, syncTime} from '../lib/github-data';
+interface Props { url?:string|null }
+const {url}=Astro.props;
+const entry=url ? githubEntry(url) : null;
+const pending=Object.values(githubSnapshot.repositories).filter(x=>x.status==='pending').length;
+const total=Object.keys(githubSnapshot.repositories).length;
+let zh='GitHub 数据尚未自动同步。';
+let en='GitHub data has not been automatically synced yet.';
+if(url && entry) {
+  const time=entry.synced_at ? syncTime(entry.synced_at) : null;
+  zh=time ? `GitHub 数据更新于 ${time}（北京时间）。` : 'GitHub 数据尚无成功同步记录。';
+  en=time ? `GitHub data updated ${time} (UTC+8).` : 'No successful GitHub sync yet.';
+  if(entry.status==='pending') {
+    zh+=' 最近检查失败，待核实；保留此前数据。';
+    en+=' Latest check failed; verification pending. Previous values retained.';
+  }
+} else if(!url && githubSnapshot.last_attempt_at) {
+  const time=syncTime(githubSnapshot.last_attempt_at);
+  zh=`GitHub 最近检查于 ${time}（北京时间），${total-pending}/${total} 个仓库同步成功${pending ? `，${pending} 个待核实，沿用此前数据` : ''}。`;
+  en=`GitHub last checked ${time} (UTC+8): ${total-pending}/${total} repositories synced${pending ? `; ${pending} pending verification, previous values retained` : ''}.`;
+}
+---
+<p class="mt-1 text-xs text-muted" data-github-freshness><T zh={zh} en={en}/></p>

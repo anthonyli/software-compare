@@ -4,16 +4,24 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "node scripts/dev.mjs",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "dev:ui": "astro dev",
+    "sync:github": "node ../scripts/sync-github.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:e2e": "playwright test",
+    "configure:cloudflare": "node scripts/configure-cloudflare.mjs",
+    "deploy": "npm run configure:cloudflare && npm run build && node scripts/deploy.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.6.0",
     "astro": "^5.16.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.65.0",
     "@tailwindcss/vite": "^4.1.16",
-    "tailwindcss": "^4.1.16"
+    "tailwindcss": "^4.1.16",
+    "wrangler": "^4.161.0"
   }
 }

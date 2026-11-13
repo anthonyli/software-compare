@@ -1,0 +1,9 @@
+---
+interface Props {id:string; name:string}
+const {id,name}=Astro.props;
+---
+<button type="button" class="vote-button" data-vote-id={id} data-product-name={name} aria-pressed="false" aria-label={`为 ${name} 点赞`} disabled>
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 10v11H3V10h4ZM7 10l5-8a3 3 0 0 1 2 4l-1 4h6a2 2 0 0 1 2 2l-1 7a2 2 0 0 1-2 2H7"/></svg>
+  <span data-vote-label>点赞</span><span data-vote-count>—</span>
+</button>
+<script>import '../scripts/votes';</script>
