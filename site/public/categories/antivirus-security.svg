@@ -1,31 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- SPDX-License-Identifier: Apache-2.0 -->
-<!-- Original illustration for Compare / 软件对比. No third-party marks. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" fill="none" role="img" aria-hidden="true">
-  <rect width="480" height="260" fill="#FDE8EF"/>
-  <rect width="480" height="260" fill="url(#wash-antivirus-security)" opacity="0.85"/>
+<!-- Compare category cover system v2. Original artwork; no external resources. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" fill="none" aria-hidden="true" data-cover-system="compare-v2">
   <defs>
-    <linearGradient id="wash-antivirus-security" x1="0" y1="0" x2="480" y2="260" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FEEEF3" stop-opacity="0.0"/>
-      <stop offset="1" stop-color="#E5D2D9" stop-opacity="0.35"/>
-    </linearGradient>
-    <filter id="soft-antivirus-security" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#111111" flood-opacity="0.10"/>
-    </filter>
-    <pattern id="dots-antivirus-security" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="translate(18,16)">
-      <circle cx="1.2" cy="1.2" r="1.05" fill="#111111" opacity="0.35"/>
-    </pattern>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" stroke="#DEDED7" stroke-width="0.6" /></pattern>
   </defs>
-  <ellipse cx="60" cy="200" rx="80" ry="50" fill="#FFFFFF" opacity="0.4"/>
-  <ellipse cx="420" cy="36" rx="70" ry="48" fill="#FFFFFF" opacity="0.35"/>
-  <rect width="480" height="260" fill="url(#dots-antivirus-security)" opacity="0.45"/>
-  <g filter="url(#soft-antivirus-security)">
-    
+  <rect width="480" height="260" fill="#F5F4ED" />
+  <rect width="480" height="260" fill="url(#grid)" />
+  <rect x="30" y="26" width="420" height="216" rx="28" fill="#242424" opacity=".055" />
+  <rect x="30" y="22" width="420" height="216" rx="28" fill="#FFFFFF" stroke="#E8E7E0" />
+  <g transform="translate(67.2 36.4) scale(.72)">
+    <g data-cover-art="true">
+
     <g transform="translate(168,28)">
-      <path d="M72 8c22 14 44 18 72 18V132c0 42-28 64-72 86C28 196 0 174 0 132V26C28 26 50 22 72 8z" fill="#FFFFFF"/>
-      <path d="M72 32c16 10 34 14 56 14v82c0 30-20 47-56 64-36-17-56-34-56-64V46c22 0 40-4 56-14z" fill="#EFDBE2"/>
-      <path d="M48 108l18 18 34-40" fill="none" stroke="#111111" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M72 8c22 14 44 18 72 18V132c0 42-28 64-72 86C28 196 0 174 0 132V26C28 26 50 22 72 8z" fill="#F0F0EB" stroke="#242424" stroke-width="5" stroke-linejoin="round" />
+      <path d="M72 32c16 10 34 14 56 14v82c0 30-20 47-56 64-36-17-56-34-56-64V46c22 0 40-4 56-14z" fill="#C9C9C2" />
+      <path d="M48 108l18 18 34-40" fill="none" stroke="#242424" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
     </g>
-    
+
+  </g>
+
+  </g>
+
+  <g transform="translate(410 38)" fill="#242424">
+    <path d="M19 3A11 11 0 1 0 19 21L15 17A5.5 5.5 0 1 1 15 7Z" />
+    <rect x="15" y="11" width="3" height="8" rx=".5" />
+    <rect x="20" y="7" width="3" height="12" rx=".5" />
   </g>
 </svg>
