@@ -66,6 +66,44 @@
       "sources": [
         "https://sourceforge.net/projects/scribus/"
       ]
+    },
+    {
+      "id": "adobe-indesign",
+      "name": "Adobe InDesign",
+      "official_url": "https://www.adobe.com/products/indesign.html",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "订阅制",
+      "price_summary": "付费订阅；价格、试用和生成额度依地区及方案，以下单页面为准。",
+      "prices": [],
+      "free_tier_limits": "原生 INDD、字体、链接资源及插件依赖需单独验证；IDML 交换不保证版式无损。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "书刊、多页排版及印刷交付的商业对照项；与 Scribus 按排版任务比较。",
+      "features": {
+        "page_layout": {
+          "value": "yes"
+        },
+        "cmyk": {
+          "value": "yes"
+        },
+        "icc": {
+          "value": "yes"
+        },
+        "pdf_export": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://www.adobe.com/products/indesign.html",
+        "https://helpx.adobe.com/indesign/using/exporting-publishing-pdf.html"
+      ]
     }
   ]
 }

@@ -43,3 +43,7 @@ npm run dev
 本项目采用 [Apache License 2.0](LICENSE)。欢迎贡献：修正展示问题、补充翻译、改进无障碍和样式都可以。新增或修改产品数据时，请附上可核验的来源，并避免写入未证实的价格或功能。
 
 新增分类请遵循 [贡献流程](CONTRIBUTING.md) 和 [分类封面制作与验收](docs/design/category-cover-workflow.md)，封面、配色/场景说明与视觉验收缺一不可。
+
+## Adobe 工作流替代
+
+[查看按任务分类的 Adobe 与开源替代索引](docs/adobe-alternatives.md)，包括已收录的软件、格式迁移边界和后续扩展原则。
