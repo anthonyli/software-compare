@@ -1,0 +1,125 @@
+{
+  "category_slug": "transcription-tools",
+  "category_name_zh": "语音转写与字幕工具",
+  "collected_at": "2026-11-13",
+  "timezone": "Asia/Shanghai",
+  "notes": "转写可能误识别或生成不存在的内容，重要记录应对照原音频核实。输入含敏感内容时应核对模型运行位置、插件及网络选项。这里只录入工具资料，没有录制、上传或处理用户音视频。",
+  "features": [
+    {
+      "key": "offline_transcription",
+      "label": "离线转写"
+    },
+    {
+      "key": "file_transcription",
+      "label": "文件转写"
+    },
+    {
+      "key": "live_microphone",
+      "label": "实时麦克风转写"
+    },
+    {
+      "key": "transcript_export",
+      "label": "文本/字幕导出"
+    },
+    {
+      "key": "desktop_gui",
+      "label": "桌面图形界面"
+    }
+  ],
+  "products": [
+    {
+      "id": "whisper-cpp",
+      "name": "whisper.cpp",
+      "official_url": "https://github.com/ggml-org/whisper.cpp",
+      "github_url": "https://github.com/ggml-org/whisper.cpp",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "开源免费",
+      "summary": "Whisper 的 C/C++ 推理实现，适合开发者构建本地转写工具或命令行批处理。",
+      "price_summary": "开源程序免费使用，本地推理需自备模型与硬件；模型、插件及可选远端服务的许可和费用需分别核对。",
+      "prices": [],
+      "free_tier_limits": "需下载兼容模型并构建或安装程序；README 的 CLI 示例要求 16-bit WAV，其他输入可能需 FFmpeg 转换。本地运行可离线，不代表所有封装服务都离线；未实测 M4 性能。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "features": {
+        "offline_transcription": {
+          "value": "yes",
+          "note": "下载模型后可在本机推理"
+        },
+        "file_transcription": {
+          "value": "yes",
+          "note": "提供 whisper-cli 文件转写示例"
+        },
+        "live_microphone": {
+          "value": "partial",
+          "note": "仓库包含实时语音示例，需自行构建和配置"
+        },
+        "transcript_export": {
+          "value": "unknown",
+          "note": "本次未逐项核实输出格式"
+        },
+        "desktop_gui": {
+          "value": "no",
+          "note": "核心是库与示例，不是开箱即用的完整桌面应用"
+        }
+      },
+      "sources": [
+        "https://github.com/ggml-org/whisper.cpp"
+      ]
+    },
+    {
+      "id": "buzz",
+      "name": "Buzz",
+      "official_url": "https://github.com/chidiwilliams/buzz",
+      "github_url": "https://github.com/chidiwilliams/buzz",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "开源免费",
+      "summary": "带图形界面的离线转写工具，支持文件、麦克风输入和字幕导出，适合整理访谈与课程。",
+      "price_summary": "开源程序免费使用，本地推理需自备模型与硬件；模型、插件及可选远端服务的许可和费用需分别核对。",
+      "prices": [],
+      "free_tier_limits": "当前 Mac 版要求 Apple Silicon；运行资源取决于模型和后端。离线模型不必上传音频，但网络链接及插件会访问外部服务；不要将所有插件流程视为离线。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "features": {
+        "offline_transcription": {
+          "value": "yes",
+          "note": "官方说明支持本机离线转写"
+        },
+        "file_transcription": {
+          "value": "yes",
+          "note": "可转写音频与视频文件"
+        },
+        "live_microphone": {
+          "value": "yes",
+          "note": "支持麦克风实时转写"
+        },
+        "transcript_export": {
+          "value": "yes",
+          "note": "支持 TXT、SRT 与 VTT"
+        },
+        "desktop_gui": {
+          "value": "yes",
+          "note": "提供转写查看器、搜索和播放控制"
+        }
+      },
+      "sources": [
+        "https://github.com/chidiwilliams/buzz"
+      ]
+    }
+  ]
+}

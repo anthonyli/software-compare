@@ -5,7 +5,7 @@ export const siteConfig = {
   name: "软件对比",
   tagline: "对照价格、免费限制与功能，选出适合你的工具",
   description:
-    "对比常用电脑软件的价格、免费限制、平台和功能差异，覆盖办公、影音、文件、系统、安全和开发工具。数据采集于 2026-11-12。",
+    "对比桌面、手机和网页工具的价格、免费限制、平台和功能，覆盖办公、AI、创作、开发、运动和户外等场景。各条目单独标注资料日期。",
   siteUrl: process.env.PUBLIC_SITE_URL || "http://localhost:4321",
   collectedAt: "2026-11-12",
   timezone: "Asia/Shanghai (UTC+8)",
@@ -14,6 +14,7 @@ export const siteConfig = {
 
 /** 首页分组：slug 必须与数据里的品类 id 一致。 */
 export const categoryGroups: { id: string; name: string; slugs: string[] }[] = [
+  { id: "lifestyle", name: "运动与户外", slugs: ["fitness-training", "cycling-tools", "outdoor-navigation"] },
   { id: "ai", name: "AI 工具", slugs: ["ai-assistants", "local-ai", "ai-coding", "ai-image-workflows"] },
   { id: "creative", name: "设计与摄影", slugs: ["image-editors", "vector-graphics", "photo-management", "desktop-publishing", "animation-3d", "animation-2d", "compositing"] },
   {
@@ -24,7 +25,7 @@ export const categoryGroups: { id: string; name: string; slugs: string[] }[] = [
   {
     id: "media",
     name: "影音媒体",
-    slugs: ["screen-recorders", "video-editors", "audio-editors", "converters"],
+    slugs: ["screen-recorders", "video-editors", "audio-editors", "audio-recorders", "transcription-tools", "converters"],
   },
   {
     id: "files",
@@ -68,6 +69,12 @@ export const featureLabelFull: Record<string, string> = {
 
 /** 首页与导航用的品类一字记号，纯展示，不改变数据。 */
 export const categoryMonograms: Record<string, string> = {
+  "audio-recorders": "录",
+  "transcription-tools": "译",
+  "fitness-training": "练",
+  "cycling-tools": "骑",
+  "outdoor-navigation": "山",
+
   "ai-coding": "助",
   "ai-image-workflows": "生",
   "animation-3d": "立",
@@ -98,6 +105,12 @@ export const categoryMonograms: Record<string, string> = {
 
 /** 首页卡片色块，仅用于展示，不代表产品官方品牌色。 */
 export const categoryTints: Record<string, string> = {
+  "audio-recorders": "#E8F8F0",
+  "transcription-tools": "#E8F8F0",
+  "fitness-training": "#E8F8F0",
+  "cycling-tools": "#E8F8F0",
+  "outdoor-navigation": "#E8F8F0",
+
   "ai-coding": "#E8F1FF",
   "ai-image-workflows": "#E8F1FF",
   "animation-3d": "#E8F1FF",

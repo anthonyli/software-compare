@@ -2,6 +2,12 @@
 
 /** Category display names, keyed by slug. */
 export const categoryNames: Record<string, { zh: string; en: string }> = {
+  "audio-recorders": { zh: "录音工具", en: "Audio recorders" },
+  "transcription-tools": { zh: "语音转写", en: "Speech transcription" },
+  "fitness-training": { zh: "健身训练", en: "Fitness training" },
+  "cycling-tools": { zh: "骑行训练与分析", en: "Cycling training & analysis" },
+  "outdoor-navigation": { zh: "徒步登山与户外导航", en: "Hiking & outdoor navigation" },
+
   "ai-coding": { zh: "AI 编程助手", en: "AI coding assistants" },
   "ai-image-workflows": { zh: "AI 图像工作流", en: "AI image workflows" },
   "animation-3d": { zh: "三维动画与建模", en: "3D animation & modeling" },
@@ -36,6 +42,7 @@ export const categoryNames: Record<string, { zh: string; en: string }> = {
 };
 
 export const groupNames: Record<string, { zh: string; en: string }> = {
+  lifestyle: { zh: "运动与户外", en: "Fitness & outdoors" },
   ai: { zh: "AI 工具", en: "AI tools" },
   creative: { zh: "设计与摄影", en: "Design & photography" },
   office: { zh: "办公效率", en: "Productivity" },
