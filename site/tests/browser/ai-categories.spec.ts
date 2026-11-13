@@ -21,3 +21,26 @@ test('AI categories have scenario guides, migrated products and no fourth catego
  expect(oldCategory.status()).toBe(301);
  expect(oldCategory.headers().location).toContain('/c/ai-assistants/');
 });
+
+test('AI comparison tables include expanded tools and readable conditions', async ({page}) => {
+ await page.setViewportSize({width:1280,height:900});
+ await page.goto('/c/ai-assistants/');
+ await expect(page.locator('#matrix tbody tr')).toHaveCount(13);
+ await expect(page.locator('#matrix [data-product-id="deepseek"]')).toContainText('DeepSeek');
+ await expect(page.locator('#matrix thead')).toContainText('用途 / 数据与使用边界');
+ const row = page.locator('#matrix [data-product-id="kimi"]');
+ await row.locator('summary').click();
+ await expect(row.locator('details')).toHaveAttribute('open','');
+ await row.locator('summary').click();
+ await expect(row.locator('details')).not.toHaveAttribute('open','');
+ await expect(row.locator('.ai-cell-note').first()).toBeVisible();
+ await page.goto('/c/ai-coding/');
+ await expect(page.locator('#matrix tbody tr')).toHaveCount(8);
+ await expect(page.locator('#matrix [data-product-id="cursor"]')).toContainText('Cursor');
+ await page.goto('/c/ai-image-workflows/');
+ await expect(page.locator('#matrix tbody tr')).toHaveCount(6);
+ await expect(page.locator('#matrix [data-product-id="recraft"]')).toContainText('Recraft');
+ await page.setViewportSize({width:390,height:900});
+ expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+ await expect(page.locator('#card-list [data-product-id="recraft"]')).toContainText('Recraft');
+});

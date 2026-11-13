@@ -1,7 +1,7 @@
 {
   "category_slug": "ai-coding",
   "category_name_zh": "AI 编程工具",
-  "collected_at": "2026-11-13",
+  "collected_at": "2026-11-14",
   "timezone": "Asia/Shanghai",
   "notes": "比较工具接入方式，不代表模型质量排名。Agent 可以写文件和运行命令，建议在隔离分支审查权限。M4 16GB 的可用本地模型取决于量化、上下文与运行时，不能保证所有模型可用。仅核实官方资料，未安装实测。",
   "features": [
@@ -169,6 +169,251 @@
       "sources": [
         "https://github.com/cline/cline",
         "https://docs.cline.bot/running-models-locally/overview"
+      ]
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "official_url": "https://cursor.com/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": false,
+      "license": "专有应用/服务条款（非开源）；模型权重许可另计",
+      "pricing_model": "免费增值 / 部分模型按用量计费",
+      "price_summary": "有额度有限的 Free 与付费方案；第三方模型等可能额外计量，不沿用旧价格或承诺无限使用。",
+      "prices": [],
+      "free_tier_limits": "代码上下文会经过后端和模型服务；开启 Privacy Mode 后官方称不使用数据训练。Agent 可修改文件或执行操作，需审查权限和结果。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "以编辑器与 Agent 为中心的开发工具，提供项目上下文、CLI、云端 Agent 及代码审查。",
+      "features": {
+        "cli": {
+          "value": "yes",
+          "note": "官网提供 CLI 入口。"
+        },
+        "ide_extension": {
+          "value": "partial",
+          "note": "主要是独立编辑器，不等同于通用 IDE 插件。"
+        },
+        "local_models": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        },
+        "code_edits": {
+          "value": "yes",
+          "note": "提供代码 Agent 与代码审查。"
+        },
+        "run_tests": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        }
+      },
+      "sources": [
+        "https://cursor.com/pricing",
+        "https://cursor.com/security"
+      ]
+    },
+    {
+      "id": "github-copilot",
+      "name": "GitHub Copilot",
+      "official_url": "https://github.com/features/copilot/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "open_source": false,
+      "license": "专有应用/服务条款（非开源）；模型权重许可另计",
+      "pricing_model": "免费增值 / 用量额度",
+      "price_summary": "Free 和多档付费订阅并存；云端 Agent、模型选择及额度依套餐，可能额外计费。",
+      "prices": [],
+      "free_tier_limits": "个人账户可退出模型训练；请求经过 GitHub 与相关模型提供商，处理规则依模型与计划。Agent 修改需要代码审查和测试。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "集成 GitHub 与多种 IDE 的编码助手，提供补全、CLI、云端 Agent 及代码审查。",
+      "features": {
+        "cli": {
+          "value": "yes",
+          "note": "套餐页列有 Copilot CLI。"
+        },
+        "ide_extension": {
+          "value": "yes",
+          "note": "官方列出 VS Code、Visual Studio、JetBrains、Xcode 等集成。"
+        },
+        "local_models": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        },
+        "code_edits": {
+          "value": "partial",
+          "note": "Agent 修改能力及云端入口依套餐和编辑器。"
+        },
+        "run_tests": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        }
+      },
+      "sources": [
+        "https://github.com/features/copilot/plans",
+        "https://github.com/features/copilot/",
+        "https://docs.github.com/en/copilot/reference/ai-models/model-hosting"
+      ]
+    },
+    {
+      "id": "claude-code",
+      "name": "Claude Code",
+      "official_url": "https://code.claude.com/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "open_source": false,
+      "license": "专有应用/服务条款（非开源）；模型权重许可另计",
+      "pricing_model": "订阅 / API 用量计费",
+      "price_summary": "多数入口需 Claude 订阅或 Console 账户；API 与订阅用量规则不同，不默认包含无限任务。",
+      "prices": [],
+      "free_tier_limits": "代码与提示词发送至所选云服务；消费者训练依设置，商业/API 默认不训练但有例外授权；主动反馈使用单独保留规则。命令执行需审查权限。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "面向项目任务的编程 Agent，可读代码库、修改文件、执行命令，并接入终端、IDE、桌面及 Web。",
+      "features": {
+        "cli": {
+          "value": "yes",
+          "note": "官方终端 CLI。"
+        },
+        "ide_extension": {
+          "value": "yes",
+          "note": "支持 VS Code 与 JetBrains。"
+        },
+        "local_models": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        },
+        "code_edits": {
+          "value": "yes",
+          "note": "可读取代码库并修改文件。"
+        },
+        "run_tests": {
+          "value": "partial",
+          "note": "能执行命令；测试须在环境中可用并获得权限。"
+        }
+      },
+      "sources": [
+        "https://code.claude.com/docs/en/overview",
+        "https://code.claude.com/docs/en/data-usage"
+      ]
+    },
+    {
+      "id": "qoder-cn",
+      "name": "Qoder CN（原通义灵码）",
+      "official_url": "https://qoder.com.cn/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": false,
+      "license": "专有应用/服务条款（非开源）；模型权重许可另计",
+      "pricing_model": "有限体验 / 订阅与 Credits",
+      "price_summary": "官方已结束原个人专业版限免；当前有有限体验额度及付费 Credits 方案，不能标注为全功能永久免费。",
+      "prices": [],
+      "free_tier_limits": "原通义灵码已更名；旧 VS Code 插件停止演进。企业 VPC 属于独立企业方案，不等于个人版离线推理。使用前核对当前产品线、账号及数据政策。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "阿里编码助手，覆盖 Desktop、JetBrains 与 CLI，提供补全、项目上下文及 Agent 工作流。",
+      "features": {
+        "cli": {
+          "value": "yes",
+          "note": "当前系列包括 Qoder CLI CN。"
+        },
+        "ide_extension": {
+          "value": "partial",
+          "note": "有 JetBrains 插件与 Desktop；旧 VS Code 插件停止演进。"
+        },
+        "local_models": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        },
+        "code_edits": {
+          "value": "yes",
+          "note": "官方介绍 Agent 与跨文件修改工作流。"
+        },
+        "run_tests": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        }
+      },
+      "sources": [
+        "https://help.aliyun.com/zh/lingma/introduction-of-lingma",
+        "https://help.aliyun.com/zh/lingma/billing-description",
+        "https://help.aliyun.com/zh/lingma/faq"
+      ]
+    },
+    {
+      "id": "trae",
+      "name": "TRAE",
+      "official_url": "https://www.trae.ai/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "专有应用/服务条款（非开源）；模型权重许可另计",
+      "pricing_model": "订阅 / 用量计费",
+      "price_summary": "存在会员与 token/用量计费；地域版本、当前价格与赠送额度须查对应官网，不沿用旧限免宣传。",
+      "prices": [],
+      "free_tier_limits": "隐私模式官方文档入口可确认，但本轮未取得正文，不承诺代码永不上传或零留存。Agent 修改代码与调用工具前应核对权限，国内外版本规则不同。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "提供 IDE、SOLO 编码 Agent 与 CLI 的开发工具，可结合代码库、搜索与文档上下文。",
+      "features": {
+        "cli": {
+          "value": "yes",
+          "note": "官方提供 CLI 入口。"
+        },
+        "ide_extension": {
+          "value": "partial",
+          "note": "主要为独立 IDE，不等同于通用插件。"
+        },
+        "local_models": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        },
+        "code_edits": {
+          "value": "partial",
+          "note": "提供 SOLO 编码 Agent，具体权限和入口依版本。"
+        },
+        "run_tests": {
+          "value": "unknown",
+          "note": "本轮官方资料未充分核实，不等于不支持。"
+        }
+      },
+      "sources": [
+        "https://www.trae.ai/",
+        "https://www.trae.ai/cli",
+        "https://www.trae.ai/blog/trae_membership_0213",
+        "https://docs.trae.ai/ide/privacy-mode"
       ]
     }
   ]

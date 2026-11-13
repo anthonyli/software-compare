@@ -45,6 +45,7 @@ const platforms = [...new Set(category.products.flatMap((p) => p.platforms))].so
 const statuses = [...new Set(category.products.map((p) => p.maintenance_status).filter(Boolean))] as string[];
 const desc = uiT("categoryDesc", "zh", { name: catNames.zh, n: category.products.length });
 const descEn = uiT("categoryDesc", "en", { name: catNames.en, n: category.products.length });
+const isAi = category.groupId === "ai";
 const ossCount = category.products.filter((p) => p.open_source).length;
 
 const sortedProducts = [...category.products].sort((a, b) => {
@@ -150,6 +151,7 @@ const sortedProducts = [...category.products].sort((a, b) => {
             <tr>
               <th class="sticky-col"><T zh={ui.zh.software} en={ui.en.software} /></th>
               <th><T zh={ui.zh.price} en={ui.en.price} /></th>
+              {isAi && <th class="ai-context"><T zh="用途 / 数据与使用边界" en="Use case / data and limits" /></th>}
               {category.features.map((f) => {
                 const lab = featurePair(category.slug, f.key, f.label);
                 return (
@@ -204,7 +206,16 @@ const sortedProducts = [...category.products].sort((a, b) => {
                   </td>
                   <td class="price-cell" title={priceZh.caveat} data-i18n="title" data-zh={priceZh.caveat} data-en={priceEn.caveat}>
                     <T zh={priceZh.tableCell} en={priceEn.tableCell} />
+                    {isAi && <p class="ai-cell-note"><T zh={p.price_summary} en={tr(p.price_summary)}/></p>}
                   </td>
+                  {isAi && <td class="ai-context">
+                    <p><T zh={p.summary} en={tr(p.summary)}/></p>
+                    <details class="mt-2"><summary><T zh="数据、许可与限制" en="Data, license and limits"/></summary>
+                      <p class="ai-cell-note"><T zh={p.free_tier_limits || '未核实'} en={tr(p.free_tier_limits || '未核实')}/></p>
+                      <p class="ai-cell-note"><T zh={p.license || ""} en={tr(p.license || "")}/></p>
+                      <a href={p.href} class="underline"><T zh="查看官方来源" en="View official sources"/></a>
+                    </details>
+                  </td>}
                   {category.features.map((f) => {
                     const cell = p.features[f.key] || { value: "unknown", note: "" };
                     const v = (cell.value || "unknown").toLowerCase();
@@ -223,6 +234,7 @@ const sortedProducts = [...category.products].sort((a, b) => {
                             <T zh={short.zh} en={short.en} />
                           </span>
                         )}
+                        {isAi && <p class="ai-cell-note"><T zh={empty ? (v === 'na' ? '不适用' : '尚未核实') : noteZh} en={empty ? (v === 'na' ? 'Not applicable' : 'Not verified') : tr(noteZh)}/></p>}
                       </td>
                     );
                   })}
@@ -270,7 +282,8 @@ const sortedProducts = [...category.products].sort((a, b) => {
                 <span class="t-en">{p.platforms.map((x) => platformEn(x)).join(" · ")}</span>
               </p>
             )}
-            <div class="feat-mini">
+            {isAi && <div class="mt-3 text-sm"><p><T zh={p.summary} en={tr(p.summary)}/></p><details class="mt-2"><summary><T zh="数据、许可与限制" en="Data, license and limits"/></summary><p><T zh={p.free_tier_limits || '未核实'} en={tr(p.free_tier_limits || '未核实')}/></p><p><T zh={p.license || ""} en={tr(p.license || "")}/></p></details></div>}
+            <div class:list={["feat-mini", {"ai-feat-mini": isAi}]}>
               {category.features.map((f) => {
                 const cell = p.features[f.key] || { value: "unknown", note: "" };
                 const v = (cell.value || "unknown").toLowerCase();
@@ -283,11 +296,11 @@ const sortedProducts = [...category.products].sort((a, b) => {
                       <T zh={lab.zh} en={lab.en} />
                     </span>
                     {empty ? (
-                      <span class="feat-empty">—</span>
+                      <span class="feat-empty">{isAi ? <T zh={v === 'na' ? '不适用' : '尚未核实'} en={v === 'na' ? 'Not applicable' : 'Not verified'}/> : '—'}</span>
                     ) : (
-                      <span class:list={["feat", featClass(cell.value)]}>
-                        <T zh={short.zh} en={short.en} />
-                      </span>
+                      <div><span class:list={["feat", featClass(cell.value)]}><T zh={short.zh} en={short.en}/></span>
+                        {isAi && <p class="mt-1 text-xs font-normal text-muted"><T zh={cell.note} en={tr(cell.note)}/></p>}
+                      </div>
                     )}
                   </>
                 );
@@ -484,3 +497,11 @@ const sortedProducts = [...category.products].sort((a, b) => {
     if (window.innerWidth >= 768) closeDrawer();
   });
 </script>
+
+<style>
+ .ai-cell-note { margin-top: .5rem; font-size: .75rem; font-weight: 400; line-height: 1.5; color: #555; white-space: normal; min-width: 9rem; max-width: 14rem; }
+ .ai-context { min-width: 16rem; max-width: 20rem; white-space: normal; font-size: .8rem; line-height: 1.6; }
+ .ai-feat-mini { grid-template-columns: minmax(5rem, .8fr) minmax(0, 1.2fr); align-items: start; }
+ .ai-feat-mini > * { min-width: 0; overflow-wrap: anywhere; }
+ .ai-context summary { cursor: pointer; text-decoration: underline; }
+</style>
