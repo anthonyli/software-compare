@@ -107,14 +107,24 @@ test('filter reset and empty search do not leave stale state',async({page})=>{
  await input.press('Enter');await expect(page).toHaveURL(/\/c\/cleaners\//);
 });
 test('concurrent retries count once and excessive writes are limited',async({playwright})=>{
+ test.setTimeout(30_000);
  const api=await playwright.request.newContext({baseURL:origin});
  const initial=(await (await api.get('/api/votes?ids=sunshine')).json()).votes[0].count;
  const results=await Promise.all(Array.from({length:5},()=>api.put('/api/votes',{headers:{Origin:origin},data:{id:'sunshine',liked:true}})));
  for(const result of results) {expect(result.status()).toBe(200);expect((await result.json()).vote.count).toBe(initial+1);}
  let limited=false;
- for(let i=0;i<35;i++) {
+ // This test's 30s timeout is shorter than the 60s fixed window. Even if
+ // requests straddle a minute boundary, at most two 30-request buckets apply.
+ // 61 retries must exceed that combined capacity; 35 can split without a 429.
+ for(let i=0;i<61;i++) {
   const response=await api.put('/api/votes',{headers:{Origin:origin},data:{id:'sunshine',liked:true}});
-  if(response.status()===429) {expect(response.headers()['retry-after']).toBe('60');limited=true;break;}
+  if(response.status()===429) {
+   expect(response.headers()['retry-after']).toBe('60');
+   expect(await response.json()).toEqual({error:'rate_limited'});
+   limited=true;break;
+  }
+  expect(response.status()).toBe(200);
+  expect((await response.json()).vote.count).toBe(initial+1);
  }
  expect(limited).toBe(true);
  expect((await (await api.get('/api/votes?ids=sunshine')).json()).votes[0].count).toBe(initial+1);
