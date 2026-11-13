@@ -1,0 +1,71 @@
+{
+  "category_slug": "desktop-publishing",
+  "category_name_zh": "桌面排版与印刷",
+  "collected_at": "2026-11-13",
+  "collected_at_timezone": "Asia/Shanghai (UTC+8)",
+  "features": [
+    {
+      "key": "page_layout",
+      "label": "页面排版"
+    },
+    {
+      "key": "cmyk",
+      "label": "CMYK 与专色"
+    },
+    {
+      "key": "icc",
+      "label": "ICC 色彩管理"
+    },
+    {
+      "key": "pdf_export",
+      "label": "PDF 输出"
+    }
+  ],
+  "products": [
+    {
+      "id": "scribus",
+      "name": "Scribus",
+      "official_url": "https://www.scribus.net/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL（官方项目页列 GPLv2 / GPLv3）",
+      "pricing_model": "完全免费",
+      "price_summary": "官网提供免费开源版本。",
+      "prices": [
+        {
+          "plan": "软件本身",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无试用期限；字体、素材和第三方插件的授权需分别确认。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "面向宣传册、刊物和印刷版式的 InDesign 替代选项；不要假设能无损往返 INDD 文件。",
+      "features": {
+        "page_layout": {
+          "value": "yes"
+        },
+        "cmyk": {
+          "value": "yes"
+        },
+        "icc": {
+          "value": "yes"
+        },
+        "pdf_export": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://sourceforge.net/projects/scribus/"
+      ]
+    }
+  ]
+}

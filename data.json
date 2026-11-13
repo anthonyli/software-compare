@@ -2259,6 +2259,149 @@
           ],
           "source_repo_url": "https://git.dec05eba.com/gpu-screen-recorder/",
           "source_repo_label": "官方源码（git.dec05eba.com）"
+        },
+        {
+          "github_url": null,
+          "open_source": false,
+          "license": "专有软件",
+          "prices": [],
+          "github_stars": null,
+          "latest_release": null,
+          "latest_release_date": null,
+          "maintenance_status": null,
+          "collected_at": "2026-11-13",
+          "id": "focusee",
+          "name": "FocuSee",
+          "official_url": "https://focusee.ai/",
+          "platforms": [
+            "Windows",
+            "macOS"
+          ],
+          "pricing_model": "付费",
+          "price_summary": "提供订阅和买断方案；价格及 AI Credits 额度以官网为准。",
+          "free_tier_limits": "可免费录制和编辑，仅可免费导出 1 个带水印视频；部分 AI 功能消耗 Credits。",
+          "summary": "面向教程与产品演示的自动运镜录屏工具，提供光标效果、缩放和画面布局；不是通用专业剪辑器。",
+          "features": {
+            "region_recording": {
+              "value": "yes",
+              "note": ""
+            },
+            "webcam_overlay": {
+              "value": "yes",
+              "note": ""
+            },
+            "system_audio": {
+              "value": "yes",
+              "note": ""
+            },
+            "microphone": {
+              "value": "yes",
+              "note": ""
+            },
+            "builtin_editor": {
+              "value": "yes",
+              "note": ""
+            },
+            "export_gif": {
+              "value": "yes",
+              "note": ""
+            },
+            "annotation": {
+              "value": "yes",
+              "note": ""
+            },
+            "rec_4k_60fps": {
+              "value": "paid",
+              "note": "官网列出最高 4K、60 fps 导出；实际效果取决于素材和设备。"
+            },
+            "livestream": {
+              "value": "unknown",
+              "note": ""
+            },
+            "cloud_share": {
+              "value": "paid",
+              "note": "分享链接会上传内容，使用前检查套餐与隐私设置。"
+            },
+            "free_no_watermark": {
+              "value": "no",
+              "note": ""
+            }
+          },
+          "sources": [
+            "https://focusee.ai/",
+            "https://focusee.ai/guide/basic-information.htm",
+            "https://focusee.ai/pricing.htm"
+          ]
+        },
+        {
+          "github_url": null,
+          "open_source": false,
+          "license": "专有软件",
+          "prices": [],
+          "github_stars": null,
+          "latest_release": null,
+          "latest_release_date": null,
+          "maintenance_status": null,
+          "collected_at": "2026-11-13",
+          "id": "screen-studio",
+          "name": "Screen Studio",
+          "official_url": "https://screen.studio/",
+          "platforms": [
+            "macOS"
+          ],
+          "pricing_model": "订阅",
+          "price_summary": "月付或年付订阅；当前官网仅列付费方案，价格以官网为准。",
+          "free_tier_limits": "未确认长期免费导出档；不要将免费下载理解为免费使用全部功能。",
+          "summary": "面向 Mac 产品演示的录屏编辑器，支持缩放、光标后期调整和画面包装；云分享为可选功能，不支持 Windows。",
+          "features": {
+            "webcam_overlay": {
+              "value": "yes",
+              "note": ""
+            },
+            "builtin_editor": {
+              "value": "yes",
+              "note": ""
+            },
+            "export_gif": {
+              "value": "yes",
+              "note": ""
+            },
+            "region_recording": {
+              "value": "unknown",
+              "note": ""
+            },
+            "system_audio": {
+              "value": "unknown",
+              "note": ""
+            },
+            "microphone": {
+              "value": "unknown",
+              "note": ""
+            },
+            "rec_4k_60fps": {
+              "value": "paid",
+              "note": "官网列出最高 4K、60 fps 导出；实际效果取决于素材和设备。"
+            },
+            "livestream": {
+              "value": "unknown",
+              "note": ""
+            },
+            "annotation": {
+              "value": "unknown",
+              "note": ""
+            },
+            "cloud_share": {
+              "value": "paid",
+              "note": "分享链接会上传内容，使用前检查套餐与隐私设置。"
+            },
+            "free_no_watermark": {
+              "value": "unknown",
+              "note": ""
+            }
+          },
+          "sources": [
+            "https://screen.studio/"
+          ]
         }
       ]
     },

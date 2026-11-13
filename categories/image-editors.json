@@ -1,0 +1,121 @@
+{
+  "category_slug": "image-editors",
+  "category_name_zh": "图像编辑与绘画",
+  "collected_at": "2026-11-13",
+  "collected_at_timezone": "Asia/Shanghai (UTC+8)",
+  "features": [
+    {
+      "key": "layers",
+      "label": "图层编辑"
+    },
+    {
+      "key": "painting",
+      "label": "数字绘画"
+    },
+    {
+      "key": "animation",
+      "label": "逐帧动画"
+    },
+    {
+      "key": "plugins",
+      "label": "插件扩展"
+    }
+  ],
+  "products": [
+    {
+      "id": "gimp",
+      "name": "GIMP",
+      "official_url": "https://www.gimp.org/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0-or-later",
+      "pricing_model": "完全免费",
+      "price_summary": "官网提供免费开源版本。",
+      "prices": [
+        {
+          "plan": "软件本身",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "无试用期限；字体、素材和第三方插件的授权需分别确认。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "面向修图、合成和图形制作的 Photoshop 替代选项；迁移复杂 PSD 工作流前需验证效果。",
+      "features": {
+        "layers": {
+          "value": "yes"
+        },
+        "painting": {
+          "value": "yes"
+        },
+        "animation": {
+          "value": "unknown"
+        },
+        "plugins": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://www.gimp.org/",
+        "https://www.gimp.org/docs/userfaq.html",
+        "https://docs.gimp.org/3.0/en/gimp-image-combining.html"
+      ]
+    },
+    {
+      "id": "krita",
+      "name": "Krita",
+      "official_url": "https://krita.org/en/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "完全免费",
+      "price_summary": "官网提供免费开源版本。",
+      "prices": [
+        {
+          "plan": "软件本身",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "官网版本免费；商店分发、培训或素材可能另收费。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "偏重插画、笔刷和逐帧动画；不应当作 Photoshop 所有摄影与印前功能的等价替代。",
+      "features": {
+        "layers": {
+          "value": "yes"
+        },
+        "painting": {
+          "value": "yes"
+        },
+        "animation": {
+          "value": "yes"
+        },
+        "plugins": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://krita.org/en/",
+        "https://krita.org/en/features/",
+        "https://krita.org/en/about/license/",
+        "https://krita.org/en/download/"
+      ]
+    }
+  ]
+}
