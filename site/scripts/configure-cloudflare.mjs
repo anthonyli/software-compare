@@ -6,4 +6,4 @@ if(url.protocol!=='https:' || url.pathname!=='/' || url.hostname.endsWith('.exam
 const config=JSON.parse(await fs.readFile('wrangler.jsonc','utf8'));
 config.d1_databases[0].database_id=CLOUDFLARE_D1_DATABASE_ID;
 await fs.writeFile('wrangler.deploy.json',JSON.stringify(config,null,2)+'\n');
-console.log('Production Worker configuration prepared.');
+console.log('Production Pages configuration prepared.');

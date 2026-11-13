@@ -11,7 +11,7 @@ for(const args of [['run','build'],['exec','wrangler','--','d1','migrations','ap
   const result=spawnSync('npm',args,{stdio:'inherit'});
   if(result.status!==0) process.exit(result.status || 1);
 }
-const server=spawn('npm',['exec','wrangler','--','dev','--local','--port','8787','--live-reload'],{stdio:'inherit'});
+const server=spawn('npm',['exec','wrangler','--','pages','dev','dist','--port','8787','--live-reload'],{stdio:'inherit'});
 let stopping=false, building=null, queued=false, timer;
 function rebuild() {
   if(stopping) return;
@@ -23,6 +23,7 @@ function changed(){clearTimeout(timer);timer=setTimeout(rebuild,200);}
 const watchers=[
   watch('src',{recursive:true},changed),
   watch('public',{recursive:true},changed),
+  watch('worker',{recursive:true},changed),
   watch('../categories',{recursive:true},changed),
   watch('..',(_,name)=>{if(['data.json','github-data.json'].includes(String(name)))changed();}),
   watch('.',(_,name)=>{if(['astro.config.mjs'].includes(String(name)))changed();}),

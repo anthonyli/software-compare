@@ -1,5 +1,18 @@
 import {test,expect} from '@playwright/test';
 const origin='http://127.0.0.1:8788';
+test('Pages serves assets and API separately without exposing the worker bundle',async({request})=>{
+ expect((await request.get('/')).status()).toBe(200);
+ expect((await request.get('/vote-catalog.json')).status()).toBe(200);
+ expect((await request.get('/this-page-does-not-exist/')).status()).toBe(404);
+ const bundle=await request.get('/_worker.js');
+ // Pages dev currently returns 502 for this reserved path; neither local nor
+ // production asset serving may expose the function source.
+ expect(bundle.status()).toBeGreaterThanOrEqual(400);
+ expect(await bundle.text()).not.toContain('async function createIdentity');
+ const unknown=await request.get('/api/not-found');
+ expect(unknown.status()).toBe(404);
+ expect(await unknown.json()).toEqual({error:'not_found'});
+});
 test('anonymous votes persist, share across categories and change ranking',async({page,browser})=>{
  await page.goto('/c/screenshot-tools/');
  const vote=page.locator('#matrix [data-vote-id="sharex"]');

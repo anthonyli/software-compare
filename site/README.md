@@ -1,6 +1,6 @@
 # Compare / 软件对比 — 运行与部署
 
-Astro 生成静态页面；Cloudflare Worker 提供匿名点赞 API，D1 保存共享票数。
+Astro 生成静态页面；Cloudflare Pages 提供静态托管，Pages Functions 提供匿名点赞 API，D1 保存共享票数。
 GitHub Actions 每天检查 GitHub 数据，更新独立的 `../github-data.json` 后构建部署。
 官网资料仍来自原始 JSON，不自动抓取或覆盖价格、功能、平台和许可证。
 
@@ -25,11 +25,14 @@ npm run dev
 
 1. 在 Cloudflare 建立 D1 数据库（数据库名 `software-compare`），或运行
    `npx wrangler login`、`npx wrangler d1 create software-compare`。记录数据库 UUID 和账户 ID。
-2. 准备 API Token，限定目标账户并授予 Workers Scripts Edit、D1 Edit；
+2. 准备 API Token，限定目标账户并授予 Cloudflare Pages Edit、D1 Edit；
    如果还要管理自定义域名，另配置相关域名权限。域名绑定不是同步脚本的职责。
-3. 准备一个随机 Cookie 签名密钥：使用 `openssl rand -hex 32` 生成，作为密钥保存，
+3. 创建支持外部 DNS 子域名的 Pages 项目：`npx wrangler pages project create software-compare --production-branch main --force`。
+   新版 Wrangler 默认将新 Pages 项目转成 Workers；首次创建时使用 `--force` 明确选择 Pages，后续发布不需要此参数。
+4. 准备一个随机 Cookie 签名密钥：使用 `openssl rand -hex 32` 生成，作为密钥保存，
    不写进 Git。更换此密钥会让已有浏览器身份失效，因此正常部署应复用同一个值。
-4. 在 GitHub 仓库 Settings → Secrets and variables → Actions 配置下表。
+5. 在 GitHub 仓库 Settings → Secrets and variables → Actions 配置下表中的 Secret 和 Variable。
+   正式站点地址在工作流的 `env.PUBLIC_SITE_URL` 中管理，修改域名时一并更新。
 
 | 类型 | 名称 | 内容 |
 | --- | --- | --- |
@@ -37,22 +40,37 @@ npm run dev
 | Secret | `CLOUDFLARE_ACCOUNT_ID` | Cloudflare 账户 ID |
 | Secret | `COOKIE_SECRET` | 上一步生成的随机密钥，至少 32 字符 |
 | Variable | `CLOUDFLARE_D1_DATABASE_ID` | D1 数据库 UUID |
-| Variable | `PUBLIC_SITE_URL` | 正式 HTTPS 根地址，如自定义域名或真实 workers.dev 地址 |
+| Workflow env | `PUBLIC_SITE_URL` | 正式 HTTPS 根地址，本项目为 `https://compare.pageon.cc`；不读取旧的同名仓库变量 |
 
-生产 Worker 固定名为 `software-compare`；默认会启用 workers.dev。
+生产 Pages 项目固定名为 `software-compare`。正式域名为 `https://compare.pageon.cc`。
 `PUBLIC_SITE_URL` 只用于 canonical、sitemap 和页面链接，不会自动购买或绑定域名。
 配置脚本会拒绝空值、占位数据库 ID 和 `.example` 域名。
 
 仓库内 `wrangler.jsonc` 的全零数据库 ID **仅供本地运行**。
 生产配置由 `npm run configure:cloudflare` 读取变量后生成到忽略文件
-`wrangler.deploy.json`，迁移和部署都显式使用该文件。
+`wrangler.deploy.json`，部署脚本读取该文件，在临时目录准备 Pages 生产配置，迁移使用同一个数据库 ID。
 
-将代码推到 `main` 后，部署工作流执行测试、构建、D1 迁移及 Worker 部署。
-部署脚本把 Cookie 密钥写入权限为 0600 的临时 JSON，通过 Wrangler 的 secrets-file
-随版本上传，结束后删除临时文件，不把密钥嵌入静态页面。
+将代码推到 `main` 后，部署工作流执行测试、构建、D1 迁移及 Pages 部署。
+部署脚本把 Cookie 密钥写入权限为 0600 的临时 JSON，通过 `wrangler pages secret bulk`
+保存到 Pages，再发布构建产物；结束后删除临时文件，不把密钥嵌入静态页面。
+`npm run build` 自动复制现有 Worker API 到 Pages 的 `_worker.js`；`_routes.json` 仅让 `/api/*`
+调用函数，其他文件由 Pages 静态托管。
 
 本地手动部署：先在当前进程环境提供上表五个变量，再执行 `npm run deploy`。
 此命令会修改远程数据库并发布网站；首次运行前确认账户和数据库正确。
+
+## 自定义子域名（保留阿里云 DNS）
+
+只绑定 `compare.pageon.cc`，不更换 `pageon.cc` 的 DNS 服务器，也不修改主站、`pet` 或邮件记录。
+
+1. 在 Pages 项目 → Custom domains 中添加 `compare.pageon.cc`。
+2. 在阿里云为 `pageon.cc` 新增一条 `CNAME`：主机记录 `compare`，记录值使用 Pages 页面显示的
+   实际项目域名（`*.pages.dev`），默认线路，TTL 10 分钟。
+3. 等待 Cloudflare 显示 Active 并签发 HTTPS 证书。
+4. 工作流的 `env.PUBLIC_SITE_URL` 设置为 `https://compare.pageon.cc` 后重新部署。
+
+不要将 CNAME 指向 `*.workers.dev`。原 Workers 部署仅保留作迁移备份，后续每日发布到 Pages。
+D1 继续复用原数据库；Cookie 属于各自域名，旧 workers.dev 域名的浏览器身份不会自动带到新域名。
 
 ## 每日 GitHub 同步
 
@@ -104,10 +122,9 @@ npm test
 npm run build
 npx playwright install chromium
 npm run test:e2e
-npx wrangler deploy --dry-run
 ```
 
-浏览器测试启动独立的本地 Worker/D1（8788），仅重置 `.wrangler/test-state`；
+浏览器测试启动独立的本地 Pages Functions/D1（8788），仅重置 `.wrangler/test-state`；
 不会清理日常开发库或远程数据库。CI 使用相同测试。
 
 许可与数据来源说明见 [`../README.md`](../README.md) 和 [`../LICENSE`](../LICENSE)。
