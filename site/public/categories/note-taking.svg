@@ -1,39 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- SPDX-License-Identifier: Apache-2.0 -->
-<!-- Original illustration for Compare / 软件对比. No third-party marks. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" fill="none" role="img" aria-hidden="true">
-  <rect width="480" height="260" fill="#E8F1FF"/>
-  <rect width="480" height="260" fill="url(#wash-note-taking)" opacity="0.85"/>
+<!-- Compare category cover system v2. Original artwork; no external resources. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" fill="none" aria-hidden="true" data-cover-system="compare-v2">
   <defs>
-    <linearGradient id="wash-note-taking" x1="0" y1="0" x2="480" y2="260" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#EEF5FF" stop-opacity="0.0"/>
-      <stop offset="1" stop-color="#D2DBE7" stop-opacity="0.35"/>
-    </linearGradient>
-    <filter id="soft-note-taking" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#111111" flood-opacity="0.10"/>
-    </filter>
-    <pattern id="dots-note-taking" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="translate(18,16)">
-      <circle cx="1.2" cy="1.2" r="1.05" fill="#111111" opacity="0.35"/>
-    </pattern>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" stroke="#DEDED7" stroke-width="0.6" /></pattern>
   </defs>
-  <ellipse cx="60" cy="40" rx="80" ry="50" fill="#FFFFFF" opacity="0.35"/>
-  <ellipse cx="420" cy="210" rx="90" ry="60" fill="#FFFFFF" opacity="0.4"/>
-  <rect width="480" height="260" fill="url(#dots-note-taking)" opacity="0.45"/>
-  <g filter="url(#soft-note-taking)">
-    
+  <rect width="480" height="260" fill="#F5F4ED" />
+  <rect width="480" height="260" fill="url(#grid)" />
+  <rect x="30" y="26" width="420" height="216" rx="28" fill="#242424" opacity=".055" />
+  <rect x="30" y="22" width="420" height="216" rx="28" fill="#FFFFFF" stroke="#E8E7E0" />
+  <g transform="translate(67.2 36.4) scale(.72)">
+    <g data-cover-art="true">
+
     <g transform="translate(86,46)">
-      <rect x="36" y="28" width="196" height="148" rx="18" fill="#D7DFEC"/>
-      <rect x="24" y="16" width="196" height="148" rx="18" fill="#EDF4FF"/>
-      <rect x="12" y="4" width="196" height="148" rx="18" fill="#FFFFFF"/>
-      <rect x="12" y="4" width="14" height="148" rx="4" fill="#C1C9D4"/>
-      <path d="M48 40h132M48 62h118M48 84h140M48 106h108" stroke="#ACB2BC" stroke-width="5" stroke-linecap="round"/>
+      <rect x="36" y="28" width="196" height="148" rx="18" fill="#C9C9C2" />
+      <rect x="24" y="16" width="196" height="148" rx="18" fill="#C9C9C2" />
+      <rect x="12" y="4" width="196" height="148" rx="18" fill="#F0F0EB" stroke="#242424" stroke-width="5" stroke-linejoin="round" />
+      <rect x="12" y="4" width="14" height="148" rx="4" fill="#C9C9C2" />
+      <path d="M48 40h132M48 62h118M48 84h140M48 106h108" stroke="#C9C9C2" stroke-width="5" stroke-linecap="round" />
     </g>
     <g transform="translate(318,78) rotate(28)">
-      <rect x="0" y="0" width="22" height="118" rx="6" fill="#111111"/>
-      <polygon points="0,118 22,118 11,142" fill="#111111"/>
-      <rect x="0" y="0" width="22" height="18" rx="6" fill="#B2B9C4"/>
-      <polygon points="7,128 15,128 11,142" fill="#FFFFFF"/>
+      <rect x="0" y="0" width="22" height="118" rx="6" fill="#242424" />
+      <polygon points="0,118 22,118 11,142" fill="#242424" />
+      <rect x="0" y="0" width="22" height="18" rx="6" fill="#C9C9C2" />
+      <polygon points="7,128 15,128 11,142" fill="#F0F0EB" />
     </g>
-    
+
+  </g>
+
+  </g>
+
+  <g transform="translate(410 38)" fill="#242424">
+    <path d="M19 3A11 11 0 1 0 19 21L15 17A5.5 5.5 0 1 1 15 7Z" />
+    <rect x="15" y="11" width="3" height="8" rx=".5" />
+    <rect x="20" y="7" width="3" height="12" rx=".5" />
   </g>
 </svg>

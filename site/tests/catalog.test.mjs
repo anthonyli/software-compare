@@ -57,6 +57,16 @@ test('every category has a self-contained, correctly sized SVG cover', () => {
   assert.doesNotMatch(svg, /<script\b|<foreignObject\b|(?:href|src)\s*=\s*["'](?:https?:|\/\/)/i, id);
  }
 });
+test('all category covers use the same Compare visual system', () => {
+ for (const c of categories) {
+  const svg = fs.readFileSync(new URL(`site/public/categories/${slug(c)}.svg`, root), 'utf8');
+  assert.match(svg, /data-cover-system="compare-v2"/);
+  assert.match(svg, /fill="#F5F4ED"/);
+  assert.match(svg, /id="grid" width="24" height="24"/);
+  assert.match(svg, /width="420" height="216" rx="28"/);
+  assert.match(svg, /data-cover-art="true"/);
+ }
+});
 
 test('AI navigation has exactly the three requested categories and retains local products', () => {
  const aiLine = config.split('\n').find(line => line.includes('id: "ai"'));

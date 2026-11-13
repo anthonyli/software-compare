@@ -1,47 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- SPDX-License-Identifier: Apache-2.0 -->
-<!-- Original illustration for Compare / 软件对比. No third-party marks. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" fill="none" role="img" aria-hidden="true">
-  <rect width="480" height="260" fill="#FFF0D6"/>
-  <rect width="480" height="260" fill="url(#wash-converters)" opacity="0.85"/>
+<!-- Compare category cover system v2. Original artwork; no external resources. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" fill="none" aria-hidden="true" data-cover-system="compare-v2">
   <defs>
-    <linearGradient id="wash-converters" x1="0" y1="0" x2="480" y2="260" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FFF4E1" stop-opacity="0.0"/>
-      <stop offset="1" stop-color="#E7DAC2" stop-opacity="0.35"/>
-    </linearGradient>
-    <filter id="soft-converters" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#111111" flood-opacity="0.10"/>
-    </filter>
-    <pattern id="dots-converters" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="translate(18,16)">
-      <circle cx="1.2" cy="1.2" r="1.05" fill="#111111" opacity="0.35"/>
-    </pattern>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" stroke="#DEDED7" stroke-width="0.6" /></pattern>
   </defs>
-  <ellipse cx="40" cy="200" rx="70" ry="45" fill="#FFFFFF" opacity="0.35"/>
-  <ellipse cx="440" cy="40" rx="70" ry="45" fill="#FFFFFF" opacity="0.35"/>
-  <rect width="480" height="260" fill="url(#dots-converters)" opacity="0.45"/>
-  <g filter="url(#soft-converters)">
-    
+  <rect width="480" height="260" fill="#F5F4ED" />
+  <rect width="480" height="260" fill="url(#grid)" />
+  <rect x="30" y="26" width="420" height="216" rx="28" fill="#242424" opacity=".055" />
+  <rect x="30" y="22" width="420" height="216" rx="28" fill="#FFFFFF" stroke="#E8E7E0" />
+  <g transform="translate(67.2 36.4) scale(.72)">
+    <g data-cover-art="true">
+
     <g transform="translate(70,70)">
-      <rect width="110" height="132" rx="16" fill="#FFFFFF"/>
-      <path d="M74 0v36c0 8 8 16 16 16h20" fill="#E7DAC2"/>
-      <path d="M74 0l36 36H90c-8.8 0-16-7.2-16-16V0z" fill="#D4C8B3"/>
-      <rect x="22" y="64" width="66" height="8" rx="4" fill="#CBBFAB"/>
-      <rect x="22" y="82" width="50" height="8" rx="4" fill="#DED1BA"/>
+      <rect width="110" height="132" rx="16" fill="#F0F0EB" stroke="#242424" stroke-width="5" stroke-linejoin="round" />
+      <path d="M74 0v36c0 8 8 16 16 16h20" fill="#C9C9C2" />
+      <path d="M74 0l36 36H90c-8.8 0-16-7.2-16-16V0z" fill="#C9C9C2" />
+      <rect x="22" y="64" width="66" height="8" rx="4" fill="#C9C9C2" />
+      <rect x="22" y="82" width="50" height="8" rx="4" fill="#C9C9C2" />
     </g>
     <g transform="translate(210,92)">
-      <circle cx="30" cy="48" r="28" fill="#111111"/>
-      <path d="M14 36h20" stroke="#FFFFFF" stroke-width="3.4" stroke-linecap="round"/>
-      <path d="M26 28l10 8-10 8" fill="none" stroke="#FFFFFF" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M46 60H26" stroke="#FFFFFF" stroke-width="3.4" stroke-linecap="round"/>
-      <path d="M34 52l-10 8 10 8" fill="none" stroke="#FFFFFF" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="30" cy="48" r="28" fill="#242424" />
+      <path d="M14 36h20" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" />
+      <path d="M26 28l10 8-10 8" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M46 60H26" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" />
+      <path d="M34 52l-10 8 10 8" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
     </g>
     <g transform="translate(300,70)">
-      <rect width="110" height="132" rx="16" fill="#FFFFFF"/>
-      <path d="M74 0v36c0 8 8 16 16 16h20" fill="#E7DAC2"/>
-      <path d="M74 0l36 36H90c-8.8 0-16-7.2-16-16V0z" fill="#D4C8B3"/>
-      <rect x="22" y="64" width="66" height="8" rx="4" fill="#CBBFAB"/>
-      <rect x="22" y="82" width="44" height="8" rx="4" fill="#DED1BA"/>
+      <rect width="110" height="132" rx="16" fill="#F0F0EB" stroke="#242424" stroke-width="5" stroke-linejoin="round" />
+      <path d="M74 0v36c0 8 8 16 16 16h20" fill="#C9C9C2" />
+      <path d="M74 0l36 36H90c-8.8 0-16-7.2-16-16V0z" fill="#C9C9C2" />
+      <rect x="22" y="64" width="66" height="8" rx="4" fill="#C9C9C2" />
+      <rect x="22" y="82" width="44" height="8" rx="4" fill="#C9C9C2" />
     </g>
-    
+
+  </g>
+
+  </g>
+
+  <g transform="translate(410 38)" fill="#242424">
+    <path d="M19 3A11 11 0 1 0 19 21L15 17A5.5 5.5 0 1 1 15 7Z" />
+    <rect x="15" y="11" width="3" height="8" rx=".5" />
+    <rect x="20" y="7" width="3" height="12" rx=".5" />
   </g>
 </svg>
