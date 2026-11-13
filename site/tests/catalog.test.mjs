@@ -57,14 +57,14 @@ test('every category has a self-contained, correctly sized SVG cover', () => {
   assert.doesNotMatch(svg, /<script\b|<foreignObject\b|(?:href|src)\s*=\s*["'](?:https?:|\/\/)/i, id);
  }
 });
-test('all category covers use the same Compare visual system', () => {
+test('category covers retain the original illustration system, not the main-cover prompt', () => {
  for (const c of categories) {
-  const svg = fs.readFileSync(new URL(`site/public/categories/${slug(c)}.svg`, root), 'utf8');
-  assert.match(svg, /data-cover-system="compare-v2"/);
-  assert.match(svg, /fill="#F5F4ED"/);
-  assert.match(svg, /id="grid" width="24" height="24"/);
-  assert.match(svg, /width="420" height="216" rx="28"/);
-  assert.match(svg, /data-cover-art="true"/);
+  const id = slug(c);
+  const svg = fs.readFileSync(new URL(`site/public/categories/${id}.svg`, root), 'utf8');
+  assert(svg.includes(`id="dots-${id}"`), id);
+  assert(svg.includes(`id="soft-${id}"`), id);
+  assert(svg.includes(`id="wash-${id}"`), id);
+  assert.doesNotMatch(svg, /compare-v2|id="grid"|comparison-bar brand signature/);
  }
 });
 
