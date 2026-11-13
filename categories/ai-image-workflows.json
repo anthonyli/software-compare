@@ -1,0 +1,127 @@
+{
+  "category_slug": "ai-image-workflows",
+  "category_name_zh": "AI 图像生成与工作流",
+  "collected_at": "2026-11-13",
+  "timezone": "Asia/Shanghai",
+  "notes": "工具开源不代表所有模型可免费商用。需分别核对权重、节点、素材及 API 许可，云端节点会改变数据去向。M4 16GB 不保证所有模型或工作流可用；仅核实文档，未下载模型、运行生成或制作视频。",
+  "features": [
+    {
+      "key": "local_generation",
+      "label": "本地生成"
+    },
+    {
+      "key": "node_workflows",
+      "label": "节点工作流"
+    },
+    {
+      "key": "inpainting",
+      "label": "局部重绘/扩图"
+    },
+    {
+      "key": "model_management",
+      "label": "模型管理"
+    },
+    {
+      "key": "cloud_api",
+      "label": "可选云 API 模型"
+    }
+  ],
+  "products": [
+    {
+      "id": "comfyui",
+      "name": "ComfyUI",
+      "official_url": "https://www.comfy.org",
+      "github_url": "https://github.com/Comfy-Org/ComfyUI",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "开源免费 / 模型与服务另计",
+      "price_summary": "应用代码可免费使用；本地运行需自备硬件与模型，云 API、托管和附加服务可能单独收费。",
+      "prices": [],
+      "free_tier_limits": "核心为 GPL-3.0；模型和自定义节点有独立许可。自定义节点会执行代码，需审查来源。离线工作需先准备模型；API 节点会发送输入并可能收费，硬件需求依模型和输出尺寸变化。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "节点式生成工作流，适合需要组合模型、保存参数及复用流程的创作者与开发者。",
+      "features": {
+        "local_generation": {
+          "value": "yes",
+          "note": "核心支持本地离线流程，需预先准备依赖和模型"
+        },
+        "node_workflows": {
+          "value": "yes",
+          "note": "可保存和复用 JSON 工作流"
+        },
+        "inpainting": {
+          "value": "yes",
+          "note": "内置局部重绘、扩图和遮罩工具"
+        },
+        "model_management": {
+          "value": "yes",
+          "note": "支持模型目录及多种权重组件"
+        },
+        "cloud_api": {
+          "value": "yes",
+          "note": "可选付费 API 节点；不等于全部数据留在本机"
+        }
+      },
+      "sources": [
+        "https://github.com/Comfy-Org/ComfyUI",
+        "https://github.com/Comfy-Org/ComfyUI/blob/master/LICENSE"
+      ]
+    },
+    {
+      "id": "invokeai",
+      "name": "InvokeAI",
+      "official_url": "https://invoke.ai",
+      "github_url": "https://github.com/invoke-ai/InvokeAI",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "pricing_model": "开源免费 / 模型与服务另计",
+      "price_summary": "应用代码可免费使用；本地运行需自备硬件与模型，云 API、托管和附加服务可能单独收费。",
+      "prices": [],
+      "free_tier_limits": "应用为 Apache-2.0，模型与外部 API 条款另计。官方支持 Apple Silicon 并建议 16GB+ 内存，但大模型或高分辨率可能需要更多资源；API-only 模型会将输入发送至供应商。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "面向视觉创作的生成画布和节点工作流，提供素材图库与模型管理。",
+      "features": {
+        "local_generation": {
+          "value": "yes",
+          "note": "本地 Web 服务与界面，可加载兼容模型"
+        },
+        "node_workflows": {
+          "value": "yes",
+          "note": "支持自定义并共享节点生成流程"
+        },
+        "inpainting": {
+          "value": "yes",
+          "note": "Unified Canvas 支持重绘、扩图与画笔"
+        },
+        "model_management": {
+          "value": "yes",
+          "note": "提供模型管理与素材图库"
+        },
+        "cloud_api": {
+          "value": "yes",
+          "note": "官方模型列表包含 API-only 模型"
+        }
+      },
+      "sources": [
+        "https://github.com/invoke-ai/InvokeAI",
+        "https://invoke.ai/start-here/system-requirements/"
+      ]
+    }
+  ]
+}

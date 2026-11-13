@@ -1,0 +1,73 @@
+{
+  "category_slug": "compositing",
+  "category_name_zh": "视觉特效与合成",
+  "collected_at": "2026-11-13",
+  "collected_at_timezone": "Asia/Shanghai (UTC+8)",
+  "notes": "面向镜头的节点合成、抠像和跟踪，不把它与时间线剪辑、模板动效或完整 After Effects 工作流混为一谈；暂收录一款已核实工具。",
+  "features": [
+    {
+      "key": "node_compositing",
+      "label": "节点合成"
+    },
+    {
+      "key": "chroma_key",
+      "label": "色度抠像"
+    },
+    {
+      "key": "tracking_2d",
+      "label": "2D 跟踪"
+    },
+    {
+      "key": "openfx",
+      "label": "OpenFX 插件"
+    }
+  ],
+  "products": [
+    {
+      "id": "natron",
+      "name": "Natron",
+      "official_url": "https://natrongithub.github.io/",
+      "github_url": "https://github.com/NatronGitHub/Natron",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-2.0",
+      "pricing_model": "完全免费",
+      "price_summary": "官方提供免费开源软件；可选素材、插件与培训可能另收费。",
+      "prices": [
+        {
+          "plan": "软件本身",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "软件免费，第三方 OFX 插件可能收费。官方首页仍区分 Intel 稳定版与 Apple Silicon 实验构建；下载前核对 Release 与系统要求，未实测。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "开源节点式合成器，适合抠像、遮罩与镜头跟踪；不能据功能相似推断 After Effects 项目或插件兼容。",
+      "features": {
+        "node_compositing": {
+          "value": "yes"
+        },
+        "chroma_key": {
+          "value": "yes"
+        },
+        "tracking_2d": {
+          "value": "yes"
+        },
+        "openfx": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://natrongithub.github.io/",
+        "https://github.com/NatronGitHub/Natron"
+      ]
+    }
+  ]
+}

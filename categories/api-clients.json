@@ -1,0 +1,116 @@
+{
+  "category_slug": "api-clients",
+  "category_name_zh": "API 调试与测试",
+  "collected_at": "2026-11-13",
+  "timezone": "Asia/Shanghai",
+  "notes": "请求会发送到选定 API；集合和环境变量可能包含密钥。共享或提交 Git 前排除敏感值，云同步和代理的数据路径需单独确认。",
+  "features": [
+    {
+      "key": "rest",
+      "label": "REST 请求"
+    },
+    {
+      "key": "graphql",
+      "label": "GraphQL 请求"
+    },
+    {
+      "key": "collections",
+      "label": "请求集合"
+    },
+    {
+      "key": "cli",
+      "label": "命令行运行"
+    }
+  ],
+  "products": [
+    {
+      "id": "bruno",
+      "name": "Bruno",
+      "official_url": "https://www.usebruno.com/",
+      "github_url": "https://github.com/usebruno/bruno",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "免费开源核心 / 可选付费服务",
+      "price_summary": "提供免费开源版和 Pro、Ultimate、Enterprise 付费方案。",
+      "prices": [],
+      "free_tier_limits": "高级集成与管理功能因套餐而异；本地保存集合不代表 API 请求不联网。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "将 API 集合保存为本地文本文件，适合用 Git 管理和评审接口测试。",
+      "features": {
+        "rest": {
+          "value": "yes",
+          "note": ""
+        },
+        "graphql": {
+          "value": "yes",
+          "note": ""
+        },
+        "collections": {
+          "value": "yes",
+          "note": ""
+        },
+        "cli": {
+          "value": "yes",
+          "note": ""
+        }
+      },
+      "sources": [
+        "https://github.com/usebruno/bruno",
+        "https://www.usebruno.com/pricing"
+      ]
+    },
+    {
+      "id": "hoppscotch",
+      "name": "Hoppscotch",
+      "official_url": "https://hoppscotch.com/",
+      "github_url": "https://github.com/hoppscotch/hoppscotch",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "免费开源核心 / 可选付费服务",
+      "price_summary": "有免费档与付费云端/自托管方案；企业功能并非都在开源版本中。",
+      "prices": [],
+      "free_tier_limits": "团队工作区、管理和企业功能受套餐限制；自托管也需要服务器及运维。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "提供网页、桌面和 CLI 的 API 调试平台，支持 REST、GraphQL 与集合运行。",
+      "features": {
+        "rest": {
+          "value": "yes",
+          "note": ""
+        },
+        "graphql": {
+          "value": "yes",
+          "note": ""
+        },
+        "collections": {
+          "value": "yes",
+          "note": ""
+        },
+        "cli": {
+          "value": "yes",
+          "note": ""
+        }
+      },
+      "sources": [
+        "https://github.com/hoppscotch/hoppscotch",
+        "https://hoppscotch.com/download",
+        "https://hoppscotch.com/pricing"
+      ]
+    }
+  ]
+}

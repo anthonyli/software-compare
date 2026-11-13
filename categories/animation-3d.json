@@ -1,0 +1,75 @@
+{
+  "category_slug": "animation-3d",
+  "category_name_zh": "3D 建模与动画",
+  "collected_at": "2026-11-13",
+  "collected_at_timezone": "Asia/Shanghai (UTC+8)",
+  "notes": "面向建模、镜头动画与渲染的创作套件。暂收录一款已核实工具，不把游戏引擎当作同类替代；未实测硬件性能。",
+  "features": [
+    {
+      "key": "modeling_3d",
+      "label": "3D 建模"
+    },
+    {
+      "key": "rigging_3d",
+      "label": "骨骼绑定"
+    },
+    {
+      "key": "animation_3d",
+      "label": "3D 动画"
+    },
+    {
+      "key": "rendering_3d",
+      "label": "渲染输出"
+    }
+  ],
+  "products": [
+    {
+      "id": "blender",
+      "name": "Blender",
+      "official_url": "https://www.blender.org/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "完全免费",
+      "price_summary": "官方提供免费开源软件；可选素材、插件与培训可能另收费。",
+      "prices": [
+        {
+          "plan": "软件本身",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "软件无试用期限；场景复杂度影响内存和渲染耗时，未实测 M4 16GB。素材与扩展需另查授权。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "覆盖建模、绑定、动画、模拟和渲染的 3D 创作工具，适合产品演示与 3D 科普场景；不等于浏览器交互引擎。",
+      "features": {
+        "modeling_3d": {
+          "value": "yes"
+        },
+        "rigging_3d": {
+          "value": "yes"
+        },
+        "animation_3d": {
+          "value": "yes"
+        },
+        "rendering_3d": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://raw.githubusercontent.com/blender/blender/main/README.md",
+        "https://raw.githubusercontent.com/blender/blender/main/release/text/readme.html"
+      ],
+      "source_url": "https://projects.blender.org/blender/blender",
+      "source_repo_label": "Blender Projects"
+    }
+  ]
+}

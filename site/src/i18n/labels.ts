@@ -2,6 +2,14 @@
 
 /** Category display names, keyed by slug. */
 export const categoryNames: Record<string, { zh: string; en: string }> = {
+  "ai-coding": { zh: "AI 编程助手", en: "AI coding assistants" },
+  "ai-image-workflows": { zh: "AI 图像工作流", en: "AI image workflows" },
+  "animation-3d": { zh: "三维动画与建模", en: "3D animation & modeling" },
+  "animation-2d": { zh: "二维动画", en: "2D animation" },
+  "compositing": { zh: "节点合成与特效", en: "Node compositing & effects" },
+  "database-clients": { zh: "数据库客户端", en: "Database clients" },
+  "api-clients": { zh: "API 调试与测试", en: "API debugging & testing" },
+
   "ai-assistants": { zh: "AI 助手", en: "AI assistants" },
   "local-ai": { zh: "本地 AI", en: "Local AI" },
   "image-editors": { zh: "图像编辑与绘画", en: "Image editing & painting" },

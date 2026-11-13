@@ -1,0 +1,115 @@
+{
+  "category_slug": "database-clients",
+  "category_name_zh": "数据库客户端",
+  "collected_at": "2026-11-13",
+  "timezone": "Asia/Shanghai",
+  "notes": "用于查询和编辑数据库，不是备份服务；写入前确认连接环境及权限。仅核实官方文档，未实测。",
+  "features": [
+    {
+      "key": "sql",
+      "label": "SQL 查询"
+    },
+    {
+      "key": "data_edit",
+      "label": "数据编辑"
+    },
+    {
+      "key": "multi_engine",
+      "label": "多种数据库引擎"
+    },
+    {
+      "key": "import_export",
+      "label": "数据导入导出"
+    }
+  ],
+  "products": [
+    {
+      "id": "dbeaver-community",
+      "name": "DBeaver Community",
+      "official_url": "https://dbeaver.io/",
+      "github_url": "https://github.com/dbeaver/dbeaver",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "pricing_model": "免费开源核心 / 可选付费服务",
+      "price_summary": "Community 免费；PRO 是单独付费产品，不将 PRO 功能算入社区版。",
+      "prices": [],
+      "free_tier_limits": "不同驱动与数据库支持有差异；部分企业、云服务和高级管理能力属于 PRO。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "面向开发者和分析人员的多数据库桌面客户端，支持 SQL、数据编辑及导入导出。",
+      "features": {
+        "sql": {
+          "value": "yes",
+          "note": ""
+        },
+        "data_edit": {
+          "value": "yes",
+          "note": ""
+        },
+        "multi_engine": {
+          "value": "yes",
+          "note": ""
+        },
+        "import_export": {
+          "value": "yes",
+          "note": ""
+        }
+      },
+      "sources": [
+        "https://github.com/dbeaver/dbeaver",
+        "https://dbeaver.io/download/"
+      ]
+    },
+    {
+      "id": "db-browser-sqlite",
+      "name": "DB Browser for SQLite",
+      "official_url": "https://sqlitebrowser.org/",
+      "github_url": "https://github.com/sqlitebrowser/sqlitebrowser",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "MPL-2.0 OR GPL-3.0-or-later",
+      "pricing_model": "免费开源核心 / 可选付费服务",
+      "price_summary": "免费开源桌面应用。",
+      "prices": [],
+      "free_tier_limits": "仅面向 SQLite 兼容数据库文件，不是 MySQL/PostgreSQL 服务器客户端，也不是电子表格替代品。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "以表格界面创建和编辑 SQLite 文件，可执行 SQL 与导入导出 CSV。",
+      "features": {
+        "sql": {
+          "value": "yes",
+          "note": ""
+        },
+        "data_edit": {
+          "value": "yes",
+          "note": ""
+        },
+        "multi_engine": {
+          "value": "no",
+          "note": ""
+        },
+        "import_export": {
+          "value": "yes",
+          "note": ""
+        }
+      },
+      "sources": [
+        "https://github.com/sqlitebrowser/sqlitebrowser",
+        "https://github.com/sqlitebrowser/sqlitebrowser/blob/master/LICENSE"
+      ]
+    }
+  ]
+}
