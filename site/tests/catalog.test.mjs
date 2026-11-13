@@ -4,7 +4,7 @@ import fs from 'node:fs';
 const root = new URL('../../', import.meta.url);
 const read = file => JSON.parse(fs.readFileSync(new URL(file, root), 'utf8'));
 const categories = [...read('data.json').categories, ...fs.readdirSync(new URL('categories/', root)).filter(f => f.endsWith('.json')).map(f => read(`categories/${f}`))];
-const added = ['ai-assistants','local-ai','image-editors','vector-graphics','photo-management','desktop-publishing','ai-coding','ai-image-workflows','animation-3d','animation-2d','compositing','database-clients','api-clients','audio-recorders','transcription-tools','fitness-training','cycling-tools','outdoor-navigation'];
+const added = ['ai-assistants','image-editors','vector-graphics','photo-management','desktop-publishing','ai-coding','ai-image-workflows','animation-3d','animation-2d','compositing','database-clients','api-clients','audio-recorders','transcription-tools','fitness-training','cycling-tools','outdoor-navigation'];
 const slug = c => c.category_slug || c.id;
 const config = fs.readFileSync(new URL('site/src/config.ts', root), 'utf8');
 const translations = read('site/src/i18n/content-en.json');
@@ -66,4 +66,13 @@ test('all category covers use the same Compare visual system', () => {
   assert.match(svg, /width="420" height="216" rx="28"/);
   assert.match(svg, /data-cover-art="true"/);
  }
+});
+
+test('AI navigation has exactly the three requested categories and retains local products', () => {
+ const aiLine = config.split('\n').find(line => line.includes('id: "ai"'));
+ for (const id of ['ai-assistants','ai-coding','ai-image-workflows']) assert(aiLine.includes(`"${id}"`));
+ assert(!aiLine.includes('local-ai'));
+ assert(!categories.some(c => slug(c) === 'local-ai'));
+ const chat = categories.find(c => slug(c) === 'ai-assistants');
+ assert.deepEqual(chat.products.map(p => p.id).sort(), ['chatgpt','claude','gemini','jan','lm-studio','ollama'].sort());
 });

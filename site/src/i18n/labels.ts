@@ -8,7 +8,7 @@ export const categoryNames: Record<string, { zh: string; en: string }> = {
   "cycling-tools": { zh: "骑行训练与分析", en: "Cycling training & analysis" },
   "outdoor-navigation": { zh: "徒步登山与户外导航", en: "Hiking & outdoor navigation" },
 
-  "ai-coding": { zh: "AI 编程助手", en: "AI coding assistants" },
+  "ai-coding": { zh: "AI 编程工具", en: "AI coding tools" },
   "ai-image-workflows": { zh: "AI 图像工作流", en: "AI image workflows" },
   "animation-3d": { zh: "三维动画与建模", en: "3D animation & modeling" },
   "animation-2d": { zh: "二维动画", en: "2D animation" },
@@ -16,7 +16,7 @@ export const categoryNames: Record<string, { zh: string; en: string }> = {
   "database-clients": { zh: "数据库客户端", en: "Database clients" },
   "api-clients": { zh: "API 调试与测试", en: "API debugging & testing" },
 
-  "ai-assistants": { zh: "AI 助手", en: "AI assistants" },
+  "ai-assistants": { zh: "AI 聊天助手", en: "AI chat assistants" },
   "local-ai": { zh: "本地 AI", en: "Local AI" },
   "image-editors": { zh: "图像编辑与绘画", en: "Image editing & painting" },
   "vector-graphics": { zh: "矢量与界面设计", en: "Vector & interface design" },

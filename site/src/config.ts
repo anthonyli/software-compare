@@ -15,7 +15,7 @@ export const siteConfig = {
 /** 首页分组：slug 必须与数据里的品类 id 一致。 */
 export const categoryGroups: { id: string; name: string; slugs: string[] }[] = [
   { id: "lifestyle", name: "运动与户外", slugs: ["fitness-training", "cycling-tools", "outdoor-navigation"] },
-  { id: "ai", name: "AI 工具", slugs: ["ai-assistants", "local-ai", "ai-coding", "ai-image-workflows"] },
+  { id: "ai", name: "AI 工具", slugs: ["ai-assistants", "ai-coding", "ai-image-workflows"] },
   { id: "creative", name: "设计与摄影", slugs: ["image-editors", "vector-graphics", "photo-management", "desktop-publishing", "animation-3d", "animation-2d", "compositing"] },
   {
     id: "office",
@@ -83,7 +83,7 @@ export const categoryMonograms: Record<string, string> = {
   "database-clients": "库",
   "api-clients": "接",
 
-  "ai-assistants": "智", "local-ai": "模", "image-editors": "绘", "vector-graphics": "矢", "photo-management": "摄", "desktop-publishing": "版",
+  "ai-assistants": "智", "image-editors": "绘", "vector-graphics": "矢", "photo-management": "摄", "desktop-publishing": "版",
   "note-taking": "记",
   "screenshot-tools": "截",
   "pdf-tools": "档",
@@ -119,7 +119,7 @@ export const categoryTints: Record<string, string> = {
   "database-clients": "#E8F1FF",
   "api-clients": "#E8F1FF",
 
-  "ai-assistants": "#E7EEFF", "local-ai": "#E4F4F2", "image-editors": "#FFE4EA", "vector-graphics": "#F1E9FF", "photo-management": "#FFF0D6", "desktop-publishing": "#E8F1FF",
+  "ai-assistants": "#E7EEFF", "image-editors": "#FFE4EA", "vector-graphics": "#F1E9FF", "photo-management": "#FFF0D6", "desktop-publishing": "#E8F1FF",
   "note-taking": "#E8F1FF",
   "screenshot-tools": "#E8F8F0",
   "pdf-tools": "#FFF3C9",

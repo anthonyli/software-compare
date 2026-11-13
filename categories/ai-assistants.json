@@ -1,9 +1,9 @@
 {
   "category_slug": "ai-assistants",
-  "category_name_zh": "AI 对话与研究助手",
+  "category_name_zh": "AI 聊天助手",
   "collected_at": "2026-11-13",
   "timezone": "Asia/Shanghai",
-  "notes": "此类比较云端应用而非模型性能。提示词与上传内容需交由服务商处理，隐私和训练设置请查各服务条款；受支持地区、年龄、账户和套餐限制。仅核实官网资料，未进行输出质量或性能测试。",
+  "notes": "按产品形态与场景比较，不是模型质量排名。云端助手通常即开即用；本地聊天客户端与模型运行器需先配置模型。离线仅限本地模型与本地操作，云模型、搜索与插件会改变数据去向。代码许可不覆盖模型权重；订阅不等于 API 额度。硬件需求取决于模型、量化与上下文，不能保证 M4 16GB 运行所有模型。仅核实官方资料，未安装实测。",
   "features": [
     {
       "key": "chat",
@@ -24,6 +24,22 @@
     {
       "key": "free_plan",
       "label": "免费档"
+    },
+    {
+      "key": "local_api",
+      "label": "本地 API 服务"
+    },
+    {
+      "key": "model_download",
+      "label": "模型下载管理"
+    },
+    {
+      "key": "document_chat",
+      "label": "文档问答"
+    },
+    {
+      "key": "cloud_models",
+      "label": "可选云模型"
     }
   ],
   "products": [
@@ -66,6 +82,22 @@
         "free_plan": {
           "value": "yes",
           "note": "提供 Free 档"
+        },
+        "local_api": {
+          "value": "unknown",
+          "note": "迁移保留原始资料；此项尚未核实，不视为不支持。"
+        },
+        "model_download": {
+          "value": "unknown",
+          "note": "迁移保留原始资料；此项尚未核实，不视为不支持。"
+        },
+        "document_chat": {
+          "value": "unknown",
+          "note": "迁移保留原始资料；此项尚未核实，不视为不支持。"
+        },
+        "cloud_models": {
+          "value": "unknown",
+          "note": "迁移保留原始资料；此项尚未核实，不视为不支持。"
         }
       },
       "sources": [
@@ -111,6 +143,22 @@
         "free_plan": {
           "value": "yes",
           "note": "提供 Free 档"
+        },
+        "local_api": {
+          "value": "unknown",
+          "note": "迁移保留原始资料；此项尚未核实，不视为不支持。"
+        },
+        "model_download": {
+          "value": "unknown",
+          "note": "迁移保留原始资料；此项尚未核实，不视为不支持。"
+        },
+        "document_chat": {
+          "value": "unknown",
+          "note": "迁移保留原始资料；此项尚未核实，不视为不支持。"
+        },
+        "cloud_models": {
+          "value": "unknown",
+          "note": "迁移保留原始资料；此项尚未核实，不视为不支持。"
         }
       },
       "sources": [
@@ -156,10 +204,222 @@
         "free_plan": {
           "value": "yes",
           "note": "提供使用 Google 账户的免费档"
+        },
+        "local_api": {
+          "value": "unknown",
+          "note": "迁移保留原始资料；此项尚未核实，不视为不支持。"
+        },
+        "model_download": {
+          "value": "unknown",
+          "note": "迁移保留原始资料；此项尚未核实，不视为不支持。"
+        },
+        "document_chat": {
+          "value": "unknown",
+          "note": "迁移保留原始资料；此项尚未核实，不视为不支持。"
+        },
+        "cloud_models": {
+          "value": "unknown",
+          "note": "迁移保留原始资料；此项尚未核实，不视为不支持。"
         }
       },
       "sources": [
         "https://gemini.google/subscriptions/"
+      ]
+    },
+    {
+      "id": "ollama",
+      "name": "Ollama",
+      "official_url": "https://ollama.com",
+      "github_url": "https://github.com/ollama/ollama",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "MIT（运行时；模型许可证另计）",
+      "pricing_model": "本地免费 / 云服务另计",
+      "price_summary": "本地开源运行时可免费使用；自备模型与硬件，云模型或外部服务的价格另查。",
+      "prices": [],
+      "free_tier_limits": "本地可运行的模型受内存、显存及上下文长度限制；模型权重的商用条件需单独核对。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "适合开发者在本机管理和调用模型，通过 CLI 与 REST API 接入自己的应用。",
+      "features": {
+        "local_inference": {
+          "value": "yes",
+          "note": "下载模型后可在本机运行；可禁用云功能"
+        },
+        "local_api": {
+          "value": "yes",
+          "note": "提供运行和管理模型的 REST API"
+        },
+        "model_download": {
+          "value": "yes",
+          "note": "提供模型库及拉取能力"
+        },
+        "document_chat": {
+          "value": "partial",
+          "note": "可由上层应用接入文档检索；不等同于内置完整知识库"
+        },
+        "cloud_models": {
+          "value": "yes",
+          "note": "支持云模型；选择云服务时请求需发送到远端"
+        },
+        "chat": {
+          "value": "yes",
+          "note": "支持聊天；需先选择和配置本地或云模型。"
+        },
+        "web_research": {
+          "value": "unknown",
+          "note": "迁移保留原始资料；此项尚未核实，不视为不支持。"
+        },
+        "image_generation": {
+          "value": "unknown",
+          "note": "迁移保留原始资料；此项尚未核实，不视为不支持。"
+        },
+        "free_plan": {
+          "value": "unknown",
+          "note": "迁移保留原始资料；此项尚未核实，不视为不支持。"
+        }
+      },
+      "sources": [
+        "https://github.com/ollama/ollama",
+        "https://github.com/ollama/ollama/blob/main/LICENSE",
+        "https://docs.ollama.com/faq",
+        "https://docs.ollama.com/quickstart"
+      ]
+    },
+    {
+      "id": "lm-studio",
+      "name": "LM Studio",
+      "official_url": "https://lmstudio.ai/docs/app",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": false,
+      "license": "专有软件（LM Studio App Terms；模型许可证另计）",
+      "pricing_model": "免费增值",
+      "price_summary": "本地模型功能提供免费档；官网另有 Bionic 云服务付费方案，云端用量可能产生费用。",
+      "prices": [],
+      "free_tier_limits": "Apple Silicon Mac 需 macOS 14+，官方推荐 16GB+ 内存；实际可运行模型取决于权重大小和上下文。许可允许个人及内部业务使用，其他用途需核对条款。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "图形化本地模型工具，支持聊天、离线文档问答及本地 API；不要把免费客户端误认为开源。",
+      "features": {
+        "local_inference": {
+          "value": "yes",
+          "note": "先下载模型和运行时，可离线聊天"
+        },
+        "local_api": {
+          "value": "yes",
+          "note": "支持本机及局域网 OpenAI 风格端点"
+        },
+        "model_download": {
+          "value": "yes",
+          "note": "可搜索和下载 Hugging Face 模型，需要联网"
+        },
+        "document_chat": {
+          "value": "yes",
+          "note": "文档 RAG 可在本地离线处理"
+        },
+        "cloud_models": {
+          "value": "yes",
+          "note": "当前 Bionic 产品另提供可选云端推理，不能一概称数据不离机"
+        },
+        "chat": {
+          "value": "yes",
+          "note": "支持聊天；需先选择和配置本地或云模型。"
+        },
+        "web_research": {
+          "value": "unknown",
+          "note": "迁移保留原始资料；此项尚未核实，不视为不支持。"
+        },
+        "image_generation": {
+          "value": "unknown",
+          "note": "迁移保留原始资料；此项尚未核实，不视为不支持。"
+        },
+        "free_plan": {
+          "value": "unknown",
+          "note": "迁移保留原始资料；此项尚未核实，不视为不支持。"
+        }
+      },
+      "sources": [
+        "https://lmstudio.ai/docs/app",
+        "https://lmstudio.ai/docs/app/offline",
+        "https://lmstudio.ai/docs/app/system-requirements",
+        "https://lmstudio.ai/app-terms",
+        "https://lmstudio.ai/pricing"
+      ]
+    },
+    {
+      "id": "jan",
+      "name": "Jan",
+      "official_url": "https://jan.ai",
+      "github_url": "https://github.com/janhq/jan",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0（应用；模型许可证另计）",
+      "pricing_model": "本地免费 / API 另计",
+      "price_summary": "开源应用可免费使用；本地模型需自备硬件，接入云模型的 API 费用由供应商另行收取。",
+      "prices": [],
+      "free_tier_limits": "离线仅适用于本地模型与本地操作；选择云供应商后请求发送到该供应商。模型商用条件与内存需求另计。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "开源本地 AI 聊天应用，也能连接第三方云模型，适合希望自己选择模型的用户。",
+      "features": {
+        "local_inference": {
+          "value": "yes",
+          "note": "支持从 Hugging Face 下载模型后本地运行"
+        },
+        "local_api": {
+          "value": "yes",
+          "note": "提供 OpenAI 兼容的本地服务"
+        },
+        "model_download": {
+          "value": "yes",
+          "note": "支持本地模型下载"
+        },
+        "document_chat": {
+          "value": "unknown",
+          "note": "本次 README 未核实完整文档检索能力"
+        },
+        "cloud_models": {
+          "value": "yes",
+          "note": "可连接 OpenAI、Anthropic 等供应商"
+        },
+        "chat": {
+          "value": "yes",
+          "note": "支持聊天；需先选择和配置本地或云模型。"
+        },
+        "web_research": {
+          "value": "unknown",
+          "note": "迁移保留原始资料；此项尚未核实，不视为不支持。"
+        },
+        "image_generation": {
+          "value": "unknown",
+          "note": "迁移保留原始资料；此项尚未核实，不视为不支持。"
+        },
+        "free_plan": {
+          "value": "unknown",
+          "note": "迁移保留原始资料；此项尚未核实，不视为不支持。"
+        }
+      },
+      "sources": [
+        "https://github.com/janhq/jan"
       ]
     }
   ]
