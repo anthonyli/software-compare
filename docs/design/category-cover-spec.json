@@ -1,0 +1,144 @@
+{
+  "version": 1,
+  "width": 480,
+  "height": 260,
+  "commonPrefix": "扁平几何插画，不是照片，也不是 3D 写实。浅色粉彩色块背景，稀疏的深灰小圆点网格，边角有柔和的白色椭圆光斑。画面中央是一组大而简单的图标，白色主体，黑色(#111111)线稿和细节，轻微投影。大量留白，圆角，编辑感平面设计。不要文字，不要品牌 logo，不要水印，不要霓虹，不要赛博朋克。横构图 480x260。",
+  "categories": {
+    "ai-assistants": {
+      "background": "#E7EEFF",
+      "scene": "白色圆角对话气泡，黑色短线表示对话，右下浅色圆形星芒符号。"
+    },
+    "ai-coding": {
+      "background": "#E8F1FF",
+      "scene": "白色圆角代码窗口，黑色尖括号和斜杠，右侧浅色几何星芒表示辅助编程。"
+    },
+    "ai-image-workflows": {
+      "background": "#E8F1FF",
+      "scene": "两个白色圆角节点由黑色折线连接，左侧圆形输入，右侧山峰与太阳缩略图。"
+    },
+    "animation-2d": {
+      "background": "#E8F1FF",
+      "scene": "三张错叠白色动画帧，中间帧有黑色简化关节人物。"
+    },
+    "animation-3d": {
+      "background": "#E8F1FF",
+      "scene": "白色几何立方体，浅色侧面，一条黑色虚线轨道绕过主体。"
+    },
+    "antivirus-security": {
+      "background": "#FDE8EF",
+      "scene": "一枚白色盾牌居中，盾心浅粉底，上面一个粗黑对勾。"
+    },
+    "api-clients": {
+      "background": "#E8F1FF",
+      "scene": "左右两张白色圆角接口卡片，黑色代码尖括号与短线，中间黑色双向箭头。"
+    },
+    "archivers": {
+      "background": "#F0E7FF",
+      "scene": "一个白色圆角行李箱，浅紫提手和顶部锁条，箱身正中一条浅紫拉链，拉链上有一排小黑齿。"
+    },
+    "audio-editors": {
+      "background": "#E9F0FF",
+      "scene": "横向一排高低错落的黑色圆角波形柱。右侧一个白色圆形旋钮，中心小黑点，上方有一条短刻度。"
+    },
+    "audio-recorders": {
+      "background": "#E8F8F0",
+      "scene": "白色圆角麦克风，黑色支架与刻度，左侧短波形，右侧浅色圆形录音按钮。"
+    },
+    "cleaners": {
+      "background": "#FFE8D8",
+      "scene": "左侧三张轻微倾斜叠放的白色圆角卡片，右侧一个白色圆，圆里是黑色对勾。周围点缀几个很小的黑点，像被清掉的碎屑。"
+    },
+    "code-editors": {
+      "background": "#E7EEFF",
+      "scene": "一张白色圆角代码窗口，里面几条浅灰代码行。左右是黑色尖括号（小于号、大于号），中间一条黑色光标。"
+    },
+    "compositing": {
+      "background": "#E8F1FF",
+      "scene": "三层错开的白色菱形图层，中层浅色，顶层一个浅色圆形。"
+    },
+    "converters": {
+      "background": "#FFF0D6",
+      "scene": "左右各一份白色圆角文件，右上角折页，中间一个黑色圆形双向箭头，表示格式互换。"
+    },
+    "cycling-tools": {
+      "background": "#E8F8F0",
+      "scene": "一辆简化自行车，两个白色圆形车轮，黑色几何车架，少量浅灰齿盘细节。"
+    },
+    "database-clients": {
+      "background": "#E8F1FF",
+      "scene": "白色圆柱数据库，浅色椭圆顶面，黑色弧线分层和小圆点。"
+    },
+    "desktop-publishing": {
+      "background": "#E8F1FF",
+      "scene": "白色圆角版面纸张，上方黑色标题线，下方浅色图块与黑色分栏短线。"
+    },
+    "downloaders": {
+      "background": "#E5F4FF",
+      "scene": "画面中央一个粗壮的黑色向下箭头，箭头下方一条白色圆角进度条，进度已走过大半，填充为黑色。"
+    },
+    "file-sync": {
+      "background": "#E7F8EE",
+      "scene": "左右两张白色圆角卡片，上面有浅灰文本条。中间一组黑色循环箭头，表示两边互相同步。"
+    },
+    "fitness-training": {
+      "background": "#E8F8F0",
+      "scene": "一副略微倾斜的白色哑铃，两端浅灰配重，黑色连接杆和少量黑色细节。"
+    },
+    "image-editors": {
+      "background": "#FFE4EA",
+      "scene": "白色圆角图像窗口，浅色山峰和太阳，右前方倾斜白色画笔。"
+    },
+    "launchers": {
+      "background": "#F1E9FF",
+      "scene": "上方一排四个白色圆角小方块（像应用图标），下方一条白色圆角搜索栏，左侧黑色圆形放大镜，中间浅紫输入条，右侧黑色小按钮。"
+    },
+    "note-taking": {
+      "background": "#E8F1FF",
+      "scene": "三叠略错开的白色圆角笔记本，最上面一本左侧有浅灰装订条，纸上是几条浅灰横线。右前方一支黑色铅笔微微倾斜，笔尖朝下。"
+    },
+    "outdoor-navigation": {
+      "background": "#E8F8F0",
+      "scene": "两座白色几何山峰，浅色雪顶，黑色虚线路径和右上方简化圆形指南针。"
+    },
+    "password-managers": {
+      "background": "#EDE7FF",
+      "scene": "一把白色圆角挂锁，黑色锁梁，锁身上有黑色锁孔。右前方一把微微倾斜的黑色钥匙。"
+    },
+    "pdf-tools": {
+      "background": "#FFF3C9",
+      "scene": "两份圆角文档微微错叠，后面一份浅褐，前面一份白色，右上角折起一角，纸上有几条浅褐横线。"
+    },
+    "photo-management": {
+      "background": "#FFF0D6",
+      "scene": "两张错叠白色照片，前方照片带浅色山峰和圆形太阳。"
+    },
+    "remote-desktop": {
+      "background": "#E8F6FF",
+      "scene": "一大一小两台白色显示器前后错叠，屏幕是浅蓝色色块，底部有黑色底座。小屏幕上有一个黑色小箭头，表示正在遥控。"
+    },
+    "screen-recorders": {
+      "background": "#D9F3EA",
+      "scene": "一张白色大圆角卡片居中，正中一个粗黑线圈，线圈里是砖红色实心圆，再套一个小黑圆，像录像键。左上角一条浅灰指示灯，右上角一个小黑点。"
+    },
+    "screenshot-tools": {
+      "background": "#E8F8F0",
+      "scene": "一张白色圆角窗口里是浅绿色网页色块。窗口上叠着黑色虚线选框，四角是小方形锚点，右下角有一个黑色圆形加号按钮。"
+    },
+    "transcription-tools": {
+      "background": "#E8F8F0",
+      "scene": "左侧黑色竖条声波，右侧白色圆角纸张和黑色转写文本短线，不绘制文字。"
+    },
+    "vector-graphics": {
+      "background": "#F1E9FF",
+      "scene": "黑色贝塞尔曲线、两个圆形控制点和一个方形锚点，下方白色钢笔笔尖。"
+    },
+    "video-editors": {
+      "background": "#FFE4EA",
+      "scene": "上方一条白色时间轴轨道，里面三格浅粉片段，中间一格有黑色播放三角。下方三条剪辑条，中间一条是黑色，两侧是白色。"
+    },
+    "vpn-clients": {
+      "background": "#E4F4F2",
+      "scene": "一个白色大圆像地球仪，黑色经纬线和三条水平纬线，底部有一条浅灰虚线地平线。"
+    }
+  }
+}

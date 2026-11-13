@@ -18,6 +18,8 @@ Clean product-cover design, off-white subtle grid background, a large white roun
 
 ## 分类封面规范（独立于主封面）
 
+完整的原 17 类提示词及共用前缀已另存：[category-cover-prompts.md](./category-cover-prompts.md)。新增分类也应使用该共用前缀，不使用本页的主封面提示词。
+
 **上面的中英文提示词只用于将来的 16:9 主封面，不用于分类封面。** 分类封面以项目最早的 17 张插画（例如 cleaners、screen-recorders、code-editors）为视觉基准，不改成白卡网格或品牌海报。
 
 - 保留 `480 × 260` 比例、原来的各类别浅彩底色和 22 px 点阵纹理。
