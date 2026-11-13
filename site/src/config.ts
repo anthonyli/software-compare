@@ -14,8 +14,8 @@ export const siteConfig = {
 
 /** 首页分组：slug 必须与数据里的品类 id 一致。 */
 export const categoryGroups: { id: string; name: string; slugs: string[] }[] = [
-  { id: "ai", name: "AI 工具", slugs: ["ai-assistants", "local-ai"] },
-  { id: "creative", name: "设计与摄影", slugs: ["image-editors", "vector-graphics", "photo-management", "desktop-publishing"] },
+  { id: "ai", name: "AI 工具", slugs: ["ai-assistants", "local-ai", "ai-coding", "ai-image-workflows"] },
+  { id: "creative", name: "设计与摄影", slugs: ["image-editors", "vector-graphics", "photo-management", "desktop-publishing", "animation-3d", "animation-2d", "compositing"] },
   {
     id: "office",
     name: "办公效率",
@@ -44,7 +44,7 @@ export const categoryGroups: { id: string; name: string; slugs: string[] }[] = [
   {
     id: "dev",
     name: "开发工具",
-    slugs: ["code-editors", "remote-desktop"],
+    slugs: ["code-editors", "remote-desktop", "database-clients", "api-clients"],
   },
 ];
 
@@ -68,6 +68,14 @@ export const featureLabelFull: Record<string, string> = {
 
 /** 首页与导航用的品类一字记号，纯展示，不改变数据。 */
 export const categoryMonograms: Record<string, string> = {
+  "ai-coding": "助",
+  "ai-image-workflows": "生",
+  "animation-3d": "立",
+  "animation-2d": "动",
+  "compositing": "合",
+  "database-clients": "库",
+  "api-clients": "接",
+
   "ai-assistants": "智", "local-ai": "模", "image-editors": "绘", "vector-graphics": "矢", "photo-management": "摄", "desktop-publishing": "版",
   "note-taking": "记",
   "screenshot-tools": "截",
@@ -90,6 +98,14 @@ export const categoryMonograms: Record<string, string> = {
 
 /** 首页卡片色块，仅用于展示，不代表产品官方品牌色。 */
 export const categoryTints: Record<string, string> = {
+  "ai-coding": "#E8F1FF",
+  "ai-image-workflows": "#E8F1FF",
+  "animation-3d": "#E8F1FF",
+  "animation-2d": "#E8F1FF",
+  "compositing": "#E8F1FF",
+  "database-clients": "#E8F1FF",
+  "api-clients": "#E8F1FF",
+
   "ai-assistants": "#E7EEFF", "local-ai": "#E4F4F2", "image-editors": "#FFE4EA", "vector-graphics": "#F1E9FF", "photo-management": "#FFF0D6", "desktop-publishing": "#E8F1FF",
   "note-taking": "#E8F1FF",
   "screenshot-tools": "#E8F8F0",

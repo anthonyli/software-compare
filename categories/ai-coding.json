@@ -1,0 +1,175 @@
+{
+  "category_slug": "ai-coding",
+  "category_name_zh": "AI 编程助手与 Agent",
+  "collected_at": "2026-11-13",
+  "timezone": "Asia/Shanghai",
+  "notes": "比较工具接入方式，不代表模型质量排名。Agent 可以写文件和运行命令，建议在隔离分支审查权限。M4 16GB 的可用本地模型取决于量化、上下文与运行时，不能保证所有模型可用。仅核实官方资料，未安装实测。",
+  "features": [
+    {
+      "key": "cli",
+      "label": "命令行入口"
+    },
+    {
+      "key": "ide_extension",
+      "label": "编辑器集成"
+    },
+    {
+      "key": "local_models",
+      "label": "接入本地模型"
+    },
+    {
+      "key": "code_edits",
+      "label": "修改项目代码"
+    },
+    {
+      "key": "run_tests",
+      "label": "运行测试"
+    }
+  ],
+  "products": [
+    {
+      "id": "aider",
+      "name": "Aider",
+      "official_url": "https://aider.chat",
+      "github_url": "https://github.com/Aider-AI/aider",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "pricing_model": "开源免费 / 模型与服务另计",
+      "price_summary": "应用代码可免费使用；本地运行需自备硬件与模型，云 API、托管和附加服务可能单独收费。",
+      "prices": [],
+      "free_tier_limits": "云模型会收到发送的代码上下文与提示词；本地模型需独立运行时和足够内存。代码许可不覆盖模型许可，生成的修改需人工审查和测试。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "终端 AI 结对编程工具，适合以 Git 为中心修改现有项目。",
+      "features": {
+        "cli": {
+          "value": "yes",
+          "note": "终端交互为主要入口"
+        },
+        "ide_extension": {
+          "value": "partial",
+          "note": "可从编辑器使用，但不是独立 IDE 扩展的同义词"
+        },
+        "local_models": {
+          "value": "yes",
+          "note": "支持本地 LLM 端点；效果取决于所选模型"
+        },
+        "code_edits": {
+          "value": "yes",
+          "note": "修改代码并可自动提交 Git；使用前检查自动提交设置"
+        },
+        "run_tests": {
+          "value": "yes",
+          "note": "支持配置 lint 和测试命令"
+        }
+      },
+      "sources": [
+        "https://github.com/Aider-AI/aider",
+        "https://aider.chat/docs/install.html"
+      ]
+    },
+    {
+      "id": "continue",
+      "name": "Continue",
+      "official_url": "https://docs.continue.dev",
+      "github_url": "https://github.com/continuedev/continue",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "pricing_model": "开源免费 / 模型与服务另计",
+      "price_summary": "应用代码可免费使用；本地运行需自备硬件与模型，云 API、托管和附加服务可能单独收费。",
+      "prices": [],
+      "free_tier_limits": "官方 README 标记仓库只读、不再积极维护，最终版本为 2.0.0；不应假定后续兼容性或安全修复。云模型接收代码上下文，模型/API 费用和许可另计。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": "暂停维护",
+      "summary": "提供 CLI、VS Code 和 JetBrains 集成的编程助手；官方已声明停止积极维护，适合评估现有部署或学习源码。",
+      "features": {
+        "cli": {
+          "value": "yes",
+          "note": "提供命令行入口"
+        },
+        "ide_extension": {
+          "value": "yes",
+          "note": "提供 VS Code 扩展和 JetBrains 插件；官方更推荐 CLI 而非 JetBrains 插件"
+        },
+        "local_models": {
+          "value": "yes",
+          "note": "文档支持 Ollama 配置"
+        },
+        "code_edits": {
+          "value": "yes",
+          "note": "文档列出 Edit 与 Agent 模式"
+        },
+        "run_tests": {
+          "value": "unknown",
+          "note": "本次未核实自动测试流程"
+        }
+      },
+      "sources": [
+        "https://github.com/continuedev/continue",
+        "https://docs.continue.dev/customize/model-providers/top-level/ollama"
+      ]
+    },
+    {
+      "id": "cline",
+      "name": "Cline",
+      "official_url": "https://cline.bot",
+      "github_url": "https://github.com/cline/cline",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "pricing_model": "开源免费 / 模型与服务另计",
+      "price_summary": "应用代码可免费使用；本地运行需自备硬件与模型，云 API、托管和附加服务可能单独收费。",
+      "prices": [],
+      "free_tier_limits": "本条开源范围为仓库中的核心、CLI、VS Code 等代码；官方明确 JetBrains 插件暂不开源。云模型接收代码上下文，模型/API 费用另计；本地模型对硬件和工具调用能力有要求。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "可编辑文件、运行命令的编程 Agent，提供 CLI、VS Code 与桌面入口；应谨慎设置自动批准。",
+      "features": {
+        "cli": {
+          "value": "yes",
+          "note": "支持交互式及无界面命令行流程"
+        },
+        "ide_extension": {
+          "value": "yes",
+          "note": "有开源 VS Code 扩展；JetBrains 插件不在开源范围"
+        },
+        "local_models": {
+          "value": "yes",
+          "note": "官方文档支持 Ollama 和 LM Studio 等本地运行时"
+        },
+        "code_edits": {
+          "value": "yes",
+          "note": "支持文件修改与审查差异；可配置批准策略"
+        },
+        "run_tests": {
+          "value": "yes",
+          "note": "可运行终端测试命令，执行前应审核授权"
+        }
+      },
+      "sources": [
+        "https://github.com/cline/cline",
+        "https://docs.cline.bot/running-models-locally/overview"
+      ]
+    }
+  ]
+}

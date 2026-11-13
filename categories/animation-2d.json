@@ -1,0 +1,119 @@
+{
+  "category_slug": "animation-2d",
+  "category_name_zh": "2D 动画制作",
+  "collected_at": "2026-11-13",
+  "collected_at_timezone": "Asia/Shanghai (UTC+8)",
+  "notes": "按动画制作流程比较，不承诺直接导入或无损兼容 Adobe Animate 项目。平台支持不代表所有附属工具都可用。",
+  "features": [
+    {
+      "key": "vector_animation",
+      "label": "矢量动画"
+    },
+    {
+      "key": "raster_animation",
+      "label": "位图动画"
+    },
+    {
+      "key": "bone_animation",
+      "label": "骨骼/剪纸动画"
+    },
+    {
+      "key": "node_effects",
+      "label": "节点式特效"
+    }
+  ],
+  "products": [
+    {
+      "id": "synfig",
+      "name": "Synfig Studio",
+      "official_url": "https://www.synfig.org/",
+      "github_url": "https://github.com/synfig/synfig",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "完全免费",
+      "price_summary": "官方提供免费开源软件；可选素材、插件与培训可能另收费。",
+      "prices": [
+        {
+          "plan": "软件本身",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "软件免费；稳定版与开发版用途不同，生产工作应评估所选版本。未验证 Apple Silicon 原生构建。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "偏重矢量补间与骨骼/剪纸动画，适合用关键位置驱动动画，而非每帧都重新绘制。",
+      "features": {
+        "vector_animation": {
+          "value": "yes"
+        },
+        "raster_animation": {
+          "value": "yes"
+        },
+        "bone_animation": {
+          "value": "yes"
+        },
+        "node_effects": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://www.synfig.org/"
+      ]
+    },
+    {
+      "id": "opentoonz",
+      "name": "OpenToonz",
+      "official_url": "https://opentoonz.github.io/e/",
+      "github_url": "https://github.com/opentoonz/opentoonz",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "BSD-3-Clause",
+      "pricing_model": "完全免费",
+      "price_summary": "官方提供免费开源软件；可选素材、插件与培训可能另收费。",
+      "prices": [
+        {
+          "plan": "软件本身",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "可免费用于商业与非商业项目；第三方库、笔刷另有许可。GTS 扫描工具仅 Windows；Linux 参考官方源码构建文档，未核实安装包。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "提供位图/矢量绘画、摄影表与时间线、节点特效的 2D 动画制作流程，适合手绘动画和上色合成。",
+      "features": {
+        "vector_animation": {
+          "value": "yes"
+        },
+        "raster_animation": {
+          "value": "yes"
+        },
+        "bone_animation": {
+          "value": "unknown"
+        },
+        "node_effects": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://opentoonz.github.io/e/",
+        "https://raw.githubusercontent.com/opentoonz/opentoonz/master/README.md",
+        "https://raw.githubusercontent.com/opentoonz/opentoonz/master/LICENSE.txt"
+      ]
+    }
+  ]
+}
