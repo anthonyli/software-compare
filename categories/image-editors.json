@@ -57,7 +57,8 @@
           "value": "yes"
         },
         "animation": {
-          "value": "unknown"
+          "value": "partial",
+          "note": "GIMP 3.0 文档确认有限支持：每个图层作为一帧，可预览并导出 GIF/WebP 动画，按图层名称设置帧延迟与合成方式；通常不支持图层组，不等同于完整动画时间轴。"
         },
         "plugins": {
           "value": "yes"
@@ -66,7 +67,8 @@
       "sources": [
         "https://www.gimp.org/",
         "https://www.gimp.org/docs/userfaq.html",
-        "https://docs.gimp.org/3.0/en/gimp-image-combining.html"
+        "https://docs.gimp.org/3.0/en/gimp-image-combining.html",
+        "https://docs.gimp.org/3.0/en/export-file-formats.html"
       ]
     },
     {

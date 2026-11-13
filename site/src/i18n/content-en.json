@@ -1433,5 +1433,6 @@
   "原生 INDD、字体、链接资源及插件依赖需单独验证；IDML 交换不保证版式无损。": "Validate native INDD, fonts, linked assets and plugins separately; IDML interchange does not guarantee identical layout.",
   "书刊、多页排版及印刷交付的商业对照项；与 Scribus 按排版任务比较。": "Commercial reference for books, multi-page layout and print delivery; compare with Scribus by publishing task.",
   "AEP、表达式、模板和第三方插件不应假设可迁移到 Natron；不是非线性剪辑软件的直接替代。": "Do not assume AEP projects, expressions, templates or plugins migrate to Natron; it is not a direct substitute for a nonlinear video editor.",
-  "以图层和时间轴为主的动效及视觉合成工具；Natron 的节点合成仅覆盖部分任务。": "Layer- and timeline-based motion graphics and visual compositing; Natron node compositing covers only some tasks."
+  "以图层和时间轴为主的动效及视觉合成工具；Natron 的节点合成仅覆盖部分任务。": "Layer- and timeline-based motion graphics and visual compositing; Natron node compositing covers only some tasks.",
+  "GIMP 3.0 文档确认有限支持：每个图层作为一帧，可预览并导出 GIF/WebP 动画，按图层名称设置帧延迟与合成方式；通常不支持图层组，不等同于完整动画时间轴。": "GIMP 3.0 documents limited support: each layer is a frame, with preview and GIF/WebP animation export; layer names set frame delays and compositing. Layer groups are generally unsupported. This is not a full animation timeline."
 }

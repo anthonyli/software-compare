@@ -15,3 +15,13 @@ test('Adobe references and differentiated open alternatives live in their task c
  assert.deepEqual(category('image-editors').products.find(p=>p.id==='photodemon').platforms,['Windows']);
  assert.equal(category('compositing').products.find(p=>p.id==='adobe-after-effects').features.node_compositing.value,'no');
 });
+
+test('GIMP frame animation has qualified official evidence rather than unknown/full support',()=>{
+ const gimp=category('image-editors').products.find(p=>p.id==='gimp');
+ assert.equal(gimp.features.animation.value,'partial');
+ assert.match(gimp.features.animation.note,/图层组/);
+ assert.match(gimp.features.animation.note,/不等同于完整动画时间轴/);
+ assert(gimp.sources.includes('https://docs.gimp.org/3.0/en/export-file-formats.html'));
+ const en=JSON.parse(fs.readFileSync(new URL('../src/i18n/content-en.json',import.meta.url),'utf8'));
+ assert.match(en[gimp.features.animation.note],/not a full animation timeline/);
+});
