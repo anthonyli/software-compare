@@ -1879,5 +1879,18 @@
   "GPL-3.0-or-later 程序可免费使用，包括商用；分发与修改需遵守许可证，模型及依赖另核。": "The GPL-3.0-or-later program is free to use, including commercially; distribution and modifications must follow its license, with models and dependencies checked separately.",
   "当前 Mac 版需 macOS 14+ 与 Apple Silicon；Intel Mac 仅提供旧版 0.6。安装含模型约 3GB，CUDA 是可选加速而非必需；本地转写不需上传录音，模型授权与资源需求分别核对，未实测 M4 16GB。": "The current Mac version requires macOS 14+ and Apple Silicon; Intel Macs only have the older 0.6 release. Installation with models is about 3GB. CUDA is optional acceleration, not mandatory. Local transcription does not require uploading recordings; check model licenses and resource needs separately. M4 16GB was not tested.",
   "面向访谈与研究资料的本地转写和校对工具，提供说话人区分及 HTML、TXT、WebVTT 导出。": "A local transcription and proofreading tool for interviews and research, with speaker separation and HTML, TXT and WebVTT export.",
-  "官方描述文件队列转写，未确认实时麦克风流式输入。": "Official documentation describes file-queue transcription; live microphone streaming is unverified."
+  "官方描述文件队列转写，未确认实时麦克风流式输入。": "Official documentation describes file-queue transcription; live microphone streaming is unverified.",
+  "免费增值 / 按席位订阅": "Freemium / per-seat subscription",
+  "Starter 免费；Professional、Organization 与 Enterprise 按方案和席位类型收费，AI 额度和附加包另计。": "Starter is free; Professional, Organization and Enterprise charge by plan and seat type, with AI quotas and optional add-ons.",
+  "云端设计与协作，不是完整离线编辑器；免费草稿不等于无限团队文件。桌面应用仅 Windows/macOS，Linux 可用兼容浏览器。分享权限、插件和 AI 数据处理需单独核对，未实测 M4 16GB。": "Cloud-based design and collaboration, not a fully offline editor; free drafts do not imply unlimited team files. Desktop apps support Windows/macOS; Linux can use a compatible browser. Review sharing permissions, plugins and AI data processing separately. M4 16GB was not tested.",
+  "面向界面设计和设计系统的协作工具，提供矢量绘制、组件与交互原型。": "A collaborative UI and design-system tool with vector drawing, components and interactive prototypes.",
+  "支持 SVG 导出；文字默认转轮廓、描边导出为填充，跨工具编辑需核对设置。": "SVG export is supported; text is outlined by default and strokes export as fills. Check settings for editing across tools.",
+  "高级变量和条件原型受套餐限制，不等于交付可运行生产代码。": "Advanced variable and conditional prototypes depend on the plan; prototypes are not production code.",
+  "官方资料核实的是托管服务，未确认可自行部署设计协作服务；本地 MCP 不等于自托管 Figma。": "The verified offering is hosted; a self-deployable design collaboration service is unverified. A local MCP server is not self-hosted Figma.",
+  "订阅协作 / Mac 单机买断": "Collaboration subscription / Mac-only license",
+  "提供订阅和 Mac-only 一次性许可；后者含一年更新、可继续用已获版本，但不含云协作。30 天试用适用于订阅路径。": "Available as a subscription or a Mac-only one-time license. The latter includes one year of updates and continued use of acquired versions, but no cloud collaboration. The 30-day trial applies to subscriptions.",
+  "完整设计编辑器仅 macOS；Web 用于查看、评审、检查与原型，不是同等网页版编辑器。文档可本地保存，Workspace 和外部 AI/MCP 另有数据流；未实测 M4 16GB。": "Full design editing is macOS-only. The web app provides viewing, review, inspection and prototypes, not equivalent browser editing. Documents can be saved locally; Workspaces and external AI/MCP have separate data flows. M4 16GB was not tested.",
+  "面向 Mac 的矢量界面设计和原型工具，可按需使用订阅工作区进行团队协作。": "A Mac vector UI design and prototyping tool with optional subscription workspaces for team collaboration.",
+  "实时协作需要订阅；Mac-only 许可不含云协作与在线分享。": "Real-time collaboration requires a subscription; Mac-only licenses exclude cloud collaboration and online sharing.",
+  "Private Cloud 由 Sketch 管理 AWS 环境，不等于用户自行部署；未核实用户自托管版本。": "Private Cloud is an AWS environment managed by Sketch, not user deployment; a user-self-hosted edition is unverified."
 }

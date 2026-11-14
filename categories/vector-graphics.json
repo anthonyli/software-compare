@@ -1,7 +1,7 @@
 {
   "category_slug": "vector-graphics",
   "category_name_zh": "矢量与界面设计",
-  "collected_at": "2026-11-13",
+  "collected_at": "2026-11-14",
   "collected_at_timezone": "Asia/Shanghai (UTC+8)",
   "features": [
     {
@@ -67,7 +67,8 @@
       "sources": [
         "https://github.com/inkscape/inkscape",
         "https://gitlab.com/inkscape/inkscape/-/raw/master/COPYING"
-      ]
+      ],
+      "collected_at": "2026-11-13"
     },
     {
       "id": "penpot",
@@ -113,7 +114,8 @@
         "https://penpot.app/features",
         "https://penpot.app/pricing",
         "https://github.com/penpot/penpot"
-      ]
+      ],
+      "collected_at": "2026-11-13"
     },
     {
       "id": "adobe-illustrator",
@@ -151,7 +153,8 @@
       "sources": [
         "https://www.adobe.com/products/illustrator.html",
         "https://helpx.adobe.com/illustrator/using/svg.html"
-      ]
+      ],
+      "collected_at": "2026-11-13"
     },
     {
       "id": "vectorcraft",
@@ -242,6 +245,98 @@
         "https://github.com/storytold/figcraft/blob/main/README.md",
         "https://github.com/storytold/figcraft/blob/main/LICENSE-MIT",
         "https://github.com/storytold/figcraft/blob/main/LICENSE-APACHE"
+      ],
+      "collected_at": "2026-11-14"
+    },
+    {
+      "id": "figma-design",
+      "name": "Figma Design",
+      "official_url": "https://www.figma.com/design/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Web"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "免费增值 / 按席位订阅",
+      "price_summary": "Starter 免费；Professional、Organization 与 Enterprise 按方案和席位类型收费，AI 额度和附加包另计。",
+      "prices": [],
+      "free_tier_limits": "云端设计与协作，不是完整离线编辑器；免费草稿不等于无限团队文件。桌面应用仅 Windows/macOS，Linux 可用兼容浏览器。分享权限、插件和 AI 数据处理需单独核对，未实测 M4 16GB。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "面向界面设计和设计系统的协作工具，提供矢量绘制、组件与交互原型。",
+      "features": {
+        "svg": {
+          "value": "yes",
+          "note": "支持 SVG 导出；文字默认转轮廓、描边导出为填充，跨工具编辑需核对设置。"
+        },
+        "prototyping": {
+          "value": "yes",
+          "note": "高级变量和条件原型受套餐限制，不等于交付可运行生产代码。"
+        },
+        "collaboration": {
+          "value": "yes"
+        },
+        "self_host": {
+          "value": "unknown",
+          "note": "官方资料核实的是托管服务，未确认可自行部署设计协作服务；本地 MCP 不等于自托管 Figma。"
+        }
+      },
+      "sources": [
+        "https://www.figma.com/pricing/",
+        "https://www.figma.com/downloads/",
+        "https://www.figma.com/legal/tos/",
+        "https://help.figma.com/hc/en-us/articles/13402894554519-Export-formats-and-settings-for-static-designs",
+        "https://help.figma.com/hc/en-us/articles/360040328553-What-can-I-do-offline-in-Figma",
+        "https://help.figma.com/hc/en-us/articles/360039827194-What-are-the-system-requirements-for-Figma"
+      ],
+      "collected_at": "2026-11-14"
+    },
+    {
+      "id": "sketch",
+      "name": "Sketch",
+      "official_url": "https://www.sketch.com/",
+      "github_url": null,
+      "platforms": [
+        "macOS",
+        "Web"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "订阅协作 / Mac 单机买断",
+      "price_summary": "提供订阅和 Mac-only 一次性许可；后者含一年更新、可继续用已获版本，但不含云协作。30 天试用适用于订阅路径。",
+      "prices": [],
+      "free_tier_limits": "完整设计编辑器仅 macOS；Web 用于查看、评审、检查与原型，不是同等网页版编辑器。文档可本地保存，Workspace 和外部 AI/MCP 另有数据流；未实测 M4 16GB。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "面向 Mac 的矢量界面设计和原型工具，可按需使用订阅工作区进行团队协作。",
+      "features": {
+        "svg": {
+          "value": "yes"
+        },
+        "prototyping": {
+          "value": "yes"
+        },
+        "collaboration": {
+          "value": "paid",
+          "note": "实时协作需要订阅；Mac-only 许可不含云协作与在线分享。"
+        },
+        "self_host": {
+          "value": "unknown",
+          "note": "Private Cloud 由 Sketch 管理 AWS 环境，不等于用户自行部署；未核实用户自托管版本。"
+        }
+      },
+      "sources": [
+        "https://www.sketch.com/pricing/",
+        "https://www.sketch.com/features/",
+        "https://www.sketch.com/docs/designing/vector-editing/",
+        "https://www.sketch.com/docs/getting-started/saving-and-managing-documents/",
+        "https://www.sketch.com/support/subscriptions/private-cloud/",
+        "https://www.sketch.com/privacy/"
       ],
       "collected_at": "2026-11-14"
     }
