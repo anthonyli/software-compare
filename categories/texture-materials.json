@@ -160,6 +160,143 @@
         "https://rodzill4.github.io/material-maker/doc/"
       ],
       "collected_at": "2026-11-14"
+    },
+    {
+      "id": "substance-3d-painter",
+      "name": "Adobe Substance 3D Painter",
+      "official_url": "https://www.adobe.com/products/substance3d/apps/painter.html",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "订阅",
+      "price_summary": "付费订阅；实际价格和许可范围以地区、个人或团队方案为准。",
+      "prices": [],
+      "free_tier_limits": "本条按 Adobe 订阅方案比较；其他购买渠道另核。Linux 有渠道与发行版要求：Enterprise 为 RHEL 8/9，Steam 为 Ubuntu 22.04。Substance 3D 不自动包含在普通 Creative Cloud 套餐中，教育权益另核。专有许可，商业使用及素材须遵守对应条款。桌面编辑与联网激活、资产下载不能混为完全离线；未审计数据传输。M4 16GB 未实测，不保证大型材质性能。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "面向三维美术的模型贴图绘制工具，使用图层、材质和遮罩并导出纹理。",
+      "features": {
+        "node_graph": {
+          "value": "unknown",
+          "note": "官方资料未确认该独立工作流；未知不代表不支持。"
+        },
+        "pbr": {
+          "value": "yes",
+          "note": ""
+        },
+        "painting_3d": {
+          "value": "yes",
+          "note": ""
+        },
+        "texture_export": {
+          "value": "yes",
+          "note": ""
+        }
+      },
+      "sources": [
+        "https://www.adobe.com/products/substance3d/apps/painter.html",
+        "https://helpx.adobe.com/substance-3d/substance-3d-faq.html",
+        "https://experienceleague.adobe.com/en/docs/substance-3d-painter/using/getting-started/system-requirements"
+      ],
+      "collected_at": "2026-11-14"
+    },
+    {
+      "id": "substance-3d-designer",
+      "name": "Adobe Substance 3D Designer",
+      "official_url": "https://www.adobe.com/products/substance3d/apps/designer.html",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "订阅",
+      "price_summary": "付费订阅；实际价格和许可范围以地区、个人或团队方案为准。",
+      "prices": [],
+      "free_tier_limits": "本条按 Adobe 订阅方案比较；其他购买渠道另核。Linux 有渠道与发行版要求：Enterprise 为 RHEL 8/9，Steam 为 Ubuntu 22.04。Substance 3D 不自动包含在普通 Creative Cloud 套餐中，教育权益另核。专有许可，商业使用及素材须遵守对应条款。桌面编辑与联网激活、资产下载不能混为完全离线；未审计数据传输。M4 16GB 未实测，不保证大型材质性能。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "面向材质技术美术的非破坏节点编辑器，程序化生成材质与纹理。",
+      "features": {
+        "node_graph": {
+          "value": "yes",
+          "note": ""
+        },
+        "pbr": {
+          "value": "yes",
+          "note": ""
+        },
+        "painting_3d": {
+          "value": "unknown",
+          "note": "官方资料未确认该独立工作流；未知不代表不支持。"
+        },
+        "texture_export": {
+          "value": "yes",
+          "note": ""
+        }
+      },
+      "sources": [
+        "https://www.adobe.com/products/substance3d/apps/designer.html",
+        "https://helpx.adobe.com/substance-3d/substance-3d-faq.html",
+        "https://experienceleague.adobe.com/en/docs/substance-3d-designer/using/getting-started/system-requirements"
+      ],
+      "collected_at": "2026-11-14"
+    },
+    {
+      "id": "armorpaint",
+      "name": "ArmorPaint",
+      "official_url": "https://armorpaint.org/",
+      "github_url": "https://github.com/armory3d/armorpaint",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "Zlib",
+      "pricing_model": "源码开放，官方构建付费",
+      "price_summary": "源码可自行构建；官方桌面预编译包 US$19，下载页称更新免费。",
+      "prices": [],
+      "free_tier_limits": "zlib/libpng 代码许可允许商用，保留许可并标明修改；素材与模型许可另核。macOS 包为 Apple Silicon；移动版为早期/实验版本，本条只比较桌面。稳定下载为 1.0，手册为 1.1，功能细节需按版本核对。官方称不收集数据，未经独立审计；M4 16GB 未实测，不承诺 Substance 工程无损迁移。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "面向三维美术的 GPU 贴图绘制与节点式材质工具，支持 PBR 和纹理导出。",
+      "features": {
+        "node_graph": {
+          "value": "yes",
+          "note": ""
+        },
+        "pbr": {
+          "value": "yes",
+          "note": ""
+        },
+        "painting_3d": {
+          "value": "yes",
+          "note": ""
+        },
+        "texture_export": {
+          "value": "yes",
+          "note": ""
+        }
+      },
+      "sources": [
+        "https://armorpaint.org/",
+        "https://armorpaint.org/download",
+        "https://armorpaint.org/manual",
+        "https://git.armorpaint.org/blob/license.md",
+        "https://armorpaint.org/privacy"
+      ],
+      "collected_at": "2026-11-14"
     }
   ]
 }
