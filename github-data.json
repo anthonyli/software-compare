@@ -1,32 +1,32 @@
 {
   "schema_version": 1,
-  "last_attempt_at": "2026-11-14T12:26:51.405Z",
-  "last_success_at": "2026-11-14T12:26:51.405Z",
+  "last_attempt_at": "2026-11-14T12:47:52.980Z",
+  "last_success_at": "2026-11-14T12:47:52.980Z",
   "repositories": {
     "0xcoach/taosheng": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/0xcoach/taosheng",
       "repository": {
         "stars": 390,
         "archived": false,
-        "pushed_at": "2026-11-13T23:57:55Z"
+        "pushed_at": "2026-11-14T12:40:56Z"
       },
       "release": {
         "tag": "v0.3.0",
         "published_at": "2026-11-13T07:36:18Z"
       },
-      "repo_etag": "W/\"064d4a09b06bb5755503601eea8507ee57cfdc7162f28a45a94249025b364f46\"",
-      "release_etag": "W/\"647c842ab35ecb4d5026d500570c2a836dad57011db6ff833a1bb302bf93dfc0\""
+      "repo_etag": "W/\"32278ff962423ac423cd5a9b4553b39ab1e0efdd7a8fb48dc487e1183b56669c\"",
+      "release_etag": "W/\"11f94c839b6f79c3e740ab6ec3da0fd4fa308e30c1c8d972aab7070c1d1751f9\""
     },
     "agalwood/motrix": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/agalwood/motrix",
       "repository": {
-        "stars": 58256,
+        "stars": 58257,
         "archived": false,
         "pushed_at": "2026-11-09T16:32:27Z"
       },
@@ -34,16 +34,16 @@
         "tag": "v2.4.1",
         "published_at": "2026-11-09T17:07:13Z"
       },
-      "repo_etag": "W/\"47986fd194a80291fa9609d970a1c690662cdba48857a6c2a4b3427ef5d13e94\"",
-      "release_etag": "W/\"788ba749d486d765225575f698468b65efa2257afeefddb038016566d9615d88\""
+      "repo_etag": "W/\"58c080c3b7da58ce456fab2562db4383332dc4697debbeefeffdd659998fbcbd\"",
+      "release_etag": "W/\"552301acad701f7108fdaa4f2abfc6d5abed41514221e10c308c43ab978c30fe\""
     },
     "aider-ai/aider": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/aider-ai/aider",
       "repository": {
-        "stars": 50117,
+        "stars": 50118,
         "archived": false,
         "pushed_at": "2026-05-22T14:02:20Z"
       },
@@ -51,13 +51,13 @@
         "tag": "v0.86.0",
         "published_at": "2025-08-09T17:42:19Z"
       },
-      "repo_etag": "W/\"8817ef0689432539bb3a0bce934158043a3db866e1efad06231203f9deda2b05\"",
-      "release_etag": "W/\"39f0e14035a9d7e74891e68364d6cbe15119fa13eb01b35a2ea7dda78d66fbb5\""
+      "repo_etag": "W/\"d83d76966b3da6429d70faff3a40785c77dbb21df39ae81e719b49936e9f1b4c\"",
+      "release_etag": "W/\"5d507b320790236c25737bea3c39d0132a5486418cda8f30c47bbd8135e494ec\""
     },
     "albertlauncher/albert": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/albertlauncher/albert",
       "repository": {
         "stars": 8008,
@@ -68,13 +68,13 @@
         "tag": "v35.2.0",
         "published_at": "2026-10-26T22:37:46Z"
       },
-      "repo_etag": "W/\"339943e7d8bac1c8fa3e9f36b74b7d7f3f31281d08a908a3990f076f6bce06a2\"",
-      "release_etag": "W/\"aad154ad6b892e4988fba0a7afda31b1f52c3516e012efe1159292bfc0768925\""
+      "repo_etag": "W/\"93cf01ec52a8ac54e006c2f1e2dcdf6a690ebcc61f1848c9f9643be8a4cf2553\"",
+      "release_etag": "W/\"2dd24a02503813b855639be2900788c737334c6b36090afbd6c85a2052077f49\""
     },
     "alienator88/pearcleaner": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/alienator88/pearcleaner",
       "repository": {
         "stars": 15128,
@@ -85,13 +85,13 @@
         "tag": "5.4.3",
         "published_at": "2025-11-26T23:18:50Z"
       },
-      "repo_etag": "W/\"2b5383c09fd52947a6b83a1fd650c777c5bc2e0af07024e5d1c9ff0110edfc10\"",
-      "release_etag": "W/\"dab9bd33a3ceebdc4042e9299e90442b6082f2f5ddde06dd96ffa93851479e5b\""
+      "repo_etag": "W/\"143bca0f410425d9a88e055db0a88398599f76fcac2d7f784efeb21142d0d6b0\"",
+      "release_etag": "W/\"228fa46ab78e7948074609d9955f30af6c25e0818ab72d5b080158f2e33dc5c2\""
     },
     "alyssaxuu/screenity": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/alyssaxuu/screenity",
       "repository": {
         "stars": 18990,
@@ -102,13 +102,13 @@
         "tag": "v4.7.2",
         "published_at": "2026-10-25T11:04:48Z"
       },
-      "repo_etag": "W/\"cd52715ce9bd5eb731d05b9574c526e8140ac54fd0d7ee39c248a30003b6e9d5\"",
-      "release_etag": "W/\"bd1daa96cd572b7bc2764cc50790a6cf7c20d37caeaf2a307b3fde59e865fe10\""
+      "repo_etag": "W/\"3714b0ed7681eeb4c423c9330e901467b2a5df7aa628fb583c6f8dc1821cc245\"",
+      "release_etag": "W/\"f5d3ad45a3b27402a58b41ed33530badb7d4cb6cfe6150ba6522cf2adad1f893\""
     },
     "amir1376/ab-download-manager": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/amir1376/ab-download-manager",
       "repository": {
         "stars": 19276,
@@ -119,13 +119,13 @@
         "tag": "v1.11.4",
         "published_at": "2026-11-03T02:26:17Z"
       },
-      "repo_etag": "W/\"a3a3d42dae2dfe9fa23efc3d9d708970b69b506083c8e1976970d7fdc832f520\"",
-      "release_etag": "W/\"f2d5fd22fc0a0b645280bc5b51a7bcfc4ef2ad50f216c9ec74e4c1e49a8106fe\""
+      "repo_etag": "W/\"a0311ac3643c1e0763638f5a43180b3d2bb8a99163c50cf8e22e0b08ebb66a0d\"",
+      "release_etag": "W/\"3cde69b0ece40174e060d3d42e02e5ecb63d7dd171b642c91e5e05b3c0d66bb7\""
     },
     "ammen99/wf-recorder": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/ammen99/wf-recorder",
       "repository": {
         "stars": 1334,
@@ -136,13 +136,13 @@
         "tag": "v0.6.0",
         "published_at": "2025-10-17T08:30:15Z"
       },
-      "repo_etag": "W/\"59d5b6c3f0e5cebb855ce99cda2e21b092b1353d0074abf07a5e61fbbea8f770\"",
-      "release_etag": "W/\"ed6b952db95b8d182e2d17da21cc352f95f732b8979c4c2ebf48960c9a5c1621\""
+      "repo_etag": "W/\"b509e0cbeab79e801de037f608b3f5e5141f8bba464185e860dc93edab8db7e4\"",
+      "release_etag": "W/\"df7de4c9807f534b9d8d24433bba8c1ec96a8e3b0f0fc9713137276e37a7be38\""
     },
     "amnezia-vpn/amnezia-client": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/amnezia-vpn/amnezia-client",
       "repository": {
         "stars": 15945,
@@ -153,13 +153,13 @@
         "tag": "5.1.0.6",
         "published_at": "2026-11-02T16:52:02Z"
       },
-      "repo_etag": "W/\"d59cd45b26110fd31c2a457669e2a2cc9df301deb08d5d6e853af7196e6a1103\"",
-      "release_etag": "W/\"52ee97093cbaae0c345c3e381aa339ef4ea629b72c00f853415b385d7b2d243d\""
+      "repo_etag": "W/\"d7f5efd9da0cfd2f713ae27cb3ccda8318be687ef8d845d3fb2d12295a3f034b\"",
+      "release_etag": "W/\"af3b0a60752bbaf76af6a77b7ef26b19ad7ad92dbea683ef05630403f5a15bc7\""
     },
     "aonez/keka": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/aonez/keka",
       "repository": {
         "stars": 7658,
@@ -170,13 +170,13 @@
         "tag": "v1.6.8",
         "published_at": "2026-09-24T06:39:57Z"
       },
-      "repo_etag": "W/\"143ee0f87e2cebf666cdc62a7f6c7271e7e0e315b8533580b04d0e3913ea17c7\"",
-      "release_etag": "W/\"4bab23620e31affb23d2b3a447cac137924f4b8d5777724f7fc89a80074adc5d\""
+      "repo_etag": "W/\"d8a5890d7ff41049c16b4821e8d9807b54dc031cd58961e3d75f8df960524077\"",
+      "release_etag": "W/\"697d2f233f7f35c399874782bd0a1171a20a19208fd1032624bab7c239e76a6e\""
     },
     "apache/guacamole-client": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/apache/guacamole-client",
       "repository": {
         "stars": 1755,
@@ -184,13 +184,13 @@
         "pushed_at": "2026-11-03T14:33:24Z"
       },
       "release": null,
-      "repo_etag": "W/\"7035d1920fb76b05d4278eef5be76ed8989327c76e6f460930b1eaa62eed8afe\"",
+      "repo_etag": "W/\"e5696d818bbd228f1c2ba65f98eedcbe268408c6d9537626d3db3bafe21d2a1f\"",
       "release_etag": null
     },
     "apache/netbeans": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/apache/netbeans",
       "repository": {
         "stars": 3153,
@@ -201,16 +201,16 @@
         "tag": "31",
         "published_at": "2026-08-05T12:16:52Z"
       },
-      "repo_etag": "W/\"20dc2d8d73418bf9cf4a08864c16ffa16758921da909b7dc3c0e8d3d8ff89854\"",
-      "release_etag": "W/\"0770bf158ddd9bbf961057e8e761853552ef75dc6850012146f8e37876fec1ce\""
+      "repo_etag": "W/\"81cd164915e8df38e66d96e15f156e16f43eddc054a7e90f1ff6332302068630\"",
+      "release_etag": "W/\"74463e67f813b9e517ba4d631d91ca37549a3ac616db1f5b544f1b7b8b6e647c\""
     },
     "appflowy-io/appflowy": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/appflowy-io/appflowy",
       "repository": {
-        "stars": 78893,
+        "stars": 78894,
         "archived": false,
         "pushed_at": "2026-11-02T23:40:52Z"
       },
@@ -218,13 +218,13 @@
         "tag": "0.15.0",
         "published_at": "2026-11-02T23:40:52Z"
       },
-      "repo_etag": "W/\"dcf59946e9abc825b424a94cb16edc07b137f7ca9b78f602802896fb9389f954\"",
-      "release_etag": "W/\"4c476b46abeca6f484364442c172e39450b1f91a11a9495dac161cffdd8e5d5a\""
+      "repo_etag": "W/\"f67537e26f68866b2c75e79e7626ae421212f4036014b0cbe7475f2ac22f9890\"",
+      "release_etag": "W/\"818d7f0cd9b47b7cb5d8b2ce154c4baea5bb24170ae84b6603d4488464fc7415\""
     },
     "ardour/ardour": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/ardour/ardour",
       "repository": {
         "stars": 5427,
@@ -232,16 +232,16 @@
         "pushed_at": "2026-11-14T01:24:18Z"
       },
       "release": null,
-      "repo_etag": "W/\"57c14dd98a1fd94301bbbfbe17050dc37a8c999fa2449c9206ba5dd9ba835e3a\"",
+      "repo_etag": "W/\"9820822123434ece9fd86177c26fca3b99c5e654705a46a17d9cb4d9979b6e9a\"",
       "release_etag": null
     },
     "aria2/aria2": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/aria2/aria2",
       "repository": {
-        "stars": 43515,
+        "stars": 43516,
         "archived": false,
         "pushed_at": "2026-06-25T14:49:35Z"
       },
@@ -249,13 +249,13 @@
         "tag": "release-1.37.0",
         "published_at": "2023-11-15T12:07:32Z"
       },
-      "repo_etag": "W/\"58c66fe2880f5f78ef15d598712c615bc54b234816697937a0dfc6a7209997d0\"",
-      "release_etag": "W/\"9f07d55c4bfed930fd9bfaef3ffe94bea27ee24ebeb2752caadb5a0045ae6f2d\""
+      "repo_etag": "W/\"16b46b448dc7b8d3147cae92634a6f39d2a0af2a4ef74c1a25f64dcb5810fc4d\"",
+      "release_etag": "W/\"d4828a5d33c5ef2d77b23beff3c2daf397a462a369e54b5552c2e58a34440821\""
     },
     "armory3d/armorpaint": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/armory3d/armorpaint",
       "repository": {
         "stars": 5495,
@@ -266,13 +266,13 @@
         "tag": "26.09",
         "published_at": "2026-09-03T11:07:00Z"
       },
-      "repo_etag": "W/\"7de481c1fa0168d0a6d7d8b4ba5626adb925d62c0028fb92182cf86139469c11\"",
-      "release_etag": "W/\"d445a5953cc0cb5dbda4b46d34686d38d7632c8d23a800785a1b8111f6d65200\""
+      "repo_etag": "W/\"6b56eb6597b68fc3b078009f1df97d82c1a77acc83ea3ee3be4861bd7a077d3e\"",
+      "release_etag": "W/\"933b75c2ddff7de9c41bcf61268537672021adc8b3803225f9fc9ff1da6c30fa\""
     },
     "arsenetar/dupeguru": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/arsenetar/dupeguru",
       "repository": {
         "stars": 7963,
@@ -283,13 +283,13 @@
         "tag": "4.3.1",
         "published_at": "2022-07-09T00:31:52Z"
       },
-      "repo_etag": "W/\"2ba2c4f26721c429a400f74dd8d0851a1b7de4766e5d000ab5b2ca26dd4e93a6\"",
-      "release_etag": "W/\"76cadb93e9d7bbdda31e68b6a9f626e74742fa96ef303e6f038e907d7fadf0ee\""
+      "repo_etag": "W/\"9e0396b032263bfc75f68be02c97049e95dd1d88111a8eac8fbf8d802cb05be2\"",
+      "release_etag": "W/\"5ca88fa94bf32941708e7fc0aa66034fe20c20001c8fcd70516d58fb4a2a371d\""
     },
     "artraweditor/art": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/artraweditor/art",
       "repository": {
         "stars": 519,
@@ -300,13 +300,13 @@
         "tag": "1.26.11",
         "published_at": "2026-11-10T09:57:45Z"
       },
-      "repo_etag": "W/\"fa9b8dfbe522e9ebdc9a5da6517412bcf73f54bc8453f6d34c87ae10675a3a59\"",
-      "release_etag": "W/\"009918dbc1f82bf2624e4ae4354180ea5d8d85daef21b865e2343da24608395b\""
+      "repo_etag": "W/\"97485ba680b7f442111f6e4fe33f54626fd244ad470d238da74f4a70714783e0\"",
+      "release_etag": "W/\"9a5a881a09e4c2b4554988724efca5758a31f953b8ef645f9778e4d22b7f684a\""
     },
     "astashov/liftosaur": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/astashov/liftosaur",
       "repository": {
         "stars": 779,
@@ -314,13 +314,13 @@
         "pushed_at": "2026-11-14T04:39:37Z"
       },
       "release": null,
-      "repo_etag": "W/\"59a007244a2eb80392ca49c04f23018270c684421120bfad31dd39b7451a8f25\"",
+      "repo_etag": "W/\"fe16bbd29bb7df3ca21356ec803eed81ef39bb13c6e289840c7d15100e7ef8ce\"",
       "release_etag": null
     },
     "audacity/audacity": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/audacity/audacity",
       "repository": {
         "stars": 19052,
@@ -331,13 +331,13 @@
         "tag": "Audacity-4.0.2",
         "published_at": "2026-11-02T10:01:34Z"
       },
-      "repo_etag": "W/\"69b2c694c08430fe660f91ce9ce506441ec62e1ea43655fc90a7b2d7b6ff0a7a\"",
-      "release_etag": "W/\"2a5e31d30a4921cd3b6baa575cc16872a1028eed91fbf07663bb10e4dd7665e4\""
+      "repo_etag": "W/\"59e8e241daef8294ffe93b3dd6442e8d40486f29303e3d7c82c3f2f1ae814e53\"",
+      "release_etag": "W/\"3b14932cf7006a9b22f7cbebebe73f2003df501fe80bc5f42acb85bf569c612d\""
     },
     "authpass/authpass": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/authpass/authpass",
       "repository": {
         "stars": 2814,
@@ -348,30 +348,30 @@
         "tag": "v1.9.11",
         "published_at": "2024-02-04T12:52:32Z"
       },
-      "repo_etag": "W/\"b33261f3ba4156b064e96e5ce0a22ed84060a1038aad7f9f7fad29b3989bcd77\"",
-      "release_etag": "W/\"416b6f1c97cdb41e844d2a9ebecfcb379c42ee20aa3dd5f26f71573d017d66dd\""
+      "repo_etag": "W/\"e645b951bc1050b2a73589d65d02d1a95ed6deb539ae3d748e044723d209958e\"",
+      "release_etag": "W/\"f28dd3c283d91fa49986eed1b319948046a5125f1dd2815b0e52382173a561fa\""
     },
     "basedhardware/omi": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/basedhardware/omi",
       "repository": {
         "stars": 13969,
         "archived": false,
-        "pushed_at": "2026-11-14T12:21:23Z"
+        "pushed_at": "2026-11-14T12:43:20Z"
       },
       "release": {
         "tag": "v0.12.574+12574-macos",
         "published_at": "2026-11-11T07:35:46Z"
       },
-      "repo_etag": "W/\"929cdbbc2faa973d24df97bc67645159267dd5003828f43293b3afc81ce40408\"",
-      "release_etag": "W/\"92de7327686a5f40e88396ae22bf95b033638727ebfd01cd13c9c6ee6979e7ce\""
+      "repo_etag": "W/\"a812f2aae409ee4803d9320ca2a9540e88a620d35f5bdc5214a4432613a76c1f\"",
+      "release_etag": "W/\"8d6d3f82eab09e77a85e0fa1c81f6384aa24b2fecb84b978a1c1b9fb0074e6a0\""
     },
     "bcpierce00/unison": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/bcpierce00/unison",
       "repository": {
         "stars": 5582,
@@ -382,16 +382,16 @@
         "tag": "v2.54.0",
         "published_at": "2026-05-01T00:33:56Z"
       },
-      "repo_etag": "W/\"a30b7fc87a91130e6bdf544aff693bbc137764e866f06100bd2be8f9d3d6e844\"",
-      "release_etag": "W/\"969705fd787cbca050e82ba13be4d92970d9ea7bf69dbc0d1fda186d2cfd81be\""
+      "repo_etag": "W/\"8b3bed147920f657f614cf343b72875eccb079d3d4e9860fa96c74cb08d7a541\"",
+      "release_etag": "W/\"301742c5b88e43c6ec7061d564fcfa303002f1c9efe9a02b83d0daf297bb9f57\""
     },
     "bcuninstaller/bulk-crap-uninstaller": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/bcuninstaller/bulk-crap-uninstaller",
       "repository": {
-        "stars": 22476,
+        "stars": 22475,
         "archived": false,
         "pushed_at": "2026-09-07T23:26:21Z"
       },
@@ -399,13 +399,13 @@
         "tag": "v6.3",
         "published_at": "2026-09-07T23:12:13Z"
       },
-      "repo_etag": "W/\"bc19dacea01a4da7b6d21dc6e5ac495fdd5f31783a683193d7c489d48c505499\"",
-      "release_etag": "W/\"8dd2e661dd43d34066540b78117690da3f59f50c0d5e3527dc51ae12bfaff4a7\""
+      "repo_etag": "W/\"1d67c4c4b19bb8a419be2961c106b956452500a86a9f57eb9f665441f8685968\"",
+      "release_etag": "W/\"88c0e1d03b1c35b6de38eb49cf1643a2efe4bca75b5aac5e9b2456a95df01acd\""
     },
     "beekeeper-studio/beekeeper-studio": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/beekeeper-studio/beekeeper-studio",
       "repository": {
         "stars": 23892,
@@ -416,13 +416,13 @@
         "tag": "v6.2.2",
         "published_at": "2026-11-06T20:31:12Z"
       },
-      "repo_etag": "W/\"2375d71e872947a8917b3e21fa57b6a2b021b8941e9ab93eb796e54e48a768b4\"",
-      "release_etag": "W/\"b8b0ea3ae2e80d39640e48cfc1c33b74a679939cfe97c7c86041a6d648c42b57\""
+      "repo_etag": "W/\"fcafbd7c23fd841129a4da1a3ee1926eb34de19e5f8bbc5296daba4ab917951c\"",
+      "release_etag": "W/\"e344d8219ab07f57f93acf198fa130402d960f8ac7126a3046a6beb60d1de663\""
     },
     "beep6581/rawtherapee": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/beep6581/rawtherapee",
       "repository": {
         "stars": 4295,
@@ -433,13 +433,13 @@
         "tag": "5.13",
         "published_at": "2026-07-26T18:07:26Z"
       },
-      "repo_etag": "W/\"88d89cf193127ace3ac5217fc3dccb071737670e4d5b0b46286de7cc07a79bca\"",
-      "release_etag": "W/\"9c5fb0b02deb40c286117ed4c93149132906775d7cbf3df740d2c83d354c4c4f\""
+      "repo_etag": "W/\"27369d9ce9cc953e1ecdb59a095bc30e7522b2cec9f6da7a430e6544277dfe9f\"",
+      "release_etag": "W/\"da407dbd448887b193893d775fbb968a09fc8b377fa13461c60e618a862e7da7\""
     },
     "bforartists/bforartists": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/bforartists/bforartists",
       "repository": {
         "stars": 816,
@@ -450,13 +450,13 @@
         "tag": "v5.2.3",
         "published_at": "2026-10-27T18:11:08Z"
       },
-      "repo_etag": "W/\"371030576da80cb45b315648e4ecc6aa427b998a3e5d66e3654538463c7f0ccc\"",
-      "release_etag": "W/\"c24d378d4abef0508266d931bd54add716f00f75b44bec62247be0dd85dae3c5\""
+      "repo_etag": "W/\"9b3e01f0dee8ed922028f0ff8182371d0761f6447cd1e210f5491e37c7e43f6e\"",
+      "release_etag": "W/\"4344c010c1789420d7859a4743fabb81ccae0cc76e56fa148d9896812086d7e8\""
     },
     "bitwarden/clients": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/bitwarden/clients",
       "repository": {
         "stars": 14230,
@@ -467,16 +467,16 @@
         "tag": "desktop-v2026.10.4",
         "published_at": "2026-11-05T17:02:34Z"
       },
-      "repo_etag": "W/\"2bf79381740b0445f44674b7e0fe845542af1ebb7e8c7108a9113dac5072a374\"",
-      "release_etag": "W/\"878ea4f98ebc9694d94635fddf12edb93fe0d382cba41a6b11d95a6b4d91d03c\""
+      "repo_etag": "W/\"2e883b0ec7f2a12180d7932f12abfb6b6e5696212c417652a83a6ad1e6f33fc9\"",
+      "release_etag": "W/\"5f7fa7aa289b816ca1d0e13ebeeb30544470e4b9bc3d538e9876736c145ce766\""
     },
     "bleachbit/bleachbit": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/bleachbit/bleachbit",
       "repository": {
-        "stars": 7485,
+        "stars": 7486,
         "archived": false,
         "pushed_at": "2026-11-14T07:50:25Z"
       },
@@ -484,13 +484,13 @@
         "tag": "v6.0.6",
         "published_at": "2026-10-22T00:44:03Z"
       },
-      "repo_etag": "W/\"491960daf8d7e8cb768802822bd7eaea820ca49fc52518f2d7d0d62373892641\"",
-      "release_etag": "W/\"d02e32221ac01b2c094bed6337ef7e55ba1427e702b6ab68abef816b64f13630\""
+      "repo_etag": "W/\"be7fd980d5d59e554e3263e8417212ae0d04ea8dc0b6f15694793d51ccd43e03\"",
+      "release_etag": "W/\"000bff7ae337d396a210bfeff01fd3c67a14e52ab67665d498a43298209ece75\""
     },
     "byron/dua-cli": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/byron/dua-cli",
       "repository": {
         "stars": 6440,
@@ -501,16 +501,16 @@
         "tag": "v3.0.3",
         "published_at": "2026-11-12T13:51:04Z"
       },
-      "repo_etag": "W/\"60e957c505294711a670f9795555b9caaec0036cba1540c943371376622b612d\"",
-      "release_etag": "W/\"5a4c9c9b94ef263608fdde20e709500170cda6167810b64429df23b1bd9230fb\""
+      "repo_etag": "W/\"4a53063102ebda571f3881d65edafebd87f76e90362cb1ff8420fd81c4cc5302\"",
+      "release_etag": "W/\"5b7d32861a2fc13f9ce34e8800885aa503e13b231141ab1ec123e0355e78f1dd\""
     },
     "capsoftware/cap": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/capsoftware/cap",
       "repository": {
-        "stars": 25009,
+        "stars": 25010,
         "archived": false,
         "pushed_at": "2026-11-14T07:35:41Z"
       },
@@ -518,13 +518,13 @@
         "tag": "cap-v0.6.3",
         "published_at": "2026-11-11T22:49:35Z"
       },
-      "repo_etag": "W/\"e6b5f346a8bdc08a5976bcc527ccf69cb56cfc6139c7d08fcae1d24c0e62da3c\"",
-      "release_etag": "W/\"9fc0ed8e378418763c7d7b7c1a1dbff3c5c691ca0fffc91fe80ee7aa996bf534\""
+      "repo_etag": "W/\"5141cce67619fea3414c0d8586ace50dc48baefea6cdb91867a2a31eee0ae924\"",
+      "release_etag": "W/\"1703d719c7bb82f039c0665086e312925c8f7aae10ecad3dccb28e4ab2ed94f7\""
     },
     "chidiwilliams/buzz": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/chidiwilliams/buzz",
       "repository": {
         "stars": 22768,
@@ -535,13 +535,13 @@
         "tag": "v1.4.5",
         "published_at": "2026-08-23T08:28:36Z"
       },
-      "repo_etag": "W/\"7af744a50b7f96240280f1917ab5fac1507ef21ec31e8b114f4603ee6849a1d2\"",
-      "release_etag": "W/\"e714927a71f59074b9e97c45e1bfde79ec24ef19c97294d24f71088e1f08df67\""
+      "repo_etag": "W/\"5a65d71005d8d315fce0145f511bb278f411cb6c7976b614099c39288ce6bed4\"",
+      "release_etag": "W/\"4f047fc19e4215b41b0418f8c3ca74d40602983d845742790f17e039a5cc6d03\""
     },
     "cisco-talos/clamav": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/cisco-talos/clamav",
       "repository": {
         "stars": 7575,
@@ -552,13 +552,13 @@
         "tag": "clamav-1.5.4",
         "published_at": "2026-08-07T15:40:34Z"
       },
-      "repo_etag": "W/\"40f0fe1e5592c4d679284571b61fd12f77814dff028f3b338e911a59852a7caf\"",
-      "release_etag": "W/\"6c2159de8d31e3056cc87e4eab3963c714a4bd462a2de98a4719cb2bd1863967\""
+      "repo_etag": "W/\"747e9b80ce675c8d218ab88750d4b147d7de4ca34ea8670e849b597e7a6a431f\"",
+      "release_etag": "W/\"88dd00688b6be0c868a0274931693701573e822a4a9033931e526fe8137b16fe\""
     },
     "cline/cline": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/cline/cline",
       "repository": {
         "stars": 71614,
@@ -569,16 +569,16 @@
         "tag": "v4.1.26",
         "published_at": "2026-10-26T09:06:50Z"
       },
-      "repo_etag": "W/\"b6158caa23366c577f896baaea3de5975ad54c3ed9d0efd7a5eb87aecfd083e9\"",
-      "release_etag": "W/\"4b3f5d812405a5ac975bcfad3168ec8f0929f259b7a3e3058c1a5905304200bb\""
+      "repo_etag": "W/\"94b78628c7aa49f31f952bbaaefbb6935bb082b79b56d0081537693ea75916f4\"",
+      "release_etag": "W/\"7901a71c7e902685c7965d9215492b1d77ecf2c1aef72f657347c5ed28110fec\""
     },
     "comfy-org/comfyui": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/comfy-org/comfyui",
       "repository": {
-        "stars": 146760,
+        "stars": 146763,
         "archived": false,
         "pushed_at": "2026-11-14T12:22:47Z"
       },
@@ -586,13 +586,13 @@
         "tag": "v0.45.0",
         "published_at": "2026-11-10T21:42:42Z"
       },
-      "repo_etag": "W/\"4ea7a886b88409958e3f11f3a0e086efe436958157dd77ca21904d3670e6256b\"",
-      "release_etag": "W/\"b01aeacb1015cf8bff26afb4214ae9d85eeb940ebbe6760a2417441aa11ed80c\""
+      "repo_etag": "W/\"4bed61cd2695e9406fe784c4da0d907fcd4cfb8af2476922e0cd22b2c6fe2a5e\"",
+      "release_etag": "W/\"a207237b11609903dd2f75b92932e605cfc72a5e287585078f6de1e12a321d21\""
     },
     "continuedev/continue": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/continuedev/continue",
       "repository": {
         "stars": 36480,
@@ -603,13 +603,13 @@
         "tag": "v2.0.0-vscode",
         "published_at": "2026-06-19T00:24:01Z"
       },
-      "repo_etag": "W/\"ce48fdf9411cb71d1e09501d592633ea748f2e12397b448821f8032a13fb48b0\"",
-      "release_etag": "W/\"7c1f6e0e96a56377c80fe5731d9c17659d1990e5fd7223671b1c3fa3b9e7018b\""
+      "repo_etag": "W/\"5fbf9dcc29acea4b60dad1673209eaae2a1d56cf5e65b16c1e9983218a176a62\"",
+      "release_etag": "W/\"1f75100504718e9488f47fbc0d49425eaaae209da610716cac1cc6dafb96e724\""
     },
     "crowdsecurity/crowdsec": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/crowdsecurity/crowdsec",
       "repository": {
         "stars": 15615,
@@ -620,13 +620,13 @@
         "tag": "v1.8.2",
         "published_at": "2026-10-26T14:16:43Z"
       },
-      "repo_etag": "W/\"75dcb4c4023ae9194b578f18116e247439497f3626d6e5cd1e89af2d120a0a1a\"",
-      "release_etag": "W/\"60561e02939ef7835b9f16f1a86f25eb2121fc081c59991a440d5843795c2569\""
+      "repo_etag": "W/\"0e1cec7471571e3f72d4e54c2fb24f7b1e46b71aa671f5180073abc8c0767890\"",
+      "release_etag": "W/\"bdd41a1df476ca477ee6abaf8becdf230d21ee6a47b7b4b013157fe0ba8fdb30\""
     },
     "cyanfish/naps2": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/cyanfish/naps2",
       "repository": {
         "stars": 4787,
@@ -637,13 +637,13 @@
         "tag": "v8.6.0",
         "published_at": "2026-10-25T21:28:10Z"
       },
-      "repo_etag": "W/\"9b3b4b5e48a524dd5f7733ff1badd9029a94f99bd6c24a45ae71f65e14c7ec24\"",
-      "release_etag": "W/\"fd5841d03a3a1fa0aebc0cb7277345eb07bc27b1059880553e84f0ff6d801933\""
+      "repo_etag": "W/\"0f0ee4d8f251155b77c9f9cea435ecbae1532e8f69e864681fd9403cfadb240c\"",
+      "release_etag": "W/\"c2192a06d23ba78fd89301faf174fc1a1a1059f48d7fed2fcafb60599b6adfed\""
     },
     "darktable-org/darktable": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/darktable-org/darktable",
       "repository": {
         "stars": 13444,
@@ -654,13 +654,13 @@
         "tag": "release-5.6.2",
         "published_at": "2026-10-04T16:36:31Z"
       },
-      "repo_etag": "W/\"d19cb47ccf2040bcccef372fdf674ce88e02a0312e1eb76843f8077a701bd621\"",
-      "release_etag": "W/\"b821cdab77df9a34ba1d95668634973e480e678de968a3b81ce71e19859d681d\""
+      "repo_etag": "W/\"4f06afaa4bec2d7200dd6f6688babaa52a1d351411141528ba2fcbee5e3e4fd6\"",
+      "release_etag": "W/\"9c97d99906cf1f1af050ccb628a526ba9b2bee1dd8b33c50f38dad4110982d7b\""
     },
     "davatorium/rofi": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/davatorium/rofi",
       "repository": {
         "stars": 16539,
@@ -671,16 +671,16 @@
         "tag": "2.1.1",
         "published_at": "2026-11-10T17:09:50Z"
       },
-      "repo_etag": "W/\"c51f34b213f4c5763bd9edfb33fccdb021ac38bb379bc8b01a750b0581080fd9\"",
-      "release_etag": "W/\"52e38e16e39b4c45b48b3d15d8eb5acfbb5becb5704272d536641e4ae834eda1\""
+      "repo_etag": "W/\"bbbdb6497023bf38ab91a4987fce141ad16994d16366a50f9be5f4f444c09cd4\"",
+      "release_etag": "W/\"3c51b01b03eb9261110563dd26a2d8f1bb5456355d647ee0b57341fd4fe08b13\""
     },
     "dbeaver/dbeaver": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/dbeaver/dbeaver",
       "repository": {
-        "stars": 52433,
+        "stars": 52432,
         "archived": false,
         "pushed_at": "2026-11-14T11:22:31Z"
       },
@@ -688,13 +688,13 @@
         "tag": "26.2.4",
         "published_at": "2026-11-01T21:17:09Z"
       },
-      "repo_etag": "W/\"2412bb7c8099c206900d3688094fd92656f568ddf7452732da48645c9fdaf7f0\"",
-      "release_etag": "W/\"d15c004071e732b43400c53e19e15ebba79bd216b1b8b28f387ba155e254810e\""
+      "repo_etag": "W/\"05cbd26ee7991d34c9028e0d7632a488339fee4889551fd94b1445c5cf9d4c43\"",
+      "release_etag": "W/\"19fea80edc4d475bada4e5990cb449f7a8f0b8cca7cf98b4b617f6bd74d8e807\""
     },
     "dgud/wings": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/dgud/wings",
       "repository": {
         "stars": 674,
@@ -702,13 +702,13 @@
         "pushed_at": "2026-10-27T12:33:29Z"
       },
       "release": null,
-      "repo_etag": "W/\"4a40cc10a118ec4ea2e3862352e114d65ab279b77f3a14cd1c67ee985faf07dd\"",
+      "repo_etag": "W/\"03f9c69f0068c1a93a1cbca3d5af3e0ea67071c0a6149873709692a685f23b75\"",
       "release_etag": null
     },
     "dundee/gdu": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/dundee/gdu",
       "repository": {
         "stars": 6202,
@@ -719,13 +719,13 @@
         "tag": "v5.39.0",
         "published_at": "2026-11-06T23:23:17Z"
       },
-      "repo_etag": "W/\"49e3bf1d841e3251eeb8200974871e7d48ac60362abfd2974ce69f68764e49b5\"",
-      "release_etag": "W/\"e1fbbae06447d5f883768bdaca0a9b181128cc88eb7d8fee87e558d54ddb5b5f\""
+      "repo_etag": "W/\"9f5b158b23b73c0c4016ed79c8dee948c19ef6d69b4bbfb47d52844a599fe6bd\"",
+      "release_etag": "W/\"49c532960df09c01af789138567492c7c99933045d9cffd7fd99fb7b6a8b83b8\""
     },
     "emacs-mirror/emacs": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/emacs-mirror/emacs",
       "repository": {
         "stars": 5251,
@@ -733,13 +733,13 @@
         "pushed_at": "2026-11-14T12:23:54Z"
       },
       "release": null,
-      "repo_etag": "W/\"57cc50de60e6b2f71632feaf6dbf23a33b2af17f8a4de4412f9a60a2c88e3901\"",
+      "repo_etag": "W/\"9b6efa97e3813d835475c39407b8adc462de58eb3265413ec62bf0af3f85e42c\"",
       "release_etag": null
     },
     "enjoyingfoss/feeel": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/enjoyingfoss/feeel",
       "repository": {
         "stars": 112,
@@ -750,13 +750,13 @@
         "tag": "2.4.1",
         "published_at": "2022-11-16T09:08:36Z"
       },
-      "repo_etag": "W/\"984aba39089bad88d7853b7684b4b2fe652456839e2ef3880bbc923a0247b258\"",
-      "release_etag": "W/\"d423804c05f6f1a94ab34cc59cf9fdfe32c73f5fc4fd7e57f09e49344f37815e\""
+      "repo_etag": "W/\"a821843021caa136b8cd4e93c22176405f6f5a5984864e6099ef1d318d98d9e8\"",
+      "release_etag": "W/\"193e2b26db12364b4f94ded8eb9b5f1135a060f3fb7fa3e01a0278a9abd4b404\""
     },
     "evilsocket/opensnitch": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/evilsocket/opensnitch",
       "repository": {
         "stars": 14297,
@@ -767,13 +767,13 @@
         "tag": "v1.8.0",
         "published_at": "2025-12-15T00:54:11Z"
       },
-      "repo_etag": "W/\"d874c798919f9d81498195d031b4a1263792caefe21bbb34d46d2ae8674d3718\"",
-      "release_etag": "W/\"a9078bd3aa9121fb121482db930ece3381594fa2f5e0694ccbb328b39da9688f\""
+      "repo_etag": "W/\"b3321a557b9a6e162effac4b5061525fdbeaf333542c18fed766eb17b772da7b\"",
+      "release_etag": "W/\"eb2456e1ba63a576f88e4cd3f56c269a2dcbc6b6c8fb792ae357ca23915eb6cd\""
     },
     "ffmpeg/ffmpeg": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/ffmpeg/ffmpeg",
       "repository": {
         "stars": 67240,
@@ -781,13 +781,13 @@
         "pushed_at": "2026-11-14T10:04:34Z"
       },
       "release": null,
-      "repo_etag": "W/\"7a5174ee188588622f4cc67a35eac038f9776a69ba1f3b0a2ffcd1f5fbb6a806\"",
+      "repo_etag": "W/\"ae0a2b5a7a022e8476cbc359100177c004992b874080dbe44429a3aad60a777f\"",
       "release_etag": null
     },
     "flameshot-org/flameshot": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/flameshot-org/flameshot",
       "repository": {
         "stars": 31546,
@@ -798,13 +798,13 @@
         "tag": "v15.0.0",
         "published_at": "2026-11-07T16:42:38Z"
       },
-      "repo_etag": "W/\"cc450585c029637da2ece92fc293b53a1db224cea1ae235a8a54d0254b03956e\"",
-      "release_etag": "W/\"2e6b402e205f4d8de8f4ec5e75fe24259bf3b7e90bf647c09d0fa3386f6760ce\""
+      "repo_etag": "W/\"500bd9f614cc6ee531f4bb9773742029a24a245f468d6a56f1df896385bc6118\"",
+      "release_etag": "W/\"803c7abd374d6a9e29e8a7f10b37ff34f94c8c89deb3ba77e1e483e5b68a6678\""
     },
     "flow-launcher/flow.launcher": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/flow-launcher/flow.launcher",
       "repository": {
         "stars": 16026,
@@ -815,13 +815,13 @@
         "tag": "v2.1.4",
         "published_at": "2026-09-20T11:11:21Z"
       },
-      "repo_etag": "W/\"8975c37004c81e842e50ed219e55778057fdcaedcd5a38b6a864f54aee32f3ce\"",
-      "release_etag": "W/\"53827729130c309da1e0af0517419d437e4cd69f9a59f54106ce407e14972051\""
+      "repo_etag": "W/\"16d5b48fe4db4169772ec254cef4f983a5cab597362a6910c25ab68f3950b3d1\"",
+      "release_etag": "W/\"8d42a42cb967d04db4e139e1795295eb30ac4c62a03741ba7d6dc8d9723ea16a\""
     },
     "freerdp/freerdp": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/freerdp/freerdp",
       "repository": {
         "stars": 14016,
@@ -832,13 +832,13 @@
         "tag": "3.33.1",
         "published_at": "2026-11-10T08:35:10Z"
       },
-      "repo_etag": "W/\"6d534b469958e01376bf206fce8a23b4d75fb02261c5965f062f246ae3e929be\"",
-      "release_etag": "W/\"8ab7a5d6c0c73312f9a581cb5b6b4e747a6531c07f3dcf7756567da07b1feed7\""
+      "repo_etag": "W/\"c2ae17c0e0e5c0ef842cf115c043a14cd4e8535b18a5ce32ce3fa37dd9b32b0b\"",
+      "release_etag": "W/\"09cf7fb62bcc26948851ebcc80f03cb751cfc5d71af5e5b706e559ca619638db\""
     },
     "freerdp/remmina": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/freerdp/remmina",
       "repository": {
         "stars": 2581,
@@ -849,16 +849,16 @@
         "tag": "v1.2.30",
         "published_at": "2018-05-20T20:37:21Z"
       },
-      "repo_etag": "W/\"5e89a97ac58b4c77519ab299a8930736598ae2eb1947919f93cbdcfbdbce7fe3\"",
-      "release_etag": "W/\"357bd84a596ca715fc8ed169420a7a559707435cb20c06237e7c8703825d2bef\""
+      "repo_etag": "W/\"2d7673494dd6751c08cc18baa28215f2b2a71857a9366f6c5fe73d269b947065\"",
+      "release_etag": "W/\"9b8c9fb6d11ffb327cc8965e9f31c1909d38655580782463d0f50a707c4e8e9a\""
     },
     "friction2d/friction": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/friction2d/friction",
       "repository": {
-        "stars": 2039,
+        "stars": 2040,
         "archived": false,
         "pushed_at": "2026-11-13T22:28:43Z"
       },
@@ -866,13 +866,13 @@
         "tag": "v1.0.0",
         "published_at": "2026-11-09T21:31:56Z"
       },
-      "repo_etag": "W/\"1b5b48a858a05dcdbae2deb255a6cf034b53b24583cb0a25ad301c9954503f08\"",
-      "release_etag": "W/\"59283abc7c0e5d83c97b9749dc3a7f9491d0af27c78911acd0bcd038564513c1\""
+      "repo_etag": "W/\"95f70f8b9e74234736921701f484f2d7dfaeea4ba068b2117d7d2996899e39e8\"",
+      "release_etag": "W/\"c27176d1bb4f5b426a3ac5f61338688357d3f69913385a32ae24a1c33cc30949\""
     },
     "ggml-org/whisper.cpp": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/ggml-org/whisper.cpp",
       "repository": {
         "stars": 55186,
@@ -883,13 +883,13 @@
         "tag": "v1.9.5",
         "published_at": "2026-10-06T17:39:17Z"
       },
-      "repo_etag": "W/\"aac20d345968ce38864c3a9731e9186c7852aa88ec3fb755b1123805e046440f\"",
-      "release_etag": "W/\"44ada373e5d6087d5fb7bde47f3f5400d83d6cc70323afb9f9dab02b688e2bf4\""
+      "repo_etag": "W/\"47f2f3c8bde0bcfdc94ced370b6b995ed7128c33254d74ebe40697f02528495e\"",
+      "release_etag": "W/\"c6e76dd18ae11486444542fcb7f67f3a7905699c14d87e1043255e38f764286f\""
     },
     "gnome/file-roller": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/gnome/file-roller",
       "repository": {
         "stars": 69,
@@ -897,13 +897,13 @@
         "pushed_at": "2026-10-26T12:26:45Z"
       },
       "release": null,
-      "repo_etag": "W/\"94c3dc2e3fe32f0d7d03782b68c7393a87696d6327feb2657f83399104f68651\"",
+      "repo_etag": "W/\"271d518975f4db118c890c2060a1a6ca77be015eeb4e1ddb2040f35aac3b273d\"",
       "release_etag": null
     },
     "goldencheetah/goldencheetah": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/goldencheetah/goldencheetah",
       "repository": {
         "stars": 2257,
@@ -914,13 +914,13 @@
         "tag": "v3.8",
         "published_at": "2026-09-20T01:15:18Z"
       },
-      "repo_etag": "W/\"84dfb8cbdda5926101a9343bd9fed342381be0f52158f19ad2fa41b761112c32\"",
-      "release_etag": "W/\"b143cf89a879df2386ed6324f9b7387fc47c4de1123128986bed5d1f23a10d27\""
+      "repo_etag": "W/\"103de7b827266fdbcc0143e2a5362d35761c30f4fde19c9070b103c6ac88b6f9\"",
+      "release_etag": "W/\"2f7c4b20aea0598714e15469404d3b7e888afa8ec6c2cd8a35b9b9839f90d1d6\""
     },
     "gopasspw/gopass": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/gopasspw/gopass",
       "repository": {
         "stars": 7322,
@@ -931,16 +931,16 @@
         "tag": "v1.17.4",
         "published_at": "2026-10-10T09:01:05Z"
       },
-      "repo_etag": "W/\"fe4695969e2b589b405e3e786a5844a72c8d1115990be352f35ce52011d87c9a\"",
-      "release_etag": "W/\"c813113a1179018596d9f077493fd2d8c88ac0f04f6503bbaee61634b0830278\""
+      "repo_etag": "W/\"726409c23b06bb19747860da4898643dcff6762f41545d61ec52c5e98a7396fa\"",
+      "release_etag": "W/\"5a953176876731285e16a01c7206a2b46be4b24cfefdd684fb784a5ebf70b6ce\""
     },
     "gopeedlab/gopeed": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/gopeedlab/gopeed",
       "repository": {
-        "stars": 27682,
+        "stars": 27683,
         "archived": false,
         "pushed_at": "2026-11-14T06:03:19Z"
       },
@@ -948,13 +948,13 @@
         "tag": "v1.9.3",
         "published_at": "2026-03-18T12:54:20Z"
       },
-      "repo_etag": "W/\"485945e402d9cba9d7821e06ef772b142a6631c3a72c7b837705d9e7709b8b6f\"",
-      "release_etag": "W/\"3f2913382768e4772c12382ed0245e3e5b7b455a290ac042a056dba392d2aeda\""
+      "repo_etag": "W/\"58b2e892bd7a419580073020f367bd4355d028833aa7f7c8569c9d490eb05a49\"",
+      "release_etag": "W/\"ff4253e3107194566fc5535cbd3f3c0fe72eb4fd410848d267d8bc0e988fab00\""
     },
     "greenshot/greenshot": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/greenshot/greenshot",
       "repository": {
         "stars": 5257,
@@ -965,13 +965,13 @@
         "tag": "v1.3.328",
         "published_at": "2026-10-19T10:30:32Z"
       },
-      "repo_etag": "W/\"4af3cab8915be6e542a671a4ead8676e2ce4859aa4e7cd1b123d6125856a9b6b\"",
-      "release_etag": "W/\"0911163bf7cb48d0ae16b58cd9a2d14be9d7438729ec1f6d8491ac346c6f9f1d\""
+      "repo_etag": "W/\"e1247997f693a4f06a98240d45e4f859a119f022e48c0dea143c1a9cb601bbd5\"",
+      "release_etag": "W/\"6566cd8ab396d5d0f1a73975d373296a0e27cebf8e6927f68a81847bd0f7e38b\""
     },
     "haiwen/seafile": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/haiwen/seafile",
       "repository": {
         "stars": 15459,
@@ -982,16 +982,16 @@
         "tag": "v9.0.5",
         "published_at": "2024-02-27T07:51:16Z"
       },
-      "repo_etag": "W/\"b3c81a2620d13cbbbf351593f6f82e7762a212ca53a6bcf2cc4f9ac813b75576\"",
-      "release_etag": "W/\"484853d4c476d981ce3a7828e81d19033e5d6af3878ddef60f015cf1a8321b33\""
+      "repo_etag": "W/\"06a778435c58e406b25e06aed694e1313cb3a6cc6dfd0d880b165eff3edcb394\"",
+      "release_etag": "W/\"4d026a5e38bb6ceb116379969be1cbacde542adbed11e719c2dcc0135df737bb\""
     },
     "hakimel/reveal.js": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/hakimel/reveal.js",
       "repository": {
-        "stars": 72575,
+        "stars": 72576,
         "archived": false,
         "pushed_at": "2026-09-30T19:38:13Z"
       },
@@ -999,13 +999,13 @@
         "tag": "6.0.2",
         "published_at": "2026-09-10T15:41:21Z"
       },
-      "repo_etag": "W/\"473d13a7658c0c2ac376b99cfa1f0f8069dea09e7bf9f20e13be0becd545a663\"",
-      "release_etag": "W/\"e723cae8a6555d22592b4c69d96c4e7ef58d94c142658cb40f8b13a3de5e9aa2\""
+      "repo_etag": "W/\"059ed81e5a22048a606a584497d1f0c5be6b9b7494263b34a47b65fe9eaa46dc\"",
+      "release_etag": "W/\"1b534efe958252b700ccc968c6ce8359052cdce50da5f9988f8f13fc5ab6a0a9\""
     },
     "handbrake/handbrake": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/handbrake/handbrake",
       "repository": {
         "stars": 25011,
@@ -1016,13 +1016,13 @@
         "tag": "1.11.2",
         "published_at": "2026-06-07T19:08:25Z"
       },
-      "repo_etag": "W/\"7eb0a206bb5784a3991f746724232309c3ca4453fae17650b4d5dbe6e97e5526\"",
-      "release_etag": "W/\"ac1bea2fa10d6b533e4e069dbd7e5e67fd786e6f16a5c3226f3725cc1d83d3e0\""
+      "repo_etag": "W/\"8fa3f8d21a558652878b80edd2eb27967bd7f32c6dcc82c99f481cd2af88002e\"",
+      "release_etag": "W/\"3159b182177d438227daa0f4c6b778e106d073f15df3328e08cc4b704f68cadf\""
     },
     "heidisql/heidisql": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/heidisql/heidisql",
       "repository": {
         "stars": 6329,
@@ -1033,13 +1033,13 @@
         "tag": "v12.22",
         "published_at": "2026-10-25T14:40:58Z"
       },
-      "repo_etag": "W/\"d6e2487d50ca3499ffcee3e2f14314c1c10684d797ff7aa69e87fe79276f5d0d\"",
-      "release_etag": "W/\"11590d3f79672ca51c62268b7c4f325ca7d3706cb4aab68abee090c52b26f219\""
+      "repo_etag": "W/\"73d6348c4198e0345f5388ee6cbd3feae9e14c82b2d820b76bc2bda889a42bdc\"",
+      "release_etag": "W/\"05e324c83560347ed50bcf3c6b46135c6dd02b147370d6df471ed4ca0609c69b\""
     },
     "helix-editor/helix": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/helix-editor/helix",
       "repository": {
         "stars": 46890,
@@ -1050,13 +1050,13 @@
         "tag": "25.07.1",
         "published_at": "2025-07-18T15:13:19Z"
       },
-      "repo_etag": "W/\"e5087979400fff768cef48d7215e656994e7bc492790801e422698d48a3db662\"",
-      "release_etag": "W/\"a8146e4fd83984d53109612cdc5df3602f22da849dddf6b7468126c6e0abd776\""
+      "repo_etag": "W/\"8abe7486e8dd4acc2ef5a1e333d0ffa5b5a87e23591b0ca0880fe606eed1aab6\"",
+      "release_etag": "W/\"ce11ba67797794267ff32fbcd737e30d58714fed6483fce5d7c0d76f5353a1f2\""
     },
     "hellzerg/optimizer": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/hellzerg/optimizer",
       "repository": {
         "stars": 18249,
@@ -1067,13 +1067,13 @@
         "tag": "17.0",
         "published_at": "2026-11-12T17:47:31Z"
       },
-      "repo_etag": "W/\"0f6ec2b49679bd174798ba156933e40638e281159daccfd4fa731705aae1bb5b\"",
-      "release_etag": "W/\"f04eb983e7b5a166beda837e1fa5b0113697a9c88d1b98f4d49b28b74ff5c006\""
+      "repo_etag": "W/\"7d1768e2970e8c5e5c544e46265dbd7e921fadaffe57e836311009941a3f5956\"",
+      "release_etag": "W/\"9871681c25ad4fdd1d78432dbbc7659a080fc4707ecfd3a1e981f03cb07f01ed\""
     },
     "hoppscotch/hoppscotch": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/hoppscotch/hoppscotch",
       "repository": {
         "stars": 80802,
@@ -1084,13 +1084,13 @@
         "tag": "2026.10.1",
         "published_at": "2026-11-05T08:15:08Z"
       },
-      "repo_etag": "W/\"5e1a6002582ec408023b5c49079b3c362467c19ac9b2f216f0f541c8260162f8\"",
-      "release_etag": "W/\"4d6af05c63b0d97279d9b89f37af6ea176c6dc4c59f916fda73043cf5fa276eb\""
+      "repo_etag": "W/\"6fec99903d5f73906229798f9eb71534f07d5c4e2ab6e50c77629ad6233e7456\"",
+      "release_etag": "W/\"5711e3166476b6ebcb82fb6dc970198a81b75a6e3e21552b1dc482889ff08683\""
     },
     "httpie/desktop": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/httpie/desktop",
       "repository": {
         "stars": 4053,
@@ -1101,13 +1101,13 @@
         "tag": "v2025.2.0",
         "published_at": "2025-03-14T11:30:38Z"
       },
-      "repo_etag": "W/\"d9673e80027e22c7c7e4b970a156788741681f6547009b31a414e641262e03b3\"",
-      "release_etag": "W/\"8342589c5004c0a6010cc151f238922a4709f899cd21b84e849026021d17e160\""
+      "repo_etag": "W/\"f8f4354b01c0aa37a3fc2321c6e3aae0bfeaf39cfabd4a678146fb3985c3123a\"",
+      "release_etag": "W/\"ab5d6e4ac1936e19224d22c288443c573abd65ce4bd71b7f110c0799df413c4d\""
     },
     "hydrogen-music/hydrogen": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/hydrogen-music/hydrogen",
       "repository": {
         "stars": 1354,
@@ -1118,47 +1118,47 @@
         "tag": "1.2.7",
         "published_at": "2026-10-02T13:08:22Z"
       },
-      "repo_etag": "W/\"a1aa595a5cf28189babd07eade9cc73636852ee649bb578a1b380fb3d3934de0\"",
-      "release_etag": "W/\"9121da50eaa178971a36ccd29f9c2c7abc99afadb31d5a55d71364b569f502f6\""
+      "repo_etag": "W/\"f2203141410af3de691fc0d33414a583b3b5957ae9af3768fae6cf68039de802\"",
+      "release_etag": "W/\"3781ccd698bbdc9fe36cc17ebcd91c92719ecac91d30a551c62e0c61067971f0\""
     },
     "imagemagick/imagemagick": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/imagemagick/imagemagick",
       "repository": {
         "stars": 17858,
         "archived": false,
-        "pushed_at": "2026-11-14T11:49:20Z"
+        "pushed_at": "2026-11-14T12:41:00Z"
       },
       "release": {
         "tag": "7.1.2-35",
         "published_at": "2026-10-31T23:28:18Z"
       },
-      "repo_etag": "W/\"0e17d2f6aaaaf734c97a7977cc79ff75cb3543c45a2ef6689264e342f377a1db\"",
-      "release_etag": "W/\"1974b708e9e002866941b83cf560325d41a082661d3690d2ae39f99c1752e8ef\""
+      "repo_etag": "W/\"18ec56192226766997f1cb637558bf757a1cc1c57c5b644fee73ad711022d094\"",
+      "release_etag": "W/\"7bb10dc5cac9c938d6f5a24f32d24b31101715d8ac7047e150a39451999a809b\""
     },
     "invoke-ai/invokeai": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/invoke-ai/invokeai",
       "repository": {
         "stars": 29089,
         "archived": false,
-        "pushed_at": "2026-11-14T12:22:47Z"
+        "pushed_at": "2026-11-14T12:41:07Z"
       },
       "release": {
         "tag": "v6.14.4",
         "published_at": "2026-11-03T02:30:14Z"
       },
-      "repo_etag": "W/\"1f91273c18ec48038dbda33c31041a7d52a032c9cf2298fb6388cbc8f4d66a0a\"",
-      "release_etag": "W/\"fdb3eb25f3524efed1b2de8528602c2b50b89767c5e6d7e24792c8641c1439a4\""
+      "repo_etag": "W/\"eea99a5af4ebf66c6e1a7f702693acf39b00af99a582bb9b26f00126e884bd04\"",
+      "release_etag": "W/\"0b795042197605c9937c2b1687bfec46cddf072bd45765d511955db19cd84066\""
     },
     "ip7z/7zip": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/ip7z/7zip",
       "repository": {
         "stars": 4510,
@@ -1169,13 +1169,13 @@
         "tag": "26.06",
         "published_at": "2026-11-07T11:45:33Z"
       },
-      "repo_etag": "W/\"0e526d08c6debd52b62c18d3f752f701962d8e46d4c62de07485404db62c3a29\"",
-      "release_etag": "W/\"923c924d0cbffa58ebd7ef7bcb455bb464b6ca11aa2d47d5a251f47701924109\""
+      "repo_etag": "W/\"4e47219e87061cddb1a7fb93f8a287e01d19906d67866e9b9fee8e56565bc0ad\"",
+      "release_etag": "W/\"7bf6013dc50a91ffd9d56d24547f0646a5e429be74cd16515ecacdc031d63a6c\""
     },
     "ivpn/desktop-app": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/ivpn/desktop-app",
       "repository": {
         "stars": 550,
@@ -1186,16 +1186,16 @@
         "tag": "v3.16.1",
         "published_at": "2026-10-08T11:22:45Z"
       },
-      "repo_etag": "W/\"713b075d931601dc58e79f46f0e42a0732b2f1796f741d585cd4a20e8a89a298\"",
-      "release_etag": "W/\"0a8aa1b4909fb49c5430a222b94f0c1b90c985e3194963870fb63f445d336e96\""
+      "repo_etag": "W/\"08056309195c0c7d730e13fa1db36eecf76b67b02f94852671f9a1af2328535d\"",
+      "release_etag": "W/\"d76ecb5b81425b3511bf6dca53b2b8b60743141fb848f32bf446e33f7c922d87\""
     },
     "janhq/jan": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/janhq/jan",
       "repository": {
-        "stars": 45718,
+        "stars": 45721,
         "archived": false,
         "pushed_at": "2026-11-14T02:53:25Z"
       },
@@ -1203,30 +1203,30 @@
         "tag": "v0.8.8",
         "published_at": "2026-10-28T03:31:54Z"
       },
-      "repo_etag": "W/\"015e2a055bb44f94e9552e14698e0216109baa478dc85e38547de8f8a1640111\"",
-      "release_etag": "W/\"941f35713b155ef80bf7dc5f4edf1bd5b20228774a122340fb998de1fbc4d4c5\""
+      "repo_etag": "W/\"ae5d32375dcb359b764f5a771fd9be5d6ecf4ece9c68b460cf951e5b1fe909c1\"",
+      "release_etag": "W/\"1080bfc06e235855edfc1622644cf676933712d876d527059fd057336fe96c85\""
     },
     "jetbrains/intellij-community": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/jetbrains/intellij-community",
       "repository": {
         "stars": 20731,
         "archived": false,
-        "pushed_at": "2026-11-14T10:35:50Z"
+        "pushed_at": "2026-11-14T12:39:46Z"
       },
       "release": {
         "tag": "pycharm/2026.2.5",
         "published_at": "2026-11-13T13:47:46Z"
       },
-      "repo_etag": "W/\"d417e4157d0721a406ed74b35c2689b432aa967306a566b69815a0d9e6fcafdd\"",
-      "release_etag": "W/\"8d2961159bbd8a15a871561d4c0cb1711bda26a2f37070ec1ee3500b69bccb26\""
+      "repo_etag": "W/\"10e4f70bed33336625b4d3d21dff61b51fbc9063477ee19ae7a2a11143f59887\"",
+      "release_etag": "W/\"866e76a90902592966aba6ebca62947b3d4210264313aaeca91989cb1274eb0b\""
     },
     "jgm/pandoc": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/jgm/pandoc",
       "repository": {
         "stars": 46931,
@@ -1237,13 +1237,13 @@
         "tag": "3.14",
         "published_at": "2026-11-12T04:32:26Z"
       },
-      "repo_etag": "W/\"a7eaeb124cd549881436838898fa195afdf837be87b129e61b7e2e088f2039cf\"",
-      "release_etag": "W/\"0aa192a62cd33f73a4c23559ee3a2339d071160eb15c60b8b0c31c2d16339dbf\""
+      "repo_etag": "W/\"bc6c5d5b361617a33025afd124a1abfbcf10449c91800feea37dd7c88fbf40a6\"",
+      "release_etag": "W/\"f9d48fa7f8d168948a1b3f56cdbc62f356782e98c8b599dfbf6b2d35389f9bfb\""
     },
     "jliljebl/flowblade": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/jliljebl/flowblade",
       "repository": {
         "stars": 3108,
@@ -1254,13 +1254,13 @@
         "tag": "v2.24.2",
         "published_at": "2026-05-29T06:36:11Z"
       },
-      "repo_etag": "W/\"0fc403620db05a3223b59ac564dfdd6e73b3f472a7b13d6273f5f76bc97acabc\"",
-      "release_etag": "W/\"7ccc5d446333ea54a3e31b7a0a9c2b599b62cc0958cb70fd65b212bee3b5cfe2\""
+      "repo_etag": "W/\"7a120ce6d0b0f7bce97631c108523ff6ec9bd395b27a68beaec5679337521f3e\"",
+      "release_etag": "W/\"c2ecaab8356a56e10a966ac93aa47edae3d7ffd815383d77050ad492bb97d555\""
     },
     "kaixxx/noscribe": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/kaixxx/noscribe",
       "repository": {
         "stars": 2248,
@@ -1271,13 +1271,13 @@
         "tag": "v0.8",
         "published_at": "2026-10-06T14:03:20Z"
       },
-      "repo_etag": "W/\"10a350a06900918d24994e3d80e3dade1ff8131e9f04af5d44025409465f523c\"",
-      "release_etag": "W/\"b48a962bb530d5580c4baf3073fcaa0e8507b94ce048c323784a2f0b2aedf9fa\""
+      "repo_etag": "W/\"fc2f6e1a69ac76f10f0802424f96ed193c476f6481466660e7df7486b296440e\"",
+      "release_etag": "W/\"33ec55b992edc39aa1a4e6eb2ced931ea54be1a119da8abda518aaadacc86226\""
     },
     "kde/ark": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/kde/ark",
       "repository": {
         "stars": 144,
@@ -1285,13 +1285,13 @@
         "pushed_at": "2026-11-13T11:48:02Z"
       },
       "release": null,
-      "repo_etag": "W/\"aa1e2e371145c5cc193695cc3b50db3c8946a291db44d0b9aad60d9c147a308b\"",
+      "repo_etag": "W/\"aadf468b5083abce64849af1a2cfd288752833771e9f50ac19917f54330995db\"",
       "release_etag": null
     },
     "kde/kate": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/kde/kate",
       "repository": {
         "stars": 1164,
@@ -1299,13 +1299,13 @@
         "pushed_at": "2026-11-14T04:21:15Z"
       },
       "release": null,
-      "repo_etag": "W/\"4a195a5e744628e11d722abf4360523204e1d7621360ec671717c9b7b5a5af51\"",
+      "repo_etag": "W/\"0f3f461f56b2fcd793d22d253d67f76540c7ff206b9644a2713e0d0596618cbb\"",
       "release_etag": null
     },
     "kde/kdenlive": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/kde/kdenlive",
       "repository": {
         "stars": 6103,
@@ -1313,13 +1313,13 @@
         "pushed_at": "2026-11-14T07:05:10Z"
       },
       "release": null,
-      "repo_etag": "W/\"82de8e9afbd77e233534a441dce7d5d5bd6f9ca38779b18dfae6c95a2e25f33b\"",
+      "repo_etag": "W/\"06fafa4458b2b50689f4791073ae772437558da763945e3c15721b53e53a4778\"",
       "release_etag": null
     },
     "kde/okular": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/kde/okular",
       "repository": {
         "stars": 1575,
@@ -1327,13 +1327,13 @@
         "pushed_at": "2026-11-14T04:07:45Z"
       },
       "release": null,
-      "repo_etag": "W/\"9f097256973a8ebd3793dd188f4acd63edfd2f9f5b0189cf46f3dcab1131c56b\"",
+      "repo_etag": "W/\"ebf2bd1fa90fb20f7b3a542d617a8cbcf59394e613753045b76046c9aa69205c\"",
       "release_etag": null
     },
     "keepassxreboot/keepassxc": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/keepassxreboot/keepassxc",
       "repository": {
         "stars": 29991,
@@ -1344,13 +1344,13 @@
         "tag": "2.8.0",
         "published_at": "2026-10-21T21:57:23Z"
       },
-      "repo_etag": "W/\"dee4421f1347f426f3b07230d957bc9a1f81dec0d0e6bb3cf6fb5be164b08b6f\"",
-      "release_etag": "W/\"dfb86ef890448750191044a2fb116a6969408ac3383b3d9ed21b5668a3e4cb92\""
+      "repo_etag": "W/\"5c6dc5be447e311754ca5f453459ca419f110362fc6e11d8f1686d52135e8a7b\"",
+      "release_etag": "W/\"8395f40d9282f843774aeb5a19681a09950baa974ade3218dbc80f387e87a592\""
     },
     "keeweb/keeweb": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/keeweb/keeweb",
       "repository": {
         "stars": 13040,
@@ -1361,13 +1361,13 @@
         "tag": "v1.18.7",
         "published_at": "2021-07-18T14:53:06Z"
       },
-      "repo_etag": "W/\"110345b3490b78136c9313017f815e1721639ace4399d702cb0d71e94eee108f\"",
-      "release_etag": "W/\"fea267dabeae2605496711122750670412e3d2e99b2866a62eca64312fb1aebc\""
+      "repo_etag": "W/\"6fdcbbf437d40e4de0a58f43f0628ed142a4c2bd56a69b30c5a3b9c46bc1faa5\"",
+      "release_etag": "W/\"340b850c6beeeb3f5e0c36d4cea488fc72ad0e79b6b7396513c9ea8ee1e2a0ad\""
     },
     "kong/insomnia": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/kong/insomnia",
       "repository": {
         "stars": 40156,
@@ -1378,13 +1378,13 @@
         "tag": "core@13.4.0",
         "published_at": "2026-10-29T11:54:41Z"
       },
-      "repo_etag": "W/\"611a9d0e41eee8c173dcc6f765a06363e36fb740d7d2d0bca410ba4e0a665e2b\"",
-      "release_etag": "W/\"42dbc255f6424f4ef542b664ac8a41cadf50d8cb98d995ee5637b185e3358c0f\""
+      "repo_etag": "W/\"f6192172c444b2cff0fd5e2c046cdd714a03afce97374054d66b85a56f4cbe0d\"",
+      "release_etag": "W/\"81ce9acbba7ead2227e0e256434a2f55aa2c0eff87f5565c23caac9532240705\""
     },
     "ksnip/ksnip": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/ksnip/ksnip",
       "repository": {
         "stars": 3382,
@@ -1395,13 +1395,13 @@
         "tag": "v1.10.1",
         "published_at": "2023-03-15T09:43:53Z"
       },
-      "repo_etag": "W/\"732321c4261041b99e7a8b451fbbdf8f9f2bec72e95f9128c1dbe3fad772382f\"",
-      "release_etag": "W/\"f020aa8e35f62530cb556a3d843ac147a3239f26436137c6789ea930582d242e\""
+      "repo_etag": "W/\"4e977090255aad1f6eeae646a10a7353fa7499b72ad4a80af8952b49977be8f9\"",
+      "release_etag": "W/\"5fd2401f0066afecc17f4c038dc3a8d7350651ea28f865737fb85217d2776185\""
     },
     "lapce/lapce": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/lapce/lapce",
       "repository": {
         "stars": 39010,
@@ -1412,16 +1412,16 @@
         "tag": "v0.4.6",
         "published_at": "2026-01-21T21:44:37Z"
       },
-      "repo_etag": "W/\"63c125c5ddf03b26575aa0cdff6821960a7a800239d1c156c3075303a745a8dc\"",
-      "release_etag": "W/\"7bc260a73577a8ab4540c3e6a6565014e26f1aecd2d4da991b26f6d56140d1b7\""
+      "repo_etag": "W/\"c6f261280bd5fec1070ddd77e2cf51a431b3571412494841eef735629d7e985b\"",
+      "release_etag": "W/\"116dc816b2f9a5e4c914ad5efccdd548d40e7a51b09694a7c5e6e40ae9acbb6c\""
     },
     "laurent22/joplin": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/laurent22/joplin",
       "repository": {
-        "stars": 57173,
+        "stars": 57174,
         "archived": false,
         "pushed_at": "2026-11-14T09:26:24Z"
       },
@@ -1429,13 +1429,13 @@
         "tag": "v3.7.22",
         "published_at": "2026-10-28T22:32:59Z"
       },
-      "repo_etag": "W/\"1f5af727b0eae696000a7564f5c8ff6fa6bff71481c8076c4ac27469b5c72b45\"",
-      "release_etag": "W/\"0511caa81d2cdb49b8fcff0ea510ab707aa347aca94924bde5f9180ec8fbd207\""
+      "repo_etag": "W/\"1d4a48ac4a6e41b512f3121565a682ca70274f2913919ad72a87c92f24b32c77\"",
+      "release_etag": "W/\"e456c4423b6fd8220701b34b3fc5bcd46efca40531f573fa8ff37ef175fdc623\""
     },
     "lbalazscs/pixelitor": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/lbalazscs/pixelitor",
       "repository": {
         "stars": 268,
@@ -1446,13 +1446,13 @@
         "tag": "v4.3.1",
         "published_at": "2023-09-06T12:09:31Z"
       },
-      "repo_etag": "W/\"7a69c3ad88fa4e5632a6f8eab8cb74d2859042b0743b43367457ac65dae963aa\"",
-      "release_etag": "W/\"439884197e936b54e962c1936d0fd217f2cfc513c3b1170091fed789a2a2efcb\""
+      "repo_etag": "W/\"743094f2e3b7ebf719efe7f8c2b246860072cfd0b1eba27e421752eec86b21ee\"",
+      "release_etag": "W/\"c3e17be68de148fb47440f8cc78706c1f106e2388a6be657194d76890f1e8b19\""
     },
     "librecad/librecad": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/librecad/librecad",
       "repository": {
         "stars": 6593,
@@ -1463,27 +1463,41 @@
         "tag": "v2.2.1.6",
         "published_at": "2026-10-17T01:07:16Z"
       },
-      "repo_etag": "W/\"3b6d449123ad9bbe353922fc8efdd7256033be52ed538fa5b92a3f45e7f29dd1\"",
-      "release_etag": "W/\"e9452700c20ed4104357a6eb006296ff1e3907f665a7f10191645f370104ecd1\""
+      "repo_etag": "W/\"0bc70b1ed0ce6dbdc7c817167cb1d2387e07fe975db54982e70a1adb3f9cd1b6\"",
+      "release_etag": "W/\"2dee4d09b0b0fc2882b0ba1183b3384416dbb30e7a8891f078eeb4b62c8ad89c\""
+    },
+    "librechat-ai/librechat": {
+      "status": "ok",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
+      "source": "https://api.github.com/repos/librechat-ai/librechat",
+      "repository": {
+        "stars": 47118,
+        "archived": false,
+        "pushed_at": "2026-11-14T02:14:24Z"
+      },
+      "release": null,
+      "repo_etag": "W/\"33afc02495137445a253a1d2e04cacf36166acbd1c58d15cbc9254dde419b13b\"",
+      "release_etag": null
     },
     "libreoffice/core": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/libreoffice/core",
       "repository": {
         "stars": 4637,
         "archived": false,
-        "pushed_at": "2026-11-14T09:03:31Z"
+        "pushed_at": "2026-11-14T12:37:16Z"
       },
       "release": null,
-      "repo_etag": "W/\"97538c94c83edbdee348c1b94e6cb260c16cfdcfe0c44deb2e4fefb49dbe3ae0\"",
+      "repo_etag": "W/\"687719cb6a9a476564f23212824f43efd88627a487b204e61a7810f1efeab482\"",
       "release_etag": null
     },
     "lihaoyun6/quickrecorder": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/lihaoyun6/quickrecorder",
       "repository": {
         "stars": 8792,
@@ -1494,13 +1508,13 @@
         "tag": "1.6.9",
         "published_at": "2025-06-11T07:45:22Z"
       },
-      "repo_etag": "W/\"6b9708af1718f22e89d999026ad752f56d7a62916c829089bd9e06be62cf02e8\"",
-      "release_etag": "W/\"e93471bd98bb67c9f6814ab304a972802a3ee57f55e77796edafa749525ffdc3\""
+      "repo_etag": "W/\"82f2bc054582f7b14d92a068ed58713e0632eb51a50a49cb5cb56071334f78da\"",
+      "release_etag": "W/\"140495f7a9b1cb8ffbca59a6ae1cf6ce546f2ba2f39f0ab43ec93409616b5571\""
     },
     "lmms/lmms": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/lmms/lmms",
       "repository": {
         "stars": 10655,
@@ -1511,30 +1525,30 @@
         "tag": "v1.2.2",
         "published_at": "2020-07-04T12:35:12Z"
       },
-      "repo_etag": "W/\"634bca37ee667898ece7def78978c4a5603270c0da2285a8eeaf68ad5e66ea0a\"",
-      "release_etag": "W/\"059af2890fd296438eaa3949961830e55e9296e29207c8ae85b4727a53e3159b\""
+      "repo_etag": "W/\"db417e2a86e590bd02e351732aa9133372f7e81a105cb8fb585eafa5ee988472\"",
+      "release_etag": "W/\"32216a9bed2aa302bbf343644741f5f553c818b5757a383ac6c88be6a828f21e\""
     },
     "logseq/logseq": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/logseq/logseq",
       "repository": {
-        "stars": 45585,
+        "stars": 45586,
         "archived": false,
-        "pushed_at": "2026-11-14T12:21:38Z"
+        "pushed_at": "2026-11-14T12:45:16Z"
       },
       "release": {
         "tag": "2.0.2",
         "published_at": "2026-10-07T14:18:57Z"
       },
-      "repo_etag": "W/\"c9de0b1a9ea86e741657e3dcd7d9240e598ab7be28fcd121a37861c75ec4531f\"",
-      "release_etag": "W/\"ec33988c83bf7e21f0c6fe5d828436f3d4895a42eed85992bba78b16585d8f28\""
+      "repo_etag": "W/\"9dbb1932ea67c522a7bafce5558f4a1661848b24a3f78ab471a5ad7a972956e4\"",
+      "release_etag": "W/\"40d5ca24e04f04db4e6eff59d19eaddc8ae8cec898a6a3dd7fdccef623947e24\""
     },
     "m2team/nanazip": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/m2team/nanazip",
       "repository": {
         "stars": 16244,
@@ -1545,13 +1559,13 @@
         "tag": "7.0.1882.0",
         "published_at": "2026-10-26T16:06:17Z"
       },
-      "repo_etag": "W/\"f622318b8e5b1b2fd71516ff032531077536903ce6adb87ba66b30a3587923f4\"",
-      "release_etag": "W/\"7abab2edfa65c46a7e92921a207aec864e5d16e493014dce312f76780f4268ec\""
+      "repo_etag": "W/\"3e1f4843e8b9bae010924ccf86514a99ffadb43f499085f60b59ffa63bad1e39\"",
+      "release_etag": "W/\"f854bf75cac70302d070962d84aa30cc2bc9e3d46f9f085f4d26a140fe433778\""
     },
     "maartenbaert/ssr": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/maartenbaert/ssr",
       "repository": {
         "stars": 2903,
@@ -1559,13 +1573,13 @@
         "pushed_at": "2026-08-14T23:15:28Z"
       },
       "release": null,
-      "repo_etag": "W/\"e5cfaea2447ac03f5c072ec1c5783f624e005a62f85f3b92aa762e91baa7a609\"",
+      "repo_etag": "W/\"e7159b953fa396adf365ddf38a31f347b1c70be444893fccda5363140b393a2e\"",
       "release_etag": null
     },
     "mac-cleanup/mac-cleanup-py": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/mac-cleanup/mac-cleanup-py",
       "repository": {
         "stars": 2375,
@@ -1576,13 +1590,13 @@
         "tag": "3.4.0",
         "published_at": "2026-10-26T12:36:00Z"
       },
-      "repo_etag": "W/\"8ca0cb999beb7200088a7ac1c234a5699f387424d6760726525ea122fcb7422f\"",
-      "release_etag": "W/\"59a3b339bb4795d50539558d255bc79367d9bf5e046d5912d623b18abfb14768\""
+      "repo_etag": "W/\"811619b62d0ca129195d125e6a8beefb2577f705df18c69e78223c78eb0b13d5\"",
+      "release_etag": "W/\"3a9438f47b605b70be30bf26f0a26314ce3a1b9e2876518ce4ec6025940ced63\""
     },
     "maproom/qmapshack": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/maproom/qmapshack",
       "repository": {
         "stars": 453,
@@ -1593,13 +1607,13 @@
         "tag": "V_1.21.1",
         "published_at": "2026-09-05T14:19:24Z"
       },
-      "repo_etag": "W/\"b6db1b32d4301618836631079afc682fe86a838351643924f51d93acf8a25c12\"",
-      "release_etag": "W/\"226984170cdc421ebafcfbe0ebfc6b3ecdac8db82d0534f524d7098e0028abd2\""
+      "repo_etag": "W/\"faa6d6c9710c72b29d20de788eaf7c7b7899900adbf2f8364287180a6d38a2a1\"",
+      "release_etag": "W/\"e4d879a2da3c33c8efaed998b9dd17c9a8e1a410c6cfd1dc7197c315e5f71717\""
     },
     "marp-team/marp-cli": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/marp-team/marp-cli",
       "repository": {
         "stars": 3921,
@@ -1610,13 +1624,13 @@
         "tag": "v4.5.1",
         "published_at": "2026-09-06T00:33:58Z"
       },
-      "repo_etag": "W/\"2b7aa39fb772797e509bf05015fbe91668acfc12209284dd7494254c9e146204\"",
-      "release_etag": "W/\"4d312f9c5d518d0b746c0c11f07b6d1e7d13e944be91052dc6842f2eef052e82\""
+      "repo_etag": "W/\"6448dc07095d2483943eefce196a9721d837bb8b653826a460263fa73233e79a\"",
+      "release_etag": "W/\"964bda20eac2a592f216da24c75afe9e1abe43edb015c20de367c377cf9c2abc\""
     },
     "mathewsachin/captura": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/mathewsachin/captura",
       "repository": {
         "stars": 10888,
@@ -1627,13 +1641,13 @@
         "tag": "v8.0.0",
         "published_at": "2018-11-10T09:45:23Z"
       },
-      "repo_etag": "W/\"18841121b377234fc8102232b2a295f79b480702905ecf78e09e3e430e814796\"",
-      "release_etag": "W/\"677d7156bad8bd5ddc019f74326018b462a87522a402763d60a3abca19008fae\""
+      "repo_etag": "W/\"b919c78ddc8d0d2a897363f03e2ef3a9a6380b2824f1e93ce6e0da7559eadfbb\"",
+      "release_etag": "W/\"080550c6e77f7e209988413b6bae30028f5bfb9aa839f78b17de6270b9b96413\""
     },
     "mg-chao/snow-shot": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/mg-chao/snow-shot",
       "repository": {
         "stars": 7049,
@@ -1644,16 +1658,16 @@
         "tag": "v1.5.7_snow-shot",
         "published_at": "2026-11-13T16:55:16Z"
       },
-      "repo_etag": "W/\"ba87176139153e600fb3391b06f763164c2fcdaea37ded9b539ca869c5c22502\"",
-      "release_etag": "W/\"9f39bbc56a4b661a31f1fba0e775314c55dfe7ededa199522c9f5734315c9cd3\""
+      "repo_etag": "W/\"fc1784806b7f8210376098f13ed2c34e08be76b25f90a30fd2b7909292fe40fb\"",
+      "release_etag": "W/\"4b2518b4fcf41397fe57f8f6dd8006176bd272d8e499df38a3e0a9daab0c20d0\""
     },
     "microsoft/powertoys": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/microsoft/powertoys",
       "repository": {
-        "stars": 140971,
+        "stars": 140969,
         "archived": false,
         "pushed_at": "2026-11-14T11:54:22Z"
       },
@@ -1661,30 +1675,30 @@
         "tag": "v0.102.3101",
         "published_at": "2026-11-06T09:54:30Z"
       },
-      "repo_etag": "W/\"b6a82e1bff1a9379f1ded1fc83d09050ac05532b7647823cdb06b528f7d32b12\"",
-      "release_etag": "W/\"bb401038364fd37582bbf688749581020c3c97b79e2284eb219fffee6d99a733\""
+      "repo_etag": "W/\"b185746f099ede62c1649e0cd3b8f7b616b312779b40a5dd0504896818385126\"",
+      "release_etag": "W/\"74cb8e7e2e9c382079408f11481ae74f02e78dcd397cedb407ce87481bf0695e\""
     },
     "microsoft/vscode": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/microsoft/vscode",
       "repository": {
         "stars": 195368,
         "archived": false,
-        "pushed_at": "2026-11-14T12:28:12Z"
+        "pushed_at": "2026-11-14T12:42:47Z"
       },
       "release": {
         "tag": "1.146.0",
         "published_at": "2026-11-11T10:07:14Z"
       },
-      "repo_etag": "W/\"8bccc42d3a8462e76e911f54b12c2f886f90518fff74e14b89d64a5bb67d20e9\"",
-      "release_etag": "W/\"d066a3b08a3f281c6c25d3b98b480b31eb1bc907f1fa8c33101471656b0a4a2b\""
+      "repo_etag": "W/\"cc3db6ddff04f2a190c6d4a45a9d4a07de0b0b7b028ba61f0b17154ce8296cf6\"",
+      "release_etag": "W/\"f44ba7b8ddd748fd4ffceadefcb3f7632287443260dc425e3d7113158d2459a3\""
     },
     "mifi/lossless-cut": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/mifi/lossless-cut",
       "repository": {
         "stars": 46025,
@@ -1695,13 +1709,13 @@
         "tag": "v3.70.2",
         "published_at": "2026-10-28T06:48:01Z"
       },
-      "repo_etag": "W/\"b78f4e1a4e29d989997e042ba30645efad37a763f2ab20b554227cc11b42592e\"",
-      "release_etag": "W/\"300344582f0cc34682acb6ca18b8ee6bb8010f060dd6e7b0b66491949c647c77\""
+      "repo_etag": "W/\"00f0aa985b3539e3b3809312d43e66acca9a331072f4071ee34fda4e1a39f6bf\"",
+      "release_etag": "W/\"bb833c5bba71f770181ebbd867811b4981d9d687529a08a33df22b98372d3a17\""
     },
     "mltframework/shotcut": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/mltframework/shotcut",
       "repository": {
         "stars": 15678,
@@ -1712,13 +1726,13 @@
         "tag": "v26.9.27",
         "published_at": "2026-09-28T00:29:29Z"
       },
-      "repo_etag": "W/\"1d21d299fe6fd0b3af538671110aa5a66e300311bcc62f101f72c8f8108571fc\"",
-      "release_etag": "W/\"ffe2a5a99f39c1bd2e1df638c2418569ca1f91082f1b260232b6d869262b266e\""
+      "repo_etag": "W/\"ee6e0e8bd23363673e2684588d4523b0b08b099c3946aac63b899c21371fe429\"",
+      "release_etag": "W/\"091f436a0d293fc12bafd90c94c8d1d9596d8ec8299c2fadf16bea32cb75e59f\""
     },
     "moonlight-stream/moonlight-qt": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/moonlight-stream/moonlight-qt",
       "repository": {
         "stars": 19518,
@@ -1729,13 +1743,13 @@
         "tag": "v6.2.0",
         "published_at": "2026-10-04T00:44:48Z"
       },
-      "repo_etag": "W/\"d9481f1e1184a463480f283f2aacfec98cf06ffb98efcb2d92e558601f2e45f3\"",
-      "release_etag": "W/\"3b2eb3119d5df6f5c72265fc96b4e4705ddef866b155a1dc03b8969bb238a8c2\""
+      "repo_etag": "W/\"bc16eae64e93ef923034d2972c30d47e8dd9551adf54ffea8345ba892dc47989\"",
+      "release_etag": "W/\"ed06ef75e786d53428b6b7cacb3b0e2169c484d21e385f2471f0619c75ecb20a\""
     },
     "mountain-loop/yaak": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/mountain-loop/yaak",
       "repository": {
         "stars": 19494,
@@ -1746,13 +1760,13 @@
         "tag": "v2026.9.1",
         "published_at": "2026-11-01T17:03:45Z"
       },
-      "repo_etag": "W/\"95fc6c785e1cd7a99781b841e20692b073fa208567aea77754d5ff55adb340ee\"",
-      "release_etag": "W/\"53245951ee5bac15a0428f2fbcedc90b908575de7dd6dec84703653295744996\""
+      "repo_etag": "W/\"7a3272efd4d345c8b2f4380b34f078ce9eec045058699d1d433897d245e9afc0\"",
+      "release_etag": "W/\"19b30d20388eb9c76ca0980f3e4766dab9009e0647cf8c0baf627afb3ec7c6bc\""
     },
     "mozilla-mobile/mozilla-vpn-client": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/mozilla-mobile/mozilla-vpn-client",
       "repository": {
         "stars": 670,
@@ -1763,13 +1777,13 @@
         "tag": "v2.40.1",
         "published_at": "2026-10-26T16:27:43Z"
       },
-      "repo_etag": "W/\"1c910d84318420d52380417cda5d4565889249ac726eba063ef85b5da20511a9\"",
-      "release_etag": "W/\"f4d4813314046bd506b72d7156f5f4890f81d02e59527db81fe9f6e736da8bdc\""
+      "repo_etag": "W/\"bcc889c65b11cb63393079d1be0376cb0320a4ae15f6f0928cf36c2767843710\"",
+      "release_etag": "W/\"55f52f1e777150a01caab53a14797aebb78d797f93b1bbbd84a5e82b14686b90\""
     },
     "mullvad/mullvadvpn-app": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/mullvad/mullvadvpn-app",
       "repository": {
         "stars": 7778,
@@ -1780,13 +1794,13 @@
         "tag": "android/2026.12",
         "published_at": "2026-09-30T14:32:59Z"
       },
-      "repo_etag": "W/\"ae3b1bbe491ccca790df0712e1b8ecc45700debf359026e6c70bdeb103427a2b\"",
-      "release_etag": "W/\"5177fe812050276ba85e6bf2b549ae5c441c0c7f8edb4c1a268b0f084e69b32c\""
+      "repo_etag": "W/\"f02936a0c18b73f8425599d5caf15ef75825962d7882207dc83d5e3387b11d59\"",
+      "release_etag": "W/\"a25dbe5f61496da2b30e71e00c9bf67d0a072dc690f98fb3fe0d00f0ee103a9a\""
     },
     "mutagen-io/mutagen": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/mutagen-io/mutagen",
       "repository": {
         "stars": 4578,
@@ -1797,13 +1811,13 @@
         "tag": "v0.18.1",
         "published_at": "2025-02-24T22:22:07Z"
       },
-      "repo_etag": "W/\"4b1abe5d6d3a3e48765afa9dd26f045d6c464ee6627e58bfa0dcdef8e97c2642\"",
-      "release_etag": "W/\"e3bc6ebfa038e20b9d38c98e2172f95a1e2b1fb1c4ca072e6dd691c5ac4fce18\""
+      "repo_etag": "W/\"62ef41fbb1102f1151b54dcb5e3a278bd2b5faa7fc0103248102cd577ae68a22\"",
+      "release_etag": "W/\"d819b80333048609353ed888c7f24f37f6ec22329c00b3f84eb698312443e633\""
     },
     "natrongithub/natron": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/natrongithub/natron",
       "repository": {
         "stars": 5711,
@@ -1814,13 +1828,13 @@
         "tag": "v2.5.0",
         "published_at": "2022-11-26T00:48:14Z"
       },
-      "repo_etag": "W/\"fa83e8fc634267e6061b075cd7c682bbbde95d6a42585686c05fe4716ffffb2e\"",
-      "release_etag": "W/\"1f9cf0910a501e761353a878d784d435e273b347cd3430a4a6a6de77b5a7f9e6\""
+      "repo_etag": "W/\"21e52f086aa0e61732f5ec15a16e00c37801b6b9964be24f260b9d56e3be81df\"",
+      "release_etag": "W/\"adddf9f54aae8a5da1953ad54128653fe4963da39acf3565600b581a9e6d2497\""
     },
     "neovim/neovim": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/neovim/neovim",
       "repository": {
         "stars": 103623,
@@ -1831,33 +1845,33 @@
         "tag": "v0.12.6",
         "published_at": "2026-10-09T15:43:25Z"
       },
-      "repo_etag": "W/\"19c20cb3e6e78d8becafb0f684c79e696adfe40f201e5aca226ab8e38aea172d\"",
-      "release_etag": "W/\"1843ee90fc71d3434f5966d084624be4f9b4e0976a190faceb3ccd248f9025e7\""
+      "repo_etag": "W/\"fa36acc0ffc2bcc6ce8ff3cb7eff9bfd662d46a322c9b6fb40fcc341446aee70\"",
+      "release_etag": "W/\"795c63462e8a8a6b3e35db15c824a97892f65d576ae4d2b26ab44118d451e2ad\""
     },
     "nextcloud/server": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/nextcloud/server",
       "repository": {
         "stars": 37511,
         "archived": false,
-        "pushed_at": "2026-11-14T10:54:23Z"
+        "pushed_at": "2026-11-14T12:36:57Z"
       },
       "release": {
         "tag": "v33.0.11",
         "published_at": "2026-11-12T17:21:37Z"
       },
-      "repo_etag": "W/\"71a12bc374545553473c521b57f64235e77031be8589d47f388c1c818773f839\"",
-      "release_etag": "W/\"8fbe9ad1535477af49ae8634bc3b9b3ed6e39b98a11a32d02d5f057f0efacfdc\""
+      "repo_etag": "W/\"0e2cd3aea926e15879449e837d35df816fc4b113b9d69e034787c3aa5f8ec42c\"",
+      "release_etag": "W/\"65c2972298bfdb3890b94de397dc9c48e89bd514dd45f0641950de2686a39bdb\""
     },
     "nickemanarin/screentogif": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/nickemanarin/screentogif",
       "repository": {
-        "stars": 27939,
+        "stars": 27940,
         "archived": false,
         "pushed_at": "2026-10-14T15:04:38Z"
       },
@@ -1865,16 +1879,16 @@
         "tag": "2.43.2",
         "published_at": "2026-07-28T17:52:48Z"
       },
-      "repo_etag": "W/\"154f95574728f84ef38747dde2d231b4a6cb78c569fc22b566e997ca08a57749\"",
-      "release_etag": "W/\"89bf229b621f861151be22cb9bdb92d7407b5420fda43dd21aaf1337ae03703c\""
+      "repo_etag": "W/\"4054bb37818b72798098d6dc135fdd45bcef02684775f2ae4ccb497b2c587c43\"",
+      "release_etag": "W/\"a17683cf55c2af295efcc1aa1f26d99db77f1379ce4e3efafdc0f3fe3cb50473\""
     },
     "notepad-plus-plus/notepad-plus-plus": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/notepad-plus-plus/notepad-plus-plus",
       "repository": {
-        "stars": 29883,
+        "stars": 29884,
         "archived": false,
         "pushed_at": "2026-11-13T14:54:56Z"
       },
@@ -1882,13 +1896,13 @@
         "tag": "v8.9.9.1",
         "published_at": "2026-11-12T01:22:26Z"
       },
-      "repo_etag": "W/\"622ba41c7a8481368631ee9fc6c5a7d32bf8ef0fdf5a401833ad60853191c8e1\"",
-      "release_etag": "W/\"bef10559f3547f398acd5cca975b2f39735292353f57e4acf46bf35b0b8cd229\""
+      "repo_etag": "W/\"bbebfb888bca73e5702d60714b30c921fe71007c93698e0e2979e8a4a803fc1c\"",
+      "release_etag": "W/\"7ff3c2ad1845c2dea2ba4ed42b4bfd3fa148b8f33adafab852568f13a4f73964\""
     },
     "objective-see/lulu": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/objective-see/lulu",
       "repository": {
         "stars": 13580,
@@ -1899,13 +1913,13 @@
         "tag": "v4.5.7",
         "published_at": "2026-11-02T13:57:33Z"
       },
-      "repo_etag": "W/\"4f73c2489254397f7119d1b67e5d1b7780c603054d0906f1e7d3ae4ce9180bdc\"",
-      "release_etag": "W/\"7b913c160b55baa63c8a785fc32a79ef6df7b8ce2d209ad79c51df7d0ac09a8a\""
+      "repo_etag": "W/\"2818898c0d77d452113b4480b562e5476dff6f999e59ecf77a414340705504d6\"",
+      "release_etag": "W/\"abd95485c9a4f6506e0e97caed591206b5dd8cbd0f44e58c02a21f062624e4b3\""
     },
     "obsproject/obs-studio": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/obsproject/obs-studio",
       "repository": {
         "stars": 79536,
@@ -1916,13 +1930,13 @@
         "tag": "33.0.1",
         "published_at": "2026-10-29T21:52:01Z"
       },
-      "repo_etag": "W/\"f7978d94260295e9ee3652f86f743c02da5eadddc49a470873d30f263b52a7a7\"",
-      "release_etag": "W/\"f385ced3e57b67de1015e8062dbff8fd0917ba8f2b5008e8276604b9ab6a5701\""
+      "repo_etag": "W/\"e26a1bd74158174ab1d32c6085a3de2204523c63722edc9c7132445c816910b0\"",
+      "release_etag": "W/\"0236af1e993ba5c7dcd98ef2bdd4928f8b5a00c24bd20e922c8605301fe8910c\""
     },
     "oguzhaninan/stacer": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/oguzhaninan/stacer",
       "repository": {
         "stars": 9349,
@@ -1933,13 +1947,13 @@
         "tag": "v1.1.0",
         "published_at": "2019-05-13T00:18:13Z"
       },
-      "repo_etag": "W/\"6159c4c5045d3234edd22e3d13d6b0e29dcba7aaf5fbaee279460247b1fd58b6\"",
-      "release_etag": "W/\"8cba8cdafc7fafa7793e55d325f1ee6d66e12d0fe831e0b5d2763920d6f292c5\""
+      "repo_etag": "W/\"0181a151882120bf3b9f46de0c3c9782664c7395cdd8e003cdb584114284fc04\"",
+      "release_etag": "W/\"d9af9d5b8b537271cd250939c63d6c40afbf6b73b9f322aa13e653e23f66e6b0\""
     },
     "olive-editor/olive": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/olive-editor/olive",
       "repository": {
         "stars": 9157,
@@ -1947,13 +1961,13 @@
         "pushed_at": "2024-12-05T10:34:17Z"
       },
       "release": null,
-      "repo_etag": "W/\"b23f0adaa19010b61504f23b298c0c2208309c3bbafd2cfcfbcca8f19f6b200c\"",
+      "repo_etag": "W/\"56c0820a4db2afef96e98f14cb41d37fb15c5fac0935e26c546dde17743e6f19\"",
       "release_etag": null
     },
     "oliverschwendener/ueli": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/oliverschwendener/ueli",
       "repository": {
         "stars": 4617,
@@ -1964,16 +1978,16 @@
         "tag": "v9.29.1",
         "published_at": "2026-10-23T11:31:04Z"
       },
-      "repo_etag": "W/\"29bb2e7595379149d3e01fb95ef38d56af6cb089db26cf63dd4108b30b62e262\"",
-      "release_etag": "W/\"1754e1542f5ebe5ded63a2d1f0a683193016d59cdb8173868f14dbe17628c2a1\""
+      "repo_etag": "W/\"3e1a5c526a643943c87d5c3563e65a50ca58e6fcbaf44f57f7ceefd603d21ab6\"",
+      "release_etag": "W/\"c400e488c8e3a4bb054ca7753a94b7aee4b8bd6e68d421ed0745fb946e409f0b\""
     },
     "ollama/ollama": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/ollama/ollama",
       "repository": {
-        "stars": 186937,
+        "stars": 186939,
         "archived": false,
         "pushed_at": "2026-11-14T00:00:10Z"
       },
@@ -1981,13 +1995,13 @@
         "tag": "v0.40.16",
         "published_at": "2026-11-09T18:21:19Z"
       },
-      "repo_etag": "W/\"53c90a9de19ef97820f2cd419c2ec77b7a19d58cfccf7859133087a090f103f5\"",
-      "release_etag": "W/\"66a63e03d8518735f5b2ff3aabeb12142180287f97690813466f3113ae714d39\""
+      "repo_etag": "W/\"7b57ebf33181a93c7c4c3da5e1a0b768aa7f11d74c6e6a91030698a8a846081c\"",
+      "release_etag": "W/\"ccf1453f5c93e7f7f951a5f7e0c10a94fc0c9e9aceec353a34d677020e52e48c\""
     },
     "onlyoffice/desktopeditors": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/onlyoffice/desktopeditors",
       "repository": {
         "stars": 5735,
@@ -1998,13 +2012,30 @@
         "tag": "v10.0.0",
         "published_at": "2026-10-13T10:18:58Z"
       },
-      "repo_etag": "W/\"e4c4896e574e7be3e84cbd48c62c88dbed1c78e04b6b6193d41ec262d22c8c09\"",
-      "release_etag": "W/\"d4eb8e9cb9befa9c51e2a883946c5eaaf5a0d3ab60a541cfbd15b5b8d66c5649\""
+      "repo_etag": "W/\"5f9e490ddf67113dcc3d00d7694ab80a6b9cd8df6558454aae3e097785f4f441\"",
+      "release_etag": "W/\"e41bc6b6b398190d5afdf21c1b056156d641cfaa816bfcf8395299222b1ff83a\""
+    },
+    "open-webui/open-webui": {
+      "status": "ok",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
+      "source": "https://api.github.com/repos/open-webui/open-webui",
+      "repository": {
+        "stars": 158631,
+        "archived": false,
+        "pushed_at": "2026-11-14T12:32:40Z"
+      },
+      "release": {
+        "tag": "v0.13.3",
+        "published_at": "2026-11-08T23:48:24Z"
+      },
+      "repo_etag": "W/\"92ad9a307cbaf2ef2fbb1041de23835498ea3b2c8c4f97947cd6500d82c4586a\"",
+      "release_etag": "W/\"0a46a85594d55b715cabe702cc6c3b5cb57efb06c083b4dfc912cd70872bf04e\""
     },
     "openshot/openshot-qt": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/openshot/openshot-qt",
       "repository": {
         "stars": 6782,
@@ -2015,16 +2046,16 @@
         "tag": "v4.1.1",
         "published_at": "2026-11-02T01:17:15Z"
       },
-      "repo_etag": "W/\"aa5de9c17da373b60bc99f1890cbb3f0d2c13608c7d8a809211bc798a89b54b9\"",
-      "release_etag": "W/\"2be0c3bc320f188963ed4136e8abbc8cd247d3c4e0d91612b1a7250d63d92b90\""
+      "repo_etag": "W/\"081c7480c96b8c6c90383b7852e8a358e3aabd6c8a6ee63998244a3e9d513de9\"",
+      "release_etag": "W/\"36549af64e1b7775a501905c0e13d920cdc174e7c1998f0ba388b52cb4030967\""
     },
     "opentoonz/opentoonz": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/opentoonz/opentoonz",
       "repository": {
-        "stars": 8220,
+        "stars": 8221,
         "archived": false,
         "pushed_at": "2026-11-12T02:14:42Z"
       },
@@ -2032,13 +2063,13 @@
         "tag": "v1.8.0",
         "published_at": "2026-06-19T06:16:15Z"
       },
-      "repo_etag": "W/\"aa76556852723174b85f207911984054142e8c8812b9940575ac883219525740\"",
-      "release_etag": "W/\"98d99c240c0316f2ab2d2f26aee8daf1ffe738d7002f65bc4988746d00648f28\""
+      "repo_etag": "W/\"e0ddd4ebd6c08ebbed78bbe44d3d47603d6f0f60b9cb1e88908eb91ae855fdb2\"",
+      "release_etag": "W/\"de6b43880bb68b985dbbc5a9b27adbfcafefc52763707d19b9209266a98162e6\""
     },
     "openvpn/openvpn": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/openvpn/openvpn",
       "repository": {
         "stars": 14823,
@@ -2049,13 +2080,13 @@
         "tag": "v2.7.9",
         "published_at": "2026-11-05T15:14:51Z"
       },
-      "repo_etag": "W/\"b6ba2502dd165d7158c28bc0600d9992366e4829d775c7add8ff476290945a04\"",
-      "release_etag": "W/\"2cb22e75a91bf98fea02bcf00585c8a0c5db6559a635056c6678eff722d46ca8\""
+      "repo_etag": "W/\"5792d68ef817f066f9d95f08b783da60c1e14ec73c4854eb40fab7cd7e12733b\"",
+      "release_etag": "W/\"733e3a99fdac22aa37d644af9d81ef52e39873ee3884ffe4f77b8071c11bbf35\""
     },
     "organicmaps/organicmaps": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/organicmaps/organicmaps",
       "repository": {
         "stars": 15966,
@@ -2066,13 +2097,13 @@
         "tag": "2026.11.11-39-android",
         "published_at": "2026-11-11T22:19:00Z"
       },
-      "repo_etag": "W/\"dbd95a27fff61a249110d7bc6fd2f61989cea8da1d696bdfccc46f0dc897d003\"",
-      "release_etag": "W/\"4811e5d09d9124200f754eb30d24602d5507d97d6119e1fc25e331ca84c6e848\""
+      "repo_etag": "W/\"0a4c9d3161fd547ff62ae370ae857f44526830969ecf3c8773aa2b5deda4c5be\"",
+      "release_etag": "W/\"ea5b30934bc60dc700ffa65981386d63150185e4b596543bb07f14451911faf2\""
     },
     "osmandapp/osmand": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/osmandapp/osmand",
       "repository": {
         "stars": 6142,
@@ -2083,13 +2114,13 @@
         "tag": "2.0.0",
         "published_at": "2019-10-15T09:45:30Z"
       },
-      "repo_etag": "W/\"fe58f3f3add138bd57c86baef9de5b688d9ec6128569adef786c0b6a2c75439f\"",
-      "release_etag": "W/\"c95d13d15f1a1d37852ea8a59d5ed1631258bd15fb51b817a10fc8c091f089ed\""
+      "repo_etag": "W/\"67e70618271660f975b518c408823d4a2bd79b1175ada129d8f26ac6c894fdb6\"",
+      "release_etag": "W/\"a33064c5471fc91a80e3ea307bd72b98573f7e01678ff2f59d6ca01538cc4c93\""
     },
     "outlinefoundation/outline-apps": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/outlinefoundation/outline-apps",
       "repository": {
         "stars": 9280,
@@ -2100,13 +2131,13 @@
         "tag": "v1.10.1",
         "published_at": "2023-03-20T21:16:19Z"
       },
-      "repo_etag": "W/\"5c250beb8de07909a97d0c291ef25284f566ded0618a7ae61912554e9c09bda6\"",
-      "release_etag": "W/\"0fa0ec14cea2740582c1fe4614b8ef377654a06e9b23c7dd54a064c56f422870\""
+      "repo_etag": "W/\"6966c500f1f3a3ece685eec0198b04171654f10afdd1534eaa930a777b6e6a09\"",
+      "release_etag": "W/\"c6e1486e92dab5a2f76c38f505e54ef8337163dc07cb6ac3bb3b2c196147d5ac\""
     },
     "owncloud/core": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/owncloud/core",
       "repository": {
         "stars": 8852,
@@ -2117,13 +2148,13 @@
         "tag": "v11.1.0",
         "published_at": "2026-11-03T09:51:47Z"
       },
-      "repo_etag": "W/\"1d2c2f4bfa2b207d62453d9c857826b7cfdb1e9970e909c6fe24c68334c3fe94\"",
-      "release_etag": "W/\"3acb81a00282a2e54d32a39856d980d8e4c8f03098d685836f4cf9b4af15be8a\""
+      "repo_etag": "W/\"04ab72a408dc0ca357515b1e98ca972502d1b0e02813bfc6529157bf764ae4f8\"",
+      "release_etag": "W/\"d18c07d300d3da2c0be53360d068f884a2620352bc61e5602a00c6c96dd42c95\""
     },
     "padloc/padloc": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/padloc/padloc",
       "repository": {
         "stars": 2941,
@@ -2134,13 +2165,13 @@
         "tag": "v4.3.0",
         "published_at": "2023-03-06T16:05:49Z"
       },
-      "repo_etag": "W/\"391ec93d16ae429abff9f9c22100a660681f6ba50877f203b70685cdf8b1b0cb\"",
-      "release_etag": "W/\"a4a6aeef2e5ac8bd64ede86c95cfe0678b36fed32eac5127d72274430e46ad4d\""
+      "repo_etag": "W/\"c3c8659c93abb2a36ed8baee38dfb463e86ed94df77fa8e1f748fc948b4a2189\"",
+      "release_etag": "W/\"ba623b99c8039375fe494c1aaee2ac541e463438a79c5cfe29392cc98232ca7f\""
     },
     "passbolt/passbolt_api": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/passbolt/passbolt_api",
       "repository": {
         "stars": 6236,
@@ -2151,13 +2182,13 @@
         "tag": "v5.18.0",
         "published_at": "2026-11-12T13:17:43Z"
       },
-      "repo_etag": "W/\"a10e2d828995195ede089e40eb85159b073967d2cc7faf279e4dc047ac5ecdf2\"",
-      "release_etag": "W/\"a4e7c0eb39ca8b7bd380e814db65d68c7c5f08075ba10ede71d7f7c03dc574a9\""
+      "repo_etag": "W/\"099b563c29d92e5c773ea0ad8d0fc6eb90f6aea2234e5b5abfb2a6bfb1757136\"",
+      "release_etag": "W/\"f1c76781c3b3036bbc787605221df371ccad6a96e2f73f8a2bc68e130b0a50fa\""
     },
     "pdfarranger/pdfarranger": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/pdfarranger/pdfarranger",
       "repository": {
         "stars": 6051,
@@ -2168,13 +2199,13 @@
         "tag": "1.14.0",
         "published_at": "2026-05-23T03:47:07Z"
       },
-      "repo_etag": "W/\"37ceb9ae902c23f2b33f4ef62a1cf05270688bca4b750aa07ab74ab2cef6d05f\"",
-      "release_etag": "W/\"8b0d3bd33e3e665fc71c62725c18a8bffcf956ca134efa14749ff7af33c56120\""
+      "repo_etag": "W/\"7bb57088e6780c633208e3e36a96424002648ea2e9abb31c232150282c118ab6\"",
+      "release_etag": "W/\"8890dbc81083e508edb56b4b1564fc351b562652ceb149ff47b1efd2430ade82\""
     },
     "peazip/peazip": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/peazip/peazip",
       "repository": {
         "stars": 8140,
@@ -2185,13 +2216,13 @@
         "tag": "11.4.0",
         "published_at": "2026-10-17T06:08:59Z"
       },
-      "repo_etag": "W/\"6dfa7972e3830de897f7f7c7cab9ca3712116b2201bef70976a76ee11c81d222\"",
-      "release_etag": "W/\"8705901ae4704156b7fe72ae2910a2023b02e14be9e2a42d5de8559087a02c18\""
+      "repo_etag": "W/\"a7735fd61817d2d5dd49ee27f94fbfb7154fca10f51d1e799d68e99f8e2685d2\"",
+      "release_etag": "W/\"677e7475b4cc4ae5fa9dfb7ccb9c82d883008f90cf3f8a2516185c0f48072a5b\""
     },
     "pencil2d/pencil": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/pencil2d/pencil",
       "repository": {
         "stars": 1892,
@@ -2202,16 +2233,16 @@
         "tag": "v0.7.2",
         "published_at": "2026-03-13T01:14:21Z"
       },
-      "repo_etag": "W/\"f84dca7e68193f780b8b239413159b9fd38e56feaa5ba79d94250f804cf14512\"",
-      "release_etag": "W/\"a89568c70ed4d5b566729ada301e61a5f120a5be6248be776747bbc83fb60e91\""
+      "repo_etag": "W/\"21fa7b2476bb5868c2d98177170536f93704dbb62280a4d1f850502c1eb38e16\"",
+      "release_etag": "W/\"c63bddaa45a0c6cc91e8d3fd20727b11c01b8f4978609648e865848dea477b56\""
     },
     "penpot/penpot": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/penpot/penpot",
       "repository": {
-        "stars": 62344,
+        "stars": 62345,
         "archived": false,
         "pushed_at": "2026-11-14T09:00:51Z"
       },
@@ -2219,13 +2250,13 @@
         "tag": "2.19.1",
         "published_at": "2026-11-11T10:03:30Z"
       },
-      "repo_etag": "W/\"73cbe551e10af10c38b801eb247b5d086061a600d22c7cf0557a24546788475b\"",
-      "release_etag": "W/\"29ad225238d9cdd872808dc8099e25b7b421adccaef4670292bea089b397d2a8\""
+      "repo_etag": "W/\"1bb14939b5a092af83c8ab63b24d7fd6cac4bba1cc0c3fee73797bcc7f2d855a\"",
+      "release_etag": "W/\"7d961504ed35db75350f75c30c42f7de266c985c746f59f4b4e578f152e5519b\""
     },
     "pgadmin-org/pgadmin4": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/pgadmin-org/pgadmin4",
       "repository": {
         "stars": 3939,
@@ -2233,13 +2264,13 @@
         "pushed_at": "2026-11-13T18:12:37Z"
       },
       "release": null,
-      "repo_etag": "W/\"8f7896f2727c7b11fe198a38bad613718e5145ae8f7b752a20968d78f4efd0f2\"",
+      "repo_etag": "W/\"2a82e286fd4a12a5ac3beea1d37c2bdc02e25f0c1aded35172c14278b222ac65\"",
       "release_etag": null
     },
     "photoprism/photoprism": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/photoprism/photoprism",
       "repository": {
         "stars": 40447,
@@ -2250,13 +2281,13 @@
         "tag": "261029-963b58c50",
         "published_at": "2026-10-29T22:20:43Z"
       },
-      "repo_etag": "W/\"d68bfaa83a517a12120939477dbf5d6a1b3253ba9a5d9f1f18fdfc3fd58fde16\"",
-      "release_etag": "W/\"988ab8bafb6af88eade22418ea58ee2b5a0b5b062f6cdc0e7cb011d820a52a90\""
+      "repo_etag": "W/\"42978e9ca15ff5b5b91de9246bc58d65e4abc4e83d483fcb363ffa65e73b1c90\"",
+      "release_etag": "W/\"4ef392564d71dacc8c581b9d9a3f473e6168b754143185a85328dfdd08cad9cc\""
     },
     "phw/peek": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/phw/peek",
       "repository": {
         "stars": 10543,
@@ -2267,13 +2298,13 @@
         "tag": "1.5.1",
         "published_at": "2020-02-19T22:30:03Z"
       },
-      "repo_etag": "W/\"fa537d8d2ab3aa190776be27c8ac930467116ce53b8afbc24a0842617a9ecd3c\"",
-      "release_etag": "W/\"ef218daf4b9f1cca591e5d69088dff6194cc43900f0698864226e02591253a3b\""
+      "repo_etag": "W/\"175fe1a1dabcd9bb2a0762d8b2005463103281d54711778a3ce9d41cc75f5d5b\"",
+      "release_etag": "W/\"90519314df62eb84320c38fa32f8303c9dc015f65ac702cc76d2e8e1d72a68fc\""
     },
     "pia-foss/desktop": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/pia-foss/desktop",
       "repository": {
         "stars": 337,
@@ -2284,13 +2315,13 @@
         "tag": "3.8.0",
         "published_at": "2026-10-16T20:15:33Z"
       },
-      "repo_etag": "W/\"047f8e970c6c7576bbb4308426008d7331acad1eb825e4f24fc9b0cfa11fb9f2\"",
-      "release_etag": "W/\"d81b4308eb218ea201b2d0436a095a3370065738a05692e480dde44f388e1d81\""
+      "repo_etag": "W/\"8c0e051f0d9521fbf5b249f20676b39acce1ba250802261a76dd09f1ce39f43d\"",
+      "release_etag": "W/\"d8d8c7238a5477ef2ca3b8fd15ff2681410451df0c1992234fc7f9b01328b3a8\""
     },
     "pintaproject/pinta": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/pintaproject/pinta",
       "repository": {
         "stars": 4139,
@@ -2301,13 +2332,13 @@
         "tag": "3.1.2",
         "published_at": "2026-04-02T17:27:39Z"
       },
-      "repo_etag": "W/\"e43ed708b2575b701cb4c302b8a4d7afe62439019338817b4922fea857e0d787\"",
-      "release_etag": "W/\"ab6027c43c43bb365bc02ad37141d6c6e24672451bdf9097cce6ad55d619fdb8\""
+      "repo_etag": "W/\"b2087e897dc872c3767ed20ab18e7711cf64a1f000eb8d30b7f185a8284dcde6\"",
+      "release_etag": "W/\"c4cb3898a8ffd0e962e2c6565ce724977cb53e76b21317b993efed4f81d65154\""
     },
     "pitivi/pitivi": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/pitivi/pitivi",
       "repository": {
         "stars": 240,
@@ -2315,13 +2346,13 @@
         "pushed_at": "2026-10-08T11:21:09Z"
       },
       "release": null,
-      "repo_etag": "W/\"6e8904fdfa86839dbfd2fef48107bbcfdd4e2ce284f5adac6429dd361f3d7cba\"",
+      "repo_etag": "W/\"b175f2ada983c3dce344e550878c3941c9c402d9881ab3be03de7c7d05a55fa1\"",
       "release_etag": null
     },
     "pkolaczk/fclones": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/pkolaczk/fclones",
       "repository": {
         "stars": 3002,
@@ -2332,13 +2363,13 @@
         "tag": "v0.35.0",
         "published_at": "2025-03-03T09:52:10Z"
       },
-      "repo_etag": "W/\"ab3ea2bf6cf979048ed8c87e30ebb651ff18918cf2deb77dc512d82f1133bd52\"",
-      "release_etag": "W/\"9bedb1d57c21b923ac84baa70c2bdc2bd7a92565355ad940c674205d6308d57f\""
+      "repo_etag": "W/\"d0f5ebed2bdd285042e9029790032ba7376b5091893b420d10b8b9527cbd68b0\"",
+      "release_etag": "W/\"3738ba706ea1b852c9b1fb5a9ac596d87330126fa21d6a5cd488b44c3032e31b\""
     },
     "protonmail/webclients": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/protonmail/webclients",
       "repository": {
         "stars": 5691,
@@ -2349,13 +2380,13 @@
         "tag": "proton-authenticator@1.1.6",
         "published_at": "2026-06-08T08:16:07Z"
       },
-      "repo_etag": "W/\"9d82611dc9101f1e2258dd45553bccc49157d28b8fc12cb715b330f795690d24\"",
-      "release_etag": "W/\"f611884f8317914e8234f76d54b4495c00916893d3720ca877208d23ac31c390\""
+      "repo_etag": "W/\"9b9ab51c6f906914e98182efcba84e10470290dff8499e538ba161df5cd8ff4c\"",
+      "release_etag": "W/\"bb1009a93427b16657398b8c92d4130a20d4b88f2766b48c1658ce73777cd3f7\""
     },
     "protonvpn/win-app": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/protonvpn/win-app",
       "repository": {
         "stars": 2618,
@@ -2366,13 +2397,13 @@
         "tag": "v5.1.9",
         "published_at": "2026-11-04T12:50:53Z"
       },
-      "repo_etag": "W/\"41519ad05f798bd7bc978121f8d4981e87d1cdc3b67c2b9ea6fc9e7eaa3e5d1a\"",
-      "release_etag": "W/\"acc25cc1793ba5d7026005ee4e4127b0f24c5418bb04e79fbfe68c7ac4fdfe13\""
+      "repo_etag": "W/\"5e1ba34cd27ccff86352cdf9c50884c945cd6a7402e69613b236112ed78ffacd\"",
+      "release_etag": "W/\"8b9eaaefbe21d0a1929a8d174c38b27146ffe87d3a3bc3782e063cb64c96db8f\""
     },
     "pulsar-edit/pulsar": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/pulsar-edit/pulsar",
       "repository": {
         "stars": 4204,
@@ -2383,13 +2414,13 @@
         "tag": "v1.133.1",
         "published_at": "2026-11-01T21:55:55Z"
       },
-      "repo_etag": "W/\"9300117d1b49618f7f226141f9398bab373eb399f67454993cb9dec116582c6e\"",
-      "release_etag": "W/\"b3f11e190ee4c8f8710a6418c80a09e45bc573d2b411c5a2ef0fa5bed582ed09\""
+      "repo_etag": "W/\"fbd9ed13e8cba18a94afb95c47ff495553802894895b2e549cfd3680ef9dad19\"",
+      "release_etag": "W/\"29dd0f844b462630ee7dd9ab2d407d938fb5267c56d540d7b8aad145cc591a0f\""
     },
     "qarmin/czkawka": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/qarmin/czkawka",
       "repository": {
         "stars": 35164,
@@ -2400,13 +2431,13 @@
         "tag": "12.0.2",
         "published_at": "2026-09-09T19:48:14Z"
       },
-      "repo_etag": "W/\"6a652ec1bdb5d0419a81908ebfc927cb6489ee2532e24cbeb882b3e37f622a93\"",
-      "release_etag": "W/\"c999b669624d3386c6adb022a9c5cfb6ff8c1d90ea1e275d84e5baf20ec69ccb\""
+      "repo_etag": "W/\"d360a22a564b4f7835bce14d4aa8435f7f9527b33dba9c1dff454d971228f702\"",
+      "release_etag": "W/\"a64780d76dd8e7d6ebc88c0dc0b76d32e201c5505100dfc36056fbb42fc7efd0\""
     },
     "qbittorrent/qbittorrent": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/qbittorrent/qbittorrent",
       "repository": {
         "stars": 41601,
@@ -2417,13 +2448,13 @@
         "tag": "release-5.3.0",
         "published_at": "2026-10-20T12:57:33Z"
       },
-      "repo_etag": "W/\"5fb567881ecf5668ae6f1a4edc18db753d6b2aaf27d289ee6a44f0a963a9c2d4\"",
-      "release_etag": "W/\"5919179b677a61b5489469f61d9d2f096fe9776cd24885a68f5ef1d4717d38ff\""
+      "repo_etag": "W/\"780a1639fcfd10098f7f0ec788e7dbdd22e2b2b40044b5d6fc6e5a78878867f6\"",
+      "release_etag": "W/\"6f0d19e1f0150cdb524724ff192eef8a08ad295e6dce9af9066680431b553d27\""
     },
     "qcad/qcad": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/qcad/qcad",
       "repository": {
         "stars": 1936,
@@ -2431,13 +2462,13 @@
         "pushed_at": "2026-11-11T19:53:19Z"
       },
       "release": null,
-      "repo_etag": "W/\"ef8c6d08831c656692c227f5c0f38b090970ab2fe774f8b615a7d0a6a8545059\"",
+      "repo_etag": "W/\"8d98d6285657d16a354a7d45da5c876d06ee3e816e6bf7495a9c6c729afc65fd\"",
       "release_etag": null
     },
     "quicksilver/quicksilver": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/quicksilver/quicksilver",
       "repository": {
         "stars": 2942,
@@ -2448,16 +2479,16 @@
         "tag": "v2.6.0",
         "published_at": "2026-04-19T12:08:21Z"
       },
-      "repo_etag": "W/\"95dfe64173a5735e38ada6ccfbf5d5b4cb3c72ca4eb43bc0a813c5008fc77cc9\"",
-      "release_etag": "W/\"458bd04c0b3b2d80d431b8702e024fb911be15679b2a9e4917ae1f4b768f7f73\""
+      "repo_etag": "W/\"bc075f122f6be5fd96b12be933f03b16dd3589c68119d87a892fdc74faa84571\"",
+      "release_etag": "W/\"ae2b56a7dfe818c7b677a77b07534f418d57f0f68aa037681493c7d11c0b2802\""
     },
     "raphire/win11debloat": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/raphire/win11debloat",
       "repository": {
-        "stars": 62622,
+        "stars": 62623,
         "archived": false,
         "pushed_at": "2026-11-13T19:49:46Z"
       },
@@ -2465,13 +2496,13 @@
         "tag": "2026.10.30",
         "published_at": "2026-10-31T00:58:26Z"
       },
-      "repo_etag": "W/\"77b83fb137715e17a1f313682e626fa6ba749157041e86d2a59bd109bf30db80\"",
-      "release_etag": "W/\"983e6b4f4a5ba0edfbc42f09110e03a48821ab14eac8736a09e853f1fd7d1984\""
+      "repo_etag": "W/\"5530cbe98401d321f02a22e54ca0afbf7709de012072f0c25d1a7b63cd9b8819\"",
+      "release_etag": "W/\"5ce6cdc64509f85db10142b627ccf21083272457ea5f7ed305c9526cfdf545ee\""
     },
     "rclone/rclone": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/rclone/rclone",
       "repository": {
         "stars": 61007,
@@ -2482,13 +2513,13 @@
         "tag": "v1.76.0",
         "published_at": "2026-11-06T16:29:59Z"
       },
-      "repo_etag": "W/\"db413b005656a73c9e6614ab58dd0b616a05742f79259212a698e34ce6fe1fa8\"",
-      "release_etag": "W/\"03d4969bcb0c6f85fb3ff843b8ab4174fc34cbfe39039dac265f8fe5404d15e5\""
+      "repo_etag": "W/\"03b6702fc761b1072c73333b6c41d5f19100575aa0fa162e30b3e71768a0fa5c\"",
+      "release_etag": "W/\"20a57dd1c797c0fdb4fa3dbbd08e6fd8b9dbdc1f7bca1ad7e2c1f23361016752\""
     },
     "rncbc/qtractor": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/rncbc/qtractor",
       "repository": {
         "stars": 608,
@@ -2496,13 +2527,13 @@
         "pushed_at": "2026-11-13T09:21:23Z"
       },
       "release": null,
-      "repo_etag": "W/\"222efbfddf1a29d162207438f35e591f1453800640b5dac0a756805c915b54d5\"",
+      "repo_etag": "W/\"ea88be973aa650537f9f9d10945ccf123d308f5e59bac2c9a73c7d4f063ddd64\"",
       "release_etag": null
     },
     "rodzill4/material-maker": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/rodzill4/material-maker",
       "repository": {
         "stars": 6260,
@@ -2513,16 +2544,16 @@
         "tag": "1.8",
         "published_at": "2026-10-25T09:18:13Z"
       },
-      "repo_etag": "W/\"5e38492d9b4b2c29efb4682a420cabb2bed3a780896b5236ad403a2c4055ec54\"",
-      "release_etag": "W/\"21746e89205d0a800e7ab1441f271c1f0e00456072819f731bc7afa7df13b030\""
+      "repo_etag": "W/\"26170df41cadaa09bb73112954a263a0b77f63e80959e498cc95078c65bdc4a4\"",
+      "release_etag": "W/\"bdec63b6e81584e876263ffe908c857d4edf0ca8d57ed4897a4605e4ab487cc8\""
     },
     "rustdesk/rustdesk": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/rustdesk/rustdesk",
       "repository": {
-        "stars": 129418,
+        "stars": 129419,
         "archived": false,
         "pushed_at": "2026-11-14T05:05:31Z"
       },
@@ -2530,13 +2561,13 @@
         "tag": "1.5.3",
         "published_at": "2026-11-09T09:43:52Z"
       },
-      "repo_etag": "W/\"7fe0db056caf375abf9e6e0c2cfba8804b069bd585371c5f425ea2fca93930bc\"",
-      "release_etag": "W/\"ebacff426e083daf6a6d6cc7e12b8608589423300c18b9dd4d3c257ef0c0ad51\""
+      "repo_etag": "W/\"8b744b6d85757f77ac0c801d8af34273120eff8eee008900a0b10da50be933d5\"",
+      "release_etag": "W/\"a50bd37821fac4dbc044330d142973d18ec20f43c961cfde13e80332cf1482c5\""
     },
     "safing/portmaster": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/safing/portmaster",
       "repository": {
         "stars": 14085,
@@ -2547,13 +2578,13 @@
         "tag": "v2.2.8",
         "published_at": "2026-10-21T13:35:14Z"
       },
-      "repo_etag": "W/\"410a63414e0929b90a4e929afe9451c269ca88d1daad1d4ebfaef283c5ce90cc\"",
-      "release_etag": "W/\"b8be5d52870d63bed20406e720db7828ac6b2cb44b186adbe4d8ada721565cdc\""
+      "repo_etag": "W/\"53da36ace3dc9903aa7335c15c806255335567e1e0abf2ecb4335f64cfca3d57\"",
+      "release_etag": "W/\"39fe6009693b163c26143b2a562d77301da550d8f1ce2b38bb2514cbb5706524\""
     },
     "samr1/fittrackee": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/samr1/fittrackee",
       "repository": {
         "stars": 1177,
@@ -2564,13 +2595,13 @@
         "tag": "v1.3.8",
         "published_at": "2026-11-01T22:52:08Z"
       },
-      "repo_etag": "W/\"ff5bc80d07891389b9df67c70bee7b3ff0699b9e56fe8d34f9a530b9f5d07213\"",
-      "release_etag": "W/\"6daa2dc5ff9c3171c298e5e65f487ef7d03d0c6fcaf475149f640782a06479fd\""
+      "repo_etag": "W/\"e3bc8b01f71a0e70d3691fa9beb44bea6e838ceee9350ed2b694393e2178e9ce\"",
+      "release_etag": "W/\"db747150c3abc1e255f4448d275de93cbeaa4049679f7046e768799a0ad943eb\""
     },
     "satty-org/satty": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/satty-org/satty",
       "repository": {
         "stars": 2502,
@@ -2581,13 +2612,13 @@
         "tag": "v0.22.0",
         "published_at": "2026-08-03T07:51:54Z"
       },
-      "repo_etag": "W/\"73af7918a4631c28225fe1863f88ab3d9612c74575922bad88c8de34f14954f3\"",
-      "release_etag": "W/\"da680d853080792058ed1682cf636a8f1b8538bc19cd9c247403f04c2407ee29\""
+      "repo_etag": "W/\"c21cc6acd54eaac65e5826f5476d67cd3ab9dab5b886f5c78ad24951ac0121c6\"",
+      "release_etag": "W/\"3e73643e4b3429818b34526c318c2ebdbac9c3ad155b42ad922ad6aeba675771\""
     },
     "screenpipe/screenpipe": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/screenpipe/screenpipe",
       "repository": {
         "stars": 22376,
@@ -2598,13 +2629,13 @@
         "tag": "app-v2.7.145",
         "published_at": "2026-11-06T23:39:45Z"
       },
-      "repo_etag": "W/\"c9f909ece5867ebcb7b613f7059760ab1b7fc9399e65343fd394073a155c2524\"",
-      "release_etag": "W/\"cb3f7f8e8b6e74e8852d971c3e81588f876f569bba19c674e82d3eeceb7cd43f\""
+      "repo_etag": "W/\"b9c000e8b697fc6bc10d0209e4a2fa89aa52f854578cf6df2b8d84e3b0837b82\"",
+      "release_etag": "W/\"704333ee4e4ecd79a99ad6ba6cc339cdff2c8e86b2444c5329a5581ba370ce78\""
     },
     "seadve/kooha": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/seadve/kooha",
       "repository": {
         "stars": 3561,
@@ -2615,13 +2646,13 @@
         "tag": "v2.3.2",
         "published_at": "2026-06-05T06:50:47Z"
       },
-      "repo_etag": "W/\"778f71e32c5cfea8cc96c3990ad0ba13f94fd52fd800ee7a649e890cae40544c\"",
-      "release_etag": "W/\"f32de4ac5536ecf99b86ed7f65804c79b352e1bd67b1f341c126b8b7b8c879d2\""
+      "repo_etag": "W/\"c86de85132d9163099a67c9f3e6e48124205d0a60c35141578d2340b6402624d\"",
+      "release_etag": "W/\"8738ba7182891fcc009c74f0af82e773b18f5f1f5dc48f369c6a0f20cfdf5c0e\""
     },
     "sharex/sharex": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/sharex/sharex",
       "repository": {
         "stars": 41025,
@@ -2632,13 +2663,13 @@
         "tag": "v22.4.0",
         "published_at": "2026-11-08T04:17:24Z"
       },
-      "repo_etag": "W/\"40aa295296ca899fcbaf6d3d56df4225115634995000de28e91d1a267868309d\"",
-      "release_etag": "W/\"1217f9399918dc4ac603b30a239c062e0b653aa6c5191cd35d75c46933ba8e40\""
+      "repo_etag": "W/\"91e8d0a21b58ce7a11af26b30af071a1f429a5d619169c834dae9b16d91db53e\"",
+      "release_etag": "W/\"755f55ec059acf54ce35cdf6acf5d1f8b95f800b09c697efd78d54e8436253e0\""
     },
     "shutter-project/shutter": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/shutter-project/shutter",
       "repository": {
         "stars": 648,
@@ -2649,16 +2680,16 @@
         "tag": "v0.99.7",
         "published_at": "2026-05-09T16:47:13Z"
       },
-      "repo_etag": "W/\"f4651844f6359854ad1f656917c909651ebe4c41b5b1a6e2c3e794ee9be48ec0\"",
-      "release_etag": "W/\"6cdc4dd71241c888519987a54e78874bb709a69e927935648a828950613e0889\""
+      "repo_etag": "W/\"5b29765b1dfaace551bdf08b1cd2665347332e305a2ff735c165bf5b8c996a0c\"",
+      "release_etag": "W/\"9ad2dba29581f56ffb4fc39cd6dca8e2b7f29f3cd1b4351bcea18697b8d78d4f\""
     },
     "siyuan-note/siyuan": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/siyuan-note/siyuan",
       "repository": {
-        "stars": 47219,
+        "stars": 47221,
         "archived": false,
         "pushed_at": "2026-11-14T11:40:42Z"
       },
@@ -2666,13 +2697,13 @@
         "tag": "v3.8.10",
         "published_at": "2026-11-10T04:13:26Z"
       },
-      "repo_etag": "W/\"6748b1afb89fbeea61eaf9bb93217a0b16ee384f26157a065a431a0ab6eae438\"",
-      "release_etag": "W/\"af8b6f6f47d12b1abc2c9c5396af94e383412fa803650945f2a4ad0ca2d7012d\""
+      "repo_etag": "W/\"629407cb3f824b844187c9106a8d7dc65c3a7b20b8faa6582315871fc83e5895\"",
+      "release_etag": "W/\"d9cd23393c7d5df9373f211a04e59f0bb03b820b4880e41f2698b92684ccc7e5\""
     },
     "softethervpn/softethervpn": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/softethervpn/softethervpn",
       "repository": {
         "stars": 13738,
@@ -2683,13 +2714,13 @@
         "tag": "5.2.5189",
         "published_at": "2026-11-05T08:54:33Z"
       },
-      "repo_etag": "W/\"c550c6d0565a82e7ff41bf06647ff1638664635ad9fc094a72863eac431ba7a2\"",
-      "release_etag": "W/\"cbc5bf9b1ee19f7ee471067286ecc4a5322b0c54dcd055359988a8c9eda132df\""
+      "repo_etag": "W/\"7ad73420a42f0b309d5c76d1e1d8647741bd7d577d47ead79a4addcbdb4efc8e\"",
+      "release_etag": "W/\"9445da75578528dfb8a6dfdf94029a545d3515bc5f89c808e49ca5101fd58d68\""
     },
     "sqlitebrowser/sqlitebrowser": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/sqlitebrowser/sqlitebrowser",
       "repository": {
         "stars": 24788,
@@ -2700,16 +2731,16 @@
         "tag": "v3.13.1",
         "published_at": "2024-10-16T08:42:55Z"
       },
-      "repo_etag": "W/\"49f89c9a5cb2dfa7750f3649d27cfa07f8ed52b73ebb9173a3f439712cdf05cf\"",
-      "release_etag": "W/\"04f19465ab121f739c69f434c0c1cd0ebbb715df9c00684e965c3155bff50e88\""
+      "repo_etag": "W/\"f26d816efd81b48d2aa75227a26fe6d4111fbf7cb74bdc1c8f1b7f55b2d9db01\"",
+      "release_etag": "W/\"e9b53d2f4c27dea77878363c90c5562e01824d599309f54ee16715a38ccd27bc\""
     },
     "standardnotes/app": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/standardnotes/app",
       "repository": {
-        "stars": 6718,
+        "stars": 6719,
         "archived": false,
         "pushed_at": "2026-11-13T22:21:20Z"
       },
@@ -2717,13 +2748,13 @@
         "tag": "@standardnotes/desktop@3.202.11",
         "published_at": "2026-10-23T21:24:19Z"
       },
-      "repo_etag": "W/\"ba4eaf9aba630d4cfc94a96b225ed556a8ca44646ef3a3d7b557eb04a6c6c7ac\"",
-      "release_etag": "W/\"a71f0257c9012e2415eb0d60ce8bd881f02cbd77bfc16be73444f10094243afc\""
+      "repo_etag": "W/\"b6ffa0443f5a9105d7499d8b8a2098a033385677cfe5794833fd6c40be04a7cd\"",
+      "release_etag": "W/\"2fbd579298829c0ce79f0f7e5f63bd0adcb151d0168035807bf985f772da440e\""
     },
     "staxrip/staxrip": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/staxrip/staxrip",
       "repository": {
         "stars": 3042,
@@ -2734,16 +2765,16 @@
         "tag": "v2.52.6",
         "published_at": "2026-09-27T11:12:09Z"
       },
-      "repo_etag": "W/\"d8664ead81083b7a9b1a0c1a48c6af18281fbc4cebbcf5b8f2a17dec09ab3db4\"",
-      "release_etag": "W/\"80f76190f2e88f68306eb7c8c1c66908616f494487d06512aa7d89a019e556db\""
+      "repo_etag": "W/\"15b3ad18732a2fffaed36a5014b673c8896169efb7fab5ae9744dc22745a375c\"",
+      "release_etag": "W/\"853f1b704aad6ad3c5b0fb07354ad4dc03ff64dadd4be56615816b20c55021a1\""
     },
     "stirling-tools/stirling-pdf": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/stirling-tools/stirling-pdf",
       "repository": {
-        "stars": 96555,
+        "stars": 96558,
         "archived": false,
         "pushed_at": "2026-11-13T17:06:02Z"
       },
@@ -2751,13 +2782,13 @@
         "tag": "v3.3.0",
         "published_at": "2026-11-05T08:24:34Z"
       },
-      "repo_etag": "W/\"510fb9380331f62748748129a22a3ad17b0a1a09f8601829c7fa9445ba415bd4\"",
-      "release_etag": "W/\"77adb902862bc46be36e1deecf689ef0f49e00814154b1400ecba1b778e7c3d1\""
+      "repo_etag": "W/\"f431065872e872f563e77d6877d11b21822730a959efe0fc67bb55428835a63a\"",
+      "release_etag": "W/\"ed97a84235943a7db3781c39a1751ed56a8b2b3dd1684fcd42b367f1935b3cd6\""
     },
     "storytold/anicraft": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/storytold/anicraft",
       "repository": {
         "stars": 365,
@@ -2768,16 +2799,16 @@
         "tag": "v0.2.1",
         "published_at": "2026-11-12T01:41:19Z"
       },
-      "repo_etag": "W/\"13c3510a873b43a790656adb32e5d4c4cca9bc42e6d150df0871eab40218a092\"",
-      "release_etag": "W/\"fe0207f12c9eb660708bac075fd238658af96b7f47ab8a899fb3da6274d4a436\""
+      "repo_etag": "W/\"be4e6f6b09eb670567036a83595bd361e5c2037d4b6d05cdc14f8e6c62d1ed19\"",
+      "release_etag": "W/\"7f5a701f9f870bdf20a0a0a88b66c42b7681d91b58a2772c2031477aa3a6bcba\""
     },
     "storytold/artcraft": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/storytold/artcraft",
       "repository": {
-        "stars": 40995,
+        "stars": 41000,
         "archived": false,
         "pushed_at": "2026-11-12T12:22:43Z"
       },
@@ -2785,13 +2816,13 @@
         "tag": "artcraft-v0.41.1",
         "published_at": "2026-11-07T02:49:42Z"
       },
-      "repo_etag": "W/\"89713cdcfa12d1790503f7179895f2d55e8d62541c66cd231ed494b2d3e6349e\"",
-      "release_etag": "W/\"2cbd623a983d82989ce375a0d2443291177cfafc60cbe18d3688d48db29cf0f7\""
+      "repo_etag": "W/\"d0430cb7ce4f68cd9045e989e130c13599dd07f3ab5f2b5db78cd14d78591561\"",
+      "release_etag": "W/\"5ad5d855ae0b799de59e44451efb27700d088a99aa58aba8932dff4999c1b804\""
     },
     "storytold/cadcraft": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/storytold/cadcraft",
       "repository": {
         "stars": 8073,
@@ -2802,16 +2833,16 @@
         "tag": "v0.20.1",
         "published_at": "2026-11-12T00:23:37Z"
       },
-      "repo_etag": "W/\"59abbb8c4e15b7988cdcaca279351b8f060c0bfd2f05251514b50984df2f64fa\"",
-      "release_etag": "W/\"b6ee0a8df8c902cc45fbbd2481f864370d220fd6ec47aba6409d15a389582c04\""
+      "repo_etag": "W/\"6ddd9fb2bf8508f61a366e16bbd5201a9d0aa1369a9a8eafb106e730c9ea0f28\"",
+      "release_etag": "W/\"d3b31f6e6738d80fb49d9cc2e8ac46bb43fb8272710ca1e578e3c2104e6e7744\""
     },
     "storytold/craft-anything": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/storytold/craft-anything",
       "repository": {
-        "stars": 32097,
+        "stars": 32132,
         "archived": false,
         "pushed_at": "2026-11-14T10:42:47Z"
       },
@@ -2819,13 +2850,13 @@
         "tag": "v0.6.1",
         "published_at": "2026-11-12T01:41:22Z"
       },
-      "repo_etag": "W/\"3602da6d92c3dd962d6030cd1f2d51cde402ac01b08b0298fcd1a90a0e164c50\"",
-      "release_etag": "W/\"4800067bf9205fec4a9bd0819f94e245820f7379d34bd8c8e2d67bfa1c403988\""
+      "repo_etag": "W/\"df33c902951e8d1ffa41f239bb6fb47843272c75c19f4e14264930a033090d37\"",
+      "release_etag": "W/\"bf1ff380c6f346677a63ce498a808d4f707f109c2b0ae0b488908ff860ba00c0\""
     },
     "storytold/deckcraft": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/storytold/deckcraft",
       "repository": {
         "stars": 4787,
@@ -2836,33 +2867,33 @@
         "tag": "v0.18.1",
         "published_at": "2026-11-12T00:07:42Z"
       },
-      "repo_etag": "W/\"e8e99f267ff2f7d804accb0926747dcb13ffa2da62db9643b0877e61ecf9ab75\"",
-      "release_etag": "W/\"99791bae2b7e0d651cb19eef64e3a6fed359e0e2d8b92df2a9303c755fe78078\""
+      "repo_etag": "W/\"3fca7d21d1a2198564cf7e6b6c44c60879c4f4e39f35983e8cee83ddec40a22c\"",
+      "release_etag": "W/\"cca7a7e7d9fef19ba9476cc58c765b8d9c71da04cd2910aa2876095c14f5e721\""
     },
     "storytold/designcraft": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/storytold/designcraft",
       "repository": {
-        "stars": 5272,
+        "stars": 5273,
         "archived": false,
-        "pushed_at": "2026-11-14T05:37:05Z"
+        "pushed_at": "2026-11-14T12:42:07Z"
       },
       "release": {
         "tag": "v0.20.1",
         "published_at": "2026-11-12T00:16:10Z"
       },
-      "repo_etag": "W/\"c9fd87785315f606d986e7a9196d302330f496003f23310512b5833e0b657aaa\"",
-      "release_etag": "W/\"89cb04c986c6130e191bbc0cb59f06fbc8d48bd861e4c8074595a5adc21b9989\""
+      "repo_etag": "W/\"c5ad3f0bceeefac1916e1ca3770bec4658482ab655d72ecadb04f6c4d8245aae\"",
+      "release_etag": "W/\"18a2200ac39b190db89921fe03908f2db01323d093d274c6d3f19fe72dd2e628\""
     },
     "storytold/effectcraft": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/storytold/effectcraft",
       "repository": {
-        "stars": 8752,
+        "stars": 8753,
         "archived": false,
         "pushed_at": "2026-11-14T03:37:56Z"
       },
@@ -2870,13 +2901,13 @@
         "tag": "v0.24.1",
         "published_at": "2026-11-12T00:23:40Z"
       },
-      "repo_etag": "W/\"7227042a745760ae159585896c346ee2c573621df0f7798bd622434b09d8af41\"",
-      "release_etag": "W/\"f651ab349bc9e4b8ec2493a0fdff4db74994b8ed565a437df9ebdd5aade8b06c\""
+      "repo_etag": "W/\"d859ab82a079477682023c5215cd0793364eb429096967390357144074cb21d0\"",
+      "release_etag": "W/\"795fbd5f08b148293fe2ea68abec7052338098f0c382f1e57f83d1cdda38d33f\""
     },
     "storytold/figcraft": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/storytold/figcraft",
       "repository": {
         "stars": 4937,
@@ -2887,16 +2918,16 @@
         "tag": "v0.18.1",
         "published_at": "2026-11-12T01:20:50Z"
       },
-      "repo_etag": "W/\"8150f8d495cac81218a53c4181e4f204b73cc23b956b13ef50e4f98503fdf90e\"",
-      "release_etag": "W/\"1f62490a3918fcd6328e80eb85bf20f2d00dd2d834eff944fdc156a3571bbd4e\""
+      "repo_etag": "W/\"5c81361b8894996ae8ba279bb961bcd19dfb3c481a0ea428f9ce198bbfc53451\"",
+      "release_etag": "W/\"b393cb14f6db6af182470a39db0aa2570dfb49d8027637e73676763b54489f2c\""
     },
     "storytold/filmcraft": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/storytold/filmcraft",
       "repository": {
-        "stars": 18248,
+        "stars": 18250,
         "archived": false,
         "pushed_at": "2026-11-14T11:16:25Z"
       },
@@ -2904,13 +2935,13 @@
         "tag": "v0.20.1",
         "published_at": "2026-11-12T00:26:09Z"
       },
-      "repo_etag": "W/\"42862b52c4a4089ffc569440164784f6f7a8ff85c10905004626f262e4e4c295\"",
-      "release_etag": "W/\"b0e9f7194e1c4835b3cf236ebb788218a031c3bdee6982defc3587108e8aeafe\""
+      "repo_etag": "W/\"20d506d1c968d6b6f599e29446974e4d8b1fa447a7b33eac71e57143400d5a94\"",
+      "release_etag": "W/\"6dafa04f4eadb9d950dd88abc4d4c80db6abc03199bde7dcd257ed093bb1c530\""
     },
     "storytold/gridcraft": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/storytold/gridcraft",
       "repository": {
         "stars": 7526,
@@ -2921,16 +2952,16 @@
         "tag": "v0.19.1",
         "published_at": "2026-11-12T00:06:29Z"
       },
-      "repo_etag": "W/\"261c42f2820fac0ebfb7e5e8371e4a79e1f91754ec046b82fb2816707af8c10b\"",
-      "release_etag": "W/\"3a1a2dc45680ee83d69732022e82220c0fb2b5175f4ee583a8841457a16f2e41\""
+      "repo_etag": "W/\"4e9e09d1776b5812ad08ee8051cf7ac23688213f2dd8774d68cd3044014a3377\"",
+      "release_etag": "W/\"4a4f7d8a650f7d0cb6855879838435513bebb25ab86007c666e5363a68f48356\""
     },
     "storytold/lightcraft": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/storytold/lightcraft",
       "repository": {
-        "stars": 15966,
+        "stars": 15967,
         "archived": false,
         "pushed_at": "2026-11-14T12:11:58Z"
       },
@@ -2938,13 +2969,13 @@
         "tag": "v0.21.1",
         "published_at": "2026-11-12T05:08:23Z"
       },
-      "repo_etag": "W/\"d0e1ceaec6b02d4f916552b0305ea9fc1ccc75190e8daaefc20adc4e6d8ac0c8\"",
-      "release_etag": "W/\"ef0a0b5db39db46801e24e85e9b78f20f01ab7d67dd7b1b2fb46e3003947b10b\""
+      "repo_etag": "W/\"07aa299ead1484061e7c72f67127c942d7bd28a28f538e1ee5f301a01a585f5d\"",
+      "release_etag": "W/\"65493556c235e063a5c79760f7cedf298f4c0cbe4c6970a3938b750ee0bb1ed1\""
     },
     "storytold/materialcraft": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/storytold/materialcraft",
       "repository": {
         "stars": 379,
@@ -2955,16 +2986,16 @@
         "tag": "v0.4.1",
         "published_at": "2026-11-12T00:51:57Z"
       },
-      "repo_etag": "W/\"6ba573bf043da681f96741035c72019e550397eed516ba8b47bca1fee9b3024e\"",
-      "release_etag": "W/\"1439cc2e0f8f65f6de5265e96cbd93d6a55b7740a1275d164cf17f2cc970dd6f\""
+      "repo_etag": "W/\"8b41a8817246c71799526f5c4d200c803acd6684cce21e99daafb4565a6468ce\"",
+      "release_etag": "W/\"b4c6bad6455b45e60f5db97ee4f93d3c7e74ade905ba10a9f112ca0b0a071c10\""
     },
     "storytold/pdfcraft": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/storytold/pdfcraft",
       "repository": {
-        "stars": 20679,
+        "stars": 20680,
         "archived": false,
         "pushed_at": "2026-11-14T12:25:28Z"
       },
@@ -2972,16 +3003,16 @@
         "tag": "v0.21.1",
         "published_at": "2026-11-12T02:18:37Z"
       },
-      "repo_etag": "W/\"25db04b6043e276958d765ed7a839f0d08d3a3468c83b23b34a57173d23578f1\"",
-      "release_etag": "W/\"37300621e77f3989a20b05bfc3fe271c2c166a54e3c108bb34a8d8a091a8a4bb\""
+      "repo_etag": "W/\"1ebf4a1f73a1b310206bb7238990e1cb5f0ca451190ed73ebd8396df5f4e8fa8\"",
+      "release_etag": "W/\"0e2787669a9d9f2eca48035c249cf8b0afc6acf18d0b898dddd388399a29a9b7\""
     },
     "storytold/photocraft": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/storytold/photocraft",
       "repository": {
-        "stars": 79303,
+        "stars": 79307,
         "archived": false,
         "pushed_at": "2026-11-14T11:16:44Z"
       },
@@ -2989,16 +3020,16 @@
         "tag": "v0.23.1",
         "published_at": "2026-11-12T05:07:51Z"
       },
-      "repo_etag": "W/\"9f931c498cc4ece14b45e0ce6a540c5ff6067a1164c13d1254dbaa9a25ad0a0a\"",
-      "release_etag": "W/\"5362c5b8b8b69b807c67d2a356389664388ad66892a6bb86a7a93c31c6a9be7f\""
+      "repo_etag": "W/\"b1bf22939c8a21fed51d4ea5c3762728f43243922386063c2d00d0d2b8c608f0\"",
+      "release_etag": "W/\"4fa53058d8d6bfd231a5a0ac0836404c3a5c961be612aee3a9023fb8f68fc343\""
     },
     "storytold/soundcraft": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/storytold/soundcraft",
       "repository": {
-        "stars": 4345,
+        "stars": 4346,
         "archived": false,
         "pushed_at": "2026-11-13T14:03:26Z"
       },
@@ -3006,13 +3037,13 @@
         "tag": "v0.20.1",
         "published_at": "2026-11-12T00:57:13Z"
       },
-      "repo_etag": "W/\"7e1a8afc519f4d0db8a39ea1d471a7cce5c7f0e7b26a2636958ebbba271493d4\"",
-      "release_etag": "W/\"d95ff157bae30d68c21d6df7b0176127688108c84b3c143f5a3704033405e784\""
+      "repo_etag": "W/\"0c188adae1e7350eb210dad4ab4a128964b96461bfb10c269d6ba3234cd4066f\"",
+      "release_etag": "W/\"ae009ed00d2f29a2df744cf9cb0ddb553edc75a62a6b6a8dbc0e637769d603bf\""
     },
     "storytold/texturecraft": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/storytold/texturecraft",
       "repository": {
         "stars": 632,
@@ -3023,30 +3054,30 @@
         "tag": "v0.6.1",
         "published_at": "2026-11-12T00:43:50Z"
       },
-      "repo_etag": "W/\"77a8f412bc9558e399d397c7c1f628cb0e65d8c4f5c6d510a33b3a587fcd9eb9\"",
-      "release_etag": "W/\"155f0b3f5050bc1c3c5ea829b54a9a09200dda3338bff10432bd7892db8129aa\""
+      "repo_etag": "W/\"1e541470a8206717df3a5fc0ee26cb724ad55b2647b3fd308bc0d6e6641eeb4e\"",
+      "release_etag": "W/\"b6b77855cb1993060cee54610c5c79e9df937d2ded0668b22eed5339c2597e52\""
     },
     "storytold/vectorcraft": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/storytold/vectorcraft",
       "repository": {
-        "stars": 11723,
+        "stars": 11724,
         "archived": false,
-        "pushed_at": "2026-11-14T11:50:46Z"
+        "pushed_at": "2026-11-14T12:46:27Z"
       },
       "release": {
         "tag": "v0.24.1",
         "published_at": "2026-11-12T05:07:34Z"
       },
-      "repo_etag": "W/\"4d1dc08507f660248e2a8908db0fa78f1a28c6b404efb6c817e6a2f8401018e1\"",
-      "release_etag": "W/\"53945396572b3bad03b8a1021dd430773a817fc3e09d5bf5ac37ba0a3e9b37ae\""
+      "repo_etag": "W/\"34593a3da41c2dfe272c74b1f247dd283726e6faaf1a39c856c95b88137a5f4a\"",
+      "release_etag": "W/\"df6d5c30a2aeeb49df107fe41d3b9725fa37bf69250aaddb2906a3240df65fca\""
     },
     "storytold/wordcraft": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/storytold/wordcraft",
       "repository": {
         "stars": 17999,
@@ -3057,13 +3088,13 @@
         "tag": "v0.18.1",
         "published_at": "2026-11-12T00:04:47Z"
       },
-      "repo_etag": "W/\"655773ea9011b20ff0133e0056bcc824bff21b0106757fa5ad11c5bdad951fda\"",
-      "release_etag": "W/\"a217aff640092be77c2d5fc49ea50b7a3bb37bac6f6710c1c58029f6659ed766\""
+      "repo_etag": "W/\"a47832dafed725a41ba7e28cb3ff3461511e74f9ed5735e0eb7a8a536f7b315d\"",
+      "release_etag": "W/\"c10bf9e76c6d31bf3bc7d8aa6a41d4c5cf955f8b2093a5e5edac4c958c8fa1f7\""
     },
     "streetwriters/notesnook": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/streetwriters/notesnook",
       "repository": {
         "stars": 14937,
@@ -3074,13 +3105,13 @@
         "tag": "v3.4.13",
         "published_at": "2026-11-10T08:42:20Z"
       },
-      "repo_etag": "W/\"be8236268d2fd9d0efb2ce9d813fa9acd2a9b954a14162d17240cb438cb7eeb1\"",
-      "release_etag": "W/\"514875958fadac49e2df77d85e7ee7252fa66a1bac31f04dc0bbb28ce5f90ab3\""
+      "repo_etag": "W/\"c1c6dac8722ff4c10aad773e387e05589113673e08897f11b6cd397bf75b8db8\"",
+      "release_etag": "W/\"5ac726caf6c2c5fd365b74aa4fed3ec246c95befa6b8b4323074c6b0c35824ef\""
     },
     "subhra74/xdm": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/subhra74/xdm",
       "repository": {
         "stars": 8468,
@@ -3091,13 +3122,13 @@
         "tag": "v9.0.10",
         "published_at": "2026-11-12T22:55:24Z"
       },
-      "repo_etag": "W/\"9d3dfc1cb15f8deb35c4cb2e1944ff3ffd875a14fa6215a8079d23fa45d98d83\"",
-      "release_etag": "W/\"8269682581e8593d8ee19252087fe2a526f4589528297e4b42975e1623213d34\""
+      "repo_etag": "W/\"2f6bf23fc733448b9c8647ad89c85da07c7e63dccb01b0284153491488ad5877\"",
+      "release_etag": "W/\"1ca1fd4f6ecb0364d52f93b92d9145f7ebab5de3613ae105b46bf27f0ff95086\""
     },
     "subtitleedit/subtitleedit": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/subtitleedit/subtitleedit",
       "repository": {
         "stars": 14988,
@@ -3108,16 +3139,16 @@
         "tag": "v5.4.0",
         "published_at": "2026-11-06T04:47:56Z"
       },
-      "repo_etag": "W/\"8f49bcfacec8277af6ebc16d2c1f7ecb296de82b5c0a4252a6eac946bb85fe89\"",
-      "release_etag": "W/\"81c3c9cdcb3f7ce31d8b55a34af4c37a4992a8270bb0ef8fe26a081fc2514ae0\""
+      "repo_etag": "W/\"9663589f3ca797c648aa37a1d51a2ab5b778fe3ac7821b76a3c12c47d5fba50e\"",
+      "release_etag": "W/\"cab032fedeb2b53c96e99716d0cafe568d11d1d9545bd4c9f012c0d364cf8e08\""
     },
     "sumatrapdfreader/sumatrapdf": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/sumatrapdfreader/sumatrapdf",
       "repository": {
-        "stars": 17999,
+        "stars": 18000,
         "archived": false,
         "pushed_at": "2026-11-10T02:41:43Z"
       },
@@ -3125,30 +3156,30 @@
         "tag": "3.6.1rel",
         "published_at": "2026-04-06T13:47:05Z"
       },
-      "repo_etag": "W/\"5533fdfd1e11ad1743327f4125a215b2f6bb0637ca71ec50e6f07f344fa4af7d\"",
-      "release_etag": "W/\"08d5b6fa6fe00d9dd3124a906c00b232a22056483aa98da2ac1e0e30b3246354\""
+      "repo_etag": "W/\"03c193416d3d4063d4a6a45714a375b853dbf202758a9662782575a130885ebb\"",
+      "release_etag": "W/\"01e0b807ffb259a0f4b47a6630b9f1a31cfb426ace4ead7e098647defc29c3c1\""
     },
     "sunshinestream/sunshine": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/sunshinestream/sunshine",
       "repository": {
         "stars": 43390,
         "archived": false,
-        "pushed_at": "2026-11-14T12:16:51Z"
+        "pushed_at": "2026-11-14T12:33:33Z"
       },
       "release": {
         "tag": "v2026.914.233613",
         "published_at": "2026-09-15T01:17:17Z"
       },
-      "repo_etag": "W/\"94c53c029262d1c7c18bcc97bc92520f754af60ec089301089a397c5e7ff9558\"",
-      "release_etag": "W/\"14155a4c6600cd12d3b41e18a6f62552439c00d2e7ba307f6db01c8d3d6e9a8f\""
+      "repo_etag": "W/\"a6327e8f89a1388ffc040f3bde541163018c06927b61dad4a3de346b7f68256b\"",
+      "release_etag": "W/\"748081bb61e4cf5fe68c07a11e5af33824eb88c763df79d2ff7a0237a3bc19c4\""
     },
     "syncthing/syncthing": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/syncthing/syncthing",
       "repository": {
         "stars": 90423,
@@ -3159,13 +3190,13 @@
         "tag": "v2.1.7",
         "published_at": "2026-10-21T06:09:14Z"
       },
-      "repo_etag": "W/\"469f4f2a6dea5efd4834a284bcee7db46e2cf8b63599de42db79d02a8d4f68e6\"",
-      "release_etag": "W/\"ebe76f75d975aa53cbf62763389b8387927fc15ab72b4c5b439c8e45b4b6e873\""
+      "repo_etag": "W/\"0140aab621703b6dcc6454c9861e0c7cb0080c6445786e1606e8d971591f63c8\"",
+      "release_etag": "W/\"298e9b284286d0b7da9088ad18cd7c63b52c82c5fcad843a37250f165bb3e807\""
     },
     "synfig/synfig": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/synfig/synfig",
       "repository": {
         "stars": 2421,
@@ -3176,13 +3207,13 @@
         "tag": "v1.5.5",
         "published_at": "2026-03-16T08:26:12Z"
       },
-      "repo_etag": "W/\"0fcfec11019a8686d70eed48ce6ac0527fdedd5d19a4d4bd84dea0af71157a0c\"",
-      "release_etag": "W/\"3e242db1da10354e0d597a30cdc043570b7f35d2eae42bd97b4f2a7d4c2b2123\""
+      "repo_etag": "W/\"cbf6c6b7d04338457a43d1cd29f85d3e2d23e1eeff6e59a3b3b5a7e4bdbbaa40\"",
+      "release_etag": "W/\"5d42afbf3ec1e11153ab516e17d9a30ade7af0d51efdf6fb21152c86e517fb81\""
     },
     "tahoma2d/tahoma2d": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/tahoma2d/tahoma2d",
       "repository": {
         "stars": 690,
@@ -3193,16 +3224,16 @@
         "tag": "v1.6.3",
         "published_at": "2026-09-01T10:49:29Z"
       },
-      "repo_etag": "W/\"3ae994e8a78f5ea70254d1e4551d91f5f1abd9128f095a99c87dade2618e0ccf\"",
-      "release_etag": "W/\"f891a9df68893c554fbfbc45f26b8795247ebabb9b42e5c34a67659d2bc79e4c\""
+      "repo_etag": "W/\"5b15a780d40f1d71f601d47d7dc290673e50bb06e50a33b57d816f46a634166f\"",
+      "release_etag": "W/\"7763ba6866f59538374863dbfad5bcfedb4776e3c6b61212e2cd55f6e265e315\""
     },
     "tailscale/tailscale": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/tailscale/tailscale",
       "repository": {
-        "stars": 39085,
+        "stars": 39086,
         "archived": false,
         "pushed_at": "2026-11-14T00:33:01Z"
       },
@@ -3210,13 +3241,13 @@
         "tag": "v1.104.7",
         "published_at": "2026-11-12T22:56:51Z"
       },
-      "repo_etag": "W/\"ed7df1cb7680b4f9ae510c906959d48d0c6999d75b9f7c2adb2bae839a24acbe\"",
-      "release_etag": "W/\"3ee934a128c7bdea2cf21d308162a9d9a64a1fb0f81cc4ccf66c5ec15c400093\""
+      "repo_etag": "W/\"0c1d3c3e77fa4f1919d7a0e68d1fdf709fcbe348d1df17cccdc20eaf3504db17\"",
+      "release_etag": "W/\"9beafc08349160836caade31f0cc2c9fee6b4f6cf700daf9599dbb97fcdb31e5\""
     },
     "tannerhelland/photodemon": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/tannerhelland/photodemon",
       "repository": {
         "stars": 2430,
@@ -3227,13 +3258,13 @@
         "tag": "v2025.12",
         "published_at": "2025-12-12T18:15:42Z"
       },
-      "repo_etag": "W/\"d879b3cb20f202509b02ac0735e9844d1cfad6939cc0549a211c640539afe742\"",
-      "release_etag": "W/\"f77c6d6ba304b1778178821a1ae14e9a1932ef67e9ccfc3d923cb0facf7d02bc\""
+      "repo_etag": "W/\"d4ebefe6df5675c2b380001b78feca9269298c30dbc02ab4fff84858e62112e0\"",
+      "release_etag": "W/\"bc540c59085366dc5d51cc470c1f23fb9a593bcf3624b5ae9c3d107d32d6e339\""
     },
     "tenacityteam/tenacity": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/tenacityteam/tenacity",
       "repository": {
         "stars": 827,
@@ -3241,13 +3272,13 @@
         "pushed_at": "2026-11-12T18:45:44Z"
       },
       "release": null,
-      "repo_etag": "W/\"fe12a8326bcf8948cbd83ea58d6aad17caaed74f6f66f56c1e9b7ee2629b02f7\"",
+      "repo_etag": "W/\"fa4aeb1c8d9ecd70f0ab6f30658355b469029097cffd574277d6535d97367e45\"",
       "release_etag": null
     },
     "thewh1teagle/vibe": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/thewh1teagle/vibe",
       "repository": {
         "stars": 8098,
@@ -3258,13 +3289,13 @@
         "tag": "v3.3.5",
         "published_at": "2026-11-13T17:53:14Z"
       },
-      "repo_etag": "W/\"dfb478f7ab95c903942c274b60a1eec98421d5552a5435d4f922346cb2a99bb3\"",
-      "release_etag": "W/\"d1bd76a5c6daf1115a1c7db49d8cb7d07a043cb81407a60a56a5da3fcd22608c\""
+      "repo_etag": "W/\"30c6479dcafc496bf6d9f227f340c0b25e86839703bf56e104198e4978b6e440\"",
+      "release_etag": "W/\"54673349b3f1fbc5f7a65be7b14145bc556fb5f8a560a3bba1622f3a90a981ca\""
     },
     "tigervnc/tigervnc": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/tigervnc/tigervnc",
       "repository": {
         "stars": 7726,
@@ -3275,16 +3306,16 @@
         "tag": "v1.16.2",
         "published_at": "2026-03-26T20:49:14Z"
       },
-      "repo_etag": "W/\"6a068ce59c9e7e97e23b06dea93844f1c162e29b4de08e57137f8a9ed4a3798f\"",
-      "release_etag": "W/\"e644ba33a680c00394490a10a1cc4582d894f4a871815348f0d4b8335fefb4dd\""
+      "repo_etag": "W/\"ef7b8f650680976695407f25615ecee962753427f2b9dcb1d6d401cfaa486c0d\"",
+      "release_etag": "W/\"b92323c2e43ab3a0f02c82306f7fd9e567504f47beb39dc1dfd31598a28fc9e7\""
     },
     "toeverything/affine": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/toeverything/affine",
       "repository": {
-        "stars": 74521,
+        "stars": 74522,
         "archived": false,
         "pushed_at": "2026-11-13T09:54:34Z"
       },
@@ -3292,13 +3323,13 @@
         "tag": "v0.27.4",
         "published_at": "2026-08-18T16:51:39Z"
       },
-      "repo_etag": "W/\"e13bc8ec2129c45526393c6c48da925d76bf906c0dcffc876c28982b6134555b\"",
-      "release_etag": "W/\"708ffb04def34142d898b85370cc8402c9135493ededbe1c6242c9cbcb8049d1\""
+      "repo_etag": "W/\"fda90dc50aa2562b9eea20687234ffd41572ea96dd16c47d9b82fcd03370f14c\"",
+      "release_etag": "W/\"45124f8f0d3d9c9536ccbe0e485fab9c95ab28c0b86e9c57b9457404347ca69d\""
     },
     "torakiki/pdfsam": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/torakiki/pdfsam",
       "repository": {
         "stars": 4671,
@@ -3309,13 +3340,13 @@
         "tag": "v6.0.10",
         "published_at": "2026-11-04T14:14:56Z"
       },
-      "repo_etag": "W/\"cb80490ffb1f5bda26a18a753d480f238e13a3f6a9099668bb6144eda0478a46\"",
-      "release_etag": "W/\"d6cad2fd84e2077bdf35da26aee0255a54e586c73d03f7982d76105d8b4d36f8\""
+      "repo_etag": "W/\"467df600fba1ca30555d9e1e84ee3a72ec892396429f6e0a364b54070350a084\"",
+      "release_etag": "W/\"733550a0aef285e7025a306604e5acd0b2dec2bc4bcc37532c59bc8f2614f7f6\""
     },
     "transmission/transmission": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/transmission/transmission",
       "repository": {
         "stars": 15417,
@@ -3326,13 +3357,13 @@
         "tag": "4.1.4",
         "published_at": "2026-10-24T00:28:28Z"
       },
-      "repo_etag": "W/\"8edcdd4cae3b6063423e712b4e3285a68dee55c6db788e7df2054740be80f026\"",
-      "release_etag": "W/\"99bbc41be4d6e759744db941f9a936f373e881d892fa03878f7a690f8dedd44b\""
+      "repo_etag": "W/\"d7f9336497401402398cd7eec0ab7fc6538152cfd2157f1b650c480be9825922\"",
+      "release_etag": "W/\"8c2b5123212bd8864c874f410de9ffdb706794b7d9d3a37733e8384eb2569057\""
     },
     "triliumnext/notes": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/triliumnext/notes",
       "repository": {
         "stars": 2922,
@@ -3343,16 +3374,16 @@
         "tag": "v0.95.0",
         "published_at": "2025-06-15T21:12:04Z"
       },
-      "repo_etag": "W/\"ea6d60b16e07ca0aacdb337749c02f6836e536b0cca604f5bde7ec5da0c4d0d3\"",
-      "release_etag": "W/\"3c2e9023b096d329fb4314eab6bd6436e6eb0627f65eb65f2147c95a1d223522\""
+      "repo_etag": "W/\"2c1ca1c9c09cbe91b98047b4fcef264feae9ffa851cb7813cc127cffd1db6419\"",
+      "release_etag": "W/\"0cb81019928ab6e848ed8023624903ef46f447a89b2b8c05e0da0389a3f21602\""
     },
     "tw93/mole": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/tw93/mole",
       "repository": {
-        "stars": 75000,
+        "stars": 75004,
         "archived": false,
         "pushed_at": "2026-11-14T03:07:55Z"
       },
@@ -3360,13 +3391,13 @@
         "tag": "V1.72.0",
         "published_at": "2026-11-14T03:08:17Z"
       },
-      "repo_etag": "W/\"c7a7679897137f0b02ef3fc9c3b01a7dfa7668317f95ade1f775b3295dcfd811\"",
-      "release_etag": "W/\"4497a96ce140eae96c84d341694f965a830ad54f2e256a7cfde71a1fb81634ae\""
+      "repo_etag": "W/\"82b44de37dc6da4fd25cce2a494cd33cccfa55826e13c763d1c109e1381825f4\"",
+      "release_etag": "W/\"5fc36f6f59844fa0f477820be039f51c8586aeb7202cada0e8624c2a3ec45c01\""
     },
     "ulauncher/ulauncher": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/ulauncher/ulauncher",
       "repository": {
         "stars": 4540,
@@ -3377,13 +3408,13 @@
         "tag": "5.16.3",
         "published_at": "2026-11-04T07:51:43Z"
       },
-      "repo_etag": "W/\"47d874375b36be5ae114dd4b3478e854d2827c78311b7bd3aae9c204ac78c27f\"",
-      "release_etag": "W/\"e8bd7e8dd7c48a77b499cc15c4a469c606f4e5cc08546dbe5a95e454d0cc19fe\""
+      "repo_etag": "W/\"ff4a7c6e82c33374a86730de5c7c280f143f27b9ac1afbd105cc49493a11764a\"",
+      "release_etag": "W/\"862267bfe8375b57c7bf10db1c038de8d51ffc558382bd228c245df29a2e416e\""
     },
     "ultravnc/ultravnc": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/ultravnc/ultravnc",
       "repository": {
         "stars": 1544,
@@ -3391,13 +3422,13 @@
         "pushed_at": "2026-11-13T18:44:11Z"
       },
       "release": null,
-      "repo_etag": "W/\"f792c8c13c74f1d6ea1ca03ac957d5b700fe31e5dbc8c2bb10678006e04ece9e\"",
+      "repo_etag": "W/\"6398fc9e372f87d07ef0f61ddc9ec4e43da8a2f9692246ee5b5940a401bc5d16\"",
       "release_etag": null
     },
     "usebruno/bruno": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/usebruno/bruno",
       "repository": {
         "stars": 48396,
@@ -3408,13 +3439,13 @@
         "tag": "v4.3.0",
         "published_at": "2026-10-22T12:11:41Z"
       },
-      "repo_etag": "W/\"19f5ddbbd9c61d2645a58a0fc28279dfc73f756d8db2f53f08f4afeefd4b03e3\"",
-      "release_etag": "W/\"47bba6f006e0684f4ef111c3b3fc986a74af8916097863d54ce40b7c418de105\""
+      "repo_etag": "W/\"16cef26405e8b378c33174db24f4c7de268b6c07d8c00715a67990d6a2ad7270\"",
+      "release_etag": "W/\"4589c44d623645b88c494ce22b8fd484cf8a142dc3b84a8f8b674b1624d5b199\""
     },
     "videolan/vlc": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/videolan/vlc",
       "repository": {
         "stars": 20455,
@@ -3422,13 +3453,13 @@
         "pushed_at": "2026-11-14T10:33:07Z"
       },
       "release": null,
-      "repo_etag": "W/\"a7ae51b23fdbcb2ccfb3042a06f82a4566de84f066c33fdecbaab93e2589cb3c\"",
+      "repo_etag": "W/\"5b1832ee5ce62a17d3878dcaaacceb41f9c8f77e1feb293aaf57562de1c021f0\"",
       "release_etag": null
     },
     "vim/vim": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/vim/vim",
       "repository": {
         "stars": 41321,
@@ -3436,13 +3467,13 @@
         "pushed_at": "2026-11-14T03:33:36Z"
       },
       "release": null,
-      "repo_etag": "W/\"565e60b55bd1723cd6aa2b2c40385003d5762a9dcee3c6ae8d5eb3a00de11150\"",
+      "repo_etag": "W/\"f075395b64a97184fcf4bcfb1ddadae1994876c123d9dc7b7b81bc3a0ee80e2e\"",
       "release_etag": null
     },
     "vkohaupt/vokoscreenng": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/vkohaupt/vokoscreenng",
       "repository": {
         "stars": 1527,
@@ -3453,13 +3484,13 @@
         "tag": "4.11.0",
         "published_at": "2026-10-02T23:36:28Z"
       },
-      "repo_etag": "W/\"9eb6d67d97bc3217e6b5264db9af90b58c37845de8605d440cd129e66c029147\"",
-      "release_etag": "W/\"5a42f10d971cd11e8cb3b3de2e411786938efa3e4db3fb293dd74ff659cd3cdf\""
+      "repo_etag": "W/\"306639ce80bc8f1ea2dce35ac5169e84538345b9224d65139acfba7d33b86109\"",
+      "release_etag": "W/\"3e639da06f94bc30067e1f246f1034c2a0d47e12e376da1a4be8e9d6f6eb873a\""
     },
     "vscodium/vscodium": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/vscodium/vscodium",
       "repository": {
         "stars": 34104,
@@ -3470,13 +3501,13 @@
         "tag": "1.143.17232",
         "published_at": "2026-10-28T08:54:31Z"
       },
-      "repo_etag": "W/\"e1e235aeecdc496c2b3ed9041f67151f265d0fc41fddf20ff327cc8ce0fc1cbe\"",
-      "release_etag": "W/\"becec460696be3d4e1759d143f3da3517de2d7a06dc66a7214a96407692220a3\""
+      "repo_etag": "W/\"cdbfe3fd881caf92736a0608400964a3d90b926a2549d4f748b7529f216032d8\"",
+      "release_etag": "W/\"8b7c0b5f6022eb9970fef3318dbb44aa35b8c413e743b30a92c6d6514333df9e\""
     },
     "wazuh/wazuh": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/wazuh/wazuh",
       "repository": {
         "stars": 17736,
@@ -3487,13 +3518,13 @@
         "tag": "v4.14.10",
         "published_at": "2026-11-09T10:33:53Z"
       },
-      "repo_etag": "W/\"c934d068d2f15cade928cb9e8ad4413b7342e319d55d6be76409c0faedd3aabb\"",
-      "release_etag": "W/\"c7ff81424b8d2f4d1d2df83365dbf1284129988d01061ab90ab2a33d928c05d3\""
+      "repo_etag": "W/\"916c369f2ff4ca59bdd88a6cf3fdd9fe514884cd7bf885bb8d66895bd80f9f5f\"",
+      "release_etag": "W/\"fa6c2a3671bedb8a631ac93f2319ea972f6a250cec26e1058cad872ff4cf1a02\""
     },
     "wger-project/wger": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/wger-project/wger",
       "repository": {
         "stars": 7270,
@@ -3504,13 +3535,13 @@
         "tag": "2.7",
         "published_at": "2026-09-03T09:33:59Z"
       },
-      "repo_etag": "W/\"28bf8ee58ba25672c302f511bac02e1b54a57665b8af31da42457f7da1b18e63\"",
-      "release_etag": "W/\"0c8129077545860cd861dd4f3a58c9e669c9715e790b56c21d78848bab3dcce0\""
+      "repo_etag": "W/\"deb216475c0d96c82ba91b413e40c49ac468f4f8609022c99a3d0610ea37ba08\"",
+      "release_etag": "W/\"c7d88cc600103688792861a44fc05715fc5eb731566c47d56d9178a01cc6e642\""
     },
     "windirstat/windirstat": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/windirstat/windirstat",
       "repository": {
         "stars": 4530,
@@ -3521,13 +3552,13 @@
         "tag": "release/v2.9.3",
         "published_at": "2026-10-11T23:00:01Z"
       },
-      "repo_etag": "W/\"9b05031c27ac182aa245e3f17bf94c5c96d29dd8711dbc7ec2b9fa51541cbdc2\"",
-      "release_etag": "W/\"27bc309b06ed12b3f5afe7d165f65281c0dc09f4116cace70177f7df06f82bec\""
+      "repo_etag": "W/\"22f144f1f85ac796f18435b618c0b1fc637777fbe23064712de0f086e16cd869\"",
+      "release_etag": "W/\"bcce57679cdbfb2c146bf3f4ebe42f6a76d9e1880dfb39b5c2900c435ce1114e\""
     },
     "wireguard/wireguard-tools": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/wireguard/wireguard-tools",
       "repository": {
         "stars": 743,
@@ -3535,13 +3566,13 @@
         "pushed_at": "2026-11-10T16:31:54Z"
       },
       "release": null,
-      "repo_etag": "W/\"32423979c23c11dbf3ef7f401f9dcec03c1ce8768211ece57b653b737f95e2f3\"",
+      "repo_etag": "W/\"2f2167c25b6a32105994e0d12a455d6343fcc8b75de2d9c85ae806262df6a3e5\"",
       "release_etag": null
     },
     "wox-launcher/wox": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/wox-launcher/wox",
       "repository": {
         "stars": 27641,
@@ -3552,13 +3583,13 @@
         "tag": "v2.5.0",
         "published_at": "2026-11-09T06:12:08Z"
       },
-      "repo_etag": "W/\"b8ef83926b3a1c7de294cce3ef3906bef6b2a85e4cedc0b4639f5d5660e54391\"",
-      "release_etag": "W/\"bd9eae950189fc878664bbd5d2ac44c377a79b6996d0359754d4cf49f489121b\""
+      "repo_etag": "W/\"e5ff70d9c44bd0fe7a8ff8e196d4c20e18bc73c8cd377b4c4281d578ff3a4ee8\"",
+      "release_etag": "W/\"2cac7b0a99039de0f4a25c15f7f23545de26e9772e1dceafc3c03523c74a9a73\""
     },
     "wulkano/kap": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/wulkano/kap",
       "repository": {
         "stars": 19427,
@@ -3569,30 +3600,30 @@
         "tag": "v3.6.0",
         "published_at": "2022-10-27T18:41:50Z"
       },
-      "repo_etag": "W/\"4fb2a170d74b99e2b2aafbd76a66a81025357043a4dced6c192b55982ccbfef7\"",
-      "release_etag": "W/\"505592efca39d88ef2e9e363721bded440f94d5c79fccd64e93fddcc6b4a5158\""
+      "repo_etag": "W/\"bfc4471f43b40771f6634eb751355502d4b68068907f3a37832ce5eaa17c1231\"",
+      "release_etag": "W/\"ce7ddb5d8364e1aaf19d3fc709bde33f943145433067b9ee02d3ebcee94bba84\""
     },
     "xournalpp/xournalpp": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/xournalpp/xournalpp",
       "repository": {
         "stars": 15677,
         "archived": false,
-        "pushed_at": "2026-11-14T12:16:44Z"
+        "pushed_at": "2026-11-14T12:31:27Z"
       },
       "release": {
         "tag": "v1.3.8",
         "published_at": "2026-09-26T06:23:53Z"
       },
-      "repo_etag": "W/\"63e200244ae0be699652fa96c14bad9b0db64553227c7b7cbc854d17eb41e335\"",
-      "release_etag": "W/\"9309382d1684dab0e133ff61b505c10e5e34100a752f3bc80adbcabc7f92194e\""
+      "repo_etag": "W/\"7b971ebb76b1f17cdb4f48a3c174e033ccf7b1bc0c4ec677a4d5b930eeadc53c\"",
+      "release_etag": "W/\"2c4955409abe087613379428127aef437b81bbf3811eba6a950c0c0b4fb9ae32\""
     },
     "xushengfeng/esearch": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/xushengfeng/esearch",
       "repository": {
         "stars": 7427,
@@ -3603,13 +3634,13 @@
         "tag": "15.8.0",
         "published_at": "2026-11-11T15:39:10Z"
       },
-      "repo_etag": "W/\"d8704bbc294b5caf0bd000cc6c92fa541140574ccdc49c1c60cff0f2d16abebd\"",
-      "release_etag": "W/\"1a03145ecd9abd1bfc7433147b29ffe0cc55c8b4acb4804f214f6e4e6a2a47f2\""
+      "repo_etag": "W/\"232fda1ae54fbf3e582127684263b28b9d60a01bab75fc9af827094c79285b2f\"",
+      "release_etag": "W/\"304cb51755b126d074d03f80ed3057a505c51ce26dc97a11c6f900d859ec4c39\""
     },
     "ylianst/meshcentral": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/ylianst/meshcentral",
       "repository": {
         "stars": 7688,
@@ -3620,16 +3651,16 @@
         "tag": "1.3.1",
         "published_at": "2026-10-23T16:59:57Z"
       },
-      "repo_etag": "W/\"5363233b7474e20eb983bb66a4005760beaeca35bc463a44d928538b998c326c\"",
-      "release_etag": "W/\"0ee7ac7eba0249674cca6df6f84d969b497e382ab51c69e6e6588ac3bca887d5\""
+      "repo_etag": "W/\"58e8b5d891929d4c4c39a01dcd280873f3ac46f954b1a23620977cdce730613f\"",
+      "release_etag": "W/\"06e6fd8108b96d1c4b83f6fee15ac959130879fe1ee7ea6cad31ea45e8a350f7\""
     },
     "yt-dlp/yt-dlp": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/yt-dlp/yt-dlp",
       "repository": {
-        "stars": 207707,
+        "stars": 207712,
         "archived": false,
         "pushed_at": "2026-11-04T07:16:27Z"
       },
@@ -3637,16 +3668,16 @@
         "tag": "2026.10.26",
         "published_at": "2026-10-26T22:25:26Z"
       },
-      "repo_etag": "W/\"9d3feaba85f35715157de0eeecf2f430c4930a7e5268ebc98ec007fc04bda375\"",
-      "release_etag": "W/\"5c2bfc9f3d824b6101a1a9c975f8077ed2678fa99a9cc11a0a5faafb152e21f7\""
+      "repo_etag": "W/\"268a0c31ae341bf24d8fd60fa2a4ef49d4410f1565b62e8b7f3124305c7018b3\"",
+      "release_etag": "W/\"1adf71e3d2f4c74ee18469d7ee81c2471c96aab9300d6ba5a02e8f09935f8b20\""
     },
     "zed-industries/zed": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/zed-industries/zed",
       "repository": {
-        "stars": 95015,
+        "stars": 95018,
         "archived": false,
         "pushed_at": "2026-11-14T11:46:13Z"
       },
@@ -3654,13 +3685,13 @@
         "tag": "v1.28.1",
         "published_at": "2026-11-11T19:08:27Z"
       },
-      "repo_etag": "W/\"243ae36756b210b7414cb44d6cb935502f2429d9e4933756209512f29e890d6e\"",
-      "release_etag": "W/\"41c99e92b4d3388ffea3133989682bbf9fa9adc11ab90d886b8a9b87a81a9f01\""
+      "repo_etag": "W/\"9bd7a5d24047fd0ab2f1ed663c2ba16d1b187ea5d1d0275343186adbbb331938\"",
+      "release_etag": "W/\"a138c3fcc116ebe0e2275e874c2f74ad9c5e7b9b31d2b5e155900adeafa98d38\""
     },
     "zrythm/zrythm": {
       "status": "ok",
-      "checked_at": "2026-11-14T12:26:51.405Z",
-      "synced_at": "2026-11-14T12:26:51.405Z",
+      "checked_at": "2026-11-14T12:47:52.980Z",
+      "synced_at": "2026-11-14T12:47:52.980Z",
       "source": "https://api.github.com/repos/zrythm/zrythm",
       "repository": {
         "stars": 3205,
@@ -3671,8 +3702,8 @@
         "tag": "v1.0.0",
         "published_at": "2024-11-21T14:23:39Z"
       },
-      "repo_etag": "W/\"16ec00271fc6d2a22eb4ed75166f70f96135c68a665fe28cb46361465150c4ae\"",
-      "release_etag": "W/\"ecd00cfa9ccb62b3f5ddbb3cf437a589195b4e4556d958fa2c5c149f88dc7323\""
+      "repo_etag": "W/\"a19a5b4e436145df6add87ef9f4e92eb86868c8a321fd19b2ade3d5e00ca1d6c\"",
+      "release_etag": "W/\"06837d677418f9574a267f13aa1d4d21e8bf4048c2248097008fe8aa73491219\""
     }
   }
 }
