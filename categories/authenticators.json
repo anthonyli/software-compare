@@ -40,7 +40,7 @@
       "pricing_model": "免费",
       "price_summary": "验证器应用免费；云账户或组织服务另受对应条款约束。",
       "prices": [],
-      "free_tier_limits": "以官方应用当前说明为准，不将免费验证器等同于免费企业身份服务。",
+      "free_tier_limits": "官方称备份端到端加密，并建议另设备份密码；同系统云同步，跨 iOS/Android 使用文件迁移。浏览器扩展需配合手机，不是独立桌面密码库。",
       "github_stars": null,
       "latest_release": null,
       "latest_release_date": null,
@@ -53,7 +53,8 @@
           "value": "yes"
         },
         "cloud_backup": {
-          "value": "yes"
+          "value": "yes",
+          "note": "官方称备份端到端加密，并建议另设备份密码；同系统云同步，跨 iOS/Android 使用文件迁移。浏览器扩展需配合手机，不是独立桌面密码库。"
         },
         "encrypted_export": {
           "value": "yes"
@@ -90,7 +91,7 @@
       "pricing_model": "免费",
       "price_summary": "验证器应用免费；云账户或组织服务另受对应条款约束。",
       "prices": [],
-      "free_tier_limits": "以官方应用当前说明为准，不将免费验证器等同于免费企业身份服务。",
+      "free_tier_limits": "同步时加密数据存储于 Ente 服务；离线模式不提供云恢复。支持导入导出，密码加密导出格式未在本次资料中核实。",
       "github_stars": null,
       "latest_release": null,
       "latest_release_date": null,
@@ -103,7 +104,8 @@
           "value": "yes"
         },
         "cloud_backup": {
-          "value": "yes"
+          "value": "yes",
+          "note": "同步时加密数据存储于 Ente 服务；离线模式不提供云恢复。支持导入导出，密码加密导出格式未在本次资料中核实。"
         },
         "encrypted_export": {
           "value": "unknown"
@@ -132,7 +134,7 @@
       "pricing_model": "免费",
       "price_summary": "验证器应用免费；云账户或组织服务另受对应条款约束。",
       "prices": [],
-      "free_tier_limits": "以官方应用当前说明为准，不将免费验证器等同于免费企业身份服务。",
+      "free_tier_limits": "加密库使用 AES-256-GCM；可导出明文或加密文件并自动备份至选定位置。没有内置跨设备云同步，外部备份位置不等于实时同步。",
       "github_stars": null,
       "latest_release": null,
       "latest_release_date": null,
@@ -145,7 +147,8 @@
           "value": "yes"
         },
         "cloud_backup": {
-          "value": "partial"
+          "value": "partial",
+          "note": "加密库使用 AES-256-GCM；可导出明文或加密文件并自动备份至选定位置。没有内置跨设备云同步，外部备份位置不等于实时同步。"
         },
         "encrypted_export": {
           "value": "yes"
@@ -176,7 +179,7 @@
       "pricing_model": "免费",
       "price_summary": "验证器应用免费；云账户或组织服务另受对应条款约束。",
       "prices": [],
-      "free_tier_limits": "以官方应用当前说明为准，不将免费验证器等同于免费企业身份服务。",
+      "free_tier_limits": "官方只在所核实资料中说明传输和静态加密，不据此标成端到端加密。不登录时密钥仅保存在设备；手动迁移需要原设备。当前应用不以历史开源代码库代表。",
       "github_stars": null,
       "latest_release": null,
       "latest_release_date": null,
@@ -189,7 +192,8 @@
           "value": "yes"
         },
         "cloud_backup": {
-          "value": "yes"
+          "value": "yes",
+          "note": "官方只在所核实资料中说明传输和静态加密，不据此标成端到端加密。不登录时密钥仅保存在设备；手动迁移需要原设备。当前应用不以历史开源代码库代表。"
         },
         "encrypted_export": {
           "value": "unknown"
@@ -219,7 +223,7 @@
       "pricing_model": "免费",
       "price_summary": "验证器应用免费；云账户或组织服务另受对应条款约束。",
       "prices": [],
-      "free_tier_limits": "以官方应用当前说明为准，不将免费验证器等同于免费企业身份服务。",
+      "free_tier_limits": "备份仅同系统恢复，iOS 备份不能恢复到 Android。工作/学校账户与无密码凭据仅保留名称，恢复后需重新登录注册；不是全部凭据无损迁移。微软文档预告 Android 备份将在 2027 年 1 月改用 Google One，未来需重新核实。",
       "github_stars": null,
       "latest_release": null,
       "latest_release_date": null,
@@ -232,7 +236,8 @@
           "value": "partial"
         },
         "cloud_backup": {
-          "value": "yes"
+          "value": "yes",
+          "note": "备份仅同系统恢复，iOS 备份不能恢复到 Android。工作/学校账户与无密码凭据仅保留名称，恢复后需重新登录注册；不是全部凭据无损迁移。微软文档预告 Android 备份将在 2027 年 1 月改用 Google One，未来需重新核实。"
         },
         "encrypted_export": {
           "value": "unknown"
