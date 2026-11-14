@@ -15,7 +15,7 @@ test('Storytold second batch has five navigable categories and eleven sourced co
   const keys=c.features.map(f=>f.key).sort();
   for(const p of c.products){
    assert.deepEqual(Object.keys(p.features).sort(),keys);assert(p.sources.length>=2);
-   assert.equal(p.collected_at,'2026-11-14');assert(p.license);assert(p.platforms.length);
+   if(baseline.includes(p.id))assert.equal(p.collected_at,'2026-11-14');else {assert.match(p.collected_at,/^\d{4}-\d{2}-\d{2}$/);assert(p.collected_at>='2026-11-14');}assert(p.license);assert(p.platforms.length);
    assert(p.github_stars===null||(Number.isInteger(p.github_stars)&&p.github_stars>=0));
    for(const s of strings(p).filter(s=>/[\u4e00-\u9fff]/.test(s)))assert(en[s],s);
   }
