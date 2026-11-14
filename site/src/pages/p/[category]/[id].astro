@@ -219,7 +219,7 @@ const hostNoteZh = cleanPublicText(product.source_host_note);
           {showLicense && (
             <>
               <dt><T zh={ui.zh.license} en={ui.en.license} /></dt>
-              <dd>{licenseText}</dd>
+              <dd><T zh={licenseText} en={tr(licenseText)} /></dd>
             </>
           )}
           {product.github_url && product.archived !== null && (<>
