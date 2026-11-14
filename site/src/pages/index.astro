@@ -9,7 +9,12 @@ import { ui, uiT, catPair, groupPair } from "../i18n";
 
 const { categories, issues } = loadCatalog();
 const bySlug = new Map(categories.map((c) => [c.slug, c]));
-const groups = categoryGroups
+// Prioritize media on the homepage without changing shared navigation order.
+const homeGroups = [
+  ...categoryGroups.filter((group) => group.id === "media"),
+  ...categoryGroups.filter((group) => group.id !== "media"),
+];
+const groups = homeGroups
   .map((g) => ({
     ...g,
     nameEn: groupPair(g.id, g.name).en,
