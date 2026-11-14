@@ -9,7 +9,7 @@
   "云分享": "Cloud sharing",
   "无水印免费版": "No watermarkfree edition",
   "跨平台开源录屏与直播工具，功能完整且完全免费，学习曲线相对较陡。": "A cross-platform open-source screen-recording and livestreaming tool, full-featured and completely free, with a relatively steep learning curve.",
-  "完全免费": "Free",
+  "完全免费": "Completely free",
   "全部功能": "All features",
   "免费": "Free",
   "可作为场景来源叠加": "Can be overlaid as a scene source",
@@ -1899,5 +1899,13 @@
   "免费受限 / 商业授权": "Limited free access / commercial license",
   "个人非商业用途可免费；商业用途需付费订阅，另有 30 天试用。不是对所有工作场景免费。": "Free for personal non-commercial use; commercial use requires a paid subscription, with a separate 30-day trial. Not free for every work scenario.",
   "非商用许可需联网登录 JetBrains 账号激活，2025.2.4 之前版本不支持；计划获得商业收益的项目应使用商业许可。数据库驱动、平台和版本影响支持范围。": "Non-commercial activation requires an online JetBrains account and is unavailable before 2025.2.4. Projects intended for commercial benefit need a commercial license. Drivers, platforms and versions affect database support.",
-  "面向开发者的跨平台数据库 IDE，提供 SQL 辅助、数据表编辑和多格式导入导出；不是数据库服务器或自动备份服务。": "Cross-platform database IDE with SQL assistance, table editing and multi-format import/export; not a database server or automatic backup service."
+  "面向开发者的跨平台数据库 IDE，提供 SQL 辅助、数据表编辑和多格式导入导出；不是数据库服务器或自动备份服务。": "Cross-platform database IDE with SQL assistance, table editing and multi-format import/export; not a database server or automatic backup service.",
+  "非商业免费 / 商业付费": "Free non-commercial / paid commercial",
+  "Apprentice 学习及非商业项目免费；Indie 和商业版本另有付费授权与资格要求，不能把学习版当商业免费版。": "Apprentice is free for learning and non-commercial projects; Indie and commercial editions have separate paid licenses and eligibility rules.",
+  "Apprentice 许可每次 30 天，可反复续期，并非仅试用 30 天；采用非商业文件格式，渲染限 1080p，除 .picnc 外输出带水印，不支持第三方渲染器或商业混合管线。": "Apprentice licenses last 30 days and can be renewed repeatedly, not just a one-time trial. Non-commercial files, 1080p renders, watermarks except .picnc, no third-party renderers or mixed commercial pipeline.",
+  "程序化 3D 建模、绑定、动画和特效模拟套件；适合需要可重复参数化流程的创作者，学习和硬件门槛较高。": "Procedural 3D modeling, rigging, animation and effects suite for repeatable parameterized workflows, with substantial learning and hardware demands.",
+  "包含渲染能力；Apprentice 的分辨率、水印和渲染器限制见免费版说明，不代表各版本无差别。": "Rendering is included; Apprentice resolution, watermark and renderer restrictions are listed under free limits, not equivalent across editions.",
+  "软件免费开源，可用于商业创作；可选培训、支持、素材及插件需另查费用和许可。": "Free and open-source software usable for commercial creation; optional training, support, assets and add-ons have separate costs and licenses.",
+  "基于 Blender 的界面分支，不是全新的渲染引擎；插件、文件与教程须核对底层 Blender 版本及快捷键差异，不保证全部兼容。未实测 M4 16GB。": "A Blender interface fork, not a new rendering engine. Check underlying Blender versions and keymap differences for add-ons, files and tutorials; full compatibility is not guaranteed. M4 16GB not tested.",
+  "重新整理菜单、图标与操作流程的 Blender 分支，覆盖建模、绑定、动画和渲染，适合偏好图形化操作的创作者。": "A Blender fork reorganizing menus, icons and workflows, covering modeling, rigging, animation and rendering for creators who prefer visual controls."
 }
