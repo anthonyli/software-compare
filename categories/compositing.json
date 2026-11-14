@@ -240,6 +240,99 @@
         "https://learn.foundry.com/nuke/content/getting_started/meet_nuke/about_nc.html"
       ],
       "collected_at": "2026-11-14"
+    },
+    {
+      "id": "blender",
+      "name": "Blender",
+      "official_url": "https://www.blender.org/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0-or-later",
+      "pricing_model": "完全免费",
+      "price_summary": "官方提供免费开源软件；可选素材、插件与培训可能另收费。",
+      "prices": [
+        {
+          "plan": "软件本身",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "免费开源不代表可无损打开 AE/Nuke 工程或使用其插件；原生 OpenFX 主机能力本轮未核实。高分辨率、节点和缓存增加内存占用，未实测 M4 16GB。GPL 约束软件分发，不自动把生成的图像视频变成 GPL；素材及扩展另查授权。未安装或渲染。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "Blender 内置节点合成器，可把渲染层、实拍和遮罩组合，适合把3D创作与后期放在同一工具中。",
+      "features": {
+        "node_compositing": {
+          "value": "yes"
+        },
+        "chroma_key": {
+          "value": "yes"
+        },
+        "tracking_2d": {
+          "value": "yes"
+        },
+        "openfx": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://raw.githubusercontent.com/blender/blender/main/README.md",
+        "https://raw.githubusercontent.com/blender/blender/main/release/text/readme.html",
+        "https://docs.blender.org/manual/en/latest/compositing/types/keying/index.html",
+        "https://docs.blender.org/manual/en/4.4/compositing/types/tracking/track_position.html",
+        "https://www.blender.org/about/license/",
+        "https://github.com/blender/blender/blob/main/release/license/license.md"
+      ],
+      "source_url": "https://projects.blender.org/blender/blender",
+      "source_repo_label": "Blender Projects",
+      "collected_at": "2026-11-14"
+    },
+    {
+      "id": "apple-motion",
+      "name": "Apple Motion",
+      "official_url": "https://www.apple.com/final-cut-pro/",
+      "github_url": null,
+      "platforms": [
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "专有软件；Apple 软件许可适用",
+      "pricing_model": "付费买断 / 可选套装订阅",
+      "price_summary": "美区独立应用商店价 US$49.99；另有 Apple Creator Studio 套装订阅，不应把套装订阅当作买断的必需条件。地区价格、套餐及插件费用分别核对。",
+      "summary": "Mac 图层式动效、字幕、抠像与跟踪工具，可发布 Final Cut Pro 模板，适合苹果剪辑工作流。",
+      "free_tier_limits": "当前商店要求 macOS 26.6+、8GB内存（推荐16GB）及4.7GB空间；M4 16GB只符合内存/芯片方向，不保证复杂工程流畅，部分功能需更高系统。官方插件生态为 FxPlug，不能当作 OpenFX 或 AE 插件兼容；AE 工程/模板无损互通未核实。部分功能联网，素材、插件授权另计。未安装、购买或渲染视频。",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-14",
+      "features": {
+        "node_compositing": {
+          "value": "unknown"
+        },
+        "chroma_key": {
+          "value": "yes"
+        },
+        "tracking_2d": {
+          "value": "yes"
+        },
+        "openfx": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://www.apple.com/final-cut-pro/",
+        "https://apps.apple.com/us/app/motion/id434290957",
+        "https://support.apple.com/en-gb/guide/motion/motn14b9a0be/6.4/mac/26.6",
+        "https://www.apple.com/newsroom/2026/01/introducing-apple-creator-studio-an-inspiring-collection-of-creative-apps/"
+      ]
     }
   ]
 }
