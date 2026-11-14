@@ -1736,5 +1736,17 @@
   "CE 支持 PDF；SVG 导出需 Professional。": "CE supports PDF; SVG export requires Professional.",
   "Community Edition 免费；Professional 为付费商业扩展，不能把 Pro 功能当作 CE 自带。": "Community Edition is free; Professional is a paid commercial extension, not functionality included in CE.",
   "CE 的 DXF 支持限官方列出的 R15/2000；DWG 与 SVG 导出需 Pro。商业插件与开源核心许可不同，安装包中的 Pro 试用不等于永久免费；编辑重要图纸前保留备份。": "CE DXF support is limited to the documented R15/2000 format; DWG and SVG export require Pro. Commercial plugins have different licensing from the open-source core; bundled Pro trials are not permanently free. Back up important drawings before editing.",
-  "跨平台二维工程绘图工具，适合 DXF 图纸编辑；按社区版功能比较，非完整 AutoCAD 替代。": "A cross-platform 2D drafting tool for DXF drawings; compared here as Community Edition, not a complete AutoCAD replacement."
+  "跨平台二维工程绘图工具，适合 DXF 图纸编辑；按社区版功能比较，非完整 AutoCAD 替代。": "A cross-platform 2D drafting tool for DXF drawings; compared here as Community Edition, not a complete AutoCAD replacement.",
+  "未授权的 Content Hub 素材导出可能带水印。基础编辑免费；Creator Studio 的高级内容和智能功能需订阅，功能有设备、系统、地区和用量限制。iCloud 同步/协作会上传文件，AI 功能另核对服务商与数据条款。浏览器版不等同原生版，Office 文件转换需复核排版、字体和特殊功能；未实测 M4 16GB。": "Unlicensed Content Hub assets may be watermarked on export. Basic editing is free; Creator Studio premium content and intelligent features require a subscription and have device, OS, region and usage limits. iCloud sync/collaboration uploads files; check AI providers and data terms separately. Browser and native versions differ; review layout, fonts and special features after Office conversion. M4 16GB is untested.",
+  "本条仅比较免费桌面编辑器模块，不等于云服务或企业服务器版。可本地离线编辑；协作需连接云平台，AI 为可选模块，内容可能发送到所选服务商并产生费用。Office 格式支持不代表所有宏、字体、动画或复杂文档完全保真，交付前重新打开验证；未实测硬件性能。": "This row covers the free desktop editor module, not cloud or enterprise server editions. Local offline editing is available; collaboration connects to cloud platforms, and optional AI can send content to the selected provider and incur fees. Office format support does not guarantee fidelity for every macro, font, animation or complex document. Reopen and verify before delivery; hardware performance is untested.",
+  "基础应用免费，Creator Studio 提供付费增值；不把高级 AI 和素材算作永久免费。": "Basic app is free, with paid Creator Studio extras; premium AI and assets are not permanently free.",
+  "桌面编辑器免费供个人和商业使用；云服务、支持与模型服务可能另收费。": "Desktop editors are free for personal and professional use; cloud services, support and model providers may charge separately.",
+  "适合 Apple 用户撰写报告与文档排版，支持样式、表格图片和 PDF 输出。": "For Apple users writing reports and laying out documents with styles, tables, images and PDF output.",
+  "支持导入导出，格式转换后需核对字体、布局与不支持的功能。": "Import/export is supported; check fonts, layout and unsupported features after conversion.",
+  "同一 ONLYOFFICE 桌面套件中的文字编辑模块，适合离线处理办公文档。": "The document module of the same ONLYOFFICE desktop suite, for offline office documents.",
+  "官方声明支持 Office Open XML；未实测复杂文件的往返保真。": "The vendor documents Office Open XML support; complex-file round-trip fidelity is untested.",
+  "面向可视化表格和数据整理，提供公式、筛选、图表及 Excel 文件交换。": "For visual spreadsheets and data organization, with formulas, filters, charts and Excel file exchange.",
+  "同一 ONLYOFFICE 桌面套件中的表格模块，提供函数、筛选和图表。": "The spreadsheet module of the same ONLYOFFICE desktop suite, with functions, filters and charts.",
+  "面向演示稿设计与讲解，支持幻灯片、对象动画、切换和 PDF 输出。": "For presentation design and delivery, with slides, object animations, transitions and PDF output.",
+  "同一 ONLYOFFICE 桌面套件中的演示模块，适合制作和编辑幻灯片。": "The presentation module of the same ONLYOFFICE desktop suite, for creating and editing slides."
 }
