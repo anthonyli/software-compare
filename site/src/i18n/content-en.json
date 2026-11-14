@@ -1907,5 +1907,17 @@
   "包含渲染能力；Apprentice 的分辨率、水印和渲染器限制见免费版说明，不代表各版本无差别。": "Rendering is included; Apprentice resolution, watermark and renderer restrictions are listed under free limits, not equivalent across editions.",
   "软件免费开源，可用于商业创作；可选培训、支持、素材及插件需另查费用和许可。": "Free and open-source software usable for commercial creation; optional training, support, assets and add-ons have separate costs and licenses.",
   "基于 Blender 的界面分支，不是全新的渲染引擎；插件、文件与教程须核对底层 Blender 版本及快捷键差异，不保证全部兼容。未实测 M4 16GB。": "A Blender interface fork, not a new rendering engine. Check underlying Blender versions and keymap differences for add-ons, files and tutorials; full compatibility is not guaranteed. M4 16GB not tested.",
-  "重新整理菜单、图标与操作流程的 Blender 分支，覆盖建模、绑定、动画和渲染，适合偏好图形化操作的创作者。": "A Blender fork reorganizing menus, icons and workflows, covering modeling, rigging, animation and rendering for creators who prefer visual controls."
+  "重新整理菜单、图标与操作流程的 Blender 分支，覆盖建模、绑定、动画和渲染，适合偏好图形化操作的创作者。": "A Blender fork reorganizing menus, icons and workflows, covering modeling, rigging, animation and rendering for creators who prefer visual controls.",
+  "HTML 演示框架，适合前端开发者用源码制作交互演示；不是内置拖拽编辑器或任意 HTML 转 PPTX 工具。": "HTML presentation framework for developers authoring interactive decks in source; not a built-in drag-and-drop editor or arbitrary HTML-to-PPTX converter.",
+  "PDF 文档仅确认 Chrome/Chromium 打印，结果为静态页面；Slides.com 是另一个托管编辑服务，不等于免费框架本身。": "PDF printing is documented only for Chrome/Chromium and produces static pages. Slides.com is a separate hosted editing service, not the free framework itself.",
+  "编辑 HTML/Markdown 源码，不是同等可视化编辑界面。": "Edit HTML/Markdown source, not an equivalent visual editing interface.",
+  "官方核心文档未核实原生 PPTX 导入导出。": "Native PPTX import/export is not verified in core documentation.",
+  "通过专用打印样式和 Chrome/Chromium 输出。": "Uses a dedicated print stylesheet and Chrome/Chromium.",
+  "工具本身免费；托管、素材和扩展可能另收费，许可需分别核实。": "The tool itself is free; hosting, assets and extensions may cost extra and have separate licenses.",
+  "Markdown 演示工具链，适合版本管理、技术分享和批量生成；本行比较 CLI，不是完整可视化编辑器。": "Markdown presentation toolchain for version control, technical talks and batch generation; this row covers the CLI, not a full visual editor.",
+  "默认 PPTX 是预渲染背景图片，不可直接编辑其中的文字；实验可编辑导出另需浏览器和 LibreOffice Impress，可能失真且不支持演讲备注。未核实 PPTX 导入。": "Default PPTX contains pre-rendered background images, not directly editable text. Experimental editable export additionally needs a browser and LibreOffice Impress, may lose fidelity and omits presenter notes. PPTX import is not verified.",
+  "用 Markdown 与 CSS 编写，CLI 本身不是拖拽编辑器。": "Author Markdown and CSS; the CLI is not a drag-and-drop editor.",
+  "HTML bespoke 转场依赖 View Transition API，不代表 PDF/PPTX 保留动画。": "HTML bespoke transitions depend on View Transition API; this does not imply animated PDF/PPTX output.",
+  "默认图片式导出；实验可编辑模式有额外依赖与保真限制。": "Image-based export by default; experimental editable mode adds dependencies and fidelity limits.",
+  "导出需兼容浏览器；独立二进制包含 Node.js。": "Export requires a compatible browser; standalone binaries include Node.js."
 }
