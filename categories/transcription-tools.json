@@ -359,6 +359,49 @@
         "https://noscribe.de/en/docs/download-installation/"
       ],
       "collected_at": "2026-11-14"
+    },
+    {
+      "id": "speech-note",
+      "name": "Speech Note",
+      "official_url": "https://github.com/mkiol/dsnote",
+      "github_url": "https://github.com/mkiol/dsnote",
+      "platforms": [
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "MPL-2.0",
+      "pricing_model": "免费开源，模型另核",
+      "price_summary": "应用免费，代码采用 MPL-2.0；模型和依赖各有许可，不代表所有语音模型均可无限制商用。",
+      "prices": [],
+      "free_tier_limits": "此条比较 Linux 桌面版；另有 Sailfish OS，不是原生 macOS 应用，未验证 M4 16GB。模型需另行下载，部分引擎仅限 x86-64；GPU 插件可选且占用较大磁盘空间。官方声明语音与文本在本地处理；下载模型仍需联网，未做网络审计或性能实测。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "面向 Linux 用户的离线听写、文件转写与朗读工具，可输出 SRT 字幕；识别效果取决于模型与音频。",
+      "features": {
+        "offline_transcription": {
+          "value": "yes"
+        },
+        "file_transcription": {
+          "value": "yes"
+        },
+        "live_microphone": {
+          "value": "yes"
+        },
+        "transcript_export": {
+          "value": "yes"
+        },
+        "desktop_gui": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://github.com/mkiol/dsnote",
+        "https://github.com/mkiol/dsnote/blob/main/LICENSE",
+        "https://flathub.org/apps/net.mkiol.SpeechNote",
+        "https://github.com/mkiol/dsnote/blob/main/dbus/org.mkiol.Speech.xml"
+      ],
+      "collected_at": "2026-11-14"
     }
   ]
 }
