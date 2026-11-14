@@ -1919,5 +1919,13 @@
   "用 Markdown 与 CSS 编写，CLI 本身不是拖拽编辑器。": "Author Markdown and CSS; the CLI is not a drag-and-drop editor.",
   "HTML bespoke 转场依赖 View Transition API，不代表 PDF/PPTX 保留动画。": "HTML bespoke transitions depend on View Transition API; this does not imply animated PDF/PPTX output.",
   "默认图片式导出；实验可编辑模式有额外依赖与保真限制。": "Image-based export by default; experimental editable mode adds dependencies and fidelity limits.",
-  "导出需兼容浏览器；独立二进制包含 Node.js。": "Export requires a compatible browser; standalone binaries include Node.js."
+  "导出需兼容浏览器；独立二进制包含 Node.js。": "Export requires a compatible browser; standalone binaries include Node.js.",
+  "Word 网页基础版免费；桌面版需相应 Microsoft 365 或单独购买授权，不能把免费网页等同完整桌面版。": "Basic Word for the web is free; desktop use needs an applicable Microsoft 365 or separately purchased license, not the same as the free web app.",
+  "网页与桌面功能不同：高级排版、宏等能力须按版本核对。网页协作使用云端文件；桌面可处理本地文件，不能据此承诺所有功能均离线。": "Web and desktop capabilities differ: verify advanced layout and macros by edition. Web collaboration uses cloud files; desktop can handle local files, not a guarantee that every feature works offline.",
+  "主流文字处理工具，支持样式、目录、表格图片与 DOCX；适合办公文档协作和较复杂排版，跨平台与版本仍有差异。": "Mainstream word processor with styles, contents, tables, images and DOCX for office collaboration and complex layout, with platform and edition differences.",
+  "免费基础版 / 付费方案": "Free basics / paid plans",
+  "个人 Google 账号可使用基础文档功能；Workspace 管理、高级协作及部分 AI 功能按付费方案提供。": "A personal Google account can use basic document features; Workspace administration, advanced collaboration and some AI features depend on paid plans.",
+  "以云端协作为主；电脑离线需提前联网启用，使用 Chrome/Edge、离线扩展及本地存储，不支持无痕模式。DOCX 交换不保证复杂版式完全保真。": "Cloud-first collaboration; desktop offline access requires prior online setup, Chrome/Edge, the offline extension and local storage, without private browsing. DOCX exchange does not guarantee complex layout fidelity.",
+  "可编辑和下载 DOCX；复杂格式、字体或高级 Word 特性需回归核对。": "Can edit and download DOCX; complex formatting, fonts and advanced Word features need round-trip verification.",
+  "浏览器协作文档，支持标题目录、表格图片及 Word 文件交换和 PDF 输出；适合多人共同撰写，不是原生桌面 Word 的完全替代。": "Browser-based collaborative documents with headings, contents, tables, images and Word file exchange and PDF output; suited to co-writing, not a complete native desktop Word replacement."
 }

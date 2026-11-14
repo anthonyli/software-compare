@@ -203,6 +203,95 @@
         "https://github.com/ONLYOFFICE/DesktopEditors",
         "https://www.onlyoffice.com/word-processor"
       ]
+    },
+    {
+      "id": "microsoft-word",
+      "name": "Microsoft Word",
+      "official_url": "https://www.microsoft.com/en-us/microsoft-365/word",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Web",
+        "iOS",
+        "Android"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "免费基础版 / 付费方案",
+      "price_summary": "Word 网页基础版免费；桌面版需相应 Microsoft 365 或单独购买授权，不能把免费网页等同完整桌面版。",
+      "prices": [],
+      "free_tier_limits": "网页与桌面功能不同：高级排版、宏等能力须按版本核对。网页协作使用云端文件；桌面可处理本地文件，不能据此承诺所有功能均离线。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "主流文字处理工具，支持样式、目录、表格图片与 DOCX；适合办公文档协作和较复杂排版，跨平台与版本仍有差异。",
+      "features": {
+        "styles": {
+          "value": "yes"
+        },
+        "tables": {
+          "value": "yes"
+        },
+        "office_files": {
+          "value": "yes"
+        },
+        "pdf_export": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://www.microsoft.com/en-us/microsoft-365/word",
+        "https://support.microsoft.com/en-us/word/word-features-comparison-word-for-the-web-vs-desktop",
+        "https://support.microsoft.com/en-us/accounts-billing/subscriptions/compare-microsoft-365-and-office-plans"
+      ],
+      "collected_at": "2026-11-14"
+    },
+    {
+      "id": "google-docs",
+      "name": "Google Docs",
+      "official_url": "https://workspace.google.com/products/docs/",
+      "github_url": null,
+      "platforms": [
+        "Web",
+        "iOS",
+        "Android"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "免费基础版 / 付费方案",
+      "price_summary": "个人 Google 账号可使用基础文档功能；Workspace 管理、高级协作及部分 AI 功能按付费方案提供。",
+      "prices": [],
+      "free_tier_limits": "以云端协作为主；电脑离线需提前联网启用，使用 Chrome/Edge、离线扩展及本地存储，不支持无痕模式。DOCX 交换不保证复杂版式完全保真。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "浏览器协作文档，支持标题目录、表格图片及 Word 文件交换和 PDF 输出；适合多人共同撰写，不是原生桌面 Word 的完全替代。",
+      "features": {
+        "styles": {
+          "value": "yes"
+        },
+        "tables": {
+          "value": "yes"
+        },
+        "office_files": {
+          "value": "partial",
+          "note": "可编辑和下载 DOCX；复杂格式、字体或高级 Word 特性需回归核对。"
+        },
+        "pdf_export": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://workspace.google.com/products/docs/",
+        "https://support.google.com/docs/answer/7068618?hl=en",
+        "https://support.google.com/docs/answer/6388102?hl=en",
+        "https://support.google.com/drive/answer/2423534?hl=en",
+        "https://support.google.com/docs/answer/9406611?hl=en",
+        "https://support.google.com/docs/answer/1696711?hl=en",
+        "https://support.google.com/docs/answer/97447?hl=en"
+      ],
+      "collected_at": "2026-11-14"
     }
   ]
 }
