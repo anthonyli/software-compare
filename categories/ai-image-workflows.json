@@ -331,6 +331,59 @@
       "sources": [
         "https://jimeng.jianying.com/"
       ]
+    },
+    {
+      "id": "artcraft",
+      "name": "ArtCraft",
+      "official_url": "https://github.com/storytold/artcraft",
+      "github_url": "https://github.com/storytold/artcraft",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "MIT OR Apache-2.0",
+      "pricing_model": "开源免费 / 模型与服务另计",
+      "price_summary": "代码开源不等于模型免费；生成服务、第三方账号或 API 费用另计，本次未核实价格。",
+      "prices": [],
+      "free_tier_limits": "仅核实官方文档，未安装实测；代码可按 MIT 或 Apache-2.0 使用，品牌与第三方素材授权另计。 云端生成会把相应提示词和素材发往所选服务；未确认完全离线生成，也不把模型选择等同于本地模型管理。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "面向图像与视频创作的 AI 桌面工作台，可先用 2D 图层或 3D 场景控制构图，再选择模型生成。",
+      "features": {
+        "text_to_image": {
+          "value": "yes",
+          "note": "官方 README 列出该能力；仅文档核实，未实测。"
+        },
+        "local_generation": {
+          "value": "unknown",
+          "note": "本次官方资料未确认；不代表不支持。"
+        },
+        "node_workflows": {
+          "value": "unknown",
+          "note": "本次官方资料未确认；不代表不支持。"
+        },
+        "inpainting": {
+          "value": "yes",
+          "note": "官方 README 列出该能力；仅文档核实，未实测。"
+        },
+        "model_management": {
+          "value": "unknown",
+          "note": "本次官方资料未确认；不代表不支持。"
+        },
+        "cloud_api": {
+          "value": "yes",
+          "note": "官方 README 列出该能力；仅文档核实，未实测。"
+        }
+      },
+      "sources": [
+        "https://github.com/storytold/artcraft/blob/main/README.md",
+        "https://github.com/storytold/artcraft/blob/main/LICENSE-MIT",
+        "https://github.com/storytold/artcraft/blob/main/LICENSE-APACHE"
+      ],
+      "collected_at": "2026-11-14"
     }
   ]
 }

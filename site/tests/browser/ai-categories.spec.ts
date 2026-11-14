@@ -35,11 +35,13 @@ test('AI comparison tables include expanded tools and readable conditions', asyn
  await expect(row.locator('details')).not.toHaveAttribute('open','');
  await expect(row.locator('.ai-cell-note').first()).toBeVisible();
  await page.goto('/c/ai-coding/');
- await expect(page.locator('#matrix tbody tr')).toHaveCount(8);
+ await expect(page.locator('#matrix tbody tr')).toHaveCount(9);
  await expect(page.locator('#matrix [data-product-id="cursor"]')).toContainText('Cursor');
+ await expect(page.locator('#matrix [data-product-id="craft-anything"]')).toContainText('Craft Anything');
  await page.goto('/c/ai-image-workflows/');
- await expect(page.locator('#matrix tbody tr')).toHaveCount(6);
+ await expect(page.locator('#matrix tbody tr')).toHaveCount(7);
  await expect(page.locator('#matrix [data-product-id="recraft"]')).toContainText('Recraft');
+ await expect(page.locator('#matrix [data-product-id="artcraft"]')).toContainText('ArtCraft');
  await page.setViewportSize({width:390,height:900});
  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
  await expect(page.locator('#card-list [data-product-id="recraft"]')).toContainText('Recraft');

@@ -1261,6 +1261,76 @@
       "sources": [
         "https://tools.pdf24.org/en/"
       ]
+    },
+    {
+      "id": "pdfcraft",
+      "name": "PdfCraft",
+      "official_url": "https://github.com/storytold/pdfcraft",
+      "github_url": "https://github.com/storytold/pdfcraft",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "open_source": true,
+      "license": "MIT OR Apache-2.0",
+      "pricing_model": "开源免费",
+      "price_summary": "源码采用 MIT OR Apache-2.0；未核实任何附加服务价格。",
+      "prices": [],
+      "free_tier_limits": "仅核实官方文档，未安装实测；代码可按 MIT 或 Apache-2.0 使用，品牌与第三方素材授权另计。 官方称无需账号、云或遥测；对复杂或不可信 PDF 仍应使用隔离环境，不将其宣传当安全保证。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "Rust 离线 PDF 阅读与编辑工具，处于 alpha；阅读、批注和页面整理之外的专业能力需核实。",
+      "features": {
+        "read": {
+          "value": "yes",
+          "note": "官方 README 列出该能力；仅文档核实，未实测。"
+        },
+        "annotate": {
+          "value": "yes",
+          "note": "官方 README 列出该能力；仅文档核实，未实测。"
+        },
+        "edit_text": {
+          "value": "partial",
+          "note": "官方说明原文编辑尤其 CJK 和从右到左文字可靠性仍不足。"
+        },
+        "ocr": {
+          "value": "partial",
+          "note": "提供 OCR，但非拉丁文字能力有限；可选安装 Tesseract，准确率未实测。"
+        },
+        "merge_split": {
+          "value": "yes",
+          "note": "官方 README 列出该能力；仅文档核实，未实测。"
+        },
+        "convert": {
+          "value": "partial",
+          "note": "DOCX 导出可能丢失布局，官方仍列出 Office 文档转 PDF 缺口。"
+        },
+        "form_fill": {
+          "value": "yes",
+          "note": "官方 README 列出该能力；仅文档核实，未实测。"
+        },
+        "sign": {
+          "value": "partial",
+          "note": "支持基础数字签名；签名令牌和在线长期验证仍有限制。"
+        },
+        "encrypt": {
+          "value": "yes",
+          "note": "官方 README 列出该能力；仅文档核实，未实测。"
+        },
+        "compress": {
+          "value": "unknown",
+          "note": "本次官方资料未确认；不代表不支持。"
+        }
+      },
+      "sources": [
+        "https://github.com/storytold/pdfcraft/blob/main/README.md",
+        "https://github.com/storytold/pdfcraft/blob/main/LICENSE-MIT",
+        "https://github.com/storytold/pdfcraft/blob/main/LICENSE-APACHE"
+      ],
+      "collected_at": "2026-11-14"
     }
   ]
 }

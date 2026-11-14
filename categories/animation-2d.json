@@ -114,6 +114,52 @@
         "https://raw.githubusercontent.com/opentoonz/opentoonz/master/README.md",
         "https://raw.githubusercontent.com/opentoonz/opentoonz/master/LICENSE.txt"
       ]
+    },
+    {
+      "id": "anicraft",
+      "name": "AniCraft",
+      "official_url": "https://github.com/storytold/anicraft",
+      "github_url": "https://github.com/storytold/anicraft",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "open_source": true,
+      "license": "MIT OR Apache-2.0",
+      "pricing_model": "开源免费",
+      "price_summary": "源码采用 MIT OR Apache-2.0；未核实任何附加服务价格。",
+      "prices": [],
+      "free_tier_limits": "仅核实官方文档，未安装实测；代码可按 MIT 或 Apache-2.0 使用，品牌与第三方素材授权另计。 音频层和部分 XFL 动画仍缺失；平台下载不等于各平台已充分验证。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "Rust 2D 矢量动画编辑器，处于 early alpha；官方明确尚不适合生产动画工作。",
+      "features": {
+        "vector_animation": {
+          "value": "yes",
+          "note": "官方 README 列出该能力；仅文档核实，未实测。"
+        },
+        "raster_animation": {
+          "value": "unknown",
+          "note": "本次官方资料未确认；不代表不支持。"
+        },
+        "bone_animation": {
+          "value": "unknown",
+          "note": "本次官方资料未确认；不代表不支持。"
+        },
+        "node_effects": {
+          "value": "unknown",
+          "note": "本次官方资料未确认；不代表不支持。"
+        }
+      },
+      "sources": [
+        "https://github.com/storytold/anicraft/blob/main/README.md",
+        "https://github.com/storytold/anicraft/blob/main/LICENSE-MIT",
+        "https://github.com/storytold/anicraft/blob/main/LICENSE-APACHE"
+      ],
+      "collected_at": "2026-11-14"
     }
   ]
 }

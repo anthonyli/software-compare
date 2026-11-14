@@ -415,6 +415,56 @@
         "https://www.trae.ai/blog/trae_membership_0213",
         "https://docs.trae.ai/ide/privacy-mode"
       ]
+    },
+    {
+      "id": "craft-anything",
+      "name": "Craft Anything",
+      "official_url": "https://github.com/storytold/craft-anything",
+      "github_url": "https://github.com/storytold/craft-anything",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "FreeBSD"
+      ],
+      "open_source": true,
+      "license": "MIT OR Apache-2.0",
+      "pricing_model": "开源免费 / 模型与服务另计",
+      "price_summary": "需要自备编程 Agent、账号或 API；模型、生成图片和 3D 服务可能收费。",
+      "prices": [],
+      "free_tier_limits": "仅核实官方文档，未安装实测；代码可按 MIT 或 Apache-2.0 使用，品牌与第三方素材授权另计。 外部 Agent 可运行命令并接触代码；云提供商会接收发送的上下文。安装依赖可能执行脚本，需审查权限；不绕过 DRM 或登录。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "early alpha 软件研究与重建工作台，通过外部编程 Agent 执行构建和检查；仅用于有权分析的软件。",
+      "features": {
+        "cli": {
+          "value": "yes",
+          "note": "官方 README 列出该能力；仅文档核实，未实测。"
+        },
+        "ide_extension": {
+          "value": "unknown",
+          "note": "本次官方资料未确认；不代表不支持。"
+        },
+        "local_models": {
+          "value": "partial",
+          "note": "本地 OpenAI 兼容端点用于问答和分析；不能据此推断完整本地构建 Agent 已验证。"
+        },
+        "code_edits": {
+          "value": "partial",
+          "note": "官方以 Claude Code 为首先支持的构建器，其他适配器成熟度不同。"
+        },
+        "run_tests": {
+          "value": "partial",
+          "note": "提供 Check 工作流，网站有多宽度检查；应用和游戏行为检查仍部分完成。"
+        }
+      },
+      "sources": [
+        "https://github.com/storytold/craft-anything/blob/main/README.md",
+        "https://github.com/storytold/craft-anything/blob/main/LICENSE-MIT",
+        "https://github.com/storytold/craft-anything/blob/main/LICENSE-APACHE"
+      ],
+      "collected_at": "2026-11-14"
     }
   ]
 }
