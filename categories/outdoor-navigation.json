@@ -201,6 +201,96 @@
         "https://support.alltrails.com/hc/en-us/articles/37228358315668-Using-the-Navigate-feature"
       ],
       "collected_at": "2026-11-14"
+    },
+    {
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-14",
+      "github_url": null,
+      "platforms": [
+        "Web",
+        "Android",
+        "iOS"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "免费增值",
+      "id": "komoot",
+      "name": "komoot",
+      "official_url": "https://www.komoot.com/",
+      "summary": "面向徒步与骑行的路线规划、导航和活动记录服务；适合按运动类型规划路线并在手机记录行程。",
+      "price_summary": "新账号可选一个免费区域；额外地图可一次性购买，Premium 为订阅。价格依地区与渠道。",
+      "free_tier_limits": "可免费规划全球路线，但导航和记录要求起点所在区域已解锁；离线前需下载路线或地图。活动记录仅在应用内提供，不把 Premium 实时追踪等同普通 GPS 记录。保存和分享涉及账号与位置数据，应检查可见性；未实地验证地图或导航安全。 离线路线规划、编辑和自动重算不可用，需联网。",
+      "features": {
+        "offline_maps": {
+          "value": "partial",
+          "note": "免费区域或已购区域可离线；需提前完成下载，不能当作全球无限免费。"
+        },
+        "walking_routes": {
+          "value": "yes"
+        },
+        "cycling_routes": {
+          "value": "yes"
+        },
+        "track_recording": {
+          "value": "partial",
+          "note": "手机应用记录，起点区域需解锁；首个免费区域可用。"
+        }
+      },
+      "sources": [
+        "https://support.komoot.com/hc/en-us/articles/10163258809626-komoot-plans-Maps-and-Premium",
+        "https://support.komoot.com/hc/en-us/articles/10356476920986-Download-routes-and-maps-for-offline-use",
+        "https://support.komoot.com/hc/en-us/articles/10207928747546-Record-an-activity",
+        "https://support.komoot.com/hc/en-us/articles/10194701438234-Get-started-with-komoot"
+      ]
+    },
+    {
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-14",
+      "github_url": null,
+      "platforms": [
+        "Web",
+        "Android",
+        "iOS"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "免费增值",
+      "id": "mapy-com",
+      "name": "Mapy.com",
+      "official_url": "https://mapy.com/",
+      "summary": "提供户外地图、步行和骑行路线规划及 GPS 活动记录，适合希望网页规划与手机离线地图配合的用户。",
+      "price_summary": "基础版免费，Premium 订阅增加多国离线地图及高级规划；价格依地区和购买渠道。",
+      "free_tier_limits": "免费离线地图限一个国家及其区域，可更换国家；下载需登录 Seznam 账号，Premium 支持不限国家下载。离线不含航拍底图；砾石骑行、飞拉达（铁索攀登）等高级模式需 Premium。轨迹保存可在网页和应用查看，涉及账号同步；分享前检查位置隐私，未实地测试。",
+      "features": {
+        "offline_maps": {
+          "value": "partial",
+          "note": "免费一个国家，可更换；更多国家同时下载需 Premium。"
+        },
+        "walking_routes": {
+          "value": "yes",
+          "note": "基础步行路线可用；部分专门运动模式属于 Premium。"
+        },
+        "cycling_routes": {
+          "value": "yes",
+          "note": "基础骑行规划可用；砾石等高级模式需 Premium。"
+        },
+        "track_recording": {
+          "value": "yes",
+          "note": "手机 Tracker 记录 GPS 行程，可保存到 My Mapy。"
+        }
+      },
+      "sources": [
+        "https://help.mapy.com/offline-maps/",
+        "https://help.mapy.com/tracker/",
+        "https://help.mapy.com/premium/",
+        "https://help.mapy.com/route-planning/"
+      ]
     }
   ]
 }
