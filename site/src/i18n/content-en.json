@@ -2167,5 +2167,12 @@
   "原生桌面应用": "Native desktop app",
   "身份验证器与密码管理器分开比较。动态验证码不等于抗钓鱼通行密钥；备份是否加密、谁能恢复及跨系统迁移需分别判断。资料核实不等于安全审计或实测，不处理任何真实验证码、密钥或恢复码。": "Authenticators are separate from password managers. OTP codes are not phishing-resistant passkeys. Backup encryption, recovery authority and cross-OS migration are distinct. Documentation research is not a security audit or runtime test. No real secrets or recovery codes are handled.",
   "同步时加密数据存储于 Ente 服务；离线模式不提供云恢复。支持密码加密导出，导出密码独立于账号密码且遗失不可恢复。": "Sync stores encrypted data with Ente; offline mode has no cloud recovery. Password-encrypted exports use a separate password that cannot be recovered if lost.",
-  "代码 GPL-3.0；图形资产另有许可": "Code: GPL-3.0; graphic assets have separate licensing"
+  "代码 GPL-3.0；图形资产另有许可": "Code: GPL-3.0; graphic assets have separate licensing",
+  "免费开源，素材和插件另行核实": "Free and open source; check assets and plugins separately",
+  "官方声明可免费用于各类项目；应用许可不自动授予外部模型、材质或品牌的使用权。": "The vendor permits free use for all types of projects; the app license does not grant rights to external models, textures or brands.",
+  "面向低多边形模型、贴图与动画，不等同 Blender/Maya 全流程。目标格式和插件影响绑定/动画导出，不能保证无损互换。分享模型功能会上传模型；隐私政策允许匿名使用统计。Mac 构建配置含 arm64，但 M4 16GB 未实测。": "Focused on low-poly models, textures and animation, not the full Blender/Maya workflow. Target formats and plugins affect rig/animation export; lossless interchange is not guaranteed. Model Sharing uploads models; the privacy policy allows anonymous usage statistics. Mac build configuration includes arm64, but M4 16GB was not tested.",
+  "适合制作低多边形车辆、角色和科普场景素材，可绑定和制作关键帧动画；最终展示或复杂渲染需另评估工具链。": "For low-poly vehicles, characters and educational scene assets, with rigging and keyframe animation; assess a separate workflow for final presentation or complex rendering.",
+  "预览和模型导出不等于完整影视渲染；本轮未核实该能力。": "Preview and model export do not establish full cinematic rendering; that capability was not verified in this pass.",
+  "绑定与动画能力受项目格式限制。": "Rigging and animation capabilities depend on the project format.",
+  "内置预览不能代替最终真实光照渲染；官方建议导出至外部渲染工具。": "Built-in preview is not final realistic-lighting rendering; official guidance recommends exporting to external render tools."
 }

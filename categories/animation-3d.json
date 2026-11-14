@@ -1,7 +1,7 @@
 {
   "category_slug": "animation-3d",
   "category_name_zh": "3D 建模与动画",
-  "collected_at": "2026-11-14",
+  "collected_at": "2026-11-15",
   "collected_at_timezone": "Asia/Shanghai (UTC+8)",
   "notes": "涵盖完整 3D 创作套件和专门建模工具；须按动画、绑定和渲染能力选择，不能视为完全等价替代。未实测硬件性能。",
   "features": [
@@ -284,6 +284,53 @@
         "https://github.com/Bforartists/Bforartists"
       ],
       "collected_at": "2026-11-14"
+    },
+    {
+      "id": "blockbench",
+      "name": "Blockbench",
+      "official_url": "https://blockbench.net/",
+      "github_url": "https://github.com/JannisX11/blockbench",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0-or-later",
+      "pricing_model": "免费开源，素材和插件另行核实",
+      "price_summary": "官方声明可免费用于各类项目；应用许可不自动授予外部模型、材质或品牌的使用权。",
+      "prices": [],
+      "free_tier_limits": "面向低多边形模型、贴图与动画，不等同 Blender/Maya 全流程。目标格式和插件影响绑定/动画导出，不能保证无损互换。分享模型功能会上传模型；隐私政策允许匿名使用统计。Mac 构建配置含 arm64，但 M4 16GB 未实测。",
+      "summary": "适合制作低多边形车辆、角色和科普场景素材，可绑定和制作关键帧动画；最终展示或复杂渲染需另评估工具链。",
+      "features": {
+        "modeling_3d": {
+          "value": "yes"
+        },
+        "rigging_3d": {
+          "value": "partial",
+          "note": "绑定与动画能力受项目格式限制。"
+        },
+        "animation_3d": {
+          "value": "yes"
+        },
+        "rendering_3d": {
+          "value": "partial",
+          "note": "内置预览不能代替最终真实光照渲染；官方建议导出至外部渲染工具。"
+        }
+      },
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "sources": [
+        "https://blockbench.net/",
+        "https://github.com/JannisX11/blockbench",
+        "https://github.com/JannisX11/blockbench/blob/master/package.json",
+        "https://blockbench.net/privacy-policy/",
+        "https://blockbench.net/wiki/guides/model-rendering/",
+        "https://blockbench.net/wiki/blockbench/formats/"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
