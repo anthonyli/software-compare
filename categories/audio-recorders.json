@@ -198,6 +198,89 @@
         "https://www.ocenaudio.com/download",
         "https://www.ocenaudio.com/changelog"
       ]
+    },
+    {
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-14",
+      "id": "obs-studio",
+      "name": "OBS Studio",
+      "official_url": "https://obsproject.com/",
+      "github_url": "https://github.com/obsproject/obs-studio",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-2.0-or-later",
+      "pricing_model": "开源免费",
+      "summary": "开源音视频采集与直播工具，可组合麦克风和应用声音；适合多源录音或直播，不是简化的一键音频编辑器。",
+      "price_summary": "主程序免费；直播平台、插件和额外音频路由服务可能另收费。",
+      "free_tier_limits": "应用隔离采集依赖系统和 OBS 版本，部分应用不兼容；旧版 macOS 需额外路由。录制文件留在所选位置，推流会发送到配置的平台；需授予相关采集权限并取得录音许可。未实测音质、延迟或 M4 性能。",
+      "features": {
+        "microphone": {
+          "value": "yes"
+        },
+        "app_audio": {
+          "value": "partial",
+          "note": "Windows 10 2004+/11 配合 OBS 28+；macOS 13+ 配合 OBS 30+ 有独立音频源。Linux 的同等按应用能力未核实。"
+        },
+        "system_audio": {
+          "value": "partial",
+          "note": "可采集桌面声音，但 macOS 13 以前需额外路由；不保证所有系统配置开箱即用。"
+        },
+        "broadcast": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://obsproject.com/",
+        "https://github.com/obsproject/obs-studio",
+        "https://obsproject.com/kb/macos-desktop-audio-capture-guide",
+        "https://obsproject.com/kb/application-audio-capture-guide"
+      ]
+    },
+    {
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-14",
+      "id": "quicktime-player",
+      "name": "QuickTime Player",
+      "official_url": "https://support.apple.com/guide/quicktime-player/welcome/mac",
+      "github_url": null,
+      "platforms": [
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "系统随附",
+      "summary": "Mac 随附的轻量录音工具，支持选择麦克风、录制纯音频及简单裁剪，适合临时口述或外接音频输入。",
+      "price_summary": "随 macOS 提供，无单独录音订阅；外接设备和第三方服务另计。",
+      "free_tier_limits": "只比较当前 Mac 版，不推荐旧 Windows QuickTime。官方录音指南确认麦克风输入，未确认原生按应用或全系统声音采集，也未确认直播推流；屏幕录制不等于系统音频录制。高质量选项可能占用较大空间；保存到同步目录或分享会改变数据去向。未实测。",
+      "features": {
+        "microphone": {
+          "value": "yes"
+        },
+        "app_audio": {
+          "value": "unknown"
+        },
+        "system_audio": {
+          "value": "unknown"
+        },
+        "broadcast": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://support.apple.com/guide/quicktime-player/welcome-qtp1530a1918/mac",
+        "https://support.apple.com/en-mt/guide/quicktime-player/qtpf25d6f827/mac",
+        "https://support.apple.com/en-ie/102071"
+      ]
     }
   ]
 }

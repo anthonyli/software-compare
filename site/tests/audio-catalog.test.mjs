@@ -16,7 +16,8 @@ test('audio expansion adds five sourced rows with complete comparisons and trans
     if (/[\u4e00-\u9fff]/.test(text)) assert(en[text], `${id}: ${text}`);
    }
   }
-  for (const old of c.products.filter(p=>!ids.includes(p.id))) assert.equal(old.collected_at, '2026-11-13');
+  const originalIds = slug === 'audio-recorders' ? ['audio-hijack','piezo'] : ['whisper-cpp','buzz'];
+  for (const id of originalIds) { const old=c.products.find(p=>p.id===id); assert(old, id); assert.equal(old.collected_at, '2026-11-13'); }
  }
 });
 test('recording and transcription boundaries are explicit, not inferred from open source', () => {
