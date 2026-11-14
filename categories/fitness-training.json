@@ -1,7 +1,7 @@
 {
   "category_slug": "fitness-training",
   "category_name_zh": "健身与训练记录",
-  "collected_at": "2026-11-13",
+  "collected_at": "2026-11-14",
   "collected_at_timezone": "Asia/Shanghai (UTC+8)",
   "notes": "比较训练记录、计划和数据管理软件，不提供医疗或个体训练建议。体重、身体测量和训练照片可能涉及健康隐私，启用同步前核对数据接收方和分享设置。",
   "features": [
@@ -130,6 +130,103 @@
         "https://www.hevyapp.com/legal/privacy-policy",
         "https://www.iubenda.com/privacy-policy/75379905"
       ]
+    },
+    {
+      "id": "feeel",
+      "name": "Feeel",
+      "official_url": "https://gitlab.com/enjoyingfoss/feeel",
+      "github_url": "https://github.com/EnjoyingFOSS/feeel",
+      "platforms": [
+        "Android",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "AGPL-3.0-or-later（含应用商店例外）；动作图文 CC-BY-SA-4.0",
+      "pricing_model": "完全免费",
+      "price_summary": "免费开源，接受捐赠。",
+      "free_tier_limits": "官方发布平台为 Android 和 Linux；仓库存在 iOS 代码不代表已有正式发行。用于简单居家动作，不替代个体训练建议。",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "轻量居家锻炼应用，适合跟随动作与计时完成训练；与负重、身体测量及营养管理工具定位不同。",
+      "features": {
+        "workout_routines": {
+          "value": "partial",
+          "note": "支持动作练习流程；本轮未确认完整的长期训练计划与历史分析。"
+        },
+        "body_tracking": {
+          "value": "unknown",
+          "note": "本轮官方资料未确认，未知不等于不支持。"
+        },
+        "nutrition_log": {
+          "value": "unknown",
+          "note": "本轮官方资料未确认，未知不等于不支持。"
+        },
+        "self_host": {
+          "value": "na",
+          "note": "本地客户端，不是待部署的 Web 服务。"
+        },
+        "cloud_sync": {
+          "value": "unknown",
+          "note": "本轮官方资料未确认，未知不等于不支持。"
+        }
+      },
+      "sources": [
+        "https://github.com/EnjoyingFOSS/feeel",
+        "https://raw.githubusercontent.com/EnjoyingFOSS/feeel/master/README.md",
+        "https://raw.githubusercontent.com/EnjoyingFOSS/feeel/master/LICENSE"
+      ],
+      "collected_at": "2026-11-14"
+    },
+    {
+      "id": "liftosaur",
+      "name": "Liftosaur",
+      "official_url": "https://www.liftosaur.com/",
+      "github_url": "https://github.com/astashov/liftosaur",
+      "platforms": [
+        "Web",
+        "Android",
+        "iOS"
+      ],
+      "open_source": true,
+      "license": "AGPL-3.0",
+      "pricing_model": "免费增值",
+      "price_summary": "有免费功能和 Premium；价格与购买方式以官网及对应应用内页面为准。",
+      "free_tier_limits": "训练记录可离线使用；创建账号后进度保存到服务器。图表等 Premium 功能收费。自建完整服务需要修改域名及 AWS 部署配置，不是一键自托管。",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "可用 Liftoscript 描述组数、次数及递进规则的力量训练记录器，适合需要自定义训练逻辑的人。",
+      "features": {
+        "workout_routines": {
+          "value": "yes"
+        },
+        "body_tracking": {
+          "value": "partial",
+          "note": "可记录身体测量；趋势图需要 Premium。"
+        },
+        "nutrition_log": {
+          "value": "partial",
+          "note": "可显示来自 Apple Health / Health Connect 的热量和蛋白质，不等同于内置完整食物数据库。"
+        },
+        "self_host": {
+          "value": "partial",
+          "note": "源码可本地运行；README 明确完整服务端仍需改造部署配置。"
+        },
+        "cloud_sync": {
+          "value": "yes",
+          "note": "账号同步会将进度交给服务端；离线模式与云账号分开理解。"
+        }
+      },
+      "sources": [
+        "https://github.com/astashov/liftosaur",
+        "https://www.liftosaur.com/features/premium",
+        "https://www.liftosaur.com/features/measurements",
+        "https://raw.githubusercontent.com/astashov/liftosaur/master/README.md"
+      ],
+      "collected_at": "2026-11-14"
     }
   ]
 }
