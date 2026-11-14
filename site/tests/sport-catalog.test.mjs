@@ -21,3 +21,12 @@ test('offline maps, local software and training planners are not conflated',()=>
  assert.equal(cycling.find(p=>p.id==='zwift').features.indoor_trainer.value,'yes');
  assert.deepEqual(category('fitness-training').products.find(p=>p.id==='feeel').platforms,['Android','Linux']);
 });
+
+test('adding new products does not refresh older product collection dates',()=>{
+ for(const slug of ['fitness-training','cycling-tools','outdoor-navigation']) {
+  const c=category(slug);
+  for(const p of c.products.slice(0,2)) assert.equal(p.collected_at,'2026-11-13');
+  for(const p of c.products.slice(2)) assert.equal(p.collected_at,'2026-11-14');
+ }
+ assert.equal(category('outdoor-navigation').products.find(p=>p.id==='alltrails').features.cycling_routes.value,'partial');
+});
