@@ -324,6 +324,98 @@
         "https://help.fitbod.me/hc/en-us/articles/360004702573-What-kind-of-data-do-we-store",
         "https://help.fitbod.me/hc/en-us/articles/18213217448983-Body-Composition"
       ]
+    },
+    {
+      "id": "jefit",
+      "name": "JEFIT",
+      "official_url": "https://www.jefit.com/",
+      "github_url": null,
+      "platforms": [
+        "iOS",
+        "Android",
+        "Web"
+      ],
+      "open_source": false,
+      "license": "专有软件；服务条款适用",
+      "pricing_model": "有限免费 / 付费订阅",
+      "summary": "记录力量训练组数、次数和重量，配合身体测量及计划分析，适合希望整理训练历史的用户。",
+      "price_summary": "基础训练记录免费；Elite 美区官网标价 US$12.99/月或 US$69.99/年，商店地区和优惠可能不同。订阅自动续费；应用内若提供试用，须在扣费前取消。",
+      "free_tier_limits": "免费方案可保留2个计划，自定义动作7个，Apple Watch 训练限累计3次；进阶分析和自适应计划需 Elite，不把统计历史14天限制说成删除全部训练记录。身体照片可逐张设私密或公开；启用健康同步及社区分享前核对权限，不是纯本地档案。未核实内置饮食日志、自托管或原生 Mac；M4 可访问网页不等于支持手机全部功能。未注册、上传健康数据或实测。",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-14",
+      "features": {
+        "workout_routines": {
+          "value": "yes"
+        },
+        "body_tracking": {
+          "value": "yes"
+        },
+        "nutrition_log": {
+          "value": "unknown"
+        },
+        "self_host": {
+          "value": "unknown"
+        },
+        "cloud_sync": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://www.jefit.com/",
+        "https://www.jefit.com/elite",
+        "https://www.jefit.com/features/body-tracking",
+        "https://www.jefit.com/privacy-policy",
+        "https://www.jefit.com/terms-of-use"
+      ]
+    },
+    {
+      "id": "boostcamp",
+      "name": "Boostcamp",
+      "official_url": "https://www.boostcamp.app/",
+      "github_url": null,
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "open_source": false,
+      "license": "专有软件；服务条款适用",
+      "pricing_model": "有限免费 / 付费订阅",
+      "summary": "以现成力量训练计划、组次记录和进度图为主，兼顾体重与照片记录，适合按计划训练而非自建表格的用户。",
+      "price_summary": "免费计划和训练记录，自动进阶及个性化计划属 Pro。官网标价 US$59.99/年（提供7天试用）或 US$14.99/月（无试用）；地区/账号实际价格按确认页，试用和订阅须核对自动续费及取消期限。",
+      "free_tier_limits": "体重和进度照片免费，可选择健康平台同步或分享到社交平台。隐私政策说明服务数据在美国服务器处理/存储，不能视作仅本地；身体照片和健康同步须谨慎授权。未核实内置饮食日志或可自托管版本，网页计划浏览不等于完整网页训练记录器。不是原生 Mac 工作站，M4 16GB 手机应用适配未核实；未注册、训练、上传或实测。",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-14",
+      "features": {
+        "workout_routines": {
+          "value": "yes"
+        },
+        "body_tracking": {
+          "value": "yes"
+        },
+        "nutrition_log": {
+          "value": "unknown"
+        },
+        "self_host": {
+          "value": "unknown"
+        },
+        "cloud_sync": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://www.boostcamp.app/",
+        "https://www.boostcamp.app/features/progress-photos",
+        "https://www.boostcamp.app/features/apple-health",
+        "https://www.boostcamp.app/privacy-policy",
+        "https://www.boostcamp.app/terms-conditions",
+        "https://www.boostcamp.app/pro"
+      ]
     }
   ]
 }
