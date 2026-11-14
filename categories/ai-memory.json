@@ -191,6 +191,59 @@
         "https://github.com/screenpipe/screenpipe/blob/main/README.md"
       ],
       "collected_at": "2026-11-14"
+    },
+    {
+      "id": "auday",
+      "name": "Auday",
+      "official_url": "https://auday.ai/",
+      "github_url": null,
+      "platforms": [
+        "iOS",
+        "watchOS"
+      ],
+      "open_source": false,
+      "license": "专有应用；第三方组件另依其许可",
+      "pricing_model": "一次性购买 / 可选 API 费用",
+      "summary": "将 Apple Watch 录音与 iPhone 本地转写、检索及记忆回顾结合的助手，健康和地点上下文可选；不是桌面屏幕记录工具。",
+      "price_summary": "核实当日美区 App Store 标价 US$9.99；官网仍宣传 US$9.90 上线优惠及 US$19.80 常规价，两者口径不同，实际以所在地区商店结算为准。Local Privacy Edition 买断，AI 供应商另收费，未来可选在线服务不含在内。",
+      "free_tier_limits": "需 iOS 18+ 的 iPhone 和配对的 watchOS 11+ Apple Watch，不能只用 M4 Mac。1.0.9 语义搜索限最近14天内最新20,000段，其他记录仍可关键词搜索。全天记录不保证24小时续航。档案不含在设备备份中，也无 Auday 服务器副本，换机/卸载前另存重要内容。官网部分 FAQ 与商店/隐私政策不一致：本地模式留设备；可选远程转写经单独同意会发送原音频，AI 回顾可发送文本及健康统计等上下文，Apple 地名查询会接收坐标。录音前取得所需同意；未安装、录音或审计网络。",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-14",
+      "features": {
+        "continuous_audio": {
+          "value": "yes",
+          "note": "手动开始 Watch 录音，电话、电量和系统中断可能造成缺口，不是实时逐字转写。"
+        },
+        "screen_history": {
+          "value": "unknown"
+        },
+        "speaker_labels": {
+          "value": "partial",
+          "note": "当前商店说明支持本地识别本人声音；云转写说话人标签依供应商，不等于任意多人身份识别。"
+        },
+        "memory_chat": {
+          "value": "partial",
+          "note": "本地搜索无需 AI 供应商；摘要、回顾及聊天需配置可访问的 AI 端点，可能收费。"
+        },
+        "local_pipeline": {
+          "value": "partial",
+          "note": "转写和语义搜索可本地；可选远程转写、AI 和 Apple 地理编码会产生外部处理。"
+        },
+        "agent_integration": {
+          "value": "partial",
+          "note": "Auday Skill 支持同 Wi-Fi 加密只读范围传输，iPhone 连接页需保持前台；可按需传音频，云 AI 主机可能收到摘录。"
+        }
+      },
+      "sources": [
+        "https://auday.ai/",
+        "https://auday.ai/faq",
+        "https://auday.ai/privacy",
+        "https://auday.ai/terms",
+        "https://apps.apple.com/us/app/auday-all-day-watch-recorder/id6814210373"
+      ]
     }
   ]
 }
