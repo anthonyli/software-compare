@@ -377,6 +377,99 @@
         "https://docs.photoprism.app/developer-guide/media/raw/",
         "https://docs.photoprism.app/getting-started/faq/"
       ]
+    },
+    {
+      "id": "immich",
+      "name": "Immich",
+      "official_url": "https://immich.app/",
+      "github_url": "https://github.com/immich-app/immich",
+      "platforms": [
+        "Web",
+        "Android",
+        "iOS"
+      ],
+      "open_source": true,
+      "license": "AGPL-3.0",
+      "pricing_model": "开源自托管 / 可选付费服务",
+      "summary": "自托管照片视频目录、移动备份和搜索，适合管理个人图库，不是 Lightroom 显影替代。",
+      "price_summary": "代码可自托管使用；服务器、存储和备份有成本，可选支持购买不应当作解锁核心功能的必需订阅。AGPL 修改及网络服务的源码义务须遵守。",
+      "free_tier_limits": "服务端官方推荐 Linux、Docker Compose，最低6GB内存/2核，推荐8GB/4核；非Linux部署不推荐，macOS可用Docker Desktop但不是原生桌面程序，M4 16GB性能未测。数据库放本地SSD而非网络共享；独立备份照片和数据库，不能只留这一份。基础非破坏编辑为裁剪/旋转/镜像，非完整RAW调色；远程访问须安全配置，不直接裸露端口。未安装、部署或上传照片。",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-14",
+      "features": {
+        "raw": {
+          "value": "unknown",
+          "note": "支持存储或预览 RAW 不等于专业 RAW 显影，本轮未核实显影工作流。"
+        },
+        "catalog": {
+          "value": "yes"
+        },
+        "non_destructive": {
+          "value": "partial"
+        },
+        "tethering": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://github.com/immich-app/immich",
+        "https://github.com/immich-app/immich/blob/main/LICENSE",
+        "https://docs.immich.app/install/requirements/",
+        "https://docs.immich.app/features/editing/",
+        "https://docs.immich.app/guides/remote-access/"
+      ]
+    },
+    {
+      "id": "ente-photos",
+      "name": "Ente Photos",
+      "official_url": "https://ente.com/",
+      "github_url": "https://github.com/ente/ente",
+      "platforms": [
+        "Web",
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS"
+      ],
+      "open_source": true,
+      "license": "AGPL-3.0",
+      "pricing_model": "开源自托管 / 可选付费服务",
+      "summary": "端到端加密的跨平台照片备份、相册与分享工具，可使用官方云或自托管，侧重图库隐私与管理。",
+      "price_summary": "官网当前提供10GB永久免费云空间，更大容量付费；自托管软件免费但服务器/存储另计，不能把开源等同官方云无限免费。地区价格与套餐请核对当前结算页。",
+      "free_tier_limits": "加密后仍会上传到所选服务端，不等于没有云端数据；公开链接和分享会扩大可访问范围，应妥善保管恢复材料并另存重要照片。RAW支持有限且不是显影器，联机拍摄未核实。桌面/移动客户端与自托管后端资源不同，M4 16GB性能未测；未部署、注册或上传照片。",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-14",
+      "features": {
+        "raw": {
+          "value": "unknown",
+          "note": "支持存储或预览 RAW 不等于专业 RAW 显影，本轮未核实显影工作流。"
+        },
+        "catalog": {
+          "value": "yes"
+        },
+        "non_destructive": {
+          "value": "partial",
+          "note": "编辑可保存副本保留原件，但副本可能重新编码，并非RAW参数化显影。"
+        },
+        "tethering": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://ente.com/",
+        "https://github.com/ente/ente",
+        "https://github.com/ente/ente/blob/main/LICENSE",
+        "https://help-content.ente.io/help/photos/faq/backup-and-sync",
+        "https://help-content.ente.io/help/self-hosting/",
+        "https://ente.com/help/photos/faq/metadata-and-editing"
+      ]
     }
   ]
 }
