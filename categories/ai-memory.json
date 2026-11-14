@@ -1,0 +1,196 @@
+{
+  "category_slug": "ai-memory",
+  "category_name_zh": "AI 记忆助手",
+  "collected_at": "2026-11-14",
+  "timezone": "Asia/Shanghai",
+  "notes": "比较持续记录后可检索、可回顾的 AI 记忆工具，不把普通录音器或纯转写引擎当作同类完整替代。安卓语音生活记录与桌面屏幕历史是不同场景。只核实公开资料，未安装、录音或采集屏幕；录制他人前告知并取得所需同意，不用于隐蔽监控。",
+  "features": [
+    {
+      "key": "continuous_audio",
+      "label": "持续音频记录"
+    },
+    {
+      "key": "screen_history",
+      "label": "屏幕历史记录"
+    },
+    {
+      "key": "speaker_labels",
+      "label": "说话人区分"
+    },
+    {
+      "key": "memory_chat",
+      "label": "记忆问答与回顾"
+    },
+    {
+      "key": "local_pipeline",
+      "label": "本地处理选项"
+    },
+    {
+      "key": "agent_integration",
+      "label": "Agent/API 集成"
+    }
+  ],
+  "products": [
+    {
+      "id": "taosheng",
+      "name": "TaoSheng",
+      "official_url": "https://github.com/0xCoach/TaoSheng",
+      "github_url": "https://github.com/0xCoach/TaoSheng",
+      "platforms": [
+        "Android"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "开源软件；模型服务另计",
+      "summary": "安卓语音生活记录助手：持续收音、转写和声纹区分，整理待办并按原话检索记忆。",
+      "price_summary": "MIT 代码可免费使用；云转写、大模型、存储和推送服务可能另收费，模型与原生组件另有许可。",
+      "prices": [],
+      "free_tier_limits": "需 Android 10+、arm64；不是原生 Mac 应用。早期验证版，后台稳定性依机型。支持本地 SenseVoice 与局域网模型，但云转写/LLM、推送和云备份会发送所需数据；不能概括为任何配置都不出设备。录音前告知并取得所需同意，核对保存期限；未实测。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "features": {
+        "continuous_audio": {
+          "value": "yes",
+          "note": "语音检测后记录人声，可暂停与设置停录时段"
+        },
+        "screen_history": {
+          "value": "no",
+          "note": "可选临时截图识字，识别后丢弃，不保留屏幕历史"
+        },
+        "speaker_labels": {
+          "value": "yes",
+          "note": "本机声纹与多人分段；识别结果需核对"
+        },
+        "memory_chat": {
+          "value": "yes",
+          "note": "待办、每日回顾和带原话出处的问答"
+        },
+        "local_pipeline": {
+          "value": "partial",
+          "note": "本地转写加局域网自建整理模型；云服务需分别配置"
+        },
+        "agent_integration": {
+          "value": "yes",
+          "note": "Markdown/JSON 推送与自定义 Webhook"
+        }
+      },
+      "sources": [
+        "https://github.com/0xCoach/TaoSheng",
+        "https://github.com/0xCoach/TaoSheng/blob/main/LICENSE",
+        "https://github.com/0xCoach/TaoSheng/blob/main/README.md"
+      ],
+      "collected_at": "2026-11-14"
+    },
+    {
+      "id": "omi",
+      "name": "Omi",
+      "official_url": "https://github.com/BasedHardware/omi",
+      "github_url": "https://github.com/BasedHardware/omi",
+      "platforms": [
+        "macOS",
+        "Windows",
+        "Android",
+        "iOS"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "开源代码；托管服务和硬件另计",
+      "summary": "手机、桌面和可穿戴设备的 AI 记忆平台，把对话及屏幕信息变成可检索记录、摘要和行动项。",
+      "price_summary": "仓库代码 MIT；托管 Omi Cloud、付费计划与可选硬件另行计费，自建后端及模型也有运行成本。",
+      "prices": [],
+      "free_tier_limits": "macOS 源码快速启动要求 macOS 14+、Xcode、Node.js，并连接云后端。手机端为 iOS/Android；完整自建需配置后端、数据库和模型，不代表开箱离线。录音及云端处理前确认参与者同意和数据权限；M4 16GB 完整自建资源未核实，未实测。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "features": {
+        "continuous_audio": {
+          "value": "yes",
+          "note": "手机/桌面及可选穿戴设备的对话采集"
+        },
+        "screen_history": {
+          "value": "partial",
+          "note": "桌面采集屏幕，平台能力应分别核对"
+        },
+        "speaker_labels": {
+          "value": "yes",
+          "note": "后端含说话人分段组件"
+        },
+        "memory_chat": {
+          "value": "yes",
+          "note": "摘要、行动项和记忆聊天"
+        },
+        "local_pipeline": {
+          "value": "partial",
+          "note": "可自建后端，但快速启动连接 Omi Cloud"
+        },
+        "agent_integration": {
+          "value": "yes",
+          "note": "开发者 API、Webhook 与 MCP"
+        }
+      },
+      "sources": [
+        "https://github.com/BasedHardware/omi",
+        "https://github.com/BasedHardware/omi/blob/main/LICENSE",
+        "https://github.com/BasedHardware/omi/blob/main/README.md"
+      ],
+      "collected_at": "2026-11-14"
+    },
+    {
+      "id": "screenpipe",
+      "name": "Screenpipe",
+      "official_url": "https://github.com/screenpipe/screenpipe",
+      "github_url": "https://github.com/screenpipe/screenpipe",
+      "platforms": [
+        "macOS",
+        "Windows",
+        "Linux"
+      ],
+      "open_source": false,
+      "license": "Screenpipe Commercial License",
+      "pricing_model": "源码可见；商业授权与官方应用计划另计",
+      "summary": "桌面屏幕与音频历史工具，用本地记录、时间线和自然语言搜索为个人及 Agent 提供工作上下文。",
+      "price_summary": "当前源码不是 MIT：个人非商业等许可范围可免费用，组织评估限 7 天，源码商业使用需 Enterprise 商业授权。官方预编译应用另依服务条款和套餐；云模型可能另收费。",
+      "prices": [],
+      "free_tier_limits": "本地默认保存不等于无网络：官方说明分析遥测默认开启，云转写/AI、同步与团队存储可能出设备。可选本地转写与 Ollama，需分别关闭或配置远端路径。官方建议 8GB 内存不是 M4 16GB 性能保证；模型、磁盘和 Linux 权限须验证。采集前取得所需同意，排除敏感窗口；未实测。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "features": {
+        "continuous_audio": {
+          "value": "yes",
+          "note": "系统音频与麦克风转写"
+        },
+        "screen_history": {
+          "value": "yes",
+          "note": "无障碍树、OCR 与时间线记录"
+        },
+        "speaker_labels": {
+          "value": "yes",
+          "note": "官方文档列出说话人识别与分段"
+        },
+        "memory_chat": {
+          "value": "yes",
+          "note": "自然语言搜索与会议/每日回顾 Pipes"
+        },
+        "local_pipeline": {
+          "value": "partial",
+          "note": "可本地采集、搜索和模型推理，遥测及云路径需单独配置"
+        },
+        "agent_integration": {
+          "value": "yes",
+          "note": "本机 REST API、MCP 与 Pipes"
+        }
+      },
+      "sources": [
+        "https://github.com/screenpipe/screenpipe",
+        "https://github.com/screenpipe/screenpipe/blob/main/LICENSE.md",
+        "https://github.com/screenpipe/screenpipe/blob/main/README.md"
+      ],
+      "collected_at": "2026-11-14"
+    }
+  ]
+}
