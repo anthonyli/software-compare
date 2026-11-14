@@ -1,7 +1,7 @@
 {
   "category_slug": "outdoor-navigation",
   "category_name_zh": "徒步登山与户外导航",
-  "collected_at": "2026-11-13",
+  "collected_at": "2026-11-14",
   "timezone": "Asia/Shanghai",
   "notes": "比较地图与路线工具，不提供路线安全保证。离线地图需提前下载；GPS、道路和山径数据可能有误。分享轨迹前检查起终点及位置隐私；未进行实地测试。",
   "features": [
@@ -110,6 +110,95 @@
         "https://osmand.net/docs/user/purchases/",
         "https://osmand.net/docs/user/plugins/trip-recording/"
       ]
+    },
+    {
+      "id": "qmapshack",
+      "name": "QMapShack",
+      "official_url": "https://github.com/Maproom/qmapshack",
+      "github_url": "https://github.com/Maproom/qmapshack",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0-or-later",
+      "pricing_model": "完全免费",
+      "price_summary": "软件免费开源；地图与外部路线服务遵循各自许可和费用。",
+      "free_tier_limits": "桌面路线规划器，需自行配置地图、高程和路线引擎。在线地图或路线 API 会联系外部服务；不能把桌面轨迹编辑当成手机实时导航或安全保证。",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "用于登山、徒步和骑行前后整理 GPS 路线、轨迹与航点的桌面工具，支持离线地图和可选路线引擎。",
+      "features": {
+        "offline_maps": {
+          "value": "yes",
+          "note": "支持本地矢量/栅格地图；需提前准备合法可用的数据。"
+        },
+        "walking_routes": {
+          "value": "partial",
+          "note": "路线能力依赖 Routino / BRouter 与所选配置、地图数据。"
+        },
+        "cycling_routes": {
+          "value": "partial",
+          "note": "路线能力依赖 Routino / BRouter 与所选配置、地图数据。"
+        },
+        "track_recording": {
+          "value": "unknown",
+          "note": "本轮官方资料未确认，未知不等于不支持。"
+        }
+      },
+      "sources": [
+        "https://github.com/Maproom/qmapshack",
+        "https://github.com/Maproom/qmapshack/wiki/DocMain"
+      ],
+      "collected_at": "2026-11-14"
+    },
+    {
+      "id": "alltrails",
+      "name": "AllTrails",
+      "official_url": "https://www.alltrails.com/",
+      "github_url": null,
+      "platforms": [
+        "Web",
+        "Android",
+        "iOS"
+      ],
+      "open_source": false,
+      "license": "专有服务（未核实开源授权）",
+      "pricing_model": "免费增值",
+      "price_summary": "Base 免费；Plus / Peak 付费，按地区与购买渠道核对价格。",
+      "free_tier_limits": "离线地图下载需 Plus 或 Peak 并提前下载；网页自定义路线向所有会员开放，移动端高级路线编辑有付费边界。账号保存和路线分享涉及位置数据，导航不能保证路线安全。",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "面向徒步等户外活动的路线发现、规划与记录服务，适合需要路线目录和手机导航的人。",
+      "features": {
+        "offline_maps": {
+          "value": "paid",
+          "note": "Plus / Peak 支持下载到手机，免费 Base 不含此功能。"
+        },
+        "walking_routes": {
+          "value": "partial",
+          "note": "网页路线创建向所有会员开放；移动端高级创建依会员等级。"
+        },
+        "cycling_routes": {
+          "value": "unknown",
+          "note": "本轮官方资料未确认，未知不等于不支持。"
+        },
+        "track_recording": {
+          "value": "yes",
+          "note": "Navigate 可记录活动；分享前检查可见性与轨迹起终点。"
+        }
+      },
+      "sources": [
+        "https://support.alltrails.com/hc/en-us/articles/37213318235028-How-to-download-maps-to-your-phone-for-offline-use",
+        "https://support.alltrails.com/hc/en-us/articles/37270479773204-How-to-create-custom-routes",
+        "https://support.alltrails.com/hc/en-us/articles/37228358315668-Using-the-Navigate-feature"
+      ],
+      "collected_at": "2026-11-14"
     }
   ]
 }
