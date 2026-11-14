@@ -269,6 +269,96 @@
         "https://www.macwhisper.com/",
         "https://docs.macwhisper.com/article/14-how-to-use-the-dictation-feature"
       ]
+    },
+    {
+      "id": "aiko",
+      "name": "Aiko",
+      "official_url": "https://sindresorhus.com/aiko",
+      "github_url": null,
+      "platforms": [
+        "macOS",
+        "iOS",
+        "visionOS"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "一次性购买 / 限时试用",
+      "price_summary": "付费买断，提供 14 天 TestFlight 试用，不自动收费；当地 App Store 价格另核。",
+      "prices": [],
+      "free_tier_limits": "应用非开源，采用本地 Whisper。官方列 macOS/iOS/visionOS 26.6+，Mac large 模型需 Apple Silicon 与至少 16GB 内存；M4 16GB 未实测。隐私政策称不收集数据，但自行转给云端 AI 会传出文本。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "Apple 平台本地录音文件转写工具，可导出文本及 SRT/WebVTT；不提供实时转写。",
+      "features": {
+        "offline_transcription": {
+          "value": "yes"
+        },
+        "file_transcription": {
+          "value": "yes"
+        },
+        "live_microphone": {
+          "value": "no",
+          "note": "官方明确要求先录制再转写，不把录音入口等同实时流式字幕。"
+        },
+        "transcript_export": {
+          "value": "yes"
+        },
+        "desktop_gui": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://sindresorhus.com/aiko",
+        "https://sindresorhus.com/aiko/privacy-policy",
+        "https://sindresorhus.com/apps/terms"
+      ],
+      "collected_at": "2026-11-14"
+    },
+    {
+      "id": "noscribe",
+      "name": "noScribe",
+      "official_url": "https://noscribe.de/en/",
+      "github_url": "https://github.com/kaixxx/noScribe",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0-or-later",
+      "pricing_model": "开源免费",
+      "price_summary": "GPL-3.0-or-later 程序可免费使用，包括商用；分发与修改需遵守许可证，模型及依赖另核。",
+      "prices": [],
+      "free_tier_limits": "当前 Mac 版需 macOS 14+ 与 Apple Silicon；Intel Mac 仅提供旧版 0.6。安装含模型约 3GB，CUDA 是可选加速而非必需；本地转写不需上传录音，模型授权与资源需求分别核对，未实测 M4 16GB。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "面向访谈与研究资料的本地转写和校对工具，提供说话人区分及 HTML、TXT、WebVTT 导出。",
+      "features": {
+        "offline_transcription": {
+          "value": "yes"
+        },
+        "file_transcription": {
+          "value": "yes"
+        },
+        "live_microphone": {
+          "value": "unknown",
+          "note": "官方描述文件队列转写，未确认实时麦克风流式输入。"
+        },
+        "transcript_export": {
+          "value": "yes"
+        },
+        "desktop_gui": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://github.com/kaixxx/noScribe",
+        "https://noscribe.de/en/docs/usage/",
+        "https://noscribe.de/en/docs/download-installation/"
+      ],
+      "collected_at": "2026-11-14"
     }
   ]
 }

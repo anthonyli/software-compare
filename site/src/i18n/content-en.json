@@ -1870,5 +1870,14 @@
   "普通本地编辑由浏览器在设备内处理；账户、网盘保存和第三方插件另有数据去向。插件可访问文档，需审查来源。免费不等于开源；PSD 开存不保证复杂 Photoshop 工作流无损迁移，未实测性能。": "Ordinary local editing runs on-device in the browser; accounts, cloud-drive saves and third-party plugins have separate data flows. Plugins can access documents, so review their source. Free does not mean open source. PSD support does not guarantee lossless migration of complex Photoshop workflows; performance was not tested.",
   "浏览器中的分层图像编辑器，支持 PSD 开存、画笔绘画和基于图层的动画导出。": "A browser-based layered image editor with PSD opening and saving, brush painting and layer-based animation export.",
   "以指定名称的图层或图层组作为帧，支持 GIF、APNG 与 WebP；不等同专业动画时间轴。": "Named layers or layer groups act as frames for GIF, APNG and WebP; this is not equivalent to a professional animation timeline.",
-  "网页插件通过 Live Messaging 通信；不代表兼容 Photoshop 原生插件。": "Web plugins communicate through Live Messaging; native Photoshop plugin compatibility is not implied."
+  "网页插件通过 Live Messaging 通信；不代表兼容 Photoshop 原生插件。": "Web plugins communicate through Live Messaging; native Photoshop plugin compatibility is not implied.",
+  "一次性购买 / 限时试用": "One-time purchase / limited trial",
+  "付费买断，提供 14 天 TestFlight 试用，不自动收费；当地 App Store 价格另核。": "Paid once, with a 14-day TestFlight trial and no automatic charge; check local App Store pricing.",
+  "应用非开源，采用本地 Whisper。官方列 macOS/iOS/visionOS 26.6+，Mac large 模型需 Apple Silicon 与至少 16GB 内存；M4 16GB 未实测。隐私政策称不收集数据，但自行转给云端 AI 会传出文本。": "The proprietary app uses local Whisper. Official requirements list macOS/iOS/visionOS 26.6+; the Mac large model requires Apple Silicon and at least 16GB RAM. M4 16GB was not tested. The privacy policy states no data collection, but sending text to external cloud AI leaves the device.",
+  "Apple 平台本地录音文件转写工具，可导出文本及 SRT/WebVTT；不提供实时转写。": "An on-device recording transcription app for Apple platforms, exporting text and SRT/WebVTT; it does not provide live transcription.",
+  "官方明确要求先录制再转写，不把录音入口等同实时流式字幕。": "The official FAQ requires recording first, then transcribing; recording input is not live streaming captions.",
+  "GPL-3.0-or-later 程序可免费使用，包括商用；分发与修改需遵守许可证，模型及依赖另核。": "The GPL-3.0-or-later program is free to use, including commercially; distribution and modifications must follow its license, with models and dependencies checked separately.",
+  "当前 Mac 版需 macOS 14+ 与 Apple Silicon；Intel Mac 仅提供旧版 0.6。安装含模型约 3GB，CUDA 是可选加速而非必需；本地转写不需上传录音，模型授权与资源需求分别核对，未实测 M4 16GB。": "The current Mac version requires macOS 14+ and Apple Silicon; Intel Macs only have the older 0.6 release. Installation with models is about 3GB. CUDA is optional acceleration, not mandatory. Local transcription does not require uploading recordings; check model licenses and resource needs separately. M4 16GB was not tested.",
+  "面向访谈与研究资料的本地转写和校对工具，提供说话人区分及 HTML、TXT、WebVTT 导出。": "A local transcription and proofreading tool for interviews and research, with speaker separation and HTML, TXT and WebVTT export.",
+  "官方描述文件队列转写，未确认实时麦克风流式输入。": "Official documentation describes file-queue transcription; live microphone streaming is unverified."
 }
