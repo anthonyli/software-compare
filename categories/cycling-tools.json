@@ -1,7 +1,7 @@
 {
   "category_slug": "cycling-tools",
   "category_name_zh": "骑行与耐力运动分析",
-  "collected_at": "2026-11-13",
+  "collected_at": "2026-11-14",
   "collected_at_timezone": "Asia/Shanghai (UTC+8)",
   "notes": "关注骑行数据、训练日历与功率分析，不是户外离线导航分类。分析结果依赖输入质量和设备数据，不能当作医疗判断或安全训练保证。",
   "features": [
@@ -129,6 +129,106 @@
         "https://www.intervals.icu/pricing/",
         "https://www.intervals.icu/privacy-policy/"
       ]
+    },
+    {
+      "id": "fittrackee",
+      "name": "FitTrackee",
+      "official_url": "https://docs.fittrackee.org/",
+      "github_url": "https://github.com/SamR1/FitTrackee",
+      "platforms": [
+        "Web"
+      ],
+      "open_source": true,
+      "license": "AGPL-3.0",
+      "pricing_model": "完全免费",
+      "price_summary": "软件开源免费；自选服务器、地图及外部服务成本另计。",
+      "free_tier_limits": "活动上传到所选服务器，上传文件默认不加密；地图可请求外部瓦片服务。需自己设置可见性、备份与访问保护，不是默认纯本地。GitHub 是官方镜像。",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "自托管骑行及户外活动档案，导入轨迹文件、查看地图和活动统计，适合希望选择数据存放位置的人。",
+      "features": {
+        "activity_import": {
+          "value": "yes",
+          "note": "支持 GPX、FIT、TCX、KML/KMZ 等文件；文件需含时间与坐标，格式另有限制。"
+        },
+        "power_analysis": {
+          "value": "unknown",
+          "note": "本轮官方资料未确认，未知不等于不支持。"
+        },
+        "training_calendar": {
+          "value": "partial",
+          "note": "月历展示已记录活动；不等同于完整训练计划编排。"
+        },
+        "indoor_trainer": {
+          "value": "unknown",
+          "note": "本轮官方资料未确认，未知不等于不支持。"
+        },
+        "cloud_sync": {
+          "value": "partial",
+          "note": "浏览器连接自选实例；设备平台导入可能依赖第三方工具。"
+        }
+      },
+      "sources": [
+        "https://github.com/SamR1/FitTrackee",
+        "https://docs.fittrackee.org/en/features/index.html",
+        "https://docs.fittrackee.org/en/features/workout.html",
+        "https://docs.fittrackee.org/en/features/dashboard.html"
+      ],
+      "collected_at": "2026-11-14"
+    },
+    {
+      "id": "zwift",
+      "name": "Zwift",
+      "official_url": "https://www.zwift.com/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Android",
+        "iOS",
+        "tvOS"
+      ],
+      "open_source": false,
+      "license": "专有服务（未核实开源授权）",
+      "pricing_model": "订阅制",
+      "price_summary": "月付/年付会员，硬件另购；地区和会员等级影响价格。",
+      "free_tier_limits": "官方当前向符合条件的新月付用户提供 14 天试用，需付款方式，到期自动收费；年付无此试用。需要兼容设备和骑行台/单车，账号服务不等于本地存储。",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "以虚拟骑行、赛事和结构化训练为主的室内骑行平台，适合已有或准备配置兼容骑行设备的人。",
+      "features": {
+        "activity_import": {
+          "value": "unknown",
+          "note": "本轮官方资料未确认，未知不等于不支持。"
+        },
+        "power_analysis": {
+          "value": "partial",
+          "note": "提供基于 FTP 的训练分区；不据此承诺完整的外部活动功率分析。"
+        },
+        "training_calendar": {
+          "value": "partial",
+          "note": "提供结构化训练计划；自适应 Zwift Coach 属于 Plus。"
+        },
+        "indoor_trainer": {
+          "value": "yes",
+          "note": "需兼容骑行台或智能单车，硬件不含在软件会员中。"
+        },
+        "cloud_sync": {
+          "value": "yes",
+          "note": "依赖 Zwift 账号与在线平台；连接其他运动服务时另核对分享权限。"
+        }
+      },
+      "sources": [
+        "https://www.zwift.com/pricing",
+        "https://www.zwift.com/download",
+        "https://support.zwift.com/training-plans-for-cycling-SkmwCFnTY",
+        "https://www.zwift.com/eu/training-on-zwift"
+      ],
+      "collected_at": "2026-11-14"
     }
   ]
 }
