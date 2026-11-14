@@ -1,7 +1,7 @@
 {
   "category_slug": "audio-recorders",
   "category_name_zh": "录音与应用音频采集",
-  "collected_at": "2026-11-13",
+  "collected_at": "2026-11-14",
   "timezone": "Asia/Shanghai",
   "notes": "此类侧重采集录音，不替代多轨剪辑/混音工具。录制会议、通话或他人声音前应取得适用的许可；仅核实官方资料，未实际录音或测试音质。",
   "features": [
@@ -62,7 +62,8 @@
       },
       "sources": [
         "https://rogueamoeba.com/audiohijack/"
-      ]
+      ],
+      "collected_at": "2026-11-13"
     },
     {
       "id": "piezo",
@@ -103,6 +104,99 @@
       },
       "sources": [
         "https://rogueamoeba.com/piezo/"
+      ],
+      "collected_at": "2026-11-13"
+    },
+    {
+      "id": "audacity",
+      "name": "Audacity",
+      "official_url": "https://www.audacityteam.org/",
+      "github_url": "https://github.com/audacity/audacity",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "开源免费",
+      "summary": "免费开源录音与编辑工具，适合录制麦克风后剪辑；此处按采集能力比较，音频编辑分类另有编辑功能对照。",
+      "price_summary": "主程序免费，无强制订阅；第三方插件和可选云服务可能另收费。",
+      "prices": [],
+      "free_tier_limits": "GPL 约束软件再分发，不表示录音必须公开。Windows 可用 WASAPI 回环；macOS 采集系统声音需额外路由工具。云保存和插件应另核对数据去向，未实测音质。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-14",
+      "features": {
+        "microphone": {
+          "value": "yes",
+          "note": "支持选择麦克风或其他音频输入设备"
+        },
+        "app_audio": {
+          "value": "partial",
+          "note": "可录制包含应用声音的设备回环；不是独立按应用隔离采集，额外路由取决于平台"
+        },
+        "system_audio": {
+          "value": "partial",
+          "note": "官方指南区分 Windows WASAPI、Linux 路由与 macOS 额外回环工具"
+        },
+        "broadcast": {
+          "value": "unknown",
+          "note": "本次未核实主程序原生直播推流能力"
+        }
+      },
+      "sources": [
+        "https://www.audacityteam.org/",
+        "https://support.audacityteam.org/basics/recording-desktop-audio",
+        "https://github.com/audacity/audacity/blob/master/LICENSE.txt"
+      ]
+    },
+    {
+      "id": "ocenaudio",
+      "name": "ocenaudio",
+      "official_url": "https://www.ocenaudio.com/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": false,
+      "license": "未核实开源许可；以软件许可为准",
+      "pricing_model": "官网直接下载；授权细则待核实",
+      "summary": "跨平台音频录制与编辑工具，提供波形、频谱和效果预览，适合录音后的快速处理。",
+      "price_summary": "官网提供直接下载，未展示本次可核实的付费档；不据此承诺所有用途永久免费或开源。",
+      "prices": [],
+      "free_tier_limits": "3.22.2 下载页区分当前与旧版 macOS 构建；设备权限、驱动和音频路由仍需配置。未核实完整隐私政策，不把本地应用等同于所有功能不联网。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-14",
+      "features": {
+        "microphone": {
+          "value": "yes",
+          "note": "更新日志明确麦克风访问与多通道录音支持"
+        },
+        "app_audio": {
+          "value": "unknown",
+          "note": "未确认是否可独立选择单个应用并排除其他声音"
+        },
+        "system_audio": {
+          "value": "yes",
+          "note": "3.21.0 更新日志明确 Windows、macOS、Linux 可录制电脑播放音频；需匹配系统与设备"
+        },
+        "broadcast": {
+          "value": "unknown",
+          "note": "官方资料本次未确认直播/广播输出"
+        }
+      },
+      "sources": [
+        "https://www.ocenaudio.com/features",
+        "https://www.ocenaudio.com/download",
+        "https://www.ocenaudio.com/changelog"
       ]
     }
   ]
