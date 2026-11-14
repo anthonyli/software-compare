@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: Apache-2.0
-import contentEn from "./content-en.json";
+import contentEn from "./content-en.json" with { type: "json" };
 import {
   categoryNames,
   groupNames,
