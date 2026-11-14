@@ -298,6 +298,51 @@
         "https://httpie.io/privacy"
       ],
       "collected_at": "2026-11-14"
+    },
+    {
+      "id": "hurl",
+      "name": "Hurl",
+      "official_url": "https://hurl.dev/",
+      "github_url": "https://github.com/Orange-OpenSource/hurl",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "pricing_model": "完全免费",
+      "price_summary": "免费开源，Apache-2.0 允许商用；再分发遵守许可、声明与修改标识要求。目标 API 与 CI 服务可能另收费。",
+      "prices": [],
+      "free_tier_limits": "这是基于 curl 的 HTTP 运行器，不是浏览器，不替代页面 JavaScript 交互或动态 DOM 测试；也不承诺 Postman 集合无损导入或内置云端团队工作区。执行文件会向指定端点发请求，可能产生写入或费用；凭据、Cookie、响应及测试报告应避免进入公开仓库/日志。官方提供 macOS Intel/ARM 包；Windows 需另装 Visual C++ Runtime，源码构建有 Rust 和原生库依赖。M4 16GB 和大型测试集未实测，不作纯离线或性能保证。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "以纯文本描述 HTTP 请求、响应断言和请求链的命令行工具，适合 API 回归、抓取响应和 CI 检查；支持 REST、SOAP 与 GraphQL 请求。",
+      "features": {
+        "rest": {
+          "value": "yes"
+        },
+        "graphql": {
+          "value": "yes"
+        },
+        "collections": {
+          "value": "partial",
+          "note": "通过文本文件组织和串联多个请求，不等同 GUI 集合或托管团队同步。"
+        },
+        "cli": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://github.com/Orange-OpenSource/hurl",
+        "https://hurl.dev/",
+        "https://hurl.dev/docs/manual.html",
+        "https://hurl.dev/docs/installation.html",
+        "https://hurl.dev/docs/license.html",
+        "https://hurl.dev/docs/tutorial/security.html"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
