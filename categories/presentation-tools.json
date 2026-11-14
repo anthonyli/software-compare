@@ -203,6 +203,97 @@
         "https://github.com/ONLYOFFICE/DesktopEditors",
         "https://www.onlyoffice.com/slides"
       ]
+    },
+    {
+      "id": "reveal-js",
+      "name": "reveal.js",
+      "official_url": "https://revealjs.com/",
+      "github_url": "https://github.com/hakimel/reveal.js",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "完全免费",
+      "price_summary": "工具本身免费；托管、素材和扩展可能另收费，许可需分别核实。",
+      "prices": [],
+      "free_tier_limits": "PDF 文档仅确认 Chrome/Chromium 打印，结果为静态页面；Slides.com 是另一个托管编辑服务，不等于免费框架本身。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "HTML 演示框架，适合前端开发者用源码制作交互演示；不是内置拖拽编辑器或任意 HTML 转 PPTX 工具。",
+      "features": {
+        "slide_editing": {
+          "value": "partial",
+          "note": "编辑 HTML/Markdown 源码，不是同等可视化编辑界面。"
+        },
+        "animations": {
+          "value": "yes"
+        },
+        "office_files": {
+          "value": "unknown",
+          "note": "官方核心文档未核实原生 PPTX 导入导出。"
+        },
+        "pdf_export": {
+          "value": "partial",
+          "note": "通过专用打印样式和 Chrome/Chromium 输出。"
+        }
+      },
+      "sources": [
+        "https://github.com/hakimel/reveal.js",
+        "https://revealjs.com/installation/",
+        "https://revealjs.com/pdf-export/",
+        "https://revealjs.com/auto-animate/"
+      ],
+      "collected_at": "2026-11-14"
+    },
+    {
+      "id": "marp-cli",
+      "name": "Marp (CLI)",
+      "official_url": "https://marp.app/",
+      "github_url": "https://github.com/marp-team/marp-cli",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "完全免费",
+      "price_summary": "工具本身免费；托管、素材和扩展可能另收费，许可需分别核实。",
+      "prices": [],
+      "free_tier_limits": "默认 PPTX 是预渲染背景图片，不可直接编辑其中的文字；实验可编辑导出另需浏览器和 LibreOffice Impress，可能失真且不支持演讲备注。未核实 PPTX 导入。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "Markdown 演示工具链，适合版本管理、技术分享和批量生成；本行比较 CLI，不是完整可视化编辑器。",
+      "features": {
+        "slide_editing": {
+          "value": "partial",
+          "note": "用 Markdown 与 CSS 编写，CLI 本身不是拖拽编辑器。"
+        },
+        "animations": {
+          "value": "partial",
+          "note": "HTML bespoke 转场依赖 View Transition API，不代表 PDF/PPTX 保留动画。"
+        },
+        "office_files": {
+          "value": "partial",
+          "note": "默认图片式导出；实验可编辑模式有额外依赖与保真限制。"
+        },
+        "pdf_export": {
+          "value": "yes",
+          "note": "导出需兼容浏览器；独立二进制包含 Node.js。"
+        }
+      },
+      "sources": [
+        "https://marp.app/",
+        "https://github.com/marp-team/marp-cli",
+        "https://github.com/marp-team/marp-cli/blob/main/LICENSE"
+      ],
+      "collected_at": "2026-11-14"
     }
   ]
 }
