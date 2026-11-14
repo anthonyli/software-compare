@@ -1,0 +1,4 @@
+import {test,expect} from '@playwright/test';
+// Content-only local API identity; no changes to production rate limits.
+test.use({extraHTTPHeaders:{'CF-Connecting-IP':'192.0.2.72'}});
+test('outdoor planners render on desktop and mobile with localized limits',async({page})=>{for(const width of [1280,390]){await page.setViewportSize({width,height:900});await page.goto('/c/outdoor-navigation/');const list=page.locator(width===1280?'#matrix':'#card-list');for(const id of ['komoot','mapy-com'])await expect(list.locator(`[data-product-id="${id}"]`)).toBeVisible();await page.locator('[data-lang="en"]').click();expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);}await page.goto('/p/outdoor-navigation/komoot/');await expect(page.locator('body')).toContainText('starting region to be unlocked');await page.goto('/p/outdoor-navigation/mapy-com/');await expect(page.locator('body')).toContainText('one country and its regions');});
