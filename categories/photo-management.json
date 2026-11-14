@@ -1,7 +1,7 @@
 {
   "category_slug": "photo-management",
   "category_name_zh": "摄影后期与照片管理",
-  "collected_at": "2026-11-13",
+  "collected_at": "2026-11-14",
   "collected_at_timezone": "Asia/Shanghai (UTC+8)",
   "features": [
     {
@@ -67,7 +67,8 @@
       "sources": [
         "https://www.darktable.org/about/",
         "https://www.darktable.org/install/"
-      ]
+      ],
+      "collected_at": "2026-11-13"
     },
     {
       "id": "rawtherapee",
@@ -113,7 +114,8 @@
       },
       "sources": [
         "https://www.rawtherapee.com/"
-      ]
+      ],
+      "collected_at": "2026-11-13"
     },
     {
       "id": "digikam",
@@ -159,7 +161,8 @@
       "sources": [
         "https://www.digikam.org/about/",
         "https://apps.kde.org/digikam/"
-      ]
+      ],
+      "collected_at": "2026-11-13"
     },
     {
       "id": "art",
@@ -199,7 +202,8 @@
         "https://artraweditor.github.io/",
         "https://github.com/artraweditor/ART",
         "https://artraweditor.github.io/Downloads.html"
-      ]
+      ],
+      "collected_at": "2026-11-13"
     },
     {
       "id": "adobe-lightroom-classic",
@@ -237,7 +241,8 @@
       "sources": [
         "https://www.adobe.com/products/photoshop-lightroom-classic.html",
         "https://helpx.adobe.com/lightroom-classic/help/import-photos-tethered-camera.html"
-      ]
+      ],
+      "collected_at": "2026-11-13"
     },
     {
       "id": "lightcraft",
@@ -284,6 +289,94 @@
         "https://github.com/storytold/lightcraft/blob/main/LICENSE-APACHE"
       ],
       "collected_at": "2026-11-14"
+    },
+    {
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "prices": [],
+      "collected_at": "2026-11-14",
+      "id": "capture-one-pro",
+      "name": "Capture One Pro",
+      "official_url": "https://www.captureone.com/en/products/capture-one-pro",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "订阅或买断",
+      "price_summary": "付费订阅或永久许可；永久许可不含后续功能版本，价格依地区和方案。",
+      "free_tier_limits": "试用不是永久免费版；相机、镜头及联机支持须查型号。桌面 Pro 不等于含移动版和所有云协作功能；激活需联网，云分享会上传内容。未实测相机、目录迁移或 M4 性能。",
+      "summary": "面向摄影师的 RAW 显影、非破坏调色及联机拍摄工具，以 Catalog 和 Session 管理照片，适合比较 Lightroom Classic 专业工作流。",
+      "features": {
+        "raw": {
+          "value": "yes"
+        },
+        "catalog": {
+          "value": "yes"
+        },
+        "non_destructive": {
+          "value": "yes"
+        },
+        "tethering": {
+          "value": "yes",
+          "note": "支持能力依相机型号、固件及连接方式，不保证所有相机。"
+        }
+      },
+      "sources": [
+        "https://www.captureone.com/en/products/capture-one-pro",
+        "https://www.captureone.com/en/pricing/capture-one-pro",
+        "https://support.captureone.com/hc/en-us/articles/360007791797-All-about-perpetual-and-subscription-licenses",
+        "https://support.captureone.com/hc/en-us/articles/360003108698-Complete-Guide-to-Using-Catalogs",
+        "https://support.captureone.com/hc/en-us/articles/360002466277-Capture-One-System-Requirements-and-OS-compatibility",
+        "https://support.captureone.com/hc/en-us/articles/360002718118-Supported-Camera-Models-and-RAW-Files-by-Capture-One"
+      ]
+    },
+    {
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "prices": [],
+      "collected_at": "2026-11-14",
+      "id": "photoprism",
+      "name": "PhotoPrism Community",
+      "official_url": "https://www.photoprism.app/",
+      "github_url": "https://github.com/photoprism/photoprism",
+      "platforms": [
+        "Web"
+      ],
+      "open_source": true,
+      "license": "AGPL-3.0",
+      "pricing_model": "免费社区版 / 付费扩展",
+      "price_summary": "Community 自托管免费；会员扩展、托管服务及服务器存储费用另计。",
+      "free_tier_limits": "比较社区版，不把付费用户管理等能力算作免费。浏览器访问自托管服务器，Windows/macOS 可用 Docker，并非原生桌面编辑器；需自行维护备份、认证与更新，托管时照片进入所选服务商。AGPL 源码义务适用；未实测部署或 M4 性能。 地图与逆地理编码可能请求外部服务。",
+      "summary": "自托管照片与视频图库，提供相册、标签、检索和人脸整理；偏照片管理，不是 Lightroom 式交互调色工具。",
+      "features": {
+        "raw": {
+          "value": "partial",
+          "note": "通过 Darktable 或 RawTherapee 等转换器生成 RAW 预览，不等于提供完整交互式显影。"
+        },
+        "catalog": {
+          "value": "yes"
+        },
+        "non_destructive": {
+          "value": "unknown",
+          "note": "索引和保留原片不等于非破坏调色；旋转可能修改原片 EXIF，不能承诺原件从不改写。"
+        },
+        "tethering": {
+          "value": "unknown",
+          "note": "官方资料未确认相机联机拍摄；文件同步不等于联机控制。"
+        }
+      },
+      "sources": [
+        "https://www.photoprism.app/editions/",
+        "https://github.com/photoprism/photoprism",
+        "https://docs.photoprism.app/getting-started/",
+        "https://docs.photoprism.app/developer-guide/media/raw/",
+        "https://docs.photoprism.app/getting-started/faq/"
+      ]
     }
   ]
 }
