@@ -161,6 +161,51 @@
         "https://github.com/2dust/v2rayN/wiki/Description-of-some-ui"
       ],
       "collected_at": "2026-11-15"
+    },
+    {
+      "id": "stash-mac",
+      "name": "Stash Mac",
+      "official_url": "https://stash.ws/macos",
+      "github_url": null,
+      "platforms": [
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "专有付费客户端",
+      "price_summary": "官网现列 Personal £12/年（3台）、Family £18/年（6台）、Stash 4 Lifetime £48一次（6台）；后者仅明确 Stash 4 永久使用，不承诺未来大版本。iOS/iPadOS 另购且许可不互通；线路另备，未进入结算核实税费。",
+      "prices": [],
+      "free_tier_limits": "可先下载打开，但持续使用需许可；不将下载免费视为永久免费。Apple Silicon 可运行已购 iOS 版，不代表可激活独立 Stash Mac。官方称不采集用户流量，同时隐私条款允许非个人信息（如崩溃信息）；配置同步经 iCloud，流量/DNS 去向依规则及自备服务器，不是纯本地或匿名保证。系统网络控制涉及特权 Helper；HTTPS 内容检查需配置解密，仅用于有权检查的流量。M4 未实测；商用组织许可条件需另核，不把个人套餐视为企业授权。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "独立 Mac 代理与网络调试客户端，支持规则/进程分流和 HTTP 检查重写；macOS 12.4+，原生支持 Intel 与 Apple Silicon。不是提供线路的 VPN 服务商。",
+      "features": {
+        "rule_routing": {
+          "value": "yes"
+        },
+        "tun": {
+          "value": "partial",
+          "note": "通过 Network Extension 管理系统流量；不据此保证与其他平台 TUN 配置逐项等同。"
+        },
+        "config_sync": {
+          "value": "yes",
+          "note": "配置、规则和订阅可经 iCloud 同步，含凭据配置需谨慎保管。"
+        },
+        "apple_silicon": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://stash.ws/macos",
+        "https://stash.ws/macos/pricing",
+        "https://stash.ws/privacy-policy",
+        "https://stash.wiki/en/faq/license-activation",
+        "https://stash.wiki/en",
+        "https://stash.wiki/en/stash-mac",
+        "https://stash.wiki/en/proxy-protocols/proxy-types"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
