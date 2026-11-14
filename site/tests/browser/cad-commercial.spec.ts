@@ -1,0 +1,5 @@
+import {test,expect} from '@playwright/test';
+// Isolate this content-only suite from the local API session-rate-limit bucket.
+// This header is sent only to the loopback test server; production limits are unchanged.
+test.use({extraHTTPHeaders:{'CF-Connecting-IP':'192.0.2.66'}});
+test('commercial CAD entries render on desktop and mobile with localized limits',async({page})=>{for(const width of [1280,390]){await page.setViewportSize({width,height:900});await page.goto('/c/cad/');const list=page.locator(width===1280?'#matrix':'#card-list');for(const id of ['autocad-lt','bricscad-lite'])await expect(list.locator(`[data-product-id="${id}"]`)).toBeVisible();await page.locator('[data-lang="en"]').click();expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);}await page.goto('/p/cad/autocad-lt/');await expect(page.locator('body')).toContainText('not full AutoCAD 3D tools');await page.goto('/p/cad/bricscad-lite/');await expect(page.locator('body')).toContainText('Lite');});

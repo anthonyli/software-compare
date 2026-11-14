@@ -1,0 +1,3 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';
+const cat=JSON.parse(fs.readFileSync(new URL('../../categories/cad.json',import.meta.url)));const en=JSON.parse(fs.readFileSync(new URL('../src/i18n/content-en.json',import.meta.url)));
+test('commercial 2D CAD keeps edition and combined export boundaries',()=>{for(const id of ['autocad-lt','bricscad-lite']){const p=cat.products.find(p=>p.id===id);assert(p);assert.equal(p.open_source,false);assert(p.sources.length>=3);for(const s of [p.summary,p.price_summary,p.free_tier_limits,...Object.values(p.features).map(f=>f.note||'')])if(/[\u4e00-\u9fff]/.test(s))assert(en[s]);}assert.equal(cat.products.find(p=>p.id==='autocad-lt').features.vector_export.value,'partial');});
