@@ -9,6 +9,11 @@ function contentFallback(text: string): string {
 
 /** Category display names, keyed by slug. */
 export const categoryNames: Record<string, { zh: string; en: string }> = {
+  "word-processors": { zh: "文字处理", en: "Word processors" },
+  "spreadsheets": { zh: "电子表格", en: "Spreadsheets" },
+  "presentation-tools": { zh: "演示文稿", en: "Presentations" },
+  "cad": { zh: "二维 CAD", en: "2D CAD" },
+  "texture-materials": { zh: "纹理与材质", en: "Textures & materials" },
   "audio-recorders": { zh: "录音工具", en: "Audio recorders" },
   "transcription-tools": { zh: "语音转写", en: "Speech transcription" },
   "fitness-training": { zh: "健身训练", en: "Fitness training" },
