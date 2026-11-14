@@ -16,11 +16,11 @@ export const siteConfig = {
 export const categoryGroups: { id: string; name: string; slugs: string[] }[] = [
   { id: "lifestyle", name: "运动与户外", slugs: ["fitness-training", "cycling-tools", "outdoor-navigation"] },
   { id: "ai", name: "AI 工具", slugs: ["ai-assistants", "ai-coding", "ai-image-workflows"] },
-  { id: "creative", name: "设计与摄影", slugs: ["image-editors", "vector-graphics", "photo-management", "desktop-publishing", "animation-3d", "animation-2d", "compositing"] },
+  { id: "creative", name: "设计与摄影", slugs: ["image-editors", "vector-graphics", "cad", "texture-materials", "photo-management", "desktop-publishing", "animation-3d", "animation-2d", "compositing"] },
   {
     id: "office",
     name: "办公效率",
-    slugs: ["note-taking", "screenshot-tools", "pdf-tools", "launchers"],
+    slugs: ["word-processors", "spreadsheets", "presentation-tools", "note-taking", "screenshot-tools", "pdf-tools", "launchers"],
   },
   {
     id: "media",
@@ -69,6 +69,12 @@ export const featureLabelFull: Record<string, string> = {
 
 /** 首页与导航用的品类一字记号，纯展示，不改变数据。 */
 export const categoryMonograms: Record<string, string> = {
+  "word-processors": "文",
+  "spreadsheets": "表",
+  "presentation-tools": "演",
+  "cad": "图",
+  "texture-materials": "材",
+
   "audio-recorders": "录",
   "transcription-tools": "译",
   "fitness-training": "练",
@@ -105,6 +111,12 @@ export const categoryMonograms: Record<string, string> = {
 
 /** 首页卡片色块，仅用于展示，不代表产品官方品牌色。 */
 export const categoryTints: Record<string, string> = {
+  "word-processors": "#E8F1FF",
+  "spreadsheets": "#E7F8EE",
+  "presentation-tools": "#FFF0D6",
+  "cad": "#E8F6FF",
+  "texture-materials": "#F1E9FF",
+
   "audio-recorders": "#E8F8F0",
   "transcription-tools": "#E8F8F0",
   "fitness-training": "#E8F8F0",
