@@ -139,6 +139,26 @@
     "vpn-clients": {
       "background": "#E4F4F2",
       "scene": "一个白色大圆像地球仪，黑色经纬线和三条水平纬线，底部有一条浅灰虚线地平线。"
+    },
+    "word-processors": {
+      "background": "#E8F1FF",
+      "scene": "一张白色圆角文档与稍错开的浅色纸张，黑色短标题线和浅灰正文线，右侧一支倾斜的黑色钢笔。"
+    },
+    "spreadsheets": {
+      "background": "#E7F8EE",
+      "scene": "一张白色圆角电子表格卡片，浅绿色表头和规则单元格细线，右下叠着黑色高低柱状图。"
+    },
+    "presentation-tools": {
+      "background": "#FFF0D6",
+      "scene": "白色圆角投影屏幕和黑色简洁支架，屏内浅杏色饼图和高低柱形，右下一个小黑播放三角。"
+    },
+    "cad": {
+      "background": "#E8F6FF",
+      "scene": "白色圆角工程图纸，黑色简化房屋平面轮廓、浅蓝尺寸辅助线和小箭头，右侧浅色三角尺。"
+    },
+    "texture-materials": {
+      "background": "#F1E9FF",
+      "scene": "三张相连的白色圆角材质节点卡片，分别是黑色点状纹理、黑色波浪和浅紫色棋盘块，细黑连线，圆角留白。"
     }
   }
 }

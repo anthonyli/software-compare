@@ -1,0 +1,121 @@
+{
+  "category_slug": "presentation-tools",
+  "category_name_zh": "演示文稿",
+  "collected_at": "2026-11-14",
+  "collected_at_timezone": "Asia/Shanghai (UTC+8)",
+  "features": [
+    {
+      "key": "slide_editing",
+      "label": "幻灯片编辑"
+    },
+    {
+      "key": "animations",
+      "label": "动画与切换"
+    },
+    {
+      "key": "office_files",
+      "label": "PPTX 交换"
+    },
+    {
+      "key": "pdf_export",
+      "label": "PDF 输出"
+    }
+  ],
+  "products": [
+    {
+      "id": "deckcraft",
+      "name": "DeckCraft",
+      "official_url": "https://github.com/storytold/deckcraft",
+      "github_url": "https://github.com/storytold/deckcraft",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "FreeBSD",
+        "Web"
+      ],
+      "open_source": true,
+      "license": "MIT OR Apache-2.0",
+      "pricing_model": "开源免费",
+      "price_summary": "代码开源，可免费获取和使用；第三方服务另依其条款。",
+      "prices": [],
+      "free_tier_limits": "官方说明仍有功能深度和文件兼容差距；复杂动画、多媒体、字体和 PPTX 往返须用自己的文稿验证。 平台为官方构建声明；Web 指 WebAssembly 版本，不代表现成托管服务。代码许可不涵盖所有第三方素材和品牌。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "Rust 幻灯片编辑与播放工具，处于 alpha；提供母版、图表、动画及演讲者视图。",
+      "features": {
+        "slide_editing": {
+          "value": "yes",
+          "note": "官方文档列出该能力；本轮未安装实测。"
+        },
+        "animations": {
+          "value": "yes",
+          "note": "官方文档列出该能力；本轮未安装实测。"
+        },
+        "office_files": {
+          "value": "partial",
+          "note": "可读写 PPTX，不保证复杂文稿无损往返。"
+        },
+        "pdf_export": {
+          "value": "yes",
+          "note": "官方文档列出该能力；本轮未安装实测。"
+        }
+      },
+      "sources": [
+        "https://github.com/storytold/deckcraft/blob/main/README.md",
+        "https://github.com/storytold/deckcraft/blob/main/LICENSE-MIT",
+        "https://github.com/storytold/deckcraft/blob/main/LICENSE-APACHE"
+      ],
+      "collected_at": "2026-11-14"
+    },
+    {
+      "id": "libreoffice-impress",
+      "name": "LibreOffice Impress",
+      "official_url": "https://www.libreoffice.org/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "MPL-2.0（含其他开源许可组件）",
+      "pricing_model": "开源免费",
+      "price_summary": "软件可免费使用；可选支持、捐赠和外部服务另计。",
+      "prices": [],
+      "free_tier_limits": "支持 Office 文件不保证无损往返；复杂排版、字体及宏需用自己的文件验证。桌面编辑不等于所有插件和联网功能都不传输数据，本轮未做网络审计。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "桌面幻灯片制作与播放工具，提供模板、图表、动画与切换。",
+      "features": {
+        "slide_editing": {
+          "value": "yes",
+          "note": "官方文档列出该能力；本轮未安装实测。"
+        },
+        "animations": {
+          "value": "yes",
+          "note": "官方文档列出该能力；本轮未安装实测。"
+        },
+        "office_files": {
+          "value": "partial",
+          "note": "支持 Office 文件导入导出，复杂格式与宏不保证完整兼容。"
+        },
+        "pdf_export": {
+          "value": "yes",
+          "note": "官方文档列出该能力；本轮未安装实测。"
+        }
+      },
+      "sources": [
+        "https://www.libreoffice.org/",
+        "https://www.libreoffice.org/download/",
+        "https://www.libreoffice.org/licenses/",
+        "https://help.libreoffice.org/latest/en-US/text/shared/guide/ms_user.html",
+        "https://help.libreoffice.org/latest/en-US/text/simpress/main0503.html",
+        "https://books.libreoffice.org/en/"
+      ],
+      "collected_at": "2026-11-14"
+    }
+  ]
+}
