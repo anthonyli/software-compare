@@ -104,6 +104,52 @@
         "https://www.adobe.com/products/indesign.html",
         "https://helpx.adobe.com/indesign/using/exporting-publishing-pdf.html"
       ]
+    },
+    {
+      "id": "designcraft",
+      "name": "DesignCraft",
+      "official_url": "https://github.com/storytold/designcraft",
+      "github_url": "https://github.com/storytold/designcraft",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "open_source": true,
+      "license": "MIT OR Apache-2.0",
+      "pricing_model": "开源免费",
+      "price_summary": "源码采用 MIT OR Apache-2.0；未核实任何附加服务价格。",
+      "prices": [],
+      "free_tier_limits": "仅核实官方文档，未安装实测；代码可按 MIT 或 Apache-2.0 使用，品牌与第三方素材授权另计。 复杂印前、字体和格式交换需逐项验证，不保证 InDesign 文件无损往返。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "Rust 桌面排版应用，官方路线图标为 pre-alpha；面向多页文字与出版布局。",
+      "features": {
+        "page_layout": {
+          "value": "yes",
+          "note": "官方 README 列出该能力；仅文档核实，未实测。"
+        },
+        "cmyk": {
+          "value": "partial",
+          "note": "README 确认 CMYK 色彩；本次未单独确认专色工作流。"
+        },
+        "icc": {
+          "value": "unknown",
+          "note": "本次官方资料未确认；不代表不支持。"
+        },
+        "pdf_export": {
+          "value": "yes",
+          "note": "官方 README 列出该能力；仅文档核实，未实测。"
+        }
+      },
+      "sources": [
+        "https://github.com/storytold/designcraft/blob/main/README.md",
+        "https://github.com/storytold/designcraft/blob/main/LICENSE-MIT",
+        "https://github.com/storytold/designcraft/blob/main/LICENSE-APACHE"
+      ],
+      "collected_at": "2026-11-14"
     }
   ]
 }

@@ -238,6 +238,52 @@
         "https://www.adobe.com/products/photoshop-lightroom-classic.html",
         "https://helpx.adobe.com/lightroom-classic/help/import-photos-tethered-camera.html"
       ]
+    },
+    {
+      "id": "lightcraft",
+      "name": "LightCraft",
+      "official_url": "https://github.com/storytold/lightcraft",
+      "github_url": "https://github.com/storytold/lightcraft",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "open_source": true,
+      "license": "MIT OR Apache-2.0",
+      "pricing_model": "开源免费",
+      "price_summary": "源码采用 MIT OR Apache-2.0；未核实任何附加服务价格。",
+      "prices": [],
+      "free_tier_limits": "仅核实官方文档，未安装实测；代码可按 MIT 或 Apache-2.0 使用，品牌与第三方素材授权另计。 官方称本地优先、无账号和遥测；可选 AI 遮罩和降噪模型需另装并核对模型许可。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "Rust 非破坏照片显影和目录管理工具，处于 alpha；不是 Lightroom 全功能等价替代。",
+      "features": {
+        "raw": {
+          "value": "partial",
+          "note": "支持多种 RAW，但部分 CR3、NEF 和压缩 ORF 只回退到内嵌 JPEG；须核对相机型号。"
+        },
+        "catalog": {
+          "value": "yes",
+          "note": "官方 README 列出该能力；仅文档核实，未实测。"
+        },
+        "non_destructive": {
+          "value": "yes",
+          "note": "官方 README 列出该能力；仅文档核实，未实测。"
+        },
+        "tethering": {
+          "value": "unknown",
+          "note": "本次官方资料未确认；不代表不支持。"
+        }
+      },
+      "sources": [
+        "https://github.com/storytold/lightcraft/blob/main/README.md",
+        "https://github.com/storytold/lightcraft/blob/main/LICENSE-MIT",
+        "https://github.com/storytold/lightcraft/blob/main/LICENSE-APACHE"
+      ],
+      "collected_at": "2026-11-14"
     }
   ]
 }

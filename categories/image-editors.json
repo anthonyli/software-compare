@@ -272,6 +272,52 @@
         "https://www.adobe.com/products/photoshop.html",
         "https://helpx.adobe.com/photoshop/using/creating-frame-animations.html"
       ]
+    },
+    {
+      "id": "photocraft",
+      "name": "PhotoCraft",
+      "official_url": "https://github.com/storytold/photocraft",
+      "github_url": "https://github.com/storytold/photocraft",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "open_source": true,
+      "license": "MIT OR Apache-2.0",
+      "pricing_model": "开源免费",
+      "price_summary": "源码采用 MIT OR Apache-2.0；未核实任何附加服务价格。",
+      "prices": [],
+      "free_tier_limits": "仅核实官方文档，未安装实测；代码可按 MIT 或 Apache-2.0 使用，品牌与第三方素材授权另计。 PSD/PSB 兼容与插件能力仍有缺口，迁移前需验证自己的文档。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "Rust 图层修图与合成工具，处于 early alpha；官方明确尚不能替代专业日常 Photoshop 工作流。",
+      "features": {
+        "layers": {
+          "value": "yes",
+          "note": "官方 README 列出该能力；仅文档核实，未实测。"
+        },
+        "painting": {
+          "value": "yes",
+          "note": "官方 README 列出该能力；仅文档核实，未实测。"
+        },
+        "animation": {
+          "value": "unknown",
+          "note": "本次官方资料未确认；不代表不支持。"
+        },
+        "plugins": {
+          "value": "unknown",
+          "note": "本次官方资料未确认；不代表不支持。"
+        }
+      },
+      "sources": [
+        "https://github.com/storytold/photocraft/blob/main/README.md",
+        "https://github.com/storytold/photocraft/blob/main/LICENSE-MIT",
+        "https://github.com/storytold/photocraft/blob/main/LICENSE-APACHE"
+      ],
+      "collected_at": "2026-11-14"
     }
   ]
 }

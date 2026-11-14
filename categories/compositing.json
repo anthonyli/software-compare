@@ -106,6 +106,52 @@
         "https://www.adobe.com/products/aftereffects.html",
         "https://helpx.adobe.com/after-effects/using/tracking-stabilizing-motion-cs5.html"
       ]
+    },
+    {
+      "id": "effectcraft",
+      "name": "EffectCraft",
+      "official_url": "https://github.com/storytold/effectcraft",
+      "github_url": "https://github.com/storytold/effectcraft",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "open_source": true,
+      "license": "MIT OR Apache-2.0",
+      "pricing_model": "开源免费",
+      "price_summary": "源码采用 MIT OR Apache-2.0；未核实任何附加服务价格。",
+      "prices": [],
+      "free_tier_limits": "仅核实官方文档，未安装实测；代码可按 MIT 或 Apache-2.0 使用，品牌与第三方素材授权另计。 不支持 After Effects SDK 插件及其专有项目格式；默认无网络访问，显式使用的模型或服务另行核实。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "Rust 图层式动效与视觉合成工具，处于 alpha；具有关键帧、表达式和 Lottie 导入导出。",
+      "features": {
+        "node_compositing": {
+          "value": "unknown",
+          "note": "本次官方资料未确认；不代表不支持。"
+        },
+        "chroma_key": {
+          "value": "partial",
+          "note": "官方列出 keying 和 matte 效果；具体抠像流程和效果未实测。"
+        },
+        "tracking_2d": {
+          "value": "partial",
+          "note": "官方列出可选 MediaPipe 人脸跟踪模型，仍在评估；不等同于已验证的通用 2D 跟踪。"
+        },
+        "openfx": {
+          "value": "unknown",
+          "note": "本次官方资料未确认；不代表不支持。"
+        }
+      },
+      "sources": [
+        "https://github.com/storytold/effectcraft/blob/main/README.md",
+        "https://github.com/storytold/effectcraft/blob/main/LICENSE-MIT",
+        "https://github.com/storytold/effectcraft/blob/main/LICENSE-APACHE"
+      ],
+      "collected_at": "2026-11-14"
     }
   ]
 }
