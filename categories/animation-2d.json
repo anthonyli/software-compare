@@ -1,7 +1,7 @@
 {
   "category_slug": "animation-2d",
   "category_name_zh": "2D 动画制作",
-  "collected_at": "2026-11-14",
+  "collected_at": "2026-11-15",
   "collected_at_timezone": "Asia/Shanghai (UTC+8)",
   "notes": "按动画制作流程比较，不承诺直接导入或无损兼容 Adobe Animate 项目。平台支持不代表所有附属工具都可用。",
   "features": [
@@ -347,6 +347,54 @@
         "https://friction.graphics/documentation/animation_techniques.html"
       ],
       "collected_at": "2026-11-14"
+    },
+    {
+      "id": "cavalry",
+      "name": "Cavalry",
+      "official_url": "https://cavalry.studio/en/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "个人免费，企业管理另计",
+      "price_summary": "当前 Cavalry by Canva 个人版免费，可商用；原 Professional 功能已免费，需 Canva 账号。企业 SSO/管理依 Canva 企业方案，不沿用旧 Pro 月费。",
+      "prices": [],
+      "free_tier_limits": "Windows 10+、macOS 12+，支持 Intel/Apple Silicon；登录需要联网。免费不等于开源或完全离线，账号及服务受 Canva 条款和隐私政策约束；未审计全部数据传输。旧 Scene Group 订阅未取消仍可能续费，退款会移除旧版 Pro 许可，迁移前验证文件兼容。不是完整 After Effects / Animate 项目的无损替代；M4 16GB 复杂场景未实测，素材许可另核。 勾选 Upload to Canva 会把输出上传到登录账号；不要将其当作纯本地处理。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "程序化二维动效工具，结合矢量形状、关键帧、数据驱动和绑定控制，适合图表动效与批量视觉设计。",
+      "features": {
+        "vector_animation": {
+          "value": "yes"
+        },
+        "raster_animation": {
+          "value": "yes",
+          "note": "支持图像/视频 Footage Shape 动画，不代表完整逐帧绘画编辑器。"
+        },
+        "bone_animation": {
+          "value": "partial",
+          "note": "提供 Rubber Hose Limb 与绑定控制，不能等同所有骨骼动画流程。"
+        },
+        "node_effects": {
+          "value": "unknown",
+          "note": "已核实程序化属性和特效；未核实通用节点合成图。"
+        }
+      },
+      "sources": [
+        "https://cavalry.studio/en/download/",
+        "https://cavalry.studio/docs/",
+        "https://cavalry.studio/docs/getting-started/requirements/",
+        "https://cavalry.studio/docs/nodes/shapes/",
+        "https://cavalry.studio/docs/nodes/shapes/footage-shape/",
+        "https://cavalry.studio/docs/nodes/behaviours/rubber-hose-limb/",
+        "https://www.canva.com/policies/terms-of-use/",
+        "https://cavalry.studio/docs/user-interface/menus/window-menu/render-manager/"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
