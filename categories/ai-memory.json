@@ -95,12 +95,12 @@
         "iOS"
       ],
       "open_source": true,
-      "license": "MIT",
-      "pricing_model": "开源代码；托管服务和硬件另计",
+      "license": "MIT（仓库代码）；官方服务另受服务条款约束",
+      "pricing_model": "开源自建 / 官方有限免费与自动续费订阅 / 硬件另计",
       "summary": "手机、桌面和可穿戴设备的 AI 记忆平台，把对话及屏幕信息变成可检索记录、摘要和行动项。",
-      "price_summary": "仓库代码 MIT；托管 Omi Cloud、付费计划与可选硬件另行计费，自建后端及模型也有运行成本。",
+      "price_summary": "MIT 是代码许可，不代表官方 iOS/云服务永久免费。美区 App Store 显示免费下载；官网列有限免费计划（每月300分钟云转写）及付费 Pro，价格页年付 US$269，最终按地区、账号和实际结算页。自建模型/后端及硬件另计。",
       "prices": [],
-      "free_tier_limits": "macOS 源码快速启动要求 macOS 14+、Xcode、Node.js，并连接云后端。手机端为 iOS/Android；完整自建需配置后端、数据库和模型，不代表开箱离线。录音及云端处理前确认参与者同意和数据权限；M4 16GB 完整自建资源未核实，未实测。",
+      "free_tier_limits": "若应用展示7天免费试用，不等于永久免费，也未核实为所有地区/账号统一政策。官方条款规定试用未提前取消会转付费，订阅持续自动续费；按实际购买渠道取消：App Store 购买在 Apple 账户订阅管理，其他渠道查看 Omi 的 Settings → Plan & Usage/账户订阅管理。取消通常停止后续续费，不自动退款。macOS 源码快速启动要求 macOS 14+、Xcode、Node.js，并连接云后端；自建需后端、数据库和模型，并非开箱离线；录音和云处理须取得所需同意。未登录核实试用页面、订阅或实测；M4 16GB 完整自建资源未核实。",
       "github_stars": null,
       "latest_release": null,
       "latest_release_date": null,
@@ -134,7 +134,11 @@
       "sources": [
         "https://github.com/BasedHardware/omi",
         "https://github.com/BasedHardware/omi/blob/main/LICENSE",
-        "https://github.com/BasedHardware/omi/blob/main/README.md"
+        "https://github.com/BasedHardware/omi/blob/main/README.md",
+        "https://apps.apple.com/us/app/omi-smart-meeting-notes/id6502156163",
+        "https://www.omi.me/pages/pricing",
+        "https://www.omi.me/pages/terms-of-service",
+        "https://help.omi.me/en/articles/13159726-manage-my-subscription"
       ],
       "collected_at": "2026-11-14"
     },
