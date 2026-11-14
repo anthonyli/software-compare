@@ -1,7 +1,7 @@
 {
   "category_slug": "database-clients",
   "category_name_zh": "数据库客户端",
-  "collected_at": "2026-11-13",
+  "collected_at": "2026-11-14",
   "timezone": "Asia/Shanghai",
   "notes": "用于查询和编辑数据库，不是备份服务；写入前确认连接环境及权限。仅核实官方文档，未实测。",
   "features": [
@@ -247,6 +247,100 @@
         "https://www.pgadmin.org/features/",
         "https://www.pgadmin.org/licence/",
         "https://www.pgadmin.org/docs/pgadmin4/latest/import_export_data.html"
+      ],
+      "collected_at": "2026-11-14"
+    },
+    {
+      "id": "tableplus",
+      "name": "TablePlus",
+      "official_url": "https://tableplus.com/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "免费受限 / 商业授权",
+      "price_summary": "桌面版一次购买，含一年更新与支持；之后可继续使用已有版本，更新续费不自动续订。",
+      "prices": [],
+      "free_tier_limits": "免费试用同时限 2 个标签、2 个窗口及 2 个高级筛选；免费 Windows 版不提供筛选。不同平台及数据库支持不完全一致；iOS 是另版，不纳入本行桌面比较。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "原生多数据库客户端，可执行 SQL、编辑表数据及导入导出；GitHub 问题跟踪仓库不代表客户端开源。",
+      "features": {
+        "sql": {
+          "value": "yes",
+          "note": ""
+        },
+        "data_edit": {
+          "value": "yes",
+          "note": ""
+        },
+        "multi_engine": {
+          "value": "yes",
+          "note": ""
+        },
+        "import_export": {
+          "value": "yes",
+          "note": ""
+        }
+      },
+      "sources": [
+        "https://tableplus.com/",
+        "https://tableplus.com/pricing",
+        "https://tableplus.com/docs/overview",
+        "https://tableplus.com/privacy"
+      ],
+      "collected_at": "2026-11-14"
+    },
+    {
+      "id": "datagrip",
+      "name": "DataGrip",
+      "official_url": "https://www.jetbrains.com/datagrip/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "免费受限 / 商业授权",
+      "price_summary": "个人非商业用途可免费；商业用途需付费订阅，另有 30 天试用。不是对所有工作场景免费。",
+      "prices": [],
+      "free_tier_limits": "非商用许可需联网登录 JetBrains 账号激活，2025.2.4 之前版本不支持；计划获得商业收益的项目应使用商业许可。数据库驱动、平台和版本影响支持范围。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "面向开发者的跨平台数据库 IDE，提供 SQL 辅助、数据表编辑和多格式导入导出；不是数据库服务器或自动备份服务。",
+      "features": {
+        "sql": {
+          "value": "yes",
+          "note": ""
+        },
+        "data_edit": {
+          "value": "yes",
+          "note": ""
+        },
+        "multi_engine": {
+          "value": "yes",
+          "note": ""
+        },
+        "import_export": {
+          "value": "yes",
+          "note": ""
+        }
+      },
+      "sources": [
+        "https://www.jetbrains.com/datagrip/",
+        "https://www.jetbrains.com/help/datagrip/register.html",
+        "https://www.jetbrains.com/help/datagrip/installation-guide.html",
+        "https://sales.jetbrains.com/hc/en-gb/articles/18950890312210-The-free-non-commercial-licensing-FAQ"
       ],
       "collected_at": "2026-11-14"
     }
