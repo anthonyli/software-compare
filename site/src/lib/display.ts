@@ -4,7 +4,7 @@ import { ui, tr, type Locale } from "../i18n";
 import { pricingEn, maintenanceEn } from "../i18n/labels";
 
 const LEAK =
-  /WebFetch|\bcurl\b|\bworker\b|本轮|抓取|本机访问|本机官方|published_at|pushed_at|stargazers_count|github_stars|\bMCP\b|NOASSERTION|本次未|本次抓取|本次读取|本次核|本次打开|精确 SPDX|反爬|没抓到|没抓全|未读到|未采集|未核完|未核到|未核对|未能解析|未能提取|未能把 SKU|摘录中|打开政策全文|打开发行说明|逐项打开|逐条核对|Cloudflare 拦截/i;
+  /WebFetch|\bcurl\b|\bworker\b|本轮|抓取|本机访问|本机官方|published_at|pushed_at|stargazers_count|github_stars|NOASSERTION|本次未|本次抓取|本次读取|本次核|本次打开|精确 SPDX|反爬|没抓到|没抓全|未读到|未采集|未核完|未核到|未核对|未能解析|未能提取|未能把 SKU|摘录中|打开政策全文|打开发行说明|逐项打开|逐条核对|Cloudflare 拦截/i;
 
 export const PRICE_CAVEAT = ui.zh.caveat;
 export const PRICE_CAVEAT_EN = ui.en.caveat;

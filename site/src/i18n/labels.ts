@@ -9,6 +9,7 @@ function contentFallback(text: string): string {
 
 /** Category display names, keyed by slug. */
 export const categoryNames: Record<string, { zh: string; en: string }> = {
+  "ai-memory": { zh: "AI 记忆助手", en: "AI memory assistants" },
   "word-processors": { zh: "文字处理", en: "Word processors" },
   "spreadsheets": { zh: "电子表格", en: "Spreadsheets" },
   "presentation-tools": { zh: "演示文稿", en: "Presentations" },
