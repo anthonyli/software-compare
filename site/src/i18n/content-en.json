@@ -1892,5 +1892,12 @@
   "完整设计编辑器仅 macOS；Web 用于查看、评审、检查与原型，不是同等网页版编辑器。文档可本地保存，Workspace 和外部 AI/MCP 另有数据流；未实测 M4 16GB。": "Full design editing is macOS-only. The web app provides viewing, review, inspection and prototypes, not equivalent browser editing. Documents can be saved locally; Workspaces and external AI/MCP have separate data flows. M4 16GB was not tested.",
   "面向 Mac 的矢量界面设计和原型工具，可按需使用订阅工作区进行团队协作。": "A Mac vector UI design and prototyping tool with optional subscription workspaces for team collaboration.",
   "实时协作需要订阅；Mac-only 许可不含云协作与在线分享。": "Real-time collaboration requires a subscription; Mac-only licenses exclude cloud collaboration and online sharing.",
-  "Private Cloud 由 Sketch 管理 AWS 环境，不等于用户自行部署；未核实用户自托管版本。": "Private Cloud is an AWS environment managed by Sketch, not user deployment; a user-self-hosted edition is unverified."
+  "Private Cloud 由 Sketch 管理 AWS 环境，不等于用户自行部署；未核实用户自托管版本。": "Private Cloud is an AWS environment managed by Sketch, not user deployment; a user-self-hosted edition is unverified.",
+  "桌面版一次购买，含一年更新与支持；之后可继续使用已有版本，更新续费不自动续订。": "Desktop perpetual purchase includes one year of updates and support; existing versions remain usable, with optional non-automatic renewal.",
+  "免费试用同时限 2 个标签、2 个窗口及 2 个高级筛选；免费 Windows 版不提供筛选。不同平台及数据库支持不完全一致；iOS 是另版，不纳入本行桌面比较。": "Free trial permits 2 tabs, 2 windows and 2 advanced filters at once; free Windows has no filters. Platform and database support varies; the separate iOS app is outside this desktop comparison.",
+  "原生多数据库客户端，可执行 SQL、编辑表数据及导入导出；GitHub 问题跟踪仓库不代表客户端开源。": "Native multi-database client for SQL, table editing and import/export; its GitHub issue tracker does not make the client open source.",
+  "免费受限 / 商业授权": "Limited free access / commercial license",
+  "个人非商业用途可免费；商业用途需付费订阅，另有 30 天试用。不是对所有工作场景免费。": "Free for personal non-commercial use; commercial use requires a paid subscription, with a separate 30-day trial. Not free for every work scenario.",
+  "非商用许可需联网登录 JetBrains 账号激活，2025.2.4 之前版本不支持；计划获得商业收益的项目应使用商业许可。数据库驱动、平台和版本影响支持范围。": "Non-commercial activation requires an online JetBrains account and is unavailable before 2025.2.4. Projects intended for commercial benefit need a commercial license. Drivers, platforms and versions affect database support.",
+  "面向开发者的跨平台数据库 IDE，提供 SQL 辅助、数据表编辑和多格式导入导出；不是数据库服务器或自动备份服务。": "Cross-platform database IDE with SQL assistance, table editing and multi-format import/export; not a database server or automatic backup service."
 }
