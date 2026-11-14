@@ -252,7 +252,7 @@
       "price_summary": "开源编译器免费；官网云服务免费档每项目 200MB、最多 100 个文件，扩展功能有付费方案。未核实结账金额。",
       "prices": [],
       "summary": "代码式排版系统，适合可复用模板、报告和技术文档；不是 InDesign 的拖拽式无损替代。",
-      "free_tier_limits": "本地 CLI 与在线协作服务不同，云端项目需交由服务处理。CMYK 颜色在 PDF/A 输出时不支持；完整 ICC 印前流程未核实。字体、模板及依赖有各自许可，未实测 M4 16GB 或复杂文档性能。",
+      "free_tier_limits": "本地 CLI 与在线协作服务不同，云端项目需交由服务处理。CMYK 颜色在 PDF/A 输出时不支持；完整 ICC 印前流程未核实。字体、模板及依赖有各自许可，未实测 M4 16GB 或复杂文档性能。 Web 项目 ZIP 不含所用私有包及平台提供的字体，本地重建可能缺依赖或排版不同，应另备齐所需包与授权字体。包首次使用会下载后缓存，不代表所有本地文档都必须联网。",
       "features": {
         "page_layout": {
           "value": "yes"
@@ -275,7 +275,9 @@
         "https://typst.app/docs/reference/visualize/color/",
         "https://typst.app/pricing/",
         "https://typst.app/open-source/",
-        "https://typst.app/docs/reference/visualize/image/"
+        "https://typst.app/docs/reference/visualize/image/",
+        "https://typst.app/docs/web-app/export-and-preview/",
+        "https://typst.app/docs/guides/for-latex-users/"
       ],
       "github_stars": null,
       "latest_release": null,
