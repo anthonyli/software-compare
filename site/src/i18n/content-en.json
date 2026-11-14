@@ -1934,5 +1934,18 @@
   "个人 Google 账号可使用基础表格；Workspace 管理及部分高级或 AI 功能按付费方案提供。": "A personal Google account can use basic spreadsheets; Workspace administration and some advanced or AI features require applicable paid plans.",
   "云端协作为主，电脑离线需预先启用 Chrome/Edge 和离线扩展。可编辑与导出 Excel 文件，但复杂图表、公式、插件和自动化须逐项验证，不能当成 Excel 无损替代。": "Cloud-first collaboration; desktop offline use requires prior setup with Chrome/Edge and the offline extension. Excel files can be edited and exported, but complex charts, formulas, add-ons and automation need individual checks, not a lossless Excel replacement.",
   "面向多人协作的在线电子表格，提供函数、筛选视图和图表；适合共享数据与轻量分析，浏览器访问不等于原生桌面客户端。": "Online spreadsheets with functions, filter views and charts for shared data and lightweight analysis; browser access is not a native desktop client.",
-  "支持 Excel 文件编辑、转换和导出，不保证全部功能或格式往返保真。": "Supports editing, converting and exporting Excel files, without guaranteed full feature or formatting fidelity."
+  "支持 Excel 文件编辑、转换和导出，不保证全部功能或格式往返保真。": "Supports editing, converting and exporting Excel files, without guaranteed full feature or formatting fidelity.",
+  "在绘画工作流中制作逐帧位图动画，提供时间轴、洋葱皮和分镜；适合手绘短镜头，而非完整影视合成套件。": "Frame-by-frame raster animation within a painting workflow, with timeline, onion skin and storyboards; suited to hand-drawn short shots, not a full VFX compositing suite.",
+  "动画帧占用内存，长片段与高分辨率需分镜和控制图层；不等同视频剪辑软件。支持矢量图层不代表已核实矢量动画或骨骼系统。": "Animation frames consume RAM; long or high-resolution shots need planning and layer control. Not a video editor. Vector layers do not establish vector animation or skeletal rigging support.",
+  "已核实逐帧位图动画，未据矢量绘图能力推断矢量动画。": "Frame-by-frame raster animation verified; vector drawing does not establish vector animation.",
+  "未核实完整骨骼绑定流程，不把普通变换自动算作骨骼系统。": "Full skeletal rigging workflow not verified; ordinary transforms do not establish a bone system.",
+  "未核实节点式特效图。": "A node-based effects graph is not verified.",
+  "官网开源版本免费，可用于商业创作；素材和扩展许可另核，商店分发或支持服务可能收费。": "Official open-source downloads are free for commercial creation; assets and extensions have separate licenses, while store distribution or support may cost extra.",
+  "矢量优先的二维动效软件，支持位图素材动画、关键帧及 SVG 动画输出；基于 enve 分支，不是 After Effects 项目的无损替代。": "Vector-first 2D motion graphics with bitmap asset animation, keyframes and animated SVG output; forked from enve, not a lossless After Effects project replacement.",
+  "原生采用 SVG/SMIL，不提供内置 Lottie 支持；素材绘制通常配合外部工具。普通效果和着色器不等同节点合成图，M4 16GB 未实测。": "Uses SVG/SMIL natively without built-in Lottie support; asset drawing often uses external tools. Effects and shaders are not equivalent to a node compositing graph. M4 16GB not tested.",
+  "支持位图素材动画，不代表完整逐帧绘画编辑器。": "Supports bitmap asset animation, not necessarily a full frame-by-frame painting editor.",
+  "未核实完整骨骼绑定或剪纸角色系统。": "Full skeletal rigging or cut-out character system not verified.",
+  "有特效和着色器，但官方资料未确认节点式合成图。": "Effects and shaders exist, but official material does not confirm a node-based compositing graph.",
+  "支持变换蒙版的位置、旋转和缩放补间；不是完整骨骼绑定系统。": "Transform masks support position, rotation and scale tweening, not a full skeletal rigging system.",
+  "可用 Parent Effect 和表达式做父子关联；官方说明没有高级骨骼系统。": "Parent Effect and expressions support parenting; official documentation notes no advanced bone system."
 }

@@ -1,7 +1,7 @@
 {
   "category_slug": "animation-2d",
   "category_name_zh": "2D 动画制作",
-  "collected_at": "2026-11-13",
+  "collected_at": "2026-11-14",
   "collected_at_timezone": "Asia/Shanghai (UTC+8)",
   "notes": "按动画制作流程比较，不承诺直接导入或无损兼容 Adobe Animate 项目。平台支持不代表所有附属工具都可用。",
   "features": [
@@ -255,6 +255,98 @@
       "latest_release": null,
       "latest_release_date": null,
       "maintenance_status": null
+    },
+    {
+      "id": "krita",
+      "name": "Krita",
+      "official_url": "https://krita.org/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "完全免费",
+      "price_summary": "官网开源版本免费，可用于商业创作；素材和扩展许可另核，商店分发或支持服务可能收费。",
+      "prices": [],
+      "free_tier_limits": "动画帧占用内存，长片段与高分辨率需分镜和控制图层；不等同视频剪辑软件。支持矢量图层不代表已核实矢量动画或骨骼系统。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "在绘画工作流中制作逐帧位图动画，提供时间轴、洋葱皮和分镜；适合手绘短镜头，而非完整影视合成套件。",
+      "features": {
+        "vector_animation": {
+          "value": "unknown",
+          "note": "已核实逐帧位图动画，未据矢量绘图能力推断矢量动画。"
+        },
+        "raster_animation": {
+          "value": "yes"
+        },
+        "bone_animation": {
+          "value": "partial",
+          "note": "支持变换蒙版的位置、旋转和缩放补间；不是完整骨骼绑定系统。"
+        },
+        "node_effects": {
+          "value": "unknown",
+          "note": "未核实节点式特效图。"
+        }
+      },
+      "sources": [
+        "https://docs.krita.org/en/user_manual/animation.html",
+        "https://krita.org/en/about/license/",
+        "https://krita.org/en/download/",
+        "https://docs.krita.org/en/reference_manual/layers_and_masks/transformation_masks.html"
+      ],
+      "collected_at": "2026-11-14",
+      "source_url": "https://invent.kde.org/graphics/krita",
+      "source_repo_label": "KDE Invent"
+    },
+    {
+      "id": "friction",
+      "name": "Friction",
+      "official_url": "https://friction.graphics/",
+      "github_url": "https://github.com/friction2d/friction",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0-only",
+      "pricing_model": "完全免费",
+      "price_summary": "官网开源版本免费，可用于商业创作；素材和扩展许可另核，商店分发或支持服务可能收费。",
+      "prices": [],
+      "free_tier_limits": "原生采用 SVG/SMIL，不提供内置 Lottie 支持；素材绘制通常配合外部工具。普通效果和着色器不等同节点合成图，M4 16GB 未实测。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "矢量优先的二维动效软件，支持位图素材动画、关键帧及 SVG 动画输出；基于 enve 分支，不是 After Effects 项目的无损替代。",
+      "features": {
+        "vector_animation": {
+          "value": "yes"
+        },
+        "raster_animation": {
+          "value": "yes",
+          "note": "支持位图素材动画，不代表完整逐帧绘画编辑器。"
+        },
+        "bone_animation": {
+          "value": "partial",
+          "note": "可用 Parent Effect 和表达式做父子关联；官方说明没有高级骨骼系统。"
+        },
+        "node_effects": {
+          "value": "unknown",
+          "note": "有特效和着色器，但官方资料未确认节点式合成图。"
+        }
+      },
+      "sources": [
+        "https://github.com/friction2d/friction",
+        "https://friction.graphics/documentation/faq.html",
+        "https://friction.graphics/documentation/usage.html",
+        "https://friction.graphics/documentation/animation_techniques.html"
+      ],
+      "collected_at": "2026-11-14"
     }
   ]
 }
