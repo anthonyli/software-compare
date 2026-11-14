@@ -2,7 +2,7 @@ import {test, expect} from '@playwright/test';
 
 // Fetch HTML only: verify build output without sending test visits to analytics.
 test('public page layouts contain exactly one configured Cloudflare beacon', async ({request}) => {
-  for (const path of ['/', '/c/notes/', '/p/cad/qcad-ce/']) {
+  for (const path of ['/', '/c/note-taking/', '/p/cad/qcad-ce/']) {
     const response = await request.get(path);
     expect(response.status()).toBe(200);
     const html = await response.text();
