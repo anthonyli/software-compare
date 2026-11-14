@@ -1,7 +1,7 @@
 {
   "category_slug": "desktop-publishing",
   "category_name_zh": "桌面排版与印刷",
-  "collected_at": "2026-11-14",
+  "collected_at": "2026-11-15",
   "collected_at_timezone": "Asia/Shanghai (UTC+8)",
   "features": [
     {
@@ -234,6 +234,53 @@
         "https://www.quark.com/documentation/quarkxpress/2026/english/QXP_2026_Getting_Started/_49ed0241-ce73-469c-baed-bfe1d6bfc146.html"
       ],
       "collected_at": "2026-11-14"
+    },
+    {
+      "id": "typst",
+      "name": "Typst",
+      "official_url": "https://typst.app/",
+      "github_url": "https://github.com/typst/typst",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0（编译器）；在线服务另有条款",
+      "pricing_model": "本地编译器免费；云服务免费档及订阅",
+      "price_summary": "开源编译器免费；官网云服务免费档每项目 200MB、最多 100 个文件，扩展功能有付费方案。未核实结账金额。",
+      "prices": [],
+      "summary": "代码式排版系统，适合可复用模板、报告和技术文档；不是 InDesign 的拖拽式无损替代。",
+      "free_tier_limits": "本地 CLI 与在线协作服务不同，云端项目需交由服务处理。CMYK 颜色在 PDF/A 输出时不支持；完整 ICC 印前流程未核实。字体、模板及依赖有各自许可，未实测 M4 16GB 或复杂文档性能。",
+      "features": {
+        "page_layout": {
+          "value": "yes"
+        },
+        "cmyk": {
+          "value": "partial",
+          "note": "支持 CMYK 定义，但 PDF/A 不支持；不能据此承诺完整印前色彩流程。"
+        },
+        "icc": {
+          "value": "partial",
+          "note": "支持图像 ICC 配置，不代表完整印前色彩管理。"
+        },
+        "pdf_export": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://github.com/typst/typst",
+        "https://typst.app/docs/reference/pdf/",
+        "https://typst.app/docs/reference/visualize/color/",
+        "https://typst.app/pricing/",
+        "https://typst.app/open-source/",
+        "https://typst.app/docs/reference/visualize/image/"
+      ],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-15"
     }
   ]
 }
