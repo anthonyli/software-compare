@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: Apache-2.0
 import contentEn from "./content-en.json" with { type: "json" };
+import publicContentEn from "./public-content-en.json" with { type: "json" };
 import {
   categoryNames,
   groupNames,
@@ -16,6 +17,9 @@ export { ui, fill };
 export * from "./labels";
 
 const CONTENT = contentEn as Record<string, string>;
+// Explicit, reviewed translations keyed by the already-cleaned public text.
+// Never recover a translation using an unclean source: it may reintroduce removed material.
+const PUBLIC_CONTENT = publicContentEn as Record<string, string>;
 
 const byZh: Record<string, string> = {};
 for (const rec of Object.values(categoryNames)) byZh[rec.zh] = rec.en;
@@ -28,6 +32,7 @@ export function tr(zh: string | null | undefined): string {
   if (zh == null) return "";
   const s = String(zh);
   if (!s) return "";
+  if (Object.prototype.hasOwnProperty.call(PUBLIC_CONTENT, s)) return PUBLIC_CONTENT[s];
   if (Object.prototype.hasOwnProperty.call(CONTENT, s)) return CONTENT[s];
   if (Object.prototype.hasOwnProperty.call(byZh, s)) return byZh[s];
   if (!/[\u4e00-\u9fff]/.test(s)) return s;
