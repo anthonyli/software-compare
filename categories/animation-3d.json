@@ -1,7 +1,7 @@
 {
   "category_slug": "animation-3d",
   "category_name_zh": "3D 建模与动画",
-  "collected_at": "2026-11-13",
+  "collected_at": "2026-11-14",
   "collected_at_timezone": "Asia/Shanghai (UTC+8)",
   "notes": "涵盖完整 3D 创作套件和专门建模工具；须按动画、绑定和渲染能力选择，不能视为完全等价替代。未实测硬件性能。",
   "features": [
@@ -200,6 +200,90 @@
       "latest_release": null,
       "latest_release_date": null,
       "maintenance_status": null
+    },
+    {
+      "id": "houdini",
+      "name": "Houdini",
+      "official_url": "https://www.sidefx.com/products/houdini/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "非商业免费 / 商业付费",
+      "price_summary": "Apprentice 学习及非商业项目免费；Indie 和商业版本另有付费授权与资格要求，不能把学习版当商业免费版。",
+      "prices": [],
+      "free_tier_limits": "Apprentice 许可每次 30 天，可反复续期，并非仅试用 30 天；采用非商业文件格式，渲染限 1080p，除 .picnc 外输出带水印，不支持第三方渲染器或商业混合管线。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "程序化 3D 建模、绑定、动画和特效模拟套件；适合需要可重复参数化流程的创作者，学习和硬件门槛较高。",
+      "features": {
+        "modeling_3d": {
+          "value": "yes"
+        },
+        "rigging_3d": {
+          "value": "yes"
+        },
+        "animation_3d": {
+          "value": "yes"
+        },
+        "rendering_3d": {
+          "value": "yes",
+          "note": "包含渲染能力；Apprentice 的分辨率、水印和渲染器限制见免费版说明，不代表各版本无差别。"
+        }
+      },
+      "sources": [
+        "https://www.sidefx.com/get/try-houdini/",
+        "https://www.sidefx.com/faq/apprentice/",
+        "https://www.sidefx.com/Support/system-requirements/"
+      ],
+      "collected_at": "2026-11-14"
+    },
+    {
+      "id": "bforartists",
+      "name": "Bforartists",
+      "official_url": "https://www.bforartists.co/",
+      "github_url": "https://github.com/Bforartists/Bforartists",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "完全免费",
+      "price_summary": "软件免费开源，可用于商业创作；可选培训、支持、素材及插件需另查费用和许可。",
+      "prices": [],
+      "free_tier_limits": "基于 Blender 的界面分支，不是全新的渲染引擎；插件、文件与教程须核对底层 Blender 版本及快捷键差异，不保证全部兼容。未实测 M4 16GB。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "重新整理菜单、图标与操作流程的 Blender 分支，覆盖建模、绑定、动画和渲染，适合偏好图形化操作的创作者。",
+      "features": {
+        "modeling_3d": {
+          "value": "yes"
+        },
+        "rigging_3d": {
+          "value": "yes"
+        },
+        "animation_3d": {
+          "value": "yes"
+        },
+        "rendering_3d": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://www.bforartists.co/",
+        "https://www.bforartists.co/download",
+        "https://www.bforartists.co/about/license",
+        "https://github.com/Bforartists/Bforartists"
+      ],
+      "collected_at": "2026-11-14"
     }
   ]
 }
