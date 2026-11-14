@@ -1,7 +1,7 @@
 {
   "category_slug": "transcription-tools",
   "category_name_zh": "语音转写与字幕工具",
-  "collected_at": "2026-11-13",
+  "collected_at": "2026-11-14",
   "timezone": "Asia/Shanghai",
   "notes": "转写可能误识别或生成不存在的内容，重要记录应对照原音频核实。输入含敏感内容时应核对模型运行位置、插件及网络选项。这里只录入工具资料，没有录制、上传或处理用户音视频。",
   "features": [
@@ -72,7 +72,8 @@
       },
       "sources": [
         "https://github.com/ggml-org/whisper.cpp"
-      ]
+      ],
+      "collected_at": "2026-11-13"
     },
     {
       "id": "buzz",
@@ -119,6 +120,154 @@
       },
       "sources": [
         "https://github.com/chidiwilliams/buzz"
+      ],
+      "collected_at": "2026-11-13"
+    },
+    {
+      "id": "vibe",
+      "name": "Vibe",
+      "official_url": "https://thewh1teagle.github.io/vibe/",
+      "github_url": "https://github.com/thewh1teagle/vibe",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "开源免费",
+      "summary": "本地语音转写桌面工具，支持批量文件与多种字幕导出，可选模型和摘要服务。",
+      "price_summary": "MIT 代码免费使用；模型许可单独核对。可选 Claude API 等服务可能收费，本地转写不要求购买该 API。",
+      "prices": [],
+      "free_tier_limits": "先下载模型再本地推理；网页媒体、更新与 Claude 摘要会访问网络，摘要可能发送文本。Ollama 是否本地取决于配置地址。M4 16GB 速度和峰值内存未实测，翻译能力取决于所选模型。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-14",
+      "features": {
+        "offline_transcription": {
+          "value": "yes",
+          "note": "使用已下载的本地模型可离线转写；不包括可选网络服务"
+        },
+        "file_transcription": {
+          "value": "yes",
+          "note": "官方 README 列出音频、视频和批量文件转写"
+        },
+        "live_microphone": {
+          "value": "partial",
+          "note": "支持麦克风输入和结果预览；未验证持续低延迟的流式转写"
+        },
+        "transcript_export": {
+          "value": "yes",
+          "note": "官方列出 SRT、VTT、TXT、HTML、PDF、JSON、DOCX"
+        },
+        "desktop_gui": {
+          "value": "yes",
+          "note": "提供 Windows、macOS、Linux 桌面界面"
+        }
+      },
+      "sources": [
+        "https://github.com/thewh1teagle/vibe",
+        "https://github.com/thewh1teagle/vibe/blob/main/LICENSE"
+      ]
+    },
+    {
+      "id": "subtitle-edit",
+      "name": "Subtitle Edit",
+      "official_url": "https://subtitleedit.github.io/subtitleedit/",
+      "github_url": "https://github.com/SubtitleEdit/subtitleedit",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "开源免费",
+      "summary": "字幕编辑与校时工具，集成本地或在线语音识别，适合转写后人工校对与字幕交付。",
+      "price_summary": "编辑器 MIT 免费；语音引擎与模型许可另查，选择在线识别或翻译服务可能需要付费 API。",
+      "prices": [],
+      "free_tier_limits": "此项按跨平台 Subtitle Edit 5 文档核实。引擎、模型需下载；Linux 原生包可能需 mpv/FFmpeg。在线引擎会发送音频或文本，本地引擎资源需求不同，未实测 M4 性能。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-14",
+      "features": {
+        "offline_transcription": {
+          "value": "yes",
+          "note": "可选 Whisper CPP 等本地引擎，需先准备引擎和模型"
+        },
+        "file_transcription": {
+          "value": "yes",
+          "note": "Video → Speech to text 可从音频生成字幕"
+        },
+        "live_microphone": {
+          "value": "unknown",
+          "note": "本次官方转写文档未确认实时麦克风流式输入"
+        },
+        "transcript_export": {
+          "value": "yes",
+          "note": "支持 SRT、WebVTT 等字幕格式并可调整时间轴"
+        },
+        "desktop_gui": {
+          "value": "yes",
+          "note": "Subtitle Edit 5 提供跨平台图形界面；不要套用旧版仅 Windows 的判断"
+        }
+      },
+      "sources": [
+        "https://github.com/SubtitleEdit/subtitleedit",
+        "https://github.com/SubtitleEdit/subtitleedit/blob/main/LICENSE",
+        "https://subtitleedit.github.io/subtitleedit/features/speech-to-text.html",
+        "https://subtitleedit.github.io/subtitleedit/"
+      ]
+    },
+    {
+      "id": "macwhisper",
+      "name": "MacWhisper",
+      "official_url": "https://www.macwhisper.com/",
+      "github_url": null,
+      "platforms": [
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费版 / 一次性付费 Pro",
+      "summary": "面向 Mac 用户的文件转写、听写和字幕工具，可选择本地模型或云服务。",
+      "price_summary": "官网展示免费版及 Pro €64/许可证的一次性价格，含长期更新；地区、税费和结算价格以购买页为准，外部 API 另计。",
+      "prices": [],
+      "free_tier_limits": "免费版不等于全部 Pro 功能。官网版与 App Store 版有差异，后者不含系统听写。仅本地模型路径可离线；云识别、AI 服务和工作流上传会传出数据。资源取决于模型，未实测 M4 16GB。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-14",
+      "features": {
+        "offline_transcription": {
+          "value": "yes",
+          "note": "可选择本地模型；不把云模型或自动上传也算离线"
+        },
+        "file_transcription": {
+          "value": "yes",
+          "note": "官网列出 MP3、WAV、M4A、MOV、MP4 等文件输入"
+        },
+        "live_microphone": {
+          "value": "partial",
+          "note": "支持麦克风和听写；系统听写限官网版，实时表现未实测"
+        },
+        "transcript_export": {
+          "value": "yes",
+          "note": "官网列出 SRT、VTT、TXT 等；更多文档格式需核对套餐"
+        },
+        "desktop_gui": {
+          "value": "yes",
+          "note": "此条目比较 Mac 桌面应用，不把另售移动版视为同一许可"
+        }
+      },
+      "sources": [
+        "https://www.macwhisper.com/",
+        "https://docs.macwhisper.com/article/14-how-to-use-the-dictation-feature"
       ]
     }
   ]
