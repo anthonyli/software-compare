@@ -1,7 +1,7 @@
 {
   "category_slug": "texture-materials",
   "category_name_zh": "纹理与材质",
-  "collected_at": "2026-11-14",
+  "collected_at": "2026-11-15",
   "collected_at_timezone": "Asia/Shanghai (UTC+8)",
   "features": [
     {
@@ -297,6 +297,58 @@
         "https://armorpaint.org/privacy"
       ],
       "collected_at": "2026-11-14"
+    },
+    {
+      "id": "blender",
+      "name": "Blender",
+      "official_url": "https://www.blender.org/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0-or-later",
+      "pricing_model": "完全免费",
+      "price_summary": "官方提供免费开源软件；可选素材、插件与培训可能另收费。",
+      "prices": [
+        {
+          "plan": "软件本身",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "贴图修改需显式保存图像，不要只保存 .blend 就假定外部贴图已写盘。图像烘焙需 UV 和目标图像节点；不承诺 Substance 原生工程无损往返。GPL 约束软件分发，不自动约束你的作品；素材与插件另核。大纹理和场景增加内存需求，M4 16GB 未实测；本地工作流与可选联网扩展分开考虑。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "同一 Blender 的材质工作流：节点着色、PBR、模型贴图绘制与烘焙，适合把建模和贴图放在一起，不是新增独立软件。",
+      "features": {
+        "node_graph": {
+          "value": "yes"
+        },
+        "pbr": {
+          "value": "yes"
+        },
+        "painting_3d": {
+          "value": "yes"
+        },
+        "texture_export": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://docs.blender.org/manual/en/5.0/render/shader_nodes/shader/principled.html",
+        "https://docs.blender.org/manual/en/5.0/sculpt_paint/texture_paint/introduction.html",
+        "https://docs.blender.org/manual/en/5.0/render/cycles/baking.html",
+        "https://www.blender.org/about/license/",
+        "https://github.com/blender/blender/blob/main/release/license/license.md"
+      ],
+      "source_url": "https://projects.blender.org/blender/blender",
+      "source_repo_label": "Blender Projects",
+      "collected_at": "2026-11-15"
     }
   ]
 }
