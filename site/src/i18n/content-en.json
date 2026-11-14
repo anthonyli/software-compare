@@ -2069,5 +2069,12 @@
   "参数化二维/三维 CAD，在此按约束草图、尺寸驱动零件和 PDF/SVG 输出比较，适合小型机械与制作项目。": "Parametric 2D/3D CAD, compared here for constrained sketches, dimension-driven parts and PDF/SVG output in small mechanical and maker projects.",
   "本条比较二维参数化草图与零件输出，不是完整 AutoCAD 替代。DXF/DWG 导入以受限二维线框为主，不保证往返保真；3.3 更新说明中 zigzag/stippled 线型仍不导出到矢量格式。复核导出单位、曲线和标注。桌面程序不等于云同步服务，未审计联网行为；M4 16GB 与 Mac 包架构兼容未实测，edge 构建不等于稳定版。": "This compares 2D parametric sketches and part output, not a full AutoCAD replacement. DXF/DWG import primarily covers limited 2D wireframes, not lossless round-trips. The 3.3 changelog says zigzag/stippled lines still do not export to vector formats. Check units, curves and dimensions. Desktop software is not cloud sync; networking was not audited. M4 16GB and Mac package architecture compatibility are untested; edge builds are not stable releases.",
   "支持 DXF 导入与导出，但实体和样式转换受限，需检查结果。": "Supports DXF import/export with entity and styling limitations; inspect the result.",
-  "源码提供 DWG 导入；官方论坛说明主要为二维线框，不代表完整读写。": "Source provides DWG import; the official forum describes mainly 2D wireframes, not full read/write."
+  "源码提供 DWG 导入；官方论坛说明主要为二维线框，不代表完整读写。": "Source provides DWG import; the official forum describes mainly 2D wireframes, not full read/write.",
+  "专有软件；不是开源 Tracktion Engine": "Proprietary software; not the open-source Tracktion Engine",
+  "免费核心 + 可选付费扩展": "Free core with optional paid expansions",
+  "核心免费、无试用期限或轨道数限制；可选扩展与第三方插件另计。": "The core is free without a trial expiry or track-count cap; optional expansions and third-party plugins may cost extra.",
+  "面向音乐和播客的多轨录音、剪辑与 MIDI 制作；不是专用频谱修复工具的等价替代。": "Multitrack recording, editing and MIDI production for music and podcasts; not an equivalent replacement for dedicated spectral restoration.",
+  "通用 DAW 可做播客录制与剪辑；未核实托管发布功能。": "A general DAW for podcast recording and editing; hosting/publishing was not verified.",
+  "官网列出 VST、VST3 和 AU；具体平台与插件兼容需另核实。": "The vendor lists VST, VST3 and AU; platform-specific plugin compatibility needs separate verification.",
+  "不能把 Free 当成所有平台的 Pro：官网称 Linux 14 自动解锁 Pro 功能。macOS 13+ 支持 Intel/Apple Silicon；Windows 10/11；Linux 测试于 Ubuntu 24.04。未实测 M4 16GB、插件兼容或大型工程。 官方手册解锁流程涉及 Tracktion 账户登录；不承诺完全离线激活。": "Free does not equal Pro on every platform: the vendor says Linux 14 unlocks Pro features. macOS 13+ supports Intel/Apple Silicon; Windows 10/11; Linux is tested on Ubuntu 24.04. M4 16GB, plugin compatibility and large projects were not tested. The official unlock flow uses a Tracktion account login; fully offline activation is not promised."
 }

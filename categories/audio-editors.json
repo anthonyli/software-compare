@@ -1,7 +1,7 @@
 {
   "category_slug": "audio-editors",
   "category_name_zh": "音频编辑",
-  "collected_at": "2026-11-12",
+  "collected_at": "2026-11-15",
   "collected_at_timezone": "Asia/Shanghai (UTC+8)",
   "features": [
     {
@@ -1205,6 +1205,74 @@
         "https://github.com/storytold/soundcraft/blob/main/LICENSE-APACHE"
       ],
       "collected_at": "2026-11-14"
+    },
+    {
+      "id": "waveform-free",
+      "name": "Waveform Free",
+      "official_url": "https://www.tracktion.com/products/waveform-free",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": false,
+      "license": "专有软件；不是开源 Tracktion Engine",
+      "pricing_model": "免费核心 + 可选付费扩展",
+      "price_summary": "核心免费、无试用期限或轨道数限制；可选扩展与第三方插件另计。",
+      "prices": [
+        {
+          "plan": "Waveform Free",
+          "price": "0",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "不能把 Free 当成所有平台的 Pro：官网称 Linux 14 自动解锁 Pro 功能。macOS 13+ 支持 Intel/Apple Silicon；Windows 10/11；Linux 测试于 Ubuntu 24.04。未实测 M4 16GB、插件兼容或大型工程。 官方手册解锁流程涉及 Tracktion 账户登录；不承诺完全离线激活。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "面向音乐和播客的多轨录音、剪辑与 MIDI 制作；不是专用频谱修复工具的等价替代。",
+      "features": {
+        "waveform": {
+          "value": "yes"
+        },
+        "multitrack": {
+          "value": "yes"
+        },
+        "plugins": {
+          "value": "yes",
+          "note": "官网列出 VST、VST3 和 AU；具体平台与插件兼容需另核实。"
+        },
+        "noise_reduce": {
+          "value": "unknown"
+        },
+        "spectral": {
+          "value": "unknown"
+        },
+        "record": {
+          "value": "yes"
+        },
+        "batch": {
+          "value": "unknown"
+        },
+        "midi": {
+          "value": "yes"
+        },
+        "podcast": {
+          "value": "partial",
+          "note": "通用 DAW 可做播客录制与剪辑；未核实托管发布功能。"
+        },
+        "export_formats": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://www.tracktion.com/products/waveform-free",
+        "https://www.tracktion.com/terms-of-use",
+        "https://tracktion.github.io/waveform_manual/latest/quick-start/"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
