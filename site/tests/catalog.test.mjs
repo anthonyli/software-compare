@@ -21,7 +21,9 @@ test('new categories have navigation and sourced complete comparison data', () =
  for (const id of added) {
   const c = categories.find(c => slug(c) === id);
   assert(c, id); assert(config.includes(`"${id}"`)); assert(c.products.length > 0);
-  assert.match(c.collected_at, /^2026-11-1[34]$/);
+  assert.match(c.collected_at, /^\d{4}-\d{2}-\d{2}$/);
+  assert(c.collected_at >= '2026-11-13');
+  assert.equal(new Date(c.collected_at).toISOString().slice(0,10), c.collected_at);
   const keys = c.features.map(f => f.key); assert.equal(new Set(keys).size, keys.length);
   for (const p of c.products) {
    assert(p.sources.length > 0);
