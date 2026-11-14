@@ -1,7 +1,7 @@
 {
   "category_slug": "cad",
   "category_name_zh": "二维 CAD",
-  "collected_at": "2026-11-14",
+  "collected_at": "2026-11-15",
   "collected_at_timezone": "Asia/Shanghai (UTC+8)",
   "features": [
     {
@@ -241,6 +241,54 @@
         "https://help.bricsys.com/en-us/document/knowledge-base/apple-compatibility-for-bricscad"
       ],
       "collected_at": "2026-11-14"
+    },
+    {
+      "id": "solvespace",
+      "name": "SolveSpace",
+      "official_url": "https://solvespace.com/index.pl",
+      "github_url": "https://github.com/solvespace/solvespace",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0-or-later",
+      "pricing_model": "免费开源 CAD",
+      "price_summary": "GPLv3 免费软件；可按许可商用，分发修改版需遵守源码与许可义务，外部素材另核。",
+      "prices": [],
+      "free_tier_limits": "本条比较二维参数化草图与零件输出，不是完整 AutoCAD 替代。DXF/DWG 导入以受限二维线框为主，不保证往返保真；3.3 更新说明中 zigzag/stippled 线型仍不导出到矢量格式。复核导出单位、曲线和标注。桌面程序不等于云同步服务，未审计联网行为；M4 16GB 与 Mac 包架构兼容未实测，edge 构建不等于稳定版。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "参数化二维/三维 CAD，在此按约束草图、尺寸驱动零件和 PDF/SVG 输出比较，适合小型机械与制作项目。",
+      "features": {
+        "drafting_2d": {
+          "value": "yes"
+        },
+        "dxf": {
+          "value": "partial",
+          "note": "支持 DXF 导入与导出，但实体和样式转换受限，需检查结果。"
+        },
+        "dwg": {
+          "value": "partial",
+          "note": "源码提供 DWG 导入；官方论坛说明主要为二维线框，不代表完整读写。"
+        },
+        "vector_export": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://solvespace.com/index.pl",
+        "https://solvespace.com/ref.pl",
+        "https://solvespace.com/download.pl",
+        "https://github.com/solvespace/solvespace",
+        "https://github.com/solvespace/solvespace/blob/master/COPYING.txt",
+        "https://github.com/solvespace/solvespace/blob/master/src/importdxf.cpp",
+        "https://github.com/solvespace/solvespace/blob/master/CHANGELOG.md",
+        "https://solvespace.com/forum.pl?action=viewthread&parent=1661"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
