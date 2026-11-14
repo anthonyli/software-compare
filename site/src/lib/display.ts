@@ -180,9 +180,10 @@ export function formatPriceDisplay(p: Product, locale: Locale = "zh"): PriceDisp
   const modelZh = p.pricing_model || "未知";
   const model = locale === "en" ? pricingEn(modelZh) || modelZh : modelZh;
   let cell = model;
-  if (p.pricing_model === "完全免费" || (hasFree && paid.length === 0 && rows.length > 0 && !rows.some((r) => r.short === L.unknownPrice))) {
+  // Collected price rows are samples, not proof that every plan is free.
+  if (p.pricing_model === "完全免费") {
     cell = L.fullyFree;
-  } else if (hasFree || p.pricing_model === "免费增值") {
+  } else if (p.pricing_model === "免费增值" || (hasFree && paid.length > 0 && modelZh === "未知")) {
     cell = L.freemium;
   } else if (paid.length) {
     cell = locale === "en"
