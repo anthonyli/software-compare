@@ -229,6 +229,101 @@
         "https://raw.githubusercontent.com/astashov/liftosaur/master/README.md"
       ],
       "collected_at": "2026-11-14"
+    },
+    {
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-14",
+      "github_url": null,
+      "open_source": false,
+      "license": "Proprietary",
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "id": "strong",
+      "name": "Strong",
+      "official_url": "https://www.strong.app/",
+      "pricing_model": "免费增值",
+      "summary": "以力量训练组数、次数、重量和重复训练模板为核心的记录应用，适合已有训练安排的人。",
+      "price_summary": "免费版可记录训练，最多 3 个模板；PRO 提供无限模板及更多测量/图表，地区内购价格不同。",
+      "free_tier_limits": "模板数限制不是只能录 3 次训练；更多身体围度属于 PRO。账号训练记录可同步 Strong Cloud；官方隐私政策称 Health Connect 导入数据仅保存在设备、不上传 Strong 服务器，两类数据应分开理解。iOS 与 Android 功能需分别核对；未实测，不提供个体训练指导。",
+      "features": {
+        "workout_routines": {
+          "value": "partial",
+          "note": "免费最多 3 个训练模板，PRO 无限；训练记录与模板不同。"
+        },
+        "body_tracking": {
+          "value": "partial",
+          "note": "支持体重和体脂率；更多身体部位围度属于 PRO。"
+        },
+        "nutrition_log": {
+          "value": "partial",
+          "note": "官方列出饮食热量记录及 Apple Health 同步；不等于完整食物或宏量营养数据库。"
+        },
+        "self_host": {
+          "value": "unknown"
+        },
+        "cloud_sync": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://help.strongapp.io/article/105-about-templates",
+        "https://help.strongapp.io/article/132-strong-pro",
+        "https://help.strongapp.io/article/143-strong-account",
+        "https://help.strongapp.io/article/238-add-measurements",
+        "https://help.strongapp.io/article/232-privacy-policy"
+      ]
+    },
+    {
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-14",
+      "github_url": null,
+      "open_source": false,
+      "license": "Proprietary",
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "id": "fitbod",
+      "name": "Fitbod",
+      "official_url": "https://fitbod.me/",
+      "pricing_model": "订阅制",
+      "summary": "根据器材、训练历史与用户设置生成和记录力量训练，适合希望应用辅助安排训练的人；不保证效果。",
+      "price_summary": "月付/年付订阅；官方提供 7 天试用，需选择订阅计划，未及时取消会自动转付费。",
+      "free_tier_limits": "试用结束后仍可查看历史，但新增训练记录需付费；按购买渠道提前取消。iOS/Android 功能并不完全相同；身体数据可连接 Apple Health/Health Connect，需分别确认读写权限。账号服务处理训练与身体信息，未实测推荐质量或健康数据同步。",
+      "features": {
+        "workout_routines": {
+          "value": "paid"
+        },
+        "body_tracking": {
+          "value": "yes",
+          "note": "支持体重、体脂率和瘦体重等记录/同步，具体测量项目依平台。"
+        },
+        "nutrition_log": {
+          "value": "unknown"
+        },
+        "self_host": {
+          "value": "unknown"
+        },
+        "cloud_sync": {
+          "value": "yes",
+          "note": "账号及外部健康平台同步涉及身体与训练数据；不要仅因手机端运行就认为不上传。"
+        }
+      },
+      "sources": [
+        "https://fitbod.me/faqs/",
+        "https://help.fitbod.me/hc/en-us/articles/30542136101527-How-the-Trial-Works",
+        "https://help.fitbod.me/hc/en-us/sections/360012732693-App-Features",
+        "https://help.fitbod.me/hc/en-us/articles/360004702573-What-kind-of-data-do-we-store",
+        "https://help.fitbod.me/hc/en-us/articles/18213217448983-Body-Composition"
+      ]
     }
   ]
 }
