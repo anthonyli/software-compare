@@ -334,6 +334,102 @@
         "https://support.strava.com/en-us/articles/15402161-power",
         "https://support.strava.com/en-us/articles/15402012-edit-map-visibility"
       ]
+    },
+    {
+      "id": "trainingpeaks",
+      "name": "TrainingPeaks",
+      "official_url": "https://www.trainingpeaks.com/",
+      "github_url": null,
+      "platforms": [
+        "Web",
+        "iOS",
+        "Android"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "基础免费 / 可选付费",
+      "summary": "面向骑行和耐力运动的训练日志、计划和数据分析平台，适合与教练协作及持续跟踪训练负荷。",
+      "price_summary": "Basic 账号免费；高级分析、未来训练规划等需 Premium。Premium 包含独立 TrainingPeaks Virtual；教练及训练计划另收费，不因有教练就自动获得 Premium。",
+      "free_tier_limits": "本条比较主 TrainingPeaks 服务，不将 Virtual 的桌面平台和骑行台控制归到主应用。活动、训练和连接设备数据会上传服务端，授权第三方或教练前检查分享范围。数据分析不是医疗建议；未连接设备或实测。",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-14",
+      "features": {
+        "activity_import": {
+          "value": "yes"
+        },
+        "power_analysis": {
+          "value": "paid",
+          "note": "此列指高级功率和趋势分析；Basic 仍有训练摘要。"
+        },
+        "training_calendar": {
+          "value": "partial",
+          "note": "可记录训练；未来计划与高级规划属于 Premium。"
+        },
+        "indoor_trainer": {
+          "value": "partial",
+          "note": "通过独立 TrainingPeaks Virtual 应用，Premium 包含其使用权；不表示主 Web/移动应用直接控制骑行台。"
+        },
+        "cloud_sync": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://help.trainingpeaks.com/hc/en-us/articles/204074014-Basic-vs-Premium-Athlete-Accounts",
+        "https://www.trainingpeaks.com/pricing/for-athletes/"
+      ]
+    },
+    {
+      "id": "mywhoosh",
+      "name": "MyWhoosh",
+      "official_url": "https://mywhoosh.com/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "iOS",
+        "Android"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "基础免费 / 可选付费",
+      "summary": "虚拟室内骑行与结构化训练工具，可连接兼容骑行台或智能单车，提供训练日历和在线活动；不是通用运动数据档案库。",
+      "price_summary": "基础骑行可免费使用；自定义训练/计划的免费槽位有限，额外槽位涉及订阅或购买，硬件和教练计划另计。不能概括为所有功能永久免费。",
+      "free_tier_limits": "免费软件不包含自行车、兼容传感器或骑行台。Mac 官网建议 M1 或更新、16GB 内存、15GB 空间及 macOS 14.5+，M4 16GB 符合所列芯片/内存范围但未实测帧率。训练和活动涉及服务器及可选第三方同步；断网续骑不等于全程无需联网。",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-14",
+      "features": {
+        "activity_import": {
+          "value": "unknown",
+          "note": "已核实训练课表导入，不等于可导入任意历史活动文件；后者本轮未核实。"
+        },
+        "power_analysis": {
+          "value": "unknown",
+          "note": "未核实面向普通用户的独立功率分析图表；训练目标和实时指标不等于完整分析平台。"
+        },
+        "training_calendar": {
+          "value": "partial",
+          "note": "可安排训练；自定义课表/计划槽位受免费额度及付费方案限制。"
+        },
+        "indoor_trainer": {
+          "value": "yes"
+        },
+        "cloud_sync": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://mywhoosh.com/how-it-works/",
+        "https://mywhoosh.com/docs/which-devices-work-with-mywhoosh/",
+        "https://mywhoosh.com/docs/what-are-free-slots/",
+        "https://mywhoosh.com/docs/what-do-i-get-with-a-subscription/",
+        "https://mywhoosh.com/privacy-policy/"
+      ]
     }
   ]
 }
