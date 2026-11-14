@@ -2187,5 +2187,12 @@
   "代码式排版系统，适合可复用模板、报告和技术文档；不是 InDesign 的拖拽式无损替代。": "Markup-based typesetting for reusable templates, reports and technical documents; not a lossless drag-and-drop replacement for InDesign.",
   "本地 CLI 与在线协作服务不同，云端项目需交由服务处理。CMYK 颜色在 PDF/A 输出时不支持；完整 ICC 印前流程未核实。字体、模板及依赖有各自许可，未实测 M4 16GB 或复杂文档性能。": "The local CLI differs from hosted collaboration, where projects are handled by the service. CMYK colors are not supported with PDF/A output; a complete ICC prepress workflow was not verified. Fonts, templates and dependencies have their own licenses. M4 16GB and complex-document performance were not tested.",
   "支持 CMYK 定义，但 PDF/A 不支持；不能据此承诺完整印前色彩流程。": "CMYK definitions are supported, but not with PDF/A; this does not guarantee a complete prepress color workflow.",
-  "支持图像 ICC 配置，不代表完整印前色彩管理。": "Image ICC profiles are supported, not a guarantee of complete prepress color management."
+  "支持图像 ICC 配置，不代表完整印前色彩管理。": "Image ICC profiles are supported, not a guarantee of complete prepress color management.",
+  "免费开源参数化 CAD": "Free open-source parametric CAD",
+  "核心免费且可按 LGPL 商用；分发修改版须遵守许可义务，第三方组件及 DWG 转换器许可另核。": "The core is free and permits commercial use under LGPL; modified distributions carry license obligations. Check third-party components and DWG converters separately.",
+  "此处仅比较二维约束草图和工程图输出，不是完整 AutoCAD 替代。DWG 需配置外部 LibreDWG、ODA 或 QCAD 转换器，可能另有费用；DXF/DWG 实体、字体和样式不保证无损往返，先备份再核对。官方提供 Apple Silicon 构建，M4 16GB 与复杂模型性能未实测。桌面编辑不等于已审计全部联网行为；宏、插件及外部转换器需另核安全与许可。": "This entry compares constrained 2D sketches and technical drawings, not a complete AutoCAD replacement. DWG needs a configured external LibreDWG, ODA or QCAD converter; additional costs may apply. DXF/DWG entities, fonts and styles are not guaranteed lossless round trips: back up and inspect results. Official Apple Silicon builds exist, but M4 16GB and complex-model performance were not tested. Desktop editing is not a network-behavior audit; review macros, add-ons and external converters for security and licensing.",
+  "开源参数化建模器，以 Sketcher / Draft 草图和 TechDraw 工程图连接二维制图与三维零件设计。": "Open-source parametric modeler connecting Sketcher / Draft sketches and TechDraw technical drawings with 3D part design.",
+  "支持 DXF 交换，转换实体、样式和单位需核对。": "DXF exchange is supported; verify converted entities, styles and units.",
+  "通过外部转换器处理，不是原生完整 DWG 编辑器。": "Handled through external converters, not a native full DWG editor.",
+  "已核实 TechDraw 的 SVG 工程图导出；不代表三维 PDF。": "TechDraw SVG drawing export is documented; this does not imply 3D PDF."
 }
