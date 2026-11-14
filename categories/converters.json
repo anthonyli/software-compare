@@ -891,6 +891,78 @@
       "sources": [
         "https://software.charliemonroe.net/permute/"
       ]
+    },
+    {
+      "id": "shutter-encoder",
+      "name": "Shutter Encoder",
+      "official_url": "https://www.shutterencoder.com/",
+      "github_url": "https://github.com/paulpacifico/shutter-encoder",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "免费开源，可选捐赠",
+      "price_summary": "核心程序免费，无广告；捐赠不是解锁功能的条件。",
+      "prices": [],
+      "free_tier_limits": "无重编码剪切通常只能落在最近关键帧，不保证逐帧精度；重新封装要求容器支持源编码。硬件加速取决于设备、编码器和功能。媒体处理在桌面执行，但启用 FTP、邮件通知或 Google Translate 会使用相应外部服务，不能概括为永不联网。macOS 有 Intel / Apple Silicon 安装包（官方列 M4），16GB 性能未实测。FAQ 提醒可能出现未签名安全提示，应核验来源后评估，不应直接关闭系统保护。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": "本轮仅核实官方文档，未评估维护质量",
+      "summary": "面向剪辑与后期的 FFmpeg 图形前端，集中处理媒体转码、批量任务、音轨和字幕，不等同于完整时间线剪辑器或 Office 文档转换器。",
+      "features": {
+        "video": {
+          "value": "yes",
+          "note": "FFmpeg 媒体转码与重新封装，格式兼容性须逐项确认"
+        },
+        "audio": {
+          "value": "yes",
+          "note": "支持音频格式转换及响度处理"
+        },
+        "image": {
+          "value": "yes",
+          "note": "支持图片及图像序列转换，不代表保留可编辑图层"
+        },
+        "document": {
+          "value": "partial",
+          "note": "可处理部分 PDF 图像内容，不是 Word / Excel 等文档转换器"
+        },
+        "batch": {
+          "value": "yes",
+          "note": "队列和文件列表批处理"
+        },
+        "hw_accel": {
+          "value": "partial",
+          "note": "提供 GPU 选项，支持范围依编码器及硬件而定"
+        },
+        "extract_audio": {
+          "value": "yes",
+          "note": "支持音轨提取、替换和移除"
+        },
+        "compress": {
+          "value": "yes",
+          "note": "可调整分辨率及码率，重编码不保证无损"
+        },
+        "presets": {
+          "value": "yes",
+          "note": "可保存并载入自定义设置"
+        },
+        "gui": {
+          "value": "yes",
+          "note": "桌面图形界面，底层依赖 FFmpeg 等组件"
+        }
+      },
+      "sources": [
+        "https://www.shutterencoder.com/",
+        "https://www.shutterencoder.com/faq/",
+        "https://www.shutterencoder.com/documentation/",
+        "https://github.com/paulpacifico/shutter-encoder",
+        "https://github.com/paulpacifico/shutter-encoder/blob/master/LICENSE.txt"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
