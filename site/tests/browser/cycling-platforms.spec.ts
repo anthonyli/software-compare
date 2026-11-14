@@ -1,0 +1,4 @@
+import {test,expect} from '@playwright/test';
+// Isolated content-only loopback API identity; no production rate-limit changes.
+test.use({extraHTTPHeaders:{'CF-Connecting-IP':'192.0.2.74'}});
+test('cycling platforms render in responsive comparisons with English limits',async({page})=>{for(const width of [1280,390]){await page.setViewportSize({width,height:900});await page.goto('/c/cycling-tools/');const list=page.locator(width===1280?'#matrix':'#card-list');for(const id of ['trainerroad','strava'])await expect(list.locator(`[data-product-id="${id}"]`)).toBeVisible();await page.locator('[data-lang="en"]').click();expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);}await page.goto('/p/cycling-tools/trainerroad/');await expect(page.locator('body')).toContainText('There is no free trial');await page.goto('/p/cycling-tools/strava/');await expect(page.locator('body')).toContainText('does not mean direct trainer control');});

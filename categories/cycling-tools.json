@@ -231,6 +231,109 @@
         "https://www.zwift.com/eu/training-on-zwift"
       ],
       "collected_at": "2026-11-14"
+    },
+    {
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-14",
+      "github_url": null,
+      "open_source": false,
+      "license": "Proprietary",
+      "id": "trainerroad",
+      "name": "TrainerRoad",
+      "official_url": "https://www.trainerroad.com/",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Android",
+        "iOS",
+        "Web"
+      ],
+      "pricing_model": "订阅制",
+      "summary": "以功率训练、计划日历和骑行分析为核心，可连接兼容室内骑行设备，也可安排室外训练。",
+      "price_summary": "月付或年付订阅，硬件另购；官方提供 30 天退款保证，不是免费试用。",
+      "free_tier_limits": "无免费试用；需要兼容设备，蓝牙/ANT+ 支持按平台与硬件核对。提供 Apple Silicon 构建，但未实测 M4。部分已下载训练可离线，云备份、分析与部分日历功能需联网；同步会传输运动数据，不能承诺训练效果或安全。",
+      "features": {
+        "activity_import": {
+          "value": "yes",
+          "note": "可通过授权 Garmin Connect、Strava 等平台导入骑行；格式与历史范围需核对。"
+        },
+        "power_analysis": {
+          "value": "yes"
+        },
+        "training_calendar": {
+          "value": "yes"
+        },
+        "indoor_trainer": {
+          "value": "yes",
+          "note": "连接兼容设备，不表示所有普通骑行台都能自动控制阻力。"
+        },
+        "cloud_sync": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://www.trainerroad.com/pricing",
+        "https://www.trainerroad.com/faq",
+        "https://www.trainerroad.com/download",
+        "https://support.trainerroad.com/hc/trainerroad-support/en/categories/general-usage-performance-analytics",
+        "https://support.trainerroad.com/hc/trainerroad-support/articles/360024069532-smart-trainer-modes-explained"
+      ]
+    },
+    {
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-14",
+      "github_url": null,
+      "open_source": false,
+      "license": "Proprietary",
+      "id": "strava",
+      "name": "Strava",
+      "official_url": "https://www.strava.com/",
+      "platforms": [
+        "Web",
+        "Android",
+        "iOS"
+      ],
+      "pricing_model": "免费增值",
+      "summary": "记录、同步和分析骑行及多运动活动的云端平台，适合汇总设备记录、查看历史并按需分享。",
+      "price_summary": "基础服务免费，高级训练分析等功能需订阅；地区与购买渠道影响价格。",
+      "free_tier_limits": "高级功率分析需订阅及功率计数据；活动日历不等同完整训练计划编排。第三方室内活动同步不代表直接连接或控制骑行台。保存活动会上传 Strava 服务器；检查活动、训练日志与地图可见性，隐藏地图不等于删除原始位置数据。未实测。",
+      "features": {
+        "activity_import": {
+          "value": "yes"
+        },
+        "power_analysis": {
+          "value": "paid",
+          "note": "高级功率分析面向使用功率计的订阅用户。"
+        },
+        "training_calendar": {
+          "value": "partial",
+          "note": "Training Calendar 展示活动历史；付费 Training Log 与训练计划另有边界。"
+        },
+        "indoor_trainer": {
+          "value": "unknown",
+          "note": "官方资料未确认直接控制骑行台，不把活动同步当硬件连接。"
+        },
+        "cloud_sync": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://support.strava.com/en-us/articles/15402044-what-features-are-included-in-a-strava-subscription",
+        "https://support.strava.com/en-us/articles/15402014-viewing-your-activity-history-on-strava",
+        "https://support.strava.com/en-us/articles/15402137-how-do-i-record-an-activity-on-strava",
+        "https://support.strava.com/en-us/articles/15402003-how-do-training-log-privacy-controls-work-on-strava",
+        "https://support.strava.com/en-us/",
+        "https://support.strava.com/en-us/articles/15402066-how-do-i-get-my-activities-to-strava",
+        "https://support.strava.com/en-us/articles/15401956-indoor-treadmill-and-bike-trainer-activities",
+        "https://support.strava.com/en-us/articles/15402161-power",
+        "https://support.strava.com/en-us/articles/15402012-edit-map-visibility"
+      ]
     }
   ]
 }
