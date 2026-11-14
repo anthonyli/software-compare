@@ -281,6 +281,89 @@
         "https://support.apple.com/en-mt/guide/quicktime-player/qtpf25d6f827/mac",
         "https://support.apple.com/en-ie/102071"
       ]
+    },
+    {
+      "id": "just-press-record",
+      "name": "Just Press Record",
+      "official_url": "https://www.openplanetsoftware.com/just-press-record/",
+      "github_url": null,
+      "platforms": [
+        "macOS",
+        "iOS",
+        "iPadOS",
+        "watchOS"
+      ],
+      "open_source": false,
+      "license": "专有软件；使用须遵守厂商条款",
+      "pricing_model": "付费应用",
+      "price_summary": "核实当日美区商店 US$6.99；按所在地区商店价格购买，不将其当作全球统一价。",
+      "summary": "Apple 设备上的单键录音、转写和轻量裁剪工具，适合随手记录与可检索语音笔记。",
+      "free_tier_limits": "官方明确不录电话或其他应用声音；可用内建、AirPods或外接麦克风。录音可存本机或选择 iCloud Drive，同步会进入 Apple 云端；Apple 转写依设备/语言可能发送到 Apple 处理；Watch 录音传 iPhone 后转写。不是多轨工作站或 AI 记忆平台，M4 16GB 性能未实测，录音前须取得所需同意。",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-14",
+      "features": {
+        "microphone": {
+          "value": "yes"
+        },
+        "app_audio": {
+          "value": "no"
+        },
+        "system_audio": {
+          "value": "no"
+        },
+        "broadcast": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://www.openplanetsoftware.com/just-press-record/",
+        "https://apps.apple.com/us/app/just-press-record/id1033342465",
+        "https://www.openplanetsoftware.com/privacy"
+      ]
+    },
+    {
+      "id": "dolby-on",
+      "name": "Dolby On",
+      "official_url": "https://www.dolby.com/apps/dolby-on/",
+      "github_url": null,
+      "platforms": [
+        "iOS",
+        "Android"
+      ],
+      "open_source": false,
+      "license": "专有软件；使用须遵守厂商条款",
+      "pricing_model": "免费专有应用",
+      "price_summary": "官方称免费应用；免费不等于开源或不受使用许可约束，直播平台和网络费用另计。",
+      "summary": "面向音乐灵感、排练和语音的手机录音处理工具，含动态音色处理和直播输出。",
+      "free_tier_limits": "侧重手机麦克风录音、降噪和音色处理，不把导入音频当作其他应用/全系统采集。直播/分享会外发内容；部分地区可选 Beta 转写等提交涉及云处理，内容使用条款含 AI 训练授权，不宣称所有配置仅本地。软件条款包含个人使用限制，商业用途需另核许可。未安装、录音或直播；不是原生 Mac 工作站，M4 16GB 适配未核实。",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-14",
+      "features": {
+        "microphone": {
+          "value": "yes"
+        },
+        "app_audio": {
+          "value": "unknown"
+        },
+        "system_audio": {
+          "value": "unknown"
+        },
+        "broadcast": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://www.dolby.com/apps/dolby-on/",
+        "https://apps.apple.com/us/app/dolby-on-record-audio-video/id1443964192",
+        "https://dolbyon.dolby.io/hc/en-us/articles/18181311895695-Getting-started-with-Dolby-On",
+        "https://www.dolby.com/about/legal/dolby-on-terms-of-use/"
+      ]
     }
   ]
 }
