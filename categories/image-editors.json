@@ -1,7 +1,7 @@
 {
   "category_slug": "image-editors",
   "category_name_zh": "图像编辑与绘画",
-  "collected_at": "2026-11-13",
+  "collected_at": "2026-11-14",
   "collected_at_timezone": "Asia/Shanghai (UTC+8)",
   "features": [
     {
@@ -69,7 +69,8 @@
         "https://www.gimp.org/docs/userfaq.html",
         "https://docs.gimp.org/3.0/en/gimp-image-combining.html",
         "https://docs.gimp.org/3.0/en/export-file-formats.html"
-      ]
+      ],
+      "collected_at": "2026-11-13"
     },
     {
       "id": "krita",
@@ -117,7 +118,8 @@
         "https://krita.org/en/features/",
         "https://krita.org/en/about/license/",
         "https://krita.org/en/download/"
-      ]
+      ],
+      "collected_at": "2026-11-13"
     },
     {
       "id": "pinta",
@@ -157,7 +159,8 @@
         "https://www.pinta-project.com/",
         "https://www.pinta-project.com/user-guide/",
         "https://github.com/PintaProject/Pinta"
-      ]
+      ],
+      "collected_at": "2026-11-13"
     },
     {
       "id": "photodemon",
@@ -194,7 +197,8 @@
       "sources": [
         "https://photodemon.org/",
         "https://photodemon.org/license/"
-      ]
+      ],
+      "collected_at": "2026-11-13"
     },
     {
       "id": "pixelitor",
@@ -233,7 +237,8 @@
       "sources": [
         "https://pixelitor.sourceforge.io/",
         "https://github.com/lbalazscs/Pixelitor"
-      ]
+      ],
+      "collected_at": "2026-11-13"
     },
     {
       "id": "adobe-photoshop",
@@ -271,7 +276,8 @@
       "sources": [
         "https://www.adobe.com/products/photoshop.html",
         "https://helpx.adobe.com/photoshop/using/creating-frame-animations.html"
-      ]
+      ],
+      "collected_at": "2026-11-13"
     },
     {
       "id": "photocraft",
@@ -316,6 +322,94 @@
         "https://github.com/storytold/photocraft/blob/main/README.md",
         "https://github.com/storytold/photocraft/blob/main/LICENSE-MIT",
         "https://github.com/storytold/photocraft/blob/main/LICENSE-APACHE"
+      ],
+      "collected_at": "2026-11-14"
+    },
+    {
+      "id": "affinity-pixel",
+      "name": "Affinity — Pixel",
+      "official_url": "https://www.affinity.studio/photo-editing-software",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "免费工具，AI 另计",
+      "price_summary": "个人可免费使用 Pixel 工具，需 Canva 账号；Canva AI 需符合条件的付费方案。",
+      "prices": [],
+      "free_tier_limits": "比较统一 Affinity 应用的桌面 Pixel，不是旧 Photo V2；iPad 有差异，未纳入本行。免费不等于开源；Canva 集成与 AI 涉及联网。官方页面对长期离线认证描述有差异，需按当前版本核实；不保证复杂 PSD 无损往返，未实测 M4 16GB。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "统一 Affinity 应用的像素修图和绘画工作区，支持分层合成、RAW 显影、蒙版与非破坏性调整。",
+      "features": {
+        "layers": {
+          "value": "yes"
+        },
+        "painting": {
+          "value": "yes"
+        },
+        "animation": {
+          "value": "unknown",
+          "note": "未核实桌面 Pixel 的原生逐帧时间轴；与 Cavalry 的集成不等于内置逐帧动画。"
+        },
+        "plugins": {
+          "value": "unknown",
+          "note": "当前统一应用的插件兼容范围未核实，不套用旧 Photo V2 的支持范围。"
+        }
+      },
+      "sources": [
+        "https://www.affinity.studio/photo-editing-software",
+        "https://www.affinity.studio/digital-illustration-software",
+        "https://www.affinity.studio/get-affinity",
+        "https://www.affinity.studio/",
+        "https://www.affinity.studio/it_it/help/affinity-online-authenticate/"
+      ],
+      "collected_at": "2026-11-14"
+    },
+    {
+      "id": "photopea",
+      "name": "Photopea",
+      "official_url": "https://www.photopea.com/",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "免费增值 / 限期一次性购买",
+      "price_summary": "免费版可用于商业作品；Premium 按期限一次性购买，到期恢复免费，不自动续订。具体价格未核实。",
+      "prices": [],
+      "free_tier_limits": "普通本地编辑由浏览器在设备内处理；账户、网盘保存和第三方插件另有数据去向。插件可访问文档，需审查来源。免费不等于开源；PSD 开存不保证复杂 Photoshop 工作流无损迁移，未实测性能。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "浏览器中的分层图像编辑器，支持 PSD 开存、画笔绘画和基于图层的动画导出。",
+      "features": {
+        "layers": {
+          "value": "yes"
+        },
+        "painting": {
+          "value": "yes"
+        },
+        "animation": {
+          "value": "partial",
+          "note": "以指定名称的图层或图层组作为帧，支持 GIF、APNG 与 WebP；不等同专业动画时间轴。"
+        },
+        "plugins": {
+          "value": "yes",
+          "note": "网页插件通过 Live Messaging 通信；不代表兼容 Photoshop 原生插件。"
+        }
+      },
+      "sources": [
+        "https://www.photopea.com/learn/",
+        "https://www.photopea.com/learn/opening-saving",
+        "https://www.photopea.com/learn/brush-tools",
+        "https://www.photopea.com/learn/animations",
+        "https://www.photopea.com/api/plugins",
+        "https://www.photopea.com/privacy.html"
       ],
       "collected_at": "2026-11-14"
     }
