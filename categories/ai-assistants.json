@@ -865,6 +865,126 @@
         "https://duckduckgo.com/duckduckgo-help-pages/duckai/usage-limits",
         "https://duckduckgo.com/duckduckgo-help-pages/duckai/ai-chat-privacy"
       ]
+    },
+    {
+      "id": "open-webui",
+      "name": "Open WebUI",
+      "official_url": "https://openwebui.com/",
+      "github_url": "https://github.com/open-webui/open-webui",
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "Open WebUI License",
+      "pricing_model": "自托管 / 外部服务另计",
+      "summary": "源码可见的自托管多模型聊天界面，可连接 Ollama 或兼容 API，整合文档、搜索和图像工具；不是独立模型引擎。",
+      "price_summary": "可按自定义许可自托管；服务器、模型/API 和可选企业服务另计。不可当作无附加条件的 BSD/MIT 软件。",
+      "free_tier_limits": "当前许可要求保留品牌；滚动30天内不超过50名终端用户的部署/分发、事先书面许可或明确允许的企业许可有例外。50人不是免费使用人数上限。支持 Docker/Python 等部署；本条比较自托管 Web 服务，不覆盖独立桌面封装。 可自托管不代表数据不会外传：云模型、搜索、嵌入和图像服务会接收相应内容。需配置模型、认证及备份，工具执行应限制权限。模型权重另有许可；M4 16GB 的可用性取决于模型、上下文和其他服务，未部署或实测。",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-14",
+      "features": {
+        "chat": {
+          "value": "yes"
+        },
+        "web_research": {
+          "value": "partial",
+          "note": "需管理员配置相应模型、检索或工具服务，可能产生额外费用。"
+        },
+        "document_chat": {
+          "value": "partial",
+          "note": "需管理员配置相应模型、检索或工具服务，可能产生额外费用。"
+        },
+        "image_generation": {
+          "value": "partial",
+          "note": "需管理员配置相应模型、检索或工具服务，可能产生额外费用。"
+        },
+        "free_plan": {
+          "value": "partial",
+          "note": "软件可自托管，但不附带无限免费模型、硬件或服务额度。"
+        },
+        "local_inference": {
+          "value": "partial",
+          "note": "需另接本地模型运行服务，并将相关依赖配置为本地；界面自身不提供模型推理。"
+        },
+        "cloud_models": {
+          "value": "yes"
+        },
+        "local_api": {
+          "value": "unknown"
+        },
+        "model_download": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://github.com/open-webui/open-webui",
+        "https://github.com/open-webui/open-webui/blob/main/LICENSE",
+        "https://docs.openwebui.com/getting-started/quick-start/",
+        "https://docs.openwebui.com/features/"
+      ]
+    },
+    {
+      "id": "librechat",
+      "name": "LibreChat",
+      "official_url": "https://www.librechat.ai/",
+      "github_url": "https://github.com/LibreChat-AI/LibreChat",
+      "platforms": [
+        "Web"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "自托管 / 外部服务另计",
+      "summary": "开源多模型聊天与 Agent 界面，支持自托管、文档检索和工具集成，适合需要统一多个模型供应商的小团队。",
+      "price_summary": "MIT 代码可免费使用和商用，保留许可声明；托管、模型/API、搜索和可选外部服务另计，不包含免费模型额度。",
+      "free_tier_limits": "官方快速部署使用 Docker Compose；运行界面后仍需账号及模型连接，不能把安装成功视为已具备推理能力。通过本地端点可接入 Ollama 等，本条不是模型下载器。 可自托管不代表数据不会外传：云模型、搜索、嵌入和图像服务会接收相应内容。需配置模型、认证及备份，工具执行应限制权限。模型权重另有许可；M4 16GB 的可用性取决于模型、上下文和其他服务，未部署或实测。",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-14",
+      "features": {
+        "chat": {
+          "value": "yes"
+        },
+        "web_research": {
+          "value": "partial",
+          "note": "需管理员配置相应模型、检索或工具服务，可能产生额外费用。"
+        },
+        "document_chat": {
+          "value": "partial",
+          "note": "需管理员配置相应模型、检索或工具服务，可能产生额外费用。"
+        },
+        "image_generation": {
+          "value": "partial",
+          "note": "需管理员配置相应模型、检索或工具服务，可能产生额外费用。"
+        },
+        "free_plan": {
+          "value": "partial",
+          "note": "软件可自托管，但不附带无限免费模型、硬件或服务额度。"
+        },
+        "local_inference": {
+          "value": "partial",
+          "note": "需另接本地模型运行服务，并将相关依赖配置为本地；界面自身不提供模型推理。"
+        },
+        "cloud_models": {
+          "value": "yes"
+        },
+        "local_api": {
+          "value": "unknown"
+        },
+        "model_download": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://github.com/LibreChat-AI/LibreChat",
+        "https://github.com/LibreChat-AI/LibreChat/blob/main/LICENSE",
+        "https://www.librechat.ai/docs/quick_start/local_setup",
+        "https://www.librechat.ai/docs/features"
+      ]
     }
   ]
 }
