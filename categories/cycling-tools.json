@@ -287,7 +287,7 @@
       "github_stars": null,
       "latest_release": null,
       "latest_release_date": null,
-      "collected_at": "2026-11-14",
+      "collected_at": "2026-11-15",
       "github_url": null,
       "open_source": false,
       "license": "Proprietary",
@@ -302,7 +302,7 @@
       "pricing_model": "免费增值",
       "summary": "记录、同步和分析骑行及多运动活动的云端平台，适合汇总设备记录、查看历史并按需分享。",
       "price_summary": "基础服务免费，高级训练分析等功能需订阅；地区与购买渠道影响价格。",
-      "free_tier_limits": "高级功率分析需订阅及功率计数据；活动日历不等同完整训练计划编排。第三方室内活动同步不代表直接连接或控制骑行台。保存活动会上传 Strava 服务器；检查活动、训练日志与地图可见性，隐藏地图不等于删除原始位置数据。未实测。",
+      "free_tier_limits": "高级功率分析需订阅及功率计数据；活动日历不等同完整训练计划编排。第三方室内活动同步不代表直接连接或控制骑行台。保存活动会上传 Strava 服务器；检查活动、训练日志与地图可见性，隐藏地图不等于删除原始位置数据。获相应活动读取授权的第三方应用可读取其权限覆盖活动的隐藏地图部分；Only You 活动需私有活动读取权限。地图可见性设置不会随活动传至其他服务，也不替代活动级隐私控制。未实测。",
       "features": {
         "activity_import": {
           "value": "yes"
@@ -332,7 +332,9 @@
         "https://support.strava.com/en-us/articles/15402066-how-do-i-get-my-activities-to-strava",
         "https://support.strava.com/en-us/articles/15401956-indoor-treadmill-and-bike-trainer-activities",
         "https://support.strava.com/en-us/articles/15402161-power",
-        "https://support.strava.com/en-us/articles/15402012-edit-map-visibility"
+        "https://support.strava.com/en-us/articles/15402012-edit-map-visibility",
+        "https://support.strava.com/en-us/articles/15401779-app-authorization-settings",
+        "https://support.strava.com/en-us/articles/15402012-how-do-i-edit-my-map-visibility-on-strava"
       ]
     },
     {

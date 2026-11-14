@@ -28,7 +28,8 @@ test('adding new products does not refresh older product collection dates',()=>{
   for(const p of c.products.slice(0,2)) assert.equal(p.collected_at,'2026-11-13');
   const baseline = new Set(['feeel','liftosaur','strong','fitbod','jefit','boostcamp','fittrackee','zwift','trainerroad','strava','trainingpeaks','mywhoosh','qmapshack','alltrails','komoot','mapy-com','gaia-gps','wikiloc']);
   for(const p of c.products.slice(2)) {
-   if (baseline.has(p.id)) assert.equal(p.collected_at,'2026-11-14');
+   if (p.id === 'strava') assert.equal(p.collected_at,'2026-11-15'); // documented authorization/privacy refresh
+   else if (baseline.has(p.id)) assert.equal(p.collected_at,'2026-11-14');
    else {assert.match(p.collected_at,/^\d{4}-\d{2}-\d{2}$/);assert(p.collected_at>='2026-11-14');assert.equal(new Date(p.collected_at).toISOString().slice(0,10),p.collected_at);}
   }
  }
