@@ -1597,6 +1597,76 @@
         "https://docs.zettlr.com/en/reference/faq.html"
       ],
       "collected_at": "2026-11-15"
+    },
+    {
+      "id": "marktext",
+      "name": "MarkText",
+      "official_url": "https://marktext.me/",
+      "github_url": "https://github.com/marktext/marktext",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "完全免费",
+      "price_summary": "免费开源，MIT 允许商用；分发需保留版权和许可声明。可选图片托管等外部服务可能另收费。",
+      "prices": [],
+      "free_tier_limits": "实时预览编辑的底层仍是 Markdown，不承诺 Word 文档或复杂排版无损兼容。本地文件可保存，图片可复制到本地或选择云上传；远程图片仍可能联网。官方文档说明 PlantUML 渲染会向所选服务器发送编码后的图源，默认 plantuml.com，可配置其它端点，不是全部功能离线或端到端加密保证。当前 README 要求 macOS 13+、区分 arm64/x64 安装包，Windows 10/11 及 Linux；M4 16GB 未实测。文档基于 develop 分支，安装版本能力需核对，不把开发中的多根目录等功能当稳定版承诺。 安装文档称 Mac 构建未启用 notarization，首次打开可能被系统拦截，应审阅安全提示，不默认绕过。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "轻量 Markdown 文件编辑器，提供实时预览、源码/专注模式、文件夹浏览及 HTML/PDF 导出，适合写作和本地文档整理。",
+      "features": {
+        "markdown": {
+          "value": "yes"
+        },
+        "rich_text": {
+          "value": "partial",
+          "note": "所见即所得式 Markdown 预览，不等同完整 DOCX 富文本编辑。"
+        },
+        "folders": {
+          "value": "yes"
+        },
+        "tags": {
+          "value": "unknown"
+        },
+        "web_clipper": {
+          "value": "unknown"
+        },
+        "sync": {
+          "value": "unknown"
+        },
+        "offline": {
+          "value": "partial",
+          "note": "本地 Markdown 文件编辑；远程图片、图表渲染或可选上传可能联网。"
+        },
+        "e2e_encrypt": {
+          "value": "unknown"
+        },
+        "attachments": {
+          "value": "partial",
+          "note": "已核实本地/剪贴板图片支持，未据此确认任意附件管理。"
+        },
+        "plugins": {
+          "value": "unknown"
+        },
+        "collaboration": {
+          "value": "unknown"
+        },
+        "mobile": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://github.com/marktext/marktext",
+        "https://github.com/marktext/marktext/blob/develop/LICENSE",
+        "https://marktext.me/docs/basics",
+        "https://marktext.me/docs/images",
+        "https://marktext.me/docs/installation"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
