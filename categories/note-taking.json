@@ -1,7 +1,7 @@
 {
   "category_slug": "note-taking",
   "category_name_zh": "笔记软件",
-  "collected_at": "2026-11-12",
+  "collected_at": "2026-11-15",
   "collected_at_timezone": "Asia/Shanghai (UTC+8)",
   "features": [
     {
@@ -1453,6 +1453,76 @@
         "https://www.yuque.com/",
         "https://www.yuque.com/about"
       ]
+    },
+    {
+      "id": "anytype",
+      "name": "Anytype",
+      "official_url": "https://anytype.io/",
+      "github_url": "https://github.com/anyproto/anytype-ts",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android"
+      ],
+      "open_source": false,
+      "license": "源码可用：Any Source Available License 1.0",
+      "pricing_model": "免费档 + 可选会员",
+      "price_summary": "免费档提供有限远程文件存储，付费会员扩容；本轮未核实结账金额，不列固定订阅价。",
+      "prices": [],
+      "free_tier_limits": "默认使用加密远端同步，不等于仅本机。文件配额超出后新文件停止同步，文档仍可编辑。可选择 local-only 或自托管；不要把活动数据目录放进网盘同步文件夹或网络盘。客户端商用受 Allowed Networks 条件约束；M4 16GB 未实测。",
+      "summary": "对象式本地优先笔记与知识组织工具；源码可查看，但不能按无条件开源商用工具对待。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "features": {
+        "markdown": {
+          "value": "unknown"
+        },
+        "rich_text": {
+          "value": "unknown"
+        },
+        "folders": {
+          "value": "unknown"
+        },
+        "tags": {
+          "value": "unknown"
+        },
+        "web_clipper": {
+          "value": "unknown"
+        },
+        "sync": {
+          "value": "yes"
+        },
+        "offline": {
+          "value": "yes"
+        },
+        "e2e_encrypt": {
+          "value": "yes",
+          "note": "官方声明同步端到端加密；未独立安全审计，不代表所有本地索引均加密。"
+        },
+        "attachments": {
+          "value": "yes"
+        },
+        "plugins": {
+          "value": "unknown"
+        },
+        "collaboration": {
+          "value": "unknown"
+        },
+        "mobile": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://github.com/anyproto/anytype-ts",
+        "https://github.com/anyproto/anytype-ts/blob/develop/LICENSE.md",
+        "https://doc.anytype.io/anytype/data/sync-and-backup.md",
+        "https://anytype.io/faq/",
+        "https://anytype.io/pricing/"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
