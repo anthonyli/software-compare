@@ -4,7 +4,7 @@ test('homepage prioritizes media while retaining all other groups and media card
   await page.goto('/');
   const groups = page.locator('#categories > [id^="group-"]');
   expect(await groups.evaluateAll(nodes => nodes.map(node => node.id))).toEqual([
-    'group-media', 'group-lifestyle', 'group-ai', 'group-creative', 'group-office',
+    'group-media', 'group-network', 'group-lifestyle', 'group-ai', 'group-creative', 'group-office',
     'group-files', 'group-system', 'group-security', 'group-dev',
   ]);
   await expect(page.locator('#categories .group-jump a').first()).toHaveAttribute('href', '#group-media');
