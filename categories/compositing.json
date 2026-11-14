@@ -1,9 +1,9 @@
 {
   "category_slug": "compositing",
   "category_name_zh": "视觉特效与合成",
-  "collected_at": "2026-11-13",
+  "collected_at": "2026-11-14",
   "collected_at_timezone": "Asia/Shanghai (UTC+8)",
-  "notes": "面向镜头的节点合成、抠像和跟踪，不把它与时间线剪辑、模板动效或完整 After Effects 工作流混为一谈；暂收录一款已核实工具。",
+  "notes": "比较节点合成与图层合成工具；功能相近不代表工程、模板、脚本或插件可无损互换。",
   "features": [
     {
       "key": "node_compositing",
@@ -67,7 +67,8 @@
       "sources": [
         "https://natrongithub.github.io/",
         "https://github.com/NatronGitHub/Natron"
-      ]
+      ],
+      "collected_at": "2026-11-13"
     },
     {
       "id": "adobe-after-effects",
@@ -105,7 +106,8 @@
       "sources": [
         "https://www.adobe.com/products/aftereffects.html",
         "https://helpx.adobe.com/after-effects/using/tracking-stabilizing-motion-cs5.html"
-      ]
+      ],
+      "collected_at": "2026-11-13"
     },
     {
       "id": "effectcraft",
@@ -150,6 +152,91 @@
         "https://github.com/storytold/effectcraft/blob/main/README.md",
         "https://github.com/storytold/effectcraft/blob/main/LICENSE-MIT",
         "https://github.com/storytold/effectcraft/blob/main/LICENSE-APACHE"
+      ],
+      "collected_at": "2026-11-14"
+    },
+    {
+      "id": "fusion-studio",
+      "name": "Fusion Studio",
+      "official_url": "https://www.blackmagicdesign.com/products/fusion/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "付费许可",
+      "price_summary": "官方美国页标价 US$295；本条比较独立 Fusion Studio，不是免费 Resolve 内置 Fusion。",
+      "prices": [],
+      "free_tier_limits": "专有商业软件，需相应激活许可；第三方 OFX 插件、素材及云协作费用另核。Resolve 内置 Fusion 和独立 Studio 的功能与工作流并非完全相同。平台支持不保证所有插件或编解码器通用；未实测 M4 16GB、未审计联网行为，不承诺 AEP 无损导入。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "面向影视与广播特效的节点式二维/三维合成器，含抠像、跟踪和 OpenFX 扩展。",
+      "features": {
+        "node_compositing": {
+          "value": "yes"
+        },
+        "chroma_key": {
+          "value": "yes"
+        },
+        "tracking_2d": {
+          "value": "yes"
+        },
+        "openfx": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://www.blackmagicdesign.com/products/fusion/",
+        "https://www.blackmagicdesign.com/products/fusion/compare",
+        "https://www.blackmagicdesign.com/products/fusion/visualeffects"
+      ],
+      "collected_at": "2026-11-14"
+    },
+    {
+      "id": "nuke",
+      "name": "Nuke",
+      "official_url": "https://www.foundry.com/products/nuke-family/nuke",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "付费许可",
+      "price_summary": "商业 Nuke 官网标价 US$3,839/年，税另计；NukeX、Studio、Indie 等另行定价。免费 Non-commercial 不能用于商业项目。",
+      "prices": [],
+      "free_tier_limits": "本条功能比较商业版 Nuke；NukeX/Studio 的额外工具不自动包含。Non-commercial 限非商业用途，输出上限 1920×1080，不支持第三方插件。当前官方合格系统包括 Windows 11、macOS 与 Rocky Linux 9，须核对具体版本；M4 16GB 未实测。OFX 插件需另核平台及授权；未审计联网或授权服务，不承诺 AEP 工程互通。NC 工程加密，商业版不能打开；亦不得为第三方提供服务，包括免费服务。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "面向影视镜头制作与工作室流程的节点式合成工具，含抠像、二维跟踪及 OFX 扩展。",
+      "features": {
+        "node_compositing": {
+          "value": "yes"
+        },
+        "chroma_key": {
+          "value": "yes"
+        },
+        "tracking_2d": {
+          "value": "yes"
+        },
+        "openfx": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://www.foundry.com/products/nuke-family/nuke/features",
+        "https://www.foundry.com/products/nuke-family/non-commercial",
+        "https://learn.foundry.com/nuke/content/comp_environment/configuring_nuke/loading_ofx_plugins.html",
+        "https://learn.foundry.com/nuke/content/release_notes/17.1/nuke_17.1v3_releasenotes.html",
+        "https://www.foundry.com/trial-and-buy",
+        "https://www.foundry.com/non-commercial-faqs"
       ],
       "collected_at": "2026-11-14"
     }
