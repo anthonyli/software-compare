@@ -6,7 +6,7 @@ const c=JSON.parse(fs.readFileSync(new URL('categories/ai-memory.json',root)));
 const en=JSON.parse(fs.readFileSync(new URL('site/src/i18n/content-en.json',root)));
 const strings=v=>typeof v==='string'?[v]:v&&typeof v==='object'?Object.values(v).flatMap(strings):[];
 test('AI memory tools have complete sourced feature rows and translations',()=>{
- assert.deepEqual(c.products.map(p=>p.id),['taosheng','omi','screenpipe','auday']);
+ assert.deepEqual(c.products.map(p=>p.id),['taosheng','omi','screenpipe','auday','fanear']);
  for(const p of c.products){assert.deepEqual(Object.keys(p.features),c.features.map(f=>f.key));assert(p.sources.length>=3);assert.equal(p.collected_at,'2026-11-14');}
  for(const s of strings(c).filter(s=>/[\u4e00-\u9fff]/.test(s)))assert(en[s],s);
  const config=fs.readFileSync(new URL('site/src/config.ts',root),'utf8');assert(config.includes('"ai-memory"'));
