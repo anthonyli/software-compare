@@ -1246,6 +1246,96 @@
       "archived": false,
       "last_push_at": null,
       "maintenance_status": "活跃"
+    },
+    {
+      "id": "uu-remote",
+      "name": "网易 UU 远程",
+      "official_url": "https://yc.uu.163.com/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "iOS",
+        "Android",
+        "Android TV"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "collected_at": "2026-11-14",
+      "price_summary": "官网宣传远程控制免费，App Store 列为免费；服务协议保留付费会员和增值服务条款，具体后续资费以平台规则为准，本轮未核实付费金额。",
+      "prices": [
+        {
+          "plan": "远程控制（官网宣传）",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "官方应用介绍称不限连接时长和次数；不据此承诺永久全功能免费或免费商业授权。连接质量受设备、网络和权限影响。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "latest_release_date_note": "各平台版本不同，本轮不统一填写版本号；仅核实官方文档，未安装客户端。",
+      "summary": "网易的跨设备远程办公、协助与游戏串流工具，支持 Mac 被控、文件互传和 WOL。隐私政策列有账号、设备和日志信息处理；防窥屏不等于不收集数据。",
+      "features": {
+        "unattended_access": {
+          "value": "yes",
+          "note": "官网办公页列出无人值守场景；需先配置被控端、账号和连接权限。"
+        },
+        "file_transfer": {
+          "value": "yes",
+          "note": "官网确认文件/文件夹互传、批量和断点续传；不同平台的拖拽入口与权限以客户端为准。"
+        },
+        "clipboard_sync": {
+          "value": "yes",
+          "note": "隐私政策确认开启后可跨设备传输文本、图片和文件；政策称相关剪贴板内容不存储至其服务器。"
+        },
+        "multi_monitor": {
+          "value": "yes",
+          "note": "官网办公页列多屏控制和虚拟屏；能力受被控端与版本限制。"
+        },
+        "audio": {
+          "value": "yes",
+          "note": "官方 App Store 介绍列麦克风与远程语音；未逐平台实测音频路由。"
+        },
+        "e2e_encryption": {
+          "value": "yes",
+          "note": "官网及官方应用介绍声明端到端加密；本轮未审计协议实现，不能推导为零数据收集。"
+        },
+        "self_host": {
+          "value": "unknown",
+          "note": "已核实资料未说明可自建中继或管理服务器，不能把直连等同于自托管。"
+        },
+        "mobile_control": {
+          "value": "yes",
+          "note": "iOS/Android 等移动客户端可控制电脑；不表示手机也能作为完整被控端。"
+        },
+        "free_for_commercial": {
+          "value": "unknown",
+          "note": "免费远控宣传不能替代明确商业授权；本轮未确认覆盖企业场景的免费许可。"
+        },
+        "session_recording": {
+          "value": "unknown",
+          "note": "已核实资料未明确会话录制能力，不由麦克风或串流功能推断。"
+        },
+        "wake_on_lan": {
+          "value": "partial",
+          "note": "WOL 需兼容网卡/主板与电源配置，通常需同局域网在线辅助设备；不能保证任意关机电脑均可唤醒。"
+        }
+      },
+      "sources": [
+        "https://yc.uu.163.com/",
+        "https://yc.uu.163.com/features/work/",
+        "https://yc.uu.163.com/features/file/",
+        "https://yc.uu.163.com/features/wol/",
+        "https://yc.uu.163.com/contact/20240402/40294_1146067.html",
+        "https://yc.uu.163.com/contact/20240402/40294_1146065.html",
+        "https://apps.apple.com/cn/app/id1642306791"
+      ],
+      "archived": false,
+      "last_push_at": null,
+      "maintenance_status": null
     }
   ]
 }
