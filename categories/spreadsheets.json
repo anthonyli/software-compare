@@ -203,6 +203,95 @@
         "https://github.com/ONLYOFFICE/DesktopEditors",
         "https://www.onlyoffice.com/sheets"
       ]
+    },
+    {
+      "id": "microsoft-excel",
+      "name": "Microsoft Excel",
+      "official_url": "https://www.microsoft.com/en-us/microsoft-365/excel",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Web",
+        "iOS",
+        "Android"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "免费基础版 / 付费方案",
+      "price_summary": "Excel 网页基础版免费；完整桌面版需对应订阅或单独购买授权。AI 与高级分析能力按方案、平台和版本核对。",
+      "prices": [],
+      "free_tier_limits": "Excel 网页版不能创建、运行或编辑 VBA 宏，但可以打开含宏工作簿并保留现有宏；宏操作需桌面版。桌面、网页和移动版功能不完全相同。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "公式、筛选、图表和 XLSX 原生工作流的主流电子表格，适合办公分析；外部数据连接和复杂模型需核对实际版本。",
+      "features": {
+        "formulas": {
+          "value": "yes"
+        },
+        "filtering": {
+          "value": "yes"
+        },
+        "charts": {
+          "value": "yes"
+        },
+        "office_files": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://www.microsoft.com/en-us/microsoft-365/excel",
+        "https://support.microsoft.com/en-us/excel/work-with-vba-macros-in-excel-for-the-web",
+        "https://support.microsoft.com/en-us/accounts-billing/subscriptions/compare-microsoft-365-and-office-plans",
+        "https://support.microsoft.com/en-us/excel/differences-between-using-a-workbook-in-the-browser-and-in-excel"
+      ],
+      "collected_at": "2026-11-14"
+    },
+    {
+      "id": "google-sheets",
+      "name": "Google Sheets",
+      "official_url": "https://workspace.google.com/products/sheets/",
+      "github_url": null,
+      "platforms": [
+        "Web",
+        "iOS",
+        "Android"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "免费基础版 / 付费方案",
+      "price_summary": "个人 Google 账号可使用基础表格；Workspace 管理及部分高级或 AI 功能按付费方案提供。",
+      "prices": [],
+      "free_tier_limits": "云端协作为主，电脑离线需预先启用 Chrome/Edge 和离线扩展。可编辑与导出 Excel 文件，但复杂图表、公式、插件和自动化须逐项验证，不能当成 Excel 无损替代。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "面向多人协作的在线电子表格，提供函数、筛选视图和图表；适合共享数据与轻量分析，浏览器访问不等于原生桌面客户端。",
+      "features": {
+        "formulas": {
+          "value": "yes"
+        },
+        "filtering": {
+          "value": "yes"
+        },
+        "charts": {
+          "value": "yes"
+        },
+        "office_files": {
+          "value": "partial",
+          "note": "支持 Excel 文件编辑、转换和导出，不保证全部功能或格式往返保真。"
+        }
+      },
+      "sources": [
+        "https://workspace.google.com/products/sheets/",
+        "https://support.google.com/docs/answer/9331167?hl=en",
+        "https://support.google.com/docs/answer/9331169?hl=en",
+        "https://support.google.com/docs/answer/3093197?hl=en",
+        "https://support.google.com/docs/answer/6388102?hl=en",
+        "https://support.google.com/docs/answer/63824?hl=en"
+      ],
+      "collected_at": "2026-11-14"
     }
   ]
 }
