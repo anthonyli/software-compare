@@ -339,6 +339,45 @@
         "https://www.sketch.com/privacy/"
       ],
       "collected_at": "2026-11-14"
+    },
+    {
+      "id": "svgedit",
+      "name": "SVGEdit",
+      "official_url": "https://github.com/SVG-Edit/svgedit",
+      "github_url": "https://github.com/SVG-Edit/svgedit",
+      "platforms": [
+        "Web"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "完全免费",
+      "price_summary": "免费开源；MIT 允许商业使用，分发时需保留版权及许可声明。自托管服务器和第三方资源可能另有成本。",
+      "prices": [],
+      "free_tier_limits": "支持近期 Chrome、Firefox、Safari；自托管构建需 Node/npm 与 svgcanvas 依赖。嵌入容器需明确宽高，不能使用隐藏容器的 auto 尺寸。不是 Illustrator AI 文件无损兼容或 Figma 实时协作承诺；交互原型与团队协作未核实。托管实例、扩展及远程资源的数据去向未审计，不保证全离线或零外发；M4 Mac 可走浏览器使用路径，但未实测性能。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "浏览器内的 SVG 绘图编辑器，适合图标、简单矢量图和为网页集成编辑界面；可单独使用 svgcanvas 构建自己的编辑器。",
+      "features": {
+        "svg": {
+          "value": "yes"
+        },
+        "prototyping": {
+          "value": "unknown"
+        },
+        "collaboration": {
+          "value": "unknown"
+        },
+        "self_host": {
+          "value": "yes",
+          "note": "可构建后由自己的 Web 服务器提供编辑器，不等同内置多人协作后端。"
+        }
+      },
+      "sources": [
+        "https://github.com/SVG-Edit/svgedit",
+        "https://github.com/SVG-Edit/svgedit/blob/master/LICENSE-MIT.txt"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
