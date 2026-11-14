@@ -1,0 +1,117 @@
+{
+  "category_slug": "cad",
+  "category_name_zh": "二维 CAD",
+  "collected_at": "2026-11-14",
+  "collected_at_timezone": "Asia/Shanghai (UTC+8)",
+  "features": [
+    {
+      "key": "drafting_2d",
+      "label": "二维工程绘图"
+    },
+    {
+      "key": "dxf",
+      "label": "DXF 读写"
+    },
+    {
+      "key": "dwg",
+      "label": "DWG 交换"
+    },
+    {
+      "key": "vector_export",
+      "label": "PDF / SVG 输出"
+    }
+  ],
+  "products": [
+    {
+      "id": "cadcraft",
+      "name": "CADCraft",
+      "official_url": "https://github.com/storytold/cadcraft",
+      "github_url": "https://github.com/storytold/cadcraft",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "FreeBSD",
+        "Web"
+      ],
+      "open_source": true,
+      "license": "MIT OR Apache-2.0",
+      "pricing_model": "开源免费",
+      "price_summary": "代码开源，可免费获取和使用；第三方服务另依其条款。",
+      "prices": [],
+      "free_tier_limits": "重要：官方明确未建模的实体会在保存时丢弃；编辑外部 DXF/DWG 前先另存备份，不覆盖唯一原件。保留原件并验证重开后的图纸。 平台为官方构建声明；Web 指 WebAssembly 版本，不代表现成托管服务。代码许可不涵盖所有第三方素材和品牌。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "Rust 二维 CAD，面向命令行绘图、捕捉与图纸布局；不是完整 AutoCAD 等价替代。",
+      "features": {
+        "drafting_2d": {
+          "value": "yes",
+          "note": "官方文档列出该能力；本轮未安装实测。"
+        },
+        "dxf": {
+          "value": "partial",
+          "note": "原生 DXF 读写，但未建模实体保存后丢失。"
+        },
+        "dwg": {
+          "value": "partial",
+          "note": "通过 acadrust 交换 DWG；版本与未建模实体存在兼容限制。"
+        },
+        "vector_export": {
+          "value": "yes",
+          "note": "官方文档列出该能力；本轮未安装实测。"
+        }
+      },
+      "sources": [
+        "https://github.com/storytold/cadcraft/blob/main/README.md",
+        "https://github.com/storytold/cadcraft/blob/main/LICENSE-MIT",
+        "https://github.com/storytold/cadcraft/blob/main/LICENSE-APACHE"
+      ],
+      "collected_at": "2026-11-14"
+    },
+    {
+      "id": "librecad",
+      "name": "LibreCAD",
+      "official_url": "https://librecad.org/",
+      "github_url": "https://github.com/LibreCAD/LibreCAD",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-2.0",
+      "pricing_model": "开源免费",
+      "price_summary": "软件可免费使用；可选支持、捐赠和外部服务另计。",
+      "prices": [],
+      "free_tier_limits": "当前 master 为预发布代码；DWG 输入输出需要启用 DWGSUPPORT 的构建，须核对所选发行版。文件兼容与网络行为本轮未实测。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "专注二维工程绘图的开源 CAD，面向几何图形、DXF 编辑与图纸输出，不是三维实体建模工具。",
+      "features": {
+        "drafting_2d": {
+          "value": "yes",
+          "note": "官方文档列出该能力；本轮未安装实测。"
+        },
+        "dxf": {
+          "value": "yes",
+          "note": "官方文档列出该能力；本轮未安装实测。"
+        },
+        "dwg": {
+          "value": "partial",
+          "note": "取决于所用构建是否启用 DWGSUPPORT；不假定所有稳定版都具有相同能力。"
+        },
+        "vector_export": {
+          "value": "yes",
+          "note": "官方文档列出该能力；本轮未安装实测。"
+        }
+      },
+      "sources": [
+        "https://librecad.org/",
+        "https://github.com/LibreCAD/LibreCAD/blob/master/README.md"
+      ],
+      "collected_at": "2026-11-14"
+    }
+  ]
+}

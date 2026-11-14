@@ -1,0 +1,165 @@
+{
+  "category_slug": "texture-materials",
+  "category_name_zh": "纹理与材质",
+  "collected_at": "2026-11-14",
+  "collected_at_timezone": "Asia/Shanghai (UTC+8)",
+  "features": [
+    {
+      "key": "node_graph",
+      "label": "节点式程序材质"
+    },
+    {
+      "key": "pbr",
+      "label": "PBR 材质"
+    },
+    {
+      "key": "painting_3d",
+      "label": "三维模型贴图绘制"
+    },
+    {
+      "key": "texture_export",
+      "label": "纹理贴图输出"
+    }
+  ],
+  "products": [
+    {
+      "id": "texturecraft",
+      "name": "TextureCraft",
+      "official_url": "https://github.com/storytold/texturecraft",
+      "github_url": "https://github.com/storytold/texturecraft",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "FreeBSD",
+        "Web"
+      ],
+      "open_source": true,
+      "license": "MIT OR Apache-2.0",
+      "pricing_model": "开源免费",
+      "price_summary": "代码开源，可免费获取和使用；第三方服务另依其条款。",
+      "prices": [],
+      "free_tier_limits": "官方仍把各平台首次签名发布列为待办；不能仅据下载模板认定正式包已可用。Mac、Linux 和桌面浏览器暂不支持笔压，笔倾斜尚缺；没有本轮性能实测。 平台为官方构建声明；Web 指 WebAssembly 版本，不代表现成托管服务。代码许可不涵盖所有第三方素材和品牌。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "Rust 三维贴图绘制工具，包含图层、遮罩、烘焙和 PBR 预览；侧重在模型上绘制。",
+      "features": {
+        "node_graph": {
+          "value": "unknown",
+          "note": "本次官方资料未确认；不代表不支持。"
+        },
+        "pbr": {
+          "value": "yes",
+          "note": "官方文档列出该能力；本轮未安装实测。"
+        },
+        "painting_3d": {
+          "value": "yes",
+          "note": "官方文档列出该能力；本轮未安装实测。"
+        },
+        "texture_export": {
+          "value": "yes",
+          "note": "官方文档列出该能力；本轮未安装实测。"
+        }
+      },
+      "sources": [
+        "https://github.com/storytold/texturecraft/blob/main/README.md",
+        "https://github.com/storytold/texturecraft/blob/main/LICENSE-MIT",
+        "https://github.com/storytold/texturecraft/blob/main/LICENSE-APACHE"
+      ],
+      "collected_at": "2026-11-14"
+    },
+    {
+      "id": "materialcraft",
+      "name": "MaterialCraft",
+      "official_url": "https://github.com/storytold/materialcraft",
+      "github_url": "https://github.com/storytold/materialcraft",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "FreeBSD",
+        "Web"
+      ],
+      "open_source": true,
+      "license": "MIT OR Apache-2.0",
+      "pricing_model": "开源免费",
+      "price_summary": "代码开源，可免费获取和使用；第三方服务另依其条款。",
+      "prices": [],
+      "free_tier_limits": "参考应用的渲染一致性与完整 SBS 素材库加载仍待完成；不能视为 Substance Designer 工程无损替代。三维绘制需结合 TextureCraft，未确认本体具备独立绘制工具。 平台为官方构建声明；Web 指 WebAssembly 版本，不代表现成托管服务。代码许可不涵盖所有第三方素材和品牌。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "Rust 节点式程序材质编辑器，侧重生成与输出贴图，可与 TextureCraft 交换材质。",
+      "features": {
+        "node_graph": {
+          "value": "yes",
+          "note": "官方文档列出该能力；本轮未安装实测。"
+        },
+        "pbr": {
+          "value": "yes",
+          "note": "官方文档列出该能力；本轮未安装实测。"
+        },
+        "painting_3d": {
+          "value": "unknown",
+          "note": "本次官方资料未确认；不代表不支持。"
+        },
+        "texture_export": {
+          "value": "yes",
+          "note": "官方文档列出该能力；本轮未安装实测。"
+        }
+      },
+      "sources": [
+        "https://github.com/storytold/materialcraft/blob/main/README.md",
+        "https://github.com/storytold/materialcraft/blob/main/LICENSE-MIT",
+        "https://github.com/storytold/materialcraft/blob/main/LICENSE-APACHE"
+      ],
+      "collected_at": "2026-11-14"
+    },
+    {
+      "id": "material-maker",
+      "name": "Material Maker",
+      "official_url": "https://rodzilla.itch.io/material-maker",
+      "github_url": "https://github.com/RodZill4/material-maker",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "开源免费",
+      "price_summary": "软件可免费使用；可选支持、捐赠和外部服务另计。",
+      "prices": [],
+      "free_tier_limits": "itch.io 可选择免费或自愿付费；Steam 价格未核实。三维绘制仍属实验性；Unreal 4 需手动设置材质，Unreal 5 需执行生成脚本。在线分享会上传素材，外部素材授权另核。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "基于 Godot 的节点式程序纹理与 PBR 材质工具，也提供实验性三维绘制。",
+      "features": {
+        "node_graph": {
+          "value": "yes",
+          "note": "官方文档列出该能力；本轮未安装实测。"
+        },
+        "pbr": {
+          "value": "yes",
+          "note": "官方文档列出该能力；本轮未安装实测。"
+        },
+        "painting_3d": {
+          "value": "partial",
+          "note": "官方标为实验性，不能视为成熟绘制工作流保证。"
+        },
+        "texture_export": {
+          "value": "yes",
+          "note": "官方文档列出该能力；本轮未安装实测。"
+        }
+      },
+      "sources": [
+        "https://github.com/RodZill4/material-maker/blob/master/README.md",
+        "https://rodzilla.itch.io/material-maker",
+        "https://rodzill4.github.io/material-maker/doc/"
+      ],
+      "collected_at": "2026-11-14"
+    }
+  ]
+}
