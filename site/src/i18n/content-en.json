@@ -2185,7 +2185,6 @@
   "本地编译器免费；云服务免费档及订阅": "Free local compiler; hosted free tier and subscriptions",
   "开源编译器免费；官网云服务免费档每项目 200MB、最多 100 个文件，扩展功能有付费方案。未核实结账金额。": "The open-source compiler is free. The hosted free tier provides 200MB and up to 100 files per project; paid plans add features. Checkout totals were not verified.",
   "代码式排版系统，适合可复用模板、报告和技术文档；不是 InDesign 的拖拽式无损替代。": "Markup-based typesetting for reusable templates, reports and technical documents; not a lossless drag-and-drop replacement for InDesign.",
-  "本地 CLI 与在线协作服务不同，云端项目需交由服务处理。CMYK 颜色在 PDF/A 输出时不支持；完整 ICC 印前流程未核实。字体、模板及依赖有各自许可，未实测 M4 16GB 或复杂文档性能。": "The local CLI differs from hosted collaboration, where projects are handled by the service. CMYK colors are not supported with PDF/A output; a complete ICC prepress workflow was not verified. Fonts, templates and dependencies have their own licenses. M4 16GB and complex-document performance were not tested.",
   "支持 CMYK 定义，但 PDF/A 不支持；不能据此承诺完整印前色彩流程。": "CMYK definitions are supported, but not with PDF/A; this does not guarantee a complete prepress color workflow.",
   "支持图像 ICC 配置，不代表完整印前色彩管理。": "Image ICC profiles are supported, not a guarantee of complete prepress color management.",
   "免费开源参数化 CAD": "Free open-source parametric CAD",
@@ -2194,5 +2193,6 @@
   "开源参数化建模器，以 Sketcher / Draft 草图和 TechDraw 工程图连接二维制图与三维零件设计。": "Open-source parametric modeler connecting Sketcher / Draft sketches and TechDraw technical drawings with 3D part design.",
   "支持 DXF 交换，转换实体、样式和单位需核对。": "DXF exchange is supported; verify converted entities, styles and units.",
   "通过外部转换器处理，不是原生完整 DWG 编辑器。": "Handled through external converters, not a native full DWG editor.",
-  "已核实 TechDraw 的 SVG 工程图导出；不代表三维 PDF。": "TechDraw SVG drawing export is documented; this does not imply 3D PDF."
+  "已核实 TechDraw 的 SVG 工程图导出；不代表三维 PDF。": "TechDraw SVG drawing export is documented; this does not imply 3D PDF.",
+  "本地 CLI 与在线协作服务不同，云端项目需交由服务处理。CMYK 颜色在 PDF/A 输出时不支持；完整 ICC 印前流程未核实。字体、模板及依赖有各自许可，未实测 M4 16GB 或复杂文档性能。 Web 项目 ZIP 不含所用私有包及平台提供的字体，本地重建可能缺依赖或排版不同，应另备齐所需包与授权字体。包首次使用会下载后缓存，不代表所有本地文档都必须联网。": "The local CLI differs from hosted collaboration, where projects are handled by the service. CMYK colors are not supported with PDF/A output; a complete ICC prepress workflow was not verified. Fonts, templates and dependencies have their own licenses. M4 16GB and complex-document performance were not tested. Web project ZIP archives exclude used private packages and platform-provided fonts; local rebuilds may lack dependencies or differ in layout. Keep required packages and licensed fonts separately. Packages are downloaded on first use and then cached; this does not mean every local document requires internet access."
 }
