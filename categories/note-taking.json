@@ -1524,6 +1524,79 @@
         "https://doc.anytype.io/anytype/data/sync-and-backup/local-only.md"
       ],
       "collected_at": "2026-11-15"
+    },
+    {
+      "id": "zettlr",
+      "name": "Zettlr",
+      "official_url": "https://www.zettlr.com/",
+      "github_url": "https://github.com/Zettlr/Zettlr",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "免费开源，捐赠支持",
+      "price_summary": "软件免费，可按 GPL 商用；分发修改版遵守开源义务，第三方同步、LanguageTool Premium 或服务费用另计。",
+      "prices": [],
+      "free_tier_limits": "笔记以本地 Markdown 文件为主，不等同加密协作数据库。LanguageTool 默认关闭；启用后默认向其官方服务器发送文本，可改用自建本地服务。Pandoc 已随应用提供，PDF 导出仍需所选额外引擎及依赖；复核字体、引用和最终排版。不承诺 Word / Obsidian 全量无损兼容。支持 Mac Apple Silicon，但 M4 16GB 和大型资料库未实测。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "文件式 Markdown 笔记与研究写作工具，结合工作区、标签、文献引用和出版导出，适合知识整理与长文写作。",
+      "features": {
+        "markdown": {
+          "value": "yes"
+        },
+        "rich_text": {
+          "value": "unknown"
+        },
+        "folders": {
+          "value": "yes"
+        },
+        "tags": {
+          "value": "yes"
+        },
+        "web_clipper": {
+          "value": "unknown"
+        },
+        "sync": {
+          "value": "partial",
+          "note": "可借助外部同步文件夹；不是内置托管同步服务，费用、冲突与隐私依所选工具。"
+        },
+        "offline": {
+          "value": "yes"
+        },
+        "e2e_encrypt": {
+          "value": "unknown"
+        },
+        "attachments": {
+          "value": "yes"
+        },
+        "plugins": {
+          "value": "unknown"
+        },
+        "collaboration": {
+          "value": "unknown"
+        },
+        "mobile": {
+          "value": "no",
+          "note": "官方 FAQ 未提供 Android / iOS 版本，不把其它 Markdown 应用算作 Zettlr 移动端。"
+        }
+      },
+      "sources": [
+        "https://github.com/Zettlr/Zettlr",
+        "https://github.com/Zettlr/Zettlr/blob/develop/package.json",
+        "https://www.zettlr.com/",
+        "https://docs.zettlr.com/en/getting-started/setup.html",
+        "https://docs.zettlr.com/en/first-time-users/workspaces.html",
+        "https://docs.zettlr.com/en/pkms/tag-manager.html",
+        "https://docs.zettlr.com/en/language-style/languagetool.html",
+        "https://docs.zettlr.com/en/export/pdf-engine.html",
+        "https://docs.zettlr.com/en/reference/faq.html"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
