@@ -34,13 +34,13 @@ test('public mappings and unknown fallbacks never recover removed source text', 
 
 test('UU detail toggles languages without untranslated cleaned explanations', async ({ page }) => {
   await page.goto('/p/remote-desktop/uu-remote/');
-  await page.getByRole('checkbox', { name: 'EN', exact: true }).check();
+  await page.getByRole('button', { name: 'EN', exact: true }).click();
   const main = page.locator('main');
   await expect(main).toContainText(publicTranslations[cleanPublicText(uu.price_summary)]);
   await expect(main).toContainText(publicTranslations[cleanPublicText(uu.features.e2e_encryption.note)]);
   await expect(main).toContainText(publicTranslations[cleanPublicText(uu.features.free_for_commercial.note)]);
   await expect(main).not.toContainText('本轮');
-  await page.getByRole('checkbox', { name: '中文', exact: true }).check();
+  await page.getByRole('button', { name: '中文', exact: true }).click();
   await expect(main).toContainText(cleanPublicText(uu.price_summary));
   await expect(main).not.toContainText('本轮');
 });
