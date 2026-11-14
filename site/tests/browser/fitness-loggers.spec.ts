@@ -1,0 +1,4 @@
+import {test,expect} from '@playwright/test';
+// Content-only local API identity; production rate limits are unchanged.
+test.use({extraHTTPHeaders:{'CF-Connecting-IP':'192.0.2.76'}});
+test('fitness loggers render in responsive comparisons and English details',async({page})=>{for(const width of [1280,390]){await page.setViewportSize({width,height:900});await page.goto('/c/fitness-training/');const list=page.locator(width===1280?'#matrix':'#card-list');for(const id of ['strong','fitbod'])await expect(list.locator(`[data-product-id="${id}"]`)).toBeVisible();await page.locator('[data-lang="en"]').click();expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);}await page.goto('/p/fitness-training/strong/');await expect(page.locator('body')).toContainText('not a limit of three logged workouts');await page.goto('/p/fitness-training/fitbod/');await expect(page.locator('body')).toContainText('logging new workouts requires payment');});
