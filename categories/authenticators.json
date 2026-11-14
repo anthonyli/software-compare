@@ -1,0 +1,253 @@
+{
+  "category_slug": "authenticators",
+  "category_name_zh": "身份验证器",
+  "collected_at": "2026-11-15",
+  "timezone": "Asia/Shanghai",
+  "features": [
+    {
+      "key": "totp",
+      "label": "离线动态验证码"
+    },
+    {
+      "key": "no_account",
+      "label": "无需账号使用"
+    },
+    {
+      "key": "cloud_backup",
+      "label": "云备份/同步"
+    },
+    {
+      "key": "encrypted_export",
+      "label": "密码加密文件导出"
+    },
+    {
+      "key": "desktop",
+      "label": "原生桌面应用"
+    }
+  ],
+  "products": [
+    {
+      "id": "2fas-auth",
+      "name": "2FAS Auth",
+      "official_url": "https://2fas.com/",
+      "github_url": "https://github.com/twofas/2fas-android",
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "免费",
+      "price_summary": "验证器应用免费；云账户或组织服务另受对应条款约束。",
+      "prices": [],
+      "free_tier_limits": "以官方应用当前说明为准，不将免费验证器等同于免费企业身份服务。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "手机端验证器，可选 iCloud 或 Google Drive 备份。",
+      "features": {
+        "totp": {
+          "value": "yes"
+        },
+        "no_account": {
+          "value": "yes"
+        },
+        "cloud_backup": {
+          "value": "yes"
+        },
+        "encrypted_export": {
+          "value": "yes"
+        },
+        "desktop": {
+          "value": "no"
+        }
+      },
+      "sources": [
+        "https://2fas.com/support/2fas-auth-security-privacy/is-2fas-backup-safe/",
+        "https://2fas.com/support/2fas-auth-mobile-app/how-to-use-sync-more-devices-with-2fas/",
+        "https://github.com/twofas/2fas-android",
+        "https://github.com/twofas/2fas-ios"
+      ],
+      "notes": "官方称备份端到端加密，并建议另设备份密码；同系统云同步，跨 iOS/Android 使用文件迁移。浏览器扩展需配合手机，不是独立桌面密码库。",
+      "collected_at": "2026-11-15",
+      "maintenance_status": "未评估"
+    },
+    {
+      "id": "ente-auth",
+      "name": "Ente Auth",
+      "official_url": "https://ente.com/auth/",
+      "github_url": "https://github.com/ente-io/ente",
+      "platforms": [
+        "Android",
+        "iOS",
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "open_source": true,
+      "license": "AGPL-3.0",
+      "pricing_model": "免费",
+      "price_summary": "验证器应用免费；云账户或组织服务另受对应条款约束。",
+      "prices": [],
+      "free_tier_limits": "以官方应用当前说明为准，不将免费验证器等同于免费企业身份服务。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "提供跨平台端到端加密同步，也可不注册账号离线使用。",
+      "features": {
+        "totp": {
+          "value": "yes"
+        },
+        "no_account": {
+          "value": "yes"
+        },
+        "cloud_backup": {
+          "value": "yes"
+        },
+        "encrypted_export": {
+          "value": "unknown"
+        },
+        "desktop": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://ente.com/auth/"
+      ],
+      "notes": "同步时加密数据存储于 Ente 服务；离线模式不提供云恢复。支持导入导出，密码加密导出格式未在本次资料中核实。",
+      "collected_at": "2026-11-15",
+      "maintenance_status": "未评估"
+    },
+    {
+      "id": "aegis",
+      "name": "Aegis Authenticator",
+      "official_url": "https://getaegis.app/",
+      "github_url": "https://github.com/beemdevelopment/Aegis",
+      "platforms": [
+        "Android"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "免费",
+      "price_summary": "验证器应用免费；云账户或组织服务另受对应条款约束。",
+      "prices": [],
+      "free_tier_limits": "以官方应用当前说明为准，不将免费验证器等同于免费企业身份服务。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "Android 本地验证器，支持 HOTP/TOTP 和加密备份。",
+      "features": {
+        "totp": {
+          "value": "yes"
+        },
+        "no_account": {
+          "value": "yes"
+        },
+        "cloud_backup": {
+          "value": "partial"
+        },
+        "encrypted_export": {
+          "value": "yes"
+        },
+        "desktop": {
+          "value": "no"
+        }
+      },
+      "sources": [
+        "https://github.com/beemdevelopment/Aegis",
+        "https://github.com/beemdevelopment/Aegis/blob/master/FAQ.md"
+      ],
+      "notes": "加密库使用 AES-256-GCM；可导出明文或加密文件并自动备份至选定位置。没有内置跨设备云同步，外部备份位置不等于实时同步。",
+      "collected_at": "2026-11-15",
+      "maintenance_status": "未评估"
+    },
+    {
+      "id": "google-authenticator",
+      "name": "Google Authenticator",
+      "official_url": "https://support.google.com/accounts/answer/1066447",
+      "github_url": null,
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费",
+      "price_summary": "验证器应用免费；云账户或组织服务另受对应条款约束。",
+      "prices": [],
+      "free_tier_limits": "以官方应用当前说明为准，不将免费验证器等同于免费企业身份服务。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "支持离线验证码、可选 Google 账号同步及设备间二维码迁移。",
+      "features": {
+        "totp": {
+          "value": "yes"
+        },
+        "no_account": {
+          "value": "yes"
+        },
+        "cloud_backup": {
+          "value": "yes"
+        },
+        "encrypted_export": {
+          "value": "unknown"
+        },
+        "desktop": {
+          "value": "no"
+        }
+      },
+      "sources": [
+        "https://support.google.com/accounts/answer/1066447"
+      ],
+      "notes": "官方只在所核实资料中说明传输和静态加密，不据此标成端到端加密。不登录时密钥仅保存在设备；手动迁移需要原设备。当前应用不以历史开源代码库代表。",
+      "collected_at": "2026-11-15",
+      "maintenance_status": "未评估"
+    },
+    {
+      "id": "microsoft-authenticator",
+      "name": "Microsoft Authenticator",
+      "official_url": "https://www.microsoft.com/security/mobile-authenticator-app",
+      "github_url": null,
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费",
+      "price_summary": "验证器应用免费；云账户或组织服务另受对应条款约束。",
+      "prices": [],
+      "free_tier_limits": "以官方应用当前说明为准，不将免费验证器等同于免费企业身份服务。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "支持动态验证码及微软账号相关推送与无密码登录。",
+      "features": {
+        "totp": {
+          "value": "yes"
+        },
+        "no_account": {
+          "value": "partial"
+        },
+        "cloud_backup": {
+          "value": "yes"
+        },
+        "encrypted_export": {
+          "value": "unknown"
+        },
+        "desktop": {
+          "value": "no"
+        }
+      },
+      "sources": [
+        "https://support.microsoft.com/en-us/authenticator/back-up-your-accounts-in-microsoft-authenticator"
+      ],
+      "notes": "备份仅同系统恢复，iOS 备份不能恢复到 Android。工作/学校账户与无密码凭据仅保留名称，恢复后需重新登录注册；不是全部凭据无损迁移。微软文档预告 Android 备份将在 2027 年 1 月改用 Google One，未来需重新核实。",
+      "collected_at": "2026-11-15",
+      "maintenance_status": "未评估"
+    }
+  ],
+  "notes": "身份验证器与密码管理器分开比较。动态验证码不等于抗钓鱼通行密钥；备份是否加密、谁能恢复及跨系统迁移需分别判断。资料核实不等于安全审计或实测，不处理任何真实验证码、密钥或恢复码。"
+}

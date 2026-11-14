@@ -40,7 +40,7 @@ export const categoryGroups: { id: string; name: string; slugs: string[] }[] = [
   {
     id: "security",
     name: "安全隐私",
-    slugs: ["antivirus-security", "password-managers", "vpn-clients"],
+    slugs: ["antivirus-security", "password-managers", "authenticators", "vpn-clients"],
   },
   {
     id: "dev",
@@ -69,6 +69,7 @@ export const featureLabelFull: Record<string, string> = {
 
 /** 首页与导航用的品类一字记号，纯展示，不改变数据。 */
 export const categoryMonograms: Record<string, string> = {
+  "authenticators": "验",
   "ai-memory": "忆",
   "word-processors": "文",
   "spreadsheets": "表",
@@ -112,6 +113,7 @@ export const categoryMonograms: Record<string, string> = {
 
 /** 首页卡片色块，仅用于展示，不代表产品官方品牌色。 */
 export const categoryTints: Record<string, string> = {
+  "authenticators": "#E8F4EF",
   "ai-memory": "#F1E9FF",
   "word-processors": "#E8F1FF",
   "spreadsheets": "#E7F8EE",
