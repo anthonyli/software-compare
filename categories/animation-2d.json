@@ -104,7 +104,8 @@
           "value": "yes"
         },
         "bone_animation": {
-          "value": "unknown"
+          "value": "yes",
+          "note": "Skeleton 支持分层剪纸、关键帧和 IK；Plastic 支持参考骨架与网格变形。依据官方 1.7.1 手册核实，未运行实测。"
         },
         "node_effects": {
           "value": "yes"
@@ -113,9 +114,11 @@
       "sources": [
         "https://opentoonz.github.io/e/",
         "https://raw.githubusercontent.com/opentoonz/opentoonz/master/README.md",
-        "https://raw.githubusercontent.com/opentoonz/opentoonz/master/LICENSE.txt"
+        "https://raw.githubusercontent.com/opentoonz/opentoonz/master/LICENSE.txt",
+        "https://opentoonz.readthedocs.io/en/latest/creating_cutout_animation.html",
+        "https://opentoonz.readthedocs.io/en/latest/create_animations_using_plastic_tool.html"
       ],
-      "collected_at": "2026-11-13"
+      "collected_at": "2026-11-15"
     },
     {
       "id": "anicraft",
