@@ -248,6 +248,60 @@
         "https://auday.ai/terms",
         "https://apps.apple.com/us/app/auday-all-day-watch-recorder/id6814210373"
       ]
+    },
+    {
+      "id": "fanear",
+      "name": "饭耳 FanEar",
+      "official_url": "https://fanear.fandao.dev/",
+      "github_url": null,
+      "platforms": [
+        "iOS",
+        "watchOS"
+      ],
+      "open_source": false,
+      "license": "专有应用；未确认公开源代码许可",
+      "pricing_model": "免费应用 / 可选云服务另付费",
+      "summary": "Apple Watch 持续录音与 iPhone 转写整理助手，将对话变成可检索的记忆、待办和带原话出处的回顾。",
+      "price_summary": "官网及中国区 App Store 声明无会员、订阅和内购，不是限时试用。本机转写免费；云端转写和大模型需自备账号，按服务商规则付费，硬件及可选云存储成本另计。",
+      "free_tier_limits": "需 iOS 17+ 的 iPhone 与配对的 watchOS 10+ Apple Watch；不能只靠 Mac 全天录音。续航和中断后续录为作者声明，不保证连续无缺口。默认 iCloud 保存录音与文字；云转写发录音，大模型发所需文字给自选服务商，健康数据分享需另行同意。本机转写不等于全流程不出设备；NAS 和外部文件夹副本需单独删除。录制他人前取得所需同意，核对转写与待办；未安装实测。",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-14",
+      "features": {
+        "continuous_audio": {
+          "value": "yes",
+          "note": "Watch 打开后持续录音，系统打断可能留下缺口；自动恢复依实际设备。"
+        },
+        "screen_history": {
+          "value": "no",
+          "note": "以音频记忆为主，不是桌面屏幕历史记录工具。"
+        },
+        "speaker_labels": {
+          "value": "partial",
+          "note": "本机或云端区分说话人；能力随转写服务而异，身份与文字需核对。"
+        },
+        "memory_chat": {
+          "value": "yes",
+          "note": "原话检索、问答、总结与待办提醒；模型整理可能出错，云服务另计。"
+        },
+        "local_pipeline": {
+          "value": "partial",
+          "note": "可选择本机转写；iCloud、云转写、大模型和其他同步路径需分别配置。"
+        },
+        "agent_integration": {
+          "value": "partial",
+          "note": "支持导出记录及自定义模型/转写服务；并非所有集成都离线或免费。"
+        }
+      },
+      "sources": [
+        "https://fanear.fandao.dev/faq/",
+        "https://fanear.fandao.dev/privacy/",
+        "https://fanear.fandao.dev/features/",
+        "https://apps.apple.com/cn/app/id6822574853"
+      ]
     }
   ]
 }
