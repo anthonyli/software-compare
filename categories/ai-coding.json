@@ -1,7 +1,7 @@
 {
   "category_slug": "ai-coding",
   "category_name_zh": "AI 编程工具",
-  "collected_at": "2026-11-14",
+  "collected_at": "2026-11-15",
   "timezone": "Asia/Shanghai",
   "notes": "比较工具接入方式，不代表模型质量排名。Agent 可以写文件和运行命令，建议在隔离分支审查权限。M4 16GB 的可用本地模型取决于量化、上下文与运行时，不能保证所有模型可用。仅核实官方资料，未安装实测。",
   "features": [
@@ -465,6 +465,54 @@
         "https://github.com/storytold/craft-anything/blob/main/LICENSE-APACHE"
       ],
       "collected_at": "2026-11-14"
+    },
+    {
+      "id": "goose",
+      "name": "Goose",
+      "official_url": "https://goose-docs.ai/",
+      "github_url": "https://github.com/aaif-goose/goose",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "pricing_model": "开源免费，模型服务另计",
+      "price_summary": "应用采用 Apache-2.0，可按许可商用；云模型 API、订阅、扩展服务及本地模型硬件成本另计。",
+      "prices": [],
+      "free_tier_limits": "官方提供 Apple Silicon 桌面版，但不代表 M4 16GB 能运行任意本地模型。云提供商会收到所发送的提示、代码上下文和工具结果；本地模型仍需运行时、内存和独立模型许可，扩展可能另行联网。官方默认自主模式可无需确认修改或删除文件；使用前检查工具权限并审查差异；未安装、调用模型或验证安全隔离。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "带桌面和命令行入口的可扩展 Agent，适合代码修改、测试与开发流程自动化，可接云模型或本地模型。",
+      "features": {
+        "cli": {
+          "value": "yes"
+        },
+        "local_models": {
+          "value": "yes"
+        },
+        "code_edits": {
+          "value": "yes"
+        },
+        "run_tests": {
+          "value": "yes"
+        },
+        "ide_extension": {
+          "value": "partial",
+          "note": "可通过 ACP 接入 Zed；不是所有编辑器都自带原生扩展。"
+        }
+      },
+      "sources": [
+        "https://github.com/aaif-goose/goose",
+        "https://github.com/aaif-goose/goose/blob/main/LICENSE",
+        "https://goose-docs.ai/docs/getting-started/installation/",
+        "https://goose-docs.ai/docs/getting-started/providers/",
+        "https://goose-docs.ai/docs/guides/zed/",
+        "https://goose-docs.ai/docs/guides/managing-tools/goose-permissions/"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }

@@ -35,7 +35,7 @@ test('AI comparison tables include expanded tools and readable conditions', asyn
  await expect(row.locator('details')).not.toHaveAttribute('open','');
  await expect(row.locator('.ai-cell-note').first()).toBeVisible();
  await page.goto('/c/ai-coding/');
- await expect(page.locator('#matrix tbody tr')).toHaveCount(9);
+ await expect(page.locator('#matrix tbody tr')).toHaveCount(10);
  await expect(page.locator('#matrix [data-product-id="cursor"]')).toContainText('Cursor');
  await expect(page.locator('#matrix [data-product-id="craft-anything"]')).toContainText('Craft Anything');
  await page.goto('/c/ai-image-workflows/');
