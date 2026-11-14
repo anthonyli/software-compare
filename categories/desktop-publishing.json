@@ -1,7 +1,7 @@
 {
   "category_slug": "desktop-publishing",
   "category_name_zh": "桌面排版与印刷",
-  "collected_at": "2026-11-13",
+  "collected_at": "2026-11-14",
   "collected_at_timezone": "Asia/Shanghai (UTC+8)",
   "features": [
     {
@@ -65,7 +65,8 @@
       },
       "sources": [
         "https://sourceforge.net/projects/scribus/"
-      ]
+      ],
+      "collected_at": "2026-11-13"
     },
     {
       "id": "adobe-indesign",
@@ -103,7 +104,8 @@
       "sources": [
         "https://www.adobe.com/products/indesign.html",
         "https://helpx.adobe.com/indesign/using/exporting-publishing-pdf.html"
-      ]
+      ],
+      "collected_at": "2026-11-13"
     },
     {
       "id": "designcraft",
@@ -148,6 +150,88 @@
         "https://github.com/storytold/designcraft/blob/main/README.md",
         "https://github.com/storytold/designcraft/blob/main/LICENSE-MIT",
         "https://github.com/storytold/designcraft/blob/main/LICENSE-APACHE"
+      ],
+      "collected_at": "2026-11-14"
+    },
+    {
+      "id": "affinity-layout",
+      "name": "Affinity — Layout",
+      "official_url": "https://www.affinity.studio/page-layout-software",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "免费工具，AI 另计",
+      "price_summary": "个人可免费使用 Layout 工具，需 Canva 账号；Canva AI 功能需符合条件的付费或教育方案。",
+      "prices": [],
+      "free_tier_limits": "本条比较当前统一 Affinity 应用的桌面 Layout，不是旧 Publisher V2。免费不等于开源；组织使用、字体和素材授权分别核对。iPad 版有功能差异，未纳入桌面对照。Canva 集成、素材库和 AI 使用涉及联网，不能视为完全离线；M4 16GB 未实测，不保证 INDD 无损往返。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "统一 Affinity 应用内的多页排版工作区，面向书刊、宣传册与印刷文件，并可结合像素和矢量编辑。",
+      "features": {
+        "page_layout": {
+          "value": "yes"
+        },
+        "cmyk": {
+          "value": "yes"
+        },
+        "icc": {
+          "value": "yes"
+        },
+        "pdf_export": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://www.affinity.studio/page-layout-software",
+        "https://www.affinity.studio/get-affinity",
+        "https://www.affinity.studio/download",
+        "https://www.affinity.studio/help/sharing-export-settings/",
+        "https://www.affinity.studio/help/clr-selecting-clr/"
+      ],
+      "collected_at": "2026-11-14"
+    },
+    {
+      "id": "quarkxpress",
+      "name": "QuarkXPress",
+      "official_url": "https://www.quark.com/products/quarkxpress",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "订阅或永久许可",
+      "price_summary": "专有付费软件，提供年订阅或永久许可；地区价格和升级权益以当前方案为准。",
+      "prices": [],
+      "free_tier_limits": "试用不等于永久免费；永久许可不代表所有后续升级免费。功能证据引用 2026 官方手册，主页已展示 2027，具体系统和许可须按所选版本核对。字体、素材、插件和云 AI 授权另核；未审计联网行为，未实测 M4 16GB，不承诺 InDesign 工程无损迁移。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "面向印刷出版和多页文档的商业排版工具，提供色彩管理与 PDF/X 输出。",
+      "features": {
+        "page_layout": {
+          "value": "yes"
+        },
+        "cmyk": {
+          "value": "yes"
+        },
+        "icc": {
+          "value": "yes"
+        },
+        "pdf_export": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://www.quark.com/products/quarkxpress",
+        "https://www.quark.com/documentation/quarkxpress/2026/english/A%20Guide%20to%20QuarkXPress%202026/_6_483597176871758E7_14.html",
+        "https://www.quark.com/documentation/quarkxpress/2026/english/QXP_2026_Getting_Started/_49ed0241-ce73-469c-baed-bfe1d6bfc146.html"
       ],
       "collected_at": "2026-11-14"
     }

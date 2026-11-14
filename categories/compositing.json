@@ -211,7 +211,7 @@
       "pricing_model": "付费许可",
       "price_summary": "商业 Nuke 官网标价 US$3,839/年，税另计；NukeX、Studio、Indie 等另行定价。免费 Non-commercial 不能用于商业项目。",
       "prices": [],
-      "free_tier_limits": "本条功能比较商业版 Nuke；NukeX/Studio 的额外工具不自动包含。Non-commercial 限非商业用途，输出上限 1920×1080，不支持第三方插件。当前官方合格系统包括 Windows 11、macOS 与 Rocky Linux 9，须核对具体版本；M4 16GB 未实测。OFX 插件需另核平台及授权；未审计联网或授权服务，不承诺 AEP 工程互通。NC 工程加密，商业版不能打开；亦不得为第三方提供服务，包括免费服务。",
+      "free_tier_limits": "本条功能比较商业版 Nuke；NukeX/Studio 的额外工具不自动包含。Non-commercial 限非商业用途，输出上限 1920×1080，不支持第三方插件。当前官方合格系统包括 Windows 11、macOS 与 Rocky Linux 9，须核对具体版本；M4 16GB 未实测。OFX 插件需另核平台及授权；未审计联网或授权服务，不承诺 AEP 工程互通。NC 工程加密，商业版不能打开；亦不得为第三方提供服务，包括免费服务。Non-commercial 模式按具体版本构建有 180 天有效期，不是从安装日起算，也不是整个免费计划仅可用 180 天；使用前核对构建日期及官方说明。",
       "github_stars": null,
       "latest_release": null,
       "latest_release_date": null,
@@ -236,7 +236,8 @@
         "https://learn.foundry.com/nuke/content/comp_environment/configuring_nuke/loading_ofx_plugins.html",
         "https://learn.foundry.com/nuke/content/release_notes/17.1/nuke_17.1v3_releasenotes.html",
         "https://www.foundry.com/trial-and-buy",
-        "https://www.foundry.com/non-commercial-faqs"
+        "https://www.foundry.com/non-commercial-faqs",
+        "https://learn.foundry.com/nuke/content/getting_started/meet_nuke/about_nc.html"
       ],
       "collected_at": "2026-11-14"
     }
