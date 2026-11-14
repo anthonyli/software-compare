@@ -1,4 +1,11 @@
 // SPDX-License-Identifier: Apache-2.0
+import contentEn from "./content-en.json";
+
+// Shared content translations are the fallback, without a circular index import.
+function contentFallback(text: string): string {
+  const dictionary = contentEn as Record<string, string>;
+  return Object.prototype.hasOwnProperty.call(dictionary, text) ? dictionary[text] : text;
+}
 
 /** Category display names, keyed by slug. */
 export const categoryNames: Record<string, { zh: string; en: string }> = {
@@ -331,12 +338,12 @@ export function groupPair(id: string, fallbackZh = ""): { zh: string; en: string
 }
 
 export function featurePair(slug: string, key: string, fallbackZh = ""): { zh: string; en: string } {
-  return featureColumns[`${slug}:${key}`] || { zh: fallbackZh || key, en: fallbackZh || key };
+  return featureColumns[`${slug}:${key}`] || { zh: fallbackZh || key, en: contentFallback(fallbackZh || key) };
 }
 
 export function pricingEn(zh: string | null | undefined): string {
   if (!zh) return "";
-  return pricingModels[zh] || zh;
+  return pricingModels[zh] || contentFallback(zh);
 }
 
 export function maintenanceEn(zh: string | null | undefined): string {
