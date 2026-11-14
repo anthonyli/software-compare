@@ -294,6 +294,93 @@
         "https://github.com/marp-team/marp-cli/blob/main/LICENSE"
       ],
       "collected_at": "2026-11-14"
+    },
+    {
+      "id": "microsoft-powerpoint",
+      "name": "Microsoft PowerPoint",
+      "official_url": "https://www.microsoft.com/en-us/microsoft-365/powerpoint",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Web",
+        "iOS",
+        "Android"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "免费基础版 / 付费方案",
+      "summary": "用于幻灯片制作、演讲和 PPTX 交换的主流工具；桌面版与网页版的动画、媒体和高级编辑能力有差异。",
+      "price_summary": "个人可使用免费网页版；完整桌面应用需适用的 Microsoft 365 或 Office 许可证，Copilot 等能力依方案和额度。未核实当地结算价。",
+      "free_tier_limits": "免费 Web 不等于免费桌面版。网页版通过微软云服务处理文稿；桌面可使用本地文件，但协作、同步和 AI 功能会改变数据去向。不同平台支持的动画和导出能力不同，PDF 为静态输出，不保留播放效果。未安装或实测复杂 PPTX 往返。",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-14",
+      "features": {
+        "slide_editing": {
+          "value": "yes"
+        },
+        "animations": {
+          "value": "yes",
+          "note": "支持动画与切换，但 Web 和移动端不具备所有桌面特性。"
+        },
+        "office_files": {
+          "value": "yes"
+        },
+        "pdf_export": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://www.microsoft.com/en-us/microsoft-365/powerpoint",
+        "https://support.microsoft.com/en-us/powerpoint/compare-powerpoint-features-on-different-platforms"
+      ]
+    },
+    {
+      "id": "google-slides",
+      "name": "Google Slides",
+      "official_url": "https://workspace.google.com/products/slides/",
+      "github_url": null,
+      "platforms": [
+        "Web",
+        "iOS",
+        "Android"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "免费基础版 / 付费方案",
+      "summary": "以浏览器协作为核心的演示文稿工具，支持多人编辑、动画、PPTX 交换和 PDF 下载，适合团队在线制作。",
+      "price_summary": "个人 Google 账号可使用基础功能；Workspace、存储和部分 AI/高级功能可能需付费，按地区与方案核对。",
+      "free_tier_limits": "文稿通常存于 Google 云端，分享权限应单独检查。电脑离线编辑需提前联网启用，在 Chrome 或 Edge 安装离线扩展，不支持无痕模式；不是独立桌面应用。PPTX 的字体、动画和媒体不保证无损往返，部分浏览器可能不播放某些动画。未安装、上传文稿或实测。",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-14",
+      "features": {
+        "slide_editing": {
+          "value": "yes"
+        },
+        "animations": {
+          "value": "yes"
+        },
+        "office_files": {
+          "value": "partial",
+          "note": "可编辑并保存 Office 文件，但不保证复杂 PPTX 完全保真。"
+        },
+        "pdf_export": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://workspace.google.com/products/slides/",
+        "https://support.google.com/docs/answer/1689475?hl=en",
+        "https://support.google.com/docs/answer/6388102?hl=en",
+        "https://support.google.com/docs/answer/9406611?hl=en",
+        "https://support.google.com/a/users/answer/9310270?hl=en"
+      ]
     }
   ]
 }

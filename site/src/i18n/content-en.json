@@ -1923,7 +1923,7 @@
   "Word 网页基础版免费；桌面版需相应 Microsoft 365 或单独购买授权，不能把免费网页等同完整桌面版。": "Basic Word for the web is free; desktop use needs an applicable Microsoft 365 or separately purchased license, not the same as the free web app.",
   "网页与桌面功能不同：高级排版、宏等能力须按版本核对。网页协作使用云端文件；桌面可处理本地文件，不能据此承诺所有功能均离线。": "Web and desktop capabilities differ: verify advanced layout and macros by edition. Web collaboration uses cloud files; desktop can handle local files, not a guarantee that every feature works offline.",
   "主流文字处理工具，支持样式、目录、表格图片与 DOCX；适合办公文档协作和较复杂排版，跨平台与版本仍有差异。": "Mainstream word processor with styles, contents, tables, images and DOCX for office collaboration and complex layout, with platform and edition differences.",
-  "免费基础版 / 付费方案": "Free basics / paid plans",
+  "免费基础版 / 付费方案": "Free basic edition / paid plans",
   "个人 Google 账号可使用基础文档功能；Workspace 管理、高级协作及部分 AI 功能按付费方案提供。": "A personal Google account can use basic document features; Workspace administration, advanced collaboration and some AI features depend on paid plans.",
   "以云端协作为主；电脑离线需提前联网启用，使用 Chrome/Edge、离线扩展及本地存储，不支持无痕模式。DOCX 交换不保证复杂版式完全保真。": "Cloud-first collaboration; desktop offline access requires prior online setup, Chrome/Edge, the offline extension and local storage, without private browsing. DOCX exchange does not guarantee complex layout fidelity.",
   "可编辑和下载 DOCX；复杂格式、字体或高级 Word 特性需回归核对。": "Can edit and download DOCX; complex formatting, fonts and advanced Word features need round-trip verification.",
@@ -1947,5 +1947,13 @@
   "未核实完整骨骼绑定或剪纸角色系统。": "Full skeletal rigging or cut-out character system not verified.",
   "有特效和着色器，但官方资料未确认节点式合成图。": "Effects and shaders exist, but official material does not confirm a node-based compositing graph.",
   "支持变换蒙版的位置、旋转和缩放补间；不是完整骨骼绑定系统。": "Transform masks support position, rotation and scale tweening, not a full skeletal rigging system.",
-  "可用 Parent Effect 和表达式做父子关联；官方说明没有高级骨骼系统。": "Parent Effect and expressions support parenting; official documentation notes no advanced bone system."
+  "可用 Parent Effect 和表达式做父子关联；官方说明没有高级骨骼系统。": "Parent Effect and expressions support parenting; official documentation notes no advanced bone system.",
+  "用于幻灯片制作、演讲和 PPTX 交换的主流工具；桌面版与网页版的动画、媒体和高级编辑能力有差异。": "A mainstream tool for slide authoring, presenting and PPTX exchange; desktop and web editions differ in animation, media and advanced editing.",
+  "个人可使用免费网页版；完整桌面应用需适用的 Microsoft 365 或 Office 许可证，Copilot 等能力依方案和额度。未核实当地结算价。": "A free web edition is available for personal use; full desktop apps require an eligible Microsoft 365 or Office license. Copilot capabilities depend on plan and limits. Local checkout prices were not verified.",
+  "免费 Web 不等于免费桌面版。网页版通过微软云服务处理文稿；桌面可使用本地文件，但协作、同步和 AI 功能会改变数据去向。不同平台支持的动画和导出能力不同，PDF 为静态输出，不保留播放效果。未安装或实测复杂 PPTX 往返。": "Free web access does not include the desktop edition. The web app processes decks through Microsoft cloud services; desktop local files are possible, while collaboration, sync and AI change data handling. Animation and export support vary by platform. PDF is static and does not preserve playback effects. Installation and complex PPTX round trips were not tested.",
+  "支持动画与切换，但 Web 和移动端不具备所有桌面特性。": "Supports animations and transitions, but web and mobile editions do not include every desktop feature.",
+  "以浏览器协作为核心的演示文稿工具，支持多人编辑、动画、PPTX 交换和 PDF 下载，适合团队在线制作。": "A browser-first presentation tool for team collaboration, with co-editing, animations, PPTX exchange and PDF downloads.",
+  "个人 Google 账号可使用基础功能；Workspace、存储和部分 AI/高级功能可能需付费，按地区与方案核对。": "Basic features are available with a personal Google account; Workspace, storage and some AI or advanced features may require payment depending on region and plan.",
+  "文稿通常存于 Google 云端，分享权限应单独检查。电脑离线编辑需提前联网启用，在 Chrome 或 Edge 安装离线扩展，不支持无痕模式；不是独立桌面应用。PPTX 的字体、动画和媒体不保证无损往返，部分浏览器可能不播放某些动画。未安装、上传文稿或实测。": "Decks are normally stored in Google cloud services; review sharing permissions separately. Computer offline editing must be enabled while online with the offline extension in Chrome or Edge, outside private browsing; this is not a standalone desktop app. PPTX fonts, animations and media are not guaranteed to round-trip unchanged, and some browsers may not play certain animations. No installation, document upload or hands-on test was performed.",
+  "可编辑并保存 Office 文件，但不保证复杂 PPTX 完全保真。": "Can edit and save Office files, without guaranteeing complete fidelity for complex PPTX decks."
 }
