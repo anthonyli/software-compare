@@ -289,6 +289,53 @@
         "https://solvespace.com/forum.pl?action=viewthread&parent=1661"
       ],
       "collected_at": "2026-11-15"
+    },
+    {
+      "id": "freecad",
+      "name": "FreeCAD",
+      "official_url": "https://www.freecad.org/",
+      "github_url": "https://github.com/FreeCAD/FreeCAD",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "LGPL-2.1-or-later",
+      "pricing_model": "免费开源参数化 CAD",
+      "price_summary": "核心免费且可按 LGPL 商用；分发修改版须遵守许可义务，第三方组件及 DWG 转换器许可另核。",
+      "prices": [],
+      "free_tier_limits": "此处仅比较二维约束草图和工程图输出，不是完整 AutoCAD 替代。DWG 需配置外部 LibreDWG、ODA 或 QCAD 转换器，可能另有费用；DXF/DWG 实体、字体和样式不保证无损往返，先备份再核对。官方提供 Apple Silicon 构建，M4 16GB 与复杂模型性能未实测。桌面编辑不等于已审计全部联网行为；宏、插件及外部转换器需另核安全与许可。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "开源参数化建模器，以 Sketcher / Draft 草图和 TechDraw 工程图连接二维制图与三维零件设计。",
+      "features": {
+        "drafting_2d": {
+          "value": "yes"
+        },
+        "dxf": {
+          "value": "partial",
+          "note": "支持 DXF 交换，转换实体、样式和单位需核对。"
+        },
+        "dwg": {
+          "value": "partial",
+          "note": "通过外部转换器处理，不是原生完整 DWG 编辑器。"
+        },
+        "vector_export": {
+          "value": "yes",
+          "note": "已核实 TechDraw 的 SVG 工程图导出；不代表三维 PDF。"
+        }
+      },
+      "sources": [
+        "https://github.com/FreeCAD/FreeCAD",
+        "https://www.freecad.org/downloads",
+        "https://github.com/FreeCAD/FreeCAD/blob/main/src/App/Application.cpp",
+        "https://github.com/FreeCAD/FreeCAD-documentation/blob/main/wiki/FreeCAD_and_DWG_Import.md",
+        "https://github.com/FreeCAD/FreeCAD/blob/main/src/Mod/Draft/importDWG.py",
+        "https://blog.freecad.org/2025/10/10/tutorial-getting-started-with-techdraw/"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
