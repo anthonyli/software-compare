@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: Apache-2.0
-import contentEn from "./content-en.json";
+import contentEn from "./content-en.json" with { type: "json" };
 
 // Shared content translations are the fallback, without a circular index import.
 function contentFallback(text: string): string {
