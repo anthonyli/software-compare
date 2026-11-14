@@ -2082,5 +2082,10 @@
   "免费档提供有限远程文件存储，付费会员扩容；本轮未核实结账金额，不列固定订阅价。": "The free tier includes limited remote file storage; membership expands it. Checkout totals were not verified, so no fixed subscription price is quoted.",
   "默认使用加密远端同步，不等于仅本机。文件配额超出后新文件停止同步，文档仍可编辑。可选择 local-only 或自托管；不要把活动数据目录放进网盘同步文件夹或网络盘。客户端商用受 Allowed Networks 条件约束；M4 16GB 未实测。": "Encrypted remote sync is the default, not device-only storage. Exceeding file quota stops new file sync but not document editing. Local-only and self-hosting are options; do not place the active data directory in cloud-sync folders or network drives. Commercial client use is subject to Allowed Networks conditions; M4 16GB was not tested.",
   "对象式本地优先笔记与知识组织工具；源码可查看，但不能按无条件开源商用工具对待。": "Object-based, local-first notes and knowledge organization; readable source does not mean unrestricted open-source commercial use.",
-  "官方声明同步端到端加密；未独立安全审计，不代表所有本地索引均加密。": "The vendor states sync is end-to-end encrypted; not independently audited and not a claim that all local indexes are encrypted."
+  "官方声明同步端到端加密；未独立安全审计，不代表所有本地索引均加密。": "The vendor states sync is end-to-end encrypted; not independently audited and not a claim that all local indexes are encrypted.",
+  "Apache-2.0（代码）；地图数据和第三方组件另有许可": "Apache-2.0 (code); map data and third-party components have separate licenses",
+  "免费，接受自愿捐赠": "Free with voluntary donations",
+  "应用免费，不需要付费解锁地图；数据下载和设备成本另计。": "The app is free without paid map unlocks; data downloads and device costs are separate.",
+  "离线前需下载地图；路线质量取决于地图数据与设备定位，不能替代现场判断。GPX 导入不等于沿导入轨迹逐向导航。主动发给支持人员的日志可能包含 GPS 和书签，发送前应检查。未实测野外可靠性或 M4 性能。": "Download maps before going offline. Route quality depends on map data and device positioning, not a substitute for on-site judgment. GPX import does not establish turn-by-turn navigation along imported tracks. Support logs may include GPS and bookmarks; inspect them before sharing. Field reliability and M4 performance were not tested.",
+  "社区维护的离线地图，支持步行/骑行规划、轨迹记录和 GPX/KML 导入。GitHub 是 Codeberg 主仓库的镜像。": "Community-maintained offline maps with walking/cycling routes, track recording and GPX/KML import. GitHub mirrors the primary Codeberg repository."
 }

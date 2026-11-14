@@ -1,7 +1,7 @@
 {
   "category_slug": "outdoor-navigation",
   "category_name_zh": "徒步登山与户外导航",
-  "collected_at": "2026-11-14",
+  "collected_at": "2026-11-15",
   "timezone": "Asia/Shanghai",
   "notes": "比较地图与路线工具，不提供路线安全保证。离线地图需提前下载；GPS、道路和山径数据可能有误。分享轨迹前检查起终点及位置隐私；未进行实地测试。",
   "features": [
@@ -382,6 +382,51 @@
         "https://help.wikiloc.com/article/905-route-planner-wikiloc",
         "https://www.wikiloc.com/wikiloc/terms_en.html"
       ]
+    },
+    {
+      "id": "comaps",
+      "name": "CoMaps",
+      "official_url": "https://www.comaps.app/",
+      "github_url": "https://github.com/comaps/comaps",
+      "platforms": [
+        "Android",
+        "iOS",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0（代码）；地图数据和第三方组件另有许可",
+      "pricing_model": "免费，接受自愿捐赠",
+      "price_summary": "应用免费，不需要付费解锁地图；数据下载和设备成本另计。",
+      "prices": [],
+      "free_tier_limits": "离线前需下载地图；路线质量取决于地图数据与设备定位，不能替代现场判断。GPX 导入不等于沿导入轨迹逐向导航。主动发给支持人员的日志可能包含 GPS 和书签，发送前应检查。未实测野外可靠性或 M4 性能。",
+      "summary": "社区维护的离线地图，支持步行/骑行规划、轨迹记录和 GPX/KML 导入。GitHub 是 Codeberg 主仓库的镜像。",
+      "features": {
+        "offline_maps": {
+          "value": "yes"
+        },
+        "walking_routes": {
+          "value": "yes"
+        },
+        "cycling_routes": {
+          "value": "yes"
+        },
+        "track_recording": {
+          "value": "yes"
+        }
+      },
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "sources": [
+        "https://www.comaps.app/",
+        "https://github.com/comaps/comaps",
+        "https://www.comaps.app/terms/",
+        "https://www.comaps.app/privacy/",
+        "https://www.comaps.app/support/does-the-app-support-tracking-routes/",
+        "https://www.comaps.app/support/how-to-import-a-gpx-kml-track/"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
