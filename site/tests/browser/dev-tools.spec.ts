@@ -7,8 +7,10 @@ test('developer additions render bilingual comparisons at desktop and phone widt
    const list=page.locator(width===1280?'#matrix':'#card-list');
    for(const id of ids)await expect(list.locator(`[data-product-id="${id}"]`)).toBeVisible();
    await page.locator('[data-lang="en"]').click();
-   if(slug==='api-clients')await expect(list).toContainText('Individual GraphQL requests are supported');
-   else await expect(list).toContainText('For PostgreSQL and supported derivatives.');
+   if(width===1280){
+    const note=slug==='api-clients'?'Individual GraphQL requests are supported':'For PostgreSQL and supported derivatives.';
+    await expect(list.locator(`[title*="${note}"]`)).toBeVisible();
+   }else await expect(list).toContainText(slug==='api-clients'?'GraphQL requests':'SQL queries');
    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
    await page.reload();await expect(page.locator('[data-lang="en"]')).toHaveAttribute('aria-pressed','true');
    await page.locator('[data-lang="zh-CN"]').click();
