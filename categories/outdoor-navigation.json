@@ -185,8 +185,8 @@
           "note": "网页路线创建向所有会员开放；移动端高级创建依会员等级。"
         },
         "cycling_routes": {
-          "value": "unknown",
-          "note": "本轮官方资料未确认，未知不等于不支持。"
+          "value": "partial",
+          "note": "官方路线构建器支持公路骑行和山地骑行偏好；Web 可创建路线，手机创建与编辑需要 Peak。"
         },
         "track_recording": {
           "value": "yes",
