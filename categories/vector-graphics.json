@@ -152,6 +152,98 @@
         "https://www.adobe.com/products/illustrator.html",
         "https://helpx.adobe.com/illustrator/using/svg.html"
       ]
+    },
+    {
+      "id": "vectorcraft",
+      "name": "VectorCraft",
+      "official_url": "https://github.com/storytold/vectorcraft",
+      "github_url": "https://github.com/storytold/vectorcraft",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "open_source": true,
+      "license": "MIT OR Apache-2.0",
+      "pricing_model": "开源免费",
+      "price_summary": "源码采用 MIT OR Apache-2.0；未核实任何附加服务价格。",
+      "prices": [],
+      "free_tier_limits": "仅核实官方文档，未安装实测；代码可按 MIT 或 Apache-2.0 使用，品牌与第三方素材授权另计。 真实 AI 文件往返和部分实时效果仍有限制；不保证 Illustrator 或 Affinity 文档无损互通。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "Rust 矢量绘图应用，处于 alpha；面向路径、文字和 SVG/PDF 工作流。",
+      "features": {
+        "svg": {
+          "value": "yes",
+          "note": "官方 README 列出该能力；仅文档核实，未实测。"
+        },
+        "prototyping": {
+          "value": "unknown",
+          "note": "本次官方资料未确认；不代表不支持。"
+        },
+        "collaboration": {
+          "value": "unknown",
+          "note": "本次官方资料未确认；不代表不支持。"
+        },
+        "self_host": {
+          "value": "unknown",
+          "note": "本次官方资料未确认；不代表不支持。"
+        }
+      },
+      "sources": [
+        "https://github.com/storytold/vectorcraft/blob/main/README.md",
+        "https://github.com/storytold/vectorcraft/blob/main/LICENSE-MIT",
+        "https://github.com/storytold/vectorcraft/blob/main/LICENSE-APACHE"
+      ],
+      "collected_at": "2026-11-14"
+    },
+    {
+      "id": "figcraft",
+      "name": "FigCraft",
+      "official_url": "https://github.com/storytold/figcraft",
+      "github_url": "https://github.com/storytold/figcraft",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "open_source": true,
+      "license": "MIT OR Apache-2.0",
+      "pricing_model": "开源免费",
+      "price_summary": "源码采用 MIT OR Apache-2.0；未核实任何附加服务价格。",
+      "prices": [],
+      "free_tier_limits": "仅核实官方文档，未安装实测；代码可按 MIT 或 Apache-2.0 使用，品牌与第三方素材授权另计。 FIG 导入为尽力兼容。在线分享会上传文件且不是端到端加密；本地网络分享也不加密。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "Rust 界面设计与交互原型工具，处于 alpha；提供本地文件和协作预览。",
+      "features": {
+        "svg": {
+          "value": "yes",
+          "note": "官方 README 列出该能力；仅文档核实，未实测。"
+        },
+        "prototyping": {
+          "value": "yes",
+          "note": "官方 README 列出该能力；仅文档核实，未实测。"
+        },
+        "collaboration": {
+          "value": "partial",
+          "note": "实时会话为预览功能，没有完整账号和团队体系。"
+        },
+        "self_host": {
+          "value": "partial",
+          "note": "可自托管 figcraft-server 预览版；分享链接或代码即访问凭据。"
+        }
+      },
+      "sources": [
+        "https://github.com/storytold/figcraft/blob/main/README.md",
+        "https://github.com/storytold/figcraft/blob/main/LICENSE-MIT",
+        "https://github.com/storytold/figcraft/blob/main/LICENSE-APACHE"
+      ],
+      "collected_at": "2026-11-14"
     }
   ]
 }

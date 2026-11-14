@@ -1191,6 +1191,80 @@
       "sources": [
         "https://clipchamp.com/"
       ]
+    },
+    {
+      "id": "filmcraft",
+      "name": "FilmCraft",
+      "official_url": "https://github.com/storytold/filmcraft",
+      "github_url": "https://github.com/storytold/filmcraft",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "open_source": true,
+      "license": "MIT OR Apache-2.0",
+      "pricing_model": "开源免费",
+      "price_summary": "源码采用 MIT OR Apache-2.0；未核实任何附加服务价格。",
+      "prices": [],
+      "free_tier_limits": "仅核实官方文档，未安装实测；代码可按 MIT 或 Apache-2.0 使用，品牌与第三方素材授权另计。 编解码器和项目交换能力仍有限制，不保证 Premiere 项目或所有素材直接兼容。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "Rust 非线性视频编辑器，处于 alpha；具备多轨剪辑、调色、关键帧与字幕。",
+      "features": {
+        "timeline": {
+          "value": "yes",
+          "note": "官方 README 列出该能力；仅文档核实，未实测。"
+        },
+        "multi_track": {
+          "value": "yes",
+          "note": "官方 README 列出该能力；仅文档核实，未实测。"
+        },
+        "color_grade": {
+          "value": "yes",
+          "note": "官方 README 列出该能力；仅文档核实，未实测。"
+        },
+        "effects": {
+          "value": "yes",
+          "note": "官方 README 列出该能力；仅文档核实，未实测。"
+        },
+        "keyframes": {
+          "value": "yes",
+          "note": "官方 README 列出该能力；仅文档核实，未实测。"
+        },
+        "titles": {
+          "value": "yes",
+          "note": "官方 README 列出该能力；仅文档核实，未实测。"
+        },
+        "audio_mix": {
+          "value": "yes",
+          "note": "官方 README 列出该能力；仅文档核实，未实测。"
+        },
+        "chroma_key": {
+          "value": "partial",
+          "note": "官方列出 Ultra Key 和 Track Matte；抠像质量未实测。"
+        },
+        "proxy": {
+          "value": "unknown",
+          "note": "本次官方资料未确认；不代表不支持。"
+        },
+        "export_4k": {
+          "value": "unknown",
+          "note": "本次官方资料未确认；不代表不支持。"
+        },
+        "gpu_accel": {
+          "value": "yes",
+          "note": "官方 README 列出该能力；仅文档核实，未实测。"
+        }
+      },
+      "sources": [
+        "https://github.com/storytold/filmcraft/blob/main/README.md",
+        "https://github.com/storytold/filmcraft/blob/main/LICENSE-MIT",
+        "https://github.com/storytold/filmcraft/blob/main/LICENSE-APACHE"
+      ],
+      "collected_at": "2026-11-14"
     }
   ]
 }
