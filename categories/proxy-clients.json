@@ -138,16 +138,16 @@
       "summary": "桌面图形客户端，支持 Xray、sing-box 等内核及 Windows、Linux、macOS；不是只支持 Windows 的旧版定位。协议支持随内核而异；连接与 DNS 请求按所选配置发送，独立遥测政策尚未核实。",
       "features": {
         "rule_routing": {
-          "value": "unknown",
-          "note": "尚未逐项核实规则编辑能力。"
+          "value": "yes",
+          "note": "官方 UI 文档说明规则集导入、规则顺序和匹配详情；支持文件、剪贴板及 URL 导入。能力随内核和自定义配置而异，未逐平台实测。"
         },
         "tun": {
-          "value": "unknown",
-          "note": "尚未逐项核实各平台 TUN 能力。"
+          "value": "partial",
+          "note": "官方 UI 文档包含 TUN，但依赖内核及系统权限。Xray 仅支持 gvisor 栈；ICMP 路由策略仅 sing-box 支持。并非所有平台与内核具有相同能力，未连接实测。"
         },
         "config_sync": {
           "value": "unknown",
-          "note": "未核实跨设备配置备份同步。"
+          "note": "官方确认本地 guiConfigs 文件夹的 ZIP 备份和还原；跨设备自动同步或云同步尚未核实，不把本地备份当成同步。备份文件可能含凭据。"
         },
         "apple_silicon": {
           "value": "yes",
@@ -157,7 +157,8 @@
       "sources": [
         "https://github.com/2dust/v2rayN",
         "https://github.com/2dust/v2rayN/releases",
-        "https://github.com/2dust/v2rayN/blob/master/LICENSE"
+        "https://github.com/2dust/v2rayN/blob/master/LICENSE",
+        "https://github.com/2dust/v2rayN/wiki/Description-of-some-ui"
       ],
       "collected_at": "2026-11-15"
     }

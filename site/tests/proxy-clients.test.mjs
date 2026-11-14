@@ -11,3 +11,14 @@ test('proxy clients remain separate from VPN services with sourced boundaries',(
  const strings=v=>typeof v==='string'?[v]:v&&typeof v==='object'?Object.values(v).flatMap(strings):[];
  for(const s of strings(c).filter(s=>/[\u4e00-\u9fff]/.test(s)))assert(tr[s],s);
 });
+
+test('v2rayN distinguishes documented routing and conditional TUN from unverified sync',()=>{
+ const v=c.products.find(p=>p.id==='v2rayn');
+ assert.equal(v.features.rule_routing.value,'yes');
+ assert.equal(v.features.tun.value,'partial');
+ assert.equal(v.features.config_sync.value,'unknown');
+ assert.match(v.features.tun.note,/Xray.*gvisor/);
+ assert.match(v.features.tun.note,/sing-box/);
+ assert.match(v.features.config_sync.note,/本地.*ZIP/);
+ assert(v.sources.includes('https://github.com/2dust/v2rayN/wiki/Description-of-some-ui'));
+});
