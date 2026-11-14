@@ -1,7 +1,7 @@
 {
   "category_slug": "api-clients",
   "category_name_zh": "API 调试与测试",
-  "collected_at": "2026-11-13",
+  "collected_at": "2026-11-14",
   "timezone": "Asia/Shanghai",
   "notes": "请求会发送到选定 API；集合和环境变量可能包含密钥。共享或提交 Git 前排除敏感值，云同步和代理的数据路径需单独确认。",
   "features": [
@@ -204,6 +204,98 @@
         "https://learning.postman.com/docs/tests-and-scripts/running-collections/intro-to-collection-runs/",
         "https://learning.postman.com/docs/use/send-requests/protocols/graphql/graphql-overview/",
         "https://www.postman.com/legal/terms/"
+      ],
+      "collected_at": "2026-11-14"
+    },
+    {
+      "id": "yaak",
+      "name": "Yaak",
+      "official_url": "https://yaak.app/",
+      "github_url": "https://github.com/mountain-loop/yaak",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "MIT (source); commercial binary license",
+      "pricing_model": "免费源码 / 商用二进制付费",
+      "price_summary": "MIT 源码可自行构建并商用；官方预编译包个人免费，工作用途需年付或终身许可，可试用 30 天。",
+      "prices": [],
+      "free_tier_limits": "本行比较桌面版：请求和历史保存在本地 SQLite，请求发送到目标 API；更新、插件和许可检查仍会联网。可选加密不覆盖整个数据库；云端 OAuth 重定向和 Git 同步需另查数据去向。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "本地优先的 REST、GraphQL、gRPC 与 WebSocket 调试客户端，提供可操作本地工作区的 CLI。",
+      "features": {
+        "rest": {
+          "value": "yes"
+        },
+        "graphql": {
+          "value": "yes"
+        },
+        "collections": {
+          "value": "yes"
+        },
+        "cli": {
+          "value": "yes",
+          "note": "官方 Yaak CLI 可运行本地工作区或文件夹内的请求。"
+        }
+      },
+      "sources": [
+        "https://github.com/mountain-loop/yaak",
+        "https://yaak.app/download",
+        "https://yaak.app/pricing",
+        "https://yaak.app/terms",
+        "https://yaak.app/docs/getting-started/cli-usage",
+        "https://yaak.app/docs/getting-started/security-and-privacy"
+      ],
+      "collected_at": "2026-11-14"
+    },
+    {
+      "id": "httpie-desktop",
+      "name": "HTTPie Desktop",
+      "official_url": "https://httpie.io/desktop",
+      "github_url": "https://github.com/httpie/desktop",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "公开测试版 / 价格未核实",
+      "price_summary": "官网提供公开测试版；未核实完整付费价目，不将开源 Terminal 的免费许可套用到 Desktop。",
+      "prices": [],
+      "free_tier_limits": "无需账户可本地使用多数功能；登录会把匿名空间同步到账户云端。Linux 包需 AppImageLauncher。Desktop 仓库用于发行包，不代表桌面源码开源；未实测安装或接口请求。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "面向 REST 与 GraphQL 的图形 API 客户端，使用空间、集合和环境变量组织请求。",
+      "features": {
+        "rest": {
+          "value": "yes"
+        },
+        "graphql": {
+          "value": "yes"
+        },
+        "collections": {
+          "value": "yes"
+        },
+        "cli": {
+          "value": "partial",
+          "note": "可导出单个请求为 HTTPie CLI 或 cURL 命令；未确认 Desktop 集合可直接由 CLI 批量运行。"
+        }
+      },
+      "sources": [
+        "https://httpie.io/desktop",
+        "https://httpie.io/docs/desktop",
+        "https://github.com/httpie/desktop",
+        "https://github.com/httpie/desktop/blob/master/LICENCE",
+        "https://httpie.io/terms",
+        "https://httpie.io/privacy"
       ],
       "collected_at": "2026-11-14"
     }

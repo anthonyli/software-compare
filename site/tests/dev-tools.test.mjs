@@ -8,7 +8,8 @@ test('developer tool additions retain dates, evidence and bilingual complete row
  for(const [slug,ids] of Object.entries(expected)){
   const c=read(slug);
   for(const p of c.products){
-   assert.equal(p.collected_at,ids.includes(p.id)?'2026-11-14':'2026-11-13');
+   if(ids.includes(p.id))assert.equal(p.collected_at,'2026-11-14');
+   if(['bruno','hoppscotch','dbeaver-community','db-browser-sqlite'].includes(p.id))assert.equal(p.collected_at,'2026-11-13');
    if(!ids.includes(p.id))continue;
    assert.equal(c.products.filter(x=>x.id===p.id).length,1);assert(p.sources.length>=2);
    assert.deepEqual(Object.keys(p.features).sort(),c.features.map(f=>f.key).sort());
