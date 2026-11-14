@@ -64,7 +64,8 @@
       "sources": [
         "https://organicmaps.app/",
         "https://github.com/organicmaps/organicmaps"
-      ]
+      ],
+      "collected_at": "2026-11-13"
     },
     {
       "platforms": [
@@ -109,7 +110,8 @@
         "https://github.com/osmandapp/OsmAnd/blob/master/LICENSE",
         "https://osmand.net/docs/user/purchases/",
         "https://osmand.net/docs/user/plugins/trip-recording/"
-      ]
+      ],
+      "collected_at": "2026-11-13"
     },
     {
       "id": "qmapshack",
@@ -169,7 +171,7 @@
       "license": "专有服务（未核实开源授权）",
       "pricing_model": "免费增值",
       "price_summary": "Base 免费；Plus / Peak 付费，按地区与购买渠道核对价格。",
-      "free_tier_limits": "离线地图下载需 Plus 或 Peak 并提前下载；网页自定义路线向所有会员开放，移动端高级路线编辑有付费边界。账号保存和路线分享涉及位置数据，导航不能保证路线安全。",
+      "free_tier_limits": "离线地图下载需 Plus 或 Peak 并提前下载；网页自定义路线向所有会员开放，手机端创建与编辑需要 Peak。账号保存和路线分享涉及位置数据，导航不能保证路线安全。",
       "prices": [],
       "github_stars": null,
       "latest_release": null,
@@ -182,7 +184,7 @@
         },
         "walking_routes": {
           "value": "partial",
-          "note": "网页路线创建向所有会员开放；移动端高级创建依会员等级。"
+          "note": "网页路线创建与编辑向所有会员开放；手机端创建与编辑需要 Peak。"
         },
         "cycling_routes": {
           "value": "partial",
