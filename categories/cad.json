@@ -157,6 +157,90 @@
       "latest_release": null,
       "latest_release_date": null,
       "maintenance_status": null
+    },
+    {
+      "id": "autocad-lt",
+      "name": "AutoCAD LT",
+      "official_url": "https://www.autodesk.com/products/autocad-lt/overview",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "订阅",
+      "price_summary": "专有付费订阅；地区、税费和周期以官网方案为准，不把试用当永久免费。",
+      "prices": [],
+      "free_tier_limits": "本条比较桌面 LT 二维绘图，不把完整 AutoCAD 的三维工具或专业工具集算入。Windows/Mac 功能差异和插件、字体及外部参照需逐项核实；Web/移动权益不代表功能相同。云协作会涉及联网，未审计数据传输；未实测 M4 16GB，重要 DWG/DXF 应保留原件并重开验证。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "面向工程制图与文档的商业二维 CAD，以 DWG 图纸为核心并提供 DXF 交换和 PDF 输出。",
+      "features": {
+        "drafting_2d": {
+          "value": "yes"
+        },
+        "dxf": {
+          "value": "yes"
+        },
+        "dwg": {
+          "value": "yes"
+        },
+        "vector_export": {
+          "value": "partial",
+          "note": "已核实 PDF 输出，未确认原生 SVG 导出；复合列因此标部分。"
+        }
+      },
+      "sources": [
+        "https://www.autodesk.com/products/autocad-lt/overview",
+        "https://www.autodesk.com/products/autocad-lt/buy",
+        "https://help.autodesk.com/cloudhelp/2026/ENU/AutoCAD-LT-MAC/files/GUID-310657DF-8614-4125-B2E7-1FBF8B67333F.htm",
+        "https://help.autodesk.com/cloudhelp/2026/ENU/AutoCAD-LT/files/GUID-F8F9ADB8-8011-42B0-86D9-80BFAA9B23CE.htm"
+      ],
+      "collected_at": "2026-11-14"
+    },
+    {
+      "id": "bricscad-lite",
+      "name": "BricsCAD Lite",
+      "official_url": "https://bricscad.octave.com/bricscad/lite",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "订阅或永久许可",
+      "price_summary": "专有付费软件，可订阅或购买永久许可；地区价格、税费与维护权益以当前方案为准。",
+      "prices": [],
+      "free_tier_limits": "Lite 面向二维 CAD，不包括 Pro/BIM 的全部三维功能；PDF 输出不等于 Pro 的三维 PDF。V27 Mac 为 Intel/Apple Silicon 通用原生构建，具体系统要求按版本核实；M4 16GB 未实测。试用非永久免费，永久许可后续升级/维护另核。复杂 DWG 对象、插件与字体不能假设无损兼容；云服务数据去向未审计，重要图纸保留备份。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "面向 DWG 工作流的商业二维 CAD，支持 DXF 交换、PDF 与 SVG 输出，适合作为 LT 级别绘图对照。",
+      "features": {
+        "drafting_2d": {
+          "value": "yes"
+        },
+        "dxf": {
+          "value": "yes"
+        },
+        "dwg": {
+          "value": "yes"
+        },
+        "vector_export": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://bricscad.octave.com/bricscad/lite",
+        "https://help.bricsys.com/en-us/document/bricscad/getting-started-with-bricscad/bricscad-and-autocad-feature-comparison",
+        "https://help.bricsys.com/en-us/document/command-reference/e/export-command?version=V27",
+        "https://help.bricsys.com/en-us/document/knowledge-base/apple-compatibility-for-bricscad"
+      ],
+      "collected_at": "2026-11-14"
     }
   ]
 }
