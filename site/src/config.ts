@@ -14,6 +14,7 @@ export const siteConfig = {
 
 /** 首页分组：slug 必须与数据里的品类 id 一致。 */
 export const categoryGroups: { id: string; name: string; slugs: string[] }[] = [
+  { id: "network", name: "网络工具", slugs: ["proxy-clients"] },
   { id: "lifestyle", name: "运动与户外", slugs: ["fitness-training", "cycling-tools", "outdoor-navigation"] },
   { id: "ai", name: "AI 工具", slugs: ["ai-assistants", "ai-coding", "ai-image-workflows", "ai-memory"] },
   { id: "creative", name: "设计与摄影", slugs: ["image-editors", "vector-graphics", "cad", "texture-materials", "photo-management", "desktop-publishing", "animation-3d", "animation-2d", "compositing"] },
@@ -69,6 +70,7 @@ export const featureLabelFull: Record<string, string> = {
 
 /** 首页与导航用的品类一字记号，纯展示，不改变数据。 */
 export const categoryMonograms: Record<string, string> = {
+  "proxy-clients": "代",
   "ai-memory": "忆",
   "word-processors": "文",
   "spreadsheets": "表",
@@ -112,6 +114,7 @@ export const categoryMonograms: Record<string, string> = {
 
 /** 首页卡片色块，仅用于展示，不代表产品官方品牌色。 */
 export const categoryTints: Record<string, string> = {
+  "proxy-clients": "#E4F4F2",
   "ai-memory": "#F1E9FF",
   "word-processors": "#E8F1FF",
   "spreadsheets": "#E7F8EE",

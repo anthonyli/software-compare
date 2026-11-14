@@ -9,6 +9,7 @@ function contentFallback(text: string): string {
 
 /** Category display names, keyed by slug. */
 export const categoryNames: Record<string, { zh: string; en: string }> = {
+  "proxy-clients": { zh: "代理客户端", en: "Proxy clients" },
   "ai-memory": { zh: "AI 记忆助手", en: "AI memory assistants" },
   "word-processors": { zh: "文字处理", en: "Word processors" },
   "spreadsheets": { zh: "电子表格", en: "Spreadsheets" },
@@ -62,6 +63,7 @@ export const groupNames: Record<string, { zh: string; en: string }> = {
   media: { zh: "影音媒体", en: "Media" },
   files: { zh: "文件工具", en: "Files" },
   system: { zh: "系统工具", en: "System" },
+  network: { zh: "网络工具", en: "Network tools" },
   security: { zh: "安全隐私", en: "Security & privacy" },
   dev: { zh: "开发工具", en: "Developer tools" },
   other: { zh: "其他", en: "Other" },
