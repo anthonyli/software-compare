@@ -3,7 +3,7 @@
   "category_name_zh": "3D 建模与动画",
   "collected_at": "2026-11-13",
   "collected_at_timezone": "Asia/Shanghai (UTC+8)",
-  "notes": "面向建模、镜头动画与渲染的创作套件。暂收录一款已核实工具，不把游戏引擎当作同类替代；未实测硬件性能。",
+  "notes": "涵盖完整 3D 创作套件和专门建模工具；须按动画、绑定和渲染能力选择，不能视为完全等价替代。未实测硬件性能。",
   "features": [
     {
       "key": "modeling_3d",
@@ -69,7 +69,137 @@
         "https://raw.githubusercontent.com/blender/blender/main/release/text/readme.html"
       ],
       "source_url": "https://projects.blender.org/blender/blender",
-      "source_repo_label": "Blender Projects"
+      "source_repo_label": "Blender Projects",
+      "collected_at": "2026-11-13"
+    },
+    {
+      "id": "maya",
+      "name": "Autodesk Maya",
+      "official_url": "https://www.autodesk.com/products/maya/overview",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "付费订阅",
+      "price_summary": "商业订阅，有限期试用；具体价格按地区与购买周期确认。",
+      "prices": [],
+      "free_tier_limits": "试用不是永久免费。Arnold GPU 渲染仅支持 Windows/Linux 的兼容 NVIDIA 显卡，不支持 Mac；M4 16GB 场景性能未实测。账号授权、可选云服务和插件可能产生网络请求与额外费用。",
+      "summary": "面向角色动画和影视制作的完整 3D 套件，包含建模、绑定、动画及 Arnold 渲染。",
+      "features": {
+        "modeling_3d": {
+          "value": "yes"
+        },
+        "rigging_3d": {
+          "value": "yes"
+        },
+        "animation_3d": {
+          "value": "yes"
+        },
+        "rendering_3d": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://www.autodesk.com/products/maya/product-details",
+        "https://www.autodesk.com/products/maya/overview",
+        "https://help.autodesk.com/cloudhelp/2027/ENU/Maya-WhatsNew/files/GUID-82D13118-E987-4B5E-B1DA-C2A01F51058C.htm"
+      ],
+      "collected_at": "2026-11-14",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null
+    },
+    {
+      "id": "cinema-4d",
+      "name": "Cinema 4D",
+      "official_url": "https://www.maxon.net/en/cinema-4d",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "付费订阅",
+      "price_summary": "商业订阅，当前方案含 Redshift；渲染节点授权需单独核对。",
+      "prices": [],
+      "free_tier_limits": "需 MyMaxon 账号和联网授权。Linux 仅命令行渲染，不是完整桌面版。当前 Apple Silicon Mac 最低要求为 macOS 15、M1 及 16GB；Intel Mac 另核对官方处理器和显卡要求；达到门槛不代表复杂场景流畅，未实测 M4。素材、扩展和云渲染另查费用与数据条款。",
+      "summary": "面向产品视觉、品牌动效与角色动画的 3D 套件，包含 MoGraph 动态图形工具。",
+      "features": {
+        "modeling_3d": {
+          "value": "yes"
+        },
+        "rigging_3d": {
+          "value": "yes"
+        },
+        "animation_3d": {
+          "value": "yes"
+        },
+        "rendering_3d": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://www.maxon.net/en/cinema-4d",
+        "https://www.maxon.net/en/cinema-4d/features/character-animation",
+        "https://support.maxon.net/hc/en-us/articles/16797414314012-System-Requirements-for-Maxon-Products"
+      ],
+      "collected_at": "2026-11-14",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null
+    },
+    {
+      "id": "wings-3d",
+      "name": "Wings 3D",
+      "official_url": "https://www.wings3d.com/",
+      "github_url": "https://github.com/dgud/wings",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "宽松开源许可（见 license.terms）",
+      "pricing_model": "完全免费",
+      "price_summary": "免费开源，可用于个人与商业项目；外部渲染器和素材另查许可。",
+      "prices": [],
+      "free_tier_limits": "官网明确不支持动画，不是完整 Blender 替代。最终渲染依赖外部渲染器；需要可工作的 OpenGL 驱动。M4 原生兼容与性能未核实。启用插件或外部服务前核对数据去向。",
+      "summary": "专注细分多边形建模、材质与 UV 的轻量创作工具，适合模型制作而非整套动画生产。",
+      "features": {
+        "modeling_3d": {
+          "value": "yes"
+        },
+        "rigging_3d": {
+          "value": "unknown",
+          "note": "未找到明确的官方骨骼绑定支持说明。"
+        },
+        "animation_3d": {
+          "value": "no",
+          "note": "官网明确不支持动画。"
+        },
+        "rendering_3d": {
+          "value": "partial",
+          "note": "依赖外部渲染器，不等于内置完整渲染引擎。"
+        }
+      },
+      "sources": [
+        "https://www.wings3d.com/",
+        "https://github.com/dgud/wings",
+        "https://raw.githubusercontent.com/dgud/wings/master/license.terms",
+        "https://www.wings3d.com/documentation/user-manual-table-of-contents/main-menu/menu-file/"
+      ],
+      "collected_at": "2026-11-14",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null
     }
   ]
 }

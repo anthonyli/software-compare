@@ -112,6 +112,51 @@
         "https://github.com/LibreCAD/LibreCAD/blob/master/README.md"
       ],
       "collected_at": "2026-11-14"
+    },
+    {
+      "id": "qcad-ce",
+      "name": "QCAD Community Edition",
+      "official_url": "https://www.qcad.org/en/",
+      "github_url": "https://github.com/qcad/qcad",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0 with exceptions",
+      "pricing_model": "免费开源核心 / 可选付费服务",
+      "price_summary": "Community Edition 免费；Professional 为付费商业扩展，不能把 Pro 功能当作 CE 自带。",
+      "prices": [],
+      "free_tier_limits": "CE 的 DXF 支持限官方列出的 R15/2000；DWG 与 SVG 导出需 Pro。商业插件与开源核心许可不同，安装包中的 Pro 试用不等于永久免费；编辑重要图纸前保留备份。",
+      "summary": "跨平台二维工程绘图工具，适合 DXF 图纸编辑；按社区版功能比较，非完整 AutoCAD 替代。",
+      "features": {
+        "drafting_2d": {
+          "value": "yes"
+        },
+        "dxf": {
+          "value": "yes",
+          "note": "社区版明确支持 DXF R15（2000）。"
+        },
+        "dwg": {
+          "value": "paid",
+          "note": "DWG 读写属于 Professional/CAM。"
+        },
+        "vector_export": {
+          "value": "partial",
+          "note": "CE 支持 PDF；SVG 导出需 Professional。"
+        }
+      },
+      "sources": [
+        "https://www.qcad.org/en/",
+        "https://www.qcad.org/en/features/",
+        "https://www.qcad.org/en/license/"
+      ],
+      "collected_at": "2026-11-14",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null
     }
   ]
 }

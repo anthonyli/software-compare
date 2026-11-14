@@ -8,7 +8,8 @@ const en=JSON.parse(fs.readFileSync(new URL('site/src/i18n/content-en.json',root
 const config=fs.readFileSync(new URL('site/src/config.ts',root),'utf8');
 const strings=v=>typeof v==='string'?[v]:v&&typeof v==='object'?Object.values(v).flatMap(strings):[];
 test('Storytold second batch has five navigable categories and eleven sourced comparison rows',()=>{
- assert.equal(categories.flatMap(c=>c.products).length,11);
+ const baseline=["wordcraft", "libreoffice-writer", "gridcraft", "libreoffice-calc", "deckcraft", "libreoffice-impress", "cadcraft", "librecad", "texturecraft", "materialcraft", "material-maker"];
+ assert(baseline.every(id=>categories.flatMap(c=>c.products).some(p=>p.id===id)));
  for(const c of categories){
   assert(config.includes(`"${c.category_slug}"`));assert(c.products.length>=2);
   const keys=c.features.map(f=>f.key).sort();
