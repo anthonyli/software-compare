@@ -65,7 +65,8 @@
       "sources": [
         "https://github.com/dbeaver/dbeaver",
         "https://dbeaver.io/download/"
-      ]
+      ],
+      "collected_at": "2026-11-13"
     },
     {
       "id": "db-browser-sqlite",
@@ -109,7 +110,145 @@
       "sources": [
         "https://github.com/sqlitebrowser/sqlitebrowser",
         "https://github.com/sqlitebrowser/sqlitebrowser/blob/master/LICENSE"
-      ]
+      ],
+      "collected_at": "2026-11-13"
+    },
+    {
+      "id": "beekeeper-community",
+      "name": "Beekeeper Studio Community",
+      "official_url": "https://www.beekeeperstudio.io/",
+      "github_url": "https://github.com/beekeeper-studio/beekeeper-studio",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "免费开源核心 / 可选付费服务",
+      "price_summary": "Community 免费；高级数据库与导入导出等能力属于付费方案。",
+      "prices": [],
+      "free_tier_limits": "此行只比较社区功能；仓库另含商业许可代码。连接和查询通常保存在本机，云工作区会同步数据；仍会连接目标数据库及更新服务。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "提供多数据库 SQL 编辑和表格数据修改，适合希望使用简洁桌面客户端的开发者。",
+      "features": {
+        "sql": {
+          "value": "yes",
+          "note": ""
+        },
+        "data_edit": {
+          "value": "yes",
+          "note": "可编辑表格数据；直接编辑 SQL 查询结果属于付费功能。"
+        },
+        "multi_engine": {
+          "value": "yes",
+          "note": "包括 PostgreSQL、MySQL 和 SQLite；部分其他引擎需付费。"
+        },
+        "import_export": {
+          "value": "paid",
+          "note": "官方套餐表将导入导出与备份恢复列入付费版。"
+        }
+      },
+      "sources": [
+        "https://github.com/beekeeper-studio/beekeeper-studio",
+        "https://www.beekeeperstudio.io/pricing/"
+      ],
+      "collected_at": "2026-11-14"
+    },
+    {
+      "id": "heidisql",
+      "name": "HeidiSQL",
+      "official_url": "https://www.heidisql.com/",
+      "github_url": "https://github.com/HeidiSQL/HeidiSQL",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-2.0",
+      "pricing_model": "完全免费",
+      "price_summary": "免费开源，可自愿捐赠。",
+      "prices": [],
+      "free_tier_limits": "Windows 经典版与 Linux/macOS 新代码库并非完全相同；官网已有 macOS arm64 下载，驱动及系统依赖需按版本核对。连接或导出可能包含数据库敏感数据。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "支持多个数据库引擎，可执行 SQL、修改表格数据和导入导出。",
+      "features": {
+        "sql": {
+          "value": "yes",
+          "note": ""
+        },
+        "data_edit": {
+          "value": "yes",
+          "note": ""
+        },
+        "multi_engine": {
+          "value": "yes",
+          "note": ""
+        },
+        "import_export": {
+          "value": "yes",
+          "note": ""
+        }
+      },
+      "sources": [
+        "https://www.heidisql.com/",
+        "https://www.heidisql.com/download.php",
+        "https://github.com/HeidiSQL/HeidiSQL"
+      ],
+      "collected_at": "2026-11-14"
+    },
+    {
+      "id": "pgadmin",
+      "name": "pgAdmin 4",
+      "official_url": "https://www.pgadmin.org/",
+      "github_url": "https://github.com/pgadmin-org/pgadmin4",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "PostgreSQL",
+      "pricing_model": "完全免费",
+      "price_summary": "免费开源；自行部署服务器的费用另计。",
+      "prices": [],
+      "free_tier_limits": "专注 PostgreSQL 及兼容衍生版本，不是通用多引擎客户端。服务器模式需要自行管理身份验证、网络暴露和数据库凭证。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "PostgreSQL 管理与开发工具，提供桌面和服务器模式、查询编辑及维护功能。",
+      "features": {
+        "sql": {
+          "value": "yes",
+          "note": ""
+        },
+        "data_edit": {
+          "value": "yes",
+          "note": ""
+        },
+        "multi_engine": {
+          "value": "no",
+          "note": "面向 PostgreSQL 及支持的衍生版本。"
+        },
+        "import_export": {
+          "value": "yes",
+          "note": "支持 CSV 等表格数据导入导出；权限与文件路径取决于运行模式。"
+        }
+      },
+      "sources": [
+        "https://www.pgadmin.org/features/",
+        "https://www.pgadmin.org/licence/",
+        "https://www.pgadmin.org/docs/pgadmin4/latest/import_export_data.html"
+      ],
+      "collected_at": "2026-11-14"
     }
   ]
 }

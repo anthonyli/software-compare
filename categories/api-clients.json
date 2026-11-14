@@ -65,7 +65,8 @@
       "sources": [
         "https://github.com/usebruno/bruno",
         "https://www.usebruno.com/pricing"
-      ]
+      ],
+      "collected_at": "2026-11-13"
     },
     {
       "id": "hoppscotch",
@@ -110,7 +111,101 @@
         "https://github.com/hoppscotch/hoppscotch",
         "https://hoppscotch.com/download",
         "https://hoppscotch.com/pricing"
-      ]
+      ],
+      "collected_at": "2026-11-13"
+    },
+    {
+      "id": "insomnia",
+      "name": "Insomnia",
+      "official_url": "https://insomnia.rest/",
+      "github_url": "https://github.com/Kong/insomnia",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "pricing_model": "免费开源核心 / 可选付费服务",
+      "price_summary": "Essentials 免费；团队权限和更多协作能力需付费。",
+      "prices": [],
+      "free_tier_limits": "可选本地、Git 或云存储；同步前检查集合中的密钥。免费 Git 协作人数和模拟请求有额度限制。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "支持多种 API 协议及 Inso CLI，适合本地调试和持续集成中的集合测试。",
+      "features": {
+        "rest": {
+          "value": "yes",
+          "note": ""
+        },
+        "graphql": {
+          "value": "yes",
+          "note": ""
+        },
+        "collections": {
+          "value": "yes",
+          "note": ""
+        },
+        "cli": {
+          "value": "yes",
+          "note": "Inso CLI"
+        }
+      },
+      "sources": [
+        "https://github.com/Kong/insomnia",
+        "https://insomnia.rest/pricing"
+      ],
+      "collected_at": "2026-11-14"
+    },
+    {
+      "id": "postman",
+      "name": "Postman",
+      "official_url": "https://www.postman.com/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "有 Free 免费档和 Solo、Team、Enterprise 付费方案。",
+      "prices": [],
+      "free_tier_limits": "云端工作区、监控和 AI 会涉及服务端处理；共享前排除密钥。GraphQL/gRPC 集合运行需付费，不能与单次请求支持混淆。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "面向个人与团队的 API 客户端，支持请求集合、脚本测试及命令行自动化。",
+      "features": {
+        "rest": {
+          "value": "yes",
+          "note": ""
+        },
+        "graphql": {
+          "value": "yes",
+          "note": "支持单次 GraphQL 请求；集合运行受套餐限制。"
+        },
+        "collections": {
+          "value": "yes",
+          "note": ""
+        },
+        "cli": {
+          "value": "yes",
+          "note": "Postman CLI"
+        }
+      },
+      "sources": [
+        "https://www.postman.com/pricing/",
+        "https://learning.postman.com/docs/getting-started/installation/install-app/",
+        "https://learning.postman.com/docs/tests-and-scripts/running-collections/intro-to-collection-runs/",
+        "https://learning.postman.com/docs/use/send-requests/protocols/graphql/graphql-overview/",
+        "https://www.postman.com/legal/terms/"
+      ],
+      "collected_at": "2026-11-14"
     }
   ]
 }
