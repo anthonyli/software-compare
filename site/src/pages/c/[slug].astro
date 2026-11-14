@@ -46,6 +46,7 @@ const statuses = [...new Set(category.products.map((p) => p.maintenance_status).
 const desc = uiT("categoryDesc", "zh", { name: catNames.zh, n: category.products.length });
 const descEn = uiT("categoryDesc", "en", { name: catNames.en, n: category.products.length });
 const isAi = category.groupId === "ai";
+const showContext = isAi || category.slug === "authenticators";
 const ossCount = category.products.filter((p) => p.open_source).length;
 
 const sortedProducts = [...category.products].sort((a, b) => {
@@ -78,6 +79,7 @@ const sortedProducts = [...category.products].sort((a, b) => {
           en={uiT("catSubtitle", "en", { n: category.products.length, oss: ossCount, date: category.collected_at })}
         />
       </p>
+      {category.slug === "proxy-clients" && category.notes && <p class="mt-3 text-sm text-muted" data-proxy-notes><T zh={category.notes} en={tr(category.notes)} /></p>}
       <GitHubFreshness/>
       <AiComparisonGuide slug={category.slug}/>
     </header>
@@ -151,7 +153,7 @@ const sortedProducts = [...category.products].sort((a, b) => {
             <tr>
               <th class="sticky-col"><T zh={ui.zh.software} en={ui.en.software} /></th>
               <th><T zh={ui.zh.price} en={ui.en.price} /></th>
-              {isAi && <th class="ai-context"><T zh="用途 / 数据与使用边界" en="Use case / data and limits" /></th>}
+              {showContext && <th class="ai-context"><T zh="用途 / 数据与使用边界" en="Use case / data and limits" /></th>}
               {category.features.map((f) => {
                 const lab = featurePair(category.slug, f.key, f.label);
                 return (
@@ -206,9 +208,9 @@ const sortedProducts = [...category.products].sort((a, b) => {
                   </td>
                   <td class="price-cell" title={priceZh.caveat} data-i18n="title" data-zh={priceZh.caveat} data-en={priceEn.caveat}>
                     <T zh={priceZh.tableCell} en={priceEn.tableCell} />
-                    {isAi && <p class="ai-cell-note"><T zh={p.price_summary} en={tr(p.price_summary)}/></p>}
+                    {showContext && <p class="ai-cell-note"><T zh={p.price_summary} en={tr(p.price_summary)}/></p>}
                   </td>
-                  {isAi && <td class="ai-context">
+                  {showContext && <td class="ai-context">
                     <p><T zh={p.summary} en={tr(p.summary)}/></p>
                     <details class="mt-2"><summary><T zh="数据、许可与限制" en="Data, license and limits"/></summary>
                       <p class="ai-cell-note"><T zh={p.free_tier_limits || '未核实'} en={tr(p.free_tier_limits || '未核实')}/></p>
@@ -234,7 +236,7 @@ const sortedProducts = [...category.products].sort((a, b) => {
                             <T zh={short.zh} en={short.en} />
                           </span>
                         )}
-                        {isAi && <p class="ai-cell-note"><T zh={empty ? (v === 'na' ? '不适用' : '尚未核实') : noteZh} en={empty ? (v === 'na' ? 'Not applicable' : 'Not verified') : tr(noteZh)}/></p>}
+                        {showContext && <p class="ai-cell-note"><T zh={empty ? (v === 'na' ? '不适用' : '尚未核实') : noteZh} en={empty ? (v === 'na' ? 'Not applicable' : 'Not verified') : tr(noteZh)}/></p>}
                       </td>
                     );
                   })}
@@ -282,8 +284,8 @@ const sortedProducts = [...category.products].sort((a, b) => {
                 <span class="t-en">{p.platforms.map((x) => platformEn(x)).join(" · ")}</span>
               </p>
             )}
-            {isAi && <div class="mt-3 text-sm"><p><T zh={p.summary} en={tr(p.summary)}/></p><details class="mt-2"><summary><T zh="数据、许可与限制" en="Data, license and limits"/></summary><p><T zh={p.free_tier_limits || '未核实'} en={tr(p.free_tier_limits || '未核实')}/></p><p><T zh={p.license || ""} en={tr(p.license || "")}/></p></details></div>}
-            <div class:list={["feat-mini", {"ai-feat-mini": isAi}]}>
+            {showContext && <div class="mt-3 text-sm"><p><T zh={p.summary} en={tr(p.summary)}/></p><details class="mt-2"><summary><T zh="数据、许可与限制" en="Data, license and limits"/></summary><p><T zh={p.free_tier_limits || '未核实'} en={tr(p.free_tier_limits || '未核实')}/></p><p><T zh={p.license || ""} en={tr(p.license || "")}/></p></details></div>}
+            <div class:list={["feat-mini", {"ai-feat-mini": showContext}]}>
               {category.features.map((f) => {
                 const cell = p.features[f.key] || { value: "unknown", note: "" };
                 const v = (cell.value || "unknown").toLowerCase();
@@ -296,10 +298,10 @@ const sortedProducts = [...category.products].sort((a, b) => {
                       <T zh={lab.zh} en={lab.en} />
                     </span>
                     {empty ? (
-                      <span class="feat-empty">{isAi ? <T zh={v === 'na' ? '不适用' : '尚未核实'} en={v === 'na' ? 'Not applicable' : 'Not verified'}/> : '—'}</span>
+                      <span class="feat-empty">{showContext ? <T zh={v === 'na' ? '不适用' : '尚未核实'} en={v === 'na' ? 'Not applicable' : 'Not verified'}/> : '—'}</span>
                     ) : (
                       <div><span class:list={["feat", featClass(cell.value)]}><T zh={short.zh} en={short.en}/></span>
-                        {isAi && <p class="mt-1 text-xs font-normal text-muted"><T zh={cell.note} en={tr(cell.note)}/></p>}
+                        {showContext && <p class="mt-1 text-xs font-normal text-muted"><T zh={cell.note} en={tr(cell.note)}/></p>}
                       </div>
                     )}
                   </>

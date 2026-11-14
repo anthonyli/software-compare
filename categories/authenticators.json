@@ -29,14 +29,14 @@
     {
       "id": "2fas-auth",
       "name": "2FAS Auth",
-      "official_url": "https://2fas.com/",
+      "official_url": "https://2fas.com/auth/",
       "github_url": "https://github.com/twofas/2fas-android",
       "platforms": [
         "Android",
         "iOS"
       ],
       "open_source": true,
-      "license": "GPL-3.0",
+      "license": "代码 GPL-3.0；图形资产另有许可",
       "pricing_model": "免费",
       "price_summary": "验证器应用免费；云账户或组织服务另受对应条款约束。",
       "prices": [],
@@ -67,7 +67,8 @@
         "https://2fas.com/support/2fas-auth-security-privacy/is-2fas-backup-safe/",
         "https://2fas.com/support/2fas-auth-mobile-app/how-to-use-sync-more-devices-with-2fas/",
         "https://github.com/twofas/2fas-android",
-        "https://github.com/twofas/2fas-ios"
+        "https://github.com/twofas/2fas-ios",
+        "https://2fas.com/auth/"
       ],
       "notes": "官方称备份端到端加密，并建议另设备份密码；同系统云同步，跨 iOS/Android 使用文件迁移。浏览器扩展需配合手机，不是独立桌面密码库。",
       "collected_at": "2026-11-15",
@@ -77,7 +78,7 @@
       "id": "ente-auth",
       "name": "Ente Auth",
       "official_url": "https://ente.com/auth/",
-      "github_url": "https://github.com/ente-io/ente",
+      "github_url": null,
       "platforms": [
         "Android",
         "iOS",
@@ -91,7 +92,7 @@
       "pricing_model": "免费",
       "price_summary": "验证器应用免费；云账户或组织服务另受对应条款约束。",
       "prices": [],
-      "free_tier_limits": "同步时加密数据存储于 Ente 服务；离线模式不提供云恢复。支持导入导出，密码加密导出格式未在本次资料中核实。",
+      "free_tier_limits": "同步时加密数据存储于 Ente 服务；离线模式不提供云恢复。支持密码加密导出，导出密码独立于账号密码且遗失不可恢复。",
       "github_stars": null,
       "latest_release": null,
       "latest_release_date": null,
@@ -105,21 +106,24 @@
         },
         "cloud_backup": {
           "value": "yes",
-          "note": "同步时加密数据存储于 Ente 服务；离线模式不提供云恢复。支持导入导出，密码加密导出格式未在本次资料中核实。"
+          "note": "同步时加密数据存储于 Ente 服务；离线模式不提供云恢复。支持密码加密导出，导出密码独立于账号密码且遗失不可恢复。"
         },
         "encrypted_export": {
-          "value": "unknown"
+          "value": "yes"
         },
         "desktop": {
           "value": "yes"
         }
       },
       "sources": [
-        "https://ente.com/auth/"
+        "https://ente.com/auth/",
+        "https://help-content.ente.io/help/auth/migration/export",
+        "https://github.com/ente/ente"
       ],
-      "notes": "同步时加密数据存储于 Ente 服务；离线模式不提供云恢复。支持导入导出，密码加密导出格式未在本次资料中核实。",
+      "notes": "同步时加密数据存储于 Ente 服务；离线模式不提供云恢复。支持密码加密导出，导出密码独立于账号密码且遗失不可恢复。",
       "collected_at": "2026-11-15",
-      "maintenance_status": "未评估"
+      "maintenance_status": "未评估",
+      "source_repo_url": "https://github.com/ente/ente"
     },
     {
       "id": "aegis",
@@ -203,7 +207,8 @@
         }
       },
       "sources": [
-        "https://support.google.com/accounts/answer/1066447"
+        "https://support.google.com/accounts/answer/1066447",
+        "https://apps.apple.com/us/app/google-authenticator/id388497605"
       ],
       "notes": "官方只在所核实资料中说明传输和静态加密，不据此标成端到端加密。不登录时密钥仅保存在设备；手动迁移需要原设备。当前应用不以历史开源代码库代表。",
       "collected_at": "2026-11-15",
@@ -247,7 +252,9 @@
         }
       },
       "sources": [
-        "https://support.microsoft.com/en-us/authenticator/back-up-your-accounts-in-microsoft-authenticator"
+        "https://support.microsoft.com/en-us/authenticator/back-up-your-accounts-in-microsoft-authenticator",
+        "https://support.microsoft.com/en-au/authenticator/about-microsoft-authenticator",
+        "https://support.microsoft.com/en-us/authenticator/download-microsoft-authenticator."
       ],
       "notes": "备份仅同系统恢复，iOS 备份不能恢复到 Android。工作/学校账户与无密码凭据仅保留名称，恢复后需重新登录注册；不是全部凭据无损迁移。微软文档预告 Android 备份将在 2027 年 1 月改用 Google One，未来需重新核实。",
       "collected_at": "2026-11-15",

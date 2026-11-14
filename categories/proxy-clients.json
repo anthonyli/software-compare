@@ -1,0 +1,165 @@
+{
+  "category_slug": "proxy-clients",
+  "category_name_zh": "代理客户端",
+  "collected_at": "2026-11-15",
+  "timezone": "Asia/Shanghai",
+  "notes": "本类比较网络代理客户端，不是提供接入线路的 VPN 服务商。客户端免费不等于网络服务免费；连接与 DNS 数据去向取决于配置、所选服务器和可选同步功能。仅核对官方资料，未安装或连接测试。ClashX 原仓库 yichengchen/clashX 返回 404，无法确认当前发行版与维护状态，暂不把同名镜像作为官方产品收录。",
+  "features": [
+    {
+      "key": "rule_routing",
+      "label": "规则分流"
+    },
+    {
+      "key": "tun",
+      "label": "虚拟网卡 TUN"
+    },
+    {
+      "key": "config_sync",
+      "label": "配置备份与同步"
+    },
+    {
+      "key": "apple_silicon",
+      "label": "Apple Silicon 发行包"
+    }
+  ],
+  "products": [
+    {
+      "id": "clash-verge-rev",
+      "name": "Clash Verge Rev",
+      "official_url": "https://github.com/clash-verge-rev/clash-verge-rev",
+      "github_url": "https://github.com/clash-verge-rev/clash-verge-rev",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "免费开源客户端",
+      "price_summary": "免费开源客户端；所选服务器或第三方服务可能另收费，不包含网络接入套餐。",
+      "prices": [],
+      "free_tier_limits": "GPL-3.0 允许商用；再分发须遵守源码与许可证义务。各内核和依赖的许可证需另行遵守。不是匿名性或无日志保证。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "基于 Tauri 2 / Rust 的桌面 GUI，内置 Mihomo 内核。官方声明不收集用户数据、配置与日志留在本地；启用 WebDAV 时配置会发往用户选定服务器。macOS 11+；未实测性能或隐私声明。",
+      "features": {
+        "rule_routing": {
+          "value": "yes",
+          "note": "提供可视化规则编辑。"
+        },
+        "tun": {
+          "value": "yes",
+          "note": "官方列出 TUN 模式；可能需要提升权限。"
+        },
+        "config_sync": {
+          "value": "yes",
+          "note": "支持 WebDAV 备份与同步；不要公开含凭据的配置。"
+        },
+        "apple_silicon": {
+          "value": "yes",
+          "note": "官方明确支持 macOS Intel / Apple。"
+        }
+      },
+      "sources": [
+        "https://github.com/clash-verge-rev/clash-verge-rev",
+        "https://github.com/clash-verge-rev/clash-verge-rev/releases",
+        "https://github.com/clash-verge-rev/clash-verge-rev/blob/dev/LICENSE"
+      ],
+      "collected_at": "2026-11-15"
+    },
+    {
+      "id": "clash-party",
+      "name": "Clash Party (Mihomo Party)",
+      "official_url": "https://github.com/mihomo-party-org/clash-party",
+      "github_url": "https://github.com/mihomo-party-org/clash-party",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "免费开源客户端",
+      "price_summary": "免费开源客户端；所选服务器或第三方服务可能另收费，不包含网络接入套餐。",
+      "prices": [],
+      "free_tier_limits": "GPL-3.0 允许商用；再分发须遵守源码与许可证义务。各内核和依赖的许可证需另行遵守。不是匿名性或无日志保证。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "原 Mihomo Party 的仓库现重定向至 Clash Party，采用 Electron，提供 Mihomo / Smart 内核、配置覆写及 WebDAV。不要把 README 的第三方推广服务当成客户端免费权益；独立遥测政策尚未核实。",
+      "features": {
+        "rule_routing": {
+          "value": "yes",
+          "note": "官方列出配置覆写及规则覆写。"
+        },
+        "tun": {
+          "value": "yes",
+          "note": "官方列出 TUN；不代表无需系统权限。"
+        },
+        "config_sync": {
+          "value": "yes",
+          "note": "支持 WebDAV 备份恢复；配置及订阅信息可能包含凭据。"
+        },
+        "apple_silicon": {
+          "value": "yes",
+          "note": "官方 Release 提供 macOS arm64 发行包。"
+        }
+      },
+      "sources": [
+        "https://github.com/mihomo-party-org/clash-party",
+        "https://github.com/mihomo-party-org/clash-party/releases",
+        "https://github.com/mihomo-party-org/clash-party/blob/smart_core/LICENSE"
+      ],
+      "collected_at": "2026-11-15"
+    },
+    {
+      "id": "v2rayn",
+      "name": "v2rayN",
+      "official_url": "https://github.com/2dust/v2rayN",
+      "github_url": "https://github.com/2dust/v2rayN",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "免费开源客户端",
+      "price_summary": "免费开源客户端；所选服务器或第三方服务可能另收费，不包含网络接入套餐。",
+      "prices": [],
+      "free_tier_limits": "GPL-3.0 允许商用；再分发须遵守源码与许可证义务。各内核和依赖的许可证需另行遵守。不是匿名性或无日志保证。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "桌面图形客户端，支持 Xray、sing-box 等内核及 Windows、Linux、macOS；不是只支持 Windows 的旧版定位。协议支持随内核而异；连接与 DNS 请求按所选配置发送，独立遥测政策尚未核实。",
+      "features": {
+        "rule_routing": {
+          "value": "unknown",
+          "note": "尚未逐项核实规则编辑能力。"
+        },
+        "tun": {
+          "value": "unknown",
+          "note": "尚未逐项核实各平台 TUN 能力。"
+        },
+        "config_sync": {
+          "value": "unknown",
+          "note": "未核实跨设备配置备份同步。"
+        },
+        "apple_silicon": {
+          "value": "yes",
+          "note": "官方平台表包含 macOS arm64。"
+        }
+      },
+      "sources": [
+        "https://github.com/2dust/v2rayN",
+        "https://github.com/2dust/v2rayN/releases",
+        "https://github.com/2dust/v2rayN/blob/master/LICENSE"
+      ],
+      "collected_at": "2026-11-15"
+    }
+  ]
+}
