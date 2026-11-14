@@ -228,11 +228,11 @@
       "pricing_model": "免费",
       "price_summary": "验证器应用免费；云账户或组织服务另受对应条款约束。",
       "prices": [],
-      "free_tier_limits": "备份仅同系统恢复，iOS 备份不能恢复到 Android。工作/学校账户与无密码凭据仅保留名称，恢复后需重新登录注册；不是全部凭据无损迁移。微软文档预告 Android 备份将在 2027 年 1 月改用 Google One，未来需重新核实。",
+      "free_tier_limits": "备份仅同系统恢复，iOS 备份不能恢复到 Android。工作/学校账户与无密码凭据仅保留名称，恢复后需重新登录注册；不是全部凭据无损迁移。微软文档预告 Android 备份将在 2027 年 1 月改用 Google One，未来需重新核实。 中国地区：Android 不支持推送设置，iOS 推送仅支持扫码设置；两平台官方表均不支持 passkeys。工作/学校验证码需管理员启用相应方法。不能套用全球功能说明。",
       "github_stars": null,
       "latest_release": null,
       "latest_release_date": null,
-      "summary": "支持动态验证码及微软账号相关推送与无密码登录。",
+      "summary": "支持动态验证码及符合地区、账号条件的微软推送与无密码登录。",
       "features": {
         "totp": {
           "value": "yes"
@@ -254,7 +254,8 @@
       "sources": [
         "https://support.microsoft.com/en-us/authenticator/back-up-your-accounts-in-microsoft-authenticator",
         "https://support.microsoft.com/en-au/authenticator/about-microsoft-authenticator",
-        "https://support.microsoft.com/en-us/authenticator/download-microsoft-authenticator."
+        "https://support.microsoft.com/en-us/authenticator/download-microsoft-authenticator.",
+        "https://support.microsoft.com/en-us/authenticator/download-microsoft-authenticator-in-china"
       ],
       "notes": "备份仅同系统恢复，iOS 备份不能恢复到 Android。工作/学校账户与无密码凭据仅保留名称，恢复后需重新登录注册；不是全部凭据无损迁移。微软文档预告 Android 备份将在 2027 年 1 月改用 Google One，未来需重新核实。",
       "collected_at": "2026-11-15",

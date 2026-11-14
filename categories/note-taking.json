@@ -1471,7 +1471,7 @@
       "pricing_model": "免费档 + 可选会员",
       "price_summary": "免费档提供有限远程文件存储，付费会员扩容；本轮未核实结账金额，不列固定订阅价。",
       "prices": [],
-      "free_tier_limits": "默认使用加密远端同步，不等于仅本机。文件配额超出后新文件停止同步，文档仍可编辑。可选择 local-only 或自托管；不要把活动数据目录放进网盘同步文件夹或网络盘。客户端商用受 Allowed Networks 条件约束；M4 16GB 未实测。",
+      "free_tier_limits": "默认使用加密远端同步，不等于仅本机。文件配额超出后新文件停止同步，文档仍可编辑。可选择 local-only 或自托管；不要把活动数据目录放进网盘同步文件夹或网络盘。客户端商用受 Allowed Networks 条件约束；M4 16GB 未实测。 local-only 被官方标为实验性：关闭远端备份，仅同局域网同步；需自行定期导出备份，数据丢失时官方无法协助恢复。此限制不代表默认 Anytype Network 模式。",
       "summary": "对象式本地优先笔记与知识组织工具；源码可查看，但不能按无条件开源商用工具对待。",
       "github_stars": null,
       "latest_release": null,
@@ -1520,7 +1520,8 @@
         "https://github.com/anyproto/anytype-ts/blob/develop/LICENSE.md",
         "https://doc.anytype.io/anytype/data/sync-and-backup.md",
         "https://anytype.io/faq/",
-        "https://anytype.io/pricing/"
+        "https://anytype.io/pricing/",
+        "https://doc.anytype.io/anytype/data/sync-and-backup/local-only.md"
       ],
       "collected_at": "2026-11-15"
     }
