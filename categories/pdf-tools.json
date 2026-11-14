@@ -1331,6 +1331,79 @@
         "https://github.com/storytold/pdfcraft/blob/main/LICENSE-APACHE"
       ],
       "collected_at": "2026-11-14"
+    },
+    {
+      "id": "sioyek",
+      "name": "Sioyek",
+      "official_url": "https://sioyek.info/",
+      "github_url": "https://github.com/ahrm/sioyek",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "免费开源阅读器",
+      "price_summary": "免费使用；第三方扩展、存储或服务的费用另计。",
+      "prices": [],
+      "free_tier_limits": "阅读数据保存在 local.db / shared.db，复制 PDF 不等于携带所有标记；可使用 embed_annotations 导出带批注的新文件。跨设备同步依赖自行配置的数据库路径和同步工具。OCR、翻译等可通过外部命令扩展，不是全部开箱即用；外部搜索、脚本或云同步可能传出所选文字或数据，需检查配置和服务。macOS 可用不等于已验证 M4 16GB 性能或所有安装包均原生 ARM。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": "仅依据官方资料核实能力，未评估维护质量",
+      "summary": "为论文与技术书籍设计的键盘优先 PDF 阅读器，提供引用预览、双窗 Portal、搜索高亮和 SyncTeX；适合深度阅读，不应当作 Acrobat 全功能替代。",
+      "features": {
+        "read": {
+          "value": "yes",
+          "note": "PDF 阅读、引用预览和键盘导航"
+        },
+        "annotate": {
+          "value": "yes",
+          "note": "高亮、书签及批注导出；默认数据另存数据库"
+        },
+        "edit_text": {
+          "value": "unknown",
+          "note": "官方阅读文档未确认该编辑能力，不视为已支持"
+        },
+        "ocr": {
+          "value": "partial",
+          "note": "官方展示通过外部命令/扩展添加 OCR，须另配依赖"
+        },
+        "merge_split": {
+          "value": "unknown",
+          "note": "官方阅读文档未确认该编辑能力，不视为已支持"
+        },
+        "convert": {
+          "value": "unknown",
+          "note": "官方阅读文档未确认该编辑能力，不视为已支持"
+        },
+        "form_fill": {
+          "value": "unknown",
+          "note": "官方阅读文档未确认该编辑能力，不视为已支持"
+        },
+        "sign": {
+          "value": "unknown",
+          "note": "官方阅读文档未确认该编辑能力，不视为已支持"
+        },
+        "encrypt": {
+          "value": "unknown",
+          "note": "官方阅读文档未确认该编辑能力，不视为已支持"
+        },
+        "compress": {
+          "value": "unknown",
+          "note": "官方阅读文档未确认该编辑能力，不视为已支持"
+        }
+      },
+      "sources": [
+        "https://sioyek.info/",
+        "https://github.com/ahrm/sioyek",
+        "https://github.com/ahrm/sioyek/blob/development/LICENSE",
+        "https://sioyek-documentation.readthedocs.io/en/latest/usage.html",
+        "https://sioyek-documentation.readthedocs.io/en/latest/installation.html",
+        "https://sioyek-documentation.readthedocs.io/en/latest/commands.html"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }

@@ -2249,5 +2249,14 @@
   "支持音轨提取、替换和移除": "Audio-track extraction, replacement and removal",
   "可调整分辨率及码率，重编码不保证无损": "Resolution and bitrate controls; re-encoding is not necessarily lossless",
   "可保存并载入自定义设置": "Save and load custom settings",
-  "桌面图形界面，底层依赖 FFmpeg 等组件": "Desktop graphical interface built on FFmpeg and other components"
+  "桌面图形界面，底层依赖 FFmpeg 等组件": "Desktop graphical interface built on FFmpeg and other components",
+  "免费开源阅读器": "Free and open-source reader",
+  "免费使用；第三方扩展、存储或服务的费用另计。": "Free to use; third-party extensions, storage or services may have separate costs.",
+  "阅读数据保存在 local.db / shared.db，复制 PDF 不等于携带所有标记；可使用 embed_annotations 导出带批注的新文件。跨设备同步依赖自行配置的数据库路径和同步工具。OCR、翻译等可通过外部命令扩展，不是全部开箱即用；外部搜索、脚本或云同步可能传出所选文字或数据，需检查配置和服务。macOS 可用不等于已验证 M4 16GB 性能或所有安装包均原生 ARM。": "Reading data lives in local.db / shared.db; copying a PDF does not carry every mark. Use embed_annotations to export a new annotated file. Cross-device synchronization relies on a configured database path and a separate sync tool. OCR and translation can use external commands and are not all built in; external search, scripts or cloud sync may send selected text or data outside the app, so inspect configurations and services. macOS availability does not verify M4 16GB performance or native ARM support in every package.",
+  "仅依据官方资料核实能力，未评估维护质量": "Capabilities checked against official sources; maintenance quality not assessed",
+  "为论文与技术书籍设计的键盘优先 PDF 阅读器，提供引用预览、双窗 Portal、搜索高亮和 SyncTeX；适合深度阅读，不应当作 Acrobat 全功能替代。": "A keyboard-first PDF reader for research papers and technical books, with reference previews, dual-window portals, searchable highlights and SyncTeX; for focused reading rather than a full Acrobat replacement.",
+  "官方阅读文档未确认该编辑能力，不视为已支持": "This editing capability was not established by the reader documentation; not counted as supported",
+  "PDF 阅读、引用预览和键盘导航": "PDF reading, reference previews and keyboard navigation",
+  "高亮、书签及批注导出；默认数据另存数据库": "Highlights, bookmarks and annotation export; data is stored separately in databases by default",
+  "官方展示通过外部命令/扩展添加 OCR，须另配依赖": "Official examples add OCR through external commands/extensions with additional dependencies"
 }
