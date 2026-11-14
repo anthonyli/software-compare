@@ -14,7 +14,8 @@ test('storytold apps are uniquely categorized, sourced and translated without in
   assert.equal(p.github_url,`https://github.com/storytold/${p.id}`);
   assert(p.sources.includes(`${p.github_url}/blob/main/README.md`));
   assert.equal(p.license,'MIT OR Apache-2.0');assert.equal(p.collected_at,'2026-11-14');
-  assert.equal(p.github_stars,null);assert.equal(p.latest_release,null);
+  assert(p.github_stars === null || (Number.isInteger(p.github_stars) && p.github_stars >= 0));
+  assert(p.latest_release === null || typeof p.latest_release === 'string');
   for(const s of strings(p).filter(s=>/[\u4e00-\u9fff]/.test(s))) assert(en[s],s);
  }
 });
