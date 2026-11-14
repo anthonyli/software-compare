@@ -25,7 +25,7 @@ test('AI categories have scenario guides, migrated products and no fourth catego
 test('AI comparison tables include expanded tools and readable conditions', async ({page}) => {
  await page.setViewportSize({width:1280,height:900});
  await page.goto('/c/ai-assistants/');
- await expect(page.locator('#matrix tbody tr')).toHaveCount(13);
+ await expect(page.locator('#matrix tbody tr')).toHaveCount(15);
  await expect(page.locator('#matrix [data-product-id="deepseek"]')).toContainText('DeepSeek');
  await expect(page.locator('#matrix thead')).toContainText('用途 / 数据与使用边界');
  const row = page.locator('#matrix [data-product-id="kimi"]');
