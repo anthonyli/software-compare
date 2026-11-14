@@ -2174,5 +2174,8 @@
   "适合制作低多边形车辆、角色和科普场景素材，可绑定和制作关键帧动画；最终展示或复杂渲染需另评估工具链。": "For low-poly vehicles, characters and educational scene assets, with rigging and keyframe animation; assess a separate workflow for final presentation or complex rendering.",
   "预览和模型导出不等于完整影视渲染；本轮未核实该能力。": "Preview and model export do not establish full cinematic rendering; that capability was not verified in this pass.",
   "绑定与动画能力受项目格式限制。": "Rigging and animation capabilities depend on the project format.",
-  "内置预览不能代替最终真实光照渲染；官方建议导出至外部渲染工具。": "Built-in preview is not final realistic-lighting rendering; official guidance recommends exporting to external render tools."
+  "内置预览不能代替最终真实光照渲染；官方建议导出至外部渲染工具。": "Built-in preview is not final realistic-lighting rendering; official guidance recommends exporting to external render tools.",
+  "官方 UI 文档说明规则集导入、规则顺序和匹配详情；支持文件、剪贴板及 URL 导入。能力随内核和自定义配置而异，未逐平台实测。": "The official UI documentation describes rule-set imports, rule order and matching details, with file, clipboard and URL imports. Capabilities vary by core and custom configuration; platforms were not individually tested.",
+  "官方 UI 文档包含 TUN，但依赖内核及系统权限。Xray 仅支持 gvisor 栈；ICMP 路由策略仅 sing-box 支持。并非所有平台与内核具有相同能力，未连接实测。": "TUN is documented but depends on the core and OS privileges. Xray supports only the gvisor stack; ICMP routing policy is supported only by sing-box. Capabilities are not identical across all platforms and cores; no connection tests were performed.",
+  "官方确认本地 guiConfigs 文件夹的 ZIP 备份和还原；跨设备自动同步或云同步尚未核实，不把本地备份当成同步。备份文件可能含凭据。": "The project documents local ZIP backup and restore of the guiConfigs folder. Automatic cross-device or cloud sync is unverified; local backup is not treated as sync. Backup files may contain credentials."
 }
