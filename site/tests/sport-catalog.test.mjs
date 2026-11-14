@@ -26,7 +26,11 @@ test('adding new products does not refresh older product collection dates',()=>{
  for(const slug of ['fitness-training','cycling-tools','outdoor-navigation']) {
   const c=category(slug);
   for(const p of c.products.slice(0,2)) assert.equal(p.collected_at,'2026-11-13');
-  for(const p of c.products.slice(2)) assert.equal(p.collected_at,'2026-11-14');
+  const baseline = new Set(['feeel','liftosaur','strong','fitbod','jefit','boostcamp','fittrackee','zwift','trainerroad','strava','trainingpeaks','mywhoosh','qmapshack','alltrails','komoot','mapy-com','gaia-gps','wikiloc']);
+  for(const p of c.products.slice(2)) {
+   if (baseline.has(p.id)) assert.equal(p.collected_at,'2026-11-14');
+   else {assert.match(p.collected_at,/^\d{4}-\d{2}-\d{2}$/);assert(p.collected_at>='2026-11-14');assert.equal(new Date(p.collected_at).toISOString().slice(0,10),p.collected_at);}
+  }
  }
  assert.equal(category('outdoor-navigation').products.find(p=>p.id==='alltrails').features.cycling_routes.value,'partial');
 });
