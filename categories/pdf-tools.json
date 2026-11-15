@@ -587,8 +587,7 @@
           "note": "官网：The Universal Document Viewer，多格式"
         },
         "annotate": {
-          "value": "yes",
-          "note": "KDE 官方查看器长期支持批注；本次首页长文本未逐条展开工具名称，但产品类别即查看/批注。为更严：首页摘录未出现 annotate 一词，记 partial"
+          "value": "yes"
         },
         "edit_text": {
           "value": "no",
@@ -607,8 +606,7 @@
           "note": "可作为查看多种格式，不是转换套件"
         },
         "form_fill": {
-          "value": "unknown",
-          "note": "首页未确认"
+          "value": "yes"
         },
         "sign": {
           "value": "unknown",
@@ -626,7 +624,9 @@
       "sources": [
         "https://okular.kde.org",
         "https://github.com/KDE/okular",
-        "https://invent.kde.org/graphics/okular"
+        "https://invent.kde.org/graphics/okular",
+        "https://docs.kde.org/stable_kf6/en/okular/okular/forms.html",
+        "https://docs.kde.org/stable_kf6/en/okular/okular/annotations.html"
       ],
       "source_url": "https://invent.kde.org/graphics/okular",
       "source_host_note": "官方仓库在 invent.kde.org，GitHub KDE/okular 为官方镜像。"
