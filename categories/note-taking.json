@@ -933,8 +933,7 @@
           "note": "可用数据库属性和标签组织"
         },
         "web_clipper": {
-          "value": "unknown",
-          "note": "定价页未展开 Web Clipper，尽管产品线通常提供，本次未打开相应说明页"
+          "value": "yes"
         },
         "sync": {
           "value": "yes",
@@ -966,7 +965,8 @@
         }
       },
       "sources": [
-        "https://www.notion.com/pricing"
+        "https://www.notion.com/pricing",
+        "https://www.notion.com/help/web-clipper"
       ]
     },
     {
