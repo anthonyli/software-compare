@@ -470,6 +470,48 @@
         "https://help-content.ente.io/help/self-hosting/",
         "https://ente.com/help/photos/faq/metadata-and-editing"
       ]
+    },
+    {
+      "id": "ansel",
+      "name": "Ansel",
+      "official_url": "https://ansel.photos/en/",
+      "github_url": "https://github.com/aurelienpierreeng/ansel",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "免费开源，开发版本",
+      "price_summary": "项目免费提供源码与 nightly 构建；商业使用及分发须遵守 GPL-3.0，第三方组件另核。",
+      "prices": [],
+      "free_tier_limits": "官方尚未发布稳定版，下载为 nightly，不保证适合生产照片库。当前下载页列 macOS 15+，分别提供 Apple M 与 Intel 包；M4 16GB 性能未实测。作者提供用户选择参与的 Sentry 崩溃报告和 PostHog 使用统计，不应称完全无遥测；未审计具体上报内容。请备份原片和编辑记录，用副本验证相机、目录及 XMP 兼容性，不承诺与 darktable 或 Lightroom 无损互通。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "以 RAW 显影、照片集合管理和非破坏编辑为核心的桌面暗房，可作为 Lightroom 工作流的开发版候选评估。",
+      "features": {
+        "raw": {
+          "value": "yes"
+        },
+        "catalog": {
+          "value": "yes"
+        },
+        "non_destructive": {
+          "value": "yes"
+        },
+        "tethering": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://ansel.photos/en/",
+        "https://ansel.photos/en/download/",
+        "https://github.com/aurelienpierreeng/ansel",
+        "https://github.com/aurelienpierreeng/ansel/blob/master/LICENSE"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
