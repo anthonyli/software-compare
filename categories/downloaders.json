@@ -1064,6 +1064,77 @@
       "sources": [
         "https://www.4kdownload.com/products/product-videodownloader"
       ]
+    },
+    {
+      "id": "persepolis",
+      "name": "Persepolis Download Manager",
+      "official_url": "https://persepolisdm.github.io/",
+      "github_url": "https://github.com/persepolisdm/persepolis",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "BSD"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0-or-later",
+      "pricing_model": "开源免费",
+      "price_summary": "免费开源，应用源码为 GPL-3.0-or-later；分发修改版需遵守许可，第三方依赖和内容使用权另计。",
+      "prices": [],
+      "free_tier_limits": "当前依赖包含 Python、PySide6、requests 与 yt-dlp，不能从旧 aria2 前端描述推断 BT/eD2k 支持。视频站点可用性随站点和 yt-dlp 改动，不保证登录内容、DRM 或任意 M3U8；仅下载有权获取的内容。网络请求会到目标站点，启用代理或浏览器扩展后数据路径还受其配置影响。macOS 为官方支持声明，Apple Silicon 原生包、M4 16GB 性能及隐私未审计；未安装或下载媒体验证。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "跨平台图形下载管理器，适合把多个下载链接组织为队列并安排时间，支持分段下载。",
+      "features": {
+        "http_multi": {
+          "value": "yes",
+          "note": "官方 README 列多分段下载；连接数不等于实际速度保证。"
+        },
+        "bittorrent": {
+          "value": "unknown",
+          "note": "未核实当前版本支持该功能，不从历史引擎推断。"
+        },
+        "ed2k": {
+          "value": "unknown",
+          "note": "未核实当前版本支持该功能，不从历史引擎推断。"
+        },
+        "stream_m3u8": {
+          "value": "unknown",
+          "note": "未核实当前版本的具体范围。"
+        },
+        "video_site": {
+          "value": "partial",
+          "note": "官方列视频网站下载，当前依赖 yt-dlp；站点、登录及版本会影响可用性。"
+        },
+        "schedule": {
+          "value": "yes",
+          "note": "官方文档列队列与定时下载。"
+        },
+        "speed_limit": {
+          "value": "unknown",
+          "note": "未核实当前版本的具体范围。"
+        },
+        "rss": {
+          "value": "unknown",
+          "note": "未核实当前版本的具体范围。"
+        },
+        "remote_webui": {
+          "value": "unknown",
+          "note": "未核实当前版本的具体范围。"
+        },
+        "browser_ext": {
+          "value": "partial",
+          "note": "官网提供 Firefox、Chrome/Chromium 等集成指南；需单独配置扩展与权限。"
+        }
+      },
+      "sources": [
+        "https://github.com/persepolisdm/persepolis",
+        "https://persepolisdm.github.io/",
+        "https://github.com/persepolisdm/persepolis/blob/master/requirements.txt",
+        "https://github.com/persepolisdm/persepolis/blob/master/persepolis/__main__.py"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
