@@ -394,7 +394,7 @@
       "pricing_model": "免费开源桌面版",
       "price_summary": "桌面版免费，可按 GPL v3 用于商业用途；Confluence/Jira 商业集成与支持不是同一产品权益。",
       "prices": [],
-      "free_tier_limits": "本条仅指 Electron 桌面版，不包含网页版的云存储或团队协作承诺。官方称不外发图表数据或使用分析，但更新检查、下载以及图中引用的外部图片/字体等 URL 可联网；外部服务器可能看到 IP 等元数据。SVG 格式化文本依赖 foreignObject，目标软件不支持时需调整文字格式，不能保证任意软件无损显示。M4 16GB 性能及具体安装包架构尚未验证。",
+      "free_tier_limits": "本条仅指 Electron 桌面版，不包含网页版的云存储或团队协作承诺。官方称不外发图表数据或使用分析，但更新检查、下载以及图中引用的外部图片/字体等 URL 可联网；外部服务器可能看到 IP 等元数据。SVG 格式化文本依赖 foreignObject，目标软件不支持时需调整文字格式，不能保证任意软件无损显示。M4 16GB 性能及具体安装包架构尚未验证。 分享 PNG/SVG 前应检查 Include a copy of my diagram：启用时可附带可编辑图表，SVG 还可包含整个多页图而非仅当前显示页；只想分享视觉预览时应核对嵌入数据及页面范围，不能仅凭扩展名判断内容。",
       "github_stars": null,
       "latest_release": null,
       "latest_release_date": null,
@@ -421,7 +421,8 @@
       "sources": [
         "https://github.com/jgraph/drawio-desktop",
         "https://github.com/jgraph/drawio-desktop/blob/dev/LICENSE",
-        "https://www.drawio.com/docs/manual/export/export-to-svg/"
+        "https://www.drawio.com/docs/manual/export/export-to-svg/",
+        "https://www.drawio.com/docs/manual/export/export-diagram/"
       ],
       "collected_at": "2026-11-15"
     }
