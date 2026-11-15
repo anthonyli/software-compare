@@ -2883,9 +2883,9 @@
             "Linux"
           ],
           "open_source": true,
-          "license": "核心/CLI 为 MIT；Krokiet 等 GUI 分发为 GPL-3.0",
+          "license": "核心、CLI 与旧 GTK GUI 的包声明为 MIT；Krokiet 为 GPL-3.0-only",
           "pricing_model": "完全免费",
-          "price_summary": "完全免费开源",
+          "price_summary": "免费开源。当前包声明：核心、CLI 与旧 GTK GUI 为 MIT，Krokiet 为 GPL-3.0-only；Krokiet README 另列图标和图片为 CC-BY 4.0。分发二进制或复用素材仍需核对对应依赖与素材许可，不应将整个系列视为单一许可。",
           "prices": [
             {
               "plan": "全部功能",
@@ -2895,12 +2895,12 @@
               "note": null
             }
           ],
-          "free_tier_limits": "无",
+          "free_tier_limits": "官方说明旧 Czkawka GTK GUI 的最后发布版本为 12.0，后续不再提供新二进制，建议使用 Slint 界面的 Krokiet；这不等于整个项目停止。Krokiet 预构建包无强制运行依赖，但相似视频工具需要 FFmpeg。相似结果不等于可安全删除，删除前应核对并备份。macOS/M4 16GB 性能未实测，未做隐私审计。",
           "github_stars": 35112,
           "latest_release": "12.0.2",
           "latest_release_date": "2026-09-10 03:48",
           "latest_release_date_note": "GitHub published_at 2026-09-09T19:48:14Z，已转换为 Asia/Shanghai",
-          "summary": "跨平台开源“找重复/大文件/临时文件”工具，星标很高，但不是传统系统缓存或注册表清理器。",
+          "summary": "Czkawka 系列提供重复、大文件与临时文件查找；旧 GTK 界面由 Krokiet 接替，不是传统缓存规则库或注册表清理器。",
           "features": {
             "browser_cache": {
               "value": "no",
@@ -2940,7 +2940,12 @@
             }
           },
           "sources": [
-            "https://github.com/qarmin/czkawka"
+            "https://github.com/qarmin/czkawka",
+            "https://github.com/qarmin/czkawka/blob/master/krokiet/README.md",
+            "https://github.com/qarmin/czkawka/blob/master/krokiet/Cargo.toml",
+            "https://github.com/qarmin/czkawka/blob/master/czkawka_core/Cargo.toml",
+            "https://github.com/qarmin/czkawka/blob/master/czkawka_gui/Cargo.toml",
+            "https://github.com/qarmin/czkawka/blob/master/czkawka_cli/Cargo.toml"
           ],
           "archived": false,
           "last_push_at": null,
