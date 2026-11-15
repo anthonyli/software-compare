@@ -1336,6 +1336,77 @@
       "archived": false,
       "last_push_at": null,
       "maintenance_status": null
+    },
+    {
+      "id": "scrcpy",
+      "name": "scrcpy",
+      "official_url": "https://github.com/Genymobile/scrcpy",
+      "github_url": "https://github.com/Genymobile/scrcpy",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "pricing_model": "免费开源",
+      "price_summary": "免费使用；Apache-2.0 允许商业使用，分发须遵守许可证与依赖条款。",
+      "prices": [],
+      "free_tier_limits": "面向 Android 5.0+ 的 USB/TCP/IP 投屏控制，不是跨互联网无人值守电脑桌面服务，也不控制 iPhone。普通投屏需 ADB/USB 调试及设备授权，无需 root；OTG 仅控制模式不需 USB 调试，但不投屏。官方提供 macOS Intel/Apple Silicon 包；M4 16GB 性能未实测。作者称无需账户、广告或互联网；连接与剪贴板内容仍涉及设备间传输，勿粘贴密码等敏感内容。未作网络审计。",
+      "summary": "把 Android 屏幕投到电脑并用键鼠操作，适合手机演示与开发调试；与通用远程桌面区分比较。",
+      "features": {
+        "unattended_access": {
+          "value": "unknown"
+        },
+        "file_transfer": {
+          "value": "unknown"
+        },
+        "clipboard_sync": {
+          "value": "yes",
+          "note": "支持双向复制粘贴，可关闭自动同步；具体行为依应用，避免传入敏感内容。"
+        },
+        "multi_monitor": {
+          "value": "unknown"
+        },
+        "audio": {
+          "value": "partial",
+          "note": "Android 11+；11 启动时需解锁，10 及以下不支持；音频失败默认可继续视频。"
+        },
+        "e2e_encryption": {
+          "value": "unknown"
+        },
+        "self_host": {
+          "value": "unknown"
+        },
+        "mobile_control": {
+          "value": "partial",
+          "note": "电脑控制 Android；不是用手机控制电脑或 iPhone 远控。"
+        },
+        "free_for_commercial": {
+          "value": "yes",
+          "note": "Apache-2.0；分发仍须遵守通知、许可及依赖义务。"
+        },
+        "session_recording": {
+          "value": "yes",
+          "note": "官方列出设备视频/音频录制；未执行录制。"
+        },
+        "wake_on_lan": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://github.com/Genymobile/scrcpy",
+        "https://github.com/Genymobile/scrcpy/blob/master/LICENSE",
+        "https://github.com/Genymobile/scrcpy/blob/master/doc/audio.md",
+        "https://github.com/Genymobile/scrcpy/blob/master/doc/control.md",
+        "https://github.com/Genymobile/scrcpy/blob/master/doc/macos.md"
+      ],
+      "collected_at": "2026-11-16",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "archived": null,
+      "last_push_at": null
     }
   ]
 }
