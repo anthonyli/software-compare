@@ -1071,6 +1071,76 @@
       "archived": false,
       "last_push_at": null,
       "maintenance_status": "活跃"
+    },
+    {
+      "id": "micro",
+      "name": "Micro",
+      "official_url": "https://micro-editor.github.io/",
+      "github_url": "https://github.com/micro-editor/micro",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "免费开源终端编辑器",
+      "price_summary": "MIT 许可免费使用，可商用，分发时保留版权及许可声明；第三方插件与服务另计。",
+      "prices": [],
+      "free_tier_limits": "运行在终端而非桌面 GUI。Linux 系统剪贴板通常需额外工具，否则退回内部剪贴板；macOS 快捷键使用 Control/Option 而非 Command，行为取决于终端。Lua 插件和外部命令应按其权限及数据去向评估，不能宣称全部离线或沙箱隔离。官网列出的快速安装脚本明确由第三方维护，不应未经审查直接执行。M4 16GB 性能及每个发行包架构尚未验证。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": "官方能力资料已核对，未评估维护质量",
+      "summary": "采用常见快捷键的终端文本编辑器，提供多光标、标签/分屏、鼠标与 Lua 扩展，适合轻量代码和配置编辑，不是开箱即用的完整 IDE。",
+      "features": {
+        "extensions": {
+          "value": "yes",
+          "note": "Lua 插件与内置插件管理器"
+        },
+        "lsp": {
+          "value": "unknown",
+          "note": "官方核心功能资料未确认此能力"
+        },
+        "git_integration": {
+          "value": "partial",
+          "note": "内置差异边栏，不等同完整 Git 管理界面"
+        },
+        "integrated_terminal": {
+          "value": "yes",
+          "note": "可在编辑器分屏中运行交互式 shell"
+        },
+        "debugger": {
+          "value": "unknown",
+          "note": "官方核心功能资料未确认此能力"
+        },
+        "ai_assistant": {
+          "value": "unknown",
+          "note": "官方核心功能资料未确认此能力"
+        },
+        "multi_cursor": {
+          "value": "yes",
+          "note": "支持多个光标"
+        },
+        "remote_dev": {
+          "value": "partial",
+          "note": "可在远程终端环境中编辑，不承诺 VS Code 式远程工作区"
+        },
+        "live_share": {
+          "value": "unknown",
+          "note": "官方核心功能资料未确认此能力"
+        },
+        "customizable": {
+          "value": "yes",
+          "note": "JSON 配置、快捷键重映射与 Lua 扩展"
+        }
+      },
+      "sources": [
+        "https://github.com/micro-editor/micro",
+        "https://github.com/micro-editor/micro/blob/master/LICENSE",
+        "https://micro-editor.github.io/"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }

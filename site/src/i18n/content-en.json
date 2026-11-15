@@ -2281,5 +2281,17 @@
   "矢量形状图解与 SVG 导出，不是通用 SVG 源码/任意路径编辑器": "Vector-shape diagramming and SVG export, not a general SVG-source or arbitrary-path editor",
   "未核实桌面版完整交互原型能力": "Full interactive-prototyping capabilities of the desktop edition were not established",
   "未将网页版协作能力套用到桌面版": "Web collaboration features are not assumed for the desktop edition",
-  "此条目为本机桌面应用，不是自托管网页服务条目": "This entry is a local desktop application, not a self-hosted web-service offering"
+  "此条目为本机桌面应用，不是自托管网页服务条目": "This entry is a local desktop application, not a self-hosted web-service offering",
+  "免费开源终端编辑器": "Free and open-source terminal editor",
+  "MIT 许可免费使用，可商用，分发时保留版权及许可声明；第三方插件与服务另计。": "Free under MIT, including commercial use; retain copyright and license notices when distributing. Third-party plugins and services have separate terms and costs.",
+  "运行在终端而非桌面 GUI。Linux 系统剪贴板通常需额外工具，否则退回内部剪贴板；macOS 快捷键使用 Control/Option 而非 Command，行为取决于终端。Lua 插件和外部命令应按其权限及数据去向评估，不能宣称全部离线或沙箱隔离。官网列出的快速安装脚本明确由第三方维护，不应未经审查直接执行。M4 16GB 性能及每个发行包架构尚未验证。": "Runs in a terminal rather than a desktop GUI. Linux system-clipboard integration normally needs extra tools; otherwise it falls back to an internal clipboard. macOS shortcuts use Control/Option rather than Command and depend on the terminal. Assess Lua plugins and external commands for permissions and data destinations; do not assume they are all offline or sandboxed. The website explicitly identifies its quick-install script as third-party maintained; review it rather than executing it blindly. M4 16GB performance and the architecture of every release package have not been verified.",
+  "官方能力资料已核对，未评估维护质量": "Official capability sources checked; maintenance quality not assessed",
+  "采用常见快捷键的终端文本编辑器，提供多光标、标签/分屏、鼠标与 Lua 扩展，适合轻量代码和配置编辑，不是开箱即用的完整 IDE。": "A terminal text editor with familiar shortcuts, multiple cursors, tabs/splits, mouse support and Lua extensions; suited to lightweight code and configuration editing, not a complete out-of-the-box IDE.",
+  "官方核心功能资料未确认此能力": "This capability was not established by the official core feature documentation",
+  "Lua 插件与内置插件管理器": "Lua plugins and a built-in plugin manager",
+  "支持多个光标": "Multiple cursors are supported",
+  "JSON 配置、快捷键重映射与 Lua 扩展": "JSON configuration, key remapping and Lua extensions",
+  "可在编辑器分屏中运行交互式 shell": "An interactive shell can run inside an editor split",
+  "内置差异边栏，不等同完整 Git 管理界面": "Built-in diff gutter, not a full Git management interface",
+  "可在远程终端环境中编辑，不承诺 VS Code 式远程工作区": "Can edit in a remote terminal environment, without promising VS Code-style remote workspaces"
 }
