@@ -1,0 +1,4 @@
+# QOwnNotes — 2026-11-15
+Main 90a0689 has 17 note products without QOwnNotes; open issues/PR and name searches were empty before Issue205.
+Official README and GPLv2 LICENSE: https://github.com/pbek/QOwnNotes . Concept https://www.qownnotes.org/getting-started/concept.html explicitly says external clients sync notes/attachments; browser extension supports clipping. https://www.qownnotes.org/installation/macos.html confirms Qt6 universal macOS13+ and Qt5 updater limitation. https://www.qownnotes.org/editor/ai.html confirms opt-in AI and submitted text sent to provider. We do not infer default E2EE, zero network or measured M4 speed. License GPL2 conservatively as repository label/file; no later-version inference.
+PRIVACY.md concerns GitHub contributions, NOT an application-wide zero-collection guarantee. No security warning bypass advice, installation, model calls or note uploads performed. Only Compare unit/browser tests.
