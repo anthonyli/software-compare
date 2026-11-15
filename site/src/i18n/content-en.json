@@ -2457,5 +2457,8 @@
   "支持简单格式与图片，不等于完整文字处理器。": "Supports simple formatting and images, not a full word processor.",
   "通过外部服务同步笔记目录；不是内置托管同步。": "Sync the notebook directory through an external service, not built-in hosted sync.",
   "原生笔记无加密或密码保护。": "Native notebooks have no encryption or password protection.",
-  "单用户设计，可借助版本控制合并；不是实时多人编辑。": "Single-user design; version control can merge changes, not real-time multi-user editing."
+  "单用户设计，可借助版本控制合并；不是实时多人编辑。": "Single-user design; version control can merge changes, not real-time multi-user editing.",
+  "基于 Godot，官方提供 Windows、Linux、macOS 与 Web；Android 版面向平板且仍属实验性，手机体验可能不佳。未实测 M4 16GB 性能、PSD 兼容或联网行为；桌面与浏览器版的数据去向不能仅凭开源推断。扩展需单独审查其来源、权限和许可。官方 v1.2.4 说明该版本及以后创建的 PXO 文件不能由更旧版本打开；升级前保留原文件与可用版本，不假设任意版本无损互通。": "Built with Godot, with official Windows, Linux, macOS and Web editions. Android is experimental and intended for tablets; phone usability may be limited. M4 16GB performance, PSD compatibility and network behavior have not been tested. Open source alone does not establish data flows for desktop or browser editions. Review extension provenance, permissions and licenses separately. Official v1.2.4 notes say PXO files created by that version onward cannot be opened by older versions. Preserve original files and a usable application version before upgrading; do not assume lossless interoperability across arbitrary versions.",
+  "图层与帧时间线、洋葱皮及帧标签，面向像素逐帧动画。": "Layer/frame timeline, onion skinning and frame tags for frame-by-frame pixel animation.",
+  "面向精灵和图块的像素逐帧动画工具，可用图层、帧时间线、洋葱皮与帧标签组织动作；不是通用视频剪辑器，未确认内置骨骼或节点式合成能力。": "A frame-by-frame pixel-animation tool for sprites and tiles, with layers, a frame timeline, onion skinning and frame tags. Not a general video editor; built-in rigging and node-based compositing are not verified."
 }
