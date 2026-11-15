@@ -553,8 +553,7 @@
           "note": "首页仅写 Easy, fast and powerful audio editor，未确认多轨"
         },
         "plugins": {
-          "value": "unknown",
-          "note": "未确认"
+          "value": "yes"
         },
         "noise_reduce": {
           "value": "unknown",
@@ -586,7 +585,8 @@
         }
       },
       "sources": [
-        "https://www.ocenaudio.com/"
+        "https://www.ocenaudio.com/",
+        "https://www.ocenaudio.com/features"
       ]
     },
     {
