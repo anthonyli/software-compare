@@ -2442,5 +2442,9 @@
   "官方提供 Lua 插件与主题扩展入口，部分 lite 插件需要适配。": "Official Lua plugin and theme extension paths exist; some lite plugins require adaptation.",
   "独立 lite-xl-lsp 插件提供补全、跳转及诊断等，需配置语言服务器和插件依赖。": "The separate lite-xl-lsp plugin offers completion, navigation and diagnostics, requiring a configured language server and plugin dependencies.",
   "可通过 Lua 脚本及主题定制。": "Customizable through Lua scripts and themes.",
-  "未核实当前默认配置及插件组合的完整支持范围。": "Full support in the current default configuration and plugin combinations is unverified."
+  "未核实当前默认配置及插件组合的完整支持范围。": "Full support in the current default configuration and plugin combinations is unverified.",
+  "免费开源像素绘画工具": "Free open-source pixel-art editor",
+  "MIT 许可允许依条款商用、修改和分发，保留版权及许可声明；作者 itch.io 提供自定价格下载，其他商店价格按渠道核对。": "MIT permits commercial use, modification and redistribution under its notice requirements. The author offers name-your-own-price downloads on itch.io; check other storefronts separately.",
+  "面向精灵、图块和逐帧像素动画的绘画工具，提供图层、调色板、洋葱皮与扩展；不是完整 Photoshop 平替或 PSD 无损往返承诺。": "A drawing tool for sprites, tiles and frame-by-frame pixel animation, with layers, palettes, onion skinning and extensions; not a full Photoshop replacement or a promise of lossless PSD round-tripping.",
+  "基于 Godot，官方提供 Windows、Linux、macOS 与 Web；Android 版面向平板且仍属实验性，手机体验可能不佳。未实测 M4 16GB 性能、PSD 兼容或联网行为；桌面与浏览器版的数据去向不能仅凭开源推断。扩展需单独审查其来源、权限和许可。": "Built with Godot, with official Windows, Linux, macOS and Web editions. Android is experimental and intended for tablets; phone usability may be limited. M4 16GB performance, PSD compatibility and network behavior have not been tested. Open source alone does not establish data flows for desktop or browser editions. Review extension provenance, permissions and licenses separately."
 }
