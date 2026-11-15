@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 for (const [random, edge] of [[0, 'first'], [0.999999, 'last']] as const) {
-  test(`promotion selects ${edge} inter-group gap without changing categories`, async ({ page }) => {
+  test(`promotion selects ${edge} category grid without changing categories`, async ({ page }) => {
     await page.addInitScript(value => { Math.random = () => value; }, random);
     for (const width of [1280, 390]) {
       await page.setViewportSize({ width, height: 900 });
@@ -12,12 +12,25 @@ for (const [random, edge] of [[0, 'first'], [0.999999, 'last']] as const) {
       await expect(promo.locator('a')).toHaveAttribute('href', 'https://pageon.cc');
       await expect(promo.locator('a')).toHaveAttribute('rel', 'sponsored noopener');
       const position = await promo.evaluate(el => {
-        const groups = [...document.querySelectorAll('[data-category-group]')];
-        return { previous: groups.indexOf(el.previousElementSibling!), next: groups.indexOf(el.nextElementSibling!), count: groups.length };
+        const grids = [...document.querySelectorAll('[data-category-group] > .dir-grid')];
+        return { index: grids.indexOf(el.parentElement!), count: grids.length };
       });
-      expect(position.previous).toBe(edge === 'first' ? 0 : position.count - 2);
-      expect(position.next).toBe(position.previous + 1);
-      await expect(page.locator('.dir-grid #home-promotion, .dir-card#home-promotion')).toHaveCount(0);
+      expect(position.index).toBe(edge === 'first' ? 0 : position.count - 1);
+      const sizes = await promo.evaluate(el => {
+        const peer = el.parentElement!.querySelector('.dir-card')!;
+        return { card: el.getBoundingClientRect().width, peer: peer.getBoundingClientRect().width };
+      });
+      expect(Math.abs(sizes.card - sizes.peer)).toBeLessThan(1);
+      const cover = await promo.locator('.dir-cover').boundingBox();
+      expect(cover).not.toBeNull();
+      expect(Math.abs(cover!.height / cover!.width - 260 / 480)).toBeLessThan(.01);
+      await expect(page.locator('.dir-grid #home-promotion')).toHaveCount(1);
+      await expect(page.locator('.dir-card#home-promotion')).toHaveCount(0);
+      // Search opens suggestions, but never hides category groups or the promotion.
+      await page.locator('#site-search-hero').fill('Blender');
+      await expect(promo).toBeVisible();
+      await page.locator('#site-search-hero').press('Escape');
+      await page.locator('#site-search-hero').fill('');
       await page.locator('[data-lang="en"]').click();
       await expect(promo.locator('.promotion-label .t-en')).toBeVisible();
       await expect(promo.locator('.promotion-label .t-zh')).toBeHidden();
