@@ -2258,5 +2258,19 @@
   "官方阅读文档未确认该编辑能力，不视为已支持": "This editing capability was not established by the reader documentation; not counted as supported",
   "PDF 阅读、引用预览和键盘导航": "PDF reading, reference previews and keyboard navigation",
   "高亮、书签及批注导出；默认数据另存数据库": "Highlights, bookmarks and annotation export; data is stored separately in databases by default",
-  "官方展示通过外部命令/扩展添加 OCR，须另配依赖": "Official examples add OCR through external commands/extensions with additional dependencies"
+  "官方展示通过外部命令/扩展添加 OCR，须另配依赖": "Official examples add OCR through external commands/extensions with additional dependencies",
+  "官方称开源并提供源码；源码许可证本次未核实，官方安装包另有个人/商用条款": "Officially described as open source with source downloads; source license not verified here, and official packages have separate personal/business terms",
+  "个人免费，捐赠增强版与付费商用版": "Free personal edition, Donation extras and paid Business edition",
+  "Standard 和 Donation 仅限私人个人用途；商业用途及组织须购买 Business。官方列 €20/设备，可无限期使用，含一年更新；邮件通知仅保证在更新期内提供。": "Standard and Donation are for private personal use only; commercial use and organizations require Business. The official price is €20 per device for unlimited use with one year of updates; email notifications are guaranteed only during the update period.",
+  "Mirror 会删除目标端多余文件以匹配源端，双向同步也会传播删除；需要历史副本时应先设置 Versioning，不应把同步直接当作不可变备份。RealTimeSync 监听变更后触发批任务，不是云端持续同步服务。数据发往所选本地、网络或云目标；SFTP/FTPS 传输加密不等于端到端加密。官方源码许可未完成独立核对，不能据开源标记推断官方免费安装包可商用。M4 16GB 性能与原生架构未实测。": "Mirror deletes extra destination files to match the source, and two-way sync propagates deletions. Configure Versioning when historical copies are needed; synchronization is not an immutable backup. RealTimeSync launches batch jobs after detected changes, not a hosted continuous-sync service. Data goes to selected local, network or cloud destinations; SFTP/FTPS transport encryption is not end-to-end encryption. The source license was not independently verified, so the open-source label does not make official free packages commercially licensed. M4 16GB performance and native architecture were not tested.",
+  "官方资料核实；未评估维护质量": "Official sources checked; maintenance quality not assessed",
+  "桌面文件夹比较与单向/双向同步工具，适合本地磁盘、NAS 与远程目录备份流程；需选择同步和删除策略，不是自带云容量的网盘。": "A desktop folder-comparison and one-way/two-way synchronization tool for local disks, NAS and remote-folder backup workflows; choose sync and deletion policies carefully. It is not a cloud drive with included storage.",
+  "官方资料未确认该项能力": "This capability was not established by the official sources",
+  "RealTimeSync 监控目录并触发批任务，需配置": "RealTimeSync monitors folders and triggers configured batch jobs",
+  "选择文件夹并设置过滤条件": "Select folders and configure filters",
+  "支持网络共享，不等同自动发现的 P2P 节点网络": "Network shares are supported; not an automatically discovered P2P network",
+  "可配置 Versioning 保留被删除或覆盖文件": "Configure Versioning to retain deleted or overwritten files",
+  "比较时检测冲突并按同步配置处理": "Detect conflicts during comparison and handle them according to sync settings",
+  "可连自有网络共享/SFTP；不是内置托管网盘服务器": "Connect to your own network shares/SFTP; not a built-in hosted cloud-drive server",
+  "支持包含/排除过滤": "Include/exclude filters are supported"
 }
