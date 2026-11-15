@@ -226,13 +226,13 @@
           "note": "开源命令行文档转换工具"
         }
       ],
-      "free_tier_limits": "无。强项是 Markdown/文档互转，不是音视频转码。",
+      "free_tier_limits": "不是音视频转码器。官方说明中间文档模型可能丢失复杂表格等信息，页边距等排版细节不一定保留。生成 PDF 默认需另装 LaTeX 引擎及相关包，也可选其他 PDF 引擎；安装、字体、许可和资源需求随引擎变化。处理不可信输入时须另审查过滤器和 PDF 引擎，不能把 CLI 转换当作安全沙箱。未实测具体文档保真、M4 16GB 性能或联网行为。",
       "github_stars": 46930,
       "latest_release": "3.14",
       "latest_release_date": "2026-11-12 12:32",
       "latest_release_date_note": "GitHub 标签 3.14，已转换为 Asia/Shanghai",
       "maintenance_status": "活跃",
-      "summary": "文档格式转换的标准开源工具，Markdown、HTML、DOCX、LaTeX 等互转非常强，不管视频。",
+      "summary": "以文档结构转换为主的命令行工具，支持 Markdown、HTML、DOCX、LaTeX 等格式；不承诺复杂文档的版式保真或任意格式间无损往返。",
       "features": {
         "video": {
           "value": "no",
@@ -277,7 +277,10 @@
       },
       "sources": [
         "https://pandoc.org",
-        "https://github.com/jgm/pandoc"
+        "https://github.com/jgm/pandoc",
+        "https://pandoc.org/MANUAL.html#description",
+        "https://pandoc.org/MANUAL.html#creating-a-pdf",
+        "https://pandoc.org/MANUAL.html#a-note-on-security"
       ]
     },
     {
