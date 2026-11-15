@@ -2342,5 +2342,12 @@
   "编辑器按 GPL-3.0 提供，可依许可使用和修改；分发软件须遵守许可义务，素材与第三方组件的权利需另查。": "The editor is provided under GPL-3.0 for use and modification under its terms; software redistribution carries license obligations, while asset and third-party component rights require separate checks.",
   "面向浏览器的动画与交互创作，不承诺 Adobe Animate 项目无损兼容。自建需 npm 及项目依赖；桌面安装包、M4 16GB 性能和网页数据去向尚未逐项验证，不将开源等同于纯离线或隐私审计通过。": "A browser-oriented animation and interactive authoring tool, not a promise of lossless Adobe Animate project compatibility. Self-hosting needs npm and project dependencies. Desktop packages, M4 16GB performance and web data flows have not been individually verified; open source does not imply fully offline operation or a passed privacy audit.",
   "适合教学、简单 2D 动画与交互小作品的网页编辑器；官方引擎有路径绘制和位置、缩放、旋转、透明度补间。": "A web editor for education, simple 2D animations and interactive projects; its official engine includes paths and position, scale, rotation and opacity tweening.",
-  "官方引擎包含路径与变换补间；不等同于专业骨骼绑定或节点合成。": "The official engine includes paths and transform tweens, not evidence of professional rigging or node compositing."
+  "官方引擎包含路径与变换补间；不等同于专业骨骼绑定或节点合成。": "The official engine includes paths and transform tweens, not evidence of professional rigging or node compositing.",
+  "免费开源写作工具": "Free open-source writing tool",
+  "软件按 GPL-3.0-or-later 免费提供，可按许可商用；分发修改版须遵守相应许可义务，外部字体和素材另行核实。": "Free software under GPL-3.0-or-later, usable commercially under its terms; distributing modified versions carries corresponding obligations, and external fonts and assets need separate checks.",
+  "偏重小说与长篇写作规划：组织大纲、章节、场景、人物和情节，适合先搭结构再写初稿，不是以 Word 版式保真为目标的办公套件。": "Focused on novels and long-form drafting: outlines, chapters, scenes, characters and plots help plan before writing; this is not an office suite focused on Word layout fidelity.",
+  "Python 3/PyQt5 工具；DOCX 等转换依赖 Pandoc，官方旧版导出指南列 PDF 还需 LaTeX，具体版本需验证。格式转换不等于无损往返。官网提醒仍需充分测试，应保留备份；M4 16GB 原生安装包、性能及网络数据流尚未核实，不将本地文件格式等同于加密。": "A Python 3/PyQt5 tool. DOCX conversion depends on Pandoc; the older official export guide also lists LaTeX for PDF, so verify the selected version. Conversion does not guarantee lossless round trips. The website calls for extensive testing: keep backups. Native M4 16GB packages, performance and network data flows remain unverified; a local file format does not imply encryption.",
+  "支持章节和场景大纲；不据此保证 Word 样式与分页兼容。": "Supports chapter and scene outlines; this does not establish Word style or pagination compatibility.",
+  "README 列 DOCX 导入导出；转换依赖与格式保真需验证。": "The README lists DOCX import/export; verify conversion dependencies and fidelity.",
+  "旧官方指南列 Pandoc 与 LaTeX 输出路线，未实测当前组合。": "The older official guide lists a Pandoc and LaTeX output route; the current combination has not been tested."
 }
