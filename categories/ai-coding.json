@@ -513,6 +513,58 @@
         "https://goose-docs.ai/docs/guides/managing-tools/goose-permissions/"
       ],
       "collected_at": "2026-11-15"
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "official_url": "https://opencode.ai/",
+      "github_url": "https://github.com/anomalyco/opencode",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "免费开源客户端 / 模型服务另计",
+      "price_summary": "MIT 客户端可按许可商用；云模型 API、可选订阅和本地模型硬件成本另计。免费代码不代表所有模型免费或有同样商用许可。",
+      "prices": [],
+      "free_tier_limits": "按当前 V2 文档：基础权限默认广泛允许，工作目录外访问也可能不提示；应配置读取、编辑和命令权限，不能当作安全沙盒。V1/V2 配置字段不同。云端模型会收到所发送的提示、代码上下文和工具结果；本地模型仍需运行时、足够内存和独立模型许可，插件也可能联网。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "带终端、桌面和网页入口的编程 Agent，可修改文件并调用命令运行测试，支持云提供商及 Ollama 等本地运行时。官方提供 Apple Silicon 客户端，不代表 M4 16GB 可运行任意本地模型或已验证安全隔离。",
+      "features": {
+        "cli": {
+          "value": "yes",
+          "note": ""
+        },
+        "ide_extension": {
+          "value": "unknown",
+          "note": "当前编辑器原生集成范围未逐项核实。"
+        },
+        "local_models": {
+          "value": "yes",
+          "note": "支持 Ollama、LM Studio 等；模型的工具调用能力与运行时配置需匹配。"
+        },
+        "code_edits": {
+          "value": "yes",
+          "note": ""
+        },
+        "run_tests": {
+          "value": "yes",
+          "note": "通过命令工具运行项目已有测试，不保证自动生成正确测试或修复。"
+        }
+      },
+      "sources": [
+        "https://opencode.ai/docs/",
+        "https://opencode.ai/docs/permissions/",
+        "https://opencode.ai/docs/providers/",
+        "https://opencode.ai/docs/tools/",
+        "https://github.com/anomalyco/opencode/blob/dev/LICENSE"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
