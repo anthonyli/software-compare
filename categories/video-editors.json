@@ -1265,6 +1265,81 @@
         "https://github.com/storytold/filmcraft/blob/main/LICENSE-APACHE"
       ],
       "collected_at": "2026-11-14"
+    },
+    {
+      "id": "avidemux",
+      "name": "Avidemux",
+      "official_url": "https://avidemux.sourceforge.net/",
+      "github_url": "https://github.com/mean00/avidemux2",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-2.0",
+      "pricing_model": "免费开源",
+      "price_summary": "GPLv2 软件可用于商业用途；修改和再分发须遵守对应许可，附带组件各有许可。",
+      "prices": [],
+      "free_tier_limits": "Copy 模式不重编码，但裁切起点受关键帧限制；滤镜和不落在关键帧上的精确裁切通常需重编码。不要把视频编码关键帧误认为动画参数关键帧。源码提供 Apple Silicon 构建说明，但 M4 16GB 性能未实测。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "适合简单视频裁切、编码与滤镜处理，不是多轨时间线剪辑器。处理所选媒体文件；网络行为未独立审计，不承诺所有素材格式兼容或无损任意帧裁切。",
+      "features": {
+        "timeline": {
+          "value": "no",
+          "note": "官方 Quickstart 明确不是时间线或多轨剪辑工作流。"
+        },
+        "multi_track": {
+          "value": "no",
+          "note": "官方 Quickstart 明确不是时间线或多轨剪辑工作流。"
+        },
+        "color_grade": {
+          "value": "partial",
+          "note": "提供基础视频滤镜与颜色校正；需重编码，不等于完整合成或专业调色台。"
+        },
+        "effects": {
+          "value": "partial",
+          "note": "提供基础视频滤镜与颜色校正；需重编码，不等于完整合成或专业调色台。"
+        },
+        "keyframes": {
+          "value": "unknown",
+          "note": ""
+        },
+        "titles": {
+          "value": "partial",
+          "note": "文档列出通过滤镜添加字幕，不等于完整动态图形标题系统。"
+        },
+        "audio_mix": {
+          "value": "unknown",
+          "note": ""
+        },
+        "chroma_key": {
+          "value": "unknown",
+          "note": ""
+        },
+        "proxy": {
+          "value": "unknown",
+          "note": ""
+        },
+        "export_4k": {
+          "value": "unknown",
+          "note": ""
+        },
+        "gpu_accel": {
+          "value": "unknown",
+          "note": ""
+        }
+      },
+      "sources": [
+        "https://github.com/mean00/avidemux2",
+        "https://github.com/mean00/avidemux2/blob/master/License.txt",
+        "https://www.avidemux.org/admWiki/doku.php?id=using:quickstart",
+        "https://avidemux.sourceforge.net/download.html"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
