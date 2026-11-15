@@ -644,8 +644,7 @@
           "note": "录音"
         },
         "batch": {
-          "value": "unknown",
-          "note": "未打开功能页确认批处理"
+          "value": "yes"
         },
         "midi": {
           "value": "no",
@@ -661,7 +660,8 @@
         }
       },
       "sources": [
-        "https://www.adobe.com/products/audition.html"
+        "https://www.adobe.com/products/audition.html",
+        "https://helpx.adobe.com/audition/desktop/saving-and-exporting/saving-exporting-files1.html"
       ]
     },
     {
