@@ -296,17 +296,17 @@
       "platforms": [
         "macOS"
       ],
-      "open_source": true,
-      "license": "未知（GitHub license 字段为 '-'）",
+      "open_source": false,
+      "license": "专有软件",
       "pricing_model": "完全免费",
-      "price_summary": "Mac 开源压缩工具。也可从 App Store 付费购买以支持开发。本次 keka.io 抓取几乎无正文（244 字节），商店价格未知。",
+      "price_summary": "官网提供免费下载",
       "prices": [
         {
           "plan": "官网/GitHub 版本",
           "price": "免费",
           "currency": null,
           "period": null,
-          "note": "开源项目可免费下载"
+          "note": "官网提供免费下载"
         },
         {
           "plan": "Mac App Store",
@@ -322,7 +322,7 @@
       "latest_release_date": "2026-09-24 14:39",
       "latest_release_date_note": "GitHub 标签 v1.6.8，已转换为 Asia/Shanghai。官网本次几乎为空。",
       "maintenance_status": "活跃",
-      "summary": "Mac 上很常用的开源压缩工具，界面简洁，官网这次没抓到价格和功能细表。",
+      "summary": "专有软件",
       "features": {
         "zip": {
           "value": "yes"
@@ -367,7 +367,9 @@
         "https://www.keka.io/",
         "https://github.com/aonez/keka",
         "https://www.keka.io/en/",
-        "https://github.com/aonez/Keka/wiki/Compressing-with-Keka"
+        "https://github.com/aonez/Keka/wiki/Compressing-with-Keka",
+        "https://github.com/aonez/Keka/discussions/1627",
+        "https://terms.keka.io/"
       ]
     },
     {
