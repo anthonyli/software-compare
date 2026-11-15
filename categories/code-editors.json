@@ -1141,6 +1141,67 @@
         "https://micro-editor.github.io/"
       ],
       "collected_at": "2026-11-15"
+    },
+    {
+      "id": "geany",
+      "name": "Geany",
+      "official_url": "https://www.geany.org/",
+      "github_url": "https://github.com/geany/geany",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "BSD"
+      ],
+      "open_source": true,
+      "license": "GPL-2.0-or-later",
+      "pricing_model": "免费开源代码编辑器",
+      "price_summary": "Geany 采用 GPLv2 或更新版本，可依许可商用、修改和分发；内含 Scintilla 使用独立许可，第三方插件需另查许可。",
+      "prices": [],
+      "summary": "面向日常代码和脚本编辑的轻量 IDE，提供语法高亮、代码与 HTML/XML 标签补全、符号列表及插件扩展；轻量是作者定位，非性能实测。",
+      "free_tier_limits": "依赖 GTK；集成终端需要构建支持及可用的 libvte，缺少时终端不加载，不能视为每个平台均自带终端。README 声明提供 Mac/Windows 预构建包及 Linux/BSD 发行版包，但当前安装包架构、最低系统和 M4 16GB 表现未核实。代码补全不等同 LSP、AI 或完整调试器；插件可能增加依赖与网络访问，未完成隐私审计。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "features": {
+        "extensions": {
+          "value": "yes"
+        },
+        "lsp": {
+          "value": "unknown"
+        },
+        "git_integration": {
+          "value": "unknown"
+        },
+        "integrated_terminal": {
+          "value": "partial"
+        },
+        "debugger": {
+          "value": "unknown"
+        },
+        "ai_assistant": {
+          "value": "unknown"
+        },
+        "multi_cursor": {
+          "value": "unknown"
+        },
+        "remote_dev": {
+          "value": "unknown"
+        },
+        "live_share": {
+          "value": "unknown"
+        },
+        "customizable": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://github.com/geany/geany",
+        "https://github.com/geany/geany/blob/master/doc/geany.txt",
+        "https://github.com/geany/geany/blob/master/COPYING"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
