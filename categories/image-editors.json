@@ -152,13 +152,15 @@
           "value": "unknown"
         },
         "plugins": {
-          "value": "unknown"
+          "value": "yes"
         }
       },
       "sources": [
         "https://www.pinta-project.com/",
         "https://www.pinta-project.com/user-guide/",
-        "https://github.com/PintaProject/Pinta"
+        "https://github.com/PintaProject/Pinta",
+        "https://github.com/PintaProject/Pinta/releases/tag/3.1",
+        "https://github.com/PintaProject/Pinta-Community-Addins"
       ],
       "collected_at": "2026-11-13"
     },
