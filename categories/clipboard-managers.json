@@ -133,6 +133,58 @@
         "https://maccy.app/"
       ],
       "collected_at": "2026-11-15"
+    },
+    {
+      "id": "ditto",
+      "name": "Ditto",
+      "official_url": "https://github.com/sabrogden/Ditto",
+      "github_url": "https://github.com/sabrogden/Ditto",
+      "platforms": [
+        "Windows"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "免费开源，分发渠道另核",
+      "price_summary": "源码按 GPL-3.0 提供，可依许可商用、修改和分发；第三方组件及各商店分发条件另核，未统一标价。",
+      "prices": [],
+      "summary": "Windows 剪贴板历史管理器，支持文本、图片、HTML、分组与快捷键，适合在电脑上重复查找和粘贴内容。",
+      "free_tier_limits": "作者声明无账号、云服务或遥测，条目保存在本机 SQLite；Friends 可按配置向局域网其它电脑传送内容，因此不等于从不联网。正则与进程名排除规则不保证识别所有密码，未核实数据库静态加密。Wiki 的复制/粘贴脚本说明列出 ASCII 限制；跨设备项仅表示局域网传送，不是云端全量同步。没有已核实的原生 macOS 版本，M4 Mac 虚拟化兼容性与性能未知。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "features": {
+        "history_search": {
+          "value": "unknown"
+        },
+        "rich_clipboard": {
+          "value": "yes"
+        },
+        "organization": {
+          "value": "yes"
+        },
+        "hotkeys": {
+          "value": "yes"
+        },
+        "ignore_rules": {
+          "value": "yes"
+        },
+        "scripting": {
+          "value": "partial"
+        },
+        "cross_device": {
+          "value": "partial"
+        }
+      },
+      "sources": [
+        "https://github.com/sabrogden/Ditto",
+        "https://github.com/sabrogden/Ditto/blob/master/LICENSE",
+        "https://github.com/sabrogden/Ditto/wiki",
+        "https://github.com/sabrogden/Ditto/wiki/Privacy-Policy",
+        "https://github.com/sabrogden/Ditto/wiki/Excluding-clip-from-saving",
+        "https://github.com/sabrogden/Ditto/wiki/Scripting"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
