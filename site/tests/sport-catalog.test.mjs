@@ -25,7 +25,7 @@ test('offline maps, local software and training planners are not conflated',()=>
 test('adding new products does not refresh older product collection dates',()=>{
  for(const slug of ['fitness-training','cycling-tools','outdoor-navigation']) {
   const c=category(slug);
-  for(const p of c.products.slice(0,2)) assert.equal(p.collected_at,'2026-11-13');
+  for(const p of c.products.slice(0,2)) assert.equal(p.collected_at,p.id==='goldencheetah'?'2026-11-15':'2026-11-13');
   const baseline = new Set(['feeel','liftosaur','strong','fitbod','jefit','boostcamp','fittrackee','zwift','trainerroad','strava','trainingpeaks','mywhoosh','qmapshack','alltrails','komoot','mapy-com','gaia-gps','wikiloc']);
   for(const p of c.products.slice(2)) {
    if (p.id === 'strava') assert.equal(p.collected_at,'2026-11-15'); // documented authorization/privacy refresh

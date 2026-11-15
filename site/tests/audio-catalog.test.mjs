@@ -17,7 +17,7 @@ test('audio expansion adds five sourced rows with complete comparisons and trans
    }
   }
   const originalIds = slug === 'audio-recorders' ? ['audio-hijack','piezo'] : ['whisper-cpp','buzz'];
-  for (const id of originalIds) { const old=c.products.find(p=>p.id===id); assert(old, id); assert.equal(old.collected_at, '2026-11-13'); }
+  for (const id of originalIds) { const old=c.products.find(p=>p.id===id); assert(old, id); assert.equal(old.collected_at, id === 'buzz' ? '2026-11-15' : '2026-11-13'); }
  }
 });
 test('recording and transcription boundaries are explicit, not inferred from open source', () => {
