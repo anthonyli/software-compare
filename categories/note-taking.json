@@ -1855,7 +1855,7 @@
           "value": "yes"
         },
         "tags": {
-          "value": "unknown"
+          "value": "yes"
         },
         "web_clipper": {
           "value": "unknown"
@@ -1891,7 +1891,9 @@
         "https://zim-wiki.org/manual/FAQ.html",
         "https://zim-wiki.org/manual/Help/Export.html",
         "https://github.com/zim-desktop-wiki/zim-desktop-wiki/blob/develop/zim/__init__.py",
-        "https://github.com/zim-desktop-wiki/zim-desktop-wiki"
+        "https://github.com/zim-desktop-wiki/zim-desktop-wiki",
+        "https://www.zim-wiki.org/manual/Help/Tags.html",
+        "https://zim-wiki.org/manual/Plugins/Tags.html"
       ],
       "collected_at": "2026-11-15"
     }
