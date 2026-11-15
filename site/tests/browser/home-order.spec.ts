@@ -8,7 +8,7 @@ test('homepage prioritizes media while retaining all other groups and media card
     'group-files', 'group-system', 'group-security', 'group-dev',
   ]);
   await expect(page.locator('#categories .group-jump a').first()).toHaveAttribute('href', '#group-media');
-  const links = page.locator('#group-media .dir-grid a');
+  const links = page.locator('#group-media .dir-grid a.dir-card');
   expect(await links.evaluateAll(nodes => nodes.map(node => node.getAttribute('href')))).toEqual([
     '/c/screen-recorders/', '/c/video-editors/', '/c/audio-editors/',
     '/c/audio-recorders/', '/c/transcription-tools/', '/c/converters/',
