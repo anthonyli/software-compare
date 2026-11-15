@@ -456,13 +456,13 @@
           "note": "多成员按 Pro 每席计费；免费档 1 名 owner"
         },
         "mobile": {
-          "value": "unknown",
-          "note": "定价页本次未明确写出移动端；存在与否需另查下载页"
+          "value": "yes"
         }
       },
       "sources": [
         "https://appflowy.com/pricing",
-        "https://github.com/AppFlowy-IO/AppFlowy"
+        "https://github.com/AppFlowy-IO/AppFlowy",
+        "https://appflowy.com/download"
       ]
     },
     {
@@ -529,8 +529,7 @@
           "note": "首页未作为最核心卖点展开，可能支持，未确认"
         },
         "web_clipper": {
-          "value": "unknown",
-          "note": "首页未确认"
+          "value": "yes"
         },
         "sync": {
           "value": "paid",
@@ -549,8 +548,7 @@
           "note": "可存资源文件；官方云仅 8GB"
         },
         "plugins": {
-          "value": "partial",
-          "note": "可用挂件块扩展"
+          "value": "yes"
         },
         "collaboration": {
           "value": "partial",
@@ -564,7 +562,8 @@
       "sources": [
         "https://b3log.org/siyuan",
         "https://b3log.org/siyuan/pricing.html",
-        "https://github.com/siyuan-note/siyuan"
+        "https://github.com/siyuan-note/siyuan",
+        "https://github.com/siyuan-note/siyuan#-features"
       ]
     },
     {
