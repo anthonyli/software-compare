@@ -373,8 +373,7 @@
           "note": "核心功能"
         },
         "convert": {
-          "value": "no",
-          "note": "不以格式转换见长"
+          "value": "partial"
         },
         "form_fill": {
           "value": "no",
@@ -394,7 +393,8 @@
         }
       },
       "sources": [
-        "https://github.com/pdfarranger/pdfarranger"
+        "https://github.com/pdfarranger/pdfarranger",
+        "https://github.com/pdfarranger/pdfarranger/wiki/User-Manual"
       ]
     },
     {
