@@ -495,6 +495,46 @@
         "https://github.com/mypaint/mypaint/blob/master/BUILDING.md"
       ],
       "collected_at": "2026-11-15"
+    },
+    {
+      "id": "drawing",
+      "name": "Drawing",
+      "official_url": "https://maoschanz.github.io/drawing/",
+      "github_url": "https://github.com/maoschanz/drawing",
+      "platforms": [
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0-or-later",
+      "pricing_model": "免费开源基础图像编辑器",
+      "price_summary": "程序代码采用 GPLv3 或更新版本，可依许可商用、修改和分发；部分工具图标来自其他项目，应另核素材许可。",
+      "prices": [],
+      "summary": "Linux 上类似 Paint 的基础位图编辑器，适合添加文字、形状、简单绘画、裁剪缩放及旋转；支持 PNG、JPEG 和 BMP，不定位为完整 Photoshop 替代。",
+      "free_tier_limits": "采用 Python 与 GTK 3；官方推荐 Flatpak，也有发行版包。官网安装和更新区显示的版本不一致，应按实际分发渠道核对版本，不能把开发分支版本当稳定版。未核实 macOS、Windows 或 M4 16GB 原生支持；Linux 手机兼容是作者预期而非实测。图层、PSD 无损兼容、插件和动画能力未确认。未完成网络与隐私审计，不能仅凭桌面应用定位承诺零外发。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "features": {
+        "layers": {
+          "value": "unknown"
+        },
+        "painting": {
+          "value": "yes"
+        },
+        "animation": {
+          "value": "unknown"
+        },
+        "plugins": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://maoschanz.github.io/drawing/",
+        "https://github.com/maoschanz/drawing",
+        "https://github.com/maoschanz/drawing/blob/master/src/main.py"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
