@@ -1821,6 +1821,80 @@
         "https://github.com/giuspen/cherrytree/blob/master/BUILDING.md"
       ],
       "collected_at": "2026-11-15"
+    },
+    {
+      "id": "zim",
+      "name": "Zim",
+      "official_url": "https://zim-wiki.org/",
+      "github_url": "https://github.com/zim-desktop-wiki/zim-desktop-wiki",
+      "platforms": [
+        "Linux",
+        "Windows",
+        "macOS"
+      ],
+      "open_source": true,
+      "license": "GPL-2.0-or-later",
+      "pricing_model": "免费开源桌面 Wiki",
+      "price_summary": "程序采用 GPL-2.0-or-later，可依许可使用、修改和分发；第三方图标、翻译和依赖需分别核对许可。",
+      "prices": [],
+      "summary": "本地 Wiki 风格笔记，适合用页面链接、层级目录、简单格式和附件整理知识；原生保存为 Wiki 文本，Markdown 是导出格式而非原生笔记格式。",
+      "free_tier_limits": "笔记没有原生加密或密码保护；外部同步服务会接触所选笔记和附件，不能视为内置端到端加密。备份须包含笔记目录中所有可见文件；.zim 主要为可重建缓存和界面状态。设计为单用户，版本控制合并不等于实时协作。依赖 Python、GTK 及部分插件外部工具；当前 Windows 安装器面向 64 位，Mac 安装渠道和插件依赖需单独核对，M4 16GB 未实测。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "features": {
+        "markdown": {
+          "value": "partial",
+          "note": "支持 Markdown 导出，原生文件是 Wiki 文本。"
+        },
+        "rich_text": {
+          "value": "partial",
+          "note": "支持简单格式与图片，不等于完整文字处理器。"
+        },
+        "folders": {
+          "value": "yes"
+        },
+        "tags": {
+          "value": "unknown"
+        },
+        "web_clipper": {
+          "value": "unknown"
+        },
+        "sync": {
+          "value": "partial",
+          "note": "通过外部服务同步笔记目录；不是内置托管同步。"
+        },
+        "offline": {
+          "value": "yes"
+        },
+        "e2e_encrypt": {
+          "value": "no",
+          "note": "原生笔记无加密或密码保护。"
+        },
+        "attachments": {
+          "value": "yes"
+        },
+        "plugins": {
+          "value": "yes"
+        },
+        "collaboration": {
+          "value": "partial",
+          "note": "单用户设计，可借助版本控制合并；不是实时多人编辑。"
+        },
+        "mobile": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://zim-wiki.org/",
+        "https://zim-wiki.org/downloads.html",
+        "https://zim-wiki.org/manual/FAQ.html",
+        "https://zim-wiki.org/manual/Help/Export.html",
+        "https://github.com/zim-desktop-wiki/zim-desktop-wiki/blob/develop/zim/__init__.py",
+        "https://github.com/zim-desktop-wiki/zim-desktop-wiki"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
