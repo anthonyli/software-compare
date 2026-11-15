@@ -57,9 +57,9 @@
         "Linux"
       ],
       "open_source": true,
-      "license": "未知（GitHub 返回 NOASSERTION；项目为开源）",
+      "license": "源码 GPL-2.0-or-later；二进制 GPL-3.0-or-later，含 OpenSSL 链接例外",
       "pricing_model": "完全免费",
-      "price_summary": "完全免费开源的 BitTorrent 客户端，官网强调无广告。",
+      "price_summary": "免费开源。官方 COPYING 区分源码 GPL-2.0-or-later 与含 GPLv3+ 素材的二进制 GPL-3.0-or-later，两者附 OpenSSL 链接例外。商业使用不等于可忽略再分发、源码提供与素材许可义务；修改者是否延用例外须看相应文件声明。",
       "prices": [
         {
           "plan": "全部功能",
@@ -120,7 +120,8 @@
       },
       "sources": [
         "https://www.qbittorrent.org/",
-        "https://github.com/qbittorrent/qBittorrent"
+        "https://github.com/qbittorrent/qBittorrent",
+        "https://github.com/qbittorrent/qBittorrent/blob/master/COPYING"
       ]
     },
     {
