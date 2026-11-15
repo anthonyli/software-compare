@@ -57,9 +57,9 @@
         "Linux"
       ],
       "open_source": true,
-      "license": "未知（GitHub 返回 NOASSERTION；长期以 GPL 开源，现由 Muse 集团维护，精确 SPDX 未在本次读取 LICENSE）",
+      "license": "GPL-3.0",
       "pricing_model": "完全免费",
-      "price_summary": "完全免费开源。",
+      "price_summary": "Audacity 4.0.2 发布程序采用 GPLv3，可依许可商用、修改和分发；个别源文件可能采用 GPLv2-or-later 等其他许可，文档采用 CC-BY 3.0，应分别核对。主程序免费，第三方插件及可选云服务不包含在此许可或免费承诺内。",
       "prices": [
         {
           "plan": "软件本身",
@@ -120,7 +120,8 @@
       },
       "sources": [
         "https://www.audacityteam.org",
-        "https://github.com/audacity/audacity"
+        "https://github.com/audacity/audacity",
+        "https://github.com/audacity/audacity/blob/Audacity-4.0.2/LICENSE.txt"
       ]
     },
     {
