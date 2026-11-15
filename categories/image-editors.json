@@ -412,6 +412,48 @@
         "https://www.photopea.com/privacy.html"
       ],
       "collected_at": "2026-11-14"
+    },
+    {
+      "id": "lazpaint",
+      "name": "LazPaint",
+      "official_url": "https://lazpaint.github.io/",
+      "github_url": "https://github.com/bgrabitmap/lazpaint",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "免费开源图像编辑器",
+      "price_summary": "编辑器免费、可选捐赠，GPL-3.0 允许依许可使用和修改；软件再分发须遵守许可义务，第三方组件与素材另查。",
+      "prices": [],
+      "summary": "面向日常绘画与图像调整的跨平台工具，提供位图/矢量图层、抗锯齿选区、RGB/HSL 曲线和滤镜，可作为 Photoshop 之外的基础编辑选择。",
+      "free_tier_limits": "不是完整 Photoshop 工作流替代，PSD 往返、逐帧动画和插件兼容尚未核实。源码构建涉及 Lazarus/Free Pascal 与 BGRABitmap；官网 Mac 64 位下载不等于已验证 Apple Silicon 原生构建或 M4 16GB 性能。网络数据流未审计，不将桌面开源自动等同于零联网。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "features": {
+        "layers": {
+          "value": "yes"
+        },
+        "painting": {
+          "value": "yes"
+        },
+        "animation": {
+          "value": "unknown"
+        },
+        "plugins": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://lazpaint.github.io/",
+        "https://github.com/bgrabitmap/lazpaint",
+        "https://github.com/bgrabitmap/lazpaint/blob/master/COPYING.txt"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
