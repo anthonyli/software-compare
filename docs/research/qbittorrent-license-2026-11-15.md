@@ -1,0 +1,3 @@
+# qBittorrent license — 2026-11-15
+Base701a457, no open issues/PR. Product remained unknown due GitHub NOASSERTION. Official https://github.com/qbittorrent/qBittorrent/blob/master/COPYING explicitly separates source GPLv2+ from binaries GPLv3+ because of assets, both with OpenSSL linking exception. Modified files may retain or remove the exception as described there. Do not classify whole project as GPL2-only/GPL3-only or infer no obligations for commercial redistribution.
+Only license, price explanation, source and English mappings updated; no category/date/features/platform refresh implied. Existing covers unchanged. Regression tests check exact source/binary distinction. No installed software, network audit or media downloads. Site/deployment403 not retried.
