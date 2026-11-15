@@ -2460,5 +2460,19 @@
   "单用户设计，可借助版本控制合并；不是实时多人编辑。": "Single-user design; version control can merge changes, not real-time multi-user editing.",
   "基于 Godot，官方提供 Windows、Linux、macOS 与 Web；Android 版面向平板且仍属实验性，手机体验可能不佳。未实测 M4 16GB 性能、PSD 兼容或联网行为；桌面与浏览器版的数据去向不能仅凭开源推断。扩展需单独审查其来源、权限和许可。官方 v1.2.4 说明该版本及以后创建的 PXO 文件不能由更旧版本打开；升级前保留原文件与可用版本，不假设任意版本无损互通。": "Built with Godot, with official Windows, Linux, macOS and Web editions. Android is experimental and intended for tablets; phone usability may be limited. M4 16GB performance, PSD compatibility and network behavior have not been tested. Open source alone does not establish data flows for desktop or browser editions. Review extension provenance, permissions and licenses separately. Official v1.2.4 notes say PXO files created by that version onward cannot be opened by older versions. Preserve original files and a usable application version before upgrading; do not assume lossless interoperability across arbitrary versions.",
   "图层与帧时间线、洋葱皮及帧标签，面向像素逐帧动画。": "Layer/frame timeline, onion skinning and frame tags for frame-by-frame pixel animation.",
-  "面向精灵和图块的像素逐帧动画工具，可用图层、帧时间线、洋葱皮与帧标签组织动作；不是通用视频剪辑器，未确认内置骨骼或节点式合成能力。": "A frame-by-frame pixel-animation tool for sprites and tiles, with layers, a frame timeline, onion skinning and frame tags. Not a general video editor; built-in rigging and node-based compositing are not verified."
+  "面向精灵和图块的像素逐帧动画工具，可用图层、帧时间线、洋葱皮与帧标签组织动作；不是通用视频剪辑器，未确认内置骨骼或节点式合成能力。": "A frame-by-frame pixel-animation tool for sprites and tiles, with layers, a frame timeline, onion skinning and frame tags. Not a general video editor; built-in rigging and node-based compositing are not verified.",
+  "历史记录与搜索": "History & search",
+  "文本/图片历史": "Text/image history",
+  "分组或置顶": "Grouping or pinning",
+  "快捷键粘贴": "Keyboard paste",
+  "忽略规则/暂停记录": "Ignore rules / pause",
+  "脚本与自动化": "Scripting",
+  "跨设备同步": "Cross-device sync",
+  "免费开源，分发渠道另核": "Free open source; check distribution channels separately",
+  "源码可依 GPL-3.0-or-later 商用、修改与分发；第三方组件和商店分发条件另核，不假设所有商店售价相同。": "Source may be commercially used, modified and redistributed under GPL-3.0-or-later; check third-party components and store terms separately, without assuming identical storefront prices.",
+  "带标签页、编辑和脚本的剪贴板历史管理器，适合整理文本、HTML、图片及自定义格式。": "Clipboard history with tabs, editing and scripting for organizing text, HTML, images and custom formats.",
+  "当前 README 要求 macOS 13+（取决于 Qt）；旧官网系统要求不可代替当前构建要求。记录会跨重启保留，应配置窗口/内容忽略规则并谨慎使用脚本。未核实端到端同步加密或所有网络行为；脚本与外部命令可能改变数据去向。M4 16GB 未实测，不执行文档中的安全绕过操作。": "Current README requires macOS 13+ depending on Qt; older website requirements do not establish current build compatibility. History persists across restarts: configure window/content exclusions and review scripts carefully. End-to-end sync encryption and all network behavior are unverified; scripts and external commands can change data destinations. M4 16GB is untested; no documented security-bypass steps were performed.",
+  "源码可依 MIT 商用、修改与分发；第三方组件和商店分发条件另核，不假设所有商店售价相同。": "Source may be commercially used, modified and redistributed under MIT; check third-party components and store terms separately, without assuming identical storefront prices.",
+  "macOS 原生剪贴板历史工具，提供键盘搜索、置顶和无格式粘贴，适合轻量查找最近复制内容。": "Native macOS clipboard history with keyboard search, pinning and plain-text paste, suited to retrieving recent copies.",
+  "当前要求 macOS Sonoma 14+。作者称内容保存在本机；默认忽略部分保密/临时剪贴板类型，不保证识别所有密码或敏感文本。自动粘贴可能需要辅助功能授权，须自行判断权限；排除和暂停记录不等于加密保险箱。未实测 M4 16GB 性能、跨设备同步或网络行为。仅从官方 maccy.app 和所链接仓库获取，注意仿冒站。": "Requires macOS Sonoma 14+. The author says content is stored locally; default exclusions cover certain confidential/temporary clipboard types, not every password or sensitive text. Automatic paste may require Accessibility permission; assess permissions yourself. Exclusions and pausing do not make an encrypted vault. M4 16GB performance, cross-device sync and network behavior are untested. Use official maccy.app and its linked repository; beware of impersonators."
 }
