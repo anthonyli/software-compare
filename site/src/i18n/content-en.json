@@ -2337,5 +2337,10 @@
   "带终端、桌面和网页入口的编程 Agent，可修改文件并调用命令运行测试，支持云提供商及 Ollama 等本地运行时。官方提供 Apple Silicon 客户端，不代表 M4 16GB 可运行任意本地模型或已验证安全隔离。": "A coding agent with terminal, desktop and web interfaces, file edits and shell-driven tests, supporting cloud providers and local runtimes such as Ollama. Official Apple Silicon clients do not imply any local model fits M4 16GB or that isolation has been verified.",
   "当前编辑器原生集成范围未逐项核实。": "Current native editor integration coverage has not been verified individually.",
   "支持 Ollama、LM Studio 等；模型的工具调用能力与运行时配置需匹配。": "Supports Ollama, LM Studio and others; model tool capabilities must match runtime configuration.",
-  "通过命令工具运行项目已有测试，不保证自动生成正确测试或修复。": "Runs existing project tests through shell tools, without guaranteeing correct generated tests or fixes."
+  "通过命令工具运行项目已有测试，不保证自动生成正确测试或修复。": "Runs existing project tests through shell tools, without guaranteeing correct generated tests or fixes.",
+  "免费开源网页编辑器": "Free open-source web editor",
+  "编辑器按 GPL-3.0 提供，可依许可使用和修改；分发软件须遵守许可义务，素材与第三方组件的权利需另查。": "The editor is provided under GPL-3.0 for use and modification under its terms; software redistribution carries license obligations, while asset and third-party component rights require separate checks.",
+  "面向浏览器的动画与交互创作，不承诺 Adobe Animate 项目无损兼容。自建需 npm 及项目依赖；桌面安装包、M4 16GB 性能和网页数据去向尚未逐项验证，不将开源等同于纯离线或隐私审计通过。": "A browser-oriented animation and interactive authoring tool, not a promise of lossless Adobe Animate project compatibility. Self-hosting needs npm and project dependencies. Desktop packages, M4 16GB performance and web data flows have not been individually verified; open source does not imply fully offline operation or a passed privacy audit.",
+  "适合教学、简单 2D 动画与交互小作品的网页编辑器；官方引擎有路径绘制和位置、缩放、旋转、透明度补间。": "A web editor for education, simple 2D animations and interactive projects; its official engine includes paths and position, scale, rotation and opacity tweening.",
+  "官方引擎包含路径与变换补间；不等同于专业骨骼绑定或节点合成。": "The official engine includes paths and transform tweens, not evidence of professional rigging or node compositing."
 }
