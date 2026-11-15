@@ -306,13 +306,13 @@
           "note": "块级同步是传统卖点"
         },
         "ignore_rules": {
-          "value": "unknown",
-          "note": "未打开客户端文档"
+          "value": "yes"
         }
       },
       "sources": [
         "https://www.seafile.com/",
-        "https://github.com/haiwen/seafile"
+        "https://github.com/haiwen/seafile",
+        "https://help.seafile.com/syncing_client/excluding_files/"
       ]
     },
     {
@@ -558,13 +558,13 @@
           "note": "未确认当前客户端实现"
         },
         "ignore_rules": {
-          "value": "unknown",
-          "note": "未确认"
+          "value": "yes"
         }
       },
       "sources": [
         "https://owncloud.com/",
-        "https://github.com/owncloud/core"
+        "https://github.com/owncloud/core",
+        "https://doc.owncloud.com/desktop/7.1/using.html"
       ]
     },
     {
