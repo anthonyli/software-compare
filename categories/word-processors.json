@@ -292,6 +292,53 @@
         "https://support.google.com/docs/answer/97447?hl=en"
       ],
       "collected_at": "2026-11-14"
+    },
+    {
+      "id": "lyx",
+      "name": "LyX",
+      "official_url": "https://www.lyx.org/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-2.0-or-later",
+      "pricing_model": "免费开源",
+      "price_summary": "GPL 第 2 版或更新版本许可，可用于商业写作；软件修改及再分发需遵守许可。TeX、字体和其他组件各有条款。",
+      "prices": [],
+      "free_tier_limits": "依赖 TeX 发行版；macOS 还需可用 Python。官方提供 Intel/Apple Silicon 通用包，但 M4 16GB 性能未实测。Word 格式交换依赖转换器，不能视作原生 DOCX 无损编辑；陌生文档的外部转换器和 TeX 执行需谨慎。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "面向论文、书籍与数学内容的结构化文档编辑器，通过图形界面使用 LaTeX，提供引用、目录、索引及公式。强调文档语义结构而非逐像素页面设计；本地编辑不代表所有外部工具均不联网。",
+      "features": {
+        "styles": {
+          "value": "yes",
+          "note": ""
+        },
+        "tables": {
+          "value": "yes",
+          "note": ""
+        },
+        "office_files": {
+          "value": "partial",
+          "note": "官方列出通过可配置转换器交换 MS Word 等格式；具体 DOCX 往返效果需验证。"
+        },
+        "pdf_export": {
+          "value": "yes",
+          "note": "通过排版工具链生成 PDF，需要相应 TeX 环境。"
+        }
+      },
+      "sources": [
+        "https://www.lyx.org/",
+        "https://www.lyx.org/Features",
+        "https://www.lyx.org/Download",
+        "https://www.lyx.org/License"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
