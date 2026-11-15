@@ -336,6 +336,52 @@
         "https://blog.freecad.org/2025/10/10/tutorial-getting-started-with-techdraw/"
       ],
       "collected_at": "2026-11-15"
+    },
+    {
+      "id": "openscad",
+      "name": "OpenSCAD",
+      "official_url": "https://openscad.org/",
+      "github_url": "https://github.com/openscad/openscad",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-2.0",
+      "pricing_model": "免费开源",
+      "price_summary": "GPLv2 许可，可用于商业用途；软件修改和再分发须遵守许可，第三方模型与库各有授权。",
+      "prices": [],
+      "free_tier_limits": "通过脚本定义参数与几何体，不是鼠标直接建模或影视动画软件。官网下载页的稳定 macOS 包标为 Intel，候选版和开发快照列 macOS 12+ 的 Intel/Apple Silicon 通用包；不可混同发布渠道，M4 16GB 性能未实测。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "适合可重复、参数化的机械零件与实体建模，使用 CSG 或二维轮廓拉伸；可交换 STL/OFF。桌面脚本工作流不等于云协作服务，网络行为未独立审计。",
+      "features": {
+        "drafting_2d": {
+          "value": "partial",
+          "note": "可定义二维轮廓用于拉伸，不等于完整交互式工程制图与标注。"
+        },
+        "dxf": {
+          "value": "partial",
+          "note": "官方说明可读取 DXF 轮廓与设计参数；不保证复杂图纸双向无损交换。"
+        },
+        "dwg": {
+          "value": "unknown",
+          "note": "原生 DWG 交换未核实，不将 DXF 支持等同于 DWG。"
+        },
+        "vector_export": {
+          "value": "unknown",
+          "note": "PDF/SVG 输出的版本及对象范围尚未逐项核实。"
+        }
+      },
+      "sources": [
+        "https://openscad.org/about.html",
+        "https://openscad.org/downloads.html",
+        "https://github.com/openscad/openscad"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
