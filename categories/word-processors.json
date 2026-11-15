@@ -384,6 +384,51 @@
         "https://github.com/olivierkes/manuskript/wiki/Import-and-Export-capabilities"
       ],
       "collected_at": "2026-11-15"
+    },
+    {
+      "id": "focuswriter",
+      "name": "FocusWriter",
+      "official_url": "https://gottcode.org/focuswriter/",
+      "github_url": "https://github.com/gottcode/focuswriter",
+      "platforms": [
+        "Windows",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0-or-later",
+      "pricing_model": "开源免费",
+      "price_summary": "免费开源，可自愿捐赠；源码按 GPL-3.0-or-later，分发修改版需履行相应许可义务，依赖另有许可。",
+      "prices": [],
+      "free_tier_limits": "官网当前提供 Linux 与 Windows 10 x64 包；README 的 macOS 路径说明不等于现成受支持 Mac 安装包，M4 16GB 未验证。使用 Qt、hunspell 等依赖。适合专注起草，不承诺复杂 Office 排版或无损往返。文档与会话可在本机保存，但未审计联网行为或插件，不能据此宣称零外发；未安装实测。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "专注写作的桌面文字处理器，隐藏式界面、每日目标、即时统计与拼写检查适合起草长文。",
+      "features": {
+        "styles": {
+          "value": "partial",
+          "note": "提供写作目标和场景列表；复杂样式、目录与排版能力未完整核实。"
+        },
+        "tables": {
+          "value": "unknown",
+          "note": "未核实当前发行版的表格及图片编辑边界。"
+        },
+        "office_files": {
+          "value": "unknown",
+          "note": "当前 main 源码引用 DOCX 读写器，但发行版格式保真与完整文件往返未验证。"
+        },
+        "pdf_export": {
+          "value": "unknown",
+          "note": "源码有打印路径，未核实独立 PDF 导出与各系统打印到 PDF 的差异。"
+        }
+      },
+      "sources": [
+        "https://gottcode.org/focuswriter/",
+        "https://github.com/gottcode/focuswriter",
+        "https://github.com/gottcode/focuswriter/blob/main/src/document.cpp",
+        "https://github.com/gottcode/focuswriter/blob/main/COPYING"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
