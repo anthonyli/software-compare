@@ -440,6 +440,52 @@
         "https://github.com/Wicklets/wick-editor/blob/master/engine/src/base/Tween.js"
       ],
       "collected_at": "2026-11-15"
+    },
+    {
+      "id": "pixelorama",
+      "name": "Pixelorama",
+      "official_url": "https://www.pixelorama.org/",
+      "github_url": "https://github.com/Orama-Interactive/Pixelorama",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web",
+        "Android"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "免费开源像素绘画工具",
+      "price_summary": "MIT 许可允许依条款商用、修改和分发，保留版权及许可声明；作者 itch.io 提供自定价格下载，其他商店价格按渠道核对。",
+      "prices": [],
+      "summary": "面向精灵和图块的像素逐帧动画工具，可用图层、帧时间线、洋葱皮与帧标签组织动作；不是通用视频剪辑器，未确认内置骨骼或节点式合成能力。",
+      "free_tier_limits": "基于 Godot，官方提供 Windows、Linux、macOS 与 Web；Android 版面向平板且仍属实验性，手机体验可能不佳。未实测 M4 16GB 性能、PSD 兼容或联网行为；桌面与浏览器版的数据去向不能仅凭开源推断。扩展需单独审查其来源、权限和许可。官方 v1.2.4 说明该版本及以后创建的 PXO 文件不能由更旧版本打开；升级前保留原文件与可用版本，不假设任意版本无损互通。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "features": {
+        "vector_animation": {
+          "value": "unknown"
+        },
+        "raster_animation": {
+          "value": "yes",
+          "note": "图层与帧时间线、洋葱皮及帧标签，面向像素逐帧动画。"
+        },
+        "bone_animation": {
+          "value": "unknown"
+        },
+        "node_effects": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://github.com/Orama-Interactive/Pixelorama",
+        "https://github.com/Orama-Interactive/Pixelorama/blob/master/LICENSE",
+        "https://orama-interactive.itch.io/pixelorama",
+        "https://github.com/Orama-Interactive/Pixelorama/releases/tag/v1.2.4"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }

@@ -554,7 +554,7 @@
       "price_summary": "MIT 许可允许依条款商用、修改和分发，保留版权及许可声明；作者 itch.io 提供自定价格下载，其他商店价格按渠道核对。",
       "prices": [],
       "summary": "面向精灵、图块和逐帧像素动画的绘画工具，提供图层、调色板、洋葱皮与扩展；不是完整 Photoshop 平替或 PSD 无损往返承诺。",
-      "free_tier_limits": "基于 Godot，官方提供 Windows、Linux、macOS 与 Web；Android 版面向平板且仍属实验性，手机体验可能不佳。未实测 M4 16GB 性能、PSD 兼容或联网行为；桌面与浏览器版的数据去向不能仅凭开源推断。扩展需单独审查其来源、权限和许可。",
+      "free_tier_limits": "基于 Godot，官方提供 Windows、Linux、macOS 与 Web；Android 版面向平板且仍属实验性，手机体验可能不佳。未实测 M4 16GB 性能、PSD 兼容或联网行为；桌面与浏览器版的数据去向不能仅凭开源推断。扩展需单独审查其来源、权限和许可。官方 v1.2.4 说明该版本及以后创建的 PXO 文件不能由更旧版本打开；升级前保留原文件与可用版本，不假设任意版本无损互通。",
       "github_stars": null,
       "latest_release": null,
       "latest_release_date": null,
@@ -576,7 +576,8 @@
       "sources": [
         "https://github.com/Orama-Interactive/Pixelorama",
         "https://github.com/Orama-Interactive/Pixelorama/blob/master/LICENSE",
-        "https://orama-interactive.itch.io/pixelorama"
+        "https://orama-interactive.itch.io/pixelorama",
+        "https://github.com/Orama-Interactive/Pixelorama/releases/tag/v1.2.4"
       ],
       "collected_at": "2026-11-15"
     }
