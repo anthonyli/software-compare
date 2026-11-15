@@ -28,7 +28,7 @@ Site name, category groups, and UI copy live in `site/src/config.ts` and `site/s
 
 ## Data sources
 
-The original pricing, feature, platform, and license information was collected from official product sites and upstream repositories on 2026-11-12 (Asia/Shanghai, UTC+8). GitHub stars, latest stable releases, archive status, and latest push times are refreshed daily, with separate sync timestamps shown on the site. Prices, plans, and features can change by region, promotion, and version — official sites are authoritative. Fields that could not be confirmed are left blank or marked unknown. **Do not invent or rewrite product facts.**
+Pricing, feature, platform, and license information comes from official product sites and upstream repositories. The initial data baseline is 2026-11-12 (Asia/Shanghai, UTC+8), with additions and revisions made in later batches. A product or category `collected_at` is a data-record date, not proof that every field was reverified that day; when a product has no separate date, display falls back to the category date. Consult `sources`, `docs/research/`, and commit history for the scope of a revision. Adding software does not automatically revalidate unchanged older fields. GitHub stars, latest stable releases, archive status, and latest push times are refreshed daily, with separate sync timestamps shown on the site. Prices, plans, and features can change by region, promotion, and version — official sites are authoritative. Fields that could not be confirmed are left blank or marked unknown. **Do not invent or rewrite product facts.**
 
 The build reads:
 
