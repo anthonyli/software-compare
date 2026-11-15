@@ -1,0 +1,7 @@
+# Pixelitor basic painting evidence
+
+Checked 2026-11-16 Asia/Shanghai. Official guide https://pixelitor.sourceforge.io/user_guide.html describes brush drawing on image layers/masks, opacity, mirror and stroke smoothing. The digital-painting comparison cell is partial: basic brush work is established, not pressure-sensitive tablet support or a complete dedicated painting workflow. Other layer types may require rasterization; rasterizing text removes text editability.
+
+The homepage https://pixelitor.sourceforge.io/ labels 4.3.1, while the guide includes explicitly experimental/latest-build sections. The brush section is not labeled experimental and historical official release notes https://github.com/lbalazscs/Pixelitor/releases document brushes before 4.3.1. This is not a claim that every guide feature ships in every installer. Do not apply master Java compilation requirements to all packaged binaries. No runtime, tablet, performance or format-fidelity tests were performed.
+
+Only painting unknown becomes partial, with direct guide source. Animation and plugins remain unknown; newly noticed guide animation sections require a separate scoped review, not automatic classification as full animation software. No release/license/price refresh, shared English, homepage or cover changes. Local unit/cover and final-head CI required before merge. No installation or rendering; deployment/public page unverified.

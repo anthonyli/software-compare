@@ -227,7 +227,7 @@
           "value": "yes"
         },
         "painting": {
-          "value": "unknown"
+          "value": "partial"
         },
         "animation": {
           "value": "unknown"
@@ -238,7 +238,8 @@
       },
       "sources": [
         "https://pixelitor.sourceforge.io/",
-        "https://github.com/lbalazscs/Pixelitor"
+        "https://github.com/lbalazscs/Pixelitor",
+        "https://pixelitor.sourceforge.io/user_guide.html"
       ],
       "collected_at": "2026-11-13"
     },
