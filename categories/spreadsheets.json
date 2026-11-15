@@ -292,6 +292,51 @@
         "https://support.google.com/docs/answer/63824?hl=en"
       ],
       "collected_at": "2026-11-14"
+    },
+    {
+      "id": "gnumeric",
+      "name": "Gnumeric",
+      "official_url": "https://www.gnumeric.org/",
+      "github_url": null,
+      "platforms": [
+        "Linux",
+        "BSD"
+      ],
+      "open_source": true,
+      "license": "GPL-2.0 OR GPL-3.0",
+      "pricing_model": "免费开源",
+      "price_summary": "程序和源码免费，官网提供 GPL 第 2 或第 3 版许可；允许商业使用，修改及分发须遵守对应许可。",
+      "prices": [],
+      "free_tier_limits": "官方建议通过 Linux/BSD 等发行版安装，目前不发布或分发 Windows 二进制。macOS 与 M4 16GB 的现成安装、兼容性和性能尚未核实；旧手册的 Windows 历史说明不代表当前提供安装包。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "面向数值计算、数据整理与图表的桌面电子表格。可与 Excel 格式交换，但复杂公式、图表与宏需用副本验证；网络行为未独立审计，不作云协作或完全离线保证。",
+      "features": {
+        "formulas": {
+          "value": "yes",
+          "note": ""
+        },
+        "filtering": {
+          "value": "yes",
+          "note": ""
+        },
+        "charts": {
+          "value": "yes",
+          "note": ""
+        },
+        "office_files": {
+          "value": "partial",
+          "note": "手册记录 OOXML 导入导出，不保证任意 XLSX 无损往返。"
+        }
+      },
+      "sources": [
+        "https://www.gnumeric.org/",
+        "https://gnome.pages.gitlab.gnome.org/gnumeric-web//download.html",
+        "https://gnome.pages.gitlab.gnome.org/gnumeric/manual/chapter-welcome.html"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
