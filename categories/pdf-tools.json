@@ -1431,7 +1431,7 @@
           "note": "通过对应格式插件读取 PDF。"
         },
         "annotate": {
-          "value": "partial",
+          "value": "unknown",
           "note": "已核实书签与 quickmarks，不据此确认完整 PDF 批注写入。"
         },
         "edit_text": {
