@@ -2435,5 +2435,12 @@
   "支持嵌入文件、图片及导出到磁盘。": "Supports embedded files, images and saving them to disk.",
   "单文件口令保护不是端到端同步；未核实独立 E2EE 同步方案。": "Single-file password protection is not end-to-end sync; a separate E2EE sync solution is unverified.",
   "README 列第三方 Android 项目，不等于官方原生移动端或完整兼容。": "The README links a third-party Android project, not an official native mobile app or a guarantee of full compatibility.",
-  "未核实当前版本的具体能力范围。": "The current version-specific capability is unverified."
+  "未核实当前版本的具体能力范围。": "The current version-specific capability is unverified.",
+  "使用 C 与 Lua 的可扩展文本/代码编辑器，提供分屏与补全，适合希望自行组合插件的开发者。": "An extensible C and Lua text/code editor with split panes and completion, for developers who prefer assembling their own plugin setup.",
+  "编辑器 MIT，可商用并须保留版权及许可声明；插件、语言服务器和依赖遵循各自许可，付费服务器或外部服务可能另收费。": "The editor is MIT-licensed, allowing commercial use with copyright and license notices retained. Plugins, language servers and dependencies have their own terms; paid servers or external services may cost extra.",
+  "LSP 通过独立插件及语言服务器配置，不等于内置完整 IDE；当前插件要求 Lite XL 2.1+ 和 Widgets，snippets 用于片段补全，lint+ 诊断为可选。源码构建依赖 SDL2、PCRE2、FreeType2、Lua 5.4 等。第三方插件可运行代码，安装前核对来源及数据访问；不能把本机编辑推断为所有插件零外发。Windows/Linux/macOS 为官方声明，M4 16GB 性能及插件组合未实测，不使用作者轻量宣传作性能保证。": "LSP requires a separate plugin and configured language server, not a bundled full IDE. The current plugin requires Lite XL 2.1+ and Widgets; snippets support snippet completions and lint+ diagnostics are optional. Source builds depend on SDL2, PCRE2, FreeType2 and Lua 5.4, among others. Third-party plugins can run code; check their source and data access before installation. Local editing does not establish zero transmission for every plugin. Windows/Linux/macOS are official platform claims; M4 16GB and plugin combinations are untested, and lightweight marketing is not a performance guarantee.",
+  "官方提供 Lua 插件与主题扩展入口，部分 lite 插件需要适配。": "Official Lua plugin and theme extension paths exist; some lite plugins require adaptation.",
+  "独立 lite-xl-lsp 插件提供补全、跳转及诊断等，需配置语言服务器和插件依赖。": "The separate lite-xl-lsp plugin offers completion, navigation and diagnostics, requiring a configured language server and plugin dependencies.",
+  "可通过 Lua 脚本及主题定制。": "Customizable through Lua scripts and themes.",
+  "未核实当前默认配置及插件组合的完整支持范围。": "Full support in the current default configuration and plugin combinations is unverified."
 }

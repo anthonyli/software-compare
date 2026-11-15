@@ -1202,6 +1202,76 @@
         "https://github.com/geany/geany/blob/master/COPYING"
       ],
       "collected_at": "2026-11-15"
+    },
+    {
+      "id": "lite-xl",
+      "name": "Lite XL",
+      "official_url": "https://lite-xl.com/",
+      "github_url": "https://github.com/lite-xl/lite-xl",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "开源免费",
+      "price_summary": "编辑器 MIT，可商用并须保留版权及许可声明；插件、语言服务器和依赖遵循各自许可，付费服务器或外部服务可能另收费。",
+      "prices": [],
+      "free_tier_limits": "LSP 通过独立插件及语言服务器配置，不等于内置完整 IDE；当前插件要求 Lite XL 2.1+ 和 Widgets，snippets 用于片段补全，lint+ 诊断为可选。源码构建依赖 SDL2、PCRE2、FreeType2、Lua 5.4 等。第三方插件可运行代码，安装前核对来源及数据访问；不能把本机编辑推断为所有插件零外发。Windows/Linux/macOS 为官方声明，M4 16GB 性能及插件组合未实测，不使用作者轻量宣传作性能保证。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "使用 C 与 Lua 的可扩展文本/代码编辑器，提供分屏与补全，适合希望自行组合插件的开发者。",
+      "features": {
+        "extensions": {
+          "value": "yes",
+          "note": "官方提供 Lua 插件与主题扩展入口，部分 lite 插件需要适配。"
+        },
+        "lsp": {
+          "value": "partial",
+          "note": "独立 lite-xl-lsp 插件提供补全、跳转及诊断等，需配置语言服务器和插件依赖。"
+        },
+        "git_integration": {
+          "value": "unknown",
+          "note": "未核实当前默认配置及插件组合的完整支持范围。"
+        },
+        "integrated_terminal": {
+          "value": "unknown",
+          "note": "未核实当前默认配置及插件组合的完整支持范围。"
+        },
+        "debugger": {
+          "value": "unknown",
+          "note": "未核实当前默认配置及插件组合的完整支持范围。"
+        },
+        "ai_assistant": {
+          "value": "unknown",
+          "note": "未核实当前默认配置及插件组合的完整支持范围。"
+        },
+        "multi_cursor": {
+          "value": "unknown",
+          "note": "未核实当前默认配置及插件组合的完整支持范围。"
+        },
+        "remote_dev": {
+          "value": "unknown",
+          "note": "未核实当前默认配置及插件组合的完整支持范围。"
+        },
+        "live_share": {
+          "value": "unknown",
+          "note": "未核实当前默认配置及插件组合的完整支持范围。"
+        },
+        "customizable": {
+          "value": "yes",
+          "note": "可通过 Lua 脚本及主题定制。"
+        }
+      },
+      "sources": [
+        "https://lite-xl.com/",
+        "https://github.com/lite-xl/lite-xl",
+        "https://github.com/lite-xl/lite-xl/blob/master/LICENSE",
+        "https://github.com/lite-xl/lite-xl-lsp"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
