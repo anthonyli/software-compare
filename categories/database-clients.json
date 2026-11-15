@@ -343,6 +343,53 @@
         "https://sales.jetbrains.com/hc/en-gb/articles/18950890312210-The-free-non-commercial-licensing-FAQ"
       ],
       "collected_at": "2026-11-14"
+    },
+    {
+      "id": "sequel-ace",
+      "name": "Sequel Ace",
+      "official_url": "https://sequel-ace.com/",
+      "github_url": "https://github.com/Sequel-Ace/Sequel-Ace",
+      "platforms": [
+        "macOS"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "免费开源 / 自愿赞助",
+      "price_summary": "MIT 许可允许商业使用；分发须保留版权和许可声明。数据库托管等外部服务另计。",
+      "prices": [],
+      "free_tier_limits": "当前文档要求 macOS 13.5+，支持 Intel 与 Apple Silicon；MySQL 5.7+ 或 MariaDB 10+。沙盒会限制本地 socket 与 SSH 配置文件访问，不能假定终端能连就一定能直连。M4 16GB 性能尚未核实。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "面向 Mac 的 MySQL/MariaDB 客户端，可编写 SQL、管理表结构；保存连接的密码存于 Keychain。查询发往所选数据库，不是数据库服务器。可选 MCP 默认关闭；文档的只读过滤不替代数据库只读账号，连接 AI 后的数据去向还取决于所用客户端和模型。",
+      "features": {
+        "sql": {
+          "value": "yes",
+          "note": ""
+        },
+        "data_edit": {
+          "value": "unknown",
+          "note": "已核实表结构管理；具体行编辑操作尚未单独核实。"
+        },
+        "multi_engine": {
+          "value": "partial",
+          "note": "专注 MySQL 与 MariaDB，不作为 PostgreSQL/SQLite 通用客户端比较。"
+        },
+        "import_export": {
+          "value": "unknown",
+          "note": "导入导出格式范围尚未逐项核实。"
+        }
+      },
+      "sources": [
+        "https://sequel-ace.com/",
+        "https://github.com/Sequel-Ace/Sequel-Ace/blob/main/LICENSE",
+        "https://sequel-ace.com/get-started/",
+        "https://sequel-ace.com/queries.html",
+        "https://sequel-ace.com/ref/features.html",
+        "https://sequel-ace.com/get-started/mcp-server.html"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
