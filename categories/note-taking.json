@@ -1667,6 +1667,77 @@
         "https://marktext.me/docs/installation"
       ],
       "collected_at": "2026-11-15"
+    },
+    {
+      "id": "qownnotes",
+      "name": "QOwnNotes",
+      "official_url": "https://www.qownnotes.org/",
+      "github_url": "https://github.com/pbek/QOwnNotes",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-2.0",
+      "pricing_model": "免费开源笔记软件",
+      "price_summary": "GPLv2 免费软件，可按许可商用及分发；外部同步托管、AI 服务和模型各有费用与条款，不随应用免费而自动免费。",
+      "prices": [],
+      "summary": "以本地 Markdown 文件为核心的笔记和待办管理器，支持多笔记目录、脚本扩展与 Nextcloud/ownCloud 集成，适合需要可迁移文本及自建同步的用户。",
+      "free_tier_limits": "QOwnNotes 本身不负责同步笔记和附件，需另配 Nextcloud/ownCloud 等文件同步客户端；文件会传给所选同步服务，不承诺默认端到端加密。AI 为主动启用，选云端模型时提交的文本会发送给所选服务；本地模型仍需自行配置与评估资源。当前 Mac Qt6 通用安装包要求 macOS 13+；Qt5 旧版不能使用内部更新器。M4 16GB 性能尚未实测，勿直接采信作者低资源宣传。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "features": {
+        "markdown": {
+          "value": "yes"
+        },
+        "rich_text": {
+          "value": "unknown"
+        },
+        "folders": {
+          "value": "yes"
+        },
+        "tags": {
+          "value": "unknown"
+        },
+        "web_clipper": {
+          "value": "partial",
+          "note": "通过 QOwnNotes 浏览器扩展实现。"
+        },
+        "sync": {
+          "value": "partial",
+          "note": "依赖外部文件同步客户端，应用本身不承担文件同步。"
+        },
+        "offline": {
+          "value": "partial",
+          "note": "本地文件可离线编辑，可选同步及云 AI 会联网。"
+        },
+        "e2e_encrypt": {
+          "value": "unknown"
+        },
+        "attachments": {
+          "value": "unknown"
+        },
+        "plugins": {
+          "value": "yes"
+        },
+        "collaboration": {
+          "value": "unknown"
+        },
+        "mobile": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://github.com/pbek/QOwnNotes",
+        "https://github.com/pbek/QOwnNotes/blob/main/LICENSE",
+        "https://www.qownnotes.org/getting-started/concept.html",
+        "https://www.qownnotes.org/installation/macos.html",
+        "https://www.qownnotes.org/editor/ai.html"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
