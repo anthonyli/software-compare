@@ -432,6 +432,53 @@
         "https://mywhoosh.com/docs/what-do-i-get-with-a-subscription/",
         "https://mywhoosh.com/privacy-policy/"
       ]
+    },
+    {
+      "id": "gpxsee",
+      "name": "GPXSee",
+      "official_url": "https://gpxsee.org/",
+      "github_url": "https://github.com/tumic0/GPXSee",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "免费开源轨迹查看器",
+      "price_summary": "GPLv3 免费软件，可按许可使用和分发；地图数据和在线地图服务有各自条款与可能费用，不因软件开源而自动获得地图商用权。",
+      "prices": [],
+      "summary": "适合骑行后查看 GPX、FIT、TCX 等轨迹，叠加地图并查看海拔、速度、心率、踏频和功率曲线，支持多轨迹及 PNG/PDF 输出；不是完整训练管理平台。",
+      "free_tier_limits": "曲线取决于文件中实际包含的传感器数据，不能从无功率记录推得实测功率。在线地图会请求地图服务，离线地图需自行准备；不承诺全流程零联网。基于 Qt，M4 16GB 性能与当前 Mac 原生架构尚未验证。官方安装包使用非系统厂商签发的证书，安装前需自行核实来源和系统兼容性，不建议盲目关闭安全保护。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "features": {
+        "activity_import": {
+          "value": "yes"
+        },
+        "power_analysis": {
+          "value": "partial",
+          "note": "显示功率曲线；不据此推断完整训练负荷或生理建模功能。"
+        },
+        "training_calendar": {
+          "value": "unknown"
+        },
+        "indoor_trainer": {
+          "value": "unknown"
+        },
+        "cloud_sync": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://gpxsee.org/",
+        "https://github.com/tumic0/GPXSee",
+        "https://github.com/tumic0/GPXSee/blob/master/licence.txt"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
