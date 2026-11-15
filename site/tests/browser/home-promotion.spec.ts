@@ -10,7 +10,7 @@ for (const [random, edge] of [[0, 'first'], [0.999999, 'last']] as const) {
       await expect(promo).toHaveCount(1);
       await expect(promo).toBeVisible();
       await expect(promo.locator('a')).toHaveAttribute('href', 'https://pageon.cc');
-      await expect(promo.locator('a')).toHaveAttribute('rel', 'sponsored noopener');
+      await expect(promo.locator('a')).toHaveAttribute('rel', 'sponsored noopener noreferrer');
       const position = await promo.evaluate(el => {
         const grids = [...document.querySelectorAll('[data-category-group] > .dir-grid')];
         return { index: grids.indexOf(el.parentElement!), count: grids.length };
@@ -34,7 +34,7 @@ for (const [random, edge] of [[0, 'first'], [0.999999, 'last']] as const) {
       await page.locator('[data-lang="en"]').click();
       await expect(promo.locator('.promotion-label .t-en')).toBeVisible();
       await expect(promo.locator('.promotion-label .t-zh')).toBeHidden();
-      await expect(promo).toContainText('Explore Pageon');
+      await expect(promo).toContainText('Explore PageOn');
       await page.locator('[data-lang="zh-CN"]').click();
       await expect(promo.locator('.promotion-label .t-zh')).toBeVisible();
       await expect(promo.locator('.promotion-label .t-en')).toBeHidden();
@@ -50,4 +50,30 @@ test('JavaScript disabled leaves no promotion placeholder', async ({ browser }) 
   await page.goto('http://127.0.0.1:8788/');
   await expect(page.locator('#home-promotion')).toBeHidden();
   await context.close();
+});
+
+test('PageOn opens only on click in a new tab and preserves Compare', async ({ page, context }) => {
+  // Stub the external destination: this verifies browser behavior without contacting PageOn.
+  await context.route('https://pageon.cc/**', route => route.fulfill({ contentType: 'text/html', body: '<title>PageOn test destination</title>' }));
+  await page.goto('/');
+  const initialUrl = page.url();
+  const link = page.locator('#home-promotion a');
+  await expect(link).toHaveAttribute('target', '_blank');
+  await expect(link).toHaveAttribute('rel', 'sponsored noopener noreferrer');
+  for (const lang of ['en', 'zh-CN']) {
+    await page.locator(`[data-lang="${lang}"]`).click();
+    await expect(page.locator('#home-promotion .dir-name')).toContainText('PageOn');
+    await expect(page.locator('#home-promotion')).not.toContainText('Pageon');
+  }
+  expect(context.pages()).toHaveLength(1);
+  await expect(page).toHaveURL(initialUrl);
+  const opened = context.waitForEvent('page');
+  await link.click();
+  const destination = await opened;
+  await destination.waitForLoadState();
+  await expect(destination).toHaveURL('https://pageon.cc/');
+  expect(await destination.evaluate(() => window.opener === null)).toBe(true);
+  await expect(page).toHaveURL(initialUrl);
+  expect(context.pages()).toHaveLength(2);
+  await destination.close();
 });

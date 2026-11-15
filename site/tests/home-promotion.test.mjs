@@ -26,3 +26,10 @@ test('disabled promotion and no groups leave no placeholder', () => {
 });
 
 test('one category group still receives the promotion', () => { assert.equal(run(1, .9).placement, 0); });
+
+test('promotion branding and explicit safe new-tab link', () => {
+  assert.match(source, />PageOn /);
+  assert.doesNotMatch(source, /Pageon/);
+  assert.match(source, /href="https:\/\/pageon.cc" target="_blank" rel="sponsored noopener noreferrer"/);
+  assert.doesNotMatch(script, /window\.open|location|setTimeout/);
+});
