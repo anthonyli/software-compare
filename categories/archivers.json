@@ -325,36 +325,30 @@
       "summary": "Mac 上很常用的开源压缩工具，界面简洁，官网这次没抓到价格和功能细表。",
       "features": {
         "zip": {
-          "value": "yes",
-          "note": "作为压缩工具的基本格式；官网正文未读到，记为项目常规能力"
+          "value": "yes"
         },
         "rar_extract": {
-          "value": "unknown",
-          "note": "官网未读到格式表"
+          "value": "yes"
         },
         "rar_create": {
           "value": "unknown",
           "note": "未确认"
         },
         "seven_zip": {
-          "value": "unknown",
-          "note": "未确认"
+          "value": "yes"
         },
         "tar_gz": {
-          "value": "unknown",
-          "note": "官网本次几乎无正文，未复核格式表"
+          "value": "yes"
         },
         "iso": {
-          "value": "unknown",
-          "note": "未确认"
+          "value": "yes"
         },
         "encryption": {
           "value": "unknown",
           "note": "未确认"
         },
         "split": {
-          "value": "unknown",
-          "note": "未确认"
+          "value": "yes"
         },
         "repair": {
           "value": "unknown",
@@ -371,7 +365,9 @@
       },
       "sources": [
         "https://www.keka.io/",
-        "https://github.com/aonez/keka"
+        "https://github.com/aonez/keka",
+        "https://www.keka.io/en/",
+        "https://github.com/aonez/Keka/wiki/Compressing-with-Keka"
       ]
     },
     {
