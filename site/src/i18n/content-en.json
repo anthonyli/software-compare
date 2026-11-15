@@ -2425,5 +2425,15 @@
   "官网提供 Firefox、Chrome/Chromium 等集成指南；需单独配置扩展与权限。": "The official site links Firefox and Chrome/Chromium integration guides; extensions and permissions require separate setup.",
   "未核实当前版本的具体范围。": "The current version-specific scope is unverified.",
   "源码 GPL-2.0-or-later；二进制 GPL-3.0-or-later，含 OpenSSL 链接例外": "Source: GPL-2.0-or-later; binaries: GPL-3.0-or-later, with an OpenSSL linking exception",
-  "免费开源。官方 COPYING 区分源码 GPL-2.0-or-later 与含 GPLv3+ 素材的二进制 GPL-3.0-or-later，两者附 OpenSSL 链接例外。商业使用不等于可忽略再分发、源码提供与素材许可义务；修改者是否延用例外须看相应文件声明。": "Free and open source. Official COPYING distinguishes GPL-2.0-or-later source from GPL-3.0-or-later binaries containing GPLv3+ assets, both with an OpenSSL linking exception. Commercial use does not remove redistribution, source-provision or asset-license obligations; whether modifications retain the exception depends on the applicable file statements."
+  "免费开源。官方 COPYING 区分源码 GPL-2.0-or-later 与含 GPLv3+ 素材的二进制 GPL-3.0-or-later，两者附 OpenSSL 链接例外。商业使用不等于可忽略再分发、源码提供与素材许可义务；修改者是否延用例外须看相应文件声明。": "Free and open source. Official COPYING distinguishes GPL-2.0-or-later source from GPL-3.0-or-later binaries containing GPLv3+ assets, both with an OpenSSL linking exception. Commercial use does not remove redistribution, source-provision or asset-license obligations; whether modifications retain the exception depends on the applicable file statements.",
+  "层级树状笔记，适合整理富文本、代码片段、图片与附件，可保存为 XML、SQLite 单文件或多文件目录。": "Hierarchical notes for rich text, code snippets, images and attachments, stored as XML, SQLite single files or multi-file directories.",
+  "免费开源，GPL-3.0-or-later；再分发需遵守相应许可，第三方组件和打包另有条件。": "Free and open source under GPL-3.0-or-later; redistribution must follow the license, with separate terms for third-party components and packaging.",
+  "口令保护仅限单文件存储：打开时会解出未加密临时副本，官方称关闭应用后移除；不等于端到端同步加密。支持执行代码节点，不要执行不可信笔记中的代码。Mac 安装渠道由官网指向第三方包或包管理器，M4 16GB 与移动端兼容未实测。官方称未经操作者请求不外传信息，此为作者声明而非网络审计；导出 HTML/PDF 或外部同步仍应核对分享范围。": "Password protection applies only to single-file storage: opening it creates an unencrypted temporary copy that the author says is removed on closing the app; this is not end-to-end encrypted sync. Code nodes can execute commands, so do not run code from untrusted notes. The official site links third-party Mac packages or package managers; M4 16GB and mobile compatibility are untested. No transmission without operator request is an author statement, not a network audit; check sharing scope for HTML/PDF exports and external sync.",
+  "官方列富文本、图片及代码框。": "Official features include rich text, images and code boxes.",
+  "通过层级树节点组织笔记。": "Notes are organized as hierarchical tree nodes.",
+  "本机文件存储可离线使用；不据此推断全部功能不联网。": "Local file storage supports offline use; this does not establish that every feature is network-free.",
+  "支持嵌入文件、图片及导出到磁盘。": "Supports embedded files, images and saving them to disk.",
+  "单文件口令保护不是端到端同步；未核实独立 E2EE 同步方案。": "Single-file password protection is not end-to-end sync; a separate E2EE sync solution is unverified.",
+  "README 列第三方 Android 项目，不等于官方原生移动端或完整兼容。": "The README links a third-party Android project, not an official native mobile app or a guarantee of full compatibility.",
+  "未核实当前版本的具体能力范围。": "The current version-specific capability is unverified."
 }

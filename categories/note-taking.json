@@ -1743,6 +1743,84 @@
         "https://www.qownnotes.org/getting-started/qownnotes-nextcloud.html"
       ],
       "collected_at": "2026-11-15"
+    },
+    {
+      "id": "cherrytree",
+      "name": "CherryTree",
+      "official_url": "https://www.giuspen.net/cherrytree/",
+      "github_url": "https://github.com/giuspen/cherrytree",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0-or-later",
+      "pricing_model": "开源免费",
+      "price_summary": "免费开源，GPL-3.0-or-later；再分发需遵守相应许可，第三方组件和打包另有条件。",
+      "prices": [],
+      "free_tier_limits": "口令保护仅限单文件存储：打开时会解出未加密临时副本，官方称关闭应用后移除；不等于端到端同步加密。支持执行代码节点，不要执行不可信笔记中的代码。Mac 安装渠道由官网指向第三方包或包管理器，M4 16GB 与移动端兼容未实测。官方称未经操作者请求不外传信息，此为作者声明而非网络审计；导出 HTML/PDF 或外部同步仍应核对分享范围。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "层级树状笔记，适合整理富文本、代码片段、图片与附件，可保存为 XML、SQLite 单文件或多文件目录。",
+      "features": {
+        "markdown": {
+          "value": "unknown",
+          "note": "未核实当前版本的具体能力范围。"
+        },
+        "rich_text": {
+          "value": "yes",
+          "note": "官方列富文本、图片及代码框。"
+        },
+        "folders": {
+          "value": "yes",
+          "note": "通过层级树节点组织笔记。"
+        },
+        "tags": {
+          "value": "unknown",
+          "note": "未核实当前版本的具体能力范围。"
+        },
+        "web_clipper": {
+          "value": "unknown",
+          "note": "未核实当前版本的具体能力范围。"
+        },
+        "sync": {
+          "value": "unknown",
+          "note": "未核实当前版本的具体能力范围。"
+        },
+        "offline": {
+          "value": "yes",
+          "note": "本机文件存储可离线使用；不据此推断全部功能不联网。"
+        },
+        "e2e_encrypt": {
+          "value": "unknown",
+          "note": "单文件口令保护不是端到端同步；未核实独立 E2EE 同步方案。"
+        },
+        "attachments": {
+          "value": "yes",
+          "note": "支持嵌入文件、图片及导出到磁盘。"
+        },
+        "plugins": {
+          "value": "unknown",
+          "note": "未核实当前版本的具体能力范围。"
+        },
+        "collaboration": {
+          "value": "unknown",
+          "note": "未核实当前版本的具体能力范围。"
+        },
+        "mobile": {
+          "value": "partial",
+          "note": "README 列第三方 Android 项目，不等于官方原生移动端或完整兼容。"
+        }
+      },
+      "sources": [
+        "https://www.giuspen.net/cherrytree/",
+        "https://github.com/giuspen/cherrytree",
+        "https://github.com/giuspen/cherrytree/blob/master/license.txt",
+        "https://github.com/giuspen/cherrytree/blob/master/BUILDING.md"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
