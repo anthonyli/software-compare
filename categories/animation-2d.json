@@ -398,6 +398,48 @@
         "https://cavalry.studio/docs/user-interface/menus/window-menu/render-manager/"
       ],
       "collected_at": "2026-11-15"
+    },
+    {
+      "id": "wick-editor",
+      "name": "Wick Editor",
+      "official_url": "https://www.wickeditor.com/",
+      "github_url": "https://github.com/Wicklets/wick-editor",
+      "platforms": [
+        "Web"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "免费开源网页编辑器",
+      "price_summary": "编辑器按 GPL-3.0 提供，可依许可使用和修改；分发软件须遵守许可义务，素材与第三方组件的权利需另查。",
+      "prices": [],
+      "free_tier_limits": "面向浏览器的动画与交互创作，不承诺 Adobe Animate 项目无损兼容。自建需 npm 及项目依赖；桌面安装包、M4 16GB 性能和网页数据去向尚未逐项验证，不将开源等同于纯离线或隐私审计通过。",
+      "summary": "适合教学、简单 2D 动画与交互小作品的网页编辑器；官方引擎有路径绘制和位置、缩放、旋转、透明度补间。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "features": {
+        "vector_animation": {
+          "value": "yes",
+          "note": "官方引擎包含路径与变换补间；不等同于专业骨骼绑定或节点合成。"
+        },
+        "raster_animation": {
+          "value": "unknown"
+        },
+        "bone_animation": {
+          "value": "unknown"
+        },
+        "node_effects": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://github.com/Wicklets/wick-editor",
+        "https://github.com/Wicklets/wick-editor/blob/master/LICENSE.md",
+        "https://github.com/Wicklets/wick-editor/blob/master/engine/src/base/Path.js",
+        "https://github.com/Wicklets/wick-editor/blob/master/engine/src/base/Tween.js"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
