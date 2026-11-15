@@ -378,6 +378,52 @@
         "https://github.com/SVG-Edit/svgedit/blob/master/LICENSE-MIT.txt"
       ],
       "collected_at": "2026-11-15"
+    },
+    {
+      "id": "drawio-desktop",
+      "name": "draw.io Desktop",
+      "official_url": "https://github.com/jgraph/drawio-desktop",
+      "github_url": "https://github.com/jgraph/drawio-desktop",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "免费开源桌面版",
+      "price_summary": "桌面版免费，可按 GPL v3 用于商业用途；Confluence/Jira 商业集成与支持不是同一产品权益。",
+      "prices": [],
+      "free_tier_limits": "本条仅指 Electron 桌面版，不包含网页版的云存储或团队协作承诺。官方称不外发图表数据或使用分析，但更新检查、下载以及图中引用的外部图片/字体等 URL 可联网；外部服务器可能看到 IP 等元数据。SVG 格式化文本依赖 foreignObject，目标软件不支持时需调整文字格式，不能保证任意软件无损显示。M4 16GB 性能及具体安装包架构尚未验证。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": "官方文档核实，未评估维护质量",
+      "summary": "面向流程图、架构图等结构化图解的桌面编辑器，可导出 SVG；适合文档与演示配图，不等同完整插画、印前或交互原型工具。",
+      "features": {
+        "svg": {
+          "value": "partial",
+          "note": "矢量形状图解与 SVG 导出，不是通用 SVG 源码/任意路径编辑器"
+        },
+        "prototyping": {
+          "value": "unknown",
+          "note": "未核实桌面版完整交互原型能力"
+        },
+        "collaboration": {
+          "value": "unknown",
+          "note": "未将网页版协作能力套用到桌面版"
+        },
+        "self_host": {
+          "value": "na",
+          "note": "此条目为本机桌面应用，不是自托管网页服务条目"
+        }
+      },
+      "sources": [
+        "https://github.com/jgraph/drawio-desktop",
+        "https://github.com/jgraph/drawio-desktop/blob/dev/LICENSE",
+        "https://www.drawio.com/docs/manual/export/export-to-svg/"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
