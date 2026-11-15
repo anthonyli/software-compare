@@ -390,6 +390,54 @@
         "https://sequel-ace.com/get-started/mcp-server.html"
       ],
       "collected_at": "2026-11-15"
+    },
+    {
+      "id": "letos",
+      "name": "Letos (SQLiteStudio)",
+      "official_url": "https://letos.org/",
+      "github_url": "https://github.com/pawelsalawa/letos",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0 with OpenSSL exception",
+      "pricing_model": "免费开源 / 可选捐助",
+      "price_summary": "免费用于商业或个人用途，无付费版。代码按 GPL-3.0（含 OpenSSL 链接例外）分发；修改或再分发须遵守许可。",
+      "prices": [],
+      "free_tier_limits": "官方 4.0.1 起的二进制包含专有 Icons8 图标，仅获准用于 Letos，不能据代码许可提取复用；公开源码使用另一套自由图标。具体系统最低版本、M4 16GB 原生兼容与性能尚未核实。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "原名 SQLiteStudio，独立于 SQLite 官方的桌面数据库管理工具；支持 SQL、表数据操作及 ERD。官网声明无遥测，但不代表经过隐私审计；插件与自定义脚本应另行评估，执行写入前备份数据库。",
+      "features": {
+        "sql": {
+          "value": "yes",
+          "note": ""
+        },
+        "data_edit": {
+          "value": "yes",
+          "note": ""
+        },
+        "multi_engine": {
+          "value": "partial",
+          "note": "SQLite 及支持的加密变体；多个数据库文件不等于支持 MySQL/PostgreSQL。"
+        },
+        "import_export": {
+          "value": "yes",
+          "note": "导入 CSV 或正则匹配文本；可导出 SQL、CSV、HTML、XML、PDF、JSON，不表示所有格式均可双向转换。"
+        }
+      },
+      "sources": [
+        "https://letos.org/",
+        "https://letos.org/features/",
+        "https://github.com/pawelsalawa/letos",
+        "https://github.com/pawelsalawa/letos/blob/master/LICENSE",
+        "https://github.com/pawelsalawa/letos/wiki/Icons8-icon-set"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }

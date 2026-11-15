@@ -2301,5 +2301,11 @@
   "面向 Mac 的 MySQL/MariaDB 客户端，可编写 SQL、管理表结构；保存连接的密码存于 Keychain。查询发往所选数据库，不是数据库服务器。可选 MCP 默认关闭；文档的只读过滤不替代数据库只读账号，连接 AI 后的数据去向还取决于所用客户端和模型。": "A Mac client for MySQL/MariaDB, with SQL queries and table-structure management. Saved connection passwords use Keychain. Queries go to the selected database; this is not a database server. Optional MCP is off by default; documented read-only filtering does not replace a read-only database account, and AI data handling depends on the client and model.",
   "已核实表结构管理；具体行编辑操作尚未单独核实。": "Table-structure management is documented; row-editing operations have not been separately verified.",
   "专注 MySQL 与 MariaDB，不作为 PostgreSQL/SQLite 通用客户端比较。": "Focused on MySQL and MariaDB, not compared as a general PostgreSQL/SQLite client.",
-  "导入导出格式范围尚未逐项核实。": "Import/export format coverage has not been verified individually."
+  "导入导出格式范围尚未逐项核实。": "Import/export format coverage has not been verified individually.",
+  "免费开源 / 可选捐助": "Free and open source / optional donations",
+  "免费用于商业或个人用途，无付费版。代码按 GPL-3.0（含 OpenSSL 链接例外）分发；修改或再分发须遵守许可。": "Free for commercial or personal use, with no paid edition. Code uses GPL-3.0 with an OpenSSL linking exception; modification and redistribution must comply with the license.",
+  "官方 4.0.1 起的二进制包含专有 Icons8 图标，仅获准用于 Letos，不能据代码许可提取复用；公开源码使用另一套自由图标。具体系统最低版本、M4 16GB 原生兼容与性能尚未核实。": "Official binaries from 4.0.1 include proprietary Icons8 icons licensed only for Letos; the code license does not authorize extracting them for reuse. Public source uses a separate free icon set. Minimum OS versions and native M4 16GB compatibility/performance remain unverified.",
+  "原名 SQLiteStudio，独立于 SQLite 官方的桌面数据库管理工具；支持 SQL、表数据操作及 ERD。官网声明无遥测，但不代表经过隐私审计；插件与自定义脚本应另行评估，执行写入前备份数据库。": "Formerly SQLiteStudio, a desktop database manager independent of the SQLite project, with SQL, table-data operations and ERD tools. The website states no telemetry, not an independent privacy audit. Evaluate plugins and custom scripts separately, and back up databases before writes.",
+  "SQLite 及支持的加密变体；多个数据库文件不等于支持 MySQL/PostgreSQL。": "SQLite and supported encrypted variants; multiple database files do not mean MySQL/PostgreSQL support.",
+  "导入 CSV 或正则匹配文本；可导出 SQL、CSV、HTML、XML、PDF、JSON，不表示所有格式均可双向转换。": "Imports CSV or regex-parsed text; exports SQL, CSV, HTML, XML, PDF and JSON, not bidirectional conversion for every format."
 }
