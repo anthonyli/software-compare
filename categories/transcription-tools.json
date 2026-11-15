@@ -91,7 +91,7 @@
       "summary": "带图形界面的离线转写工具，支持文件、麦克风输入和字幕导出，适合整理访谈与课程。",
       "price_summary": "开源程序免费使用，本地推理需自备模型与硬件；模型、插件及可选远端服务的许可和费用需分别核对。",
       "prices": [],
-      "free_tier_limits": "当前 Mac 版要求 Apple Silicon；运行资源取决于模型和后端。离线模型不必上传音频，但网络链接及插件会访问外部服务；不要将所有插件流程视为离线。",
+      "free_tier_limits": "当前 Mac 版要求 Apple Silicon；运行资源取决于模型和后端。离线模型不必上传音频，但网络链接及插件会访问外部服务；不要将所有插件流程视为离线。 官方将 1.4.5 列为最后支持 Intel Mac 的版本；不要将当前 Apple Silicon 要求泛化为所有历史版本，也不据此保证旧版本仍有维护或适合处理敏感资料。M4 16GB 可运行多大模型取决于模型和后端，尚未实测。",
       "github_stars": null,
       "latest_release": null,
       "latest_release_date": null,
@@ -121,7 +121,7 @@
       "sources": [
         "https://github.com/chidiwilliams/buzz"
       ],
-      "collected_at": "2026-11-13"
+      "collected_at": "2026-11-15"
     },
     {
       "id": "vibe",

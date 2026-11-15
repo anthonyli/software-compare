@@ -49,7 +49,7 @@
           "period": null
         }
       ],
-      "free_tier_limits": "软件免费，本地桌面使用与可选云服务上传/下载应区分。功率、心率或骑行台功能依赖相应数据/兼容设备；启用云连接会向选定服务传输数据。",
+      "free_tier_limits": "软件免费，本地桌面使用与可选云服务上传/下载应区分。功率、心率或骑行台功能依赖相应数据/兼容设备；启用云连接会向选定服务传输数据。 官方当前稳定版 3.8 下载包区分 Apple Silicon（macOS 15+）与 Intel（macOS 12.7+），Windows 为 10/11 x64，Linux 为 x64 AppImage；这些要求针对当前下载包，不代表全部旧版本。M4 16GB 的实际性能尚未验证。",
       "github_stars": null,
       "latest_release": null,
       "latest_release_date": null,
@@ -77,7 +77,7 @@
         "https://www.goldencheetah.org/",
         "https://raw.githubusercontent.com/GoldenCheetah/GoldenCheetah/master/README.md"
       ],
-      "collected_at": "2026-11-13"
+      "collected_at": "2026-11-15"
     },
     {
       "id": "intervals-icu",
