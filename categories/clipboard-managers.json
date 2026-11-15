@@ -1,0 +1,138 @@
+{
+  "category_slug": "clipboard-managers",
+  "category_name_zh": "剪贴板管理",
+  "collected_at": "2026-11-15",
+  "timezone": "Asia/Shanghai",
+  "features": [
+    {
+      "key": "history_search",
+      "label": "历史记录与搜索"
+    },
+    {
+      "key": "rich_clipboard",
+      "label": "文本/图片历史"
+    },
+    {
+      "key": "organization",
+      "label": "分组或置顶"
+    },
+    {
+      "key": "hotkeys",
+      "label": "快捷键粘贴"
+    },
+    {
+      "key": "ignore_rules",
+      "label": "忽略规则/暂停记录"
+    },
+    {
+      "key": "scripting",
+      "label": "脚本与自动化"
+    },
+    {
+      "key": "cross_device",
+      "label": "跨设备同步"
+    }
+  ],
+  "products": [
+    {
+      "id": "copyq",
+      "name": "CopyQ",
+      "official_url": "https://github.com/hluk/CopyQ",
+      "github_url": "https://github.com/hluk/CopyQ",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0-or-later",
+      "pricing_model": "免费开源，分发渠道另核",
+      "price_summary": "源码可依 GPL-3.0-or-later 商用、修改与分发；第三方组件和商店分发条件另核，不假设所有商店售价相同。",
+      "prices": [],
+      "summary": "带标签页、编辑和脚本的剪贴板历史管理器，适合整理文本、HTML、图片及自定义格式。",
+      "free_tier_limits": "当前 README 要求 macOS 13+（取决于 Qt）；旧官网系统要求不可代替当前构建要求。记录会跨重启保留，应配置窗口/内容忽略规则并谨慎使用脚本。未核实端到端同步加密或所有网络行为；脚本与外部命令可能改变数据去向。M4 16GB 未实测，不执行文档中的安全绕过操作。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "features": {
+        "history_search": {
+          "value": "yes"
+        },
+        "rich_clipboard": {
+          "value": "yes"
+        },
+        "organization": {
+          "value": "yes"
+        },
+        "hotkeys": {
+          "value": "yes"
+        },
+        "ignore_rules": {
+          "value": "yes"
+        },
+        "scripting": {
+          "value": "yes"
+        },
+        "cross_device": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://github.com/hluk/CopyQ",
+        "https://github.com/hluk/CopyQ/blob/master/LICENSE",
+        "https://github.com/hluk/CopyQ/blob/master/src/main.cpp"
+      ],
+      "collected_at": "2026-11-15"
+    },
+    {
+      "id": "maccy",
+      "name": "Maccy",
+      "official_url": "https://maccy.app/",
+      "github_url": "https://github.com/p0deje/Maccy",
+      "platforms": [
+        "macOS"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "免费开源，分发渠道另核",
+      "price_summary": "源码可依 MIT 商用、修改与分发；第三方组件和商店分发条件另核，不假设所有商店售价相同。",
+      "prices": [],
+      "summary": "macOS 原生剪贴板历史工具，提供键盘搜索、置顶和无格式粘贴，适合轻量查找最近复制内容。",
+      "free_tier_limits": "当前要求 macOS Sonoma 14+。作者称内容保存在本机；默认忽略部分保密/临时剪贴板类型，不保证识别所有密码或敏感文本。自动粘贴可能需要辅助功能授权，须自行判断权限；排除和暂停记录不等于加密保险箱。未实测 M4 16GB 性能、跨设备同步或网络行为。仅从官方 maccy.app 和所链接仓库获取，注意仿冒站。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "features": {
+        "history_search": {
+          "value": "yes"
+        },
+        "rich_clipboard": {
+          "value": "unknown"
+        },
+        "organization": {
+          "value": "yes"
+        },
+        "hotkeys": {
+          "value": "yes"
+        },
+        "ignore_rules": {
+          "value": "yes"
+        },
+        "scripting": {
+          "value": "unknown"
+        },
+        "cross_device": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://github.com/p0deje/Maccy",
+        "https://github.com/p0deje/Maccy/blob/master/LICENSE",
+        "https://maccy.app/"
+      ],
+      "collected_at": "2026-11-15"
+    }
+  ]
+}
