@@ -339,6 +339,51 @@
         "https://www.lyx.org/License"
       ],
       "collected_at": "2026-11-15"
+    },
+    {
+      "id": "manuskript",
+      "name": "Manuskript",
+      "official_url": "https://www.theologeek.ch/manuskript/",
+      "github_url": "https://github.com/olivierkes/manuskript",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0-or-later",
+      "pricing_model": "免费开源写作工具",
+      "price_summary": "软件按 GPL-3.0-or-later 免费提供，可按许可商用；分发修改版须遵守相应许可义务，外部字体和素材另行核实。",
+      "prices": [],
+      "summary": "偏重小说与长篇写作规划：组织大纲、章节、场景、人物和情节，适合先搭结构再写初稿，不是以 Word 版式保真为目标的办公套件。",
+      "free_tier_limits": "Python 3/PyQt5 工具；DOCX 等转换依赖 Pandoc，官方旧版导出指南列 PDF 还需 LaTeX，具体版本需验证。格式转换不等于无损往返。官网提醒仍需充分测试，应保留备份；M4 16GB 原生安装包、性能及网络数据流尚未核实，不将本地文件格式等同于加密。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "features": {
+        "styles": {
+          "value": "partial",
+          "note": "支持章节和场景大纲；不据此保证 Word 样式与分页兼容。"
+        },
+        "tables": {
+          "value": "unknown"
+        },
+        "office_files": {
+          "value": "partial",
+          "note": "README 列 DOCX 导入导出；转换依赖与格式保真需验证。"
+        },
+        "pdf_export": {
+          "value": "partial",
+          "note": "旧官方指南列 Pandoc 与 LaTeX 输出路线，未实测当前组合。"
+        }
+      },
+      "sources": [
+        "https://github.com/olivierkes/manuskript",
+        "https://www.theologeek.ch/manuskript/",
+        "https://github.com/olivierkes/manuskript/wiki/Import-and-Export-capabilities"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
