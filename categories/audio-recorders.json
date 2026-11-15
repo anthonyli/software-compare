@@ -121,7 +121,7 @@
       "license": "GPL-3.0",
       "pricing_model": "开源免费",
       "summary": "免费开源录音与编辑工具，适合录制麦克风后剪辑；此处按采集能力比较，音频编辑分类另有编辑功能对照。",
-      "price_summary": "主程序免费，无强制订阅；第三方插件和可选云服务可能另收费。",
+      "price_summary": "Audacity 4.0.2 发布程序采用 GPLv3，可依许可商用、修改和分发；个别源文件可能采用 GPLv2-or-later 等其他许可，文档采用 CC-BY 3.0，应分别核对。主程序免费，第三方插件及可选云服务不包含在此许可或免费承诺内。",
       "prices": [],
       "free_tier_limits": "GPL 约束软件再分发，不表示录音必须公开。Windows 可用 WASAPI 回环；macOS 采集系统声音需额外路由工具。云保存和插件应另核对数据去向，未实测音质。",
       "github_stars": null,
@@ -150,7 +150,8 @@
       "sources": [
         "https://www.audacityteam.org/",
         "https://support.audacityteam.org/basics/recording-desktop-audio",
-        "https://github.com/audacity/audacity/blob/master/LICENSE.txt"
+        "https://github.com/audacity/audacity/blob/master/LICENSE.txt",
+        "https://github.com/audacity/audacity/blob/Audacity-4.0.2/LICENSE.txt"
       ]
     },
     {
