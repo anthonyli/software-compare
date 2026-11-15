@@ -518,8 +518,7 @@
           "note": "不是原文编辑器"
         },
         "ocr": {
-          "value": "unknown",
-          "note": "本次采集的官网首页文本未出现 OCR 字样，尽管该项目以扫描+可检索 PDF 常见于介绍中；未打开专门功能/文档页前不予确认"
+          "value": "yes"
         },
         "merge_split": {
           "value": "partial",
@@ -549,7 +548,8 @@
       "sources": [
         "https://www.naps2.com",
         "https://github.com/cyanfish/naps2",
-        "https://raw.githubusercontent.com/cyanfish/naps2/master/LICENSE"
+        "https://raw.githubusercontent.com/cyanfish/naps2/master/LICENSE",
+        "https://www.naps2.com/doc/ocr"
       ]
     },
     {
