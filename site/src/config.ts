@@ -21,7 +21,7 @@ export const categoryGroups: { id: string; name: string; slugs: string[] }[] = [
   {
     id: "office",
     name: "办公效率",
-    slugs: ["word-processors", "spreadsheets", "presentation-tools", "note-taking", "screenshot-tools", "pdf-tools", "launchers"],
+    slugs: ["word-processors", "spreadsheets", "presentation-tools", "note-taking", "screenshot-tools", "pdf-tools", "launchers", "clipboard-managers"],
   },
   {
     id: "media",
@@ -70,6 +70,7 @@ export const featureLabelFull: Record<string, string> = {
 
 /** 首页与导航用的品类一字记号，纯展示，不改变数据。 */
 export const categoryMonograms: Record<string, string> = {
+  "clipboard-managers": "贴",
   "authenticators": "验",
   "proxy-clients": "代",
   "ai-memory": "忆",
@@ -115,6 +116,7 @@ export const categoryMonograms: Record<string, string> = {
 
 /** 首页卡片色块，仅用于展示，不代表产品官方品牌色。 */
 export const categoryTints: Record<string, string> = {
+  "clipboard-managers": "#E8F3EF",
   "authenticators": "#E8F4EF",
   "proxy-clients": "#E4F4F2",
   "ai-memory": "#F1E9FF",
