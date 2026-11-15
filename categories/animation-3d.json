@@ -331,6 +331,50 @@
         "https://blockbench.net/wiki/blockbench/formats/"
       ],
       "collected_at": "2026-11-15"
+    },
+    {
+      "id": "dust3d",
+      "name": "Dust3D",
+      "official_url": "https://dust3d.org/",
+      "github_url": "https://github.com/huxingyi/dust3d",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "免费开源低多边形工具",
+      "price_summary": "主项目按 MIT 许可免费提供，可依许可商用；第三方库、模型和素材需分别遵守其许可，不将主项目许可覆盖到全部依赖。",
+      "prices": [],
+      "summary": "通过二维节点和边生成低多边形网格，配有 UV 展开、自动骨骼权重和程序化动作，适合角色原型与游戏资产；可导出 GLB/FBX。",
+      "free_tier_limits": "官方当前 Mac 预编译包要求 Apple Silicon，不能据此推荐给 Intel Mac；M4 16GB 性能未实测。源码构建需 Qt 与 C++17，Linux AppImage 可能需要 FUSE。程序化动作不等于完整影视动画流程，GLB/FBX 导出也不保证跨软件无损；渲染输出与网络数据流尚未核实。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "features": {
+        "modeling_3d": {
+          "value": "yes"
+        },
+        "rigging_3d": {
+          "value": "yes",
+          "note": "按边的骨骼命名推断骨架并计算权重；不承诺任意角色自动绑定质量。"
+        },
+        "animation_3d": {
+          "value": "partial",
+          "note": "官网列按生物类型生成走跑等程序动作；不等同于通用影视动画套件。"
+        },
+        "rendering_3d": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://dust3d.org/",
+        "https://github.com/huxingyi/dust3d",
+        "https://github.com/huxingyi/dust3d/blob/master/LICENSE"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
