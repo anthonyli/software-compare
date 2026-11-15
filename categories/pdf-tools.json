@@ -1404,6 +1404,68 @@
         "https://sioyek-documentation.readthedocs.io/en/latest/commands.html"
       ],
       "collected_at": "2026-11-15"
+    },
+    {
+      "id": "zathura",
+      "name": "Zathura",
+      "official_url": "https://pwmt.org/projects/zathura/",
+      "github_url": "https://github.com/pwmt/zathura",
+      "platforms": [
+        "Linux",
+        "macOS"
+      ],
+      "open_source": true,
+      "license": "Zlib",
+      "pricing_model": "免费开源文档阅读器",
+      "price_summary": "核心采用 Zlib 许可，可商用与修改分发，须遵守来源及声明保留要求；PDF 渲染插件和依赖有各自许可，不能把核心许可套用到全部组件。",
+      "prices": [],
+      "summary": "键盘优先的极简文档阅读器，支持搜索、书签、自动重载及双向 SyncTeX，适合 Linux 用户阅读论文与配合 LaTeX 写作，不是完整 PDF 编辑套件。",
+      "free_tier_limits": "PDF 阅读需配置基于 Poppler 或 MuPDF 的格式插件；SyncTeX 需相应依赖。官方安装页列 Linux 发行版与 MacPorts，Mac 并非承诺独立开箱即用安装包，M4 16GB 兼容性及性能尚未实测。GTK/girara 等依赖要求随稳定版和开发版不同，需核对所选包。打开加密文件不等于创建加密 PDF；书签不等于完整批注编辑。点击外部链接会调用浏览器，不承诺全部操作零联网。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "features": {
+        "read": {
+          "value": "yes",
+          "note": "通过对应格式插件读取 PDF。"
+        },
+        "annotate": {
+          "value": "partial",
+          "note": "已核实书签与 quickmarks，不据此确认完整 PDF 批注写入。"
+        },
+        "edit_text": {
+          "value": "unknown"
+        },
+        "ocr": {
+          "value": "unknown"
+        },
+        "merge_split": {
+          "value": "unknown"
+        },
+        "convert": {
+          "value": "unknown"
+        },
+        "form_fill": {
+          "value": "unknown"
+        },
+        "sign": {
+          "value": "unknown"
+        },
+        "encrypt": {
+          "value": "unknown"
+        },
+        "compress": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://pwmt.org/projects/zathura/",
+        "https://pwmt.org/projects/zathura/installation/",
+        "https://github.com/pwmt/zathura",
+        "https://github.com/pwmt/zathura/blob/develop/LICENSE"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
