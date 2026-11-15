@@ -1280,6 +1280,83 @@
         "https://mutagen.io/",
         "https://github.com/mutagen-io/mutagen"
       ]
+    },
+    {
+      "id": "freefilesync",
+      "name": "FreeFileSync",
+      "official_url": "https://freefilesync.org/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "官方称开源并提供源码；源码许可证尚未核实，官方安装包另有个人/商用条款",
+      "pricing_model": "个人免费，捐赠增强版与付费商用版",
+      "price_summary": "Standard 和 Donation 仅限私人个人用途；商业用途及组织须购买 Business。官方列 €20/设备，可无限期使用，含一年更新；邮件通知仅保证在更新期内提供。",
+      "prices": [],
+      "free_tier_limits": "Mirror 会删除目标端多余文件以匹配源端，双向同步也会传播删除；需要历史副本时应先设置 Versioning，不应把同步直接当作不可变备份。RealTimeSync 监听变更后触发批任务，不是云端持续同步服务。数据发往所选本地、网络或云目标；SFTP/FTPS 传输加密不等于端到端加密。官方源码许可未完成独立核对，不能据开源标记推断官方免费安装包可商用。M4 16GB 性能与原生架构未实测。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": "官方资料核实；未评估维护质量",
+      "summary": "桌面文件夹比较与单向/双向同步工具，适合本地磁盘、NAS 与远程目录备份流程；需选择同步和删除策略，不是自带云容量的网盘。",
+      "features": {
+        "realtime": {
+          "value": "partial",
+          "note": "RealTimeSync 监控目录并触发批任务，需配置"
+        },
+        "selective": {
+          "value": "yes",
+          "note": "选择文件夹并设置过滤条件"
+        },
+        "p2p_lan": {
+          "value": "partial",
+          "note": "支持网络共享，不等同自动发现的 P2P 节点网络"
+        },
+        "e2e_encrypt": {
+          "value": "unknown",
+          "note": "官方资料未确认该项能力"
+        },
+        "versions": {
+          "value": "yes",
+          "note": "可配置 Versioning 保留被删除或覆盖文件"
+        },
+        "conflict": {
+          "value": "yes",
+          "note": "比较时检测冲突并按同步配置处理"
+        },
+        "self_host": {
+          "value": "partial",
+          "note": "可连自有网络共享/SFTP；不是内置托管网盘服务器"
+        },
+        "mobile": {
+          "value": "unknown",
+          "note": "官方资料未确认该项能力"
+        },
+        "share_link": {
+          "value": "unknown",
+          "note": "官方资料未确认该项能力"
+        },
+        "block_level": {
+          "value": "unknown",
+          "note": "官方资料未确认该项能力"
+        },
+        "ignore_rules": {
+          "value": "yes",
+          "note": "支持包含/排除过滤"
+        }
+      },
+      "sources": [
+        "https://freefilesync.org/",
+        "https://freefilesync.org/faq.php",
+        "https://freefilesync.org/download.php",
+        "https://freefilesync.org/manual.php?topic=synchronization-settings",
+        "https://freefilesync.org/manual.php?topic=versioning",
+        "https://freefilesync.org/manual.php?topic=realtimesync"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
