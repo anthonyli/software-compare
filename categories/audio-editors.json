@@ -319,8 +319,7 @@
           "note": "与 Audacity 类似的多轨"
         },
         "plugins": {
-          "value": "unknown",
-          "note": "未打开文档"
+          "value": "yes"
         },
         "noise_reduce": {
           "value": "unknown",
@@ -352,7 +351,11 @@
         }
       },
       "sources": [
-        "https://github.com/tenacityteam/tenacity"
+        "https://github.com/tenacityteam/tenacity",
+        "https://tenacityaudio.org/",
+        "https://tenacityaudio.org/docs/index.html",
+        "https://tenacityaudio.org/docs/_content/Effects_Plugins_and_Modules.html",
+        "https://tenacityaudio.org/docs/_content/Preferences.html"
       ]
     },
     {
