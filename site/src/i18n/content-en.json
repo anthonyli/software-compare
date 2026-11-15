@@ -2414,5 +2414,14 @@
   "提供写作目标和场景列表；复杂样式、目录与排版能力未完整核实。": "Writing goals and a scene list are documented; complex styles, tables of contents and layout have not been fully verified.",
   "未核实当前发行版的表格及图片编辑边界。": "Table and image editing limits in the current release are unverified.",
   "当前 main 源码引用 DOCX 读写器，但发行版格式保真与完整文件往返未验证。": "Current main source references DOCX readers and writers, but release fidelity and complete file round trips are unverified.",
-  "源码有打印路径，未核实独立 PDF 导出与各系统打印到 PDF 的差异。": "Source contains a printing path; dedicated PDF export and OS print-to-PDF differences are unverified."
+  "源码有打印路径，未核实独立 PDF 导出与各系统打印到 PDF 的差异。": "Source contains a printing path; dedicated PDF export and OS print-to-PDF differences are unverified.",
+  "跨平台图形下载管理器，适合把多个下载链接组织为队列并安排时间，支持分段下载。": "A cross-platform graphical download manager for organizing links into queues, scheduling jobs and segmented downloads.",
+  "免费开源，应用源码为 GPL-3.0-or-later；分发修改版需遵守许可，第三方依赖和内容使用权另计。": "Free and open source under GPL-3.0-or-later; modified distributions must follow the license, with separate terms for dependencies and downloaded content.",
+  "当前依赖包含 Python、PySide6、requests 与 yt-dlp，不能从旧 aria2 前端描述推断 BT/eD2k 支持。视频站点可用性随站点和 yt-dlp 改动，不保证登录内容、DRM 或任意 M3U8；仅下载有权获取的内容。网络请求会到目标站点，启用代理或浏览器扩展后数据路径还受其配置影响。macOS 为官方支持声明，Apple Silicon 原生包、M4 16GB 性能及隐私未审计；未安装或下载媒体验证。": "Current dependencies include Python, PySide6, requests and yt-dlp; old aria2-frontend descriptions do not establish BitTorrent or eD2k support. Video-site availability changes with sites and yt-dlp; authenticated content, DRM and arbitrary M3U8 are not guaranteed. Only retrieve content you are authorized to access. Requests reach destination sites, and proxy or browser-extension settings can affect data paths. macOS is an official platform claim; native Apple Silicon packages, M4 16GB performance and privacy have not been audited. No installation or media-download testing.",
+  "官方 README 列多分段下载；连接数不等于实际速度保证。": "The official README lists segmented downloads; connection count is not a speed guarantee.",
+  "未核实当前版本支持该功能，不从历史引擎推断。": "Not verified for the current version; no inference from a historical engine.",
+  "官方列视频网站下载，当前依赖 yt-dlp；站点、登录及版本会影响可用性。": "Video-site downloads are documented and yt-dlp is a current dependency; availability depends on sites, authentication and versions.",
+  "官方文档列队列与定时下载。": "Official documentation lists queues and scheduled downloads.",
+  "官网提供 Firefox、Chrome/Chromium 等集成指南；需单独配置扩展与权限。": "The official site links Firefox and Chrome/Chromium integration guides; extensions and permissions require separate setup.",
+  "未核实当前版本的具体范围。": "The current version-specific scope is unverified."
 }
