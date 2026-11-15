@@ -1236,12 +1236,10 @@
           "note": "笔记本/分区"
         },
         "tags": {
-          "value": "unknown",
-          "note": "未打开功能页"
+          "value": "yes"
         },
         "web_clipper": {
-          "value": "unknown",
-          "note": "未确认"
+          "value": "yes"
         },
         "sync": {
           "value": "yes",
@@ -1256,8 +1254,7 @@
           "note": "未读取；有分区密码等历史能力但未核实当前页"
         },
         "attachments": {
-          "value": "unknown",
-          "note": "受 OneDrive 配额限制，具体未知"
+          "value": "yes"
         },
         "plugins": {
           "value": "unknown",
@@ -1273,7 +1270,10 @@
         }
       },
       "sources": [
-        "https://www.microsoft.com/en-us/microsoft-365/onenote/digital-note-taking-app"
+        "https://www.microsoft.com/en-us/microsoft-365/onenote/digital-note-taking-app",
+        "https://support.microsoft.com/en-us/onenote/take-and-format-notes",
+        "https://support.microsoft.com/en-us/onenote/onenote-help-and-learning/insert-or-attach-files-to-notes",
+        "https://support.microsoft.com/en-us/onenote/getting-started-with-the-onenote-web-clipper"
       ]
     },
     {
