@@ -1684,7 +1684,7 @@
       "price_summary": "GPLv2 免费软件，可按许可商用及分发；外部同步托管、AI 服务和模型各有费用与条款，不随应用免费而自动免费。",
       "prices": [],
       "summary": "以本地 Markdown 文件为核心的笔记和待办管理器，支持多笔记目录、脚本扩展与 Nextcloud/ownCloud 集成，适合需要可迁移文本及自建同步的用户。",
-      "free_tier_limits": "QOwnNotes 本身不负责同步笔记和附件，需另配 Nextcloud/ownCloud 等文件同步客户端；文件会传给所选同步服务，不承诺默认端到端加密。AI 为主动启用，选云端模型时提交的文本会发送给所选服务；本地模型仍需自行配置与评估资源。当前 Mac Qt6 通用安装包要求 macOS 13+；Qt5 旧版不能使用内部更新器。M4 16GB 性能尚未实测，勿直接采信作者低资源宣传。",
+      "free_tier_limits": "QOwnNotes 本身不负责同步笔记和附件，需另配 Nextcloud/ownCloud 等文件同步客户端；文件会传给所选同步服务，不承诺默认端到端加密。AI 为主动启用，选云端模型时提交的文本会发送给所选服务；本地模型仍需自行配置与评估资源。当前 Mac Qt6 通用安装包要求 macOS 13+；Qt5 旧版不能使用内部更新器。M4 16GB 性能尚未实测，勿直接采信作者低资源宣传。 迁移或备份不能只复制 .md：标签位于 notes.sqlite，图片和附件还涉及 media/attachments 等引用文件，需一并保留并验证相对链接。此提示基于官方存储说明，不是已完成迁移实测。",
       "github_stars": null,
       "latest_release": null,
       "latest_release_date": null,
@@ -1700,7 +1700,8 @@
           "value": "yes"
         },
         "tags": {
-          "value": "unknown"
+          "value": "yes",
+          "note": "支持层级标签，标签数据保存在笔记目录的 notes.sqlite。"
         },
         "web_clipper": {
           "value": "partial",
@@ -1718,7 +1719,8 @@
           "value": "unknown"
         },
         "attachments": {
-          "value": "unknown"
+          "value": "yes",
+          "note": "支持插入图片及附件链接；附件不是自动内嵌到 Markdown 文件中的完整副本。"
         },
         "plugins": {
           "value": "yes"
@@ -1735,7 +1737,10 @@
         "https://github.com/pbek/QOwnNotes/blob/main/LICENSE",
         "https://www.qownnotes.org/getting-started/concept.html",
         "https://www.qownnotes.org/installation/macos.html",
-        "https://www.qownnotes.org/editor/ai.html"
+        "https://www.qownnotes.org/editor/ai.html",
+        "https://www.qownnotes.org/getting-started/overview.html",
+        "https://www.qownnotes.org/getting-started/markdown.html",
+        "https://www.qownnotes.org/getting-started/qownnotes-nextcloud.html"
       ],
       "collected_at": "2026-11-15"
     }
