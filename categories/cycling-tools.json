@@ -479,6 +479,52 @@
         "https://github.com/tumic0/GPXSee/blob/master/licence.txt"
       ],
       "collected_at": "2026-11-15"
+    },
+    {
+      "id": "opentracks",
+      "name": "OpenTracks",
+      "official_url": "https://opentracksapp.com/",
+      "github_url": null,
+      "platforms": [
+        "Android"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "pricing_model": "F-Droid 免费；Google Play 付费分发",
+      "price_summary": "开发者商店与 F-Droid 列 Apache 2.0，可依许可商用、修改和分发。F-Droid 可免费获取；Google Play 为付费购买，价格随地区变化，不能把某区价格当全球统一价格。硬件传感器另购。",
+      "prices": [],
+      "summary": "Android 运动记录工具，适合骑行、跑步及步行轨迹、照片标记与 BLE 心率/速度/踏频/功率采集；补充骑行数据记录环节，不是完整训练规划平台。",
+      "free_tier_limits": "F-Droid 所列 4.29.0 要求 Android 8+；不是原生 Mac/M4 应用。开发者声明无联网、无广告及无内置分析，未独立审计；定位、蓝牙等权限仍必需，导出分享会把轨迹交给所选接收方。地图依赖另配 OSM Dashboard，不能等同内置离线导航。4.29.0 移除所有轨迹合成单文件导出，官方建议每条轨迹一个 KMZ 备份，以避免重新导入时标记归属不明。采集功率不等于完整功率分析或骑行台控制。GitHub 已归档并迁至 Codeberg；当前代码访问受限，未逐行审查或实测设备兼容。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "features": {
+        "activity_import": {
+          "value": "yes",
+          "note": "F-Droid 更新记录包含 GPX 导入修复；备份宜逐轨 KMZ，不保证全部第三方扩展字段。"
+        },
+        "power_analysis": {
+          "value": "unknown"
+        },
+        "training_calendar": {
+          "value": "unknown"
+        },
+        "indoor_trainer": {
+          "value": "unknown"
+        },
+        "cloud_sync": {
+          "value": "no",
+          "note": "官网声明无云集成；用户可自行导出并交给其他服务，不是内置云同步。"
+        }
+      },
+      "sources": [
+        "https://opentracksapp.com/",
+        "https://play.google.com/store/apps/details?id=de.dennisguse.opentracks.playstore",
+        "https://f-droid.org/en/packages/de.dennisguse.opentracks.playstore/",
+        "https://github.com/OpenTracksApp/OpenTracks"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
