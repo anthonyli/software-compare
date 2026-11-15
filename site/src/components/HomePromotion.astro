@@ -6,7 +6,7 @@ const { enabled = true } = Astro.props;
 ---
 {enabled && (
   <aside id="home-promotion" class="home-promotion" hidden>
-    <a href="https://pageon.cc" rel="sponsored noopener" class="promotion-link">
+    <a href="https://pageon.cc" target="_blank" rel="sponsored noopener noreferrer" class="promotion-link">
       <span class="dir-cover promotion-art" aria-hidden="true">
         <svg viewBox="0 0 160 100" fill="none">
           <rect x="21" y="20" width="112" height="65" rx="8" fill="#D9E4DA" />
@@ -18,8 +18,8 @@ const { enabled = true } = Astro.props;
         </svg>
       </span>
       <span class="dir-body promotion-copy">
-        <span class="dir-name">Pageon <span class="promotion-label"><T zh="推广" en="Promotion" /></span></span>
-        <span class="dir-meta"><T zh="了解 Pageon，让想法更好地呈现 ↗" en="Explore Pageon. Bring ideas to life ↗" /></span>
+        <span class="dir-name">PageOn <span class="promotion-label"><T zh="推广" en="Promotion" /></span></span>
+        <span class="dir-meta"><T zh="了解 PageOn（新标签页） ↗" en="Explore PageOn (new tab) ↗" /></span>
       </span>
     </a>
   </aside>
