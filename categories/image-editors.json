@@ -454,6 +454,47 @@
         "https://github.com/bgrabitmap/lazpaint/blob/master/COPYING.txt"
       ],
       "collected_at": "2026-11-15"
+    },
+    {
+      "id": "mypaint",
+      "name": "MyPaint",
+      "official_url": "https://mypaint.app/",
+      "github_url": "https://github.com/mypaint/mypaint",
+      "platforms": [
+        "Windows",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-2.0-or-later",
+      "pricing_model": "免费开源绘画软件",
+      "price_summary": "应用采用 GPLv2 或更新版本，可依许可商用、修改和分发；libmypaint、画笔及素材可能使用不同许可，需按具体文件核对，不能将全部资源都视为公有领域。",
+      "prices": [],
+      "summary": "面向绘画者的无限画布工具，提供可配置画笔、数位板支持、图层与图层组，适合手绘和概念草图，是绘画方向的补充而非完整 Photoshop 替代。",
+      "free_tier_limits": "官方 README 提供 Windows 安装包与 Linux AppImage；MacPorts 构建说明仍含旧 Python 版本且自述测试不足，故不把 macOS/M4 16GB 列为已核实可用环境。依赖 libmypaint、mypaint-brushes、GTK 和 Python 等；数位板压感及性能需按具体设备核验。未确认 Photoshop 插件、PSD 无损兼容或完整动画工作流。桌面绘画不代表已完成网络与隐私审计。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "features": {
+        "layers": {
+          "value": "yes"
+        },
+        "painting": {
+          "value": "yes"
+        },
+        "animation": {
+          "value": "unknown"
+        },
+        "plugins": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://github.com/mypaint/mypaint",
+        "https://github.com/mypaint/mypaint/blob/master/Licenses.md",
+        "https://github.com/mypaint/mypaint/blob/master/BUILDING.md"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
