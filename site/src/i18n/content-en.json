@@ -2272,5 +2272,14 @@
   "可配置 Versioning 保留被删除或覆盖文件": "Configure Versioning to retain deleted or overwritten files",
   "比较时检测冲突并按同步配置处理": "Detect conflicts during comparison and handle them according to sync settings",
   "可连自有网络共享/SFTP；不是内置托管网盘服务器": "Connect to your own network shares/SFTP; not a built-in hosted cloud-drive server",
-  "支持包含/排除过滤": "Include/exclude filters are supported"
+  "支持包含/排除过滤": "Include/exclude filters are supported",
+  "免费开源桌面版": "Free and open-source desktop edition",
+  "桌面版免费，可按 GPL v3 用于商业用途；Confluence/Jira 商业集成与支持不是同一产品权益。": "The desktop edition is free for commercial use under GPL v3; commercial Confluence/Jira integrations and support are separate products and entitlements.",
+  "本条仅指 Electron 桌面版，不包含网页版的云存储或团队协作承诺。官方称不外发图表数据或使用分析，但更新检查、下载以及图中引用的外部图片/字体等 URL 可联网；外部服务器可能看到 IP 等元数据。SVG 格式化文本依赖 foreignObject，目标软件不支持时需调整文字格式，不能保证任意软件无损显示。M4 16GB 性能及具体安装包架构尚未验证。": "This entry covers the Electron desktop app, not web cloud storage or team-collaboration guarantees. The official project states it does not send diagram data or usage analytics, but update checks/downloads and external image/font URLs referenced by a diagram can access the network; remote servers may see IP metadata. Formatted SVG text can rely on foreignObject, so adjust text formatting for incompatible target software rather than assuming lossless rendering everywhere. M4 16GB performance and package architecture have not been verified.",
+  "官方文档核实，未评估维护质量": "Official documentation checked; maintenance quality not assessed",
+  "面向流程图、架构图等结构化图解的桌面编辑器，可导出 SVG；适合文档与演示配图，不等同完整插画、印前或交互原型工具。": "A desktop editor for structured diagrams such as flowcharts and architecture diagrams, with SVG export; useful for documents and presentations, not equivalent to full illustration, prepress or interactive-prototyping tools.",
+  "矢量形状图解与 SVG 导出，不是通用 SVG 源码/任意路径编辑器": "Vector-shape diagramming and SVG export, not a general SVG-source or arbitrary-path editor",
+  "未核实桌面版完整交互原型能力": "Full interactive-prototyping capabilities of the desktop edition were not established",
+  "未将网页版协作能力套用到桌面版": "Web collaboration features are not assumed for the desktop edition",
+  "此条目为本机桌面应用，不是自托管网页服务条目": "This entry is a local desktop application, not a self-hosted web-service offering"
 }
