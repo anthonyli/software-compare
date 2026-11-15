@@ -90,8 +90,7 @@
           "note": "效果器；MuseHub 上另有付费插件促销，软件本身含效果"
         },
         "noise_reduce": {
-          "value": "unknown",
-          "note": "官网首页本次未点名降噪，尽管历史上是常用功能"
+          "value": "yes"
         },
         "spectral": {
           "value": "unknown",
@@ -121,7 +120,9 @@
       "sources": [
         "https://www.audacityteam.org",
         "https://github.com/audacity/audacity",
-        "https://github.com/audacity/audacity/blob/Audacity-4.0.2/LICENSE.txt"
+        "https://github.com/audacity/audacity/blob/Audacity-4.0.2/LICENSE.txt",
+        "https://www.audacityteam.org/features/noise-reduction/",
+        "https://www.audacityteam.org/manual/effects/noise-removal-and-repair/noise-reduction/"
       ]
     },
     {
