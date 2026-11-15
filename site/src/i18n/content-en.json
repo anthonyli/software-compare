@@ -2423,5 +2423,7 @@
   "官方列视频网站下载，当前依赖 yt-dlp；站点、登录及版本会影响可用性。": "Video-site downloads are documented and yt-dlp is a current dependency; availability depends on sites, authentication and versions.",
   "官方文档列队列与定时下载。": "Official documentation lists queues and scheduled downloads.",
   "官网提供 Firefox、Chrome/Chromium 等集成指南；需单独配置扩展与权限。": "The official site links Firefox and Chrome/Chromium integration guides; extensions and permissions require separate setup.",
-  "未核实当前版本的具体范围。": "The current version-specific scope is unverified."
+  "未核实当前版本的具体范围。": "The current version-specific scope is unverified.",
+  "源码 GPL-2.0-or-later；二进制 GPL-3.0-or-later，含 OpenSSL 链接例外": "Source: GPL-2.0-or-later; binaries: GPL-3.0-or-later, with an OpenSSL linking exception",
+  "免费开源。官方 COPYING 区分源码 GPL-2.0-or-later 与含 GPLv3+ 素材的二进制 GPL-3.0-or-later，两者附 OpenSSL 链接例外。商业使用不等于可忽略再分发、源码提供与素材许可义务；修改者是否延用例外须看相应文件声明。": "Free and open source. Official COPYING distinguishes GPL-2.0-or-later source from GPL-3.0-or-later binaries containing GPLv3+ assets, both with an OpenSSL linking exception. Commercial use does not remove redistribution, source-provision or asset-license obligations; whether modifications retain the exception depends on the applicable file statements."
 }
