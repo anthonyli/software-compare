@@ -1215,6 +1215,69 @@
         "https://shottr.cc/purchase.html",
         "https://shottr.cc/kb/faq"
       ]
+    },
+    {
+      "id": "normcap",
+      "name": "NormCap",
+      "official_url": "https://dynobo.github.io/normcap/",
+      "github_url": "https://github.com/dynobo/normcap",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0-or-later",
+      "pricing_model": "完全免费",
+      "price_summary": "免费开源，源码商用与分发须遵守 GPL-3.0-or-later；Tesseract、语言模型和其他组件许可分别核对。",
+      "prices": [],
+      "summary": "从所选屏幕区域提取文字、二维码或条码信息到剪贴板，适合复制无法选中的报错或图片文字；不是完整截图标注套件。",
+      "free_tier_limits": "预编译包默认仅含英文，中文等需额外安装语言模型。识别依赖 Tesseract、语言和图像质量，不保证手写或复杂排版准确。作者称识别在本机且无遥测；可选更新检查与语言下载会请求 GitHub，产生服务器访问日志。macOS 有 x86_64/arm64 包，但应用未签名且需屏幕捕获许可；未实测 M4 16GB，也未执行安全放行或授权。Linux AppImage 已弃用，官方推荐 Flatpak。识别结果进入系统剪贴板，可能被其他剪贴板工具记录。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "features": {
+        "region_capture": {
+          "value": "partial",
+          "note": "选择区域提取文字或码到剪贴板，不据此承诺保存截图图片。"
+        },
+        "window_capture": {
+          "value": "unknown"
+        },
+        "scrolling_capture": {
+          "value": "unknown"
+        },
+        "delay_timer": {
+          "value": "unknown"
+        },
+        "annotation": {
+          "value": "unknown"
+        },
+        "ocr": {
+          "value": "yes"
+        },
+        "pin_to_screen": {
+          "value": "unknown"
+        },
+        "color_picker": {
+          "value": "unknown"
+        },
+        "cloud_share": {
+          "value": "unknown"
+        },
+        "history": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://dynobo.github.io/normcap/",
+        "https://dynobo.github.io/normcap/usage/",
+        "https://dynobo.github.io/normcap/faqs/",
+        "https://github.com/dynobo/normcap",
+        "https://github.com/dynobo/normcap/blob/main/LICENSE"
+      ],
+      "collected_at": "2026-11-15"
     }
   ]
 }
