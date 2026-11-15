@@ -1,6 +1,7 @@
 ---
 // SPDX-License-Identifier: Apache-2.0
 import Layout from "../layouts/Layout.astro";
+import HomePromotion from "../components/HomePromotion.astro";
 import SearchBox from "../components/SearchBox.astro";
 import T from "../components/T.astro";
 import { siteConfig, categoryGroups, categoryTints } from "../config";
@@ -98,7 +99,7 @@ const ossCount = categories.reduce(
     </div>
 
     {groups.map((group) => (
-      <div class="mb-10 scroll-mt-24" id={`group-${group.id}`}>
+      <div data-category-group class="mb-10 scroll-mt-24" id={`group-${group.id}`}>
         <h3 class="mb-3 text-sm font-semibold text-muted">
           <T zh={group.name} en={group.nameEn} />
         </h3>
@@ -152,6 +153,7 @@ const ossCount = categories.reduce(
         </div>
       </div>
     ))}
+    <HomePromotion />
   </section>
 
   {issues.length > 0 && import.meta.env.DEV && (

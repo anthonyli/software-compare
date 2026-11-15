@@ -1,0 +1,60 @@
+---
+// SPDX-License-Identifier: Apache-2.0
+import T from './T.astro';
+interface Props { enabled?: boolean }
+const { enabled = true } = Astro.props;
+---
+{enabled && (
+  <aside id="home-promotion" class="home-promotion" hidden>
+    <a href="https://pageon.cc" rel="sponsored noopener" class="promotion-link">
+      <span class="promotion-art" aria-hidden="true">
+        <svg viewBox="0 0 160 100" fill="none">
+          <rect x="21" y="20" width="112" height="65" rx="8" fill="#D9E4DA" />
+          <rect x="30" y="12" width="112" height="65" rx="8" fill="#FFFDF7" stroke="#314C43" stroke-width="2" />
+          <path d="M43 29H83M43 39H72M43 55H62" stroke="#314C43" stroke-width="4" stroke-linecap="round" />
+          <rect x="94" y="26" width="33" height="33" rx="7" fill="#E8C9A6" />
+          <circle cx="122" cy="70" r="17" fill="#AFCAB8" stroke="#314C43" stroke-width="2" />
+          <path d="M115 70H129M123 64L129 70L123 76" stroke="#314C43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </span>
+      <span class="promotion-copy">
+        <span class="promotion-label"><T zh="推广" en="Promotion" /></span>
+        <strong>Pageon</strong>
+        <span class="promotion-description"><T zh="发现 Pageon，让你的想法更好地呈现。" en="Discover Pageon. Give your ideas a place to shine." /></span>
+      </span>
+      <span class="promotion-cta"><T zh="了解 Pageon" en="Explore Pageon" /><span aria-hidden="true"> ↗</span></span>
+    </a>
+  </aside>
+)}
+<!-- Run at parse time: pick a fresh gap on every page load, before first paint where possible.
+     The promotion is not part of category grids or their counters. No JS means no empty slot. -->
+<script is:inline>
+  (() => {
+    const promotion = document.getElementById('home-promotion');
+    const groups = document.querySelectorAll('#categories > [data-category-group]');
+    if (!promotion) return;
+    if (groups.length < 2) { promotion.remove(); return; }
+    const gap = Math.floor(Math.random() * (groups.length - 1));
+    groups[gap].after(promotion);
+    promotion.hidden = false;
+  })();
+</script>
+<style>
+  .home-promotion[hidden] { display: none; }
+  .home-promotion { margin: 0 0 2.5rem; }
+  .promotion-link { display: flex; align-items: center; gap: 1.25rem; padding: 1rem 1.5rem; border: 1px solid #ccd9ce; border-radius: 1rem; background: #eef3eb; color: #243d33; text-decoration: none; }
+  .promotion-link:hover { border-color: #6a8976; }
+  .promotion-link:focus-visible { outline: 3px solid #527f65; outline-offset: 4px; }
+  .promotion-art { flex: 0 0 130px; }
+  .promotion-art svg { display: block; width: 100%; }
+  .promotion-copy { display: flex; flex: 1; min-width: 0; flex-direction: column; align-items: flex-start; gap: .35rem; }
+  .promotion-label { font-size: .65rem; font-weight: 700; letter-spacing: .06em; padding: .15rem .4rem; border: 1px solid #8ea693; border-radius: .3rem; }
+  .promotion-copy strong { font-size: 1.3rem; }
+  .promotion-description { font-size: .85rem; line-height: 1.6; }
+  .promotion-cta { flex-shrink: 0; font-size: .85rem; font-weight: 600; }
+  @media (max-width: 640px) {
+    .promotion-link { gap: .8rem; padding: 1rem; flex-wrap: wrap; }
+    .promotion-art { flex-basis: 78px; }
+    .promotion-cta { width: 100%; padding-top: .3rem; text-align: right; }
+  }
+</style>
