@@ -2330,5 +2330,12 @@
   "可定义二维轮廓用于拉伸，不等于完整交互式工程制图与标注。": "Defines 2D outlines for extrusion, not a full interactive drafting and dimensioning workflow.",
   "官方说明可读取 DXF 轮廓与设计参数；不保证复杂图纸双向无损交换。": "Official documentation describes reading DXF outlines and design parameters, not lossless bidirectional exchange of complex drawings.",
   "原生 DWG 交换未核实，不将 DXF 支持等同于 DWG。": "Native DWG exchange is unverified; DXF support is not treated as DWG support.",
-  "PDF/SVG 输出的版本及对象范围尚未逐项核实。": "Version and object coverage for PDF/SVG output have not been verified individually."
+  "PDF/SVG 输出的版本及对象范围尚未逐项核实。": "Version and object coverage for PDF/SVG output have not been verified individually.",
+  "免费开源客户端 / 模型服务另计": "Free open-source client / model services separate",
+  "MIT 客户端可按许可商用；云模型 API、可选订阅和本地模型硬件成本另计。免费代码不代表所有模型免费或有同样商用许可。": "The MIT client permits commercial use under its license; cloud API, optional subscription and local-model hardware costs are separate. Free code does not make every model free or identically licensed.",
+  "按当前 V2 文档：基础权限默认广泛允许，工作目录外访问也可能不提示；应配置读取、编辑和命令权限，不能当作安全沙盒。V1/V2 配置字段不同。云端模型会收到所发送的提示、代码上下文和工具结果；本地模型仍需运行时、足够内存和独立模型许可，插件也可能联网。": "Per current V2 documentation, base permissions broadly allow actions, and outside-worktree access may proceed without prompting. Configure read, edit and command permissions; do not treat this as a security sandbox. V1/V2 configuration fields differ. Cloud models receive sent prompts, code context and tool results; local models need a runtime, sufficient memory and separate licenses, and plugins may use the network.",
+  "带终端、桌面和网页入口的编程 Agent，可修改文件并调用命令运行测试，支持云提供商及 Ollama 等本地运行时。官方提供 Apple Silicon 客户端，不代表 M4 16GB 可运行任意本地模型或已验证安全隔离。": "A coding agent with terminal, desktop and web interfaces, file edits and shell-driven tests, supporting cloud providers and local runtimes such as Ollama. Official Apple Silicon clients do not imply any local model fits M4 16GB or that isolation has been verified.",
+  "当前编辑器原生集成范围未逐项核实。": "Current native editor integration coverage has not been verified individually.",
+  "支持 Ollama、LM Studio 等；模型的工具调用能力与运行时配置需匹配。": "Supports Ollama, LM Studio and others; model tool capabilities must match runtime configuration.",
+  "通过命令工具运行项目已有测试，不保证自动生成正确测试或修复。": "Runs existing project tests through shell tools, without guaranteeing correct generated tests or fixes."
 }
