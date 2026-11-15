@@ -98,8 +98,7 @@
           "note": "有滤镜面板与转场"
         },
         "keyframes": {
-          "value": "unknown",
-          "note": "首页未单独确认关键帧系统"
+          "value": "yes"
         },
         "titles": {
           "value": "yes",
@@ -110,12 +109,10 @@
           "note": "支持音频轨道与混音相关操作（官网提到 audio capture/JACK/Pulse）"
         },
         "chroma_key": {
-          "value": "unknown",
-          "note": "首页未明确写出绿幕"
+          "value": "yes"
         },
         "proxy": {
-          "value": "unknown",
-          "note": "首页未确认"
+          "value": "yes"
         },
         "export_4k": {
           "value": "yes",
@@ -128,7 +125,8 @@
       },
       "sources": [
         "https://shotcut.org",
-        "https://github.com/mltframework/shotcut"
+        "https://github.com/mltframework/shotcut",
+        "https://shotcut.org/features/"
       ]
     },
     {
