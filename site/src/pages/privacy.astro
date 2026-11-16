@@ -8,8 +8,8 @@ const sections = [
     "en": "1. Scope and maintainer",
     "paragraphs": [
       {
-        "zh": "本说明覆盖 Compare 网站当前代码的数据处理，不覆盖外部软件或 PageOn 官网。项目由个人维护，不以公司名义运营。正式公开的隐私请求联系渠道仍待维护者确认，请不要把敏感请求提交到公开 Issues。",
-        "en": "This notice describes data handling in the current Compare website code, not external products or the PageOn website. The project is personally maintained rather than operated in a company name. A private channel for privacy requests is awaiting maintainer confirmation; do not submit sensitive requests through public Issues."
+        "zh": "本说明覆盖 Compare 网站当前代码的数据处理，不覆盖外部软件或 PageOn 官网。项目由个人维护，不以公司名义运营。公开项目维护身份为 GitHub anthonyli。隐私相关问题请通过下方邮箱联系维护者，不要提交到公开 Issues。",
+        "en": "This notice describes data handling in the current Compare website code, not external products or the PageOn website. The project is personally maintained rather than operated in a company name. The public project maintainer identity is GitHub anthonyli. For privacy matters, contact the maintainer using the email below rather than public Issues."
       }
     ]
   },
@@ -80,12 +80,12 @@ const sections = [
     ]
   },
   {
-    "zh": "7. 你的选择与待完成事项",
-    "en": "7. Choices and remaining work",
+    "zh": "7. 你的选择与隐私请求",
+    "en": "7. Choices and privacy requests",
     "paragraphs": [
       {
-        "zh": "可通过浏览器管理本站 Cookie、本机存储和第三方请求；这些控制可能影响功能。若仍保留同一有效点赞身份，可取消自己的点赞。其他个人数据请求、适用法律下的权利和投诉途径，需结合真实运营地区及私密联系渠道补充后正式发布；本草稿不宣称已满足所有地区要求。",
-        "en": "You can manage site cookies, browser storage and third-party requests through browser controls, which may affect functionality. If you retain the same valid voting identity, you can remove your likes. Other personal-data requests, rights under applicable law and complaint routes must be completed using the actual operating region and private contact channel before publication. This draft does not claim compliance in all regions."
+        "zh": "可通过浏览器管理本站 Cookie、本机存储和第三方请求；这些控制可能影响功能。若仍保留同一有效点赞身份，可取消自己的点赞。你可以通过下方邮箱提出与本网站数据有关的访问、更正、删除或其他隐私请求。请说明请求范围和相关页面，不要发送密码、完整 Cookie、身份证件或其他不必要的敏感资料。维护者可能需要与你确认必要信息以定位记录并避免向他人披露；无法关联记录或受技术、法律限制时，会说明情况。适用法律赋予的权利及向有管辖权的主管机构投诉的权利不受本说明限制。",
+        "en": "You can manage site cookies, browser storage and third-party requests through browser controls, which may affect functionality. If you retain the same valid voting identity, you can remove your likes. You may use the email below to request access, correction, deletion or other assistance concerning data associated with this website. Describe the scope and relevant pages; do not send passwords, full cookies, identity documents or unnecessary sensitive information. The maintainer may need to clarify necessary information to locate records and avoid disclosing them to someone else. If records cannot be linked or technical or legal limits apply, the maintainer will explain. This notice does not limit rights provided by applicable law or the right to complain to a competent supervisory authority."
       }
     ]
   }
@@ -94,9 +94,10 @@ const sections = [
 <Layout title="隐私说明" titleEn="Privacy notice" canonicalPath="/privacy/">
   <article class="mx-auto max-w-3xl px-6 py-12 leading-relaxed" data-policy-page>
     <h1 class="text-3xl font-semibold"><T zh="隐私说明" en="Privacy notice" /></h1>
-    <p class="mt-4 rounded-lg border p-4" data-policy-draft><T zh="发布前草稿：运营者联系渠道及适用地区尚待确认，本页不是已生效政策。" en="Pre-publication draft: operator contact and operating region are awaiting confirmation. This is not an effective policy." /></p>
-    <p class="mt-4 text-sm text-muted"><T zh="代码核对日期：2026-11-16。以下描述当前项目实现，不代表已经完成法律合规审查。" en="Code reviewed: 2026-11-16. This describes the current implementation and is not a completed legal compliance review." /></p>
+    <p class="mt-4 text-sm text-muted" data-policy-date><T zh="更新日期：2026-11-16" en="Last updated: 2026-11-16" /></p>
+    <p class="mt-4 text-sm text-muted"><T zh="以下说明适用于 Compare 当前提供的功能；项目源码开放不等于所有收录软件都开源。" en="This notice covers the features currently offered by Compare. Open-source project code does not mean every listed product is open-source." /></p>
     {sections.map((section) => (<section class="mt-8"><h2 class="text-xl font-semibold"><T zh={section.zh} en={section.en} /></h2>{section.paragraphs.map((p) => (<p class="mt-3"><T zh={p.zh} en={p.en} /></p>))}</section>))}
+    <section class="mt-8" data-policy-contact><h2 class="text-xl font-semibold"><T zh="联系维护者" en="Contact the maintainer" /></h2><p class="mt-3"><a class="underline break-all" href="mailto:anthonyli1021@gmail.com">anthonyli1021@gmail.com</a></p><p class="mt-3"><T zh="适用于网站联系、隐私问题和数据请求。邮件不是公开 Issue；收发邮件仍由双方邮件服务提供商处理，请仅提供处理请求所必需的信息。" en="For website enquiries, privacy questions and data requests. Email is not a public Issue, but is processed by the sender’s and recipient’s email providers. Include only information necessary to handle the request." /></p></section>
     <section class="mt-8"><h2 class="text-xl font-semibold"><T zh="项目与官方资料" en="Project and official references" /></h2><ul class="mt-3 list-disc pl-5"><li><a class="underline" href="https://github.com/anthonyli/software-compare">GitHub: anthonyli/software-compare</a></li><li><a class="underline" href="https://github.com/anthonyli/software-compare/blob/main/LICENSE">Apache License 2.0</a></li><li><a class="underline" href="https://developers.cloudflare.com/web-analytics/about/">Cloudflare Web Analytics</a></li><li><a class="underline" href="https://www.cloudflare.com/privacypolicy/"><T zh="Cloudflare 隐私政策" en="Cloudflare Privacy Policy" /></a></li></ul></section>
     <nav class="mt-10 flex flex-wrap gap-4" aria-label="Policy navigation"><a class="underline" href="/terms/"><T zh="使用条款" en="Terms of use" /></a><a class="underline" href="/privacy/"><T zh="隐私说明" en="Privacy notice" /></a><a class="underline" href="/"><T zh="返回首页" en="Home" /></a></nav>
   </article>
