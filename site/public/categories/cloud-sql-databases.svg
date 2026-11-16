@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Original illustration for Compare / 软件对比. No third-party marks. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" fill="none" role="img" aria-hidden="true">
+  <rect width="480" height="260" fill="#E3F0EB"/>
+  <rect width="480" height="260" fill="url(#wash-cloud-sql-databases)" opacity="0.85"/>
+  <defs>
+    <linearGradient id="wash-cloud-sql-databases" x1="0" y1="0" x2="480" y2="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2F8F5" stop-opacity="0.0"/>
+      <stop offset="1" stop-color="#CDDFD7" stop-opacity="0.35"/>
+    </linearGradient>
+    <filter id="soft-cloud-sql-databases" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#111111" flood-opacity="0.10"/>
+    </filter>
+    <pattern id="dots-cloud-sql-databases" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="translate(18,16)">
+      <circle cx="1.2" cy="1.2" r="1.05" fill="#111111" opacity="0.35"/>
+    </pattern>
+  </defs>
+  <ellipse cx="40" cy="210" rx="70" ry="45" fill="#FFFFFF" opacity="0.35"/>
+  <ellipse cx="440" cy="36" rx="70" ry="48" fill="#FFFFFF" opacity="0.35"/>
+  <rect width="480" height="260" fill="url(#dots-cloud-sql-databases)" opacity="0.45"/>
+  <g filter="url(#soft-cloud-sql-databases)">
+    <path d="M123 78V182C123 199 151 212 187 212C223 212 251 199 251 182V78Z" fill="#FFFFFF"/>
+    <ellipse cx="187" cy="78" rx="64" ry="25" fill="#FFFFFF"/>
+    <ellipse cx="187" cy="78" rx="47" ry="14" stroke="#111111" stroke-width="2.5"/>
+    <path d="M137 119C158 136 216 136 237 119M137 158C158 175 216 175 237 158" stroke="#111111" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="151" cy="146" r="3" fill="#111111"/>
+    <circle cx="151" cy="185" r="3" fill="#111111"/>
+    <path d="M251 108H275M251 181H276" stroke="#111111" stroke-width="2" stroke-linecap="round"/>
+    <path d="M290 125C276 125 266 115 266 102C266 91 274 81 285 79C285 62 298 49 315 49C330 49 343 59 346 73C363 73 376 84 376 99C376 114 364 125 349 125Z" fill="#FFFFFF"/>
+    <rect x="276" y="150" width="99" height="59" rx="12" fill="#FFFFFF"/>
+    <rect x="288" y="162" width="75" height="35" rx="5" fill="#E3F0EB"/>
+    <path d="M288 174H363M312 162V197M337 162V197" stroke="#111111" stroke-width="2"/>
+  </g>
+</svg>
