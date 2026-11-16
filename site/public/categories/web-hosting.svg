@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Original illustration for Compare / 软件对比. No third-party marks. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" fill="none" role="img" aria-hidden="true">
+  <rect width="480" height="260" fill="#E5EDF4"/>
+  <rect width="480" height="260" fill="url(#wash-web-hosting)" opacity="0.85"/>
+  <defs>
+    <linearGradient id="wash-web-hosting" x1="0" y1="0" x2="480" y2="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2F6FA" stop-opacity="0.0"/>
+      <stop offset="1" stop-color="#CAD6E2" stop-opacity="0.35"/>
+    </linearGradient>
+    <filter id="soft-web-hosting" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#111111" flood-opacity="0.10"/>
+    </filter>
+    <pattern id="dots-web-hosting" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="translate(18,16)">
+      <circle cx="1.2" cy="1.2" r="1.05" fill="#111111" opacity="0.35"/>
+    </pattern>
+  </defs>
+  <ellipse cx="40" cy="210" rx="70" ry="45" fill="#FFFFFF" opacity="0.35"/>
+  <ellipse cx="440" cy="36" rx="70" ry="48" fill="#FFFFFF" opacity="0.35"/>
+  <rect width="480" height="260" fill="url(#dots-web-hosting)" opacity="0.45"/>
+  <g filter="url(#soft-web-hosting)">
+    <rect x="88" y="47" width="274" height="164" rx="22" fill="#FFFFFF"/>
+    <path d="M88 82H362" stroke="#DCE4EC" stroke-width="2"/>
+    <circle cx="110" cy="65" r="3" fill="#111111"/>
+    <circle cx="123" cy="65" r="3" fill="#111111" opacity=".4"/>
+    <rect x="157" y="60" width="153" height="10" rx="5" fill="#E5EDF4"/>
+    <rect x="111" y="104" width="67" height="72" rx="10" fill="#E5EDF4"/>
+    <rect x="193" y="107" width="118" height="10" rx="5" fill="#111111"/>
+    <rect x="193" y="129" width="91" height="8" rx="4" fill="#CAD6E2"/>
+    <rect x="193" y="150" width="62" height="8" rx="4" fill="#CAD6E2"/>
+    <path d="M303 211C289 211 279 201 279 188C279 177 287 167 298 165C298 147 312 135 329 135C344 135 357 145 360 159C377 159 390 170 390 185C390 200 378 211 363 211Z" fill="#FFFFFF"/>
+    <path d="M303 211C289 211 279 201 279 188C279 177 287 167 298 165C298 147 312 135 329 135C344 135 357 145 360 159C377 159 390 170 390 185C390 200 378 211 363 211" stroke="#CAD6E2" stroke-width="2" stroke-linecap="round"/>
+    <path d="M334 195V160M321 173L334 160L347 173" stroke="#111111" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
