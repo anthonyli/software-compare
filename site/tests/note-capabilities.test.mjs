@@ -6,5 +6,5 @@ test('SiYuan clipping/plugins and AppFlowy mobile have direct official evidence'
  for(const k of ['web_clipper','plugins'])assert.deepEqual(s.features[k],{value:'yes'});
  assert.deepEqual(a.features.mobile,{value:'yes'});
  assert(s.sources.includes('https://github.com/siyuan-note/siyuan#-features'));assert(a.sources.includes('https://appflowy.com/download'));
- assert.equal(s.features.tags.value,'unknown');assert.equal(a.features.e2e_encrypt.value,'unknown');assert.equal(a.features.plugins.value,'unknown');
+ assert.deepEqual(s.features.tags,{value:'yes'});assert.equal(a.features.e2e_encrypt.value,'unknown');assert.equal(a.features.plugins.value,'unknown');
 });
