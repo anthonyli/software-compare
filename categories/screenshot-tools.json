@@ -166,8 +166,7 @@
           "note": "官网功能介绍未列出滚动长截图"
         },
         "delay_timer": {
-          "value": "unknown",
-          "note": "本次未在官网首页确认延时截图"
+          "value": "yes"
         },
         "annotation": {
           "value": "yes",
@@ -197,7 +196,8 @@
       "sources": [
         "https://flameshot.org",
         "https://github.com/flameshot-org/flameshot",
-        "https://github.com/flameshot-org/flameshot/releases/tag/v15.0.0"
+        "https://github.com/flameshot-org/flameshot/releases/tag/v15.0.0",
+        "https://github.com/flameshot-org/flameshot#usage"
       ]
     },
     {
