@@ -34,7 +34,7 @@ npm run dev
 
 - `data.json`（录屏、清理等品类）
 - `categories/*.json`（其余品类）
-- `github-data.json`（自动同步的 GitHub 快照，与原始资料日期分别展示）
+- `github-data.json`（本地回退快照；线上每次构建及每日任务自动同步，不回写 Git，与原始资料日期分别展示）
 
 `cleaners.csv` 与 `screen-recorders.csv` 是这两类的可选表格副本，构建时不会读取。数据更新后重新构建即可。
 

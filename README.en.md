@@ -34,10 +34,12 @@ The build reads:
 
 - `data.json` (screen recorders, cleaners, and similar)
 - `categories/*.json` (the remaining categories)
-- `github-data.json` (automatically refreshed GitHub metadata with separate timestamps)
+- `github-data.json` (checked-in fallback snapshot; production builds and the daily workflow refresh metadata without writing it back to Git, with separate timestamps)
 
 `cleaners.csv` and `screen-recorders.csv` are optional tabular copies of those two categories. The build does not read them. Rebuild after data updates.
 
 ## License and contributions
 
 This project is licensed under the [Apache License 2.0](LICENSE). Contributions are welcome: display fixes, translations, accessibility, and design improvements are all appreciated. When adding or changing product data, include a verifiable source and do not add unconfirmed prices or features.
+
+GitHub metadata is refreshed before production builds and on the daily schedule, without automated snapshot commits. Actions cache provides a best-effort last-published fallback; if absent, the checked-in snapshot is used before fetching current data. Local offline builds may therefore have older metadata than the live site. See `site/README.md` for the workflow and failure behavior.
