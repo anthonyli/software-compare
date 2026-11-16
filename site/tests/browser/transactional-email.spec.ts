@@ -15,6 +15,8 @@ async function visibleTranslation(scope:Locator,pair:string[],english:boolean){
  await expect(text).toBeVisible();await expect(text.locator('..').locator(hidden)).toBeHidden();
 }
 test('transactional email limits and covers render in both languages and widths',async({page})=>{
+ // Six providers, two languages, two widths and full-page artifacts exceed one default test budget.
+ test.setTimeout(90000);
  await mkdir('../docs/design/previews',{recursive:true});
  for(const width of [1280,390]){
   await page.setViewportSize({width,height:900});await page.goto('/');
@@ -57,7 +59,7 @@ test('transactional email limits and covers render in both languages and widths'
     }
     if(item.id==='amazon-ses'){
      await expect(page.locator('.price-table')).toContainText('$0.16');
-     await expect(page.locator('.price-table')).toContainText(lang==='en'?'per 1,000 emails':'每千封');
+     await expect(page.locator('.price-table '+active)).toContainText([lang==='en'?'per 1,000 emails':'每千封']);
      for(const amount of ['0.16','0.10','0.12'])await expect(priceNote).toContainText(amount);
      const checks=lang==='en'?['per recipient','six months','verified sender','200 messages per 24 hours','identity checks','Paid accounts charge']:['按收件人计费','6 个月','验证发件','200 封/24 小时','身份核验','Paid 账户'];
      for(let i=0;i<6;i++)await expect(page.locator('.feature-row p '+active).nth(i)).toContainText(checks[i]);
