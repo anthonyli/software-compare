@@ -64,7 +64,7 @@ test('first-entry and manual liquid reveal frames, transparent navigation',async
  await page.clock.runFor(2500);await expect(root).toHaveAttribute('data-transitioning','false');
  await root.locator('[data-dot="0"]').click({force:true});await page.clock.runFor(2500);await expect(root).toHaveAttribute('data-transitioning','false');
  await root.locator('[data-dot="1"]').click({force:true});const samples=[],radii=[];
- for(const [frame,wait] of [[1,720],[2,300],[3,350],[4,1150]]){
+ for(const [frame,wait] of [[1,400],[2,125],[3,150],[4,625]]){
   await page.clock.runFor(wait);radii.push(Number(await root.getAttribute('data-reveal-radius')));samples.push(await root.locator('[data-liquid-path="1"]').getAttribute('d'));
   await page.screenshot({path:`../docs/design/previews/labs-home-transition-${frame}.png`});
  }
@@ -91,9 +91,30 @@ test('six scene-specific organic contours keep their own silhouette',async({page
  const root=page.locator('[data-scenario]'),shapes=[];
  for(let i=0;i<6;i++){
   await root.locator(`[data-dot="${(i+5)%6}"]`).click({force:true});await page.clock.runFor(2500);
-  await root.locator(`[data-dot="${i}"]`).click({force:true});await page.clock.runFor(780);
+  await root.locator(`[data-dot="${i}"]`).click({force:true});await page.clock.runFor(525);
   shapes.push(await root.locator(`[data-liquid-path="${i}"]`).getAttribute('d'));
   await page.screenshot({path:`../docs/design/previews/labs-home-shape-${i}.png`});await page.clock.runFor(2500);
  }
  expect(new Set(shapes).size).toBe(6);
+});
+
+
+test('quick recoil turns while background cards advance slowly in perspective',async({page})=>{
+ await page.setViewportSize({width:1440,height:900});
+ await page.clock.install({time:new Date('2026-01-01T00:00:00Z')});await page.clock.pauseAt(new Date('2026-01-01T00:00:01Z'));
+ await page.goto('/');await page.clock.runFor(1400);
+ const root=page.locator('[data-scenario]');
+ await root.locator('[data-dot="2"]').click({force:true});await page.clock.runFor(1400);
+ await root.locator('[data-dot="3"]').click({force:true});
+ await page.clock.runFor(525);const reach=Number(await root.getAttribute('data-reveal-radius'));
+ await page.clock.runFor(150);expect(Number(await root.getAttribute('data-reveal-radius'))).toBeLessThan(reach);
+ await page.clock.runFor(225);expect(Math.abs(Number(await root.getAttribute('data-reveal-rotation')))).toBeGreaterThan(.3);
+ await page.screenshot({path:'../docs/design/previews/labs-home-rotation.png'});
+ await page.clock.runFor(400);await expect(root).toHaveAttribute('data-transitioning','false');
+ const card=root.locator('[data-position=active] .art-window');
+ const near=await card.boundingBox();await page.screenshot({path:'../docs/design/previews/labs-home-depth-start.png'});
+ await page.clock.runFor(2000);const nearer=await card.boundingBox();
+ expect(nearer!.width).toBeGreaterThan(near!.width);await page.screenshot({path:'../docs/design/previews/labs-home-depth-later.png'});
+ await page.emulateMedia({reducedMotion:'reduce'});
+ expect(await card.evaluate(el=>el.getAnimations().length)).toBe(0);
 });

@@ -31,11 +31,12 @@ if (root) {
   let timer: ReturnType<typeof setTimeout> | undefined;
   let progress: Animation | undefined;
   let userPaused = false, focused = false, inView = true;
-  const delay = 6000, duration = 2400;
+  const delay = 6000, duration = 1250;
+  const depthAnimations = new Map<HTMLElement, Animation[]>();
 
   // A smooth, continuously deforming liquid boundary. Coordinates are normalized,
   // so the same reveal covers wide, narrow and resized viewports without a canvas.
-  function wavePath(radius: number, phase: number, strength: number, scene = current) {
+  function wavePath(radius: number, phase: number, strength: number, scene = current, rotation = 0) {
     // Deliberate families: soft triangle, five-petal flower, bean, four-leaf
     // clover, scalloped bloom, and almost-round pebble (not six noisy blobs).
     const lobes=[3,5,2,4,6,1][scene];
@@ -45,7 +46,7 @@ if (root) {
     const points = Array.from({length:72}, (_,i) => {
       const a = i / 72 * Math.PI * 2;
       const r = radius * (1 + amplitude * Math.cos(a*lobes + drift+seed) + amplitude*.12*Math.sin(a*(lobes+3)-drift+seed));
-      return [.5 + Math.cos(a)*r, .48 + Math.sin(a)*r];
+      return [.5 + Math.cos(a+rotation)*r, .48 + Math.sin(a+rotation)*r];
     });
     const mid = (a:number[], b:number[]) => `${((a[0]+b[0])/2).toFixed(5)},${((a[1]+b[1])/2).toFixed(5)}`;
     let d = `M${mid(points[71],points[0])}`;
@@ -57,6 +58,7 @@ if (root) {
     slides.forEach((slide,i) => {
       slide.style.clipPath = 'none'; slide.style.opacity = '';
       slide.dataset.position = i === current ? 'active' : 'hidden';
+      if(i!==current){depthAnimations.get(slide)?.forEach(a=>a.cancel());depthAnimations.delete(slide);}
     });
     rim.setAttribute('d',''); root!.dataset.transitioning = 'false';
     root!.dataset.revealProgress = '1';
@@ -68,6 +70,7 @@ if (root) {
     const paused = userPaused || focused || !inView || document.hidden || reduced.matches;
     root!.dataset.autoplay = paused ? 'paused' : 'running';
     root!.dataset.userPaused = String(userPaused);
+    depthAnimations.forEach(animations=>animations.forEach(a=>paused?a.pause():a.play()));
     const en = document.documentElement.lang === 'en';
     dots.forEach((dot,i)=>{
       const name=dot.getAttribute(en?'data-en':'data-zh')!;
@@ -91,6 +94,16 @@ if (root) {
     });
     if(!reduced.matches){
       const entering=slides[current];
+      // Independent camera drift: slow movement through depth, not a fast scale
+      // tied to the wipe. Preserve each card's own tilt and responsive transform.
+      const camera=Array.from(entering.querySelectorAll<HTMLElement>('.art-window,.art-mini,.floating-tag,.art-label')).map((card,i)=>{
+        const tilt=getComputedStyle(card).transform;
+        return card.animate([
+          {transform:`translateZ(${-180-i*35}px) ${tilt==='none'?'':tilt}`},
+          {transform:`translateZ(${100+i*18}px) ${tilt==='none'?'':tilt}`}
+        ],{duration:delay+duration,easing:'linear',fill:'forwards'});
+      });
+      depthAnimations.set(entering,camera);
       entering.style.clipPath=`url(#liquid-clip-${current})`;
       paths[current].setAttribute('d',wavePath(.015,0,.18));
       root!.dataset.transitioning='true';
@@ -101,13 +114,15 @@ if (root) {
         const t=Math.min(1,(now-start)/duration);
         // Expansion accelerates across the screen; the wave edge continually ripples.
         const smooth=(x:number)=>x*x*(3-2*x);
-        // Reach, breathe, recoil, then release. Continuous zero-velocity joins.
-        const radius=t<.32 ? .015+.305*smooth(t/.32)
-          : t<.46 ? .32+.004*Math.sin((t-.32)/.14*Math.PI)
-          : t<.60 ? .32-.045*smooth((t-.46)/.14)
-          : .275+.825*smooth((t-.60)/.40);
+        // A quick catch, not a long held breath: reach (525ms), recoil
+        // (163ms), then visibly turn the silhouette as it releases (562ms).
+        const radius=t<.42 ? .015+.305*smooth(t/.42)
+          : t<.55 ? .32-.035*smooth((t-.42)/.13)
+          : .285+.815*smooth((t-.55)/.45);
+        const turn=smooth(Math.max(0,Math.min(1,(t-.51)/.36)))*[.62,-.52,.7,-.65,.48,-.45][current];
         root!.dataset.revealRadius=radius.toFixed(4);
-        const d=wavePath(radius,t*3.1,.12*(1-t)+.02);
+        root!.dataset.revealRotation=turn.toFixed(4);
+        const d=wavePath(radius,t*1.2,.14-.08*Math.max(0,(t-.8)/.2),current,turn);
         paths[current].setAttribute('d',d);rim.setAttribute('d',d);
         entering.style.opacity=String(Math.min(1,.6+t*1.6));
         rim.style.opacity=String(Math.sin(Math.PI*t)*.65);
