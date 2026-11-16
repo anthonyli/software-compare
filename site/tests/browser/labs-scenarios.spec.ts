@@ -104,7 +104,8 @@ test('quick recoil turns while background cards advance slowly in perspective',a
  await page.clock.install({time:new Date('2026-01-01T00:00:00Z')});await page.clock.pauseAt(new Date('2026-01-01T00:00:01Z'));
  await page.goto('/');await page.clock.runFor(1400);
  const root=page.locator('[data-scenario]');
- await root.locator('[data-dot="2"]').click({force:true});await page.clock.runFor(1400);
+ const initialDot=await root.locator('[data-dot][aria-pressed=true]').getAttribute('data-dot');
+ await root.locator(`[data-dot="${initialDot==='2'?1:2}"]`).click({force:true});await page.clock.runFor(1400);
  await root.locator('[data-dot="3"]').click({force:true});
  await page.clock.runFor(525);const reach=Number(await root.getAttribute('data-reveal-radius'));
  await page.clock.runFor(150);expect(Number(await root.getAttribute('data-reveal-radius'))).toBeLessThan(reach);
