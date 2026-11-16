@@ -61,7 +61,7 @@ npm run dev
 
 ## 自定义子域名（保留阿里云 DNS）
 
-主域名为 `compare.sangmu.me`，旧域名 `compare.pageon.cc` 保留访问，不强制跳转。
+主域名为 `compare.sangmu.me`，旧域名 `compare.pageon.cc` 保留绑定并以 301 永久跳转到新域名。
 两个域名绑定同一个 Pages 项目并共享 D1 数据；保留阿里云 DNS，不修改根域名、其他子域名或邮件记录。
 
 1. 在 Pages 项目 → Custom domains 中添加 `compare.sangmu.me`。
@@ -69,6 +69,11 @@ npm run dev
    实际项目域名（`*.pages.dev`），默认线路，TTL 10 分钟。
 3. 等待 Cloudflare 显示 Active 并签发 HTTPS 证书。
 4. 工作流的 `env.PUBLIC_SITE_URL` 设置为 `https://compare.sangmu.me` 后重新部署。
+
+Cloudflare 账户的 Bulk Redirects 使用列表 `compare_primary_domain`：
+来源 `compare.pageon.cc/`（同时匹配 HTTP 与 HTTPS），目标 `https://compare.sangmu.me/`，状态码 301。
+启用 Preserve query string、Subpath matching、Preserve path suffix；不启用 Include subdomains。
+此规则在 Cloudflare 控制台管理，不依赖 Pages 构建文件；保留旧域名的 CNAME、Pages 绑定和证书。
 
 不要将 CNAME 指向 `*.workers.dev`。原 Workers 部署仅保留作迁移备份，后续每日发布到 Pages。
 D1 继续复用原数据库，已有票数保留；Cookie 属于各自域名，浏览器的匿名点赞身份不会跨域自动迁移。
