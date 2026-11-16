@@ -13,6 +13,9 @@ export const GET: APIRoute = () => {
       const names = catPair(c.slug, p.category_name);
       return {
         name: p.name,
+        name_en: tr(p.name),
+        // Retain the full description even if public-display cleanup removes a sentence.
+        search_description: [...new Set([p.summary, tr(p.summary)])].filter(Boolean).join(" "),
         summary,
         summary_en: tr(summary) || names.en,
         category_name: names.zh,
