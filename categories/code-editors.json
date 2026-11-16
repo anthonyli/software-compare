@@ -687,7 +687,7 @@
           "value": "unknown"
         },
         "multi_cursor": {
-          "value": "unknown"
+          "value": "yes"
         },
         "remote_dev": {
           "value": "yes"
@@ -701,7 +701,9 @@
       },
       "sources": [
         "https://lap.dev/lapce/",
-        "https://github.com/lapce/lapce"
+        "https://github.com/lapce/lapce",
+        "https://docs.lapce.dev/features/multiple-cursor",
+        "https://github.com/lapce/lapce/blob/v0.4.2/CHANGELOG.md"
       ],
       "archived": false,
       "last_push_at": "2026-10-09",
