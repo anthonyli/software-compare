@@ -29,6 +29,8 @@ test('search descriptions, typos and IME using real build index',async({page,req
   await expect(results).toContainText('verification');await page.screenshot({path:`../docs/design/previews/payment-page-search-en-${width}.png`});
   await input.fill('resend');await expect(results.locator('a').first()).toHaveAttribute('href','/p/transactional-email/resend/');
   await input.press('Enter');await expect(page).toHaveURL(/\/p\/transactional-email\/resend\/$/);
+  // URL changes at navigation commit, before the new document binds search listeners.
+  await page.waitForLoadState('load');
   const header=page.locator('#site-search-header');await header.fill('邮件');await expect(page.locator('.search-hit[href="/p/transactional-email/resend/"]')).toBeVisible();
  }
 });
