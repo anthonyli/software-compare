@@ -34,7 +34,7 @@ The build reads:
 
 - `data.json` (screen recorders, cleaners, and similar)
 - `categories/*.json` (the remaining categories)
-- `github-data.json` (automatically refreshed GitHub metadata with separate timestamps)
+- `github-data.json` (checked-in fallback snapshot; production builds and the daily workflow refresh metadata without writing it back to Git, with separate timestamps)
 
 `cleaners.csv` and `screen-recorders.csv` are optional tabular copies of those two categories. The build does not read them. Rebuild after data updates.
 
