@@ -86,6 +86,8 @@ if (root) {
     if(next===current){schedule();return;}
     const previous=current, token=++generation;
     settle(); current=next;
+    // A selected progress dot is not a keyboard-focus pause target anymore.
+    focused=!!document.activeElement&&root!.contains(document.activeElement)&&document.activeElement!==dots[current];
     slides.forEach((slide,i)=>{
       slide.dataset.position=i===current?'active':i===previous?'outgoing':'hidden';
       slide.setAttribute('aria-hidden',String(i!==current));
