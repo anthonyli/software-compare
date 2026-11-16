@@ -55,21 +55,23 @@ test('automatic liquid reveal, active-progress pause, focus and reduced motion',
 });
 
 test('first-entry and manual liquid reveal frames, transparent navigation',async({page})=>{
- await page.setViewportSize({width:1440,height:900});await mkdir('../docs/design/previews',{recursive:true});await page.goto('/');
+ await page.setViewportSize({width:1440,height:900});await mkdir('../docs/design/previews',{recursive:true});
+ await page.clock.install({time:new Date('2026-01-01T00:00:00Z')});
+ await page.clock.pauseAt(new Date('2026-01-01T00:00:01Z'));await page.goto('/');await page.clock.runFor(100);
  const root=page.locator('[data-scenario]');
  await page.screenshot({path:'../docs/design/previews/labs-home-entry.png'});
- await expect(root).toHaveAttribute('data-transitioning','false');
- await root.locator('[data-dot="0"]').click();await expect(root).toHaveAttribute('data-transitioning','false');
- await root.locator('[data-dot="1"]').click();const samples=[];
+ await page.clock.runFor(1800);await expect(root).toHaveAttribute('data-transitioning','false');
+ await root.locator('[data-dot="0"]').click({force:true});await page.clock.runFor(1800);await expect(root).toHaveAttribute('data-transitioning','false');
+ await root.locator('[data-dot="1"]').click({force:true});const samples=[];
  for(const [frame,wait] of [[1,100],[2,400],[3,500],[4,900]]){
-  await page.waitForTimeout(wait);samples.push(await root.locator('[data-liquid-path="1"]').getAttribute('d'));
+  await page.clock.runFor(wait);samples.push(await root.locator('[data-liquid-path="1"]').getAttribute('d'));
   await page.screenshot({path:`../docs/design/previews/labs-home-transition-${frame}.png`});
  }
  expect(samples[0]).not.toBe(samples[1]);expect(samples[1]).not.toBe(samples[2]);
  await expect(root).toHaveAttribute('data-transitioning','false');
  await expect(page.locator('.site-header')).toHaveCSS('background-color','rgba(0, 0, 0, 0)');
  await expect(page.locator('.site-header .brand-mark')).toHaveCSS('color','rgb(245, 245, 237)');
- await page.locator('[data-cat-btn]').click();await expect(page.locator('[data-cat-panel]')).toBeVisible();
+ await page.clock.resume();await page.locator('[data-cat-btn]').click();await expect(page.locator('[data-cat-panel]')).toBeVisible();
 });
 
 test('grid is restricted to light catalog; category and product grid preserved',async({page})=>{
