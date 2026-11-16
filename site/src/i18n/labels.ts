@@ -9,6 +9,7 @@ function contentFallback(text: string): string {
 
 /** Category display names, keyed by slug. */
 export const categoryNames: Record<string, { zh: string; en: string }> = {
+  "backend-as-a-service": { zh: "后端即服务（BaaS）", en: "Backend as a service (BaaS)" },
   "cloud-sql-databases": { zh: "云 SQL 数据库", en: "Cloud SQL databases" },
   "web-hosting": { zh: "网站部署", en: "Website deployment" },
   "international-payments": { zh: "国外支付平台", en: "International payment platforms" },
@@ -78,6 +79,13 @@ export const groupNames: Record<string, { zh: string; en: string }> = {
 
 /** Feature column labels keyed by "slug:key". */
 export const featureColumns: Record<string, { zh: string; en: string }> = {
+  "backend-as-a-service:free_quota": { zh: "免费额度与范围", en: "Free quotas and scope" },
+  "backend-as-a-service:overage": { zh: "超额与费用控制", en: "Overages and cost controls" },
+  "backend-as-a-service:always_on": { zh: "免费项目持续运行", en: "Always-on free projects" },
+  "backend-as-a-service:managed_backups": { zh: "免费托管备份", en: "Managed backups on Free" },
+  "backend-as-a-service:commercial": { zh: "免费商用许可", en: "Commercial use on Free" },
+  "backend-as-a-service:no_card": { zh: "免费免绑卡", en: "No card required on Free" },
+
   "cloud-sql-databases:capacity": { zh: "免费数据库与容量", en: "Free databases and storage" },
   "cloud-sql-databases:reads": { zh: "免费读行与周期", en: "Free row reads and period" },
   "cloud-sql-databases:writes": { zh: "免费写行与周期", en: "Free row writes and period" },

@@ -1,0 +1,106 @@
+{
+  "category_slug": "backend-as-a-service",
+  "category_name_zh": "后端即服务（BaaS）",
+  "collected_at": "2026-11-16",
+  "collected_at_timezone": "UTC",
+  "features": [
+    {
+      "key": "free_quota",
+      "label": "免费额度与范围"
+    },
+    {
+      "key": "overage",
+      "label": "超额与费用控制"
+    },
+    {
+      "key": "always_on",
+      "label": "免费项目持续运行"
+    },
+    {
+      "key": "managed_backups",
+      "label": "免费托管备份"
+    },
+    {
+      "key": "commercial",
+      "label": "免费商用许可"
+    },
+    {
+      "key": "no_card",
+      "label": "免费免绑卡"
+    }
+  ],
+  "products": [
+    {
+      "id": "supabase-cloud",
+      "name": "Supabase Cloud",
+      "official_url": "https://supabase.com/pricing",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "免费增值",
+      "price_summary": "托管PostgreSQL、认证、文件存储、Edge Functions与Realtime；本分类首批仅收录已核实的Supabase Cloud，持续扩充，不与纯SQL数据库混比。",
+      "prices": [
+        {
+          "plan": "Free云方案",
+          "price": "0",
+          "currency": "USD",
+          "period": "月",
+          "note": "2026-11-16：有限额的免费托管方案，不等于开源自托管或无限量服务。"
+        },
+        {
+          "plan": "Pro组织基础费",
+          "price": "25",
+          "currency": "USD",
+          "period": "月",
+          "note": "起价；含每月USD10计算抵扣。额外项目计算资源、超额与附加项另计，不是所有项目打包USD25；Compute Hours不受Spend Cap保护。"
+        }
+      ],
+      "free_tier_limits": "数据库500MB/项目、文件存储1GB/组织是容量，不是每月新增容量。组织每月另含500,000次Edge Function调用、200万条Realtime消息，Realtime峰值连接200。API请求不限不等于带宽、数据库或函数不限。仅比较Cloud服务，商用与免绑卡未核实；未开户、绑卡、创建项目、调用服务或实测。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": "未知",
+      "collected_at": "2026-11-16",
+      "summary": "托管PostgreSQL、认证、文件存储、Edge Functions与Realtime；本分类首批仅收录已核实的Supabase Cloud，持续扩充，不与纯SQL数据库混比。",
+      "features": {
+        "free_quota": {
+          "value": "partial",
+          "note": "最多2个免费活跃项目，跨用户为Owner或Admin的所有组织计算，暂停项目不计。数据库每项目500MB；组织共享50,000 MAU、1GB文件存储及每月5GB非缓存流量和5GB缓存流量，缓存额度仅适用Storage。"
+        },
+        "overage": {
+          "value": "partial",
+          "note": "Free超额先通知，持续超额可暂停项目、数据库只读或API返回402；不是自动按量收费。额度型限制通常在下个账期恢复。升级付费后，Compute Hours不受Spend Cap保护。"
+        },
+        "always_on": {
+          "value": "no",
+          "note": "Free项目连续一周不活跃会暂停；不能保证免费项目始终在线。"
+        },
+        "managed_backups": {
+          "value": "no",
+          "note": "免费方案不包含付费方案的每日备份权益；官方建议自行定期导出并保存异地副本。数据库备份也不包含Storage中的文件对象。"
+        },
+        "commercial": {
+          "value": "unknown",
+          "note": "本轮未找到明确覆盖Free方案的一般商业生产用途说明；按具体使用方式与现行合同确认，不推断禁止或全面允许。"
+        },
+        "no_card": {
+          "value": "unknown",
+          "note": "公开账单文档仅明确付费方案要求信用卡在档；本轮未核实Free开户是否要求绑卡，未注册验证。"
+        }
+      },
+      "sources": [
+        "https://supabase.com/pricing",
+        "https://supabase.com/docs/guides/platform/billing-on-supabase",
+        "https://supabase.com/docs/guides/platform/manage-your-usage/egress",
+        "https://supabase.com/docs/guides/platform/billing-faq",
+        "https://supabase.com/docs/guides/platform/backups",
+        "https://supabase.com/docs/guides/platform/manage-your-usage/compute",
+        "https://supabase.com/docs/guides/platform/get-set-up-for-billing",
+        "https://supabase.com/terms"
+      ]
+    }
+  ]
+}
