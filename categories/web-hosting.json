@@ -159,6 +159,71 @@
         "https://www.cloudflare.com/products/pages/",
         "https://www.cloudflare.com/service-specific-terms-developer-platform/"
       ]
+    },
+    {
+      "id": "render",
+      "name": "Render",
+      "official_url": "https://render.com/docs/static-sites",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "免费增值",
+      "price_summary": "Git驱动的静态站与动态Web Service部署；静态CDN托管和动态实例分别计限，Hobby工作区免费不等于全部计算与超额免费。",
+      "prices": [
+        {
+          "plan": "Render Hobby工作区",
+          "price": "0",
+          "currency": "USD",
+          "period": "月",
+          "note": "工作区无月费，静态站免费部署；付费计算、超额带宽、额外流水线分钟及域名另计，不是无限资源套餐。"
+        }
+      ],
+      "free_tier_limits": "静态站和动态服务共同消耗工作区带宽与流水线额度；未用带宽不结转。750免费实例小时耗尽会暂停全部Free Web Services至下个自然月，不是静态站的运行时长上限。升级工作区方案不会自动解除Free实例限制。未开户、绑卡、部署或实测。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": "未知",
+      "collected_at": "2026-11-16",
+      "summary": "Git驱动的静态站与动态Web Service部署；静态CDN托管和动态实例分别计限，Hobby工作区免费不等于全部计算与超额免费。",
+      "features": {
+        "static_hosting": {
+          "value": "yes",
+          "note": "静态站提供全球CDN、Git自动部署、预览与托管TLS。Hobby每工作区每月共享5GB出站流量，含2个自定义域名，额外域名每个USD0.25/月；不是每网站独享额度。"
+        },
+        "build_limits": {
+          "value": "partial",
+          "note": "Hobby每工作区每月500 Starter流水线分钟，构建与其他流水线任务共用，不是500次构建。构建命令最长120分钟；每服务同时一个构建，新构建会取消该服务正在进行的构建。"
+        },
+        "functions": {
+          "value": "partial",
+          "note": "静态站不运行动态服务端代码，动态应用需另建Web Service。Free Web Services每工作区共享750实例小时/自然月；15分钟无入站流量休眠，新请求约1分钟唤醒。休眠、重启或重新部署会丢失本地文件变化；这些动态实例限制不套用静态站。"
+        },
+        "commercial": {
+          "value": "unknown",
+          "note": "Hobby面向个人项目和原型；官方不建议Free动态实例用于生产应用。免费静态站的一般商业用途许可尚未明确确认，不能把动态实例的生产建议当成静态站商用禁令。"
+        },
+        "overage": {
+          "value": "partial",
+          "note": "有支付方式时公网出站超额USD0.15/GB，额外Starter流水线USD5/1000分钟。无支付方式时，带宽耗尽暂停工作区服务至下月；流水线耗尽或达到流水线支出上限仅停止新构建，既有部署继续运行。流水线预算不是全账户硬上限。"
+        },
+        "card_required": {
+          "value": "no",
+          "note": "官方当前免费服务介绍明确无需信用卡；未注册验证。主动添加支付方式后可能产生超额费用，现行条款还允许对已关联卡进行临时验证授权；不承诺永远无需验证或永不收费。"
+        }
+      },
+      "sources": [
+        "https://render.com/docs/static-sites",
+        "https://render.com/docs/build-pipeline",
+        "https://render.com/docs/outbound-bandwidth",
+        "https://render.com/docs/free",
+        "https://render.com/docs/faq",
+        "https://render.com/changelog/updated-plans-for-render-workspaces",
+        "https://render.com/articles/platforms-with-a-real-free-tier-for-developers-in-2026",
+        "https://render.com/terms"
+      ]
     }
   ]
 }
