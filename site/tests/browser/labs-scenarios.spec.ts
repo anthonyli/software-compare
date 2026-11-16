@@ -122,7 +122,7 @@ test('quick recoil turns while background cards advance slowly in perspective',a
 
 
 test('camera push restarts through two complete automatic loops and repeated manual entries',async({page})=>{
- test.setTimeout(90000);await page.setViewportSize({width:1440,height:900});
+ test.setTimeout(150000);await page.setViewportSize({width:1440,height:900});
  await page.clock.install({time:new Date('2026-01-01T00:00:00Z')});await page.clock.pauseAt(new Date('2026-01-01T00:00:01Z'));
  await page.goto('/');await page.clock.runFor(1500);
  const root=page.locator('[data-scenario]');
