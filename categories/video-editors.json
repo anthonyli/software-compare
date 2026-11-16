@@ -265,8 +265,7 @@
           "note": "Visual keyframe animation：位置、缩放、旋转、透明度、音量与特效"
         },
         "titles": {
-          "value": "unknown",
-          "note": "首页未单独点名字幕模块"
+          "value": "yes"
         },
         "audio_mix": {
           "value": "yes",
@@ -291,7 +290,9 @@
       },
       "sources": [
         "https://www.openshot.org",
-        "https://github.com/OpenShot/openshot-qt"
+        "https://github.com/OpenShot/openshot-qt",
+        "https://www.openshot.org/files/user-guide/titles.html",
+        "https://support.openshot.org/support/solutions/articles/43000625551-how-do-i-add-text-to-a-video-in-openshot-"
       ]
     },
     {
