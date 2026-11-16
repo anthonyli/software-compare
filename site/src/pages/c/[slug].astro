@@ -184,7 +184,7 @@ const sortedProducts = [...category.products].sort((a, b) => {
                   <td class="sticky-col">
                     <div class="flex items-start justify-between gap-2">
                       <div class="min-w-0">
-                        <a href={p.href} class="product-name" title={p.name}>{p.name}</a>
+                        <a href={p.href} class="product-name" title={p.name} data-i18n="title" data-zh={p.name} data-en={tr(p.name)}><T zh={p.name}/></a>
                         <div class="mt-1 flex flex-wrap items-center gap-1">
                           {p.open_source && <span class="chip chip-oss"><T zh={ui.zh.openSource} en={ui.en.openSource} /></span>}
                           {p.pricing_model === "完全免费" && <span class="chip chip-free"><T zh={ui.zh.fullyFree} en={ui.en.fullyFree} /></span>}
@@ -267,7 +267,7 @@ const sortedProducts = [...category.products].sort((a, b) => {
             data-status={p.maintenance_status || ""}
           >
             <div class="flex items-start justify-between gap-3">
-              <a href={p.href} class="card-title" title={p.name}>{p.name}</a>
+              <a href={p.href} class="card-title" title={p.name} data-i18n="title" data-zh={p.name} data-en={tr(p.name)}><T zh={p.name}/></a>
               {p.github_stars != null && (
                 <span class="stars-quiet shrink-0">★ <span class="t-zh">{formatStars(p.github_stars, "zh")}</span><span class="t-en">{formatStars(p.github_stars, "en")}</span></span>
               )}

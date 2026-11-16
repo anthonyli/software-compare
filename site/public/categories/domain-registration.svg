@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Original illustration for Compare / 软件对比. No third-party marks. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" fill="none" role="img" aria-hidden="true">
+  <rect width="480" height="260" fill="#DDEFEA"/>
+  <rect width="480" height="260" fill="url(#wash-domain-registration)" opacity="0.85"/>
+  <defs>
+    <linearGradient id="wash-domain-registration" x1="0" y1="0" x2="480" y2="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EEF3FF" stop-opacity="0.0"/>
+      <stop offset="1" stop-color="#D2D8E7" stop-opacity="0.35"/>
+    </linearGradient>
+    <filter id="soft-domain-registration" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#111111" flood-opacity="0.10"/>
+    </filter>
+    <pattern id="dots-domain-registration" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="translate(18,16)">
+      <circle cx="1.2" cy="1.2" r="1.05" fill="#111111" opacity="0.35"/>
+    </pattern>
+  </defs>
+  <ellipse cx="40" cy="210" rx="70" ry="45" fill="#FFFFFF" opacity="0.35"/>
+  <ellipse cx="440" cy="36" rx="70" ry="48" fill="#FFFFFF" opacity="0.35"/>
+  <rect width="480" height="260" fill="url(#dots-domain-registration)" opacity="0.45"/>
+  <g filter="url(#soft-domain-registration)">
+<rect x="94" y="48" width="292" height="164" rx="22" fill="white"/>
+<path d="M94 83H386" stroke="#111111" stroke-opacity=".16" stroke-width="2"/>
+<circle cx="116" cy="65" r="3" fill="#111111"/><circle cx="128" cy="65" r="3" fill="#111111" opacity=".4"/>
+<rect x="160" y="60" width="180" height="10" rx="5" fill="#EEF3F1"/>
+<circle cx="229" cy="143" r="47" stroke="#111111" stroke-width="3"/>
+<ellipse cx="229" cy="143" rx="20" ry="47" stroke="#111111" stroke-width="2"/>
+<path d="M182 143H276M190 120H268M190 166H268" stroke="#111111" stroke-width="2"/>
+<path d="M314 132L343 144V164C343 184 327 197 314 203C301 197 285 184 285 164V144Z" fill="#DDEFEA" stroke="#111111" stroke-width="2.5"/>
+<path d="M303 165L312 174L327 155" stroke="#111111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g></svg>

@@ -1,0 +1,388 @@
+{
+  "category_slug": "domain-registration",
+  "category_name_zh": "域名注册",
+  "collected_at": "2026-11-16",
+  "collected_at_timezone": "UTC",
+  "features": [
+    {
+      "key": "register",
+      "label": "付费域名注册"
+    },
+    {
+      "key": "transfer",
+      "label": "域名转入"
+    },
+    {
+      "key": "free_dns",
+      "label": "附带免费 DNS"
+    },
+    {
+      "key": "external_dns",
+      "label": "第三方权威 DNS"
+    },
+    {
+      "key": "privacy",
+      "label": "免费注册信息保护"
+    }
+  ],
+  "products": [
+    {
+      "id": "cloudflare-registrar",
+      "name": "Cloudflare Registrar",
+      "official_url": "https://www.cloudflare.com/domains/",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "付费",
+      "price_summary": "按注册局与 ICANN 成本收费；具体 .com 金额未核实。必须使用 Cloudflare 权威 DNS。",
+      "prices": [
+        {
+          "plan": ".com 首年注册",
+          "price": "未知",
+          "currency": "USD",
+          "period": "年",
+          "note": "普通非溢价 .com；2026-11-16 核对。注册和续费按一年，转入为一次性费用；不含二级市场域名。最终税费及资格以结算为准。"
+        },
+        {
+          "plan": ".com 续费一年",
+          "price": "未知",
+          "currency": "USD",
+          "period": "年",
+          "note": "普通非溢价 .com；2026-11-16 核对。注册和续费按一年，转入为一次性费用；不含二级市场域名。最终税费及资格以结算为准。 赎回期恢复费用因后缀而异，续费另计；本表具体金额未知，不承诺恢复或统一时间窗口。"
+        },
+        {
+          "plan": ".com 转入",
+          "price": "未知",
+          "currency": "USD",
+          "period": "一次性",
+          "note": "普通非溢价 .com；2026-11-16 核对。注册和续费按一年，转入为一次性费用；不含二级市场域名。最终税费及资格以结算为准。"
+        }
+      ],
+      "free_tier_limits": "没有免费 .com 注册额度。2024-09-01 起新建 Free 区域标准上限为 200 条 DNS 记录；账户配额可能不同。这是容量而非每月额度；用量达 85% 时控制台告警，达到上限后不能通过控制台或 API 手动新增记录，不是自动按超额加费。 信用卡要求未核实；免费附加服务不代表免费注册域名。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": "未知",
+      "collected_at": "2026-11-16",
+      "summary": "按注册局与 ICANN 成本收费；具体 .com 金额未核实。必须使用 Cloudflare 权威 DNS。",
+      "features": {
+        "register": {
+          "value": "paid"
+        },
+        "transfer": {
+          "value": "yes",
+          "note": "支持符合条件的域名转入；新注册或近期转移等锁定期及后缀规则适用。转入不等于迁移网站或邮箱。"
+        },
+        "free_dns": {
+          "value": "yes",
+          "note": "可使用 Cloudflare 免费 DNS；域名注册另收费。"
+        },
+        "external_dns": {
+          "value": "no",
+          "note": "在 Cloudflare Registrar 注册期间不能改用其他权威 DNS 服务商。"
+        },
+        "privacy": {
+          "value": "partial",
+          "note": "免费遮蔽符合条件的注册信息；并非匿名注册，注册局规则可有例外。"
+        }
+      },
+      "sources": [
+        "https://www.cloudflare.com/domains/",
+        "https://developers.cloudflare.com/registrar/get-started/register-domain/",
+        "https://developers.cloudflare.com/registrar/account-options/whois-redaction/",
+        "https://developers.cloudflare.com/dns/manage-dns-records/",
+        "https://www.icann.org/en/contracted-parties/accredited-registrars/resources/domain-name-transfers/inter-registrar-transfer-information",
+        "https://developers.cloudflare.com/registrar/faq/"
+      ]
+    },
+    {
+      "id": "porkbun",
+      "name": "Porkbun Domains",
+      "official_url": "https://porkbun.com/products/domains/com",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "付费",
+      "price_summary": ".com 注册、续费和转入均为 USD 11.81；含 ICANN 等费用，通常转入延长一年，后缀及转移条件例外适用。",
+      "prices": [
+        {
+          "plan": ".com 首年注册",
+          "price": "11.81",
+          "currency": "USD",
+          "period": "年",
+          "note": "普通非溢价 .com；2026-11-16 核对。注册和续费按一年，转入为一次性费用；不含二级市场域名。最终税费及资格以结算为准。"
+        },
+        {
+          "plan": ".com 续费一年",
+          "price": "11.81",
+          "currency": "USD",
+          "period": "年",
+          "note": "普通非溢价 .com；2026-11-16 核对。注册和续费按一年，转入为一次性费用；不含二级市场域名。最终税费及资格以结算为准。 赎回期恢复另收 USD 200，加正常续费；不是普通逾期续费费用，也不保证能恢复。"
+        },
+        {
+          "plan": ".com 转入",
+          "price": "11.81",
+          "currency": "USD",
+          "period": "一次性",
+          "note": "普通非溢价 .com；2026-11-16 核对。注册和续费按一年，转入为一次性费用；不含二级市场域名。最终税费及资格以结算为准。"
+        }
+      ],
+      "free_tier_limits": "没有免费 .com 注册额度。附带 DNS 与适用后缀的 WHOIS 隐私；DNS 数量、查询额度、重置周期和超限处理未核实。 信用卡要求未核实；免费附加服务不代表免费注册域名。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": "未知",
+      "collected_at": "2026-11-16",
+      "summary": ".com 注册、续费和转入均为 USD 11.81；含 ICANN 等费用，通常转入延长一年，后缀及转移条件例外适用。",
+      "features": {
+        "register": {
+          "value": "paid"
+        },
+        "transfer": {
+          "value": "yes",
+          "note": "支持符合条件的域名转入；新注册或近期转移等锁定期及后缀规则适用。转入不等于迁移网站或邮箱。"
+        },
+        "free_dns": {
+          "value": "yes",
+          "note": "注册附带 DNS 管理，不含网站托管。"
+        },
+        "external_dns": {
+          "value": "yes",
+          "note": "支持更改域名的权威名称服务器。"
+        },
+        "privacy": {
+          "value": "partial",
+          "note": "适用后缀免费提供 WHOIS 隐私，不免除真实注册信息要求。"
+        }
+      },
+      "sources": [
+        "https://porkbun.com/products/domains/com",
+        "https://kb.porkbun.com/article/175-how-to-use-the-domain-details-area",
+        "https://porkbun.com/products/whois_privacy",
+        "https://porkbun.com/transfer",
+        "https://www.icann.org/en/contracted-parties/accredited-registrars/resources/domain-name-transfers/inter-registrar-transfer-information"
+      ]
+    },
+    {
+      "id": "namecheap-domains",
+      "name": "Namecheap Domains",
+      "official_url": "https://www.namecheap.com/domains/",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "付费",
+      "price_summary": ".com 首年 USD 12.28、续费 USD 20.18、转入 USD 12.48，均含另收的 USD 0.20 ICANN 费。首年及转入为当日促销，不使用新客专属优惠码。",
+      "prices": [
+        {
+          "plan": ".com 首年注册",
+          "price": "12.28",
+          "currency": "USD",
+          "period": "年",
+          "note": "普通非溢价 .com；2026-11-16 核对。注册和续费按一年，转入为一次性费用；不含二级市场域名。最终税费及资格以结算为准。"
+        },
+        {
+          "plan": ".com 续费一年",
+          "price": "20.18",
+          "currency": "USD",
+          "period": "年",
+          "note": "普通非溢价 .com；2026-11-16 核对。注册和续费按一年，转入为一次性费用；不含二级市场域名。最终税费及资格以结算为准。 普通 .com 赎回期恢复 USD 89.98 已含续费，另加 USD 0.20 ICANN，共 USD 90.18；不重复加续费，非普通逾期收费，恢复资格另核。"
+        },
+        {
+          "plan": ".com 转入",
+          "price": "12.48",
+          "currency": "USD",
+          "period": "一次性",
+          "note": "普通非溢价 .com；2026-11-16 核对。注册和续费按一年，转入为一次性费用；不含二级市场域名。最终税费及资格以结算为准。"
+        }
+      ],
+      "free_tier_limits": "没有免费 .com 注册额度。BasicDNS 每域名最多 800 条主机记录，为容量上限而非周期额度；查询额度及超限处理未核实。不要混用独立 FreeDNS 的规格。 信用卡要求未核实；免费附加服务不代表免费注册域名。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": "未知",
+      "collected_at": "2026-11-16",
+      "summary": ".com 首年 USD 12.28、续费 USD 20.18、转入 USD 12.48，均含另收的 USD 0.20 ICANN 费。首年及转入为当日促销，不使用新客专属优惠码。",
+      "features": {
+        "register": {
+          "value": "paid"
+        },
+        "transfer": {
+          "value": "yes",
+          "note": "支持符合条件的域名转入；新注册或近期转移等锁定期及后缀规则适用。转入不等于迁移网站或邮箱。"
+        },
+        "free_dns": {
+          "value": "yes",
+          "note": "BasicDNS 随域名注册提供；PremiumDNS 为另购产品。"
+        },
+        "external_dns": {
+          "value": "yes",
+          "note": "可选择 CustomDNS；切换不会自动搬迁 DNS 记录。"
+        },
+        "privacy": {
+          "value": "partial",
+          "note": "符合条件的域名附带免费隐私保护；后缀限制适用。"
+        }
+      },
+      "sources": [
+        "https://www.namecheap.com/domains/",
+        "https://www.namecheap.com/support/knowledgebase/article.aspx/923/10/what-is-your-basicdns/",
+        "https://www.namecheap.com/support/knowledgebase/article.aspx/767/10/how-to-change-dns-for-a-domain/",
+        "https://www.icann.org/en/contracted-parties/accredited-registrars/resources/domain-name-transfers/inter-registrar-transfer-information",
+        "https://www.namecheap.com/domains/redemption-pricing/"
+      ]
+    },
+    {
+      "id": "aliyun-domains",
+      "name": "阿里云万网域名注册",
+      "official_url": "https://wanwang.aliyun.com/help/price.html",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "付费",
+      "price_summary": "中国站人民币计价；动态价格页未返回可核实的 .com 首年、续费与转入金额，均标未知；需实名核验。",
+      "prices": [
+        {
+          "plan": ".com 首年注册",
+          "price": "未知",
+          "currency": "CNY",
+          "period": "年",
+          "note": "普通非溢价 .com；2026-11-16 核对。注册和续费按一年，转入为一次性费用；不含二级市场域名。最终税费及资格以结算为准。"
+        },
+        {
+          "plan": ".com 续费一年",
+          "price": "未知",
+          "currency": "CNY",
+          "period": "年",
+          "note": "普通非溢价 .com；2026-11-16 核对。注册和续费按一年，转入为一次性费用；不含二级市场域名。最终税费及资格以结算为准。"
+        },
+        {
+          "plan": ".com 转入",
+          "price": "未知",
+          "currency": "CNY",
+          "period": "一次性",
+          "note": "普通非溢价 .com；2026-11-16 核对。注册和续费按一年，转入为一次性费用；不含二级市场域名。最终税费及资格以结算为准。"
+        }
+      ],
+      "free_tier_limits": "没有已核实的免费 .com 注册额度。公网权威 DNS 免费版每域名每天 10 万次查询，超出可能动态限速；每日精确重置时区未核实，非无限或自动付费升级。 信用卡要求未核实；免费附加服务不代表免费注册域名。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": "未知",
+      "collected_at": "2026-11-16",
+      "summary": "中国站人民币计价；动态价格页未返回可核实的 .com 首年、续费与转入金额，均标未知；需实名核验。",
+      "features": {
+        "register": {
+          "value": "paid"
+        },
+        "transfer": {
+          "value": "yes",
+          "note": "支持符合条件的域名转入；新注册或近期转移等锁定期及后缀规则适用。转入不等于迁移网站或邮箱。"
+        },
+        "free_dns": {
+          "value": "yes",
+          "note": "域名默认使用免费公网权威 DNS；不包含服务器或备案完成。"
+        },
+        "external_dns": {
+          "value": "yes",
+          "note": "可修改 DNS 服务器，需自行核对记录迁移。"
+        },
+        "privacy": {
+          "value": "unknown",
+          "note": "免费注册信息隐私服务的适用范围未核实。"
+        }
+      },
+      "sources": [
+        "https://wanwang.aliyun.com/help/price.html",
+        "https://help.aliyun.com/zh/dws/security-and-compliance/domain-name-real-name-authentication",
+        "https://help.aliyun.com/zh/dws/user-guide/transfer-a-domain-name-to-alibaba-cloud",
+        "https://help.aliyun.com/zh/dws/user-guide/modify-dns-server",
+        "https://help.aliyun.com/zh/dns/pubz-modify-dns-server/",
+        "https://help.aliyun.com/zh/dns/choose-dns-services",
+        "https://help.aliyun.com/zh/dns/pubz-example-selection-guidance",
+        "https://www.icann.org/en/contracted-parties/accredited-registrars/resources/domain-name-transfers/inter-registrar-transfer-information"
+      ]
+    },
+    {
+      "id": "tencent-domains",
+      "name": "腾讯云域名注册",
+      "official_url": "https://buy.cloud.tencent.com/domain/price?type=overview",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "付费",
+      "price_summary": "中国站人民币计价；动态价格页未返回可核实的 .com 首年、续费与转入金额，均标未知；使用实名信息模板。",
+      "prices": [
+        {
+          "plan": ".com 首年注册",
+          "price": "未知",
+          "currency": "CNY",
+          "period": "年",
+          "note": "普通非溢价 .com；2026-11-16 核对。注册和续费按一年，转入为一次性费用；不含二级市场域名。最终税费及资格以结算为准。"
+        },
+        {
+          "plan": ".com 续费一年",
+          "price": "未知",
+          "currency": "CNY",
+          "period": "年",
+          "note": "普通非溢价 .com；2026-11-16 核对。注册和续费按一年，转入为一次性费用；不含二级市场域名。最终税费及资格以结算为准。"
+        },
+        {
+          "plan": ".com 转入",
+          "price": "未知",
+          "currency": "CNY",
+          "period": "一次性",
+          "note": "普通非溢价 .com；2026-11-16 核对。注册和续费按一年，转入为一次性费用；不含二级市场域名。最终税费及资格以结算为准。"
+        }
+      ],
+      "free_tier_limits": "没有已核实的免费 .com 注册额度。默认 DNSPod 免费版；中国站记录数、查询额度、重置周期及超限处理未核实，不套用国际站套餐。 信用卡要求未核实；免费附加服务不代表免费注册域名。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": "未知",
+      "collected_at": "2026-11-16",
+      "summary": "中国站人民币计价；动态价格页未返回可核实的 .com 首年、续费与转入金额，均标未知；使用实名信息模板。",
+      "features": {
+        "register": {
+          "value": "paid"
+        },
+        "transfer": {
+          "value": "yes",
+          "note": "支持符合条件的域名转入；新注册或近期转移等锁定期及后缀规则适用。转入不等于迁移网站或邮箱。"
+        },
+        "free_dns": {
+          "value": "yes",
+          "note": "新注册域名默认 DNSPod 免费 DNS，不含主机或备案完成。"
+        },
+        "external_dns": {
+          "value": "yes",
+          "note": "支持使用其他服务商的权威 DNS；自建服务器另有规则。"
+        },
+        "privacy": {
+          "value": "unknown",
+          "note": "免费注册信息隐私服务的适用范围未核实。"
+        }
+      },
+      "sources": [
+        "https://buy.cloud.tencent.com/domain/price?type=overview",
+        "https://cloud.tencent.com/document/product/242/8569",
+        "https://cloud.tencent.com/document/product/242/62106",
+        "https://www.icann.org/en/contracted-parties/accredited-registrars/resources/domain-name-transfers/inter-registrar-transfer-information"
+      ]
+    }
+  ]
+}
