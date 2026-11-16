@@ -1,7 +1,7 @@
 import {test} from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';
 const read=p=>JSON.parse(fs.readFileSync(new URL('../../'+p,import.meta.url),'utf8'));
 const c=read('categories/backend-as-a-service.json'),en=read('site/src/i18n/content-en.json'),p=c.products[0];
-test('BaaS has two sourced bilingual Cloud entries',()=>{assert.equal(c.products.length,2);assert.equal(p.id,'supabase-cloud');assert.equal(p.open_source,false);assert.deepEqual(Object.keys(p.features).sort(),c.features.map(f=>f.key).sort());assert.equal(c.features.length,6);assert.equal(p.collected_at,'2026-11-16');assert.equal(p.sources.length,8);const strings=v=>typeof v==='string'?[v]:v&&typeof v==='object'?Object.values(v).flatMap(strings):[];for(const s of strings(c).filter(s=>/[\u4e00-\u9fff]/.test(s)))assert(en[s],s);assert.doesNotMatch(p.summary,/首批仅收录/);});
+test('BaaS has three sourced bilingual Cloud entries',()=>{assert.equal(c.products.length,3);assert.equal(p.id,'supabase-cloud');assert.equal(p.open_source,false);assert.deepEqual(Object.keys(p.features).sort(),c.features.map(f=>f.key).sort());assert.equal(c.features.length,6);assert.equal(p.collected_at,'2026-11-16');assert.equal(p.sources.length,8);const strings=v=>typeof v==='string'?[v]:v&&typeof v==='object'?Object.values(v).flatMap(strings):[];for(const s of strings(c).filter(s=>/[\u4e00-\u9fff]/.test(s)))assert(en[s],s);assert.doesNotMatch(p.summary,/首批仅收录/);});
 test('Supabase distinguishes project capacity, shared quotas and paid compute',()=>{assert.match(p.features.free_quota.note,/Owner或Admin.*暂停项目不计.*每项目500MB.*组织共享.*每月5GB.*5GB.*仅适用Storage/);assert.match(p.free_tier_limits,/不是每月新增容量.*500,000.*200万.*200/);assert.match(p.features.overage.note,/402.*不是自动.*Compute Hours不受Spend Cap/);assert.equal(p.prices[1].price,'25');assert.match(p.prices[1].note,/不是所有项目打包USD25/);});
 test('Supabase availability backups and unknown eligibility remain explicit',()=>{assert.equal(p.features.always_on.value,'no');assert.match(p.features.always_on.note,/一周/);assert.equal(p.features.managed_backups.value,'no');assert.match(p.features.managed_backups.note,/不包含Storage/);assert.equal(p.features.commercial.value,'unknown');assert.equal(p.features.no_card.value,'unknown');assert.match(p.free_tier_limits,/未开户、绑卡、创建项目、调用服务或实测/);});
 
@@ -23,4 +23,12 @@ test('Neon scopes free quotas and avoids unsupported recovery or eligibility pro
  assert.equal(n.features.always_on.value,'no');assert.match(n.features.always_on.note,/5分钟.*新查询自动唤醒/);
  assert.equal(n.features.managed_backups.value,'partial');assert.match(n.features.managed_backups.note,/根分支.*6小时.*1GB.*无定时备份/);
  assert.equal(n.features.commercial.value,'unknown');assert.equal(n.features.no_card.value,'partial');assert.match(n.features.no_card.note,/AI Gateway.*预付/);
+});
+
+test('Appwrite separates shared compute, freezing, inactivity deletion and unknown permissions',()=>{
+ const a=c.products.find(p=>p.id==='appwrite-cloud');assert(a);assert.equal(a.open_source,false);assert.deepEqual(Object.keys(a.features),c.features.map(f=>f.key));
+ assert.match(a.features.free_quota.note,/1个免费组织、2个项目.*共享.*75,000 MAU.*100 GB-hours.*2个函数.*待确认/);
+ assert.match(a.features.overage.note,/只读.*跨账期持续.*不能购买额外/);
+ assert.match(a.features.always_on.note,/7天.*Console开发活动.*90天.*全部资源.*邮件/);
+ assert.equal(a.features.managed_backups.value,'no');assert.equal(a.features.commercial.value,'unknown');assert.equal(a.features.no_card.value,'unknown');assert.match(a.free_tier_limits,/15分钟.*仅指构建.*共用每月100 GB-hours/);
 });

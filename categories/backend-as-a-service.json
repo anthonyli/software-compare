@@ -166,6 +166,72 @@
         "https://neon.com/platform-terms",
         "https://www.databricks.com/legal/mcsa"
       ]
+    },
+    {
+      "id": "appwrite-cloud",
+      "name": "Appwrite Cloud",
+      "official_url": "https://appwrite.io/pricing",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "免费增值",
+      "price_summary": "提供认证、数据库、文件存储、函数与Realtime的托管后端；仅比较Appwrite Cloud，不将开源自托管许可视为云服务许可。",
+      "prices": [
+        {
+          "plan": "Appwrite Free云方案",
+          "price": "0",
+          "currency": "USD",
+          "period": "月",
+          "note": "有限额的免费托管方案，不能购买额外资源；不代表无限量服务或永久免费保存闲置项目。"
+        }
+      ],
+      "free_tier_limits": "Free使用默认512MB内存、0.5 CPU；Functions和Sites的15分钟上限仅指构建，不是函数执行或网站请求超时。构建与执行共用每月100 GB-hours，不能各算一份。存储容量不是每月新增容量。未开户、绑卡、创建项目、调用服务或实测。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": "未知",
+      "collected_at": "2026-11-16",
+      "summary": "提供认证、数据库、文件存储、函数与Realtime的托管后端；仅比较Appwrite Cloud，不将开源自托管许可视为云服务许可。",
+      "features": {
+        "free_quota": {
+          "value": "partial",
+          "note": "每账户最多1个免费组织、2个项目；免费资源跨项目共享，含75,000 MAU及每月100 GB-hours构建与执行共用额度。每项目最多2个函数。当前存储容量、带宽及执行次数的完整额度待确认，不引用旧缓存数字。"
+        },
+        "overage": {
+          "value": "partial",
+          "note": "Free超限可冻结项目，Console只读；升级、移除超限资源或等待适用额度下一账期恢复。存储超额禁止上传且跨账期持续，不能靠月度重置解除；Free不能购买额外资源，不套用付费自动超额收费规则。"
+        },
+        "always_on": {
+          "value": "no",
+          "note": "连续7天没有Console开发活动会暂停，期间用户不可访问，后台任务不运行；可在Console恢复。持续暂停90天会删除项目及全部资源，删除前邮件预警；不能推断API请求即可保活。"
+        },
+        "managed_backups": {
+          "value": "no",
+          "note": "用户可配置的备份策略、手动备份与恢复功能要求Pro或以上。平台内部灾难恢复备份不等于Free用户可自主恢复的备份权益。"
+        },
+        "commercial": {
+          "value": "unknown",
+          "note": "普通Free方案的一般商用许可尚未明确确认；Education方案的禁止商用条款不能套用到普通Free，不以开源许可推断Cloud商用权益。"
+        },
+        "no_card": {
+          "value": "unknown",
+          "note": "尚未确认现行官方明确要求或免除Free开户绑卡；支持信用卡或借记卡付款不等于免费开户必须绑卡。未注册验证。"
+        }
+      },
+      "sources": [
+        "https://appwrite.io/pricing",
+        "https://appwrite.io/docs/advanced/billing/free",
+        "https://appwrite.io/docs/advanced/billing/compute",
+        "https://appwrite.io/alternative-to/clerk",
+        "https://appwrite.io/changelog/entry/2026-01-08",
+        "https://appwrite.io/changelog/entry/2026-02-20-1",
+        "https://appwrite.io/changelog/entry/2026-06-29",
+        "https://appwrite.io/docs/advanced/security/backups",
+        "https://appwrite.io/terms"
+      ]
     }
   ]
 }
