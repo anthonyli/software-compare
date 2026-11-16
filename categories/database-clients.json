@@ -438,6 +438,64 @@
         "https://github.com/pawelsalawa/letos/wiki/Icons8-icon-set"
       ],
       "collected_at": "2026-11-15"
+    },
+    {
+      "id": "antares",
+      "name": "Antares SQL",
+      "official_url": "https://antares-sql.app/",
+      "github_url": "https://github.com/antares-sql/antares",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "完全免费",
+      "price_summary": "免费开源桌面客户端；官方声明无付费高级功能或订阅。数据库托管和运维费用不属于客户端免费范围。",
+      "prices": [
+        {
+          "plan": "桌面客户端",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "MIT；使用和再分发须保留许可与版权声明。"
+        }
+      ],
+      "free_tier_limits": "README 勾选 x64 Windows/Linux/macOS，ARM 仅 Linux；不据目标宣言承诺原生 Apple Silicon 或 Windows ARM。项目仍标开发/Beta阶段；系统最低版本、M4 16GB兼容与性能未实测。写入前确认连接、权限和备份，未安装或连接数据库。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "面向开发者的桌面 SQL 客户端，提供查询自动完成、历史及表格数据编辑；支持范围不等于所有数据库均有完整导入导出。",
+      "features": {
+        "sql": {
+          "value": "yes",
+          "note": "提供 SQL 查询自动完成、历史和已保存查询。"
+        },
+        "data_edit": {
+          "value": "yes",
+          "note": "官方源码含单元格更新与删除所选行的界面到SQL执行链路；可编辑性受引擎、结果集及数据库权限限制，非实测保证。"
+        },
+        "multi_engine": {
+          "value": "yes",
+          "note": "MySQL/MariaDB、PostgreSQL、SQLite、Firebird SQL；README 的 DuckDB/SQL Server 未勾选，不算已支持。"
+        },
+        "import_export": {
+          "value": "partial",
+          "note": "SQL dump 导入/导出工作线程明确实现 MySQL/MariaDB 与 PostgreSQL；其他引擎及格式不作相同承诺，不等于通用备份恢复。"
+        }
+      },
+      "sources": [
+        "https://antares-sql.app/",
+        "https://github.com/antares-sql/antares/blob/1a9ccc7ba957cc435ad4beb86b56c1f19c2c830e/README.md",
+        "https://github.com/antares-sql/antares/blob/1a9ccc7ba957cc435ad4beb86b56c1f19c2c830e/LICENSE",
+        "https://github.com/antares-sql/antares/blob/1a9ccc7ba957cc435ad4beb86b56c1f19c2c830e/src/renderer/composables/useResultTables.ts",
+        "https://github.com/antares-sql/antares/blob/1a9ccc7ba957cc435ad4beb86b56c1f19c2c830e/src/main/ipc-handlers/tables.ts",
+        "https://github.com/antares-sql/antares/blob/1a9ccc7ba957cc435ad4beb86b56c1f19c2c830e/src/main/workers/importer.ts",
+        "https://github.com/antares-sql/antares/blob/1a9ccc7ba957cc435ad4beb86b56c1f19c2c830e/src/main/workers/exporter.ts"
+      ],
+      "collected_at": "2026-11-16"
     }
   ]
 }
