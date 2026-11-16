@@ -14,7 +14,7 @@ export const siteConfig = {
 
 /** 首页分组：slug 必须与数据里的品类 id 一致。 */
 export const categoryGroups: { id: string; name: string; slugs: string[] }[] = [
-  { id: "cloud", name: "云服务与开发基础设施", slugs: ["domain-registration"] },
+  { id: "cloud", name: "云服务与开发基础设施", slugs: ["domain-registration", "international-payments"] },
   { id: "network", name: "网络工具", slugs: ["proxy-clients"] },
   { id: "lifestyle", name: "运动与户外", slugs: ["fitness-training", "cycling-tools", "outdoor-navigation"] },
   { id: "ai", name: "AI 工具", slugs: ["ai-assistants", "ai-coding", "ai-image-workflows", "ai-memory"] },
@@ -71,6 +71,7 @@ export const featureLabelFull: Record<string, string> = {
 
 /** 首页与导航用的品类一字记号，纯展示，不改变数据。 */
 export const categoryMonograms: Record<string, string> = {
+  "international-payments": "付",
   "domain-registration": "域",
   "clipboard-managers": "贴",
   "authenticators": "验",
@@ -118,6 +119,7 @@ export const categoryMonograms: Record<string, string> = {
 
 /** 首页卡片色块，仅用于展示，不代表产品官方品牌色。 */
 export const categoryTints: Record<string, string> = {
+  "international-payments": "#F4E6EF",
   "domain-registration": "#DDEFEA",
   "clipboard-managers": "#E8F3EF",
   "authenticators": "#E8F4EF",

@@ -9,6 +9,7 @@ function contentFallback(text: string): string {
 
 /** Category display names, keyed by slug. */
 export const categoryNames: Record<string, { zh: string; en: string }> = {
+  "international-payments": { zh: "国外支付平台", en: "International payment platforms" },
   "domain-registration": { zh: "域名注册", en: "Domain registration" },
   "clipboard-managers": { zh: "剪贴板管理", en: "Clipboard managers" },
   "authenticators": { zh: "身份验证器", en: "Authenticators" },
@@ -75,6 +76,13 @@ export const groupNames: Record<string, { zh: string; en: string }> = {
 
 /** Feature column labels keyed by "slug:key". */
 export const featureColumns: Record<string, { zh: string; en: string }> = {
+  "international-payments:mor": { zh: "法定销售方 MoR", en: "Merchant of record" },
+  "international-payments:cn_individual": { zh: "大陆个人申请边界", en: "Mainland individual eligibility" },
+  "international-payments:cn_business": { zh: "大陆企业申请边界", en: "Mainland business eligibility" },
+  "international-payments:review": { zh: "网站与身份审核", en: "Website and identity review" },
+  "international-payments:payouts": { zh: "提现渠道与限制", en: "Payout routes and limits" },
+  "international-payments:recurring": { zh: "订阅收款", en: "Recurring payments" },
+
   "domain-registration:register": { zh: "付费域名注册", en: "Paid domain registration" },
   "domain-registration:transfer": { zh: "域名转入", en: "Inbound domain transfer" },
   "domain-registration:free_dns": { zh: "附带免费 DNS", en: "Included free DNS" },
