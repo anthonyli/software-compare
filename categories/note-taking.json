@@ -1330,8 +1330,7 @@
           "note": "核心组织方式，Pro 还有更多标签图标等"
         },
         "web_clipper": {
-          "value": "unknown",
-          "note": "首页未确认"
+          "value": "yes"
         },
         "sync": {
           "value": "paid",
@@ -1363,7 +1362,8 @@
         }
       },
       "sources": [
-        "https://bear.app"
+        "https://bear.app",
+        "https://bear.app/faq/browser-extensions/"
       ]
     },
     {
