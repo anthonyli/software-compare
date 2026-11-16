@@ -37,7 +37,7 @@ if (root) {
   function resetDepth(slide?:HTMLElement){
     cancelAnimationFrame(depthFrame);depthElapsed=0;depthLast=0;
     depthCards.forEach(card=>{card.style.translate='';card.style.rotate='';});
-    depthCards=slide?Array.from(slide.querySelectorAll<HTMLElement>('.art-window,.art-mini,.floating-tag,.art-label')):[];
+    depthCards=slide?['.art-window','.art-mini','.floating-tag','.art-label'].map(selector=>slide.querySelector<HTMLElement>(selector)!):[];
     function advance(now:number){
       if(depthLast&&!depthPaused)depthElapsed+=now-depthLast;
       depthLast=now;
@@ -75,6 +75,8 @@ if (root) {
     const seed=[.35,.8,1.1,Math.PI,0,.4][scene];
     const amplitude=[.14,.18,.24,.30,.14,.035][scene]*(strength/.14);
     const drift=phase*[.25,.22,.20,.08,.16,.12][scene];
+    const aspect=root!.clientWidth/root!.clientHeight;
+    const sx=Math.min(1,1/aspect),sy=Math.min(1,aspect);
     const points = Array.from({length:72}, (_,i) => {
       const a = i / 72 * Math.PI * 2;
       const family=scene===0
@@ -84,7 +86,7 @@ if (root) {
       // silhouette is never a frozen cutout waiting for a scale animation.
       const ripple=.022*Math.sin(a*9-phase*20)+.009*Math.sin(a*13+phase*14);
       const r = radius * (family+ripple);
-      return [.5 + Math.cos(a+rotation)*r, .48 + Math.sin(a+rotation)*r];
+      return [.5 + Math.cos(a+rotation)*r*sx, .48 + Math.sin(a+rotation)*r*sy];
     });
     const mid = (a:number[], b:number[]) => `${((a[0]+b[0])/2).toFixed(5)},${((a[1]+b[1])/2).toFixed(5)}`;
     let d = `M${mid(points[71],points[0])}`;
@@ -140,6 +142,7 @@ if (root) {
       root!.dataset.transitioning='true';
       root!.dataset.revealProgress='0';
       const start=performance.now();
+      const coverRadius=Math.hypot(root!.clientWidth,root!.clientHeight)/Math.min(root!.clientWidth,root!.clientHeight)*.8;
       function tick(now:number){
         if(token!==generation)return;
         const t=Math.min(1,(now-start)/duration);
@@ -149,7 +152,7 @@ if (root) {
         // (163ms), then visibly turn the silhouette as it releases (562ms).
         const radius=t<.42 ? .015+.305*smooth(t/.42)
           : t<.55 ? .32-.035*smooth((t-.42)/.13)
-          : .285+.815*smooth((t-.55)/.45);
+          : .285+(coverRadius-.285)*smooth((t-.55)/.45);
         const turn=smooth(Math.max(0,Math.min(1,(t-.51)/.36)))*[.62,-.52,.7,-.65,.48,-.45][current];
         root!.dataset.revealRadius=radius.toFixed(4);
         root!.dataset.revealRotation=turn.toFixed(4);
