@@ -9,6 +9,7 @@ function contentFallback(text: string): string {
 
 /** Category display names, keyed by slug. */
 export const categoryNames: Record<string, { zh: string; en: string }> = {
+  "web-hosting": { zh: "网站部署", en: "Website deployment" },
   "international-payments": { zh: "国外支付平台", en: "International payment platforms" },
   "domain-registration": { zh: "域名注册", en: "Domain registration" },
   "clipboard-managers": { zh: "剪贴板管理", en: "Clipboard managers" },
@@ -76,6 +77,12 @@ export const groupNames: Record<string, { zh: string; en: string }> = {
 
 /** Feature column labels keyed by "slug:key". */
 export const featureColumns: Record<string, { zh: string; en: string }> = {
+  "web-hosting:static_hosting": { zh: "静态站点托管", en: "Static site hosting" },
+  "web-hosting:build_limits": { zh: "构建额度与周期", en: "Build quotas and periods" },
+  "web-hosting:functions": { zh: "函数计算边界", en: "Function compute limits" },
+  "web-hosting:commercial": { zh: "免费档商用边界", en: "Free-tier commercial use" },
+  "web-hosting:overage": { zh: "超额处理", en: "Overage behavior" },
+  "web-hosting:card_required": { zh: "免费档需绑卡", en: "Card required for free tier" },
   "international-payments:mor": { zh: "法定销售方 MoR", en: "Merchant of record" },
   "international-payments:cn_individual": { zh: "大陆个人申请边界", en: "Mainland individual eligibility" },
   "international-payments:cn_business": { zh: "大陆企业申请边界", en: "Mainland business eligibility" },

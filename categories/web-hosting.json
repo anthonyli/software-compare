@@ -1,0 +1,164 @@
+{
+  "category_slug": "web-hosting",
+  "category_name_zh": "网站部署",
+  "collected_at": "2026-11-16",
+  "collected_at_timezone": "UTC",
+  "features": [
+    {
+      "key": "static_hosting",
+      "label": "静态站点托管"
+    },
+    {
+      "key": "build_limits",
+      "label": "构建额度与周期"
+    },
+    {
+      "key": "functions",
+      "label": "函数计算边界"
+    },
+    {
+      "key": "commercial",
+      "label": "免费档商用边界"
+    },
+    {
+      "key": "overage",
+      "label": "超额处理"
+    },
+    {
+      "key": "card_required",
+      "label": "免费档需绑卡"
+    }
+  ],
+  "products": [
+    {
+      "id": "vercel",
+      "name": "Vercel",
+      "official_url": "https://vercel.com/docs/plans/hobby",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "免费增值",
+      "price_summary": "前端网站与函数部署；Hobby免费额度不等于无限商用或无限计算，Pro另有月费与用量账单。",
+      "prices": [
+        {
+          "plan": "Hobby免费档",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "2026-11-16：免费额度，不是试用后自动付费；受Hobby条款与资源限制。"
+        },
+        {
+          "plan": "Pro平台基础费",
+          "price": "20",
+          "currency": "USD",
+          "period": "月",
+          "note": "含1个部署席位及每月USD20用量抵扣；额外部署席位每月USD20，超抵扣按量收费，税及附加服务另计。"
+        }
+      ],
+      "free_tier_limits": "Hobby无付费账期，但各资源有额度周期；常见额度按月，超额多数需等30天再使用该功能，部分例外更短。Hobby绑卡要求未核实，Pro升级需卡。域名注册、存储及外部服务另计；未开户、绑卡、部署或实测。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": "未知",
+      "collected_at": "2026-11-16",
+      "summary": "前端网站与函数部署；Hobby免费额度不等于无限商用或无限计算，Pro另有月费与用量账单。",
+      "features": {
+        "static_hosting": {
+          "value": "yes",
+          "note": "支持静态站点；Hobby每月Fast Data Transfer 100GB、Fast Origin Transfer 10GB，CDN请求100万，不是无限流量。"
+        },
+        "build_limits": {
+          "value": "partial",
+          "note": "Hobby每天100次部署；构建机2 vCPU、8GB内存。部署次数不是可任意消耗的构建CPU时间。"
+        },
+        "functions": {
+          "value": "partial",
+          "note": "Hobby每月函数调用100万、Active CPU 4小时、Provisioned Memory 360GB小时；调用数不能替代CPU/内存限制。"
+        },
+        "commercial": {
+          "value": "partial",
+          "note": "现行Hobby条款仅限个人或非商业用途（personal or non-commercial）；不要解释为所有营利项目均获许可。商业项目应核对付费方案及适用条款。"
+        },
+        "overage": {
+          "value": "partial",
+          "note": "Hobby多数额度超出后需等30天，Web Analytics有7天恢复例外；Pro抵扣用完后自动按量计费，提醒不是硬性费用上限。"
+        },
+        "card_required": {
+          "value": "unknown",
+          "note": "当前公开Hobby资料未明确确认绑卡要求；不能由免费推定免卡。Pro升级流程明确要求填写卡资料。"
+        }
+      },
+      "sources": [
+        "https://vercel.com/docs/plans/hobby",
+        "https://vercel.com/legal/terms",
+        "https://vercel.com/docs/plans/pro-plan",
+        "https://vercel.com/docs/limits/fair-use-guidelines"
+      ]
+    },
+    {
+      "id": "cloudflare-pages",
+      "name": "Cloudflare Pages",
+      "official_url": "https://developers.cloudflare.com/pages/platform/limits/",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "免费增值",
+      "price_summary": "静态部署与Pages Functions；静态请求免费不限量仅适用于不调用函数的请求，函数共享Workers额度。",
+      "prices": [
+        {
+          "plan": "Pages Free静态托管",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "2026-11-16：静态请求不调用Functions时免费不限；构建及文件仍有限制，不代表后端计算免费无限。"
+        }
+      ],
+      "free_tier_limits": "Free每月500次构建、每次20分钟上限、账号1个并发构建；每站2万文件、单文件25MiB。Functions每日额度UTC零点重置。独立域名购买、数据库和存储不属于无限静态请求；平台条款允许因网络负担或违规限制服务。未开户、绑卡、部署或实测。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": "未知",
+      "collected_at": "2026-11-16",
+      "summary": "静态部署与Pages Functions；静态请求免费不限量仅适用于不调用函数的请求，函数共享Workers额度。",
+      "features": {
+        "static_hosting": {
+          "value": "yes",
+          "note": "不调用Functions的静态资源请求免费不限；Free每项目最多100自定义域名，域名注册费不包含。"
+        },
+        "build_limits": {
+          "value": "partial",
+          "note": "Free每月500次构建，账号1个并发，每次20分钟超时；Pro/Business构建额度不同，不与Workers付费计算方案混同。"
+        },
+        "functions": {
+          "value": "partial",
+          "note": "Pages Functions与Workers Free共享每天10万请求，UTC零点重置；静态路由须避免调用函数，否则会计入额度。"
+        },
+        "commercial": {
+          "value": "unknown",
+          "note": "已读Developer Platform条款，未找到类似Hobby的个人非商用限定；不能因此保证所有商业用途均获许可，须符合服务与内容规则。"
+        },
+        "overage": {
+          "value": "partial",
+          "note": "Functions免费日额度耗尽后按配置fail open仅继续静态资源或fail closed返回错误；涉及身份校验时不应绕过函数。构建月额耗尽后的具体处理未核实。"
+        },
+        "card_required": {
+          "value": "no",
+          "note": "Pages官网明确免费起步无需信用卡；不代表升级付费计算、存储或其他产品也免卡。"
+        }
+      },
+      "sources": [
+        "https://developers.cloudflare.com/pages/platform/limits/",
+        "https://developers.cloudflare.com/pages/functions/pricing/",
+        "https://developers.cloudflare.com/pages/functions/routing/",
+        "https://www.cloudflare.com/products/pages/",
+        "https://www.cloudflare.com/service-specific-terms-developer-platform/"
+      ]
+    }
+  ]
+}
