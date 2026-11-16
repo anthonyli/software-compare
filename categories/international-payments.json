@@ -345,6 +345,75 @@
         "https://docs.stripe.com/payments/managed-payments",
         "https://docs.lemonsqueezy.com/help/payments/sales-tax-vat"
       ]
+    },
+    {
+      "id": "paypal-china",
+      "name": "PayPal（中国大陆卖家）",
+      "official_url": "https://www.paypal.cn/portal/landing/individual-seller-baidu",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "付费",
+      "price_summary": "中国大陆卖家全球收单方案；个人及企业可有条件申请，人民币结算另行审核，不等同于全球所有PayPal账户。",
+      "prices": [
+        {
+          "plan": "美元国际商业收款示例",
+          "price": "4.4% + USD 0.30",
+          "currency": null,
+          "period": "成功交易",
+          "note": "2026-11-16：仅限《中国跨境支付服务用户协议》及《全球服务条款》适用路径的美元国际商业收款；固定费随收款币种变化。不是全球统一价，不含换汇、争议、退单及适用税费；退款不退原收款手续费。"
+        }
+      ],
+      "free_tier_limits": "付费支付处理，不是MoR代缴税方案。人民币结算标准费率1%，另按服务费金额收取当前6%增值税，非本金6%；限时优惠及换汇成本须另查费用中心。USD 35仅为相应大陆银行电汇提现路线，不是人民币结算统一费。冻结、准备金、交易核验及银行处理可能延迟出金。仅核查公开资料，未开户、提交证件、绑定银行或实测；不保证批准、额度或到账。 买家可支付不代表卖家可开户；卖家的所得税等义务仍需自行履行。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": "未知",
+      "collected_at": "2026-11-16",
+      "summary": "中国大陆卖家全球收单方案；个人及企业可有条件申请，人民币结算另行审核，不等同于全球所有PayPal账户。",
+      "features": {
+        "mor": {
+          "value": "no",
+          "note": "支付服务提供商，不作为本条商户的MoR；卖家负责判断、计算、收取及申报缴纳交易税款。"
+        },
+        "cn_individual": {
+          "value": "partial",
+          "note": "新版个人卖家属于个人类别企业用户，非消费者个人账户。须为18岁以上中国居民；账户所有人仅为中国税收居民，不得为美国税收居民或需遵守美国税法。大陆身份证、邮箱、手机号及身份审核等要求适用，不保证获批。"
+        },
+        "cn_business": {
+          "value": "partial",
+          "note": "中国境内法律实体可申请；持个体工商户营业执照者官方建议企业卖家账户。营业执照、法代身份证、受益人身份证或护照等、邮箱手机及税务资料须审核；主体及控制人须仅为中国税收居民，不得为美国税收居民或需遵守美国税法，具体资格按协议审核。"
+        },
+        "review": {
+          "value": "yes",
+          "note": "个人卖家注册指南要求身份验证、职业、商业名称、客服号码、MCC及月销售额；付款链接/账单可无需独立站，但仍须真实业务、商品描述、退款及隐私政策。另行申请人民币结算的材料含有效店铺URL，不能与全球收单开户混同。"
+        },
+        "payouts": {
+          "value": "partial",
+          "note": "全球服务提现按账户可用路线；人民币结算须另行审核有效交易并关联境内银行，服务额度不等于余额。该人民币路线北京时间工作日13:00前一般当天、之后或非工作日一般下一工作日处理，不保证时效；费用与电汇路线分开。"
+        },
+        "recurring": {
+          "value": "unknown",
+          "note": "存在订阅产品不等于本条大陆个人及企业账户均获开通；具体账户、集成和支付方式适用性未核实。"
+        }
+      },
+      "sources": [
+        "https://www.paypal.cn/portal/paypal-unified-account-ua",
+        "https://www.paypal.cn/portal/paypal-worldwide-services-terms-and-conditions",
+        "https://www.paypal.cn/portal/landing/individual-seller-baidu",
+        "https://www.paypal.cn/portal/help/article/441",
+        "https://www.paypal.cn/portal/help/article/439",
+        "https://objects.paypal.cn/ppcn-martech-infostore/assets/PayPal%E4%B8%AD%E5%9B%BD%E4%B8%AA%E4%BA%BA%E5%8D%96%E5%AE%B6%E6%B3%A8%E5%86%8C%E6%8C%87%E5%8D%97.pdf",
+        "https://objects.paypal.cn/ppcn-martech-infostore/tscp-onboarding-tutorial-guide-biz-account.pdf",
+        "https://www.paypal.com/c2/business/paypal-business-fees?locale.x=en_C2",
+        "https://www.paypal.cn/portal/fees",
+        "https://www.paypal.cn/portal/rmb-withdrawal-terms-and-conditions",
+        "https://www.paypal.cn/portal/help/article/286",
+        "https://www.paypal.cn/portal/help/article/321"
+      ]
     }
   ]
 }
