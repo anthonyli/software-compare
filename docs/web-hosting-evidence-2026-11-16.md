@@ -33,3 +33,5 @@
 ## 首轮CI修正
 
 CI run 43860064288 的新web-hosting E2E在关闭展开项时失败，其余149项通过。原因是 `details[open]` 动态集合在第一次关闭后重索引，旧 `nth(1)` 定位失效；不是产品渲染失败。修复为按 vercel / cloudflare-pages 稳定产品ID各自定位并关闭details，并断言open属性移除。未加sleep、放宽timeout、mock API或删除断言；修复后的实际浏览器结果仍待最终CI。
+
+首个修复后的CI已成功，实际内容断言通过；但英文390px全页截图因展开说明触发滚动，sticky header停留在页面内部遮挡标题。分类截图前增加scrollTo(0,0)并轮询确认scrollY=0，不使用sleep，不改变产品布局或内容。详情截图不变；最终回顶状态截图仍待新CI生成及目视验收。

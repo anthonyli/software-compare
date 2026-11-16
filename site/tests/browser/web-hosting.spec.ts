@@ -20,6 +20,8 @@ test('website hosting quotas, language visibility and cover render on desktop an
     await row.locator('details summary').click();
    }
    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+   await page.evaluate(()=>window.scrollTo(0,0));
+   await expect.poll(()=>page.evaluate(()=>window.scrollY)).toBe(0);
    await page.screenshot({path:`../docs/design/previews/payment-page-webhosting-${active}-${width}.png`,fullPage:true});
    for(const id of ['vercel','cloudflare-pages']){
     const detail=list.locator(`[data-product-id="${id}"] details`);
