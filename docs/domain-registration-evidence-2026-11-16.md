@@ -17,3 +17,5 @@
 赎回边界补核：Porkbun RGP 恢复 USD 200 另加正常续费；Namecheap 普通 .com USD 89.98 已含续费，另加 USD 0.20 ICANN，不能再次叠加续费；Cloudflare 因后缀定价且续费另计，具体金额未知。以上不是普通逾期即收费或恢复保证；不设全球统一恢复时间线。对应官方链接追加到产品 sources。全部定价模型为“付费”，不暗示必须自动扣费订阅。
 
 更新至 main `594ad9a` 后，保留 Syncthing/Notesnook/scrcpy 全部修改，2519 个 main 英文键逐一验证值不变，仅追加新键。重新执行187项单测全部通过，构建成功。静态页面浏览器补验也受 Chromium socket 权限阻塞，未宣称通过。
+
+最终验证更新：Cloudflare DNS 超限行为及回归补齐后共 188 项单测；CI 43844642402 构建与全套 145 项真实 Worker E2E 通过。实际1280/390截图已下载目视，名称渲染遗漏也已修复并由新增可见英文断言覆盖。详见 `docs/design/domain-registration-review.md` 的逐轮验收与 CI 证据。此前183/187及本地环境阻碍记录为过程状态，不代表最终仍未验收。

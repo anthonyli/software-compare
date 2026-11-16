@@ -19,3 +19,5 @@
 - CI 上传截图保留七天，后续 PR CI 可重新生成。上述本地 Chromium/服务器限制仍属实，但已由真实 CI 浏览器和下载截图补齐验收，不再作为本项的未完成条件。合并仍以最终提交 CI 成功为准。
 
 独立截图复核补充：上述布局通过，但 EN 页阿里云/腾讯云的产品名仍为中文，虽然映射存在；须补齐名称呈现及实际英文名称断言、再次完成 CI 与截图核验后方可合并，不将此前视觉检查视为完整双语验收。
+
+英文名称问题已修复并实证关闭：[CI 43844642402](https://github.com/anthonyli/software-compare/actions/runs/43844642402)，提交 `50b2f83113157c0f74b3bfc5c27c3a0790ed7bf7` 全部通过。已下载 artifact `14213829967` 重新目视桌面/390px比较页，阿里云、腾讯云显示为 `Alibaba Cloud Wanwang Domains` / `Tencent Cloud Domains`，无溢出或重叠。新增断言同时核实可见英文、隐藏中文、hover title，以及详情 H1 / document.title；复用既有翻译机制，不改排序/筛选/链接。此次复核补齐此前记录的双语缺口。
