@@ -40,9 +40,9 @@ npm run dev
 | Secret | `CLOUDFLARE_ACCOUNT_ID` | Cloudflare 账户 ID |
 | Secret | `COOKIE_SECRET` | 上一步生成的随机密钥，至少 32 字符 |
 | Variable | `CLOUDFLARE_D1_DATABASE_ID` | D1 数据库 UUID |
-| Workflow env | `PUBLIC_SITE_URL` | 正式 HTTPS 根地址，本项目为 `https://compare.pageon.cc`；不读取旧的同名仓库变量 |
+| Workflow env | `PUBLIC_SITE_URL` | 正式 HTTPS 根地址，本项目为 `https://compare.sangmu.me`；不读取旧的同名仓库变量 |
 
-生产 Pages 项目固定名为 `software-compare`。正式域名为 `https://compare.pageon.cc`。
+生产 Pages 项目固定名为 `software-compare`。正式域名为 `https://compare.sangmu.me`。
 `PUBLIC_SITE_URL` 只用于 canonical、sitemap 和页面链接，不会自动购买或绑定域名。
 配置脚本会拒绝空值、占位数据库 ID 和 `.example` 域名。
 
@@ -61,16 +61,30 @@ npm run dev
 
 ## 自定义子域名（保留阿里云 DNS）
 
-只绑定 `compare.pageon.cc`，不更换 `pageon.cc` 的 DNS 服务器，也不修改主站、`pet` 或邮件记录。
+主域名为 `compare.sangmu.me`，旧域名 `compare.pageon.cc` 保留绑定并以 301 永久跳转到新域名。
+两个域名绑定同一个 Pages 项目并共享 D1 数据；保留阿里云 DNS，不修改根域名、其他子域名或邮件记录。
 
-1. 在 Pages 项目 → Custom domains 中添加 `compare.pageon.cc`。
-2. 在阿里云为 `pageon.cc` 新增一条 `CNAME`：主机记录 `compare`，记录值使用 Pages 页面显示的
+1. 在 Pages 项目 → Custom domains 中添加 `compare.sangmu.me`。
+2. 在阿里云为 `sangmu.me` 新增一条 `CNAME`：主机记录 `compare`，记录值使用 Pages 页面显示的
    实际项目域名（`*.pages.dev`），默认线路，TTL 10 分钟。
 3. 等待 Cloudflare 显示 Active 并签发 HTTPS 证书。
-4. 工作流的 `env.PUBLIC_SITE_URL` 设置为 `https://compare.pageon.cc` 后重新部署。
+4. 工作流的 `env.PUBLIC_SITE_URL` 设置为 `https://compare.sangmu.me` 后重新部署。
+
+Cloudflare 账户的 Bulk Redirects 使用列表 `compare_primary_domain`：
+来源 `compare.pageon.cc/`（同时匹配 HTTP 与 HTTPS），目标 `https://compare.sangmu.me/`，状态码 301。
+启用 Preserve query string、Subpath matching、Preserve path suffix；不启用 Include subdomains。
+此规则在 Cloudflare 控制台管理，不依赖 Pages 构建文件；保留旧域名的 CNAME、Pages 绑定和证书。
 
 不要将 CNAME 指向 `*.workers.dev`。原 Workers 部署仅保留作迁移备份，后续每日发布到 Pages。
-D1 继续复用原数据库；Cookie 属于各自域名，旧 workers.dev 域名的浏览器身份不会自动带到新域名。
+D1 继续复用原数据库，已有票数保留；Cookie 属于各自域名，浏览器的匿名点赞身份不会跨域自动迁移。
+
+## Web Analytics
+
+使用 Cloudflare Pages 项目 Metrics 中启用的 Web Analytics，由 Pages 在生产页面自动注入统计脚本。
+该统计覆盖项目的 Pages 域名及已绑定的自定义域名，包括 `compare.sangmu.me`。
+不要在页面布局中再手动添加 beacon，否则会与自动注入重复；本地构建和测试不注入统计脚本。
+原 `compare.pageon.cc` 手动统计站点保留用于查看历史数据，不删除其记录。
+部署后检查线上 HTML 只包含一份 `https://static.cloudflareinsights.com/beacon.min.js`。
 
 ## 每日 GitHub 同步
 

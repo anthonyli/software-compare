@@ -2,7 +2,7 @@
 
 [简体中文](README.md) | **English**
 
-[Live site](https://compare.pageon.cc)
+[Live site](https://compare.sangmu.me) · [Previous address (redirects automatically)](https://compare.pageon.cc)
 
 Compare desktop, mobile and web tools on price, free-tier limits, and features.
 

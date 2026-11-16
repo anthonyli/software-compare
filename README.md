@@ -2,7 +2,7 @@
 
 **简体中文** | [English](README.en.md)
 
-[在线体验](https://compare.pageon.cc)
+[在线体验](https://compare.sangmu.me) · [旧地址（自动跳转）](https://compare.pageon.cc)
 
 对照价格、免费限制与功能，选出适合你的工具。
 
