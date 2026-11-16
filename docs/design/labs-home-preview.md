@@ -16,13 +16,14 @@ Open the local URL Astro prints (normally http://localhost:4321). `dev:ui` previ
 
 ## Included
 
-- Immersive dark carousel with a visually integrated navigation bar, layered perspective, neighboring cards, timed progress bars and scene-color ambience. Each change bends the entering panel silhouette while artwork and text arrive at different depths; reduced-motion removes the choreography.
-- Six task-first entry points: hosting, screen recording, email, cloud SQL, image editing and backend services.
-- Random starting scene and a surprise button, explicit previous/next and direct selection. Automatic advance every 4.5 seconds, with a pause/play control. Hover, keyboard focus, hidden tabs and offscreen state pause playback; reduced-motion disables automatic motion. Keyboard arrows, swipe, focus control and reduced-motion support.
-- Chinese/English labels; responsive mobile layout; all existing catalog data, search and category grouping retained.
-- Cream directory surface and restrained card hover interaction.
+- Full-viewport scenes under a genuinely transparent, overlaid header. Controls stay within the first viewport, including short desktop windows.
+- A custom SVG liquid mask reveals each new scene from the center with an undulating edge. The previous scene remains visible outside the expanding mask. The translucent rim and first-entry reveal use the same mechanism, not a horizontal card translation.
+- Six task-first entry points with original translucent interface illustrations. No Google imagery or source code is reused.
+- Automatic advance every six seconds; progress dots select scenes. Clicking the active progress pauses/resumes. Arrow keys and touch swipes navigate; no separate right-side play or arrow buttons.
+- Hovering interactive links/controls, keyboard focus, hidden tabs and offscreen state pause playback. Reduced-motion skips the reveal and disables automatic advance.
+- Chinese/English, search and catalog retained. Grid remains in the light catalog area and on category/product pages, not the immersive stage.
 
-No external imagery, animation dependency, third-party API, data migration or production configuration changes. The illustrations are conceptual, not screenshots or product endorsements.
+Reference observation: directly interacted with labs.google in the cloud browser. Observed central organic mask expanding over the previous full-screen scene, rather than a card sliding sideways, and navigation over the scene itself. Short screenshot sequences cannot establish exact original timings or shader implementation; this is an original SVG reconstruction of the visible behavior.
 
 ## Checks
 

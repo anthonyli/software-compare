@@ -9,118 +9,149 @@ const scenes = [
 {slug:'backend-as-a-service',zh:'搭好产品的后端',en:'Build behind the scenes',sub:'认证、存储与数据库，少一点重复工作。',subEn:'Auth, storage and databases. Less repetitive work.',tag:'MAKE / 06',color:'#a7ead1',kind:'backend',tools:'Supabase · Appwrite',symbol:'{ }',label:'✓ Connected',file:'your-next-app'},
 ];
 ---
-<section class="scenario" data-scenario aria-roledescription="carousel" aria-label="探索使用场景" data-i18n="aria-label" data-zh="探索使用场景" data-en="Explore use cases">
+<section class="scenario" data-scenario tabindex="0" aria-describedby="scenario-help" aria-roledescription="carousel" aria-label="探索使用场景" data-i18n="aria-label" data-zh="探索使用场景" data-en="Explore use cases">
 <div class="scenario-top"><span class="eyebrow"><span class="spark">✳</span> COMPARE / PLAYGROUND</span><a href="#categories"><T zh="所有分类" en="All categories"/> ↗</a></div>
 <div class="scenario-heading"><h1><T zh="今天，你想做什么？" en="What will you make today?"/></h1><p><T zh="从一个想法出发，发现刚刚好的工具。" en="Start with an idea. Find the tools to make it happen."/></p></div>
-<div class="scenario-stage"><div class="stage-orbit" aria-hidden="true"></div><div class="stage-orbit second" aria-hidden="true"></div>
-{scenes.map((s,i)=><article class="scene" data-scene data-position={i===0?'active':i===1?'next':i===5?'previous':'hidden'} aria-hidden={i!==0?'true':'false'} style={`--scene-color:${s.color}`}><div class="scene-copy"><span class="scene-index">{s.tag}</span><h2><T zh={s.zh} en={s.en}/></h2><p><T zh={s.sub} en={s.subEn}/></p><a class="scene-link" href={`/c/${s.slug}/`} tabindex={i===0?0:-1}><T zh="发现适合的工具" en="Explore the tools"/><span>↗</span></a></div><div class={`scene-art art-${s.kind}`} aria-hidden="true"><div class="art-halo"></div><div class="art-orbit"></div><div class="floating-tag">{s.label}</div><div class="art-window"><div class="window-bar"><i></i><i></i><i></i><span>{s.file}</span></div><div class="window-content"><div class="art-symbol">{s.symbol}</div><div class="mock-lines"><b></b><b></b><b></b></div><div class="mock-grid"><i></i><i></i><i></i></div></div></div><div class="art-mini"><span>{s.kind==='record'?'00:24':s.kind==='data'?'∞':s.kind==='image'?'Aa':s.kind==='backend'?'API':'⌘'}</span><div class="mini-bars"><i></i><i></i><i></i><i></i><i></i></div></div><div class="art-label">{s.tools}</div></div></article>)}
+<div class="scenario-stage">
+<svg class="liquid-defs" aria-hidden="true"><defs>{scenes.map((_,i)=><clipPath id={`liquid-clip-${i}`} clipPathUnits="objectBoundingBox"><path data-liquid-path={i} d="M0,0H1V1H0Z"/></clipPath>)}</defs></svg>
+<svg class="liquid-rim" viewBox="0 0 1 1" preserveAspectRatio="none" aria-hidden="true"><path data-liquid-rim d=""/></svg>
+{scenes.map((s,i)=><article class="scene" data-scene data-position={i===0?'active':'hidden'} aria-hidden={i!==0?'true':'false'} style={`--scene-color:${s.color}`}><div class="scene-copy"><span class="scene-index">{s.tag}</span><h2><T zh={s.zh} en={s.en}/></h2><p><T zh={s.sub} en={s.subEn}/></p><a class="scene-link" href={`/c/${s.slug}/`} tabindex={i===0?0:-1}><T zh="发现适合的工具" en="Explore the tools"/><span>↗</span></a></div><div class={`scene-art art-${s.kind}`} aria-hidden="true"><div class="art-halo"></div><div class="art-orbit"></div><div class="floating-tag">{s.label}</div><div class="art-window"><div class="window-bar"><i></i><i></i><i></i><span>{s.file}</span></div><div class="window-content"><div class="art-symbol">{s.symbol}</div><div class="mock-lines"><b></b><b></b><b></b></div><div class="mock-grid"><i></i><i></i><i></i></div></div></div><div class="art-mini"><span>{s.kind==='record'?'00:24':s.kind==='data'?'∞':s.kind==='image'?'Aa':s.kind==='backend'?'API':'⌘'}</span><div class="mini-bars"><i></i><i></i><i></i><i></i><i></i></div></div><div class="art-label">{s.tools}</div></div></article>)}
 </div>
-<div class="scenario-controls"><button class="shuffle" data-shuffle><span>⤨</span><T zh="给我点灵感" en="Surprise me"/></button><div class="scene-dots">{scenes.map((s,i)=><button data-dot={i} aria-label={s.zh} data-i18n="aria-label" data-zh={s.zh} data-en={s.en} aria-pressed={i===0?'true':'false'}><span><i></i></span></button>)}</div><div class="scene-arrows"><button class="playback" data-playback aria-label="暂停自动轮播" aria-pressed="false"><span data-pause-copy><T zh="暂停" en="Pause" /></span><span data-play-copy hidden><T zh="播放" en="Play" /></span><span data-reduced-copy hidden><T zh="静态" en="Still" /></span></button><button data-prev aria-label="上一个场景" data-i18n="aria-label" data-zh="上一个场景" data-en="Previous scene">←</button><button data-next aria-label="下一个场景" data-i18n="aria-label" data-zh="下一个场景" data-en="Next scene">→</button></div></div><p class="scenario-status sr-only" aria-live="polite" aria-atomic="true"></p>
+<div class="scenario-controls"><button class="shuffle" data-shuffle><span>⤨</span><T zh="给我点灵感" en="Surprise me"/></button><div class="scene-dots">{scenes.map((s,i)=><button data-dot={i} aria-label={s.zh} data-i18n="aria-label" data-zh={s.zh} data-en={s.en} aria-pressed={i===0?'true':'false'}><span><i></i></span></button>)}</div></div><p id="scenario-help" class="scenario-help"><T zh="点击当前进度暂停 · 左右键切换" en="Tap the active progress to pause · Arrow keys to explore"/></p><p class="scenario-status sr-only" aria-live="polite" aria-atomic="true"></p>
 </section>
 <script>
 const root = document.querySelector<HTMLElement>('[data-scenario]');
 if (root) {
   const slides = Array.from(root.querySelectorAll<HTMLElement>('[data-scene]'));
   const dots = Array.from(root.querySelectorAll<HTMLButtonElement>('[data-dot]'));
-  const playback = root.querySelector<HTMLButtonElement>('[data-playback]')!;
-  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
-  const delay = 4500;
-  let current = 0;
+  const paths = Array.from(root.querySelectorAll<SVGPathElement>('[data-liquid-path]'));
+  const rim = root.querySelector<SVGPathElement>('[data-liquid-rim]')!;
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+  let current = -1, frame = 0, generation = 0;
   let timer: ReturnType<typeof setTimeout> | undefined;
-  let userPaused = false;
-  let hovered = false;
-  let focused = false;
-  let inView = true;
   let progress: Animation | undefined;
+  let userPaused = false, hovered = false, focused = false, inView = true;
+  const delay = 6000, duration = 1700;
 
+  // A smooth, continuously deforming liquid boundary. Coordinates are normalized,
+  // so the same reveal covers wide, narrow and resized viewports without a canvas.
+  function wavePath(radius: number, phase: number, strength: number) {
+    const points = Array.from({length:72}, (_,i) => {
+      const a = i / 72 * Math.PI * 2;
+      const r = radius * (1 + strength * Math.sin(a*4 + phase) + strength*.4*Math.sin(a*7-phase*.8));
+      return [.5 + Math.cos(a)*r, .48 + Math.sin(a)*r];
+    });
+    const mid = (a:number[], b:number[]) => `${((a[0]+b[0])/2).toFixed(5)},${((a[1]+b[1])/2).toFixed(5)}`;
+    let d = `M${mid(points[71],points[0])}`;
+    points.forEach((p,i) => { d += `Q${p[0].toFixed(5)},${p[1].toFixed(5)} ${mid(p,points[(i+1)%72])}`; });
+    return d + 'Z';
+  }
+  function settle() {
+    cancelAnimationFrame(frame);
+    slides.forEach((slide,i) => {
+      slide.style.clipPath = 'none'; slide.style.opacity = '';
+      slide.dataset.position = i === current ? 'active' : 'hidden';
+    });
+    rim.setAttribute('d',''); root!.dataset.transitioning = 'false';
+    root!.dataset.revealProgress = '1';
+  }
   function schedule() {
-    clearTimeout(timer);
-    progress?.cancel();
-    if (reducedMotion.matches) root!.getAnimations({subtree:true}).forEach(animation => animation.cancel());
-    const paused = userPaused || hovered || focused || !inView || document.hidden || reducedMotion.matches;
+    clearTimeout(timer); progress?.cancel();
+    if (current < 0) return;
+    if (reduced.matches) { settle(); root!.getAnimations({subtree:true}).forEach(a=>a.cancel()); }
+    const paused = userPaused || hovered || focused || !inView || document.hidden || reduced.matches;
     root!.dataset.autoplay = paused ? 'paused' : 'running';
-    playback.disabled = reducedMotion.matches;
-    playback.setAttribute('aria-pressed', String(userPaused || reducedMotion.matches));
+    root!.dataset.userPaused = String(userPaused);
     const en = document.documentElement.lang === 'en';
-    playback.setAttribute('aria-label', reducedMotion.matches
-      ? (en ? 'Automatic motion disabled by your preference' : '已遵循系统减少动态效果设置')
-      : userPaused ? (en ? 'Play slideshow' : '播放自动轮播') : (en ? 'Pause slideshow' : '暂停自动轮播'));
-    playback.querySelector<HTMLElement>('[data-pause-copy]')!.hidden = userPaused || reducedMotion.matches;
-    playback.querySelector<HTMLElement>('[data-play-copy]')!.hidden = !userPaused || reducedMotion.matches;
-    playback.querySelector<HTMLElement>('[data-reduced-copy]')!.hidden = !reducedMotion.matches;
+    dots.forEach((dot,i)=>{
+      const name=dot.getAttribute(en?'data-en':'data-zh')!;
+      dot.setAttribute('aria-label', i===current && !reduced.matches ? `${name} · ${userPaused?(en?'Resume autoplay':'继续自动轮播'):(en?'Pause autoplay':'暂停自动轮播')}` : name);
+    });
     if (!paused) {
-      progress = dots[current].querySelector('i')!.animate([{transform:'scaleX(0)'},{transform:'scaleX(1)'}], {duration:delay,fill:'forwards'});
-      timer = setTimeout(() => show(current + 1, false), delay);
+      progress=dots[current].querySelector('i')!.animate([{transform:'scaleX(0)'},{transform:'scaleX(1)'}],{duration:delay,fill:'forwards'});
+      timer=setTimeout(()=>show(current+1,false),delay);
     }
   }
-  function show(index: number, announce = true) {
-    const previous = current;
-    current = (index + slides.length) % slides.length;
-    const color = slides[current].style.getPropertyValue('--scene-color');
-    document.body.style.setProperty('--playground-accent', color);
-    root!.style.setProperty('--glow-shift', `${(current - 2) * 8}%`);
-    slides.forEach((slide, i) => {
-      const delta = (i - current + slides.length) % slides.length;
-      slide.dataset.position = delta === 0 ? 'active' : delta === 1 ? 'next' : delta === slides.length - 1 ? 'previous' : 'hidden';
-      slide.setAttribute('aria-hidden', String(delta !== 0));
-      slide.querySelector('a')!.tabIndex = delta === 0 ? 0 : -1;
-      dots[i].setAttribute('aria-pressed', String(delta === 0));
+  function show(index:number, announce=true) {
+    const next=(index+slides.length)%slides.length;
+    if(next===current){schedule();return;}
+    const previous=current, token=++generation;
+    settle(); current=next;
+    slides.forEach((slide,i)=>{
+      slide.dataset.position=i===current?'active':i===previous?'outgoing':'hidden';
+      slide.setAttribute('aria-hidden',String(i!==current));
+      slide.querySelector('a')!.tabIndex=i===current?0:-1;
+      dots[i].setAttribute('aria-pressed',String(i===current));
     });
-    if (!reducedMotion.matches && previous !== current) {
-      const entering = slides[current];
-      const forward = (current - previous + slides.length) % slides.length <= slides.length / 2;
-      const direction = forward ? 1 : -1;
-      // The panel bends into place while copy and artwork arrive at different depths.
-      entering.getAnimations().filter(animation => animation instanceof CSSAnimation === false && !(animation instanceof CSSTransition)).forEach(animation => animation.cancel());
-      entering.animate([
-        {borderRadius:'42% 9% 38% 12% / 28% 42% 23% 45%'},
-        {borderRadius:'9% 17% 8% 14% / 16% 12% 15% 10%',offset:.6},
-        {borderRadius:'26px'}
-      ],{duration:1150,easing:'cubic-bezier(.16,.8,.2,1)'});
-      const art = entering.querySelector<HTMLElement>('.scene-art')!;
-      const copy = entering.querySelector<HTMLElement>('.scene-copy')!;
-      art.getAnimations().forEach(animation => animation.cancel());
-      copy.getAnimations().forEach(animation => animation.cancel());
-      art.animate([{transform:`translate3d(${direction*90}px,28px,-120px) rotateY(${direction*-18}deg) scale(.85)`,opacity:.25},{transform:'translate3d(0,0,0) rotateY(0) scale(1)',opacity:1}],{duration:1250,easing:'cubic-bezier(.16,.8,.2,1)'});
-      copy.animate([{transform:`translateX(${direction*35}px)`,opacity:0},{transform:'translateX(0)',opacity:1}],{duration:800,delay:150,fill:'backwards',easing:'cubic-bezier(.16,.8,.2,1)'});
-    }
-    if (announce) root!.querySelector('.scenario-status')!.textContent = `${current + 1} / ${slides.length}: ${dots[current].getAttribute('aria-label')}`;
+    if(!reduced.matches){
+      const entering=slides[current];
+      entering.style.clipPath=`url(#liquid-clip-${current})`;
+      paths[current].setAttribute('d',wavePath(.015,0,.18));
+      root!.dataset.transitioning='true';
+      root!.dataset.revealProgress='0';
+      const start=performance.now();
+      function tick(now:number){
+        if(token!==generation)return;
+        const t=Math.min(1,(now-start)/duration);
+        // Expansion accelerates across the screen; the wave edge continually ripples.
+        const eased=t*t*(3-2*t), radius=.015+1.08*eased;
+        const d=wavePath(radius,t*5.5,.17*(1-t)+.035);
+        paths[current].setAttribute('d',d);rim.setAttribute('d',d);
+        entering.style.opacity=String(Math.min(1,.6+t*1.6));
+        rim.style.opacity=String(Math.sin(Math.PI*t)*.65);
+        root!.dataset.revealProgress=t.toFixed(3);
+        if(t<1)frame=requestAnimationFrame(tick);else settle();
+      }
+      frame=requestAnimationFrame(tick);
+    } else settle();
+    if(announce)root!.querySelector('.scenario-status')!.textContent=`${current+1} / ${slides.length}: ${dots[current].getAttribute(document.documentElement.lang==='en'?'data-en':'data-zh')}`;
     schedule();
   }
-  root.querySelector('[data-prev]')?.addEventListener('click', () => show(current - 1));
-  root.querySelector('[data-next]')?.addEventListener('click', () => show(current + 1));
-  root.querySelector('[data-shuffle]')?.addEventListener('click', () => show(current + 1 + Math.floor(Math.random() * (slides.length - 1))));
-  dots.forEach((dot, i) => dot.addEventListener('click', () => show(i)));
-  root.addEventListener('keydown', event => {
-    if (event.key === 'ArrowRight') { event.preventDefault(); show(current + 1); }
-    if (event.key === 'ArrowLeft') { event.preventDefault(); show(current - 1); }
+  dots.forEach((dot,i)=>dot.addEventListener('click',()=>{
+    if(i===current){userPaused=!userPaused;focused=false;schedule();}
+    else show(i);
+  }));
+  root.querySelector('[data-shuffle]')?.addEventListener('click',()=>show(current+1+Math.floor(Math.random()*(slides.length-1))));
+  root.addEventListener('keydown',e=>{
+    if(e.key==='ArrowRight'){e.preventDefault();show(current+1);}
+    if(e.key==='ArrowLeft'){e.preventDefault();show(current-1);}
+    if(e.code==='Space' && e.target===root){e.preventDefault();userPaused=!userPaused;schedule();}
   });
-  playback.addEventListener('click', () => { userPaused = !userPaused; schedule(); });
-  root.addEventListener('pointerenter', event => { if (event.pointerType === 'mouse') { hovered = true; schedule(); } });
-  root.addEventListener('pointerleave', event => { if (event.pointerType === 'mouse') { hovered = false; schedule(); } });
-  // Keep focused content still. The explicit play/pause control can resume without losing focus.
-  root.addEventListener('focusin', event => { focused = event.target !== playback; schedule(); });
-  root.addEventListener('focusout', event => { focused = !!event.relatedTarget && root!.contains(event.relatedTarget as Node) && event.relatedTarget !== playback; schedule(); });
-  document.addEventListener('visibilitychange', schedule);
-  reducedMotion.addEventListener('change', schedule);
-  new MutationObserver(schedule).observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
-  new IntersectionObserver(entries => { inView = entries[0].isIntersecting; schedule(); }, { threshold: 0 }).observe(root);
-  let x = 0, y = 0;
-  const stage = root.querySelector<HTMLElement>('.scenario-stage')!;
-  stage.addEventListener('touchstart', event => { x = event.touches[0].clientX; y = event.touches[0].clientY; clearTimeout(timer); }, { passive: true });
-  stage.addEventListener('touchend', event => {
-    const dx = event.changedTouches[0].clientX - x, dy = event.changedTouches[0].clientY - y;
-    if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) show(current + (dx < 0 ? 1 : -1));
-    else schedule();
-  }, { passive: true });
-  stage.addEventListener('touchcancel', schedule, { passive: true });
-  show(Math.floor(Math.random() * slides.length), false);
+  // The full-screen backdrop keeps playing; only interactive targets pause on hover.
+  root.querySelectorAll<HTMLElement>('a,button').forEach(control=>{
+    control.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'){hovered=true;schedule();}});
+    control.addEventListener('pointerleave',e=>{if(e.pointerType==='mouse'){hovered=false;schedule();}});
+  });
+  root.addEventListener('focusin',e=>{focused=e.target!==dots[current];schedule();});
+  root.addEventListener('focusout',e=>{focused=!!e.relatedTarget&&root!.contains(e.relatedTarget as Node)&&e.relatedTarget!==dots[current];schedule();});
+  document.addEventListener('visibilitychange',schedule);
+  reduced.addEventListener('change',schedule);
+  new MutationObserver(schedule).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
+  new IntersectionObserver(entries=>{inView=entries[0].isIntersecting;schedule();}).observe(root);
+  let x=0,y=0;
+  root.addEventListener('touchstart',e=>{x=e.touches[0].clientX;y=e.touches[0].clientY;clearTimeout(timer);},{passive:true});
+  root.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-x,dy=e.changedTouches[0].clientY-y;if(Math.abs(dx)>60&&Math.abs(dx)>Math.abs(dy)*1.5)show(current+(dx<0?1:-1));else schedule();},{passive:true});
+  root.addEventListener('touchcancel',schedule,{passive:true});
+  show(Math.floor(Math.random()*slides.length),false);
 }
 </script>
 <style>
-.scenario{position:relative;background:color-mix(in srgb,var(--playground-accent,#caff56) 7%,#111318);transition:background-color 1.1s;color:#f5f5ed;overflow:hidden;padding:24px 0 22px;isolation:isolate}.scenario-top,.scenario-controls{max-width:1280px;margin:auto;padding:0 36px;display:flex;align-items:center;justify-content:space-between}.scenario-top{font-size:12px;letter-spacing:.04em}.eyebrow{display:flex;align-items:center;gap:10px}.spark{color:#caff56;font-size:25px}.scenario-top a{border-bottom:1px solid #6e7168;padding-bottom:4px}.scenario-heading{text-align:center;padding:28px 20px 12px}.scenario-heading h1{font-size:clamp(32px,4.6vw,68px);font-weight:650;letter-spacing:-.065em;line-height:1.2}.scenario-heading p{color:#b9bcb3;font-size:15px;margin-top:16px;letter-spacing:.035em}.scenario-stage{height:460px;position:relative;perspective:1400px;margin:26px auto 14px;max-width:1600px;touch-action:pan-y}.stage-orbit{position:absolute;left:50%;top:50%;width:1250px;height:300px;border:1px solid #404536;border-radius:50%;transform:translate(-50%,-50%) rotate(-12deg);z-index:-1}.stage-orbit.second{transform:translate(-50%,-50%) rotate(12deg);width:1400px;height:280px;opacity:.4}.scene{position:absolute;inset:0;width:min(980px,78vw);height:430px;margin:auto;border-radius:26px;background:var(--scene-color);color:#151615;display:grid;grid-template-columns:1fr 1fr;overflow:hidden;box-shadow:0 30px 60px #0005,inset 0 0 0 1px #fff5;transition:transform .85s cubic-bezier(.2,.75,.15,1),opacity .6s,filter .85s;will-change:transform;transform-style:preserve-3d}.scene[data-position=active]{transition-property:transform,filter;transform:translateX(0) rotateY(0) rotateZ(-1deg);z-index:3;opacity:1}.scene[data-position=next]{transform:translateX(83%) translateZ(-250px) rotateY(-24deg) rotateZ(7deg);z-index:1;opacity:.45;filter:brightness(.65);pointer-events:none}.scene[data-position=previous]{transform:translateX(-83%) translateZ(-250px) rotateY(24deg) rotateZ(-7deg);z-index:1;opacity:.45;filter:brightness(.65);pointer-events:none}.scene[data-position=hidden]{transform:translateZ(-700px) scale(.7);opacity:0;z-index:0;pointer-events:none}.scene-copy{padding:32px 0 28px 36px;display:flex;align-items:flex-start;flex-direction:column;position:relative;z-index:2}.scene-index{font-size:11px;font-weight:600;letter-spacing:.13em;border:1px solid #15161555;border-radius:100px;padding:7px 11px}.scene-copy h2{font-size:clamp(28px,2.8vw,40px);line-height:1.15;font-weight:700;letter-spacing:-.045em;margin-top:28px}.scene-copy p{margin-top:16px;font-size:14px;line-height:1.8;max-width:330px}.scene-link{background:#151615;color:#fff!important;border-radius:100px;padding:13px 19px;font-size:13px;margin-top:auto;display:flex;gap:25px;align-items:center}.scene-link span:last-child{font-size:21px;line-height:1}.scene-link:hover{background:#30352b;transform:translateY(-2px)}.scene-link:focus-visible,.scenario button:focus-visible,.scenario-top a:focus-visible{outline:3px solid #fff;outline-offset:5px}.scene-art{position:relative;perspective:800px;min-width:0}.art-halo{position:absolute;width:310px;height:310px;background:radial-gradient(circle at 35% 25%,#ffffffa8,transparent 64%);border:1px solid #ffffff60;box-shadow:inset -20px -25px 40px #0001;border-radius:50%;top:32px;left:30px}.art-orbit{position:absolute;border:1px solid #15161535;width:380px;height:170px;border-radius:50%;top:110px;left:0;transform:rotate(-35deg)}.art-window{position:absolute;top:80px;left:14px;width:310px;height:230px;background:#fafbf6;box-shadow:12px 22px 0 #15161516,25px 35px 35px #15161525;border-radius:15px;transform:rotateY(-18deg) rotateX(10deg) rotateZ(-8deg);border:1px solid #fff;transition:transform 1s cubic-bezier(.2,.75,.15,1)}.scene[data-position=active]:hover .art-window{transform:rotateY(-7deg) rotateX(5deg) rotateZ(-4deg) translateY(-5px)}.window-bar{border-bottom:1px solid #15161515;height:29px;display:flex;align-items:center;gap:4px;padding:0 11px}.window-bar i{width:5px;height:5px;background:#b9bbb3;border-radius:50%}.window-bar span{font-size:8px;letter-spacing:.02em;margin-left:8px;color:#777b70}.window-content{padding:20px;position:relative}.art-symbol{font-size:64px;line-height:1;color:#151615;font-family:Arial,sans-serif;font-weight:700}.mock-lines{position:absolute;left:116px;right:22px;top:30px;display:grid;gap:8px}.mock-lines b{height:7px;border-radius:5px;background:#dfe2d6}.mock-lines b:nth-child(2){width:75%}.mock-lines b:last-child{width:45%;background:var(--scene-color)}.mock-grid{display:flex;gap:10px;margin-top:20px}.mock-grid i{background:var(--scene-color);height:62px;border-radius:8px;flex:1;box-shadow:inset 0 0 0 1px #15161510}.mock-grid i:nth-child(2){opacity:.65}.mock-grid i:nth-child(3){opacity:.35}.art-mini{position:absolute;right:35px;bottom:45px;background:#242820;color:white;border-radius:16px;width:125px;height:135px;box-shadow:12px 16px 25px #0003;transform:rotate(12deg);padding:18px}.art-mini>span{font-size:36px;letter-spacing:-.08em;font-weight:600}.mini-bars{display:flex;gap:5px;align-items:flex-end;height:31px;margin-top:7px}.mini-bars i{width:10px;background:var(--scene-color);height:80%;border-radius:3px}.mini-bars i:nth-child(2n){height:45%}.mini-bars i:nth-child(3){height:100%}.floating-tag{position:absolute;right:55px;top:42px;font-size:12px;border-radius:30px;padding:10px 16px;background:#fff;box-shadow:0 8px 20px #0002;transform:rotate(9deg);z-index:2}.art-label{position:absolute;bottom:17px;left:40px;font-size:10px;letter-spacing:.06em;opacity:.7}.art-record .window-content{background:#29283b;border-radius:0 0 14px 14px;height:200px}.art-record .art-symbol{color:var(--scene-color)}.art-record .mock-grid i{height:35px}.art-mail .art-symbol{font-size:80px}.art-data .mock-grid i{height:45px;border-radius:50% / 22%;box-shadow:0 8px 0 #15161530,0 15px 0 var(--scene-color)}.art-image .art-symbol{color:#f35f9a;font-size:90px}.art-image .mock-grid{margin-top:0}.art-image .mock-grid i{border-radius:50%}.art-backend .art-symbol{font-size:44px;padding:10px 0}.scenario-controls{gap:20px;position:relative;z-index:4}.scenario-controls button{cursor:pointer}.shuffle{display:flex;align-items:center;gap:9px;font-size:12px;background:none;border:0;color:#e7eadf}.shuffle>span:first-child{font-size:24px}.scene-dots{display:flex;gap:3px}.scene-dots button{width:27px;height:36px;display:grid;place-items:center}.scene-dots button>span{width:5px;height:5px;border-radius:10px;background:#69705f;transition:width .3s,background .3s}.scene-dots button[aria-pressed=true]>span{width:23px;background:#caff56}.scene-arrows{display:flex;gap:9px}.scene-arrows button{border:1px solid #606456;background:none;color:white;width:39px;height:39px;border-radius:50%;font-size:20px;transition:background .2s,color .2s}.scene-arrows button:hover{background:#caff56;color:#151615}
-.scenario::before{content:"";position:absolute;inset:-25%;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 65% 55%,color-mix(in srgb,var(--playground-accent,#caff56) 20%,transparent),transparent 62%);transform:translateX(var(--glow-shift,0));transition:transform 1.25s,background 1.25s}.scene-dots button>span{position:relative;overflow:hidden}.scene-dots button>span>i{position:absolute;inset:0;background:#caff56;border-radius:inherit;transform:scaleX(0);transform-origin:left}.scene-dots button[aria-pressed=true]{width:48px}.scene-dots button[aria-pressed=true]>span{width:42px;height:6px;background:#59614f}.scenario[data-autoplay=paused] .scene-dots button[aria-pressed=true]>span{background:#caff56}
-.scene-arrows .playback{width:auto;min-width:55px;padding:0 10px;font-size:11px}.playback:disabled{opacity:.55;cursor:default}.playback [hidden]{display:none}
-@media(max-width:700px){.scenario{padding-top:16px}.scenario-top,.scenario-controls{padding:0 20px}.scenario-top{font-size:10px}.scenario-heading{padding-top:26px}.scenario-heading h1{font-size:34px}.scenario-heading p{font-size:12px;margin-top:12px}.scenario-stage{height:570px;margin-top:18px}.scene{width:84vw;height:550px;display:flex;flex-direction:column;border-radius:20px}.scene-copy{padding:22px 24px 0;flex:0 0 300px}.scene-index{font-size:9px;padding:5px 8px}.scene-copy h2{font-size:27px;margin-top:16px}.scene-copy p{font-size:12px;line-height:1.6;margin-top:9px}.scene-link{margin-top:18px;padding:9px 14px;font-size:11px;gap:16px}.scene-art{height:250px;flex:0 0 250px;width:330px;max-width:100%;margin:auto}.art-window{width:230px;height:173px;top:35px;left:32px}.window-content{padding:12px}.window-bar{height:23px}.art-symbol{font-size:45px}.mock-lines{left:85px;top:23px}.mock-grid{margin-top:14px;gap:7px}.mock-grid i{height:45px}.art-halo{width:210px;height:210px;top:10px;left:55px}.art-orbit{width:280px;height:120px;top:66px;left:15px}.art-mini{width:82px;height:90px;right:24px;bottom:25px;padding:10px}.art-mini>span{font-size:25px}.mini-bars{height:22px;margin-top:2px;gap:3px}.mini-bars i{width:7px}.floating-tag{font-size:10px;padding:7px 11px;top:10px;right:40px}.art-label{bottom:7px;left:35px;font-size:9px}.art-record .window-content{height:150px}.art-mail .art-symbol{font-size:55px}.art-image .art-symbol{font-size:61px}.art-backend .art-symbol{font-size:30px;padding:5px 0}.art-data .mock-grid i{height:25px}.scenario-controls{gap:6px;padding:0 14px}.scene-arrows .playback{min-width:40px;padding:0 6px;font-size:10px}.scene-dots{gap:0}.scene-dots button{width:18px}.scene-dots button[aria-pressed=true]{width:32px}.scene-dots button[aria-pressed=true]>span{width:28px}.scene-arrows{gap:6px}.scene-arrows button{width:33px;height:33px}.shuffle{font-size:10px;gap:5px}}
-@media(prefers-reduced-motion:reduce){.scenario,.scenario::before{transition:none}.scene,.art-window,.scene-dots button>span,.scene-arrows button{transition:none}.scene-link:hover,.scene[data-position=active]:hover .art-window{transform:none}}
+.scenario{height:100svh;min-height:420px;position:relative;overflow:hidden;isolation:isolate;background:#0c1015;color:#f4f3ec;touch-action:pan-y}
+.scenario-top{position:absolute;z-index:5;left:5%;right:5%;top:95px;display:flex;align-items:center;justify-content:space-between;font-size:11px;letter-spacing:.06em;color:#f4f3ecc0;pointer-events:none}
+.scenario-top a{pointer-events:auto;border-bottom:1px solid #ffffff50;padding-bottom:5px}.eyebrow{display:flex;gap:9px;align-items:center}.spark{font-size:24px}.scenario-heading{position:absolute;z-index:4;top:21%;left:20px;right:20px;text-align:center;pointer-events:none}.scenario-heading h1{font-size:15px;font-weight:400;letter-spacing:.1em;color:#ffffffa0}.scenario-heading p{display:none}
+.scenario-stage{position:absolute;inset:0;overflow:hidden}.liquid-defs{position:absolute;width:0;height:0}.liquid-rim{position:absolute;inset:0;width:100%;height:100%;z-index:3;pointer-events:none;overflow:visible}.liquid-rim path{fill:none;stroke:#ffffff8a;stroke-width:.003;filter:drop-shadow(0 0 6px #ffffff60)}
+.scene{position:absolute;inset:0;width:100%;height:100%;overflow:hidden;isolation:isolate;background:radial-gradient(ellipse at 50% 45%,color-mix(in srgb,var(--scene-color) 27%,#111621),#0a0e14 84%);color:#f5f4ed;visibility:hidden;pointer-events:none}
+.scene[data-position=active]{visibility:visible;z-index:2;pointer-events:auto}.scene[data-position=outgoing]{visibility:visible;z-index:1}.scene[data-position=hidden]{z-index:0}
+.scene::after{content:"";position:absolute;inset:0;background:linear-gradient(#0001,transparent 25%,transparent 65%,#0006);pointer-events:none;z-index:2}
+.scene-copy{position:absolute;inset:28% 15% auto;z-index:3;text-align:center;display:flex;align-items:center;flex-direction:column}.scene-index{font-size:10px;letter-spacing:.2em;color:#fff9;margin-bottom:20px}.scene-copy h2{font-size:clamp(44px,6.2vw,98px);font-weight:450;line-height:1.12;letter-spacing:-.055em;text-wrap:balance;text-shadow:0 4px 24px #0002}.scene-copy p{font-size:clamp(14px,1.6vw,21px);line-height:1.65;margin-top:26px;max-width:640px;color:#f5f4eddd;text-wrap:balance}.scene-link{margin-top:32px;background:#f4f2e9;color:#161b20!important;padding:16px 25px;border-radius:100px;display:flex;align-items:center;gap:28px;font-size:14px;box-shadow:0 10px 40px #0001;transition:transform .25s,background .25s}.scene-link:hover{transform:translateY(-3px);background:white}.scene-link>span:last-child{font-size:22px}
+.scene-art{position:absolute;inset:0;pointer-events:none;perspective:1400px}.art-halo{position:absolute;width:85vw;height:85vw;left:7.5vw;top:calc(47% - 42.5vw);border:1px solid color-mix(in srgb,var(--scene-color) 12%,transparent);border-radius:50%;box-shadow:0 0 100px color-mix(in srgb,var(--scene-color) 5%,transparent),inset 0 0 100px color-mix(in srgb,var(--scene-color) 5%,transparent)}.art-orbit{position:absolute;width:110%;height:75%;left:-5%;top:15%;border:1px solid #ffffff09;border-radius:50%;transform:rotate(-24deg)}
+.art-window{position:absolute;left:-5%;top:27%;width:340px;height:255px;background:linear-gradient(130deg,#ffffff16,#ffffff06);border:1px solid #ffffff25;box-shadow:0 30px 60px #0005,inset 0 1px #fff2;border-radius:18px;transform:rotateY(18deg) rotateZ(-14deg);opacity:.72;backdrop-filter:blur(12px)}.window-bar{height:32px;border-bottom:1px solid #fff2;display:flex;align-items:center;gap:5px;padding:0 13px}.window-bar i{height:5px;width:5px;border-radius:50%;background:#fff5}.window-bar span{font-size:9px;color:#fff8;margin-left:9px}.window-content{position:relative;padding:22px}.art-symbol{font-size:74px;line-height:1;font-weight:500;color:var(--scene-color)}.mock-lines{position:absolute;left:125px;right:25px;top:36px;display:grid;gap:10px}.mock-lines b{height:6px;background:#fff3;border-radius:8px}.mock-lines b:nth-child(2){width:70%}.mock-lines b:last-child{width:40%;background:var(--scene-color);opacity:.5}.mock-grid{display:flex;gap:12px;margin-top:24px}.mock-grid i{flex:1;height:72px;border-radius:9px;background:linear-gradient(140deg,color-mix(in srgb,var(--scene-color) 55%,transparent),#ffffff08);border:1px solid #fff2}.mock-grid i:nth-child(2){opacity:.6}.mock-grid i:last-child{opacity:.35}
+.art-mini{position:absolute;right:-2%;bottom:20%;width:270px;height:290px;padding:35px;border-radius:28px;border:1px solid #fff2;background:linear-gradient(135deg,#ffffff12,#ffffff03);box-shadow:0 30px 80px #0006;transform:rotateY(-20deg) rotateZ(12deg);opacity:.72;backdrop-filter:blur(14px)}.art-mini>span{font-size:65px;font-weight:350;letter-spacing:-.07em;color:var(--scene-color)}.mini-bars{display:flex;gap:12px;height:90px;align-items:flex-end;margin-top:20px}.mini-bars i{height:85%;width:22px;border-radius:8px;background:linear-gradient(var(--scene-color),color-mix(in srgb,var(--scene-color) 20%,transparent));opacity:.65}.mini-bars i:nth-child(2n){height:45%}.mini-bars i:nth-child(3){height:100%}.floating-tag{position:absolute;right:17%;top:15%;padding:15px 23px;border:1px solid #fff2;border-radius:14px;font-size:13px;background:#ffffff0c;box-shadow:0 15px 35px #0002;transform:rotate(12deg);color:#ffffff80}.art-label{position:absolute;left:17%;bottom:17%;font-size:12px;letter-spacing:.06em;border:1px solid #fff2;background:#ffffff08;padding:17px 24px;border-radius:14px;transform:rotate(-7deg);color:#ffffff80}
+.art-record .art-window{left:auto;right:-4%;top:18%;transform:rotateY(-16deg) rotateZ(12deg)}.art-record .art-mini{right:auto;left:-3%;bottom:17%;transform:rotateY(18deg) rotateZ(-12deg)}.art-record .floating-tag{right:auto;left:20%}.art-record .art-label{left:auto;right:15%}.art-mail .art-window{top:20%;transform:rotateY(12deg) rotateZ(-8deg)}.art-mail .art-symbol{font-size:85px}.art-data .mock-grid i{border-radius:50% / 20%;box-shadow:0 8px 0 #ffffff18}.art-image .art-symbol{font-size:85px}.art-image .mock-grid i{border-radius:50%}.art-backend .art-symbol{font-size:48px;padding:10px 0}
+.scenario-controls{position:absolute;z-index:6;left:0;right:0;bottom:38px;display:flex;align-items:center;justify-content:center;gap:25px}.shuffle{position:absolute;left:5%;display:flex;align-items:center;gap:8px;font-size:11px;color:#fff9;cursor:pointer}.shuffle>span:first-child{font-size:22px}.scene-dots{display:flex;gap:5px;align-items:center}.scene-dots button{cursor:pointer;display:grid;place-items:center;width:22px;height:36px;transition:width .35s}.scene-dots button>span{display:block;position:relative;overflow:hidden;height:6px;width:6px;background:#fff9;border-radius:10px;transition:width .35s}.scene-dots button[aria-pressed=true]{width:108px}.scene-dots button[aria-pressed=true]>span{width:100px;background:#ffffff35}.scene-dots i{position:absolute;inset:0;background:#f4f2e9;transform:scaleX(0);transform-origin:left}.scenario[data-user-paused=true] .scene-dots button[aria-pressed=true]>span{background:#ffffff80}.scenario-help{position:absolute;z-index:6;bottom:17px;left:0;right:0;text-align:center;font-size:9px;letter-spacing:.03em;color:#ffffff66;pointer-events:none}.scenario :focus-visible{outline:2px solid #fff;outline-offset:5px}.scenario:focus-visible{outline:2px solid #fff;outline-offset:-4px}
+@media(min-width:1700px){.art-window{left:3%;width:380px;height:280px}.art-mini{right:4%}}
+@media(max-width:800px){.scenario-top{top:82px;font-size:9px;left:20px;right:20px}.scenario-heading{top:20%}.scenario-heading h1{font-size:12px}.scene-copy{inset:28% 7% auto}.scene-copy h2{font-size:clamp(38px,7vw,64px)}.scene-copy p{font-size:15px;max-width:470px;margin-top:22px}.scene-link{font-size:12px;padding:13px 20px;margin-top:25px}.art-window{width:230px;height:180px;left:-12%;top:17%;opacity:.36}.art-mini{right:-10%;bottom:18%;width:170px;height:185px;padding:23px;opacity:.4}.art-mini>span{font-size:43px}.mini-bars{height:50px;gap:7px;margin-top:15px}.mini-bars i{width:15px;border-radius:5px}.window-content{padding:15px}.window-bar{height:25px}.window-bar span{font-size:7px}.art-symbol{font-size:47px}.mock-lines{left:85px;right:15px;top:25px;gap:7px}.mock-lines b{height:4px}.mock-grid{margin-top:15px;gap:8px}.mock-grid i{height:48px}.art-record .art-window{right:-12%;top:15%}.art-record .art-mini{left:-10%}.floating-tag{top:14%;right:10%;font-size:10px;padding:10px 14px;opacity:.65}.art-label{left:7%;bottom:17%;font-size:10px;padding:12px 15px;opacity:.65}.art-mail .art-symbol,.art-image .art-symbol{font-size:55px}.art-backend .art-symbol{font-size:34px}.shuffle{font-size:10px;left:20px}.scenario-controls{bottom:39px}.scene-dots{gap:2px}.scene-dots button{width:18px}.scene-dots button[aria-pressed=true]{width:70px}.scene-dots button[aria-pressed=true]>span{width:64px}}
+@media(max-width:480px){.scenario-heading{top:22%}.scene-copy{inset:32% 6% auto}.scene-copy h2{font-size:42px}.scene-copy p{font-size:14px}.scene-index{margin-bottom:16px}.scenario-controls{bottom:50px}.shuffle{position:static;font-size:0;gap:0}.shuffle>span:first-child{font-size:23px}.shuffle .t-zh,.shuffle .t-en{display:none}.scenario-help{bottom:28px;font-size:8px}.floating-tag{right:4%;top:17%}.art-label{left:6%;bottom:18%}.art-window{top:19%;left:-26%;opacity:.3}.art-mini{right:-20%;bottom:16%;opacity:.3}.art-record .art-window{right:-26%;top:17%}.art-record .art-mini{left:-20%}.scene-copy p{max-width:300px}}
+@media(max-height:650px){.scenario-top{top:74px}.scenario-heading{top:22%}.scene-copy{top:30%}.scene-index{margin-bottom:12px}.scene-copy h2{font-size:clamp(34px,5.5vw,70px)}.scene-copy p{margin-top:16px;font-size:14px}.scene-link{margin-top:19px;padding:11px 22px}.floating-tag{display:none}.art-label{bottom:17%}.scenario-controls{bottom:29px}.scenario-help{bottom:9px}.art-window{top:25%;transform:scale(.8) rotate(-12deg);transform-origin:left}.art-mini{bottom:16%;transform:scale(.75) rotate(12deg);transform-origin:right}}
+@media(prefers-reduced-motion:reduce){.scene-dots button,.scene-dots button>span,.scene-link{transition:none}.liquid-rim{display:none}.scene-link:hover{transform:none}}
 </style>
