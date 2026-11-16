@@ -27,6 +27,14 @@
     {
       "key": "recurring",
       "label": "订阅收款"
+    },
+    {
+      "key": "alipay",
+      "label": "支付宝（大陆钱包）"
+    },
+    {
+      "key": "wechat_pay",
+      "label": "微信支付"
     }
   ],
   "products": [
@@ -82,6 +90,14 @@
         "recurring": {
           "value": "yes",
           "note": "订阅、附加项及按用量计费另加0.5%，不代表所有支付方式均支持订阅。"
+        },
+        "alipay": {
+          "value": "unknown",
+          "note": "官方列出 AlipayHK，不能等同大陆支付宝；大陆钱包支持尚待确认。钱包费率须另核，不自动套用现有卡支付基准。"
+        },
+        "wechat_pay": {
+          "value": "partial",
+          "note": "微信支付仅一次性，支持 USD/CNY；最低 USD 0.50 或 CNY 4，最高 CNY 1000 或动态等值 USD。CNY 须启用 Adaptive Currency；钱包费率另核，不自动套用卡支付基准。"
         }
       },
       "sources": [
@@ -89,7 +105,10 @@
         "https://docs.dodopayments.com/miscellaneous/accepted-countries-and-territories",
         "https://docs.dodopayments.com/miscellaneous/verification-process",
         "https://docs.dodopayments.com/features/payouts/payout-structure",
-        "https://docs.lemonsqueezy.com/help/payments/sales-tax-vat"
+        "https://docs.lemonsqueezy.com/help/payments/sales-tax-vat",
+        "https://docs.dodopayments.com/features/payment-methods",
+        "https://docs.dodopayments.com/features/payment-methods/wechat",
+        "https://docs.dodopayments.com/features/payment-methods/asia-pacific"
       ]
     },
     {
@@ -144,6 +163,14 @@
         "recurring": {
           "value": "yes",
           "note": "提供订阅及用量计费；不能据此推定任何高风险业务均可接入。"
+        },
+        "alipay": {
+          "value": "partial",
+          "note": "官方 Creem 2.0 公告宣布支持 Alipay；具体商户地区、买家地区、币种及订阅续费适用性尚待确认，不代表大陆卖家获准开户。"
+        },
+        "wechat_pay": {
+          "value": "unknown",
+          "note": "当前官方资料未确认本产品的微信支付支持；不以其他平台的介绍推导支持或不支持。"
         }
       },
       "sources": [
@@ -152,7 +179,8 @@
         "https://docs.creem.io/merchant-of-record/finance/payouts",
         "https://docs.creem.io/merchant-of-record/finance/payout-accounts",
         "https://docs.creem.io/merchant-of-record/account-reviews/account-reviews",
-        "https://docs.lemonsqueezy.com/help/payments/sales-tax-vat"
+        "https://docs.lemonsqueezy.com/help/payments/sales-tax-vat",
+        "https://www.creem.io/blog/introducing-creem-2-0"
       ]
     },
     {
@@ -207,6 +235,14 @@
         "recurring": {
           "value": "yes",
           "note": "包含订阅计费；受账户与产品审核约束。"
+        },
+        "alipay": {
+          "value": "partial",
+          "note": "须经 Paddle 审批；买家地区 CN、币种 CNY、桌面及手机。支持一次性及订阅；订阅续费及扣款（charges）最高 CNY 1600，临时折扣前金额也受限。买家可用不代表大陆卖家可开户。"
+        },
+        "wechat_pay": {
+          "value": "partial",
+          "note": "买家地区 CN，币种 CNY/USD，仅桌面；只支持一次性，不支持订阅。买家可用不代表大陆卖家可开户。"
         }
       },
       "sources": [
@@ -216,7 +252,9 @@
         "https://www.paddle.com/help/legal/sanctions/which-countries-are-supported-by-paddle",
         "https://www.paddle.com/help/start/intro-to-paddle/when-and-how-do-i-get-paid",
         "https://www.paddle.com/help/manage/get-paid/is-there-a-fee-taken-for-payouts",
-        "https://docs.lemonsqueezy.com/help/payments/sales-tax-vat"
+        "https://docs.lemonsqueezy.com/help/payments/sales-tax-vat",
+        "https://developer.paddle.com/concepts/payment-methods/alipay/",
+        "https://developer.paddle.com/concepts/payment-methods/wechat/"
       ]
     },
     {
@@ -271,6 +309,14 @@
         "recurring": {
           "value": "yes",
           "note": "订阅交易额外加0.5%，另叠加适用的国际/PayPal费用。"
+        },
+        "alipay": {
+          "value": "partial",
+          "note": "官方列出 Alipay，结账是否出现取决于买家地点及设备；不适用于订阅。具体地区与币种清单尚待确认，不能保证每位买家均可用。"
+        },
+        "wechat_pay": {
+          "value": "partial",
+          "note": "官方列出 WeChat Pay，结账是否出现取决于买家地点及设备；不适用于订阅。具体地区与币种清单尚待确认。"
         }
       },
       "sources": [
@@ -279,7 +325,8 @@
         "https://docs.lemonsqueezy.com/help/getting-started/getting-paid",
         "https://docs.lemonsqueezy.com/help/getting-started/supported-countries",
         "https://docs.lemonsqueezy.com/help/getting-started/activate-your-store",
-        "https://docs.lemonsqueezy.com/help/payments/sales-tax-vat"
+        "https://docs.lemonsqueezy.com/help/payments/sales-tax-vat",
+        "https://docs.lemonsqueezy.com/help/checkout/payment-methods"
       ]
     },
     {
@@ -334,6 +381,14 @@
         "recurring": {
           "value": "paid",
           "note": "通过另行计费的Stripe Billing；香港按量价为计费额0.7%，Payments处理费仍适用。"
+        },
+        "alipay": {
+          "value": "partial",
+          "note": "仅限官方商户地区名单（含香港，不含中国大陆），币种依商户地区；标准公开能力为单次支付；循环付款仅限邀测并须 Alipay 单独批准，不保证开通。须有符合要求的公开网站；买家付款不改变大陆开户限制。钱包费率另核，不自动套用卡基准。"
+        },
+        "wechat_pay": {
+          "value": "partial",
+          "note": "仅限官方商户地区名单（含香港，不含中国大陆），币种依商户地区；B2C，非 B2B；标准能力为单次，循环付款仅私测且只限 off-session，不保证资格。Checkout 不支持订阅/setup 模式。须有运营网站及有效结账；钱包费率另核，不自动套用卡基准。"
         }
       },
       "sources": [
@@ -343,7 +398,9 @@
         "https://support.stripe.com/questions/what-do-i-need-to-do-to-verify-my-stripe-account/",
         "https://docs.stripe.com/payouts",
         "https://docs.stripe.com/payments/managed-payments",
-        "https://docs.lemonsqueezy.com/help/payments/sales-tax-vat"
+        "https://docs.lemonsqueezy.com/help/payments/sales-tax-vat",
+        "https://docs.stripe.com/payments/alipay",
+        "https://docs.stripe.com/payments/wechat-pay"
       ]
     },
     {
@@ -398,6 +455,14 @@
         "recurring": {
           "value": "unknown",
           "note": "存在订阅产品不等于本条大陆个人及企业账户均获开通；具体账户、集成和支付方式适用性未核实。"
+        },
+        "alipay": {
+          "value": "unknown",
+          "note": "未确认本条中国卖家统一协议及全球收单方案可用大陆支付宝；通用 APM 宣传或 Braintree 的支持不能替代本账户方案证据。"
+        },
+        "wechat_pay": {
+          "value": "unknown",
+          "note": "未确认本条中国卖家统一协议及全球收单方案可用微信支付；不套用 Braintree 或其他地区账户的支付方式清单。"
         }
       },
       "sources": [
@@ -412,7 +477,8 @@
         "https://www.paypal.cn/portal/fees",
         "https://www.paypal.cn/portal/rmb-withdrawal-terms-and-conditions",
         "https://www.paypal.cn/portal/help/article/286",
-        "https://www.paypal.cn/portal/help/article/321"
+        "https://www.paypal.cn/portal/help/article/321",
+        "https://www.paypal.cn/portal/merchant/online-checkout"
       ]
     }
   ]

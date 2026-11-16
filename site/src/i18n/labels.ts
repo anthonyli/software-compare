@@ -82,6 +82,8 @@ export const featureColumns: Record<string, { zh: string; en: string }> = {
   "international-payments:review": { zh: "网站与身份审核", en: "Website and identity review" },
   "international-payments:payouts": { zh: "提现渠道与限制", en: "Payout routes and limits" },
   "international-payments:recurring": { zh: "订阅收款", en: "Recurring payments" },
+  "international-payments:alipay": { zh: "支付宝（大陆钱包）", en: "Alipay (mainland wallet)" },
+  "international-payments:wechat_pay": { zh: "微信支付", en: "WeChat Pay" },
 
   "domain-registration:register": { zh: "付费域名注册", en: "Paid domain registration" },
   "domain-registration:transfer": { zh: "域名转入", en: "Inbound domain transfer" },
