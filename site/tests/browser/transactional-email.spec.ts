@@ -43,6 +43,18 @@ test('transactional email limits and covers render in both languages and widths'
     await page.locator(`[data-lang="${lang}"]`).click();
     await visibleTranslation(page.locator('main'),item.summary,lang==='en');
     await visibleTranslation(page.locator('main'),item.limits,lang==='en');
+    const active=lang==='en'?'.t-en':'.t-zh',hidden=lang==='en'?'.t-zh':'.t-en';
+    const freeLimits=page.locator('.price-panel > .mt-5 > p '+active);
+    const priceNote=page.locator('.price-table tbody tr td:last-child '+active);
+    for(const text of [freeLimits,priceNote]){
+     await expect(text).toBeVisible();await expect(text.locator('..').locator(hidden)).toBeHidden();
+     await expect(text).toContainText(item.limits[lang==='en'?1:0]);
+     if(lang==='en')await expect(text).not.toHaveText(/[\u4e00-\u9fff]/);
+    }
+    if(item.id==='resend'){
+     await expect(freeLimits).toContainText(lang==='en'?'No cold outreach, purchased or scraped lists':'禁止冷邮件、购买或爬取的联系人名单');
+     await expect(priceNote).toContainText(lang==='en'?'complaints must stay below 0.08% and bounces below 4%':'投诉率须低于 0.08%，退信率低于 4%');
+    }
     const notes=page.locator('.feature-row p '+(lang==='en'?'.t-en':'.t-zh'));
     await expect(notes).toHaveCount(6);
     for(let i=0;i<6;i++){

@@ -14,8 +14,18 @@ test('all 18 rendered feature notes retain English after the real public-text cl
  const {cleanPublicText}=await import('data:text/javascript;base64,'+Buffer.from(result.outputFiles[0].text).toString('base64'));
  let count=0;
  for(const product of c.products)for(const feature of Object.values(product.features)){
-  const note=cleanPublicText(feature.note);assert(note,product.id);
+  const note=cleanPublicText(feature.note);assert(note,product.id);assert.equal(note,feature.note,`${product.id}: feature policy must not disappear`);
   assert(en[note],`${product.id}: ${note}`);assert.doesNotMatch(en[note],/[\u4e00-\u9fff]/);count++;
  }
  assert.equal(count,18);
+});
+
+test('cleaned summaries, free limits and price notes preserve facts and translations',async()=>{
+ const {build}=await import('esbuild');
+ const result=await build({entryPoints:[new URL('../src/lib/display.ts',import.meta.url).pathname],bundle:true,platform:'node',format:'esm',write:false});
+ const {cleanPublicText}=await import('data:text/javascript;base64,'+Buffer.from(result.outputFiles[0].text).toString('base64'));
+ for(const product of c.products)for(const raw of [product.summary,product.price_summary,product.free_tier_limits,...product.prices.map(p=>p.note)]){
+  const cleaned=cleanPublicText(raw);assert.equal(cleaned,raw,`${product.id}: public facts must not disappear`);
+  assert(en[cleaned],`${product.id}: ${cleaned}`);assert.doesNotMatch(en[cleaned],/[\u4e00-\u9fff]/);
+ }
 });
