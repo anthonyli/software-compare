@@ -1,0 +1,3 @@
+# Pitivi basic keyframes
+
+Verified 2026-11-16 against https://www.pitivi.org/manual/keyframecurves.html . Official current online manual documents time-varying opacity, volume and effect properties, adding/moving/removing keyframes. Only linear curves are currently documented. This supports the basic keyframes dimension, not arbitrary interpolation, motion tracking or every installed effect. The page is not version-pinned; no release or performance claim added. Effects availability can depend on installed plugins (https://www.pitivi.org/manual/effects.html); effects and other unknown dimensions remain unchanged. No installation, playback, rendering or runtime verification. Preserve original collected date and release metadata.

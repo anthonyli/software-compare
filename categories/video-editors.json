@@ -580,8 +580,7 @@
           "note": "未打开功能页"
         },
         "keyframes": {
-          "value": "unknown",
-          "note": "未确认"
+          "value": "yes"
         },
         "titles": {
           "value": "unknown",
@@ -610,7 +609,8 @@
       },
       "sources": [
         "https://www.pitivi.org",
-        "https://github.com/pitivi/pitivi"
+        "https://github.com/pitivi/pitivi",
+        "https://www.pitivi.org/manual/keyframecurves.html"
       ]
     },
     {
