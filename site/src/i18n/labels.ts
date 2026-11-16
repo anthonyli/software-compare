@@ -9,6 +9,7 @@ function contentFallback(text: string): string {
 
 /** Category display names, keyed by slug. */
 export const categoryNames: Record<string, { zh: string; en: string }> = {
+  "cloud-sql-databases": { zh: "云 SQL 数据库", en: "Cloud SQL databases" },
   "web-hosting": { zh: "网站部署", en: "Website deployment" },
   "international-payments": { zh: "国外支付平台", en: "International payment platforms" },
   "domain-registration": { zh: "域名注册", en: "Domain registration" },
@@ -77,6 +78,12 @@ export const groupNames: Record<string, { zh: string; en: string }> = {
 
 /** Feature column labels keyed by "slug:key". */
 export const featureColumns: Record<string, { zh: string; en: string }> = {
+  "cloud-sql-databases:capacity": { zh: "免费数据库与容量", en: "Free databases and storage" },
+  "cloud-sql-databases:reads": { zh: "免费读行与周期", en: "Free row reads and period" },
+  "cloud-sql-databases:writes": { zh: "免费写行与周期", en: "Free row writes and period" },
+  "cloud-sql-databases:transfer": { zh: "同步与出站边界", en: "Sync and egress boundaries" },
+  "cloud-sql-databases:recovery": { zh: "免费恢复窗口", en: "Free recovery window" },
+  "cloud-sql-databases:card_required": { zh: "免费档需绑卡", en: "Card required for free tier" },
   "web-hosting:static_hosting": { zh: "静态站点托管", en: "Static site hosting" },
   "web-hosting:build_limits": { zh: "构建额度与周期", en: "Build quotas and periods" },
   "web-hosting:functions": { zh: "函数计算边界", en: "Function compute limits" },
