@@ -1,0 +1,23 @@
+import {test,expect} from '@playwright/test';
+for(const width of [390,1280]) test(`compact homepage disclosure at ${width}`,async({page},testInfo)=>{
+ await page.setViewportSize({width,height:900}); await page.goto('/');
+ const details=page.locator('[data-home-details]'); const summary=details.locator('summary');
+ const intro=page.locator('[data-product-intro]');
+ await expect(intro).not.toBeVisible();
+ await expect(page.locator('[data-free-access]')).toContainText('第三方软件可能收费');
+ const closedHeight=await page.locator('[data-hero]').evaluate(el=>el.getBoundingClientRect().height);
+ expect(closedHeight).toBeLessThan(width===390 ? 540 : 360);
+ await summary.focus(); await page.keyboard.press('Enter'); await expect(intro).toBeVisible();
+ await expect(page.locator('[data-pricing-details]')).toContainText('价格以各产品官网为准');
+ await page.locator('[data-lang="en"]').click(); await expect(summary.locator('.t-en')).toBeVisible();
+ await expect(intro.locator('.t-en').first()).toBeVisible();
+ await summary.focus(); await page.keyboard.press('Space'); await expect(intro).not.toBeVisible();
+ await summary.click(); await expect(intro).toBeVisible(); await summary.click(); await expect(intro).not.toBeVisible();
+ const englishHeight=await page.locator('[data-hero]').evaluate(el=>el.getBoundingClientRect().height);
+ expect(englishHeight).toBeLessThan(width===390 ? 540 : 360);
+ await page.screenshot({path:testInfo.outputPath(`compact-home-${width}-en.png`)});
+ await page.locator('[data-lang="zh-CN"]').click();
+ await page.screenshot({path:testInfo.outputPath(`compact-home-${width}-zh.png`)});
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+ await expect(page.locator('#site-search-hero')).toBeVisible();
+});
