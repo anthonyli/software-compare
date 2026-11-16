@@ -695,8 +695,7 @@
           "note": "本次未打开签名说明"
         },
         "encrypt": {
-          "value": "unknown",
-          "note": "导出 PDF 选项是否含权限加密本次未核对"
+          "value": "yes"
         },
         "compress": {
           "value": "unknown",
@@ -707,7 +706,8 @@
         "https://www.libreoffice.org/download/download-libreoffice/",
         "https://www.libreoffice.org",
         "https://github.com/LibreOffice/core",
-        "https://git.libreoffice.org/core"
+        "https://git.libreoffice.org/core",
+        "https://help.libreoffice.org/latest/en-US/text/shared/01/ref_pdf_export_security.html"
       ],
       "source_url": "https://git.libreoffice.org/core",
       "source_host_note": "官方开发仓库在 git.libreoffice.org（Gerrit），GitHub LibreOffice/core 为只读官方镜像，不接受 Pull Request。"
