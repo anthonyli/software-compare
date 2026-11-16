@@ -77,7 +77,7 @@ test('first-entry and manual liquid reveal frames, transparent navigation',async
 });
 
 test('grid is restricted to light catalog; category and product grid preserved',async({page})=>{
- await page.goto('/');expect(await page.locator('body').evaluate(el=>getComputedStyle(el).backgroundImage)).toContain('linear-gradient');
+ await page.goto('/');await expect(page.locator('body')).toHaveCSS('background-color','rgb(245, 245, 237)');expect(await page.locator('body').evaluate(el=>getComputedStyle(el).backgroundImage)).toContain('linear-gradient');
  expect(await page.locator('[data-scenario]').evaluate(el=>getComputedStyle(el).backgroundImage)).toBe('none');
  await page.locator('#categories').scrollIntoViewIfNeeded();await page.screenshot({path:'../docs/design/previews/labs-home-catalog-grid.png'});
  await page.goto('/c/web-hosting/');expect(await page.locator('body').evaluate(el=>getComputedStyle(el).backgroundImage)).toContain('linear-gradient');
