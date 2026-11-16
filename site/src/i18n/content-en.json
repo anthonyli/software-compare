@@ -2502,5 +2502,20 @@
   "美元年付基准，地区价格以结算页为准；附件上传25GB/月，单文件5GB，笔记本与标签不限；另有月付与5年预付，5年计划无试用。": "USD annual reference price; regional prices are determined at checkout. Attachment uploads: 25GB/month, 5GB/file, unlimited notebooks and tags. Monthly and prepaid 5-year options also exist; the 5-year plan has no trial.",
   "免费档无时限、无需绑卡，笔记与设备不限；附件上传50MB/月、单文件10MB，笔记本与标签各50，颜色7种。附件额度每月1日重置，笔记正文不计入；超额后的处理方式待核实。": "The free plan has no time limit or card requirement and allows unlimited notes and devices. Attachment uploads: 50MB/month and 10MB/file; 50 notebooks, 50 tags and 7 colors. The attachment allowance resets on the first of each month and excludes note text. Over-limit handling has not been verified.",
   "开源加密笔记，免费档支持多端无限笔记；附件上传、笔记本和标签有限额，付费采用地区定价。": "Open-source encrypted notes with unlimited notes across devices on the free plan; attachment uploads, notebooks and tags have limits, and paid plans use regional pricing.",
-  "Free最多50个标签，Essential最多500个，Pro与Believer不限；不是所有档位都无限。": "Up to 50 tags on Free, 500 on Essential, and unlimited on Pro and Believer; not every plan is unlimited."
+  "Free最多50个标签，Essential最多500个，Pro与Believer不限；不是所有档位都无限。": "Up to 50 tags on Free, 500 on Essential, and unlimited on Pro and Believer; not every plan is unlimited.",
+  "免费开源，无账号或订阅；用于电脑连接和控制 Android，不是通用互联网远程桌面服务。": "Free and open source, with no account or subscription; connects a computer to Android rather than providing a general-purpose internet remote-desktop service.",
+  "Apache-2.0 软件；商用与再分发仍需遵守许可证义务。": "Apache-2.0 software; commercial use and redistribution remain subject to license obligations.",
+  "无付费功能档。镜像要求 Android 5+ 及 ADB 调试授权，无需 root；USB 或同网 TCP/IP。OTG 仅控制，不含音视频。未实测设备兼容性。": "No paid feature tier. Mirroring requires Android 5+ and authorized ADB debugging, without root; USB or same-network TCP/IP. OTG is control-only, without video or audio. Device compatibility was not tested.",
+  "从 Windows、macOS 或 Linux 电脑投屏和控制 Android，适合演示与设备操作；Android 是被控端，不是桌面主控客户端。": "Mirror and control Android from a Windows, macOS or Linux computer for demonstrations and device operation; Android is the controlled endpoint, not a desktop-control client.",
+  "核实官方 v5.0.1 标签文档；未核实发布时间，不以提交时间代替。": "Official v5.0.1 tag documentation verified; release publication time was not verified and is not replaced with a commit timestamp.",
+  "需要设备调试授权；未确认等同远程桌面的无人值守访问。": "Device debugging authorization is required; unattended remote-desktop access is not established.",
+  "拖入非 APK 文件可推送到 Android；不是已核实的双向文件管理器。": "Dropping non-APK files pushes them to Android; a bidirectional file manager has not been established.",
+  "支持双向复制粘贴；行为依应用和设备而异，粘贴会进入 Android 剪贴板，敏感内容需谨慎。": "Bidirectional copy/paste is supported; behavior varies by app and device. Pasted content enters the Android clipboard, so treat sensitive content carefully.",
+  "Android 显示或虚拟显示功能不直接等同通用多桌面显示器支持。": "Android display or virtual-display features do not establish general multi-monitor desktop support.",
+  "音频转发需 Android 11+；Android 11 启动采集时须解锁。采集失败默认继续视频，--require-audio 除外。": "Audio forwarding requires Android 11+; Android 11 must be unlocked when capture starts. Capture failure defaults to video-only mirroring unless --require-audio is set.",
+  "未据 USB/ADB 连接推断所有网络路径具有端到端加密。": "USB/ADB connectivity is not taken as proof of end-to-end encryption on every network path.",
+  "本地运行不等于提供远程桌面中继或管理服务器。": "Running locally does not establish a remote-desktop relay or management server.",
+  "电脑键鼠控制 Android；不是 iOS 控制或手机控制远程电脑。": "Computer keyboard/mouse control of Android; not iOS control or phone-to-desktop remote control.",
+  "按 Apache-2.0 许可证可商用，仍需遵守许可及第三方组件要求。": "Commercial use is permitted under Apache-2.0, subject to its obligations and those of third-party components.",
+  "可录制镜像视频和可用音频流；不保证所有应用内容都可采集。": "Can record mirrored video and available audio streams; not a guarantee that all application content can be captured."
 }
