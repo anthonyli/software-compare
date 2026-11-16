@@ -188,6 +188,14 @@ const ossCount = categories.reduce(
 
 <style is:global>
 body:has([data-scenario]){background:#f5f5ed;background-image:none}
+body:has([data-scenario]) .site-header{background:color-mix(in srgb,var(--playground-accent,#caff56) 7%,#111318);border-bottom-color:transparent;color:#f5f5ed;transition:background-color 1.1s}
+body:has([data-scenario]) .site-header .brand,body:has([data-scenario]) .site-header .brand-zh,body:has([data-scenario]) .cat-menu-btn{color:#f5f5ed}
+body:has([data-scenario]) .site-header .lang-switch{background:#ffffff12;border-color:#ffffff30}
+body:has([data-scenario]) .site-header .lang-btn{color:#f5f5ed}
+body:has([data-scenario]) .site-header .lang-btn[aria-pressed=true]{background:#f5f5ed;color:#151615}
+body:has([data-scenario]) .site-header .cat-menu-panel,body:has([data-scenario]) .site-header .header-search{color:#151615}
+body:has([data-scenario]) .site-header .cat-menu-btn:hover,body:has([data-scenario]) .site-header .header-github:hover{background:#ffffff20}
+body:has([data-scenario]) .site-header :focus-visible{outline-color:#caff56}
 body:has([data-scenario]) #categories{padding-top:30px}
 body:has([data-scenario]) #categories>div:first-child h2{font-size:24px;letter-spacing:-.04em}
 body:has([data-scenario]) .dir-card{background:#fff;border-color:#e3e4d9;transition:transform .3s,box-shadow .3s}
@@ -195,5 +203,5 @@ body:has([data-scenario]) .dir-card:hover{transform:translateY(-6px) rotate(-1de
 body:has([data-scenario]) .dir-cover{border-radius:14px;margin:9px 9px 0}
 body:has([data-scenario]) [data-category-group]>h3{font-size:15px;color:#30352b}
 .discovery-intro{border-bottom:1px solid #dfe2d5}
-@media(prefers-reduced-motion:reduce){body:has([data-scenario]) .dir-card{transition:none}body:has([data-scenario]) .dir-card:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){body:has([data-scenario]) .site-header{transition:none}body:has([data-scenario]) .dir-card{transition:none}body:has([data-scenario]) .dir-card:hover{transform:none}}
 </style>

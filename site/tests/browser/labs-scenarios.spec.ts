@@ -58,3 +58,22 @@ test('autoplay advances twice, transitions, pauses and resumes', async({page})=>
  await expect(active.locator('a')).toHaveAttribute('href',still!);
  await root.locator('[data-next]').click();await expect(active.locator('a')).not.toHaveAttribute('href',still!);
 });
+
+test('scene transition choreography and integrated header frames',async({page})=>{
+ await page.setViewportSize({width:1440,height:1000});await page.goto('/');
+ const root=page.locator('[data-scenario]');await root.locator('[data-dot="0"]').click();await page.waitForTimeout(1400);
+ const header=page.locator('.site-header');
+ expect(await header.evaluate(el=>getComputedStyle(el).backgroundColor)).toBe(await root.evaluate(el=>getComputedStyle(el).backgroundColor));
+ await mkdir('../docs/design/previews',{recursive:true});
+ await root.locator('[data-dot="1"]').click();
+ const samples=[];
+ for(const [frame,wait] of [[1,100],[2,300],[3,1000]]){
+  await page.waitForTimeout(wait);
+  samples.push(await root.locator('[data-position=active]').evaluate(el=>({panel:getComputedStyle(el).transform,shape:getComputedStyle(el).borderRadius,art:getComputedStyle(el.querySelector('.scene-art')!).transform})));
+  await page.screenshot({path:`../docs/design/previews/labs-home-transition-${frame}.png`});
+ }
+ expect(samples[0].panel).not.toBe(samples[2].panel);
+ expect(samples[0].shape).not.toBe(samples[2].shape);
+ expect(samples[0].art).not.toBe(samples[2].art);
+ await page.locator('[data-cat-btn]').click();await expect(page.locator('[data-cat-panel]')).toBeVisible();
+});

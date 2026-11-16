@@ -16,7 +16,7 @@ Open the local URL Astro prints (normally http://localhost:4321). `dev:ui` previ
 
 ## Included
 
-- Immersive dark carousel with layered perspective, curved stage lines, dimensional interface illustrations, neighboring cards and eased spatial transitions.
+- Immersive dark carousel with a visually integrated navigation bar, layered perspective, neighboring cards, timed progress bars and scene-color ambience. Each change bends the entering panel silhouette while artwork and text arrive at different depths; reduced-motion removes the choreography.
 - Six task-first entry points: hosting, screen recording, email, cloud SQL, image editing and backend services.
 - Random starting scene and a surprise button, explicit previous/next and direct selection. Automatic advance every 4.5 seconds, with a pause/play control. Hover, keyboard focus, hidden tabs and offscreen state pause playback; reduced-motion disables automatic motion. Keyboard arrows, swipe, focus control and reduced-motion support.
 - Chinese/English labels; responsive mobile layout; all existing catalog data, search and category grouping retained.
