@@ -58,8 +58,11 @@ const listId = `${inputId}-list`;
 </div>
 
 <script>
+  import { prepareSearchIndex, searchCatalog } from "../lib/search.mjs";
   type Hit = {
     name: string;
+    name_en?: string;
+    search_description?: string;
     summary: string;
     summary_en?: string;
     category_name: string;
@@ -76,11 +79,12 @@ const listId = `${inputId}-list`;
 
   let index: Hit[] | null = null;
   let loading: Promise<Hit[]> | null = null;
+  let prepared: ReturnType<typeof prepareSearchIndex> = [];
 
   async function loadIndex(): Promise<Hit[]> {
     if (index) return index;
     if (!loading) {
-      loading = fetch("/search-index.json")
+      loading = fetch("/search-index.json", { cache: "no-cache" })
         .then((r) => {
           if (!r.ok) throw new Error(`Search index: ${r.status}`);
           return r.json();
@@ -88,6 +92,7 @@ const listId = `${inputId}-list`;
         .then((data) => {
           if (!Array.isArray(data.products)) throw new Error("Invalid search index");
           index = data.products as Hit[];
+          prepared = prepareSearchIndex(index);
           return index;
         })
         .catch((error) => {
@@ -116,24 +121,6 @@ const listId = `${inputId}-list`;
     } catch {
       return esc;
     }
-  }
-
-  function search(items: Hit[], q: string): Hit[] {
-    const tokens = q.trim().toLowerCase().split(/\s+/).filter(Boolean);
-    if (!tokens.length) return [];
-    return items
-      .map((item) => {
-        const hay = `${item.name} ${item.summary} ${item.summary_en || ""} ${item.category_name} ${item.category_name_en || ""} ${item.pricing_model} ${item.pricing_model_en || ""} ${item.open_source ? "开源 open source oss" : ""}`.toLowerCase();
-        const ok = tokens.every((t) => hay.includes(t));
-        const score = ok
-          ? (item.name.toLowerCase().startsWith(tokens[0]) ? 0 : item.name.toLowerCase().includes(tokens[0]) ? 1 : 2)
-          : 99;
-        return { item, score, ok };
-      })
-      .filter((x) => x.ok)
-      .sort((a, b) => a.score - b.score || a.item.name.localeCompare(b.item.name, "zh-CN"))
-      .slice(0, 12)
-      .map((x) => x.item);
   }
 
   function isShown(el: HTMLElement): boolean {
@@ -206,7 +193,7 @@ const listId = `${inputId}-list`;
       .map(
         (h, i) => `<a href="${h.href}" class="search-hit${i === idx ? " is-active" : ""}" role="option" id="${listId}-opt-${i}" aria-selected="${i === idx ? "true" : "false"}">
           <div class="flex items-baseline justify-between gap-2">
-            <span class="font-medium tracking-tight">${highlight(h.name, q)}</span>
+            <span class="font-medium tracking-tight">${highlight(currentLang() === "en" ? (h.name_en || h.name) : h.name, q)}</span>
             <span class="shrink-0 text-xs text-muted">${escapeHtml(currentLang() === "en" ? (h.category_name_en || h.category_name) : h.category_name)}</span>
           </div>
           <div class="mt-0.5 line-clamp-1 text-xs text-muted">${highlight((currentLang() === "en" ? (h.summary_en || h.summary) : h.summary) || (currentLang() === "en" ? (h.pricing_model_en || h.pricing_model) : h.pricing_model), q)}</div>
@@ -221,8 +208,10 @@ const listId = `${inputId}-list`;
   document.querySelectorAll("[data-search]").forEach((root) => {
     const input = root.querySelector("[data-search-input]") as HTMLInputElement;
     let timer = 0;
+    let composing = false;
     const run = async (keepActive = false) => {
       const q = input.value;
+      if (composing) return;
       if (!q.trim()) {
         closeBox(root);
         return;
@@ -231,9 +220,9 @@ const listId = `${inputId}-list`;
       requests.set(root, request);
       const isCurrent = () => requests.get(root) === request && input.value === q && document.activeElement === input;
       try {
-        const items = await loadIndex();
+        await loadIndex();
         if (!isCurrent()) return;
-        const hits = search(items, q);
+        const hits = searchCatalog(prepared, q) as Hit[];
         const prev = states.get(root);
         const active = keepActive && prev ? prev.active : 0;
         render(root, hits, q, active);
@@ -253,13 +242,24 @@ const listId = `${inputId}-list`;
         box.replaceChildren(message);
       }
     };
+    input.addEventListener("compositionstart", () => {
+      composing = true;
+      window.clearTimeout(timer);
+      closeBox(root);
+    });
+    input.addEventListener("compositionend", () => {
+      composing = false;
+      window.clearTimeout(timer);
+      run(false);
+    });
     input.addEventListener("input", () => {
       window.clearTimeout(timer);
       closeBox(root);
-      timer = window.setTimeout(() => run(false), 80);
+      if (!composing) timer = window.setTimeout(() => run(false), 80);
     });
     input.addEventListener("focus", () => run(true));
     input.addEventListener("keydown", (e) => {
+      if (composing || e.isComposing || e.keyCode === 229) return;
       const st = states.get(root);
       const box = root.querySelector("[data-search-results]") as HTMLElement;
       if (e.key === "Escape") {
