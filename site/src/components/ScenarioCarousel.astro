@@ -32,12 +32,44 @@ if (root) {
   let progress: Animation | undefined;
   let userPaused = false, focused = false, inView = true;
   const delay = 6000, duration = 1250;
-  const depthAnimations = new Map<HTMLElement, Animation[]>();
+  let depthFrame=0, depthElapsed=0, depthLast=0, depthPaused=false;
+  let depthCards: HTMLElement[]=[];
+  function resetDepth(slide?:HTMLElement){
+    cancelAnimationFrame(depthFrame);depthElapsed=0;depthLast=0;
+    depthCards.forEach(card=>{card.style.translate='';card.style.rotate='';});
+    depthCards=slide?Array.from(slide.querySelectorAll<HTMLElement>('.art-window,.art-mini,.floating-tag,.art-label')):[];
+    function advance(now:number){
+      if(depthLast&&!depthPaused)depthElapsed+=now-depthLast;
+      depthLast=now;
+      const t=Math.min(1,depthElapsed/delay);
+      depthCards.forEach((card,i)=>{
+        // Four separate tracks: middle-left drifts down/left, near-right
+        // rises/right, far tag crosses slowly, lower label rises/left.
+        // The fixed title is the visual anchor, not part of a global zoom.
+        const tracks=[
+          [55,-45,-340, -45,80,170],
+          [-45,65,-440, 45,-65,260],
+          [-35,-25,-620, 55,25,-180],
+          [35,40,-320, -45,-45,100],
+        ];
+        const [x0,y0,z0,x1,y1,z1]=tracks[i];
+        const mirror=current===1?-1:1;
+        const x=(x0+(x1-x0)*t)*mirror;
+        const y=y0+(y1-y0)*t;
+        const z=z0+(z1-z0)*t;
+        card.style.translate=`${x}px ${y}px ${z}px`;
+        card.style.rotate=`${(i%2?1:-1)*(t-.5)*7}deg`;
+      });
+      root!.dataset.cameraProgress=t.toFixed(4);
+      if(depthCards.length)depthFrame=requestAnimationFrame(advance);
+    }
+    if(slide)depthFrame=requestAnimationFrame(advance);
+  }
 
   // A smooth, continuously deforming liquid boundary. Coordinates are normalized,
   // so the same reveal covers wide, narrow and resized viewports without a canvas.
   function wavePath(radius: number, phase: number, strength: number, scene = current, rotation = 0) {
-    // Deliberate families: soft triangle, five-petal flower, bean, four-leaf
+    // Deliberate families: rounded square, five-petal flower, bean, four-leaf
     // clover, scalloped bloom, and almost-round pebble (not six noisy blobs).
     const lobes=[3,5,2,4,6,1][scene];
     const seed=[.35,.8,1.1,Math.PI,0,.4][scene];
@@ -45,7 +77,13 @@ if (root) {
     const drift=phase*[.25,.22,.20,.08,.16,.12][scene];
     const points = Array.from({length:72}, (_,i) => {
       const a = i / 72 * Math.PI * 2;
-      const r = radius * (1 + amplitude * Math.cos(a*lobes + drift+seed) + amplitude*.12*Math.sin(a*(lobes+3)-drift+seed));
+      const family=scene===0
+        ? 1/Math.pow(Math.pow(Math.abs(Math.cos(a)),6)+Math.pow(Math.abs(Math.sin(a)),6),1/6)
+        : 1 + amplitude * Math.cos(a*lobes + drift+seed);
+      // A traveling edge wave remains alive during the quick recoil; the
+      // silhouette is never a frozen cutout waiting for a scale animation.
+      const ripple=.022*Math.sin(a*9-phase*20)+.009*Math.sin(a*13+phase*14);
+      const r = radius * (family+ripple);
       return [.5 + Math.cos(a+rotation)*r, .48 + Math.sin(a+rotation)*r];
     });
     const mid = (a:number[], b:number[]) => `${((a[0]+b[0])/2).toFixed(5)},${((a[1]+b[1])/2).toFixed(5)}`;
@@ -58,7 +96,6 @@ if (root) {
     slides.forEach((slide,i) => {
       slide.style.clipPath = 'none'; slide.style.opacity = '';
       slide.dataset.position = i === current ? 'active' : 'hidden';
-      if(i!==current){depthAnimations.get(slide)?.forEach(a=>a.cancel());depthAnimations.delete(slide);}
     });
     rim.setAttribute('d',''); root!.dataset.transitioning = 'false';
     root!.dataset.revealProgress = '1';
@@ -66,11 +103,11 @@ if (root) {
   function schedule() {
     clearTimeout(timer); progress?.cancel();
     if (current < 0) return;
-    if (reduced.matches) { settle(); root!.getAnimations({subtree:true}).forEach(a=>a.cancel()); depthAnimations.clear(); }
+    if (reduced.matches) { settle(); root!.getAnimations({subtree:true}).forEach(a=>a.cancel()); resetDepth(); }
     const paused = userPaused || focused || !inView || document.hidden || reduced.matches;
     root!.dataset.autoplay = paused ? 'paused' : 'running';
     root!.dataset.userPaused = String(userPaused);
-    depthAnimations.forEach(animations=>animations.forEach(a=>paused?a.pause():a.play()));
+    depthPaused=paused;
     const en = document.documentElement.lang === 'en';
     dots.forEach((dot,i)=>{
       const name=dot.getAttribute(en?'data-en':'data-zh')!;
@@ -96,16 +133,8 @@ if (root) {
     });
     if(!reduced.matches){
       const entering=slides[current];
-      // Independent camera drift: slow movement through depth, not a fast scale
-      // tied to the wipe. Preserve each card's own tilt and responsive transform.
-      const camera=Array.from(entering.querySelectorAll<HTMLElement>('.art-window,.art-mini,.floating-tag,.art-label')).map((card,i)=>{
-        const tilt=getComputedStyle(card).transform;
-        return card.animate([
-          {transform:`translateZ(${-180-i*35}px) ${tilt==='none'?'':tilt}`},
-          {transform:`translateZ(${100+i*18}px) ${tilt==='none'?'':tilt}`}
-        ],{duration:delay+duration,easing:'linear',fill:'forwards'});
-      });
-      depthAnimations.set(entering,camera);
+      // Always restart from the far plane, including after a full auto loop.
+      resetDepth(entering);
       entering.style.clipPath=`url(#liquid-clip-${current})`;
       paths[current].setAttribute('d',wavePath(.015,0,.18));
       root!.dataset.transitioning='true';
@@ -169,7 +198,7 @@ if (root) {
 .scene[data-position=active]{visibility:visible;z-index:2;pointer-events:auto}.scene[data-position=outgoing]{visibility:visible;z-index:1}.scene[data-position=hidden]{z-index:0}
 .scene::after{content:"";position:absolute;inset:0;background:linear-gradient(#0001,transparent 25%,transparent 65%,#0006);pointer-events:none;z-index:2}
 .scene-copy{position:absolute;inset:28% 15% auto;z-index:3;text-align:center;display:flex;align-items:center;flex-direction:column}.scene-index{font-size:10px;letter-spacing:.2em;color:#fff9;margin-bottom:20px}.scene-copy h2{font-size:clamp(44px,6.2vw,98px);font-weight:450;line-height:1.12;letter-spacing:-.055em;text-wrap:balance;text-shadow:0 4px 24px #0002}.scene-copy p{font-size:clamp(14px,1.6vw,21px);line-height:1.65;margin-top:26px;max-width:640px;color:#f5f4eddd;text-wrap:balance}.scene-link{margin-top:32px;background:#f4f2e9;color:#161b20!important;padding:16px 25px;border-radius:100px;display:flex;align-items:center;gap:28px;font-size:14px;box-shadow:0 10px 40px #0001;transition:transform .25s,background .25s}.scene-link:hover{transform:translateY(-3px);background:white}.scene-link>span:last-child{font-size:22px}
-.scene-art{position:absolute;inset:0;pointer-events:none;perspective:1400px}.art-halo{position:absolute;width:85vw;height:85vw;left:7.5vw;top:calc(47% - 42.5vw);border:1px solid color-mix(in srgb,var(--scene-color) 12%,transparent);border-radius:50%;box-shadow:0 0 100px color-mix(in srgb,var(--scene-color) 5%,transparent),inset 0 0 100px color-mix(in srgb,var(--scene-color) 5%,transparent)}.art-orbit{position:absolute;width:110%;height:75%;left:-5%;top:15%;border:1px solid #ffffff09;border-radius:50%;transform:rotate(-24deg)}
+.scene-art{position:absolute;inset:0;pointer-events:none;perspective:1050px;perspective-origin:50% 48%}.art-halo{position:absolute;width:85vw;height:85vw;left:7.5vw;top:calc(47% - 42.5vw);border:1px solid color-mix(in srgb,var(--scene-color) 12%,transparent);border-radius:50%;box-shadow:0 0 100px color-mix(in srgb,var(--scene-color) 5%,transparent),inset 0 0 100px color-mix(in srgb,var(--scene-color) 5%,transparent)}.art-orbit{position:absolute;width:110%;height:75%;left:-5%;top:15%;border:1px solid #ffffff09;border-radius:50%;transform:rotate(-24deg)}
 .art-window{position:absolute;left:-5%;top:27%;width:340px;height:255px;background:linear-gradient(130deg,#ffffff16,#ffffff06);border:1px solid #ffffff25;box-shadow:0 30px 60px #0005,inset 0 1px #fff2;border-radius:18px;transform:rotateY(18deg) rotateZ(-14deg);opacity:.72;backdrop-filter:blur(12px)}.window-bar{height:32px;border-bottom:1px solid #fff2;display:flex;align-items:center;gap:5px;padding:0 13px}.window-bar i{height:5px;width:5px;border-radius:50%;background:#fff5}.window-bar span{font-size:9px;color:#fff8;margin-left:9px}.window-content{position:relative;padding:22px}.art-symbol{font-size:74px;line-height:1;font-weight:500;color:var(--scene-color)}.mock-lines{position:absolute;left:125px;right:25px;top:36px;display:grid;gap:10px}.mock-lines b{height:6px;background:#fff3;border-radius:8px}.mock-lines b:nth-child(2){width:70%}.mock-lines b:last-child{width:40%;background:var(--scene-color);opacity:.5}.mock-grid{display:flex;gap:12px;margin-top:24px}.mock-grid i{flex:1;height:72px;border-radius:9px;background:linear-gradient(140deg,color-mix(in srgb,var(--scene-color) 55%,transparent),#ffffff08);border:1px solid #fff2}.mock-grid i:nth-child(2){opacity:.6}.mock-grid i:last-child{opacity:.35}
 .art-mini{position:absolute;right:-2%;bottom:20%;width:270px;height:290px;padding:35px;border-radius:28px;border:1px solid #fff2;background:linear-gradient(135deg,#ffffff12,#ffffff03);box-shadow:0 30px 80px #0006;transform:rotateY(-20deg) rotateZ(12deg);opacity:.72;backdrop-filter:blur(14px)}.art-mini>span{font-size:65px;font-weight:350;letter-spacing:-.07em;color:var(--scene-color)}.mini-bars{display:flex;gap:12px;height:90px;align-items:flex-end;margin-top:20px}.mini-bars i{height:85%;width:22px;border-radius:8px;background:linear-gradient(var(--scene-color),color-mix(in srgb,var(--scene-color) 20%,transparent));opacity:.65}.mini-bars i:nth-child(2n){height:45%}.mini-bars i:nth-child(3){height:100%}.floating-tag{position:absolute;right:17%;top:15%;padding:15px 23px;border:1px solid #fff2;border-radius:14px;font-size:13px;background:#ffffff0c;box-shadow:0 15px 35px #0002;transform:rotate(12deg);color:#ffffff80}.art-label{position:absolute;left:17%;bottom:17%;font-size:12px;letter-spacing:.06em;border:1px solid #fff2;background:#ffffff08;padding:17px 24px;border-radius:14px;transform:rotate(-7deg);color:#ffffff80}
 .art-record .art-window{left:auto;right:-4%;top:18%;transform:rotateY(-16deg) rotateZ(12deg)}.art-record .art-mini{right:auto;left:-3%;bottom:17%;transform:rotateY(18deg) rotateZ(-12deg)}.art-record .floating-tag{right:auto;left:20%}.art-record .art-label{left:auto;right:15%}.art-mail .art-window{top:20%;transform:rotateY(12deg) rotateZ(-8deg)}.art-mail .art-symbol{font-size:85px}.art-data .mock-grid i{border-radius:50% / 20%;box-shadow:0 8px 0 #ffffff18}.art-image .art-symbol{font-size:85px}.art-image .mock-grid i{border-radius:50%}.art-backend .art-symbol{font-size:48px;padding:10px 0}
@@ -196,4 +225,8 @@ if (root) {
 .scenario[data-user-paused=true] .scene-dots button[aria-pressed=true]>span{background:#15161566}.scenario-help{color:#15161588}
 .scenario :focus-visible{outline-color:#151615}
 
+/* A lit edge and offset side face add thickness, not merely a flat zoom. */
+.art-window,.art-mini{will-change:translate;transform-style:preserve-3d}
+.art-window::after,.art-mini::after{content:"";position:absolute;inset:5px -9px -9px 5px;border-radius:inherit;background:#15161530;border:1px solid #15161520;transform:translateZ(-10px);z-index:-1;pointer-events:none}
+@media(prefers-reduced-motion:reduce){.art-window,.art-mini{will-change:auto}}
 </style>

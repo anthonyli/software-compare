@@ -118,3 +118,31 @@ test('quick recoil turns while background cards advance slowly in perspective',a
  await page.emulateMedia({reducedMotion:'reduce'});
  expect(await card.evaluate(el=>el.getAnimations().length)).toBe(0);
 });
+
+
+test('camera push restarts through two complete automatic loops and repeated manual entries',async({page})=>{
+ test.setTimeout(90000);await page.setViewportSize({width:1440,height:900});
+ await page.clock.install({time:new Date('2026-01-01T00:00:00Z')});await page.clock.pauseAt(new Date('2026-01-01T00:00:01Z'));
+ await page.goto('/');await page.clock.runFor(1500);
+ const root=page.locator('[data-scenario]');
+ // Focus outside the hero so this genuinely exercises automatic rotation.
+ await page.locator('[data-lang=zh]').focus();await page.clock.runFor(6000);
+ for(let cycle=0;cycle<2;cycle++)for(let scene=0;scene<6;scene++){
+  const id=await root.locator('[data-position=active] a').getAttribute('href');
+  const start=Number(await root.getAttribute('data-camera-progress'));
+  expect(start).toBeLessThan(.28);
+  await page.clock.runFor(1500);
+  expect(Number(await root.getAttribute('data-camera-progress'))).toBeGreaterThan(start);
+  await page.clock.runFor(4500);
+  expect(await root.locator('[data-position=active] a').getAttribute('href')).not.toBe(id);
+ }
+ for(let visit=0;visit<3;visit++){
+  const selected=await root.locator('[data-dot][aria-pressed=true]').getAttribute('data-dot');
+  await root.locator(`[data-dot="${selected==='1'?2:1}"]`).click({force:true});await page.clock.runFor(1400);
+  await root.locator('[data-dot="0"]').click({force:true});await page.clock.runFor(1400);
+  const card=root.locator('[data-position=active] .art-window'),far=await card.boundingBox();
+  await page.screenshot({path:`../docs/design/previews/labs-home-loop-${visit}-far.png`});
+  await page.clock.runFor(2600);const near=await card.boundingBox();expect(near!.width).toBeGreaterThan(far!.width*1.12);expect(Math.abs(near!.x-far!.x)).toBeGreaterThan(15);expect(Math.abs(near!.y-far!.y)).toBeGreaterThan(15);
+  await page.screenshot({path:`../docs/design/previews/labs-home-loop-${visit}-near.png`});
+ }
+});
