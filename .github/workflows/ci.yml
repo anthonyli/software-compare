@@ -26,6 +26,7 @@ jobs:
       - run: npm run test:e2e
         working-directory: site
       - name: Upload domain registration visual previews
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: domain-registration-visual-previews

@@ -1,4 +1,7 @@
 import {test,expect} from '@playwright/test';
+// Isolate this visual visitor from other suites' real session-rate buckets.
+// TEST-NET-1 address; production rate limits and real vote endpoints stay unchanged.
+test.use({extraHTTPHeaders:{'CF-Connecting-IP':'192.0.2.240'}});
 test('domain registrars render bilingually at desktop and mobile widths',async({page})=>{
  for(const width of [1280,390]){
   await page.setViewportSize({width,height:900});await page.goto('/');
