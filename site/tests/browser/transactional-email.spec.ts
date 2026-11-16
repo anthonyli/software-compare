@@ -52,10 +52,13 @@ test('transactional email limits and covers render in both languages and widths'
     const priceNote=page.locator('.price-table tbody tr td:last-child '+active);
     for(const text of [freeLimits,priceNote]){
      await expect(text).toBeVisible();await expect(text.locator('..').locator(hidden)).toBeHidden();
-     await expect(text).toContainText(item.limits[lang==='en'?1:0]);
+     await expect(text).toContainText(item.id==='amazon-ses' && text===priceNote ? (lang==='en'?'New SES accounts default to Essentials':'新 SES 账户默认 Essentials') : item.limits[lang==='en'?1:0]);
      if(lang==='en')await expect(text).not.toHaveText(/[\u4e00-\u9fff]/);
     }
     if(item.id==='amazon-ses'){
+     await expect(page.locator('.price-table')).toContainText('$0.16');
+     await expect(page.locator('.price-table')).toContainText(lang==='en'?'per 1,000 emails':'每千封');
+     for(const amount of ['0.16','0.10','0.12'])await expect(priceNote).toContainText(amount);
      const checks=lang==='en'?['per recipient','six months','verified sender','200 messages per 24 hours','identity checks','Paid accounts charge']:['按收件人计费','6 个月','验证发件','200 封/24 小时','身份核验','Paid 账户'];
      for(let i=0;i<6;i++)await expect(page.locator('.feature-row p '+active).nth(i)).toContainText(checks[i]);
     }
