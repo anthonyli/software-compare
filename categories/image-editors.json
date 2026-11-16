@@ -190,7 +190,7 @@
           "value": "yes"
         },
         "animation": {
-          "value": "unknown"
+          "value": "partial"
         },
         "plugins": {
           "value": "unknown"
@@ -198,7 +198,10 @@
       },
       "sources": [
         "https://photodemon.org/",
-        "https://photodemon.org/license/"
+        "https://photodemon.org/license/",
+        "https://photodemon.org/2020/09/09/photodemon-8-2.html",
+        "https://photodemon.org/2024/07/11/photodemon-2024-7.html",
+        "https://photodemon.org/2025/12/12/photodemon-2025-12.html"
       ],
       "collected_at": "2026-11-13"
     },
