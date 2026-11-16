@@ -966,6 +966,88 @@
         "https://github.com/paulpacifico/shutter-encoder/blob/master/LICENSE.txt"
       ],
       "collected_at": "2026-11-15"
+    },
+    {
+      "id": "freac",
+      "name": "fre:ac",
+      "official_url": "https://www.freac.org/",
+      "github_url": "https://github.com/enzo1982/freac",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "FreeBSD",
+        "Haiku"
+      ],
+      "open_source": true,
+      "license": "GPL-2.0-or-later",
+      "pricing_model": "完全免费",
+      "price_summary": "免费开源音频转换器和 CD 抓轨工具，可选捐助；不是付费订阅或通用视频转换服务。",
+      "prices": [
+        {
+          "plan": "音频转换与 CD 抓轨",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "主程序源码声明 GPL 第2版或更新版本；分发和修改须遵守许可，外部组件许可另核。"
+        }
+      ],
+      "free_tier_limits": "官方提供多个桌面平台版本；最低系统版本、M4 16GB原生兼容与性能未实测，不承诺所有格式/编码器在各平台完全一致。CDDB/GNUdb元数据查询会联网，不宣称全部功能零联网。未安装、运行或转换媒体。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "专注音频文件转码、音乐库批量处理与音频 CD 抓轨；CPU多核优化不是GPU视频编码证据。",
+      "features": {
+        "video": {
+          "value": "unknown",
+          "note": "官方资料聚焦音频；未核实视频画面转码。"
+        },
+        "audio": {
+          "value": "yes",
+          "note": "支持MP3、M4A/AAC、FLAC、Opus、WAV等音频格式，具体编码器能力另核。"
+        },
+        "image": {
+          "value": "unknown",
+          "note": "未核实图片格式转换，不把封面标签处理等同图片转换器。"
+        },
+        "document": {
+          "value": "unknown",
+          "note": "未核实办公文档/PDF转换。"
+        },
+        "batch": {
+          "value": "yes",
+          "note": "可批量转换整个音乐库并保留目录和文件名结构。"
+        },
+        "hw_accel": {
+          "value": "unknown",
+          "note": "官方明确多核CPU优化，未核实GPU或专用视频硬件编码。"
+        },
+        "extract_audio": {
+          "value": "unknown",
+          "note": "音频CD抓轨已核实，但本列的视频音轨提取尚未核实，不能混为一项。"
+        },
+        "compress": {
+          "value": "partial",
+          "note": "音频编码质量设置影响文件大小；不表示支持视频分辨率修改，也不保证每次转码更小或无损。"
+        },
+        "presets": {
+          "value": "partial",
+          "note": "官方入门手册有LAME MP3质量预设；不外推为通用视频设备预设。"
+        },
+        "gui": {
+          "value": "yes",
+          "note": "桌面图形界面含任务列表与编码器设置；另有可选命令行界面。"
+        }
+      },
+      "sources": [
+        "https://www.freac.org/",
+        "https://github.com/enzo1982/freac/blob/4b47105c219fbe1612c45b40deb4955428d29931/Readme.md",
+        "https://github.com/enzo1982/freac/blob/4b47105c219fbe1612c45b40deb4955428d29931/COPYING",
+        "https://github.com/enzo1982/freac/blob/4b47105c219fbe1612c45b40deb4955428d29931/src/freac.cpp",
+        "https://github.com/enzo1982/freac/blob/4b47105c219fbe1612c45b40deb4955428d29931/manual/en/beginner.html"
+      ],
+      "collected_at": "2026-11-16"
     }
   ]
 }
