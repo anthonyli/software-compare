@@ -39,6 +39,18 @@ test('BaaS quotas, language visibility and cover render on desktop and mobile',a
   await expect(page.locator(`h1 .t-${active}`)).toBeVisible();
   await expect(page.locator(`h1 .t-${hidden}`)).toBeHidden();
   await expect(page.locator(`h1 .t-${active}`)).toHaveText('Supabase Cloud');
+  const featureNotes=page.locator('.feature-row p');
+  await expect(featureNotes).toHaveCount(6);
+  const englishEvidence=['500MB','Compute Hours','inactivity','backups','current contract','signup was not tested'];
+  for(let i=0;i<6;i++){
+   const note=featureNotes.nth(i);
+   await expect(note.locator(`.t-${active}`)).toBeVisible();
+   await expect(note.locator(`.t-${hidden}`)).toBeHidden();
+   if(lang==='en'){
+    await expect(note.locator('.t-en')).not.toHaveText(/[\u4e00-\u9fff]/);
+    await expect(note.locator('.t-en')).toContainText(englishEvidence[i]);
+   }
+  }
   const limits=page.locator('.price-panel > .mt-5 p');
   await expect(limits.locator(`.t-${active}`)).toBeVisible();
   await expect(limits.locator(`.t-${hidden}`)).toBeHidden();
