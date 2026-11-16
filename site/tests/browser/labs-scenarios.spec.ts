@@ -75,5 +75,15 @@ test('scene transition choreography and integrated header frames',async({page})=
  expect(samples[0].panel).not.toBe(samples[2].panel);
  expect(samples[0].shape).not.toBe(samples[2].shape);
  expect(samples[0].art).not.toBe(samples[2].art);
+ await expect(page.locator('.site-header .brand-mark')).toHaveCSS('color','rgb(245, 245, 237)');
  await page.locator('[data-cat-btn]').click();await expect(page.locator('[data-cat-panel]')).toBeVisible();
+});
+
+ test('grid remains on light catalog and category pages, not the dark stage',async({page})=>{
+ await page.goto('/');
+ expect(await page.locator('body').evaluate(el=>getComputedStyle(el).backgroundImage)).toContain('linear-gradient');
+ expect(await page.locator('[data-scenario]').evaluate(el=>getComputedStyle(el).backgroundImage)).toBe('none');
+ await page.locator('#categories').scrollIntoViewIfNeeded();await page.screenshot({path:'../docs/design/previews/labs-home-catalog-grid.png'});
+ await page.goto('/c/web-hosting/');expect(await page.locator('body').evaluate(el=>getComputedStyle(el).backgroundImage)).toContain('linear-gradient');
+ await page.goto('/p/web-hosting/vercel/');expect(await page.locator('body').evaluate(el=>getComputedStyle(el).backgroundImage)).toContain('linear-gradient');
 });
