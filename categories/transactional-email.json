@@ -274,6 +274,70 @@
         "https://support.smtp2go.com/hc/en-gb/articles/20483715021081-Billing-Pricing-and-Plans-FAQ",
         "https://www.smtp2go.com/terms/"
       ]
+    },
+    {
+      "id": "postmark",
+      "name": "Postmark",
+      "official_url": "https://postmarkapp.com/pricing",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "免费增值",
+      "price_summary": "SMTP 与 API 事务邮件；Developer 每月 100 封且无到期日，面向开发测试与低量副项目，向外部域名发送前需账户审批。",
+      "prices": [
+        {
+          "plan": "Postmark Free Developer 免费档",
+          "price": "0",
+          "currency": "USD",
+          "period": "月",
+          "note": "Free 不允许月度超额；精确拒收码、排队和重试行为未核实，不套用付费自动超额计费。未用额度不结转；开发测试和低量副项目仍受审批及服务条款约束，不承诺无限制生产商用。大陆开户资格与 Free 月重置具体日期未核实；未开户、绑卡或实测。"
+        }
+      ],
+      "free_tier_limits": "Free 不允许月度超额；精确拒收码、排队和重试行为未核实，不套用付费自动超额计费。未用额度不结转；开发测试和低量副项目仍受审批及服务条款约束，不承诺无限制生产商用。大陆开户资格与 Free 月重置具体日期未核实；未开户、绑卡或实测。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": "未知",
+      "collected_at": "2026-11-16",
+      "summary": "SMTP 与 API 事务邮件；Developer 每月 100 封且无到期日，面向开发测试与低量副项目，向外部域名发送前需账户审批。",
+      "features": {
+        "send": {
+          "value": "yes",
+          "note": "支持 SMTP 与 REST API 事务邮件；Transactional 与 Broadcast 使用独立消息流，不把群发营销流当作事务发送。Free 定位集成测试、投递评估与低量副项目，仍须遵守许可和反垃圾规则。"
+        },
+        "quota": {
+          "value": "partial",
+          "note": "Developer 每账户每月 100 封，无到期日；没有独立每日额度，但不是每日无限免费发送。事务、广播、Sandbox 测试及处理的入站消息均计量，CC/BCC 收件人分别计数；未用额度不结转。"
+        },
+        "domains": {
+          "value": "yes",
+          "note": "现行 Free 最多 10 个自定义发信域名，共享账户月额。可逐地址确认 Sender Signature，或通过 DNS 验证整个域名后使用其地址发送；发件身份验证不等于账户审批。"
+        },
+        "approval": {
+          "value": "no",
+          "note": "每个新账户人工审查；获批前仅能向账户已添加且验证的自有域名收件人发送，不能直接面向任意外部客户。由账户 Owner 申请，不保证获批；链接追踪也需账户获批。"
+        },
+        "cardless": {
+          "value": "yes",
+          "note": "当前官方 SMTP 页面明确每月 100 封免费且无需信用卡；升级付费方案需提供卡资料并开始收费，免卡不免除发件验证与账户审批。"
+        },
+        "overflow": {
+          "value": "partial",
+          "note": "Free 每月 100 封不允许超额；精确拒收、排队或重试机制未核实，不能承诺自动保留并补发。付费方案才在月度账期末统计额外邮件费用，不把此行为套到 Free。"
+        }
+      },
+      "sources": [
+        "https://postmarkapp.com/pricing",
+        "https://postmarkapp.com/support/article/1107-how-does-monthly-pricing-work",
+        "https://postmarkapp.com/support/article/1002-getting-started-with-postmark",
+        "https://postmarkapp.com/support/article/1084-how-does-the-account-approval-process-work",
+        "https://postmarkapp.com/lp/postmark-smtp",
+        "https://postmarkapp.com/support/article/how-do-i-verify-a-domain",
+        "https://postmarkapp.com/terms-of-service"
+      ]
     }
   ]
 }
