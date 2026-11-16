@@ -36,7 +36,8 @@ if (root) {
   let depthCards: HTMLElement[]=[];
   function resetDepth(slide?:HTMLElement){
     cancelAnimationFrame(depthFrame);depthElapsed=0;depthLast=0;
-    depthCards.forEach(card=>{card.style.translate='';card.style.rotate='';});
+    // Keep the outgoing frame where it ended until the new mask covers it.
+    if(!slide)root!.querySelectorAll<HTMLElement>('.art-window,.art-mini,.floating-tag,.art-label').forEach(card=>{card.style.translate='';card.style.rotate='';});
     depthCards=slide?['.art-window','.art-mini','.floating-tag','.art-label'].map(selector=>slide.querySelector<HTMLElement>(selector)!):[];
     function advance(now:number){
       if(depthLast&&!depthPaused)depthElapsed+=now-depthLast;
@@ -63,7 +64,7 @@ if (root) {
       root!.dataset.cameraProgress=t.toFixed(4);
       if(depthCards.length)depthFrame=requestAnimationFrame(advance);
     }
-    if(slide)depthFrame=requestAnimationFrame(advance);
+    if(slide)advance(performance.now());
   }
 
   // A smooth, continuously deforming liquid boundary. Coordinates are normalized,
