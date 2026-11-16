@@ -29,3 +29,7 @@
 截图命名 `payment-page-webhosting-*.png` 是复用既有CI上传glob的技术前缀，内容是网站部署，不是支付页面；未改变测试流程/上传权限。封面设计和插画预览由独立设计任务负责；截图只有CI实际生成并目视后才算网页验收。
 
 本地 `npm test` 205项通过；`npm run check:covers` 与 `ASTRO_TELEMETRY_DISABLED=1 npm run build` 通过；`git diff --check` 通过。2670个原英文键逐项保留。单次真实Worker E2E在webServer启动阶段因 `uv_interface_addresses returned Unknown system error 1` 失败（另有默认Wrangler日志路径EROFS），未执行浏览器断言；须由CI生成截图后另验。最终head独立审查及CI全绿才可合并，不手动部署。
+
+## 首轮CI修正
+
+CI run 43860064288 的新web-hosting E2E在关闭展开项时失败，其余149项通过。原因是 `details[open]` 动态集合在第一次关闭后重索引，旧 `nth(1)` 定位失效；不是产品渲染失败。修复为按 vercel / cloudflare-pages 稳定产品ID各自定位并关闭details，并断言open属性移除。未加sleep、放宽timeout、mock API或删除断言；修复后的实际浏览器结果仍待最终CI。

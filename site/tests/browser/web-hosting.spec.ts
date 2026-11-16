@@ -21,7 +21,11 @@ test('website hosting quotas, language visibility and cover render on desktop an
    }
    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
    await page.screenshot({path:`../docs/design/previews/payment-page-webhosting-${active}-${width}.png`,fullPage:true});
-   for(const detail of await list.locator('details[open] summary').all())await detail.click();
+   for(const id of ['vercel','cloudflare-pages']){
+    const detail=list.locator(`[data-product-id="${id}"] details`);
+    await detail.locator('summary').click();
+    await expect(detail).not.toHaveAttribute('open');
+   }
   }
  }
  await page.goto('/p/web-hosting/cloudflare-pages/');await expect(page.locator('h1 .t-en')).toBeVisible();await expect(page.locator('h1 .t-en')).toHaveText('Cloudflare Pages');
