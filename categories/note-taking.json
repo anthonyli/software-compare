@@ -582,44 +582,44 @@
       "open_source": true,
       "license": "GPL-3.0",
       "pricing_model": "免费增值",
-      "price_summary": "无限加密笔记免费。付费价以新加坡元结算：Essential 年付 SGD 2.33/月（28.00/年）或月付 2.79；Pro 年付 8.17/月（98.06/年）或月付 9.79，另有 5 年计划 7.00/月（420.29）；Believer 年付 10.51/月（126.08/年）等。均含税，付费档有 14 天试用。",
+      "price_summary": "无限加密笔记免费且无需绑卡。2026-11-16 核实的美元基准：Essential 1.99/月或19.99/年，Pro 6.99/月或69.99/年，Believer 8.99/月或89.99/年；地区币种、税费和实际价格以结算页为准。标准月付/年付计划有14天试用，需支付方式；5年计划预付且无试用。",
       "prices": [
         {
           "plan": "Free",
           "price": "0",
-          "currency": "SGD",
-          "period": "month",
-          "note": "SGD 0.00 / month；无限笔记与设备；存储 50MB/月，文件 10MB，笔记本 50，颜色 7"
+          "currency": null,
+          "period": null,
+          "note": "无需绑卡，无限笔记与设备；附件上传额度50MB/月，单文件10MB，笔记本与标签各50，颜色7种。"
         },
         {
           "plan": "Essential（年付）",
-          "price": "28.00",
-          "currency": "SGD",
+          "price": "19.99",
+          "currency": "USD",
           "period": "year",
-          "note": "折合 SGD 2.33/月；存储 1GB/月，文件 100MB，笔记本 500"
+          "note": "美元年付基准，地区价格以结算页为准；附件上传1GB/月，单文件100MB，笔记本与标签各500；标准年付可试用14天，需支付方式。"
         },
         {
           "plan": "Pro（年付）",
-          "price": "98.06",
-          "currency": "SGD",
+          "price": "69.99",
+          "currency": "USD",
           "period": "year",
-          "note": "折合 SGD 8.17/月；存储 10GB/月，文件 1GB，笔记本不限。另有月付 9.79 与 5 年计划"
+          "note": "美元年付基准，地区价格以结算页为准；附件上传10GB/月，单文件1GB，笔记本与标签不限；另有月付与5年预付，5年计划无试用。"
         },
         {
           "plan": "Believer（年付）",
-          "price": "126.08",
-          "currency": "SGD",
+          "price": "89.99",
+          "currency": "USD",
           "period": "year",
-          "note": "折合 SGD 10.51/月；存储 25GB/月，文件 5GB"
+          "note": "美元年付基准，地区价格以结算页为准；附件上传25GB/月，单文件5GB，笔记本与标签不限；另有月付与5年预付，5年计划无试用。"
         }
       ],
-      "free_tier_limits": "免费可在所有设备创建无限加密笔记，但每月存储 50MB、单文件 10MB、笔记本上限 50、颜色 7 种。更大存储与完整功能需付费。",
+      "free_tier_limits": "免费档无时限、无需绑卡，笔记与设备不限；附件上传50MB/月、单文件10MB，笔记本与标签各50，颜色7种。附件额度每月1日重置，笔记正文不计入；超额后的处理方式待核实。",
       "github_stars": 14918,
       "latest_release": "3.4.13",
       "latest_release_date": "2026-11-10 16:42",
       "latest_release_date_note": "GitHub 标签 v3.4.13，已转换为 Asia/Shanghai",
       "maintenance_status": "活跃",
-      "summary": "开源加密笔记，免费档就能多端写无限笔记，主要限制在存储和笔记本数量，付费以新元标价。",
+      "summary": "开源加密笔记，免费档支持多端无限笔记；附件上传、笔记本和标签有限额，付费采用地区定价。",
       "features": {
         "markdown": {
           "value": "partial",
@@ -634,8 +634,8 @@
           "note": "有 Notebooks 限额，说明支持笔记本"
         },
         "tags": {
-          "value": "unknown",
-          "note": "定价页未确认"
+          "value": "yes",
+          "note": "Free最多50个标签，Essential最多500个，Pro与Believer不限；不是所有档位都无限。"
         },
         "web_clipper": {
           "value": "unknown",
@@ -672,7 +672,9 @@
       },
       "sources": [
         "https://notesnook.com/pricing",
-        "https://github.com/streetwriters/notesnook"
+        "https://github.com/streetwriters/notesnook",
+        "https://notesnook.com/help/plans-and-limits",
+        "https://notesnook.com/blog/introducing-new-pricing-plans"
       ]
     },
     {
