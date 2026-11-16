@@ -41,3 +41,5 @@ The build reads:
 ## License and contributions
 
 This project is licensed under the [Apache License 2.0](LICENSE). Contributions are welcome: display fixes, translations, accessibility, and design improvements are all appreciated. When adding or changing product data, include a verifiable source and do not add unconfirmed prices or features.
+
+GitHub metadata is refreshed before production builds and on the daily schedule, without automated snapshot commits. Actions cache provides a best-effort last-published fallback; if absent, the checked-in snapshot is used before fetching current data. Local offline builds may therefore have older metadata than the live site. See `site/README.md` for the workflow and failure behavior.
