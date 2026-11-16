@@ -78,6 +78,14 @@ Cloudflare 账户的 Bulk Redirects 使用列表 `compare_primary_domain`：
 不要将 CNAME 指向 `*.workers.dev`。原 Workers 部署仅保留作迁移备份，后续每日发布到 Pages。
 D1 继续复用原数据库，已有票数保留；Cookie 属于各自域名，浏览器的匿名点赞身份不会跨域自动迁移。
 
+## Web Analytics
+
+使用 Cloudflare Pages 项目 Metrics 中启用的 Web Analytics，由 Pages 在生产页面自动注入统计脚本。
+该统计覆盖项目的 Pages 域名及已绑定的自定义域名，包括 `compare.sangmu.me`。
+不要在页面布局中再手动添加 beacon，否则会与自动注入重复；本地构建和测试不注入统计脚本。
+原 `compare.pageon.cc` 手动统计站点保留用于查看历史数据，不删除其记录。
+部署后检查线上 HTML 只包含一份 `https://static.cloudflareinsights.com/beacon.min.js`。
+
 ## 每日 GitHub 同步
 
 - `.github/workflows/deploy.yml` 每天 **09:17 Asia/Shanghai（01:17 UTC）**执行，

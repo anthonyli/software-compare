@@ -13,7 +13,7 @@ Cloudflare 后台日志/备份保留与处理地域没有核实，页面如实�
 |事实|位置|
 |---|---|
 |个人维护项目；源码 Apache-2.0，第三方权利另计|LICENSE、NOTICE、用户明确说明|
-|Cloudflare Web Analytics beacon；语言 localStorage|site/src/layouts/Layout.astro|
+|Cloudflare Web Analytics beacon（Pages 自动注入）；语言 localStorage|Cloudflare Pages Metrics 配置；site/src/layouts/Layout.astro|
 |本地加载索引匹配搜索词|site/src/components/SearchBox.astro|
 |随机推广、点击才新标签页、无专门点击跟踪|site/src/components/HomePromotion.astro|
 |compare-view|site/src/pages/c/[slug].astro|
