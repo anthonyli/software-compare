@@ -1,0 +1,215 @@
+{
+  "category_slug": "transactional-email",
+  "category_name_zh": "事务邮件",
+  "collected_at": "2026-11-16",
+  "collected_at_timezone": "UTC",
+  "features": [
+    {
+      "key": "send",
+      "label": "事务邮件发送"
+    },
+    {
+      "key": "quota",
+      "label": "免费发送额度"
+    },
+    {
+      "key": "domains",
+      "label": "验证域名"
+    },
+    {
+      "key": "approval",
+      "label": "无需生产审批"
+    },
+    {
+      "key": "cardless",
+      "label": "免费档免信用卡"
+    },
+    {
+      "key": "overflow",
+      "label": "超额处理"
+    }
+  ],
+  "products": [
+    {
+      "id": "resend",
+      "name": "Resend",
+      "official_url": "https://resend.com/",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "免费增值",
+      "price_summary": "适合应用通知与验证邮件；无需生产审批，仍须验证域名 DNS。免费额度不是无限制商用承诺。",
+      "prices": [
+        {
+          "plan": "Free",
+          "price": "0",
+          "currency": null,
+          "period": null,
+          "note": "最多 3 个验证域名共享账户额度，UTC 午夜重置日额度。超额返回 429，不排队或重试。Free 无需账单资料；条款第 6 节保留修改、取消免费档及超额转付费的权利。禁止冷邮件、购买或抓取名单；投诉率须低于 0.08%，退信率低于 4%。"
+        }
+      ],
+      "free_tier_limits": "最多 3 个验证域名共享账户额度，UTC 午夜重置日额度。超额返回 429，不排队或重试。Free 无需账单资料；条款第 6 节保留修改、取消免费档及超额转付费的权利。禁止冷邮件、购买或抓取名单；投诉率须低于 0.08%，退信率低于 4%。 本表比较长期免费事务邮件，不把营销联系人额度、沙盒或限时试用当作生产发送额度。大陆开户资格、当地可达性与保证投递未核实；服务条款和反滥用政策适用。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": "未知",
+      "collected_at": "2026-11-16",
+      "summary": "适合应用通知与验证邮件；无需生产审批，仍须验证域名 DNS。免费额度不是无限制商用承诺。",
+      "features": {
+        "send": {
+          "value": "yes",
+          "note": "用于事务邮件；不把营销邮件联系人额度混入本表。"
+        },
+        "quota": {
+          "value": "partial",
+          "note": "Free 每月 3,000 封且每 UTC 日 100 封；收发都计，To / CC / BCC 每个收件人分别计数。"
+        },
+        "domains": {
+          "value": "yes",
+          "note": "最多 3 个验证域名；共享额度，不是每个域名各 3,000 封。"
+        },
+        "approval": {
+          "value": "yes",
+          "note": "无需生产审批或等待；必须完成域名 DNS 验证。"
+        },
+        "cardless": {
+          "value": "yes",
+          "note": "Free 无需账单资料，不等于永久免费保证；条款保留变更与超额转付费权。"
+        },
+        "overflow": {
+          "value": "partial",
+          "note": "超额 API 返回 429；服务不排队或重试，需等待额度重置或升级后重新发送。"
+        }
+      },
+      "sources": [
+        "https://resend.com/docs/knowledge-base/account-quotas-and-limits",
+        "https://resend.com/docs/knowledge-base/does-resend-require-production-approval",
+        "https://resend.com/changelog/three-domains-on-the-free-tier",
+        "https://resend.com/legal/terms-of-service",
+        "https://resend.com/legal/acceptable-use"
+      ]
+    },
+    {
+      "id": "mailersend",
+      "name": "MailerSend",
+      "official_url": "https://www.mailersend.com/",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "免费增值",
+      "price_summary": "适合小量事务邮件；正式 Free 需审批、组织地址和信用卡，不等同沙盒或 14 天 Professional 试用。",
+      "prices": [
+        {
+          "plan": "Free",
+          "price": "0",
+          "currency": null,
+          "period": null,
+          "note": "1 个发送域名；每 30 天重置 500 封额度，同时受每日 100 封和 100 次 API 请求限制。正式 Free 需地址与信用卡，官方称免费档不收费；不支持额外付费发送量，额度用尽后暂停。"
+        }
+      ],
+      "free_tier_limits": "1 个发送域名；每 30 天重置 500 封额度，同时受每日 100 封和 100 次 API 请求限制。正式 Free 需地址与信用卡，官方称免费档不收费；不支持额外付费发送量，额度用尽后暂停。 本表比较长期免费事务邮件，不把营销联系人额度、沙盒或限时试用当作生产发送额度。大陆开户资格、当地可达性与保证投递未核实；服务条款和反滥用政策适用。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": "未知",
+      "collected_at": "2026-11-16",
+      "summary": "适合小量事务邮件；正式 Free 需审批、组织地址和信用卡，不等同沙盒或 14 天 Professional 试用。",
+      "features": {
+        "send": {
+          "value": "yes",
+          "note": "支持事务邮件；正式 Free 与沙盒、试用分开比较。"
+        },
+        "quota": {
+          "value": "partial",
+          "note": "审批后 Free 每 30 天 500 封且每日 100 封；另有每日 100 次 API 请求限制，不能当作发送封数。"
+        },
+        "domains": {
+          "value": "yes",
+          "note": "Free 包含 1 个发送域名；自有域名需要 DNS 验证。"
+        },
+        "approval": {
+          "value": "no",
+          "note": "正式 Free 必须先通过账户审批。"
+        },
+        "cardless": {
+          "value": "no",
+          "note": "正式 Free 要求组织地址与信用卡；不是免卡沙盒承诺。"
+        },
+        "overflow": {
+          "value": "partial",
+          "note": "Free 不允许超额付费量，额度用尽后暂停直到重置。"
+        }
+      },
+      "sources": [
+        "https://www.mailersend.com/pricing",
+        "https://www.mailersend.com/help/plans-features-and-limits"
+      ]
+    },
+    {
+      "id": "brevo",
+      "name": "Brevo",
+      "official_url": "https://www.brevo.com/",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "免费增值",
+      "price_summary": "免卡免费档支持事务邮件，但有每日额度与 Brevo 品牌标识；生产审批和验证域名数量未核实。",
+      "prices": [
+        {
+          "plan": "Free",
+          "price": "0",
+          "currency": null,
+          "period": null,
+          "note": "每日 300 封不结转；含 Brevo 品牌标识。事务邮件超日限后最多 1,000 封进入重试队列，再超出则不投递。免费账户闲置 4 个月会删除，自动事务邮件等活动算活跃。"
+        }
+      ],
+      "free_tier_limits": "每日 300 封不结转；含 Brevo 品牌标识。事务邮件超日限后最多 1,000 封进入重试队列，再超出则不投递。免费账户闲置 4 个月会删除，自动事务邮件等活动算活跃。 本表比较长期免费事务邮件，不把营销联系人额度、沙盒或限时试用当作生产发送额度。大陆开户资格、当地可达性与保证投递未核实；服务条款和反滥用政策适用。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": "未知",
+      "collected_at": "2026-11-16",
+      "summary": "免卡免费档支持事务邮件，但有每日额度与 Brevo 品牌标识；生产审批和验证域名数量未核实。",
+      "features": {
+        "send": {
+          "value": "yes",
+          "note": "Free 包含事务邮件，但保留 Brevo 品牌标识。"
+        },
+        "quota": {
+          "value": "partial",
+          "note": "Free 每日 300 封，未使用额度不结转；不是固定每月 9,000 封。"
+        },
+        "domains": {
+          "value": "unknown",
+          "note": "免费档验证域名数量与具体限制尚未核实。"
+        },
+        "approval": {
+          "value": "unknown",
+          "note": "生产发送审批要求尚未核实；不承诺注册后立即可发。"
+        },
+        "cardless": {
+          "value": "yes",
+          "note": "官方 Free 说明无需信用卡；不是付费附加服务免卡承诺。"
+        },
+        "overflow": {
+          "value": "partial",
+          "note": "事务邮件最多 1,000 封进入重试队列，再超出不投递；不是无限队列。"
+        }
+      },
+      "sources": [
+        "https://help.brevo.com/hc/en-us/articles/208589409-About-Brevo-s-pricing-plans",
+        "https://help.brevo.com/hc/en-us/articles/208580669-FAQs-What-are-the-limits-of-the-Free-plan",
+        "https://help.brevo.com/hc/en-us/articles/4410311028626-About-the-deletion-of-inactive-Free-plan-accounts"
+      ]
+    }
+  ]
+}

@@ -9,6 +9,7 @@ function contentFallback(text: string): string {
 
 /** Category display names, keyed by slug. */
 export const categoryNames: Record<string, { zh: string; en: string }> = {
+  "transactional-email": { zh: "事务邮件", en: "Transactional email" },
   "backend-as-a-service": { zh: "后端即服务（BaaS）", en: "Backend as a service (BaaS)" },
   "cloud-sql-databases": { zh: "云 SQL 数据库", en: "Cloud SQL databases" },
   "web-hosting": { zh: "网站部署", en: "Website deployment" },
