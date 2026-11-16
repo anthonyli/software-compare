@@ -1,7 +1,7 @@
 import {test} from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';
 const read=p=>JSON.parse(fs.readFileSync(new URL('../../'+p,import.meta.url),'utf8'));
 const c=read('categories/web-hosting.json'),en=read('site/src/i18n/content-en.json'),[v,f]=c.products;
-test('website deployment has three sourced complete bilingual products',()=>{assert.equal(c.products.length,3);for(const p of c.products){assert.deepEqual(Object.keys(p.features).sort(),c.features.map(f=>f.key).sort());assert.equal(p.collected_at,'2026-11-16');assert(p.sources.length>=4);assert.match(p.free_tier_limits,/未开户、绑卡、部署或实测/);}const strings=v=>typeof v==='string'?[v]:v&&typeof v==='object'?Object.values(v).flatMap(strings):[];for(const s of strings(c).filter(s=>/[\u4e00-\u9fff]/.test(s)))assert(en[s],s);});
+test('website deployment has four sourced complete bilingual products',()=>{assert.equal(c.products.length,4);for(const p of c.products){assert.deepEqual(Object.keys(p.features).sort(),c.features.map(f=>f.key).sort());assert.equal(p.collected_at,'2026-11-16');assert(p.sources.length>=4);assert.match(p.free_tier_limits,/未开户、绑卡、部署或实测/);}const strings=v=>typeof v==='string'?[v]:v&&typeof v==='object'?Object.values(v).flatMap(strings):[];for(const s of strings(c).filter(s=>/[\u4e00-\u9fff]/.test(s)))assert(en[s],s);});
 test('Hobby scope, quota periods and overage are distinct from paid Pro',()=>{assert.equal(v.features.card_required.value,'unknown');assert.equal(v.features.commercial.value,'partial');assert.match(v.features.commercial.note,/个人或非商业.*personal or non-commercial/);assert.match(v.features.overage.note,/30天.*7天.*自动按量计费/);assert.match(v.features.functions.note,/每月.*4小时.*360GB/);assert.equal(v.prices[1].price,'20');assert.match(v.prices[1].note,/额外部署席位.*超抵扣/);});
 test('Pages free static requests do not imply unlimited builds or Functions',()=>{assert.equal(f.features.card_required.value,'no');assert.equal(f.features.commercial.value,'unknown');assert.match(f.features.build_limits.note,/每月500.*1个并发.*20分钟/);assert.match(f.features.functions.note,/共享每天10万.*UTC零点/);assert.match(f.features.static_hosting.note,/不调用Functions/);assert.match(f.features.overage.note,/fail open.*fail closed/);assert.match(f.free_tier_limits,/2万文件.*25MiB/);});
 
@@ -11,5 +11,15 @@ test('all Render public fields translate after actual cleanPublicText normalizat
  const leak=source.slice(source.indexOf('const LEAK ='),source.indexOf('export const PRICE_CAVEAT'));
  const fn=source.slice(source.indexOf('export function cleanPublicText'),source.indexOf('export function parseCurrency')).replace('export function','function').replace('(input: string | null | undefined): string','(input)');
  const clean=new Function(leak+fn+';return cleanPublicText;')();const r=c.products[2];
+ for(const raw of [r.summary,r.price_summary,r.free_tier_limits,...r.prices.flatMap(x=>[x.plan,x.note]),...Object.values(r.features).map(x=>x.note)]){const key=clean(raw);assert(en[key],key);assert.doesNotMatch(en[key],/[\u4e00-\u9fff]/);}
+});
+
+test('Netlify shares credits across team and resources without implying free previews or calendar-month resets',()=>{const n=c.products[3];assert.equal(n.id,'netlify');assert.match(n.features.static_hosting.note,/300 credits.*20 credits\/GB.*2 credits\/1万/);assert.match(n.features.build_limits.note,/15 credits.*但其请求及计算.*1个并发/);assert.match(n.features.functions.note,/10 credits\/GB-hour.*Edge Functions不计入计算/);assert.equal(n.features.commercial.value,'yes');assert.equal(n.features.card_required.value,'unknown');assert.match(n.features.overage.note,/整个团队.*不能购买.*不结转.*而非自然月/);assert.match(n.free_tier_limits,/2025-09-04.*Legacy/);});
+
+test('all Netlify public fields translate after actual cleanPublicText normalization',()=>{
+ const source=fs.readFileSync(new URL('../src/lib/display.ts',import.meta.url),'utf8');
+ const leak=source.slice(source.indexOf('const LEAK ='),source.indexOf('export const PRICE_CAVEAT'));
+ const fn=source.slice(source.indexOf('export function cleanPublicText'),source.indexOf('export function parseCurrency')).replace('export function','function').replace('(input: string | null | undefined): string','(input)');
+ const clean=new Function(leak+fn+';return cleanPublicText;')();const r=c.products[3];
  for(const raw of [r.summary,r.price_summary,r.free_tier_limits,...r.prices.flatMap(x=>[x.plan,x.note]),...Object.values(r.features).map(x=>x.note)]){const key=clean(raw);assert(en[key],key);assert.doesNotMatch(en[key],/[\u4e00-\u9fff]/);}
 });
