@@ -1,0 +1,82 @@
+---
+// SPDX-License-Identifier: Apache-2.0
+import Layout from "../layouts/Layout.astro";
+import T from "../components/T.astro";
+const sections = [
+  {
+    "zh": "1. 项目与服务范围",
+    "en": "1. Project and service scope",
+    "paragraphs": [
+      {
+        "zh": "Compare 是由个人维护的开源软件选型与比较目录。项目公开维护入口为 GitHub anthonyli/software-compare；不是软件厂商、软件下载站、交易平台或付费订阅服务。",
+        "en": "Compare is a personally maintained, open-source software discovery and comparison directory. Its public maintenance repository is GitHub anthonyli/software-compare. It is not a software vendor, download distributor, marketplace or paid subscription service."
+      }
+    ]
+  },
+  {
+    "zh": "2. 资料与选型边界",
+    "en": "2. Information and decision-making",
+    "paragraphs": [
+      {
+        "zh": "价格、平台、许可、免费限制和功能以条目标注的来源及核对时间为参考，可能变化或存在遗漏。购买、安装或授权前请自行核对产品官方最新说明；收录不表示兼容性、安全性或质量保证。",
+        "en": "Prices, platforms, licenses, free limits and features reflect the sources and review dates shown for each entry and may change or contain omissions. Check current vendor information before purchasing, installing or authorizing a product. Listing is not a guarantee of compatibility, security or quality."
+      },
+      {
+        "zh": "点赞是浏览器身份产生的偏好信号，GitHub Star 是热度指标，都不代表经过验证的独立用户人数或质量排名。",
+        "en": "Likes are preference signals from browser identities, and GitHub stars are popularity indicators. Neither represents verified unique people or a quality ranking."
+      }
+    ]
+  },
+  {
+    "zh": "3. 推广与外部网站",
+    "en": "3. Promotions and external sites",
+    "paragraphs": [
+      {
+        "zh": "站内 PageOn 卡片标注“推广”，点击后在新标签页打开 pageon.cc，不自动跳转。推广不属于软件评分，也不应视为独立评测。第三方网站有自己的条款、隐私规则、价格和服务责任。",
+        "en": "The PageOn card is labeled “Promotion” and opens pageon.cc in a new tab only when clicked. It does not automatically redirect. A promotion is not a software score or an independent review. External sites have their own terms, privacy rules, prices and service responsibilities."
+      }
+    ]
+  },
+  {
+    "zh": "4. 开源许可与第三方权利",
+    "en": "4. Open-source license and third-party rights",
+    "paragraphs": [
+      {
+        "zh": "项目源码使用 Apache License 2.0，具体权利义务以仓库 LICENSE、NOTICE 及各文件声明为准。这不授予第三方产品名称、商标、图标或产品本身的许可，也不意味着列出的软件全部开源或可免费商用。",
+        "en": "Project source code is licensed under Apache License 2.0, subject to LICENSE, NOTICE and file-specific notices. This does not license third-party names, trademarks, icons or products, and does not mean every listed product is open-source or free for commercial use."
+      }
+    ]
+  },
+  {
+    "zh": "5. 合理使用与反馈",
+    "en": "5. Responsible use and feedback",
+    "paragraphs": [
+      {
+        "zh": "请勿刷赞、攻击接口或通过自动化请求干扰他人使用。普通资料错误、缺失产品和网站问题可提交公开 GitHub Issues；需要 GitHub 账号。不要在那里提交密码、敏感个人信息或私有文件。",
+        "en": "Do not manipulate likes, attack endpoints or disrupt others through automated requests. Ordinary corrections, missing products and site issues can be reported in public GitHub Issues, which requires a GitHub account. Do not post passwords, sensitive personal information or private files there."
+      }
+    ]
+  },
+  {
+    "zh": "6. 可用性与更新",
+    "en": "6. Availability and updates",
+    "paragraphs": [
+      {
+        "zh": "个人维护项目可能维护、中断或调整功能，不承诺持续可用、响应时限或资料完整无误。本说明不排除适用法律不得排除的权利或责任。相关说明会随功能或数据处理变化更新，并在页面标明更新日期。",
+        "en": "A personally maintained project may undergo maintenance, interruptions or feature changes. Continuous availability, response times and complete accuracy are not promised. This notice does not exclude rights or liabilities that applicable law does not allow to be excluded. These notices will be updated as features or data handling change, with the update date shown on the page."
+      }
+    ]
+  }
+];
+---
+<Layout title="使用条款" titleEn="Terms of use" canonicalPath="/terms/">
+  <article class="mx-auto max-w-3xl px-6 py-12 leading-relaxed" data-policy-page>
+    <h1 class="text-3xl font-semibold"><T zh="使用条款" en="Terms of use" /></h1>
+    <p class="mt-4 text-sm text-muted" data-policy-date><T zh="更新日期：2026-11-16" en="Last updated: 2026-11-16" /></p>
+    <p class="mt-4 text-sm text-muted"><T zh="以下说明适用于 Compare 当前提供的功能；项目源码开放不等于所有收录软件都开源。" en="This notice covers the features currently offered by Compare. Open-source project code does not mean every listed product is open-source." /></p>
+    {sections.map((section) => (<section class="mt-8"><h2 class="text-xl font-semibold"><T zh={section.zh} en={section.en} /></h2>{section.paragraphs.map((p) => (<p class="mt-3"><T zh={p.zh} en={p.en} /></p>))}</section>))}
+    <section class="mt-8" data-policy-contact><h2 class="text-xl font-semibold"><T zh="联系维护者" en="Contact the maintainer" /></h2><p class="mt-3"><a class="underline break-all" href="mailto:anthonyli1021@gmail.com">anthonyli1021@gmail.com</a></p><p class="mt-3"><T zh="适用于网站联系、隐私问题和数据请求。邮件不是公开 Issue；收发邮件仍由双方邮件服务提供商处理，请仅提供处理请求所必需的信息。" en="For website enquiries, privacy questions and data requests. Email is not a public Issue, but is processed by the sender’s and recipient’s email providers. Include only information necessary to handle the request." /></p></section>
+    <section class="mt-8"><h2 class="text-xl font-semibold"><T zh="项目与官方资料" en="Project and official references" /></h2><ul class="mt-3 list-disc pl-5"><li><a class="underline" href="https://github.com/anthonyli/software-compare">GitHub: anthonyli/software-compare</a></li><li><a class="underline" href="https://github.com/anthonyli/software-compare/blob/main/LICENSE">Apache License 2.0</a></li></ul></section>
+    <nav class="mt-10 flex flex-wrap gap-4" aria-label="Policy navigation"><a class="underline" href="/terms/"><T zh="使用条款" en="Terms of use" /></a><a class="underline" href="/privacy/"><T zh="隐私说明" en="Privacy notice" /></a><a class="underline" href="/"><T zh="返回首页" en="Home" /></a></nav>
+  </article>
+</Layout>

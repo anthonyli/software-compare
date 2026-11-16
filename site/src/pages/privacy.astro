@@ -1,0 +1,104 @@
+---
+// SPDX-License-Identifier: Apache-2.0
+import Layout from "../layouts/Layout.astro";
+import T from "../components/T.astro";
+const sections = [
+  {
+    "zh": "1. 适用范围与维护者",
+    "en": "1. Scope and maintainer",
+    "paragraphs": [
+      {
+        "zh": "本说明覆盖 Compare 网站当前代码的数据处理，不覆盖外部软件或 PageOn 官网。项目由个人维护，不以公司名义运营。公开项目维护身份为 GitHub anthonyli。隐私相关问题请通过下方邮箱联系维护者，不要提交到公开 Issues。",
+        "en": "This notice describes data handling in the current Compare website code, not external products or the PageOn website. The project is personally maintained rather than operated in a company name. The public project maintainer identity is GitHub anthonyli. For privacy matters, contact the maintainer using the email below rather than public Issues."
+      }
+    ]
+  },
+  {
+    "zh": "2. 浏览与搜索",
+    "en": "2. Browsing and search",
+    "paragraphs": [
+      {
+        "zh": "当前站点没有注册、登录、支付或用户文件上传功能。搜索加载同站 search-index.json 后在浏览器内匹配，当前搜索组件不将输入词提交到搜索服务。这不代表访问网站没有网络元数据。",
+        "en": "The current site has no registration, login, payment or user-file upload feature. Search loads the same-site search-index.json and matches entries in the browser; the current search component does not submit search terms to a search service. This does not mean website visits produce no network metadata."
+      }
+    ]
+  },
+  {
+    "zh": "3. 点赞 Cookie 与记录",
+    "en": "3. Voting cookie and records",
+    "paragraphs": [
+      {
+        "zh": "加载点赞状态时（尚未点击点赞也可能）会设置 compare_voter Cookie，包含随机浏览器标识、签发时间和签名，有效期 365 天；HTTPS 下设置 Secure，另设 HttpOnly、SameSite=Lax。用于识别本浏览器已点赞的产品，不是实名账号。",
+        "en": "Loading vote state may set a compare_voter cookie even before a like is clicked. It contains a random browser identifier, issue time and signature, expires after 365 days, and uses HttpOnly and SameSite=Lax with Secure on HTTPS. It identifies products liked by this browser, not a named account."
+      },
+      {
+        "zh": "点赞后 Cloudflare D1 保存产品 ID、浏览器 ID 和点赞时间，并维护产品合计。取消点赞会删除对应点赞行并调整合计。当前没有为所有点赞记录设置自动清理期限；Cookie 过期或清除浏览器数据不会自动删除服务器上的旧点赞。",
+        "en": "After a like, Cloudflare D1 stores the product ID, browser ID and vote time and maintains product totals. Removing a like deletes that vote row and adjusts the total. No automatic retention expiry is currently configured for all vote records; cookie expiry or clearing browser data does not automatically delete old server-side votes."
+      },
+      {
+        "zh": "防滥用限流读取 Cloudflare 转发的 IP 地址，以带密钥的 HMAC 生成分时限流桶；应用限流表保存桶值、次数和到期时间，不保存原始 IP。创建身份限流窗口为一小时，点赞为一分钟；过期桶在后续限流请求时清理，不保证到点立即删除。",
+        "en": "Abuse prevention reads the IP address forwarded by Cloudflare and uses keyed HMAC to create time-window rate-limit buckets. The application table stores bucket values, counts and expiry times, not raw IP addresses. Identity creation uses a one-hour window and voting a one-minute window. Expired buckets are removed on subsequent rate-limit requests, not necessarily immediately at expiry."
+      }
+    ]
+  },
+  {
+    "zh": "4. 本机存储",
+    "en": "4. Browser storage",
+    "paragraphs": [
+      {
+        "zh": "localStorage 保存 compare-lang（语言）、compare-view（分类视图）和 compare-votes-changed（跨标签页同步点赞变化的时间标记）。这些项目没有代码设定的到期时间，可在浏览器中清除。禁用或清除 localStorage 可能重置偏好或影响多标签页同步；清除 Cookie 会失去原点赞身份，但不能据此撤销已保存的服务器点赞。",
+        "en": "localStorage holds compare-lang (language), compare-view (category view) and compare-votes-changed (a timestamp for cross-tab vote-change synchronization). These entries have no code-defined expiry and can be cleared in the browser. Blocking or clearing localStorage may reset preferences or affect cross-tab synchronization. Clearing cookies removes the voting identity but does not revoke existing server-side votes."
+      }
+    ]
+  },
+  {
+    "zh": "5. Cloudflare 与统计",
+    "en": "5. Cloudflare and analytics",
+    "paragraphs": [
+      {
+        "zh": "网站使用 Cloudflare 提供页面、请求处理及 D1 点赞存储，并加载 Cloudflare Web Analytics 脚本以了解访问量和页面性能。网络请求会向服务提供商暴露 IP、请求地址及浏览器请求头等信息。",
+        "en": "The website uses Cloudflare for page delivery, request handling and D1 vote storage and loads Cloudflare Web Analytics to understand traffic and page performance. Network requests expose information such as IP addresses, request URLs and browser headers to the service provider."
+      },
+      {
+        "zh": "Cloudflare 官方说明 Web Analytics 不为分析使用 Cookie 或 localStorage，也不为展示分析结果持续追踪 IP 或通过指纹识别个人。这是服务商说明，不等于本网站没有上述点赞 Cookie，也不等于基础设施不处理 IP。Cloudflare 日志、备份、处理地域及保留配置未通过源码确认，不能承诺仅境内存储或固定删除时限。",
+        "en": "Cloudflare states that Web Analytics does not use cookies or localStorage for analytics, or track individuals over time by IP address or fingerprinting for analytics reporting. This is the provider’s description, not a claim that Compare lacks the voting cookie above or that its infrastructure never processes IP addresses. Cloudflare log, backup, processing-location and retention settings have not been verified from source code; no domestic-only storage or fixed deletion period is promised."
+      }
+    ]
+  },
+  {
+    "zh": "6. 推广、外链与公开反馈",
+    "en": "6. Promotions, links and public feedback",
+    "paragraphs": [
+      {
+        "zh": "PageOn 推广位置由本页随机选择，当前推广组件不按个人画像投放，也不包含专门的点击追踪请求。点击会在新标签页访问 pageon.cc，使用 sponsored noopener noreferrer；后续数据处理由该网站决定。普通产品外链同样会离开 Compare。",
+        "en": "The PageOn promotion is placed randomly by the page. The current component does not target personal profiles or send a dedicated click-tracking request. Clicking opens pageon.cc in a new tab with sponsored noopener noreferrer; that website controls subsequent data processing. Ordinary product links also leave Compare."
+      },
+      {
+        "zh": "GitHub Issues 是外部公开反馈渠道，由 GitHub 处理账号和提交内容，内容可能被他人查看和复制。请仅提交非敏感问题；它不是私密的访问、更正或删除个人数据渠道。",
+        "en": "GitHub Issues is an external public feedback channel. GitHub handles account information and submitted content, which other people may view and copy. Submit only non-sensitive issues; it is not a private channel for requesting access, correction or deletion of personal data."
+      }
+    ]
+  },
+  {
+    "zh": "7. 你的选择与隐私请求",
+    "en": "7. Choices and privacy requests",
+    "paragraphs": [
+      {
+        "zh": "可通过浏览器管理本站 Cookie、本机存储和第三方请求；这些控制可能影响功能。若仍保留同一有效点赞身份，可取消自己的点赞。你可以通过下方邮箱提出与本网站数据有关的访问、更正、删除或其他隐私请求。请说明请求范围和相关页面，不要发送密码、完整 Cookie、身份证件或其他不必要的敏感资料。维护者可能需要与你确认必要信息以定位记录并避免向他人披露；无法关联记录或受技术、法律限制时，会说明情况。适用法律赋予的权利及向有管辖权的主管机构投诉的权利不受本说明限制。",
+        "en": "You can manage site cookies, browser storage and third-party requests through browser controls, which may affect functionality. If you retain the same valid voting identity, you can remove your likes. You may use the email below to request access, correction, deletion or other assistance concerning data associated with this website. Describe the scope and relevant pages; do not send passwords, full cookies, identity documents or unnecessary sensitive information. The maintainer may need to clarify necessary information to locate records and avoid disclosing them to someone else. If records cannot be linked or technical or legal limits apply, the maintainer will explain. This notice does not limit rights provided by applicable law or the right to complain to a competent supervisory authority."
+      }
+    ]
+  }
+];
+---
+<Layout title="隐私说明" titleEn="Privacy notice" canonicalPath="/privacy/">
+  <article class="mx-auto max-w-3xl px-6 py-12 leading-relaxed" data-policy-page>
+    <h1 class="text-3xl font-semibold"><T zh="隐私说明" en="Privacy notice" /></h1>
+    <p class="mt-4 text-sm text-muted" data-policy-date><T zh="更新日期：2026-11-16" en="Last updated: 2026-11-16" /></p>
+    <p class="mt-4 text-sm text-muted"><T zh="以下说明适用于 Compare 当前提供的功能；项目源码开放不等于所有收录软件都开源。" en="This notice covers the features currently offered by Compare. Open-source project code does not mean every listed product is open-source." /></p>
+    {sections.map((section) => (<section class="mt-8"><h2 class="text-xl font-semibold"><T zh={section.zh} en={section.en} /></h2>{section.paragraphs.map((p) => (<p class="mt-3"><T zh={p.zh} en={p.en} /></p>))}</section>))}
+    <section class="mt-8" data-policy-contact><h2 class="text-xl font-semibold"><T zh="联系维护者" en="Contact the maintainer" /></h2><p class="mt-3"><a class="underline break-all" href="mailto:anthonyli1021@gmail.com">anthonyli1021@gmail.com</a></p><p class="mt-3"><T zh="适用于网站联系、隐私问题和数据请求。维护者会收到你的发件地址和自愿提供的邮件内容，用于回复、处理请求及必要的后续沟通。邮件不是公开 Issue；收发邮件仍由双方邮件服务提供商处理，请仅提供处理请求所必需的信息。邮箱保留设置未在本项目代码中定义，不能据此承诺固定删除期限。" en="For website enquiries, privacy questions and data requests. The maintainer receives your sender address and the email content you voluntarily provide to reply, handle the request and conduct necessary follow-up. Email is not a public Issue, but is processed by the sender’s and recipient’s email providers. Include only information necessary to handle the request. Mailbox retention settings are not defined in this project’s code, so no fixed deletion period is promised here." /></p></section>
+    <section class="mt-8"><h2 class="text-xl font-semibold"><T zh="项目与官方资料" en="Project and official references" /></h2><ul class="mt-3 list-disc pl-5"><li><a class="underline" href="https://github.com/anthonyli/software-compare">GitHub: anthonyli/software-compare</a></li><li><a class="underline" href="https://github.com/anthonyli/software-compare/blob/main/LICENSE">Apache License 2.0</a></li><li><a class="underline" href="https://developers.cloudflare.com/web-analytics/about/">Cloudflare Web Analytics</a></li><li><a class="underline" href="https://www.cloudflare.com/privacypolicy/"><T zh="Cloudflare 隐私政策" en="Cloudflare Privacy Policy" /></a></li></ul></section>
+    <nav class="mt-10 flex flex-wrap gap-4" aria-label="Policy navigation"><a class="underline" href="/terms/"><T zh="使用条款" en="Terms of use" /></a><a class="underline" href="/privacy/"><T zh="隐私说明" en="Privacy notice" /></a><a class="underline" href="/"><T zh="返回首页" en="Home" /></a></nav>
+  </article>
+</Layout>
