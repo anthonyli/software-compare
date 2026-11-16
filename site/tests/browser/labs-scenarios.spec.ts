@@ -1,5 +1,7 @@
 import {test,expect} from '@playwright/test';
 import {mkdir} from 'node:fs/promises';
+// UI navigation must not consume the shared IP budget of vote API rate-limit tests.
+test.use({extraHTTPHeaders:{'CF-Connecting-IP':'198.51.100.71'}});
 for (const width of [390,768,1440]) test(`scenario playground at ${width}`,async({page,request})=>{
  await page.setViewportSize({width,height:1000});await page.goto('/');
  const root=page.locator('[data-scenario]');await expect(page.locator('h1')).toHaveCount(1);
