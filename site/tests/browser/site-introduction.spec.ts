@@ -3,6 +3,8 @@ for (const width of [1280, 390]) {
  test(`product positioning and public feedback at ${width}px`, async ({ page }) => {
   await page.setViewportSize({width,height:900}); await page.goto('/');
   const intro=page.locator('[data-product-intro]');
+  await expect(intro).not.toBeVisible();
+  await page.locator('[data-home-details] summary').click();
   await expect(intro.locator('.t-zh').first()).toBeVisible();
   await expect(intro).toContainText('个人、内容创作者、开发者和小团队');
   await expect(page.locator('[data-product-tags] li')).toHaveCount(3);
