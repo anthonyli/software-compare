@@ -210,6 +210,70 @@
         "https://help.brevo.com/hc/en-us/articles/208580669-FAQs-What-are-the-limits-of-the-Free-plan",
         "https://help.brevo.com/hc/en-us/articles/4410311028626-About-the-deletion-of-inactive-Free-plan-accounts"
       ]
+    },
+    {
+      "id": "smtp2go",
+      "name": "SMTP2GO",
+      "official_url": "https://www.smtp2go.com/pricing/",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "免费增值",
+      "price_summary": "SMTP 与 API 事务邮件；Free 每月 1,000 封且每日 200 封，新账户仍需审查，注册需私域邮箱和短信验证。",
+      "prices": [
+        {
+          "plan": "SMTP2GO Free 免费档",
+          "price": "0",
+          "currency": "USD",
+          "period": "月",
+          "note": "月额度耗尽后新增发送拒收，不排队到下月；等待账户月度重置或升级。活动报告仅可查看过去 5 天，非邮件长期归档。大陆开户资格与日重置时区未核实；未开户、绑卡或实测。"
+        }
+      ],
+      "free_tier_limits": "月额度耗尽后新增发送拒收，不排队到下月；等待账户月度重置或升级。活动报告仅可查看过去 5 天，非邮件长期归档。大陆开户资格与日重置时区未核实；未开户、绑卡或实测。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": "未知",
+      "collected_at": "2026-11-16",
+      "summary": "SMTP 与 API 事务邮件；Free 每月 1,000 封且每日 200 封，新账户仍需审查，注册需私域邮箱和短信验证。",
+      "features": {
+        "send": {
+          "value": "yes",
+          "note": "支持 SMTP 与 API 事务邮件；业务邮件须符合收件关系、同意与反垃圾规则，禁止未经许可群发、购买或爬取名单，不保证收件箱送达。"
+        },
+        "quota": {
+          "value": "partial",
+          "note": "Free 每账户每月 1,000 封且每日 200 封；未验证发信域名另限每小时 25 封，验证域名后解除小时限但保留日限。多个收件人分别计数；月重置日期见账户面板，不假定自然月。"
+        },
+        "domains": {
+          "value": "yes",
+          "note": "最多 5 个验证发件人，域名与单地址合计，共享账户额度。域名验证通常添加 3 个 CNAME；单地址可邮件链接验证，但不解除小时限，限制性 DMARC 可能要求改用域名验证。"
+        },
+        "approval": {
+          "value": "no",
+          "note": "所有新账户均受审查，不承诺免审或获批。注册需工作或私域邮箱，不接受 Gmail、Yahoo 等公共域名，并需短信及邮箱验证；新付费账户的临时日限不替代 Free 日限。"
+        },
+        "cardless": {
+          "value": "yes",
+          "note": "当前官网明确 Free 无需信用卡且没有使用期限；免卡不等于免身份验证、免审查或永久不变的服务承诺。"
+        },
+        "overflow": {
+          "value": "partial",
+          "note": "超过每日发送速度会排队按额度投递；每月 1,000 封耗尽后新增发送直接拒收，不排队到下月。Free 不提供额外付费发送量，需等月额度重置或升级；不能把日限排队与月限拒收混同。"
+        }
+      },
+      "sources": [
+        "https://www.smtp2go.com/pricing/",
+        "https://support.smtp2go.com/hc/en-gb/articles/223087947-Free-Plan",
+        "https://developers.smtp2go.com/docs/rate-limiting",
+        "https://support.smtp2go.com/hc/en-gb/articles/115004408567-Verified-Senders",
+        "https://support.smtp2go.com/hc/en-gb/articles/223087427-New-Account-Limits-and-the-Review-Process",
+        "https://support.smtp2go.com/hc/en-gb/articles/20483715021081-Billing-Pricing-and-Plans-FAQ",
+        "https://www.smtp2go.com/terms/"
+      ]
     }
   ]
 }
