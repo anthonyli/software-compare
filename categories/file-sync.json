@@ -64,14 +64,14 @@
       "open_source": true,
       "license": "MPL-2.0",
       "pricing_model": "完全免费",
-      "price_summary": "完全免费开源的 P2P 文件同步，无中央服务器。",
+      "price_summary": "完全免费开源的设备间文件同步，不提供官方托管云盘；无法直连时默认可使用中继。",
       "prices": [
         {
           "plan": "全部功能",
           "price": "免费",
           "currency": null,
           "period": null,
-          "note": "开源；设备之间直接同步，不强制云存储费"
+          "note": "开源；在设备之间同步，可直连或经中继，不强制购买云存储。"
         }
       ],
       "free_tier_limits": "无官方托管云盘。需至少两台设备在线。官方 iOS 客户端情况需另行确认。",
@@ -80,7 +80,7 @@
       "latest_release_date": "2026-10-21 14:09",
       "latest_release_date_note": "GitHub 标签 v2.1.7，已转换为 Asia/Shanghai",
       "maintenance_status": "活跃",
-      "summary": "不经过中央服务器的开源同步工具，适合在自己的电脑和 NAS 之间同步，隐私好，没有官方云空间。",
+      "summary": "开源设备间同步工具，适合电脑和 NAS；可直连或通过中继传输，加密内容与连接元数据的隐私边界不同。",
       "features": {
         "realtime": {
           "value": "yes",
@@ -96,7 +96,7 @@
         },
         "e2e_encrypt": {
           "value": "yes",
-          "note": "设备间 TLS；数据不经过开发者服务器"
+          "note": "设备间端到端加密；中继转发密文，但可见 IP、设备 ID 与流量量。"
         },
         "versions": {
           "value": "yes",
@@ -112,7 +112,7 @@
         },
         "mobile": {
           "value": "partial",
-          "note": "有 Android 官方/官方支持应用；iOS 情况本次未核实"
+          "note": "官方 Android 应用已停更，不代表 Android 上所有社区方案消失；社区客户端需另行评估，iOS 情况未核实。"
         },
         "share_link": {
           "value": "no",
@@ -129,7 +129,10 @@
       },
       "sources": [
         "https://syncthing.net/",
-        "https://github.com/syncthing/syncthing"
+        "https://github.com/syncthing/syncthing",
+        "https://docs.syncthing.net/users/relaying.html",
+        "https://forum.syncthing.net/t/discontinuing-syncthing-android/23002",
+        "https://syncthing.net/downloads/"
       ]
     },
     {
