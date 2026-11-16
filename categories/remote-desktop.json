@@ -1336,6 +1336,94 @@
       "archived": false,
       "last_push_at": null,
       "maintenance_status": null
+    },
+    {
+      "id": "scrcpy",
+      "name": "scrcpy",
+      "official_url": "https://github.com/Genymobile/scrcpy",
+      "github_url": "https://github.com/Genymobile/scrcpy",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "pricing_model": "完全免费",
+      "price_summary": "免费开源，无账号或订阅；用于电脑连接和控制 Android，不是通用互联网远程桌面服务。",
+      "prices": [
+        {
+          "plan": "scrcpy",
+          "price": "0",
+          "currency": null,
+          "period": null,
+          "note": "Apache-2.0 软件；商用与再分发仍需遵守许可证义务。"
+        }
+      ],
+      "free_tier_limits": "无付费功能档。镜像要求 Android 5+ 及 ADB 调试授权，无需 root；USB 或同网 TCP/IP。OTG 仅控制，不含音视频。未实测设备兼容性。",
+      "summary": "从 Windows、macOS 或 Linux 电脑投屏和控制 Android，适合演示与设备操作；Android 是被控端，不是桌面主控客户端。",
+      "github_stars": null,
+      "latest_release": "5.0.1",
+      "latest_release_date": null,
+      "latest_release_date_note": "核实官方 v5.0.1 标签文档；未核实发布时间，不以提交时间代替。",
+      "collected_at": "2026-11-16",
+      "maintenance_status": "未知",
+      "features": {
+        "unattended_access": {
+          "value": "unknown",
+          "note": "需要设备调试授权；未确认等同远程桌面的无人值守访问。"
+        },
+        "file_transfer": {
+          "value": "partial",
+          "note": "拖入非 APK 文件可推送到 Android；不是已核实的双向文件管理器。"
+        },
+        "clipboard_sync": {
+          "value": "yes",
+          "note": "支持双向复制粘贴；行为依应用和设备而异，粘贴会进入 Android 剪贴板，敏感内容需谨慎。"
+        },
+        "multi_monitor": {
+          "value": "unknown",
+          "note": "Android 显示或虚拟显示功能不直接等同通用多桌面显示器支持。"
+        },
+        "audio": {
+          "value": "partial",
+          "note": "音频转发需 Android 11+；Android 11 启动采集时须解锁。采集失败默认继续视频，--require-audio 除外。"
+        },
+        "e2e_encryption": {
+          "value": "unknown",
+          "note": "未据 USB/ADB 连接推断所有网络路径具有端到端加密。"
+        },
+        "self_host": {
+          "value": "unknown",
+          "note": "本地运行不等于提供远程桌面中继或管理服务器。"
+        },
+        "mobile_control": {
+          "value": "partial",
+          "note": "电脑键鼠控制 Android；不是 iOS 控制或手机控制远程电脑。"
+        },
+        "free_for_commercial": {
+          "value": "yes",
+          "note": "按 Apache-2.0 许可证可商用，仍需遵守许可及第三方组件要求。"
+        },
+        "session_recording": {
+          "value": "yes",
+          "note": "可录制镜像视频和可用音频流；不保证所有应用内容都可采集。"
+        },
+        "wake_on_lan": {
+          "value": "unknown"
+        }
+      },
+      "sources": [
+        "https://github.com/Genymobile/scrcpy/blob/v5.0.1/README.md",
+        "https://github.com/Genymobile/scrcpy/blob/v5.0.1/LICENSE",
+        "https://github.com/Genymobile/scrcpy/blob/v5.0.1/doc/audio.md",
+        "https://github.com/Genymobile/scrcpy/blob/v5.0.1/doc/control.md",
+        "https://github.com/Genymobile/scrcpy/blob/v5.0.1/doc/recording.md",
+        "https://github.com/Genymobile/scrcpy/blob/v5.0.1/doc/connection.md",
+        "https://github.com/Genymobile/scrcpy/blob/v5.0.1/doc/otg.md",
+        "https://github.com/Genymobile/scrcpy/blob/v5.0.1/doc/macos.md"
+      ]
     }
   ]
 }
