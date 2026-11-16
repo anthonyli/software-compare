@@ -61,6 +61,15 @@ const ossCount = categories.reduce(
           <p class="mt-4 max-w-xl text-[1.05rem] leading-relaxed text-ink-soft">
             <T zh={ui.zh.tagline} en={ui.en.tagline} />
           </p>
+          <div class="mt-5 max-w-xl text-sm leading-relaxed text-ink-soft" data-product-intro>
+            <p><T zh="适合正在选工具的个人、内容创作者、开发者和小团队：按用途对照功能、价格、平台与开源替代，缩小候选范围。" en="For individuals, creators, developers and small teams choosing tools: compare features, pricing, platforms and open-source alternatives to narrow your shortlist." /></p>
+            <p class="mt-2"><T zh="Compare 是软件选型与比较目录，不是软件下载站，也不是所列软件的厂商。" en="Compare is a software discovery and comparison directory, not a software download host or the vendor of the listed products." /></p>
+            <ul class="mt-3 flex flex-wrap gap-2" data-product-tags>
+              <li class="rounded-full border border-current px-3 py-1"><T zh="软件对比" en="Software comparison" /></li>
+              <li class="rounded-full border border-current px-3 py-1"><T zh="工具选型" en="Tool discovery" /></li>
+              <li class="rounded-full border border-current px-3 py-1"><T zh="开源替代" en="Open-source alternatives" /></li>
+            </ul>
+          </div>
           <div class="stat-row mt-8">
             <div>
               <span class="num">{categories.length}</span>
