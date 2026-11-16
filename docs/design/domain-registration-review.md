@@ -10,3 +10,12 @@
 补验：正常申请 require_escalated 后测试仍在 Wrangler 启动阶段出现同一 `uv_interface_addresses` 错误；并非审核拒绝，实际页面验收仍待可用环境完成。新增 `site/tests/browser/domain-registration.spec.ts` 覆盖桌面/390px 双语和截图。
 
 最终本地补验：基于 main `594ad9a` 重新构建，通过独立 Python 静态服务器提供原样生成的页面；正常申请执行权限后，Chromium 仍在启动时 `process_singleton_posix.cc:297 socket() failed: Operation not permitted`，未访问页面、没有生成实际页面截图。静态方案并未修改站点或替代 Worker E2E。故实际网页桌面/390px视觉检查仍待可用环境，现有 PNG 仅为清楚标注的插画栅格对照。
+
+## 实际页面补验完成
+
+- GitHub CI [43843524114](https://github.com/anthonyli/software-compare/actions/runs/43843524114)，提交 `0ed82a7020152f02f3a910094607c80b4f10cd5f`：188 项单测、构建及 145 项真实 Worker 浏览器测试全部通过。
+- 已下载 `domain-registration-visual-previews` artifact（ID `14214846020`）的四张实际页面截图：`domain-page-home-1280.png`、`domain-page-home-390.png`、`domain-page-comparison-1280.png`、`domain-page-comparison-390.png`，完成目视检查。首页封面比例、粉彩、主体和留白与相邻原系列一致；桌面表格和 390px 卡片正常，无破图、重叠或页面横向溢出；中英文标题与分类可读。移动端功能长标签按原组件省略，不扩展卡片宽度。
+- 视觉用例以独立 TEST-NET-1 客户端 IP 调用真实 API，避免消耗其他用例共享的身份限流额度；未 mock API、降低生产限流或删减旧断言。首页顺序测试仅补入新增云服务组，媒体仍优先。
+- CI 上传截图保留七天，后续 PR CI 可重新生成。上述本地 Chromium/服务器限制仍属实，但已由真实 CI 浏览器和下载截图补齐验收，不再作为本项的未完成条件。合并仍以最终提交 CI 成功为准。
+
+独立截图复核补充：上述布局通过，但 EN 页阿里云/腾讯云的产品名仍为中文，虽然映射存在；须补齐名称呈现及实际英文名称断言、再次完成 CI 与截图核验后方可合并，不将此前视觉检查视为完整双语验收。
