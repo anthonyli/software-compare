@@ -36,10 +36,15 @@ if (root) {
   // A smooth, continuously deforming liquid boundary. Coordinates are normalized,
   // so the same reveal covers wide, narrow and resized viewports without a canvas.
   function wavePath(radius: number, phase: number, strength: number, scene = current) {
-    const lobes=[3,5,2,4,6,3][scene], seed=scene*1.37;
+    // Deliberate families: soft triangle, five-petal flower, bean, four-leaf
+    // clover, scalloped bloom, and almost-round pebble (not six noisy blobs).
+    const lobes=[3,5,2,4,6,1][scene];
+    const seed=[.35,.8,1.1,Math.PI,0,.4][scene];
+    const amplitude=[.14,.18,.24,.30,.14,.035][scene]*(strength/.14);
+    const drift=phase*[.25,.22,.20,.08,.16,.12][scene];
     const points = Array.from({length:72}, (_,i) => {
       const a = i / 72 * Math.PI * 2;
-      const r = radius * (1 + strength * Math.sin(a*lobes + phase+seed) + strength*.35*Math.sin(a*(lobes+3)-phase*.6+seed));
+      const r = radius * (1 + amplitude * Math.cos(a*lobes + drift+seed) + amplitude*.12*Math.sin(a*(lobes+3)-drift+seed));
       return [.5 + Math.cos(a)*r, .48 + Math.sin(a)*r];
     });
     const mid = (a:number[], b:number[]) => `${((a[0]+b[0])/2).toFixed(5)},${((a[1]+b[1])/2).toFixed(5)}`;
