@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Original illustration for Compare / 软件对比. No third-party marks. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" fill="none" role="img" aria-hidden="true">
+  <rect width="480" height="260" fill="#F4E6EF"/>
+  <rect width="480" height="260" fill="url(#wash-international-payments)" opacity="0.85"/>
+  <defs>
+    <linearGradient id="wash-international-payments" x1="0" y1="0" x2="480" y2="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF2F8" stop-opacity="0.0"/>
+      <stop offset="1" stop-color="#E7D5DF" stop-opacity="0.35"/>
+    </linearGradient>
+    <filter id="soft-international-payments" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#111111" flood-opacity="0.10"/>
+    </filter>
+    <pattern id="dots-international-payments" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="translate(18,16)">
+      <circle cx="1.2" cy="1.2" r="1.05" fill="#111111" opacity="0.35"/>
+    </pattern>
+  </defs>
+  <ellipse cx="40" cy="210" rx="70" ry="45" fill="#FFFFFF" opacity="0.35"/>
+  <ellipse cx="440" cy="36" rx="70" ry="48" fill="#FFFFFF" opacity="0.35"/>
+  <rect width="480" height="260" fill="url(#dots-international-payments)" opacity="0.45"/>
+  <g filter="url(#soft-international-payments)">
+    <rect x="94" y="51" width="278" height="160" rx="22" fill="#FFFFFF"/>
+    <rect x="117" y="77" width="120" height="13" rx="6.5" fill="#111111"/>
+    <path d="M117 108H262" stroke="#E7D5DF" stroke-width="2"/>
+    <g fill="#D9C9D2">
+      <rect x="117" y="129" width="86" height="8" rx="4"/>
+      <rect x="224" y="129" width="38" height="8" rx="4"/>
+      <rect x="117" y="151" width="111" height="8" rx="4"/>
+      <rect x="117" y="178" width="64" height="8" rx="4"/>
+    </g>
+    <circle cx="336" cy="90" r="39" fill="#FFFFFF"/>
+    <circle cx="336" cy="90" r="29" stroke="#111111" stroke-width="2.5"/>
+    <ellipse cx="336" cy="90" rx="13" ry="29" stroke="#111111" stroke-width="2"/>
+    <path d="M307 90H365M312 76H360M312 104H360" stroke="#111111" stroke-width="2"/>
+    <circle cx="319" cy="175" r="32" fill="#F4E6EF"/>
+    <path d="M304 175L315 186L336 163" stroke="#111111" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

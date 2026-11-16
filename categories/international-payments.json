@@ -1,0 +1,350 @@
+{
+  "category_slug": "international-payments",
+  "category_name_zh": "国外支付平台",
+  "collected_at": "2026-11-16",
+  "collected_at_timezone": "UTC",
+  "features": [
+    {
+      "key": "mor",
+      "label": "法定销售方 MoR"
+    },
+    {
+      "key": "cn_individual",
+      "label": "大陆个人申请边界"
+    },
+    {
+      "key": "cn_business",
+      "label": "大陆企业申请边界"
+    },
+    {
+      "key": "review",
+      "label": "网站与身份审核"
+    },
+    {
+      "key": "payouts",
+      "label": "提现渠道与限制"
+    },
+    {
+      "key": "recurring",
+      "label": "订阅收款"
+    }
+  ],
+  "products": [
+    {
+      "id": "dodo-payments",
+      "name": "Dodo Payments",
+      "official_url": "https://dodopayments.com/pricing",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "付费",
+      "price_summary": "数字产品 MoR；中国在商户名单中，但个人证件国、企业注册地及所有董事/实益拥有人证件均影响资格。",
+      "prices": [
+        {
+          "plan": "美国国内卡及标准钱包基准（不含PayPal/BNPL加项）",
+          "price": "4% + USD 0.40",
+          "currency": null,
+          "period": "成功交易",
+          "note": "2026-11-16 标准基准；国际交易另加 1.5%，订阅另加 0.5%，PayPal/BNPL 另加 3%，适用加项不能忽略。ACH/SEPA 借记为独立规则，不能套用本卡费率；不是月租。"
+        }
+      ],
+      "free_tier_limits": "无固定月费不等于免费交易。提现默认每月两次：上半月销售于当月18日、下半月于次月4日发起；USD 默认门槛100、最低可设50，须全部核验完成。定价页 FAQ 列低于USD 1000提现收5、非美USD SWIFT收25；具体大陆银行/币种路线及银行附费须确认。 买家可支付不代表卖家可开户；所有资格均受产品、身份、地区与风控审核，不保证批准或到账。MoR 代办销售税/VAT 不免除卖家的所得税等义务。未开户、提交 KYC、连接银行或实测。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": "未知",
+      "collected_at": "2026-11-16",
+      "summary": "数字产品 MoR；中国在商户名单中，但个人证件国、企业注册地及所有董事/实益拥有人证件均影响资格。",
+      "features": {
+        "mor": {
+          "value": "yes",
+          "note": "平台作为 MoR 处理适用销售税与结算；不等于承担卖家全部税务。"
+        },
+        "cn_individual": {
+          "value": "partial",
+          "note": "China 在接受名单；个人须使用受支持国家签发的政府证件，另审产品与银行。"
+        },
+        "cn_business": {
+          "value": "partial",
+          "note": "企业注册地及每位董事/实益拥有人政府证件国均需符合规则；仅注册海外公司不足以获批。"
+        },
+        "review": {
+          "value": "yes",
+          "note": "先上线网站，公开价格周期、条款、隐私、退款取消政策和支持入口；个人KYC，企业另KYB，之后银行与合规审核。"
+        },
+        "payouts": {
+          "value": "partial",
+          "note": "银行提现；默认USD门槛100，最低50；低额、SWIFT、外汇及中间行费用须分别核对，不承诺大陆任意银行卡可用。"
+        },
+        "recurring": {
+          "value": "yes",
+          "note": "订阅、附加项及按用量计费另加0.5%，不代表所有支付方式均支持订阅。"
+        }
+      },
+      "sources": [
+        "https://dodopayments.com/pricing",
+        "https://docs.dodopayments.com/miscellaneous/accepted-countries-and-territories",
+        "https://docs.dodopayments.com/miscellaneous/verification-process",
+        "https://docs.dodopayments.com/features/payouts/payout-structure",
+        "https://docs.lemonsqueezy.com/help/payments/sales-tax-vat"
+      ]
+    },
+    {
+      "id": "creem",
+      "name": "Creem",
+      "official_url": "https://www.creem.io/pricing",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "付费",
+      "price_summary": "面向数字产品的 MoR；商户国家名单列China，但出金路径不保证开户审核通过，需自有域名和真实可用产品。",
+      "prices": [
+        {
+          "plan": "标准交易费",
+          "price": "3.9% + USD 0.40",
+          "currency": null,
+          "period": "成功交易",
+          "note": "2026-11-16：按订单总额计费；无设置/月费，提现另收费，非全包净到账费率。"
+        }
+      ],
+      "free_tier_limits": "无月费不等于免费收款。每月1/15日出金，最低50 USD/EUR，需申请排队；资金可能风控暂扣7–12天。银行出金收7 USD/EUR或1%取较高；中国个人Alipay每笔5万CNY、每年30–60万CNY，企业本地银行，实际资格/限额另核。 买家可支付不代表卖家可开户；所有资格均受产品、身份、地区与风控审核，不保证批准或到账。MoR 代办销售税/VAT 不免除卖家的所得税等义务。未开户、提交 KYC、连接银行或实测。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": "未知",
+      "collected_at": "2026-11-16",
+      "summary": "面向数字产品的 MoR；商户国家名单列China，但出金路径不保证开户审核通过，需自有域名和真实可用产品。",
+      "features": {
+        "mor": {
+          "value": "yes",
+          "note": "平台作为 MoR 处理适用销售税与结算；不等于承担卖家全部税务。"
+        },
+        "cn_individual": {
+          "value": "partial",
+          "note": "商户名单列China；文档给个人Alipay出金路径，仍须KYC和店铺审核，非无条件开放。"
+        },
+        "cn_business": {
+          "value": "partial",
+          "note": "中国企业列本地银行路径；需KYB/账户审核，不能由出金表推定所有企业获批。"
+        },
+        "review": {
+          "value": "yes",
+          "note": "自有域名的已上线产品、清晰价格、条款/隐私及支持邮箱；KYC/KYB。免费托管子域名不合要求；AI图像/视频产品另有审核接口要求。"
+        },
+        "payouts": {
+          "value": "partial",
+          "note": "中国个人Alipay、企业本地银行；限额与提现费另计，余额需可提且达到门槛，窗口不是到账保证。"
+        },
+        "recurring": {
+          "value": "yes",
+          "note": "提供订阅及用量计费；不能据此推定任何高风险业务均可接入。"
+        }
+      },
+      "sources": [
+        "https://www.creem.io/pricing",
+        "https://docs.creem.io/merchant-of-record/supported-countries",
+        "https://docs.creem.io/merchant-of-record/finance/payouts",
+        "https://docs.creem.io/merchant-of-record/finance/payout-accounts",
+        "https://docs.creem.io/merchant-of-record/account-reviews/account-reviews",
+        "https://docs.lemonsqueezy.com/help/payments/sales-tax-vat"
+      ]
+    },
+    {
+      "id": "paddle",
+      "name": "Paddle",
+      "official_url": "https://www.paddle.com/pricing",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "付费",
+      "price_summary": "软件与数字产品 MoR；商户禁用国家清单未列中国大陆，但仍须域名、身份及适用企业审核，不能只凭买家覆盖开户。",
+      "prices": [
+        {
+          "plan": "按Checkout交易",
+          "price": "5% + USD 0.50",
+          "currency": null,
+          "period": "成功交易",
+          "note": "2026-11-16公开按交易价；无月费。特殊报价、银行/SWIFT与换汇成本另核，不等于每笔净到账成本固定。"
+        }
+      ],
+      "free_tier_limits": "没有免费交易额度承诺。满足最低100 USD/EUR/GBP后，每月1日生成、15日前发送；银行电汇或Payoneer，入账另需时间。部分跨境SWIFT收15 USD/EUR/GBP，非余额币种换汇最多加1.5%；中国具体收款行与账户资格需确认。 买家可支付不代表卖家可开户；所有资格均受产品、身份、地区与风控审核，不保证批准或到账。MoR 代办销售税/VAT 不免除卖家的所得税等义务。未开户、提交 KYC、连接银行或实测。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": "未知",
+      "collected_at": "2026-11-16",
+      "summary": "软件与数字产品 MoR；商户禁用国家清单未列中国大陆，但仍须域名、身份及适用企业审核，不能只凭买家覆盖开户。",
+      "features": {
+        "mor": {
+          "value": "yes",
+          "note": "平台作为 MoR 处理适用销售税与结算；不等于承担卖家全部税务。"
+        },
+        "cn_individual": {
+          "value": "partial",
+          "note": "个人/sole trader免企业核验，不免域名和身份审核；大陆不在商户禁用清单不代表必过。"
+        },
+        "cn_business": {
+          "value": "partial",
+          "note": "大陆不在商户禁用清单；企业及身份验证、产品可接受性和提现路径仍需通过。"
+        },
+        "review": {
+          "value": "yes",
+          "note": "HTTPS活网站须展示产品、价格、条款、退款及隐私；提交结账域名审核，身份验证，企业另核经营资料。"
+        },
+        "payouts": {
+          "value": "partial",
+          "note": "银行电汇或Payoneer；最低100 USD/EUR/GBP，月度窗口，跨境和换汇费不是基础交易费的一部分。"
+        },
+        "recurring": {
+          "value": "yes",
+          "note": "包含订阅计费；受账户与产品审核约束。"
+        }
+      },
+      "sources": [
+        "https://www.paddle.com/pricing",
+        "https://www.paddle.com/help/start/account-verification/what-is-account-verification",
+        "https://www.paddle.com/help/start/account-verification/what-is-domain-verification",
+        "https://www.paddle.com/help/legal/sanctions/which-countries-are-supported-by-paddle",
+        "https://www.paddle.com/help/start/intro-to-paddle/when-and-how-do-i-get-paid",
+        "https://www.paddle.com/help/manage/get-paid/is-there-a-fee-taken-for-payouts",
+        "https://docs.lemonsqueezy.com/help/payments/sales-tax-vat"
+      ]
+    },
+    {
+      "id": "lemon-squeezy",
+      "name": "Lemon Squeezy",
+      "official_url": "https://www.lemonsqueezy.com/pricing",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "付费",
+      "price_summary": "数字产品 MoR；中国大陆不在银行提现名单，不能因此断言所有途径都不可用。PayPal路径须核实账户收款能力及店铺审核。",
+      "prices": [
+        {
+          "plan": "基础平台交易费",
+          "price": "5% + USD 0.50",
+          "currency": null,
+          "period": "成功交易",
+          "note": "2026-11-16：美国境外交易加1.5%，PayPal交易加1.5%，订阅加0.5%；按订单总额计算，提现及部分营销费另计。"
+        }
+      ],
+      "free_tier_limits": "无月费不等于免费交易。最低提现USD 50；每月1/15日生成，净销售额持有13天，14/28日可支付，银行另需1–5天。非美银行提现1%，非美PayPal提现3%封顶USD 30；PayPal须验证且以USD收款。大陆具体可用路径未知。 买家可支付不代表卖家可开户；所有资格均受产品、身份、地区与风控审核，不保证批准或到账。MoR 代办销售税/VAT 不免除卖家的所得税等义务。未开户、提交 KYC、连接银行或实测。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": "未知",
+      "collected_at": "2026-11-16",
+      "summary": "数字产品 MoR；中国大陆不在银行提现名单，不能因此断言所有途径都不可用。PayPal路径须核实账户收款能力及店铺审核。",
+      "features": {
+        "mor": {
+          "value": "yes",
+          "note": "平台作为 MoR 处理适用销售税与结算；不等于承担卖家全部税务。"
+        },
+        "cn_individual": {
+          "value": "unknown",
+          "note": "大陆银行出金未列支持；个人PayPal账户可作为一般路径，但大陆账户具体收款与审核资格未核实。"
+        },
+        "cn_business": {
+          "value": "unknown",
+          "note": "大陆银行出金未列支持；企业PayPal账户路径仍须独立核实，不因“全球销售”标为可开户。"
+        },
+        "review": {
+          "value": "yes",
+          "note": "店铺业务问卷、身份验证及KYC/KYB；以软件/数字交付为主，实物和许多线下履约服务通常不予批准。"
+        },
+        "payouts": {
+          "value": "partial",
+          "note": "支持名单内银行或已验证PayPal；大陆银行不在名单，PayPal可用性未知，不保证首个窗口可提。"
+        },
+        "recurring": {
+          "value": "yes",
+          "note": "订阅交易额外加0.5%，另叠加适用的国际/PayPal费用。"
+        }
+      },
+      "sources": [
+        "https://www.lemonsqueezy.com/pricing",
+        "https://docs.lemonsqueezy.com/help/getting-started/fees",
+        "https://docs.lemonsqueezy.com/help/getting-started/getting-paid",
+        "https://docs.lemonsqueezy.com/help/getting-started/supported-countries",
+        "https://docs.lemonsqueezy.com/help/getting-started/activate-your-store",
+        "https://docs.lemonsqueezy.com/help/payments/sales-tax-vat"
+      ]
+    },
+    {
+      "id": "stripe-payments",
+      "name": "Stripe Payments",
+      "official_url": "https://stripe.com/global",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "付费",
+      "price_summary": "仅比较普通 Stripe Payments 支付处理；商户自己是法定销售方，不含另行提供的 Managed Payments MoR。大陆未开放普通商户，香港在支持名单。",
+      "prices": [
+        {
+          "plan": "香港商户本地卡示例",
+          "price": "3.4% + HKD 2.35",
+          "currency": null,
+          "period": "成功交易",
+          "note": "2026-11-16香港标准价，不是大陆开户报价或全球统一价。国际卡加0.5%，需换汇加2%；Billing按量方案另收计费额0.7%，不含于Payments基础费。"
+        }
+      ],
+      "free_tier_limits": "无月费不代表零交易费或代缴全部税。须符合支持地区的真实业务、身份及银行要求；香港个人须HKID，企业代表可用其他政府证件。银行出金首笔通常7–14天，之后按账户计划及结算速度；香港最低出金额及具体提现费用未知。 买家可支付不代表卖家可开户；所有资格均受产品、身份、地区与风控审核，不保证批准或到账。MoR 代办销售税/VAT 不免除卖家的所得税等义务。未开户、提交 KYC、连接银行或实测。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": "未知",
+      "collected_at": "2026-11-16",
+      "summary": "仅比较普通 Stripe Payments 支付处理；商户自己是法定销售方，不含另行提供的 Managed Payments MoR。大陆未开放普通商户，香港在支持名单。",
+      "features": {
+        "mor": {
+          "value": "no",
+          "note": "普通Payments由商户承担销售方责任；Stripe Managed Payments 是另一个MoR产品，未混入本条。"
+        },
+        "cn_individual": {
+          "value": "no",
+          "note": "中国大陆不在普通Payments商户开放地区；香港个人账号不能使用非HKID号码注册。"
+        },
+        "cn_business": {
+          "value": "no",
+          "note": "大陆企业不能直接按大陆地区开通；真实香港等受支持地区企业须另按当地业务/KYC/银行规则核验，不是规避教程。"
+        },
+        "review": {
+          "value": "yes",
+          "note": "验证业务、代表人及适用的实益拥有人；具体文件随地区/业务类型变化，网站与禁售要求适用。"
+        },
+        "payouts": {
+          "value": "partial",
+          "note": "仅合资格账户的银行出金；不要把Connect跨境收款名单当作普通Payments开户名单。"
+        },
+        "recurring": {
+          "value": "paid",
+          "note": "通过另行计费的Stripe Billing；香港按量价为计费额0.7%，Payments处理费仍适用。"
+        }
+      },
+      "sources": [
+        "https://stripe.com/global",
+        "https://stripe.com/en-hk/pricing",
+        "https://support.stripe.com/questions/requirements-for-hong-kong-based-businesses",
+        "https://support.stripe.com/questions/what-do-i-need-to-do-to-verify-my-stripe-account/",
+        "https://docs.stripe.com/payouts",
+        "https://docs.stripe.com/payments/managed-payments",
+        "https://docs.lemonsqueezy.com/help/payments/sales-tax-vat"
+      ]
+    }
+  ]
+}

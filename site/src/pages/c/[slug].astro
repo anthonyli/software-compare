@@ -46,7 +46,7 @@ const statuses = [...new Set(category.products.map((p) => p.maintenance_status).
 const desc = uiT("categoryDesc", "zh", { name: catNames.zh, n: category.products.length });
 const descEn = uiT("categoryDesc", "en", { name: catNames.en, n: category.products.length });
 const isAi = category.groupId === "ai";
-const showContext = isAi || category.slug === "authenticators";
+const showContext = isAi || category.slug === "authenticators" || category.slug === "international-payments";
 const ossCount = category.products.filter((p) => p.open_source).length;
 
 const sortedProducts = [...category.products].sort((a, b) => {
