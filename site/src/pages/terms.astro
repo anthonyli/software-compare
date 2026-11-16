@@ -62,8 +62,8 @@ const sections = [
     "en": "6. Availability and updates",
     "paragraphs": [
       {
-        "zh": "个人维护项目可能维护、中断或调整功能，不承诺持续可用、响应时限或资料完整无误。本说明不排除适用法律不得排除的权利或责任。重大功能或数据处理变化应同步更新相关说明；未约定特定法院、仲裁或适用法域。",
-        "en": "A personally maintained project may undergo maintenance, interruptions or feature changes. Continuous availability, response times and complete accuracy are not promised. This notice does not exclude rights or liabilities that applicable law does not allow to be excluded. Material feature or data-processing changes should be reflected in these notices. No particular court, arbitration venue or governing jurisdiction is specified."
+        "zh": "个人维护项目可能维护、中断或调整功能，不承诺持续可用、响应时限或资料完整无误。本说明不排除适用法律不得排除的权利或责任。相关说明会随功能或数据处理变化更新，并在页面标明更新日期。",
+        "en": "A personally maintained project may undergo maintenance, interruptions or feature changes. Continuous availability, response times and complete accuracy are not promised. This notice does not exclude rights or liabilities that applicable law does not allow to be excluded. These notices will be updated as features or data handling change, with the update date shown on the page."
       }
     ]
   }
@@ -72,9 +72,10 @@ const sections = [
 <Layout title="使用条款" titleEn="Terms of use" canonicalPath="/terms/">
   <article class="mx-auto max-w-3xl px-6 py-12 leading-relaxed" data-policy-page>
     <h1 class="text-3xl font-semibold"><T zh="使用条款" en="Terms of use" /></h1>
-    <p class="mt-4 rounded-lg border p-4" data-policy-draft><T zh="发布前草稿：运营者联系渠道及适用地区尚待确认，本页不是已生效政策。" en="Pre-publication draft: operator contact and operating region are awaiting confirmation. This is not an effective policy." /></p>
-    <p class="mt-4 text-sm text-muted"><T zh="代码核对日期：2026-11-16。以下描述当前项目实现，不代表已经完成法律合规审查。" en="Code reviewed: 2026-11-16. This describes the current implementation and is not a completed legal compliance review." /></p>
+    <p class="mt-4 text-sm text-muted" data-policy-date><T zh="更新日期：2026-11-16" en="Last updated: 2026-11-16" /></p>
+    <p class="mt-4 text-sm text-muted"><T zh="以下说明适用于 Compare 当前提供的功能；项目源码开放不等于所有收录软件都开源。" en="This notice covers the features currently offered by Compare. Open-source project code does not mean every listed product is open-source." /></p>
     {sections.map((section) => (<section class="mt-8"><h2 class="text-xl font-semibold"><T zh={section.zh} en={section.en} /></h2>{section.paragraphs.map((p) => (<p class="mt-3"><T zh={p.zh} en={p.en} /></p>))}</section>))}
+    <section class="mt-8" data-policy-contact><h2 class="text-xl font-semibold"><T zh="联系维护者" en="Contact the maintainer" /></h2><p class="mt-3"><a class="underline break-all" href="mailto:anthonyli1021@gmail.com">anthonyli1021@gmail.com</a></p><p class="mt-3"><T zh="适用于网站联系、隐私问题和数据请求。邮件不是公开 Issue；收发邮件仍由双方邮件服务提供商处理，请仅提供处理请求所必需的信息。" en="For website enquiries, privacy questions and data requests. Email is not a public Issue, but is processed by the sender’s and recipient’s email providers. Include only information necessary to handle the request." /></p></section>
     <section class="mt-8"><h2 class="text-xl font-semibold"><T zh="项目与官方资料" en="Project and official references" /></h2><ul class="mt-3 list-disc pl-5"><li><a class="underline" href="https://github.com/anthonyli/software-compare">GitHub: anthonyli/software-compare</a></li><li><a class="underline" href="https://github.com/anthonyli/software-compare/blob/main/LICENSE">Apache License 2.0</a></li></ul></section>
     <nav class="mt-10 flex flex-wrap gap-4" aria-label="Policy navigation"><a class="underline" href="/terms/"><T zh="使用条款" en="Terms of use" /></a><a class="underline" href="/privacy/"><T zh="隐私说明" en="Privacy notice" /></a><a class="underline" href="/"><T zh="返回首页" en="Home" /></a></nav>
   </article>
