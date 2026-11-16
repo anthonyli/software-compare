@@ -25,3 +25,10 @@ jobs:
         working-directory: site
       - run: npm run test:e2e
         working-directory: site
+      - name: Upload domain registration visual previews
+        uses: actions/upload-artifact@v4
+        with:
+          name: domain-registration-visual-previews
+          path: docs/design/previews/domain-page-*.png
+          if-no-files-found: error
+          retention-days: 7

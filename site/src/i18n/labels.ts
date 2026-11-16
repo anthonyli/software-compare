@@ -9,6 +9,7 @@ function contentFallback(text: string): string {
 
 /** Category display names, keyed by slug. */
 export const categoryNames: Record<string, { zh: string; en: string }> = {
+  "domain-registration": { zh: "域名注册", en: "Domain registration" },
   "clipboard-managers": { zh: "剪贴板管理", en: "Clipboard managers" },
   "authenticators": { zh: "身份验证器", en: "Authenticators" },
   "proxy-clients": { zh: "代理客户端", en: "Proxy clients" },
@@ -58,6 +59,7 @@ export const categoryNames: Record<string, { zh: string; en: string }> = {
 };
 
 export const groupNames: Record<string, { zh: string; en: string }> = {
+  "cloud": { zh: "云服务与开发基础设施", en: "Cloud & developer infrastructure" },
   lifestyle: { zh: "运动与户外", en: "Fitness & outdoors" },
   ai: { zh: "AI 工具", en: "AI tools" },
   creative: { zh: "设计与摄影", en: "Design & photography" },
@@ -73,6 +75,12 @@ export const groupNames: Record<string, { zh: string; en: string }> = {
 
 /** Feature column labels keyed by "slug:key". */
 export const featureColumns: Record<string, { zh: string; en: string }> = {
+  "domain-registration:register": { zh: "付费域名注册", en: "Paid domain registration" },
+  "domain-registration:transfer": { zh: "域名转入", en: "Inbound domain transfer" },
+  "domain-registration:free_dns": { zh: "附带免费 DNS", en: "Included free DNS" },
+  "domain-registration:external_dns": { zh: "第三方权威 DNS", en: "Third-party authoritative DNS" },
+  "domain-registration:privacy": { zh: "免费注册信息保护", en: "Free registration-data protection" },
+
   "screen-recorders:region_recording": { zh: "区域录制", en: "Region recording" },
   "screen-recorders:webcam_overlay": { zh: "摄像头叠加", en: "Webcam overlay" },
   "screen-recorders:system_audio": { zh: "系统音频", en: "System audio" },
