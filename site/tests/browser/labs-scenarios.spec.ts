@@ -39,8 +39,9 @@ test('automatic liquid reveal, active-progress pause, focus and reduced motion',
  const second=await active.locator('a').getAttribute('href');
  await expect(active.locator('a')).not.toHaveAttribute('href',second!,{timeout:8500});
  await expect(root).toHaveAttribute('data-transitioning','false');
- await active.locator('a').hover();await expect(root).toHaveAttribute('data-autoplay','paused');
- const held=await active.locator('a').getAttribute('href');await page.waitForTimeout(6500);await expect(active.locator('a')).toHaveAttribute('href',held!);
+ await active.locator('a').hover();await expect(root).toHaveAttribute('data-autoplay','running');
+ const hovered=await active.locator('a').getAttribute('href');await expect(active.locator('a')).not.toHaveAttribute('href',hovered!,{timeout:8500});
+ await expect(root).toHaveAttribute('data-transitioning','false');const held=await active.locator('a').getAttribute('href');
  await page.mouse.move(0,0);await expect(root).toHaveAttribute('data-autoplay','running');
  await root.locator('[data-dot][aria-pressed=true]').click();await page.mouse.move(0,0);await expect(root).toHaveAttribute('data-user-paused','true');
  await page.waitForTimeout(6500);await expect(active.locator('a')).toHaveAttribute('href',held!);
@@ -60,17 +61,18 @@ test('first-entry and manual liquid reveal frames, transparent navigation',async
  await page.clock.pauseAt(new Date('2026-01-01T00:00:01Z'));await page.goto('/');await page.clock.runFor(100);
  const root=page.locator('[data-scenario]');
  await page.screenshot({path:'../docs/design/previews/labs-home-entry.png'});
- await page.clock.runFor(1800);await expect(root).toHaveAttribute('data-transitioning','false');
- await root.locator('[data-dot="0"]').click({force:true});await page.clock.runFor(1800);await expect(root).toHaveAttribute('data-transitioning','false');
- await root.locator('[data-dot="1"]').click({force:true});const samples=[];
- for(const [frame,wait] of [[1,100],[2,400],[3,500],[4,900]]){
-  await page.clock.runFor(wait);samples.push(await root.locator('[data-liquid-path="1"]').getAttribute('d'));
+ await page.clock.runFor(2500);await expect(root).toHaveAttribute('data-transitioning','false');
+ await root.locator('[data-dot="0"]').click({force:true});await page.clock.runFor(2500);await expect(root).toHaveAttribute('data-transitioning','false');
+ await root.locator('[data-dot="1"]').click({force:true});const samples=[],radii=[];
+ for(const [frame,wait] of [[1,720],[2,300],[3,350],[4,1150]]){
+  await page.clock.runFor(wait);radii.push(Number(await root.getAttribute('data-reveal-radius')));samples.push(await root.locator('[data-liquid-path="1"]').getAttribute('d'));
   await page.screenshot({path:`../docs/design/previews/labs-home-transition-${frame}.png`});
  }
+ expect(radii[2]).toBeLessThan(radii[1]);expect(radii[3]).toBeGreaterThan(radii[2]);
  expect(samples[0]).not.toBe(samples[1]);expect(samples[1]).not.toBe(samples[2]);
  await expect(root).toHaveAttribute('data-transitioning','false');
  await expect(page.locator('.site-header')).toHaveCSS('background-color','rgba(0, 0, 0, 0)');
- await expect(page.locator('.site-header .brand-mark')).toHaveCSS('color','rgb(245, 245, 237)');
+ await expect(page.locator('.site-header .brand-mark')).toHaveCSS('color','rgb(21, 22, 21)');
  await page.clock.resume();await page.locator('[data-cat-btn]').click();await expect(page.locator('[data-cat-panel]')).toBeVisible();
 });
 
@@ -80,4 +82,18 @@ test('grid is restricted to light catalog; category and product grid preserved',
  await page.locator('#categories').scrollIntoViewIfNeeded();await page.screenshot({path:'../docs/design/previews/labs-home-catalog-grid.png'});
  await page.goto('/c/web-hosting/');expect(await page.locator('body').evaluate(el=>getComputedStyle(el).backgroundImage)).toContain('linear-gradient');
  await page.goto('/p/web-hosting/vercel/');expect(await page.locator('body').evaluate(el=>getComputedStyle(el).backgroundImage)).toContain('linear-gradient');
+});
+
+test('six scene-specific organic contours keep their own silhouette',async({page})=>{
+ await page.setViewportSize({width:1316,height:884});await mkdir('../docs/design/previews',{recursive:true});
+ await page.clock.install({time:new Date('2026-01-01T00:00:00Z')});await page.clock.pauseAt(new Date('2026-01-01T00:00:01Z'));
+ await page.goto('/');await page.clock.runFor(2500);
+ const root=page.locator('[data-scenario]'),shapes=[];
+ for(let i=0;i<6;i++){
+  await root.locator(`[data-dot="${(i+5)%6}"]`).click({force:true});await page.clock.runFor(2500);
+  await root.locator(`[data-dot="${i}"]`).click({force:true});await page.clock.runFor(780);
+  shapes.push(await root.locator(`[data-liquid-path="${i}"]`).getAttribute('d'));
+  await page.screenshot({path:`../docs/design/previews/labs-home-shape-${i}.png`});await page.clock.runFor(2500);
+ }
+ expect(new Set(shapes).size).toBe(6);
 });

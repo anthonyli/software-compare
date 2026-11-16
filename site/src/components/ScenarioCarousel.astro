@@ -30,15 +30,16 @@ if (root) {
   let current = -1, frame = 0, generation = 0;
   let timer: ReturnType<typeof setTimeout> | undefined;
   let progress: Animation | undefined;
-  let userPaused = false, hovered = false, focused = false, inView = true;
-  const delay = 6000, duration = 1700;
+  let userPaused = false, focused = false, inView = true;
+  const delay = 6000, duration = 2400;
 
   // A smooth, continuously deforming liquid boundary. Coordinates are normalized,
   // so the same reveal covers wide, narrow and resized viewports without a canvas.
-  function wavePath(radius: number, phase: number, strength: number) {
+  function wavePath(radius: number, phase: number, strength: number, scene = current) {
+    const lobes=[3,5,2,4,6,3][scene], seed=scene*1.37;
     const points = Array.from({length:72}, (_,i) => {
       const a = i / 72 * Math.PI * 2;
-      const r = radius * (1 + strength * Math.sin(a*4 + phase) + strength*.4*Math.sin(a*7-phase*.8));
+      const r = radius * (1 + strength * Math.sin(a*lobes + phase+seed) + strength*.35*Math.sin(a*(lobes+3)-phase*.6+seed));
       return [.5 + Math.cos(a)*r, .48 + Math.sin(a)*r];
     });
     const mid = (a:number[], b:number[]) => `${((a[0]+b[0])/2).toFixed(5)},${((a[1]+b[1])/2).toFixed(5)}`;
@@ -59,7 +60,7 @@ if (root) {
     clearTimeout(timer); progress?.cancel();
     if (current < 0) return;
     if (reduced.matches) { settle(); root!.getAnimations({subtree:true}).forEach(a=>a.cancel()); }
-    const paused = userPaused || hovered || focused || !inView || document.hidden || reduced.matches;
+    const paused = userPaused || focused || !inView || document.hidden || reduced.matches;
     root!.dataset.autoplay = paused ? 'paused' : 'running';
     root!.dataset.userPaused = String(userPaused);
     const en = document.documentElement.lang === 'en';
@@ -94,8 +95,14 @@ if (root) {
         if(token!==generation)return;
         const t=Math.min(1,(now-start)/duration);
         // Expansion accelerates across the screen; the wave edge continually ripples.
-        const eased=t*t*(3-2*t), radius=.015+1.08*eased;
-        const d=wavePath(radius,t*5.5,.17*(1-t)+.035);
+        const smooth=(x:number)=>x*x*(3-2*x);
+        // Reach, breathe, recoil, then release. Continuous zero-velocity joins.
+        const radius=t<.32 ? .015+.305*smooth(t/.32)
+          : t<.46 ? .32+.004*Math.sin((t-.32)/.14*Math.PI)
+          : t<.60 ? .32-.045*smooth((t-.46)/.14)
+          : .275+.825*smooth((t-.60)/.40);
+        root!.dataset.revealRadius=radius.toFixed(4);
+        const d=wavePath(radius,t*3.1,.12*(1-t)+.02);
         paths[current].setAttribute('d',d);rim.setAttribute('d',d);
         entering.style.opacity=String(Math.min(1,.6+t*1.6));
         rim.style.opacity=String(Math.sin(Math.PI*t)*.65);
@@ -117,11 +124,7 @@ if (root) {
     if(e.key==='ArrowLeft'){e.preventDefault();show(current-1);}
     if(e.code==='Space' && e.target===root){e.preventDefault();userPaused=!userPaused;schedule();}
   });
-  // The full-screen backdrop keeps playing; only interactive targets pause on hover.
-  root.querySelectorAll<HTMLElement>('a,button').forEach(control=>{
-    control.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'){hovered=true;schedule();}});
-    control.addEventListener('pointerleave',e=>{if(e.pointerType==='mouse'){hovered=false;schedule();}});
-  });
+  // Hover never interrupts playback. Keyboard focus and explicit pause still do.
   root.addEventListener('focusin',e=>{focused=e.target!==dots[current];schedule();});
   root.addEventListener('focusout',e=>{focused=!!e.relatedTarget&&root!.contains(e.relatedTarget as Node)&&e.relatedTarget!==dots[current];schedule();});
   document.addEventListener('visibilitychange',schedule);
@@ -136,11 +139,11 @@ if (root) {
 }
 </script>
 <style>
-.scenario{height:100svh;min-height:420px;position:relative;overflow:hidden;isolation:isolate;background:#0c1015;color:#f4f3ec;touch-action:pan-y}
+.scenario{height:100svh;min-height:420px;position:relative;overflow:hidden;isolation:isolate;background:#caff56;color:#151615;touch-action:pan-y}
 .scenario-top{position:absolute;z-index:5;left:5%;right:5%;top:95px;display:flex;align-items:center;justify-content:space-between;font-size:11px;letter-spacing:.06em;color:#f4f3ecc0;pointer-events:none}
 .scenario-top a{pointer-events:auto;border-bottom:1px solid #ffffff50;padding-bottom:5px}.eyebrow{display:flex;gap:9px;align-items:center}.spark{font-size:24px}.scenario-heading{position:absolute;z-index:4;top:21%;left:20px;right:20px;text-align:center;pointer-events:none}.scenario-heading h1{font-size:15px;font-weight:400;letter-spacing:.1em;color:#ffffffa0}.scenario-heading p{display:none}
 .scenario-stage{position:absolute;inset:0;overflow:hidden}.liquid-defs{position:absolute;width:0;height:0}.liquid-rim{position:absolute;inset:0;width:100%;height:100%;z-index:3;pointer-events:none;overflow:visible}.liquid-rim path{fill:none;stroke:#ffffff8a;stroke-width:.003;filter:drop-shadow(0 0 6px #ffffff60)}
-.scene{position:absolute;inset:0;width:100%;height:100%;overflow:hidden;isolation:isolate;background:radial-gradient(ellipse at 50% 45%,color-mix(in srgb,var(--scene-color) 27%,#111621),#0a0e14 84%);color:#f5f4ed;visibility:hidden;pointer-events:none}
+.scene{position:absolute;inset:0;width:100%;height:100%;overflow:hidden;isolation:isolate;background:var(--scene-color);color:#151615;visibility:hidden;pointer-events:none}
 .scene[data-position=active]{visibility:visible;z-index:2;pointer-events:auto}.scene[data-position=outgoing]{visibility:visible;z-index:1}.scene[data-position=hidden]{z-index:0}
 .scene::after{content:"";position:absolute;inset:0;background:linear-gradient(#0001,transparent 25%,transparent 65%,#0006);pointer-events:none;z-index:2}
 .scene-copy{position:absolute;inset:28% 15% auto;z-index:3;text-align:center;display:flex;align-items:center;flex-direction:column}.scene-index{font-size:10px;letter-spacing:.2em;color:#fff9;margin-bottom:20px}.scene-copy h2{font-size:clamp(44px,6.2vw,98px);font-weight:450;line-height:1.12;letter-spacing:-.055em;text-wrap:balance;text-shadow:0 4px 24px #0002}.scene-copy p{font-size:clamp(14px,1.6vw,21px);line-height:1.65;margin-top:26px;max-width:640px;color:#f5f4eddd;text-wrap:balance}.scene-link{margin-top:32px;background:#f4f2e9;color:#161b20!important;padding:16px 25px;border-radius:100px;display:flex;align-items:center;gap:28px;font-size:14px;box-shadow:0 10px 40px #0001;transition:transform .25s,background .25s}.scene-link:hover{transform:translateY(-3px);background:white}.scene-link>span:last-child{font-size:22px}
@@ -154,4 +157,21 @@ if (root) {
 @media(max-width:480px){.scenario-heading{top:22%}.scene-copy{inset:32% 6% auto}.scene-copy h2{font-size:42px}.scene-copy p{font-size:14px}.scene-index{margin-bottom:16px}.scenario-controls{bottom:50px}.shuffle{position:static;font-size:0;gap:0}.shuffle>span:first-child{font-size:23px}.shuffle .t-zh,.shuffle .t-en{display:none}.scenario-help{bottom:28px;font-size:8px}.floating-tag{right:4%;top:17%}.art-label{left:6%;bottom:18%}.art-window{top:19%;left:-26%;opacity:.3}.art-mini{right:-20%;bottom:16%;opacity:.3}.art-record .art-window{right:-26%;top:17%}.art-record .art-mini{left:-20%}.scene-copy p{max-width:300px}}
 @media(max-height:650px){.scenario-top{top:74px}.scenario-heading{top:22%}.scene-copy{top:30%}.scene-index{margin-bottom:12px}.scene-copy h2{font-size:clamp(34px,5.5vw,70px)}.scene-copy p{margin-top:16px;font-size:14px}.scene-link{margin-top:19px;padding:11px 22px}.floating-tag{display:none}.art-label{bottom:17%}.scenario-controls{bottom:29px}.scenario-help{bottom:9px}.art-window{top:25%;transform:scale(.8) rotate(-12deg);transform-origin:left}.art-mini{bottom:16%;transform:scale(.75) rotate(12deg);transform-origin:right}}
 @media(prefers-reduced-motion:reduce){.scene-dots button,.scene-dots button>span,.scene-link{transition:none}.liquid-rim{display:none}.scene-link:hover{transform:none}}
+
+/* Restore the bright scene palette from the first preview (4acc100). */
+.scene::after{background:radial-gradient(ellipse at 50% 40%,#ffffff18,transparent 65%)}
+.scene-index,.scene-copy p{color:#151615b3}.scene-copy h2{text-shadow:none}
+.scenario-heading h1,.scenario-top,.scenario-top a,.shuffle{color:#151615b3}
+.scene-link{background:#151615;color:#fff!important}.scene-link:hover{background:#30352b}
+.art-window{background:#fafbf6;border-color:#fff;opacity:1;box-shadow:12px 22px 0 #15161516,25px 35px 35px #15161525}
+.window-bar{border-color:#15161520}.window-bar i{background:#15161555}.window-bar span{color:#15161599}
+.art-symbol{color:#151615}.mock-lines b{background:#15161520}.mock-lines b:last-child{background:var(--scene-color);opacity:1}
+.mock-grid i{background:var(--scene-color);border-color:#15161510}
+.art-mini{background:#242820;color:white;opacity:1;box-shadow:12px 16px 25px #0002}
+.art-halo{border-color:#15161515;background:radial-gradient(circle at 35% 25%,#ffffff80,transparent 64%);box-shadow:inset -20px -25px 40px #0001}
+.art-orbit{border-color:#15161518}.floating-tag,.art-label{background:#ffffffa0;color:#151615b3;border-color:#fff8}
+.scene-dots button>span{background:#15161588}.scene-dots button[aria-pressed=true]>span{background:#15161525}.scene-dots i{background:#151615}
+.scenario[data-user-paused=true] .scene-dots button[aria-pressed=true]>span{background:#15161566}.scenario-help{color:#15161588}
+.scenario :focus-visible{outline-color:#151615}
+
 </style>

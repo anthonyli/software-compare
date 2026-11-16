@@ -28,3 +28,6 @@ Reference observation: directly interacted with labs.google in the cloud browser
 ## Checks
 
 `npm test`, `npm run check:covers`, `npm run build`, and `npm run test:e2e`. `labs-scenarios.spec.ts` covers all scene links, controls, language switching, narrow/tablet/desktop layouts and reduced motion, and emits screenshots to the Labs visual preview CI artifact.
+
+## Latest refinement
+Restored the six original bright scene colors from commit 4acc100 (not darkened gradient approximations). Header stays transparent with dark high-contrast navigation. Six distinct organic silhouettes use different low-frequency lobes and phases. Each 2.4-second reveal reaches outward, breathes briefly, recoils gently, then expands beyond the viewport; the joins use smooth zero-velocity easing. Pointer hover does not pause anything. Explicit active-progress/Space pause, keyboard-focus protection and reduced-motion remain. Fixed-clock screenshots capture the hold/recoil/release states and all six shapes; realtime autoplay is independently tested. Labs was visually inspected in multiple continuous screenshot sequences; this is an original SVG interpretation, not a claim to reproduce its underlying shader or exact timing.
