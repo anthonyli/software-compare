@@ -127,7 +127,7 @@ test('camera push restarts through two complete automatic loops and repeated man
  await page.goto('/');await page.clock.runFor(1500);
  const root=page.locator('[data-scenario]');
  // Focus outside the hero so this genuinely exercises automatic rotation.
- await page.locator('[data-lang=zh]').focus();await page.clock.runFor(6000);
+ await page.locator('[data-lang=en]').focus();await page.clock.runFor(6000);
  for(let cycle=0;cycle<2;cycle++)for(let scene=0;scene<6;scene++){
   const id=await root.locator('[data-position=active] a').getAttribute('href');
   const start=Number(await root.getAttribute('data-camera-progress'));
