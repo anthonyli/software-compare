@@ -338,6 +338,68 @@
         "https://postmarkapp.com/support/article/how-do-i-verify-a-domain",
         "https://postmarkapp.com/terms-of-service"
       ]
+    },
+    {
+      "id": "amazon-ses",
+      "name": "Amazon SES",
+      "official_url": "https://aws.amazon.com/ses/pricing/",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "按量付费",
+      "price_summary": "SMTP 与 API 事务邮件；新账户默认 Essentials 按量计费，限时 AWS 抵扣金不是永久免费额度，面向未验证收件人需生产审批。",
+      "prices": [
+        {
+          "plan": "Essentials",
+          "price": "0.16",
+          "currency": "USD",
+          "period": "每千封",
+          "note": "新 SES 账户默认 Essentials：每月首 1,000 万封内 $0.16/1,000 封；不是每月固定费。可切换 à-la-carte $0.10/1,000 封；两者附件均另收 $0.12/GB，其他选项另计。"
+        }
+      ],
+      "free_tier_limits": "大陆开户资格未核实；本项按全球 AWS 公开资料，不等同中国区。旧 SES 每月 3,000 封、首年免费方案已不向新客户开放。AWS 新旧注册流程资料有差异，升级后抵扣金到期日以账户显示为准；未开户、绑卡或实测。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": "未知",
+      "collected_at": "2026-11-16",
+      "summary": "SMTP 与 API 事务邮件；新账户默认 Essentials 按量计费，限时 AWS 抵扣金不是永久免费额度，面向未验证收件人需生产审批。",
+      "features": {
+        "send": {
+          "value": "yes",
+          "note": "支持 SMTP、SES API 与 SDK 发送事务邮件；按收件人计费，附件、可选功能及关联服务可能另收费，不承诺全部使用只收基础邮件费。"
+        },
+        "quota": {
+          "value": "partial",
+          "note": "2026-07-21 起新客户不再获得旧 SES 每月 3,000 封首年免费额度。符合资格的 AWS 新客获 $100 抵扣金，完成活动可再获最高 $100；不是每月发放，也不是 SES 专用。Free 账户期限为 6 个月或抵扣金耗尽，以先到者为准。"
+        },
+        "domains": {
+          "value": "yes",
+          "note": "生产模式仍需验证发件邮箱或域名身份；沙箱还要求收件邮箱或域名已验证，模拟器除外。域名 DNS 验证不等于生产权限审批；可验证域名数量未核实。"
+        },
+        "approval": {
+          "value": "no",
+          "note": "沙箱按 AWS 区域管理，最多 200 封/24 小时、1 封/秒；这是发送限制，不是免费额度。向未验证收件人发送需申请生产权限，提交网站与用途并确认退信、投诉处理；不保证获批。"
+        },
+        "cardless": {
+          "value": "partial",
+          "note": "当前 AWS Free Tier FAQ 表示多数新客注册无需支付方式，但身份核验可能要求补充；不承诺所有地区、账户或 SES 生产用途免卡，旧注册流程要求可能不同。"
+        },
+        "overflow": {
+          "value": "partial",
+          "note": "Free 账户抵扣金耗尽或期限结束会暂停，继续使用需升级；Paid 账户超出抵扣金或不适用抵扣的使用按标准价收费。SES 发送额度与余额是不同限制，不把付费计费视为无限发送或自动排队保证。"
+        }
+      },
+      "sources": [
+        "https://aws.amazon.com/ses/pricing/",
+        "https://aws.amazon.com/blogs/messaging-and-targeting/introducing-amazon-simple-email-service-ses-pricing-plans/",
+        "https://docs.aws.amazon.com/ses/latest/dg/request-production-access.html",
+        "https://aws.amazon.com/free/free-tier-faqs/",
+        "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier-plans.html"
+      ]
     }
   ]
 }

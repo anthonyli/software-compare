@@ -2,6 +2,7 @@ import {test,expect,type Locator} from '@playwright/test';
 import {mkdir} from 'node:fs/promises';
 test.use({extraHTTPHeaders:{'CF-Connecting-IP':'192.0.2.218'}});
 const products=[
+ {id:'amazon-ses',summary:['面向未验证收件人需生产审批','unverified recipients require production approval'],limits:['大陆开户资格未核实','Mainland China signup eligibility is unverified']},
  {id:'postmark',summary:['向外部域名发送前需账户审批','Account approval is required before sending to external domains'],limits:['Free 不允许月度超额','Free does not allow monthly overages']},
  {id:'smtp2go',summary:['新账户仍需审查','New accounts remain subject to review'],limits:['月额度耗尽后新增发送拒收，不排队到下月','After the monthly allowance is exhausted, new sends are rejected, not queued for next month']},
  {id:'resend',summary:['无需生产审批，仍须验证域名 DNS','no production approval, but domain DNS verification is required'],limits:['超额返回 429，不排队或重试','Over limit: 429, no queue or retry']},
@@ -54,6 +55,10 @@ test('transactional email limits and covers render in both languages and widths'
      await expect(text).toContainText(item.limits[lang==='en'?1:0]);
      if(lang==='en')await expect(text).not.toHaveText(/[\u4e00-\u9fff]/);
     }
+    if(item.id==='amazon-ses'){
+     const checks=lang==='en'?['per recipient','six months','verified sender','200 messages per 24 hours','identity checks','Paid accounts charge']:['按收件人计费','6 个月','验证发件','200 封/24 小时','身份核验','Paid 账户'];
+     for(let i=0;i<6;i++)await expect(page.locator('.feature-row p '+active).nth(i)).toContainText(checks[i]);
+    }
     if(item.id==='postmark'){
      const checks=lang==='en'?['separate message streams','100 emails per account/month','10 custom sending domains','your own domains added and verified','no credit card required','mechanisms are unverified']:['独立消息流','每账户每月 100','10 个自定义发信域名','账户已添加且验证的自有域名','无需信用卡','机制未核实'];
      for(let i=0;i<6;i++)await expect(page.locator('.feature-row p '+active).nth(i)).toContainText(checks[i]);
@@ -75,6 +80,7 @@ test('transactional email limits and covers render in both languages and widths'
      if(lang==='en')await expect(note).not.toHaveText(/[\u4e00-\u9fff]/);
     }
     expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+    if(item.id==='amazon-ses'){await page.evaluate(()=>window.scrollTo(0,0));await expect.poll(()=>page.evaluate(()=>scrollY)).toBe(0);await page.screenshot({path:`../docs/design/previews/payment-page-mail-amazon-ses-detail-${lang}-${width}.png`,fullPage:true});}
     if(item.id==='postmark'){await page.evaluate(()=>window.scrollTo(0,0));await expect.poll(()=>page.evaluate(()=>scrollY)).toBe(0);await page.screenshot({path:`../docs/design/previews/payment-page-mail-postmark-detail-${lang}-${width}.png`,fullPage:true});}
     if(item.id==='smtp2go'){await page.evaluate(()=>window.scrollTo(0,0));await expect.poll(()=>page.evaluate(()=>scrollY)).toBe(0);await page.screenshot({path:`../docs/design/previews/payment-page-mail-smtp2go-detail-${lang}-${width}.png`,fullPage:true});}
    }
