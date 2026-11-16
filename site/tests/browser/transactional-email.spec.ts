@@ -2,6 +2,7 @@ import {test,expect,type Locator} from '@playwright/test';
 import {mkdir} from 'node:fs/promises';
 test.use({extraHTTPHeaders:{'CF-Connecting-IP':'192.0.2.218'}});
 const products=[
+ {id:'postmark',summary:['向外部域名发送前需账户审批','Account approval is required before sending to external domains'],limits:['Free 不允许月度超额','Free does not allow monthly overages']},
  {id:'smtp2go',summary:['新账户仍需审查','New accounts remain subject to review'],limits:['月额度耗尽后新增发送拒收，不排队到下月','After the monthly allowance is exhausted, new sends are rejected, not queued for next month']},
  {id:'resend',summary:['无需生产审批，仍须验证域名 DNS','no production approval, but domain DNS verification is required'],limits:['超额返回 429，不排队或重试','Over limit: 429, no queue or retry']},
  {id:'mailersend',summary:['正式 Free 需审批、组织地址和信用卡','ongoing Free requires approval, organization address and a credit card'],limits:['不支持额外付费发送量，额度用尽后暂停','Extra paid usage is unavailable; sends pause at the limit']},
@@ -53,6 +54,10 @@ test('transactional email limits and covers render in both languages and widths'
      await expect(text).toContainText(item.limits[lang==='en'?1:0]);
      if(lang==='en')await expect(text).not.toHaveText(/[\u4e00-\u9fff]/);
     }
+    if(item.id==='postmark'){
+     const checks=lang==='en'?['separate message streams','100 emails per account/month','10 custom sending domains','your own domains added and verified','no credit card required','mechanisms are unverified']:['独立消息流','每账户每月 100','10 个自定义发信域名','账户已添加且验证的自有域名','无需信用卡','机制未核实'];
+     for(let i=0;i<6;i++)await expect(page.locator('.feature-row p '+active).nth(i)).toContainText(checks[i]);
+    }
     if(item.id==='smtp2go'){
      await expect(freeLimits).toContainText(lang==='en'?'past 5 days':'过去 5 天');
      await expect(page.locator('.feature-row p '+active).nth(1)).toContainText(lang==='en'?'25/hour':'每小时 25');
@@ -70,6 +75,7 @@ test('transactional email limits and covers render in both languages and widths'
      if(lang==='en')await expect(note).not.toHaveText(/[\u4e00-\u9fff]/);
     }
     expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+    if(item.id==='postmark'){await page.evaluate(()=>window.scrollTo(0,0));await expect.poll(()=>page.evaluate(()=>scrollY)).toBe(0);await page.screenshot({path:`../docs/design/previews/payment-page-mail-postmark-detail-${lang}-${width}.png`,fullPage:true});}
     if(item.id==='smtp2go'){await page.evaluate(()=>window.scrollTo(0,0));await expect.poll(()=>page.evaluate(()=>scrollY)).toBe(0);await page.screenshot({path:`../docs/design/previews/payment-page-mail-smtp2go-detail-${lang}-${width}.png`,fullPage:true});}
    }
   }
