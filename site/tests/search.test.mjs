@@ -29,6 +29,6 @@ test('exact name precedes description or fuzzy matches',()=>{assert.equal(search
 test('real mail catalog descriptions contain requested keywords',()=>{
  const c=JSON.parse(readFileSync(new URL('../../categories/transactional-email.json',import.meta.url)));
  const real=prepareSearchIndex(c.products.map(p=>({...p,category_name:c.category_name_zh})));
- assert.deepEqual(new Set(searchCatalog(real,'邮件').map(p=>p.id)),new Set(['resend','mailersend','brevo','smtp2go','postmark']));
+ assert.deepEqual(new Set(searchCatalog(real,'邮件').map(p=>p.id)),new Set(['resend','mailersend','brevo','smtp2go','postmark','amazon-ses']));
  assert.equal(searchCatalog(real,'验证邮件')[0].id,'resend');
 });
