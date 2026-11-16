@@ -30,6 +30,8 @@ const {
 } = Astro.props;
 
 const canonical = new URL(canonicalPath, siteConfig.siteUrl).toString();
+const socialImage = new URL("/social/compare-preview.png", siteConfig.siteUrl).toString();
+const socialImageAlt = "Compare 软件对比：免费浏览与比较，无需注册 / Free-to-use software discovery and comparison";
 const fullTitle = title.includes(siteConfig.name) || title.includes("Compare")
   ? title
   : `${title} · ${siteConfig.name}`;
@@ -113,7 +115,15 @@ if (ungrouped.length) {
     <meta property="og:url" content={canonical} />
     <meta property="og:locale" content="zh_CN" />
     <meta property="og:site_name" content="Compare" />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content={socialImage} />
+    <meta property="og:image:secure_url" content={socialImage} />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={socialImageAlt} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content={socialImage} />
+    <meta name="twitter:image:alt" content={socialImageAlt} />
     <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={description} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
