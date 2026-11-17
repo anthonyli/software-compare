@@ -6,9 +6,9 @@ const c=read('../../categories/browsers.json');
 const en=read('../src/i18n/content-en.json');
 const by=id=>c.products.find(p=>p.id===id);
 test('browsers keep human browsers separate from agent tools and retired products',()=>{
- assert.deepEqual(c.products.map(p=>p.id),['chrome','firefox','safari','edge','brave','comet','dia']);
- assert.equal(c.products.length,7);
- for(const p of c.products){assert(p.sources.length>=2);assert.equal(p.collected_at,'2026-11-17');assert.deepEqual(Object.keys(p.features),c.features.map(f=>f.key));}
+ assert.deepEqual(c.products.map(p=>p.id),['chrome','firefox','safari','edge','brave','comet','dia','ego-lite']);
+ assert.equal(c.products.length,8);
+ for(const p of c.products){assert(p.sources.length>=2);assert.match(p.collected_at,/^2026-11-(17|18)$/);assert.deepEqual(Object.keys(p.features),c.features.map(f=>f.key));}
 });
 test('browser pricing and data boundaries remain explicit',()=>{
  assert.match(by('dia').price_summary,/免费但无 AI/);assert.match(by('dia').free_tier_limits,/14 天/);assert.match(by('dia').free_tier_limits,/可选自动充值/);assert.match(by('dia').notes,/30 天/);assert.deepEqual(by('dia').platforms,['macOS','Windows']);
