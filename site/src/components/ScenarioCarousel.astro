@@ -1,0 +1,236 @@
+---
+import T from './T.astro';
+const scenes = [
+{slug:'web-hosting',zh:'部署一个网站',en:'Launch a website',sub:'让你的下一个想法，真正上线。',subEn:'Give your next idea a place on the internet.',tag:'BUILD / 01',color:'#caff56',kind:'web',tools:'Cloudflare · Vercel',symbol:'↗',label:'↗ Live',file:'your-next-idea.site'},
+{slug:'screen-recorders',zh:'录下精彩瞬间',en:'Capture your screen',sub:'从灵感演示，到值得分享的教程。',subEn:'From a quick walkthrough to your next great tutorial.',tag:'CREATE / 02',color:'#bcb3ff',kind:'record',tools:'OBS Studio · Screen Studio',symbol:'▶',label:'● REC',file:'capture.mov'},
+{slug:'transactional-email',zh:'发出第一封邮件',en:'Send your first email',sub:'验证码、产品通知，让消息准时抵达。',subEn:'Deliver sign-in codes, updates and a little delight.',tag:'CONNECT / 03',color:'#ffb791',kind:'mail',tools:'Resend · Postmark',symbol:'✉',label:'↗ Delivered',file:'hello@your-idea.com'},
+{slug:'cloud-sql-databases',zh:'给数据一个家',en:'Make room for data',sub:'从第一行数据，到下一个大项目。',subEn:'From your first row to your next big project.',tag:'DEVELOP / 04',color:'#83def4',kind:'data',tools:'Turso · Neon',symbol:'≋',label:'SQL',file:'your-database'},
+{slug:'image-editors',zh:'把灵感变成画面',en:'Make something visual',sub:'修图、绘画、创作，找到顺手的画笔。',subEn:'Retouch, paint and find your creative flow.',tag:'IMAGINE / 05',color:'#ffbadb',kind:'image',tools:'GIMP · Krita',symbol:'✳',label:'✳ CREATE',file:'untitled.canvas'},
+{slug:'backend-as-a-service',zh:'搭好产品的后端',en:'Build behind the scenes',sub:'认证、存储与数据库，少一点重复工作。',subEn:'Auth, storage and databases. Less repetitive work.',tag:'MAKE / 06',color:'#a7ead1',kind:'backend',tools:'Supabase · Appwrite',symbol:'{ }',label:'✓ Connected',file:'your-next-app'},
+];
+---
+<section class="scenario" data-scenario tabindex="0" aria-describedby="scenario-help" aria-roledescription="carousel" aria-label="探索使用场景" data-i18n="aria-label" data-zh="探索使用场景" data-en="Explore use cases">
+<div class="scenario-top"><span class="eyebrow"><span class="spark">✳</span> COMPARE / PLAYGROUND</span><a href="#categories"><T zh="所有分类" en="All categories"/> ↗</a></div>
+<div class="scenario-heading"><h1><T zh="今天，你想做什么？" en="What will you make today?"/></h1><p><T zh="从一个想法出发，发现刚刚好的工具。" en="Start with an idea. Find the tools to make it happen."/></p></div>
+<div class="scenario-stage">
+<svg class="liquid-defs" aria-hidden="true"><defs>{scenes.map((_,i)=><clipPath id={`liquid-clip-${i}`} clipPathUnits="objectBoundingBox"><path data-liquid-path={i} d="M0,0H1V1H0Z"/></clipPath>)}</defs></svg>
+<svg class="liquid-rim" viewBox="0 0 1 1" preserveAspectRatio="none" aria-hidden="true"><path data-liquid-rim d=""/></svg>
+{scenes.map((s,i)=><article class="scene" data-scene data-position={i===0?'active':'hidden'} aria-hidden={i!==0?'true':'false'} style={`--scene-color:${s.color}`}><div class="scene-copy"><span class="scene-index">{s.tag}</span><h2><T zh={s.zh} en={s.en}/></h2><p><T zh={s.sub} en={s.subEn}/></p><a class="scene-link" href={`/c/${s.slug}/`} tabindex={i===0?0:-1}><T zh="发现适合的工具" en="Explore the tools"/><span>↗</span></a></div><div class={`scene-art art-${s.kind}`} aria-hidden="true"><div class="art-halo"></div><div class="art-orbit"></div><div class="floating-tag">{s.label}</div><div class="art-window"><div class="window-bar"><i></i><i></i><i></i><span>{s.file}</span></div><div class="window-content"><div class="art-symbol">{s.symbol}</div><div class="mock-lines"><b></b><b></b><b></b></div><div class="mock-grid"><i></i><i></i><i></i></div></div></div><div class="art-mini"><span>{s.kind==='record'?'00:24':s.kind==='data'?'∞':s.kind==='image'?'Aa':s.kind==='backend'?'API':'⌘'}</span><div class="mini-bars"><i></i><i></i><i></i><i></i><i></i></div></div><div class="art-label">{s.tools}</div></div></article>)}
+</div>
+<div class="scenario-controls"><button class="shuffle" data-shuffle><span>⤨</span><T zh="给我点灵感" en="Surprise me"/></button><div class="scene-dots">{scenes.map((s,i)=><button data-dot={i} aria-label={s.zh} data-i18n="aria-label" data-zh={s.zh} data-en={s.en} aria-pressed={i===0?'true':'false'}><span><i></i></span></button>)}</div></div><p id="scenario-help" class="scenario-help"><T zh="点击当前进度暂停 · 左右键切换" en="Tap the active progress to pause · Arrow keys to explore"/></p><p class="scenario-status sr-only" aria-live="polite" aria-atomic="true"></p>
+</section>
+<script>
+const root = document.querySelector<HTMLElement>('[data-scenario]');
+if (root) {
+  const slides = Array.from(root.querySelectorAll<HTMLElement>('[data-scene]'));
+  const dots = Array.from(root.querySelectorAll<HTMLButtonElement>('[data-dot]'));
+  const paths = Array.from(root.querySelectorAll<SVGPathElement>('[data-liquid-path]'));
+  const rim = root.querySelector<SVGPathElement>('[data-liquid-rim]')!;
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+  let current = -1, frame = 0, generation = 0;
+  let timer: ReturnType<typeof setTimeout> | undefined;
+  let progress: Animation | undefined;
+  let userPaused = false, focused = false, inView = true;
+  const delay = 6000, duration = 1250;
+  let depthFrame=0, depthElapsed=0, depthLast=0, depthPaused=false;
+  let depthCards: HTMLElement[]=[];
+  function resetDepth(slide?:HTMLElement){
+    cancelAnimationFrame(depthFrame);depthElapsed=0;depthLast=0;
+    // Keep the outgoing frame where it ended until the new mask covers it.
+    if(!slide)root!.querySelectorAll<HTMLElement>('.art-window,.art-mini,.floating-tag,.art-label').forEach(card=>{card.style.translate='';card.style.rotate='';});
+    depthCards=slide?['.art-window','.art-mini','.floating-tag','.art-label'].map(selector=>slide.querySelector<HTMLElement>(selector)!):[];
+    function advance(now:number){
+      if(depthLast&&!depthPaused)depthElapsed+=now-depthLast;
+      depthLast=now;
+      const t=Math.min(1,depthElapsed/delay);
+      depthCards.forEach((card,i)=>{
+        // Four separate tracks: middle-left drifts down/left, near-right
+        // rises/right, far tag crosses slowly, lower label rises/left.
+        // The fixed title is the visual anchor, not part of a global zoom.
+        const tracks=[
+          [55,-75,-340, -45,165,170],
+          [-45,65,-440, 45,-65,260],
+          [-35,-25,-620, 55,25,-180],
+          [35,40,-320, -45,-45,100],
+        ];
+        const [x0,y0,z0,x1,y1,z1]=tracks[i];
+        const mirror=current===1?-1:1;
+        const x=(x0+(x1-x0)*t)*mirror;
+        const y=y0+(y1-y0)*t;
+        const z=z0+(z1-z0)*t;
+        card.style.translate=`${x}px ${y}px ${z}px`;
+        card.style.rotate=`${(i%2?1:-1)*(t-.5)*7}deg`;
+      });
+      root!.dataset.cameraProgress=t.toFixed(4);
+      if(depthCards.length)depthFrame=requestAnimationFrame(advance);
+    }
+    if(slide)advance(performance.now());
+  }
+
+  // A smooth, continuously deforming liquid boundary. Coordinates are normalized,
+  // so the same reveal covers wide, narrow and resized viewports without a canvas.
+  function wavePath(radius: number, phase: number, strength: number, scene = current, rotation = 0) {
+    // Deliberate families: rounded square, five-petal flower, bean, four-leaf
+    // clover, scalloped bloom, and almost-round pebble (not six noisy blobs).
+    const lobes=[3,5,2,4,6,1][scene];
+    const seed=[.35,.8,1.1,Math.PI,0,.4][scene];
+    const amplitude=[.14,.18,.24,.30,.14,.035][scene]*(strength/.14);
+    const drift=phase*[.25,.22,.20,.08,.16,.12][scene];
+    const aspect=root!.clientWidth/root!.clientHeight;
+    const sx=Math.min(1,1/aspect),sy=Math.min(1,aspect);
+    const points = Array.from({length:72}, (_,i) => {
+      const a = i / 72 * Math.PI * 2;
+      const family=scene===0
+        ? 1/Math.pow(Math.pow(Math.abs(Math.cos(a)),6)+Math.pow(Math.abs(Math.sin(a)),6),1/6)
+        : 1 + amplitude * Math.cos(a*lobes + drift+seed);
+      // A traveling edge wave remains alive during the quick recoil; the
+      // silhouette is never a frozen cutout waiting for a scale animation.
+      const ripple=.022*Math.sin(a*9-phase*20)+.009*Math.sin(a*13+phase*14);
+      const r = radius * (family+ripple);
+      return [.5 + Math.cos(a+rotation)*r*sx, .48 + Math.sin(a+rotation)*r*sy];
+    });
+    const mid = (a:number[], b:number[]) => `${((a[0]+b[0])/2).toFixed(5)},${((a[1]+b[1])/2).toFixed(5)}`;
+    let d = `M${mid(points[71],points[0])}`;
+    points.forEach((p,i) => { d += `Q${p[0].toFixed(5)},${p[1].toFixed(5)} ${mid(p,points[(i+1)%72])}`; });
+    return d + 'Z';
+  }
+  function settle() {
+    cancelAnimationFrame(frame);
+    slides.forEach((slide,i) => {
+      slide.style.clipPath = 'none'; slide.style.opacity = '';
+      slide.dataset.position = i === current ? 'active' : 'hidden';
+    });
+    rim.setAttribute('d',''); root!.dataset.transitioning = 'false';
+    root!.dataset.revealProgress = '1';
+  }
+  function schedule() {
+    clearTimeout(timer); progress?.cancel();
+    if (current < 0) return;
+    if (reduced.matches) { settle(); root!.getAnimations({subtree:true}).forEach(a=>a.cancel()); resetDepth(); }
+    const paused = userPaused || focused || !inView || document.hidden || reduced.matches;
+    root!.dataset.autoplay = paused ? 'paused' : 'running';
+    root!.dataset.userPaused = String(userPaused);
+    depthPaused=paused;
+    const en = document.documentElement.lang === 'en';
+    dots.forEach((dot,i)=>{
+      const name=dot.getAttribute(en?'data-en':'data-zh')!;
+      dot.setAttribute('aria-label', i===current && !reduced.matches ? `${name} · ${userPaused?(en?'Resume autoplay':'继续自动轮播'):(en?'Pause autoplay':'暂停自动轮播')}` : name);
+    });
+    if (!paused) {
+      progress=dots[current].querySelector('i')!.animate([{transform:'scaleX(0)'},{transform:'scaleX(1)'}],{duration:delay,fill:'forwards'});
+      timer=setTimeout(()=>show(current+1,false),delay);
+    }
+  }
+  function show(index:number, announce=true) {
+    const next=(index+slides.length)%slides.length;
+    if(next===current){schedule();return;}
+    const previous=current, token=++generation;
+    settle(); current=next;
+    // A selected progress dot is not a keyboard-focus pause target anymore.
+    focused=!!document.activeElement&&root!.contains(document.activeElement)&&document.activeElement!==dots[current];
+    slides.forEach((slide,i)=>{
+      slide.dataset.position=i===current?'active':i===previous?'outgoing':'hidden';
+      slide.setAttribute('aria-hidden',String(i!==current));
+      slide.querySelector('a')!.tabIndex=i===current?0:-1;
+      dots[i].setAttribute('aria-pressed',String(i===current));
+    });
+    if(!reduced.matches){
+      const entering=slides[current];
+      // Always restart from the far plane, including after a full auto loop.
+      resetDepth(entering);
+      entering.style.clipPath=`url(#liquid-clip-${current})`;
+      paths[current].setAttribute('d',wavePath(.015,0,.18));
+      root!.dataset.transitioning='true';
+      root!.dataset.revealProgress='0';
+      const start=performance.now();
+      const coverRadius=Math.hypot(root!.clientWidth,root!.clientHeight)/Math.min(root!.clientWidth,root!.clientHeight)*.8;
+      function tick(now:number){
+        if(token!==generation)return;
+        const t=Math.min(1,(now-start)/duration);
+        // Expansion accelerates across the screen; the wave edge continually ripples.
+        const smooth=(x:number)=>x*x*(3-2*x);
+        // A quick catch, not a long held breath: reach (525ms), recoil
+        // (163ms), then visibly turn the silhouette as it releases (562ms).
+        const radius=t<.42 ? .015+.305*smooth(t/.42)
+          : t<.55 ? .32-.035*smooth((t-.42)/.13)
+          : .285+(coverRadius-.285)*smooth((t-.55)/.45);
+        const turn=smooth(Math.max(0,Math.min(1,(t-.51)/.36)))*[.62,-.52,.7,-.65,.48,-.45][current];
+        root!.dataset.revealRadius=radius.toFixed(4);
+        root!.dataset.revealRotation=turn.toFixed(4);
+        const d=wavePath(radius,t*1.2,.14-.08*Math.max(0,(t-.8)/.2),current,turn);
+        paths[current].setAttribute('d',d);rim.setAttribute('d',d);
+        entering.style.opacity=String(Math.min(1,.6+t*1.6));
+        rim.style.opacity=String(Math.sin(Math.PI*t)*.65);
+        root!.dataset.revealProgress=t.toFixed(3);
+        if(t<1)frame=requestAnimationFrame(tick);else settle();
+      }
+      frame=requestAnimationFrame(tick);
+    } else settle();
+    if(announce)root!.querySelector('.scenario-status')!.textContent=`${current+1} / ${slides.length}: ${dots[current].getAttribute(document.documentElement.lang==='en'?'data-en':'data-zh')}`;
+    schedule();
+  }
+  dots.forEach((dot,i)=>dot.addEventListener('click',()=>{
+    if(i===current){userPaused=!userPaused;focused=false;schedule();}
+    else show(i);
+  }));
+  root.querySelector('[data-shuffle]')?.addEventListener('click',()=>show(current+1+Math.floor(Math.random()*(slides.length-1))));
+  root.addEventListener('keydown',e=>{
+    if(e.key==='ArrowRight'){e.preventDefault();show(current+1);}
+    if(e.key==='ArrowLeft'){e.preventDefault();show(current-1);}
+    if(e.code==='Space' && e.target===root){e.preventDefault();userPaused=!userPaused;schedule();}
+  });
+  // Hover never interrupts playback. Keyboard focus and explicit pause still do.
+  root.addEventListener('focusin',e=>{focused=e.target!==dots[current];schedule();});
+  root.addEventListener('focusout',e=>{focused=!!e.relatedTarget&&root!.contains(e.relatedTarget as Node)&&e.relatedTarget!==dots[current];schedule();});
+  document.addEventListener('visibilitychange',schedule);
+  reduced.addEventListener('change',schedule);
+  new MutationObserver(schedule).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
+  new IntersectionObserver(entries=>{inView=entries[0].isIntersecting;schedule();}).observe(root);
+  let x=0,y=0;
+  root.addEventListener('touchstart',e=>{x=e.touches[0].clientX;y=e.touches[0].clientY;clearTimeout(timer);},{passive:true});
+  root.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-x,dy=e.changedTouches[0].clientY-y;if(Math.abs(dx)>60&&Math.abs(dx)>Math.abs(dy)*1.5)show(current+(dx<0?1:-1));else schedule();},{passive:true});
+  root.addEventListener('touchcancel',schedule,{passive:true});
+  show(Math.floor(Math.random()*slides.length),false);
+}
+</script>
+<style>
+.scenario{height:100svh;min-height:420px;position:relative;overflow:hidden;isolation:isolate;background:#caff56;color:#151615;touch-action:pan-y}
+.scenario-top{position:absolute;z-index:5;left:5%;right:5%;top:95px;display:flex;align-items:center;justify-content:space-between;font-size:11px;letter-spacing:.06em;color:#f4f3ecc0;pointer-events:none}
+.scenario-top a{pointer-events:auto;border-bottom:1px solid #ffffff50;padding-bottom:5px}.eyebrow{display:flex;gap:9px;align-items:center}.spark{font-size:24px}.scenario-heading{position:absolute;z-index:4;top:21%;left:20px;right:20px;text-align:center;pointer-events:none}.scenario-heading h1{font-size:15px;font-weight:400;letter-spacing:.1em;color:#ffffffa0}.scenario-heading p{display:none}
+.scenario-stage{position:absolute;inset:0;overflow:hidden}.liquid-defs{position:absolute;width:0;height:0}.liquid-rim{position:absolute;inset:0;width:100%;height:100%;z-index:3;pointer-events:none;overflow:visible}.liquid-rim path{fill:none;stroke:#ffffff8a;stroke-width:.003;filter:drop-shadow(0 0 6px #ffffff60)}
+.scene{position:absolute;inset:0;width:100%;height:100%;overflow:hidden;isolation:isolate;background:var(--scene-color);color:#151615;visibility:hidden;pointer-events:none}
+.scene[data-position=active]{visibility:visible;z-index:2;pointer-events:auto}.scene[data-position=outgoing]{visibility:visible;z-index:1}.scene[data-position=hidden]{z-index:0}
+.scene::after{content:"";position:absolute;inset:0;background:linear-gradient(#0001,transparent 25%,transparent 65%,#0006);pointer-events:none;z-index:2}
+.scene-copy{position:absolute;inset:28% 15% auto;z-index:3;text-align:center;display:flex;align-items:center;flex-direction:column}.scene-index{font-size:10px;letter-spacing:.2em;color:#fff9;margin-bottom:20px}.scene-copy h2{font-size:clamp(44px,6.2vw,98px);font-weight:450;line-height:1.12;letter-spacing:-.055em;text-wrap:balance;text-shadow:0 4px 24px #0002}.scene-copy p{font-size:clamp(14px,1.6vw,21px);line-height:1.65;margin-top:26px;max-width:640px;color:#f5f4eddd;text-wrap:balance}.scene-link{margin-top:32px;background:#f4f2e9;color:#161b20!important;padding:16px 25px;border-radius:100px;display:flex;align-items:center;gap:28px;font-size:14px;box-shadow:0 10px 40px #0001;transition:transform .25s,background .25s}.scene-link:hover{transform:translateY(-3px);background:white}.scene-link>span:last-child{font-size:22px}
+.scene-art{position:absolute;inset:0;pointer-events:none;perspective:1050px;perspective-origin:50% 48%}.art-halo{position:absolute;width:85vw;height:85vw;left:7.5vw;top:calc(47% - 42.5vw);border:1px solid color-mix(in srgb,var(--scene-color) 12%,transparent);border-radius:50%;box-shadow:0 0 100px color-mix(in srgb,var(--scene-color) 5%,transparent),inset 0 0 100px color-mix(in srgb,var(--scene-color) 5%,transparent)}.art-orbit{position:absolute;width:110%;height:75%;left:-5%;top:15%;border:1px solid #ffffff09;border-radius:50%;transform:rotate(-24deg)}
+.art-window{position:absolute;left:-5%;top:27%;width:340px;height:255px;background:linear-gradient(130deg,#ffffff16,#ffffff06);border:1px solid #ffffff25;box-shadow:0 30px 60px #0005,inset 0 1px #fff2;border-radius:18px;transform:rotateY(18deg) rotateZ(-14deg);opacity:.72;backdrop-filter:blur(12px)}.window-bar{height:32px;border-bottom:1px solid #fff2;display:flex;align-items:center;gap:5px;padding:0 13px}.window-bar i{height:5px;width:5px;border-radius:50%;background:#fff5}.window-bar span{font-size:9px;color:#fff8;margin-left:9px}.window-content{position:relative;padding:22px}.art-symbol{font-size:74px;line-height:1;font-weight:500;color:var(--scene-color)}.mock-lines{position:absolute;left:125px;right:25px;top:36px;display:grid;gap:10px}.mock-lines b{height:6px;background:#fff3;border-radius:8px}.mock-lines b:nth-child(2){width:70%}.mock-lines b:last-child{width:40%;background:var(--scene-color);opacity:.5}.mock-grid{display:flex;gap:12px;margin-top:24px}.mock-grid i{flex:1;height:72px;border-radius:9px;background:linear-gradient(140deg,color-mix(in srgb,var(--scene-color) 55%,transparent),#ffffff08);border:1px solid #fff2}.mock-grid i:nth-child(2){opacity:.6}.mock-grid i:last-child{opacity:.35}
+.art-mini{position:absolute;right:-2%;bottom:20%;width:270px;height:290px;padding:35px;border-radius:28px;border:1px solid #fff2;background:linear-gradient(135deg,#ffffff12,#ffffff03);box-shadow:0 30px 80px #0006;transform:rotateY(-20deg) rotateZ(12deg);opacity:.72;backdrop-filter:blur(14px)}.art-mini>span{font-size:65px;font-weight:350;letter-spacing:-.07em;color:var(--scene-color)}.mini-bars{display:flex;gap:12px;height:90px;align-items:flex-end;margin-top:20px}.mini-bars i{height:85%;width:22px;border-radius:8px;background:linear-gradient(var(--scene-color),color-mix(in srgb,var(--scene-color) 20%,transparent));opacity:.65}.mini-bars i:nth-child(2n){height:45%}.mini-bars i:nth-child(3){height:100%}.floating-tag{position:absolute;right:17%;top:15%;padding:15px 23px;border:1px solid #fff2;border-radius:14px;font-size:13px;background:#ffffff0c;box-shadow:0 15px 35px #0002;transform:rotate(12deg);color:#ffffff80}.art-label{position:absolute;left:17%;bottom:17%;font-size:12px;letter-spacing:.06em;border:1px solid #fff2;background:#ffffff08;padding:17px 24px;border-radius:14px;transform:rotate(-7deg);color:#ffffff80}
+.art-record .art-window{left:auto;right:-4%;top:18%;transform:rotateY(-16deg) rotateZ(12deg)}.art-record .art-mini{right:auto;left:-3%;bottom:17%;transform:rotateY(18deg) rotateZ(-12deg)}.art-record .floating-tag{right:auto;left:20%}.art-record .art-label{left:auto;right:15%}.art-mail .art-window{top:20%;transform:rotateY(12deg) rotateZ(-8deg)}.art-mail .art-symbol{font-size:85px}.art-data .mock-grid i{border-radius:50% / 20%;box-shadow:0 8px 0 #ffffff18}.art-image .art-symbol{font-size:85px}.art-image .mock-grid i{border-radius:50%}.art-backend .art-symbol{font-size:48px;padding:10px 0}
+.scenario-controls{position:absolute;z-index:6;left:0;right:0;bottom:38px;display:flex;align-items:center;justify-content:center;gap:25px}.shuffle{position:absolute;left:5%;display:flex;align-items:center;gap:8px;font-size:11px;color:#fff9;cursor:pointer}.shuffle>span:first-child{font-size:22px}.scene-dots{display:flex;gap:5px;align-items:center}.scene-dots button{cursor:pointer;display:grid;place-items:center;width:22px;height:36px;transition:width .35s}.scene-dots button>span{display:block;position:relative;overflow:hidden;height:6px;width:6px;background:#fff9;border-radius:10px;transition:width .35s}.scene-dots button[aria-pressed=true]{width:108px}.scene-dots button[aria-pressed=true]>span{width:100px;background:#ffffff35}.scene-dots i{position:absolute;inset:0;background:#f4f2e9;transform:scaleX(0);transform-origin:left}.scenario[data-user-paused=true] .scene-dots button[aria-pressed=true]>span{background:#ffffff80}.scenario-help{position:absolute;z-index:6;bottom:17px;left:0;right:0;text-align:center;font-size:9px;letter-spacing:.03em;color:#ffffff66;pointer-events:none}.scenario :focus-visible{outline:2px solid #fff;outline-offset:5px}.scenario:focus-visible{outline:2px solid #fff;outline-offset:-4px}
+@media(min-width:1700px){.art-window{left:3%;width:380px;height:280px}.art-mini{right:4%}}
+@media(max-width:800px){.scenario-top{top:82px;font-size:9px;left:20px;right:20px}.scenario-heading{top:20%}.scenario-heading h1{font-size:12px}.scene-copy{inset:28% 7% auto}.scene-copy h2{font-size:clamp(38px,7vw,64px)}.scene-copy p{font-size:15px;max-width:470px;margin-top:22px}.scene-link{font-size:12px;padding:13px 20px;margin-top:25px}.art-window{width:230px;height:180px;left:-12%;top:17%;opacity:.36}.art-mini{right:-10%;bottom:18%;width:170px;height:185px;padding:23px;opacity:.4}.art-mini>span{font-size:43px}.mini-bars{height:50px;gap:7px;margin-top:15px}.mini-bars i{width:15px;border-radius:5px}.window-content{padding:15px}.window-bar{height:25px}.window-bar span{font-size:7px}.art-symbol{font-size:47px}.mock-lines{left:85px;right:15px;top:25px;gap:7px}.mock-lines b{height:4px}.mock-grid{margin-top:15px;gap:8px}.mock-grid i{height:48px}.art-record .art-window{right:-12%;top:15%}.art-record .art-mini{left:-10%}.floating-tag{top:14%;right:10%;font-size:10px;padding:10px 14px;opacity:.65}.art-label{left:7%;bottom:17%;font-size:10px;padding:12px 15px;opacity:.65}.art-mail .art-symbol,.art-image .art-symbol{font-size:55px}.art-backend .art-symbol{font-size:34px}.shuffle{font-size:10px;left:20px}.scenario-controls{bottom:39px}.scene-dots{gap:2px}.scene-dots button{width:18px}.scene-dots button[aria-pressed=true]{width:70px}.scene-dots button[aria-pressed=true]>span{width:64px}}
+@media(max-width:480px){.scenario-heading{top:22%}.scene-copy{inset:32% 6% auto}.scene-copy h2{font-size:42px}.scene-copy p{font-size:14px}.scene-index{margin-bottom:16px}.scenario-controls{bottom:50px}.shuffle{position:static;font-size:0;gap:0}.shuffle>span:first-child{font-size:23px}.shuffle .t-zh,.shuffle .t-en{display:none}.scenario-help{bottom:28px;font-size:8px}.floating-tag{right:4%;top:17%}.art-label{left:6%;bottom:18%}.art-window{top:19%;left:-26%;opacity:.3}.art-mini{right:-20%;bottom:16%;opacity:.3}.art-record .art-window{right:-26%;top:17%}.art-record .art-mini{left:-20%}.scene-copy p{max-width:300px}}
+@media(max-height:650px){.scenario-top{top:74px}.scenario-heading{top:22%}.scene-copy{top:30%}.scene-index{margin-bottom:12px}.scene-copy h2{font-size:clamp(34px,5.5vw,70px)}.scene-copy p{margin-top:16px;font-size:14px}.scene-link{margin-top:19px;padding:11px 22px}.floating-tag{display:none}.art-label{bottom:17%}.scenario-controls{bottom:29px}.scenario-help{bottom:9px}.art-window{top:25%;transform:scale(.8) rotate(-12deg);transform-origin:left}.art-mini{bottom:16%;transform:scale(.75) rotate(12deg);transform-origin:right}}
+@media(prefers-reduced-motion:reduce){.scene-dots button,.scene-dots button>span,.scene-link{transition:none}.liquid-rim{display:none}.scene-link:hover{transform:none}}
+
+/* Restore the bright scene palette from the first preview (4acc100). */
+.scene::after{background:radial-gradient(ellipse at 50% 40%,#ffffff18,transparent 65%)}
+.scene-index,.scene-copy p{color:#151615b3}.scene-copy h2{text-shadow:none}
+.scenario-heading h1,.scenario-top,.scenario-top a,.shuffle{color:#151615b3}
+.scene-link{background:#151615;color:#fff!important}.scene-link:hover{background:#30352b}
+.art-window{background:#fafbf6;border-color:#fff;opacity:1;box-shadow:12px 22px 0 #15161516,25px 35px 35px #15161525}
+.window-bar{border-color:#15161520}.window-bar i{background:#15161555}.window-bar span{color:#15161599}
+.art-symbol{color:#151615}.mock-lines b{background:#15161520}.mock-lines b:last-child{background:var(--scene-color);opacity:1}
+.mock-grid i{background:var(--scene-color);border-color:#15161510}
+.art-mini{background:#242820;color:white;opacity:1;box-shadow:12px 16px 25px #0002}
+.art-halo{border-color:#15161515;background:radial-gradient(circle at 35% 25%,#ffffff80,transparent 64%);box-shadow:inset -20px -25px 40px #0001}
+.art-orbit{border-color:#15161518}.floating-tag,.art-label{background:#ffffffa0;color:#151615b3;border-color:#fff8}
+.scene-dots button>span{background:#15161588}.scene-dots button[aria-pressed=true]>span{background:#15161525}.scene-dots i{background:#151615}
+.scenario[data-user-paused=true] .scene-dots button[aria-pressed=true]>span{background:#15161566}.scenario-help{color:#15161588}
+.scenario :focus-visible{outline-color:#151615}
+
+/* A lit edge and offset side face add thickness, not merely a flat zoom. */
+.art-window,.art-mini{will-change:translate;transform-style:preserve-3d}
+.art-window::after,.art-mini::after{content:"";position:absolute;inset:5px -9px -9px 5px;border-radius:inherit;background:#15161530;border:1px solid #15161520;transform:translateZ(-10px);z-index:-1;pointer-events:none}
+@media(prefers-reduced-motion:reduce){.art-window,.art-mini{will-change:auto}}
+</style>
