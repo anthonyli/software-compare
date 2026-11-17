@@ -279,7 +279,7 @@ const sortedProducts = [...category.products].sort((a, b) => {
               {warn && <span class="chip chip-warn"><T zh={warn} en={maintenanceEn(warn)} /></span>}
             </div>
             <p class="mt-2 text-sm text-ink-soft"><T zh={priceZh.tableCell} en={priceEn.tableCell} /></p>
-            {category.slug === "agent-browser-tools" && <p class="mt-1 text-xs text-muted"><T zh={p.price_summary} en={tr(p.price_summary)} /></p>}
+            {(category.slug === "agent-browser-tools" || category.slug === "browsers") && <p class="mt-1 text-xs text-muted"><T zh={p.price_summary} en={tr(p.price_summary)} /></p>}
             {p.platforms.length > 0 && (
               <p class="mt-1 text-xs text-muted">
                 <span class="t-zh">{p.platforms.join(" · ")}</span>

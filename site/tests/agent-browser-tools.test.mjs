@@ -24,5 +24,5 @@ test('category renders boundaries and costs rather than only capability badges',
  const source=fs.readFileSync(new URL('site/src/pages/c/[slug].astro',root),'utf8');
  assert.match(source,/const showContext = .*category.slug === "agent-browser-tools"/);
  assert.match(source,/data-agent-browser-notes/);
- assert.match(source,/category.slug === "agent-browser-tools" && <p[^>]*><T zh=\{p.price_summary\}/);
+ assert.match(source,/category.slug === "agent-browser-tools" \|\| category.slug === "browsers"\) && <p[^>]*><T zh=\{p.price_summary\}/);
 });
