@@ -51,7 +51,7 @@ test('click, focus, hover and touch never stop autoplay across complete loops',a
  await expect(root).toBeFocused();
  expect(await root.locator('[aria-hidden=true]').evaluateAll(nodes=>nodes.some(el=>el.contains(document.activeElement)))).toBe(false);
  await root.click({position:{x:10,y:150},force:true});await root.press('Space');
- await root.dispatchEvent('touchstart',{touches:[{clientX:100,clientY:100}]});
+ await root.evaluate(el=>el.dispatchEvent(new TouchEvent('touchstart',{touches:[new Touch({identifier:1,target:el,clientX:100,clientY:100})]})));
  await root.dispatchEvent('touchcancel');await expect(root).toHaveAttribute('data-autoplay','running');
  const touched=await active.locator('a').getAttribute('href');await page.clock.runFor(6000);expect(await active.locator('a').getAttribute('href')).not.toBe(touched);
  await root.locator('[data-shuffle]').click({force:true});await page.clock.runFor(1400);await expect(root).toHaveAttribute('data-autoplay','running');
