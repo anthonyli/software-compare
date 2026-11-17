@@ -19,3 +19,10 @@ test('tools do not conflate open source with free models, isolated sessions or b
  assert.match(mcp.free_tier_limits,/默认持久 profile/);assert.match(mcp.free_tier_limits,/不构成安全边界且不影响重定向/);
  assert.match(sdk.price_summary,/不代表托管服务可免费自建/);assert.equal(sdk.features.existing_session.value,'unknown');
 });
+
+test('category renders boundaries and costs rather than only capability badges',()=>{
+ const source=fs.readFileSync(new URL('site/src/pages/c/[slug].astro',root),'utf8');
+ assert.match(source,/const showContext = .*category.slug === "agent-browser-tools"/);
+ assert.match(source,/data-agent-browser-notes/);
+ assert.match(source,/category.slug === "agent-browser-tools" && <p[^>]*><T zh=\{p.price_summary\}/);
+});
