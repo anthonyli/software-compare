@@ -868,7 +868,7 @@
         "Linux"
       ],
       "open_source": true,
-      "license": "Other（GitHub SPDX 为 Other，本轮未打开 LICENSE 全文核对）",
+      "license": "MIT",
       "pricing_model": "完全免费",
       "price_summary": "Atom 编辑器的社区延续版，完全免费开源。",
       "prices": [
@@ -920,7 +920,8 @@
       },
       "sources": [
         "https://pulsar-edit.dev/",
-        "https://github.com/pulsar-edit/pulsar"
+        "https://github.com/pulsar-edit/pulsar",
+        "https://github.com/pulsar-edit/pulsar/blob/7573f2b73406082491b8083bc2746cbfd1a9732f/LICENSE.md"
       ],
       "archived": false,
       "last_push_at": null,
