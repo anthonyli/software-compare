@@ -289,7 +289,7 @@
         "Linux"
       ],
       "open_source": true,
-      "license": "未知（GitHub 返回 NOASSERTION）",
+      "license": "MIT (project code; third-party components separately licensed)",
       "pricing_model": "完全免费",
       "price_summary": "完全免费开源的图形下载器，底层使用 aria2。",
       "prices": [
@@ -352,7 +352,9 @@
       },
       "sources": [
         "https://motrix.app/",
-        "https://github.com/agalwood/Motrix"
+        "https://github.com/agalwood/Motrix",
+        "https://github.com/agalwood/Motrix/blob/6a5d6efd2dc72a00f3cc2adfa76056c16336ce0c/LICENSE",
+        "https://github.com/agalwood/Motrix/blob/6a5d6efd2dc72a00f3cc2adfa76056c16336ce0c/THIRD_PARTY_NOTICES.md"
       ]
     },
     {
