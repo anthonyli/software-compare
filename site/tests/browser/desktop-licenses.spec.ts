@@ -9,6 +9,8 @@ test('verified desktop licenses retain scope in both languages',async({page})=>{
   for(const lang of ['en','zh-CN']){
    await page.locator(`[data-lang="${lang}"]`).click();
    await expect(page.locator('body')).toContainText(license);
+   const sources=page.locator('.sources-details');
+   if(!(await sources.evaluate(el=>el.hasAttribute('open')))) await sources.locator('summary').click();
    await expect(page.locator('a[href*="/blob/"][href$="/LICENSE"]').first()).toBeVisible();
   }
  }
