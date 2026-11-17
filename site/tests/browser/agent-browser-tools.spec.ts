@@ -1,4 +1,6 @@
 import {test,expect} from '@playwright/test';
+// Keep new browsing sessions out of the shared API rate-limit test bucket.
+test.use({extraHTTPHeaders:{'CF-Connecting-IP':'192.0.2.195'}});
 test('agent browser tools remain a separate bilingual category at desktop and mobile widths',async({page})=>{
  for(const width of [1280,390]){
   await page.setViewportSize({width,height:900});await page.goto('/c/agent-browser-tools/');
