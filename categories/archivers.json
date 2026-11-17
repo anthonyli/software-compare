@@ -381,7 +381,7 @@
         "Linux"
       ],
       "open_source": true,
-      "license": "未知（KDE 项目，GitHub 镜像无标准 Releases）",
+      "license": "GPL-2.0-or-later",
       "pricing_model": "完全免费",
       "price_summary": "KDE 自带的免费开源压缩工具。",
       "prices": [
@@ -449,7 +449,9 @@
       "sources": [
         "https://apps.kde.org/ark/",
         "https://github.com/KDE/ark",
-        "https://invent.kde.org/utilities/ark"
+        "https://invent.kde.org/utilities/ark",
+        "https://github.com/KDE/ark/blob/adce1ae0b77cb369b1aa835102d1e986cfdae66d/app/org.kde.ark.appdata.xml",
+        "https://github.com/KDE/ark/blob/adce1ae0b77cb369b1aa835102d1e986cfdae66d/app/main.cpp"
       ],
       "source_url": "https://invent.kde.org/utilities/ark",
       "source_host_note": "官方仓库在 invent.kde.org，GitHub KDE/ark 为官方镜像。"
