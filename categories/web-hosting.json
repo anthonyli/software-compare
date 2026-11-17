@@ -288,6 +288,70 @@
         "https://www.netlify.com/knowledge-base/migrate-to-netlify-from-vercel/",
         "https://docs.netlify.com/manage/accounts-and-billing/billing/manage-payments/"
       ]
+    },
+    {
+      "id": "cloudflare-workers",
+      "name": "Cloudflare Workers",
+      "official_url": "https://developers.cloudflare.com/workers/",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "免费增值",
+      "price_summary": "Cloudflare Workers全栈网站与API部署；静态资源、函数请求和构建分钟分开计量，不与Pages重复赠送计算额度。",
+      "prices": [
+        {
+          "plan": "Workers Free免费档",
+          "price": "0",
+          "currency": "USD",
+          "period": "月",
+          "note": "长期免费方案，函数按日限额、构建按月限额；不是每月可自由分配的300万次请求。"
+        }
+      ],
+      "free_tier_limits": "Free账号每天10万计算请求，UTC零点重置；Pages Functions与此共享额度。数据库、对象存储和域名注册另有规则，不属于无限静态托管。开通需Cloudflare账号；免费起步免信用卡，地区开户资格尚未确认。未开户、绑卡、部署或实测。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": "未知",
+      "collected_at": "2026-11-17",
+      "summary": "Cloudflare Workers全栈网站与API部署；静态资源、函数请求和构建分钟分开计量，不与Pages重复赠送计算额度。",
+      "features": {
+        "static_hosting": {
+          "value": "yes",
+          "note": "直接返回Static Assets的请求免费不限量，资产存储不另收费；Free每版本最多2万文件，单文件25MiB。SSR或先执行函数的请求不能视为免费静态请求。"
+        },
+        "build_limits": {
+          "value": "partial",
+          "note": "Workers Builds免费每月3000构建分钟，账号1个并发，单次20分钟超时；不是Pages每月500次构建。免费月额耗尽的具体处理和重置时区尚未确认。"
+        },
+        "functions": {
+          "value": "partial",
+          "note": "Free账号每天10万请求，每次最多10ms CPU；CPU执行时间不是等待网络I/O的总时长。Pages Functions共用这份日额度，不能分别相加。"
+        },
+        "commercial": {
+          "value": "unknown",
+          "note": "未明确确认免费档对所有商业用途的许可；须符合Developer Platform服务和内容条款，平台可因异常网络负担限制服务。开源运行时不等于托管服务无条款限制。"
+        },
+        "overage": {
+          "value": "partial",
+          "note": "免费日额度耗尽一般返回1027；路由可配置fail open绕过计算或fail closed报错，身份校验等场景不应绕过。Static Assets配置run_worker_first的匹配路径超限返回429，不回退静态资源。付费计算及其他资源另计，免费限制不是付费总账单上限。"
+        },
+        "card_required": {
+          "value": "no",
+          "note": "Workers产品页明确免费起步无需信用卡；不代表升级付费计算、数据库或存储也无需支付方式。"
+        }
+      },
+      "sources": [
+        "https://developers.cloudflare.com/workers/platform/pricing/",
+        "https://developers.cloudflare.com/workers/platform/limits/",
+        "https://developers.cloudflare.com/workers/static-assets/billing-and-limitations/",
+        "https://developers.cloudflare.com/workers/ci-cd/builds/limits-and-pricing/",
+        "https://developers.cloudflare.com/pages/functions/pricing/",
+        "https://www.cloudflare.com/products/workers/",
+        "https://www.cloudflare.com/service-specific-terms-developer-platform/"
+      ]
     }
   ]
 }
