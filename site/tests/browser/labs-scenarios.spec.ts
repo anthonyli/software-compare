@@ -27,32 +27,42 @@ for(const [width,height] of [[390,844],[768,700],[1440,900],[1280,600]]) test(`l
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
 });
 
-test('automatic liquid reveal, active-progress pause, focus and reduced motion',async({page})=>{
- test.setTimeout(90000);await page.setViewportSize({width:1440,height:900});await page.goto('/');
+test('click, focus, hover and touch never stop autoplay across complete loops',async({page})=>{
+ test.setTimeout(150000);await page.setViewportSize({width:1440,height:900});
+ await page.clock.install({time:new Date('2026-01-01T00:00:00Z')});await page.clock.pauseAt(new Date('2026-01-01T00:00:01Z'));
+ await page.goto('/');await page.clock.runFor(1500);
  const root=page.locator('[data-scenario]'),active=root.locator('[data-position=active]');
- const initial=await active.locator('a').getAttribute('href');await expect(root).toHaveAttribute('data-autoplay','running');
- await expect(active.locator('a')).not.toHaveAttribute('href',initial!,{timeout:8500});
- await expect(root).toHaveAttribute('data-transitioning','true');
- const during=await root.locator('[data-liquid-path]').evaluateAll(nodes=>nodes.map(el=>el.getAttribute('d')));
- await page.waitForTimeout(500);
- expect(await root.locator('[data-liquid-path]').evaluateAll(nodes=>nodes.map(el=>el.getAttribute('d')))).not.toEqual(during);
- const second=await active.locator('a').getAttribute('href');
- await expect(active.locator('a')).not.toHaveAttribute('href',second!,{timeout:8500});
- await expect(root).toHaveAttribute('data-transitioning','false');
- await active.locator('a').hover();await expect(root).toHaveAttribute('data-autoplay','running');
- const hovered=await active.locator('a').getAttribute('href');await expect(active.locator('a')).not.toHaveAttribute('href',hovered!,{timeout:8500});
- await expect(root).toHaveAttribute('data-transitioning','false');const held=await active.locator('a').getAttribute('href');
- await page.mouse.move(0,0);await expect(root).toHaveAttribute('data-autoplay','running');
- await root.locator('[data-dot][aria-pressed=true]').click();await page.mouse.move(0,0);await expect(root).toHaveAttribute('data-user-paused','true');
- await page.waitForTimeout(6500);await expect(active.locator('a')).toHaveAttribute('href',held!);
- await root.locator('[data-dot][aria-pressed=true]').click();await page.mouse.move(0,0);await expect(root).toHaveAttribute('data-autoplay','running');
- await expect(active.locator('a')).not.toHaveAttribute('href',held!,{timeout:8500});
- await expect(root).toHaveAttribute('data-transitioning','false');await active.locator('a').focus();await expect(root).toHaveAttribute('data-autoplay','paused');
- await page.locator('[data-lang=en]').focus();await page.locator('footer').scrollIntoViewIfNeeded();await expect(root).toHaveAttribute('data-autoplay','paused');
+ // The selected dot retains focus after autoplay moves on: this used to stop it.
+ await root.locator('[data-dot][aria-pressed=true]').click({force:true});
+ for(let i=0;i<12;i++){
+  await expect(root).toHaveAttribute('data-autoplay','running');
+  const before=await active.locator('a').getAttribute('href');
+  const depth=Number(await root.getAttribute('data-camera-progress'));
+  await page.clock.runFor(1500);expect(Number(await root.getAttribute('data-camera-progress'))).toBeGreaterThan(depth);
+  await page.clock.runFor(4500);expect(await active.locator('a').getAttribute('href')).not.toBe(before);
+ }
+ // Repeated active-dot clicks must not reset the deadline either.
+ const before=await active.locator('a').getAttribute('href');
+ for(let i=0;i<5;i++){await root.locator('[data-dot][aria-pressed=true]').click({force:true});await page.clock.runFor(1000);}
+ expect(await active.locator('a').getAttribute('href')).not.toBe(before);
+ await active.locator('a').hover({force:true});await active.locator('a').focus();
+ await expect(root).toHaveAttribute('data-autoplay','running');
+ const hovered=await active.locator('a').getAttribute('href');await page.clock.runFor(6000);expect(await active.locator('a').getAttribute('href')).not.toBe(hovered);
+ await expect(root).toBeFocused();
+ expect(await root.locator('[aria-hidden=true]').evaluateAll(nodes=>nodes.some(el=>el.contains(document.activeElement)))).toBe(false);
+ await root.click({position:{x:10,y:150},force:true});await root.press('Space');
+ await root.dispatchEvent('touchstart',{touches:[{clientX:100,clientY:100}]});
+ await root.dispatchEvent('touchcancel');await expect(root).toHaveAttribute('data-autoplay','running');
+ const touched=await active.locator('a').getAttribute('href');await page.clock.runFor(6000);expect(await active.locator('a').getAttribute('href')).not.toBe(touched);
+ await root.locator('[data-shuffle]').click({force:true});await page.clock.runFor(1400);await expect(root).toHaveAttribute('data-autoplay','running');
+ const shuffled=await active.locator('a').getAttribute('href');await page.clock.runFor(6000);expect(await active.locator('a').getAttribute('href')).not.toBe(shuffled);
+ await page.locator('footer').scrollIntoViewIfNeeded();await expect(root).toHaveAttribute('data-autoplay','paused');
  await page.evaluate(()=>window.scrollTo(0,0));await expect(root).toHaveAttribute('data-autoplay','running');
  await page.emulateMedia({reducedMotion:'reduce'});await expect(root).toHaveAttribute('data-autoplay','paused');await expect(root).toHaveAttribute('data-transitioning','false');
- const still=await active.locator('a').getAttribute('href');await page.waitForTimeout(6500);await expect(active.locator('a')).toHaveAttribute('href',still!);
+ const still=await active.locator('a').getAttribute('href');await page.clock.runFor(6500);await expect(active.locator('a')).toHaveAttribute('href',still!);
  await root.press('ArrowRight');await expect(active.locator('a')).not.toHaveAttribute('href',still!);await expect(root).toHaveAttribute('data-transitioning','false');
+ await page.emulateMedia({reducedMotion:'no-preference'});await expect(root).toHaveAttribute('data-autoplay','running');
+ const resumed=await active.locator('a').getAttribute('href');await page.clock.runFor(6000);expect(await active.locator('a').getAttribute('href')).not.toBe(resumed);
 });
 
 test('first-entry and manual liquid reveal frames, transparent navigation',async({page})=>{
