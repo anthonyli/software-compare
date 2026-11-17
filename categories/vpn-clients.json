@@ -240,7 +240,7 @@
         "iOS"
       ],
       "open_source": true,
-      "license": "Other（GitHub SPDX 为 Other，本轮未打开 LICENSE 全文核对）",
+      "license": "MPL-2.0（含其他开源许可组件）",
       "pricing_model": "订阅",
       "price_summary": "年付折合 4.99 美元/月，合计 59.88 美元；月付 9.99 美元/月。提供 30 天退款保证。",
       "prices": [
@@ -310,7 +310,8 @@
       "sources": [
         "https://www.mozilla.org/en-US/products/vpn/",
         "https://vpn.mozilla.org",
-        "https://github.com/mozilla-mobile/mozilla-vpn-client"
+        "https://github.com/mozilla-mobile/mozilla-vpn-client",
+        "https://github.com/mozilla-mobile/mozilla-vpn-client/blob/cb5f9990d68f80c4b5e4b6124ec5bf472bfdd751/LICENSE.md"
       ],
       "archived": false,
       "last_push_at": null,
