@@ -1,0 +1,368 @@
+{
+  "category_slug": "browsers",
+  "category_name_zh": "浏览器",
+  "collected_at": "2026-11-17",
+  "timezone": "Asia/Shanghai",
+  "features": [
+    {
+      "key": "page_ai",
+      "label": "页面 AI 问答/摘要"
+    },
+    {
+      "key": "multi_tab",
+      "label": "跨标签 AI 上下文"
+    },
+    {
+      "key": "actions",
+      "label": "AI 操作网页"
+    },
+    {
+      "key": "local_model",
+      "label": "连接本地 AI 模型"
+    }
+  ],
+  "products": [
+    {
+      "id": "chrome",
+      "name": "Google Chrome",
+      "official_url": "https://www.google.com/chrome/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费浏览器；AI 费用另计",
+      "price_summary": "浏览器免费；Gemini 方案和额度另受 Google 条款约束。",
+      "prices": [],
+      "free_tier_limits": "Gemini in Chrome 要求登录，不能在无痕模式使用；年龄、语言、地区和管理员策略可能限制可用性。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "Chromium 系浏览器；Gemini 集成按平台、地区和账号逐步开放。",
+      "notes": "浏览器的平台覆盖不等于 Gemini 覆盖；页面 AI 会使用共享的页面上下文，不是默认本地推理。",
+      "collected_at": "2026-11-17",
+      "maintenance_status": "未评估",
+      "sources": [
+        "https://www.google.com/chrome/",
+        "https://support.google.com/chrome/answer/16283624?hl=en",
+        "https://support.google.com/chrome/answer/17140089?hl=en",
+        "https://support.google.com/gemini/answer/16821166"
+      ],
+      "features": {
+        "page_ai": {
+          "value": "partial",
+          "note": "Gemini 仅在符合条件的设备与账号开放。"
+        },
+        "multi_tab": {
+          "value": "partial",
+          "note": "Gemini 可引用最多 10 个标签；受设备、账号和地区条件限制。"
+        },
+        "actions": {
+          "value": "partial",
+          "note": "Auto browse 逐步向美国 18 岁以上英语用户开放，需个人 Google AI Plus/Pro/Ultra 账号；任务计划和敏感步骤需人工确认。"
+        },
+        "local_model": {
+          "value": "unknown",
+          "note": "未核实；不等于不支持。"
+        }
+      }
+    },
+    {
+      "id": "firefox",
+      "name": "Mozilla Firefox",
+      "official_url": "https://www.mozilla.org/firefox/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS"
+      ],
+      "open_source": true,
+      "license": "MPL-2.0",
+      "pricing_model": "免费浏览器；AI 费用另计",
+      "price_summary": "浏览器免费；第三方聊天服务可能需要账号或付费。",
+      "prices": [],
+      "free_tier_limits": "AI 侧栏是提供商集成，不是 Firefox 自有模型；各服务的额度和条款分别适用。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "非 Chromium 浏览器；可选 AI 聊天侧栏连接外部提供商。",
+      "notes": "发送给聊天服务的选中文字或页面内容受该提供商隐私政策约束；不将聊天侧栏等同于网页操作 Agent。",
+      "collected_at": "2026-11-17",
+      "maintenance_status": "未评估",
+      "sources": [
+        "https://www.mozilla.org/firefox/",
+        "https://support.mozilla.org/en-US/kb/ai-chatbot",
+        "https://www.mozilla.org/MPL/2.0/"
+      ],
+      "features": {
+        "page_ai": {
+          "value": "partial",
+          "note": "可选侧栏支持对选中文本提问和摘要。"
+        },
+        "multi_tab": {
+          "value": "unknown",
+          "note": "未核实；不等于不支持。"
+        },
+        "actions": {
+          "value": "unknown",
+          "note": "未核实；不等于不支持。"
+        },
+        "local_model": {
+          "value": "unknown",
+          "note": "未核实；不等于不支持。"
+        }
+      }
+    },
+    {
+      "id": "safari",
+      "name": "Apple Safari",
+      "official_url": "https://www.apple.com/safari/",
+      "github_url": null,
+      "platforms": [
+        "macOS",
+        "iOS",
+        "iPadOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费浏览器；AI 费用另计",
+      "price_summary": "随支持的 Apple 系统提供；需兼容设备才能使用 Apple Intelligence。",
+      "prices": [],
+      "free_tier_limits": "摘要不是所有设备、语言和地区都可用，也不是任意网站的自动操作。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "Apple 系统浏览器；Reader 摘要依赖 Apple Intelligence。",
+      "notes": "WebKit 引擎不代表完整 Safari 应用开源；此处只收录官方确认的 Reader 摘要，不推断所有 AI 处理均在本机。",
+      "collected_at": "2026-11-17",
+      "maintenance_status": "未评估",
+      "sources": [
+        "https://www.apple.com/safari/",
+        "https://support.apple.com/en-ke/guide/safari/sfri32632/mac"
+      ],
+      "features": {
+        "page_ai": {
+          "value": "partial",
+          "note": "符合 Apple Intelligence 条件时可摘要文章。"
+        },
+        "multi_tab": {
+          "value": "unknown",
+          "note": "未核实；不等于不支持。"
+        },
+        "actions": {
+          "value": "unknown",
+          "note": "未核实；不等于不支持。"
+        },
+        "local_model": {
+          "value": "unknown",
+          "note": "未核实；不等于不支持。"
+        }
+      }
+    },
+    {
+      "id": "edge",
+      "name": "Microsoft Edge",
+      "official_url": "https://www.microsoft.com/edge",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费浏览器；AI 费用另计",
+      "price_summary": "浏览器免费；Copilot 计划、额度及地区可用性另行适用。",
+      "prices": [],
+      "free_tier_limits": "网页操作受权限、页面类型和开放范围限制；不保证所有账号、设备或网站都可用。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "集成 Copilot 的浏览器；聊天与网页操作分别有使用边界。",
+      "notes": "上下文回答可使用 URL 和获准分享的页面内容；不能据此宣称页面数据从不离开设备。",
+      "collected_at": "2026-11-17",
+      "maintenance_status": "未评估",
+      "sources": [
+        "https://www.microsoft.com/edge",
+        "https://support.microsoft.com/en-us/edge/copilot/browse-with-copilot",
+        "https://learn.microsoft.com/en-us/microsoft-edge/privacy-whitepaper/"
+      ],
+      "features": {
+        "page_ai": {
+          "value": "partial",
+          "note": "Copilot 可基于获准分享的页面回答。"
+        },
+        "multi_tab": {
+          "value": "unknown",
+          "note": "未核实；不等于不支持。"
+        },
+        "actions": {
+          "value": "partial",
+          "note": "Copilot 网页操作有权限和站点限制。"
+        },
+        "local_model": {
+          "value": "unknown",
+          "note": "未核实；不等于不支持。"
+        }
+      }
+    },
+    {
+      "id": "brave",
+      "name": "Brave",
+      "official_url": "https://brave.com/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS"
+      ],
+      "open_source": true,
+      "license": "MPL-2.0",
+      "pricing_model": "免费浏览器；AI 费用另计",
+      "price_summary": "浏览器及 Leo 免费档可用；Leo Premium 另付费，模型供应商费用独立。",
+      "prices": [],
+      "free_tier_limits": "免费 AI 不等于无限额度；本地或远程自选模型需要自行配置。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "强调隐私的浏览器，Leo 支持网页问答与自选模型。",
+      "notes": "Leo 默认服务官方称不保留聊天或用于额外训练，但不等于本地推理；自选远程模型适用其提供商隐私政策。桌面和 Android 基于 Chromium，iOS 基于 WebKit。",
+      "collected_at": "2026-11-17",
+      "maintenance_status": "未评估",
+      "sources": [
+        "https://brave.com/",
+        "https://brave.com/leo/",
+        "https://brave.com/about/",
+        "https://github.com/brave/brave-browser/blob/master/LICENSE",
+        "https://support.brave.app/hc/en-us/articles/34070140231821-How-do-I-use-the-Bring-Your-Own-Model-BYOM-with-Brave-Leo",
+        "https://support.brave.app/hc/en-us/articles/38614934646029-How-to-Use-Multi-Tab-Context-with-Brave-Leo"
+      ],
+      "features": {
+        "page_ai": {
+          "value": "yes",
+          "note": "Leo 可摘要、翻译并分析页面。"
+        },
+        "multi_tab": {
+          "value": "partial",
+          "note": "多标签上下文免费提供给 1.81+ 桌面与 Android；不据此推断 iOS 支持。"
+        },
+        "actions": {
+          "value": "unknown",
+          "note": "未核实；不等于不支持。"
+        },
+        "local_model": {
+          "value": "partial",
+          "note": "BYOM 仅限 Windows、macOS、Linux 桌面；本地或远程模型需自行配置并遵守其许可和隐私条款。"
+        }
+      }
+    },
+    {
+      "id": "comet",
+      "name": "Perplexity Comet",
+      "official_url": "https://www.perplexity.ai/comet",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Android",
+        "iOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费浏览器；AI 费用另计",
+      "price_summary": "浏览器免费；高级模型与 Agent 额度需按 Perplexity 当前方案核对。",
+      "prices": [],
+      "free_tier_limits": "免费浏览器不等于所有高级模型或自动任务无限使用；各平台功能可能不同。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "以 Perplexity 助手为核心的浏览器；不把官方演示视为成功率实测。",
+      "notes": "页面与任务上下文可能进入 Perplexity 服务；消费者与企业的隐私条款不能混用。",
+      "collected_at": "2026-11-17",
+      "maintenance_status": "未评估",
+      "sources": [
+        "https://www.perplexity.ai/comet",
+        "https://www.perplexity.ai/en-GB/changelog/what-we-shipped-october-3rd",
+        "https://www.perplexity.ai/en-GB/hub/legal/privacy-notice"
+      ],
+      "features": {
+        "page_ai": {
+          "value": "yes",
+          "note": "助手提供页面问答与摘要。"
+        },
+        "multi_tab": {
+          "value": "partial",
+          "note": "标签上下文功能依平台和权限而异。"
+        },
+        "actions": {
+          "value": "partial",
+          "note": "助手可协助多步骤网页任务；需核对具体平台和操作权限。"
+        },
+        "local_model": {
+          "value": "unknown",
+          "note": "未核实；不等于不支持。"
+        }
+      }
+    },
+    {
+      "id": "dia",
+      "name": "Dia",
+      "official_url": "https://www.diabrowser.com/",
+      "github_url": null,
+      "platforms": [
+        "macOS",
+        "Windows"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费浏览器；AI 费用另计",
+      "price_summary": "新 Mac 用户：Better Browser 免费但无 AI；Better Answers $10/月，Better Days $100/月。付费计划尚未适用于 Windows，既有用户仍免费。",
+      "prices": [],
+      "free_tier_limits": "新 Mac 用户可免卡试用 AI 14 天；到期未订阅则 AI 暂停。额度按 Tasks 消耗；可选自动充值每次 $20。Windows 和既有用户暂不适用新付费计划；既有用户收费前至少提前 30 天通知。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "以标签页上下文聊天为中心的 Chromium 浏览器。",
+      "notes": "需要 Atlassian 账号。聊天历史默认本地加密，但 AI 所需上下文经服务器和 Atlassian AI Gateway 发给模型商；Dia 默认可保留部分内容 30 天用于改进，可关闭。官网主页及 1.56 发布说明支持 Windows；旧 Google 集成页页脚仍称仅 Mac。",
+      "collected_at": "2026-11-17",
+      "maintenance_status": "未评估",
+      "sources": [
+        "https://www.diabrowser.com/",
+        "https://www.diabrowser.com/plans",
+        "https://www.diabrowser.com/security",
+        "https://www.diabrowser.com/release-notes/1-56-make-yourself-at-home",
+        "https://www.diabrowser.com/apps/google"
+      ],
+      "features": {
+        "page_ai": {
+          "value": "partial",
+          "note": "新 Mac 用户 AI 需付费方案或试用；Windows 和既有用户另有开放安排。"
+        },
+        "multi_tab": {
+          "value": "partial",
+          "note": "多个标签可作为聊天上下文；额度和收费随平台、用户批次而异。"
+        },
+        "actions": {
+          "value": "partial",
+          "note": "支持经批准的表单填写和草稿操作，不等于无限制的自主网页控制。"
+        },
+        "local_model": {
+          "value": "unknown",
+          "note": "未核实；不等于不支持。"
+        }
+      }
+    }
+  ]
+}
