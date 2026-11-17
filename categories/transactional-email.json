@@ -400,6 +400,67 @@
         "https://aws.amazon.com/free/free-tier-faqs/",
         "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier-plans.html"
       ]
+    },
+    {
+      "id": "sendgrid",
+      "name": "Twilio SendGrid Email API",
+      "official_url": "https://www.twilio.com/en-us/products/email-api/pricing",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "免费试用",
+      "price_summary": "SendGrid Email API 的免费试用仅 60 天、每天 100 封；到期需升级，不是永久免费邮件服务。",
+      "prices": [
+        {
+          "plan": "60 天免费试用",
+          "price": "0",
+          "currency": "USD",
+          "period": null,
+          "note": "自注册日起仅一次试用，每天 100 封，按 UTC 次日重置；无需信用卡。升级会立即结束试用，不能重新开始。"
+        }
+      ],
+      "free_tier_limits": "试用日限超出返回 Maximum credits exceeded；60 天后须升级 Email API 才能继续发送，Marketing Campaigns 订阅独立。大陆开户资格及生产审批要求未核实；未开户或发信实测。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": "未知",
+      "collected_at": "2026-11-17",
+      "summary": "SendGrid Email API 的免费试用仅 60 天、每天 100 封；到期需升级，不是永久免费邮件服务。",
+      "features": {
+        "send": {
+          "value": "yes",
+          "note": "支持 API 与 SMTP 事务邮件发送；Email API 和 Marketing Campaigns 分开升级，不把营销订阅当作 API 发送额度。"
+        },
+        "quota": {
+          "value": "partial",
+          "note": "每个新账户仅一次 60 天试用，自注册日起计，每天最多 100 封；UTC 次日重置，不是月度 3,000 封或长期免费。"
+        },
+        "domains": {
+          "value": "yes",
+          "note": "必须验证发件身份；可验证单个发件人，或用 DNS 做域名认证。域名数量上限未核实，发件验证不等于生产审批。"
+        },
+        "approval": {
+          "value": "unknown",
+          "note": "是否另需生产审批及地区资格未核实，不能承诺注册后即可向任意收件人发送。"
+        },
+        "cardless": {
+          "value": "yes",
+          "note": "官方明确免费试用无需信用卡；升级付费方案需添加支付方式，免卡不免除发件验证。"
+        },
+        "overflow": {
+          "value": "partial",
+          "note": "试用每日 100 封用尽后返回 Maximum credits exceeded，等待 UTC 次日重置；到期需升级 Email API。排队、重试及未用额度结转未核实，不保证自动补发。"
+        }
+      },
+      "sources": [
+        "https://www.twilio.com/en-us/products/email-api/pricing",
+        "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/upgrading-your-plan",
+        "https://www.twilio.com/docs/sendgrid/ui/sending-email/sender-verification",
+        "https://support.sendgrid.com/hc/en-us/articles/35466138799899-Troubleshooting-Maximum-Credits-Exceeded-Errors-After-Upgrade"
+      ]
     }
   ]
 }
