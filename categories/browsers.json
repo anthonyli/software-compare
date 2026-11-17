@@ -379,7 +379,7 @@
       "pricing_model": "个人免费；企业定制",
       "price_summary": "个人版浏览器免费；Business 定制报价，第三方 Agent、模型和网络费用另计。",
       "prices": [],
-      "free_tier_limits": "需要在同一电脑运行具备命令执行能力的外部 Agent。macOS 与 Windows 已提供，Linux 在路线图中；浏览器免费不等于模型调用免费。",
+      "free_tier_limits": "需要在同一电脑运行具备命令执行能力的外部 Agent。macOS 与 Windows 已提供，Linux 在路线图中；浏览器免费不等于模型调用免费。 Space 分离任务页面，不自动隔离 Profile、登录或网站权限；同一 Profile 的个人页和 Spaces 共享 cookie 与缓存。浏览器数据保存在本机，但页面文字和截图可能发送给选用模型。MIT 仅覆盖公开 SDK/Skill，不覆盖另行提供的原生浏览器；不与 ego.app 待开放个人 Agent 混淆。",
       "github_stars": null,
       "latest_release": null,
       "latest_release_date": null,
