@@ -1,0 +1,233 @@
+{
+  "category_slug": "agent-browser-tools",
+  "category_name_zh": "Agent 浏览器操作工具",
+  "collected_at": "2026-11-17",
+  "timezone": "Asia/Shanghai",
+  "notes": "独立比较 CLI、Agent 框架、SDK 与 MCP 工具服务器，不是人用浏览器或托管浏览器运行环境的排行。功能来自官方资料，未安装运行或测量任务成功率。开源许可不包含模型、浏览器托管和代理费用；本地浏览器搭配云模型仍会发送所需页面信息。登录资料、浏览内容和会话控制链接需妥善保护，操作前限定权限并遵守目标站规则。",
+  "features": [
+    {
+      "key": "local_browser",
+      "label": "本地浏览器运行"
+    },
+    {
+      "key": "existing_session",
+      "label": "连接既有会话"
+    },
+    {
+      "key": "structured_snapshot",
+      "label": "结构化页面读取"
+    },
+    {
+      "key": "natural_language",
+      "label": "自然语言任务编排"
+    },
+    {
+      "key": "hosted_browser",
+      "label": "远程浏览器接入"
+    }
+  ],
+  "products": [
+    {
+      "id": "agent-browser",
+      "name": "agent-browser",
+      "official_url": "https://github.com/vercel-labs/agent-browser",
+      "github_url": "https://github.com/vercel-labs/agent-browser",
+      "platforms": [
+        "macOS",
+        "Windows",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "pricing_model": "开源代码免费；模型与浏览器资源另计",
+      "summary": "面向 AI Agent 的浏览器自动化 CLI，通过快照引用执行导航、点击与输入；不是自主规划模型或新的浏览器引擎。",
+      "price_summary": "Apache-2.0 CLI 可免费使用；调用它的 Agent 模型、云浏览器和代理按所选服务另计。",
+      "prices": [],
+      "free_tier_limits": "需安装运行环境和浏览器，默认使用 Chrome for Testing；可通过 CDP 连接现有浏览器。快照和动作由上层 Agent 使用，不包含免费模型额度；复用登录会话会赋予相应账号权限。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "features": {
+        "local_browser": {
+          "value": "yes",
+          "note": "默认 Chrome for Testing，可在本机运行"
+        },
+        "existing_session": {
+          "value": "yes",
+          "note": "通过 CDP 连接既有浏览器"
+        },
+        "structured_snapshot": {
+          "value": "yes",
+          "note": "页面快照与元素引用供 Agent 操作"
+        },
+        "natural_language": {
+          "value": "partial",
+          "note": "CLI 提供动作，上层 Agent 负责规划"
+        },
+        "hosted_browser": {
+          "value": "yes",
+          "note": "可连接远程 CDP 浏览器，服务另收费"
+        }
+      },
+      "sources": [
+        "https://github.com/vercel-labs/agent-browser",
+        "https://github.com/vercel-labs/agent-browser/blob/main/LICENSE",
+        "https://agent-browser.dev/"
+      ],
+      "collected_at": "2026-11-17"
+    },
+    {
+      "id": "browser-use",
+      "name": "Browser Use",
+      "official_url": "https://github.com/browser-use/browser-use",
+      "github_url": "https://github.com/browser-use/browser-use",
+      "platforms": [
+        "macOS",
+        "Windows",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "开源代码免费；模型与浏览器资源另计",
+      "summary": "Python 浏览器 Agent 框架，将模型与页面操作连接；开源库、Cloud 浏览器和托管 Agent 是不同产品。",
+      "price_summary": "MIT 库免费。1.x 默认使用模型网关与云浏览器；模型、搜索、浏览器时长及代理分别核算，cost_usd 不含云浏览器和代理费用。",
+      "prices": [],
+      "free_tier_limits": "1.x 的 Browser() 默认 Cloud；Browser('chromium') 启动本地临时配置，Browser('chrome') 连接已开 Chrome。需配置模型和账号凭据；本地浏览器不代表模型处理不出网。开启遥测时会记录部分库认证和启动事件；live-view 链接可控制会话，不应公开。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "features": {
+        "local_browser": {
+          "value": "yes",
+          "note": "需显式选择本地 chromium 或 chrome 模式"
+        },
+        "existing_session": {
+          "value": "yes",
+          "note": "chrome 模式连接已开 Chrome"
+        },
+        "structured_snapshot": {
+          "value": "yes",
+          "note": "读取页面状态供 Agent 决策"
+        },
+        "natural_language": {
+          "value": "yes",
+          "note": "由配置的模型驱动多步 Agent 任务"
+        },
+        "hosted_browser": {
+          "value": "yes",
+          "note": "1.x 默认 Cloud，显式本地模式可替换"
+        }
+      },
+      "sources": [
+        "https://github.com/browser-use/browser-use",
+        "https://github.com/browser-use/browser-use/blob/main/LICENSE",
+        "https://github.com/browser-use/browser-use/releases/tag/1.0.0",
+        "https://browser-use.com/pricing"
+      ],
+      "collected_at": "2026-11-17"
+    },
+    {
+      "id": "stagehand",
+      "name": "Stagehand",
+      "official_url": "https://github.com/browserbase/stagehand",
+      "github_url": "https://github.com/browserbase/stagehand",
+      "platforms": [
+        "macOS",
+        "Windows",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "开源代码免费；模型与浏览器资源另计",
+      "summary": "AI 浏览器自动化 SDK，在代码中组合页面操作与数据提取；不是 Browserbase 托管浏览器服务本身。",
+      "price_summary": "MIT SDK 免费；模型推理与 Browserbase 等浏览器托管费用另计。开源 SDK 不代表托管服务可免费自建。",
+      "prices": [],
+      "free_tier_limits": "需要开发环境、浏览器和模型配置；可选本地或 Browserbase。页面上下文会按所选模型与运行方式发送，需分别核对模型商和托管服务的日志、保留与权限；本轮未实测。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "features": {
+        "local_browser": {
+          "value": "yes",
+          "note": "支持本地浏览器运行环境"
+        },
+        "existing_session": {
+          "value": "unknown",
+          "note": "既有登录会话复用需按具体版本与配置核实"
+        },
+        "structured_snapshot": {
+          "value": "yes",
+          "note": "结构化提取页面数据"
+        },
+        "natural_language": {
+          "value": "yes",
+          "note": "自然语言操作与 Agent 能力可在代码中编排"
+        },
+        "hosted_browser": {
+          "value": "yes",
+          "note": "可使用 Browserbase，托管费用独立"
+        }
+      },
+      "sources": [
+        "https://github.com/browserbase/stagehand",
+        "https://github.com/browserbase/stagehand/blob/main/LICENSE",
+        "https://github.com/browserbase/stagehand/blob/main/README.md",
+        "https://www.browserbase.com/pricing"
+      ],
+      "collected_at": "2026-11-17"
+    },
+    {
+      "id": "playwright-mcp",
+      "name": "Playwright MCP",
+      "official_url": "https://github.com/microsoft/playwright-mcp",
+      "github_url": "https://github.com/microsoft/playwright-mcp",
+      "platforms": [
+        "macOS",
+        "Windows",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "pricing_model": "开源代码免费；模型与浏览器资源另计",
+      "summary": "为 MCP 客户端暴露 Playwright 浏览器工具的服务器，以可访问性快照支持模型操作；不自带大模型。",
+      "price_summary": "Apache-2.0 服务器免费；MCP 客户端、模型 API 和远程浏览器的费用依所选服务另计。",
+      "prices": [],
+      "free_tier_limits": "默认持久 profile 会保留登录状态；--isolated 使用内存 profile，关闭后丢弃，也可注入存储状态。扩展模式可连接现有标签。同一 profile 并发使用会冲突。allowed-origins / blocked-origins 不构成安全边界且不影响重定向，不能代替网络隔离。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "features": {
+        "local_browser": {
+          "value": "yes",
+          "note": "本机启动 Playwright 支持的浏览器"
+        },
+        "existing_session": {
+          "value": "yes",
+          "note": "扩展连接现有标签，或使用持久 profile"
+        },
+        "structured_snapshot": {
+          "value": "yes",
+          "note": "使用可访问性快照，不要求视觉模型"
+        },
+        "natural_language": {
+          "value": "partial",
+          "note": "MCP 客户端与模型负责规划，服务器执行工具"
+        },
+        "hosted_browser": {
+          "value": "yes",
+          "note": "支持连接 CDP endpoint"
+        }
+      },
+      "sources": [
+        "https://github.com/microsoft/playwright-mcp",
+        "https://github.com/microsoft/playwright-mcp/blob/main/LICENSE",
+        "https://github.com/microsoft/playwright-mcp/blob/main/README.md"
+      ],
+      "collected_at": "2026-11-17"
+    }
+  ]
+}
