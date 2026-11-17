@@ -2974,5 +2974,11 @@
   "是否另需生产审批及地区资格未核实，不能承诺注册后即可向任意收件人发送。": "Separate production approval and regional eligibility are unverified; signup does not guarantee unrestricted sending.",
   "官方明确免费试用无需信用卡；升级付费方案需添加支付方式，免卡不免除发件验证。": "The official trial requires no credit card; paid upgrades require a payment method. Cardless signup does not waive sender verification.",
   "试用每日 100 封用尽后返回 Maximum credits exceeded，等待 UTC 次日重置；到期需升级 Email API。排队、重试及未用额度结转未核实，不保证自动补发。": "After the 100-message daily trial limit, Maximum credits exceeded requires waiting for the next UTC day; trial expiry requires an Email API upgrade. Queueing, retry and carryover are unverified; automatic redelivery is not guaranteed.",
-  "免费试用": "Free trial"
+  "免费试用": "Free trial",
+  "Albert license v1.1（自定义许可，源码可见）": "Albert license v1.1 (custom, source-available license)",
+  "个人免费": "Free for personal use",
+  "个人使用（免费）": "Personal use (free)",
+  "源码可见的插件式键盘启动器，支持 Linux 与 macOS；采用限制用途与再分发的自定义许可。": "A source-available, plugin-based keyboard launcher for Linux and macOS, under a custom license restricting use and redistribution.",
+  "个人使用免费；企业或商业用途许可未确认，不能据源码公开推定获准。": "Free for personal use; permission for business or commercial use is unconfirmed and must not be inferred from public source availability.",
+  "许可允许个人使用及修改，但不授予修改版再分发权。未修改版再分发须保留声明；二进制再分发不得面向 Microsoft 或 Apple 平台。这不等于禁止 macOS 个人使用。": "The license permits personal use and modification, but does not grant redistribution of modified versions. Unmodified redistribution must retain notices; binary redistribution must not target Microsoft or Apple platforms. This is not a ban on personal macOS use."
 }

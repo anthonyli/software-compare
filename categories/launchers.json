@@ -278,24 +278,24 @@
         "Linux",
         "macOS"
       ],
-      "open_source": true,
-      "license": "Other（GitHub SPDX 为 Other，本轮未打开 LICENSE 全文核对）",
-      "pricing_model": "完全免费",
-      "price_summary": "完全免费的开源键盘启动器，官网提供 Linux 与 macOS 安装说明。",
+      "open_source": false,
+      "license": "Albert license v1.1（自定义许可，源码可见）",
+      "pricing_model": "个人免费",
+      "price_summary": "个人使用免费；企业或商业用途许可未确认，不能据源码公开推定获准。",
       "prices": [
         {
-          "plan": "软件",
+          "plan": "个人使用（免费）",
           "price": "免费",
           "currency": null,
           "period": null
         }
       ],
-      "free_tier_limits": "无付费墙",
+      "free_tier_limits": "许可允许个人使用及修改，但不授予修改版再分发权。未修改版再分发须保留声明；二进制再分发不得面向 Microsoft 或 Apple 平台。这不等于禁止 macOS 个人使用。",
       "github_stars": 8008,
       "latest_release": null,
       "latest_release_date": null,
       "latest_release_date_note": "本轮未拉取 GitHub Release 标签",
-      "summary": "追求低延迟的开源键盘启动器，插件可用 C++/Python 编写。",
+      "summary": "源码可见的插件式键盘启动器，支持 Linux 与 macOS；采用限制用途与再分发的自定义许可。",
       "features": {
         "app_launch": {
           "value": "yes"
@@ -334,11 +334,15 @@
       },
       "sources": [
         "https://albertlauncher.github.io/",
-        "https://github.com/albertlauncher/albert"
+        "https://github.com/albertlauncher/albert",
+        "https://github.com/albertlauncher/albert/blob/c703546832dd8e7c961b74895d43b8d0cdadf7c8/LICENSE.md",
+        "https://albertlauncher.github.io/installation/macos/",
+        "https://albertlauncher.github.io/installation/linux/"
       ],
       "archived": false,
       "last_push_at": null,
-      "maintenance_status": "活跃"
+      "maintenance_status": "活跃",
+      "collected_at": "2026-11-17"
     },
     {
       "id": "wox",
