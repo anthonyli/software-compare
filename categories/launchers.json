@@ -205,7 +205,7 @@
         "Linux"
       ],
       "open_source": true,
-      "license": "Other（GitHub SPDX 为 Other，本轮未打开 LICENSE 全文核对）",
+      "license": "GPL-3.0-or-later",
       "pricing_model": "完全免费",
       "price_summary": "完全免费的 Linux 应用启动器。",
       "prices": [
@@ -262,7 +262,8 @@
       },
       "sources": [
         "https://ulauncher.io/",
-        "https://github.com/Ulauncher/Ulauncher"
+        "https://github.com/Ulauncher/Ulauncher",
+        "https://github.com/Ulauncher/Ulauncher/blob/d235f0be317a1682349a14e0b22813437b0b4e93/LICENSE"
       ],
       "archived": false,
       "last_push_at": null,
@@ -563,7 +564,7 @@
         "Linux"
       ],
       "open_source": true,
-      "license": "Other（GitHub SPDX 为 Other，本轮未打开 LICENSE 全文核对）",
+      "license": "MIT",
       "pricing_model": "完全免费",
       "price_summary": "完全免费的 Linux 窗口切换器/启动器，常见于平铺窗口管理器环境。",
       "prices": [
@@ -622,7 +623,8 @@
         }
       },
       "sources": [
-        "https://github.com/davatorium/rofi"
+        "https://github.com/davatorium/rofi",
+        "https://github.com/davatorium/rofi/blob/409eed9f8cc8583fb030f85f42e8a2f59804f996/COPYING"
       ],
       "archived": false,
       "last_push_at": null,
