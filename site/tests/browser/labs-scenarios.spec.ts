@@ -226,12 +226,23 @@ test('visibility events preserve elapsed time without scheduling hidden frames',
 });
 
 test('returning from another real browser tab resumes visible card animation',async({page,context})=>{
- await page.goto('/');const root=page.locator('[data-scenario]');await selectScene(root,1);
+ // Playwright enables focus emulation even in headed Chromium. Disable it
+ // on both tabs so visibility events come from the real browser tab switch.
+ const session=await context.newCDPSession(page);
+ await session.send('Emulation.setFocusEmulationEnabled',{enabled:false});
+ await page.goto('/');await page.bringToFront();
+ await mkdir('../docs/design/previews',{recursive:true});
+ if(test.info().project.use.headless===false) await page.screenshot({path:'../docs/design/previews/labs-home-native-initial.png'});
+ const root=page.locator('[data-scenario]');await selectScene(root,1);
+ console.log('native initial',await page.evaluate(()=>({visibility:document.visibilityState,focused:document.hasFocus(),progress:document.querySelector<HTMLElement>('[data-scenario]')!.dataset.cameraProgress})));
  await expect(root).toHaveAttribute('data-transitioning','false');
- const other=await context.newPage();await other.goto('about:blank');await other.bringToFront();
+ const other=await context.newPage();
+ const otherSession=await context.newCDPSession(other);
+ await otherSession.send('Emulation.setFocusEmulationEnabled',{enabled:false});
+ await other.goto('about:blank');await other.bringToFront();
  // Some headless Chromium builds keep every tab visible. Run with --headed
  // to exercise native visibility in those builds, rather than faking it here.
- const nativeHidden=await page.waitForFunction(()=>document.hidden,undefined,{timeout:2000}).then(()=>true,()=>false);
+ const nativeHidden=await page.waitForFunction(()=>document.hidden,undefined,{polling:100,timeout:3000}).then(()=>true,()=>false);
  if(test.info().project.use.headless!==false) test.skip(!nativeHidden,'Browser keeps headless tabs visible; native tab visibility requires --headed.');
  expect(nativeHidden,'A headed browser must really hide the original tab').toBe(true);
  await expect(root).toHaveAttribute('data-autoplay','paused');
@@ -239,7 +250,9 @@ test('returning from another real browser tab resumes visible card animation',as
  await other.waitForTimeout(7000);expect(await elapsed(root)).toBe(start);expect(await pose(root)).toEqual(paused);
  await page.bringToFront();await expect.poll(()=>page.evaluate(()=>document.visibilityState)).toBe('visible');
  await expect(root).toHaveAttribute('data-autoplay','running');
- const resumed=await pose(root);await page.waitForTimeout(700);const later=await pose(root);
+ const resumed=await pose(root);await page.screenshot({path:'../docs/design/previews/labs-home-native-resumed.png'});await page.waitForTimeout(700);const later=await pose(root);
+ await page.screenshot({path:'../docs/design/previews/labs-home-native-later.png'});
+ console.log('native resumed',JSON.stringify({before:resumed.cards[0],after:later.cards[0]}));
  expect(later.href).toBe(resumed.href);expect(later.cards).not.toEqual(resumed.cards);expect(later.story).not.toEqual(resumed.story);
  await other.close();
 });
