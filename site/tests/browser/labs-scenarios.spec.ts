@@ -1,5 +1,8 @@
-import {test,expect,type Page,type Locator} from '@playwright/test';
-import {mkdir} from 'node:fs/promises';
+import {test,expect,chromium,type Browser,type Page,type Locator} from '@playwright/test';
+import {mkdir,mkdtemp,rm} from 'node:fs/promises';
+import {spawn} from 'node:child_process';
+import {tmpdir} from 'node:os';
+import {join} from 'node:path';
 // Keep visual navigation independent of the vote API rate-limit tests.
 test.use({extraHTTPHeaders:{'CF-Connecting-IP':'198.51.100.71'}});
 for(const [width,height] of [[390,844],[768,700],[1440,900],[1280,600]]) test(`liquid stage fits ${width}x${height}`,async({page,request})=>{
@@ -225,36 +228,84 @@ test('visibility events preserve elapsed time without scheduling hidden frames',
  await page.clock.runFor(1400);expect((await pose(root)).href).not.toBe(before.href);
 });
 
-test('returning from another real browser tab resumes visible card animation',async({page,context})=>{
- // Playwright enables focus emulation even in headed Chromium. Disable it
- // on both tabs so visibility events come from the real browser tab switch.
- const session=await context.newCDPSession(page);
- await session.send('Emulation.setFocusEmulationEnabled',{enabled:false});
- await page.goto('/');await page.bringToFront();
- await mkdir('../docs/design/previews',{recursive:true});
- if(test.info().project.use.headless===false) await page.screenshot({path:'../docs/design/previews/labs-home-native-initial.png'});
- const root=page.locator('[data-scenario]');await selectScene(root,1);
- console.log('native initial',await page.evaluate(()=>({visibility:document.visibilityState,focused:document.hasFocus(),progress:document.querySelector<HTMLElement>('[data-scenario]')!.dataset.cameraProgress})));
- await expect(root).toHaveAttribute('data-transitioning','false');
- const other=await context.newPage();
- const otherSession=await context.newCDPSession(other);
- await otherSession.send('Emulation.setFocusEmulationEnabled',{enabled:false});
- await other.goto('about:blank');await other.bringToFront();
- // Some headless Chromium builds keep every tab visible. Run with --headed
- // to exercise native visibility in those builds, rather than faking it here.
- const nativeHidden=await page.waitForFunction(()=>document.hidden,undefined,{polling:100,timeout:3000}).then(()=>true,()=>false);
- if(test.info().project.use.headless!==false) test.skip(!nativeHidden,'Browser keeps headless tabs visible; native tab visibility requires --headed.');
- expect(nativeHidden,'A headed browser must really hide the original tab').toBe(true);
- await expect(root).toHaveAttribute('data-autoplay','paused');
- const paused=await pose(root),start=await elapsed(root);
- await other.waitForTimeout(7000);expect(await elapsed(root)).toBe(start);expect(await pose(root)).toEqual(paused);
- await page.bringToFront();await expect.poll(()=>page.evaluate(()=>document.visibilityState)).toBe('visible');
- await expect(root).toHaveAttribute('data-autoplay','running');
- const resumed=await pose(root);await page.screenshot({path:'../docs/design/previews/labs-home-native-resumed.png'});await page.waitForTimeout(700);const later=await pose(root);
- await page.screenshot({path:'../docs/design/previews/labs-home-native-later.png'});
- console.log('native resumed',JSON.stringify({before:resumed.cards[0],after:later.cards[0]}));
- expect(later.href).toBe(resumed.href);expect(later.cards).not.toEqual(resumed.cards);expect(later.story).not.toEqual(resumed.story);
- await other.close();
+test('returning from another real browser tab resumes visible card animation',async()=>{
+ test.skip(test.info().project.use.headless!==false,'Native tab visibility is verified separately with --headed under Xvfb.');
+ test.setTimeout(45000);
+ // Launch an ordinary browser, then attach without Playwright's default focus
+ // override. Disabling focus from a second CDP session cannot release the
+ // original session's capturer handle, which otherwise keeps the page visible.
+ const profile=await mkdtemp(join(tmpdir(),'compare-native-tabs-'));
+ const child=spawn(process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH||chromium.executablePath(),[
+  '--no-sandbox','--disable-dev-shm-usage','--no-first-run','--no-default-browser-check',
+  '--remote-debugging-port=0',`--user-data-dir=${profile}`,'--window-size=1440,1000','about:blank',
+ ],{stdio:['ignore','ignore','pipe']});
+ let browser:Browser|undefined,stderr='';
+ try {
+  const endpoint=await new Promise<string>((resolve,reject)=>{
+   const timeout=setTimeout(()=>reject(new Error(`Native browser did not expose CDP: ${stderr}`)),15000);
+   child.stderr.on('data',chunk=>{
+    stderr=(stderr+chunk.toString()).slice(-12000);
+    const match=stderr.match(/DevTools listening on (ws:\/\/\S+)/);
+    if(match){clearTimeout(timeout);resolve(match[1]);}
+   });
+   child.once('error',error=>{clearTimeout(timeout);reject(error);});
+   child.once('exit',(code,signal)=>{clearTimeout(timeout);reject(new Error(`Native browser exited (${code}, ${signal}): ${stderr}`));});
+  });
+  browser=await chromium.connectOverCDP(endpoint,{noDefaults:true});
+  // noDefaults applies only to the existing default context; do not replace
+  // it with browser.newContext(), which would enable focus emulation again.
+  const context=browser.contexts()[0];
+  await context.setExtraHTTPHeaders({'CF-Connecting-IP':'198.51.100.71'});
+  const page=context.pages()[0]||await context.newPage();
+  await page.goto(String(test.info().project.use.baseURL||'http://127.0.0.1:8788'));
+  await page.bringToFront();
+  await expect.poll(()=>page.evaluate(()=>document.visibilityState)).toBe('visible');
+  await mkdir('../docs/design/previews',{recursive:true});
+  await page.screenshot({path:'../docs/design/previews/labs-home-native-initial.png'});
+  const root=page.locator('[data-scenario]');await selectScene(root,1);
+  await expect(root).toHaveAttribute('data-transitioning','false');
+  await page.evaluate(()=>{
+   const events=[document.visibilityState];
+   (window as any).__nativeVisibilityEvents=events;
+   document.addEventListener('visibilitychange',()=>events.push(document.visibilityState));
+  });
+  const session=await context.newCDPSession(page),browserSession=await browser.newBrowserCDPSession();
+  const {targetInfo}=await session.send('Target.getTargetInfo');
+  const originalWindow=await browserSession.send('Browser.getWindowForTarget',{targetId:targetInfo.targetId});
+  const newPage=context.waitForEvent('page');
+  const {targetId:otherTargetId}=await browserSession.send('Target.createTarget',{url:'about:blank',newWindow:false,background:false});
+  const other=await newPage;
+  const otherWindow=await browserSession.send('Browser.getWindowForTarget',{targetId:otherTargetId});
+  expect(otherWindow.windowId,'Both targets must be tabs in the same browser window').toBe(originalWindow.windowId);
+  await other.bringToFront();
+  // Poll from the runner: a hidden document intentionally has no RAF callbacks.
+  await expect.poll(()=>page.evaluate(()=>document.visibilityState),{timeout:5000}).toBe('hidden');
+  await expect(root).toHaveAttribute('data-autoplay','paused');
+  const paused=await pose(root),start=await elapsed(root);
+  await other.waitForTimeout(7000);
+  expect(await elapsed(root)).toBe(start);expect(await pose(root)).toEqual(paused);
+  await page.bringToFront();
+  await expect.poll(()=>page.evaluate(()=>document.visibilityState)).toBe('visible');
+  await expect(root).toHaveAttribute('data-autoplay','running');
+  const resumed=await pose(root);
+  await page.screenshot({path:'../docs/design/previews/labs-home-native-resumed.png'});
+  await page.waitForTimeout(700);const later=await pose(root);
+  await page.screenshot({path:'../docs/design/previews/labs-home-native-later.png'});
+  const events=await page.evaluate(()=>(window as any).__nativeVisibilityEvents);
+  console.log('native tab recovery',JSON.stringify({windowId:originalWindow.windowId,events,pausedProgress:start,before:resumed.cards[0],after:later.cards[0]}));
+  expect(events).toEqual(['visible','hidden','visible']);
+  expect(later.href).toBe(resumed.href);expect(later.cards).not.toEqual(resumed.cards);expect(later.story).not.toEqual(resumed.story);
+ } finally {
+  await browser?.close().catch(()=>{});
+  if(child.exitCode===null&&child.signalCode===null){
+   child.kill('SIGTERM');
+   await new Promise<void>(resolve=>{
+    const timeout=setTimeout(()=>{child.kill('SIGKILL');resolve();},5000);
+    child.once('exit',()=>{clearTimeout(timeout);resolve();});
+   });
+  }
+  await rm(profile,{recursive:true,force:true});
+ }
 });
 
 test('reduced motion has a stable illustration and switching it off rebuilds motion',async({page})=>{
