@@ -489,12 +489,10 @@
           "note": "可捕获浏览器中的视频流，不是针对每个站点的解析器"
         },
         "schedule": {
-          "value": "unknown",
-          "note": "未确认"
+          "value": "yes"
         },
         "speed_limit": {
-          "value": "unknown",
-          "note": "未确认"
+          "value": "yes"
         },
         "rss": {
           "value": "unknown",
@@ -511,7 +509,9 @@
       },
       "sources": [
         "https://xtremedownloadmanager.com/",
-        "https://github.com/subhra74/xdm"
+        "https://github.com/subhra74/xdm",
+        "https://xtremedownloadmanager.com/guide/schedule-downloads/",
+        "https://xtremedownloadmanager.com/help/slow-downloads/"
       ]
     },
     {
