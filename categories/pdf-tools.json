@@ -610,8 +610,7 @@
           "value": "yes"
         },
         "sign": {
-          "value": "unknown",
-          "note": "首页未确认"
+          "value": "yes"
         },
         "encrypt": {
           "value": "unknown",
@@ -627,7 +626,8 @@
         "https://github.com/KDE/okular",
         "https://invent.kde.org/graphics/okular",
         "https://docs.kde.org/stable_kf6/en/okular/okular/forms.html",
-        "https://docs.kde.org/stable_kf6/en/okular/okular/annotations.html"
+        "https://docs.kde.org/stable_kf6/en/okular/okular/annotations.html",
+        "https://docs.kde.org/stable_kf6/en/okular/okular/signatures.html"
       ],
       "source_url": "https://invent.kde.org/graphics/okular",
       "source_host_note": "官方仓库在 invent.kde.org，GitHub KDE/okular 为官方镜像。"
