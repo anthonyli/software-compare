@@ -329,7 +329,10 @@ test('reduced motion has a stable illustration and switching it off rebuilds mot
 test('rapid selections cancel outgoing reveals and keep only the final scene interactive',async({page})=>{
  const root=await clockPage(page);
  for(const index of [1,4,2,5,0,3,1]) {
-  await root.locator(`[data-dot="${index}"]`).click({force:true});await page.clock.runFor(80);
+  // This tests interruption semantics, not hit testing of moving CSS targets.
+  await root.locator(`[data-dot="${index}"]`).dispatchEvent('click');
+  await expect(root.locator(`[data-dot="${index}"]`)).toHaveAttribute('aria-pressed','true');
+  await page.clock.runFor(80);
  }
  await page.clock.runFor(1600);await expect(root).toHaveAttribute('data-transitioning','false');
  await expect(root.locator('[data-position=active]')).toHaveCount(1);
@@ -337,6 +340,19 @@ test('rapid selections cancel outgoing reveals and keep only the final scene int
  await expect(root.locator('[data-dot="1"]')).toHaveAttribute('aria-pressed','true');
  expect(await root.locator('[data-scene][aria-hidden=true] a').evaluateAll(links=>links.every(link=>(link as HTMLAnchorElement).tabIndex===-1))).toBe(true);
  const before=await pose(root);await page.clock.runFor(1400);expect((await pose(root)).cards).not.toEqual(before.cards);
+});
+
+test('real pointer selections reach each intended carousel dot',async({page})=>{
+ await page.goto('/');const root=page.locator('[data-scenario]');
+ await expect(root).toHaveAttribute('data-autoplay','running');
+ for(const index of [1,4,2,5,0,3,1]) {
+  // Real pointer clicks retain Playwright stability/hit-target checks.
+  await root.locator(`[data-dot="${index}"]`).click();
+  await expect(root.locator(`[data-dot="${index}"]`)).toHaveAttribute('aria-pressed','true');
+ }
+ await expect(root).toHaveAttribute('data-transitioning','false');
+ await expect(root.locator('[data-position=active]')).toHaveCount(1);
+ await expect(root.locator('[data-position=outgoing]')).toHaveCount(0);
 });
 
 test.describe('mobile touch carousel',()=>{
