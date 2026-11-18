@@ -426,12 +426,10 @@
           "note": "未确认"
         },
         "titles": {
-          "value": "unknown",
-          "note": "未确认"
+          "value": "yes"
         },
         "audio_mix": {
-          "value": "unknown",
-          "note": "未确认"
+          "value": "yes"
         },
         "chroma_key": {
           "value": "unknown",
@@ -451,7 +449,9 @@
         }
       },
       "sources": [
-        "https://github.com/jliljebl/flowblade"
+        "https://github.com/jliljebl/flowblade",
+        "https://github.com/jliljebl/flowblade/blob/54b68c4532e4d50e3f617a38a680315eb159f11e/flowblade-trunk/Flowblade/res/help/tools.html",
+        "https://jliljebl.github.io/flowblade/webhelp/tools.html"
       ]
     },
     {
