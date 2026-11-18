@@ -4,5 +4,5 @@ test('LibreOffice PDF protection cites export security, not inferred forms',()=>
  const rows=d.products.filter(p=>p.id==='libreoffice');assert.equal(rows.length,1);const p=rows[0];
  assert.deepEqual(p.features.encrypt,{value:'yes'});
  assert(p.sources.includes('https://help.libreoffice.org/latest/en-US/text/shared/01/ref_pdf_export_security.html'));
- for(const k of ['form_fill','sign','compress'])assert.equal(p.features[k].value,'unknown');
+ for(const k of ['form_fill','compress'])assert.equal(p.features[k].value,'unknown');
 });

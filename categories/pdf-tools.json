@@ -692,8 +692,7 @@
           "note": "本次未打开专门表单说明"
         },
         "sign": {
-          "value": "unknown",
-          "note": "本次未打开签名说明"
+          "value": "yes"
         },
         "encrypt": {
           "value": "yes"
@@ -708,7 +707,8 @@
         "https://www.libreoffice.org",
         "https://github.com/LibreOffice/core",
         "https://git.libreoffice.org/core",
-        "https://help.libreoffice.org/latest/en-US/text/shared/01/ref_pdf_export_security.html"
+        "https://help.libreoffice.org/latest/en-US/text/shared/01/ref_pdf_export_security.html",
+        "https://help.libreoffice.org/latest/en-US/text/shared/01/signexistingpdf.html"
       ],
       "source_url": "https://git.libreoffice.org/core",
       "source_host_note": "官方开发仓库在 git.libreoffice.org（Gerrit），GitHub LibreOffice/core 为只读官方镜像，不接受 Pull Request。"
