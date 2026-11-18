@@ -62,8 +62,8 @@
           "note": "仓库包含实时语音示例，需自行构建和配置"
         },
         "transcript_export": {
-          "value": "unknown",
-          "note": "本次未逐项核实输出格式"
+          "value": "yes",
+          "note": "whisper-cli · TXT / VTT / SRT / CSV / JSON"
         },
         "desktop_gui": {
           "value": "no",
@@ -71,7 +71,8 @@
         }
       },
       "sources": [
-        "https://github.com/ggml-org/whisper.cpp"
+        "https://github.com/ggml-org/whisper.cpp",
+        "https://github.com/ggml-org/whisper.cpp/blob/d1be6fde11ac6e0407606b4e42fe72d34add8037/examples/cli/cli.cpp"
       ],
       "collected_at": "2026-11-13"
     },
