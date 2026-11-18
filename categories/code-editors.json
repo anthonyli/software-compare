@@ -1258,8 +1258,7 @@
           "note": "未核实当前默认配置及插件组合的完整支持范围。"
         },
         "multi_cursor": {
-          "value": "unknown",
-          "note": "未核实当前默认配置及插件组合的完整支持范围。"
+          "value": "yes"
         },
         "remote_dev": {
           "value": "unknown",
@@ -1278,7 +1277,9 @@
         "https://lite-xl.com/",
         "https://github.com/lite-xl/lite-xl",
         "https://github.com/lite-xl/lite-xl/blob/master/LICENSE",
-        "https://github.com/lite-xl/lite-xl-lsp"
+        "https://github.com/lite-xl/lite-xl-lsp",
+        "https://github.com/lite-xl/lite-xl/blob/0af4dae0e2748d6afe7bded41c13d96f627cb520/data/core/commands/doc.lua",
+        "https://github.com/lite-xl/lite-xl/blob/0af4dae0e2748d6afe7bded41c13d96f627cb520/data/core/keymap.lua"
       ],
       "collected_at": "2026-11-15"
     }
