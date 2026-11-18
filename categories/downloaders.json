@@ -796,8 +796,7 @@
           "note": "未确认"
         },
         "schedule": {
-          "value": "unknown",
-          "note": "未确认"
+          "value": "yes"
         },
         "speed_limit": {
           "value": "unknown",
@@ -817,7 +816,9 @@
         }
       },
       "sources": [
-        "https://www.freedownloadmanager.org/"
+        "https://www.freedownloadmanager.org/",
+        "https://www.freedownloadmanager.org/features.htm",
+        "https://www.freedownloadmanager.org/landing.htm?from=b_si_version"
       ]
     },
     {
