@@ -1176,8 +1176,7 @@
           "note": "定位为 Mac 截图标注工具，首页提供下载与区域截图工作流；v1.10 新增 Advanced Area Capture"
         },
         "window_capture": {
-          "value": "unknown",
-          "note": "官网未单独把窗口截图写成独立卖点"
+          "value": "yes"
         },
         "scrolling_capture": {
           "value": "yes",
@@ -1196,8 +1195,7 @@
           "note": "官网：Text recognition (OCR) & QR，可将文字复制到剪贴板"
         },
         "pin_to_screen": {
-          "value": "partial",
-          "note": "可把截图用作 references / 临时存储；未用「浮动贴图」一词，故记为部分"
+          "value": "yes"
         },
         "color_picker": {
           "value": "unknown",
