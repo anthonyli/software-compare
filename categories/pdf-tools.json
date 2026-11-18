@@ -963,16 +963,16 @@
           "note": "官网：Read, edit, convert, merge, and sign"
         },
         "annotate": {
-          "value": "unknown",
-          "note": "首页总述未单独展开批注工具，作为编辑器很可能包含，但未在本次文本中确认"
+          "value": "yes",
+          "note": "Windows"
         },
         "edit_text": {
           "value": "yes",
           "note": "官网明确 edit"
         },
         "ocr": {
-          "value": "unknown",
-          "note": "第三方测评常提到 OCR，但本次官网首页摘录未出现 OCR 一词，不予确认"
+          "value": "yes",
+          "note": "Windows"
         },
         "merge_split": {
           "value": "yes",
@@ -983,8 +983,8 @@
           "note": "PDF to Word、Word to PDF、JPG to PDF 等在线工具"
         },
         "form_fill": {
-          "value": "unknown",
-          "note": "首页未单独确认"
+          "value": "yes",
+          "note": "Windows"
         },
         "sign": {
           "value": "yes",
@@ -1000,7 +1000,9 @@
         }
       },
       "sources": [
-        "https://www.pdfgear.com"
+        "https://www.pdfgear.com",
+        "https://www.pdfgear.com/pdfgear-for-windows/index.htm",
+        "https://www.pdfgear.com/windows-user-guide/fill-out-pdf-form.htm"
       ]
     },
     {
