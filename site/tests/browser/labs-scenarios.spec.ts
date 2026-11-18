@@ -1,5 +1,6 @@
 import {test,expect,chromium,type Browser,type Page,type Locator} from '@playwright/test';
-import {mkdir,mkdtemp,rm} from 'node:fs/promises';
+import {mkdir,mkdtemp} from 'node:fs/promises';
+import {observeBrowserClose,cleanupBrowserProfile} from '../helpers/native-browser-cleanup.mjs';
 import {spawn} from 'node:child_process';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
@@ -239,6 +240,7 @@ test('returning from another real browser tab resumes visible card animation',as
   '--no-sandbox','--disable-dev-shm-usage','--no-first-run','--no-default-browser-check',
   '--remote-debugging-port=0',`--user-data-dir=${profile}`,'--window-size=1440,1000','about:blank',
  ],{stdio:['ignore','ignore','pipe']});
+ const stopBrowser=observeBrowserClose(child);
  let browser:Browser|undefined,stderr='';
  try {
   const endpoint=await new Promise<string>((resolve,reject)=>{
@@ -297,14 +299,7 @@ test('returning from another real browser tab resumes visible card animation',as
   expect(later.href).toBe(resumed.href);expect(later.cards).not.toEqual(resumed.cards);expect(later.story).not.toEqual(resumed.story);
  } finally {
   await browser?.close().catch(()=>{});
-  if(child.exitCode===null&&child.signalCode===null){
-   child.kill('SIGTERM');
-   await new Promise<void>(resolve=>{
-    const timeout=setTimeout(()=>{child.kill('SIGKILL');resolve();},5000);
-    child.once('exit',()=>{clearTimeout(timeout);resolve();});
-   });
-  }
-  await rm(profile,{recursive:true,force:true});
+  await cleanupBrowserProfile(stopBrowser,profile);
  }
 });
 
