@@ -712,8 +712,8 @@
           "note": "自带乐器和效果"
         },
         "noise_reduce": {
-          "value": "unknown",
-          "note": "未确认"
+          "value": "partial",
+          "note": "Noise Gate"
         },
         "spectral": {
           "value": "no",
@@ -741,7 +741,9 @@
         }
       },
       "sources": [
-        "https://www.apple.com/mac/garageband/"
+        "https://www.apple.com/mac/garageband/",
+        "https://support.apple.com/en-ae/102011",
+        "https://support.apple.com/en-az/guide/garageband-iphone/chs39283a21/ios"
       ]
     },
     {
