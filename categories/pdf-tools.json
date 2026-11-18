@@ -540,8 +540,7 @@
           "value": "yes"
         },
         "compress": {
-          "value": "unknown",
-          "note": "首页未确认"
+          "value": "yes"
         }
       },
       "sources": [
@@ -549,7 +548,9 @@
         "https://github.com/cyanfish/naps2",
         "https://raw.githubusercontent.com/cyanfish/naps2/master/LICENSE",
         "https://www.naps2.com/doc/ocr",
-        "https://www.naps2.com/doc/command-line"
+        "https://www.naps2.com/doc/command-line",
+        "https://www.naps2.com/doc/editing#compress",
+        "https://www.naps2.com/doc/settings"
       ]
     },
     {
