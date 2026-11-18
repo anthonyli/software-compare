@@ -1,0 +1,5 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';
+const p=JSON.parse(fs.readFileSync(new URL('../../categories/note-taking.json',import.meta.url),'utf8')).products.find(p=>p.id==='notesnook');
+const base='https://github.com/streetwriters/notesnook/blob/4fc6fb4235c5834905f57b9bd82098bec2cd95cb/docs/help/contents/';
+test('Notesnook basic rich text is verified independently of advanced paid tools',()=>{assert.deepEqual(p.features.rich_text,{value:'yes'});assert(p.sources.includes(base+'rich-text-editor/rich-text-editor-toolbar.md'));assert.match(p.free_tier_limits,/50MB.*10MB/);});
+test('Notesnook web clipping identifies browser scope and preserves quota and trial caveats',()=>{assert.deepEqual(p.features.web_clipper,{value:'yes',note:'Chromium / Firefox'});for(const f of ['installation.md','clipping-your-first-web-page-with-web-clipper.md'])assert(p.sources.includes(base+'web-clipper/'+f));assert.match(p.price_summary,/14天.*支付方式.*5年.*无试用/);assert.equal(p.features.plugins.value,'unknown');assert.equal(p.features.collaboration.value,'unknown');});
