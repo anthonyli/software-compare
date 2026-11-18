@@ -112,14 +112,15 @@
           "note": "支持 Imgur、Amazon S3、Google Cloud Storage、自定义图床等"
         },
         "history": {
-          "value": "unknown",
-          "note": "官网首页未单独列出截图历史管理器"
+          "value": "yes"
         }
       },
       "sources": [
         "https://getsharex.com",
         "https://github.com/ShareX/ShareX",
-        "https://github.com/ShareX/ShareX/releases/tag/v22.4.0"
+        "https://github.com/ShareX/ShareX/releases/tag/v22.4.0",
+        "https://github.com/ShareX/ShareX/blob/08bfff15e748a945944e609aca7faffbe888c7af/ShareX/Presentation/MainWindow/MainMenuBuilder.cs",
+        "https://github.com/ShareX/ShareX/blob/08bfff15e748a945944e609aca7faffbe888c7af/ShareX/TaskHelpers.cs"
       ]
     },
     {
@@ -177,8 +178,7 @@
           "note": "官网首页未列出 OCR"
         },
         "pin_to_screen": {
-          "value": "unknown",
-          "note": "官网首页未明确写出贴图钉屏"
+          "value": "yes"
         },
         "color_picker": {
           "value": "unknown",
@@ -197,7 +197,9 @@
         "https://flameshot.org",
         "https://github.com/flameshot-org/flameshot",
         "https://github.com/flameshot-org/flameshot/releases/tag/v15.0.0",
-        "https://github.com/flameshot-org/flameshot#usage"
+        "https://github.com/flameshot-org/flameshot#usage",
+        "https://github.com/flameshot-org/flameshot/blob/f4f2e4e879f0e9b4cb7efb59f6b3f44ed05b1843/src/tools/pin/pintool.cpp",
+        "https://github.com/flameshot-org/flameshot/blob/f4f2e4e879f0e9b4cb7efb59f6b3f44ed05b1843/src/tools/pin/pinwidget.cpp"
       ]
     },
     {
