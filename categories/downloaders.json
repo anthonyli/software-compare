@@ -566,12 +566,10 @@
           "note": "未确认"
         },
         "schedule": {
-          "value": "unknown",
-          "note": "未确认"
+          "value": "yes"
         },
         "speed_limit": {
-          "value": "unknown",
-          "note": "未确认"
+          "value": "yes"
         },
         "rss": {
           "value": "unknown",
@@ -588,7 +586,11 @@
       },
       "sources": [
         "https://abdownloadmanager.com/",
-        "https://github.com/amir1376/ab-download-manager"
+        "https://github.com/amir1376/ab-download-manager",
+        "https://github.com/amir1376/ab-download-manager/blob/b1d067c9b3c2f069c3b75fae631da9bd1793191e/README.md",
+        "https://github.com/amir1376/ab-download-manager/blob/b1d067c9b3c2f069c3b75fae631da9bd1793191e/downloader/core/src/commonMain/kotlin/ir/amirab/downloader/queue/DownloadQueue.kt",
+        "https://github.com/amir1376/ab-download-manager/blob/b1d067c9b3c2f069c3b75fae631da9bd1793191e/desktop/app/src/main/kotlin/com/abdownloadmanager/desktop/ui/configurable/comon/renderer/ToggleableSpeedLimitConfigurableRenderer.kt",
+        "https://github.com/amir1376/ab-download-manager/blob/b1d067c9b3c2f069c3b75fae631da9bd1793191e/downloader/core/src/commonMain/kotlin/ir/amirab/downloader/DownloadManager.kt"
       ]
     },
     {
