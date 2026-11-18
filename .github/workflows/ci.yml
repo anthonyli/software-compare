@@ -25,6 +25,9 @@ jobs:
         working-directory: site
       - run: npm run test:e2e
         working-directory: site
+      - name: Verify native carousel tab visibility
+        run: xvfb-run -a npm run test:e2e -- tests/browser/labs-scenarios.spec.ts --headed --grep "another real browser tab"
+        working-directory: site
       - name: Upload domain registration visual previews
         if: always()
         uses: actions/upload-artifact@v4

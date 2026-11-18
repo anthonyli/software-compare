@@ -1,4 +1,4 @@
-import {test,expect} from '@playwright/test';
+import {test,expect,type Page,type Locator} from '@playwright/test';
 import {mkdir} from 'node:fs/promises';
 // Keep visual navigation independent of the vote API rate-limit tests.
 test.use({extraHTTPHeaders:{'CF-Connecting-IP':'198.51.100.71'}});
@@ -27,42 +27,22 @@ for(const [width,height] of [[390,844],[768,700],[1440,900],[1280,600]]) test(`l
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
 });
 
-test('click, focus, hover and touch never stop autoplay across complete loops',async({page})=>{
- test.setTimeout(150000);await page.setViewportSize({width:1440,height:900});
- await page.clock.install({time:new Date('2026-01-01T00:00:00Z')});await page.clock.pauseAt(new Date('2026-01-01T00:00:01Z'));
- await page.goto('/');await page.clock.runFor(1500);
- const root=page.locator('[data-scenario]'),active=root.locator('[data-position=active]');
- // The selected dot retains focus after autoplay moves on: this used to stop it.
- await root.locator('[data-dot][aria-pressed=true]').click({force:true});
- for(let i=0;i<12;i++){
-  await expect(root).toHaveAttribute('data-autoplay','running');
-  const before=await active.locator('a').getAttribute('href');
-  const depth=Number(await root.getAttribute('data-camera-progress'));
-  await page.clock.runFor(1500);expect(Number(await root.getAttribute('data-camera-progress'))).toBeGreaterThan(depth);
-  await page.clock.runFor(4500);expect(await active.locator('a').getAttribute('href')).not.toBe(before);
- }
- // Repeated active-dot clicks must not reset the deadline either.
- const before=await active.locator('a').getAttribute('href');
- for(let i=0;i<5;i++){await root.locator('[data-dot][aria-pressed=true]').click({force:true});await page.clock.runFor(1000);}
- expect(await active.locator('a').getAttribute('href')).not.toBe(before);
+test('focus, hover and canceled touch preserve autoplay and accessible focus',async({page})=>{
+ await page.setViewportSize({width:1440,height:900});
+ const root=await clockPage(page),active=root.locator('[data-position=active]');
+ await selectScene(root,1);await page.clock.runFor(1600);
  await active.locator('a').hover({force:true});await active.locator('a').focus();
  await expect(root).toHaveAttribute('data-autoplay','running');
- const hovered=await active.locator('a').getAttribute('href');await page.clock.runFor(6000);expect(await active.locator('a').getAttribute('href')).not.toBe(hovered);
+ const focused=await active.locator('a').getAttribute('href');
+ await page.clock.runFor(6200);expect(await active.locator('a').getAttribute('href')).not.toBe(focused);
  await expect(root).toBeFocused();
  expect(await root.locator('[aria-hidden=true]').evaluateAll(nodes=>nodes.some(el=>el.contains(document.activeElement)))).toBe(false);
  await root.click({position:{x:10,y:150},force:true});await root.press('Space');
  await root.evaluate(el=>el.dispatchEvent(new TouchEvent('touchstart',{touches:[new Touch({identifier:1,target:el,clientX:100,clientY:100})]})));
  await root.dispatchEvent('touchcancel');await expect(root).toHaveAttribute('data-autoplay','running');
- const touched=await active.locator('a').getAttribute('href');await page.clock.runFor(6000);expect(await active.locator('a').getAttribute('href')).not.toBe(touched);
+ const touched=await active.locator('a').getAttribute('href');await page.clock.runFor(6200);expect(await active.locator('a').getAttribute('href')).not.toBe(touched);
  await root.locator('[data-shuffle]').click({force:true});await page.clock.runFor(1400);await expect(root).toHaveAttribute('data-autoplay','running');
- const shuffled=await active.locator('a').getAttribute('href');await page.clock.runFor(6000);expect(await active.locator('a').getAttribute('href')).not.toBe(shuffled);
- await page.locator('footer').scrollIntoViewIfNeeded();await expect(root).toHaveAttribute('data-autoplay','paused');
- await page.evaluate(()=>window.scrollTo(0,0));await expect(root).toHaveAttribute('data-autoplay','running');
- await page.emulateMedia({reducedMotion:'reduce'});await expect(root).toHaveAttribute('data-autoplay','paused');await expect(root).toHaveAttribute('data-transitioning','false');
- const still=await active.locator('a').getAttribute('href');await page.clock.runFor(6500);await expect(active.locator('a')).toHaveAttribute('href',still!);
- await root.press('ArrowRight');await expect(active.locator('a')).not.toHaveAttribute('href',still!);await expect(root).toHaveAttribute('data-transitioning','false');
- await page.emulateMedia({reducedMotion:'no-preference'});await expect(root).toHaveAttribute('data-autoplay','running');
- const resumed=await active.locator('a').getAttribute('href');await page.clock.runFor(6000);expect(await active.locator('a').getAttribute('href')).not.toBe(resumed);
+ const shuffled=await active.locator('a').getAttribute('href');await page.clock.runFor(6200);expect(await active.locator('a').getAttribute('href')).not.toBe(shuffled);
 });
 
 test('first-entry and manual liquid reveal frames, transparent navigation',async({page})=>{
@@ -109,7 +89,7 @@ test('six scene-specific organic contours keep their own silhouette',async({page
 });
 
 
-test('quick recoil turns while background cards advance slowly in perspective',async({page})=>{
+test('quick recoil keeps its shape while scene cards tell their own story',async({page})=>{
  await page.setViewportSize({width:1440,height:900});
  await page.clock.install({time:new Date('2026-01-01T00:00:00Z')});await page.clock.pauseAt(new Date('2026-01-01T00:00:01Z'));
  await page.goto('/');await page.clock.runFor(1400);
@@ -125,35 +105,225 @@ test('quick recoil turns while background cards advance slowly in perspective',a
  const card=root.locator('[data-position=active] .art-window');
  const near=await card.boundingBox();await page.screenshot({path:'../docs/design/previews/labs-home-depth-start.png'});
  await page.clock.runFor(2000);const nearer=await card.boundingBox();
- expect(nearer!.width).toBeGreaterThan(near!.width);await page.screenshot({path:'../docs/design/previews/labs-home-depth-later.png'});
+ expect(Math.hypot(nearer!.x-near!.x,nearer!.y-near!.y)).toBeGreaterThan(1);await page.screenshot({path:'../docs/design/previews/labs-home-depth-later.png'});
  await page.emulateMedia({reducedMotion:'reduce'});
  expect(await card.evaluate(el=>el.getAnimations().length)).toBe(0);
 });
 
 
-test('camera push restarts through two complete automatic loops and repeated manual entries',async({page})=>{
+// Compare rendered poses as well as the clock: a moving progress bar alone
+// cannot prove the card or its SVG story is still alive.
+async function pose(root:Locator) {
+ return root.locator('[data-position=active]').evaluate(el=>({
+  href:el.querySelector('a')!.getAttribute('href'),
+  cards:Array.from(el.querySelectorAll('.art-window,.art-mini,.floating-tag,.art-label'),card=>{
+   const box=card.getBoundingClientRect(),style=getComputedStyle(card);
+   return [box.x,box.y,box.width,box.height,style.translate,style.rotate];
+  }),
+  story:Array.from(el.querySelectorAll('.scene-art svg *'),part=>{
+   const style=getComputedStyle(part);return [style.transform,style.opacity,style.strokeDashoffset];
+  }),
+ }));
+}
+async function clockPage(page:Page) {
+ await page.clock.install({time:new Date('2026-01-01T00:00:00Z')});
+ await page.clock.pauseAt(new Date('2026-01-01T00:00:01Z'));
+ await page.goto('/');await page.clock.runFor(1600);
+ return page.locator('[data-scenario]');
+}
+async function selectScene(root:Locator,index:number) {
+ if(await root.locator(`[data-dot="${index}"]`).getAttribute('aria-pressed')==='true')
+  await root.locator(`[data-dot="${(index+1)%6}"]`).click({force:true});
+ await root.locator(`[data-dot="${index}"]`).click({force:true});
+}
+async function elapsed(root:Locator) {return Number(await root.getAttribute('data-camera-progress'));}
+async function progressScale(root:Locator) {
+ return root.locator('[data-dot][aria-pressed=true] i').evaluate(el=>new DOMMatrix(getComputedStyle(el).transform).a);
+}
+async function watchFrames(page:Page) {
+ await page.evaluate(()=>{
+  const request=window.requestAnimationFrame.bind(window),cancel=window.cancelAnimationFrame.bind(window);
+  let requested=0,fired=0;const pending=new Set<number>();
+  window.requestAnimationFrame=callback=>{
+   requested++;const id=request(time=>{pending.delete(id);fired++;callback(time);});pending.add(id);return id;
+  };
+  window.cancelAnimationFrame=id=>{pending.delete(id);cancel(id);};
+  Object.defineProperty(window,'__carouselFrames',{get:()=>({requested,fired,pending:pending.size})});
+ });
+}
+async function frames(page:Page) {return page.evaluate(()=>(window as any).__carouselFrames);}
+
+test('cards and SVG stories advance through two complete automatic loops',async({page})=>{
  test.setTimeout(150000);await page.setViewportSize({width:1440,height:900});
- await page.clock.install({time:new Date('2026-01-01T00:00:00Z')});await page.clock.pauseAt(new Date('2026-01-01T00:00:01Z'));
- await page.goto('/');await page.clock.runFor(1500);
- const root=page.locator('[data-scenario]');
- // Focus outside the hero so this genuinely exercises automatic rotation.
- await page.locator('[data-lang=en]').focus();await page.clock.runFor(6000);
- for(let cycle=0;cycle<2;cycle++)for(let scene=0;scene<6;scene++){
-  const id=await root.locator('[data-position=active] a').getAttribute('href');
-  const start=Number(await root.getAttribute('data-camera-progress'));
-  expect(start).toBeLessThan(.28);
-  await page.clock.runFor(1500);
-  expect(Number(await root.getAttribute('data-camera-progress'))).toBeGreaterThan(start);
-  await page.clock.runFor(4500);
-  expect(await root.locator('[data-position=active] a').getAttribute('href')).not.toBe(id);
+ const root=await clockPage(page);await selectScene(root,0);await page.clock.runFor(1600);
+ const visited=new Set<string>();
+ for(let visit=0;visit<12;visit++){
+  const before=await pose(root),start=await elapsed(root);visited.add(before.href!);
+  expect(start).toBeLessThan(.3);
+  expect(await progressScale(root)).toBeCloseTo(start,2);
+  await page.clock.runFor(1800);
+  const after=await pose(root);
+  expect(after.href).toBe(before.href);
+  expect(after.cards).not.toEqual(before.cards);
+  expect(after.story.length).toBeGreaterThan(0);
+  expect(after.story).not.toEqual(before.story);
+  expect(await elapsed(root)).toBeGreaterThan(start);
+  expect(await progressScale(root)).toBeCloseTo(await elapsed(root),2);
+  await page.clock.runFor(4200);
+  expect((await pose(root)).href).not.toBe(before.href);
  }
- for(let visit=0;visit<3;visit++){
-  const selected=await root.locator('[data-dot][aria-pressed=true]').getAttribute('data-dot');
-  await root.locator(`[data-dot="${selected==='1'?2:1}"]`).click({force:true});await page.clock.runFor(1400);
-  await root.locator('[data-dot="0"]').click({force:true});await page.clock.runFor(1400);
-  const card=root.locator('[data-position=active] .art-window'),far=await card.boundingBox();
-  await page.screenshot({path:`../docs/design/previews/labs-home-loop-${visit}-far.png`});
-  await page.clock.runFor(2600);const near=await card.boundingBox();expect(near!.width).toBeGreaterThan(far!.width*1.12);expect(Math.abs(near!.x-far!.x)).toBeGreaterThan(15);expect(Math.abs(near!.y-far!.y)).toBeGreaterThan(15);
-  await page.screenshot({path:`../docs/design/previews/labs-home-loop-${visit}-near.png`});
+ expect(visited.size).toBe(6);
+});
+
+test('language changes and repeated active-dot clicks preserve the shared deadline',async({page})=>{
+ const root=await clockPage(page);await selectScene(root,1);await page.clock.runFor(1600);
+ const before=await pose(root),start=await elapsed(root);
+ for(const language of ['en','zh','en']) {
+  await page.locator(`[data-lang=${language}]`).click({force:true});
+  await root.locator('[data-dot="1"]').click({force:true});
+  expect(await elapsed(root)).toBeCloseTo(start,3);
  }
+ await page.clock.runFor(1600);const after=await pose(root);
+ expect(after.cards).not.toEqual(before.cards);expect(after.story).not.toEqual(before.story);
+ expect(await progressScale(root)).toBeCloseTo(await elapsed(root),2);
+ await page.clock.runFor(3000);
+ await expect(root.locator('[data-dot="2"]')).toHaveAttribute('aria-pressed','true');
+});
+
+test('offscreen pause stops frames and resumes cards, SVG and progress together',async({page})=>{
+ const root=await clockPage(page);await selectScene(root,1);await page.clock.runFor(2200);await watchFrames(page);
+ await page.locator('footer').scrollIntoViewIfNeeded();await expect(root).toHaveAttribute('data-autoplay','paused');
+ const start=await elapsed(root),before=await pose(root),pausedFrames=await frames(page);
+ await page.clock.runFor(9000);
+ expect(await elapsed(root)).toBe(start);expect(await pose(root)).toEqual(before);
+ expect(await frames(page)).toEqual(pausedFrames);expect(pausedFrames.pending).toBe(0);
+ await page.evaluate(()=>window.scrollTo(0,0));await expect(root).toHaveAttribute('data-autoplay','running');
+ const resumed=await pose(root);await page.clock.runFor(1600);const after=await pose(root);
+ expect(after.href).toBe(before.href);expect(after.cards).not.toEqual(resumed.cards);expect(after.story).not.toEqual(resumed.story);
+ expect(await elapsed(root)).toBeGreaterThan(start);expect(await progressScale(root)).toBeCloseTo(await elapsed(root),2);
+ await page.clock.runFor(2500);expect((await pose(root)).href).not.toBe(before.href);
+});
+
+test('visibility events preserve elapsed time without scheduling hidden frames',async({page})=>{
+ // Deterministic event coverage complements the real-tab test below. This does
+ // not claim to reproduce browser tab visibility itself.
+ const root=await clockPage(page);await selectScene(root,1);await page.clock.runFor(3800);await watchFrames(page);
+ await page.evaluate(()=>{
+  Object.defineProperty(document,'hidden',{configurable:true,get:()=>true});
+  document.dispatchEvent(new Event('visibilitychange'));
+ });
+ await expect(root).toHaveAttribute('data-autoplay','paused');
+ const start=await elapsed(root),before=await pose(root),pausedFrames=await frames(page);
+ await page.clock.runFor(10000);
+ expect(await elapsed(root)).toBe(start);expect(await pose(root)).toEqual(before);expect(await frames(page)).toEqual(pausedFrames);
+ expect(pausedFrames.pending).toBe(0);
+ await page.evaluate(()=>{delete (document as any).hidden;document.dispatchEvent(new Event('visibilitychange'));});
+ await expect(root).toHaveAttribute('data-autoplay','running');await page.clock.runFor(1000);
+ const after=await pose(root);expect(after.href).toBe(before.href);
+ expect(after.cards).not.toEqual(before.cards);expect(after.story).not.toEqual(before.story);
+ expect(await progressScale(root)).toBeCloseTo(await elapsed(root),2);
+ await page.clock.runFor(1400);expect((await pose(root)).href).not.toBe(before.href);
+});
+
+test('returning from another real browser tab resumes visible card animation',async({page,context})=>{
+ await page.goto('/');const root=page.locator('[data-scenario]');await selectScene(root,1);
+ await expect(root).toHaveAttribute('data-transitioning','false');
+ const other=await context.newPage();await other.goto('about:blank');await other.bringToFront();
+ // Some headless Chromium builds keep every tab visible. Run with --headed
+ // to exercise native visibility in those builds, rather than faking it here.
+ const nativeHidden=await page.waitForFunction(()=>document.hidden,undefined,{timeout:2000}).then(()=>true,()=>false);
+ if(test.info().project.use.headless!==false) test.skip(!nativeHidden,'Browser keeps headless tabs visible; native tab visibility requires --headed.');
+ expect(nativeHidden,'A headed browser must really hide the original tab').toBe(true);
+ await expect(root).toHaveAttribute('data-autoplay','paused');
+ const paused=await pose(root),start=await elapsed(root);
+ await other.waitForTimeout(7000);expect(await elapsed(root)).toBe(start);expect(await pose(root)).toEqual(paused);
+ await page.bringToFront();await expect.poll(()=>page.evaluate(()=>document.visibilityState)).toBe('visible');
+ await expect(root).toHaveAttribute('data-autoplay','running');
+ const resumed=await pose(root);await page.waitForTimeout(700);const later=await pose(root);
+ expect(later.href).toBe(resumed.href);expect(later.cards).not.toEqual(resumed.cards);expect(later.story).not.toEqual(resumed.story);
+ await other.close();
+});
+
+test('reduced motion has a stable illustration and switching it off rebuilds motion',async({page})=>{
+ const root=await clockPage(page);await selectScene(root,1);await page.clock.runFor(1800);await watchFrames(page);
+ await page.emulateMedia({reducedMotion:'reduce'});
+ await expect(root).toHaveAttribute('data-autoplay','paused');await expect(root).toHaveAttribute('data-transitioning','false');
+ const still=await pose(root),pausedFrames=await frames(page);
+ expect(still.story.length).toBeGreaterThan(0);
+ await page.clock.runFor(9000);expect(await pose(root)).toEqual(still);expect(await frames(page)).toEqual(pausedFrames);
+ expect(pausedFrames.pending).toBe(0);
+ for(let i=0;i<6;i++) {
+  await root.locator(`[data-dot="${i}"]`).click({force:true});
+  await expect(root).toHaveAttribute('data-transitioning','false');
+  const illustration=await pose(root);expect(illustration.story.length).toBeGreaterThan(0);
+  await page.clock.runFor(600);expect(await pose(root)).toEqual(illustration);
+ }
+ const selected=(await pose(root)).href;
+ await page.emulateMedia({reducedMotion:'no-preference'});await expect(root).toHaveAttribute('data-autoplay','running');
+ expect(await elapsed(root)).toBeLessThan(.05);await page.clock.runFor(1600);const before=await pose(root);
+ await page.clock.runFor(1600);const after=await pose(root);
+ expect(after.href).toBe(selected);expect(after.cards).not.toEqual(before.cards);expect(after.story).not.toEqual(before.story);
+ expect(await progressScale(root)).toBeCloseTo(await elapsed(root),2);
+ await page.clock.runFor(3000);expect((await pose(root)).href).not.toBe(selected);
+});
+
+test('rapid selections cancel outgoing reveals and keep only the final scene interactive',async({page})=>{
+ const root=await clockPage(page);
+ for(const index of [1,4,2,5,0,3,1]) {
+  await root.locator(`[data-dot="${index}"]`).click({force:true});await page.clock.runFor(80);
+ }
+ await page.clock.runFor(1600);await expect(root).toHaveAttribute('data-transitioning','false');
+ await expect(root.locator('[data-position=active]')).toHaveCount(1);
+ await expect(root.locator('[data-position=outgoing]')).toHaveCount(0);
+ await expect(root.locator('[data-dot="1"]')).toHaveAttribute('aria-pressed','true');
+ expect(await root.locator('[data-scene][aria-hidden=true] a').evaluateAll(links=>links.every(link=>(link as HTMLAnchorElement).tabIndex===-1))).toBe(true);
+ const before=await pose(root);await page.clock.runFor(1400);expect((await pose(root)).cards).not.toEqual(before.cards);
+});
+
+test.describe('mobile touch carousel',()=>{
+ test.use({viewport:{width:390,height:844},isMobile:true,hasTouch:true});
+ test('horizontal swipes change scenes, vertical scroll and canceled gestures do not',async({page,context})=>{
+  const root=await clockPage(page);await selectScene(root,0);await page.clock.runFor(1600);
+  const session=await context.newCDPSession(page);
+  async function gesture(start:{x:number,y:number},end:{x:number,y:number},cancel=false) {
+   await session.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{...start,id:1}]});
+   await session.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{...end,id:1}]});
+   await session.send('Input.dispatchTouchEvent',{type:cancel?'touchCancel':'touchEnd',touchPoints:[]});
+  }
+  await gesture({x:320,y:620},{x:100,y:625});
+  await expect(root.locator('[data-dot="1"]')).toHaveAttribute('aria-pressed','true');
+  await page.clock.runFor(1600);
+  await gesture({x:100,y:620},{x:320,y:625});
+  await expect(root.locator('[data-dot="0"]')).toHaveAttribute('aria-pressed','true');
+  await page.clock.runFor(1600);
+  await gesture({x:320,y:620},{x:100,y:625},true);
+  await expect(root.locator('[data-dot="0"]')).toHaveAttribute('aria-pressed','true');
+  await gesture({x:210,y:620},{x:190,y:400});
+  await expect(root.locator('[data-dot="0"]')).toHaveAttribute('aria-pressed','true');
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+ });
+});
+
+for(const [width,height] of [[390,844],[390,667],[1440,900]]) test(`all six story cards stay visible at ${width}x${height}`,async({page})=>{
+ test.setTimeout(90000);await page.setViewportSize({width,height});const root=await clockPage(page);
+ await mkdir('../docs/design/previews',{recursive:true});
+ for(const language of ['zh','en']){
+  await page.locator(`[data-lang=${language}]`).click({force:true});
+  for(let i=0;i<6;i++){
+   await selectScene(root,i);await page.clock.runFor(4320);
+   await expect(root).toHaveAttribute('data-transitioning','false');
+   const active=root.locator('[data-position=active]');
+   const cta=(await active.locator('.scene-link').boundingBox())!;
+   for(const selector of ['.art-window','.art-mini']){
+    const card=(await active.locator(selector).boundingBox())!;
+    expect(card.x+card.width).toBeGreaterThan(40);expect(card.x).toBeLessThan(width-40);
+    expect(card.y+card.height).toBeLessThan(height-50);
+    const overlaps=card.x<cta.x+cta.width&&card.x+card.width>cta.x&&card.y<cta.y+cta.height&&card.y+card.height>cta.y;
+    expect(overlaps,`${language} scene ${i}: card overlaps CTA`).toBe(false);
+   }
+   await page.screenshot({path:`../docs/design/previews/labs-home-story-${width}x${height}-${i}-${language}.png`});
+  }
+ }
+ await page.emulateMedia({reducedMotion:'reduce'});await selectScene(root,1);
+ await page.screenshot({path:`../docs/design/previews/labs-home-story-${width}x${height}-reduced.png`});
 });
