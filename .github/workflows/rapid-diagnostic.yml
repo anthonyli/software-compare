@@ -1,0 +1,30 @@
+name: Rapid selection diagnosis
+on:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - run: npm ci
+        working-directory: site
+      - run: npm run build
+        working-directory: site
+      - run: npx playwright install --with-deps chromium
+        working-directory: site
+      - run: npm run test:e2e -- tests/browser/labs-scenarios.spec.ts --grep 'rapid selections' --repeat-each=40 --trace on
+        working-directory: site
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: rapid-selection-traces
+          path: site/test-results
+          retention-days: 3
