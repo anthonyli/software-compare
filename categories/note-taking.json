@@ -626,8 +626,7 @@
           "note": "开源加密笔记，编辑格式细节未在定价页写明"
         },
         "rich_text": {
-          "value": "unknown",
-          "note": "定价页未展开编辑器类型"
+          "value": "yes"
         },
         "folders": {
           "value": "yes",
@@ -638,8 +637,8 @@
           "note": "Free最多50个标签，Essential最多500个，Pro与Believer不限；不是所有档位都无限。"
         },
         "web_clipper": {
-          "value": "unknown",
-          "note": "定价页未确认"
+          "value": "yes",
+          "note": "Chromium / Firefox"
         },
         "sync": {
           "value": "yes",
@@ -674,7 +673,10 @@
         "https://notesnook.com/pricing",
         "https://github.com/streetwriters/notesnook",
         "https://notesnook.com/help/plans-and-limits",
-        "https://notesnook.com/blog/introducing-new-pricing-plans"
+        "https://notesnook.com/blog/introducing-new-pricing-plans",
+        "https://github.com/streetwriters/notesnook/blob/4fc6fb4235c5834905f57b9bd82098bec2cd95cb/docs/help/contents/rich-text-editor/rich-text-editor-toolbar.md",
+        "https://github.com/streetwriters/notesnook/blob/4fc6fb4235c5834905f57b9bd82098bec2cd95cb/docs/help/contents/web-clipper/installation.md",
+        "https://github.com/streetwriters/notesnook/blob/4fc6fb4235c5834905f57b9bd82098bec2cd95cb/docs/help/contents/web-clipper/clipping-your-first-web-page-with-web-clipper.md"
       ]
     },
     {

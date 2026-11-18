@@ -18,5 +18,5 @@ test('Notesnook distinguishes reference currency, standard trials and bounded fr
  assert.match(en[p.free_tier_limits], /excludes note text/);
  assert(p.sources.includes('https://notesnook.com/help/plans-and-limits'));
  assert(p.sources.includes('https://notesnook.com/blog/introducing-new-pricing-plans'));
- for (const k of ['rich_text','web_clipper','plugins','collaboration']) assert.equal(p.features[k].value, 'unknown');
+ for (const k of ['plugins','collaboration']) assert.equal(p.features[k].value, 'unknown');
 });
