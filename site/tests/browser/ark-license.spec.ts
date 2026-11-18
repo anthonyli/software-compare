@@ -6,6 +6,8 @@ test('Ark project license and evidence render in both languages and widths',asyn
   for(const lang of ['en','zh-CN']){
    await page.locator(`[data-lang="${lang}"]`).click();
    await expect(page.locator('body')).toContainText('GPL-2.0-or-later');
+   const active=lang==='en'?'.t-en':'.t-zh';
+   await expect(page.locator('.feature-row p '+active).filter({hasText:lang==='en'?'Unpack includes ISO':'Unpack 包含 ISO'})).toBeVisible();
    const sources=page.locator('.sources-details');
    if(!(await sources.evaluate(el=>el.hasAttribute('open'))))await sources.locator('summary').click();
    await expect(page.locator('a[href="https://github.com/KDE/ark/blob/adce1ae0b77cb369b1aa835102d1e986cfdae66d/app/org.kde.ark.appdata.xml"]')).toBeVisible();

@@ -423,8 +423,8 @@
           "note": "Linux 压缩工具核心能力"
         },
         "iso": {
-          "value": "unknown",
-          "note": "未确认"
+          "value": "partial",
+          "note": "Unpack 包含 ISO"
         },
         "encryption": {
           "value": "unknown",
@@ -452,7 +452,8 @@
         "https://github.com/KDE/ark",
         "https://invent.kde.org/utilities/ark",
         "https://github.com/KDE/ark/blob/adce1ae0b77cb369b1aa835102d1e986cfdae66d/app/org.kde.ark.appdata.xml",
-        "https://github.com/KDE/ark/blob/adce1ae0b77cb369b1aa835102d1e986cfdae66d/app/main.cpp"
+        "https://github.com/KDE/ark/blob/adce1ae0b77cb369b1aa835102d1e986cfdae66d/app/main.cpp",
+        "https://github.com/KDE/ark/blob/adce1ae0b77cb369b1aa835102d1e986cfdae66d/plugins/libarchive/kerfuffle_libarchive_readonly.json.cmake"
       ],
       "source_url": "https://invent.kde.org/utilities/ark",
       "source_host_note": "官方仓库在 invent.kde.org，GitHub KDE/ark 为官方镜像。"
