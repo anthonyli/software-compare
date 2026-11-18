@@ -395,10 +395,12 @@
           "value": "yes"
         },
         "file_transfer": {
-          "value": "unknown"
+          "value": "yes",
+          "note": "UltraVNC Viewer ↔ UltraVNC Server"
         },
         "clipboard_sync": {
-          "value": "unknown"
+          "value": "yes",
+          "note": "-disableclipboard"
         },
         "multi_monitor": {
           "value": "unknown",
@@ -433,7 +435,11 @@
       },
       "sources": [
         "https://uvnc.com/",
-        "https://github.com/ultravnc/UltraVNC"
+        "https://github.com/ultravnc/UltraVNC",
+        "https://uvnc.com/docs/ultravnc-viewer/71-ultravnc-viewer-gui.html",
+        "https://uvnc.com/docs/ultravnc-viewer/52-ultravnc-viewer-commandline-parameters.html",
+        "https://github.com/ultravnc/UltraVNC/blob/edc654df7e95e7151bb02ebaa5d6ef2b16e3e5ed/vncviewer/FileTransfer.cpp",
+        "https://github.com/ultravnc/UltraVNC/blob/edc654df7e95e7151bb02ebaa5d6ef2b16e3e5ed/vncviewer/VNCOptions.cpp"
       ],
       "archived": false,
       "last_push_at": null,
