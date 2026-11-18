@@ -1085,8 +1085,7 @@
           "note": "端到端加密是核心卖点"
         },
         "versions": {
-          "value": "unknown",
-          "note": "未打开功能页"
+          "value": "yes"
         },
         "conflict": {
           "value": "unknown",
@@ -1114,7 +1113,8 @@
         }
       },
       "sources": [
-        "https://proton.me/drive"
+        "https://proton.me/drive",
+        "https://proton.me/support/version-history"
       ]
     },
     {
