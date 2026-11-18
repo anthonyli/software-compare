@@ -290,7 +290,7 @@
         "Linux"
       ],
       "open_source": true,
-      "license": "未知（GitHub 返回 NOASSERTION；Audacity 分支，通常沿用 GPL）",
+      "license": "GPL-2.0-or-later",
       "pricing_model": "完全免费",
       "price_summary": "完全免费开源。",
       "prices": [
@@ -355,7 +355,8 @@
         "https://tenacityaudio.org/docs/index.html",
         "https://tenacityaudio.org/docs/_content/Effects_Plugins_and_Modules.html",
         "https://tenacityaudio.org/docs/_content/Preferences.html",
-        "https://tenacityaudio.org/docs/_content/Importing_and_Exporting.html"
+        "https://tenacityaudio.org/docs/_content/Importing_and_Exporting.html",
+        "https://tenacityaudio.org/docs/"
       ]
     },
     {
