@@ -719,8 +719,7 @@
           "note": "浏览器视频抓取，不是 yt-dlp 式站点解析器"
         },
         "schedule": {
-          "value": "unknown",
-          "note": "未打开功能页确认当前版本是否仍有调度器"
+          "value": "yes"
         },
         "speed_limit": {
           "value": "yes",
@@ -741,7 +740,8 @@
       },
       "sources": [
         "https://www.internetdownloadmanager.com/",
-        "https://secure.internetdownloadmanager.com/buy_idm.html"
+        "https://secure.internetdownloadmanager.com/buy_idm.html",
+        "https://www.internetdownloadmanager.com/support/idm-scheduler/idm_scheduler.html"
       ]
     },
     {
