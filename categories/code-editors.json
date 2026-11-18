@@ -540,7 +540,8 @@
           "value": "yes"
         },
         "debugger": {
-          "value": "unknown"
+          "value": "yes",
+          "note": "DAP"
         },
         "ai_assistant": {
           "value": "paid",
@@ -550,7 +551,8 @@
           "value": "yes"
         },
         "remote_dev": {
-          "value": "unknown"
+          "value": "yes",
+          "note": "SSH"
         },
         "live_share": {
           "value": "yes",
@@ -562,7 +564,9 @@
       },
       "sources": [
         "https://zed.dev/",
-        "https://github.com/zed-industries/zed"
+        "https://github.com/zed-industries/zed",
+        "https://github.com/zed-industries/zed/blob/e8bc16acee5ae1937600d571d441c4b5d7b0d288/docs/src/debugger.md",
+        "https://github.com/zed-industries/zed/blob/e8bc16acee5ae1937600d571d441c4b5d7b0d288/docs/src/remote-development.md"
       ],
       "archived": false,
       "last_push_at": null,
