@@ -1201,13 +1201,14 @@
           "value": "unknown"
         },
         "customizable": {
-          "value": "unknown"
+          "value": "yes"
         }
       },
       "sources": [
         "https://github.com/geany/geany",
         "https://github.com/geany/geany/blob/master/doc/geany.txt",
-        "https://github.com/geany/geany/blob/master/COPYING"
+        "https://github.com/geany/geany/blob/master/COPYING",
+        "https://github.com/geany/geany/blob/0e02cc52a7634d1fed8511bd44730ea0ab791d9f/doc/geany.txt"
       ],
       "collected_at": "2026-11-15"
     },
