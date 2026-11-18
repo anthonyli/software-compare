@@ -994,8 +994,8 @@
           "note": "传输加密，密钥在分享方"
         },
         "versions": {
-          "value": "unknown",
-          "note": "未打开功能页"
+          "value": "partial",
+          "note": ".sync/Archive"
         },
         "conflict": {
           "value": "unknown",
@@ -1024,7 +1024,8 @@
       },
       "sources": [
         "https://www.resilio.com/sync/",
-        "https://help.resilio.com/hc/en-us/articles/205458165-Ignoring-files-in-Sync-Ignore-List"
+        "https://help.resilio.com/hc/en-us/articles/205458165-Ignoring-files-in-Sync-Ignore-List",
+        "https://help.resilio.com/hc/en-us/articles/204754239-Using-Archive-for-file-versioning-and-restoring-deleted-files"
       ]
     },
     {
