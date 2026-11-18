@@ -998,8 +998,8 @@
           "note": ".sync/Archive"
         },
         "conflict": {
-          "value": "unknown",
-          "note": "未确认"
+          "value": "partial",
+          "note": ".Conflict"
         },
         "self_host": {
           "value": "partial",
@@ -1025,7 +1025,8 @@
       "sources": [
         "https://www.resilio.com/sync/",
         "https://help.resilio.com/hc/en-us/articles/205458165-Ignoring-files-in-Sync-Ignore-List",
-        "https://help.resilio.com/hc/en-us/articles/204754239-Using-Archive-for-file-versioning-and-restoring-deleted-files"
+        "https://help.resilio.com/hc/en-us/articles/204754239-Using-Archive-for-file-versioning-and-restoring-deleted-files",
+        "https://help.resilio.com/hc/en-us/articles/204753629-Conflict-files-in-Sync"
       ]
     },
     {
