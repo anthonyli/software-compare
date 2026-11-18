@@ -239,6 +239,10 @@ if (ungrouped.length) {
       });
 
       applyI18nAttrs(document.documentElement.lang || "zh-CN");
+      // Only expose an interactive switch after its handler and state are ready.
+      document.querySelectorAll<HTMLButtonElement>("[data-lang-switch] .lang-btn").forEach((btn) => {
+        btn.disabled = false;
+      });
     </script>
   </body>
 </html>
