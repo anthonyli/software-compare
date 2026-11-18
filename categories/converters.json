@@ -859,8 +859,8 @@
           "note": "音频转换"
         },
         "image": {
-          "value": "unknown",
-          "note": "未打开功能页"
+          "value": "yes",
+          "note": "Permute 4 · macOS 26+ · Apple Silicon"
         },
         "document": {
           "value": "no",
@@ -883,8 +883,8 @@
           "note": "转码"
         },
         "presets": {
-          "value": "unknown",
-          "note": "未打开功能页确认"
+          "value": "yes",
+          "note": "Permute 4 · macOS 26+ · Apple Silicon"
         },
         "gui": {
           "value": "yes",
@@ -892,7 +892,8 @@
         }
       },
       "sources": [
-        "https://software.charliemonroe.net/permute/"
+        "https://software.charliemonroe.net/permute/",
+        "https://software.charliemonroe.net/trial/permute/v4/rnotes.html"
       ]
     },
     {
