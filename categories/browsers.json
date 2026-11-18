@@ -1,7 +1,7 @@
 {
   "category_slug": "browsers",
   "category_name_zh": "浏览器",
-  "collected_at": "2026-11-17",
+  "collected_at": "2026-11-18",
   "timezone": "Asia/Shanghai",
   "features": [
     {
@@ -361,6 +361,59 @@
         "local_model": {
           "value": "unknown",
           "note": "未核实；不等于不支持。"
+        }
+      }
+    },
+    {
+      "id": "ego-lite",
+      "name": "ego(lite)",
+      "official_url": "https://lite.ego.app/",
+      "github_url": null,
+      "source_repo_url": "https://github.com/citrolabs/ego-lite",
+      "platforms": [
+        "macOS",
+        "Windows"
+      ],
+      "open_source": false,
+      "license": "原生浏览器闭源；JavaScript SDK 与 Skill 仓库为 MIT",
+      "pricing_model": "个人免费；企业定制",
+      "price_summary": "个人版浏览器免费；Business 定制报价，第三方 Agent、模型和网络费用另计。",
+      "prices": [],
+      "free_tier_limits": "需要在同一电脑运行具备命令执行能力的外部 Agent。macOS 与 Windows 已提供，Linux 在路线图中；浏览器免费不等于模型调用免费。 Space 分离任务页面，不自动隔离 Profile、登录或网站权限；同一 Profile 的个人页和 Spaces 共享 cookie 与缓存。浏览器数据保存在本机，但页面文字和截图可能发送给选用模型。MIT 仅覆盖公开 SDK/Skill，不覆盖另行提供的原生浏览器；不与 ego.app 待开放个人 Agent 混淆。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "CitroLabs 的 Chromium 协作浏览器：用户日常浏览，外部 Agent 在各自 Space 中执行任务。",
+      "notes": "Space 分离任务页面，不自动隔离 Profile、登录或网站权限；同一 Profile 的个人页和 Spaces 共享 cookie 与缓存。浏览器数据保存在本机，但页面文字和截图可能发送给选用模型。MIT 仅覆盖公开 SDK/Skill，不覆盖另行提供的原生浏览器；不与 ego.app 待开放个人 Agent 混淆。",
+      "collected_at": "2026-11-18",
+      "maintenance_status": "未评估",
+      "sources": [
+        "https://lite.ego.app/enterprise",
+        "https://lite.ego.app/document/en/docs/product-introduce",
+        "https://lite.ego.app/document/en/docs/space",
+        "https://github.com/citrolabs/ego-lite/blob/main/skills/ego-browser/references/clearing-state.md",
+        "https://github.com/citrolabs/ego-lite/blob/main/CONTRIBUTING.md",
+        "https://github.com/citrolabs/ego-lite/blob/main/LICENSE",
+        "https://lite.ego.app/article/agent-browser-vs-devtools-vs-ego",
+        "https://lite.ego.app/terms",
+        "https://lite.ego.app/document/en/docs/qwen-local"
+      ],
+      "features": {
+        "page_ai": {
+          "value": "partial",
+          "note": "通过外部 Agent 读取页面并问答，不是浏览器自带生成式 AI。"
+        },
+        "multi_tab": {
+          "value": "partial",
+          "note": "外部 Agent 可在 Space 中管理多个任务页面；跨页推理能力取决于 Agent。"
+        },
+        "actions": {
+          "value": "partial",
+          "note": "外部 Agent 经 ego-browser 执行点击、填表等操作；需用户授权与账号核对。"
+        },
+        "local_model": {
+          "value": "partial",
+          "note": "通过兼容的外部 Agent 配置模型；不等于浏览器默认在本地推理。"
         }
       }
     }

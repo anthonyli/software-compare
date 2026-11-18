@@ -1,0 +1,5 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';
+const c=JSON.parse(fs.readFileSync(new URL('../../categories/browsers.json',import.meta.url)));const p=c.products.find(p=>p.id==='ego-lite');
+test('ego lite is a native browser, not the SDK license or waitlisted agent',()=>{assert(p);assert.equal(p.open_source,false);assert.equal(p.github_url,null);assert.match(p.license,/原生浏览器闭源/);assert.match(p.license,/SDK.*MIT/);assert.deepEqual(p.platforms,['macOS','Windows']);assert.match(p.free_tier_limits,/Linux.*路线图/);assert.match(p.notes,/ego.app/);});
+test('ego lite keeps pricing, agent dependency and shared profile boundaries',()=>{assert.match(p.price_summary,/个人.*免费.*Business.*第三方/);assert.match(p.notes,/共享 cookie 与缓存/);assert.match(p.notes,/页面文字和截图.*模型/);for(const f of Object.values(p.features))assert.equal(f.value,'partial');assert.match(p.features.page_ai.note,/外部 Agent/);assert(p.sources.some(x=>x.endsWith('/clearing-state.md')));});
+test('ego safety context is present in rendered free-tier field',()=>{assert.match(p.free_tier_limits,/共享 cookie 与缓存/);assert.match(p.free_tier_limits,/页面文字和截图.*模型/);});
