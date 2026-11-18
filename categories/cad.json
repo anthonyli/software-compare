@@ -372,14 +372,15 @@
           "note": "原生 DWG 交换未核实，不将 DXF 支持等同于 DWG。"
         },
         "vector_export": {
-          "value": "unknown",
-          "note": "PDF/SVG 输出的版本及对象范围尚未逐项核实。"
+          "value": "partial",
+          "note": "2021.01 · 2D · SVG"
         }
       },
       "sources": [
         "https://openscad.org/about.html",
         "https://openscad.org/downloads.html",
-        "https://github.com/openscad/openscad"
+        "https://github.com/openscad/openscad",
+        "https://github.com/openscad/openscad/blob/41f58fe57c03457a3a8b4dc541ef5654ec3e8c78/src/export_svg.cc"
       ],
       "collected_at": "2026-11-15"
     }
