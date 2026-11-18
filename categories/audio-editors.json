@@ -483,12 +483,10 @@
           "note": "广泛插件支持，可扩展脚本"
         },
         "noise_reduce": {
-          "value": "unknown",
-          "note": "可用插件实现，官首页未单列自带降噪"
+          "value": "yes"
         },
         "spectral": {
-          "value": "unknown",
-          "note": "未在首页确认专用频谱编辑"
+          "value": "yes"
         },
         "record": {
           "value": "yes",
@@ -515,7 +513,9 @@
         "https://www.reaper.fm/purchase.php",
         "https://dlz.reaper.fm/userguide/ReaperUserGuide726c.pdf",
         "https://www.reaper.fm/userguide.php",
-        "https://www.reaper.fm/download.php"
+        "https://www.reaper.fm/download.php",
+        "https://www.reaper.fm/about.php",
+        "https://www.reaper.fm/reaplugs/"
       ]
     },
     {
