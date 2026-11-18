@@ -328,17 +328,11 @@ test('reduced motion has a stable illustration and switching it off rebuilds mot
 
 test('rapid selections cancel outgoing reveals and keep only the final scene interactive',async({page})=>{
  const root=await clockPage(page);
- await page.evaluate(()=>{
-  const root=document.querySelector('[data-scenario]')!;
-  (window as any).__rapidClicks=[];
-  root.addEventListener('click',event=>{
-   const target=(event.target as Element).closest('[data-dot]');
-   (window as any).__rapidClicks.push({target:target?.getAttribute('data-dot'),x:(event as MouseEvent).clientX,y:(event as MouseEvent).clientY,time:performance.now(),boxes:Array.from(root.querySelectorAll('[data-dot]'),dot=>({id:dot.getAttribute('data-dot'),x:dot.getBoundingClientRect().x,width:dot.getBoundingClientRect().width}))});
-  },true);
- });
- try {
  for(const index of [1,4,2,5,0,3,1]) {
-  await root.locator(`[data-dot="${index}"]`).click({force:true});await page.clock.runFor(80);
+  // This tests interruption semantics, not hit testing of moving CSS targets.
+  await root.locator(`[data-dot="${index}"]`).dispatchEvent('click');
+  await expect(root.locator(`[data-dot="${index}"]`)).toHaveAttribute('aria-pressed','true');
+  await page.clock.runFor(80);
  }
  await page.clock.runFor(1600);await expect(root).toHaveAttribute('data-transitioning','false');
  await expect(root.locator('[data-position=active]')).toHaveCount(1);
@@ -346,9 +340,19 @@ test('rapid selections cancel outgoing reveals and keep only the final scene int
  await expect(root.locator('[data-dot="1"]')).toHaveAttribute('aria-pressed','true');
  expect(await root.locator('[data-scene][aria-hidden=true] a').evaluateAll(links=>links.every(link=>(link as HTMLAnchorElement).tabIndex===-1))).toBe(true);
  const before=await pose(root);await page.clock.runFor(1400);expect((await pose(root)).cards).not.toEqual(before.cards);
- } finally {
-  console.log('RAPID_DIAGNOSTIC',JSON.stringify(await page.evaluate(()=>({clicks:(window as any).__rapidClicks,pressed:document.querySelector('[data-dot][aria-pressed=true]')?.getAttribute('data-dot'),progress:document.querySelector('[data-scenario]')?.getAttribute('data-camera-progress')}))));
+});
+
+test('real pointer selections reach each intended carousel dot',async({page})=>{
+ await page.goto('/');const root=page.locator('[data-scenario]');
+ await expect(root).toHaveAttribute('data-autoplay','running');
+ for(const index of [1,4,2,5,0,3,1]) {
+  // Real pointer clicks retain Playwright stability/hit-target checks.
+  await root.locator(`[data-dot="${index}"]`).click();
+  await expect(root.locator(`[data-dot="${index}"]`)).toHaveAttribute('aria-pressed','true');
  }
+ await expect(root).toHaveAttribute('data-transitioning','false');
+ await expect(root.locator('[data-position=active]')).toHaveCount(1);
+ await expect(root.locator('[data-position=outgoing]')).toHaveCount(0);
 });
 
 test.describe('mobile touch carousel',()=>{
