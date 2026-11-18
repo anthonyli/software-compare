@@ -108,8 +108,7 @@
           "note": "官网：Strong AES-256 encryption in 7z and ZIP formats"
         },
         "split": {
-          "value": "unknown",
-          "note": "作为常见能力，官网首页摘录未点名分卷"
+          "value": "yes"
         },
         "repair": {
           "value": "unknown",
@@ -126,7 +125,9 @@
       },
       "sources": [
         "https://www.7-zip.org/",
-        "https://github.com/ip7z/7zip"
+        "https://github.com/ip7z/7zip",
+        "https://github.com/ip7z/7zip/blob/d3296e39e1f1f92c7b41c0c3848e65640428d42d/CPP/7zip/UI/GUI/CompressDialog.cpp",
+        "https://github.com/ip7z/7zip/blob/d3296e39e1f1f92c7b41c0c3848e65640428d42d/CPP/7zip/UI/GUI/CompressDialog.rc"
       ]
     },
     {
@@ -189,8 +190,7 @@
           "note": "加密压缩是常见卖点"
         },
         "split": {
-          "value": "unknown",
-          "note": "本次未打开官方格式/功能页确认分卷"
+          "value": "yes"
         },
         "repair": {
           "value": "unknown",
@@ -207,7 +207,8 @@
       },
       "sources": [
         "https://peazip.github.io/",
-        "https://github.com/peazip/PeaZip"
+        "https://github.com/peazip/PeaZip",
+        "https://github.com/peazip/peazip.github.io/blob/2dca7d01bee679ef0826ea246bff5eef6bb8ac1a/file-split.html"
       ]
     },
     {
