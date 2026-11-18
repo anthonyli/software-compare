@@ -799,8 +799,7 @@
           "value": "yes"
         },
         "speed_limit": {
-          "value": "unknown",
-          "note": "未确认"
+          "value": "yes"
         },
         "rss": {
           "value": "unknown",
@@ -811,14 +810,14 @@
           "note": "未确认"
         },
         "browser_ext": {
-          "value": "unknown",
-          "note": "未打开功能页确认当前版本扩展情况"
+          "value": "yes"
         }
       },
       "sources": [
         "https://www.freedownloadmanager.org/",
         "https://www.freedownloadmanager.org/features.htm",
-        "https://www.freedownloadmanager.org/landing.htm?from=b_si_version"
+        "https://www.freedownloadmanager.org/landing.htm?from=b_si_version",
+        "https://addons.mozilla.org/en-US/firefox/addon/free-download-manager-addon/"
       ]
     },
     {
