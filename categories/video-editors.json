@@ -169,8 +169,7 @@
           "note": "复杂时间线、嵌套序列"
         },
         "color_grade": {
-          "value": "unknown",
-          "note": "首页未把专业调色作为独立章节展开"
+          "value": "yes"
         },
         "effects": {
           "value": "yes",
@@ -208,7 +207,8 @@
         "https://github.com/KDE/kdenlive",
         "https://invent.kde.org/multimedia/kdenlive",
         "https://docs.kdenlive.org/en/titles_and_graphics/titles/titles.html",
-        "https://docs.kdenlive.org/en/effects_and_filters/video_effects/alpha_mask_keying/chroma_key.html"
+        "https://docs.kdenlive.org/en/effects_and_filters/video_effects/alpha_mask_keying/chroma_key.html",
+        "https://docs.kdenlive.org/en/effects_and_filters/video_effects/color_image_correction.html"
       ],
       "source_url": "https://invent.kde.org/multimedia/kdenlive",
       "source_host_note": "官方仓库在 invent.kde.org，GitHub KDE/kdenlive 为官方镜像。"
