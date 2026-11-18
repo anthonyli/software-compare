@@ -635,8 +635,7 @@
           "note": "官网 Snagit Features：Scrolling Capture Grab long, scrolling windows or webpages into a single image"
         },
         "delay_timer": {
-          "value": "unknown",
-          "note": "本次打开的产品/商店页未单独确认延时截图"
+          "value": "yes"
         },
         "annotation": {
           "value": "yes",
@@ -659,14 +658,14 @@
           "note": "可通过 TechSmith Screencast 云托管分享"
         },
         "history": {
-          "value": "unknown",
-          "note": "产品页未在本次采集文本中明确写出截图历史库"
+          "value": "yes"
         }
       },
       "sources": [
         "https://www.techsmith.com/store/snagit",
         "https://www.techsmith.com/snagit.html",
-        "https://www.techsmith.com/store/snagit/teams"
+        "https://www.techsmith.com/store/snagit/teams",
+        "https://www.techsmith.com/snagit/features/"
       ]
     },
     {
