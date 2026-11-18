@@ -23,6 +23,9 @@ jobs:
         working-directory: site
       - run: npx playwright install --with-deps chromium
         working-directory: site
+      - name: Verify native carousel tab visibility
+        run: xvfb-run -a -s "-screen 0 1440x1000x24" npm run test:e2e -- tests/browser/labs-scenarios.spec.ts --headed --grep "another real browser tab"
+        working-directory: site
       - run: npm run test:e2e
         working-directory: site
       - name: Upload domain registration visual previews
