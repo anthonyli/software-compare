@@ -324,10 +324,12 @@
           "value": "unknown"
         },
         "clipboard_sync": {
-          "value": "unknown"
+          "value": "yes",
+          "note": "vncviewer · AcceptClipboard / SendClipboard"
         },
         "multi_monitor": {
-          "value": "unknown"
+          "value": "partial",
+          "note": "vncviewer · FullScreenMode=all/selected"
         },
         "audio": {
           "value": "unknown"
@@ -355,7 +357,8 @@
       },
       "sources": [
         "https://tigervnc.org/",
-        "https://github.com/TigerVNC/tigervnc"
+        "https://github.com/TigerVNC/tigervnc",
+        "https://github.com/TigerVNC/tigervnc/blob/b555312d70d7ff017f866649a7e7167af4eb8fca/vncviewer/vncviewer.man"
       ],
       "archived": false,
       "last_push_at": null,
