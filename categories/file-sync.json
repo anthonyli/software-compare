@@ -1259,8 +1259,7 @@
           "note": "不是网盘版本库"
         },
         "conflict": {
-          "value": "unknown",
-          "note": "双向同步通常需处理冲突，本次未打开文档确认策略"
+          "value": "yes"
         },
         "self_host": {
           "value": "yes",
@@ -1285,7 +1284,8 @@
       },
       "sources": [
         "https://mutagen.io/",
-        "https://github.com/mutagen-io/mutagen"
+        "https://github.com/mutagen-io/mutagen",
+        "https://mutagen.io/documentation/synchronization/"
       ]
     },
     {
