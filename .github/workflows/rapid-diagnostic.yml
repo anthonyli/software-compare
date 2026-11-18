@@ -20,7 +20,7 @@ jobs:
         working-directory: site
       - run: npx playwright install --with-deps chromium
         working-directory: site
-      - run: npm run test:e2e -- tests/browser/labs-scenarios.spec.ts --grep 'rapid selections' --repeat-each=40 --trace on
+      - run: npm run test:e2e -- tests/browser/labs-scenarios.spec.ts --grep 'rapid selections' --repeat-each=100 --trace off
         working-directory: site
       - uses: actions/upload-artifact@v4
         if: always()
