@@ -369,16 +369,15 @@
           "note": ""
         },
         "data_edit": {
-          "value": "unknown",
-          "note": "已核实表结构管理；具体行编辑操作尚未单独核实。"
+          "value": "yes"
         },
         "multi_engine": {
           "value": "partial",
           "note": "专注 MySQL 与 MariaDB，不作为 PostgreSQL/SQLite 通用客户端比较。"
         },
         "import_export": {
-          "value": "unknown",
-          "note": "导入导出格式范围尚未逐项核实。"
+          "value": "yes",
+          "note": "SQL / CSV"
         }
       },
       "sources": [
@@ -387,7 +386,10 @@
         "https://sequel-ace.com/get-started/",
         "https://sequel-ace.com/queries.html",
         "https://sequel-ace.com/ref/features.html",
-        "https://sequel-ace.com/get-started/mcp-server.html"
+        "https://sequel-ace.com/get-started/mcp-server.html",
+        "https://github.com/Sequel-Ace/Sequel-Ace/blob/91c3339b0908a1166a116886264b41188cb40ac6/Source/Controllers/MainViewControllers/TableContent/SPTableContent.m",
+        "https://github.com/Sequel-Ace/Sequel-Ace/blob/91c3339b0908a1166a116886264b41188cb40ac6/Source/Controllers/DataImport/SPDataImport.m",
+        "https://github.com/Sequel-Ace/Sequel-Ace/blob/91c3339b0908a1166a116886264b41188cb40ac6/Source/Controllers/DataExport/SPExportController.m"
       ],
       "collected_at": "2026-11-15"
     },
