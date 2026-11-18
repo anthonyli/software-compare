@@ -152,15 +152,19 @@
           "value": "yes"
         },
         "non_destructive": {
-          "value": "unknown"
+          "value": "yes",
+          "note": "Versioning"
         },
         "tethering": {
-          "value": "unknown"
+          "value": "partial",
+          "note": "gPhoto2"
         }
       },
       "sources": [
         "https://www.digikam.org/about/",
-        "https://apps.kde.org/digikam/"
+        "https://apps.kde.org/digikam/",
+        "https://github.com/KDE/digikam-doc/blob/d8283d990cc1f921956111879e390a28e26d7a3e/setup_application/editor_settings.rst",
+        "https://github.com/KDE/digikam-doc/blob/d8283d990cc1f921956111879e390a28e26d7a3e/menu_descriptions/menu_importtool.rst"
       ],
       "collected_at": "2026-11-13"
     },
