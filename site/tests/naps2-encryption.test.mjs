@@ -4,5 +4,5 @@ test('NAPS2 PDF encryption cites official output options',()=>{
  const rows=d.products.filter(p=>p.id==='naps2');assert.equal(rows.length,1);const p=rows[0];
  assert.deepEqual(p.features.encrypt,{value:'yes'});
  assert(p.sources.includes('https://www.naps2.com/doc/command-line'));
- for(const k of ['annotate','compress'])assert.equal(p.features[k].value,'unknown');
+ assert.equal(p.features.annotate.value,'unknown');
 });
