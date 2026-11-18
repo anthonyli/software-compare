@@ -945,12 +945,12 @@
           "note": "频谱修复是核心卖点"
         },
         "record": {
-          "value": "unknown",
-          "note": "不是以录音棚 DAW 为定位"
+          "value": "partial",
+          "note": "Standard / Advanced"
         },
         "batch": {
-          "value": "unknown",
-          "note": "未打开官方功能页确认批处理模块名称"
+          "value": "partial",
+          "note": "Standard / Advanced"
         },
         "midi": {
           "value": "no",
@@ -966,7 +966,9 @@
         }
       },
       "sources": [
-        "https://www.izotope.com/en/products/rx.html"
+        "https://www.izotope.com/en/products/rx.html",
+        "https://www.izotope.com/products/rx-standard",
+        "https://www.izotope.com/pages/rx-compare"
       ]
     },
     {
