@@ -456,7 +456,8 @@
           "value": "unknown"
         },
         "self_host": {
-          "value": "unknown"
+          "value": "partial",
+          "note": "Source build: cargo run build web -> frontend/dist (Web bundle); Rust + Node.js; deployment setup required, not a collaboration server."
         }
       },
       "sources": [
@@ -464,7 +465,10 @@
         "https://graphite.art/features/",
         "https://graphite.art/learn/interface/menu-bar/",
         "https://graphite.art/learn/node-catalog/data-io/get-request/",
-        "https://github.com/GraphiteEditor/Graphite"
+        "https://github.com/GraphiteEditor/Graphite",
+        "https://github.com/GraphiteEditor/Graphite/blob/c6686a65c31230e9db8d3316d5361c551b450f43/.github/workflows/build.yml",
+        "https://github.com/GraphiteEditor/Graphite/blob/c6686a65c31230e9db8d3316d5361c551b450f43/tools/cargo-run/src/main.rs",
+        "https://github.com/GraphiteEditor/Graphite/blob/c6686a65c31230e9db8d3316d5361c551b450f43/frontend/vite.config.ts"
       ],
       "collected_at": "2026-11-16"
     }
