@@ -109,7 +109,7 @@
           "value": "yes"
         },
         "rich_clipboard": {
-          "value": "unknown"
+          "value": "yes"
         },
         "organization": {
           "value": "yes"
@@ -130,7 +130,8 @@
       "sources": [
         "https://github.com/p0deje/Maccy",
         "https://github.com/p0deje/Maccy/blob/master/LICENSE",
-        "https://maccy.app/"
+        "https://maccy.app/",
+        "https://github.com/p0deje/Maccy/blob/7c1644bfbed1dd0d703ecdbaf4a1b9a3a1d0b295/Maccy/Clipboard.swift"
       ],
       "collected_at": "2026-11-15"
     },
@@ -155,7 +156,7 @@
       "maintenance_status": null,
       "features": {
         "history_search": {
-          "value": "unknown"
+          "value": "yes"
         },
         "rich_clipboard": {
           "value": "yes"
@@ -182,7 +183,9 @@
         "https://github.com/sabrogden/Ditto/wiki",
         "https://github.com/sabrogden/Ditto/wiki/Privacy-Policy",
         "https://github.com/sabrogden/Ditto/wiki/Excluding-clip-from-saving",
-        "https://github.com/sabrogden/Ditto/wiki/Scripting"
+        "https://github.com/sabrogden/Ditto/wiki/Scripting",
+        "https://github.com/sabrogden/Ditto/blob/81a667c790f5a6c9b6b63f187eb75e79bf159670/ReadMe.md",
+        "https://github.com/sabrogden/Ditto/blob/81a667c790f5a6c9b6b63f187eb75e79bf159670/src/QPasteWnd.cpp"
       ],
       "collected_at": "2026-11-15"
     }
