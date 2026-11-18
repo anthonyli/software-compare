@@ -495,8 +495,7 @@
           "note": "完整录音工具集"
         },
         "batch": {
-          "value": "unknown",
-          "note": "未确认"
+          "value": "yes"
         },
         "midi": {
           "value": "yes",
@@ -513,7 +512,10 @@
       },
       "sources": [
         "https://www.reaper.fm",
-        "https://www.reaper.fm/purchase.php"
+        "https://www.reaper.fm/purchase.php",
+        "https://dlz.reaper.fm/userguide/ReaperUserGuide726c.pdf",
+        "https://www.reaper.fm/userguide.php",
+        "https://www.reaper.fm/download.php"
       ]
     },
     {
