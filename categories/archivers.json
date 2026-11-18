@@ -463,7 +463,7 @@
         "Linux"
       ],
       "open_source": true,
-      "license": "GPL-2.0（GitHub 镜像 SPDX；官方仓库在 GNOME GitLab）",
+      "license": "GPL-2.0-or-later",
       "pricing_model": "完全免费",
       "price_summary": "GNOME 自带的免费开源归档管理器。",
       "prices": [
@@ -530,7 +530,9 @@
       },
       "sources": [
         "https://gitlab.gnome.org/GNOME/file-roller",
-        "https://github.com/GNOME/file-roller"
+        "https://github.com/GNOME/file-roller",
+        "https://github.com/GNOME/file-roller/blob/8ab872836c7f126c8def2762ff2496b4efe971cd/data/org.gnome.FileRoller.metainfo.xml.in",
+        "https://github.com/GNOME/file-roller/blob/8ab872836c7f126c8def2762ff2496b4efe971cd/src/fr-window.c"
       ],
       "source_url": "https://gitlab.gnome.org/GNOME/file-roller",
       "source_host_note": "官方仓库在 gitlab.gnome.org，GitHub GNOME/file-roller 为只读官方镜像。"
