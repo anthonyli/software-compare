@@ -181,16 +181,14 @@
           "value": "yes"
         },
         "color_picker": {
-          "value": "unknown",
-          "note": "官网出现 color 字样，但是否为独立取色器未写明"
+          "value": "yes"
         },
         "cloud_share": {
           "value": "unknown",
           "note": "官网当前首页未列出内置图床上传"
         },
         "history": {
-          "value": "unknown",
-          "note": "官网未列出历史记录"
+          "value": "yes"
         }
       },
       "sources": [
@@ -199,7 +197,8 @@
         "https://github.com/flameshot-org/flameshot/releases/tag/v15.0.0",
         "https://github.com/flameshot-org/flameshot#usage",
         "https://github.com/flameshot-org/flameshot/blob/f4f2e4e879f0e9b4cb7efb59f6b3f44ed05b1843/src/tools/pin/pintool.cpp",
-        "https://github.com/flameshot-org/flameshot/blob/f4f2e4e879f0e9b4cb7efb59f6b3f44ed05b1843/src/tools/pin/pinwidget.cpp"
+        "https://github.com/flameshot-org/flameshot/blob/f4f2e4e879f0e9b4cb7efb59f6b3f44ed05b1843/src/tools/pin/pinwidget.cpp",
+        "https://flameshot.org/docs/guide/key-bindings/"
       ]
     },
     {
