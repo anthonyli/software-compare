@@ -178,7 +178,7 @@ test('cards and SVG stories advance through two complete automatic loops',async(
 test('language changes and repeated active-dot clicks preserve the shared deadline',async({page})=>{
  const root=await clockPage(page);await selectScene(root,1);await page.clock.runFor(1600);
  const before=await pose(root),start=await elapsed(root);
- for(const language of ['en','zh','en']) {
+ for(const language of ['en','zh-CN','en']) {
   await page.locator(`[data-lang=${language}]`).click({force:true});
   await root.locator('[data-dot="1"]').click({force:true});
   expect(await elapsed(root)).toBeCloseTo(start,3);
@@ -307,7 +307,7 @@ test.describe('mobile touch carousel',()=>{
 for(const [width,height] of [[390,844],[390,667],[1440,900]]) test(`all six story cards stay visible at ${width}x${height}`,async({page})=>{
  test.setTimeout(90000);await page.setViewportSize({width,height});const root=await clockPage(page);
  await mkdir('../docs/design/previews',{recursive:true});
- for(const language of ['zh','en']){
+ for(const language of ['zh-CN','en']){
   await page.locator(`[data-lang=${language}]`).click({force:true});
   for(let i=0;i<6;i++){
    await selectScene(root,i);await page.clock.runFor(4320);
