@@ -567,8 +567,7 @@
           "note": "未确认"
         },
         "record": {
-          "value": "unknown",
-          "note": "作为编辑器通常可录音，首页未点名"
+          "value": "yes"
         },
         "batch": {
           "value": "unknown",
@@ -589,7 +588,8 @@
       },
       "sources": [
         "https://www.ocenaudio.com/",
-        "https://www.ocenaudio.com/features"
+        "https://www.ocenaudio.com/features",
+        "https://www.ocenaudio.com/changelog"
       ]
     },
     {
@@ -1132,13 +1132,13 @@
           "note": "面向节奏制作"
         },
         "export_formats": {
-          "value": "unknown",
-          "note": "通常可导出音频/MIDI，本次未打开手册确认"
+          "value": "yes"
         }
       },
       "sources": [
         "http://www.hydrogen-music.org",
-        "https://github.com/hydrogen-music/hydrogen"
+        "https://github.com/hydrogen-music/hydrogen",
+        "https://github.com/hydrogen-music/hydrogen/blob/712c25f5bd42942edcb927cd3668f21991efbee2/src/gui/src/ExportSongDialog.cpp"
       ]
     },
     {

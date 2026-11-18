@@ -161,7 +161,7 @@
           "note": "常见于插件，是否默认内置本轮未核完"
         },
         "calculator": {
-          "value": "unknown"
+          "value": "yes"
         },
         "plugins": {
           "value": "yes"
@@ -190,7 +190,8 @@
       },
       "sources": [
         "https://www.flowlauncher.com/",
-        "https://github.com/Flow-Launcher/Flow.Launcher"
+        "https://github.com/Flow-Launcher/Flow.Launcher",
+        "https://github.com/Flow-Launcher/Flow.Launcher/blob/9fe822b398ad9541a1a35fb1c688a006a27f2f9d/README.md#calculator"
       ],
       "archived": false,
       "last_push_at": null,
@@ -234,7 +235,7 @@
           "value": "unknown"
         },
         "calculator": {
-          "value": "unknown"
+          "value": "yes"
         },
         "plugins": {
           "value": "yes",
@@ -263,7 +264,8 @@
       "sources": [
         "https://ulauncher.io/",
         "https://github.com/Ulauncher/Ulauncher",
-        "https://github.com/Ulauncher/Ulauncher/blob/d235f0be317a1682349a14e0b22813437b0b4e93/LICENSE"
+        "https://github.com/Ulauncher/Ulauncher/blob/d235f0be317a1682349a14e0b22813437b0b4e93/LICENSE",
+        "https://github.com/Ulauncher/Ulauncher/blob/b243dd00a97cffff803f64d127f46e9fde9b13d1/ulauncher/search/calc/CalcMode.py"
       ],
       "archived": false,
       "last_push_at": null,
