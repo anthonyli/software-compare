@@ -243,8 +243,7 @@
           "note": "官网写明可从 Internet Explorer 捕获完整滚动网页，未说明其他浏览器"
         },
         "delay_timer": {
-          "value": "unknown",
-          "note": "官网简介未提及延时截图"
+          "value": "yes"
         },
         "annotation": {
           "value": "yes",
@@ -259,8 +258,7 @@
           "note": "官网简介未列出贴图"
         },
         "color_picker": {
-          "value": "unknown",
-          "note": "官网简介未列出取色器"
+          "value": "yes"
         },
         "cloud_share": {
           "value": "yes",
@@ -274,7 +272,8 @@
       "sources": [
         "https://getgreenshot.org",
         "https://github.com/greenshot/greenshot",
-        "https://github.com/greenshot/greenshot/releases/tag/v1.3.328"
+        "https://github.com/greenshot/greenshot/releases/tag/v1.3.328",
+        "https://getgreenshot.org/help/"
       ]
     },
     {
