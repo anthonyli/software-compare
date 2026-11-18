@@ -577,8 +577,7 @@
           "note": "未打开功能页"
         },
         "effects": {
-          "value": "unknown",
-          "note": "未打开功能页"
+          "value": "yes"
         },
         "keyframes": {
           "value": "yes"
@@ -611,7 +610,9 @@
         "https://www.pitivi.org",
         "https://github.com/pitivi/pitivi",
         "https://www.pitivi.org/manual/keyframecurves.html",
-        "https://www.pitivi.org/manual/mainwindow.html"
+        "https://www.pitivi.org/manual/mainwindow.html",
+        "https://www.pitivi.org/manual/usingeffects.html",
+        "https://www.pitivi.org/manual/transitions.html"
       ]
     },
     {
