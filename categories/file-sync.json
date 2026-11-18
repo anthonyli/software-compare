@@ -467,8 +467,8 @@
           "note": "无"
         },
         "block_level": {
-          "value": "unknown",
-          "note": "未打开算法说明"
+          "value": "yes",
+          "note": "rsync"
         },
         "ignore_rules": {
           "value": "yes",
@@ -476,7 +476,9 @@
         }
       },
       "sources": [
-        "https://github.com/bcpierce00/unison"
+        "https://github.com/bcpierce00/unison",
+        "https://github.com/bcpierce00/unison/blob/b1a49141e7eb5334e31efcf4d08073c192d6c1ae/doc/unison-manual.tex",
+        "https://github.com/bcpierce00/unison/blob/b1a49141e7eb5334e31efcf4d08073c192d6c1ae/src/transfer.ml"
       ]
     },
     {
@@ -1016,12 +1018,13 @@
           "note": "P2P 分块传输是传统能力"
         },
         "ignore_rules": {
-          "value": "unknown",
-          "note": "未确认"
+          "value": "yes",
+          "note": ".sync/IgnoreList"
         }
       },
       "sources": [
-        "https://www.resilio.com/sync/"
+        "https://www.resilio.com/sync/",
+        "https://help.resilio.com/hc/en-us/articles/205458165-Ignoring-files-in-Sync-Ignore-List"
       ]
     },
     {
