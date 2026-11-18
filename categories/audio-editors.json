@@ -562,8 +562,7 @@
           "value": "yes"
         },
         "noise_reduce": {
-          "value": "unknown",
-          "note": "未确认"
+          "value": "yes"
         },
         "spectral": {
           "value": "unknown",
@@ -585,8 +584,7 @@
           "note": "可用于语音"
         },
         "export_formats": {
-          "value": "unknown",
-          "note": "未打开功能页"
+          "value": "yes"
         }
       },
       "sources": [
