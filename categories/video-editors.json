@@ -584,8 +584,7 @@
           "value": "yes"
         },
         "titles": {
-          "value": "unknown",
-          "note": "未确认"
+          "value": "yes"
         },
         "audio_mix": {
           "value": "unknown",
@@ -611,7 +610,8 @@
       "sources": [
         "https://www.pitivi.org",
         "https://github.com/pitivi/pitivi",
-        "https://www.pitivi.org/manual/keyframecurves.html"
+        "https://www.pitivi.org/manual/keyframecurves.html",
+        "https://www.pitivi.org/manual/mainwindow.html"
       ]
     },
     {
