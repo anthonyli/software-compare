@@ -905,8 +905,7 @@
           "note": "产品以零知识/客户端加密为卖点"
         },
         "versions": {
-          "value": "unknown",
-          "note": "未打开功能页"
+          "value": "yes"
         },
         "conflict": {
           "value": "unknown",
@@ -934,7 +933,8 @@
         }
       },
       "sources": [
-        "https://mega.io/"
+        "https://mega.io/",
+        "https://apps.apple.com/gb/app/mega-encrypted-cloud-storage/id706857885"
       ]
     },
     {
