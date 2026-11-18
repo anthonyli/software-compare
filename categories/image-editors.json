@@ -193,7 +193,8 @@
           "value": "partial"
         },
         "plugins": {
-          "value": "unknown"
+          "value": "partial",
+          "note": "Photoshop 8bf / 32-bit"
         }
       },
       "sources": [
@@ -201,7 +202,9 @@
         "https://photodemon.org/license/",
         "https://photodemon.org/2020/09/09/photodemon-8-2.html",
         "https://photodemon.org/2024/07/11/photodemon-2024-7.html",
-        "https://photodemon.org/2025/12/12/photodemon-2025-12.html"
+        "https://photodemon.org/2025/12/12/photodemon-2025-12.html",
+        "https://photodemon.org/2022/09/08/photodemon-9-0.html",
+        "https://github.com/tannerhelland/PhotoDemon/blob/7c39e83783361c436292570aeda54da75a2d9c8c/Modules/Plugin_8bf.bas"
       ],
       "collected_at": "2026-11-13"
     },
@@ -233,7 +236,8 @@
           "value": "partial"
         },
         "animation": {
-          "value": "unknown"
+          "value": "partial",
+          "note": "GIF"
         },
         "plugins": {
           "value": "unknown"
@@ -242,7 +246,9 @@
       "sources": [
         "https://pixelitor.sourceforge.io/",
         "https://github.com/lbalazscs/Pixelitor",
-        "https://pixelitor.sourceforge.io/user_guide.html"
+        "https://pixelitor.sourceforge.io/user_guide.html",
+        "https://pixelitor.sourceforge.io/user_guide.html#creating-layer-animations",
+        "https://github.com/lbalazscs/Pixelitor/blob/86552ad72f443faddb91dd955ed4391e65704490/src/main/java/pixelitor/io/LayerAnimation.java"
       ],
       "collected_at": "2026-11-13"
     },
