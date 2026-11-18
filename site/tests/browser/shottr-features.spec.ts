@@ -1,11 +1,11 @@
 import {test,expect} from '@playwright/test';
 test.use({extraHTTPHeaders:{'CF-Connecting-IP':'192.0.2.220'}});
-test('Shottr window capture and pinned screenshots is supported in both languages and widths',async({page})=>{
+test('Shottr capture, pins, delayed screenshots and color picking is supported in both languages and widths',async({page})=>{
  for(const width of [1280,390]){
   await page.setViewportSize({width,height:900});await page.goto('/p/screenshot-tools/shottr/');
   for(const lang of ['en','zh-CN']){
    await page.locator(`[data-lang="${lang}"]`).click();
-   for(const index of [1,6]){
+   for(const index of [1,3,6,7]){
     const row=page.locator('.feature-row').nth(index);await expect(row.locator('.feat')).toHaveAttribute('data-zh','支持');
     await expect(row.locator('.feat')).toHaveAttribute('title',lang==='en'?'Yes':'支持');
    }

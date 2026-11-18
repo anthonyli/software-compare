@@ -1183,8 +1183,7 @@
           "note": "官网：scrolling screenshots；可截长网页或对话"
         },
         "delay_timer": {
-          "value": "unknown",
-          "note": "官网未明确列出延时截图"
+          "value": "yes"
         },
         "annotation": {
           "value": "yes",
@@ -1198,8 +1197,7 @@
           "value": "yes"
         },
         "color_picker": {
-          "value": "unknown",
-          "note": "以测量和标注见长，官网未单独列出取色器"
+          "value": "yes"
         },
         "cloud_share": {
           "value": "yes",
@@ -1213,7 +1211,8 @@
       "sources": [
         "https://shottr.cc",
         "https://shottr.cc/purchase.html",
-        "https://shottr.cc/kb/faq"
+        "https://shottr.cc/kb/faq",
+        "https://shottr.cc/kb/urlschemes"
       ]
     },
     {
