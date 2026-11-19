@@ -847,7 +847,8 @@
           "value": "no"
         },
         "multi_cursor": {
-          "value": "unknown"
+          "value": "yes",
+          "note": "编辑器内置向上/向下添加光标及移除最后一个光标的操作；不是仅指符号重命名或跨文件替换。"
         },
         "remote_dev": {
           "value": "unknown"
@@ -861,7 +862,9 @@
       },
       "sources": [
         "https://netbeans.apache.org/",
-        "https://github.com/apache/netbeans"
+        "https://github.com/apache/netbeans",
+        "https://github.com/apache/netbeans/blob/32/ide/editor.actions/src/org/netbeans/modules/editor/actions/AddCaretAction.java",
+        "https://github.com/apache/netbeans/blob/32/ide/editor.actions/src/org/netbeans/modules/editor/actions/RemoveLastCaretAction.java"
       ],
       "archived": false,
       "last_push_at": null,
