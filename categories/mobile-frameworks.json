@@ -1,0 +1,126 @@
+{
+  "category_slug": "mobile-frameworks",
+  "category_name_zh": "跨平台移动开发框架",
+  "collected_at": "2026-11-19",
+  "timezone": "Asia/Shanghai",
+  "notes": "比较应用框架，不是 IDE 或云构建订阅。平台字段为开发宿主；Android/iOS 是主要应用目标。共享代码不保证所有插件跨平台一致，本地 iOS 构建仍需 macOS 与 Xcode；商店分发及第三方服务另计。",
+  "features": [
+    {
+      "key": "mobile_targets",
+      "label": "Android 与 iOS 目标"
+    },
+    {
+      "key": "live_refresh",
+      "label": "开发热更新反馈"
+    },
+    {
+      "key": "native_api",
+      "label": "原生平台 API 扩展"
+    },
+    {
+      "key": "web_target",
+      "label": "Web 应用目标"
+    },
+    {
+      "key": "desktop_target",
+      "label": "桌面应用目标"
+    }
+  ],
+  "products": [
+    {
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-19",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "id": "flutter",
+      "name": "Flutter",
+      "official_url": "https://flutter.dev/",
+      "github_url": "https://github.com/flutter/flutter",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "ChromeOS"
+      ],
+      "license": "BSD-3-Clause",
+      "summary": "使用 Dart 的跨平台 UI 框架，以自身渲染引擎绘制组件，支持移动、Web 和桌面应用及原生平台集成。",
+      "price_summary": "Flutter 框架免费开源；引擎依赖、插件各有许可，商店账号、后端及第三方构建服务可能另收费。",
+      "free_tier_limits": "热重载面向开发流程，不是向已发布应用推送代码；原生代码修改通常需重新构建。各宿主可构建的目标不同，iOS 本地构建需要 Mac；插件与桌面/Web 适配需逐项确认。",
+      "features": {
+        "mobile_targets": {
+          "value": "yes"
+        },
+        "live_refresh": {
+          "value": "yes"
+        },
+        "native_api": {
+          "value": "yes"
+        },
+        "web_target": {
+          "value": "yes"
+        },
+        "desktop_target": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://docs.flutter.dev/resources/faq",
+        "https://docs.flutter.dev/tools/hot-reload",
+        "https://docs.flutter.dev/platform-integration/platform-channels",
+        "https://docs.flutter.dev/platform-integration/ios/setup"
+      ]
+    },
+    {
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-19",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "id": "react-native",
+      "name": "React Native",
+      "official_url": "https://reactnative.dev/",
+      "github_url": "https://github.com/react/react-native",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "MIT",
+      "summary": "通过 React 与 JavaScript/TypeScript 构建 Android/iOS 应用，核心组件映射原生界面，可通过原生模块扩展能力。",
+      "price_summary": "React Native 核心按 MIT 免费开源；Expo 等框架可辅助开发，但可选云构建、托管与商店账号不属于核心免费权益。",
+      "free_tier_limits": "Web 与 Windows/macOS 等桌面目标依赖树外项目，不等于核心开箱即用或功能完全一致。Fast Refresh 不保证保留所有状态；本地 iOS 构建需 Xcode/macOS，云工作流不改变此本地要求。",
+      "features": {
+        "mobile_targets": {
+          "value": "yes"
+        },
+        "live_refresh": {
+          "value": "yes"
+        },
+        "native_api": {
+          "value": "yes"
+        },
+        "web_target": {
+          "value": "partial"
+        },
+        "desktop_target": {
+          "value": "partial"
+        }
+      },
+      "sources": [
+        "https://reactnative.dev/",
+        "https://reactnative.dev/docs/fast-refresh",
+        "https://reactnative.dev/docs/out-of-tree-platforms",
+        "https://reactnative.dev/docs/set-up-your-environment",
+        "https://reactnative.dev/docs/turbo-native-modules-introduction",
+        "https://github.com/react/react-native/blob/main/LICENSE"
+      ]
+    }
+  ]
+}
