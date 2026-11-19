@@ -1256,8 +1256,8 @@
           "note": "独立 lite-xl-lsp 插件提供补全、跳转及诊断等，需配置语言服务器和插件依赖。"
         },
         "git_integration": {
-          "value": "unknown",
-          "note": "未核实当前默认配置及插件组合的完整支持范围。"
+          "value": "partial",
+          "note": "可选 gitstatus 插件调用外部 Git 显示分支、增删行数并标记修改文件；该插件不是完整的提交或分支管理 GUI。"
         },
         "integrated_terminal": {
           "value": "unknown",
@@ -1293,7 +1293,8 @@
         "https://github.com/lite-xl/lite-xl/blob/master/LICENSE",
         "https://github.com/lite-xl/lite-xl-lsp",
         "https://github.com/lite-xl/lite-xl/blob/0af4dae0e2748d6afe7bded41c13d96f627cb520/data/core/commands/doc.lua",
-        "https://github.com/lite-xl/lite-xl/blob/0af4dae0e2748d6afe7bded41c13d96f627cb520/data/core/keymap.lua"
+        "https://github.com/lite-xl/lite-xl/blob/0af4dae0e2748d6afe7bded41c13d96f627cb520/data/core/keymap.lua",
+        "https://github.com/lite-xl/lite-xl-plugins/blob/6e4aa640d679decd67d2c0b677ede52ef70a7bf9/plugins/gitstatus.lua"
       ],
       "collected_at": "2026-11-15"
     }
