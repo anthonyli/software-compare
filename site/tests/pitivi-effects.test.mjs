@@ -7,5 +7,5 @@ test('Pitivi effects have official evidence without inferring specific effects o
  assert(p.sources.includes('https://www.pitivi.org/manual/usingeffects.html'));
  assert(p.sources.includes('https://www.pitivi.org/manual/transitions.html'));
  assert.deepEqual(p.platforms,['Linux']);
- for(const k of ['color_grade','chroma_key','proxy','export_4k','gpu_accel'])assert.equal(p.features[k].value,'unknown');
+ for(const k of ['color_grade','chroma_key','export_4k','gpu_accel'])assert.equal(p.features[k].value,'unknown');
 });

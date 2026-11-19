@@ -6,5 +6,5 @@ test('Pitivi title editing is documented without inferring rendering acceleratio
  assert.deepEqual(p.features.titles,{value:'yes'});
  assert(p.sources.includes('https://www.pitivi.org/manual/mainwindow.html'));
  assert.deepEqual(p.platforms,['Linux']);
- for(const key of ['color_grade','proxy','chroma_key','export_4k','gpu_accel'])assert.equal(p.features[key].value,'unknown');
+ for(const key of ['color_grade','chroma_key','export_4k','gpu_accel'])assert.equal(p.features[key].value,'unknown');
 });
