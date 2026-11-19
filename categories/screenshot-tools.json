@@ -641,8 +641,8 @@
           "note": "官网：create annotated screenshots... annotate images with arrows and callouts"
         },
         "ocr": {
-          "value": "unknown",
-          "note": "本次打开的产品页与商店页未出现 OCR / Grab Text 字样"
+          "value": "yes",
+          "note": "Grab Text 可提取图片文字；Windows 旧 OCR 引擎须更新至 2026.1.1、2025.4.2、2024.3.7 或对应分支更新版以刷新许可，2023 及更早不再获此更新。识别准确度受图像影响。"
         },
         "pin_to_screen": {
           "value": "unknown",
@@ -664,7 +664,10 @@
         "https://www.techsmith.com/store/snagit",
         "https://www.techsmith.com/snagit.html",
         "https://www.techsmith.com/store/snagit/teams",
-        "https://www.techsmith.com/snagit/features/"
+        "https://www.techsmith.com/snagit/features/",
+        "https://support.techsmith.com/hc/en-us/articles/115002031592-Snagit-Grab-Text-Edit-Text-Best-Practices",
+        "https://support.techsmith.com/hc/en-us/articles/45409168722445-Issues-With-Grab-Text-or-Other-OCR-Functions-Such-as-Edit-Text-or-Smart-Redact",
+        "https://download.techsmith.com/update/snagit/enu/26_updatemessage.html"
       ]
     },
     {
