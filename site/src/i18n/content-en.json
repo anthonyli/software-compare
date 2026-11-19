@@ -3059,5 +3059,6 @@
   "Web 与 Windows/macOS 等桌面目标依赖树外项目，不等于核心开箱即用或功能完全一致。Fast Refresh 不保证保留所有状态；本地 iOS 构建需 Xcode/macOS，云工作流不改变此本地要求。": "Web and desktop targets such as Windows/macOS rely on out-of-tree projects, not core out-of-the-box support or full feature parity. Fast Refresh does not preserve every state. Local iOS builds require Xcode/macOS; cloud workflows do not change that local requirement.",
   "官方帮助说明：个人免费档保留一个月历史版本，个人付费档保留三个月；不是永久保留。": "Official help states one month of version history for free personal accounts and three months for paid personal accounts; retention is not permanent.",
   "仅适用于支持的文件：压缩及多数加密文件不支持，官方将加密 Office 文件列为例外；移动端 App 不支持增量同步。": "Applies only to supported files: compressed and most encrypted files are excluded, with encrypted Office files listed as an exception; mobile apps do not support incremental sync.",
-  "支持同一局域网客户端间加速分发，但文件仍须先上传云服务器；不是完全离线、无需云端的 P2P 同步。": "Supports accelerated distribution between clients on the same LAN, but files must first upload to cloud servers; this is not fully offline, cloud-free P2P sync."
+  "支持同一局域网客户端间加速分发，但文件仍须先上传云服务器；不是完全离线、无需云端的 P2P 同步。": "Supports accelerated distribution between clients on the same LAN, but files must first upload to cloud servers; this is not fully offline, cloud-free P2P sync.",
+  "发生冲突时保留云端文件，并将本地修改另存为冲突副本；内容不同仍需人工比对、合并，不是自动合并文件内容。": "Keeps the cloud file and saves local changes as a conflict copy; differing contents still require manual comparison and merging, not automatic content merging."
 }
