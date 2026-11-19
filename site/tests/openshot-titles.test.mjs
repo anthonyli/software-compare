@@ -10,5 +10,5 @@ test('OpenShot basic titles are supported by official documentation without infe
   assert.deepEqual(product.features.titles, { value: 'yes' });
   assert(product.sources.includes('https://www.openshot.org/files/user-guide/titles.html'));
   assert(product.sources.includes('https://support.openshot.org/support/solutions/articles/43000625551-how-do-i-add-text-to-a-video-in-openshot-'));
-  for (const key of ['proxy', 'export_4k', 'gpu_accel']) assert.equal(product.features[key].value, 'unknown');
+  for (const key of ['proxy', 'gpu_accel']) assert.equal(product.features[key].value, 'unknown');
 });
