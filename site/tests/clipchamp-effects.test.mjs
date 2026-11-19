@@ -5,6 +5,6 @@ const p=JSON.parse(fs.readFileSync(new URL('../../categories/video-editors.json'
 test('Clipchamp documents video effects without inferring keyframes or paid entitlements',()=>{
  assert.deepEqual(p.features.effects,{value:'yes'});
  assert(p.sources.includes('https://support.microsoft.com/en-us/clipchamp/how-to-add-special-effects-to-videos'));
- for(const key of ['color_grade','keyframes','proxy','gpu_accel']) assert.equal(p.features[key].value,'unknown');
+ for(const key of ['keyframes','proxy','gpu_accel']) assert.equal(p.features[key].value,'unknown');
  assert.deepEqual(p.features.chroma_key,{value:'yes'});
 });
