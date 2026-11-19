@@ -1184,7 +1184,8 @@
           "value": "yes"
         },
         "lsp": {
-          "value": "unknown"
+          "value": "partial",
+          "note": "通过 LSP Client 插件提供，语言服务器须另行安装和配置，默认需按项目启用；各项能力取决于服务器支持。"
         },
         "git_integration": {
           "value": "partial",
@@ -1218,7 +1219,8 @@
         "https://github.com/geany/geany/blob/master/COPYING",
         "https://github.com/geany/geany/blob/0e02cc52a7634d1fed8511bd44730ea0ab791d9f/doc/geany.txt",
         "https://github.com/geany/geany-plugins/blob/2.1.0/geanyvc/README",
-        "https://github.com/geany/geany-plugins/releases/tag/2.1.0"
+        "https://github.com/geany/geany-plugins/releases/tag/2.1.0",
+        "https://github.com/geany/geany-plugins/blob/2.1.0/lsp/README"
       ],
       "collected_at": "2026-11-15"
     },
