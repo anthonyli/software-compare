@@ -5,5 +5,5 @@ test('Lapce multi-cursor has official documentation and released history',()=>{
  assert.deepEqual(p.features.multi_cursor,{value:'yes'});
  assert(p.sources.includes('https://docs.lapce.dev/features/multiple-cursor'));
  assert(p.sources.includes('https://github.com/lapce/lapce/blob/v0.4.2/CHANGELOG.md'));
- assert.equal(p.features.debugger.value,'unknown');assert.equal(p.features.ai_assistant.value,'unknown');
+ assert.equal(p.features.debugger.value,'yes');assert.equal(p.features.ai_assistant.value,'unknown');
 });

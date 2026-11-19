@@ -4,5 +4,5 @@ test('Lapce remote development cites official editor sources',()=>{
  const rows=d.products.filter(p=>p.id==='lapce');assert.equal(rows.length,1);const p=rows[0];
  assert.deepEqual(p.features.remote_dev,{value:'yes'});
  assert(p.sources.includes('https://lap.dev/lapce/'));assert(p.sources.includes('https://github.com/lapce/lapce'));
- for(const k of ['debugger','ai_assistant'])assert.equal(p.features[k].value,'unknown');
+ assert.equal(p.features.debugger.value,'yes');assert.equal(p.features.ai_assistant.value,'unknown');
 });
