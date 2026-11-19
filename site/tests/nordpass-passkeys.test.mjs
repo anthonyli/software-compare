@@ -6,6 +6,6 @@ test('NordPass external-service passkeys are verified without expanding other ca
  assert.deepEqual(p.features.passkeys,{value:'yes'});
  assert(p.sources.includes('https://support.nordpass.com/hc/en-us/articles/12984678202641-Passkeys-FAQs'));
  assert.equal(p.features.totp.value,'unknown');
- assert.equal(p.features.emergency_access.value,'unknown');
+ assert.equal(p.features.emergency_access.value,'paid');
  assert.equal(p.features.self_host.value,'no');
 });
