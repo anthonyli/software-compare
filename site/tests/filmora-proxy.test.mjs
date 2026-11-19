@@ -5,6 +5,7 @@ const p=JSON.parse(fs.readFileSync(new URL('../../categories/video-editors.json'
 test('Filmora desktop proxy workflow does not imply export or GPU entitlements',()=>{
  assert.deepEqual(p.features.proxy,{value:'yes'});
  for(const source of ['https://filmora.wondershare.com/guide/proxy-video-editing.html','https://filmora.wondershare.com/guide-mac/working-with-proxy.html']) assert(p.sources.includes(source));
- for(const key of ['export_4k','gpu_accel']) assert.equal(p.features[key].value,'unknown');
+ assert.deepEqual(p.features.export_4k,{value:'paid'});
+ assert.equal(p.features.gpu_accel.value,'unknown');
  assert.equal(p.open_source,false);
 });
