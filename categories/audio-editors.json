@@ -861,8 +861,7 @@
           "note": "大量内置与第三方插件"
         },
         "noise_reduce": {
-          "value": "unknown",
-          "note": "未确认"
+          "value": "paid"
         },
         "spectral": {
           "value": "unknown",
@@ -890,7 +889,9 @@
         }
       },
       "sources": [
-        "https://www.image-line.com/fl-studio/"
+        "https://www.image-line.com/fl-studio/",
+        "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/editortool_clean.htm",
+        "https://www.image-line.com/fl-studio/editions/producer-edition"
       ]
     },
     {
