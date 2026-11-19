@@ -1171,8 +1171,7 @@
           "note": "未确认"
         },
         "chroma_key": {
-          "value": "unknown",
-          "note": "未确认"
+          "value": "yes"
         },
         "proxy": {
           "value": "unknown",
@@ -1188,7 +1187,9 @@
         }
       },
       "sources": [
-        "https://clipchamp.com/"
+        "https://clipchamp.com/",
+        "https://clipchamp.com/en/features/green-screen-video-editor/",
+        "https://support.microsoft.com/en-gb/clipchamp/how-to-use-the-green-screen-effect-in-clipchamp"
       ]
     },
     {
