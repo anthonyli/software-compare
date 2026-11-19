@@ -7,5 +7,6 @@ test('Kate multicursor support cites the stable KatePart handbook',()=>{
  assert.deepEqual(p.features.multi_cursor,{value:'yes'});
  assert(p.sources.includes('https://kate-editor.org/'));
  assert(p.sources.includes('https://docs.kde.org/stable_kf6/en/kate/katepart/kate-part-multiple-cursors.html'));
- for(const k of ['debugger','remote_dev'])assert.equal(p.features[k].value,'unknown');
+ assert.equal(p.features.debugger.value,'partial'); // Separately verified by kate-debugger.test.mjs.
+ assert.equal(p.features.remote_dev.value,'unknown');
 });
