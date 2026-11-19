@@ -615,7 +615,8 @@
           "value": "no"
         },
         "debugger": {
-          "value": "unknown"
+          "value": "partial",
+          "note": "内置实验性调试命令，支持启动调试、断点、步进和变量查看；不代表所有语言开箱即用或成熟 IDE 级调试。"
         },
         "ai_assistant": {
           "value": "no"
@@ -637,7 +638,9 @@
       },
       "sources": [
         "https://helix-editor.com/",
-        "https://github.com/helix-editor/helix"
+        "https://github.com/helix-editor/helix",
+        "https://docs.helix-editor.com/keymap.html",
+        "https://docs.helix-editor.com/commands.html"
       ],
       "archived": false,
       "last_push_at": null,
