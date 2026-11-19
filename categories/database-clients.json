@@ -498,6 +498,54 @@
         "https://github.com/antares-sql/antares/blob/1a9ccc7ba957cc435ad4beb86b56c1f19c2c830e/src/main/workers/exporter.ts"
       ],
       "collected_at": "2026-11-16"
+    },
+    {
+      "id": "dbx",
+      "name": "DBX",
+      "official_url": "https://dbxio.com/en",
+      "github_url": "https://github.com/t8y2/dbx",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "pricing_model": "完全免费",
+      "price_summary": "DBX 软件免费开源，采用 Apache-2.0；数据库托管、外部 AI API 和自托管基础设施费用不包含在内。",
+      "prices": [],
+      "free_tier_limits": "各引擎与驱动能力不同，数据编辑取决于可识别行和数据库权限；Web 文件路径属于服务器。启用 AI 或 MCP 前核对目标、权限及传出的上下文，不把开源等同完全离线或自动只读。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "summary": "跨平台数据库客户端，提供 SQL 查询、数据网格、结构查看及导入导出，可选择桌面或自托管 Web。",
+      "features": {
+        "sql": {
+          "value": "yes"
+        },
+        "data_edit": {
+          "value": "yes"
+        },
+        "multi_engine": {
+          "value": "yes"
+        },
+        "import_export": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://github.com/t8y2/dbx",
+        "https://github.com/t8y2/dbx/blob/main/LICENSE",
+        "https://dbxio.com/en/docs/getting-started",
+        "https://dbxio.com/en/docs/query-editor",
+        "https://dbxio.com/en/docs/data-grid",
+        "https://dbxio.com/en/docs/table-import",
+        "https://dbxio.com/en/docs/database-export",
+        "https://dbxio.com/en/docs/ai-assistant"
+      ],
+      "collected_at": "2026-11-19"
     }
   ]
 }
