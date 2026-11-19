@@ -839,7 +839,8 @@
           "value": "yes"
         },
         "integrated_terminal": {
-          "value": "unknown"
+          "value": "partial",
+          "note": "提供 IDE 内本地终端，但须满足系统 PTY 支持条件；Windows 缺少支持时官方实现提示安装 Cygwin，并非所有平台零配置。"
         },
         "debugger": {
           "value": "yes"
@@ -867,7 +868,10 @@
         "https://github.com/apache/netbeans/blob/32/ide/editor.actions/src/org/netbeans/modules/editor/actions/AddCaretAction.java",
         "https://github.com/apache/netbeans/blob/32/ide/editor.actions/src/org/netbeans/modules/editor/actions/RemoveLastCaretAction.java",
         "https://netbeans.apache.org/front/main/blogs/entry/lsp-client-demo-ba-sh/",
-        "https://github.com/apache/netbeans/blob/32/ide/lsp.client/src/org/netbeans/modules/lsp/client/spi/LanguageServerProvider.java"
+        "https://github.com/apache/netbeans/blob/32/ide/lsp.client/src/org/netbeans/modules/lsp/client/spi/LanguageServerProvider.java",
+        "https://github.com/apache/netbeans/blob/32/ide/dlight.terminal/src/org/netbeans/modules/dlight/terminal/action/LocalTerminalAction.java",
+        "https://github.com/apache/netbeans/blob/32/ide/dlight.terminal/src/org/netbeans/modules/dlight/terminal/action/TerminalSupportImpl.java",
+        "https://github.com/apache/netbeans/blob/32/ide/dlight.terminal/src/org/netbeans/modules/dlight/terminal/action/Bundle.properties"
       ],
       "archived": false,
       "last_push_at": null,
