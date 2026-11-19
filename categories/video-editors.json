@@ -280,8 +280,7 @@
           "note": "首页未确认代理"
         },
         "export_4k": {
-          "value": "unknown",
-          "note": "未在首页点名 4K 导出"
+          "value": "yes"
         },
         "gpu_accel": {
           "value": "unknown",
@@ -292,7 +291,9 @@
         "https://www.openshot.org",
         "https://github.com/OpenShot/openshot-qt",
         "https://www.openshot.org/files/user-guide/titles.html",
-        "https://support.openshot.org/support/solutions/articles/43000625551-how-do-i-add-text-to-a-video-in-openshot-"
+        "https://support.openshot.org/support/solutions/articles/43000625551-how-do-i-add-text-to-a-video-in-openshot-",
+        "https://www.openshot.org/static/files/user-guide/export.html",
+        "https://www.openshot.org/static/files/user-guide/profiles.html"
       ]
     },
     {
