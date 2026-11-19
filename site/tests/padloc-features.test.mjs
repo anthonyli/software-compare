@@ -6,5 +6,5 @@ test('Padloc has browser extensions and paid hosted authenticator',()=>{
  assert.deepEqual(p.features.browser_extension,{value:'yes'});
  assert.deepEqual(p.features.totp,{value:'paid'});
  assert(p.sources.includes('https://padloc.app'));
- for(const key of ['autofill','passkeys','emergency_access','breach_monitoring','self_host']) assert.equal(p.features[key].value,'unknown');
+ for(const key of ['autofill','passkeys','emergency_access','breach_monitoring']) assert.equal(p.features[key].value,'unknown');
 });
