@@ -1187,7 +1187,8 @@
           "value": "unknown"
         },
         "git_integration": {
-          "value": "unknown"
+          "value": "partial",
+          "note": "需安装并启用 GeanyVC 插件，调用 Git 工具链提供差异、日志、状态及提交等操作；并非核心自带完整 Git GUI。"
         },
         "integrated_terminal": {
           "value": "partial"
@@ -1215,7 +1216,9 @@
         "https://github.com/geany/geany",
         "https://github.com/geany/geany/blob/master/doc/geany.txt",
         "https://github.com/geany/geany/blob/master/COPYING",
-        "https://github.com/geany/geany/blob/0e02cc52a7634d1fed8511bd44730ea0ab791d9f/doc/geany.txt"
+        "https://github.com/geany/geany/blob/0e02cc52a7634d1fed8511bd44730ea0ab791d9f/doc/geany.txt",
+        "https://github.com/geany/geany-plugins/blob/2.1.0/geanyvc/README",
+        "https://github.com/geany/geany-plugins/releases/tag/2.1.0"
       ],
       "collected_at": "2026-11-15"
     },
