@@ -194,8 +194,7 @@
           "note": "use proxies for smooth playback even on low-end systems"
         },
         "export_4k": {
-          "value": "unknown",
-          "note": "几乎支持任意格式导入，导出 4K 未在首页点名"
+          "value": "yes"
         },
         "gpu_accel": {
           "value": "unknown",
@@ -208,7 +207,8 @@
         "https://invent.kde.org/multimedia/kdenlive",
         "https://docs.kdenlive.org/en/titles_and_graphics/titles/titles.html",
         "https://docs.kdenlive.org/en/effects_and_filters/video_effects/alpha_mask_keying/chroma_key.html",
-        "https://docs.kdenlive.org/en/effects_and_filters/video_effects/color_image_correction.html"
+        "https://docs.kdenlive.org/en/effects_and_filters/video_effects/color_image_correction.html",
+        "https://docs.kdenlive.org/en/getting_started/introduction.html"
       ],
       "source_url": "https://invent.kde.org/multimedia/kdenlive",
       "source_host_note": "官方仓库在 invent.kde.org，GitHub KDE/kdenlive 为官方镜像。"
