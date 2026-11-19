@@ -688,7 +688,8 @@
           "value": "yes"
         },
         "debugger": {
-          "value": "unknown"
+          "value": "yes",
+          "note": "已实现 DAP 调试；运行配置须指定调试器类型，否则只能运行，不能调试。不代表所有语言开箱即用。"
         },
         "ai_assistant": {
           "value": "unknown"
@@ -710,7 +711,9 @@
         "https://lap.dev/lapce/",
         "https://github.com/lapce/lapce",
         "https://docs.lapce.dev/features/multiple-cursor",
-        "https://github.com/lapce/lapce/blob/v0.4.2/CHANGELOG.md"
+        "https://github.com/lapce/lapce/blob/v0.4.2/CHANGELOG.md",
+        "https://github.com/lapce/lapce/blob/v0.4.2/defaults/run.toml",
+        "https://github.com/lapce/lapce/blob/v0.4.2/lapce-app/src/debug.rs"
       ],
       "archived": false,
       "last_push_at": "2026-10-09",
