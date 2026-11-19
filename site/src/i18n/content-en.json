@@ -3063,5 +3063,6 @@
   "发生冲突时保留云端文件，并将本地修改另存为冲突副本；内容不同仍需人工比对、合并，不是自动合并文件内容。": "Keeps the cloud file and saves local changes as a conflict copy; differing contents still require manual comparison and merging, not automatic content merging.",
   "Windows 客户端支持用户设定忽略规则，使匹配的文件或文件夹不同步；规则语法及其他平台的同等配置能力未核实。": "The Windows client supports user-defined ignore rules that exclude matching files or folders from sync; rule syntax and equivalent configuration on other platforms are unverified.",
   "内置实验性调试命令，支持启动调试、断点、步进和变量查看；不代表所有语言开箱即用或成熟 IDE 级调试。": "Built-in experimental debugging commands support launching, breakpoints, stepping and variable inspection; this does not imply out-of-the-box support for every language or mature IDE-level debugging.",
-  "已实现 DAP 调试；运行配置须指定调试器类型，否则只能运行，不能调试。不代表所有语言开箱即用。": "Implements DAP debugging; the run configuration must specify a debugger type, otherwise it can only run, not debug. This does not imply out-of-the-box support for every language."
+  "已实现 DAP 调试；运行配置须指定调试器类型，否则只能运行，不能调试。不代表所有语言开箱即用。": "Implements DAP debugging; the run configuration must specify a debugger type, otherwise it can only run, not debug. This does not imply out-of-the-box support for every language.",
+  "需安装并启用 GeanyVC 插件，调用 Git 工具链提供差异、日志、状态及提交等操作；并非核心自带完整 Git GUI。": "Requires the GeanyVC plugin to be installed and enabled; it invokes the Git toolchain for diff, log, status, commit and related actions, rather than providing a complete built-in Git GUI."
 }
