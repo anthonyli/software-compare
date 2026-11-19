@@ -1176,8 +1176,8 @@
           "note": "未打开安全说明"
         },
         "versions": {
-          "value": "unknown",
-          "note": "官网营销摘录不足，未打开功能页确认版本历史规则"
+          "value": "yes",
+          "note": "官方帮助说明：个人免费档保留一个月历史版本，个人付费档保留三个月；不是永久保留。"
         },
         "conflict": {
           "value": "unknown",
@@ -1205,7 +1205,9 @@
         }
       },
       "sources": [
-        "https://www.nutstore.net/"
+        "https://www.nutstore.net/",
+        "https://help.jianguoyun.com/?p=190",
+        "https://help.jianguoyun.com/?p=773"
       ]
     },
     {
