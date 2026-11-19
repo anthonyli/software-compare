@@ -5,7 +5,7 @@ const p=JSON.parse(fs.readFileSync(new URL('../../categories/password-managers.j
 test('Bitwarden external-service passkeys are verified without changing unrelated unknowns',()=>{
  assert.deepEqual(p.features.passkeys,{value:'yes'});
  assert(p.sources.includes('https://bitwarden.com/help/storing-passkeys/'));
- assert.equal(p.features.totp.value,'unknown');
+ assert.equal(p.features.totp.value,'paid');
  assert.equal(p.features.emergency_access.value,'unknown');
  assert.equal(p.features.password_sharing.value,'unknown');
 });
