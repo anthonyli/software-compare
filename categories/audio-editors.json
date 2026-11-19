@@ -93,8 +93,7 @@
           "value": "yes"
         },
         "spectral": {
-          "value": "unknown",
-          "note": "首页未确认频谱编辑"
+          "value": "yes"
         },
         "record": {
           "value": "yes",
@@ -122,7 +121,8 @@
         "https://github.com/audacity/audacity",
         "https://github.com/audacity/audacity/blob/Audacity-4.0.2/LICENSE.txt",
         "https://www.audacityteam.org/features/noise-reduction/",
-        "https://www.audacityteam.org/manual/effects/noise-removal-and-repair/noise-reduction/"
+        "https://www.audacityteam.org/manual/effects/noise-removal-and-repair/noise-reduction/",
+        "https://www.audacityteam.org/manual/effects/spectral-tools/"
       ]
     },
     {
