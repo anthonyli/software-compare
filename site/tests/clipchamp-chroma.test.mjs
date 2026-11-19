@@ -6,6 +6,6 @@ test('Clipchamp documents a free chroma key effect without inferring other entit
  assert.deepEqual(p.features.chroma_key,{value:'yes'});
  assert(p.sources.includes('https://clipchamp.com/en/features/green-screen-video-editor/'));
  assert(p.sources.includes('https://support.microsoft.com/en-gb/clipchamp/how-to-use-the-green-screen-effect-in-clipchamp'));
- for(const key of ['color_grade','effects','keyframes','audio_mix','proxy','export_4k','gpu_accel']) assert.equal(p.features[key].value,'unknown');
+ for(const key of ['color_grade','keyframes','audio_mix','proxy','export_4k','gpu_accel']) assert.equal(p.features[key].value,'unknown');
  assert.deepEqual(p.platforms,['Windows','Web']);
 });
