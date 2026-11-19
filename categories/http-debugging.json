@@ -1,0 +1,204 @@
+{
+  "category_slug": "http-debugging",
+  "category_name_zh": "HTTP(S) 抓包与调试",
+  "collected_at": "2026-11-19",
+  "timezone": "Asia/Shanghai",
+  "notes": "通过调试代理检查应用请求，不等同网络数据包分析或 VPN。仅调试自有或获授权流量；HTTPS 依赖客户端信任证书，证书固定或应用配置可能阻止解密。抓包和重放可能暴露密钥或修改服务器数据。",
+  "features": [
+    {
+      "key": "https_inspect",
+      "label": "HTTPS 内容检查"
+    },
+    {
+      "key": "manual_edit",
+      "label": "拦截后手动修改"
+    },
+    {
+      "key": "request_replay",
+      "label": "已捕获请求重放"
+    },
+    {
+      "key": "response_mock",
+      "label": "规则化模拟响应"
+    }
+  ],
+  "products": [
+    {
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-19",
+      "id": "mitmproxy",
+      "name": "mitmproxy",
+      "official_url": "https://www.mitmproxy.org/",
+      "github_url": "https://github.com/mitmproxy/mitmproxy",
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "免费开源",
+      "summary": "开源交互式 HTTPS 调试代理，提供终端、mitmweb 界面及 Python 扩展，支持流量修改与重放。",
+      "price_summary": "mitmproxy 本体免费开源，无按席位订阅费。",
+      "free_tier_limits": "目标设备需正确路由到代理并信任其 CA；证书固定的应用可能拒绝连接。移动端是被调试客户端，不代表独立手机编辑器。",
+      "features": {
+        "https_inspect": {
+          "value": "yes"
+        },
+        "manual_edit": {
+          "value": "yes"
+        },
+        "request_replay": {
+          "value": "yes"
+        },
+        "response_mock": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://www.mitmproxy.org/",
+        "https://docs.mitmproxy.org/stable/overview/features/",
+        "https://docs.mitmproxy.org/stable/overview/installation/",
+        "https://docs.mitmproxy.org/stable/concepts/certificates/"
+      ]
+    },
+    {
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-19",
+      "id": "charles",
+      "name": "Charles",
+      "official_url": "https://www.charlesproxy.com/",
+      "github_url": null,
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "Charles 大版本永久许可",
+      "summary": "桌面 HTTP 调试代理，提供 SSL 检查、请求编辑重放和本地响应映射。",
+      "price_summary": "Charles 单用户许可标价 US$50，覆盖购买时的大版本；后续大版本升级可能收费，税费按地区另计。",
+      "free_tier_limits": "提供 30 天试用，不是永久免费版。Android 应用可能需配置对用户 CA 的信任；桌面许可不应推定包含独立 iOS 应用。",
+      "features": {
+        "https_inspect": {
+          "value": "paid"
+        },
+        "manual_edit": {
+          "value": "paid"
+        },
+        "request_replay": {
+          "value": "paid"
+        },
+        "response_mock": {
+          "value": "paid"
+        }
+      },
+      "sources": [
+        "https://www.charlesproxy.com/buy/",
+        "https://www.charlesproxy.com/buy/eula/",
+        "https://www.charlesproxy.com/overview/features/",
+        "https://www.charlesproxy.com/documentation/tools/",
+        "https://www.charlesproxy.com/documentation/using-charles/ssl-certificates/",
+        "https://www.charlesproxy.com/documentation/tools/map-local/",
+        "https://www.charlesproxy.com/documentation/proxying/breakpoints/"
+      ]
+    },
+    {
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-19",
+      "id": "proxyman",
+      "name": "Proxyman",
+      "official_url": "https://proxyman.com/",
+      "github_url": null,
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费试用 / 付费许可",
+      "summary": "跨平台桌面 HTTP 调试代理，提供断点、请求重放及 Map Local；另有独立移动应用。",
+      "price_summary": "个人永久许可含一年更新，可继续使用已获版本；团队另有按年计费订阅，移动席位随套餐而异。",
+      "free_tier_limits": "可免费开始使用；完整 SSL Proxying、断点和 Map Local 列为付费功能。本次未确认试用全部限额，不能视为无限免费；不同平台功能可能有差异。",
+      "features": {
+        "https_inspect": {
+          "value": "paid"
+        },
+        "manual_edit": {
+          "value": "paid"
+        },
+        "request_replay": {
+          "value": "yes"
+        },
+        "response_mock": {
+          "value": "paid"
+        }
+      },
+      "sources": [
+        "https://proxyman.com/pricing",
+        "https://proxyman.com/docs/advanced-features/repeat",
+        "https://proxyman.com/docs/advanced-features/edit-and-repeat",
+        "https://proxyman.com/docs/troubleshooting/get-ssl-error-from-https-request-and-response"
+      ]
+    },
+    {
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-19",
+      "id": "http-toolkit",
+      "name": "HTTP Toolkit",
+      "official_url": "https://httptoolkit.com/",
+      "github_url": "https://github.com/httptoolkit/httptoolkit",
+      "open_source": true,
+      "license": "AGPL-3.0 / Apache-2.0 / MIT",
+      "pricing_model": "免费核心 / Pro 订阅",
+      "summary": "开源 HTTP 调试工具，提供桌面流量检查与断点，支持 Android 辅助接入和 iOS 手动代理配置。",
+      "price_summary": "Hobbyist 免费，Pro 与 Team 提供订阅功能；开源代码不等于官方付费功能免订阅，具体金额以当前结算为准。",
+      "free_tier_limits": "免费档支持检查和手动断点修改；自动模拟、重放及流量导入导出属 Pro。非 root Android 的自有 App 可能需调整 CA 信任；iOS 需手动代理与证书信任，不能保证所有 App 可解密。",
+      "features": {
+        "https_inspect": {
+          "value": "yes"
+        },
+        "manual_edit": {
+          "value": "yes"
+        },
+        "request_replay": {
+          "value": "paid"
+        },
+        "response_mock": {
+          "value": "paid"
+        }
+      },
+      "sources": [
+        "https://httptoolkit.com/pricing/",
+        "https://httptoolkit.com/docs/getting-started/installing/",
+        "https://httptoolkit.com/docs/guides/android/",
+        "https://httptoolkit.com/docs/guides/ios/",
+        "https://github.com/httptoolkit/httptoolkit",
+        "https://httptoolkit.com/terms-of-service/"
+      ]
+    }
+  ]
+}
