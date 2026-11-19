@@ -207,6 +207,10 @@
     "agent-browser-tools": {
       "background": "#E7EEFF",
       "scene": "白色圆角浏览器窗口，顶部三枚黑色小圆点；右侧白色操作卡片带黑色指针，三段折线与小圆节点表达工具调用。"
+    },
+    "network-packet-analyzers": {
+      "background": "#E3F1ED",
+      "scene": "白色圆角数据包卡片沿黑色网络连线流动，右侧白色放大镜查看其中一张卡片；浅绿背景、留白与轻投影，无文字和品牌标志。"
     }
   }
 }

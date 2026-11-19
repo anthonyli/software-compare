@@ -1,0 +1,135 @@
+{
+  "category_slug": "network-packet-analyzers",
+  "category_name_zh": "网络数据包分析",
+  "collected_at": "2026-11-19",
+  "timezone": "Asia/Shanghai",
+  "notes": "分析网络接口或捕获文件中的数据包，不等同 HTTP 调试代理。仅采集自有或获授权流量；捕获文件可能包含凭据和个人数据，分享前应脱敏。",
+  "features": [
+    {
+      "key": "live_capture",
+      "label": "网络接口实时采集"
+    },
+    {
+      "key": "offline",
+      "label": "捕获文件离线分析"
+    },
+    {
+      "key": "capture_filter",
+      "label": "数据包捕获过滤"
+    },
+    {
+      "key": "protocols",
+      "label": "网络协议解析"
+    },
+    {
+      "key": "gui",
+      "label": "数据包图形界面"
+    },
+    {
+      "key": "cli",
+      "label": "数据包命令行工具"
+    }
+  ],
+  "products": [
+    {
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-19",
+      "id": "wireshark",
+      "name": "Wireshark",
+      "official_url": "https://www.wireshark.org/",
+      "github_url": "https://github.com/wireshark/wireshark",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "GPL-2.0",
+      "summary": "图形化网络协议分析器，可查看实时或已保存的数据包，并提供 TShark 命令行工具。",
+      "price_summary": "Wireshark 免费开源；捕获驱动等第三方组件适用各自许可。",
+      "free_tier_limits": "采集依赖操作系统、接口、驱动和权限；TLS 等加密流量需要适用的密钥或会话秘密，不能仅凭抓包自动解密。",
+      "features": {
+        "live_capture": {
+          "value": "yes"
+        },
+        "offline": {
+          "value": "yes"
+        },
+        "capture_filter": {
+          "value": "yes"
+        },
+        "protocols": {
+          "value": "yes"
+        },
+        "gui": {
+          "value": "yes"
+        },
+        "cli": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://www.wireshark.org/about.html",
+        "https://www.wireshark.org/docs/wsug_html_chunked/ChapterIntroduction.html",
+        "https://github.com/wireshark/wireshark/blob/master/COPYING",
+        "https://www.wireshark.org/docs/wsug_html_chunked/ChapterCapture.html",
+        "https://wiki.wireshark.org/TLS",
+        "https://github.com/wireshark/wireshark/blob/master/README.md"
+      ]
+    },
+    {
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-19",
+      "id": "tcpdump",
+      "name": "tcpdump",
+      "official_url": "https://www.tcpdump.org/",
+      "github_url": "https://github.com/the-tcpdump-group/tcpdump",
+      "platforms": [
+        "Linux",
+        "macOS",
+        "Windows"
+      ],
+      "license": "BSD-3-Clause",
+      "summary": "基于 libpcap 的命令行抓包工具，用过滤表达式选择数据包，支持保存和读取捕获文件。",
+      "price_summary": "tcpdump 免费开源；依赖库和 Windows 捕获驱动适用各自许可。",
+      "free_tier_limits": "没有内置图形界面；采集通常需要额外权限。Windows 官方源码构建依赖 Visual Studio、CMake 及 WinPcap 或 Npcap，不代表提供即装即用的官方 Windows 安装包。",
+      "features": {
+        "live_capture": {
+          "value": "yes"
+        },
+        "offline": {
+          "value": "yes"
+        },
+        "capture_filter": {
+          "value": "yes"
+        },
+        "protocols": {
+          "value": "yes"
+        },
+        "gui": {
+          "value": "no"
+        },
+        "cli": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://github.com/the-tcpdump-group/tcpdump",
+        "https://github.com/the-tcpdump-group/tcpdump/blob/master/README.md",
+        "https://github.com/the-tcpdump-group/tcpdump/blob/master/LICENSE",
+        "https://github.com/the-tcpdump-group/tcpdump/blob/master/tcpdump.1.in"
+      ]
+    }
+  ]
+}

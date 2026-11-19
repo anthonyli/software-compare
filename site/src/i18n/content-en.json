@@ -2993,5 +2993,19 @@
   "需要在同一电脑运行具备命令执行能力的外部 Agent。macOS 与 Windows 已提供，Linux 在路线图中；浏览器免费不等于模型调用免费。 Space 分离任务页面，不自动隔离 Profile、登录或网站权限；同一 Profile 的个人页和 Spaces 共享 cookie 与缓存。浏览器数据保存在本机，但页面文字和截图可能发送给选用模型。MIT 仅覆盖公开 SDK/Skill，不覆盖另行提供的原生浏览器；不与 ego.app 待开放个人 Agent 混淆。": "Requires an external agent able to execute commands on the same computer. Available on macOS and Windows, with Linux on the roadmap; a free browser does not mean free model calls. Spaces separate task pages, not automatically Profiles, logins or website permissions; personal tabs and Spaces on the same Profile share cookies and cache. Browser data is stored locally, but page text and screenshots may be sent to the chosen model. MIT covers only the public SDK/Skill, not the separately supplied native browser; this is distinct from the waitlisted ego.app personal agent.",
   "跨平台数据库客户端，提供 SQL 查询、数据网格、结构查看及导入导出，可选择桌面或自托管 Web。": "A cross-platform database client with SQL queries, data grids, schema browsing, and import/export, available as a desktop app or self-hosted web app.",
   "DBX 软件免费开源，采用 Apache-2.0；数据库托管、外部 AI API 和自托管基础设施费用不包含在内。": "DBX is free and open source under Apache-2.0; database hosting, external AI APIs, and self-hosting infrastructure costs are not included.",
-  "各引擎与驱动能力不同，数据编辑取决于可识别行和数据库权限；Web 文件路径属于服务器。启用 AI 或 MCP 前核对目标、权限及传出的上下文，不把开源等同完全离线或自动只读。": "Capabilities vary by engine and driver; data editing depends on identifiable rows and database privileges. Web file paths belong to the server. Before enabling AI or MCP, verify targets, permissions, and outgoing context. Open source does not mean fully offline or automatically read-only."
+  "各引擎与驱动能力不同，数据编辑取决于可识别行和数据库权限；Web 文件路径属于服务器。启用 AI 或 MCP 前核对目标、权限及传出的上下文，不把开源等同完全离线或自动只读。": "Capabilities vary by engine and driver; data editing depends on identifiable rows and database privileges. Web file paths belong to the server. Before enabling AI or MCP, verify targets, permissions, and outgoing context. Open source does not mean fully offline or automatically read-only.",
+  "网络数据包分析": "Network packet analysis",
+  "分析网络接口或捕获文件中的数据包，不等同 HTTP 调试代理。仅采集自有或获授权流量；捕获文件可能包含凭据和个人数据，分享前应脱敏。": "Analyze packets from network interfaces or capture files, rather than acting as an HTTP debugging proxy. Capture only traffic you own or are authorized to inspect; sanitize captures before sharing because they may contain credentials and personal data.",
+  "网络接口实时采集": "Live interface capture",
+  "捕获文件离线分析": "Offline capture analysis",
+  "数据包捕获过滤": "Packet capture filtering",
+  "网络协议解析": "Network protocol dissection",
+  "数据包图形界面": "Packet-analysis GUI",
+  "数据包命令行工具": "Packet-analysis CLI",
+  "图形化网络协议分析器，可查看实时或已保存的数据包，并提供 TShark 命令行工具。": "A graphical network protocol analyzer for live and saved packets, with the TShark command-line tool.",
+  "Wireshark 免费开源；捕获驱动等第三方组件适用各自许可。": "Wireshark is free and open source; third-party components such as capture drivers have their own licenses.",
+  "采集依赖操作系统、接口、驱动和权限；TLS 等加密流量需要适用的密钥或会话秘密，不能仅凭抓包自动解密。": "Capture depends on the OS, interface, drivers and permissions. Encrypted traffic such as TLS requires applicable keys or session secrets; capturing packets alone does not decrypt it.",
+  "基于 libpcap 的命令行抓包工具，用过滤表达式选择数据包，支持保存和读取捕获文件。": "A libpcap-based command-line capture tool with packet filter expressions and capture-file reading and writing.",
+  "tcpdump 免费开源；依赖库和 Windows 捕获驱动适用各自许可。": "tcpdump is free and open source; libraries and Windows capture drivers have their own licenses.",
+  "没有内置图形界面；采集通常需要额外权限。Windows 官方源码构建依赖 Visual Studio、CMake 及 WinPcap 或 Npcap，不代表提供即装即用的官方 Windows 安装包。": "No built-in GUI; capture commonly requires additional privileges. Official Windows source builds require Visual Studio, CMake and WinPcap or Npcap, not necessarily a ready-to-install official Windows package."
 }
