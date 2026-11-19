@@ -586,16 +586,14 @@
           "value": "yes"
         },
         "audio_mix": {
-          "value": "unknown",
-          "note": "未确认"
+          "value": "yes"
         },
         "chroma_key": {
           "value": "unknown",
           "note": "未确认"
         },
         "proxy": {
-          "value": "unknown",
-          "note": "未确认"
+          "value": "yes"
         },
         "export_4k": {
           "value": "unknown",
@@ -612,7 +610,9 @@
         "https://www.pitivi.org/manual/keyframecurves.html",
         "https://www.pitivi.org/manual/mainwindow.html",
         "https://www.pitivi.org/manual/usingeffects.html",
-        "https://www.pitivi.org/manual/transitions.html"
+        "https://www.pitivi.org/manual/transitions.html",
+        "https://www.pitivi.org/tour/",
+        "https://www.pitivi.org/manual/importing.html"
       ]
     },
     {
