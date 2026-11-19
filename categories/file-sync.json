@@ -1168,8 +1168,8 @@
           "note": "未打开客户端说明确认"
         },
         "p2p_lan": {
-          "value": "no",
-          "note": "经坚果云服务器"
+          "value": "partial",
+          "note": "支持同一局域网客户端间加速分发，但文件仍须先上传云服务器；不是完全离线、无需云端的 P2P 同步。"
         },
         "e2e_encrypt": {
           "value": "unknown",
@@ -1209,7 +1209,8 @@
         "https://help.jianguoyun.com/?p=190",
         "https://help.jianguoyun.com/?p=773",
         "https://help.jianguoyun.com/?p=775",
-        "https://help.jianguoyun.com/?page_id=843"
+        "https://help.jianguoyun.com/?page_id=843",
+        "https://help.jianguoyun.com/?p=777"
       ]
     },
     {
