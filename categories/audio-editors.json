@@ -1274,13 +1274,14 @@
           "note": "通用 DAW 可做播客录制与剪辑；未核实托管发布功能。"
         },
         "export_formats": {
-          "value": "unknown"
+          "value": "yes"
         }
       },
       "sources": [
         "https://www.tracktion.com/products/waveform-free",
         "https://www.tracktion.com/terms-of-use",
-        "https://tracktion.github.io/waveform_manual/latest/quick-start/"
+        "https://tracktion.github.io/waveform_manual/latest/quick-start/",
+        "https://www.tracktion.com/products/waveform-free-features"
       ],
       "collected_at": "2026-11-15"
     },
