@@ -1092,8 +1092,7 @@
           "note": "未打开产品页确认"
         },
         "export_4k": {
-          "value": "unknown",
-          "note": "未确认"
+          "value": "yes"
         },
         "gpu_accel": {
           "value": "unknown",
@@ -1102,7 +1101,8 @@
       },
       "sources": [
         "https://www.apple.com/imovie/",
-        "https://support.apple.com/en-us/102308"
+        "https://support.apple.com/en-us/102308",
+        "https://support.apple.com/en-ie/102276"
       ]
     },
     {
