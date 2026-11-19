@@ -1124,8 +1124,8 @@
           "note": "Lua 插件与内置插件管理器"
         },
         "lsp": {
-          "value": "unknown",
-          "note": "官方核心功能资料未确认此能力"
+          "value": "partial",
+          "note": "通过可选 lsp 插件和外部语言服务器提供基础能力；插件仍属概念验证，部分修改事件不同步，保存可重新同步。"
         },
         "git_integration": {
           "value": "partial",
@@ -1163,9 +1163,11 @@
       "sources": [
         "https://github.com/micro-editor/micro",
         "https://github.com/micro-editor/micro/blob/master/LICENSE",
-        "https://micro-editor.github.io/"
+        "https://micro-editor.github.io/",
+        "https://github.com/micro-editor/plugin-channel/blob/d0d04ed64a8667979b0678bb442f825d1d6c9d92/README.md",
+        "https://github.com/AndCake/micro-plugin-lsp/blob/a3ed3a73b2f7576b1e2dc1ac3c98dfe695e6d05d/README.md"
       ],
-      "collected_at": "2026-11-15"
+      "collected_at": "2026-11-19"
     },
     {
       "id": "geany",
