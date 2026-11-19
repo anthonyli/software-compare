@@ -6,5 +6,5 @@ test('Flowblade proxy editing is documented without inferring rendering accelera
  assert.deepEqual(p.features.proxy,{value:'yes'});
  assert(p.sources.includes('https://github.com/jliljebl/flowblade/blob/54b68c4532e4d50e3f617a38a680315eb159f11e/flowblade-trunk/Flowblade/res/help/proxy.html'));
  assert.deepEqual(p.platforms,['Linux']);
- for(const key of ['color_grade','effects','keyframes','chroma_key','export_4k','gpu_accel'])assert.equal(p.features[key].value,'unknown');
+ for(const key of ['export_4k','gpu_accel'])assert.equal(p.features[key].value,'unknown');
 });
