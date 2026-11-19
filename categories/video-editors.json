@@ -436,8 +436,7 @@
           "value": "yes"
         },
         "export_4k": {
-          "value": "unknown",
-          "note": "未确认"
+          "value": "yes"
         },
         "gpu_accel": {
           "value": "unknown",
@@ -450,7 +449,9 @@
         "https://jliljebl.github.io/flowblade/webhelp/tools.html",
         "https://github.com/jliljebl/flowblade/blob/54b68c4532e4d50e3f617a38a680315eb159f11e/flowblade-trunk/Flowblade/res/help/proxy.html",
         "https://jliljebl.github.io/flowblade/features.html",
-        "https://jliljebl.github.io/flowblade/webhelp/filtering.html"
+        "https://jliljebl.github.io/flowblade/webhelp/filtering.html",
+        "https://jliljebl.github.io/flowblade/webhelp/rendering.html",
+        "https://github.com/jliljebl/flowblade/blob/b02805fb0e85a7eac978aab6638f37fdc0456cc3/flowblade-trunk/Flowblade/res/profiles/uhd_2160p_30"
       ]
     },
     {
