@@ -1214,7 +1214,8 @@
           "value": "unknown"
         },
         "multi_cursor": {
-          "value": "unknown"
+          "value": "partial",
+          "note": "支持矩形选区列编辑及零宽列选区多行插入；此处仅确认列编辑，不推断任意不连续位置的多光标。"
         },
         "remote_dev": {
           "value": "unknown"
@@ -1234,9 +1235,10 @@
         "https://github.com/geany/geany-plugins/blob/2.1.0/geanyvc/README",
         "https://github.com/geany/geany-plugins/releases/tag/2.1.0",
         "https://github.com/geany/geany-plugins/blob/2.1.0/lsp/README",
-        "https://github.com/geany/geany-plugins/blob/2.1.0/debugger/README"
+        "https://github.com/geany/geany-plugins/blob/2.1.0/debugger/README",
+        "https://github.com/geany/geany/blob/2.1.0/doc/geany.txt"
       ],
-      "collected_at": "2026-11-15"
+      "collected_at": "2026-11-19"
     },
     {
       "id": "lite-xl",

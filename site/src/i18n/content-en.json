@@ -3071,5 +3071,6 @@
   "编辑器内置向上/向下添加光标及移除最后一个光标的操作；不是仅指符号重命名或跨文件替换。": "The editor includes actions to add carets above or below and remove the last caret; this is not merely symbol renaming or cross-file replacement.",
   "提供 LSP 客户端接入能力，需相应语言集成及语言服务器；不等于所有语言开箱即用，也不同于向其他编辑器提供 Java LSP 服务。": "Provides LSP client integration with the corresponding language integration and server; this is not out-of-the-box support for every language, nor the same as providing a Java LSP server to other editors.",
   "提供 IDE 内本地终端，但须满足系统 PTY 支持条件；Windows 缺少支持时官方实现提示安装 Cygwin，并非所有平台零配置。": "Provides a local terminal inside the IDE, subject to system PTY support; on Windows the implementation prompts for Cygwin when support is missing, so it is not zero-configuration on every platform.",
-  "通过可选 lsp 插件和外部语言服务器提供基础能力；插件仍属概念验证，部分修改事件不同步，保存可重新同步。": "Basic support via the optional lsp plugin and external language servers; the plugin remains a proof of concept, misses some modification events, and re-synchronizes on save."
+  "通过可选 lsp 插件和外部语言服务器提供基础能力；插件仍属概念验证，部分修改事件不同步，保存可重新同步。": "Basic support via the optional lsp plugin and external language servers; the plugin remains a proof of concept, misses some modification events, and re-synchronizes on save.",
+  "支持矩形选区列编辑及零宽列选区多行插入；此处仅确认列编辑，不推断任意不连续位置的多光标。": "Supports rectangular column editing and multi-line insertion with zero-width column selections; only column editing is verified here, not arbitrary discontiguous cursors."
 }
