@@ -1011,8 +1011,7 @@
           "note": "未确认"
         },
         "proxy": {
-          "value": "unknown",
-          "note": "未确认"
+          "value": "yes"
         },
         "export_4k": {
           "value": "unknown",
@@ -1024,7 +1023,9 @@
         }
       },
       "sources": [
-        "https://filmora.wondershare.com/"
+        "https://filmora.wondershare.com/",
+        "https://filmora.wondershare.com/guide/proxy-video-editing.html",
+        "https://filmora.wondershare.com/guide-mac/working-with-proxy.html"
       ]
     },
     {
