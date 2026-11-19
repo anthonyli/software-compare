@@ -1,0 +1,124 @@
+{
+  "category_slug": "mobile-development-ides",
+  "category_name_zh": "移动开发 IDE",
+  "collected_at": "2026-11-19",
+  "timezone": "Asia/Shanghai",
+  "notes": "比较原生移动应用开发环境，不混入跨平台框架。平台字段表示运行 IDE 的电脑系统，不是应用目标系统；模拟器、SDK 和设备支持随版本与硬件变化。免费开发工具不等于免费商店分发或无限云服务。",
+  "features": [
+    {
+      "key": "virtual_device",
+      "label": "移动设备模拟运行"
+    },
+    {
+      "key": "device_debug",
+      "label": "真机应用调试"
+    },
+    {
+      "key": "ui_preview",
+      "label": "原生界面预览"
+    },
+    {
+      "key": "profiling",
+      "label": "应用性能分析"
+    },
+    {
+      "key": "testing",
+      "label": "集成应用测试"
+    }
+  ],
+  "products": [
+    {
+      "prices": [],
+      "github_url": null,
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-19",
+      "id": "android-studio",
+      "name": "Android Studio",
+      "official_url": "https://developer.android.com/studio",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "ChromeOS"
+      ],
+      "open_source": true,
+      "license": "开源组件 / Android SDK 条款",
+      "pricing_model": "免费 IDE / 可选付费服务",
+      "summary": "Google 官方 Android IDE，基于 IntelliJ，集成 Gradle 构建、Android 模拟器、界面预览及调试测试工具。",
+      "price_summary": "本地 IDE 可免费下载使用；Gemini 等服务存在免费与付费档，Google Play 发布账号及其他云服务不包含在 IDE 免费范围内。",
+      "free_tier_limits": "面向 Android，而非本地 iOS 构建工具链。ChromeOS 需 Linux 环境，官方安装页当前仅支持部署到连接的真机；模拟器有额外硬件要求。开源 IDE 组件不代表 SDK、Google API 或云服务均为同一开源许可。",
+      "features": {
+        "virtual_device": {
+          "value": "partial"
+        },
+        "device_debug": {
+          "value": "yes"
+        },
+        "ui_preview": {
+          "value": "yes"
+        },
+        "profiling": {
+          "value": "yes"
+        },
+        "testing": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://developer.android.com/studio/intro",
+        "https://developer.android.com/studio/install",
+        "https://developer.android.com/studio/profile",
+        "https://developer.android.com/studio/gemini/feature-comparison",
+        "https://android.googlesource.com/platform/tools/base/+/refs/heads/mirror-goog-studio-main/source.md"
+      ]
+    },
+    {
+      "prices": [],
+      "github_url": null,
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-19",
+      "id": "xcode",
+      "name": "Xcode",
+      "official_url": "https://developer.apple.com/xcode/",
+      "platforms": [
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费 IDE / 可选付费服务",
+      "summary": "Apple 官方开发环境，在 Mac 上为 iOS、iPadOS 等 Apple 平台开发应用，包含 Simulator、界面预览、调试器和测试工具。",
+      "price_summary": "Xcode 可从 Mac App Store 免费获取；App Store 分发通常需付费开发者计划，Xcode Cloud 与第三方 AI 服务另有资格、额度或收费规则。",
+      "free_tier_limits": "宿主仅 macOS，不能据此认定 Windows/Linux 可本地构建 iOS。免费账号真机测试有签名与功能限制；部分 SDK、模拟器和 AI 功能要求特定 Mac 硬件及系统版本。Xcode 本体为专有软件，不等同开源 Swift。",
+      "features": {
+        "virtual_device": {
+          "value": "yes"
+        },
+        "device_debug": {
+          "value": "yes"
+        },
+        "ui_preview": {
+          "value": "yes"
+        },
+        "profiling": {
+          "value": "yes"
+        },
+        "testing": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://developer.apple.com/xcode/",
+        "https://developer.apple.com/xcode/resources/",
+        "https://developer.apple.com/help/account/basics/about-your-developer-account",
+        "https://developer.apple.com/support/terms/",
+        "https://developer.apple.com/documentation/safari-developer-tools/installing-xcode-and-simulators"
+      ]
+    }
+  ]
+}

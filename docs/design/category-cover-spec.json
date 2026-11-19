@@ -215,6 +215,10 @@
     "http-debugging": {
       "background": "#F7EBDD",
       "scene": "白色圆角请求与响应卡片在中央调试关卡两侧，以黑色双向箭头连接；中央浅橙开关表示拦截检查，无文字和品牌标志。"
+    },
+    "mobile-development-ides": {
+      "background": "#E7EDF9",
+      "scene": "白色圆角电脑窗口与前景手机组成开发工作台，黑色代码括号与蓝色预览块表达编辑与模拟；无文字或品牌。"
     }
   }
 }

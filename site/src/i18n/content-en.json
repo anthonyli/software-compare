@@ -3028,5 +3028,20 @@
   "开源 HTTP 调试工具，提供桌面流量检查与断点，支持 Android 辅助接入和 iOS 手动代理配置。": "An open-source HTTP debugging tool with desktop traffic inspection and breakpoints, assisted Android setup and manual iOS proxy configuration.",
   "Hobbyist 免费，Pro 与 Team 提供订阅功能；开源代码不等于官方付费功能免订阅，具体金额以当前结算为准。": "Hobbyist is free, with Pro and Team subscription features; open-source code does not make official paid features subscription-free. Check current checkout for exact prices.",
   "免费档支持检查和手动断点修改；自动模拟、重放及流量导入导出属 Pro。非 root Android 的自有 App 可能需调整 CA 信任；iOS 需手动代理与证书信任，不能保证所有 App 可解密。": "The free tier supports inspection and manual breakpoint edits; automated mocking, replay and traffic import/export require Pro. Your own apps on unrooted Android may need CA trust configuration; iOS needs manual proxy and certificate trust setup, without guaranteed decryption of every app.",
-  "Charles 大版本永久许可": "Charles perpetual major-version license"
+  "Charles 大版本永久许可": "Charles perpetual major-version license",
+  "移动开发 IDE": "Mobile development IDEs",
+  "比较原生移动应用开发环境，不混入跨平台框架。平台字段表示运行 IDE 的电脑系统，不是应用目标系统；模拟器、SDK 和设备支持随版本与硬件变化。免费开发工具不等于免费商店分发或无限云服务。": "Native mobile app development environments, separate from cross-platform frameworks. Platforms are IDE host operating systems, not app targets; emulator, SDK and device support varies by version and hardware. Free tools do not imply free store distribution or unlimited cloud services.",
+  "移动设备模拟运行": "Mobile device simulation",
+  "真机应用调试": "Physical-device app debugging",
+  "原生界面预览": "Native UI previews",
+  "应用性能分析": "App performance profiling",
+  "集成应用测试": "Integrated app testing",
+  "开源组件 / Android SDK 条款": "Open-source components / Android SDK terms",
+  "免费 IDE / 可选付费服务": "Free IDE / optional paid services",
+  "Google 官方 Android IDE，基于 IntelliJ，集成 Gradle 构建、Android 模拟器、界面预览及调试测试工具。": "Google’s official Android IDE, based on IntelliJ, with Gradle builds, Android Emulator, UI previews and debugging/testing tools.",
+  "本地 IDE 可免费下载使用；Gemini 等服务存在免费与付费档，Google Play 发布账号及其他云服务不包含在 IDE 免费范围内。": "The local IDE is free to download and use; services such as Gemini have free and paid tiers. Google Play publishing accounts and other cloud services are outside the free IDE scope.",
+  "面向 Android，而非本地 iOS 构建工具链。ChromeOS 需 Linux 环境，官方安装页当前仅支持部署到连接的真机；模拟器有额外硬件要求。开源 IDE 组件不代表 SDK、Google API 或云服务均为同一开源许可。": "Targets Android, not a local iOS build toolchain. ChromeOS requires Linux support; the installation guide currently limits deployment there to connected physical devices. Emulators have additional hardware requirements. Open-source IDE components do not place SDKs, Google APIs or cloud services under one open-source license.",
+  "Apple 官方开发环境，在 Mac 上为 iOS、iPadOS 等 Apple 平台开发应用，包含 Simulator、界面预览、调试器和测试工具。": "Apple’s official development environment, running on Mac to build apps for iOS, iPadOS and other Apple platforms, with Simulator, UI previews, debuggers and testing tools.",
+  "Xcode 可从 Mac App Store 免费获取；App Store 分发通常需付费开发者计划，Xcode Cloud 与第三方 AI 服务另有资格、额度或收费规则。": "Xcode is free from the Mac App Store. App Store distribution normally requires a paid developer program; Xcode Cloud and third-party AI services have separate eligibility, quotas or charges.",
+  "宿主仅 macOS，不能据此认定 Windows/Linux 可本地构建 iOS。免费账号真机测试有签名与功能限制；部分 SDK、模拟器和 AI 功能要求特定 Mac 硬件及系统版本。Xcode 本体为专有软件，不等同开源 Swift。": "The host is macOS only, not local iOS builds on Windows/Linux. Free-account device testing has signing and capability limits; some SDKs, simulators and AI features require specific Mac hardware and OS versions. Xcode itself is proprietary, distinct from open-source Swift."
 }
