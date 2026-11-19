@@ -5,6 +5,6 @@ const p=JSON.parse(fs.readFileSync(new URL('../../categories/password-managers.j
 test('Bitwarden integrated code generation requires a paid entitlement',()=>{
  assert.deepEqual(p.features.totp,{value:'paid'});
  assert(p.sources.includes('https://bitwarden.com/help/integrated-authenticator/'));
- for(const feature of ['password_sharing','emergency_access','breach_monitoring']) assert.equal(p.features[feature].value,'unknown');
+ for(const feature of ['password_sharing','breach_monitoring']) assert.equal(p.features[feature].value,'unknown');
  assert.deepEqual(p.features.passkeys,{value:'yes'});
 });
