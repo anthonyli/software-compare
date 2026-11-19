@@ -1200,8 +1200,8 @@
           "note": "仅适用于支持的文件：压缩及多数加密文件不支持，官方将加密 Office 文件列为例外；移动端 App 不支持增量同步。"
         },
         "ignore_rules": {
-          "value": "unknown",
-          "note": "未确认"
+          "value": "yes",
+          "note": "Windows 客户端支持用户设定忽略规则，使匹配的文件或文件夹不同步；规则语法及其他平台的同等配置能力未核实。"
         }
       },
       "sources": [
@@ -1212,7 +1212,8 @@
         "https://help.jianguoyun.com/?page_id=843",
         "https://help.jianguoyun.com/?p=777",
         "https://help.jianguoyun.com/?p=1129",
-        "https://help.jianguoyun.com/?p=4031"
+        "https://help.jianguoyun.com/?p=4031",
+        "https://help.jianguoyun.com/?p=4159"
       ]
     },
     {
