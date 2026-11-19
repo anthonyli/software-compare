@@ -1196,8 +1196,8 @@
           "note": "分享"
         },
         "block_level": {
-          "value": "unknown",
-          "note": "未确认"
+          "value": "partial",
+          "note": "仅适用于支持的文件：压缩及多数加密文件不支持，官方将加密 Office 文件列为例外；移动端 App 不支持增量同步。"
         },
         "ignore_rules": {
           "value": "unknown",
@@ -1207,7 +1207,9 @@
       "sources": [
         "https://www.nutstore.net/",
         "https://help.jianguoyun.com/?p=190",
-        "https://help.jianguoyun.com/?p=773"
+        "https://help.jianguoyun.com/?p=773",
+        "https://help.jianguoyun.com/?p=775",
+        "https://help.jianguoyun.com/?page_id=843"
       ]
     },
     {
