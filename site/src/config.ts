@@ -47,7 +47,7 @@ export const categoryGroups: { id: string; name: string; slugs: string[] }[] = [
   {
     id: "dev",
     name: "开发工具",
-    slugs: ["code-editors", "remote-desktop", "database-clients", "api-clients", "agent-browser-tools"],
+    slugs: ["code-editors", "remote-desktop", "database-clients", "api-clients", "agent-browser-tools", "mobile-development-ides"],
   },
 ];
 
@@ -71,6 +71,7 @@ export const featureLabelFull: Record<string, string> = {
 
 /** 首页与导航用的品类一字记号，纯展示，不改变数据。 */
 export const categoryMonograms: Record<string, string> = {
+  "mobile-development-ides": "移",
   "http-debugging": "调",
   "network-packet-analyzers": "包",
   "agent-browser-tools": "控",
@@ -127,6 +128,7 @@ export const categoryMonograms: Record<string, string> = {
 
 /** 首页卡片色块，仅用于展示，不代表产品官方品牌色。 */
 export const categoryTints: Record<string, string> = {
+  "mobile-development-ides": "#E7EDF9",
   "http-debugging": "#F7EBDD",
   "network-packet-analyzers": "#E3F1ED",
   "agent-browser-tools": "#E7EEFF",
