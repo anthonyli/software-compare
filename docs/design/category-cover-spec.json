@@ -223,6 +223,10 @@
     "mobile-frameworks": {
       "background": "#F1E8F5",
       "scene": "中央白色模块通过黑色分支线连接左右手机与桌面窗口，淡紫色组件表示共享代码；保持留白，无文字品牌。"
+    },
+    "cli-frameworks": {
+      "background": "#E6F2EB",
+      "scene": "白色命令窗口与右侧两张小型子命令卡片，黑色箭头和短线连接，表示构建命令行应用。"
     }
   }
 }

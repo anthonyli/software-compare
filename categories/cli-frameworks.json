@@ -1,0 +1,310 @@
+{
+  "category_slug": "cli-frameworks",
+  "category_name_zh": "CLI 开发框架",
+  "collected_at": "2026-11-20",
+  "timezone": "Asia/Shanghai",
+  "notes": "比较构建命令行应用的开发库，不是 AI 编程 CLI 或终端模拟器。平台表示开发与运行宿主，仍需相应语言工具链或运行时。Shell 补全需要安装或加载脚本；框架开源不保证应用、依赖、分发和外部服务全部免费。",
+  "features": [
+    {
+      "key": "argument_parsing",
+      "label": "参数与选项解析"
+    },
+    {
+      "key": "subcommands",
+      "label": "嵌套子命令"
+    },
+    {
+      "key": "automatic_help",
+      "label": "自动帮助信息"
+    },
+    {
+      "key": "shell_completion",
+      "label": "Shell 补全"
+    },
+    {
+      "key": "interactive_prompts",
+      "label": "交互输入与确认"
+    }
+  ],
+  "products": [
+    {
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-20",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "id": "cobra",
+      "name": "Cobra",
+      "official_url": "https://cobra.dev/",
+      "github_url": "https://github.com/spf13/cobra",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "Apache-2.0",
+      "summary": "Go 命令行应用库，提供命令树、参数与标志解析、帮助和补全生成。",
+      "price_summary": "开发库免费开源；依赖各有许可，应用分发、托管和第三方服务费用另计。",
+      "free_tier_limits": "需 Go 工具链构建；支持生成 Bash、Zsh、Fish 和 PowerShell 补全脚本，也可定义动态补全。生成脚本不等于已安装到用户 Shell。",
+      "features": {
+        "argument_parsing": {
+          "value": "yes"
+        },
+        "subcommands": {
+          "value": "yes"
+        },
+        "automatic_help": {
+          "value": "yes"
+        },
+        "shell_completion": {
+          "value": "yes"
+        },
+        "interactive_prompts": {
+          "value": "unknown",
+          "note": "已核实来源未确认核心库提供此能力，不代表整个语言生态不支持。"
+        }
+      },
+      "sources": [
+        "https://github.com/spf13/cobra/blob/v1.10.2/LICENSE.txt",
+        "https://github.com/spf13/cobra/blob/v1.10.2/README.md",
+        "https://cobra.dev/docs/how-to-guides/shell-completion/"
+      ]
+    },
+    {
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-20",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "id": "clap",
+      "name": "clap",
+      "official_url": "https://docs.rs/clap/",
+      "github_url": "https://github.com/clap-rs/clap",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "MIT OR Apache-2.0",
+      "summary": "Rust 参数解析库，支持构建器或可选 derive 宏定义 CLI，并生成帮助与子命令界面。",
+      "price_summary": "开发库免费开源；依赖各有许可，应用分发、托管和第三方服务费用另计。",
+      "free_tier_limits": "需 Rust 工具链构建；Shell 补全由独立 clap_complete crate 提供，静态脚本生成与动态补全机制的功能开关和支持范围应分别确认。",
+      "features": {
+        "argument_parsing": {
+          "value": "yes"
+        },
+        "subcommands": {
+          "value": "yes"
+        },
+        "automatic_help": {
+          "value": "yes"
+        },
+        "shell_completion": {
+          "value": "partial",
+          "note": "额外使用官方 clap_complete crate。"
+        },
+        "interactive_prompts": {
+          "value": "unknown",
+          "note": "已核实来源未确认核心库提供此能力，不代表整个语言生态不支持。"
+        }
+      },
+      "sources": [
+        "https://github.com/clap-rs/clap/blob/v4.6.9/Cargo.toml",
+        "https://docs.rs/clap/latest/clap/",
+        "https://docs.rs/clap_complete/latest/clap_complete/"
+      ]
+    },
+    {
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-20",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "id": "commander",
+      "name": "Commander.js",
+      "official_url": "https://github.com/tj/commander.js",
+      "github_url": "https://github.com/tj/commander.js",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "MIT",
+      "summary": "Node.js 命令行解析库，以 JavaScript API 定义选项、位置参数、子命令和自动帮助，提供 TypeScript 类型。",
+      "price_summary": "开发库免费开源；依赖各有许可，应用分发、托管和第三方服务费用另计。",
+      "free_tier_limits": "需兼容版本的 Node.js。参数解析不等于交互式问答或 Shell 补全；这两项未在所核实核心文档中确认为内置能力。",
+      "features": {
+        "argument_parsing": {
+          "value": "yes"
+        },
+        "subcommands": {
+          "value": "yes"
+        },
+        "automatic_help": {
+          "value": "yes"
+        },
+        "shell_completion": {
+          "value": "unknown",
+          "note": "已核实来源未确认核心库提供此能力，不代表整个语言生态不支持。"
+        },
+        "interactive_prompts": {
+          "value": "unknown",
+          "note": "已核实来源未确认核心库提供此能力，不代表整个语言生态不支持。"
+        }
+      },
+      "sources": [
+        "https://github.com/tj/commander.js/blob/v15.1.0/Readme.md",
+        "https://github.com/tj/commander.js/blob/v15.1.0/LICENSE"
+      ]
+    },
+    {
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-20",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "id": "click",
+      "name": "Click",
+      "official_url": "https://click.palletsprojects.com/",
+      "github_url": "https://github.com/pallets/click",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "BSD-3-Clause",
+      "summary": "Python 装饰器式命令行工具包，支持嵌套命令、参数转换、自动帮助及输入确认。",
+      "price_summary": "开发库免费开源；依赖各有许可，应用分发、托管和第三方服务费用另计。",
+      "free_tier_limits": "需 Python 运行时。Shell 补全要求通过已安装的入口命令调用并在 Shell 中启用，不能直接等同于运行 python script.py；输入提示不是完整交互式行编辑器。",
+      "features": {
+        "argument_parsing": {
+          "value": "yes"
+        },
+        "subcommands": {
+          "value": "yes"
+        },
+        "automatic_help": {
+          "value": "yes"
+        },
+        "shell_completion": {
+          "value": "yes"
+        },
+        "interactive_prompts": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://github.com/pallets/click/blob/8.5.1/LICENSE.txt",
+        "https://click.palletsprojects.com/en/stable/",
+        "https://click.palletsprojects.com/en/stable/shell-completion/",
+        "https://click.palletsprojects.com/en/stable/prompts/"
+      ]
+    },
+    {
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-20",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "id": "typer",
+      "name": "Typer",
+      "official_url": "https://typer.tiangolo.com/",
+      "github_url": "https://github.com/fastapi/typer",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "MIT",
+      "summary": "基于 Python 类型提示定义命令行参数的框架，支持命令组、自动帮助、Shell 补全和输入确认。",
+      "price_summary": "开发库免费开源；依赖各有许可，应用分发、托管和第三方服务费用另计。",
+      "free_tier_limits": "需 Python 运行时；自动推断参数不替代业务校验。Shell 补全需要安装到对应 Shell，可用回调提供参数候选；提示输入与完整 TUI 不同。",
+      "features": {
+        "argument_parsing": {
+          "value": "yes"
+        },
+        "subcommands": {
+          "value": "yes"
+        },
+        "automatic_help": {
+          "value": "yes"
+        },
+        "shell_completion": {
+          "value": "yes"
+        },
+        "interactive_prompts": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://github.com/fastapi/typer/blob/0.29.2/LICENSE",
+        "https://typer.tiangolo.com/",
+        "https://typer.tiangolo.com/tutorial/prompt/",
+        "https://typer.tiangolo.com/tutorial/options-autocompletion/"
+      ]
+    },
+    {
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-20",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "id": "oclif",
+      "name": "oclif",
+      "official_url": "https://oclif.io/",
+      "github_url": "https://github.com/oclif/core",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "MIT",
+      "summary": "面向 Node.js 的 CLI 框架，以命令类、参数标志和插件组织应用，支持 JavaScript 与 TypeScript。",
+      "price_summary": "开发库免费开源；依赖各有许可，应用分发、托管和第三方服务费用另计。",
+      "free_tier_limits": "此处比较 @oclif/core，不是所有插件的能力合集。Shell 补全需 plugin-autocomplete，官方交互指南建议用 Inquirer 实现提示；这些扩展不应视为核心内置。",
+      "features": {
+        "argument_parsing": {
+          "value": "yes"
+        },
+        "subcommands": {
+          "value": "yes"
+        },
+        "automatic_help": {
+          "value": "yes"
+        },
+        "shell_completion": {
+          "value": "partial",
+          "note": "额外安装 @oclif/plugin-autocomplete。"
+        },
+        "interactive_prompts": {
+          "value": "partial",
+          "note": "官方指南建议额外使用 Inquirer。"
+        }
+      },
+      "sources": [
+        "https://github.com/oclif/core/blob/5.1.12/LICENSE",
+        "https://oclif.io/docs/features/",
+        "https://github.com/oclif/plugin-autocomplete",
+        "https://oclif.io/docs/user_experience/"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Original illustration for Compare / 软件对比. No third-party marks. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" fill="none" role="img" aria-hidden="true">
+  <rect width="480" height="260" fill="#E6F2EB"/>
+  <rect width="480" height="260" fill="url(#wash-cli-frameworks)" opacity="0.85"/>
+  <defs>
+    <linearGradient id="wash-cli-frameworks" x1="0" y1="0" x2="480" y2="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F0F8F3" stop-opacity="0.0"/>
+      <stop offset="1" stop-color="#C9DED1" stop-opacity="0.35"/>
+    </linearGradient>
+    <filter id="soft-cli-frameworks" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#111111" flood-opacity="0.10"/>
+    </filter>
+    <pattern id="dots-cli-frameworks" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="translate(18,16)">
+      <circle cx="1.2" cy="1.2" r="1.05" fill="#111111" opacity="0.35"/>
+    </pattern>
+  </defs>
+  <ellipse cx="40" cy="210" rx="70" ry="45" fill="#FFFFFF" opacity="0.35"/>
+  <ellipse cx="440" cy="36" rx="70" ry="48" fill="#FFFFFF" opacity="0.35"/>
+  <rect width="480" height="260" fill="url(#dots-cli-frameworks)" opacity="0.45"/>
+  <g filter="url(#soft-cli-frameworks)">
+    <rect x="77" y="59" width="246" height="151" rx="20" fill="#FFFFFF"/>
+    <path d="M77 95h246" stroke="#D7E6DC" stroke-width="3"/>
+    <circle cx="99" cy="77" r="4" fill="#111111"/><circle cx="114" cy="77" r="4" fill="#C9DED1"/>
+    <path d="M108 122l19 16-19 16m34 0h38" stroke="#111111" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M300 126h39m-20 0v52h20" stroke="#111111" stroke-width="4" stroke-linecap="round"/>
+    <rect x="335" y="107" width="69" height="39" rx="10" fill="#FFFFFF"/><rect x="335" y="159" width="69" height="39" rx="10" fill="#FFFFFF"/>
+    <path d="M350 127h37m-37 52h37" stroke="#111111" stroke-width="5" stroke-linecap="round"/>
+    <rect x="108" y="176" width="124" height="6" rx="3" fill="#C9DED1"/>
+  </g>
+</svg>
