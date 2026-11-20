@@ -201,8 +201,8 @@
           "note": "官网未列出办公格式转换"
         },
         "form_fill": {
-          "value": "unknown",
-          "note": "首页未明确列出表单填写"
+          "value": "partial",
+          "note": "Windows 3.7 预发布可填写已有文本、复选/单选和列表字段并保存；稳定下载仍为 3.6.1，不据此推断稳定版或 Web 支持，也不等于扫描表单自动识别。"
         },
         "sign": {
           "value": "no",
@@ -219,7 +219,9 @@
       },
       "sources": [
         "https://www.sumatrapdfreader.org",
-        "https://github.com/sumatrapdfreader/sumatrapdf"
+        "https://github.com/sumatrapdfreader/sumatrapdf",
+        "https://www.sumatrapdfreader.org/docs/Fill-PDF-forms",
+        "https://www.sumatrapdfreader.org/download-free-pdf-viewer"
       ]
     },
     {

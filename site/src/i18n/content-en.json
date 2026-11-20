@@ -3097,5 +3097,6 @@
   "需 Python 运行时；自动推断参数不替代业务校验。Shell 补全需要安装到对应 Shell，可用回调提供参数候选；提示输入与完整 TUI 不同。": "Requires Python; inferred parameters do not replace business validation. Shell completion must be installed for the relevant shell and can use callbacks for candidates. Input prompts are distinct from a full TUI.",
   "面向 Node.js 的 CLI 框架，以命令类、参数标志和插件组织应用，支持 JavaScript 与 TypeScript。": "Node.js CLI framework organizing applications around command classes, arguments, flags and plugins, supporting JavaScript and TypeScript.",
   "此处比较 @oclif/core，不是所有插件的能力合集。Shell 补全需 plugin-autocomplete，官方交互指南建议用 Inquirer 实现提示；这些扩展不应视为核心内置。": "This entry compares @oclif/core, not every plugin combined. Shell completion requires plugin-autocomplete, and official UX guidance recommends Inquirer for prompts; these extensions are not core built-ins.",
-  "官方指南建议额外使用 Inquirer。": "Official guidance recommends the additional Inquirer library."
+  "官方指南建议额外使用 Inquirer。": "Official guidance recommends the additional Inquirer library.",
+  "Windows 3.7 预发布可填写已有文本、复选/单选和列表字段并保存；稳定下载仍为 3.6.1，不据此推断稳定版或 Web 支持，也不等于扫描表单自动识别。": "Windows 3.7 pre-release can fill existing text, checkbox/radio and list fields and save them; the stable download is still 3.6.1. This does not establish stable-version or Web support, or automatic recognition of scanned forms."
 }
