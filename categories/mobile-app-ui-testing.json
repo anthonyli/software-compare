@@ -1,0 +1,167 @@
+{
+  "category_slug": "mobile-app-ui-testing",
+  "category_name_zh": "移动应用 UI 自动化测试",
+  "collected_at": "2026-11-21",
+  "timezone": "Asia/Shanghai",
+  "notes": "只比较本地运行的移动应用黑盒 UI 回归。平台一栏指测试宿主，不是移动测试目标；以各功能行的驱动和设备要求为准。不比较 IDE、应用开发框架、网页测试或云真机服务。",
+  "features": [
+    {
+      "key": "local_workflow",
+      "label": "本地测试与编写方式"
+    },
+    {
+      "key": "android_emulator",
+      "label": "Android 模拟器"
+    },
+    {
+      "key": "android_device",
+      "label": "Android 真机"
+    },
+    {
+      "key": "ios_simulator",
+      "label": "iOS 模拟器"
+    },
+    {
+      "key": "ios_device",
+      "label": "iOS 真机"
+    },
+    {
+      "key": "hybrid_webview",
+      "label": "混合应用 WebView"
+    },
+    {
+      "key": "element_locators",
+      "label": "界面元素定位"
+    }
+  ],
+  "products": [
+    {
+      "collected_at": "2026-11-21",
+      "open_source": true,
+      "license": "Apache-2.0",
+      "pricing_model": "免费开源",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "id": "appium",
+      "name": "Appium",
+      "official_url": "https://appium.io/",
+      "github_url": "https://github.com/appium/appium",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "summary": "基于 W3C WebDriver 的本地测试服务器；移动端需另装平台驱动。",
+      "price_summary": "本地 Appium 核心与此处所列官方驱动按 Apache-2.0 免费开源。",
+      "free_tier_limits": "驱动、移动 SDK 和设备需自行准备；本页不比较托管测试服务。",
+      "sources": [
+        "https://appium.io/docs/en/latest/ecosystem/drivers/",
+        "https://github.com/appium/appium/blob/appium%404.0.0/packages/appium/package.json",
+        "https://github.com/appium/appium-uiautomator2-driver/blob/v9.3.0/package.json",
+        "https://github.com/appium/appium-xcuitest-driver/blob/v13.5.2/package.json",
+        "https://appium.github.io/appium-uiautomator2-driver/latest/overview/",
+        "https://appium.github.io/appium-uiautomator2-driver/latest/guides/hybrid/",
+        "https://appium.github.io/appium-xcuitest-driver/latest/overview/",
+        "https://appium.github.io/appium-xcuitest-driver/latest/installation/requirements/",
+        "https://appium.github.io/appium-xcuitest-driver/latest/preparation/real-device-config/",
+        "https://appium.github.io/appium-xcuitest-driver/latest/getting-started/provisioning-profile/",
+        "https://appium.github.io/appium-xcuitest-driver/latest/guides/non-macos-hosts/"
+      ],
+      "features": {
+        "local_workflow": {
+          "value": "yes",
+          "note": "用 WebDriver 客户端编写测试并连接本地 Appium；Android 与 iOS 分别使用 UiAutomator2 和 XCUITest。"
+        },
+        "android_emulator": {
+          "value": "yes",
+          "note": "UiAutomator2 可连接 Android 模拟器。"
+        },
+        "android_device": {
+          "value": "yes",
+          "note": "UiAutomator2 支持 Android 实机，需按 Android SDK 与设备调试要求连接。"
+        },
+        "ios_simulator": {
+          "value": "yes",
+          "note": "XCUITest 可连接 iOS 模拟器，需 macOS 与 Xcode。"
+        },
+        "ios_device": {
+          "value": "yes",
+          "note": "XCUITest 支持 iOS 真机；常规搭建用 macOS、Xcode 和已签名的 WebDriverAgent。Windows/Linux 路径仅支持 iOS 18 及以上真机，需建立 RemoteXPC 隧道、明确指定设备和系统版本，并复用预装或外部管理的 WebDriverAgent。"
+        },
+        "hybrid_webview": {
+          "value": "yes",
+          "note": "Android UiAutomator2 对接 Chrome 系 WebView，需要兼容的 ChromeDriver；iOS XCUITest 仅支持可调试的 WebView。可从原生上下文切换到网页上下文。"
+        },
+        "element_locators": {
+          "value": "yes",
+          "note": "使用平台驱动提供的定位方式；原生可访问性标识和可调试网页上下文是不同的定位路径。"
+        }
+      }
+    },
+    {
+      "collected_at": "2026-11-21",
+      "open_source": true,
+      "license": "Apache-2.0",
+      "pricing_model": "免费开源",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "id": "maestro-cli",
+      "name": "Maestro CLI",
+      "official_url": "https://docs.maestro.dev/",
+      "github_url": "https://github.com/mobile-dev-inc/maestro",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "summary": "用声明式 YAML 编写移动应用端到端流程，在本地设备或模拟器执行黑盒测试。",
+      "price_summary": "本地 Maestro CLI 按 Apache-2.0 免费开源；不含任何托管测试权益。",
+      "free_tier_limits": "测试依赖应用可暴露的界面元素；本地 iOS 只覆盖模拟器，不用模拟器结果代替 iPhone 真机。",
+      "sources": [
+        "https://github.com/mobile-dev-inc/maestro/blob/cli-2.12.1/LICENSE",
+        "https://docs.maestro.dev/maestro-cli/how-to-install-maestro-cli",
+        "https://docs.maestro.dev/get-started/how-maestro-works",
+        "https://docs.maestro.dev/get-started/supported-platform/android",
+        "https://docs.maestro.dev/get-started/supported-platform/ios",
+        "https://github.com/mobile-dev-inc/maestro/blob/cli-2.12.1/maestro-cli/src/main/java/maestro/cli/session/MaestroSessionManager.kt",
+        "https://docs.maestro.dev/extra-materials/troubleshooting/known-issues"
+      ],
+      "features": {
+        "local_workflow": {
+          "value": "yes",
+          "note": "用 YAML 描述点击、输入和断言等流程，无需向被测应用嵌入测试框架。"
+        },
+        "android_emulator": {
+          "value": "yes",
+          "note": "可在本地 Android 模拟器运行。"
+        },
+        "android_device": {
+          "value": "yes",
+          "note": "支持物理 Android 设备，但设备需允许连接并安装 Maestro 的辅助驱动应用。"
+        },
+        "ios_simulator": {
+          "value": "yes",
+          "note": "在 Xcode 模拟器使用面向模拟器构建的 .app。"
+        },
+        "ios_device": {
+          "value": "no",
+          "note": "当前本地 CLI 不支持 iOS 真机。"
+        },
+        "hybrid_webview": {
+          "value": "partial",
+          "note": "通常依赖系统可访问性树，WebView 元素可能不可见。Android CLI 可选用 DevTools WebView 层级；不代表 iOS 有同等网页元素访问能力。"
+        },
+        "element_locators": {
+          "value": "yes",
+          "note": "可按可访问性文本和标识定位，稳定性取决于应用是否提供可识别的元素。"
+        }
+      }
+    }
+  ]
+}
