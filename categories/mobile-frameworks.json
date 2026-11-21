@@ -284,6 +284,60 @@
         "https://github.com/tauri-apps/tauri/releases/tag/tauri-v2.12.7",
         "https://github.com/tauri-apps/tauri/blob/tauri-v2.12.7/LICENSE.spdx"
       ]
+    },
+    {
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-22",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "id": "capacitor",
+      "name": "Capacitor 8",
+      "official_url": "https://capacitorjs.com/",
+      "github_url": "https://github.com/ionic-team/capacitor",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "MIT",
+      "summary": "使用 Web 技术构建 Android、iOS 和浏览器应用，通过插件调用原生能力。",
+      "price_summary": "核心按 MIT 免费开源；应用商店账号和第三方服务的费用另计。",
+      "free_tier_limits": "Capacitor 8 需 Node.js 22+；Android 需 Android Studio 和 SDK，iOS 本地构建需 macOS 与 Xcode。",
+      "features": {
+        "mobile_targets": {
+          "value": "yes",
+          "note": "Android 与 iOS 是官方应用目标，可复用同一套 Web 前端。"
+        },
+        "live_refresh": {
+          "value": "yes",
+          "note": "CLI 可让设备从开发服务器加载前端，实时刷新取决于服务器配置；不是原生代码热替换。"
+        },
+        "native_api": {
+          "value": "yes",
+          "note": "JavaScript 可通过插件调用 Android 和 iOS 原生 API；浏览器端实现因插件而异。"
+        },
+        "web_target": {
+          "value": "yes",
+          "note": "官方支持独立浏览器部署，可配置为 PWA；插件能力不一定与原生应用一致。"
+        },
+        "desktop_target": {
+          "value": "no",
+          "note": "没有官方原生桌面应用目标；在桌面浏览器运行 Web/PWA 不等于桌面应用打包。"
+        }
+      },
+      "sources": [
+        "https://capacitorjs.com/docs/getting-started/environment-setup",
+        "https://capacitorjs.com/docs/cli/commands/run",
+        "https://capacitorjs.com/docs/guides/live-reload",
+        "https://capacitorjs.com/docs/plugins",
+        "https://capacitorjs.com/docs/web/progressive-web-apps",
+        "https://github.com/ionic-team/capacitor/releases/tag/8.6.2",
+        "https://github.com/ionic-team/capacitor/blob/8.6.2/LICENSE"
+      ]
     }
   ]
 }
