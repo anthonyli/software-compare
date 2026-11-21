@@ -121,6 +121,59 @@
         "https://reactnative.dev/docs/turbo-native-modules-introduction",
         "https://github.com/react/react-native/blob/main/LICENSE"
       ]
+    },
+    {
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-22",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "id": "compose-multiplatform",
+      "name": "Compose Multiplatform",
+      "official_url": "https://www.jetbrains.com/lp/compose-multiplatform/",
+      "github_url": "https://github.com/JetBrains/compose-multiplatform",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "Apache-2.0",
+      "summary": "基于 Jetpack Compose 的 Kotlin 声明式 UI 框架，在 Android、iOS、桌面与 Web 间共享界面代码。",
+      "price_summary": "Compose Multiplatform 框架按 Apache-2.0 免费开源；商店分发、后端与第三方构建服务费用不包含在内。",
+      "free_tier_limits": "本地 iOS 构建需 macOS 与 Xcode。共享界面不代表各平台的行为或依赖完全一致。",
+      "features": {
+        "mobile_targets": {
+          "value": "yes",
+          "note": "Android 与 iOS 的 Compose UI 均为稳定版。"
+        },
+        "live_refresh": {
+          "value": "partial",
+          "note": "Compose Hot Reload 适用于桌面 JVM，可迭代共享 UI，不代表移动端与 Web 目标均支持。"
+        },
+        "native_api": {
+          "value": "yes",
+          "note": "可在 Kotlin 平台专属源代码中调用原生 API；并非所有原生 API 都有跨平台封装。"
+        },
+        "web_target": {
+          "value": "partial",
+          "note": "可发布 Web 应用；基于 Kotlin/Wasm 的 Compose UI 仍为 Beta。"
+        },
+        "desktop_target": {
+          "value": "yes",
+          "note": "桌面 JVM 目标为稳定版，支持 Windows、macOS 和 Linux。"
+        }
+      },
+      "sources": [
+        "https://github.com/JetBrains/compose-multiplatform",
+        "https://github.com/JetBrains/compose-multiplatform/blob/master/LICENSE.txt",
+        "https://kotlinlang.org/docs/multiplatform/supported-platforms.html",
+        "https://kotlinlang.org/docs/multiplatform/compose-hot-reload.html",
+        "https://kotlinlang.org/docs/multiplatform/quickstart.html",
+        "https://kotlinlang.org/docs/multiplatform/compose-platform-specifics.html"
+      ]
     }
   ]
 }

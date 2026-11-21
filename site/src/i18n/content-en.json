@@ -3150,5 +3150,13 @@
   "Python 终端应用框架，提供布局、控件、事件以及类似 CSS 的样式规则。": "Python terminal app framework with layouts, widgets, events, and CSS-like style rules.",
   "v8.2.8 的项目元数据声明 Python ^3.9；终端应用可用 textual serve 通过服务在浏览器呈现，不是静态网页导出，托管成本另计。": "The v8.2.8 project metadata declares Python ^3.9. A service can present terminal apps in a browser using textual serve; this is not static site export, and hosting costs are separate.",
   "可用 App.run_test 与 Pilot 模拟键盘和鼠标交互。": "App.run_test and Pilot can simulate keyboard and mouse interactions.",
-  "浏览器运行需另启服务，不是终端框架直接导出静态网页。": "Browser use requires a separate service; the terminal framework does not directly export a static site."
+  "浏览器运行需另启服务，不是终端框架直接导出静态网页。": "Browser use requires a separate service; the terminal framework does not directly export a static site.",
+  "基于 Jetpack Compose 的 Kotlin 声明式 UI 框架，在 Android、iOS、桌面与 Web 间共享界面代码。": "A declarative Kotlin UI framework based on Jetpack Compose that shares UI code across Android, iOS, desktop and web.",
+  "Compose Multiplatform 框架按 Apache-2.0 免费开源；商店分发、后端与第三方构建服务费用不包含在内。": "Compose Multiplatform is free and open source under Apache-2.0. Store distribution, backend hosting and third-party build services are separate.",
+  "本地 iOS 构建需 macOS 与 Xcode。共享界面不代表各平台的行为或依赖完全一致。": "Local iOS builds require macOS and Xcode. Shared UI does not guarantee identical behavior or dependencies across platforms.",
+  "Android 与 iOS 的 Compose UI 均为稳定版。": "Compose UI is stable on both Android and iOS.",
+  "Compose Hot Reload 适用于桌面 JVM，可迭代共享 UI，不代表移动端与 Web 目标均支持。": "Compose Hot Reload runs on desktop JVM to iterate on shared UI; this does not imply support on mobile or web targets.",
+  "可在 Kotlin 平台专属源代码中调用原生 API；并非所有原生 API 都有跨平台封装。": "Native APIs can be called from platform-specific Kotlin source sets; not every API has a multiplatform wrapper.",
+  "可发布 Web 应用；基于 Kotlin/Wasm 的 Compose UI 仍为 Beta。": "Web apps can be shipped; the Kotlin/Wasm Compose UI target remains in beta.",
+  "桌面 JVM 目标为稳定版，支持 Windows、macOS 和 Linux。": "The stable desktop JVM target supports Windows, macOS and Linux."
 }
