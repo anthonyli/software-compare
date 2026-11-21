@@ -1,7 +1,7 @@
 import {test} from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';
 const read=p=>JSON.parse(fs.readFileSync(new URL('../../'+p,import.meta.url),'utf8'));const c=read('categories/mobile-frameworks.json'),en=read('site/src/i18n/content-en.json');
 test('Mobile frameworks preserve core vs ecosystem and local toolchain boundaries',()=>{
- const [f,r]=c.products;assert.deepEqual(c.products.map(p=>p.id),['flutter','react-native','compose-multiplatform']);assert.equal(f.license,'BSD-3-Clause');assert.equal(r.license,'MIT');assert.equal(r.github_url,'https://github.com/react/react-native');
+ const [f,r]=c.products;assert.deepEqual(c.products.map(p=>p.id),['flutter','react-native','compose-multiplatform','dotnet-maui']);assert.equal(f.license,'BSD-3-Clause');assert.equal(r.license,'MIT');assert.equal(r.github_url,'https://github.com/react/react-native');
  assert.equal(f.features.web_target.value,'yes');assert.equal(r.features.web_target.value,'partial');assert.equal(r.features.desktop_target.value,'partial');assert.match(r.free_tier_limits,/树外项目/);assert.match(r.free_tier_limits,/Xcode\/macOS/);assert.match(f.free_tier_limits,/不是向已发布应用/);assert.match(c.notes,/开发宿主/);
  for(const p of c.products){assert.equal(p.open_source,true);assert.deepEqual(Object.keys(p.features),c.features.map(f=>f.key));assert(p.sources.length>=4);assert(!p.platforms.includes('iOS'));for(const k of ['github_stars','latest_release','latest_release_date','maintenance_status'])assert.equal(p[k],null);}
 });
@@ -19,4 +19,19 @@ test('Compose Multiplatform separates stable UI targets, web beta and desktop-on
  assert.equal(p.features.live_refresh.value,'partial');
  assert.match(p.features.live_refresh.note,/桌面 JVM/);
  assert.match(p.free_tier_limits,/macOS 与 Xcode/);
+});
+test('.NET MAUI separates the Linux host and the embedded Blazor UI from deploy targets',()=>{
+ const p=c.products.find(p=>p.id==='dotnet-maui');
+ assert.equal(p.license,'MIT');
+ assert.equal(p.features.mobile_targets.value,'yes');
+ assert.equal(p.features.desktop_target.value,'yes');
+ assert.match(p.features.desktop_target.note,/WinUI 3.*Mac Catalyst.*Linux 不是官方桌面目标/);
+ assert(p.platforms.includes('Linux'));
+ assert.match(p.free_tier_limits,/Linux 可作为 Android 开发宿主/);
+ assert.match(p.free_tier_limits,/iOS 本地构建需 macOS 与 Xcode/);
+ assert.equal(p.features.web_target.value,'no');
+ assert.match(p.features.web_target.note,/WebView.*不是独立浏览器部署/);
+ assert.equal(p.features.live_refresh.value,'yes');
+ assert.match(p.features.live_refresh.note,/Debug.*不重载 C#/);
+ assert.equal(p.features.native_api.value,'yes');
 });
