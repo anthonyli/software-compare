@@ -1,0 +1,182 @@
+{
+  "category_slug": "tui-frameworks",
+  "category_name_zh": "终端交互界面框架",
+  "collected_at": "2026-11-21",
+  "timezone": "Asia/Shanghai",
+  "notes": "比较用于构建终端交互界面的框架，不是终端模拟器、AI 编程工具或命令行参数解析库；可与 CLI 框架组合。平台与输入能力受工具链、终端及后端影响。",
+  "features": [
+    {
+      "key": "tui_layout",
+      "label": "终端绘制与布局"
+    },
+    {
+      "key": "tui_widgets",
+      "label": "核心界面控件"
+    },
+    {
+      "key": "tui_input",
+      "label": "键盘与鼠标事件"
+    },
+    {
+      "key": "tui_testing",
+      "label": "无终端界面测试"
+    },
+    {
+      "key": "tui_web",
+      "label": "浏览器运行"
+    }
+  ],
+  "products": [
+    {
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-21",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "id": "bubble-tea",
+      "name": "Bubble Tea",
+      "official_url": "https://github.com/charmbracelet/bubbletea",
+      "github_url": "https://github.com/charmbracelet/bubbletea",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "MIT",
+      "summary": "Go 终端应用框架，以 Elm 风格的状态模型、事件更新和视图驱动交互。",
+      "price_summary": "核心框架免费开源；额外依赖、应用分发和托管成本另计。",
+      "free_tier_limits": "v2.1.2 的 go.mod 要求 Go 1.26；支持嵌入或全屏界面，常用控件来自独立 Bubbles 包。",
+      "features": {
+        "tui_layout": {
+          "value": "partial",
+          "note": "核心绘制视图；可组合的样式与布局常通过独立 Lip Gloss 包实现。"
+        },
+        "tui_widgets": {
+          "value": "partial",
+          "note": "常用输入框、视口和加载指示器来自独立 Bubbles 包。"
+        },
+        "tui_input": {
+          "value": "yes"
+        },
+        "tui_testing": {
+          "value": "unknown",
+          "note": "本次核实的核心文档未确认，不能据此判断其他扩展。"
+        },
+        "tui_web": {
+          "value": "unknown",
+          "note": "本次核实的核心文档未确认，不能据此判断其他扩展。"
+        }
+      },
+      "sources": [
+        "https://github.com/charmbracelet/bubbletea/blob/v2.1.2/LICENSE",
+        "https://github.com/charmbracelet/bubbletea/blob/v2.1.2/README.md",
+        "https://github.com/charmbracelet/bubbletea/blob/v2.1.2/go.mod",
+        "https://github.com/charmbracelet/bubbles",
+        "https://github.com/charmbracelet/lipgloss"
+      ]
+    },
+    {
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-21",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "id": "ratatui",
+      "name": "Ratatui",
+      "official_url": "https://ratatui.rs/",
+      "github_url": "https://github.com/ratatui/ratatui",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "MIT",
+      "summary": "Rust 终端界面绘制库，提供布局、控件和多种终端绘制后端。",
+      "price_summary": "核心框架免费开源；额外依赖、应用分发和托管成本另计。",
+      "free_tier_limits": "0.30.2 声明最低 Rust 1.88，默认使用 Crossterm；平台和输入能力取决于选用的后端，事件循环由应用负责。",
+      "features": {
+        "tui_layout": {
+          "value": "yes"
+        },
+        "tui_widgets": {
+          "value": "yes"
+        },
+        "tui_input": {
+          "value": "partial",
+          "note": "应用通常直接使用 Crossterm 等后端读取键鼠事件。"
+        },
+        "tui_testing": {
+          "value": "yes",
+          "note": "TestBackend 可检查绘制结果，不等于提供完整交互事件测试。"
+        },
+        "tui_web": {
+          "value": "unknown",
+          "note": "本次核实的核心文档未确认，不能据此判断其他扩展。"
+        }
+      },
+      "sources": [
+        "https://github.com/ratatui/ratatui/blob/ratatui-v0.30.2/LICENSE",
+        "https://github.com/ratatui/ratatui/blob/ratatui-v0.30.2/README.md",
+        "https://github.com/ratatui/ratatui/blob/ratatui-v0.30.2/Cargo.toml",
+        "https://ratatui.rs/concepts/backends/",
+        "https://ratatui.rs/showcase/widgets/"
+      ]
+    },
+    {
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-21",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "id": "textual",
+      "name": "Textual",
+      "official_url": "https://textual.textualize.io/",
+      "github_url": "https://github.com/Textualize/textual",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "MIT",
+      "summary": "Python 终端应用框架，提供布局、控件、事件以及类似 CSS 的样式规则。",
+      "price_summary": "核心框架免费开源；额外依赖、应用分发和托管成本另计。",
+      "free_tier_limits": "v8.2.8 的项目元数据声明 Python ^3.9；终端应用可用 textual serve 通过服务在浏览器呈现，不是静态网页导出，托管成本另计。",
+      "features": {
+        "tui_layout": {
+          "value": "yes"
+        },
+        "tui_widgets": {
+          "value": "yes"
+        },
+        "tui_input": {
+          "value": "yes"
+        },
+        "tui_testing": {
+          "value": "yes",
+          "note": "可用 App.run_test 与 Pilot 模拟键盘和鼠标交互。"
+        },
+        "tui_web": {
+          "value": "partial",
+          "note": "浏览器运行需另启服务，不是终端框架直接导出静态网页。"
+        }
+      },
+      "sources": [
+        "https://github.com/Textualize/textual/blob/v8.2.8/LICENSE",
+        "https://github.com/Textualize/textual/blob/v8.2.8/README.md",
+        "https://github.com/Textualize/textual/blob/v8.2.8/pyproject.toml",
+        "https://textual.textualize.io/getting_started/",
+        "https://textual.textualize.io/guide/testing/",
+        "https://github.com/Textualize/textual/blob/v8.2.8/docs/guide/devtools.md#serve"
+      ]
+    }
+  ]
+}
