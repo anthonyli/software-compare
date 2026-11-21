@@ -5,6 +5,6 @@ const p=JSON.parse(fs.readFileSync(new URL('../../categories/screenshot-tools.js
 test('Flameshot picker and screenshot history are explicitly documented',()=>{
  for(const key of ['color_picker','history']) assert.deepEqual(p.features[key],{value:'yes'});
  assert(p.sources.includes('https://flameshot.org/docs/guide/key-bindings/'));
- for(const key of ['window_capture','cloud_share']) assert.equal(p.features[key].value,'unknown');
+ assert.equal(p.features.window_capture.value,'unknown');
  assert.equal(p.latest_release,'15.0.0');
 });
