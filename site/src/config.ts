@@ -47,7 +47,7 @@ export const categoryGroups: { id: string; name: string; slugs: string[] }[] = [
   {
     id: "dev",
     name: "开发工具",
-    slugs: ["code-editors", "remote-desktop", "database-clients", "api-clients", "agent-browser-tools", "mobile-development-ides", "mobile-frameworks", "cli-frameworks"],
+    slugs: ["code-editors", "remote-desktop", "database-clients", "api-clients", "agent-browser-tools", "mobile-development-ides", "mobile-frameworks", "mobile-app-ui-testing", "cli-frameworks"],
   },
 ];
 
@@ -73,6 +73,7 @@ export const featureLabelFull: Record<string, string> = {
 export const categoryMonograms: Record<string, string> = {
   "cli-frameworks": "令",
   "mobile-frameworks": "框",
+  "mobile-app-ui-testing": "测",
   "mobile-development-ides": "移",
   "http-debugging": "调",
   "network-packet-analyzers": "包",
@@ -132,6 +133,7 @@ export const categoryMonograms: Record<string, string> = {
 export const categoryTints: Record<string, string> = {
   "cli-frameworks": "#E6F2EB",
   "mobile-frameworks": "#F1E8F5",
+  "mobile-app-ui-testing": "#E6F0F9",
   "mobile-development-ides": "#E7EDF9",
   "http-debugging": "#F7EBDD",
   "network-packet-analyzers": "#E3F1ED",

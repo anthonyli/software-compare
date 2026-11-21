@@ -9,6 +9,7 @@ function contentFallback(text: string): string {
 
 /** Category display names, keyed by slug. */
 export const categoryNames: Record<string, { zh: string; en: string }> = {
+  "mobile-app-ui-testing": { zh: "移动应用 UI 自动化测试", en: "Mobile app UI testing" },
   "cli-frameworks": { zh: "CLI 开发框架", en: "CLI development frameworks" },
   "mobile-frameworks": { zh: "跨平台移动开发框架", en: "Cross-platform mobile frameworks" },
   "mobile-development-ides": { zh: "移动开发 IDE", en: "Mobile development IDEs" },
