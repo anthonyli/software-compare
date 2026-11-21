@@ -184,8 +184,8 @@
           "value": "yes"
         },
         "cloud_share": {
-          "value": "unknown",
-          "note": "官网当前首页未列出内置图床上传"
+          "value": "partial",
+          "note": "从 v13 起，默认编译不含 Imgur 上传；仅启用 ENABLE_IMGUR 的构建可将截图匿名上传至第三方 Imgur。共享配额可能用尽；自定义 Client ID 只分离配额，不绑定个人账号，也不是私有备份。"
         },
         "history": {
           "value": "yes"
@@ -198,7 +198,12 @@
         "https://github.com/flameshot-org/flameshot#usage",
         "https://github.com/flameshot-org/flameshot/blob/f4f2e4e879f0e9b4cb7efb59f6b3f44ed05b1843/src/tools/pin/pintool.cpp",
         "https://github.com/flameshot-org/flameshot/blob/f4f2e4e879f0e9b4cb7efb59f6b3f44ed05b1843/src/tools/pin/pinwidget.cpp",
-        "https://flameshot.org/docs/guide/key-bindings/"
+        "https://flameshot.org/docs/guide/key-bindings/",
+        "https://github.com/flameshot-org/flameshot/releases/tag/v13.0.0",
+        "https://github.com/flameshot-org/flameshot/blob/v15.0.0/CMakeLists.txt#L93-L97",
+        "https://github.com/flameshot-org/flameshot/blob/v15.0.0/src/tools/toolfactory.cpp#L54-L56",
+        "https://flameshot.org/docs/guide/imgur-help/",
+        "https://flameshot.org/docs/advanced/protecting-your-privacy/"
       ]
     },
     {
