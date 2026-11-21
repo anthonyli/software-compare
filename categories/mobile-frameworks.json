@@ -229,6 +229,61 @@
         "https://learn.microsoft.com/en-us/dotnet/maui/platform-integration/invoke-platform-code",
         "https://learn.microsoft.com/en-us/aspnet/core/blazor/hybrid/?view=aspnetcore-10.0"
       ]
+    },
+    {
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-22",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "id": "tauri",
+      "name": "Tauri 2",
+      "official_url": "https://v2.tauri.app/",
+      "github_url": "https://github.com/tauri-apps/tauri",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "MIT OR Apache-2.0",
+      "summary": "复用 Web 前端，在系统 WebView 中运行界面，以 Rust 处理原生逻辑，可打包 Android、iOS 和桌面应用。",
+      "price_summary": "核心按 MIT 或 Apache-2.0 免费开源；应用商店账号和第三方服务另计。",
+      "free_tier_limits": "iOS 本地构建需 macOS 与 Xcode；Android 需配置 SDK 和 NDK。系统 WebView 随平台变化，插件按目标平台核对。",
+      "features": {
+        "mobile_targets": {
+          "value": "yes",
+          "note": "支持 Android 与 iOS；Android 使用系统 Android WebView，iOS 使用 WebKit。"
+        },
+        "live_refresh": {
+          "value": "yes",
+          "note": "前端热更新取决于开发服务器配置；不等于原生代码热替换或生产环境更新。"
+        },
+        "native_api": {
+          "value": "yes",
+          "note": "可调用 Rust 命令，并通过 Android 的 Kotlin/Java 或 iOS 的 Swift 插件扩展；插件能力随平台变化。"
+        },
+        "web_target": {
+          "value": "no",
+          "note": "WebView 不是独立浏览器部署目标；兼容的前端可单独部署，但 Tauri 原生桥接不会随之可用。"
+        },
+        "desktop_target": {
+          "value": "yes",
+          "note": "桌面目标包括 Windows、macOS 和 Linux，使用平台提供的 WebView。"
+        }
+      },
+      "sources": [
+        "https://v2.tauri.app/blog/tauri-20/",
+        "https://v2.tauri.app/start/prerequisites/",
+        "https://v2.tauri.app/develop/",
+        "https://v2.tauri.app/develop/plugins/develop-mobile/",
+        "https://v2.tauri.app/start/frontend/",
+        "https://v2.tauri.app/reference/webview-versions/",
+        "https://github.com/tauri-apps/tauri/releases/tag/tauri-v2.12.7",
+        "https://github.com/tauri-apps/tauri/blob/tauri-v2.12.7/LICENSE.spdx"
+      ]
     }
   ]
 }

@@ -3166,5 +3166,13 @@
   "XAML Hot Reload 用于受支持的 Debug 调试会话，不重载 C# 代码。": "XAML Hot Reload works in supported Debug sessions and does not reload C# code.",
   "可使用共享设备 API 并编写平台专属实现；系统能力仍按目标平台核对。": "Use shared device APIs or platform-specific implementations; check system capabilities per target.",
   "Blazor Hybrid 使用应用内 WebView，不是独立浏览器部署；复用 Razor 组件到 Web 需要单独的 Web 项目。": "Blazor Hybrid uses an embedded WebView, not a browser deployment target. Reusing Razor components on the web requires a separate web project.",
-  "Windows 使用 WinUI 3，macOS 使用 Mac Catalyst；Linux 不是官方桌面目标。": "Windows uses WinUI 3 and macOS uses Mac Catalyst. Linux is not an official desktop target."
+  "Windows 使用 WinUI 3，macOS 使用 Mac Catalyst；Linux 不是官方桌面目标。": "Windows uses WinUI 3 and macOS uses Mac Catalyst. Linux is not an official desktop target.",
+  "复用 Web 前端，在系统 WebView 中运行界面，以 Rust 处理原生逻辑，可打包 Android、iOS 和桌面应用。": "Reuse a web frontend in a system WebView, use Rust for native logic, and package Android, iOS, and desktop apps.",
+  "核心按 MIT 或 Apache-2.0 免费开源；应用商店账号和第三方服务另计。": "The core is free and open source under either MIT or Apache-2.0. App store accounts and third-party services are separate.",
+  "iOS 本地构建需 macOS 与 Xcode；Android 需配置 SDK 和 NDK。系统 WebView 随平台变化，插件按目标平台核对。": "Local iOS builds require macOS and Xcode; Android requires the SDK and NDK. System WebViews vary by platform, and plugin support should be checked per target.",
+  "支持 Android 与 iOS；Android 使用系统 Android WebView，iOS 使用 WebKit。": "Supports Android and iOS. Android uses the system Android WebView; iOS uses WebKit.",
+  "前端热更新取决于开发服务器配置；不等于原生代码热替换或生产环境更新。": "Frontend hot reload depends on the development server configuration. It is not native-code hot swapping or a production update.",
+  "可调用 Rust 命令，并通过 Android 的 Kotlin/Java 或 iOS 的 Swift 插件扩展；插件能力随平台变化。": "Call Rust commands or extend the app with Kotlin/Java plugins on Android or Swift plugins on iOS. Plugin capabilities vary by platform.",
+  "WebView 不是独立浏览器部署目标；兼容的前端可单独部署，但 Tauri 原生桥接不会随之可用。": "An embedded WebView is not a browser deployment target. A compatible frontend can deploy separately without Tauri’s native bridge.",
+  "桌面目标包括 Windows、macOS 和 Linux，使用平台提供的 WebView。": "Desktop targets include Windows, macOS, and Linux and use the platform-provided WebView."
 }
