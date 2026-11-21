@@ -3158,5 +3158,13 @@
   "Compose Hot Reload 适用于桌面 JVM，可迭代共享 UI，不代表移动端与 Web 目标均支持。": "Compose Hot Reload runs on desktop JVM to iterate on shared UI; this does not imply support on mobile or web targets.",
   "可在 Kotlin 平台专属源代码中调用原生 API；并非所有原生 API 都有跨平台封装。": "Native APIs can be called from platform-specific Kotlin source sets; not every API has a multiplatform wrapper.",
   "可发布 Web 应用；基于 Kotlin/Wasm 的 Compose UI 仍为 Beta。": "Web apps can be shipped; the Kotlin/Wasm Compose UI target remains in beta.",
-  "桌面 JVM 目标为稳定版，支持 Windows、macOS 和 Linux。": "The stable desktop JVM target supports Windows, macOS and Linux."
+  "桌面 JVM 目标为稳定版，支持 Windows、macOS 和 Linux。": "The stable desktop JVM target supports Windows, macOS and Linux.",
+  "以 C# 和 XAML 构建移动及桌面原生应用的框架，也可在应用内嵌入 Blazor 界面。": "A framework for native mobile and desktop apps using C# and XAML, with the option to embed Blazor UI in the app.",
+  ".NET MAUI 框架按 MIT 免费开源；开发工具许可、商店账号和云服务另计。": ".NET MAUI is free and open source under MIT. IDE licensing, store accounts and cloud services are separate.",
+  "Linux 可作为 Android 开发宿主，不是 .NET MAUI 桌面目标。iOS 本地构建需 macOS 与 Xcode；从 Windows 构建 iOS 需要连接 Mac。": "Linux can host Android development, but is not a .NET MAUI desktop target. Local iOS builds require macOS and Xcode; building iOS from Windows requires a connected Mac.",
+  "可构建 Android 与 iOS 应用；目标 SDK 和最低系统版本按 .NET MAUI 版本核对。": "Build for Android and iOS; check target SDKs and minimum OS versions for the chosen .NET MAUI version.",
+  "XAML Hot Reload 用于受支持的 Debug 调试会话，不重载 C# 代码。": "XAML Hot Reload works in supported Debug sessions and does not reload C# code.",
+  "可使用共享设备 API 并编写平台专属实现；系统能力仍按目标平台核对。": "Use shared device APIs or platform-specific implementations; check system capabilities per target.",
+  "Blazor Hybrid 使用应用内 WebView，不是独立浏览器部署；复用 Razor 组件到 Web 需要单独的 Web 项目。": "Blazor Hybrid uses an embedded WebView, not a browser deployment target. Reusing Razor components on the web requires a separate web project.",
+  "Windows 使用 WinUI 3，macOS 使用 Mac Catalyst；Linux 不是官方桌面目标。": "Windows uses WinUI 3 and macOS uses Mac Catalyst. Linux is not an official desktop target."
 }

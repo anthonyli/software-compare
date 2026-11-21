@@ -174,6 +174,61 @@
         "https://kotlinlang.org/docs/multiplatform/quickstart.html",
         "https://kotlinlang.org/docs/multiplatform/compose-platform-specifics.html"
       ]
+    },
+    {
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-22",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "id": "dotnet-maui",
+      "name": ".NET MAUI",
+      "official_url": "https://dotnet.microsoft.com/en-us/apps/maui",
+      "github_url": "https://github.com/dotnet/maui",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "MIT",
+      "summary": "以 C# 和 XAML 构建移动及桌面原生应用的框架，也可在应用内嵌入 Blazor 界面。",
+      "price_summary": ".NET MAUI 框架按 MIT 免费开源；开发工具许可、商店账号和云服务另计。",
+      "free_tier_limits": "Linux 可作为 Android 开发宿主，不是 .NET MAUI 桌面目标。iOS 本地构建需 macOS 与 Xcode；从 Windows 构建 iOS 需要连接 Mac。",
+      "features": {
+        "mobile_targets": {
+          "value": "yes",
+          "note": "可构建 Android 与 iOS 应用；目标 SDK 和最低系统版本按 .NET MAUI 版本核对。"
+        },
+        "live_refresh": {
+          "value": "yes",
+          "note": "XAML Hot Reload 用于受支持的 Debug 调试会话，不重载 C# 代码。"
+        },
+        "native_api": {
+          "value": "yes",
+          "note": "可使用共享设备 API 并编写平台专属实现；系统能力仍按目标平台核对。"
+        },
+        "web_target": {
+          "value": "no",
+          "note": "Blazor Hybrid 使用应用内 WebView，不是独立浏览器部署；复用 Razor 组件到 Web 需要单独的 Web 项目。"
+        },
+        "desktop_target": {
+          "value": "yes",
+          "note": "Windows 使用 WinUI 3，macOS 使用 Mac Catalyst；Linux 不是官方桌面目标。"
+        }
+      },
+      "sources": [
+        "https://github.com/dotnet/maui/blob/11.0.10/LICENSE.txt",
+        "https://github.com/dotnet/maui/releases/tag/11.0.10",
+        "https://dotnet.microsoft.com/en-us/platform/support/policy/maui",
+        "https://learn.microsoft.com/en-us/dotnet/maui/supported-platforms?view=net-maui-11.0",
+        "https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-10.0&tabs=visual-studio-code",
+        "https://learn.microsoft.com/en-us/dotnet/maui/xaml/hot-reload",
+        "https://learn.microsoft.com/en-us/dotnet/maui/platform-integration/invoke-platform-code",
+        "https://learn.microsoft.com/en-us/aspnet/core/blazor/hybrid/?view=aspnetcore-10.0"
+      ]
     }
   ]
 }
