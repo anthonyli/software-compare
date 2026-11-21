@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Original illustration for Compare / 软件对比. No third-party marks. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" fill="none" role="img" aria-hidden="true">
+  <rect width="480" height="260" fill="#E6F0F9"/>
+  <rect width="480" height="260" fill="url(#wash-mobile-app-ui-testing)" opacity="0.85"/>
+  <defs>
+    <linearGradient id="wash-mobile-app-ui-testing" x1="0" y1="0" x2="480" y2="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E6F0F9" stop-opacity="0.0"/>
+      <stop offset="1" stop-color="#CCDEEC" stop-opacity="0.35"/>
+    </linearGradient>
+    <filter id="soft-mobile-app-ui-testing" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#111111" flood-opacity="0.10"/>
+    </filter>
+    <pattern id="dots-mobile-app-ui-testing" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="translate(18,16)">
+      <circle cx="1.2" cy="1.2" r="1.05" fill="#111111" opacity="0.35"/>
+    </pattern>
+  </defs>
+  <ellipse cx="40" cy="40" rx="80" ry="50" fill="#FFFFFF" opacity="0.4"/>
+  <ellipse cx="440" cy="210" rx="80" ry="50" fill="#FFFFFF" opacity="0.35"/>
+  <rect width="480" height="260" fill="url(#dots-mobile-app-ui-testing)" opacity="0.45"/>
+  <path d="M185 145 C228 145 216 113 264 113" stroke="#111111" stroke-width="3.5" stroke-linecap="round"/>
+  <g filter="url(#soft-mobile-app-ui-testing)">
+    <rect x="104" y="42" width="103" height="176" rx="23" fill="#FFFFFF"/>
+    <rect x="115" y="67" width="81" height="127" rx="11" fill="#CFE0F1"/>
+    <path d="M145 55h21m-21 150h21" stroke="#111111" stroke-width="3.5" stroke-linecap="round"/>
+    <rect x="124" y="81" width="63" height="23" rx="7" fill="#FFFFFF"/>
+    <path d="M135 92h37" stroke="#111111" stroke-width="3" stroke-linecap="round"/>
+    <rect x="124" y="115" width="63" height="66" rx="7" fill="#FFFFFF"/>
+    <path d="M135 129h25m-25 11h13" stroke="#A8BFD7" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="165" cy="157" r="13" fill="#E6F0F9" stroke="#111111" stroke-width="3"/>
+    <circle cx="165" cy="157" r="3.5" fill="#111111"/>
+    <rect x="252" y="61" width="130" height="139" rx="16" fill="#FFFFFF"/>
+    <path d="M267 82h96" stroke="#B1C9E1" stroke-width="4" stroke-linecap="round"/>
+    <rect x="266" y="95" width="101" height="23" rx="7" fill="#D9E8F6"/>
+    <rect x="266" y="128" width="101" height="23" rx="7" fill="#E8F1FA"/>
+    <rect x="266" y="161" width="101" height="23" rx="7" fill="#D9E8F6"/>
+    <path d="M276 106l4 4 7-8m-11 37 4 4 7-8m-11 37 4 4 7-8M299 107h54m-54 32h39m-39 33h50" stroke="#111111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
