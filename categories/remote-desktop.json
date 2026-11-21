@@ -198,7 +198,8 @@
           "note": "Apache 2.0"
         },
         "session_recording": {
-          "value": "unknown"
+          "value": "yes",
+          "note": "服务端图形录制需为连接配置 recording-path，未配置则不录制。即使已录制，从历史记录在浏览器回放仍需启用录制存储扩展，且 Web 应用必须能读取目录和文件。录制文件需直接位于搜索路径下并以历史记录的 UUID 命名，或放在该路径下以 UUID 命名的一级子目录中。"
         },
         "wake_on_lan": {
           "value": "unknown"
@@ -206,7 +207,10 @@
       },
       "sources": [
         "https://guacamole.apache.org/",
-        "https://github.com/apache/guacamole-client"
+        "https://github.com/apache/guacamole-client",
+        "https://guacamole.apache.org/doc/gug/configuring-guacamole.html#graphical-session-recording",
+        "https://guacamole.apache.org/doc/gug/recording-playback.html#how-recording-storage-and-playback-works",
+        "https://guacamole.apache.org/doc/gug/recording-playback.html#preparing-a-directory-for-recording-storage"
       ],
       "archived": false,
       "last_push_at": null,
