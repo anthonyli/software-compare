@@ -3241,5 +3241,14 @@
   "可用设备麦克风或选定音频输入；录制选项包含完整混音、自身和每位已连接用户。远端分轨录到的是接收的音频流。": "Use a device microphone or selected audio input. Recording options include the full mix, yourself, and each connected user. Remote tracks capture the streams received by the recorder.",
   "可通过受支持的 DAW 或 OBS 插件宿主接入已路由的声音，不等于直接选择并录制任意应用。": "Audio routed through a supported DAW or OBS plugin host can be used; this does not directly select and record arbitrary apps.",
   "未核实内置全部系统声音录制；外部音频路由不等于应用自身提供全系统录制。": "Built-in system-wide audio capture was not verified. External audio routing is not built-in system audio recording.",
-  "内置的是组内点对点传输，不是直接推送到公开直播平台；官方指南支持经 OBS 插件接入后对外直播。": "Built-in streaming is peer-to-peer within a group, not direct output to public streaming platforms. The official guide documents an OBS plugin workflow for public streaming."
+  "内置的是组内点对点传输，不是直接推送到公开直播平台；官方指南支持经 OBS 插件接入后对外直播。": "Built-in streaming is peer-to-peer within a group, not direct output to public streaming platforms. The official guide documents an OBS plugin workflow for public streaming.",
+  "James Gay 开发的 Android 训练日记，可记录重量、次数、距离和时长，保存常用训练例程并查看进度。与 iOS 上的同名应用不是同一产品。": "An Android workout log by James Gay. Record weight, repetitions, distance, and time, save reusable routines, and review progress. This is not the similarly named iOS app.",
+  "未核实开源授权": "Open-source license not verified",
+  "基础应用免费、无广告。FitNotes Supporter 是单独购买的可选附加应用，Google Play 美国区参考价为一次性 USD 6.99；以当地商店为准。": "The base app is free and ad-free. FitNotes Supporter is a separate optional paid add-on, listed at a one-time USD 6.99 on US Google Play. Check your local store.",
+  "无需注册 FitNotes 账号，训练数据默认保存在设备上。Supporter 解锁逐个动作设置公斤或磅，以及高级动作计量类型。可将备份存到本机，或手动分享至 Google Drive、Dropbox；恢复完整备份会覆盖设备现有记录，CSV 仅供查看和分析，不能用于恢复。": "No FitNotes account is required, and workout data is stored on the device by default. Supporter unlocks per-exercise kg or lb settings and advanced exercise types. Backups can be saved on-device or manually shared to Google Drive or Dropbox. Restoring a backup replaces the existing records on the device; CSV is for review and analysis, not restoration.",
+  "可保存包含预设组数的常用训练例程，并加入当天训练记录。": "Save reusable routines with predefined sets and add them to the current workout.",
+  "Body Tracker 可记录体重、体脂率、腰围和自定义指标，并查看趋势。": "Body Tracker records weight, body fat percentage, waist circumference, and custom measurements, with progress graphs.",
+  "可手动把热量和宏量营养素记为自定义数值指标；这不是专门的食物日记或食物数据库。": "Calories and macronutrients can be entered manually as custom numeric measurements. This is not a dedicated food diary or food database.",
+  "这是本地 Android 客户端，不是可自行部署的服务。": "This is a local Android app, not a service to self-host.",
+  "官方文档描述备份和还原，不是持续跨设备同步。版本 25 支持 Android 系统的 Google One 备份（取决于设备设置）；原有的应用内 Google Drive 自动备份仍为可选功能，官方称未来可能移除。": "The documented cloud options are backup and restore, not continuous cross-device sync. Version 25 supports Android system backup by Google One when enabled in device settings. The existing in-app Google Drive automatic backup remains optional. FitNotes says it may remove that option in a future release."
 }
