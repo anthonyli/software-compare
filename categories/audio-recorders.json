@@ -365,6 +365,58 @@
         "https://dolbyon.dolby.io/hc/en-us/articles/18181311895695-Getting-started-with-Dolby-On",
         "https://www.dolby.com/about/legal/dolby-on-terms-of-use/"
       ]
+    },
+    {
+      "id": "riverside",
+      "name": "Riverside",
+      "official_url": "https://riverside.com/",
+      "github_url": null,
+      "platforms": [
+        "Web",
+        "macOS",
+        "iOS",
+        "Android"
+      ],
+      "open_source": false,
+      "license": "专有软件；使用须遵守厂商条款",
+      "pricing_model": "付费订阅 / 限时试用",
+      "price_summary": "官方套餐资料互相矛盾，不保证有长期免费档或固定售价。帮助中心说明需信用卡开启 14 天试用，未在试用结束前取消会转为付费订阅。",
+      "summary": "远程访谈和播客录制：参与者在各自设备上录制音视频，过程中逐步上传到 Riverside 云端；不是纯离线录音工具。",
+      "free_tier_limits": "价目页仍列不限时单轨录制、一次性 2 小时分轨和导出水印；FAQ 列免信用卡免费注册，但官方 2026 年 9 月说明称长期免费档已取消。新用户能否获得旧免费额度尚未确认。分轨下载时数按场次计，不按人数相乘，也不是普通录制的时长上限。",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-22",
+      "features": {
+        "microphone": {
+          "value": "yes",
+          "note": "可录制参与者麦克风。电脑支持 Chrome、Edge，Mac 的 Safari 需 18.2 或以上且部分工作室功能受限；Mac 桌面版需 macOS 15 或以上及 Apple Silicon，手机需用 iOS 或 Android 应用。未实测录音。"
+        },
+        "app_audio": {
+          "value": "partial",
+          "note": "支持的桌面浏览器可在屏幕共享时附带所分享的标签页声音，不是独立录制任意应用。Mac 桌面应用不支持屏幕共享音频。"
+        },
+        "system_audio": {
+          "value": "partial",
+          "note": "官方说明 Windows 浏览器可在共享整个屏幕时附带系统声音；Mac 网页端限指定标签页，不是全系统录音。不能将屏幕共享等同于后台独立采集。"
+        },
+        "broadcast": {
+          "value": "paid",
+          "note": "直播功能属于 Grow、Webinar 和 Business，不是普通免费录音功能。电脑浏览器支持主持人与内部制作人开播；移动端由主持人开播，目的地需先在电脑浏览器连接，并满足直播平台要求。"
+        }
+      },
+      "sources": [
+        "https://riverside.com/pricing",
+        "https://riverside.com/faq",
+        "https://riverside.com/blog/is-riverside-free",
+        "https://support.riverside.com/hc/en-us/articles/22576984609949-Can-I-try-Riverside-for-free",
+        "https://support.riverside.com/hc/en-us/articles/22296539458973-About-download-hours",
+        "https://support.riverside.com/hc/en-us/articles/5252134218013-System-requirements-and-supported-browsers",
+        "https://support.riverside.com/hc/en-us/articles/10197024653981-Can-my-screen-share-include-sound",
+        "https://support.riverside.com/hc/en-us/articles/21183599791773-Live-stream-Requirements-per-platform",
+        "https://support.riverside.com/hc/en-us/articles/6904680983453-Live-stream-Start-and-stop-a-live-stream"
+      ]
     }
   ]
 }
