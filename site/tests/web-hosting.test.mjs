@@ -1,7 +1,7 @@
 import {test} from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';
 const read=p=>JSON.parse(fs.readFileSync(new URL('../../'+p,import.meta.url),'utf8'));
 const c=read('categories/web-hosting.json'),en=read('site/src/i18n/content-en.json'),[v,f]=c.products;
-test('website deployment has seven sourced complete bilingual products',()=>{assert.deepEqual(c.products.map(p=>p.id),['vercel','cloudflare-pages','render','netlify','cloudflare-workers','firebase-hosting','railway']);for(const p of c.products){assert.deepEqual(Object.keys(p.features).sort(),c.features.map(f=>f.key).sort());assert.equal(p.collected_at,({'cloudflare-workers':'2026-11-17','firebase-hosting':'2026-11-22','railway':'2026-11-22'})[p.id]||'2026-11-16');assert(p.sources.length>=4);assert.match(p.free_tier_limits,/未开户、绑卡、部署或实测/);}const strings=v=>typeof v==='string'?[v]:v&&typeof v==='object'?Object.values(v).flatMap(strings):[];for(const s of strings(c).filter(s=>/[\u4e00-\u9fff]/.test(s)))assert(en[s],s);});
+test('website deployment has eight sourced complete bilingual products',()=>{assert.deepEqual(c.products.map(p=>p.id),['vercel','cloudflare-pages','render','netlify','cloudflare-workers','firebase-hosting','railway','digitalocean-app-platform']);for(const p of c.products){assert.deepEqual(Object.keys(p.features).sort(),c.features.map(f=>f.key).sort());assert.equal(p.collected_at,({'cloudflare-workers':'2026-11-17','firebase-hosting':'2026-11-22','railway':'2026-11-22','digitalocean-app-platform':'2026-11-22'})[p.id]||'2026-11-16');assert(p.sources.length>=4);assert.match(p.free_tier_limits,/未开户、绑卡、部署或实测/);}const strings=v=>typeof v==='string'?[v]:v&&typeof v==='object'?Object.values(v).flatMap(strings):[];for(const s of strings(c).filter(s=>/[\u4e00-\u9fff]/.test(s)))assert(en[s],s);});
 test('Hobby scope, quota periods and overage are distinct from paid Pro',()=>{assert.equal(v.features.card_required.value,'unknown');assert.equal(v.features.commercial.value,'partial');assert.match(v.features.commercial.note,/个人或非商业.*personal or non-commercial/);assert.match(v.features.overage.note,/30天.*7天.*自动按量计费/);assert.match(v.features.functions.note,/每月.*4小时.*360GB/);assert.equal(v.prices[1].price,'20');assert.match(v.prices[1].note,/额外部署席位.*超抵扣/);});
 test('Pages free static requests do not imply unlimited builds or Functions',()=>{assert.equal(f.features.card_required.value,'no');assert.equal(f.features.commercial.value,'unknown');assert.match(f.features.build_limits.note,/每月500.*1个并发.*20分钟/);assert.match(f.features.functions.note,/共享每天10万.*UTC零点/);assert.match(f.features.static_hosting.note,/不调用Functions/);assert.match(f.features.overage.note,/fail open.*fail closed/);assert.match(f.free_tier_limits,/2万文件.*25MiB/);});
 
@@ -78,4 +78,29 @@ test('Railway distinguishes ongoing Free, the trial, and service-backed compute'
   assert.match(p.features.build_limits.note, /镜像上限 4 GB.*PR 预览环境.*仍计入资源用量/);
   assert.match(p.features.functions.note, /96 KB.*单文件 TypeScript.*Bun.*作为普通 Railway 服务/);
   assert.match(p.features.overage.note, /卷存储共用，不结转.*暂停至下个账期或升级.*20\/vCPU\/月.*10\/GB\/月.*0\.05\/GB.*0\.15\/GB\/月/);
+});
+
+test('DigitalOcean App Platform separates free static apps, metered functions, and preview costs', () => {
+  const p = c.products.find(({ id }) => id === 'digitalocean-app-platform');
+  assert(p);
+  assert.deepEqual(Object.fromEntries(Object.entries(p.features).map(([key, f]) => [key, f.value])), {
+    static_hosting: 'yes', build_limits: 'partial', functions: 'partial', commercial: 'unknown', overage: 'yes', card_required: 'partial',
+  });
+  assert.match(p.price_summary, /前三个纯静态 App 免费.*USD 3\/月.*USD 5\/月.*50 GiB/);
+  assert.match(p.free_tier_limits, /不按静态组件个数.*1 GiB.*按存续时间累积.*团队合并.*不结转.*USD 0\.02\/GiB/);
+  assert.match(p.features.static_hosting.note, /Spaces CDN.*不需要运行容器/);
+  assert.match(p.features.build_limits.note, /单次构建超过 1 小时.*不是每月构建分钟.*预览方案会创建独立 App.*不能假定免费/);
+  assert.match(p.features.functions.note, /团队每月合计 90,000 GiB 秒免费.*函数组件.*USD 0\.0000185\/GiB 秒.*100 毫秒.*出站流量规则仍适用/);
+  assert.match(p.features.overage.note, /按秒累积.*团队内按月汇总.*不结转.*USD 0\.02\/GiB/);
+  assert.match(p.features.card_required.note, /有效支付方式，不一定要信用卡/);
+
+  const source = fs.readFileSync(new URL('../src/lib/display.ts', import.meta.url), 'utf8');
+  const leak = source.slice(source.indexOf('const LEAK ='), source.indexOf('export const PRICE_CAVEAT'));
+  const fn = source.slice(source.indexOf('export function cleanPublicText'), source.indexOf('export function parseCurrency')).replace('export function','function').replace('(input: string | null | undefined): string','(input)');
+  const clean = new Function(leak + fn + ';return cleanPublicText;')();
+  for (const raw of [p.summary, p.price_summary, p.free_tier_limits, ...p.prices.flatMap((row) => [row.plan, row.note]), ...Object.values(p.features).map((row) => row.note)]) {
+    const key = clean(raw);
+    assert(en[key], key);
+    assert.doesNotMatch(en[key], /[\u4e00-\u9fff]/);
+  }
 });

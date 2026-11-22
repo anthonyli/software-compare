@@ -484,6 +484,70 @@
         "https://docs.railway.com/pricing/faqs",
         "https://railway.com/legal/terms"
       ]
+    },
+    {
+      "id": "digitalocean-app-platform",
+      "name": "DigitalOcean App Platform",
+      "official_url": "https://www.digitalocean.com/products/app-platform",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "免费增值",
+      "price_summary": "前三个纯静态 App 免费，额外纯静态 App 为 USD 3/月。容器服务最低档 USD 5/月并含每月最高 50 GiB 出站额度；Functions 按单独用量规则计费。",
+      "prices": [
+        {
+          "plan": "纯静态免费档",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "限前三个纯静态 App；出站流量超额仍会计费。"
+        }
+      ],
+      "free_tier_limits": "免费上限按纯静态 App 计数，不按静态组件个数；一个 App 可有多个静态组件。每个免费纯静态 App 每月最多贡献 1 GiB 出站额度，按存续时间累积，团队合并用量与额度且不结转。超过团队额度按 USD 0.02/GiB 计费。免费静态额度不涵盖容器服务、后台任务或开发数据库。未开户、绑卡、部署或实测。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-22",
+      "summary": "DigitalOcean 的托管部署平台。纯静态 App 可通过 CDN 发布；动态 SSR、API 和后台任务可作为独立组件部署。",
+      "features": {
+        "static_hosting": {
+          "value": "yes",
+          "note": "纯静态内容通过 Spaces CDN 分发，不需要运行容器。静态站可使用自定义域名和自动 TLS；不等于免费取得域名。"
+        },
+        "build_limits": {
+          "value": "partial",
+          "note": "单次构建超过 1 小时会超时，这不是每月构建分钟额度。官方 GitHub Actions 预览方案会创建独立 App，合并或关闭 PR 后可清理，不能假定免费。"
+        },
+        "functions": {
+          "value": "partial",
+          "note": "Functions 是独立计算用量：团队每月合计 90,000 GiB 秒免费，含 App Platform 的函数组件；超过后 USD 0.0000185/GiB 秒，每次调用最少计 100 毫秒。App Platform 出站流量规则仍适用；纯静态 App 本身无运行时，SSR 或 API 容器另按组件计费。"
+        },
+        "commercial": {
+          "value": "unknown",
+          "note": "官方将免费档推荐给个人网站、作品集和小项目，未核实免费档专属商用条款；推荐用途不等于商用禁令。"
+        },
+        "overage": {
+          "value": "yes",
+          "note": "按秒累积的出站额度在团队内按月汇总，不结转；超出部分为 USD 0.02/GiB。额外纯静态 App 为 USD 3/月，动态组件、数据库和 Functions 按各自规则计费。"
+        },
+        "card_required": {
+          "value": "partial",
+          "note": "创建资源前需要为团队或组织设置有效支付方式，不一定要信用卡。官方列出符合条件的替代方式，能否使用依地区和账户而异。"
+        }
+      },
+      "sources": [
+        "https://docs.digitalocean.com/products/app-platform/details/pricing/",
+        "https://docs.digitalocean.com/platform/billing/bandwidth/",
+        "https://docs.digitalocean.com/products/app-platform/details/limits/",
+        "https://docs.digitalocean.com/products/app-platform/how-to/deploy-from-github-actions/",
+        "https://docs.digitalocean.com/products/functions/details/pricing/",
+        "https://docs.digitalocean.com/platform/billing/manage-payment-methods/",
+        "https://docs.digitalocean.com/support/payment-methods/",
+        "https://www.digitalocean.com/pricing/app-platform"
+      ]
     }
   ]
 }
