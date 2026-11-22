@@ -21,3 +21,26 @@ test('FitNotes distinguishes the Android app, optional add-on, and backup from s
     assert(en[copy], `FitNotes English copy is missing for: ${copy}`);
   }
 });
+
+test('LiftLog distinguishes offline logging, remote backups, and hosted AI', () => {
+  const product = cat.products.find(({ id }) => id === 'liftlog');
+  assert(product);
+  assert.deepEqual(product.platforms, ['Android', 'iOS']);
+  assert.equal(product.license, 'AGPL-3.0');
+  assert.equal(product.latest_release, '4.27.0');
+  assert.equal(product.latest_release_date, '2026-11-16');
+  assert.deepEqual(Object.fromEntries(Object.entries(product.features).map(([key, feature]) => [key, feature.value])), {
+    workout_routines: 'yes', body_tracking: 'yes', nutrition_log: 'unknown', self_host: 'yes', cloud_sync: 'no',
+  });
+  assert.equal(product.prices.length, 1);
+  assert.match(product.price_summary, /未一致确认付费周期/);
+  assert.match(product.free_tier_limits, /可离线使用，无需账号.*仅适用于好友动态内容.*Anthropic/);
+  assert.match(product.features.cloud_sync.note, /默认未启用.*打开时若有更改.*整份训练数据库备份.*不是多设备实时合并/);
+  assert.match(product.features.self_host.note, /Docker.*Anthropic API.*费用/);
+  assert(product.sources.some((source) => source.endsWith('/releases/tag/4.27.0')));
+  assert(product.sources.some((source) => source.endsWith('id=com.limajuice.liftlog')));
+  assert(product.sources.some((source) => source.endsWith('/id6467372581')));
+  for (const copy of [product.summary, product.price_summary, product.free_tier_limits, ...Object.values(product.features).map(({ note }) => note)]) {
+    assert(en[copy], `LiftLog English copy is missing for: ${copy}`);
+  }
+});
