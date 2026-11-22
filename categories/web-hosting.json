@@ -352,6 +352,72 @@
         "https://www.cloudflare.com/products/workers/",
         "https://www.cloudflare.com/service-specific-terms-developer-platform/"
       ]
+    },
+    {
+      "id": "firebase-hosting",
+      "name": "Firebase Hosting",
+      "official_url": "https://firebase.google.com/docs/hosting",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "免费增值",
+      "price_summary": "经典 Hosting 有免支付方式的 Spark 免费档和按量付费的 Blaze；Firebase App Hosting 则要求 Blaze。",
+      "prices": [
+        {
+          "plan": "Spark 免费档",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "适用于经典 Firebase Hosting；传输额度与周期请对照官网价目表和用量指南。"
+        }
+      ],
+      "free_tier_limits": "Spark 免费存储上限为每项目 10 GB，含项目下多个站点和发布渠道。官方价目表的 Hosting 行列出每天 360 MB 免费传输量；用量指南则列出每月 10 GB。两个来源的周期不一致，不能换算为统一额度或据此估算账单。未开户、绑卡、部署或实测。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-22",
+      "summary": "经典 Firebase Hosting 为静态网站和单页应用提供托管；与使用 Cloud Build 和 Cloud Run 的 Firebase App Hosting 是不同产品。",
+      "features": {
+        "static_hosting": {
+          "value": "yes",
+          "note": "支持静态 HTML、CSS、JavaScript 和单页应用，经 CDN 分发；用量指南列出单个文件最多 2 GB。"
+        },
+        "build_limits": {
+          "value": "partial",
+          "note": "经典 Hosting 可用 Firebase CLI 部署构建产物。官方 GitHub 集成使用 GitHub Actions 工作流，构建在所配置的 CI 中执行，不等于 Hosting 赠送构建分钟；独立的 App Hosting 使用 Cloud Build。"
+        },
+        "functions": {
+          "value": "paid",
+          "note": "可将请求重写到 Cloud Functions for Firebase 或 Cloud Run；部署这些动态后端需 Blaze，并按相应服务规则独立计量。静态 Hosting 免费量不等于免费计算额度。"
+        },
+        "commercial": {
+          "value": "unknown",
+          "note": "查阅的 Spark 资料未明确给出 Hosting 免费档的商用边界；不要仅凭免费的标价判断项目是否符合适用条款。"
+        },
+        "overage": {
+          "value": "partial",
+          "note": "Spark 存储到 10 GB 后无法部署新内容，需删除较旧版本释放空间或升级；Blaze 存储超额为 USD 0.026/GB。按用量指南，Spark 超出指南所列传输额度后有短暂宽限，随后站点暂停至下月或升级，Blaze 超出免费量的传输费在两处均列 USD 0.15/GB。价目表与指南的传输周期冲突，实际账单以项目显示为准。"
+        },
+        "card_required": {
+          "value": "no",
+          "note": "Spark 不需要支付方式；升级 Blaze 要关联 Cloud Billing 结算账号。未确认所有地区和结算方式均需信用卡。"
+        }
+      },
+      "sources": [
+        "https://firebase.google.com/docs/hosting",
+        "https://firebase.google.com/docs/hosting/usage-quotas-pricing",
+        "https://firebase.google.com/pricing",
+        "https://firebase.google.com/docs/projects/billing/firebase-pricing-plans",
+        "https://firebase.google.com/docs/hosting/quickstart",
+        "https://firebase.google.com/docs/hosting/github-integration",
+        "https://firebase.google.com/docs/hosting/functions",
+        "https://firebase.google.com/docs/hosting/cloud-run",
+        "https://firebase.google.com/docs/app-hosting",
+        "https://firebase.google.com/docs/app-hosting/costs"
+      ]
     }
   ]
 }
