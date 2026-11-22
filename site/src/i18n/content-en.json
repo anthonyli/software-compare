@@ -3206,5 +3206,13 @@
   "iOS 和 Android 可离线查看已下载的地图。商店地图和自带地理配准地图不同，后者需 Plus 或 Pro。": "View downloaded maps offline on iOS and Android. Map Store maps are distinct from custom georeferenced maps, which require Plus or Pro.",
   "可手动画线规划并沿已有线路或轨迹引导；未核实自动步行算路，官方说明引导不考虑地形等障碍。": "Draw a route manually or follow an existing line or track. Automatic walking routing was not verified; the vendor says guidance does not account for terrain or other obstacles.",
   "可手动画线或沿已有骑行轨迹引导；未核实按自行车道路或路况自动算路。": "Draw a line manually or follow an existing cycling track. Automatic routing based on cycleways or road conditions was not verified.",
-  "可用手机 GPS 记录轨迹并保存为地图要素；离线定位依赖设备定位硬件和权限。": "Record tracks with the phone GPS and save them as map features. Offline positioning depends on location hardware and permissions."
+  "可用手机 GPS 记录轨迹并保存为地图要素；离线定位依赖设备定位硬件和权限。": "Record tracks with the phone GPS and save them as map features. Offline positioning depends on location hardware and permissions.",
+  "面向 Windows 的 3D 建模和动画工作站，集成 CAT 与 Biped 角色绑定、关键帧编辑以及 Arnold 渲染。": "A Windows workstation for 3D modeling and animation with CAT and Biped character rigs, keyframe editing, and integrated Arnold rendering.",
+  "美国官网商业订阅参考价为每月 255 美元、每年 2,010 美元或三年 6,025 美元；不是中国区报价。Indie 另有地区、营收、项目金额及席位资格限制。": "US commercial subscription reference prices are USD 255 per month, USD 2,010 per year, or USD 6,025 for three years. These are not prices for China. Indie has separate region, revenue, project-value, and seat eligibility limits.",
+  "Autodesk 美国官网商业订阅参考价；按地区核对实际价格。": "US commercial subscription reference price from Autodesk. Check actual pricing for your region.",
+  "官方提供 30 天试用，仅限评估，不可用于商业或生产，也不可延长。3ds Max 2027 的系统要求为 64 位 Windows 11，不支持原生 macOS。Autodesk 已发布 2027.3 更新说明；未安装或实测性能。": "Autodesk offers a 30-day trial for evaluation only. It cannot be extended or used commercially or in production. 3ds Max 2027 requires 64-bit Windows 11 and has no native macOS version. Autodesk published notes for the 2027.3 update; installation and performance were not tested.",
+  "支持多边形建模和修改器堆栈，包括布尔及倒角等工具。": "Supports polygon modeling and a modifier stack, including Boolean and bevel tools.",
+  "内置 CAT 与 Biped 角色骨骼工作流，并可用 Skin 修改器绑定网格。": "Built-in CAT and Biped character rigging workflows and a Skin modifier for binding meshes.",
+  "支持关键帧动画，可在 Track View 编辑动画曲线与时间。": "Create keyframe animation and edit curves and timing in Track View.",
+  "集成 Arnold，可在 3ds Max 界面内交互式无水印渲染；无水印批量或命令行渲染需要单独的 Arnold 许可。": "Integrated Arnold can render without a watermark interactively in the 3ds Max UI. Watermark-free batch or command-line rendering requires a separate Arnold license."
 }
