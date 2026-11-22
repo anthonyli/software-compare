@@ -1,7 +1,7 @@
 import {test} from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';
 const read=p=>JSON.parse(fs.readFileSync(new URL('../../'+p,import.meta.url),'utf8'));
 const c=read('categories/web-hosting.json'),en=read('site/src/i18n/content-en.json'),[v,f]=c.products;
-test('website deployment has eight sourced complete bilingual products',()=>{assert.deepEqual(c.products.map(p=>p.id),['vercel','cloudflare-pages','render','netlify','cloudflare-workers','firebase-hosting','railway','digitalocean-app-platform']);for(const p of c.products){assert.deepEqual(Object.keys(p.features).sort(),c.features.map(f=>f.key).sort());assert.equal(p.collected_at,({'cloudflare-workers':'2026-11-17','firebase-hosting':'2026-11-22','railway':'2026-11-22','digitalocean-app-platform':'2026-11-22'})[p.id]||'2026-11-16');assert(p.sources.length>=4);assert.match(p.free_tier_limits,/未开户、绑卡、部署或实测/);}const strings=v=>typeof v==='string'?[v]:v&&typeof v==='object'?Object.values(v).flatMap(strings):[];for(const s of strings(c).filter(s=>/[\u4e00-\u9fff]/.test(s)))assert(en[s],s);});
+test('website deployment has nine sourced complete bilingual products',()=>{assert.deepEqual(c.products.map(p=>p.id),['vercel','cloudflare-pages','render','netlify','cloudflare-workers','firebase-hosting','railway','digitalocean-app-platform','aws-amplify-hosting']);for(const p of c.products){assert.deepEqual(Object.keys(p.features).sort(),c.features.map(f=>f.key).sort());assert.equal(p.collected_at,({'cloudflare-workers':'2026-11-17','firebase-hosting':'2026-11-22','railway':'2026-11-22','digitalocean-app-platform':'2026-11-22','aws-amplify-hosting':'2026-11-22'})[p.id]||'2026-11-16');assert(p.sources.length>=4);assert.match(p.free_tier_limits,/未开户、绑卡、部署或实测/);}const strings=v=>typeof v==='string'?[v]:v&&typeof v==='object'?Object.values(v).flatMap(strings):[];for(const s of strings(c).filter(s=>/[\u4e00-\u9fff]/.test(s)))assert(en[s],s);});
 test('Hobby scope, quota periods and overage are distinct from paid Pro',()=>{assert.equal(v.features.card_required.value,'unknown');assert.equal(v.features.commercial.value,'partial');assert.match(v.features.commercial.note,/个人或非商业.*personal or non-commercial/);assert.match(v.features.overage.note,/30天.*7天.*自动按量计费/);assert.match(v.features.functions.note,/每月.*4小时.*360GB/);assert.equal(v.prices[1].price,'20');assert.match(v.prices[1].note,/额外部署席位.*超抵扣/);});
 test('Pages free static requests do not imply unlimited builds or Functions',()=>{assert.equal(f.features.card_required.value,'no');assert.equal(f.features.commercial.value,'unknown');assert.match(f.features.build_limits.note,/每月500.*1个并发.*20分钟/);assert.match(f.features.functions.note,/共享每天10万.*UTC零点/);assert.match(f.features.static_hosting.note,/不调用Functions/);assert.match(f.features.overage.note,/fail open.*fail closed/);assert.match(f.free_tier_limits,/2万文件.*25MiB/);});
 
@@ -99,6 +99,32 @@ test('DigitalOcean App Platform separates free static apps, metered functions, a
   const fn = source.slice(source.indexOf('export function cleanPublicText'), source.indexOf('export function parseCurrency')).replace('export function','function').replace('(input: string | null | undefined): string','(input)');
   const clean = new Function(leak + fn + ';return cleanPublicText;')();
   for (const raw of [p.summary, p.price_summary, p.free_tier_limits, ...p.prices.flatMap((row) => [row.plan, row.note]), ...Object.values(p.features).map((row) => row.note)]) {
+    const key = clean(raw);
+    assert(en[key], key);
+    assert.doesNotMatch(en[key], /[\u4e00-\u9fff]/);
+  }
+});
+
+test('AWS Amplify Hosting separates shared AWS credits from per-service quotas and metered hosting', () => {
+  const p = c.products.find(({ id }) => id === 'aws-amplify-hosting');
+  assert(p);
+  assert.deepEqual(Object.fromEntries(Object.entries(p.features).map(([key, f]) => [key, f.value])), {
+    static_hosting: 'yes', build_limits: 'partial', functions: 'partial', commercial: 'partial', overage: 'partial', card_required: 'partial',
+  });
+  assert.deepEqual(p.prices, []);
+  assert.match(p.price_summary, /0\.01\/分钟.*0\.023\/GB\/月.*0\.15\/GB.*共享 AWS 抵扣.*不是 Amplify 每月免费档/);
+  assert.match(p.free_tier_limits, /USD 100 初始抵扣.*最多可再获 USD 100.*共享.*最多 6 个月.*抵扣先用尽.*实际到期以账户为准.*2025 年 7 月 15 日前.*历史规则/);
+  assert.match(p.features.static_hosting.note, /CDN.*amplifyapp\.com.*自定义域名和 TLS.*手动部署仅支持静态站/);
+  assert.match(p.features.build_limits.note, /默认 30 分钟.*5 至 120 分钟.*5 GB.*单次.*不是每月.*PR 预览占用应用分支额度/);
+  assert.match(p.features.functions.note, /托管 SSR.*0\.30\/百万请求.*0\.20\/GB 小时.*不是通用 Lambda 额度/);
+  assert.match(p.features.overage.note, /账户会关闭，已部署资源无法访问.*不会仅因到达上限就自动切到付费.*Paid 账户.*适用抵扣.*超出后按量付费/);
+  assert.match(p.features.card_required.note, /多数简化注册无需提交支付方式.*高级注册需要有效付款方式/);
+
+  const source = fs.readFileSync(new URL('../src/lib/display.ts', import.meta.url), 'utf8');
+  const leak = source.slice(source.indexOf('const LEAK ='), source.indexOf('export const PRICE_CAVEAT'));
+  const fn = source.slice(source.indexOf('export function cleanPublicText'), source.indexOf('export function parseCurrency')).replace('export function','function').replace('(input: string | null | undefined): string','(input)');
+  const clean = new Function(leak + fn + ';return cleanPublicText;')();
+  for (const raw of [p.summary, p.price_summary, p.free_tier_limits, ...Object.values(p.features).map((row) => row.note)]) {
     const key = clean(raw);
     assert(en[key], key);
     assert.doesNotMatch(en[key], /[\u4e00-\u9fff]/);
