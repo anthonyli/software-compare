@@ -418,6 +418,72 @@
         "https://firebase.google.com/docs/app-hosting",
         "https://firebase.google.com/docs/app-hosting/costs"
       ]
+    },
+    {
+      "id": "railway",
+      "name": "Railway",
+      "official_url": "https://railway.com/",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "免费增值",
+      "price_summary": "Free 每账期有 USD 1 共享资源额度，无需信用卡。新账号的一次性试用额度另算。Hobby USD 5/月、Pro USD 20/月，各含等额资源用量；只为超出各自月费所含用量的部分再付费。",
+      "prices": [
+        {
+          "plan": "Railway 免费档",
+          "price": "免费",
+          "currency": null,
+          "period": null,
+          "note": "Free 不是试用；共享资源额度耗尽会停机，不自动转为付费。"
+        }
+      ],
+      "free_tier_limits": "Free 每工作区 1 个项目、最多 3 个服务，每服务最高 1 vCPU 和 0.5 GB RAM；另限 1 个 0.5 GB 卷和 1 个 10 GB 存储桶。连续 5 至 10 分钟无出站流量时服务会休眠，下次请求可冷启动。新账号试用最多 30 天，提供一次性 USD 5 额度，未验证的试用限制出站网络；到期或额度用尽，试用服务停止，按官方指南需切换方案并重新部署。未开户、绑卡、部署或实测。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-22",
+      "summary": "面向容器化应用的部署平台。可提供静态网站、服务端渲染和 API；静态站也作为服务部署，不等同于独立的纯静态 CDN 免费档。",
+      "features": {
+        "static_hosting": {
+          "value": "yes",
+          "note": "Railpack 可将静态文件打包为服务。Free 有 Railway 子域名，不含自定义域名。内置 CDN 是默认关闭的 Beta，可选开启；命中边缘缓存不等于边缘计算，未命中仍可能产生源站用量。"
+        },
+        "build_limits": {
+          "value": "partial",
+          "note": "构建本身不计费，Free 构建镜像上限 4 GB；未确认每月构建分钟数，不应理解为任意规模构建。可配置 PR 预览环境，但预览服务仍计入资源用量。"
+        },
+        "functions": {
+          "value": "partial",
+          "note": "可运行 SSR 和 API 服务。Railway Functions 可部署最高 96 KB 的单文件 TypeScript，使用 Bun，并作为普通 Railway 服务运行，不是独立的边缘函数执行额度。"
+        },
+        "commercial": {
+          "value": "unknown",
+          "note": "官方 FAQ 建议商业应用使用 Pro；没有核实 Free 专属的商用边界，不将推荐解释成禁商条款。"
+        },
+        "overage": {
+          "value": "partial",
+          "note": "Free 的 USD 1 供 CPU、内存、出站流量和卷存储共用，不结转。耗尽后服务暂停至下个账期或升级。Hobby 与 Pro 超出月费已包含的资源用量才另付差额。官方资源单价：CPU USD 20/vCPU/月、内存 USD 10/GB/月、出站流量 USD 0.05/GB、卷存储 USD 0.15/GB/月。"
+        },
+        "card_required": {
+          "value": "no",
+          "note": "长期 Free 和新账号试用均无需信用卡；升级付费订阅按官方账单流程设置支付方式。"
+        }
+      },
+      "sources": [
+        "https://docs.railway.com/pricing/free-plan",
+        "https://docs.railway.com/pricing/plans",
+        "https://docs.railway.com/pricing/understanding-your-bill",
+        "https://docs.railway.com/builds/railpack",
+        "https://docs.railway.com/functions",
+        "https://docs.railway.com/networking/domains/working-with-domains",
+        "https://docs.railway.com/networking/cdn",
+        "https://docs.railway.com/environments",
+        "https://docs.railway.com/pricing/faqs",
+        "https://railway.com/legal/terms"
+      ]
     }
   ]
 }
