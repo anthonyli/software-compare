@@ -427,6 +427,62 @@
         "https://www.comaps.app/support/how-to-import-a-gpx-kml-track/"
       ],
       "collected_at": "2026-11-15"
+    },
+    {
+      "id": "locus-map",
+      "name": "Locus Map",
+      "official_url": "https://www.locusmap.app/",
+      "github_url": null,
+      "platforms": [
+        "Android",
+        "iOS",
+        "Web"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "免费增值",
+      "price_summary": "Android 有免费版、Silver 和 Gold；iOS Lite 有免费版和 Gold，没有 Silver。官网参考价：Android Silver 每年 10 欧元起或每月 1.40 欧元，Android 和 iOS Lite 的 Gold 每年 24 欧元起或每月 3 欧元；实际价格以所在地区商店为准。",
+      "prices": [],
+      "free_tier_limits": "新用户可领取 3 张离线 LoMaps；Gold 包含全部离线 LoMaps 和更新。可选 Gold 云同步会将轨迹、路线和地点同步到云端；隐私政策披露使用 Firebase Analytics。主动开启公开组 Live Tracking 会公开用户名和实时位置。未实测野外可靠性。",
+      "summary": "Android 完整版提供户外地图、路线规划和 GPS 轨迹记录；iOS Lite 功能较少，Web Planner 用于网页端规划。",
+      "features": {
+        "offline_maps": {
+          "value": "partial",
+          "note": "Android 和 iOS Lite 可下载 LoMaps 后离线查看。Android 内置 LoRouter 离线算路须用 Gold 并另下载算路数据，也可另装免费的 BRouter 并下载算路数据。有离线地图不等于能离线算路。"
+        },
+        "walking_routes": {
+          "value": "yes",
+          "note": "Android 支持步行和徒步规划；iOS Lite 有基础路线规划和到点指引，但尚不支持沿路线逐向导航。Web Planner 可在线规划。"
+        },
+        "cycling_routes": {
+          "value": "yes",
+          "note": "Android 有多种骑行算路模式；iOS Lite 也能规划骑游和碎石路骑行路线，但不具备 Android 完整导航能力。Web Planner 可在线规划。"
+        },
+        "track_recording": {
+          "value": "yes",
+          "note": "Android 和 iOS Lite 均可用手机 GPS 记录轨迹；Web Planner 用于规划和查看，不用于手机 GPS 记录。"
+        }
+      },
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "sources": [
+        "https://www.locusmap.app/premium/",
+        "https://www.locusmap.app/comparison/",
+        "https://www.locusmap.app/ios/",
+        "https://www.locusmap.app/plan-trips-on-your-iphone/",
+        "https://docs.locusmap.app/doku.php/manual:ios",
+        "https://docs.locusmap.app/doku.php/manual:ios:planning",
+        "https://docs.locusmap.app/doku.php/manual:faq:free_maps_for_new_users",
+        "https://docs.locusmap.app/doku.php?id=manual%3Afaq%3Ahow_to_navigate_offline",
+        "https://docs.locusmap.app/doku.php/manual:user_guide:functions:navigation:settings",
+        "https://docs.locusmap.app/doku.php?id=manual%3Auser_guide%3Awebplanner",
+        "https://www.locusmap.app/privacy/",
+        "https://docs.locusmap.app/doku.php/manual:about:eula",
+        "https://apps.apple.com/us/app/locus-map-lite/id6443446295",
+        "https://apps.apple.com/be/app/locus-map-lite/id6443446295"
+      ],
+      "collected_at": "2026-11-22"
     }
   ]
 }
