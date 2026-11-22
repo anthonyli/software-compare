@@ -79,3 +79,26 @@ test('Netlify detail renders all public English and Chinese notes visibly',async
   await page.screenshot({path:`../docs/design/previews/payment-page-netlify-detail-${active}.png`,fullPage:true});
  }
 });
+
+test('Firebase Hosting renders disputed quotas and App Hosting boundaries on both layouts', async ({ page }) => {
+ for (const width of [1280, 390]) {
+  await page.setViewportSize({ width, height: 900 });
+  await page.goto('/c/web-hosting/');
+  await expect(page.locator(width === 1280 ? '#matrix' : '#card-list').locator('[data-product-id="firebase-hosting"]')).toBeVisible();
+  await page.goto('/p/web-hosting/firebase-hosting/');
+  for (const lang of ['zh-CN', 'en']) {
+   await page.locator(`[data-lang="${lang}"]`).click();
+   const english = lang === 'en', active = english ? 'en' : 'zh';
+   const rows = page.locator('.feature-row');
+   await expect(rows).toHaveCount(6);
+   await expect(rows.nth(1).locator(`p .t-${active}`)).toContainText(english ? 'not on build minutes included with Hosting' : '不等于 Hosting 赠送构建分钟');
+   await expect(rows.nth(2).locator(`p .t-${active}`)).toContainText(english ? 'require Blaze for deployment' : '部署这些动态后端需 Blaze');
+   await expect(rows.nth(3).locator('.feat-empty')).toHaveAttribute('title', english ? 'Unknown' : '未知');
+   await expect(rows.nth(5).locator(`p .t-${active}`)).toContainText(english ? 'Spark does not require a payment method' : 'Spark 不需要支付方式');
+   const limits = page.locator(`.price-panel > .mt-5 p .t-${active}`);
+   await expect(limits).toBeVisible();
+   await expect(limits).toContainText(english ? /360 MB\/day.*10 GB\/month.*periods conflict/ : /每天 360 MB.*每月 10 GB.*周期不一致/);
+   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  }
+ }
+});
