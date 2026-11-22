@@ -548,6 +548,69 @@
         "https://docs.digitalocean.com/support/payment-methods/",
         "https://www.digitalocean.com/pricing/app-platform"
       ]
+    },
+    {
+      "id": "aws-amplify-hosting",
+      "name": "AWS Amplify Hosting",
+      "official_url": "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "按量付费",
+      "price_summary": "托管按量计费：标准构建 USD 0.01/分钟，托管存储 USD 0.023/GB/月，出站 USD 0.15/GB。符合条件的新账户可用共享 AWS 抵扣，不是 Amplify 每月免费档。",
+      "prices": [],
+      "free_tier_limits": "符合条件的新账户有 USD 100 初始抵扣，完成指定活动最多可再获 USD 100，由适用 AWS 服务共享。AWS Free 账户计划最多 6 个月，抵扣先用尽则提前结束；抵扣实际到期以账户为准。2025 年 7 月 15 日前注册的旧 12 个月托管免费额度已属历史规则，不适用于当前新账户。未开户、绑卡、部署或实测。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-22",
+      "summary": "AWS 的 Git 集成网站托管服务，支持静态站和受支持框架的服务端渲染。Amplify 后端能力及其他 AWS 服务不包含在托管权益中。",
+      "features": {
+        "static_hosting": {
+          "value": "yes",
+          "note": "支持静态 HTML 网站和单页应用，经 CDN 分发。提供 amplifyapp.com 默认域名，也支持自定义域名和 TLS；域名注册另计。手动部署仅支持静态站。"
+        },
+        "build_limits": {
+          "value": "partial",
+          "note": "构建默认 30 分钟超时，可设为 5 至 120 分钟；构建产物上限 5 GB。这是单次限制，不是每月免费构建分钟。Git PR 预览占用应用分支额度，且某些公有仓库 SSR 预览有限制。"
+        },
+        "functions": {
+          "value": "partial",
+          "note": "受支持框架可使用托管 SSR。官方 SSR 单价为 USD 0.30/百万请求和 USD 0.20/GB 小时计算量；这不是通用 Lambda 额度，接入其他 AWS 服务按其规则计费。"
+        },
+        "commercial": {
+          "value": "partial",
+          "note": "AWS Free 账户计划的官方定位是探索与评估。不能据此认定 Amplify 提供长期免费商用生产托管；未核实 Amplify 独立的免费商用承诺。"
+        },
+        "overage": {
+          "value": "partial",
+          "note": "Free 账户计划到期或抵扣用尽时，若未升级，账户会关闭，已部署资源无法访问；不会仅因到达上限就自动切到付费。使用 Paid 账户时，适用抵扣先抵标准用量，超出后按量付费；托管存储按量持续计费直至移除相关资源。"
+        },
+        "card_required": {
+          "value": "partial",
+          "note": "Amplify 属于简化注册支持服务；多数简化注册无需提交支付方式，但 AWS 可能要求验证或判定不符合条件。高级注册需要有效付款方式，不能保证所有账户均免卡。"
+        }
+      },
+      "sources": [
+        "https://aws.amazon.com/amplify/pricing/",
+        "https://aws.amazon.com/free/terms/",
+        "https://aws.amazon.com/free/free-tier-faqs/",
+        "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier-plans.html",
+        "https://docs.aws.amazon.com/pdfs/awsaccountbilling/latest/aboutv2/awsaccountbilling-aboutv2.pdf",
+        "https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html",
+        "https://docs.aws.amazon.com/amplify/latest/userguide/custom-domains.html",
+        "https://docs.aws.amazon.com/amplify/latest/userguide/manual-deploys.html",
+        "https://docs.aws.amazon.com/amplify/latest/userguide/troubleshooting-build-issues.html",
+        "https://docs.aws.amazon.com/amplify/latest/userguide/quotas-chapter.html",
+        "https://docs.aws.amazon.com/amplify/latest/userguide/pr-previews.html",
+        "https://docs.aws.amazon.com/amplify/latest/userguide/deploy-nextjs-app.html",
+        "https://docs.aws.amazon.com/accounts/latest/reference/sign-in-new.html",
+        "https://docs.aws.amazon.com/accounts/latest/reference/supported-services-sign-up-new.html",
+        "https://docs.aws.amazon.com/accounts/latest/reference/getting-started.html"
+      ]
     }
   ]
 }
