@@ -108,8 +108,11 @@ test('filter reset and empty search do not leave stale state',async({page})=>{
 });
 test('concurrent retries count once and excessive writes are limited',async({playwright})=>{
  test.setTimeout(30_000);
- const api=await playwright.request.newContext({baseURL:origin});
- const initial=(await (await api.get('/api/votes?ids=sunshine')).json()).votes[0].count;
+ // Separate the local API fixture from unrelated browser sessions sharing this test server.
+ const api=await playwright.request.newContext({baseURL:origin,extraHTTPHeaders:{'CF-Connecting-IP':'198.51.100.167'}});
+ const initialResponse=await api.get('/api/votes?ids=sunshine');
+ expect(initialResponse.status(),'initial Sunshine vote read').toBe(200);
+ const initial=(await initialResponse.json()).votes[0].count;
  const results=await Promise.all(Array.from({length:5},()=>api.put('/api/votes',{headers:{Origin:origin},data:{id:'sunshine',liked:true}})));
  for(const result of results) {expect(result.status()).toBe(200);expect((await result.json()).vote.count).toBe(initial+1);}
  let limited=false;
@@ -127,7 +130,9 @@ test('concurrent retries count once and excessive writes are limited',async({pla
   expect((await response.json()).vote.count).toBe(initial+1);
  }
  expect(limited).toBe(true);
- expect((await (await api.get('/api/votes?ids=sunshine')).json()).votes[0].count).toBe(initial+1);
+ const finalResponse=await api.get('/api/votes?ids=sunshine');
+ expect(finalResponse.status(),'final Sunshine vote read').toBe(200);
+ expect((await finalResponse.json()).votes[0].count).toBe(initial+1);
  await api.dispose();
 });
 
