@@ -25,3 +25,23 @@ test('cloud SQL quotas and caveats remain visible in both languages and viewport
   for(const lang of ['en','zh-CN']){await page.locator(`[data-lang="${lang}"]`).click();const active=lang==='en'?'.t-en':'.t-zh',hidden=lang==='en'?'.t-zh':'.t-en';await expect(page.locator('.feature-row')).toHaveCount(6);for(const row of await page.locator('.feature-row').all()){await expect(row.locator('p '+active)).toBeVisible();await expect(row.locator('p '+hidden)).toBeHidden();}}
  }
 });
+
+test('Aurora DSQL shows pooled DPU, recovery and card checks in both languages',async({page})=>{
+ for(const width of [1280,390]){
+  await page.setViewportSize({width,height:900});
+  await page.goto('/c/cloud-sql-databases/');
+  await expect(page.locator(width===1280?'#matrix':'#card-list').locator('[data-product-id="aurora-dsql"]')).toBeVisible();
+  await page.goto('/p/cloud-sql-databases/aurora-dsql/');
+  for(const lang of ['zh-CN','en']){
+   await page.locator(`[data-lang="${lang}"]`).click();
+   const active=lang==='en'?'en':'zh';
+   const rows=page.locator('.feature-row');await expect(rows).toHaveCount(6);
+   await expect(rows.nth(1).locator(`p .t-${active}`)).toContainText(lang==='en'?'no separate free read-row quota':'没有独立免费读行配额');
+   await expect(rows.nth(2).locator(`p .t-${active}`)).toContainText(lang==='en'?'no separate free write-row quota':'没有独立免费写行配额');
+   await expect(rows.nth(4).locator('.feat')).toHaveAttribute('title',lang==='en'?'No':'不支持');
+   await expect(rows.nth(4).locator(`p .t-${active}`)).toContainText(lang==='en'?'restores to a new cluster':'恢复会创建新集群');
+   await expect(rows.nth(5).locator('.feat')).toHaveAttribute('title',lang==='en'?'Partial':'部分支持');
+   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+  }
+ }
+});
