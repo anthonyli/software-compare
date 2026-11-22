@@ -148,6 +148,74 @@
         "https://developers.cloudflare.com/d1/platform/pricing/",
         "https://developers.cloudflare.com/d1/platform/limits/"
       ]
+    },
+    {
+      "id": "aurora-dsql",
+      "name": "Amazon Aurora DSQL",
+      "official_url": "https://aws.amazon.com/rds/aurora/dsql/",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "免费增值",
+      "price_summary": "每月免费 100,000 DPU 和 1 GiB 存储；超额按地区计价。美国东部（俄亥俄）示例为每百万 DPU 8 美元、每 GiB·月 0.33 美元，不是全球报价。",
+      "prices": [
+        {
+          "plan": "DSQL 每月免费用量",
+          "price": "0",
+          "currency": "USD",
+          "period": "月",
+          "note": "每月免费用量不同于 AWS 新账户试用抵扣金。备份与其他 AWS 服务另计。"
+        }
+      ],
+      "free_tier_limits": "AWS 新账户 Free plan 最长 6 个月，或抵扣金用完时提前结束；合资格抵扣金可覆盖每月免费额度以外的用量。Paid plan 超出适用抵扣金后按地区用量计费，不把抵扣金当作每月赠额。未开户、建库、迁移或实测。",
+      "summary": "AWS 托管的无服务器分布式 SQL 数据库，兼容 PostgreSQL 协议与部分功能，不等同于普通 Aurora PostgreSQL。",
+      "features": {
+        "capacity": {
+          "value": "partial",
+          "note": "每月含 1 GiB 存储；存储按 GiB·月计量，不是每个数据库都单独赠送。"
+        },
+        "reads": {
+          "value": "partial",
+          "note": "读取按 Read DPU 计量，与写入、计算等共用每月 100,000 DPU；没有独立免费读行配额。"
+        },
+        "writes": {
+          "value": "partial",
+          "note": "写入按 Write DPU 计量，与读取、计算等共用每月 100,000 DPU；没有独立免费写行配额。"
+        },
+        "transfer": {
+          "value": "partial",
+          "note": "同区发往 AWS 服务及跨可用区复制不另收传输费；跨区集群复制加计写入 DPU、各区存储另计，不收单独复制传输费。发往其他区域 AWS 服务走标准传输计费。公网出站每月 100 GB 为 AWS 跨服务和区域共享额度（中国区与 GovCloud 不适用），超量按标准费率。AWS 新注册流程的账户不支持跨区或多区域功能。"
+        },
+        "recovery": {
+          "value": "no",
+          "note": "AWS Backup 提供付费整集群快照，恢复会创建新集群。DSQL 不支持 AWS Backup 连续备份或时间点恢复，不套用普通 Aurora 的免费 PITR 窗口。"
+        },
+        "card_required": {
+          "value": "partial",
+          "note": "AWS 新注册流程大多数新客户无需提交支付方式，但可能需要额外验证；高级注册或不符合免费资格时须提交支付方式，不保证免绑卡。"
+        }
+      },
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": "未知",
+      "sources": [
+        "https://aws.amazon.com/rds/aurora/dsql/pricing/",
+        "https://aws.amazon.com/rds/free/",
+        "https://docs.aws.amazon.com/aurora-dsql/latest/userguide/billing-metering.html",
+        "https://aws.amazon.com/blogs/database/monitor-amazon-aurora-dsql-costs-with-the-aurora-dsql-console-and-cloudwatch-alarms/",
+        "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier-plans.html",
+        "https://aws.amazon.com/start-here/",
+        "https://docs.aws.amazon.com/accounts/latest/reference/supported-services-sign-up-new.html",
+        "https://docs.aws.amazon.com/accounts/latest/reference/getting-started.html",
+        "https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-feature-availability.html",
+        "https://docs.aws.amazon.com/aws-backup/latest/devguide/restore-auroradsql.html",
+        "https://docs.aws.amazon.com/aurora-dsql/latest/userguide/working-with-postgresql-compatibility-migration-guide.html"
+      ],
+      "collected_at": "2026-11-22"
     }
   ]
 }
