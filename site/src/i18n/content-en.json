@@ -3197,5 +3197,14 @@
   "支持导入、绑定及动画化 PSD 位图图层，Debut 最多导入 10 个 PSD 图层。不将导入素材动画视为原生位图逐帧绘画能力。": "Import, rig, and animate PSD bitmap layers. Debut imports up to 10 PSD layers. Animating imported assets does not establish native frame-by-frame raster painting support.",
   "支持骨骼绑定；Debut 每个项目最多 2 个 Smart Bones 和 1 个网格，Pro 提供更丰富的绑定控制。": "Bone rigging is supported. Debut allows up to two Smart Bones and one mesh per project; Pro has more extensive rigging controls.",
   "官方资料介绍图层和渲染特效，未确认通用节点式特效图。": "Official material documents layer and rendering effects but does not confirm a general node-based effects graph.",
-  "官网数字版标价。": "Official digital-edition list price."
+  "官网数字版标价。": "Official digital-edition list price.",
+  "面向下载地图使用场景的 iOS 和 Android 应用，可在离线地图上定位、手动画线及记录 GPS 轨迹。": "An iOS and Android app for viewing downloaded maps offline, locating yourself, drawing lines, and recording GPS tracks.",
+  "免费档可用商店地图；Plus 适用于休闲用途，官网标价每设备每年 34.99 美元，Pro 每设备每年 169.99 美元起。具体地区和渠道价格以结账为准。": "The free tier supports Map Store maps. Plus is for recreational use and is listed at USD 34.99 per device per year; Pro starts at USD 169.99 per device per year. Check local pricing for your region and purchase channel.",
+  "限休闲用途；最多导入 20 张自带地图。": "For recreational use only; import up to 20 custom maps.",
+  "每设备年价起；专业、商业或学术使用需 Pro，有效订阅可不限数量导入自带地图。": "Annual starting price per device. Professional, commercial, or academic use requires Pro. An active subscription allows unlimited custom-map imports.",
+  "免费下载的应用可访问地图商店，部分地图另收费且不计入自带地图额度。免费档不再支持自带地图；Plus 最多 20 张，有效的 Pro 订阅不限数量。在 iOS 应用内购买的订阅不能转到 Android。官方隐私声明称设备 GPS 位置不在应用外明确存储或记录，并披露 Google Analytics 用量统计可在设置关闭。未实测离线定位可靠性。": "The free app can access the Map Store, where some maps cost extra and do not count against custom-map limits. The free tier no longer supports custom-map imports; Plus allows 20, and active Pro subscriptions have no import limit. Subscriptions purchased in-app on iOS cannot transfer to Android. The vendor says device GPS location is not explicitly stored or recorded outside the app and that Google Analytics usage statistics can be disabled in Settings. Offline positioning reliability was not field-tested.",
+  "iOS 和 Android 可离线查看已下载的地图。商店地图和自带地理配准地图不同，后者需 Plus 或 Pro。": "View downloaded maps offline on iOS and Android. Map Store maps are distinct from custom georeferenced maps, which require Plus or Pro.",
+  "可手动画线规划并沿已有线路或轨迹引导；未核实自动步行算路，官方说明引导不考虑地形等障碍。": "Draw a route manually or follow an existing line or track. Automatic walking routing was not verified; the vendor says guidance does not account for terrain or other obstacles.",
+  "可手动画线或沿已有骑行轨迹引导；未核实按自行车道路或路况自动算路。": "Draw a line manually or follow an existing cycling track. Automatic routing based on cycleways or road conditions was not verified.",
+  "可用手机 GPS 记录轨迹并保存为地图要素；离线定位依赖设备定位硬件和权限。": "Record tracks with the phone GPS and save them as map features. Offline positioning depends on location hardware and permissions."
 }

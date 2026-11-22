@@ -20,3 +20,23 @@ test('Locus Map renders separate offline routing and iOS Lite boundaries',async(
   }
  }
 });
+
+test('Avenza Maps renders offline maps and manual routing in both layouts and languages',async({page})=>{
+ for(const width of [1280,390]){
+  await page.setViewportSize({width,height:900});
+  await page.goto('/c/outdoor-navigation/');
+  await expect(page.locator(width===1280?'#matrix':'#card-list').locator('[data-product-id="avenza-maps"]')).toBeVisible();
+  await page.goto('/p/outdoor-navigation/avenza-maps/');
+  for(const lang of ['zh-CN','en']){
+   await page.locator(`[data-lang="${lang}"]`).click();
+   const active=lang==='en'?'en':'zh',partial=lang==='en'?'Partial':'部分支持';
+   const rows=page.locator('.feature-row');
+   await expect(rows.nth(0).locator('.feat')).toHaveAttribute('title',lang==='en'?'Yes':'支持');
+   await expect(rows.nth(1).locator('.feat')).toHaveAttribute('title',partial);
+   await expect(rows.nth(1).locator(`p .t-${active}`)).toContainText(lang==='en'?'Automatic walking routing was not verified':'未核实自动步行算路');
+   await expect(rows.nth(2).locator('.feat')).toHaveAttribute('title',partial);
+   await expect(page.locator('body')).toContainText(lang==='en'?'free tier no longer supports custom-map imports':'免费档不再支持自带地图',{useInnerText:true});
+   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+  }
+ }
+});

@@ -483,6 +483,71 @@
         "https://apps.apple.com/be/app/locus-map-lite/id6443446295"
       ],
       "collected_at": "2026-11-22"
+    },
+    {
+      "id": "avenza-maps",
+      "name": "Avenza Maps",
+      "official_url": "https://store.avenza.com/",
+      "github_url": null,
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "免费增值",
+      "price_summary": "免费档可用商店地图；Plus 适用于休闲用途，官网标价每设备每年 34.99 美元，Pro 每设备每年 169.99 美元起。具体地区和渠道价格以结账为准。",
+      "prices": [
+        {
+          "plan": "Avenza Maps Plus",
+          "price": "34.99",
+          "currency": "USD",
+          "period": "年",
+          "note": "限休闲用途；最多导入 20 张自带地图。"
+        },
+        {
+          "plan": "Avenza Maps Pro",
+          "price": "169.99",
+          "currency": "USD",
+          "period": "年",
+          "note": "每设备年价起；专业、商业或学术使用需 Pro，有效订阅可不限数量导入自带地图。"
+        }
+      ],
+      "free_tier_limits": "免费下载的应用可访问地图商店，部分地图另收费且不计入自带地图额度。免费档不再支持自带地图；Plus 最多 20 张，有效的 Pro 订阅不限数量。在 iOS 应用内购买的订阅不能转到 Android。官方隐私声明称设备 GPS 位置不在应用外明确存储或记录，并披露 Google Analytics 用量统计可在设置关闭。未实测离线定位可靠性。",
+      "summary": "面向下载地图使用场景的 iOS 和 Android 应用，可在离线地图上定位、手动画线及记录 GPS 轨迹。",
+      "features": {
+        "offline_maps": {
+          "value": "yes",
+          "note": "iOS 和 Android 可离线查看已下载的地图。商店地图和自带地理配准地图不同，后者需 Plus 或 Pro。"
+        },
+        "walking_routes": {
+          "value": "partial",
+          "note": "可手动画线规划并沿已有线路或轨迹引导；未核实自动步行算路，官方说明引导不考虑地形等障碍。"
+        },
+        "cycling_routes": {
+          "value": "partial",
+          "note": "可手动画线或沿已有骑行轨迹引导；未核实按自行车道路或路况自动算路。"
+        },
+        "track_recording": {
+          "value": "yes",
+          "note": "可用手机 GPS 记录轨迹并保存为地图要素；离线定位依赖设备定位硬件和权限。"
+        }
+      },
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "sources": [
+        "https://store.avenza.com/pages/pricing",
+        "https://store.avenza.com/pages/avenza-maps-changes-faqs",
+        "https://store.avenza.com/pages/privacy-statement",
+        "https://support.avenzamaps.com/hc/en-us/articles/4961897108628-Importing-maps-from-custom-locations",
+        "https://support.avenzamaps.com/hc/en-us/articles/4961393686420-Navigation-Tool",
+        "https://support.avenzamaps.com/hc/en-us/articles/4961518859540-Record-GPS-Tracks-Tool",
+        "https://support.avenzamaps.com/hc/en-us/articles/360035193292-Compatibility-Information",
+        "https://support.avenzamaps.com/hc/en-us/articles/360035184332-Moving-subscriptions-between-devices",
+        "https://support.avenzamaps.com/hc/en-us/articles/5050512925076-Locating-with-GPS-and-Compass"
+      ],
+      "collected_at": "2026-11-22"
     }
   ]
 }
