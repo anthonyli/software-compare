@@ -6,6 +6,8 @@ test('hand-drawn additions render at both widths with localized limitations',asy
 });
 
 test('Moho shows its trial and bitmap asset boundaries in both layouts and languages',async({page})=>{
+ // A distinct local fixture keeps incidental vote reads out of the default session bucket.
+ await page.setExtraHTTPHeaders({'CF-Connecting-IP':'198.51.100.168'});
  for(const width of [1280,390]){
   await page.setViewportSize({width,height:900});
   await page.goto('/c/animation-2d/');
