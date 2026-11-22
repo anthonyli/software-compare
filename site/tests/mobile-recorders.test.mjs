@@ -19,3 +19,21 @@ test('Riverside separates cloud recording, disputed free offers and scoped scree
  const clean=new Function(leak+fn+';return cleanPublicText;')();
  for(const raw of [p.summary,p.pricing_model,p.price_summary,p.free_tier_limits,...Object.values(p.features).map(f=>f.note)]){const key=clean(raw);assert(key);assert(en[key],key);assert.doesNotMatch(en[key],/[\u4e00-\u9fff]/);}
 });
+
+test('SonoBus distinguishes received tracks, unencrypted P2P and public broadcast routing',()=>{
+ const p=c.products.find(p=>p.id==='sonobus');assert(p);assert.equal(p.open_source,true);
+ assert.deepEqual(p.platforms,['Windows','macOS','Linux','iOS','Android']);
+ assert.equal(p.pricing_model,'免费开源');assert.match(p.license,/GPL-3[.]0.*应用商店分发例外/);assert.deepEqual(p.prices,[]);
+ assert.deepEqual(Object.values(p.features).map(f=>f.value),['yes','partial','unknown','partial']);
+ assert.match(p.summary,/接收端.*参与者的音频流.*不同于每人本地保留并上传/);
+ assert.match(p.free_tier_limits,/连接服务器.*直传且不加密.*组密码不等于加密.*1[.]7[.]2.*2023-12-11.*不代表 Linux 或手机商店版本相同/);
+ assert.match(p.features.microphone.note,/完整混音、自身和每位已连接用户.*接收的音频流/);
+ assert.match(p.features.app_audio.note,/DAW 或 OBS.*不等于直接选择并录制任意应用/);
+ assert.match(p.features.system_audio.note,/未核实内置全部系统声音录制/);
+ assert.match(p.features.broadcast.note,/不是直接推送到公开直播平台.*OBS 插件/);
+ const source=fs.readFileSync(new URL('../src/lib/display.ts',import.meta.url),'utf8');
+ const leak=source.slice(source.indexOf('const LEAK ='),source.indexOf('export const PRICE_CAVEAT'));
+ const fn=source.slice(source.indexOf('export function cleanPublicText'),source.indexOf('export function parseCurrency')).replace('export function','function').replace('(input: string | null | undefined): string','(input)');
+ const clean=new Function(leak+fn+';return cleanPublicText;')();
+ for(const raw of [p.summary,p.license,p.pricing_model,p.price_summary,p.free_tier_limits,...Object.values(p.features).map(f=>f.note)]){const key=clean(raw);assert(key);assert(en[key],key);assert.doesNotMatch(en[key],/[\u4e00-\u9fff]/);}
+});

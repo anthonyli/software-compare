@@ -417,6 +417,56 @@
         "https://support.riverside.com/hc/en-us/articles/21183599791773-Live-stream-Requirements-per-platform",
         "https://support.riverside.com/hc/en-us/articles/6904680983453-Live-stream-Start-and-stop-a-live-stream"
       ]
+    },
+    {
+      "id": "sonobus",
+      "name": "SonoBus",
+      "official_url": "https://sonobus.net/",
+      "github_url": "https://github.com/sonosaurus/sonobus",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "Android"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0（另有应用商店分发例外）",
+      "pricing_model": "免费开源",
+      "price_summary": "免费开源，不按录制分钟订阅。仓库为 GPL-3.0，应用商店分发例外有条件，第三方依赖许可另核。",
+      "summary": "低延迟组内点对点音频协作，可在接收端把混音或各参与者的音频流分别录到磁盘；不同于每人本地保留并上传原始素材。",
+      "free_tier_limits": "连接服务器用于查找组内成员，音频在参与者之间直传且不加密；组密码不等于加密。官方 1.7.2 发布记录（2023-12-11）含 Windows 和 macOS 安装包，不代表 Linux 或手机商店版本相同。Mac 下载说明列 Intel 与 Apple Silicon。未安装或实测录制、断线恢复、延迟。",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-22",
+      "features": {
+        "microphone": {
+          "value": "yes",
+          "note": "可用设备麦克风或选定音频输入；录制选项包含完整混音、自身和每位已连接用户。远端分轨录到的是接收的音频流。"
+        },
+        "app_audio": {
+          "value": "partial",
+          "note": "可通过受支持的 DAW 或 OBS 插件宿主接入已路由的声音，不等于直接选择并录制任意应用。"
+        },
+        "system_audio": {
+          "value": "unknown",
+          "note": "未核实内置全部系统声音录制；外部音频路由不等于应用自身提供全系统录制。"
+        },
+        "broadcast": {
+          "value": "partial",
+          "note": "内置的是组内点对点传输，不是直接推送到公开直播平台；官方指南支持经 OBS 插件接入后对外直播。"
+        }
+      },
+      "sources": [
+        "https://sonobus.net/",
+        "https://www.sonobus.net/sonobus_userguide.html",
+        "https://github.com/sonosaurus/sonobus/blob/1.7.2/Source/OptionsView.cpp#L205-L229",
+        "https://github.com/sonosaurus/sonobus/releases/tag/1.7.2",
+        "https://github.com/sonosaurus/sonobus/blob/1.7.2/LICENSE",
+        "https://github.com/sonosaurus/sonobus/blob/1.7.2/LICENSE_EXCEPTION"
+      ]
     }
   ]
 }
