@@ -3174,5 +3174,13 @@
   "前端热更新取决于开发服务器配置；不等于原生代码热替换或生产环境更新。": "Frontend hot reload depends on the development server configuration. It is not native-code hot swapping or a production update.",
   "可调用 Rust 命令，并通过 Android 的 Kotlin/Java 或 iOS 的 Swift 插件扩展；插件能力随平台变化。": "Call Rust commands or extend the app with Kotlin/Java plugins on Android or Swift plugins on iOS. Plugin capabilities vary by platform.",
   "WebView 不是独立浏览器部署目标；兼容的前端可单独部署，但 Tauri 原生桥接不会随之可用。": "An embedded WebView is not a browser deployment target. A compatible frontend can deploy separately without Tauri’s native bridge.",
-  "桌面目标包括 Windows、macOS 和 Linux，使用平台提供的 WebView。": "Desktop targets include Windows, macOS, and Linux and use the platform-provided WebView."
+  "桌面目标包括 Windows、macOS 和 Linux，使用平台提供的 WebView。": "Desktop targets include Windows, macOS, and Linux and use the platform-provided WebView.",
+  "使用 Web 技术构建 Android、iOS 和浏览器应用，通过插件调用原生能力。": "Build Android, iOS, and browser apps with web technologies and access native capabilities through plugins.",
+  "核心按 MIT 免费开源；应用商店账号和第三方服务的费用另计。": "The core is free and open source under MIT. App store account and third-party service costs are separate.",
+  "Capacitor 8 需 Node.js 22+；Android 需 Android Studio 和 SDK，iOS 本地构建需 macOS 与 Xcode。": "Capacitor 8 requires Node.js 22+. Android requires Android Studio and the SDK; local iOS builds require macOS and Xcode.",
+  "Android 与 iOS 是官方应用目标，可复用同一套 Web 前端。": "Android and iOS are official application targets and can share a web frontend.",
+  "CLI 可让设备从开发服务器加载前端，实时刷新取决于服务器配置；不是原生代码热替换。": "The CLI can load the frontend from a development server on the device. Live reload depends on server configuration and does not hot-swap native code.",
+  "JavaScript 可通过插件调用 Android 和 iOS 原生 API；浏览器端实现因插件而异。": "JavaScript can call native Android and iOS APIs through plugins. Browser implementations vary by plugin.",
+  "官方支持独立浏览器部署，可配置为 PWA；插件能力不一定与原生应用一致。": "Standalone browser deployment is officially supported, with PWA support when configured. Plugin capabilities can differ from native apps.",
+  "没有官方原生桌面应用目标；在桌面浏览器运行 Web/PWA 不等于桌面应用打包。": "There is no official native desktop target. Running a web app or PWA in a desktop browser is not the same as packaging a desktop application."
 }
