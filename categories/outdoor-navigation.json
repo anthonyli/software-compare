@@ -548,6 +548,68 @@
         "https://support.avenzamaps.com/hc/en-us/articles/5050512925076-Locating-with-GPS-and-Compass"
       ],
       "collected_at": "2026-11-22"
+    },
+    {
+      "id": "ride-with-gps",
+      "name": "Ride with GPS",
+      "official_url": "https://ridewithgps.com/",
+      "github_url": null,
+      "platforms": [
+        "Web",
+        "Android",
+        "iOS"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "免费增值",
+      "price_summary": "Starter 免费；Premium 提供网页和手机高级规划、逐向语音导航及个人离线地图。旧 Basic 不再向新用户开放，付费价格及续订条件以购买渠道为准。",
+      "prices": [
+        {
+          "plan": "Starter 免费档",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "Starter 可在网页规划基础路线、用手机记录骑行并与兼容设备同步；不等于免费手机高级规划或个人离线地图。手机导出的 GPX 仅含坐标，不含自定义提示或兴趣点；即使路线已下载也须联网才能导出。隐私区遮蔽分享的已记录活动轨迹，规划路线的可见性需单独设置；定价页将不限数量的隐私区列在 Premium，帮助页称所有用户均可免费设置不限数量的隐私区；免费档实际权益需确认。未进行实地测试。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-22",
+      "summary": "以骑行为主的路线规划、导航和轨迹工具，提供网页规划器及 Android、iOS 应用。",
+      "features": {
+        "offline_maps": {
+          "value": "paid",
+          "note": "个人下载离线地图和逐向语音导航属于 Premium。合资格的俱乐部成员或活动参与者可离线跟随指定路线，这不等于获得通用离线地图权益。需预先下载，离线不能新建路线。"
+        },
+        "walking_routes": {
+          "value": "yes",
+          "note": "Starter 网页基础规划提供 Walking 模式，也有 Cycling 和 Driving；Walking 不等于专门的登山路线模式。"
+        },
+        "cycling_routes": {
+          "value": "yes",
+          "note": "Starter 支持网页基础骑行路线规划；Premium 增加网页和手机高级规划和逐向语音导航。"
+        },
+        "track_recording": {
+          "value": "yes",
+          "note": "Starter 支持用手机记录骑行，并可与兼容的 Garmin、Wahoo 和其他支持设备同步；按所用设备核对连接及支持范围。"
+        }
+      },
+      "sources": [
+        "https://ridewithgps.com/",
+        "https://ridewithgps.com/pricing",
+        "https://ridewithgps.com/terms-of-service",
+        "https://support.ridewithgps.com/hc/en-us/articles/13901706641563-Basic-Plan-legacy",
+        "https://support.ridewithgps.com/hc/en-us/articles/4415462488475-Route-Planning-101",
+        "https://support.ridewithgps.com/hc/en-us/articles/4415456909339-Mobile-Route-Planner",
+        "https://support.ridewithgps.com/hc/en-us/articles/44701751904027-Offline-Maps",
+        "https://support.ridewithgps.com/hc/en-us/articles/4419560659355-Offline-Routes",
+        "https://support.ridewithgps.com/hc/en-us/articles/13004717775515-Send-to-Device-on-Mobile",
+        "https://support.ridewithgps.com/hc/en-us/articles/19380757798171-Welcome-to-Your-New-Club-Account-Let-s-get-started",
+        "https://support.ridewithgps.com/hc/en-us/articles/13542984123931-Event-Participants",
+        "https://support.ridewithgps.com/hc/en-us/articles/4419030783643-Privacy-Zones",
+        "https://support.ridewithgps.com/hc/en-us/articles/4431569889435-Privacy-Settings"
+      ]
     }
   ]
 }
