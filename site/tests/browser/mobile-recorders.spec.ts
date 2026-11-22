@@ -19,3 +19,22 @@ test('Riverside shows scoped sound capture and conflicting free offers in both l
   }
  }
 });
+
+test('SonoBus shows receiver-side tracks and public broadcast boundaries in both languages',async({page})=>{
+ for(const width of [1280,390]){
+  await page.setViewportSize({width,height:900});
+  await page.goto('/c/audio-recorders/');
+  await expect(page.locator(width===1280?'#matrix':'#card-list').locator('[data-product-id="sonobus"]')).toBeVisible();
+  await page.goto('/p/audio-recorders/sonobus/');
+  for(const lang of ['zh-CN','en']){
+   await page.locator(`[data-lang="${lang}"]`).click();
+   const active=lang==='en'?'en':'zh',rows=page.locator('.feature-row');await expect(rows).toHaveCount(4);
+   await expect(rows.nth(0).locator(`p .t-${active}`)).toContainText(lang==='en'?'streams received by the recorder':'接收的音频流');
+   await expect(rows.nth(2).locator('.feat-empty')).toHaveAttribute('title',lang==='en'?'Unknown':'未知');
+   await expect(rows.nth(3).locator('.feat')).toHaveAttribute('title',lang==='en'?'Partial':'部分支持');
+   await expect(rows.nth(3).locator(`p .t-${active}`)).toContainText(lang==='en'?'not direct output to public streaming platforms':'不是直接推送到公开直播平台');
+   await expect(page.locator('body')).toContainText(lang==='en'?'a group password does not encrypt it':'组密码不等于加密',{useInnerText:true});
+   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+  }
+ }
+});
