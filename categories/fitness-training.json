@@ -416,6 +416,72 @@
         "https://www.boostcamp.app/terms-conditions",
         "https://www.boostcamp.app/pro"
       ]
+    },
+    {
+      "id": "fitnotes",
+      "name": "FitNotes",
+      "official_url": "https://www.fitnotesapp.com/",
+      "github_url": null,
+      "platforms": [
+        "Android"
+      ],
+      "open_source": false,
+      "license": "未核实开源授权",
+      "pricing_model": "免费增值",
+      "price_summary": "基础应用免费、无广告。FitNotes Supporter 是单独购买的可选附加应用，Google Play 美国区参考价为一次性 USD 6.99；以当地商店为准。",
+      "prices": [
+        {
+          "plan": "免费档",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        },
+        {
+          "plan": "FitNotes Supporter",
+          "price": 6.99,
+          "currency": "USD",
+          "period": "once"
+        }
+      ],
+      "free_tier_limits": "无需注册 FitNotes 账号，训练数据默认保存在设备上。Supporter 解锁逐个动作设置公斤或磅，以及高级动作计量类型。可将备份存到本机，或手动分享至 Google Drive、Dropbox；恢复完整备份会覆盖设备现有记录，CSV 仅供查看和分析，不能用于恢复。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "James Gay 开发的 Android 训练日记，可记录重量、次数、距离和时长，保存常用训练例程并查看进度。与 iOS 上的同名应用不是同一产品。",
+      "features": {
+        "workout_routines": {
+          "value": "yes",
+          "note": "可保存包含预设组数的常用训练例程，并加入当天训练记录。"
+        },
+        "body_tracking": {
+          "value": "yes",
+          "note": "Body Tracker 可记录体重、体脂率、腰围和自定义指标，并查看趋势。"
+        },
+        "nutrition_log": {
+          "value": "partial",
+          "note": "可手动把热量和宏量营养素记为自定义数值指标；这不是专门的食物日记或食物数据库。"
+        },
+        "self_host": {
+          "value": "na",
+          "note": "这是本地 Android 客户端，不是可自行部署的服务。"
+        },
+        "cloud_sync": {
+          "value": "no",
+          "note": "官方文档描述备份和还原，不是持续跨设备同步。版本 25 支持 Android 系统的 Google One 备份（取决于设备设置）；原有的应用内 Google Drive 自动备份仍为可选功能，官方称未来可能移除。"
+        }
+      },
+      "sources": [
+        "https://www.fitnotesapp.com/",
+        "https://www.fitnotesapp.com/routines/",
+        "https://www.fitnotesapp.com/body_tracker/",
+        "https://www.fitnotesapp.com/settings/",
+        "https://www.fitnotesapp.com/exercises/",
+        "https://www.fitnotesapp.com/privacy/",
+        "https://www.fitnotesapp.com/release_25/",
+        "https://play.google.com/store/apps/details?gl=us&hl=en&id=com.github.jamesgay.fitnotes",
+        "https://play.google.com/store/apps/details?id=com.fitnotesapp.fitnotessupporter&hl=en_US&gl=US"
+      ],
+      "collected_at": "2026-11-22"
     }
   ]
 }
