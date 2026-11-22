@@ -486,6 +486,69 @@
         "https://github.com/Orama-Interactive/Pixelorama/releases/tag/v1.2.4"
       ],
       "collected_at": "2026-11-15"
+    },
+    {
+      "id": "moho",
+      "name": "Moho 14",
+      "official_url": "https://moho.lostmarble.com/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "一次性购买 / 限时试用",
+      "price_summary": "官网数字版美元标价：Debut 14 为 59.99 美元，Pro 14 为 399.99 美元，均为一次性购买。",
+      "prices": [
+        {
+          "plan": "Moho Debut 14",
+          "price": "59.99",
+          "currency": "USD",
+          "period": "一次性",
+          "note": "官网数字版标价。"
+        },
+        {
+          "plan": "Moho Pro 14",
+          "price": "399.99",
+          "currency": "USD",
+          "period": "一次性",
+          "note": "官网数字版标价。"
+        }
+      ],
+      "summary": "面向 2D 角色动画的矢量绘制和骨骼绑定工具，可导入 PSD 位图素材制作动画；Debut 和 Pro 的功能范围不同。",
+      "free_tier_limits": "Pro 试用先提供 15 天，提交邮箱可再延长 15 天；不能导入外部格式或将动画导出为其他格式，有 Demo Mode 水印。官方支持 Windows 和 macOS，Moho 14 兼容 Apple Silicon；下载页截至 2026-11-16 列 14.5.1。未实测 M4 性能。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "features": {
+        "vector_animation": {
+          "value": "yes",
+          "note": "可在应用内绘制矢量并制作动画；Pro 支持更细的曲线、笔画和蒙版控制。"
+        },
+        "raster_animation": {
+          "value": "yes",
+          "note": "支持导入、绑定及动画化 PSD 位图图层，Debut 最多导入 10 个 PSD 图层。不将导入素材动画视为原生位图逐帧绘画能力。"
+        },
+        "bone_animation": {
+          "value": "yes",
+          "note": "支持骨骼绑定；Debut 每个项目最多 2 个 Smart Bones 和 1 个网格，Pro 提供更丰富的绑定控制。"
+        },
+        "node_effects": {
+          "value": "unknown",
+          "note": "官方资料介绍图层和渲染特效，未确认通用节点式特效图。"
+        }
+      },
+      "sources": [
+        "https://moho.lostmarble.com/pages/buy",
+        "https://moho.lostmarble.com/pages/try",
+        "https://moho.lostmarble.com/pages/download",
+        "https://moho.lostmarble.com/products/moho-debut-14",
+        "https://moho.lostmarble.com/products/moho-pro-14",
+        "https://moho.lostmarble.com/pages/features"
+      ],
+      "collected_at": "2026-11-22"
     }
   ]
 }
