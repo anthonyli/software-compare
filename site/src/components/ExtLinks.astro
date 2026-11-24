@@ -34,14 +34,14 @@ const wrap = stacked
 <span class={wrap}>
   {official && (
     iconOnly ? (
-      <a href={official} target="_blank" rel="noopener noreferrer" class={icon} aria-label={ui.zh.official} title={ui.zh.official} data-i18n="aria-label" data-zh={ui.zh.official} data-en={ui.en.official} onclick="event.stopPropagation()">
+      <a data-selection-official href={official} target="_blank" rel="noopener noreferrer" class={icon} aria-label={ui.zh.official} title={ui.zh.official} data-i18n="aria-label" data-zh={ui.zh.official} data-en={ui.en.official} onclick="event.stopPropagation()">
         <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
           <path d="M6 3.5H3.5A1.5 1.5 0 0 0 2 5v7.5A1.5 1.5 0 0 0 3.5 14H11a1.5 1.5 0 0 0 1.5-1.5V10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
           <path d="M8 8l6-6M10 2h4v4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </a>
     ) : (
-      <a href={official} target="_blank" rel="noopener noreferrer" class={primaryOfficial ? "btn btn-primary" : (size === "md" ? "btn btn-secondary" : "btn btn-secondary btn-sm")}>
+      <a data-selection-official href={official} target="_blank" rel="noopener noreferrer" class={primaryOfficial ? "btn btn-primary" : (size === "md" ? "btn btn-secondary" : "btn btn-secondary btn-sm")}>
         <T zh={ui.zh.official} en={ui.en.official} />
         <span aria-hidden="true">↗</span>
       </a>

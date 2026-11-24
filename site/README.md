@@ -152,3 +152,16 @@ npm run test:e2e
 不会清理日常开发库或远程数据库。CI 使用相同测试。
 
 许可与数据来源说明见 [`../README.md`](../README.md) 和 [`../LICENSE`](../LICENSE)。
+
+## AI 来访与选型统计
+
+正式域名的可识别 AI 来源按标签页会话统计。入口取已知 AI 平台的 `utm_source` 或外部来源域名，归因窗口为最后一次浏览页面或选型操作后的 30 分钟。普通搜索、直接访问和来源丢失的访问不会新建 AI 会话。AI 平台的分享链接也可能被识别。此数衡量来访会话，同一个人可以产生多次会话。
+
+在本地用 `/guides/mac-free-screen-recorders/?utm_source=chatgpt.com` 验证。验收正式站时在第一次打开的链接附加 `compare_test=1`，该标签页后续浏览将排除在这项统计之外。预览域名不会写入此表。
+
+在 `site/` 执行以下只读查询，可查看上海时区本周及前三周的总数（total），以及按来源与入口页拆分的明细（detail）。按周看会话数、发生筛选/打开详情/访问官网的会话数，以及至少做过一种操作的会话数和占比。每一行的三种行为可以重叠。上线前的访问无法回补。
+
+```sh
+npx wrangler d1 execute DB --local --command="$(cat reports/ai-visits.sql)"
+npx wrangler d1 execute DB --remote --config wrangler.deploy.json --command="$(cat reports/ai-visits.sql)"
+```

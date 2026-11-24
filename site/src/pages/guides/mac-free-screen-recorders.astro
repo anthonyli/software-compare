@@ -1,0 +1,144 @@
+---
+import FilterMenu from "../../components/FilterMenu.astro";
+import Layout from "../../layouts/Layout.astro";
+import T from "../../components/T.astro";
+import { getCategory } from "../../lib/load-data";
+
+const category = getCategory("screen-recorders")!;
+const title = { zh: "Mac 免费录屏软件怎么选？", en: "Which free Mac screen recorder fits?" };
+const description = {
+  zh: "按 macOS 版本、系统声音、麦克风和导出水印，对照 OBS Studio、QuickRecorder 和 Kap 的免费录制条件。",
+  en: "Compare OBS Studio, QuickRecorder and Kap by macOS version, desktop audio, microphone capture and free export limits.",
+};
+const options = [
+  { value: "all", zh: "全部需求", en: "All needs" },
+  { value: "audio", zh: "免驱录系统声音和旁白", en: "Desktop audio and narration without drivers" },
+  { value: "watermark", zh: "官方确认无水印", en: "Confirmed watermark-free" },
+  { value: "gif", zh: "直接导出 GIF", en: "Built-in GIF export" },
+];
+const picks = [
+  {
+    id: "obs-studio", needs: ["audio", "watermark"],
+    use: { zh: "录课程、演示和长视频", en: "Lessons, demos and long recordings" },
+    audio: { zh: "macOS 13 及以上搭配 OBS 30 或更高版本，可直接录下桌面或单个应用的声音，再添加麦克风录旁白。", en: "On macOS 13+ with OBS 30+, capture desktop or app audio directly and add a microphone for narration." },
+    limits: { zh: "免费录制无水印，无免费版时长上限。输出视频后，需用其他工具制作 GIF。", en: "Record without a watermark or a free-tier time limit. Use a separate tool to convert the video to GIF." },
+    version: { zh: "macOS 12 需选择兼容的旧版 OBS，并配置额外的音频软件才能内录。", en: "On macOS 12, use a compatible older OBS release and additional audio software for desktop sound." },
+    sources: [
+      { href: "https://obsproject.com/kb/macos-desktop-audio-capture-guide", zh: "系统声音指南", en: "Desktop audio guide" },
+      { href: "https://obsproject.com/help/", zh: "免费政策", en: "Free-use policy" },
+      { href: "https://obsproject.com/kb/macos-versions", zh: "版本兼容表", en: "Version support" },
+    ],
+  },
+  {
+    id: "quickrecorder", needs: ["audio"],
+    use: { zh: "录一个窗口，边操作边讲解", en: "Narrate a single window" },
+    audio: { zh: "macOS 13 及以上可免驱录制应用声音，也可同时录麦克风。系统声音与麦克风可以分轨保存。", en: "On macOS 13+, record app audio without a driver and capture your microphone alongside it. The two sources can be saved as separate tracks." },
+    limits: { zh: "开源免费下载。作者未单列导出水印和单次录制时长，长课开录前可先试导出一段。", en: "Free and open source. The publisher does not specify watermark or duration limits. Try a short export before a long session." },
+    version: { zh: "macOS 12.3 至 12.x 可用兼容的 1.6.x 版。免驱内录需要 macOS 13 或更高版本。", en: "For macOS 12.3–12.x, use a compatible 1.6.x release. Driver-free app audio requires macOS 13+." },
+    sources: [
+      { href: "https://lihaoyun6.github.io/quickrecorder/", zh: "系统要求", en: "System requirements" },
+      { href: "https://github.com/lihaoyun6/QuickRecorder#faq", zh: "音轨说明", en: "Audio track FAQ" },
+      { href: "https://github.com/lihaoyun6/QuickRecorder/releases/tag/1.6.1", zh: "旧系统版本", en: "Older macOS release" },
+    ],
+  },
+  {
+    id: "kap", needs: ["gif"],
+    use: { zh: "把一段操作做成 GIF", en: "Turn a short workflow into a GIF" },
+    audio: { zh: "官网列有音频录制选项。系统声音的插件方案需要额外配置，麦克风与系统声音同时录制的组合尚未核实。GIF 格式本身没有声音。", en: "Kap offers optional audio. Its desktop-audio plugin needs extra setup. Simultaneous microphone and desktop capture is unverified. GIF itself carries no sound." },
+    limits: { zh: "可免费导出 GIF、MP4、WebM 和 APNG。官方未单列导出水印或单次录制时长。", en: "Export GIF, MP4, WebM or APNG for free. The publisher does not specify a watermark policy or maximum recording length." },
+    version: { zh: "要求 macOS 12 或更高版本。", en: "Requires macOS 12 or later." },
+    sources: [
+      { href: "https://getkap.co/", zh: "格式与系统要求", en: "Formats and requirements" },
+      { href: "https://github.com/karaggeorge/kap-soundflower", zh: "系统声音插件", en: "Desktop-audio plugin" },
+    ],
+  },
+].map(pick => {
+  const product = category.products.find(product => product.id === pick.id);
+  if (!product?.official_url) throw new Error("Missing screen recorder: " + pick.id);
+  return { ...pick, product };
+});
+---
+<Layout title={title.zh} titleEn={title.en} description={description.zh} descriptionEn={description.en} canonicalPath="/guides/mac-free-screen-recorders/">
+  <article class="mx-auto max-w-5xl px-4 py-8 sm:px-6 sm:py-12">
+    <nav class="text-sm text-muted" aria-label="Breadcrumb">
+      <a class="prose-link" href={category.href}><T zh="电脑录屏软件" en="Screen recorders" /></a>
+    </nav>
+    <header class="my-6 max-w-3xl">
+      <h1 class="text-3xl font-extrabold tracking-tight sm:text-5xl"><T {...title} /></h1>
+      <p class="mt-4 leading-relaxed"><T zh="录带系统声音的长课，先看 OBS Studio。录一个窗口并配旁白，可以看 QuickRecorder。要给操作文档配一张动图，可以用 Kap。" en="Start with OBS Studio for a long lesson with desktop audio, QuickRecorder for a narrated window, or Kap for an animated GIF." /></p>
+      <p class="mt-3 text-sm text-muted"><T zh="依据官方资料核对" en="Official sources checked" /> · <time datetime="2026-11-23">2026-11-23</time></p>
+    </header>
+    <form id="guide-filters" hidden class="guide-toolbar filter-bar mb-4" aria-label="筛选" data-i18n="aria-label" data-zh="筛选" data-en="Filters">
+      <div class="filter-bar-inner">
+        <FilterMenu name="version" label="macOS" value="all" options={[
+          { value: "all", label: "全部版本", labelEn: "All versions" },
+          { value: "modern", label: "macOS 13+" },
+          { value: "legacy", label: "macOS 12.3–12.x" },
+          { value: "early", label: "macOS 12.0–12.2" },
+        ]} />
+        <FilterMenu name="need" label="录制需求" labelEn="Recording need" value="all"
+          options={options.map(o => ({ value: o.value, label: o.zh, labelEn: o.en }))} />
+        <span aria-live="polite" aria-atomic="true" class="ml-auto text-xs text-muted tabular-nums">
+          <T zh="符合条件" en="Matching tools" /> · <span id="guide-count">{picks.length}</span>
+        </span>
+      </div>
+    </form>
+    <div class="divide-y divide-line rounded-xl border border-line bg-cream px-5 sm:px-7">
+      {picks.map(({ product, needs, use, audio, limits, version, sources }) => (
+        <section data-recorder={product.id} data-needs={needs.join(" ")} class="py-6">
+          <h2 class="text-2xl font-bold">{product.name}</h2>
+          <p class="mt-1 text-base font-medium"><T {...use} /></p>
+          <dl class="my-4 grid gap-3 leading-relaxed sm:grid-cols-[9rem_1fr] sm:gap-y-2">
+            <dt><T zh="系统声音与麦克风" en="Sound and microphone" /></dt><dd><T {...audio} /></dd>
+            <dt><T zh="免费导出" en="Free exports" /></dt><dd><T {...limits} /></dd>
+            <dt><T zh="系统版本" en="macOS versions" /></dt><dd><T {...version} /></dd>
+          </dl>
+          <div class="flex flex-wrap gap-2">
+            <a class="btn btn-secondary btn-sm" href={product.href}><T zh="产品详情" en="Product details" /></a>
+            <a class="btn btn-secondary btn-sm" data-selection-official href={product.official_url} target="_blank" rel="noopener noreferrer"><T zh="访问官网" en="Visit website" /></a>
+          </div>
+          <p class="mt-3 flex flex-wrap gap-x-3 gap-y-1 text-sm text-muted">{sources.map(s => <a class="prose-link" href={s.href}><T {...s} /></a>)}</p>
+        </section>
+      ))}
+      <div id="guide-empty" hidden class="py-6">
+        <p><T zh="这三款中，尚未核实有工具满足这组条件。" en="None of these three tools is verified for this combination." /></p>
+        <button type="reset" form="guide-filters" class="btn btn-secondary btn-sm mt-3"><T zh="清除筛选" en="Clear filters" /></button>
+      </div>
+    </div>
+  </article>
+</Layout>
+
+<style>
+  [hidden] { display: none !important; }
+  .guide-toolbar { padding-inline: 0; }
+  .guide-toolbar :global(.fmenu-panel) { width: max-content; max-width: min(20rem, 100% + 6rem); }
+  @media (max-width: 639px) {
+    .guide-toolbar { position: relative; top: auto; }
+    .guide-toolbar :global(.filter-bar-inner) { display: grid; grid-template-columns: minmax(0, 1fr); }
+    .guide-toolbar :global(.fmenu-btn) { width: 100%; white-space: normal; text-align: start; }
+    .guide-toolbar :global(.fmenu-caret) { flex: none; margin-left: auto; }
+    .guide-toolbar :global(.fmenu-panel) { width: 100%; max-width: none; }
+  }
+  dt { color: var(--color-muted); font-size: .875rem; }
+  @media (max-width: 639px) { dd { margin-top: -.65rem; } }
+</style>
+<script>
+  const form = document.querySelector<HTMLFormElement>("#guide-filters")!;
+  const cards = [...document.querySelectorAll<HTMLElement>("[data-recorder]")];
+  function apply() {
+    const values = new FormData(form);
+    const need = String(values.get("need"));
+    const version = values.get("version");
+    const legacyAudio = (version === "legacy" || version === "early") && need === "audio";
+    for (const card of cards) {
+      const incompatible = version === "early" && card.dataset.recorder === "quickrecorder";
+      card.hidden = incompatible || legacyAudio || (need !== "all" && !card.dataset.needs?.split(" ").includes(need));
+    }
+    const count = cards.filter(card => !card.hidden).length;
+    document.querySelector("#guide-count")!.textContent = String(count);
+    document.querySelector<HTMLElement>("#guide-empty")!.hidden = count > 0;
+  }
+  form.hidden = false;
+  form.addEventListener("change", apply);
+  apply();
+</script>

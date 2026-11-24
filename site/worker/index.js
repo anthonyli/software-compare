@@ -65,10 +65,51 @@ async function readBody(request) {
   }
   return JSON.parse(text + decoder.decode());
 }
+const aiSources = new Set(['chatgpt', 'perplexity', 'claude', 'gemini', 'copilot', 'deepseek', 'doubao', 'kimi', 'yuanbao']);
+const selectionActions = new Set(['filtered', 'opened_product', 'visited_official']);
+const landingPath = /^\/(?:|(?:terms|privacy)\/|(?:c|guides)\/[a-z0-9-]+\/|p\/[a-z0-9-]+\/[a-z0-9-]+\/)$/;
+const uuid = /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/;
+
+async function recordAiVisit(request, env, url) {
+  if (request.method !== 'POST') return json({error:'method_not_allowed'}, 405, {Allow:'POST'});
+  if (request.headers.get('Origin') !== url.origin || request.headers.get('Sec-Fetch-Site') === 'cross-site') {
+    return json({error:'cross_origin'}, 403);
+  }
+  // Production data is scoped to the Compare host. Local Pages uses a separate D1 database.
+  if (!['compare.sangmu.me', 'localhost', '127.0.0.1', '[::1]'].includes(url.hostname)) {
+    return new Response(null, {status:204});
+  }
+  if (!request.headers.get('Content-Type')?.startsWith('application/json')) return json({error:'invalid_content_type'}, 415);
+  let body;
+  try { body = await readBody(request); } catch { return json({error:'invalid_body'}, 400); }
+  if (!body || typeof body.id !== 'string' || !uuid.test(body.id) || !aiSources.has(body.source)
+      || typeof body.landing !== 'string' || body.landing.length > 180 || !landingPath.test(body.landing)
+      || !Array.isArray(body.actions) || body.actions.length > selectionActions.size
+      || !body.actions.every(action => selectionActions.has(action))) {
+    return json({error:'invalid_visit'}, 400);
+  }
+  if (!env.DB || !env.COOKIE_SECRET || env.COOKIE_SECRET.length < 32) return json({error:'not_configured'}, 503);
+  try {
+    if (!await allow(request, env, 'ai-visits', 180, 60)) return json({error:'rate_limited'}, 429, {'Retry-After':'60'});
+    await env.DB.prepare(`INSERT INTO ai_visits (session_id,source,landing_path,filtered,opened_product,visited_official)
+      VALUES (?,?,?,?,?,?)
+      ON CONFLICT(session_id) DO UPDATE SET
+        filtered = max(filtered, excluded.filtered),
+        opened_product = max(opened_product, excluded.opened_product),
+        visited_official = max(visited_official, excluded.visited_official)
+      WHERE source = excluded.source AND landing_path = excluded.landing_path`)
+      .bind(body.id, body.source, body.landing, Number(body.actions.includes('filtered')),
+        Number(body.actions.includes('opened_product')), Number(body.actions.includes('visited_official'))).run();
+    return new Response(null, {status:204, headers:{'Cache-Control':'no-store'}});
+  } catch {
+    return json({error:'temporarily_unavailable'}, 503);
+  }
+}
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     if (!url.pathname.startsWith('/api/')) return env.ASSETS.fetch(request);
+    if (url.pathname === '/api/ai-visits') return recordAiVisit(request, env, url);
     if (url.pathname !== '/api/votes') return json({error:'not_found'},404);
     if (!['GET','PUT'].includes(request.method)) return json({error:'method_not_allowed'},405,{Allow:'GET, PUT'});
     if (!env.DB || !env.COOKIE_SECRET || env.COOKIE_SECRET.length < 32) return json({error:'not_configured'},503);
