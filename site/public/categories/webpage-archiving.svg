@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" fill="none" role="img" aria-hidden="true">
+  <rect width="480" height="260" fill="#E6F3ED"/>
+  <rect width="480" height="260" fill="url(#wash-webpage-archiving)" opacity=".85"/>
+  <defs>
+    <linearGradient id="wash-webpage-archiving" x1="0" y1="0" x2="480" y2="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F0F9F3" stop-opacity="0"/>
+      <stop offset="1" stop-color="#CCDCD2" stop-opacity=".28"/>
+    </linearGradient>
+    <pattern id="dots-webpage-archiving" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="translate(18,16)">
+      <circle cx="1.2" cy="1.2" r="1.05" fill="#111111" opacity=".35"/>
+    </pattern>
+    <filter id="soft-webpage-archiving" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#111111" flood-opacity=".10"/>
+    </filter>
+  </defs>
+  <ellipse cx="40" cy="210" rx="70" ry="45" fill="#FFFFFF" opacity=".35"/>
+  <ellipse cx="440" cy="36" rx="70" ry="48" fill="#FFFFFF" opacity=".35"/>
+  <rect width="480" height="260" fill="url(#dots-webpage-archiving)" opacity=".45"/>
+  <g filter="url(#soft-webpage-archiving)">
+    <rect x="116" y="54" width="250" height="154" rx="22" fill="#CBDDD2"/>
+    <rect x="96" y="43" width="250" height="154" rx="22" fill="#FFFFFF"/>
+    <path d="M96 85h250" stroke="#DCE7E0" stroke-width="3"/>
+    <g fill="#111111">
+      <circle cx="119" cy="65" r="3.4"/><circle cx="131" cy="65" r="3.4"/><circle cx="143" cy="65" r="3.4"/>
+    </g>
+    <rect x="120" y="104" width="81" height="59" rx="10" fill="#D9EAE0"/>
+    <path d="m127 153 19-17 13 10 16-19 19 26" stroke="#627C6E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M219 111h84m-84 17h70m-70 17h46" stroke="#B8CDC1" stroke-width="6" stroke-linecap="round"/>
+    <path d="M293 146a10 10 0 0 1 10-10h40l25 25v50a10 10 0 0 1-10 10h-55a10 10 0 0 1-10-10z" fill="#FFFFFF"/>
+    <path d="M343 136v20a5 5 0 0 0 5 5h20" fill="#D9EAE0"/>
+    <path d="M330 168v27m-9-9 9 9 9-9m-18 18h18" stroke="#111111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
