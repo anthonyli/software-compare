@@ -32,7 +32,7 @@ export const categoryGroups: { id: string; name: string; slugs: string[] }[] = [
   {
     id: "files",
     name: "文件工具",
-    slugs: ["archivers", "downloaders", "file-sync"],
+    slugs: ["archivers", "downloaders", "file-sync", "webpage-archiving"],
   },
   {
     id: "system",
@@ -74,6 +74,7 @@ export const categoryMonograms: Record<string, string> = {
   "cli-frameworks": "令",
   "tui-frameworks": "端",
   "mobile-frameworks": "框",
+  "webpage-archiving": "存",
   "mobile-app-ui-testing": "测",
   "mobile-development-ides": "移",
   "http-debugging": "调",
@@ -135,6 +136,7 @@ export const categoryTints: Record<string, string> = {
   "cli-frameworks": "#E6F2EB",
   "tui-frameworks": "#E8EFF8",
   "mobile-frameworks": "#F1E8F5",
+  "webpage-archiving": "#E6F3ED",
   "mobile-app-ui-testing": "#E6F0F9",
   "mobile-development-ides": "#E7EDF9",
   "http-debugging": "#F7EBDD",
