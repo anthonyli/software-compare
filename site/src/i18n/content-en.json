@@ -3312,5 +3312,6 @@
   "作者未单列导出水印或单次录制时长。": "The publisher does not specify a watermark policy or a recording time limit.",
   "作者 FAQ 确认可同时录制系统声音和麦克风，并可分轨保存。": "The author’s FAQ confirms simultaneous desktop and microphone capture with separate audio tracks.",
   "开源免费，macOS 12.3 起有兼容版本。免驱录应用声音需要 macOS 13 或更高版本。": "Free and open source, with a compatible release for macOS 12.3 and later. Driver-free app audio requires macOS 13 or later.",
-  "基于 ScreenCaptureKit 的轻量 Mac 录屏工具，可录窗口、应用声音和麦克风。": "Lightweight Mac recorder built on ScreenCaptureKit for window, app audio and microphone capture."
+  "基于 ScreenCaptureKit 的轻量 Mac 录屏工具，可录窗口、应用声音和麦克风。": "Lightweight Mac recorder built on ScreenCaptureKit for window, app audio and microphone capture.",
+  "独立的 clap_complete 4.6.11 可在编译时或运行时生成静态 Shell 补全脚本；运行时生成静态脚本不等于动态计算补全候选。动态补全需显式启用默认关闭的不稳定功能 unstable-dynamic。": "The separate clap_complete 4.6.11 crate generates static shell completion scripts at build time or runtime. Generating a static script at runtime is not the same as computing completion candidates dynamically. Dynamic completion requires explicitly enabling the unstable unstable-dynamic feature, which is off by default."
 }
