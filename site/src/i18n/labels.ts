@@ -14,6 +14,7 @@ export const categoryNames: Record<string, { zh: string; en: string }> = {
   "cli-frameworks": { zh: "CLI 开发框架", en: "CLI development frameworks" },
   "tui-frameworks": { zh: "终端交互界面框架", en: "Terminal UI frameworks" },
   "terminal-emulators": { zh: "终端模拟器", en: "Terminal emulators" },
+  "desktop-virtual-machines": { zh: "桌面虚拟机", en: "Desktop virtual machines" },
   "mobile-frameworks": { zh: "跨平台移动开发框架", en: "Cross-platform mobile frameworks" },
   "mobile-development-ides": { zh: "移动开发 IDE", en: "Mobile development IDEs" },
   "http-debugging": { zh: "HTTP(S) 抓包与调试", en: "HTTP(S) capture and debugging" },
