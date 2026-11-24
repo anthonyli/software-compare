@@ -107,7 +107,7 @@
         },
         "shell_completion": {
           "value": "partial",
-          "note": "额外使用官方 clap_complete crate。"
+          "note": "独立的 clap_complete 4.6.11 可在编译时或运行时生成静态 Shell 补全脚本；运行时生成静态脚本不等于动态计算补全候选。动态补全需显式启用默认关闭的不稳定功能 unstable-dynamic。"
         },
         "interactive_prompts": {
           "value": "unknown",
@@ -117,7 +117,9 @@
       "sources": [
         "https://github.com/clap-rs/clap/blob/v4.6.9/Cargo.toml",
         "https://docs.rs/clap/latest/clap/",
-        "https://docs.rs/clap_complete/latest/clap_complete/"
+        "https://docs.rs/clap_complete/latest/clap_complete/",
+        "https://docs.rs/clap_complete/4.6.11/clap_complete/",
+        "https://github.com/clap-rs/clap/blob/clap_complete-v4.6.11/clap_complete/Cargo.toml"
       ]
     },
     {

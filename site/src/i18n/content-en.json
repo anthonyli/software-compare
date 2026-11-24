@@ -3356,5 +3356,6 @@
   "内置 ios.simulator，需 macOS 和 Xcode；使用面向模拟器构建的应用。": "The built-in ios.simulator driver requires macOS and Xcode, with an app build for the simulator.",
   "内置 iOS 驱动是模拟器驱动，20.51.3 不支持 iOS 真机。": "The built-in iOS driver is for simulators. Detox 20.51.3 does not support physical iOS devices.",
   "有应用内 WebView 专用 API；部分选择器只支持 iOS，不表示可测试独立浏览器或两端功能完全一致。": "Dedicated APIs target in-app WebViews. Some selectors are iOS-only; this does not support testing a standalone browser or imply identical APIs across platforms.",
-  "原生界面可用测试标识、文字等匹配，WebView 使用独立定位 API。": "Native elements can be matched by test identifier, text, and other properties. WebViews use separate locating APIs."
+  "原生界面可用测试标识、文字等匹配，WebView 使用独立定位 API。": "Native elements can be matched by test identifier, text, and other properties. WebViews use separate locating APIs.",
+  "独立的 clap_complete 4.6.11 可在编译时或运行时生成静态 Shell 补全脚本；运行时生成静态脚本不等于动态计算补全候选。动态补全需显式启用默认关闭的不稳定功能 unstable-dynamic。": "The separate clap_complete 4.6.11 crate generates static shell completion scripts at build time or runtime. Generating a static script at runtime is not the same as computing completion candidates dynamically. Dynamic completion requires explicitly enabling the unstable unstable-dynamic feature, which is off by default."
 }
