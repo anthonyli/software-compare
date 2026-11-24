@@ -1,0 +1,133 @@
+{
+  "category_slug": "webpage-archiving",
+  "category_name_zh": "网页离线存档",
+  "collected_at": "2026-11-23",
+  "timezone": "Asia/Shanghai",
+  "notes": "比较将单个网页保存成可离线阅读文件的工具，不比较整站镜像、网页服务部署或普通压缩包。存档可能包含登录后的私密内容；打开或分享前请检查。",
+  "features": [
+    {
+      "key": "single_html",
+      "label": "单文件 HTML"
+    },
+    {
+      "key": "rendered_capture",
+      "label": "捕获已渲染网页"
+    },
+    {
+      "key": "cli",
+      "label": "命令行批处理"
+    },
+    {
+      "key": "mhtml",
+      "label": "MHTML 输入与输出"
+    },
+    {
+      "key": "local_save",
+      "label": "本地保存"
+    }
+  ],
+  "products": [
+    {
+      "id": "monolith",
+      "name": "Monolith",
+      "official_url": "https://github.com/Y2Z/monolith",
+      "github_url": "https://github.com/Y2Z/monolith",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "CC0-1.0",
+      "pricing_model": "免费开源",
+      "price_summary": "本地 Monolith 按 CC0 1.0 发布，免费使用；独立云端服务不包含在本比较中。",
+      "prices": [],
+      "free_tier_limits": "官方 v2.12.0 提供 Windows、macOS 和 Linux 的桌面 GUI 与 CLI 发布包。Homebrew 的 monolith 条目是命令行安装方式，不等于已装 GUI。未在目标网页实测。",
+      "github_stars": null,
+      "latest_release": "v2.12.0",
+      "latest_release_date": "2026-11-02",
+      "summary": "开源网页存档工具，可将网页及可取得的资源打包成一个 HTML 文件。官方发布提供桌面图形界面与命令行版本。",
+      "features": {
+        "single_html": {
+          "value": "yes",
+          "note": "将网页及可获取的 CSS、图片、字体和脚本嵌入一个 HTML；存档时不执行网页脚本；若文件保留脚本，打开时仍可能按浏览器策略运行，不表示在线服务可用。"
+        },
+        "rendered_capture": {
+          "value": "partial",
+          "note": "Monolith 自身不执行 JavaScript；动态内容需借助外部浏览器先渲染并导出 DOM，不能保证还原所有互动。"
+        },
+        "cli": {
+          "value": "yes",
+          "note": "官方 CLI 可用于脚本化保存；GUI 是另一个发布包。"
+        },
+        "mhtml": {
+          "value": "yes",
+          "note": "从 v2.12.0 起支持读取浏览器保存的 MHTML；CLI 也可选择输出 MHTML，而不是单文件 HTML。"
+        },
+        "local_save": {
+          "value": "yes",
+          "note": "命令行可输出到本地文件，读取在线网页和资源仍需要网络。"
+        }
+      },
+      "sources": [
+        "https://github.com/Y2Z/monolith/blob/v2.12.0/README.md",
+        "https://github.com/Y2Z/monolith/blob/v2.12.0/LICENSE",
+        "https://github.com/Y2Z/monolith/releases/tag/v2.12.0",
+        "https://formulae.brew.sh/formula/monolith"
+      ],
+      "collected_at": "2026-11-23"
+    },
+    {
+      "id": "singlefile",
+      "name": "SingleFile",
+      "official_url": "https://github.com/gildas-lormeau/SingleFile",
+      "github_url": "https://github.com/gildas-lormeau/SingleFile",
+      "platforms": [
+        "Chrome",
+        "Firefox",
+        "Edge",
+        "Safari"
+      ],
+      "open_source": true,
+      "license": "AGPL-3.0",
+      "pricing_model": "免费开源",
+      "price_summary": "项目源码以 AGPL-3.0 发布；扩展和 CLI 不按保存次数订阅，第三方服务不包含在本比较中。",
+      "prices": [],
+      "free_tier_limits": "扩展支持 Chrome、Firefox、Edge 和 Safari 等浏览器，商店版本可能不同。默认本地处理和保存，捕获仍可能请求未缓存资源；不要假定在线表单或动态服务能离线运行。",
+      "github_stars": null,
+      "latest_release": "v1.40.0",
+      "latest_release_date": "2026-11-21",
+      "summary": "从浏览器保存当前网页为单文件 HTML 的开源扩展。也有独立的 SingleFile CLI，使用浏览器完成捕获。",
+      "features": {
+        "single_html": {
+          "value": "yes",
+          "note": "将当前页面及可保存资源打包为单个 HTML 文件。"
+        },
+        "rendered_capture": {
+          "value": "yes",
+          "note": "扩展可捕获当前浏览器中的已渲染页面，仍受浏览器权限、页面状态和资源可取得性限制。"
+        },
+        "cli": {
+          "value": "yes",
+          "note": "独立 SingleFile CLI 可用浏览器进行自动化捕获，不是扩展本身的终端命令。"
+        },
+        "mhtml": {
+          "value": "unknown",
+          "note": "此处对比扩展的单文件 HTML 工作流；未核实内置 MHTML 导入与导出。"
+        },
+        "local_save": {
+          "value": "yes",
+          "note": "隐私说明称默认在设备本地处理与存放；捕获网页时可能加载未缓存资源。"
+        }
+      },
+      "sources": [
+        "https://github.com/gildas-lormeau/SingleFile",
+        "https://github.com/gildas-lormeau/SingleFile/blob/v1.40.0/LICENSE",
+        "https://github.com/gildas-lormeau/SingleFile/releases/tag/v1.40.0",
+        "https://github.com/gildas-lormeau/SingleFile/blob/main/privacy.md",
+        "https://github.com/gildas-lormeau/single-file-cli"
+      ],
+      "collected_at": "2026-11-23"
+    }
+  ]
+}

@@ -34,7 +34,7 @@
         "Linux"
       ],
       "open_source": true,
-      "license": "GPL-3.0",
+      "license": "GPL-3.0-or-later",
       "pricing_model": "完全免费",
       "price_summary": "官方提供免费开源软件；可选素材、插件与培训可能另收费。",
       "prices": [
@@ -66,7 +66,8 @@
       },
       "sources": [
         "https://raw.githubusercontent.com/blender/blender/main/README.md",
-        "https://raw.githubusercontent.com/blender/blender/main/release/text/readme.html"
+        "https://raw.githubusercontent.com/blender/blender/main/release/text/readme.html",
+        "https://www.blender.org/about/license/"
       ],
       "source_url": "https://projects.blender.org/blender/blender",
       "source_repo_label": "Blender Projects",
