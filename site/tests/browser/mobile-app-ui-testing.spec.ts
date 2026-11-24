@@ -31,3 +31,21 @@ test('Mobile UI testing target and WebView boundaries in both languages and widt
     }
   }
 });
+
+test('Detox renders asynchronous sync and iOS simulator-only scope on both layouts', async ({page}) => {
+ for (const width of [1280,390]) {
+  await page.setViewportSize({width,height:900});
+  await page.goto('/c/mobile-app-ui-testing/');
+  await expect(page.locator(width===1280?'#matrix':'#card-list').locator('[data-product-id="detox"]')).toBeVisible();
+  await page.goto('/p/mobile-app-ui-testing/detox/');
+  for (const lang of ['zh-CN','en']) {
+   await page.locator(`[data-lang="${lang}"]`).click();
+   const english=lang==='en', active=english?'en':'zh', rows=page.locator('.feature-row');
+   await expect(rows.nth(4).locator('.feat')).toHaveAttribute('title',english?'No':'不支持');
+   await expect(rows.nth(5).locator('.feat')).toHaveAttribute('title',english?'Partial':'部分支持');
+   await expect(rows.nth(0).locator(`p .t-${active}`)).toContainText(english?'wait for app-internal asynchronous work':'可等待应用异步工作');
+   await expect(rows.nth(3).locator(`p .t-${active}`)).toContainText(english?'requires macOS and Xcode':'需 macOS 和 Xcode');
+   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+  }
+ }
+});
