@@ -1,0 +1,289 @@
+{
+  "category_slug": "website-to-desktop",
+  "category_name_zh": "网页封装桌面应用",
+  "collected_at": "2026-11-24",
+  "timezone": "Asia/Shanghai",
+  "notes": "比较把网站做成桌面应用或本机启动入口的工具。独立窗口、可分享的配置与可分发安装包是三件事；生成安装包不代表已签名、公证或获得网页内容分发权，不等于网页离线存档。",
+  "features": [
+    {
+      "key": "webwrap_visual_creation",
+      "label": "图形界面创建"
+    },
+    {
+      "key": "webwrap_cli_creation",
+      "label": "命令行创建"
+    },
+    {
+      "key": "webwrap_custom_url",
+      "label": "自定义网址"
+    },
+    {
+      "key": "webwrap_appearance",
+      "label": "图标与窗口外观"
+    },
+    {
+      "key": "webwrap_standalone_installer",
+      "label": "面向分发的安装包"
+    },
+    {
+      "key": "webwrap_transfer",
+      "label": "配置迁移与复用"
+    }
+  ],
+  "products": [
+    {
+      "id": "pake-cli",
+      "name": "Pake CLI",
+      "official_url": "https://pake.run/docs/cli/getting-started",
+      "github_url": "https://github.com/tw93/Pake",
+      "platforms": [
+        "macOS",
+        "Windows",
+        "Linux"
+      ],
+      "license": "GPL-3.0-or-later",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": "V3.21.0",
+      "latest_release_date": "2026-11-23",
+      "maintenance_status": null,
+      "collected_at": "2026-11-24",
+      "summary": "通过命令将网站或本地 HTML 封装成独立桌面应用，用 Tauri 和系统 WebView，不内置独立浏览器引擎。",
+      "price_summary": "命令行免费开源。商业 Pake App 是另一个产品，不是使用 CLI 的前提。",
+      "free_tier_limits": "V3.21.0 的包声明 Node.js 22.12+，并依赖 Rust 和目标平台构建工具。能生成安装包不等于已签名或公证；分发者需核对目标平台要求与所包装网站的权利。",
+      "features": {
+        "webwrap_visual_creation": {
+          "value": "no",
+          "note": "本条是命令行工具；无编译工具的商业图形应用在另一行比较。"
+        },
+        "webwrap_cli_creation": {
+          "value": "yes",
+          "note": "支持本机构建，也可通过官方 GitHub Actions 工作流在目标平台运行器上构建。"
+        },
+        "webwrap_custom_url": {
+          "value": "yes",
+          "note": "可输入网站 URL 或本地 HTML 文件；封装在线网站不会自动得到离线副本。"
+        },
+        "webwrap_appearance": {
+          "value": "yes",
+          "note": "支持应用名称、图标、窗口尺寸与行为等构建选项。"
+        },
+        "webwrap_standalone_installer": {
+          "value": "yes",
+          "note": "可生成 macOS DMG、Windows MSI 和 Linux 安装包。标准构建输出有 GPL 例外，生成件不会仅因嵌入 Pake 而必须整体采用 GPL；签名和公证需要另核。"
+        },
+        "webwrap_transfer": {
+          "value": "yes",
+          "note": "可复用 CLI 配置或构建参数重新打包；不等于迁移站点登录会话。"
+        }
+      },
+      "sources": [
+        "https://github.com/tw93/Pake/releases/tag/V3.21.0",
+        "https://github.com/tw93/Pake/blob/V3.21.0/package.json",
+        "https://github.com/tw93/Pake/blob/V3.21.0/LICENSE",
+        "https://github.com/tw93/Pake/blob/V3.21.0/LICENSE-EXCEPTION",
+        "https://pake.run/docs/cli/getting-started",
+        "https://pake.run/docs/cli/options",
+        "https://pake.run/blog/github-actions-build",
+        "https://pake.run/blog/local-html-desktop-app"
+      ]
+    },
+    {
+      "id": "pake-app",
+      "name": "Pake App",
+      "official_url": "https://pake.run/",
+      "github_url": null,
+      "platforms": [
+        "macOS",
+        "Windows",
+        "Linux"
+      ],
+      "license": "专有许可",
+      "open_source": false,
+      "pricing_model": "免费增值",
+      "prices": [
+        {
+          "plan": "Pake App",
+          "price": "19",
+          "currency": "USD",
+          "period": "once",
+          "note": "官网常规一次性标价，合计 3 台设备；已购版本可继续使用，未来大版本以购时政策为准。"
+        }
+      ],
+      "github_stars": null,
+      "latest_release": "1.11.0",
+      "latest_release_date": "2026-11-23",
+      "maintenance_status": null,
+      "collected_at": "2026-11-24",
+      "summary": "图形化的网站桌面应用制作工具，无需 Node.js、Rust 或编译器；生成的应用拥有独立窗口和系统启动入口。",
+      "price_summary": "图形应用可免费制作 2 个应用；一次性许可官网标价 US$19，覆盖合计 3 台 Mac、Windows 或 Linux 设备，优惠和税费以结账为准。",
+      "free_tier_limits": "macOS 14+、Windows 10 2004+、受支持的 x86_64 Linux。7 天是购买退款窗口，不是免费的时间上限；免费额度按制作应用数计。",
+      "features": {
+        "webwrap_visual_creation": {
+          "value": "yes",
+          "note": "可从图形界面选目录应用或输入 URL，并在本机安装。"
+        },
+        "webwrap_cli_creation": {
+          "value": "no",
+          "note": "本条只比较商业图形应用；免费命令行工具在另一行。"
+        },
+        "webwrap_custom_url": {
+          "value": "yes",
+          "note": "支持网址；部分身份提供商会限制嵌入式 WebView 登录。"
+        },
+        "webwrap_appearance": {
+          "value": "yes",
+          "note": "支持名称、图标和窗口设置，部分选项随系统变化。"
+        },
+        "webwrap_standalone_installer": {
+          "value": "unknown",
+          "note": "生成应用可独立于 Pake 启动；已验证的导出是设置，不是独立安装包。未确认 GUI 有签名、公证的对外分发安装包流水线。"
+        },
+        "webwrap_transfer": {
+          "value": "yes",
+          "note": "可导出设置并在另一台装有 Pake 的电脑重新创建；不含 Cookie、登录、许可或本机路径，导入会消耗应用额度。"
+        }
+      },
+      "sources": [
+        "https://pake.run/releases",
+        "https://pake.run/docs/app",
+        "https://pake.run/docs/app/install",
+        "https://pake.run/docs/app/settings-files",
+        "https://pake.run/docs/app/faq",
+        "https://pake.run/terms",
+        "https://pake.run/docs/app/license"
+      ]
+    },
+    {
+      "id": "webcatalog-desktop",
+      "name": "WebCatalog Desktop",
+      "official_url": "https://webcatalog.io/en/desktop",
+      "github_url": null,
+      "platforms": [
+        "macOS",
+        "Windows",
+        "Linux"
+      ],
+      "license": "专有许可",
+      "open_source": false,
+      "pricing_model": "免费增值",
+      "prices": [
+        {
+          "plan": "Pro",
+          "price": "5",
+          "currency": "USD",
+          "period": "month",
+          "note": "年付折合月价，另计适用税费。"
+        }
+      ],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-24",
+      "summary": "基于 Chromium 的网站应用管理器，主要面向本机使用、应用库与多个独立账号。",
+      "price_summary": "Basic 免费且不需信用卡；Pro 官网美元年付折合每月 US$5（税另计），包含自定义 URL 应用与高级自定义。",
+      "free_tier_limits": "Basic 目前列 2 个桌面应用、2 个账号配置和 1 个空间，自定义应用列为 Pro 功能。Pro 有独立的 7 天试用，未核实绑卡或续订条件。",
+      "features": {
+        "webwrap_visual_creation": {
+          "value": "yes",
+          "note": "桌面界面安装网站应用，带独立窗口、图标和系统启动入口。"
+        },
+        "webwrap_cli_creation": {
+          "value": "unknown",
+          "note": "当前资料未确认面向用户的打包 CLI。"
+        },
+        "webwrap_custom_url": {
+          "value": "paid",
+          "note": "自定义 URL 应用列为 Pro，不能把 Basic 的 2 个目录应用当作 2 个任意网站。"
+        },
+        "webwrap_appearance": {
+          "value": "partial",
+          "note": "部分外观可调整；主题色、用户样式和脚本等高级自定义在 Basic 不提供。"
+        },
+        "webwrap_standalone_installer": {
+          "value": "unknown",
+          "note": "可在本机生成独立窗口与启动入口，macOS 官方资料称已装应用可独立于管理器；未确认可输出签名、公证或可交给他人安装的包。"
+        },
+        "webwrap_transfer": {
+          "value": "partial",
+          "note": "官方描述通过账号同步设置与组织结构；未核实可导出成可分发安装包或可携带的配置文件。"
+        }
+      },
+      "sources": [
+        "https://webcatalog.io/en/desktop",
+        "https://webcatalog.io/en/pricing",
+        "https://github.com/webcatalog/webcatalog-legacy",
+        "https://webcatalog.io/en/solutions/dedicated-desktop-apps",
+        "https://webcatalog.io/en/blog/webcatalog-desktop-vs-nativefier",
+        "https://webcatalog.io/en/blog/webcatalog-desktop-vs-station",
+        "https://webcatalog.io/en/blog/how-the-webcatalog-desktop-app-uses-apfs-clones-to-cut-mac-app-disk-usage-by-up-to-8x"
+      ]
+    },
+    {
+      "id": "unite-pro",
+      "name": "Unite Pro",
+      "official_url": "https://www.bzgapps.com/unite",
+      "github_url": null,
+      "platforms": [
+        "macOS"
+      ],
+      "license": "专有许可",
+      "open_source": false,
+      "pricing_model": "付费（可试用）",
+      "prices": [
+        {
+          "plan": "Unite Pro 1.x",
+          "price": "39.99",
+          "currency": "USD",
+          "period": "once",
+          "note": "官网单 Mac 价；不等于未来大版本升级免费。"
+        }
+      ],
+      "github_stars": null,
+      "latest_release": "1.8.2",
+      "latest_release_date": "2026-11-17",
+      "maintenance_status": null,
+      "collected_at": "2026-11-24",
+      "summary": "专为 Mac 制作独立网站应用，支持窗口、侧边栏与菜单栏模式。",
+      "price_summary": "首个应用可免费创建；官网 Unite Pro 1.x 单 Mac 许可标价 US$39.99 一次性，未来大版本升级可另收。",
+      "free_tier_limits": "官网要求 macOS 15 或更高，“为 macOS 26 构建”不等于最低要求；配置导入和导出均需有效 Unite Pro 许可。",
+      "features": {
+        "webwrap_visual_creation": {
+          "value": "yes",
+          "note": "在图形界面输入 URL 后可生成本机 Mac 应用。"
+        },
+        "webwrap_cli_creation": {
+          "value": "unknown",
+          "note": "本次官方资料只确认图形界面，未确认打包 CLI。"
+        },
+        "webwrap_custom_url": {
+          "value": "yes",
+          "note": "可输入所需网站 URL。"
+        },
+        "webwrap_appearance": {
+          "value": "yes",
+          "note": "支持图标、展示模式和外观设置。"
+        },
+        "webwrap_standalone_installer": {
+          "value": "no",
+          "note": "尽管可在本机创建独立应用，官网不允许分享给未授权用户；配置分享不是免许可分发，也未确认第三方发布签名或公证。"
+        },
+        "webwrap_transfer": {
+          "value": "paid",
+          "note": "帮助文档的 .uniteconfig 导出和导入都需有效 Unite Pro 许可；备份不含登录会话或已存密码。"
+        }
+      },
+      "sources": [
+        "https://www.bzgapps.com/unite",
+        "https://www.bzgapps.com/unite-changelog",
+        "https://www.bzgapps.com/unite/buyunite",
+        "https://help.bzgapps.com/article/64-getting-started-with-unite-pro",
+        "https://help.bzgapps.com/article/65-creating-your-first-unite-pro-app",
+        "https://help.bzgapps.com/article/70-importing-exporting-and-backing-up-unite-pro-apps"
+      ]
+    }
+  ]
+}
