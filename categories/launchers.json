@@ -1015,6 +1015,81 @@
       "archived": false,
       "last_push_at": null,
       "maintenance_status": "活跃"
+    },
+    {
+      "id": "tinycast",
+      "name": "Tinycast",
+      "official_url": "https://tinycast.dev/",
+      "github_url": "https://github.com/abue-ammar/tinycast",
+      "platforms": [
+        "macOS"
+      ],
+      "open_source": true,
+      "license": "AGPL-3.0-or-later",
+      "pricing_model": "免费开源",
+      "price_summary": "应用免费开源，无需注册；自选第三方 AI 服务可能按其方案计费。",
+      "prices": [],
+      "free_tier_limits": "需 macOS 26 或更高版本；Intel Mac 使用官方单独安装渠道。开发者称无遥测，剪贴板和笔记默认在本地；AI、扩展和片段需主动开启，向云模型发送内容受所选提供商政策约束。",
+      "github_stars": null,
+      "latest_release": "v0.12.15",
+      "latest_release_date": "2026-11-14",
+      "summary": "原生 Mac 效率启动器，支持应用启动、全局热键、剪贴板、文件索引、计算器和可选扩展。",
+      "sources": [
+        "https://tinycast.dev/",
+        "https://tinycast.dev/docs/",
+        "https://tinycast.dev/docs/features/file-search/",
+        "https://tinycast.dev/docs/features/clipboard/",
+        "https://tinycast.dev/docs/features/window-management/",
+        "https://tinycast.dev/docs/extensions/",
+        "https://tinycast.dev/docs/launcher/commands/",
+        "https://tinycast.dev/docs/reference/hotkeys/",
+        "https://tinycast.dev/docs/launcher/quicklinks/",
+        "https://tinycast.dev/docs/ai/",
+        "https://github.com/abue-ammar/tinycast/blob/v0.12.15/LICENSE",
+        "https://github.com/abue-ammar/homebrew-tinycast"
+      ],
+      "collected_at": "2026-11-24",
+      "features": {
+        "app_launch": {
+          "value": "yes"
+        },
+        "file_search": {
+          "value": "yes",
+          "note": "开启后索引所选文件夹内文件和文件夹的名称，不使用 Spotlight；需要手动授予完全磁盘访问权限。"
+        },
+        "clipboard_history": {
+          "value": "yes",
+          "note": "默认开启，本地保留 3 个月；置顶不受自动清理影响，默认排除钥匙串访问和密码应用。"
+        },
+        "calculator": {
+          "value": "yes"
+        },
+        "plugins": {
+          "value": "partial",
+          "note": "可选运行部分 Raycast 扩展；Raycast 的 AI、浏览器扩展和窗口管理服务 API 不兼容，不等同于完整 Raycast 环境。"
+        },
+        "hotkey": {
+          "value": "yes"
+        },
+        "window_management": {
+          "value": "yes"
+        },
+        "scripting": {
+          "value": "yes",
+          "note": "支持用户配置本地 Shell 命令。"
+        },
+        "snippets": {
+          "value": "yes"
+        },
+        "web_search": {
+          "value": "yes",
+          "note": "Quicklinks 可用查询模板打开所选网页搜索。"
+        },
+        "ai_features": {
+          "value": "yes",
+          "note": "AI 默认关闭；可选兼容本地模型或自备 API 密钥，第三方订阅或用量费用不包含在应用中。"
+        }
+      }
     }
   ]
 }

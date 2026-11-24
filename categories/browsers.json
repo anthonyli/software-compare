@@ -416,6 +416,51 @@
           "note": "通过兼容的外部 Agent 配置模型；不等于浏览器默认在本地推理。"
         }
       }
+    },
+    {
+      "id": "helium",
+      "name": "Helium Browser",
+      "official_url": "https://helium.computer/",
+      "github_url": "https://github.com/imputnet/helium",
+      "platforms": [
+        "macOS",
+        "Windows",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0",
+      "pricing_model": "免费开源",
+      "price_summary": "浏览器免费开源；没有付费去广告档。",
+      "prices": [],
+      "free_tier_limits": "桌面仍为 Beta：macOS 13+、Windows 10+ 和 Linux。官方说明暂无移动端、内置数据同步、密码管理器及 Widevine，部分受保护媒体不可播放。用户操作或已启用功能可联网；官方服务的匿名技术日志可保留最多 24 小时。源码标签和各平台安装包版本分别核对。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "基于 Chromium，默认屏蔽广告、跟踪器和第三方 Cookie，使用 Helium 的 uBlock Origin 分支。支持 Chromium 扩展、垂直标签和分屏；扩展需按自身权限和兼容性评估。",
+      "sources": [
+        "https://helium.computer/",
+        "https://helium.computer/download",
+        "https://helium.computer/privacy",
+        "https://helium.computer/sponsor",
+        "https://github.com/imputnet/helium",
+        "https://github.com/imputnet/helium/blob/0.22.3/LICENSE"
+      ],
+      "collected_at": "2026-11-24",
+      "features": {
+        "page_ai": {
+          "value": "unknown",
+          "note": "未核实内置页面问答或摘要；扩展和搜索跳转不等同于浏览器原生 AI。"
+        },
+        "multi_tab": {
+          "value": "unknown"
+        },
+        "actions": {
+          "value": "unknown"
+        },
+        "local_model": {
+          "value": "unknown"
+        }
+      }
     }
   ]
 }
