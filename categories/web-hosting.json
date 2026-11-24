@@ -611,6 +611,67 @@
         "https://docs.aws.amazon.com/accounts/latest/reference/supported-services-sign-up-new.html",
         "https://docs.aws.amazon.com/accounts/latest/reference/getting-started.html"
       ]
+    },
+    {
+      "id": "github-pages",
+      "name": "GitHub Pages",
+      "official_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "免费增值",
+      "price_summary": "GitHub Free 可从公开仓库发布 Pages；私有源仓库需相应付费方案。源仓库是私有的，并不代表发布的站点也私有。",
+      "prices": [
+        {
+          "plan": "公开仓库 Pages 免费档",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        }
+      ],
+      "free_tier_limits": "发布的网站最多 1 GB，流量软上限每月 100 GB。GitHub.com 上仅符合条件的 GitHub Enterprise Cloud 组织项目站点可设为私有发布，不能把 Pro 支持私有源仓库理解成私有发布。未开户、绑卡、部署或实测。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-22",
+      "summary": "GitHub 仓库驱动的静态网站托管，适合开源文档、项目站和作品集。不运行服务端应用。",
+      "features": {
+        "static_hosting": {
+          "value": "yes",
+          "note": "可部署静态 HTML、CSS 和 JavaScript，支持自定义域名及 HTTPS；域名注册费用另计。"
+        },
+        "build_limits": {
+          "value": "partial",
+          "note": "默认构建每小时 10 次软上限，自定义 GitHub Actions 工作流构建并发布时不受该软上限约束。Pages 部署超过 10 分钟会超时；Actions 另按其适用规则计量。"
+        },
+        "functions": {
+          "value": "no",
+          "note": "只能发布静态文件，不运行 PHP、Ruby 或 Python 等服务端代码，也不包含函数运行时。"
+        },
+        "commercial": {
+          "value": "partial",
+          "note": "不可把 Pages 用作运行在线业务、电商站点或主要促成商业交易、提供商业 SaaS 的免费网站托管。这个禁用范围不等于所有商业相关文档都不能发布。"
+        },
+        "overage": {
+          "value": "partial",
+          "note": "流量每月 100 GB 及默认每小时 10 次构建为软上限；超额可能导致限流或网站无法继续提供服务。未见 Pages 自动按用量付费的机制，不与 Actions 计费混同。"
+        },
+        "card_required": {
+          "value": "unknown",
+          "note": "公开仓库支持 GitHub Free；官方 Pages 文档未明确该路径是否要求绑卡。"
+        }
+      },
+      "sources": [
+        "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages",
+        "https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits",
+        "https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site",
+        "https://docs.github.com/en/enterprise-cloud@latest/pages/getting-started-with-github-pages/changing-the-visibility-of-your-github-pages-site",
+        "https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-github-actions/about-billing-for-github-actions",
+        "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages"
+      ]
     }
   ]
 }
