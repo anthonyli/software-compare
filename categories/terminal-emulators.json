@@ -1,0 +1,167 @@
+{
+  "category_slug": "terminal-emulators",
+  "category_name_zh": "终端模拟器",
+  "collected_at": "2026-11-24",
+  "timezone": "Asia/Shanghai",
+  "notes": "比较运行 shell 与命令的桌面终端模拟器，不是终端界面开发框架或 AI 编程工具。GPU 渲染是一项功能，不代表跨工具的速度或内存排名；实际资源占用受设备、配置和负载影响。",
+  "features": [
+    {
+      "key": "terminal_tabs_splits",
+      "label": "标签页与分屏"
+    },
+    {
+      "key": "terminal_fonts_themes",
+      "label": "字体与主题"
+    },
+    {
+      "key": "terminal_gpu",
+      "label": "GPU 渲染"
+    },
+    {
+      "key": "terminal_lua",
+      "label": "Lua 配置"
+    }
+  ],
+  "products": [
+    {
+      "id": "kaku",
+      "name": "Kaku",
+      "official_url": "https://kaku.fun/",
+      "github_url": "https://github.com/tw93/Kaku",
+      "platforms": [
+        "macOS"
+      ],
+      "license": "MIT",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": "V0.30.0",
+      "latest_release_date": "2026-11-16",
+      "maintenance_status": null,
+      "collected_at": "2026-11-24",
+      "summary": "基于 WezTerm 的 macOS 终端，预配字体、主题、Shell 集成和 Mac 快捷键，保留 Lua 自定义。",
+      "price_summary": "终端本体免费开源。",
+      "free_tier_limits": "正式版发布脚本默认构建 Apple Silicon 和 Intel 通用包。内置 AI 对话可选，可能将所选终端上下文发给配置的服务，服务费用另计；浏览器远程配对仍依赖运行 Kaku 的 Mac。",
+      "features": {
+        "terminal_tabs_splits": {
+          "value": "yes",
+          "note": "支持标签页和窗格；重启后可恢复窗口布局。"
+        },
+        "terminal_fonts_themes": {
+          "value": "yes",
+          "note": "内置 JetBrains Mono 和深色、浅色及跟随系统选项。"
+        },
+        "terminal_gpu": {
+          "value": "yes",
+          "note": "macOS 原生窗口使用 GPU 渲染。"
+        },
+        "terminal_lua": {
+          "value": "yes",
+          "note": "使用 Lua；多数 WezTerm 配置可沿用，不保证所有平台专用选项等效。"
+        }
+      },
+      "sources": [
+        "https://github.com/tw93/Kaku/releases/tag/V0.30.0",
+        "https://github.com/tw93/Kaku/blob/V0.30.0/LICENSE.md",
+        "https://github.com/tw93/Kaku/blob/V0.30.0/scripts/release.sh",
+        "https://github.com/tw93/Kaku/blob/V0.30.0/scripts/build.sh",
+        "https://github.com/tw93/Kaku/blob/V0.30.0/docs/features.md",
+        "https://kaku.fun/"
+      ]
+    },
+    {
+      "id": "ghostty",
+      "name": "Ghostty",
+      "official_url": "https://ghostty.org/",
+      "github_url": "https://github.com/ghostty-org/ghostty",
+      "platforms": [
+        "macOS",
+        "Linux",
+        "FreeBSD"
+      ],
+      "license": "MIT",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": "1.4.0",
+      "latest_release_date": "2026-10-27",
+      "maintenance_status": null,
+      "collected_at": "2026-11-24",
+      "summary": "使用原生桌面界面的 GPU 加速终端，提供多窗口、标签页、分屏和文本配置。",
+      "price_summary": "终端本体免费开源。",
+      "free_tier_limits": "macOS 有项目预编译包，Linux 通常用发行版或社区包，FreeBSD 支持 GTK 图形端但不提供项目预编译包。Windows 支持指 libghostty 库，不是官方 Ghostty 图形终端。",
+      "features": {
+        "terminal_tabs_splits": {
+          "value": "yes"
+        },
+        "terminal_fonts_themes": {
+          "value": "yes"
+        },
+        "terminal_gpu": {
+          "value": "yes"
+        },
+        "terminal_lua": {
+          "value": "no",
+          "note": "官方配置使用文本键值，不是 Lua 配置。"
+        }
+      },
+      "sources": [
+        "https://ghostty.org/docs/install/release-notes/1-4-0",
+        "https://github.com/ghostty-org/ghostty/blob/v1.4.0/LICENSE",
+        "https://ghostty.org/docs/features",
+        "https://ghostty.org/docs/config",
+        "https://ghostty.org/docs/install/binary"
+      ]
+    },
+    {
+      "id": "wezterm",
+      "name": "WezTerm",
+      "official_url": "https://wezterm.org/",
+      "github_url": "https://github.com/wezterm/wezterm",
+      "platforms": [
+        "macOS",
+        "Linux",
+        "Windows",
+        "FreeBSD",
+        "NetBSD"
+      ],
+      "license": "MIT",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": "20240203-110809-5046fc22",
+      "latest_release_date": "2024-02-04",
+      "maintenance_status": null,
+      "collected_at": "2026-11-24",
+      "summary": "支持多个系统的 GPU 加速终端与多路复用器，使用 Lua 配置，可按需接入 SSH。",
+      "price_summary": "终端本体免费开源。",
+      "free_tier_limits": "这里记录 GitHub 标记的最新正式版；官方另提供 nightly 渠道，各平台安装方式不同。",
+      "features": {
+        "terminal_tabs_splits": {
+          "value": "yes",
+          "note": "通过多路复用支持窗口、标签页和窗格。"
+        },
+        "terminal_fonts_themes": {
+          "value": "yes"
+        },
+        "terminal_gpu": {
+          "value": "yes"
+        },
+        "terminal_lua": {
+          "value": "yes"
+        }
+      },
+      "sources": [
+        "https://github.com/wezterm/wezterm/releases/tag/20240203-110809-5046fc22",
+        "https://github.com/wezterm/wezterm/blob/20240203-110809-5046fc22/LICENSE.md",
+        "https://wezterm.org/features.html",
+        "https://wezterm.org/install/",
+        "https://wezterm.org/config/files.html",
+        "https://wezterm.org/multiplexing.html"
+      ]
+    }
+  ]
+}
