@@ -854,7 +854,7 @@
               "note": "无付费档"
             }
           ],
-          "free_tier_limits": "无",
+          "free_tier_limits": "作者未单列导出水印或单次录制时长。",
           "github_stars": 19426,
           "latest_release": "3.6.0",
           "latest_release_date": "2022-10-28 02:41",
@@ -902,8 +902,8 @@
               "note": "通过插件系统扩展导出/分享目标，无官方云空间"
             },
             "free_no_watermark": {
-              "value": "yes",
-              "note": "完全免费开源"
+              "value": "unknown",
+              "note": "作者未单列导出水印或单次录制时长。"
             }
           },
           "sources": [
@@ -1517,7 +1517,7 @@
           "open_source": true,
           "license": "AGPL-3.0",
           "pricing_model": "完全免费",
-          "price_summary": "完全免费开源；需 macOS 12.3+，应用未经过苹果公证。",
+          "price_summary": "开源免费，macOS 12.3 起有兼容版本。免驱录应用声音需要 macOS 13 或更高版本。",
           "prices": [
             {
               "plan": "全部功能",
@@ -1527,7 +1527,7 @@
               "note": "开源项目，无官方付费墙"
             }
           ],
-          "free_tier_limits": "无官方收费限制",
+          "free_tier_limits": "作者未单列导出水印或单次录制时长。",
           "github_stars": 8789,
           "latest_release": "1.6.9",
           "latest_release_date": "2025-06-11 15:45",
@@ -1535,7 +1535,7 @@
           "last_push_at": "2025-06-11 15:47",
           "archived": false,
           "maintenance_status": "活跃",
-          "summary": "基于 ScreenCapture Kit 的轻量 Mac 开源录屏工具，可免驱内录系统声音并叠加摄像头，最近正式版停在 2025 年 6 月。",
+          "summary": "基于 ScreenCaptureKit 的轻量 Mac 录屏工具，可录窗口、应用声音和麦克风。",
           "features": {
             "region_recording": {
               "value": "yes",
@@ -1550,8 +1550,8 @@
               "note": "官网：macOS 13+ 可免驱动内录任意应用声音"
             },
             "microphone": {
-              "value": "unknown",
-              "note": "官网未单独写麦克风条目"
+              "value": "yes",
+              "note": "作者 FAQ 确认可同时录制系统声音和麦克风，并可分轨保存。"
             },
             "builtin_editor": {
               "value": "no",
@@ -1578,13 +1578,15 @@
               "note": "未见官方云分享"
             },
             "free_no_watermark": {
-              "value": "yes",
-              "note": "开源免费，未见水印"
+              "value": "unknown",
+              "note": "作者未单列导出水印或单次录制时长。"
             }
           },
           "sources": [
             "https://lihaoyun6.github.io/quickrecorder/",
-            "https://github.com/lihaoyun6/QuickRecorder"
+            "https://github.com/lihaoyun6/QuickRecorder",
+            "https://github.com/lihaoyun6/QuickRecorder#faq",
+            "https://github.com/lihaoyun6/QuickRecorder/releases/tag/1.6.1"
           ],
           "source_repo_url": "https://github.com/lihaoyun6/QuickRecorder",
           "source_repo_label": "GitHub"

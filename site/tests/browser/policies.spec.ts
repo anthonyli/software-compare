@@ -14,7 +14,7 @@ test('policies are reachable, bilingual and responsive without leaving the site'
     await page.locator('[data-lang="en"]').click();
     await expect(page.locator('h1 .t-en')).toHaveText('Privacy notice');
     await expect(page.locator('h1 .t-zh')).toBeHidden();
-    await expect(page.locator('[data-policy-date] .t-en')).toContainText('Last updated: 2026-11-16');
+    await expect(page.locator('[data-policy-date] .t-en')).toContainText('Last updated: 2026-11-23');
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
     await page.locator('[data-policy-page] nav a[href="/terms/"]').click();
     await expect(page).toHaveURL(/\/terms\/$/);

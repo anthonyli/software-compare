@@ -60,6 +60,10 @@ const sections = [
         "en": "The website uses Cloudflare for page delivery, request handling and D1 vote storage and loads Cloudflare Web Analytics to understand traffic and page performance. Network requests expose information such as IP addresses, request URLs and browser headers to the service provider."
       },
       {
+        "zh": "从可识别的 AI 来源进站时，Compare 根据 utm_source 或来源域名判断平台。标签页的 sessionStorage 保存随机会话编号与活动状态。浏览和选型操作间隔达 30 分钟后归因失效。D1 保存首次接收时间、平台、入口页面路径，以及是否筛选、打开产品详情或点击产品官网，用来汇总选型访问。此表不保存完整网址、搜索词、原始 IP 或点赞身份。启用浏览器 Do Not Track 或屏蔽标签页存储会停用这项统计。",
+        "en": "For recognizable AI referrals, Compare identifies the platform from utm_source or the referring domain. Tab sessionStorage holds a random session ID and activity state. Attribution expires after 30 minutes without navigation or a selection action. D1 stores the first receipt time, platform, landing path and whether the session used filters, opened a product or visited its website. This table omits full URLs, search terms, raw IP addresses and voting identities. Do Not Track or blocked tab storage disables this measurement."
+      },
+      {
         "zh": "Cloudflare 官方说明 Web Analytics 不为分析使用 Cookie 或 localStorage，也不为展示分析结果持续追踪 IP 或通过指纹识别个人。这是服务商说明，不等于本网站没有上述点赞 Cookie，也不等于基础设施不处理 IP。Cloudflare 日志、备份、处理地域及保留配置未通过源码确认，不能承诺仅境内存储或固定删除时限。",
         "en": "Cloudflare states that Web Analytics does not use cookies or localStorage for analytics, or track individuals over time by IP address or fingerprinting for analytics reporting. This is the provider’s description, not a claim that Compare lacks the voting cookie above or that its infrastructure never processes IP addresses. Cloudflare log, backup, processing-location and retention settings have not been verified from source code; no domestic-only storage or fixed deletion period is promised."
       }
@@ -94,7 +98,7 @@ const sections = [
 <Layout title="隐私说明" titleEn="Privacy notice" canonicalPath="/privacy/">
   <article class="mx-auto max-w-3xl px-6 py-12 leading-relaxed" data-policy-page>
     <h1 class="text-3xl font-semibold"><T zh="隐私说明" en="Privacy notice" /></h1>
-    <p class="mt-4 text-sm text-muted" data-policy-date><T zh="更新日期：2026-11-16" en="Last updated: 2026-11-16" /></p>
+    <p class="mt-4 text-sm text-muted" data-policy-date><T zh="更新日期：2026-11-23" en="Last updated: 2026-11-23" /></p>
     <p class="mt-4 text-sm text-muted"><T zh="以下说明适用于 Compare 当前提供的功能；项目源码开放不等于所有收录软件都开源。" en="This notice covers the features currently offered by Compare. Open-source project code does not mean every listed product is open-source." /></p>
     {sections.map((section) => (<section class="mt-8"><h2 class="text-xl font-semibold"><T zh={section.zh} en={section.en} /></h2>{section.paragraphs.map((p) => (<p class="mt-3"><T zh={p.zh} en={p.en} /></p>))}</section>))}
     <section class="mt-8" data-policy-contact><h2 class="text-xl font-semibold"><T zh="联系维护者" en="Contact the maintainer" /></h2><p class="mt-3"><a class="underline break-all" href="mailto:anthonyli1021@gmail.com">anthonyli1021@gmail.com</a></p><p class="mt-3"><T zh="适用于网站联系、隐私问题和数据请求。维护者会收到你的发件地址和自愿提供的邮件内容，用于回复、处理请求及必要的后续沟通。邮件不是公开 Issue；收发邮件仍由双方邮件服务提供商处理，请仅提供处理请求所必需的信息。邮箱保留设置未在本项目代码中定义，不能据此承诺固定删除期限。" en="For website enquiries, privacy questions and data requests. The maintainer receives your sender address and the email content you voluntarily provide to reply, handle the request and conduct necessary follow-up. Email is not a public Issue, but is processed by the sender’s and recipient’s email providers. Include only information necessary to handle the request. Mailbox retention settings are not defined in this project’s code, so no fixed deletion period is promised here." /></p></section>
