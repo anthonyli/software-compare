@@ -1,0 +1,214 @@
+{
+  "category_slug": "ai-agent-workbenches",
+  "category_name_zh": "AI 编程 Agent 工作台",
+  "collected_at": "2026-11-24",
+  "timezone": "Asia/Shanghai",
+  "notes": "比较组织多个编程 Agent、工作区和改动审查的界面，不是单个编程 Agent、终端模拟器或 Agent 浏览器。Git 工作树分开代码和分支，不是系统沙箱；审批、网络和数据权限取决于所选 Agent 与执行环境。",
+  "features": [
+    {
+      "key": "workbench_multi_agent",
+      "label": "多种 Agent 运行时"
+    },
+    {
+      "key": "workbench_worktrees",
+      "label": "并行 Git 工作树"
+    },
+    {
+      "key": "workbench_terminal_diff",
+      "label": "终端与改动审查"
+    },
+    {
+      "key": "workbench_owned_remote",
+      "label": "自管远程执行"
+    },
+    {
+      "key": "workbench_managed_compute",
+      "label": "厂商托管执行"
+    },
+    {
+      "key": "workbench_approvals",
+      "label": "人工审批选项"
+    }
+  ],
+  "products": [
+    {
+      "id": "orca",
+      "name": "Orca",
+      "official_url": "https://orca.dev/",
+      "github_url": "https://github.com/stablyai/orca",
+      "platforms": [
+        "macOS",
+        "Windows",
+        "Linux"
+      ],
+      "license": "MIT",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": "v1.4.273",
+      "latest_release_date": "2026-11-24",
+      "maintenance_status": null,
+      "collected_at": "2026-11-24",
+      "summary": "在一个桌面 IDE 里并行使用多个编程 Agent，按任务分开 Git 工作树、会话与浏览器预览。",
+      "price_summary": "MIT 桌面应用免费；Agent 账号、模型订阅或 API 用量、远程机器及自备云资源的费用另看所用服务。Orca 是否自行提供托管沙箱及其价格均未核实。",
+      "free_tier_limits": "这里记录稳定桌面版。iOS 和 Android 是配对伴侣，不是手机上的原生执行环境；Android APK 在 GitHub 单独标为预发布。",
+      "features": {
+        "workbench_multi_agent": {
+          "value": "yes",
+          "note": "支持 Claude Code、Codex、Cursor CLI、OpenCode 等；原生聊天、状态与账号切换因 Agent 而异。"
+        },
+        "workbench_worktrees": {
+          "value": "yes",
+          "note": "Git 工作树把任务的代码和分支分开，不限制进程访问宿主文件或网络。"
+        },
+        "workbench_terminal_diff": {
+          "value": "yes",
+          "note": "内置 Agent 终端与 diff，可对改动行添加意见并反馈给 Agent。"
+        },
+        "workbench_owned_remote": {
+          "value": "yes",
+          "note": "可用自管 SSH 主机、自托管 Orca Server，或按工作区配置 VM／容器；云计算资源自备。"
+        },
+        "workbench_managed_compute": {
+          "value": "unknown",
+          "note": "文档的按工作区云 VM 使用自备服务方，不是 Orca 托管 VPS。隐私政策提到用户选择的托管沙箱，但 Orca 是否自行提供以及价格均未核实。"
+        },
+        "workbench_approvals": {
+          "value": "partial",
+          "note": "审批方式取决于所选 Agent 和配置。官方说明部分会话默认全权限，不会逐次询问；本地工作树不是系统沙箱。"
+        }
+      },
+      "sources": [
+        "https://github.com/stablyai/orca/releases/tag/v1.4.273",
+        "https://github.com/stablyai/orca/blob/v1.4.273/LICENSE",
+        "https://orca.dev/docs/install",
+        "https://orca.dev/docs/mobile",
+        "https://orca.dev/docs/agents/supported",
+        "https://orca.dev/docs/ways-to-run",
+        "https://orca.dev/docs/model/worktrees",
+        "https://orca.dev/docs/model/agents-sessions",
+        "https://orca.dev/docs/review/annotate-ai-diff",
+        "https://orca.dev/docs/telemetry",
+        "https://orca.dev/privacy"
+      ]
+    },
+    {
+      "id": "t3-code",
+      "name": "T3 Code",
+      "official_url": "https://t3.codes/",
+      "github_url": "https://github.com/pingdotgg/t3code",
+      "platforms": [
+        "macOS",
+        "Windows",
+        "Linux"
+      ],
+      "license": "MIT",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": "v0.1.11",
+      "latest_release_date": "2026-11-20",
+      "maintenance_status": null,
+      "collected_at": "2026-11-24",
+      "summary": "用桌面、网页或手机界面组织已登录的编程 Agent；执行始终发生在相连的 T3 Code 主机。",
+      "price_summary": "MIT 桌面软件免费，T3 Code 不转售模型额度。Agent 的账号或 API、可选远程服务和自有主机分别适用其条款。",
+      "free_tier_limits": "稳定桌面 v0.1.11 与 nightly 分开。网页和 iOS、Android 是接入客户端，主机须运行至少一个已配置并登录的 Agent。",
+      "features": {
+        "workbench_multi_agent": {
+          "value": "yes",
+          "note": "稳定版文档列 Claude Code、Codex、Cursor、OpenCode、Grok Build、Antigravity、Kiro、Pi、Muse Code、fx 及 ACP Agent。"
+        },
+        "workbench_worktrees": {
+          "value": "yes",
+          "note": "每个会话可使用独立工作树；这分开代码，不隔离操作系统权限。"
+        },
+        "workbench_terminal_diff": {
+          "value": "yes",
+          "note": "内置终端和行内 diff，可先查看修改，再决定提交、推送或打开 PR。"
+        },
+        "workbench_owned_remote": {
+          "value": "yes",
+          "note": "可连接自有执行主机，选择局域网、Tailscale 或可选 T3 Connect 中继；主机必须在线并可连接。"
+        },
+        "workbench_managed_compute": {
+          "value": "no",
+          "note": "T3 Connect 和托管网页是接入方式，不给 Agent 分配厂商计算沙箱。"
+        },
+        "workbench_approvals": {
+          "value": "partial",
+          "note": "初始默认全权限，可改用监督审批。不同 Agent 对审批的实现不同；管理员可限制机器提供的模式。"
+        }
+      },
+      "sources": [
+        "https://github.com/pingdotgg/t3code/releases/tag/v0.1.11",
+        "https://github.com/pingdotgg/t3code/blob/v0.1.11/LICENSE",
+        "https://github.com/pingdotgg/t3code/blob/v0.1.11/README.md",
+        "https://github.com/pingdotgg/t3code/blob/v0.1.11/docs/user/remote-access.md",
+        "https://github.com/pingdotgg/t3code/blob/v0.1.11/docs/user/permission-modes.md",
+        "https://t3.codes/terms-of-service",
+        "https://t3.codes/"
+      ]
+    },
+    {
+      "id": "conductor",
+      "name": "Conductor",
+      "official_url": "https://www.conductor.build/",
+      "github_url": null,
+      "platforms": [
+        "macOS"
+      ],
+      "license": "专有许可",
+      "open_source": false,
+      "pricing_model": "免费增值",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": "0.99.1",
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-24",
+      "summary": "macOS 上的编程 Agent 工作台，把本机或云上会话、工作树、终端和改动审查组织起来。",
+      "price_summary": "本地使用免费，模型用量由 Agent 服务方结算。Cloud 文档列 Pro、Teams、Enterprise 可用；未核实当前计划金额或资源报价。",
+      "free_tier_limits": "需要 GitHub 和至少一家 Agent 服务。官方 2026-11-23 发布记录为 0.99.0，同页列出未单标日期的 0.99.1 修订。",
+      "features": {
+        "workbench_multi_agent": {
+          "value": "yes",
+          "note": "随应用提供 Claude Code、Codex、OpenCode；Cursor 通过 Cursor API，需要对应密钥。"
+        },
+        "workbench_worktrees": {
+          "value": "yes",
+          "note": "本地工作区用独立 Git 工作树与分支；这不能隔离本机进程。"
+        },
+        "workbench_terminal_diff": {
+          "value": "yes",
+          "note": "可在终端检查工作区，在 diff 查看器加行内反馈，并查看 GitHub 检查和评论。"
+        },
+        "workbench_owned_remote": {
+          "value": "no",
+          "note": "Cloud FAQ 称尚不支持用自己的云机器替换托管工作区；遥控本机不是自管远程执行。"
+        },
+        "workbench_managed_compute": {
+          "value": "paid",
+          "note": "Cloud 按计划提供 Vercel 的托管 Linux 沙箱。仓库文件与会话数据在厂商管理的基础设施存储；官方已撤销之前的关停计划。"
+        },
+        "workbench_approvals": {
+          "value": "partial",
+          "note": "本地 Agent 以当前用户权限运行，某些工具动作可请求审批。云沙箱能访问提供给工作区的密钥，启用相应权限后还可发起本机操作。"
+        }
+      },
+      "sources": [
+        "https://www.conductor.build/",
+        "https://www.conductor.build/changelog",
+        "https://www.conductor.build/changelog/0.94.2-conductor-is-back",
+        "https://www.conductor.build/docs/installation",
+        "https://www.conductor.build/docs/reference/harnesses",
+        "https://www.conductor.build/docs/concepts/git-worktrees",
+        "https://www.conductor.build/docs/reference/diff-viewer",
+        "https://www.conductor.build/docs/cloud/faq",
+        "https://www.conductor.build/docs/reference/security-and-permissions",
+        "https://www.conductor.build/terms"
+      ]
+    }
+  ]
+}
