@@ -47,7 +47,7 @@ export const categoryGroups: { id: string; name: string; slugs: string[] }[] = [
   {
     id: "dev",
     name: "开发工具",
-    slugs: ["code-editors", "remote-desktop", "database-clients", "api-clients", "agent-browser-tools", "mobile-development-ides", "mobile-frameworks", "mobile-app-ui-testing", "cli-frameworks", "tui-frameworks", "terminal-emulators", "desktop-virtual-machines"],
+    slugs: ["code-editors", "remote-desktop", "database-clients", "api-clients", "agent-browser-tools", "mobile-development-ides", "mobile-frameworks", "mobile-app-ui-testing", "cli-frameworks", "tui-frameworks", "terminal-emulators", "desktop-virtual-machines", "website-to-desktop"],
   },
 ];
 
@@ -75,6 +75,7 @@ export const categoryMonograms: Record<string, string> = {
   "tui-frameworks": "端",
   "terminal-emulators": "窗",
   "desktop-virtual-machines": "虚",
+  "website-to-desktop": "封",
   "mobile-frameworks": "框",
   "webpage-archiving": "存",
   "mobile-app-ui-testing": "测",
@@ -139,6 +140,7 @@ export const categoryTints: Record<string, string> = {
   "tui-frameworks": "#E8EFF8",
   "terminal-emulators": "#EEEAF7",
   "desktop-virtual-machines": "#E7EFF2",
+  "website-to-desktop": "#F8EFE4",
   "mobile-frameworks": "#F1E8F5",
   "webpage-archiving": "#E6F3ED",
   "mobile-app-ui-testing": "#E6F0F9",
