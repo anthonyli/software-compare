@@ -5,8 +5,22 @@ test('CLI frameworks retain licenses and core versus add-on boundaries',()=>{
  assert.deepEqual(c.products.map(p=>p.license),['Apache-2.0','MIT OR Apache-2.0','MIT','BSD-3-Clause','MIT','MIT']);
  assert.deepEqual(c.products.map(p=>p.features.shell_completion.value),['yes','partial','unknown','yes','yes','partial']);
  assert.deepEqual(c.products.map(p=>p.features.interactive_prompts.value),['unknown','unknown','unknown','yes','yes','partial']);
- assert.match(c.products[1].features.shell_completion.note,/clap_complete/);assert.match(c.products[5].features.interactive_prompts.note,/Inquirer/);
+ assert.match(c.products[5].features.interactive_prompts.note,/Inquirer/);
  assert.match(c.products[3].free_tier_limits,/python script.py/);assert.match(c.notes,/不是 AI/);
  for(const p of c.products){assert.equal(p.open_source,true);assert.deepEqual(Object.keys(p.features),c.features.map(f=>f.key));assert(p.sources.length>=2);for(const k of ['github_stars','latest_release','latest_release_date','maintenance_status'])assert.equal(p[k],null);}
 });
 test('CLI framework Chinese strings have English translations',()=>{const strings=v=>typeof v==='string'?[v]:v&&typeof v==='object'?Object.values(v).flatMap(strings):[];for(const s of strings(c).filter(s=>/[\u4e00-\u9fff]/.test(s)))assert(en[s],s);});
+
+test('clap distinguishes generated static scripts from opt-in dynamic candidates in both languages',()=>{
+ const clap=c.products.find(p=>p.id==='clap');
+ const {value,note}=clap.features.shell_completion;
+ assert.equal(value,'partial');
+ assert.match(note,/独立的 clap_complete 4\.6\.11.*编译时或运行时.*静态 Shell 补全脚本/);
+ assert.match(note,/运行时生成静态脚本不等于动态计算补全候选/);
+ assert.match(note,/动态补全需显式启用默认关闭的不稳定功能 unstable-dynamic/);
+ assert.match(en[note],/separate clap_complete 4\.6\.11 crate generates static shell completion scripts at build time or runtime/);
+ assert.match(en[note],/not the same as computing completion candidates dynamically/);
+ assert.match(en[note],/explicitly enabling the unstable unstable-dynamic feature, which is off by default/);
+ assert(clap.sources.includes('https://docs.rs/clap_complete/4.6.11/clap_complete/'));
+ assert(clap.sources.includes('https://github.com/clap-rs/clap/blob/clap_complete-v4.6.11/clap_complete/Cargo.toml'));
+});
