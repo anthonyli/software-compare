@@ -1900,6 +1900,91 @@
         "https://zim-wiki.org/manual/Plugins/Tags.html"
       ],
       "collected_at": "2026-11-15"
+    },
+    {
+      "id": "miaoyan",
+      "name": "妙言（MiaoYan）",
+      "official_url": "https://miaoyan.app/",
+      "github_url": "https://github.com/tw93/MiaoYan",
+      "platforms": [
+        "macOS",
+        "iOS",
+        "iPadOS"
+      ],
+      "open_source": true,
+      "license": "Mac 版公开源码：MIT；iPhone 和 iPad 版未开源",
+      "pricing_model": "开源免费版 / 商店买断",
+      "price_summary": "开源 Mac 版可免费获取；App Store 美区标价 USD 12.99 一次性购买，覆盖 Mac、iPhone 和 iPad；本地价格以商店为准。",
+      "prices": [
+        {
+          "plan": "公开 Mac 版",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        },
+        {
+          "plan": "美区 App Store（通用购买）",
+          "price": 12.99,
+          "currency": "USD",
+          "period": "once"
+        }
+      ],
+      "free_tier_limits": "Mac 需 macOS 12 或更高版本；App Store 移动版需 iOS 18 或 iPadOS 18 及以上。官方 FAQ 说明 iPhone 和 iPad 版未开源，具体商店分发条款未单独核实。Mac、iPhone 和 iPad 可通过 iCloud Drive 打开同一笔记文件夹；坚果云等其他同步客户端只核实了 Mac 用法。",
+      "github_stars": null,
+      "latest_release": "V4.11.0",
+      "latest_release_date": "2026-11-20",
+      "summary": "原生 Markdown 笔记，使用自选文件夹保存普通 Markdown 文件，按文件夹浏览，支持双向链接和分栏预览。",
+      "sources": [
+        "https://miaoyan.app/",
+        "https://github.com/tw93/MiaoYan/blob/V4.11.0/README.md",
+        "https://github.com/tw93/MiaoYan/blob/V4.11.0/LICENSE",
+        "https://github.com/tw93/MiaoYan/releases/tag/V4.11.0",
+        "https://apps.apple.com/us/app/miaoyan/id6759252269"
+      ],
+      "collected_at": "2026-11-24",
+      "features": {
+        "markdown": {
+          "value": "yes"
+        },
+        "rich_text": {
+          "value": "no",
+          "note": "编辑器以纯 Markdown 为主，分栏预览不是富文本所见即所得编辑。"
+        },
+        "folders": {
+          "value": "yes"
+        },
+        "tags": {
+          "value": "unknown"
+        },
+        "web_clipper": {
+          "value": "unknown",
+          "note": "支持粘贴内容转 Markdown，不等同于浏览器剪藏扩展。"
+        },
+        "sync": {
+          "value": "partial",
+          "note": "Mac、iPhone 和 iPad 可通过 iCloud Drive 同步同一文件夹；坚果云等其他客户端只核实了 Mac 用法。应用不登录 WebDAV 或云盘账号。"
+        },
+        "offline": {
+          "value": "yes"
+        },
+        "e2e_encrypt": {
+          "value": "unknown"
+        },
+        "attachments": {
+          "value": "partial",
+          "note": "已核实笔记内图片，不外推任意文件类型的附件管理。"
+        },
+        "plugins": {
+          "value": "no"
+        },
+        "collaboration": {
+          "value": "unknown"
+        },
+        "mobile": {
+          "value": "paid",
+          "note": "iPhone 和 iPad 通过 App Store 的付费通用购买提供。"
+        }
+      }
     }
   ]
 }
