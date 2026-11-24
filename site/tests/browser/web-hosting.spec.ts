@@ -102,3 +102,21 @@ test('Firebase Hosting renders disputed quotas and App Hosting boundaries on bot
   }
  }
 });
+
+test('GitHub Pages shows private-source and private-publication limits in both layouts', async ({ page }) => {
+ for (const width of [1280, 390]) {
+  await page.setViewportSize({ width, height: 900 });
+  await page.goto('/c/web-hosting/');
+  await expect(page.locator(width === 1280 ? '#matrix' : '#card-list').locator('[data-product-id="github-pages"]')).toBeVisible();
+  await page.goto('/p/web-hosting/github-pages/');
+  for (const lang of ['zh-CN', 'en']) {
+   await page.locator(`[data-lang="${lang}"]`).click();
+   const english = lang === 'en', active = english ? 'en' : 'zh';
+   const rows = page.locator('.feature-row');
+   await expect(rows.nth(2).locator('.feat')).toHaveAttribute('title', english ? 'No' : '不支持');
+   await expect(rows.nth(5).locator('.feat-empty')).toHaveAttribute('title', english ? 'Unknown' : '未知');
+   await expect(page.locator(`.price-panel > .mt-5 p .t-${active}`)).toContainText(english ? 'does not mean private publication' : '不能把 Pro 支持私有源仓库理解成私有发布');
+   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  }
+ }
+});

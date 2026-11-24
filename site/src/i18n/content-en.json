@@ -3335,5 +3335,15 @@
   "扩展可捕获当前浏览器中的已渲染页面，仍受浏览器权限、页面状态和资源可取得性限制。": "The extension can capture the rendered page in the browser, subject to permissions, page state, and resource availability.",
   "独立 SingleFile CLI 可用浏览器进行自动化捕获，不是扩展本身的终端命令。": "The separate SingleFile CLI can automate browser capture; it is not a terminal command provided by the extension itself.",
   "此处对比扩展的单文件 HTML 工作流；未核实内置 MHTML 导入与导出。": "This entry covers the extension’s single-file HTML workflow. Built-in MHTML import and export were not verified.",
-  "隐私说明称默认在设备本地处理与存放；捕获网页时可能加载未缓存资源。": "The privacy policy says processing and storage are local by default. Page capture can load uncached resources."
+  "隐私说明称默认在设备本地处理与存放；捕获网页时可能加载未缓存资源。": "The privacy policy says processing and storage are local by default. Page capture can load uncached resources.",
+  "GitHub 仓库驱动的静态网站托管，适合开源文档、项目站和作品集。不运行服务端应用。": "Repository-backed static hosting for open-source documentation, project sites, and portfolios. It does not run server-side applications.",
+  "GitHub Free 可从公开仓库发布 Pages；私有源仓库需相应付费方案。源仓库是私有的，并不代表发布的站点也私有。": "GitHub Free can publish Pages from public repositories. Private source repositories require an eligible paid plan. A private source repository does not make the published site private.",
+  "发布的网站最多 1 GB，流量软上限每月 100 GB。GitHub.com 上仅符合条件的 GitHub Enterprise Cloud 组织项目站点可设为私有发布，不能把 Pro 支持私有源仓库理解成私有发布。未开户、绑卡、部署或实测。": "A published site can be up to 1 GB, and the monthly transfer soft limit is 100 GB. On GitHub.com, private publication is available for eligible GitHub Enterprise Cloud organization project sites. Pro support for private source repositories does not mean private publication. No signup, payment setup, deployment, or hands-on test was performed.",
+  "公开仓库 Pages 免费档": "Pages on public repositories",
+  "可部署静态 HTML、CSS 和 JavaScript，支持自定义域名及 HTTPS；域名注册费用另计。": "Publish static HTML, CSS, and JavaScript with custom domain and HTTPS support. Domain registration is separate.",
+  "默认构建每小时 10 次软上限，自定义 GitHub Actions 工作流构建并发布时不受该软上限约束。Pages 部署超过 10 分钟会超时；Actions 另按其适用规则计量。": "Default Pages builds have a soft limit of 10 per hour. A custom GitHub Actions workflow that builds and publishes the site is exempt from that soft limit. Pages deployments time out after 10 minutes; Actions follows its own billing rules.",
+  "只能发布静态文件，不运行 PHP、Ruby 或 Python 等服务端代码，也不包含函数运行时。": "Pages serves static files. It does not run server-side PHP, Ruby, or Python and does not include a functions runtime.",
+  "不可把 Pages 用作运行在线业务、电商站点或主要促成商业交易、提供商业 SaaS 的免费网站托管。这个禁用范围不等于所有商业相关文档都不能发布。": "Pages cannot be used as free hosting to run an online business, an e-commerce site, or a site primarily facilitating commercial transactions or providing commercial SaaS. That scope is not a blanket ban on all business-related documentation.",
+  "流量每月 100 GB 及默认每小时 10 次构建为软上限；超额可能导致限流或网站无法继续提供服务。未见 Pages 自动按用量付费的机制，不与 Actions 计费混同。": "Monthly transfer of 100 GB and 10 default builds per hour are soft limits. Exceeding quotas may cause rate limiting or prevent the site from being served. No automatic usage-based Pages overage mechanism is documented; Actions billing is separate.",
+  "公开仓库支持 GitHub Free；官方 Pages 文档未明确该路径是否要求绑卡。": "GitHub Free supports public repositories. The Pages documentation does not establish whether that path requires a payment card."
 }
