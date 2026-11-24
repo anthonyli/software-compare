@@ -260,6 +260,64 @@
       "notes": "备份仅同系统恢复，iOS 备份不能恢复到 Android。工作/学校账户与无密码凭据仅保留名称，恢复后需重新登录注册；不是全部凭据无损迁移。微软文档预告 Android 备份将在 2027 年 1 月改用 Google One，未来需重新核实。",
       "collected_at": "2026-11-15",
       "maintenance_status": "未评估"
+    },
+    {
+      "id": "bitwarden-authenticator",
+      "name": "Bitwarden Authenticator",
+      "official_url": "https://bitwarden.com/products/authenticator/",
+      "github_url": null,
+      "platforms": [
+        "Android",
+        "iOS"
+      ],
+      "open_source": true,
+      "license": "当前 Android 与 iOS 代码仓库的 LICENSE.txt 均为 GPL-3.0。两仓库同时包含 Password Manager；已归档的独立仓库 README 指向上述仓库。没有单独确认第三方依赖和图形资产许可。",
+      "pricing_model": "免费",
+      "price_summary": "独立验证器应用免费，本地使用不要求 Bitwarden 账号。可选金库同步依赖 Password Manager 账号；Password Manager 内置验证码生成仍是另一项付费功能。",
+      "prices": [],
+      "free_tier_limits": "帮助中心写明不要求 Password Manager 账号即可使用。本地验证码默认保存在设备上的未加密数据库，不同步到 Bitwarden 服务器。产品页的端到端加密表述不覆盖这一说明。可选同步需在同一设备安装两端、登录 Password Manager，并按账号打开 Allow authenticator syncing；该功能官方要求 iOS 或 Android 12+。登出 Password Manager 后，已同步验证码在 Authenticator 中不可用。保护 Bitwarden 账号本身的验证码应存为本地验证码，避免只放在受其保护的同一金库里造成锁出。文件导出仅为 .json 或 .csv，官方示例把 encrypted 标为 false，并包含明文 otpauth 密钥，导出步骤没有密码；已同步到金库的验证码不在这份导出里。不能导入带密码的 2FAS 备份或加密的 Aegis JSON。自托管账号能否同步、当前 iOS 工程的最低系统版本，以及生物识别是否改变本地库加密，尚未确认。帮助中心安装说明为 iOS 15+、Android 9+，当前 Android Authenticator 模块使用的 minSdk 为 29（Android 10），两边不一致。没有安装应用、没有登录，也没有导入真实验证码。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "summary": "免费开源的独立手机验证器，默认可离线生成动态验证码，并可与密码管理器分开保存验证码。",
+      "features": {
+        "totp": {
+          "value": "yes",
+          "note": "帮助中心写明生成 TOTP，默认 SHA-1、30 秒、6 位，也可为 5-10 位。产品页称验证码可离线生成。没有在设备上实测。"
+        },
+        "no_account": {
+          "value": "yes",
+          "note": "本地使用不要求 Bitwarden 账号。保存到 Bitwarden 或开启金库同步需要 Password Manager 账号。"
+        },
+        "cloud_backup": {
+          "value": "partial",
+          "note": "不是默认把全部验证码同步到 Bitwarden。本地验证码留在设备；可选同步受账号、Allow authenticator syncing 和 iOS 或 Android 12+ 限制，且登出后已同步验证码不可用。系统 iCloud 或 Google One 备份是另一条路径，不等于 Authenticator 自己的跨端实时同步。自托管是否可用尚未确认。"
+        },
+        "encrypted_export": {
+          "value": "no",
+          "note": "当前文档的 Authenticator 导出只有 .json 和 .csv。官方示例 JSON 将 encrypted 标为 false，并写入 otpauth 密钥字符串；步骤中没有导出密码。金库加密导出属于 Password Manager，且已同步验证码不包含在 Authenticator 导出中。"
+        },
+        "desktop": {
+          "value": "no",
+          "note": "帮助中心对比表写明仅 iOS 与 Android。没有看到独立桌面客户端的官方说明。"
+        }
+      },
+      "sources": [
+        "https://bitwarden.com/products/authenticator/",
+        "https://bitwarden.com/help/bitwarden-authenticator/",
+        "https://bitwarden.com/help/totp-sync/",
+        "https://bitwarden.com/help/authenticator-import-export/",
+        "https://github.com/bitwarden/android/blob/main/LICENSE.txt",
+        "https://github.com/bitwarden/ios/blob/main/LICENSE.txt",
+        "https://github.com/bitwarden/android/blob/main/authenticator/build.gradle.kts",
+        "https://github.com/bitwarden/android/blob/main/gradle/libs.versions.toml",
+        "https://github.com/bitwarden/authenticator-android",
+        "https://github.com/bitwarden/authenticator-ios"
+      ],
+      "notes": "本地验证码与可选金库同步必须分开看。保护 Bitwarden 账号的验证码应保留为本地验证码，避免同步进同一受保护金库后锁出。产品页的端到端加密表述不覆盖帮助中心写明的本地未加密数据库。文件导出不是密码加密导出。",
+      "collected_at": "2026-11-24",
+      "maintenance_status": "未评估",
+      "source_host_note": "现行代码在 bitwarden/android 与 bitwarden/ios，两个仓库都同时包含 Password Manager，因此不把任一仓库的星标或 Release 当作本应用版本。旧的 authenticator-android 与 authenticator-ios 已归档并指向上述仓库。"
     }
   ],
   "notes": "身份验证器与密码管理器分开比较。动态验证码不等于抗钓鱼通行密钥；备份是否加密、谁能恢复及跨系统迁移需分别判断。资料核实不等于安全审计或实测，不处理任何真实验证码、密钥或恢复码。"
