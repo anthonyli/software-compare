@@ -3312,5 +3312,16 @@
   "作者未单列导出水印或单次录制时长。": "The publisher does not specify a watermark policy or a recording time limit.",
   "作者 FAQ 确认可同时录制系统声音和麦克风，并可分轨保存。": "The author’s FAQ confirms simultaneous desktop and microphone capture with separate audio tracks.",
   "开源免费，macOS 12.3 起有兼容版本。免驱录应用声音需要 macOS 13 或更高版本。": "Free and open source, with a compatible release for macOS 12.3 and later. Driver-free app audio requires macOS 13 or later.",
-  "基于 ScreenCaptureKit 的轻量 Mac 录屏工具，可录窗口、应用声音和麦克风。": "Lightweight Mac recorder built on ScreenCaptureKit for window, app audio and microphone capture."
+  "基于 ScreenCaptureKit 的轻量 Mac 录屏工具，可录窗口、应用声音和麦克风。": "Lightweight Mac recorder built on ScreenCaptureKit for window, app audio and microphone capture.",
+  "比较本地运行的移动应用黑盒和灰盒 UI 回归。平台一栏指测试宿主，不是移动测试目标；以各功能行的驱动和设备要求为准。不比较 IDE、应用开发框架、网页测试或云真机服务。": "Compares local black-box and gray-box mobile UI regression tools. Platforms are test hosts, not mobile test targets. See each feature for driver and device requirements. IDEs, app frameworks, browser testing, and hosted device services are out of scope.",
+  "面向 React Native 的本地灰盒端到端测试框架，可监测应用内的异步活动来同步 UI 测试步骤。": "A local gray-box end-to-end testing framework for React Native that observes asynchronous activity inside the app to synchronize UI test steps.",
+  "本地 Detox 20.51.3 源码采用 MIT 许可，免费使用。测试宿主、SDK 与设备需自行准备。": "The Detox 20.51.3 code is freely available under the MIT license. Provide your own host, SDKs, and devices.",
+  "以 20.51.3 为资料基线，不代表最新版本。该版本 README 列 RN 0.77.x 至 0.84.x 与新架构完全兼容，不推断范围外兼容。官方环境指南说明当前 Android 不支持非 React Native 应用，Expo 集成由社区维护。未在目标应用运行 Detox。": "This entry uses 20.51.3 as its reference, not as a claim about the latest version. Its README lists RN 0.77.x through 0.84.x as fully compatible with the New Architecture; do not infer wider compatibility. The environment guide says non-React Native Android apps are not supported and Expo integration is community-maintained. Detox was not run on a target app.",
+  "使用 JavaScript 编写测试，可与 Jest 配合；需集成 Detox 并构建测试用应用，运行时可等待应用异步工作，不是零接入的黑盒工具。": "Write tests in JavaScript, with Jest integration available. Integrate Detox and build a test app. Detox can wait for app-internal asynchronous work; it is not a zero-integration black-box tool.",
+  "内置 android.emulator，可在装有 Android SDK 和模拟器的宿主运行；Android 官方指南涵盖 macOS、Linux 与 Windows。": "The built-in android.emulator driver runs on a host with the Android SDK and emulator. The Android guide covers macOS, Linux, and Windows hosts.",
+  "内置 android.attached，可连接符合 Android 调试要求的真机。Android 的 React Native 限制同样适用。": "The built-in android.attached driver can connect a physical device configured for Android debugging. The Android React Native restriction still applies.",
+  "内置 ios.simulator，需 macOS 和 Xcode；使用面向模拟器构建的应用。": "The built-in ios.simulator driver requires macOS and Xcode, with an app build for the simulator.",
+  "内置 iOS 驱动是模拟器驱动，20.51.3 不支持 iOS 真机。": "The built-in iOS driver is for simulators. Detox 20.51.3 does not support physical iOS devices.",
+  "有应用内 WebView 专用 API；部分选择器只支持 iOS，不表示可测试独立浏览器或两端功能完全一致。": "Dedicated APIs target in-app WebViews. Some selectors are iOS-only; this does not support testing a standalone browser or imply identical APIs across platforms.",
+  "原生界面可用测试标识、文字等匹配，WebView 使用独立定位 API。": "Native elements can be matched by test identifier, text, and other properties. WebViews use separate locating APIs."
 }
