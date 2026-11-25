@@ -597,6 +597,53 @@
         "https://docs.toonboom.com/help/harmony-25/premium/system-requirements/harmony-25.html"
       ],
       "collected_at": "2026-11-25"
+    },
+    {
+      "id": "glaxnimate",
+      "name": "Glaxnimate",
+      "official_url": "https://apps.kde.org/glaxnimate/",
+      "github_url": "https://github.com/KDE/glaxnimate",
+      "platforms": [
+        "Linux",
+        "Windows",
+        "macOS"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0-or-later",
+      "pricing_model": "免费开源",
+      "price_summary": "免费开源，KDE 提供软件下载；不把第三方商店收费计入。",
+      "prices": [],
+      "summary": "适合界面微动效和网页矢量动画，支持时间轴关键帧、路径动画与预合成。KDE 0.6.0 稳定版公告确认 Mac 有 Apple Silicon 和 Intel 构建。",
+      "free_tier_limits": "Lottie 可以读写，但不是所有特性都兼容。交付前应在目标播放端预览；动画 SVG 使用 SMIL。",
+      "github_stars": null,
+      "latest_release": "0.6.0",
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "features": {
+        "vector_animation": {
+          "value": "yes",
+          "note": "支持补间和路径动画，可输出 Lottie JSON 或动画 SVG。"
+        },
+        "raster_animation": {
+          "value": "unknown",
+          "note": "官方手册确认位图描摹和光栅帧导出，未确认原生位图逐帧绘制。"
+        },
+        "bone_animation": {
+          "value": "unknown",
+          "note": "关键帧和路径动画不是骨骼绑定；官方资料未确认角色骨骼系统。"
+        },
+        "node_effects": {
+          "value": "unknown",
+          "note": "有形状修改器与预合成，未确认通用节点式特效图。"
+        }
+      },
+      "sources": [
+        "https://apps.kde.org/glaxnimate/",
+        "https://github.com/KDE/glaxnimate",
+        "https://glaxnimate.org/news/releases/0.6.0/",
+        "https://docs.glaxnimate.org/en/formats.html"
+      ],
+      "collected_at": "2026-11-25"
     }
   ]
 }
