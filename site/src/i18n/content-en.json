@@ -3975,5 +3975,9 @@
   "Lite、Pro 和 Enterprise 都支持本机 HTTP(S) 检查；仅调试授权流量，应用的证书策略可能限制可见内容。": "Lite, Pro and Enterprise support local HTTP(S) inspection. Inspect only authorized traffic; application certificate policies can limit visibility.",
   "断点和手动调整功能从 Pro 起，Lite 不含。": "Breakpoints and manual editing start with Pro; Lite does not include them.",
   "价格表显示 Lite 已含重放；仅用于获授权的测试环境。": "The price table lists replay on Lite. Use it only in authorized test environments.",
-  "按规则模拟响应从 Pro 起，Lite 不含。": "Rule-based response mocking starts with Pro; Lite does not include it."
+  "按规则模拟响应从 Pro 起，Lite 不含。": "Rule-based response mocking starts with Pro; Lite does not include it.",
+  "以 Java 编写的 JVM 命令行开发库，支持注解或编程 API、参数、嵌套子命令和自动帮助；也可从 Kotlin、Groovy、Scala 使用。": "A JVM CLI library written in Java, with annotation and programmatic APIs, arguments, nested subcommands and generated help. It is also usable from Kotlin, Groovy and Scala.",
+  "需满足应用的 JVM 或原生构建工具链要求；宿主支持不代表所有 Shell 的补全都可用。": "Use the JVM or native build toolchain your application requires. Host compatibility does not imply completion for every shell.",
+  "核心库可为 Bash 和 Zsh 生成脚本，需要安装或加载；未核实 Fish 和 PowerShell 补全。": "The core library generates Bash and Zsh scripts, which must be installed or loaded. Fish and PowerShell completion are unverified.",
+  "支持在终端提示输入选项或位置参数的值；不是多步表单、菜单或完整 TUI。": "Can prompt for an option or positional argument value in the terminal. This is not a multi-step form, menu system or full TUI."
 }
