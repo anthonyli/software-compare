@@ -1,0 +1,205 @@
+{
+  "category_slug": "image-uploaders",
+  "category_name_zh": "图片与文件上传工具",
+  "collected_at": "2026-11-24",
+  "timezone": "Asia/Shanghai",
+  "notes": "比较把图片或文件上传并复制链接的桌面客户端，不把客户端当存储或 CDN。上传会向所选服务发送文件；存储、带宽、访问权限与链接寿命由服务决定，Markdown 链接本身不证明文件是私密的。",
+  "features": [
+    {
+      "key": "imupload_input",
+      "label": "剪贴板或拖放图片"
+    },
+    {
+      "key": "imupload_files",
+      "label": "普通文件上传"
+    },
+    {
+      "key": "imupload_links",
+      "label": "Markdown 链接输出"
+    },
+    {
+      "key": "imupload_custom",
+      "label": "选择自有存储"
+    },
+    {
+      "key": "imupload_hosted",
+      "label": "默认或厂商托管图床"
+    }
+  ],
+  "products": [
+    {
+      "id": "upic",
+      "name": "uPic",
+      "official_url": "https://github.com/gee1k/uPic",
+      "github_url": "https://github.com/gee1k/uPic",
+      "platforms": [
+        "macOS"
+      ],
+      "license": "Apache-2.0",
+      "open_source": true,
+      "pricing_model": "付费",
+      "prices": [
+        {
+          "plan": "美国 Mac App Store 一次性购买",
+          "price": "4.99",
+          "currency": "USD",
+          "period": "once",
+          "note": "美国商店付费下载标价，不包括任何存储服务。"
+        }
+      ],
+      "github_stars": null,
+      "latest_release": "1.4.9",
+      "latest_release_date": "2026-06-13",
+      "maintenance_status": null,
+      "collected_at": "2026-11-24",
+      "summary": "macOS 菜单栏图片和文件上传工具，可从剪贴板、拖放或 Finder 选取内容，返回指定格式的链接。",
+      "price_summary": "美国 Mac App Store 当前 US$4.99 一次性下载，未核实中国大陆商店价格。GitHub 的 LICENSE 是 Apache-2.0，但 README 页脚写 MIT；应核对源码的许可原文，不把它当作商店二进制许可。图床或存储费用另算。",
+      "free_tier_limits": "美国 Mac App Store 当前 1.4.9 需 macOS 13+，版本记录将 SM.MS 改为 S.EE；GitHub 最后一个现成安装包 v0.21.1 来自 2020 年，不能套用新版功能。商店的“不收集数据”是开发者披露；上传仍进入所选图床，未验证凭据存储实现。",
+      "features": {
+        "imupload_input": {
+          "value": "yes",
+          "note": "发布方列拖放、复制的文件或图片、截图等入口，新版商店还记录系统分享扩展。未核实各入口所需系统授权。"
+        },
+        "imupload_files": {
+          "value": "yes",
+          "note": "仓库描述为图片和文件上传，具体文件类型、大小和可访问性看目的地。"
+        },
+        "imupload_links": {
+          "value": "yes",
+          "note": "可在 URL、HTML、Markdown 等格式中选择，完成后可将链接复制到剪贴板。"
+        },
+        "imupload_custom": {
+          "value": "yes",
+          "note": "可选兼容的 Amazon S3、阿里云、腾讯云等存储或自定义服务；提供者处理数据并可能收费。"
+        },
+        "imupload_hosted": {
+          "value": "unknown",
+          "note": "有第三方图床可作为上传目标，未核实 uPic 提供自营存储或购买客户端即附托管额度。"
+        }
+      },
+      "sources": [
+        "https://apps.apple.com/us/app/upic-a-powerful-hosting-tool/id1549159979?mt=12",
+        "https://github.com/gee1k/uPic/blob/master/LICENSE",
+        "https://github.com/gee1k/uPic/blob/master/README.md",
+        "https://github.com/gee1k/uPic/releases/tag/v0.21.1"
+      ]
+    },
+    {
+      "id": "picgo",
+      "name": "PicGo",
+      "official_url": "https://picgo.app/",
+      "github_url": "https://github.com/Molunerfinn/PicGo",
+      "platforms": [
+        "macOS",
+        "Windows",
+        "Linux"
+      ],
+      "license": "MIT",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": "v3.0.4",
+      "latest_release_date": "2026-11-13",
+      "maintenance_status": null,
+      "collected_at": "2026-11-24",
+      "summary": "跨平台、开源的图片和文件上传客户端。可选自有图床、社区插件或另设账号的 PicGo Cloud 托管服务。",
+      "price_summary": "客户端 MIT 免费，不必订阅 PicGo Cloud；自选存储、带宽和插件按各自规则。PicGo Cloud 是可选托管，免费档列 500 MB 存储、单文件 10 MB，付费升级和到期规则单独计算。",
+      "free_tier_limits": "v3.0.4 发布列 Windows、macOS Intel/Apple 芯片、Linux 构建。若开启付费云相册自动归集，非 Cloud 上传的 URL、文件名等元数据也可能进入 PicGo Cloud，原文件留在所选目的地。不开启该功能时不能把云相册规则套用到客户端。",
+      "features": {
+        "imupload_input": {
+          "value": "yes",
+          "note": "支持拖放图片或从剪贴板上传，所选图床仍决定支持的内容。"
+        },
+        "imupload_files": {
+          "value": "yes",
+          "note": "官网及配置文档记录普通文件上传，目标服务与插件可能限制文件类型或大小。"
+        },
+        "imupload_links": {
+          "value": "yes",
+          "note": "内置 Markdown、HTML、URL 和 UBB 链接输出；这不改变目标文件的访问权限。"
+        },
+        "imupload_custom": {
+          "value": "yes",
+          "note": "可配置 GitHub、Amazon S3 等目的地并通过插件扩展；不用 PicGo Cloud 账号也可使用客户端，自选存储可能需自己的账号。"
+        },
+        "imupload_hosted": {
+          "value": "yes",
+          "note": "3.x 内置可选 PicGo Cloud；启用后文件上传到其托管服务，保留期限和额度由 Cloud 套餐决定。"
+        }
+      },
+      "sources": [
+        "https://picgo.app/",
+        "https://github.com/Molunerfinn/PicGo/releases/tag/v3.0.4",
+        "https://github.com/Molunerfinn/PicGo/blob/v3.0.4/LICENSE",
+        "https://docs.picgo.app/cloud/",
+        "https://picgo.app/pricing/",
+        "https://picgo.github.io/PicGo-Doc/guide/config.html"
+      ]
+    },
+    {
+      "id": "ipic",
+      "name": "iPic",
+      "official_url": "https://en.toolinbox.net/iPic/",
+      "github_url": null,
+      "platforms": [
+        "macOS"
+      ],
+      "license": "未知",
+      "open_source": false,
+      "pricing_model": "免费增值",
+      "prices": [
+        {
+          "plan": "美国 iPic Pro 月订阅",
+          "price": "0.99",
+          "currency": "USD",
+          "period": "month",
+          "note": "美国商店订阅标价，不包含外部云存储。"
+        },
+        {
+          "plan": "美国 iPic Pro 年订阅",
+          "price": "9.99",
+          "currency": "USD",
+          "period": "year",
+          "note": "美国商店订阅标价，不包含外部云存储。"
+        }
+      ],
+      "github_stars": null,
+      "latest_release": "1.8.4",
+      "latest_release_date": "2024-07-13",
+      "maintenance_status": null,
+      "collected_at": "2026-11-24",
+      "summary": "macOS 图片与文件上传工具，支持服务菜单、剪贴板或拖放输入，并生成 Markdown 链接。",
+      "price_summary": "默认图床可免费使用；美国 Mac App Store 的 Pro 为 US$0.99/月或 US$9.99/年，用于连接其他存储。商店列 7 天条件试用及自动续订；须至少提前 24 小时取消以避免续费。外部存储费用不含。",
+      "free_tier_limits": "美国商店当前 1.8.4 的最低系统字段是 macOS 10.13+；这不是在任意当前系统实测。商店隐私标签是开发者自报，文件仍发到配置的图床；未核实当前默认图床运营方或应用源码许可。",
+      "features": {
+        "imupload_input": {
+          "value": "yes",
+          "note": "官方文档支持通过拖放、系统服务和剪贴板入口上传图片。"
+        },
+        "imupload_files": {
+          "value": "yes",
+          "note": "商店注明可把普通文件发到 Amazon S3、Backblaze B2、Cloudflare R2 等目的地；不能据此推断默认图床支持任意文件。"
+        },
+        "imupload_links": {
+          "value": "yes",
+          "note": "可自动保存 Markdown 链接，链接的访问条件仍由存储方设定。"
+        },
+        "imupload_custom": {
+          "value": "paid",
+          "note": "Pro 允许连接自选云存储，第三方存储的账号、费用和数据处理另算。"
+        },
+        "imupload_hosted": {
+          "value": "partial",
+          "note": "商店提供默认免费图床，但未核实当前运营方、额度、链接寿命或是否长期保留。"
+        }
+      },
+      "sources": [
+        "https://en.toolinbox.net/iPic/",
+        "https://apps.apple.com/us/app/ipic-image-file-upload-tool/id1101244278?mt=12",
+        "https://en.toolinbox.net/html/privacy.html",
+        "https://en.toolinbox.net/html/terms.html"
+      ]
+    }
+  ]
+}
