@@ -442,6 +442,55 @@
         "https://www.autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/Batch-Rendering-with-Arnold-in-3ds-Max-produces-a-watermark.html"
       ],
       "collected_at": "2026-11-22"
+    },
+    {
+      "id": "spline",
+      "name": "Spline",
+      "official_url": "https://spline.design/",
+      "github_url": null,
+      "platforms": [
+        "Web",
+        "macOS",
+        "Windows"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "Free 可编辑限量文件并发布带水印的 3D 网页。年付折合 Hobby USD 12、Pro USD 25/席位/月。3D 网页去水印从 Hobby 起，视频和带色彩纹理的 glTF 从 Pro 起，完整自托管包需 Enterprise。",
+      "prices": [],
+      "free_tier_limits": "Free 的个人文件数量及绑卡要求未核实。3D 网页发布、下载代码和打包所有资源自托管是不同选项；常规 glTF 导出不会保留 Spline 的状态、事件或交互。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-25",
+      "summary": "浏览器和桌面 3D 设计工具，侧重可交互场景、实时预览及网页交付，不是完整角色动画或离线渲染套件。",
+      "features": {
+        "modeling_3d": {
+          "value": "yes",
+          "note": "在编辑器中建模、编辑材质并组织场景。"
+        },
+        "rigging_3d": {
+          "value": "partial",
+          "note": "可导入并播放带骨骼动画的 FBX 或 glTF/GLB；已核对的官方文档未确认在 Spline 内创建骨骼、蒙皮或权重。"
+        },
+        "animation_3d": {
+          "value": "yes",
+          "note": "提供关键帧时间轴、状态及事件；glTF 的时间轴动画转换只保留位置、旋转与缩放，不包含交互。"
+        },
+        "rendering_3d": {
+          "value": "partial",
+          "note": "支持图像导出与实时网页预览；视频导出从 Pro 起。未将其视为 Blender 式离线渲染。"
+        }
+      },
+      "sources": [
+        "https://spline.design/pricing",
+        "https://docs.spline.design/basics/download-spline-for-desktop",
+        "https://docs.spline.design/designing-in-3-d/animation/timeline-animation",
+        "https://docs.spline.design/importing-content/import-animated-objects",
+        "https://docs.spline.design/exporting-your-scene/files/exporting-as-gtlf-glb",
+        "https://docs.spline.design/exporting-your-scene/files/exporting-as-an-image",
+        "https://docs.spline.design/exporting-your-scene/web/exporting-as-self-hosted-project"
+      ]
     }
   ]
 }

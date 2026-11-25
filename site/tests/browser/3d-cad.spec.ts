@@ -13,3 +13,22 @@ test('3D and CAD additions render bilingual rows at both widths',async({page})=>
  await page.goto('/p/cad/qcad-ce/');await page.locator('[data-lang="en"]').click();await expect(page.locator('body')).toContainText('SVG export requires Professional.');
  await page.goto('/p/animation-3d/wings-3d/');await expect(page.locator('body')).toContainText('animation is unsupported.');
 });
+
+test('Spline keeps tier and interchange boundaries visible in both locales and widths',async({page})=>{
+ for(const width of [1280,390]){
+  await page.setViewportSize({width,height:900});
+  await page.goto('/c/animation-3d/');
+  await expect(page.locator(width===1280?'#matrix':'#card-list').locator('[data-product-id="spline"]')).toBeVisible();
+  await page.goto('/p/animation-3d/spline/');
+  for(const [lang,rig,hosting,gltf] of [
+   ['zh-CN','未确认在 Spline 内创建骨骼','完整自托管包需 Enterprise','不会保留 Spline 的状态、事件或交互'],
+   ['en','does not establish in-editor bone creation','full self-hosting requires Enterprise','does not retain Spline states, events or interactivity'],
+  ]){
+   await page.locator(`[data-lang="${lang}"]`).click();
+   for(const value of [rig,hosting,gltf]){
+    await expect(page.getByText(value,{exact:false}).filter({visible:true}).first()).toBeVisible();
+   }
+   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+  }
+ }
+});
