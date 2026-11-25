@@ -19,11 +19,14 @@ test('file backup exposes its original cover and recovery boundaries', async ({ 
     await page.goto('/c/file-backup/');
     await expect(page.locator('h1')).toContainText(title);
     const table = page.locator(width === 1280 ? '#matrix' : '#card-list');
-    for (const id of ['restic', 'kopia', 'borgbackup']) {
+    for (const id of ['restic', 'kopia', 'borgbackup', 'time-machine']) {
       await expect(table.locator(`[data-product-id="${id}"]`)).toBeVisible();
     }
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
     await page.goto('/p/file-backup/restic/');
     await expect(page.locator('body')).toContainText(boundary);
+    await page.goto('/p/file-backup/time-machine/');
+    await expect(page.locator('h1')).toContainText('Time Machine');
+    await expect(page.locator('body')).toContainText(lang === 'en' ? 'No direct S3 destination' : '不直连 S3');
   }
 });

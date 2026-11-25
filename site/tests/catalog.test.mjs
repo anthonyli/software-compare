@@ -83,11 +83,24 @@ test('AI navigation has exactly the three requested categories and retains local
 test('file backup distinguishes default checks, external scheduling and optional Borg encryption', () => {
  const category = categories.find(c => slug(c) === 'file-backup');
  const [restic, kopia, borg] = category.products;
- assert.deepEqual(category.products.map(p => p.id), ['restic', 'kopia', 'borgbackup']);
- assert.deepEqual(category.products.map(p => p.features.backup_schedule.value), ['no', 'yes', 'no']);
+ assert.deepEqual(category.products.map(p => p.id), ['restic', 'kopia', 'borgbackup', 'time-machine']);
+ assert.deepEqual(category.products.map(p => p.features.backup_schedule.value), ['no', 'yes', 'no', 'yes']);
  assert.match(restic.features.backup_verify.note, /默认.*--read-data/);
  assert.match(kopia.features.backup_verify.note, /默认.*--verify-files-percent=100/);
  assert.equal(borg.features.backup_encryption.value, 'partial');
  assert.match(borg.features.backup_destinations.note, /1\.4.*SSH.*不按原生 S3/);
  assert(!borg.platforms.includes('Windows'));
+});
+
+test('Time Machine distinguishes local and network storage, verification and migration', () => {
+ const p = categories.find(c => slug(c) === 'file-backup').products.find(p => p.id === 'time-machine');
+ assert.deepEqual(p.platforms, ['macOS']);
+ assert.equal(p.open_source, false);
+ assert.match(p.free_tier_limits, /APFS.*同盘/);
+ assert.equal(p.features.backup_encryption.value, 'partial');
+ assert.match(p.features.backup_destinations.note, /SMB NAS.*不直连 S3/);
+ assert.equal(p.features.backup_retention.value, 'partial');
+ assert.match(p.features.backup_restore.note, /不是启动盘克隆/);
+ assert.equal(p.features.backup_verify.value, 'partial');
+ assert.match(p.features.backup_verify.note, /网络备份.*不替代恢复演练/);
 });

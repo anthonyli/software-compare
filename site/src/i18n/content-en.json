@@ -4046,5 +4046,14 @@
   "内置自动调度": "Built-in backup scheduling",
   "官方图形界面": "Official GUI",
   "按快照恢复文件": "Restore files from snapshots",
-  "读取并校验备份内容": "Read and verify backup contents"
+  "读取并校验备份内容": "Read and verify backup contents",
+  "macOS 内置，无需另付软件费；外接硬盘或 NAS 自备。": "Included with macOS at no additional software cost; supply your own external drive or NAS.",
+  "仅支持 Mac。本机 APFS 快照与源文件同盘，不能替代外部备份。": "Mac only. Local APFS snapshots live on the source disk and do not replace an external backup.",
+  "Mac 自带的图形化增量备份，适合用外接盘或兼容的局域网设备找回旧文件。": "The Mac’s built-in graphical incremental backup, suited to recovering older files from an external drive or a compatible local-network device.",
+  "首次完整备份，之后备份更改过的文件；官方文档未说明通用内容去重。": "The first backup is full; later runs back up changed files. Apple does not document general content deduplication here.",
+  "设置时可选加密；恢复时需要备份密码。": "Encryption is optional at setup; the backup password is needed to restore an encrypted backup.",
+  "支持外接盘、共享备份的 Mac 或明确兼容 Time Machine 的 SMB NAS，不直连 S3。": "Supports external drives, a Mac configured to share backup storage, or a Time Machine-compatible SMB NAS. No direct S3 destination.",
+  "默认保留最近 24 小时的逐小时、近一个月的逐日和更早的逐周备份；磁盘满时删除最旧备份。": "By default, keeps hourly backups for the past 24 hours, daily backups for the past month, and weekly backups for earlier months. Oldest backups are removed when the disk fills up.",
+  "可按历史版本找回单个文件；迁移助理可恢复用户文件和应用，不是启动盘克隆。": "Recover individual older files, or use Migration Assistant to restore user files and apps. This is not a boot-disk clone.",
+  "Apple 说明可自动或手动验证网络备份；未说明这相当于逐文件读回，也不替代恢复演练。": "Apple documents automatic and manual verification for network backups. It does not document this as a full file-by-file readback, and verification does not replace a restore drill."
 }
