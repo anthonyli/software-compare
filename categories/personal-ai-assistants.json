@@ -1,0 +1,180 @@
+{
+  "category_slug": "personal-ai-assistants",
+  "category_name_zh": "个人 AI 助理（任务与提醒）",
+  "collected_at": "2026-11-24",
+  "timezone": "Asia/Shanghai",
+  "notes": "比较可接收委托、在后台处理任务并返回结果或提醒的助理功能，不重复比较通用聊天、编程工作台或记忆工具。已连接应用、操作授权、团队可见范围和供应商留存设置是不同边界；不能把接入等同于全权访问。",
+  "features": [
+    {
+      "key": "pa_background",
+      "label": "后台任务与结果"
+    },
+    {
+      "key": "pa_schedule",
+      "label": "定时任务与提醒"
+    },
+    {
+      "key": "pa_connector",
+      "label": "外部应用连接"
+    },
+    {
+      "key": "pa_review",
+      "label": "可复核的操作授权"
+    },
+    {
+      "key": "pa_sharing",
+      "label": "团队共享同一个助理"
+    },
+    {
+      "key": "pa_local_only",
+      "label": "仅在本机处理"
+    }
+  ],
+  "products": [
+    {
+      "id": "grok-bot",
+      "name": "Grok Bot",
+      "official_url": "https://x.ai/bot",
+      "github_url": null,
+      "platforms": [
+        "macOS",
+        "Windows",
+        "Linux",
+        "iOS",
+        "iPadOS",
+        "Android"
+      ],
+      "license": "专有许可",
+      "open_source": false,
+      "pricing_model": "订阅",
+      "prices": [
+        {
+          "plan": "The X Subscription Premium（美元参考）",
+          "price": "30",
+          "currency": "USD",
+          "period": "month",
+          "note": "官方美元月标价，不含适用税费；地区及商店可能不同。"
+        },
+        {
+          "plan": "The X Subscription Super（美元参考）",
+          "price": "100",
+          "currency": "USD",
+          "period": "month",
+          "note": "官方美元月标价，不含适用税费；地区及商店可能不同。"
+        },
+        {
+          "plan": "The X Subscription Ultra（美元参考）",
+          "price": "200",
+          "currency": "USD",
+          "period": "month",
+          "note": "官方美元月标价，不含适用税费；地区及商店可能不同。"
+        }
+      ],
+      "github_stars": null,
+      "latest_release": "v1.2.3",
+      "latest_release_date": "2026-11-18",
+      "maintenance_status": null,
+      "collected_at": "2026-11-24",
+      "summary": "xAI 的独立任务助理，可从桌面或手机提交并查看结果；作业可在云端继续。它不是普通 Grok 聊天客户端。",
+      "price_summary": "新 The X Subscription 的 Premium、Super、Ultra 包含 Grok Bot，官网美元参考分别 US$30、US$100、US$200/月；Free 和 Plus 不含。新套餐与 Grok、Cursor 共用周用量池，超出部分由预付额度覆盖；旧 Cursor 套餐规则不同。",
+      "free_tier_limits": "官方更新日志列 v1.2.3（2026-11-18）为最新产品版本；此前的 1.0 是正式推出，不是当前版本。官方客户端文档列 macOS（Apple 芯片和 Intel）、Windows/Linux（x64 和 Arm64）、iOS/iPadOS 18+、Android 9+。登录使用 Cursor 账号；当前报价不是各地区、各商店或旧账户的保证。",
+      "features": {
+        "pa_background": {
+          "value": "yes",
+          "note": "可在云端持续处理委托，关闭本地电脑不等于终止任务；桌面和手机可查看同一账号的对话与结果。"
+        },
+        "pa_schedule": {
+          "value": "yes",
+          "note": "官网列可定时运行的例程，并可返回任务结果；未核实账号可用日程数、精确通知时延或投递可用性。"
+        },
+        "pa_connector": {
+          "value": "yes",
+          "note": "官方列 Gmail、Google Calendar 等可连接应用，需要相应账号授权；团队使用还受成员及组织权限约束。"
+        },
+        "pa_review": {
+          "value": "yes",
+          "note": "Auto Review 可暂停并等待批准；官方也说明许多操作会自动运行，不是逐项人工批准或永久安全保证。"
+        },
+        "pa_sharing": {
+          "value": "yes",
+          "note": "Team Bots 可按受支持套餐共享给成员或组；个人助理不自动公开给团队，具体可见范围取决于设置。"
+        },
+        "pa_local_only": {
+          "value": "no",
+          "note": "需要云存储，同账号的 Bots 使用同一台分配的云电脑；训练退出按 Cursor 账号和隐私设置，Legacy Privacy Mode 不支持。它不是纯本机或零留存承诺。"
+        }
+      },
+      "sources": [
+        "https://x.ai/bot",
+        "https://x.ai/news/grok-bot-1-0",
+        "https://x.ai/changelog/bot",
+        "https://x.ai/pricing",
+        "https://docs.x.ai/grok-bot/get-started",
+        "https://docs.x.ai/grok-bot/faq",
+        "https://docs.x.ai/grok-bot/approvals-security-and-privacy",
+        "https://docs.x.ai/x-subscription/grok-bot",
+        "https://apps.apple.com/us/app/grok-bot/id6794501026?platform=ipad"
+      ]
+    },
+    {
+      "id": "gemini-tasks",
+      "name": "Tasks in Gemini",
+      "official_url": "https://support.google.com/gemini/answer/17094507?hl=en",
+      "github_url": null,
+      "platforms": [
+        "Web",
+        "macOS",
+        "iOS",
+        "iPadOS",
+        "Android"
+      ],
+      "license": "专有许可",
+      "open_source": false,
+      "pricing_model": "免费增值",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-24",
+      "summary": "Gemini 的独立任务界面，比较处理委托、查看后台任务和定时功能，不是通用 Gemini 聊天或 Google Tasks 待办应用。",
+      "price_summary": "Google 公布：美国、澳大利亚、加拿大、印度、日本、韩国的合资格账号可不订阅使用；其他 Gemini 支持地区需 Google AI Pro 或 Ultra，但欧洲经济区、尼日利亚、瑞士和英国目前不提供此任务入口，付费也不例外。未核实账号结账价。",
+      "free_tier_limits": "官方要求年满 18 岁、个人 Google 账号且开启历史，提供 Gemini 网页、Mac 以及 iPhone、iPad 和 Android App；工作或学校账号暂不支持此任务入口。以当地发布与账号资格为准。",
+      "features": {
+        "pa_background": {
+          "value": "yes",
+          "note": "可在 Tasks 页面查看任务状态及结果；与在普通 Gemini 聊天中等待即时回复不同。"
+        },
+        "pa_schedule": {
+          "value": "yes",
+          "note": "官方区分 Tasks 与聊天定时：免费/Plus 在支持地区最多 10 个活跃任务日程，约定时间窗内最多每日一次；Pro/Ultra 最多 50 个，支持精确时刻及更高频率。提醒不保证即时。"
+        },
+        "pa_connector": {
+          "value": "yes",
+          "note": "可使用已连接的 Gmail、日历、Drive 等，连接范围和授权影响任务可用的数据；不是所有 Google 数据默认可见。"
+        },
+        "pa_review": {
+          "value": "yes",
+          "note": "文档列出可在任务中准许或拒绝，并管理连接权限；Google 也说明部分已连接操作并不逐项确认。"
+        },
+        "pa_sharing": {
+          "value": "no",
+          "note": "此入口目前仅面向个人账号，工作或学校账号不支持；不把其他 Workspace 或聊天功能当作共享任务助理。"
+        },
+        "pa_local_only": {
+          "value": "no",
+          "note": "任务可能由远程浏览器或电脑处理，且要求开启历史；可在 Gemini History 管理任务记录。Mac 端有选择本机文件夹的入口，但这不使服务成为纯本机。"
+        }
+      },
+      "sources": [
+        "https://support.google.com/gemini/answer/17094507?hl=en",
+        "https://support.google.com/gemini/answer/17094710?hl=en",
+        "https://support.google.com/gemini/answer/16316416?hl=en",
+        "https://support.google.com/gemini/answer/18766567?hl=en",
+        "https://support.google.com/gemini/answer/13594961?hl=en",
+        "https://one.google.com/about/google-ai-plans/",
+        "https://support.google.com/gemini/answer/17094710?co=GENIE.Platform%3DiOS&hl=en"
+      ]
+    }
+  ]
+}
