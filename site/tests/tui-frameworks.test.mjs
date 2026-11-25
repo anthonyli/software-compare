@@ -15,6 +15,7 @@ test('TUI list separates core support from companion packages and backends', () 
     ['bubble-tea', ['partial', 'partial', 'yes', 'unknown', 'unknown'], /Go 1\.26/, /v2\.1\.2/],
     ['ratatui', ['yes', 'yes', 'partial', 'yes', 'unknown'], /Rust 1\.88/, /ratatui-v0\.30\.2/],
     ['textual', ['yes', 'yes', 'yes', 'yes', 'partial'], /Python \^3\.9/, /v8\.2\.8/],
+    ['terminal-gui', ['yes', 'yes', 'yes', 'yes', 'unknown'], /\.NET 10/, /v2\.6\.0/],
   ];
   assert.equal(category.products.length, expected.length);
   for (const [i, [id, statuses, runtime, version]] of expected.entries()) {
@@ -29,10 +30,12 @@ test('TUI list separates core support from companion packages and backends', () 
     assert.deepEqual(Object.keys(product.features), cells);
     assert.deepEqual(cells.map(key => product.features[key].value), statuses);
   }
-  const [bubbleTea, ratatui, textual] = category.products;
+  const [bubbleTea, ratatui, textual, terminalGui] = category.products;
   assert.match(bubbleTea.features.tui_widgets.note, /独立 Bubbles/);
   assert.match(ratatui.features.tui_input.note, /后端读取/);
   assert.match(textual.features.tui_web.note, /另启服务/);
+  assert.match(terminalGui.features.tui_testing.note, /键鼠输入和捕获绘制缓冲区/);
+  assert.match(terminalGui.features.tui_web.note, /未确认浏览器运行/);
 });
 
 test('TUI feature labels, notes and product descriptions have English translations', () => {

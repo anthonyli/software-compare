@@ -3992,5 +3992,13 @@
   "在编辑器中建模、编辑材质并组织场景。": "Model objects, edit materials and compose scenes in the editor.",
   "可导入并播放带骨骼动画的 FBX 或 glTF/GLB；已核对的官方文档未确认在 Spline 内创建骨骼、蒙皮或权重。": "Imports and plays skeletal animation in FBX or glTF/GLB. The checked documentation does not establish in-editor bone creation, skinning or weight painting.",
   "提供关键帧时间轴、状态及事件；glTF 的时间轴动画转换只保留位置、旋转与缩放，不包含交互。": "Includes a keyframe timeline, states and events. glTF timeline animation is limited to position, rotation and scale; interactivity is not exported.",
-  "支持图像导出与实时网页预览；视频导出从 Pro 起。未将其视为 Blender 式离线渲染。": "Supports image export and real-time web previews; video export starts at Pro. This is not treated as Blender-style offline rendering."
+  "支持图像导出与实时网页预览；视频导出从 Pro 起。未将其视为 Blender 式离线渲染。": "Supports image export and real-time web previews; video export starts at Pro. This is not treated as Blender-style offline rendering.",
+  "面向 .NET 的跨平台终端界面库，支持内联或全屏应用，内置菜单、表格、树和对话框。": "Cross-platform .NET terminal UI library with inline and full-screen modes, built-in menus, tables, trees, and dialogs.",
+  "核心库免费开源，MIT 许可；无需购买服务即可使用。": "The core library is free and open source under MIT, with no paid service required.",
+  "NuGet 2.6.0 以 .NET 10 为目标；个别键鼠能力取决于终端和驱动。": "NuGet 2.6.0 targets .NET 10. Some keyboard and mouse capabilities depend on the terminal and driver.",
+  "可使用内联布局或全屏模式。": "Supports inline layout or full-screen mode.",
+  "内置菜单、表格、树、表单和对话框。": "Includes menus, tables, trees, forms, and dialogs.",
+  "支持键盘和鼠标事件；具体键鼠能力取决于终端和驱动。": "Supports keyboard and mouse events; available features depend on the terminal and driver.",
+  "ANSI 驱动支持注入键鼠输入和捕获绘制缓冲区，不等同于覆盖全部真实终端驱动。": "The ANSI driver supports input injection and render buffer capture, not coverage of every real terminal driver.",
+  "官方资料未确认浏览器运行；内联指在终端滚动区内运行。": "Browser support was not confirmed in official docs; inline means running in the terminal scrollback."
 }
