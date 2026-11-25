@@ -83,8 +83,8 @@ test('AI navigation has exactly the three requested categories and retains local
 test('file backup distinguishes default checks, external scheduling and optional Borg encryption', () => {
  const category = categories.find(c => slug(c) === 'file-backup');
  const [restic, kopia, borg] = category.products;
- assert.deepEqual(category.products.map(p => p.id), ['restic', 'kopia', 'borgbackup', 'time-machine', 'windows-file-history', 'arq-7', 'duplicati']);
- assert.deepEqual(category.products.map(p => p.features.backup_schedule.value), ['no', 'yes', 'no', 'yes', 'yes', 'yes', 'yes']);
+ assert.deepEqual(category.products.map(p => p.id), ['restic', 'kopia', 'borgbackup', 'time-machine', 'windows-file-history', 'arq-7', 'duplicati', 'deja-dup']);
+ assert.deepEqual(category.products.map(p => p.features.backup_schedule.value), ['no', 'yes', 'no', 'yes', 'yes', 'yes', 'yes', 'yes']);
  assert.match(restic.features.backup_verify.note, /默认.*--read-data/);
  assert.match(kopia.features.backup_verify.note, /默认.*--verify-files-percent=100/);
  assert.equal(borg.features.backup_encryption.value, 'partial');
@@ -135,6 +135,17 @@ test('Duplicati keeps the local client, hosted Console and recovery credentials 
  assert.equal(p.features.backup_encryption.value, 'partial');
  assert.match(p.features.backup_restore.note, /没有原机的本地数据库.*存储访问凭据及备份口令/);
  assert.match(p.features.backup_verify.note, /抽样验证.*不等于.*实际恢复文件/);
+});
+
+test('Déjà Dup distinguishes modern Restic backups, legacy archives and subset verification', () => {
+ const p = categories.find(c => slug(c) === 'file-backup').products.find(p => p.id === 'deja-dup');
+ assert.deepEqual(p.platforms, ['Linux']);
+ assert.equal(p.license, 'GPL-3.0-or-later');
+ assert.equal(p.github_url, null);
+ assert.match(p.summary, /49\.0 起新建备份使用 Restic.*Duplicity/);
+ assert.match(p.features.backup_restore.note, /文件管理器.*应用内恢复界面/);
+ assert.equal(p.features.backup_verify.value, 'partial');
+ assert.match(p.features.backup_verify.note, /64 MiB 子集.*不等于全量/);
 });
 
 test('Harmony confirms separate 2D editions without guessing store prices', () => {

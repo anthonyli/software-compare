@@ -19,7 +19,7 @@ test('file backup exposes its original cover and recovery boundaries', async ({ 
     await page.goto('/c/file-backup/');
     await expect(page.locator('h1')).toContainText(title);
     const table = page.locator(width === 1280 ? '#matrix' : '#card-list');
-    for (const id of ['restic', 'kopia', 'borgbackup', 'time-machine', 'windows-file-history', 'arq-7', 'duplicati']) {
+    for (const id of ['restic', 'kopia', 'borgbackup', 'time-machine', 'windows-file-history', 'arq-7', 'duplicati', 'deja-dup']) {
       await expect(table.locator(`[data-product-id="${id}"]`)).toBeVisible();
     }
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
@@ -38,5 +38,9 @@ test('file backup exposes its original cover and recovery boundaries', async ({ 
     await expect(page.locator('h1')).toContainText('Duplicati');
     await expect(page.locator('body')).toContainText(lang === 'en' ? 'Console limits are not client limits.' : '不能把这两个监控额度当成客户端上限');
     await expect(page.locator('body')).toContainText(lang === 'en' ? 'without the original local database' : '没有原机的本地数据库');
+    await page.goto('/p/file-backup/deja-dup/');
+    await expect(page.locator('h1')).toContainText('Déjà Dup Backups');
+    await expect(page.locator('body')).toContainText(lang === 'en' ? 'Older Duplicity backups use the in-app restore UI' : '旧 Duplicity 备份使用应用内恢复界面');
+    await expect(page.locator('body')).toContainText(lang === 'en' ? '64 MiB subset' : '64 MiB 子集');
   }
 });

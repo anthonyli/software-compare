@@ -4114,5 +4114,16 @@
   "客户端自带服务可按计划运行任务，无需外部 cron。": "The client service runs scheduled jobs without external cron.",
   "本机浏览器打开备份配置和恢复界面，区别于厂商托管 Console。": "The local browser opens the setup and restore UI; this is separate from the vendor-hosted Console.",
   "没有原机的本地数据库也可从备份直接恢复；需存储访问凭据及备份口令（若已加密），通常比已有本地库时慢。": "You can restore without the original local database. This requires storage credentials and the backup passphrase if encrypted, and is typically slower than restoring with an existing local database.",
-  "默认备份后抽样验证；test 可选择检查所有远端归档，但归档校验不等于在新设备实际恢复文件。": "Post-backup verification samples archives by default. The test command can check all remote archives, but archive verification is not the same as restoring files on another machine."
+  "默认备份后抽样验证；test 可选择检查所有远端归档，但归档校验不等于在新设备实际恢复文件。": "Post-backup verification samples archives by default. The test command can check all remote archives, but archive verification is not the same as restoring files on another machine.",
+  "应用免费开源；本地磁盘、网络或云存储由用户自备，提供商可能另收费。": "The app is free and open source. You provide the local, network, or cloud storage; the provider may charge separately.",
+  "面向个人文件误删和损坏恢复，不是整机镜像；默认备份主目录但排除下载与废纸篓，可修改包含和排除范围。": "Designed for recovering personal files, not for system imaging. By default it backs up the home directory except Downloads and Trash; included and excluded folders are configurable.",
+  "面向 Linux 桌面的图形文件备份工具。49.0 起新建备份使用 Restic；旧的 Duplicity 备份走不同的恢复流程，Duplicity 不是 Duplicati。": "A graphical file backup tool for the Linux desktop. New backups use Restic from version 49.0. Older Duplicity backups follow a separate restore flow; Duplicity is not Duplicati.",
+  "新建 Restic 备份为增量版本，复用已有数据块，按日期浏览快照。": "New Restic backups are incremental, reuse existing blocks, and can be browsed by snapshot date.",
+  "当前 Restic 备份使用加密仓库；旧 Duplicity 备份的口令取决于创建时的配置。": "Current Restic backups use encrypted repositories. Password requirements for old Duplicity backups depend on how they were created.",
+  "支持本地磁盘、网络服务器和 Google Drive 等云端位置；不沿用 Restic CLI 的全部目的地列表。": "Supports local disks, network servers, and cloud destinations such as Google Drive. Do not assume all Restic CLI destinations are offered.",
+  "可配置最短保留时间，不是逐条自订保留规则；默认尽量永久保留，空间不足时可能清理。": "Set a minimum retention duration, not a custom rule set. The app defaults to keeping backups indefinitely if space permits.",
+  "默认手动；启用自动备份后可选频率，不能指定一天内的精确时间，省电或游戏模式可能延后。": "Manual by default. Automatic backup frequency is configurable, but not the exact time of day; Power Saver or Game Mode may defer backups.",
+  "GNOME 桌面图形界面，可配置来源、目的地、自动备份和恢复。": "The GNOME desktop UI configures sources, destinations, automatic backup, and restore.",
+  "Restic 备份可按日期在文件管理器浏览、打开或复制；旧 Duplicity 备份使用应用内恢复界面。": "Browse Restic backups by date and open or copy files in the file manager. Older Duplicity backups use the in-app restore UI.",
+  "50.2 源码显示 Restic 常规校验运行 check，深度校验额外读取 64 MiB 子集，不等于全量读取或整机恢复演练。": "In the 50.2 source, routine Restic verification runs check and the deeper check reads a 64 MiB subset. That is not a full read or a disaster-recovery drill."
 }

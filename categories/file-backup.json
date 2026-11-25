@@ -485,6 +485,71 @@
         "https://docs.duplicati.com/technical-details/understanding-backup/encryption-algorithms",
         "https://prev-docs.duplicati.com/en/latest/06-advanced-options/"
       ]
+    },
+    {
+      "id": "deja-dup",
+      "name": "Déjà Dup Backups",
+      "official_url": "https://apps.gnome.org/DejaDup/",
+      "github_url": null,
+      "platforms": [
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0-or-later",
+      "pricing_model": "免费开源",
+      "price_summary": "应用免费开源；本地磁盘、网络或云存储由用户自备，提供商可能另收费。",
+      "prices": [],
+      "free_tier_limits": "面向个人文件误删和损坏恢复，不是整机镜像；默认备份主目录但排除下载与废纸篓，可修改包含和排除范围。",
+      "github_stars": null,
+      "latest_release": "50.2",
+      "latest_release_date": "2026-09-05",
+      "collected_at": "2026-11-26",
+      "summary": "面向 Linux 桌面的图形文件备份工具。49.0 起新建备份使用 Restic；旧的 Duplicity 备份走不同的恢复流程，Duplicity 不是 Duplicati。",
+      "features": {
+        "backup_snapshots": {
+          "value": "yes",
+          "note": "新建 Restic 备份为增量版本，复用已有数据块，按日期浏览快照。"
+        },
+        "backup_encryption": {
+          "value": "yes",
+          "note": "当前 Restic 备份使用加密仓库；旧 Duplicity 备份的口令取决于创建时的配置。"
+        },
+        "backup_destinations": {
+          "value": "yes",
+          "note": "支持本地磁盘、网络服务器和 Google Drive 等云端位置；不沿用 Restic CLI 的全部目的地列表。"
+        },
+        "backup_retention": {
+          "value": "partial",
+          "note": "可配置最短保留时间，不是逐条自订保留规则；默认尽量永久保留，空间不足时可能清理。"
+        },
+        "backup_schedule": {
+          "value": "yes",
+          "note": "默认手动；启用自动备份后可选频率，不能指定一天内的精确时间，省电或游戏模式可能延后。"
+        },
+        "backup_gui": {
+          "value": "yes",
+          "note": "GNOME 桌面图形界面，可配置来源、目的地、自动备份和恢复。"
+        },
+        "backup_restore": {
+          "value": "yes",
+          "note": "Restic 备份可按日期在文件管理器浏览、打开或复制；旧 Duplicity 备份使用应用内恢复界面。"
+        },
+        "backup_verify": {
+          "value": "partial",
+          "note": "50.2 源码显示 Restic 常规校验运行 check，深度校验额外读取 64 MiB 子集，不等于全量读取或整机恢复演练。"
+        }
+      },
+      "sources": [
+        "https://apps.gnome.org/DejaDup/",
+        "https://flathub.org/en/apps/org.gnome.DejaDup",
+        "https://help.gnome.org/deja-dup/prefs.html",
+        "https://help.gnome.org/deja-dup/restore-full.html",
+        "https://help.gnome.org/deja-dup/restore-worst-case.html",
+        "https://gitlab.gnome.org/World/deja-dup/-/blob/50.2/data/app.metainfo.xml.in",
+        "https://gitlab.gnome.org/World/deja-dup/-/blob/50.2/libdeja/restic/ResticJob.vala",
+        "https://gitlab.gnome.org/World/deja-dup/-/archive/50.2/deja-dup-50.2.tar.bz2",
+        "https://restic.readthedocs.io/en/stable/100_references.html"
+      ]
     }
   ]
 }
