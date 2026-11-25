@@ -4055,5 +4055,14 @@
   "支持外接盘、共享备份的 Mac 或明确兼容 Time Machine 的 SMB NAS，不直连 S3。": "Supports external drives, a Mac configured to share backup storage, or a Time Machine-compatible SMB NAS. No direct S3 destination.",
   "默认保留最近 24 小时的逐小时、近一个月的逐日和更早的逐周备份；磁盘满时删除最旧备份。": "By default, keeps hourly backups for the past 24 hours, daily backups for the past month, and weekly backups for earlier months. Oldest backups are removed when the disk fills up.",
   "可按历史版本找回单个文件；迁移助理可恢复用户文件和应用，不是启动盘克隆。": "Recover individual older files, or use Migration Assistant to restore user files and apps. This is not a boot-disk clone.",
-  "Apple 说明可自动或手动验证网络备份；未说明这相当于逐文件读回，也不替代恢复演练。": "Apple documents automatic and manual verification for network backups. It does not document this as a full file-by-file readback, and verification does not replace a restore drill."
+  "Apple 说明可自动或手动验证网络备份；未说明这相当于逐文件读回，也不替代恢复演练。": "Apple documents automatic and manual verification for network backups. It does not document this as a full file-by-file readback, and verification does not replace a restore drill.",
+  "Windows 内置，无需另付软件费；外接硬盘或网络存储自备。": "Included with Windows at no additional software cost; supply your own external drive or network storage.",
+  "主要备份库和桌面等常用位置；其他文件夹可加入库。不是 OneDrive 同步或系统映像。": "Primarily backs up libraries and common locations such as Desktop. Add other folders to a library. This is neither OneDrive sync nor a system image.",
+  "Windows 控制面板里的自动文件备份，适合用外接盘或网络位置找回个人文件的旧版本。": "Automatic file backup in Windows Control Panel for recovering earlier versions of personal files from an external drive or network location.",
+  "保存文件的历史版本；官方用户文档未说明内容去重。": "Keeps versions of files; Microsoft’s user documentation does not describe content deduplication.",
+  "官方文件历史记录文档未说明内置的备份仓库加密，不把目标盘自身的加密算作工具能力。": "Microsoft’s File History documentation does not describe built-in repository encryption. Disk-level encryption is a separate capability.",
+  "支持外接盘或网络位置，不直连 S3。": "Supports an external drive or network location, not a direct S3 destination.",
+  "Microsoft 文档列出一直保留、空间不足时清理，以及按版本最低保留期限清理等策略。": "Microsoft documents retention policies such as keeping versions indefinitely, deleting when space is needed, or applying a minimum age before deletion.",
+  "可恢复旧版文件或文件夹，也可还原到其他位置以免覆盖当前版本。": "Restore a previous version of a file or folder, or restore to another location to avoid replacing the current version.",
+  "官方用户文档未说明对整个备份执行全量读回校验。": "Microsoft’s user documentation does not describe full readback verification of an entire backup."
 }

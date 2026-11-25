@@ -19,7 +19,7 @@ test('file backup exposes its original cover and recovery boundaries', async ({ 
     await page.goto('/c/file-backup/');
     await expect(page.locator('h1')).toContainText(title);
     const table = page.locator(width === 1280 ? '#matrix' : '#card-list');
-    for (const id of ['restic', 'kopia', 'borgbackup', 'time-machine']) {
+    for (const id of ['restic', 'kopia', 'borgbackup', 'time-machine', 'windows-file-history']) {
       await expect(table.locator(`[data-product-id="${id}"]`)).toBeVisible();
     }
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
@@ -28,5 +28,8 @@ test('file backup exposes its original cover and recovery boundaries', async ({ 
     await page.goto('/p/file-backup/time-machine/');
     await expect(page.locator('h1')).toContainText('Time Machine');
     await expect(page.locator('body')).toContainText(lang === 'en' ? 'No direct S3 destination' : '不直连 S3');
+    await page.goto('/p/file-backup/windows-file-history/');
+    await expect(page.locator('h1')).toContainText('Windows File History');
+    await expect(page.locator('body')).toContainText(lang === 'en' ? 'neither OneDrive sync nor a system image' : '不是 OneDrive 同步或系统映像');
   }
 });
