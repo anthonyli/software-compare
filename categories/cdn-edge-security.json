@@ -1,0 +1,202 @@
+{
+  "category_slug": "cdn-edge-security",
+  "category_name_zh": "CDN 与边缘安全",
+  "collected_at": "2026-11-25",
+  "timezone": "Asia/Shanghai",
+  "notes": "CDN 分发已有源站的内容，不等于网站托管。免费额度、付款方式、WAF 范围和超额后果应分别核对。资料来自官方公开文档，未开户、部署或实测流量。",
+  "features": [
+    {
+      "key": "cdn_cache",
+      "label": "CDN 缓存和边缘分发"
+    },
+    {
+      "key": "cdn_waf",
+      "label": "免费档的托管 WAF"
+    },
+    {
+      "key": "cdn_free_allowance",
+      "label": "免费额度与计量周期"
+    },
+    {
+      "key": "cdn_overage",
+      "label": "超过免费额度后的处理"
+    },
+    {
+      "key": "cdn_payment",
+      "label": "免费档需要付款方式"
+    }
+  ],
+  "products": [
+    {
+      "id": "cloudflare-free",
+      "name": "Cloudflare Free",
+      "official_url": "https://www.cloudflare.com/plans/free/",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "免费增值",
+      "price_summary": "网站 Free 方案列为 US$0/月；仅有免费托管 WAF 规则集，不包含全部付费规则。",
+      "prices": [
+        {
+          "plan": "Cloudflare 网站 Free",
+          "price": "0",
+          "currency": "USD",
+          "period": "month",
+          "note": "不含源站、域名或可选付费服务。"
+        }
+      ],
+      "free_tier_limits": "Free 单个可缓存文件上限 512 MB；HTML 和 JSON 默认不缓存。大文件和视频另受 CDN 服务条款限制；未核实免费档付款方式。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-25",
+      "summary": "面向已有源站的 CDN 与基础边缘防护；不是网站托管或独立存储服务。",
+      "features": {
+        "cdn_cache": {
+          "value": "yes",
+          "note": "为已接入的站点缓存并分发内容；默认缓存策略不等于托管源文件。"
+        },
+        "cdn_waf": {
+          "value": "partial",
+          "note": "Free 仅提供 Cloudflare Free Managed Ruleset，不能视作完整托管规则集。"
+        },
+        "cdn_free_allowance": {
+          "value": "partial",
+          "note": "Free、Pro、Business 的可缓存文件上限均为每文件 512 MB，这不是月流量额度。"
+        },
+        "cdn_overage": {
+          "value": "unknown",
+          "note": "未核实 Free 的按量超额规则；不可由 US$0/月推定无限传输。视频和大文件另有条款。"
+        },
+        "cdn_payment": {
+          "value": "unknown",
+          "note": "当前核对的 Cloudflare 网站 Free 资料未确认；不把其他产品的免卡声明套用到本方案。"
+        }
+      },
+      "sources": [
+        "https://www.cloudflare.com/plans/free/",
+        "https://developers.cloudflare.com/waf/",
+        "https://developers.cloudflare.com/cache/concepts/default-cache-behavior/",
+        "https://www.cloudflare.com/service-specific-terms-application-services/"
+      ]
+    },
+    {
+      "id": "cloudfront-flat-rate-free",
+      "name": "Amazon CloudFront Flat-Rate Free",
+      "official_url": "https://aws.amazon.com/cloudfront/pricing/",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "免费增值",
+      "price_summary": "固定费率 Free 为 US$0/月，每个分发每月 100 万请求和 100 GB 数据传输；不是 CloudFront 按量付费或 AWS 账号级 Free Tier。",
+      "prices": [
+        {
+          "plan": "CloudFront 固定费率 Free",
+          "price": "0",
+          "currency": "USD",
+          "period": "month",
+          "note": "以每个分发为单位，套餐外的独立 AWS 资源另计。"
+        }
+      ],
+      "free_tier_limits": "AWS 账号级 Free Tier 不适用 CloudFront 固定费率计划。开通 AWS 账号需有效付款方式；未开通套餐，不把该套餐范围扩展至独立 AWS 服务。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-25",
+      "summary": "按分发配置的 CDN 套餐，组合 CloudFront、AWS WAF 和 DDoS 防护等能力。",
+      "features": {
+        "cdn_cache": {
+          "value": "yes",
+          "note": "按 CloudFront 分发缓存并向访客传送内容，仍需配置源站。"
+        },
+        "cdn_waf": {
+          "value": "partial",
+          "note": "包含 AWS WAF，但按套餐限定功能；固定费率分发需保持关联有效的 Web ACL。"
+        },
+        "cdn_free_allowance": {
+          "value": "yes",
+          "note": "每个分发每月 100 万请求、100 GB 数据传输；不要和按量方案额度叠加。"
+        },
+        "cdn_overage": {
+          "value": "yes",
+          "note": "固定费率套餐不收超额费；用量异常高或长期显著超额时，AWS 可能调整交付表现，例如减少边缘位置。"
+        },
+        "cdn_payment": {
+          "value": "yes",
+          "note": "AWS 账号注册需要有效付款方式；CloudFront 的 $0 套餐不等于免付款方式。"
+        }
+      },
+      "sources": [
+        "https://aws.amazon.com/cloudfront/pricing/",
+        "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/flat-rate-pricing-plan.html",
+        "https://docs.aws.amazon.com/PricingPlanManager/latest/UserGuide/plans.html",
+        "https://docs.aws.amazon.com/accounts/latest/reference/getting-started.html",
+        "https://docs.aws.amazon.com/waf/latest/developerguide/cloudfront-features.html"
+      ]
+    },
+    {
+      "id": "fastly-full-site-delivery",
+      "name": "Fastly Full Site Delivery",
+      "official_url": "https://www.fastly.com/pricing",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "免费增值",
+      "price_summary": "官方 Free 列 100 GB 带宽及 100 万请求，价格表按区域按月列出；超过额度自动计费。",
+      "prices": [
+        {
+          "plan": "Fastly CDN 免费用量",
+          "price": "0",
+          "currency": "USD",
+          "period": "month",
+          "note": "这是按量服务的免费额度，不是有费用上限的包月套餐。"
+        }
+      ],
+      "free_tier_limits": "现行 CDN 注册指引要求信用卡。不同地区的带宽价格不同；不把 Compute、TLS 或安全产品的额度合入 CDN。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-25",
+      "summary": "按使用量计费的 CDN；Next-Gen WAF 在定价中另列，不包含在此 CDN 免费档。",
+      "features": {
+        "cdn_cache": {
+          "value": "yes",
+          "note": "连接源站与域名后提供边缘缓存与 CDN 分发。"
+        },
+        "cdn_waf": {
+          "value": "paid",
+          "note": "Fastly Next-Gen WAF 另作为安全产品列价；需联系销售，不把它记为免费 CDN 功能。"
+        },
+        "cdn_free_allowance": {
+          "value": "yes",
+          "note": "Full Site Delivery 定价列明 100 GB 和 100 万请求的免费档，费率表按区域和月列用量；分别核对带宽与请求。"
+        },
+        "cdn_overage": {
+          "value": "yes",
+          "note": "超过免费额度会按月自动计费。例如北美首段超额带宽为 US$0.12/GB；请求首段为每 1 万次 US$0.01。"
+        },
+        "cdn_payment": {
+          "value": "yes",
+          "note": "当前 Full Site Delivery 注册指南要求信用卡；旧试用说明不能替代当前接入指引。"
+        }
+      },
+      "sources": [
+        "https://www.fastly.com/pricing",
+        "https://www.fastly.com/documentation/guides/full-site-delivery/getting-started-with-full-site-delivery/",
+        "https://www.fastly.com/documentation/guides/organizations-and-accounts/billing/account-types/"
+      ]
+    }
+  ]
+}

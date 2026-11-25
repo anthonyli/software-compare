@@ -14,7 +14,7 @@ export const siteConfig = {
 
 /** 首页分组：slug 必须与数据里的品类 id 一致。 */
 export const categoryGroups: { id: string; name: string; slugs: string[] }[] = [
-  { id: "cloud", name: "云服务与开发基础设施", slugs: ["transactional-email", "domain-registration", "international-payments", "web-hosting", "cloud-sql-databases", "backend-as-a-service"] },
+  { id: "cloud", name: "云服务与开发基础设施", slugs: ["transactional-email", "domain-registration", "international-payments", "web-hosting", "cdn-edge-security", "cloud-sql-databases", "backend-as-a-service"] },
   { id: "network", name: "网络工具", slugs: ["proxy-clients", "browsers", "network-packet-analyzers", "http-debugging", "telegram-desktop-clients"] },
   { id: "lifestyle", name: "运动与户外", slugs: ["fitness-training", "cycling-tools", "outdoor-navigation"] },
   { id: "ai", name: "AI 工具", slugs: ["ai-assistants", "ai-coding", "ai-agent-workbenches", "ai-image-workflows", "ai-memory", "personal-ai-assistants"] },
@@ -92,6 +92,7 @@ export const categoryMonograms: Record<string, string> = {
   "transactional-email": "邮",
   "backend-as-a-service": "后",
   "web-hosting": "站",
+  "cdn-edge-security": "边",
   "cloud-sql-databases": "库",
   "international-payments": "付",
   "domain-registration": "域",
@@ -168,6 +169,7 @@ export const categoryTints: Record<string, string> = {
   "transactional-email": "#E5F1ED",
   "backend-as-a-service": "#E5F1EB",
   "web-hosting": "#E5EDF4",
+  "cdn-edge-security": "#E4EFF4",
   "cloud-sql-databases": "#E3F0EB",
   "international-payments": "#F4E6EF",
   "domain-registration": "#DDEFEA",
