@@ -175,6 +175,84 @@
         "https://one.google.com/about/google-ai-plans/",
         "https://support.google.com/gemini/answer/17094710?co=GENIE.Platform%3DiOS&hl=en"
       ]
+    },
+    {
+      "id": "aws-quick",
+      "name": "AWS Quick",
+      "official_url": "https://aws.amazon.com/quick/",
+      "github_url": null,
+      "platforms": [
+        "Web",
+        "macOS",
+        "Windows"
+      ],
+      "license": "专有许可",
+      "open_source": false,
+      "pricing_model": "免费增值",
+      "prices": [
+        {
+          "plan": "Standalone Free",
+          "price": "0",
+          "currency": "USD",
+          "period": "month"
+        },
+        {
+          "plan": "Standalone Plus",
+          "price": "25",
+          "currency": "USD",
+          "period": "month"
+        },
+        {
+          "plan": "Standalone Max",
+          "price": "125",
+          "currency": "USD",
+          "period": "month"
+        }
+      ],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-25",
+      "summary": "用 Routines 委托后台任务。纯云端任务关机也能运行；涉及本机文件、桌面浏览器或本地代码时，设备断开会跳过该次运行。",
+      "price_summary": "独立版列 Free、Plus 和 Max。Plus 月付 US$25/人，Max 月付 US$125/人；年付折合分别 US$20 和 US$100/人/月。企业版另计。",
+      "free_tier_limits": "新独立账号含 30 天 Plus 试用。价格表与 FAQ 对 Free 的长期桌面权限表述不一致；免费额度、重置周期、超额处理和绑卡要求未核实。",
+      "features": {
+        "pa_background": {
+          "value": "yes",
+          "note": "纯云端例行任务可在电脑关机时运行，在 Mission Control 查看结果；需要本机工具时，电脑和桌面应用必须在线，否则当次跳过。"
+        },
+        "pa_schedule": {
+          "value": "yes",
+          "note": "最短定时间隔 15 分钟，也可按入站邮件或特定 Quick 事件触发；具体可用性取决于账号和流程。"
+        },
+        "pa_connector": {
+          "value": "yes",
+          "note": "支持 Slack、邮件等授权连接；可读数据和动作取决于连接器权限。桌面版也可使用已授权的本机文件夹。"
+        },
+        "pa_review": {
+          "value": "yes",
+          "note": "运行遇到需批准的动作时会等待批准或拒绝；具体取决于连接器和设置，不是每项操作都确认。"
+        },
+        "pa_sharing": {
+          "value": "yes",
+          "note": "可按角色共享已发布的自定义助理；空间和连接器不会随之自动共享，团队功能受套餐限制。"
+        },
+        "pa_local_only": {
+          "value": "no",
+          "note": "桌面版可调用本机工具，但聊天及其运行时由 AWS 托管，不是全程纯本机。"
+        }
+      },
+      "sources": [
+        "https://aws.amazon.com/quick/pricing/",
+        "https://aws.amazon.com/quick/faqs/",
+        "https://aws.amazon.com/quick/desktop/",
+        "https://docs.aws.amazon.com/quick/latest/userguide/standalone-plans.html",
+        "https://docs.aws.amazon.com/quick/latest/userguide/working-with-routines.html",
+        "https://docs.aws.amazon.com/quick/latest/userguide/desktop-security.html",
+        "https://docs.aws.amazon.com/quick/latest/userguide/share-manage-agents.html",
+        "https://docs.aws.amazon.com/quick/latest/userguide/how-quicksuite-works.html"
+      ]
     }
   ]
 }
