@@ -19,7 +19,7 @@ test('file backup exposes its original cover and recovery boundaries', async ({ 
     await page.goto('/c/file-backup/');
     await expect(page.locator('h1')).toContainText(title);
     const table = page.locator(width === 1280 ? '#matrix' : '#card-list');
-    for (const id of ['restic', 'kopia', 'borgbackup', 'time-machine', 'windows-file-history', 'arq-7']) {
+    for (const id of ['restic', 'kopia', 'borgbackup', 'time-machine', 'windows-file-history', 'arq-7', 'duplicati']) {
       await expect(table.locator(`[data-product-id="${id}"]`)).toBeVisible();
     }
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
@@ -34,5 +34,9 @@ test('file backup exposes its original cover and recovery boundaries', async ({ 
     await page.goto('/p/file-backup/arq-7/');
     await expect(page.locator('h1')).toContainText('Arq 7');
     await expect(page.locator('body')).toContainText(lang === 'en' ? 'keep the owning user signed in' : '文件所属用户保持登录');
+    await page.goto('/p/file-backup/duplicati/');
+    await expect(page.locator('h1')).toContainText('Duplicati');
+    await expect(page.locator('body')).toContainText(lang === 'en' ? 'Console limits are not client limits.' : '不能把这两个监控额度当成客户端上限');
+    await expect(page.locator('body')).toContainText(lang === 'en' ? 'without the original local database' : '没有原机的本地数据库');
   }
 });

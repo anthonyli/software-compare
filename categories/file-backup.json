@@ -1,7 +1,7 @@
 {
   "category_slug": "file-backup",
   "category_name_zh": "文件备份与恢复",
-  "collected_at": "2026-11-25",
+  "collected_at": "2026-11-26",
   "timezone": "Asia/Shanghai",
   "notes": "比较允许恢复到时间点的文件级备份，不是双向文件同步，也不代表裸机恢复。加密、存储端不可变和恢复演练是不同的能力。",
   "features": [
@@ -415,6 +415,75 @@
         "https://www.arqbackup.com/documentation/arq7/English.lproj/objectLock.html",
         "https://www.arqbackup.com/documentation/arq7/English.lproj/validate.html",
         "https://www.arqbackup.com/documentation/arq7/English.lproj/restore.html"
+      ]
+    },
+    {
+      "id": "duplicati",
+      "name": "Duplicati",
+      "official_url": "https://duplicati.com/",
+      "github_url": "https://github.com/duplicati/duplicati",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "免费开源 / 可选托管服务",
+      "price_summary": "本地备份客户端免费且不限容量；自备磁盘、NAS 或远端存储的费用另计。可选 Console 免费档监控 2 台机器、查看最近 200 次备份；Pro 提供远程管理及每台 100 GB 托管存储，不能把这两个监控额度当成客户端上限。",
+      "prices": [],
+      "free_tier_limits": "自行备份和恢复无需订阅 Console。所列稳定版核心采用 MIT，专有目录（如存在）及第三方组件适用各自许可。备份口令与导出的配置文件口令可能不同。",
+      "github_stars": null,
+      "latest_release": "2.4.1.0",
+      "latest_release_date": "2026-10-29",
+      "collected_at": "2026-11-26",
+      "summary": "面向文件级备份的跨平台工具，内置本地 Web 界面和调度，可备份到本地磁盘或自选远端。换机后可从备份数据直接恢复，不是系统镜像。",
+      "features": {
+        "backup_snapshots": {
+          "value": "yes",
+          "note": "按版本保存文件列表并在备份间复用相同数据块，不是磁盘镜像。"
+        },
+        "backup_encryption": {
+          "value": "partial",
+          "note": "备份上传前可选用内置 AES 或外部 GPG；也可关闭加密。"
+        },
+        "backup_destinations": {
+          "value": "yes",
+          "note": "支持本地磁盘、已挂载的网络目录及 S3、SFTP、WebDAV 等远端。"
+        },
+        "backup_retention": {
+          "value": "yes",
+          "note": "可保留全部版本、按数量或时间过期，也可定义自选保留规则。"
+        },
+        "backup_schedule": {
+          "value": "yes",
+          "note": "客户端自带服务可按计划运行任务，无需外部 cron。"
+        },
+        "backup_gui": {
+          "value": "yes",
+          "note": "本机浏览器打开备份配置和恢复界面，区别于厂商托管 Console。"
+        },
+        "backup_restore": {
+          "value": "yes",
+          "note": "没有原机的本地数据库也可从备份直接恢复；需存储访问凭据及备份口令（若已加密），通常比已有本地库时慢。"
+        },
+        "backup_verify": {
+          "value": "yes",
+          "note": "默认备份后抽样验证；test 可选择检查所有远端归档，但归档校验不等于在新设备实际恢复文件。"
+        }
+      },
+      "sources": [
+        "https://github.com/duplicati/duplicati/releases/tag/v2.4.1.0_stable_2026-10-29",
+        "https://raw.githubusercontent.com/duplicati/duplicati/v2.4.1.0_stable_2026-10-29/LICENSE",
+        "https://raw.githubusercontent.com/duplicati/duplicati/v2.4.1.0_stable_2026-10-29/Duplicati/CommandLine/CLI/help.txt",
+        "https://docs.duplicati.com/duplicati-programs/license/duplicati-inc-and-open-source",
+        "https://duplicati.com/pricing",
+        "https://docs.duplicati.com/getting-started/installation",
+        "https://docs.duplicati.com/getting-started/set-up-a-backup-in-the-ui",
+        "https://docs.duplicati.com/getting-started/restoring-files",
+        "https://docs.duplicati.com/technical-details/understanding-backup/how-backup-works",
+        "https://docs.duplicati.com/technical-details/understanding-backup/encryption-algorithms",
+        "https://prev-docs.duplicati.com/en/latest/06-advanced-options/"
       ]
     }
   ]
