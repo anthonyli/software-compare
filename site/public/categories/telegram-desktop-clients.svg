@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Original illustration for Compare / 软件对比. No third-party marks. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" fill="none" role="img" aria-hidden="true">
+  <rect width="480" height="260" fill="#E5F3F4"/>
+  <defs>
+    <linearGradient id="wash-telegram-desktop-clients" x1="12" y1="0" x2="467" y2="256" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7FDFD" stop-opacity="0"/>
+      <stop offset="1" stop-color="#A8CFD4" stop-opacity=".43"/>
+    </linearGradient>
+    <filter id="soft-telegram-desktop-clients" x="-20%" y="-20%" width="145%" height="155%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#111111" flood-opacity=".11"/>
+    </filter>
+    <pattern id="dots-telegram-desktop-clients" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="translate(18 16)">
+      <circle cx="1.2" cy="1.2" r="1.05" fill="#111111" opacity=".35"/>
+    </pattern>
+  </defs>
+  <rect width="480" height="260" fill="url(#wash-telegram-desktop-clients)"/>
+  <ellipse cx="38" cy="212" rx="68" ry="46" fill="#FFFFFF" opacity=".37"/>
+  <ellipse cx="437" cy="35" rx="73" ry="53" fill="#FFFFFF" opacity=".34"/>
+  <rect width="480" height="260" fill="url(#dots-telegram-desktop-clients)" opacity=".45"/>
+  <g filter="url(#soft-telegram-desktop-clients)">
+    <rect x="163" y="51" width="216" height="130" rx="18" fill="#F8FEFE"/>
+    <path d="M163 83h216" stroke="#D4E9EA" stroke-width="2"/>
+    <circle cx="187" cy="67" r="3.8" fill="#111111"/>
+    <path d="M349 104h12m-31 15h31m-24 15h24" stroke="#7EA7AB" stroke-width="3" stroke-linecap="round"/>
+    <rect x="101" y="91" width="217" height="121" rx="18" fill="#FFFFFF"/>
+    <path d="M101 119h217m-153 0v93" stroke="#D9EAEB" stroke-width="2"/>
+    <rect x="118" y="135" width="29" height="16" rx="6" fill="#DCEFF0"/>
+    <path d="M118 160h28m-28 12h22m-22 12h25" stroke="#8FAEB0" stroke-width="3" stroke-linecap="round"/>
+    <rect x="184" y="132" width="78" height="18" rx="8" fill="#DCEFF0"/>
+    <rect x="217" y="158" width="79" height="18" rx="8" fill="#C6E3E5"/>
+    <rect x="184" y="183" width="64" height="15" rx="7" fill="#DCEFF0"/>
+  </g>
+  <circle cx="123" cy="106" r="3.8" fill="#111111"/>
+  <path d="M194 141h55m-22 26h55m-88 24h42" stroke="#111111" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,145 @@
+{
+  "category_slug": "telegram-desktop-clients",
+  "category_name_zh": "Telegram 桌面客户端",
+  "collected_at": "2026-11-24",
+  "timezone": "Asia/Shanghai",
+  "notes": "只比较官方跨平台 Telegram Desktop 与其 AyuGram Desktop 分支，不包含原生 Telegram for macOS、移动端分支或网页版。第三方客户端的本地留存会改变设备上的隐私边界；Telegram API 条款第 1.4 节限制干预阅后即焚及已读等状态。此处记录已知差异，不推荐留存或规避平台规则。",
+  "features": [
+    {
+      "key": "tgdesk_cloud",
+      "label": "Telegram 云端聊天"
+    },
+    {
+      "key": "tgdesk_official",
+      "label": "Telegram 官方桌面发行"
+    },
+    {
+      "key": "tgdesk_retention",
+      "label": "额外本地文本历史"
+    },
+    {
+      "key": "tgdesk_export",
+      "label": "可核实的聊天导出"
+    },
+    {
+      "key": "tgdesk_cloud_e2ee",
+      "label": "普通云聊端到端加密"
+    }
+  ],
+  "products": [
+    {
+      "id": "ayugram-desktop",
+      "name": "AyuGram Desktop",
+      "official_url": "https://docs.ayugram.one/desktop/",
+      "github_url": "https://github.com/AyuGram/AyuGramDesktop",
+      "platforms": [
+        "macOS",
+        "Windows",
+        "Linux"
+      ],
+      "license": "GPL-3.0",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": "v7.2.9",
+      "latest_release_date": "2026-10-05",
+      "maintenance_status": null,
+      "collected_at": "2026-11-24",
+      "summary": "基于 Telegram Desktop 的第三方桌面分支。此条仅记录桌面发布渠道、云聊天与本地存储边界，不套用 Android 分支或移动端说明。",
+      "price_summary": "桌面源码公开，仓库列 GPL-3.0；此版本许可文件保留上游针对部分代码的 OpenSSL 例外，范围按许可原文。GitHub 发布提供公开下载。项目所称本地 Premium 不等于 Telegram 付费订阅，不能据此保证服务器权益。",
+      "free_tier_limits": "v7.2.9 标签附件列 macOS 和 Windows Portable；Linux 按打包方另有渠道，不是这组二进制。Homebrew 的旧 7.0.9 cask 因 Gatekeeper 检查失败自 2026-09-01 停用。GitHub 的 SHA-256 摘要不能证明 Mac 包获公证；当前 Mac 包的签名、架构、最低系统和运行未验证。",
+      "features": {
+        "tgdesk_cloud": {
+          "value": "yes",
+          "note": "与官方客户端使用同一 Telegram 服务和账号；连接、账号和功能仍受服务范围和客户端版本限制。"
+        },
+        "tgdesk_official": {
+          "value": "no",
+          "note": "由 AyuGram 项目发布，不是 Telegram 官方构建。独立核对发布和包签名，不能用源码公开推断二进制获得公证。"
+        },
+        "tgdesk_retention": {
+          "value": "yes",
+          "note": "桌面文档明确已收取的部分文本可在内存和本地数据库中留存，并保存编辑历史；不含媒体。会话界面变化不意味着本地记录已清除，也不能保证完整历史或从未接收的内容。"
+        },
+        "tgdesk_export": {
+          "value": "unknown",
+          "note": "局部文本留存不是完整导出，未核实当前分支是否保留上游各导出功能及格式。"
+        },
+        "tgdesk_cloud_e2ee": {
+          "value": "no",
+          "note": "普通 Telegram 云聊不因使用第三方客户端或本地留存而成为端到端加密；不能以此推断任何额外加密能力。"
+        }
+      },
+      "sources": [
+        "https://github.com/AyuGram/AyuGramDesktop",
+        "https://github.com/AyuGram/AyuGramDesktop/releases/tag/v7.2.9",
+        "https://github.com/AyuGram/AyuGramDesktop/releases/expanded_assets/v7.2.9",
+        "https://github.com/AyuGram/AyuGramDesktop/blob/v7.2.9/README.md",
+        "https://github.com/AyuGram/AyuGramDesktop/blob/v7.2.9/LICENSE",
+        "https://formulae.brew.sh/cask/ayugram",
+        "https://formulae.brew.sh/api/cask/ayugram.json",
+        "https://docs.ayugram.one/desktop/",
+        "https://docs.ayugram.one/desktop/saving/",
+        "https://telegram.org/faq_premium",
+        "https://core.telegram.org/api/terms"
+      ]
+    },
+    {
+      "id": "telegram-desktop",
+      "name": "Telegram Desktop",
+      "official_url": "https://desktop.telegram.org/",
+      "github_url": "https://github.com/telegramdesktop/tdesktop",
+      "platforms": [
+        "macOS",
+        "Windows",
+        "Linux"
+      ],
+      "license": "GPL-3.0",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": "v7.4.6",
+      "latest_release_date": "2026-11-23",
+      "maintenance_status": null,
+      "collected_at": "2026-11-24",
+      "summary": "Telegram 官方基于 Qt 的跨平台桌面客户端，是 AyuGram Desktop 的上游。不要与单独发布的原生 Telegram for macOS 混同。",
+      "price_summary": "客户端免费开源，源码采用 GPLv3 并附 OpenSSL 例外。Telegram Premium 是独立的可选账号订阅，地区和购买渠道决定可用性及价格。",
+      "free_tier_limits": "官方最新稳定标签 v7.4.6。Windows、macOS、Linux 由 Telegram Desktop 渠道提供；原生 macOS 版的秘密聊天说明不能套用到这里的 Qt 客户端。未登录、未实测会话或本地缓存。",
+      "features": {
+        "tgdesk_cloud": {
+          "value": "yes",
+          "note": "官方跨平台客户端支持 Telegram 云聊；云端同步和本地缓存保留是不同问题。"
+        },
+        "tgdesk_official": {
+          "value": "yes",
+          "note": "由 Telegram 发布的 Qt 桌面上游，注意官方下载页另列原生 macOS 客户端。"
+        },
+        "tgdesk_retention": {
+          "value": "unknown",
+          "note": "未从官方文档核实有与分支相同的额外本地文本历史功能；并不保证缓存或你主动导出的文件会自动消失。"
+        },
+        "tgdesk_export": {
+          "value": "yes",
+          "note": "官方桌面导出可保存选定会话或账号数据，JSON 或 HTML 可包含媒体，取决于选择。显式导出不等同于客户端持续留存。"
+        },
+        "tgdesk_cloud_e2ee": {
+          "value": "no",
+          "note": "Telegram 说明普通云聊用客户端与服务器加密，不是端到端加密。官方另称独立的原生 Telegram for macOS 支持设备限定的秘密聊天；两者不是同一桌面应用。"
+        }
+      },
+      "sources": [
+        "https://desktop.telegram.org/",
+        "https://telegram.org/apps",
+        "https://github.com/telegramdesktop/tdesktop",
+        "https://github.com/telegramdesktop/tdesktop/releases/tag/v7.4.6",
+        "https://github.com/telegramdesktop/tdesktop/blob/v7.4.6/README.md",
+        "https://telegram.org/faq?setln=en",
+        "https://telegram.org/blog/export-and-more",
+        "https://telegram.org/faq_premium",
+        "https://core.telegram.org/api/terms"
+      ]
+    }
+  ]
+}
