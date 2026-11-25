@@ -136,3 +136,13 @@ test('Harmony confirms separate 2D editions without guessing store prices', () =
  assert.equal(p.features.node_effects.value, 'partial');
  assert.match(p.features.node_effects.note, /节点视图按 Premium 计/);
 });
+
+test('Glaxnimate does not conflate partial web-format support with bitmap drawing', () => {
+ const p = categories.find(c => slug(c) === 'animation-2d').products.find(p => p.id === 'glaxnimate');
+ assert.equal(p.license, 'GPL-3.0-or-later');
+ assert.deepEqual(p.platforms, ['Linux', 'Windows', 'macOS']);
+ assert.equal(p.features.vector_animation.value, 'yes');
+ assert.match(p.free_tier_limits, /不是所有特性都兼容.*SMIL/);
+ assert.equal(p.features.raster_animation.value, 'unknown');
+ assert.match(p.features.raster_animation.note, /位图描摹.*未确认原生位图/);
+});

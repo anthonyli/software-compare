@@ -4082,5 +4082,12 @@
   "Essentials 提供基础绘画、上色和动画工具，包含矢量绘制。": "Essentials offers core drawing, painting, and animation tools, including vector drawing.",
   "Advanced 有原生位图图层和绘画工具；仅导入位图素材不等于可在位图图层上绘画。": "Advanced includes native bitmap layers and drawing tools. Importing bitmap assets is not the same as drawing on a bitmap layer.",
   "Advanced 面向简单剪纸动画；Premium 提供更完整的角色绑定与变形流程。": "Advanced supports simple cut-out animation; Premium offers more extensive rigging and deformation workflows.",
-  "高级节点视图按 Premium 计，可组合绘图、绑定和合成特效；不把基础图层效果算成节点编辑。": "Premium’s Node View connects drawing, rigs, and compositing effects. Basic layer effects are not counted as node editing."
+  "高级节点视图按 Premium 计，可组合绘图、绑定和合成特效；不把基础图层效果算成节点编辑。": "Premium’s Node View connects drawing, rigs, and compositing effects. Basic layer effects are not counted as node editing.",
+  "免费开源，KDE 提供软件下载；不把第三方商店收费计入。": "Free and open source with downloads from KDE; third-party store charges are not included.",
+  "Lottie 可以读写，但不是所有特性都兼容。交付前应在目标播放端预览；动画 SVG 使用 SMIL。": "Lottie import and export are supported, but not all features are compatible. Preview in the target player before delivery. Animated SVG uses SMIL.",
+  "适合界面微动效和网页矢量动画，支持时间轴关键帧、路径动画与预合成。KDE 0.6.0 稳定版公告确认 Mac 有 Apple Silicon 和 Intel 构建。": "Suited to UI motion and web vector animation, with timeline keyframes, motion paths, and precompositions. KDE’s 0.6.0 release announcement lists Apple Silicon and Intel Mac builds.",
+  "支持补间和路径动画，可输出 Lottie JSON 或动画 SVG。": "Supports tweening and motion paths, with Lottie JSON and animated SVG output.",
+  "官方手册确认位图描摹和光栅帧导出，未确认原生位图逐帧绘制。": "The manual documents bitmap tracing and raster frame export, but does not confirm native frame-by-frame bitmap drawing.",
+  "关键帧和路径动画不是骨骼绑定；官方资料未确认角色骨骼系统。": "Keyframes and motion paths are not skeletal rigging. The official material does not confirm a character bone system.",
+  "有形状修改器与预合成，未确认通用节点式特效图。": "Shape modifiers and precompositions are available; a general node graph for effects was not confirmed."
 }
