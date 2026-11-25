@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Original illustration for Compare / 软件对比. No third-party marks. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" fill="none" role="img" aria-hidden="true">
+  <rect width="480" height="260" fill="#E8EFFB"/>
+  <defs>
+    <linearGradient id="wash-menu-bar-calendars" x1="12" y1="0" x2="467" y2="256" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FAFCFF" stop-opacity="0"/>
+      <stop offset="1" stop-color="#ACC4E6" stop-opacity=".43"/>
+    </linearGradient>
+    <filter id="soft-menu-bar-calendars" x="-20%" y="-20%" width="145%" height="155%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#111111" flood-opacity=".11"/>
+    </filter>
+    <pattern id="dots-menu-bar-calendars" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="translate(18 16)">
+      <circle cx="1.2" cy="1.2" r="1.05" fill="#111111" opacity=".35"/>
+    </pattern>
+  </defs>
+  <rect width="480" height="260" fill="url(#wash-menu-bar-calendars)"/>
+  <ellipse cx="38" cy="212" rx="68" ry="46" fill="#FFFFFF" opacity=".37"/>
+  <ellipse cx="437" cy="35" rx="73" ry="53" fill="#FFFFFF" opacity=".34"/>
+  <rect width="480" height="260" fill="url(#dots-menu-bar-calendars)" opacity=".45"/>
+  <g filter="url(#soft-menu-bar-calendars)">
+    <rect x="99" y="45" width="263" height="23" rx="11.5" fill="#FFFFFF"/>
+    <path d="m203 80 13-13 13 13" fill="#FFFFFF"/>
+    <rect x="124" y="76" width="192" height="136" rx="19" fill="#FFFFFF"/>
+    <rect x="145" y="95" width="147" height="18" rx="8" fill="#E0EAF9"/>
+    <rect x="194" y="146" width="24" height="22" rx="6" fill="#BFD1F2"/>
+    <path d="M158 132h122m-122 25h122m-122 23h92" stroke="#D2DDEF" stroke-width="8" stroke-linecap="round" stroke-dasharray="8 16"/>
+    <circle cx="331" cy="166" r="44" fill="#FFFFFF"/>
+    <circle cx="331" cy="166" r="32" fill="#EFF4FD" stroke="#111111" stroke-width="2.75"/>
+  </g>
+  <path d="M315 57h27m-11 93v17l11 6" stroke="#111111" stroke-width="3.3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="331" cy="166" r="2.8" fill="#111111"/>
+</svg>

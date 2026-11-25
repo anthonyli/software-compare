@@ -1,0 +1,216 @@
+{
+  "category_slug": "menu-bar-calendars",
+  "category_name_zh": "菜单栏日历",
+  "collected_at": "2026-11-24",
+  "timezone": "Asia/Shanghai",
+  "notes": "比较从 Mac 菜单栏查看日期和日程的系统日历伴侣。应用通过系统日历读取已添加的日历，通常不是自己提供同步账号；时钟、日程读取、写入和会议链接各有权限或联网边界。本类不包含 Finder 快捷键工具。",
+  "features": [
+    {
+      "key": "mbcal_clock",
+      "label": "菜单栏时钟"
+    },
+    {
+      "key": "mbcal_agenda",
+      "label": "查看系统日历日程"
+    },
+    {
+      "key": "mbcal_create",
+      "label": "创建日程"
+    },
+    {
+      "key": "mbcal_meeting",
+      "label": "快速加入线上会议"
+    },
+    {
+      "key": "mbcal_world",
+      "label": "多个时区时钟"
+    },
+    {
+      "key": "mbcal_reminders",
+      "label": "显示系统提醒事项"
+    }
+  ],
+  "products": [
+    {
+      "id": "top-calendar",
+      "name": "Top Calendar",
+      "official_url": "https://apps.apple.com/cn/app/top-calendar/id1544980542?mt=12",
+      "github_url": null,
+      "platforms": [
+        "macOS"
+      ],
+      "license": "专有许可",
+      "open_source": false,
+      "pricing_model": "付费",
+      "prices": [
+        {
+          "plan": "中国大陆 Mac App Store",
+          "price": "18",
+          "currency": "CNY",
+          "period": "once",
+          "note": "该店一次性购买，非换算。"
+        },
+        {
+          "plan": "美国 Mac App Store",
+          "price": "2.99",
+          "currency": "USD",
+          "period": "once",
+          "note": "该店一次性购买，非换算。"
+        }
+      ],
+      "github_stars": null,
+      "latest_release": "4.5",
+      "latest_release_date": "2026-11-06",
+      "maintenance_status": null,
+      "collected_at": "2026-11-24",
+      "summary": "把 macOS 系统日程、月历和可定制时钟放进菜单栏；中国大陆商店说明还列出农历、节气和法定节假日班休。",
+      "price_summary": "当前付费下载：中国大陆 Mac App Store ¥18、美国 Mac App Store US$2.99，为各店一次性标价；不要套用旧版曾有的内购与订阅。",
+      "free_tier_limits": "中美商店当前均列 macOS 26.6+；4.5 更新提到适配 macOS 27，不表示最低提高到 27。App Store 的不收集数据为开发者披露。发布者声明使用 EventKit、不主动发起网络请求；未实测日历授权提示、拒绝授权后的功能或系统日历本身的同步。",
+      "features": {
+        "mbcal_clock": {
+          "value": "yes",
+          "note": "精确且可定制的菜单栏时钟，与月历和日程入口集成。"
+        },
+        "mbcal_agenda": {
+          "value": "yes",
+          "note": "读取已加入 macOS 日历的账号或订阅；iCloud、Outlook 或 Google 等的同步仍在系统日历侧。"
+        },
+        "mbcal_create": {
+          "value": "yes",
+          "note": "商店说明支持应用内创建日程；实际可写入范围由日历权限和账号决定。"
+        },
+        "mbcal_meeting": {
+          "value": "yes",
+          "note": "商店说明支持一键加入线上会议；未验证服务列表，加入通话不在日历本地数据边界内。"
+        },
+        "mbcal_world": {
+          "value": "unknown",
+          "note": "已确认时钟可定制，未确认能同时展示多个城市的时钟。"
+        },
+        "mbcal_reminders": {
+          "value": "unknown",
+          "note": "查看日历日程已确认，未确认能显示 macOS 提醒事项 App 的任务。"
+        }
+      },
+      "sources": [
+        "https://apps.apple.com/cn/app/top-calendar/id1544980542?mt=12",
+        "https://apps.apple.com/us/app/top-calendar/id1544980542?mt=12",
+        "https://topcalendar.guojiubo.work/privacy",
+        "https://support.apple.com/guide/mac-help/mh43710/mac"
+      ]
+    },
+    {
+      "id": "itsycal",
+      "name": "Itsycal",
+      "official_url": "https://www.mowglii.com/itsycal/",
+      "github_url": "https://github.com/sfsam/Itsycal",
+      "platforms": [
+        "macOS"
+      ],
+      "license": "MIT",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": "0.29.0",
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-24",
+      "summary": "轻量的 Mac 菜单栏月历，集成系统日历与提醒事项，支持键盘导航、显示日程和加入会议。",
+      "price_summary": "官网提供免费下载，公开源码采用 MIT；不同 macOS 需要选相应构建。",
+      "free_tier_limits": "开发者把当前 0.29.0 发布列为 macOS 27+；另提供 0.15.15 给 macOS 11+。不要把当前功能逐条套用到旧版。官方列 Sparkle 更新；未核实全量数据留存或全部权限行为。",
+      "features": {
+        "mbcal_clock": {
+          "value": "yes",
+          "note": "可以配置菜单栏时钟以替代默认显示，并可快速打开小月历。"
+        },
+        "mbcal_agenda": {
+          "value": "yes",
+          "note": "显示 Mac 日历里的事件；已配置服务的账号与同步归系统日历。"
+        },
+        "mbcal_create": {
+          "value": "yes",
+          "note": "官方支持创建系统日历事件；在 0.29.0 新事件可设最多三个提醒。"
+        },
+        "mbcal_meeting": {
+          "value": "yes",
+          "note": "官方列出加入虚拟会议，新版日志明确提到 Teams 会议链接；不保证所有会议链接格式。"
+        },
+        "mbcal_world": {
+          "value": "unknown",
+          "note": "官网时钟与日期自定义已核实，未核实独立的多城市世界时钟。"
+        },
+        "mbcal_reminders": {
+          "value": "yes",
+          "note": "官方支持查看与完成系统提醒事项，不只是在日历提醒时间弹通知。"
+        }
+      },
+      "sources": [
+        "https://www.mowglii.com/itsycal/",
+        "https://www.mowglii.com/itsycal/versionhistory",
+        "https://github.com/sfsam/Itsycal",
+        "https://github.com/sfsam/Itsycal/blob/master/LICENSE.txt"
+      ]
+    },
+    {
+      "id": "dato",
+      "name": "Dato",
+      "official_url": "https://sindresorhus.com/dato",
+      "github_url": null,
+      "platforms": [
+        "macOS"
+      ],
+      "license": "专有许可",
+      "open_source": false,
+      "pricing_model": "付费",
+      "prices": [
+        {
+          "plan": "美国 Mac App Store 一次性购买",
+          "price": "18",
+          "currency": "USD",
+          "period": "once",
+          "note": "美国商店一次性标价；Setapp 是另一个分发渠道。"
+        }
+      ],
+      "github_stars": null,
+      "latest_release": "5.8.4",
+      "latest_release_date": "2026-11-05",
+      "maintenance_status": null,
+      "collected_at": "2026-11-24",
+      "summary": "菜单栏日历、世界时钟和全屏会议提醒，基于 Mac 已有日历并可显示提醒事项。",
+      "price_summary": "美国 Mac App Store US$18 一次性。开发者的直接试用版功能齐全，但每 12 小时提醒购买且不自动更新；Setapp 试用与订阅另计。",
+      "free_tier_limits": "当前开发者与美国商店列 macOS 26+。隐私政策称不收集个人信息，但发生崩溃会向 Sentry 发送技术报告；不能据此宣称应用零联网或无需系统授权。",
+      "features": {
+        "mbcal_clock": {
+          "value": "yes",
+          "note": "可定制菜单栏日期、本地钟及世界时钟。"
+        },
+        "mbcal_agenda": {
+          "value": "yes",
+          "note": "显示已在系统日历添加的 iCloud、Google、Outlook 等来源；这不是另建 Dato 云同步账号。"
+        },
+        "mbcal_create": {
+          "value": "yes",
+          "note": "可以使用全局快捷键新建事件；所选日历的写入权限仍适用。"
+        },
+        "mbcal_meeting": {
+          "value": "yes",
+          "note": "可为所选日历显示全屏会议提醒，支持快捷加入 Zoom、Meet、Teams 等已识别的会议链接。"
+        },
+        "mbcal_world": {
+          "value": "yes",
+          "note": "可在菜单栏或弹窗显示多个城市与时区；开发者说内置城市搜索可离线使用，不代表会议也离线。"
+        },
+        "mbcal_reminders": {
+          "value": "yes",
+          "note": "支持显示提醒事项并完成任务，可与将来的日程一并查看。"
+        }
+      },
+      "sources": [
+        "https://sindresorhus.com/dato",
+        "https://apps.apple.com/us/app/dato/id1470584107?mt=12",
+        "https://sindresorhus.com/dato/privacy-policy"
+      ]
+    }
+  ]
+}
