@@ -19,6 +19,7 @@ export const categoryNames: Record<string, { zh: string; en: string }> = {
   "ai-agent-workbenches": { zh: "AI 编程 Agent 工作台", en: "AI coding agent workbenches" },
   "personal-ai-assistants": { zh: "个人 AI 助理（任务与提醒）", en: "Personal AI assistants for tasks" },
   "telegram-desktop-clients": { zh: "Telegram 桌面客户端", en: "Telegram desktop clients" },
+  "image-uploaders": { zh: "图片与文件上传工具", en: "Image and file uploaders" },
   "mobile-frameworks": { zh: "跨平台移动开发框架", en: "Cross-platform mobile frameworks" },
   "mobile-development-ides": { zh: "移动开发 IDE", en: "Mobile development IDEs" },
   "http-debugging": { zh: "HTTP(S) 抓包与调试", en: "HTTP(S) capture and debugging" },
