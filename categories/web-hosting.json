@@ -672,6 +672,60 @@
         "https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-github-actions/about-billing-for-github-actions",
         "https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages"
       ]
+    },
+    {
+      "id": "firebase-app-hosting",
+      "name": "Firebase App Hosting",
+      "official_url": "https://firebase.google.com/docs/app-hosting",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "按量付费",
+      "price_summary": "需要 Blaze 按量付费计划，没有 Spark 档。每月 10 GiB 出站流量免收费，超出后缓存命中 USD 0.15/GiB、未命中 USD 0.20/GiB。其他云资源独立计量。",
+      "prices": [],
+      "free_tier_limits": "无独立免费档；Blaze 账单里包含部分免收费用量。Cloud Run、Cloud Build、Artifact Registry 等按各自规则计量，不属于 10 GiB 流量额度；未开户、绑卡、部署或实测。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-25",
+      "summary": "Firebase 的全栈应用托管，把构建产物运行在 Cloud Run 并通过 Cloud CDN 交付；不是有 Spark 免费档的经典 Firebase Hosting。",
+      "features": {
+        "static_hosting": {
+          "value": "yes",
+          "note": "Cloud CDN 可交付静态资源，也可把未命中的请求转给 Cloud Run。不是只发布静态文件、也不是不限量的免费 CDN。"
+        },
+        "build_limits": {
+          "value": "partial",
+          "note": "使用 Cloud Build；默认池合资格机型每个结算账号每月含 2,500 构建分钟，成本表列超出 USD 0.006/分钟。不是 App Hosting 单独赠送，其他机型以 Cloud Build 价格为准。"
+        },
+        "functions": {
+          "value": "paid",
+          "note": "动态服务在 Cloud Run 容器运行；官方内建适配 Next.js 和 Angular。CPU、内存和请求另计，不等同于免费函数额度。"
+        },
+        "commercial": {
+          "value": "unknown",
+          "note": "本条未单独核实不同用途或地区的商用条款，不能从按量付费推定自动符合所有用途。"
+        },
+        "overage": {
+          "value": "yes",
+          "note": "超过各自免收费额度可产生账单，不会像 Spark 那样靠无付款账号限制收费。预算告警不是硬性费用上限。"
+        },
+        "card_required": {
+          "value": "partial",
+          "note": "必须关联有有效支付方式的 Cloud Billing 账号；官方允许信用卡及其他支付方式，具体取决于账单地区。"
+        }
+      },
+      "sources": [
+        "https://firebase.google.com/docs/app-hosting/about-app-hosting",
+        "https://firebase.google.com/docs/app-hosting/costs",
+        "https://firebase.google.com/docs/projects/billing/firebase-pricing-plans",
+        "https://docs.cloud.google.com/billing/docs/how-to/budgets",
+        "https://cloud.google.com/build/pricing",
+        "https://firebase.google.com/pricing/"
+      ]
     }
   ]
 }

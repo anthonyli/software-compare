@@ -120,3 +120,25 @@ test('GitHub Pages shows private-source and private-publication limits in both l
   }
  }
 });
+
+test('Firebase App Hosting is distinct from classic Hosting on both layouts',async({page})=>{
+ for(const width of [1280,390]){
+  await page.setViewportSize({width,height:900});
+  await page.goto('/c/web-hosting/');
+  const list=page.locator(width===1280?'#matrix':'#card-list');
+  for(const id of ['firebase-hosting','firebase-app-hosting']){
+   await expect(list.locator(`[data-product-id="${id}"]`)).toBeVisible();
+  }
+  await page.goto('/p/web-hosting/firebase-app-hosting/');
+  for(const [lang,quota,budget,payment] of [
+   ['zh-CN','每月 10 GiB 出站流量免收费','预算告警不是硬性费用上限','有效支付方式'],
+   ['en','first 10 GiB of monthly outbound bandwidth','Budget alerts are not a hard spending cap','valid payment method'],
+  ]){
+   await page.locator(`[data-lang="${lang}"]`).click();
+   for(const text of [quota,budget,payment,'USD 0.15','USD 0.20']){
+    await expect(page.getByText(text,{exact:false}).filter({visible:true}).first()).toBeVisible();
+   }
+   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+  }
+ }
+});

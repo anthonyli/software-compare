@@ -1,7 +1,7 @@
 import {test} from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';
 const read=p=>JSON.parse(fs.readFileSync(new URL('../../'+p,import.meta.url),'utf8'));
 const c=read('categories/web-hosting.json'),en=read('site/src/i18n/content-en.json'),[v,f]=c.products;
-test('website deployment has ten sourced complete bilingual products',()=>{assert.deepEqual(c.products.map(p=>p.id),['vercel','cloudflare-pages','render','netlify','cloudflare-workers','firebase-hosting','railway','digitalocean-app-platform','aws-amplify-hosting','github-pages']);for(const p of c.products){assert.deepEqual(Object.keys(p.features).sort(),c.features.map(f=>f.key).sort());assert.equal(p.collected_at,({'cloudflare-workers':'2026-11-17','firebase-hosting':'2026-11-22','railway':'2026-11-22','digitalocean-app-platform':'2026-11-22','aws-amplify-hosting':'2026-11-22','github-pages':'2026-11-22'})[p.id]||'2026-11-16');assert(p.sources.length>=4);assert.match(p.free_tier_limits,/未开户、绑卡、部署或实测/);}const strings=v=>typeof v==='string'?[v]:v&&typeof v==='object'?Object.values(v).flatMap(strings):[];for(const s of strings(c).filter(s=>/[\u4e00-\u9fff]/.test(s)))assert(en[s],s);});
+test('website deployment has eleven sourced complete bilingual products',()=>{assert.deepEqual(c.products.map(p=>p.id),['vercel','cloudflare-pages','render','netlify','cloudflare-workers','firebase-hosting','railway','digitalocean-app-platform','aws-amplify-hosting','github-pages','firebase-app-hosting']);for(const p of c.products){assert.deepEqual(Object.keys(p.features).sort(),c.features.map(f=>f.key).sort());assert.equal(p.collected_at,({'cloudflare-workers':'2026-11-17','firebase-hosting':'2026-11-22','railway':'2026-11-22','digitalocean-app-platform':'2026-11-22','aws-amplify-hosting':'2026-11-22','github-pages':'2026-11-22','firebase-app-hosting':'2026-11-25'})[p.id]||'2026-11-16');assert(p.sources.length>=4);assert.match(p.free_tier_limits,/未开户、绑卡、部署或实测/);}const strings=v=>typeof v==='string'?[v]:v&&typeof v==='object'?Object.values(v).flatMap(strings):[];for(const s of strings(c).filter(s=>/[\u4e00-\u9fff]/.test(s)))assert(en[s],s);});
 test('Hobby scope, quota periods and overage are distinct from paid Pro',()=>{assert.equal(v.features.card_required.value,'unknown');assert.equal(v.features.commercial.value,'partial');assert.match(v.features.commercial.note,/个人或非商业.*personal or non-commercial/);assert.match(v.features.overage.note,/30天.*7天.*自动按量计费/);assert.match(v.features.functions.note,/每月.*4小时.*360GB/);assert.equal(v.prices[1].price,'20');assert.match(v.prices[1].note,/额外部署席位.*超抵扣/);});
 test('Pages free static requests do not imply unlimited builds or Functions',()=>{assert.equal(f.features.card_required.value,'no');assert.equal(f.features.commercial.value,'unknown');assert.match(f.features.build_limits.note,/每月500.*1个并发.*20分钟/);assert.match(f.features.functions.note,/共享每天10万.*UTC零点/);assert.match(f.features.static_hosting.note,/不调用Functions/);assert.match(f.features.overage.note,/fail open.*fail closed/);assert.match(f.free_tier_limits,/2万文件.*25MiB/);});
 
@@ -140,4 +140,17 @@ test('GitHub Pages distinguishes private publishing, static constraints, and sof
   assert.match(p.features.build_limits.note, /每小时 10 次软上限.*自定义 GitHub Actions.*超过 10 分钟/);
   assert.match(p.features.commercial.note, /在线业务、电商站点.*商业 SaaS.*不等于所有商业相关文档/);
   assert.match(p.features.overage.note, /限流.*自动按用量付费.*Actions/);
+});
+
+test('Firebase App Hosting uses Blaze and separate cached, uncached and compute meters',()=>{
+ const p=c.products.find(p=>p.id==='firebase-app-hosting');
+ assert.equal(p.pricing_model,'按量付费');
+ assert.match(p.features.build_limits.note,/每个结算账号每月含 2,500.*不是 App Hosting 单独赠送/);
+ assert.match(p.price_summary,/没有 Spark 档.*每月 10 GiB.*USD 0\.15.*USD 0\.20/);
+ assert.match(p.features.functions.note,/Cloud Run.*Next\.js.*Angular/);
+ assert.equal(p.features.overage.value,'yes');
+ assert.match(p.features.overage.note,/预算告警不是硬性费用上限/);
+ assert.equal(p.features.card_required.value,'partial');
+ assert.match(p.features.card_required.note,/有效支付方式.*其他支付方式/);
+ assert.match(c.products.find(p=>p.id==='firebase-hosting').features.card_required.note,/Spark 不需要支付方式/);
 });
