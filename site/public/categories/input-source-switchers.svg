@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Original illustration for Compare / 软件对比. No third-party marks. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" fill="none" role="img" aria-hidden="true">
+  <rect width="480" height="260" fill="#EAF2E2"/>
+  <defs>
+    <linearGradient id="wash-input-source-switchers" x1="12" y1="0" x2="467" y2="256" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FBFFF7" stop-opacity="0"/>
+      <stop offset="1" stop-color="#BED3AC" stop-opacity=".42"/>
+    </linearGradient>
+    <filter id="soft-input-source-switchers" x="-20%" y="-20%" width="145%" height="155%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#111111" flood-opacity=".11"/>
+    </filter>
+    <pattern id="dots-input-source-switchers" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="translate(18 16)">
+      <circle cx="1.2" cy="1.2" r="1.05" fill="#111111" opacity=".35"/>
+    </pattern>
+  </defs>
+  <rect width="480" height="260" fill="url(#wash-input-source-switchers)"/>
+  <ellipse cx="38" cy="212" rx="68" ry="46" fill="#FFFFFF" opacity=".37"/>
+  <ellipse cx="437" cy="35" rx="73" ry="53" fill="#FFFFFF" opacity=".34"/>
+  <rect width="480" height="260" fill="url(#dots-input-source-switchers)" opacity=".45"/>
+  <g filter="url(#soft-input-source-switchers)">
+    <rect x="112" y="128" width="256" height="80" rx="21" fill="#FFFFFF"/>
+    <rect x="153" y="48" width="59" height="57" rx="14" fill="#FFFFFF"/>
+    <rect x="269" y="48" width="59" height="57" rx="14" fill="#FFFFFF"/>
+    <rect x="279" y="58" width="39" height="37" rx="8" fill="#DFECD8"/>
+  </g>
+  <path d="M135 152h209m-209 20h209m-200 16h36m14 0h92m14 0h36" stroke="#E0EAD9" stroke-width="9" stroke-linecap="round" stroke-dasharray="15 16"/>
+  <path d="M198 188h85" stroke="#C9DDBF" stroke-width="9" stroke-linecap="round"/>
+  <path d="M180 67l11 10-11 10-11-10 11-10zm114 1h10v17h-10zM224 71c10-8 22-8 33 0m-7-10 8 10-10 6m8 9c-10 8-22 8-33 0m7 10-8-10 10-6" stroke="#111111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
