@@ -2404,6 +2404,80 @@
           "sources": [
             "https://screen.studio/"
           ]
+        },
+        {
+          "github_url": "https://github.com/btahir/reelbird",
+          "open_source": true,
+          "license": "MIT",
+          "prices": [],
+          "github_stars": null,
+          "latest_release": "v0.4.1",
+          "latest_release_date": null,
+          "maintenance_status": null,
+          "collected_at": "2026-11-25",
+          "id": "reelbird",
+          "name": "Reelbird",
+          "official_url": "https://reelbird.app/",
+          "platforms": [
+            "macOS"
+          ],
+          "pricing_model": "免费增值",
+          "price_summary": "本机录制、编辑和无水印导出免费。自带存储桶无需付 Reelbird 托管费，存储服务另计；发布文档列可选 Pro 托管 USD 5/月，未核实当前结账价。",
+          "free_tier_limits": "发布版面向 Apple 芯片、macOS 15+。维护者称可为兼容的 Intel Mac 编译，但未实测。可完全本地使用；自带桶的费用、额度按服务商，Pro 的容量、超额和绑卡规则未核实。",
+          "summary": "开源 Mac 录屏与编辑器，可在本机录制、剪辑和导出；启用分享后，可用同一链接替换成编辑过的视频。",
+          "features": {
+            "region_recording": {
+              "value": "yes",
+              "note": ""
+            },
+            "webcam_overlay": {
+              "value": "yes",
+              "note": "摄像头是独立轨道，录完可移动或调整画中画。"
+            },
+            "system_audio": {
+              "value": "yes",
+              "note": "系统声音与麦克风分轨录制，无需虚拟音频驱动。"
+            },
+            "microphone": {
+              "value": "yes",
+              "note": "系统声音与麦克风分轨录制，无需虚拟音频驱动。"
+            },
+            "builtin_editor": {
+              "value": "yes",
+              "note": "支持本机剪辑、自动缩放、可编辑字幕和光标调整。"
+            },
+            "export_gif": {
+              "value": "yes",
+              "note": ""
+            },
+            "rec_4k_60fps": {
+              "value": "unknown",
+              "note": "未核实 4K 与 60 fps 能否同时用于录制；录中分享文档列的是 1080p。"
+            },
+            "livestream": {
+              "value": "unknown",
+              "note": "可边录边上传供停止后快速分享；没有核实常规直播推流能力。"
+            },
+            "annotation": {
+              "value": "yes",
+              "note": "编辑器支持箭头、框、标签、高亮和模糊。"
+            },
+            "cloud_share": {
+              "value": "yes",
+              "note": "可选自有 S3 兼容桶或 Pro 托管。开启录中分享会在编辑前上传；持链接者可看。编辑之后可更新视频而保留原链接。"
+            },
+            "free_no_watermark": {
+              "value": "yes",
+              "note": "不启用分享也能在本机录制、剪辑和导出，无水印。"
+            }
+          },
+          "sources": [
+            "https://github.com/btahir/reelbird/releases/tag/v0.4.1",
+            "https://github.com/btahir/reelbird/blob/v0.4.1/README.md",
+            "https://github.com/btahir/reelbird/blob/v0.4.1/LICENSE",
+            "https://github.com/btahir/reelbird/blob/v0.4.1/docs/SHARING.md",
+            "https://github.com/btahir/reelbird#sharing"
+          ]
         }
       ]
     },
