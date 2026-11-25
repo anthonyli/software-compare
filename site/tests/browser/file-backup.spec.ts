@@ -19,7 +19,7 @@ test('file backup exposes its original cover and recovery boundaries', async ({ 
     await page.goto('/c/file-backup/');
     await expect(page.locator('h1')).toContainText(title);
     const table = page.locator(width === 1280 ? '#matrix' : '#card-list');
-    for (const id of ['restic', 'kopia', 'borgbackup', 'time-machine', 'windows-file-history']) {
+    for (const id of ['restic', 'kopia', 'borgbackup', 'time-machine', 'windows-file-history', 'arq-7']) {
       await expect(table.locator(`[data-product-id="${id}"]`)).toBeVisible();
     }
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
@@ -31,5 +31,8 @@ test('file backup exposes its original cover and recovery boundaries', async ({ 
     await page.goto('/p/file-backup/windows-file-history/');
     await expect(page.locator('h1')).toContainText('Windows File History');
     await expect(page.locator('body')).toContainText(lang === 'en' ? 'neither OneDrive sync nor a system image' : '不是 OneDrive 同步或系统映像');
+    await page.goto('/p/file-backup/arq-7/');
+    await expect(page.locator('h1')).toContainText('Arq 7');
+    await expect(page.locator('body')).toContainText(lang === 'en' ? 'keep the owning user signed in' : '文件所属用户保持登录');
   }
 });

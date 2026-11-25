@@ -83,8 +83,8 @@ test('AI navigation has exactly the three requested categories and retains local
 test('file backup distinguishes default checks, external scheduling and optional Borg encryption', () => {
  const category = categories.find(c => slug(c) === 'file-backup');
  const [restic, kopia, borg] = category.products;
- assert.deepEqual(category.products.map(p => p.id), ['restic', 'kopia', 'borgbackup', 'time-machine', 'windows-file-history']);
- assert.deepEqual(category.products.map(p => p.features.backup_schedule.value), ['no', 'yes', 'no', 'yes', 'yes']);
+ assert.deepEqual(category.products.map(p => p.id), ['restic', 'kopia', 'borgbackup', 'time-machine', 'windows-file-history', 'arq-7']);
+ assert.deepEqual(category.products.map(p => p.features.backup_schedule.value), ['no', 'yes', 'no', 'yes', 'yes', 'yes']);
  assert.match(restic.features.backup_verify.note, /默认.*--read-data/);
  assert.match(kopia.features.backup_verify.note, /默认.*--verify-files-percent=100/);
  assert.equal(borg.features.backup_encryption.value, 'partial');
@@ -113,4 +113,15 @@ test('Windows File History is not a cloud sync or a system image', () => {
  assert.equal(p.features.backup_verify.value, 'unknown');
  assert.match(p.features.backup_destinations.note, /外接盘或网络位置.*不直连 S3/);
  assert.match(p.features.backup_restore.note, /其他位置.*覆盖/);
+});
+
+test('Arq separates optional cloud recall, storage plans and destination-dependent verification', () => {
+ const p = categories.find(c => slug(c) === 'file-backup').products.find(p => p.id === 'arq-7');
+ assert.deepEqual(p.platforms, ['macOS', 'Windows']);
+ assert.deepEqual(p.prices.map(({ price, period }) => [price, period]), [['59.99', 'once'], ['69.99', 'year']]);
+ assert.match(p.price_summary, /存储自备.*5 台.*1 TB/);
+ assert.match(p.free_tier_limits, /占位符.*保持登录/);
+ assert.equal(p.features.backup_encryption.value, 'partial');
+ assert.equal(p.features.backup_verify.value, 'partial');
+ assert.match(p.features.backup_verify.note, /NAS 或 SFTP/);
 });

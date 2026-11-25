@@ -4064,5 +4064,16 @@
   "支持外接盘或网络位置，不直连 S3。": "Supports an external drive or network location, not a direct S3 destination.",
   "Microsoft 文档列出一直保留、空间不足时清理，以及按版本最低保留期限清理等策略。": "Microsoft documents retention policies such as keeping versions indefinitely, deleting when space is needed, or applying a minimum age before deletion.",
   "可恢复旧版文件或文件夹，也可还原到其他位置以免覆盖当前版本。": "Restore a previous version of a file or folder, or restore to another location to avoid replacing the current version.",
-  "官方用户文档未说明对整个备份执行全量读回校验。": "Microsoft’s user documentation does not describe full readback verification of an entire backup."
+  "官方用户文档未说明对整个备份执行全量读回校验。": "Microsoft’s user documentation does not describe full readback verification of an entire backup.",
+  "Arq 7 每台 US$59.99 买断，含一年更新，存储自备；已购版本可继续用，续更可选。Arq Premium 每年 US$69.99，含最多 5 台电脑和 1 TB 存储。": "Arq 7 costs US$59.99 per computer, including one year of updates but no storage. Keep the purchased version; later updates are optional. Arq Premium costs US$69.99 per year for up to five computers and 1 TB.",
+  "含首年更新，后续可选每台 US$25/年。": "Includes the first year of updates. Additional updates are optional at US$25 per computer per year.",
+  "超出包含容量的部分按 US$0.00699/GB/月计费。": "Usage beyond the included capacity is charged at US$0.00699 per GB per month.",
+  "官网提供试用，不是永久免费方案。通常的磁盘快照只有云端文件占位符；要备份实际内容须选择按需取回，且文件所属用户保持登录、同步服务能下载该文件。": "A trial is available, not a permanent free plan. Snapshots see only cloud-only placeholders. To back up their contents, enable materialization, keep the owning user signed in, and ensure the sync provider can download the file.",
+  "面向 Mac 和 Windows 的图形化文件备份，可使用自有存储，也可选含云存储的 Premium。": "Graphical file backup for Mac and Windows, using your own storage or a Premium plan with bundled cloud storage.",
+  "版本记录和内容去重；源卷快照不会自动取回云端占位文件。": "Versioned backups with content deduplication. A source-volume snapshot does not automatically download cloud-only files.",
+  "创建计划时可设备份密码，写入目的地前加密；不设密码则不使用这项加密。": "Set a backup password in the plan to encrypt data before it reaches the destination. Without a password, this encryption is not enabled.",
+  "支持外接盘、NAS、SFTP、兼容的对象存储或 Premium 云存储。对象锁取决于目的地和配置。": "Supports external drives, NAS, SFTP, compatible object storage, or Premium cloud storage. Object lock depends on the destination and configuration.",
+  "默认保留全部历史记录，可自定义逐步减少旧版本；也可设存储上限，最近一次备份仍保留。": "Keeps all versions by default. Configure thinning or a storage limit; the newest backup is retained.",
+  "可在新设备安装 Arq 后从备份记录恢复文件，不是启动盘克隆。": "Install Arq on a replacement device to recover files from a backup record. This is not a boot-disk clone.",
+  "手动读回校验适用于不提供校验和接口的目的地，如 NAS 或 SFTP，下载可能产生费用；不等于恢复演练。": "Manual readback validation applies to destinations without a checksum API, such as NAS or SFTP. Downloads can cost extra, and validation is not a restore drill."
 }

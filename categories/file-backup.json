@@ -336,6 +336,86 @@
         "https://support.microsoft.com/en-us/windows/experience/backup-recovery/backup-restore-and-recovery-in-windows",
         "https://learn.microsoft.com/en-us/windows/win32/api/fhcfg/ne-fhcfg-fh_retention_types"
       ]
+    },
+    {
+      "id": "arq-7",
+      "name": "Arq 7",
+      "official_url": "https://www.arqbackup.com/",
+      "github_url": null,
+      "platforms": [
+        "macOS",
+        "Windows"
+      ],
+      "open_source": false,
+      "license": "专有许可",
+      "pricing_model": "付费",
+      "price_summary": "Arq 7 每台 US$59.99 买断，含一年更新，存储自备；已购版本可继续用，续更可选。Arq Premium 每年 US$69.99，含最多 5 台电脑和 1 TB 存储。",
+      "prices": [
+        {
+          "plan": "Arq 7",
+          "price": "59.99",
+          "currency": "USD",
+          "period": "once",
+          "note": "含首年更新，后续可选每台 US$25/年。"
+        },
+        {
+          "plan": "Arq Premium",
+          "price": "69.99",
+          "currency": "USD",
+          "period": "year",
+          "note": "超出包含容量的部分按 US$0.00699/GB/月计费。"
+        }
+      ],
+      "free_tier_limits": "官网提供试用，不是永久免费方案。通常的磁盘快照只有云端文件占位符；要备份实际内容须选择按需取回，且文件所属用户保持登录、同步服务能下载该文件。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-25",
+      "summary": "面向 Mac 和 Windows 的图形化文件备份，可使用自有存储，也可选含云存储的 Premium。",
+      "features": {
+        "backup_snapshots": {
+          "value": "yes",
+          "note": "版本记录和内容去重；源卷快照不会自动取回云端占位文件。"
+        },
+        "backup_encryption": {
+          "value": "partial",
+          "note": "创建计划时可设备份密码，写入目的地前加密；不设密码则不使用这项加密。"
+        },
+        "backup_destinations": {
+          "value": "yes",
+          "note": "支持外接盘、NAS、SFTP、兼容的对象存储或 Premium 云存储。对象锁取决于目的地和配置。"
+        },
+        "backup_retention": {
+          "value": "yes",
+          "note": "默认保留全部历史记录，可自定义逐步减少旧版本；也可设存储上限，最近一次备份仍保留。"
+        },
+        "backup_schedule": {
+          "value": "yes"
+        },
+        "backup_gui": {
+          "value": "yes"
+        },
+        "backup_restore": {
+          "value": "yes",
+          "note": "可在新设备安装 Arq 后从备份记录恢复文件，不是启动盘克隆。"
+        },
+        "backup_verify": {
+          "value": "partial",
+          "note": "手动读回校验适用于不提供校验和接口的目的地，如 NAS 或 SFTP，下载可能产生费用；不等于恢复演练。"
+        }
+      },
+      "sources": [
+        "https://www.arqbackup.com/pricing/",
+        "https://www.arqbackup.com/download/",
+        "https://www.arqbackup.com/documentation/arq7/English.lproj/arq7Pricing.html",
+        "https://www.arqbackup.com/documentation/arq7/English.lproj/arq7ArqPremium.html",
+        "https://www.arqbackup.com/documentation/arq7/English.lproj/createBackupPlan.html",
+        "https://www.arqbackup.com/documentation/arq7/English.lproj/dataFormat.html",
+        "https://www.arqbackup.com/documentation/arq7/English.lproj/datalessFiles.html",
+        "https://www.arqbackup.com/documentation/arq7/English.lproj/objectLock.html",
+        "https://www.arqbackup.com/documentation/arq7/English.lproj/validate.html",
+        "https://www.arqbackup.com/documentation/arq7/English.lproj/restore.html"
+      ]
     }
   ]
 }
