@@ -3968,5 +3968,12 @@
   "动态服务在 Cloud Run 容器运行；官方内建适配 Next.js 和 Angular。CPU、内存和请求另计，不等同于免费函数额度。": "Dynamic requests run in Cloud Run containers. Next.js and Angular are supported out of the box. CPU, memory and requests have separate meters, not a pool of free function calls.",
   "本条未单独核实不同用途或地区的商用条款，不能从按量付费推定自动符合所有用途。": "Commercial-use terms by activity or region are not verified here. Usage-based billing does not imply eligibility for every use.",
   "超过各自免收费额度可产生账单，不会像 Spark 那样靠无付款账号限制收费。预算告警不是硬性费用上限。": "Exceeding each allowance can incur charges; this is not an unbilled Spark project. Budget alerts are not a hard spending cap.",
-  "必须关联有有效支付方式的 Cloud Billing 账号；官方允许信用卡及其他支付方式，具体取决于账单地区。": "Requires a Cloud Billing account with a valid payment method. Google documents cards and other methods subject to the billing region."
+  "必须关联有有效支付方式的 Cloud Billing 账号；官方允许信用卡及其他支付方式，具体取决于账单地区。": "Requires a Cloud Billing account with a valid payment method. Google documents cards and other methods subject to the billing region.",
+  "Telerik 的跨平台 HTTP(S) 应用调试工具，可在受授权的开发或测试环境检查和复查请求；不同于旧版 Fiddler Classic。": "Telerik's cross-platform HTTP(S) debugger for inspecting and reviewing requests in authorized development or testing environments. It is not legacy Fiddler Classic.",
+  "有 10 天试用，不是长期免费。官网美元参考：Lite 月付 USD 10、Pro 月付 USD 19；年付折合 Lite USD 7、Pro USD 13、Enterprise USD 37，均为每人每月。": "A 10-day trial is not a permanent free plan. Listed USD per user per month: Lite 10 and Pro 19 billed monthly; or Lite 7, Pro 13 and Enterprise 37 with annual billing.",
+  "需账号试用，未核实试用绑卡要求。Lite 支持本机检查与重放；调试远程设备需 Pro 或 Enterprise。旧版 Fiddler Classic 仅 Windows、个人非商业免费，不能套用到 Everywhere。": "An account is needed for the trial; payment-card requirements are unverified. Lite includes local inspection and replay; remote-device capture requires Pro or Enterprise. Legacy Classic is Windows-only and free for personal non-commercial use, not a free Everywhere tier.",
+  "Lite、Pro 和 Enterprise 都支持本机 HTTP(S) 检查；仅调试授权流量，应用的证书策略可能限制可见内容。": "Lite, Pro and Enterprise support local HTTP(S) inspection. Inspect only authorized traffic; application certificate policies can limit visibility.",
+  "断点和手动调整功能从 Pro 起，Lite 不含。": "Breakpoints and manual editing start with Pro; Lite does not include them.",
+  "价格表显示 Lite 已含重放；仅用于获授权的测试环境。": "The price table lists replay on Lite. Use it only in authorized test environments.",
+  "按规则模拟响应从 Pro 起，Lite 不含。": "Rule-based response mocking starts with Pro; Lite does not include it."
 }
