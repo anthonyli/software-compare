@@ -6,7 +6,7 @@ const fees = [
   { id: 'porkbun', name: 'Porkbun', zh: 'USD 200，另付普通续费。', en: 'USD 200 plus the normal renewal fee.', url: 'https://porkbun.com/products/domains/com' },
   { id: 'namecheap', name: 'Namecheap', zh: 'USD 89.98 含续费；价目表另标注 USD 0.20 ICANN 费用。', en: 'USD 89.98 includes renewal; the price table separately flags a USD 0.20 ICANN fee.', url: 'https://www.namecheap.com/domains/redemption-pricing/' },
   { id: 'tencent', name: 'Tencent Cloud', zh: '中国站标价 CNY 1,000；是否包含续费未核实。', en: 'CNY 1,000 on the China price list; renewal inclusion not verified.', url: 'https://buy.cloud.tencent.com/domain/price' },
-  { id: 'aliyun', name: 'Alibaba Cloud', zh: '中国站金额未核实；支付金额包含恢复费和一年续费。', en: 'China price not verified; the payment covers restoration and one year of renewal.', url: 'https://help.aliyun.com/zh/dws/user-guide/redeem-a-domain-name' },
+  { id: 'aliyun', name: 'Alibaba Cloud', zh: '中国站公开表价 CNY 1,200，含一年续费。', en: 'CNY 1,200 on the public China price list, including one year of renewal.', url: 'https://wanwang.aliyun.com/help/price.html', guide: 'https://help.aliyun.com/zh/dws/user-guide/redeem-a-domain-name' },
   { id: 'cloudflare', name: 'Cloudflare', zh: '金额未核实；可能在续费之外收取恢复费。', en: 'Amount not verified; a restoration fee may apply in addition to renewal.', url: 'https://developers.cloudflare.com/registrar/faq/' },
 ];
 ---
@@ -21,10 +21,13 @@ const fees = [
     <a class="prose-link ml-1" href="https://www.icann.org/resources/pages/domain-name-renewal-expiration-faqs-2018-12-07-en/"><T zh="ICANN 到期说明" en="ICANN expiration FAQ" /></a>
   </p>
   <dl class="mt-3 grid gap-3 text-sm sm:grid-cols-2 lg:grid-cols-3">
-    {fees.map(({ id, name, zh, en, url }) => (
+    {fees.map(({ id, name, zh, en, url, guide }) => (
       <div data-recovery-registrar={id}>
         <dt><a class="prose-link font-semibold" href={url}>{name}</a></dt>
-        <dd class="mt-0.5 text-muted"><T zh={zh} en={en} /></dd>
+        <dd class="mt-0.5 text-muted">
+          <T zh={zh} en={en} />
+          {guide && <a class="prose-link ml-1" href={guide}><T zh="计费说明" en="Fee details" /></a>}
+        </dd>
       </div>
     ))}
   </dl>
