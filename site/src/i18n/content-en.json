@@ -4008,5 +4008,14 @@
   "在源工具完成骨骼绑定，不把网页运行时算作编辑骨骼或蒙皮的工具。": "Rig characters in the source tool; the web runtime is not a rigging or skinning tool.",
   "可播放动画片段、状态机和时间轴。交互组件依赖 Needle 运行时对自定义 glTF 扩展的处理，不是普通 glTF 阅读器的通用能力。": "Plays animation clips, state machines and timelines. Interactive components rely on Needle runtime handling of custom glTF extensions, not standard glTF viewers.",
   "提供浏览器实时渲染与交互发布，不等于离线逐帧渲染；定价表中自托管从 Pro 起。": "Supports real-time browser rendering and interactive publishing, not offline frame rendering. Pricing lists self-hosting from Pro.",
-  "每席位按年付费，商用、去品牌和自托管。": "Billed annually per seat; commercial use, branding removal and self-hosting."
+  "每席位按年付费，商用、去品牌和自托管。": "Billed annually per seat; commercial use, branding removal and self-hosting.",
+  "原生菜单栏与独立窗口可查看日程和任务；同一应用也支持 iPhone、iPad 与 Apple Watch。": "A native calendar and task app with a Mac menu-bar panel and standalone window. Also available on iPhone, iPad and Apple Watch.",
+  "基础日程和任务查看、搜索与编辑免费，Pro 可试用 7 天。美国 Mac App Store 列出 Pro 年订阅 US$19.99、Pro 一次性内购 US$49.99。": "Basic viewing, search and editing for events and tasks are free, with a seven-day Pro trial. The US Mac App Store lists Pro at US$19.99 per year or US$49.99 as a one-time purchase.",
+  "新版要求 macOS 14.6+；旧版 Calendar 366 II 单独提供下载。绑卡和试用期结束后的扣费流程未核实。": "The current app requires macOS 14.6 or later; the older Calendar 366 II is a separate download. Card requirements and the end-of-trial billing flow were not verified.",
+  "默认显示彩色日期；支持菜单栏图标或日期时间文本，部分图标样式需 Pro。未确认能替代系统时钟。": "Shows a colored date by default. Supports a menu-bar icon or formatted date and time text; some icon styles require Pro. Replacing the system clock was not confirmed.",
+  "可使用系统日历，需授予 macOS 日历权限；Google 等服务可由用户另行连接。": "Reads system calendars with macOS calendar permission; providers such as Google can be connected separately.",
+  "基础日程创建、编辑及移动不需要 Pro；实际写入仍取决于日历权限。": "Basic event creation, editing and moving do not require Pro; writing still depends on calendar permissions.",
+  "可从日程打开线上会议链接；未确认有独立全局加入快捷键。": "Opens online meeting links from events; a separate global join shortcut was not confirmed.",
+  "已确认可设置日程时区，未确认同时显示多个时区时钟。": "Event time zones are documented; simultaneous display of multiple world clocks was not confirmed.",
+  "可查看系统提醒事项，需授予 macOS 提醒事项权限。": "Shows system Reminders with macOS Reminders permission."
 }
