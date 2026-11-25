@@ -1,10 +1,10 @@
 import {test} from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';
 const read=p=>JSON.parse(fs.readFileSync(new URL('../../'+p,import.meta.url),'utf8'));const c=read('categories/cli-frameworks.json'),en=read('site/src/i18n/content-en.json');
 test('CLI frameworks retain licenses and core versus add-on boundaries',()=>{
- assert.deepEqual(c.products.map(p=>p.id),['cobra','clap','commander','click','typer','oclif']);
- assert.deepEqual(c.products.map(p=>p.license),['Apache-2.0','MIT OR Apache-2.0','MIT','BSD-3-Clause','MIT','MIT']);
- assert.deepEqual(c.products.map(p=>p.features.shell_completion.value),['yes','partial','unknown','yes','yes','partial']);
- assert.deepEqual(c.products.map(p=>p.features.interactive_prompts.value),['unknown','unknown','unknown','yes','yes','partial']);
+ assert.deepEqual(c.products.map(p=>p.id),['cobra','clap','commander','click','typer','oclif','swift-argument-parser']);
+ assert.deepEqual(c.products.map(p=>p.license),['Apache-2.0','MIT OR Apache-2.0','MIT','BSD-3-Clause','MIT','MIT','Apache-2.0 WITH Swift-exception']);
+ assert.deepEqual(c.products.map(p=>p.features.shell_completion.value),['yes','partial','unknown','yes','yes','partial','yes']);
+ assert.deepEqual(c.products.map(p=>p.features.interactive_prompts.value),['unknown','unknown','unknown','yes','yes','partial','unknown']);
  assert.match(c.products[5].features.interactive_prompts.note,/Inquirer/);
  assert.match(c.products[3].free_tier_limits,/python script.py/);assert.match(c.notes,/不是 AI/);
  for(const p of c.products){assert.equal(p.open_source,true);assert.deepEqual(Object.keys(p.features),c.features.map(f=>f.key));assert(p.sources.length>=2);for(const k of ['github_stars','latest_release','latest_release_date','maintenance_status'])assert.equal(p[k],null);}
@@ -23,4 +23,12 @@ test('clap distinguishes generated static scripts from opt-in dynamic candidates
  assert.match(en[note],/explicitly enabling the unstable unstable-dynamic feature, which is off by default/);
  assert(clap.sources.includes('https://docs.rs/clap_complete/4.6.11/clap_complete/'));
  assert(clap.sources.includes('https://github.com/clap-rs/clap/blob/clap_complete-v4.6.11/clap_complete/Cargo.toml'));
+});
+
+test('Swift Argument Parser distinguishes its toolchain, native completion and prompting',()=>{
+ const p=c.products.find(p=>p.id==='swift-argument-parser');
+ assert.match(p.free_tier_limits,/1\.8\.2 需要 Swift 6/);
+ assert.match(p.features.shell_completion.note,/Bash、Zsh、Fish.*安装或加载/);
+ assert.equal(p.features.interactive_prompts.value,'unknown');
+ assert(p.sources.some(url=>url.endsWith('/1.8.2/Package.swift')));
 });

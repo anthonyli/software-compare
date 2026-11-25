@@ -3935,5 +3935,9 @@
   "支持 Slack、邮件等授权连接；可读数据和动作取决于连接器权限。桌面版也可使用已授权的本机文件夹。": "Connectors support services such as Slack and email. Their permissions determine accessible data and actions. The desktop app can also use permitted local folders.",
   "运行遇到需批准的动作时会等待批准或拒绝；具体取决于连接器和设置，不是每项操作都确认。": "A run waits for approval or denial when an action requires it. Requirements depend on the connector and settings; not every action prompts for confirmation.",
   "可按角色共享已发布的自定义助理；空间和连接器不会随之自动共享，团队功能受套餐限制。": "Published custom agents can be shared by role. Their spaces and connectors are not shared automatically. Team features depend on the plan.",
-  "桌面版可调用本机工具，但聊天及其运行时由 AWS 托管，不是全程纯本机。": "The desktop app can use local tools, but chat and its runtime are hosted by AWS; this is not a local-only assistant."
+  "桌面版可调用本机工具，但聊天及其运行时由 AWS 托管，不是全程纯本机。": "The desktop app can use local tools, but chat and its runtime are hosted by AWS; this is not a local-only assistant.",
+  "Swift 命令行开发库，使用属性包装器定义选项和参数，通过 ParsableCommand 声明命令和子命令，并自动生成帮助。": "A Swift CLI library that uses property wrappers for options and arguments and ParsableCommand for commands, subcommands and generated help.",
+  "已核对的 1.8.2 需要 Swift 6 工具链；旧工具链应选兼容版本。应用的构建与分发仍取决于目标系统及依赖。": "The checked 1.8.2 release requires Swift 6; use a compatible version with older toolchains. Building and distributing an app still depends on the target system and dependencies.",
+  "核心库可生成 Bash、Zsh、Fish 的脚本，用户仍需安装或加载；未将 PowerShell 列为支持。": "The core library generates Bash, Zsh and Fish scripts; users still need to install or load them. PowerShell is not listed as supported.",
+  "参数解析和错误提示并不是交互问答；官方核心文档未确认内建提示输入或确认组件。": "Argument parsing and error messages are not interactive prompts. The core documentation does not confirm built-in prompt or confirmation widgets."
 }
