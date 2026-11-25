@@ -15,10 +15,13 @@ test('task-specific assistant access, plan and permission limits render in both 
       await expect(page.locator('h1')).toContainText(title);
       await expect(page.locator('[data-personal-ai-assistant-notes]').getByText(boundary, { exact: false }).filter({ visible: true })).toBeVisible();
       const products = page.locator(width === 1280 ? '#matrix' : '#card-list');
-      await expect(products.locator('[data-product-id]')).toHaveCount(2);
-      for (const id of ['grok-bot','gemini-tasks']) await expect(products.locator(`[data-product-id="${id}"]`)).toBeVisible();
+      await expect(products.locator('[data-product-id]')).toHaveCount(3);
+      for (const id of ['grok-bot','gemini-tasks','aws-quick']) await expect(products.locator(`[data-product-id="${id}"]`)).toBeVisible();
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
-      for (const [id,notes] of [['grok-bot',[grokPlan,grokReview,grokPlatform,grokRelease]],['gemini-tasks',[geminiAccount,geminiLimits,geminiRegion,geminiPlatform]]] as const) {
+      const quickNotes = lang === 'zh-CN'
+        ? ['长期桌面权限表述不一致','否则当次跳过','最短定时间隔 15 分钟','等待批准或拒绝']
+        : ['disagree on ongoing Free desktop access','are skipped unless the computer','shortest scheduled interval is 15 minutes','waits for approval or denial'];
+      for (const [id,notes] of [['grok-bot',[grokPlan,grokReview,grokPlatform,grokRelease]],['gemini-tasks',[geminiAccount,geminiLimits,geminiRegion,geminiPlatform]],['aws-quick',quickNotes]] as const) {
         await page.goto(`/p/personal-ai-assistants/${id}/`);
         await page.locator(locale).click();
         for (const note of notes) await expect(page.getByText(note, { exact:false }).filter({ visible:true }).first()).toBeVisible();

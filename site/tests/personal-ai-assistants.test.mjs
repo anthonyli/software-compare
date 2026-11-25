@@ -5,15 +5,16 @@ import fs from 'node:fs';
 const read = path => fs.readFileSync(new URL('../../' + path, import.meta.url), 'utf8');
 const data = JSON.parse(read('categories/personal-ai-assistants.json'));
 const en = JSON.parse(read('site/src/i18n/content-en.json'));
-const [grok, gemini] = data.products;
+const [grok, gemini, quick] = data.products;
 const keys = ['pa_background','pa_schedule','pa_connector','pa_review','pa_sharing','pa_local_only'];
 
 test('delegated task, connection, approval and cloud retention stay distinct from chat', () => {
   assert.deepEqual(data.features.map(f => f.key), keys);
-  assert.deepEqual(data.products.map(p => p.id), ['grok-bot','gemini-tasks']);
+  assert.deepEqual(data.products.map(p => p.id), ['grok-bot','gemini-tasks','aws-quick']);
   assert.deepEqual(data.products.map(p => keys.map(k => p.features[k].value)), [
     ['yes','yes','yes','yes','yes','no'],
     ['yes','yes','yes','yes','no','no'],
+    ['yes','yes','yes','yes','yes','no'],
   ]);
   for (const p of data.products) {
     assert.deepEqual(Object.keys(p.features), keys);
@@ -53,4 +54,14 @@ test('the localized AI task catalog does not replace chat, coding, or memory com
   assert.match(read('site/src/i18n/labels.ts'), /"personal-ai-assistants": \{ zh: "个人 AI 助理（任务与提醒）", en: "Personal AI assistants for tasks" \}/);
   assert.match(read('site/src/pages/c/[slug].astro'), /category.slug === "personal-ai-assistants".*data-personal-ai-assistant-notes.*tr\(category.notes\)/);
   assert.match(read('site/public/categories/personal-ai-assistants.svg'), /viewBox="0 0 480 260"/);
+});
+
+test('Quick separates cloud operation, disconnected local runs and Free desktop uncertainty', () => {
+  assert.deepEqual(quick.prices.map(p => [p.price,p.currency,p.period]), [['0','USD','month'],['25','USD','month'],['125','USD','month']]);
+  assert.match(quick.free_tier_limits, /30 天 Plus.*长期桌面权限表述不一致/);
+  assert.match(quick.features.pa_background.note, /关机时运行.*否则当次跳过/);
+  assert.match(quick.features.pa_schedule.note, /最短定时间隔 15 分钟/);
+  assert.match(quick.features.pa_review.note, /等待批准或拒绝.*不是每项操作都确认/);
+  assert.match(quick.features.pa_sharing.note, /不会随之自动共享/);
+  assert(quick.sources.includes('https://docs.aws.amazon.com/quick/latest/userguide/working-with-routines.html'));
 });

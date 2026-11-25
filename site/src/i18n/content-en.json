@@ -3926,5 +3926,14 @@
   "按使用量计费的 CDN；Next-Gen WAF 在定价中另列，不包含在此 CDN 免费档。": "A consumption-priced CDN; Next-Gen WAF is separately listed and is not included in this CDN free allowance.",
   "CDN 与边缘安全": "CDN and edge security",
   "CDN 分发已有源站的内容，不等于网站托管。免费额度、付款方式、WAF 范围和超额后果应分别核对。资料来自官方公开文档，未开户、部署或实测流量。": "A CDN delivers content from an existing origin; it is not web hosting. Check free allowances, payment methods, WAF scope and overages independently. This comparison uses official public documentation, without account setup, deployment or traffic testing."
-
+,
+  "用 Routines 委托后台任务。纯云端任务关机也能运行；涉及本机文件、桌面浏览器或本地代码时，设备断开会跳过该次运行。": "Delegate background work with Routines. Cloud-only runs work with the computer off; runs needing local files, desktop browser automation or local code are skipped when the device is disconnected.",
+  "独立版列 Free、Plus 和 Max。Plus 月付 US$25/人，Max 月付 US$125/人；年付折合分别 US$20 和 US$100/人/月。企业版另计。": "Standalone tiers are Free, Plus and Max. Plus is US$25 per user monthly and Max US$125; annual billing works out to US$20 and US$100 per user/month respectively. Enterprise pricing is separate.",
+  "新独立账号含 30 天 Plus 试用。价格表与 FAQ 对 Free 的长期桌面权限表述不一致；免费额度、重置周期、超额处理和绑卡要求未核实。": "New standalone accounts get 30 days of Plus. The price table and FAQ disagree on ongoing Free desktop access. Free allowances, reset, overage handling and card requirements are unverified.",
+  "纯云端例行任务可在电脑关机时运行，在 Mission Control 查看结果；需要本机工具时，电脑和桌面应用必须在线，否则当次跳过。": "Cloud-only routines can run with the computer off; see results in Mission Control. Runs needing local tools are skipped unless the computer and desktop app are connected.",
+  "最短定时间隔 15 分钟，也可按入站邮件或特定 Quick 事件触发；具体可用性取决于账号和流程。": "The shortest scheduled interval is 15 minutes. Inbound email or supported Quick events can also trigger routines; availability depends on the account and workflow.",
+  "支持 Slack、邮件等授权连接；可读数据和动作取决于连接器权限。桌面版也可使用已授权的本机文件夹。": "Connectors support services such as Slack and email. Their permissions determine accessible data and actions. The desktop app can also use permitted local folders.",
+  "运行遇到需批准的动作时会等待批准或拒绝；具体取决于连接器和设置，不是每项操作都确认。": "A run waits for approval or denial when an action requires it. Requirements depend on the connector and settings; not every action prompts for confirmation.",
+  "可按角色共享已发布的自定义助理；空间和连接器不会随之自动共享，团队功能受套餐限制。": "Published custom agents can be shared by role. Their spaces and connectors are not shared automatically. Team features depend on the plan.",
+  "桌面版可调用本机工具，但聊天及其运行时由 AWS 托管，不是全程纯本机。": "The desktop app can use local tools, but chat and its runtime are hosted by AWS; this is not a local-only assistant."
 }
