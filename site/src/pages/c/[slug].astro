@@ -47,6 +47,17 @@ const desc = uiT("categoryDesc", "zh", { name: catNames.zh, n: category.products
 const descEn = uiT("categoryDesc", "en", { name: catNames.en, n: category.products.length });
 const isAi = category.groupId === "ai";
 const showContext = isAi || category.slug === "authenticators" || category.slug === "international-payments" || category.slug === "web-hosting" || category.slug === "cloud-sql-databases" || category.slug === "backend-as-a-service" || category.slug === "transactional-email" || category.slug === "agent-browser-tools" || category.slug === "browsers";
+const isCdnBilling = (key: string) => category.slug === "cdn-edge-security" && key === "cdn_overage";
+const mobileFeatures = category.slug === "cdn-edge-security" ? [
+  ...category.features.filter(f => !isCdnBilling(f.key)),
+  ...category.features.filter(f => isCdnBilling(f.key)),
+] : category.features;
+const cdnBillingOutcome = (featureKey: string, value: string) => {
+  if (!isCdnBilling(featureKey)) return null;
+  if (value === "yes") return { zh: "按月自动计费", en: "Automatically billed monthly" };
+  if (value === "no") return { zh: "不收超额费", en: "No overage charge" };
+  return { zh: "尚未核实", en: "Not verified" };
+};
 const ossCount = category.products.filter((p) => p.open_source).length;
 
 const sortedProducts = [...category.products].sort((a, b) => {
@@ -236,6 +247,7 @@ const sortedProducts = [...category.products].sort((a, b) => {
                   {category.features.map((f) => {
                     const cell = p.features[f.key] || { value: "unknown", note: "" };
                     const v = (cell.value || "unknown").toLowerCase();
+                    const billing = cdnBillingOutcome(f.key, v);
                     const empty = v === "unknown" || v === "na";
                     const noteZh = cleanPublicText(cell.note);
                     const full = featureValueFull[cell.value] || { zh: cell.value, en: cell.value };
@@ -244,7 +256,9 @@ const sortedProducts = [...category.products].sort((a, b) => {
                     const titleEn = full.en + (noteZh ? ` · ${tr(noteZh)}` : "");
                     return (
                       <td class="text-center">
-                        {empty ? (
+                        {billing ? (
+                          <span class="text-xs font-medium" data-cdn-billing={v} title={titleZh} data-i18n="title" data-zh={titleZh} data-en={titleEn}><T zh={billing.zh} en={billing.en} /></span>
+                        ) : empty ? (
                           <span class="feat-empty" title={titleZh} data-i18n="title" data-zh={titleZh} data-en={titleEn}>—</span>
                         ) : (
                           <span class:list={["feat", featClass(cell.value)]} title={titleZh} data-i18n="title" data-zh={titleZh} data-en={titleEn}>
@@ -302,13 +316,19 @@ const sortedProducts = [...category.products].sort((a, b) => {
             )}
             {showContext && <div class="mt-3 text-sm"><p><T zh={p.summary} en={tr(p.summary)}/></p><details class="mt-2"><summary><T zh="数据、许可与限制" en="Data, license and limits"/></summary><p><T zh={p.free_tier_limits || '未核实'} en={tr(p.free_tier_limits || '未核实')}/></p><p><T zh={p.license || ""} en={tr(p.license || "")}/></p></details></div>}
             <div class:list={["feat-mini", {"ai-feat-mini": showContext}]}>
-              {category.features.map((f) => {
+              {mobileFeatures.map((f) => {
                 const cell = p.features[f.key] || { value: "unknown", note: "" };
                 const v = (cell.value || "unknown").toLowerCase();
                 const empty = v === "unknown" || v === "na";
+                const billing = cdnBillingOutcome(f.key, v);
                 const lab = featurePair(category.slug, f.key, f.label);
                 const short = featureValueShort[cell.value] || { zh: cell.value, en: cell.value };
-                return (
+                return billing ? (
+                  <div class="col-span-full flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
+                    <span class="text-muted"><T zh={lab.zh} en={lab.en} /></span>
+                    <span class="text-xs font-medium" data-cdn-billing={v}><T zh={billing.zh} en={billing.en} /></span>
+                  </div>
+                ) : (
                   <>
                     <span class="fk" title={lab.zh} data-i18n="title" data-zh={lab.zh} data-en={lab.en}>
                       <T zh={lab.zh} en={lab.en} />
