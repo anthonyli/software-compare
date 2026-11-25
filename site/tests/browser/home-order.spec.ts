@@ -12,5 +12,6 @@ test('homepage prioritizes media while retaining all other groups and media card
   expect(await links.evaluateAll(nodes => nodes.map(node => node.getAttribute('href')))).toEqual([
     '/c/screen-recorders/', '/c/video-editors/', '/c/audio-editors/',
     '/c/audio-recorders/', '/c/transcription-tools/', '/c/converters/',
+    '/c/music-streaming/',
   ]);
 });
