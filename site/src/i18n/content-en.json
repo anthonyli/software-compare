@@ -4000,5 +4000,13 @@
   "内置菜单、表格、树、表单和对话框。": "Includes menus, tables, trees, forms, and dialogs.",
   "支持键盘和鼠标事件；具体键鼠能力取决于终端和驱动。": "Supports keyboard and mouse events; available features depend on the terminal and driver.",
   "ANSI 驱动支持注入键鼠输入和捕获绘制缓冲区，不等同于覆盖全部真实终端驱动。": "The ANSI driver supports input injection and render buffer capture, not coverage of every real terminal driver.",
-  "官方资料未确认浏览器运行；内联指在终端滚动区内运行。": "Browser support was not confirmed in official docs; inline means running in the terminal scrollback."
+  "官方资料未确认浏览器运行；内联指在终端滚动区内运行。": "Browser support was not confirmed in official docs; inline means running in the terminal scrollback.",
+  "把 Blender 或 Unity 场景做成交互网页的 3D 运行时，不是独立建模软件。": "A 3D runtime that turns Blender or Unity scenes into interactive web experiences, not a standalone modeler.",
+  "Hobby 仅限符合条件的非商用项目，带 Needle 品牌。官方年付 Pro 每席位 EUR 588（折合 EUR 49/月），支持商用、去品牌和自托管；Enterprise 询价。": "Hobby is limited to eligible noncommercial projects and retains Needle branding. Pro is EUR 588 per seat billed annually (EUR 49/month equivalent) and supports commercial use, branding removal and self-hosting. Enterprise is custom.",
+  "Hobby 含 1 个 Needle Cloud 项目；绑卡要求未核实。一般 Vite 输出是多文件 dist/；singleHtml 可选打包为单个 HTML，makeFilesLocal 可内置受支持的外部资产，不保证任意项目可在 file:// 全离线运行。": "Hobby includes one Needle Cloud project; card requirements were not verified. A normal Vite build produces a multi-file dist/ directory. Optional singleHtml packages a build into one HTML file; makeFilesLocal bundles supported external assets. This does not guarantee fully offline file:// operation for every project.",
+  "在 Blender 或 Unity 中制作或布置资产；Needle 不是独立网格建模器。": "Create or arrange assets in Blender or Unity; Needle is not a standalone mesh modeler.",
+  "在源工具完成骨骼绑定，不把网页运行时算作编辑骨骼或蒙皮的工具。": "Rig characters in the source tool; the web runtime is not a rigging or skinning tool.",
+  "可播放动画片段、状态机和时间轴。交互组件依赖 Needle 运行时对自定义 glTF 扩展的处理，不是普通 glTF 阅读器的通用能力。": "Plays animation clips, state machines and timelines. Interactive components rely on Needle runtime handling of custom glTF extensions, not standard glTF viewers.",
+  "提供浏览器实时渲染与交互发布，不等于离线逐帧渲染；定价表中自托管从 Pro 起。": "Supports real-time browser rendering and interactive publishing, not offline frame rendering. Pricing lists self-hosting from Pro.",
+  "每席位按年付费，商用、去品牌和自托管。": "Billed annually per seat; commercial use, branding removal and self-hosting."
 }

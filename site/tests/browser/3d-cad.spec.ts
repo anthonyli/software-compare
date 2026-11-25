@@ -32,3 +32,19 @@ test('Spline keeps tier and interchange boundaries visible in both locales and w
   }
  }
 });
+
+test('Needle displays commercial and offline boundaries in both locales', async ({page}) => {
+ for (const [width, lang, price, offline] of [
+  [1280, 'zh-CN', 'EUR 588', '不保证任意项目可在 file:// 全离线运行'],
+  [390, 'en', 'EUR 588 per seat billed annually', 'does not guarantee fully offline file:// operation'],
+ ] as const) {
+  await page.setViewportSize({width, height: 900});
+  await page.goto('/c/animation-3d/');
+  await expect(page.locator(width === 1280 ? '#matrix' : '#card-list').locator('[data-product-id="needle-engine"]')).toBeVisible();
+  await page.goto('/p/animation-3d/needle-engine/');
+  await page.locator(`[data-lang="${lang}"]`).click();
+  await expect(page.locator('body')).toContainText(price);
+  await expect(page.locator('body')).toContainText(offline);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+ }
+});
