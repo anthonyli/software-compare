@@ -146,3 +146,13 @@ test('Glaxnimate does not conflate partial web-format support with bitmap drawin
  assert.equal(p.features.raster_animation.value, 'unknown');
  assert.match(p.features.raster_animation.note, /位图描摹.*未确认原生位图/);
 });
+
+test('Friction records the stable release and does not count experimental Android support', () => {
+ const p = categories.find(c => slug(c) === 'animation-2d').products.find(p => p.id === 'friction');
+ assert.deepEqual([p.latest_release, p.latest_release_date], ['1.0.0', '2026-11-08']);
+ assert.deepEqual(p.platforms, ['Windows', 'macOS', 'Linux']);
+ assert.match(p.free_tier_limits, /不提供内置 Lottie.*GLES3.*不是 Android 安装包/);
+ assert.match(p.latest_release_date_note, /WebM.*图像序列.*macOS 26/);
+ assert.match(p.summary, /2026-11-08 公告稳定版 1\.0\.0.*WebM/);
+ assert(p.sources.includes('https://friction.graphics/releases/friction-100.html'));
+});

@@ -321,11 +321,11 @@
       "pricing_model": "完全免费",
       "price_summary": "官网开源版本免费，可用于商业创作；素材和扩展许可另核，商店分发或支持服务可能收费。",
       "prices": [],
-      "free_tier_limits": "原生采用 SVG/SMIL，不提供内置 Lottie 支持；素材绘制通常配合外部工具。普通效果和着色器不等同节点合成图，M4 16GB 未实测。",
+      "free_tier_limits": "原生采用 SVG/SMIL，不提供内置 Lottie 支持；素材绘制通常配合外部工具。官方列 Windows 和 Linux x86_64、macOS Intel 与 Apple Silicon；GLES3 仅为源码试验，不是 Android 安装包。未实测。",
       "github_stars": null,
-      "latest_release": null,
-      "latest_release_date": null,
-      "summary": "矢量优先的二维动效软件，支持位图素材动画、关键帧及 SVG 动画输出；基于 enve 分支，不是 After Effects 项目的无损替代。",
+      "latest_release": "1.0.0",
+      "latest_release_date": "2026-11-08",
+      "summary": "矢量优先的二维动效软件，支持位图素材动画、关键帧及 SVG 动画输出；基于 enve 分支，不是 After Effects 项目的无损替代。官网于 2026-11-08 公告稳定版 1.0.0，新增 WebM 预设和独立图像序列导出窗口，并修复部分 macOS 26+ 兼容问题。",
       "features": {
         "vector_animation": {
           "value": "yes"
@@ -347,9 +347,12 @@
         "https://github.com/friction2d/friction",
         "https://friction.graphics/documentation/faq.html",
         "https://friction.graphics/documentation/usage.html",
-        "https://friction.graphics/documentation/animation_techniques.html"
+        "https://friction.graphics/documentation/animation_techniques.html",
+        "https://friction.graphics/releases/friction-100.html",
+        "https://friction.graphics/releases/"
       ],
-      "collected_at": "2026-11-14"
+      "collected_at": "2026-11-25",
+      "latest_release_date_note": "1.0.0 增加 WebM 渲染预设和独立图像序列导出窗口，并修复部分 macOS 26+ 兼容问题。日期采用官网公告。"
     },
     {
       "id": "cavalry",
