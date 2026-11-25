@@ -19,7 +19,7 @@ test('file backup exposes its original cover and recovery boundaries', async ({ 
     await page.goto('/c/file-backup/');
     await expect(page.locator('h1')).toContainText(title);
     const table = page.locator(width === 1280 ? '#matrix' : '#card-list');
-    for (const id of ['restic', 'kopia', 'borgbackup', 'time-machine', 'windows-file-history', 'arq-7', 'duplicati', 'deja-dup']) {
+    for (const id of ['restic', 'kopia', 'borgbackup', 'time-machine', 'windows-file-history', 'arq-7', 'duplicati', 'deja-dup', 'pika-backup']) {
       await expect(table.locator(`[data-product-id="${id}"]`)).toBeVisible();
     }
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
@@ -42,5 +42,8 @@ test('file backup exposes its original cover and recovery boundaries', async ({ 
     await expect(page.locator('h1')).toContainText('Déjà Dup Backups');
     await expect(page.locator('body')).toContainText(lang === 'en' ? 'Older Duplicity backups use the in-app restore UI' : '旧 Duplicity 备份使用应用内恢复界面');
     await expect(page.locator('body')).toContainText(lang === 'en' ? '64 MiB subset' : '64 MiB 子集');
+    await page.goto('/p/file-backup/pika-backup/');
+    await expect(page.locator('h1')).toContainText('Pika Backup');
+    await expect(page.locator('body')).toContainText(lang === 'en' ? 'GNOME Files does not preserve permissions' : '用 GNOME Files 复制不会保留权限');
   }
 });

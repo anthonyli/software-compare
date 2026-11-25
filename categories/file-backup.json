@@ -550,6 +550,72 @@
         "https://gitlab.gnome.org/World/deja-dup/-/archive/50.2/deja-dup-50.2.tar.bz2",
         "https://restic.readthedocs.io/en/stable/100_references.html"
       ]
+    },
+    {
+      "id": "pika-backup",
+      "name": "Pika Backup",
+      "official_url": "https://apps.gnome.org/PikaBackup/",
+      "github_url": null,
+      "platforms": [
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0-only",
+      "pricing_model": "免费开源",
+      "price_summary": "应用免费开源；自备磁盘、网络共享或 Borg 托管服务的费用另计。",
+      "prices": [],
+      "free_tier_limits": "仅面向个人文件，不做整机恢复。自动备份需要桌面后台权限；远端支持范围不等同于所有对象存储。",
+      "github_stars": null,
+      "latest_release": "0.8.4",
+      "latest_release_date": "2026-08-04",
+      "collected_at": "2026-11-26",
+      "summary": "Linux 桌面上的 Borg 图形备份工具，适合外接盘、网络共享或 Borg 远端；与使用 Restic 的 Déjà Dup 不共享仓库格式。",
+      "features": {
+        "backup_snapshots": {
+          "value": "yes",
+          "note": "基于 Borg 创建有时间戳的增量归档并复用已存数据。"
+        },
+        "backup_encryption": {
+          "value": "partial",
+          "note": "创建仓库时可选加密设置，恢复加密仓库需要对应凭据。"
+        },
+        "backup_destinations": {
+          "value": "yes",
+          "note": "支持外接盘、网络共享，以及文档列出的 Borg、SSH 或 SFTP 远端；不将此视为原生 S3 支持。"
+        },
+        "backup_retention": {
+          "value": "yes",
+          "note": "可用预设或自订保留数量，小时、天、周至少保留一个归档。"
+        },
+        "backup_schedule": {
+          "value": "yes",
+          "note": "按小时、天、周或月调度；外接盘缺席时可在重新连接后启动，后台运行依赖桌面门户。"
+        },
+        "backup_gui": {
+          "value": "yes",
+          "note": "GNOME 图形界面配置任务、计划与保留规则，并从文件管理器浏览归档。"
+        },
+        "backup_restore": {
+          "value": "yes",
+          "note": "按归档日期浏览并复制文件；官方提醒用 GNOME Files 复制不会保留权限。也可用兼容的 Borg 工具访问归档。"
+        },
+        "backup_verify": {
+          "value": "unknown",
+          "note": "Borg 命令行可验证数据；Pika 0.8.4 的界面是否提供同等全读校验未核实。"
+        }
+      },
+      "sources": [
+        "https://apps.gnome.org/PikaBackup/",
+        "https://flathub.org/en/apps/org.gnome.World.PikaBackup",
+        "https://gitlab.gnome.org/World/pika-backup",
+        "https://raw.githubusercontent.com/pika-backup/pika-backup/0.8.4/Cargo.toml",
+        "https://world.pages.gitlab.gnome.org/pika-backup/help/C/general-intro.html",
+        "https://world.pages.gitlab.gnome.org/pika-backup/help/C/setup-remote.html",
+        "https://world.pages.gitlab.gnome.org/pika-backup/help/C/feature-schedule.html",
+        "https://world.pages.gitlab.gnome.org/pika-backup/help/C/recovery-pika.html",
+        "https://world.pages.gitlab.gnome.org/pika-backup/help/C/recovery-other.html",
+        "https://borgbackup.readthedocs.io/en/1.4-maint/usage/check.html"
+      ]
     }
   ]
 }
