@@ -220,6 +220,65 @@
         "https://borgbackup.readthedocs.io/en/stable/usage/check.html",
         "https://borgbackup.readthedocs.io/en/stable/usage/prune.html"
       ]
+    },
+    {
+      "id": "time-machine",
+      "name": "Time Machine",
+      "official_url": "https://support.apple.com/en-us/104984",
+      "github_url": null,
+      "platforms": [
+        "macOS"
+      ],
+      "open_source": false,
+      "license": "专有许可",
+      "pricing_model": "系统内置",
+      "price_summary": "macOS 内置，无需另付软件费；外接硬盘或 NAS 自备。",
+      "prices": [],
+      "free_tier_limits": "仅支持 Mac。本机 APFS 快照与源文件同盘，不能替代外部备份。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-25",
+      "summary": "Mac 自带的图形化增量备份，适合用外接盘或兼容的局域网设备找回旧文件。",
+      "features": {
+        "backup_snapshots": {
+          "value": "partial",
+          "note": "首次完整备份，之后备份更改过的文件；官方文档未说明通用内容去重。"
+        },
+        "backup_encryption": {
+          "value": "partial",
+          "note": "设置时可选加密；恢复时需要备份密码。"
+        },
+        "backup_destinations": {
+          "value": "yes",
+          "note": "支持外接盘、共享备份的 Mac 或明确兼容 Time Machine 的 SMB NAS，不直连 S3。"
+        },
+        "backup_retention": {
+          "value": "partial",
+          "note": "默认保留最近 24 小时的逐小时、近一个月的逐日和更早的逐周备份；磁盘满时删除最旧备份。"
+        },
+        "backup_schedule": {
+          "value": "yes"
+        },
+        "backup_gui": {
+          "value": "yes"
+        },
+        "backup_restore": {
+          "value": "yes",
+          "note": "可按历史版本找回单个文件；迁移助理可恢复用户文件和应用，不是启动盘克隆。"
+        },
+        "backup_verify": {
+          "value": "partial",
+          "note": "Apple 说明可自动或手动验证网络备份；未说明这相当于逐文件读回，也不替代恢复演练。"
+        }
+      },
+      "sources": [
+        "https://support.apple.com/en-us/104984",
+        "https://support.apple.com/en-us/102423",
+        "https://support.apple.com/en-gb/guide/mac-help/mh35860/26/mac/26",
+        "https://support.apple.com/guide/mac-help/verify-your-backup-disk-mh26840/mac",
+        "https://support.apple.com/en-sg/102551"
+      ]
     }
   ]
 }
