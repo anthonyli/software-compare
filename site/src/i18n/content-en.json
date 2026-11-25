@@ -4089,5 +4089,15 @@
   "支持补间和路径动画，可输出 Lottie JSON 或动画 SVG。": "Supports tweening and motion paths, with Lottie JSON and animated SVG output.",
   "官方手册确认位图描摹和光栅帧导出，未确认原生位图逐帧绘制。": "The manual documents bitmap tracing and raster frame export, but does not confirm native frame-by-frame bitmap drawing.",
   "关键帧和路径动画不是骨骼绑定；官方资料未确认角色骨骼系统。": "Keyframes and motion paths are not skeletal rigging. The official material does not confirm a character bone system.",
-  "有形状修改器与预合成，未确认通用节点式特效图。": "Shape modifiers and precompositions are available; a general node graph for effects was not confirmed."
+  "有形状修改器与预合成，未确认通用节点式特效图。": "Shape modifiers and precompositions are available; a general node graph for effects was not confirmed.",
+  "个人免费 / 组织授权受限": "Free for individuals / organizational use is restricted",
+  "Community 允许个人开发免费或付费应用；组织使用有条件。官网列出 Professional 月付 US$45/用户，其他套餐和地区另计。": "Community lets individuals build free or paid apps, with restrictions for organizations. Microsoft lists Professional at US$45 per user per month; other plans and regions may differ.",
+  "按用户按月计费；仅记录月付 Professional，不等同于 Standard 年订阅。": "Monthly per user. This is Professional monthly, not the annual Standard subscription.",
+  "非企业组织一般最多 5 人；企业组织的免费用途限开源贡献、学术研究和课堂教学等许可场景。Windows 是 IDE 宿主，iOS 仍需要 Mac 和兼容的 Xcode。": "Non-enterprise organizations generally have a five-user limit. Enterprise use is restricted to qualifying scenarios such as open-source contribution, academic research, or classroom learning. The IDE runs on Windows; iOS still requires a Mac and compatible Xcode.",
+  "Windows 上用于 .NET MAUI 的 IDE，可从同一项目运行与调试 Android、iOS。不是 Visual Studio Code，也不是在 Mac 上运行的 Visual Studio。": "A Windows IDE for .NET MAUI with Android and iOS run and debug workflows from a shared project. It is neither Visual Studio Code nor Visual Studio running on a Mac.",
+  "支持 Android Emulator，但 Windows on Arm 不支持 Android 模拟器；iOS 模拟器由配对的 Mac 运行。": "Supports the Android Emulator, but not on Windows on Arm. The iOS simulator runs on the paired Mac.",
+  "可部署和调试 Android 真机；iOS 真机开发需配对 Mac，并满足 Apple 的签名和设备设置要求。": "Deploy and debug on physical Android devices. Physical iOS development needs a paired Mac plus Apple signing and device setup.",
+  "支持 .NET MAUI 的 XAML Live Preview，官方列出 Android 真机和模拟器；不把它当作各平台通用的拖拽设计器。": ".NET MAUI XAML Live Preview lists Android devices and emulators. It is not a universal drag-and-drop designer for all platforms.",
+  "Microsoft 有 Android 和 iOS 的 dotnet-trace 工作流，不把外部命令行采样算作 IDE 内置移动性能分析。": "Microsoft documents a dotnet-trace workflow for Android and iOS; external command-line profiling is not counted as built-in IDE mobile profiling.",
+  "Visual Studio 可运行配置好的 .NET 单元测试；这不等于内置、免配置的真机 UI 自动化。": "Visual Studio runs configured .NET unit tests; this is not built-in, zero-configuration UI automation on physical devices."
 }

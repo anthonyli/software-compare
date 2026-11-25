@@ -172,6 +172,67 @@
         "https://www.jetbrains.com/guide/dotnet/tutorials/maui-development/debug-maui-apps/",
         "https://sales.jetbrains.com/hc/en-gb/articles/18950890312210-The-free-non-commercial-licensing-FAQ"
       ]
+    },
+    {
+      "id": "visual-studio-2026",
+      "name": "Visual Studio 2026",
+      "official_url": "https://visualstudio.microsoft.com/downloads/",
+      "github_url": null,
+      "platforms": [
+        "Windows"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "个人免费 / 组织授权受限",
+      "price_summary": "Community 允许个人开发免费或付费应用；组织使用有条件。官网列出 Professional 月付 US$45/用户，其他套餐和地区另计。",
+      "prices": [
+        {
+          "plan": "Professional",
+          "price": "45",
+          "currency": "USD",
+          "period": "month",
+          "note": "按用户按月计费；仅记录月付 Professional，不等同于 Standard 年订阅。"
+        }
+      ],
+      "summary": "Windows 上用于 .NET MAUI 的 IDE，可从同一项目运行与调试 Android、iOS。不是 Visual Studio Code，也不是在 Mac 上运行的 Visual Studio。",
+      "free_tier_limits": "非企业组织一般最多 5 人；企业组织的免费用途限开源贡献、学术研究和课堂教学等许可场景。Windows 是 IDE 宿主，iOS 仍需要 Mac 和兼容的 Xcode。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "features": {
+        "virtual_device": {
+          "value": "partial",
+          "note": "支持 Android Emulator，但 Windows on Arm 不支持 Android 模拟器；iOS 模拟器由配对的 Mac 运行。"
+        },
+        "device_debug": {
+          "value": "yes",
+          "note": "可部署和调试 Android 真机；iOS 真机开发需配对 Mac，并满足 Apple 的签名和设备设置要求。"
+        },
+        "ui_preview": {
+          "value": "partial",
+          "note": "支持 .NET MAUI 的 XAML Live Preview，官方列出 Android 真机和模拟器；不把它当作各平台通用的拖拽设计器。"
+        },
+        "profiling": {
+          "value": "partial",
+          "note": "Microsoft 有 Android 和 iOS 的 dotnet-trace 工作流，不把外部命令行采样算作 IDE 内置移动性能分析。"
+        },
+        "testing": {
+          "value": "partial",
+          "note": "Visual Studio 可运行配置好的 .NET 单元测试；这不等于内置、免配置的真机 UI 自动化。"
+        }
+      },
+      "sources": [
+        "https://visualstudio.microsoft.com/downloads/",
+        "https://visualstudio.microsoft.com/vs/community/",
+        "https://visualstudio.microsoft.com/vs/pricing/?tab=paid-subscriptions",
+        "https://learn.microsoft.com/en-us/dotnet/maui/android/device/setup",
+        "https://learn.microsoft.com/en-us/dotnet/maui/ios/pair-to-mac",
+        "https://learn.microsoft.com/visualstudio/xaml-tools/xaml-live-preview",
+        "https://learn.microsoft.com/en-us/dotnet/maui/deployment/performance",
+        "https://learn.microsoft.com/en-us/dotnet/maui/deployment/unit-testing"
+      ],
+      "collected_at": "2026-11-25"
     }
   ]
 }
