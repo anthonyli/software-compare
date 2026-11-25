@@ -199,6 +199,68 @@
         "https://github.com/httptoolkit/httptoolkit",
         "https://httptoolkit.com/terms-of-service/"
       ]
+    },
+    {
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "prices": [
+        {
+          "plan": "Lite",
+          "price": "10",
+          "currency": "USD",
+          "period": "month"
+        },
+        {
+          "plan": "Pro",
+          "price": "19",
+          "currency": "USD",
+          "period": "month"
+        }
+      ],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-25",
+      "id": "fiddler-everywhere",
+      "name": "Fiddler Everywhere",
+      "official_url": "https://www.telerik.com/fiddler/fiddler-everywhere",
+      "github_url": null,
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "订阅",
+      "summary": "Telerik 的跨平台 HTTP(S) 应用调试工具，可在受授权的开发或测试环境检查和复查请求；不同于旧版 Fiddler Classic。",
+      "price_summary": "有 10 天试用，不是长期免费。官网美元参考：Lite 月付 USD 10、Pro 月付 USD 19；年付折合 Lite USD 7、Pro USD 13、Enterprise USD 37，均为每人每月。",
+      "free_tier_limits": "需账号试用，未核实试用绑卡要求。Lite 支持本机检查与重放；调试远程设备需 Pro 或 Enterprise。旧版 Fiddler Classic 仅 Windows、个人非商业免费，不能套用到 Everywhere。",
+      "features": {
+        "https_inspect": {
+          "value": "paid",
+          "note": "Lite、Pro 和 Enterprise 都支持本机 HTTP(S) 检查；仅调试授权流量，应用的证书策略可能限制可见内容。"
+        },
+        "manual_edit": {
+          "value": "paid",
+          "note": "断点和手动调整功能从 Pro 起，Lite 不含。"
+        },
+        "request_replay": {
+          "value": "paid",
+          "note": "价格表显示 Lite 已含重放；仅用于获授权的测试环境。"
+        },
+        "response_mock": {
+          "value": "paid",
+          "note": "按规则模拟响应从 Pro 起，Lite 不含。"
+        }
+      },
+      "sources": [
+        "https://www.telerik.com/fiddler/fiddler-everywhere",
+        "https://www.telerik.com/purchase/fiddler",
+        "https://www.telerik.com/download/fiddler-everywhere",
+        "https://www.telerik.com/fiddler/fiddler-classic",
+        "https://www.telerik.com/fiddler/fiddler-everywhere/documentation/introduction",
+        "https://www.telerik.com/fiddler/fiddler-everywhere/documentation/modify-and-filter-traffic/mocking-traffic-with-rules"
+      ]
     }
   ]
 }
