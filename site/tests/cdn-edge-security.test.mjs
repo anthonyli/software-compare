@@ -18,6 +18,8 @@ test('CDN free allowances, account payment methods and excess use stay separate'
   assert.match(cloudflare.free_tier_limits, /512 MB.*默认不缓存.*大文件和视频另受/);
   assert.equal(cloudflare.features.cdn_payment.value, 'unknown');
   assert.equal(cloudflare.features.cdn_waf.value, 'partial');
+  assert.equal(data.features.find(f => f.key === 'cdn_overage').label, '超出免费额度会自动收费');
+  assert.deepEqual(data.products.map(p => p.features.cdn_overage.value), ['unknown', 'no', 'yes']);
   assert.match(cloudfront.free_tier_limits, /账号级 Free Tier 不适用.*有效付款方式/);
   assert.match(cloudfront.features.cdn_free_allowance.note, /每个分发每月 100 万请求、100 GB/);
   assert.match(cloudfront.features.cdn_overage.note, /不收超额费.*可能调整/);

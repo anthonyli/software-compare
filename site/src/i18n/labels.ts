@@ -127,7 +127,7 @@ export const featureColumns: Record<string, { zh: string; en: string }> = {
   "cdn-edge-security:cdn_cache": { zh: "CDN 缓存和边缘分发", en: "CDN caching and edge delivery" },
   "cdn-edge-security:cdn_waf": { zh: "免费档的托管 WAF", en: "Managed WAF on the free tier" },
   "cdn-edge-security:cdn_free_allowance": { zh: "免费额度与计量周期", en: "Free allowance and metering period" },
-  "cdn-edge-security:cdn_overage": { zh: "超过免费额度后的处理", en: "What happens above the free allowance" },
+  "cdn-edge-security:cdn_overage": { zh: "超出免费额度会自动收费", en: "Automatically bills above the free allowance" },
   "cdn-edge-security:cdn_payment": { zh: "免费档需要付款方式", en: "Payment method required on the free tier" },
   "international-payments:mor": { zh: "法定销售方 MoR", en: "Merchant of record" },
   "international-payments:cn_individual": { zh: "大陆个人申请边界", en: "Mainland individual eligibility" },
