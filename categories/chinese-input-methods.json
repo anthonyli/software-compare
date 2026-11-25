@@ -1,0 +1,225 @@
+{
+  "category_slug": "chinese-input-methods",
+  "category_name_zh": "中文输入法",
+  "collected_at": "2026-11-24",
+  "timezone": "Asia/Shanghai",
+  "notes": "比较能够生成中文候选词的输入法，不是切换已有键盘的工具。基础文字输入、本机离线语音、联网联想与生成式 AI 是不同功能；请按版本和平台核对数据上传与授权。",
+  "features": [
+    {
+      "key": "zhime_basic",
+      "label": "中文文字输入"
+    },
+    {
+      "key": "zhime_local",
+      "label": "本地文字输入"
+    },
+    {
+      "key": "zhime_schemes",
+      "label": "自定义方案与词库"
+    },
+    {
+      "key": "zhime_voice",
+      "label": "语音转文字"
+    },
+    {
+      "key": "zhime_cloud",
+      "label": "云联想或生成式 AI"
+    },
+    {
+      "key": "zhime_sync",
+      "label": "跨设备词库迁移"
+    }
+  ],
+  "products": [
+    {
+      "id": "wechat-keyboard",
+      "name": "微信输入法 (WeType)",
+      "official_url": "https://z.weixin.qq.com/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "iOS",
+        "iPadOS",
+        "Android"
+      ],
+      "license": "专有许可",
+      "open_source": false,
+      "pricing_model": "免费",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-24",
+      "summary": "腾讯的中文输入法；移动端支持拼音等多种输入方式，可选拼写 Plus、语音和跨设备功能。",
+      "price_summary": "中国大陆 iOS App Store 和腾讯应用宝均提供免费下载。不把此结论当作所有地区或将来增值服务的承诺。",
+      "free_tier_limits": "4.0.1 在中国大陆 iOS App Store 为 2026-11-10、腾讯应用宝 Android 为 2026-11-11。Mac 3.0.2（689）和 Windows 3.0.3.8 为包管理器列出的腾讯安装包版本，不是移动版或官方统一发布日。当前 iPhone 与 iPad 最低系统要求以各自商店为准。",
+      "features": {
+        "zhime_basic": {
+          "value": "yes",
+          "note": "移动发布说明支持拼音、手写等键盘输入方式；不要假定桌面端具有移动端全部模式。"
+        },
+        "zhime_local": {
+          "value": "yes",
+          "note": "腾讯移动隐私政策区分隐私保护模式：基础输入内容留在本机，主动故障反馈有例外。关闭拼写 Plus 不影响基本输入，但不代表应用没有联网行为。"
+        },
+        "zhime_schemes": {
+          "value": "partial",
+          "note": "可保存常用语和本地个人词典；未确认支持像 Rime 一样编写或替换完整输入方案。"
+        },
+        "zhime_voice": {
+          "value": "yes",
+          "note": "移动端有语音转文字。中国大陆 iOS App Store 的 3.4.1 更新记录已列出离线语音。隐私政策说明联网转写会上传语音；这不代表其他平台、所有语言或 AI 录音笔也支持离线。"
+        },
+        "zhime_cloud": {
+          "value": "yes",
+          "note": "移动端可选拼写 Plus 和「问 AI」。腾讯政策说明启用 Plus 时部分输入与城市归属地会上传作实时处理；不要将其与基础输入混同。"
+        },
+        "zhime_sync": {
+          "value": "yes",
+          "note": "本机剪贴板与主动开启的跨设备复制粘贴、常用语和个人词典同步不同；按移动隐私政策，后者会把对应数据上传给腾讯中转。"
+        }
+      },
+      "sources": [
+        "https://apps.apple.com/cn/app/id1618175312",
+        "https://sj.qq.com/appdetail/com.tencent.wetype",
+        "https://wxkeyboardcms-1258476243.file.myqcloud.com/page/article/index/4.html",
+        "https://formulae.brew.sh/cask/wetype",
+        "https://github.com/microsoft/winget-pkgs/blob/master/manifests/t/Tencent/WeType/3.0.3.8/Tencent.WeType.installer.yaml"
+      ]
+    },
+    {
+      "id": "rime",
+      "name": "Rime (中州韵)",
+      "official_url": "https://rime.im/download/",
+      "github_url": "https://github.com/rime/librime",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS"
+      ],
+      "license": "BSD-3-Clause",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": "librime 1.17.0",
+      "latest_release_date": "2026-06-06",
+      "maintenance_status": null,
+      "collected_at": "2026-11-24",
+      "summary": "Rime 是开源输入法引擎家族，不是一个跨平台安装包。Windows 小狼毫、macOS 鼠鬚管、Linux IBus/Fcitx5 插件及移动社区前端各自分发。",
+      "price_summary": "BSD-3-Clause 指 librime 核心；鼠鬚管、小狼毫和其他第三方前端、词库、插件的许可需分别核对。移动商店和社区构建也不适用同一价格承诺。",
+      "free_tier_limits": "1.17.0 是引擎发布版本；官网列出的 Windows 小狼毫为 0.17.4、macOS 鼠鬚管为 1.1.2。Android 同文及 iOS 仓输入法是各自维护的社区前端，不共享发布版本、权限或隐私条款。",
+      "features": {
+        "zhime_basic": {
+          "value": "yes",
+          "note": "官方示例包含朙月拼音，可安装多种中文输入方案；初始方案随前端和分发包变化。"
+        },
+        "zhime_local": {
+          "value": "yes",
+          "note": "核心与已安装的输入方案使用本机用户资料和词典。不能因此替社区前端、同步工具或插件作零联网保证。"
+        },
+        "zhime_schemes": {
+          "value": "yes",
+          "note": "可用配置文件、方案与自定义词典改变拼写、候选和输出；前端安装和部署方式不同。"
+        },
+        "zhime_voice": {
+          "value": "no",
+          "note": "本条比较的 librime 核心和官方桌面输入方案未内置语音转文字；不评估手机版或第三方扩展的语音。"
+        },
+        "zhime_cloud": {
+          "value": "no",
+          "note": "不把本地已安装方案的词语候选当作云联想或生成式 AI。这里未将任何额外社区集成计入核心能力。"
+        },
+        "zhime_sync": {
+          "value": "partial",
+          "note": "官方指南支持词典快照或同步目录；可由使用者选用共享目录，不是内置 Rime 托管同步。若选云盘，数据由外部同步工具处理。"
+        }
+      },
+      "sources": [
+        "https://rime.im/download/",
+        "https://github.com/rime/librime/releases/tag/1.17.0",
+        "https://github.com/rime/librime/blob/1.17.0/LICENSE",
+        "https://github.com/rime/weasel/releases/tag/0.17.4",
+        "https://github.com/rime/squirrel/releases/tag/1.1.2",
+        "https://github.com/rime/home/wiki/RimeWithSchemata",
+        "https://github.com/rime/home/wiki/UserGuide",
+        "https://github.com/osfans/trime",
+        "https://github.com/imfuxiao/Hamster"
+      ]
+    },
+    {
+      "id": "sogou-input-method",
+      "name": "搜狗输入法 (Sogou)",
+      "official_url": "https://shurufa.sogou.com/",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "iOS",
+        "iPadOS",
+        "Android"
+      ],
+      "license": "专有许可",
+      "open_source": false,
+      "pricing_model": "免费增值",
+      "prices": [
+        {
+          "plan": "中国大陆 iOS App Store 连续包月会员",
+          "price": "31",
+          "currency": "CNY",
+          "period": "month",
+          "note": "中国大陆 iOS 内购标价，仅此渠道与周期；以商店结算为准。"
+        }
+      ],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-24",
+      "summary": "搜狗的中文输入法，提供拼音、词库及各平台不同的语音和扩展功能。",
+      "price_summary": "中国大陆 iOS App Store 可免费下载，连续包月会员列 ¥31/月，另有其他内购。此价格不代表 Android、桌面端或其他地区。",
+      "free_tier_limits": "腾讯应用宝 Android 20.20.0 为 2026-11-20，中国大陆 iOS 同号条目为 11-11；官方 Windows 16.10 为 2026-10-30，Mac 6.25.3 为 2026-10-19。Linux 有独立官方入口，不按上述版本或移动隐私政策类推。",
+      "features": {
+        "zhime_basic": {
+          "value": "yes",
+          "note": "移动端发布资料列拼音、双拼、五笔等方式；PC、Mac 和 Linux 的功能范围另看对应版本。"
+        },
+        "zhime_local": {
+          "value": "partial",
+          "note": "官方版本说明区分系统词库、弱网输入与云输入；未核实每个平台完整离线范围。弱网可用不是完全离线，也不等于联网功能不发送数据。"
+        },
+        "zhime_schemes": {
+          "value": "partial",
+          "note": "可扩充词库或个性化设置；细胞词库、双拼设置等依版本变化，未核实可编写 Rime 式完整方案。"
+        },
+        "zhime_voice": {
+          "value": "yes",
+          "note": "官方 Android FAQ 的离线语音限普通话转文字，不含别的语种或翻译，iOS 日志也描述离线语音。联网模式和桌面能力另核；不要由此断言语音始终留在手机。"
+        },
+        "zhime_cloud": {
+          "value": "yes",
+          "note": "移动端商店与 Windows 更新日志确认有云输入或 AI 功能，iOS 部分扩展要求完全访问。移动新版隐私政策写明 2026-11-25 生效，其中区分云联想文本、语音及主动提交的 AI 内容；不要外推至所有端或生效前。"
+        },
+        "zhime_sync": {
+          "value": "yes",
+          "note": "Windows 更新日志明确同一账号可与 Mac 同步词库和输入习惯；这不是本地剪贴板，也不代表 Android、iOS 和 Linux 具有同样的同步范围。"
+        }
+      },
+      "sources": [
+        "https://apps.apple.com/cn/app/id917670924",
+        "https://sj.qq.com/appdetail/com.sohu.inputmethod.sogou",
+        "https://pinyin.sogou.com/changelog.php",
+        "https://pinyin.sogou.com/mac/update_log.php",
+        "https://shurufa.sogou.com/linux",
+        "https://shouji.sogou.com/log.php?see=ios",
+        "https://shouji.sogou.com/wap/feedback/faqdetail?click_fr=3&id=2000011&platform=Android",
+        "https://shouji.sogou.com/wap/htmls/privacy_policy.html"
+      ]
+    }
+  ]
+}

@@ -63,6 +63,7 @@ export const categoryNames: Record<string, { zh: string; en: string }> = {
   "pdf-tools": { zh: "PDF 工具（阅读/编辑）", en: "PDF tools (read/edit)" },
   "quick-translation-ocr": { zh: "快捷翻译与 OCR", en: "Quick translation and OCR" },
   "input-source-switchers": { zh: "输入源切换工具", en: "Input source switchers" },
+  "chinese-input-methods": { zh: "中文输入法", en: "Chinese input methods" },
   launchers: { zh: "启动器/效率启动工具", en: "Launchers" },
   "screen-recorders": { zh: "电脑录屏软件", en: "Screen recorders" },
   "video-editors": { zh: "视频剪辑", en: "Video editors" },
