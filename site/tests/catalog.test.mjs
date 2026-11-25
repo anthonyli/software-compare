@@ -125,3 +125,14 @@ test('Arq separates optional cloud recall, storage plans and destination-depende
  assert.equal(p.features.backup_verify.value, 'partial');
  assert.match(p.features.backup_verify.note, /NAS 或 SFTP/);
 });
+
+test('Harmony confirms separate 2D editions without guessing store prices', () => {
+ const p = categories.find(c => slug(c) === 'animation-2d').products.find(p => p.id === 'toon-boom-harmony');
+ assert.deepEqual(p.platforms, ['Windows', 'macOS', 'Linux']);
+ assert.equal(p.open_source, false);
+ assert.deepEqual(p.prices, []);
+ assert.match(p.price_summary, /Essentials、Advanced、Premium.*实时商店金额未核实/);
+ assert.match(p.features.raster_animation.note, /Advanced.*原生位图图层/);
+ assert.equal(p.features.node_effects.value, 'partial');
+ assert.match(p.features.node_effects.note, /节点视图按 Premium 计/);
+});
