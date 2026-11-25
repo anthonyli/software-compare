@@ -1,0 +1,225 @@
+{
+  "category_slug": "file-backup",
+  "category_name_zh": "文件备份与恢复",
+  "collected_at": "2026-11-25",
+  "timezone": "Asia/Shanghai",
+  "notes": "比较允许恢复到时间点的文件级备份，不是双向文件同步，也不代表裸机恢复。加密、存储端不可变和恢复演练是不同的能力。",
+  "features": [
+    {
+      "key": "backup_snapshots",
+      "label": "增量快照与去重"
+    },
+    {
+      "key": "backup_encryption",
+      "label": "仓库端到端加密"
+    },
+    {
+      "key": "backup_destinations",
+      "label": "本地与远程备份目的地"
+    },
+    {
+      "key": "backup_retention",
+      "label": "按规则保留历史"
+    },
+    {
+      "key": "backup_schedule",
+      "label": "内置自动调度"
+    },
+    {
+      "key": "backup_gui",
+      "label": "官方图形界面"
+    },
+    {
+      "key": "backup_restore",
+      "label": "按快照恢复文件"
+    },
+    {
+      "key": "backup_verify",
+      "label": "读取并校验备份内容"
+    }
+  ],
+  "products": [
+    {
+      "id": "restic",
+      "name": "Restic",
+      "official_url": "https://restic.net/",
+      "github_url": "https://github.com/restic/restic",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "FreeBSD",
+        "OpenBSD"
+      ],
+      "open_source": true,
+      "license": "BSD-2-Clause",
+      "pricing_model": "免费开源",
+      "price_summary": "核心工具免费开源；磁盘、服务器、远程存储、请求及下载流量可能另收费。",
+      "prices": [],
+      "free_tier_limits": "需要自行管理仓库密码及备份目的地；密码遗失无法恢复，也不保证存储端阻止删除。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-25",
+      "summary": "命令行文件备份工具，适合用系统任务调度在多平台保存加密快照。",
+      "features": {
+        "backup_snapshots": {
+          "value": "yes"
+        },
+        "backup_encryption": {
+          "value": "yes"
+        },
+        "backup_destinations": {
+          "value": "yes",
+          "note": "支持本地、SFTP、S3 兼容存储等。"
+        },
+        "backup_retention": {
+          "value": "yes",
+          "note": "forget 可按保留规则移除快照引用，prune 另行回收数据。"
+        },
+        "backup_schedule": {
+          "value": "no",
+          "note": "用 cron、系统服务或 Windows 任务计划等外部调度。"
+        },
+        "backup_gui": {
+          "value": "no"
+        },
+        "backup_restore": {
+          "value": "yes"
+        },
+        "backup_verify": {
+          "value": "yes",
+          "note": "默认 check 不读取全部数据包；check --read-data 才执行全量数据读取，远端可能产生流量费。"
+        }
+      },
+      "sources": [
+        "https://github.com/restic/restic/blob/master/LICENSE",
+        "https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html",
+        "https://restic.readthedocs.io/en/stable/040_backup.html",
+        "https://restic.readthedocs.io/en/stable/045_working_with_repos.html",
+        "https://restic.readthedocs.io/en/stable/050_restore.html",
+        "https://restic.readthedocs.io/en/stable/060_forget.html"
+      ]
+    },
+    {
+      "id": "kopia",
+      "name": "Kopia",
+      "official_url": "https://kopia.io/",
+      "github_url": "https://github.com/kopia/kopia",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "Apache-2.0",
+      "pricing_model": "免费开源",
+      "price_summary": "核心工具免费开源；磁盘、服务器、远程存储、请求及下载流量可能另收费。",
+      "prices": [],
+      "free_tier_limits": "备份目的地由用户提供；加密不自动开启对象锁，兼容目的地的存储防删须另行配置。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-25",
+      "summary": "提供官方图形界面和命令行，可在同一工具里管理加密备份、计划和恢复。",
+      "features": {
+        "backup_snapshots": {
+          "value": "yes"
+        },
+        "backup_encryption": {
+          "value": "yes"
+        },
+        "backup_destinations": {
+          "value": "yes",
+          "note": "支持本地目录、网络或 S3 兼容等后端；依赖具体提供商。"
+        },
+        "backup_retention": {
+          "value": "yes"
+        },
+        "backup_schedule": {
+          "value": "yes",
+          "note": "KopiaUI 支持策略和自动快照调度；应用或调度进程需运行。"
+        },
+        "backup_gui": {
+          "value": "yes"
+        },
+        "backup_restore": {
+          "value": "yes"
+        },
+        "backup_verify": {
+          "value": "yes",
+          "note": "snapshot verify 默认不下载全部文件；--verify-files-percent=100 才读回、解密并解压全部文件。"
+        }
+      },
+      "sources": [
+        "https://github.com/kopia/kopia",
+        "https://kopia.io/docs/installation/",
+        "https://kopia.io/docs/getting-started/",
+        "https://kopia.io/docs/repositories/",
+        "https://kopia.io/docs/advanced/consistency/",
+        "https://kopia.io/docs/reference/command-line/common/snapshot-restore/"
+      ]
+    },
+    {
+      "id": "borgbackup",
+      "name": "BorgBackup",
+      "official_url": "https://www.borgbackup.org/",
+      "github_url": "https://github.com/borgbackup/borg",
+      "platforms": [
+        "macOS",
+        "Linux",
+        "FreeBSD"
+      ],
+      "open_source": true,
+      "license": "BSD-3-Clause",
+      "pricing_model": "免费开源",
+      "price_summary": "核心工具免费开源；磁盘、服务器、远程存储、请求及下载流量可能另收费。",
+      "prices": [],
+      "free_tier_limits": "Windows 的 WSL、Cygwin 在稳定版文档中标为实验性，不算原生 Windows。恢复加密仓库需要按所选模式保存密钥和口令。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-25",
+      "summary": "适合本地磁盘或自建 SSH 仓库的命令行归档备份，按 Borg 1.4 稳定线比较。",
+      "features": {
+        "backup_snapshots": {
+          "value": "yes"
+        },
+        "backup_encryption": {
+          "value": "partial",
+          "note": "初始化时选加密模式；仅认证或无加密的模式不等于机密性。"
+        },
+        "backup_destinations": {
+          "value": "yes",
+          "note": "1.4 支持本地或 SSH 协议的 Borg 仓库，不按原生 S3 对象存储后端计。"
+        },
+        "backup_retention": {
+          "value": "yes"
+        },
+        "backup_schedule": {
+          "value": "no",
+          "note": "核心是按命令执行，计划任务需外部调度。"
+        },
+        "backup_gui": {
+          "value": "no",
+          "note": "第三方 Vorta 等不是 Borg 官方图形界面。"
+        },
+        "backup_restore": {
+          "value": "yes"
+        },
+        "backup_verify": {
+          "value": "yes",
+          "note": "使用 check --verify-data 才读取并做完整内容验证；默认检查范围不同。"
+        }
+      },
+      "sources": [
+        "https://github.com/borgbackup/borg/blob/1.4-maint/LICENSE",
+        "https://borgbackup.readthedocs.io/en/stable/installation.html",
+        "https://borgbackup.readthedocs.io/en/stable/usage/init.html",
+        "https://borgbackup.readthedocs.io/en/stable/quickstart.html",
+        "https://borgbackup.readthedocs.io/en/stable/usage/check.html",
+        "https://borgbackup.readthedocs.io/en/stable/usage/prune.html"
+      ]
+    }
+  ]
+}

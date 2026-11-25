@@ -79,6 +79,7 @@ export const categoryNames: Record<string, { zh: string; en: string }> = {
   converters: { zh: "格式转换（音视频/文件转换）", en: "Converters" },
   archivers: { zh: "压缩解压", en: "Archivers" },
   downloaders: { zh: "下载器（多线程/BT）", en: "Downloaders (multi-thread/BT)" },
+  "file-backup": { zh: "文件备份与恢复", en: "File backup and restore" },
   "file-sync": { zh: "文件同步/网盘同步", en: "File sync" },
   cleaners: { zh: "电脑缓存/系统清理工具", en: "Cache & system cleaners" },
   "antivirus-security": { zh: "杀毒/安全软件", en: "Antivirus & security" },

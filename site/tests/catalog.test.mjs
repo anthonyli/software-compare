@@ -4,7 +4,7 @@ import fs from 'node:fs';
 const root = new URL('../../', import.meta.url);
 const read = file => JSON.parse(fs.readFileSync(new URL(file, root), 'utf8'));
 const categories = [...read('data.json').categories, ...fs.readdirSync(new URL('categories/', root)).filter(f => f.endsWith('.json')).map(f => read(`categories/${f}`))];
-const added = ['ai-assistants','image-editors','vector-graphics','photo-management','desktop-publishing','ai-coding','ai-image-workflows','animation-3d','animation-2d','compositing','database-clients','api-clients','audio-recorders','transcription-tools','fitness-training','cycling-tools','outdoor-navigation'];
+const added = ['ai-assistants','image-editors','vector-graphics','photo-management','desktop-publishing','ai-coding','ai-image-workflows','animation-3d','animation-2d','compositing','database-clients','api-clients','audio-recorders','transcription-tools','fitness-training','cycling-tools','outdoor-navigation','file-backup'];
 const slug = c => c.category_slug || c.id;
 const config = fs.readFileSync(new URL('site/src/config.ts', root), 'utf8');
 const translations = read('site/src/i18n/content-en.json');
@@ -78,4 +78,16 @@ test('AI navigation has exactly the three requested categories and retains local
  const chat = categories.find(c => slug(c) === 'ai-assistants');
  for (const id of ['chatgpt','claude','gemini','jan','lm-studio','ollama']) assert(chat.products.some(p => p.id === id));
  assert(chat.products.length >= 12);
+});
+
+test('file backup distinguishes default checks, external scheduling and optional Borg encryption', () => {
+ const category = categories.find(c => slug(c) === 'file-backup');
+ const [restic, kopia, borg] = category.products;
+ assert.deepEqual(category.products.map(p => p.id), ['restic', 'kopia', 'borgbackup']);
+ assert.deepEqual(category.products.map(p => p.features.backup_schedule.value), ['no', 'yes', 'no']);
+ assert.match(restic.features.backup_verify.note, /默认.*--read-data/);
+ assert.match(kopia.features.backup_verify.note, /默认.*--verify-files-percent=100/);
+ assert.equal(borg.features.backup_encryption.value, 'partial');
+ assert.match(borg.features.backup_destinations.note, /1\.4.*SSH.*不按原生 S3/);
+ assert(!borg.platforms.includes('Windows'));
 });

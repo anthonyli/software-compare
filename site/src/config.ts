@@ -32,7 +32,7 @@ export const categoryGroups: { id: string; name: string; slugs: string[] }[] = [
   {
     id: "files",
     name: "文件工具",
-    slugs: ["archivers", "downloaders", "file-sync", "webpage-archiving", "finder-file-moves", "image-uploaders"],
+    slugs: ["archivers", "downloaders", "file-sync", "webpage-archiving", "finder-file-moves", "image-uploaders", "file-backup"],
   },
   {
     id: "system",
@@ -138,6 +138,7 @@ export const categoryMonograms: Record<string, string> = {
   "archivers": "压",
   "downloaders": "下",
   "file-sync": "同",
+  "file-backup": "备",
   "cleaners": "清",
   "antivirus-security": "安",
   "password-managers": "密",
@@ -215,6 +216,7 @@ export const categoryTints: Record<string, string> = {
   "archivers": "#F0E7FF",
   "downloaders": "#E5F4FF",
   "file-sync": "#E7F8EE",
+  "file-backup": "#E8F2F7",
   "cleaners": "#FFE8D8",
   "antivirus-security": "#FDE8EF",
   "password-managers": "#EDE7FF",
