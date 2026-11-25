@@ -83,8 +83,8 @@ test('AI navigation has exactly the three requested categories and retains local
 test('file backup distinguishes default checks, external scheduling and optional Borg encryption', () => {
  const category = categories.find(c => slug(c) === 'file-backup');
  const [restic, kopia, borg] = category.products;
- assert.deepEqual(category.products.map(p => p.id), ['restic', 'kopia', 'borgbackup', 'time-machine', 'windows-file-history', 'arq-7', 'duplicati', 'deja-dup']);
- assert.deepEqual(category.products.map(p => p.features.backup_schedule.value), ['no', 'yes', 'no', 'yes', 'yes', 'yes', 'yes', 'yes']);
+ assert.deepEqual(category.products.map(p => p.id), ['restic', 'kopia', 'borgbackup', 'time-machine', 'windows-file-history', 'arq-7', 'duplicati', 'deja-dup', 'pika-backup']);
+ assert.deepEqual(category.products.map(p => p.features.backup_schedule.value), ['no', 'yes', 'no', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes']);
  assert.match(restic.features.backup_verify.note, /默认.*--read-data/);
  assert.match(kopia.features.backup_verify.note, /默认.*--verify-files-percent=100/);
  assert.equal(borg.features.backup_encryption.value, 'partial');
@@ -146,6 +146,17 @@ test('Déjà Dup distinguishes modern Restic backups, legacy archives and subset
  assert.match(p.features.backup_restore.note, /文件管理器.*应用内恢复界面/);
  assert.equal(p.features.backup_verify.value, 'partial');
  assert.match(p.features.backup_verify.note, /64 MiB 子集.*不等于全量/);
+});
+
+test('Pika Backup separates Borg destinations and restore permissions from app verification', () => {
+ const p = categories.find(c => slug(c) === 'file-backup').products.find(p => p.id === 'pika-backup');
+ assert.deepEqual(p.platforms, ['Linux']);
+ assert.equal(p.github_url, null);
+ assert.equal(p.license, 'GPL-3.0-only');
+ assert.match(p.features.backup_destinations.note, /SFTP.*不将此视为原生 S3/);
+ assert.match(p.features.backup_schedule.note, /外接盘.*桌面门户/);
+ assert.match(p.features.backup_restore.note, /GNOME Files.*不会保留权限/);
+ assert.equal(p.features.backup_verify.value, 'unknown');
 });
 
 test('Harmony confirms separate 2D editions without guessing store prices', () => {
