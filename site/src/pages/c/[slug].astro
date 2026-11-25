@@ -82,6 +82,7 @@ const sortedProducts = [...category.products].sort((a, b) => {
       {category.slug === "proxy-clients" && category.notes && <p class="mt-3 text-sm text-muted" data-proxy-notes><T zh={category.notes} en={tr(category.notes)} /></p>}
       {category.slug === "agent-browser-tools" && category.notes && <p class="mt-3 text-sm text-muted" data-agent-browser-notes><T zh={category.notes} en={tr(category.notes)} /></p>}
       {category.slug === "quick-translation-ocr" && category.notes && <p class="mt-3 text-sm text-muted" data-quick-translation-notes><T zh={category.notes} en={tr(category.notes)} /></p>}
+      {category.slug === "input-source-switchers" && category.notes && <p class="mt-3 text-sm text-muted" data-input-switcher-notes><T zh={category.notes} en={tr(category.notes)} /></p>}
       <GitHubFreshness/>
       {category.slug === "screen-recorders" && <p class="mt-4">
         <a class="prose-link font-semibold" href="/guides/mac-free-screen-recorders/"><T zh="Mac 免费录屏怎么选？对比系统声音、麦克风和水印" en="Choosing a free Mac screen recorder for desktop sound, narration and watermark-free exports" /></a>
