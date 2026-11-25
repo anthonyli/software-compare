@@ -1,5 +1,8 @@
 import { expect, test } from '@playwright/test';
 
+// Keep this read-only catalog fixture out of the local voting suite's shared bucket.
+test.use({ extraHTTPHeaders: { 'CF-Connecting-IP': '203.0.113.237' } });
+
 test('file backup exposes its original cover and recovery boundaries', async ({ page }, info) => {
   for (const [width, lang, title, boundary] of [
     [1280, 'en', 'File backup and restore', 'Default check does not read all packs'],
