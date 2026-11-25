@@ -15,7 +15,7 @@ export const siteConfig = {
 /** 首页分组：slug 必须与数据里的品类 id 一致。 */
 export const categoryGroups: { id: string; name: string; slugs: string[] }[] = [
   { id: "cloud", name: "云服务与开发基础设施", slugs: ["transactional-email", "domain-registration", "international-payments", "web-hosting", "cloud-sql-databases", "backend-as-a-service"] },
-  { id: "network", name: "网络工具", slugs: ["proxy-clients", "browsers", "network-packet-analyzers", "http-debugging"] },
+  { id: "network", name: "网络工具", slugs: ["proxy-clients", "browsers", "network-packet-analyzers", "http-debugging", "telegram-desktop-clients"] },
   { id: "lifestyle", name: "运动与户外", slugs: ["fitness-training", "cycling-tools", "outdoor-navigation"] },
   { id: "ai", name: "AI 工具", slugs: ["ai-assistants", "ai-coding", "ai-agent-workbenches", "ai-image-workflows", "ai-memory", "personal-ai-assistants"] },
   { id: "creative", name: "设计与摄影", slugs: ["image-editors", "vector-graphics", "cad", "texture-materials", "photo-management", "desktop-publishing", "animation-3d", "animation-2d", "compositing"] },
@@ -87,6 +87,7 @@ export const categoryMonograms: Record<string, string> = {
   "network-packet-analyzers": "包",
   "agent-browser-tools": "控",
   "browsers": "览",
+  "telegram-desktop-clients": "聊",
   "transactional-email": "邮",
   "backend-as-a-service": "后",
   "web-hosting": "站",
@@ -161,6 +162,7 @@ export const categoryTints: Record<string, string> = {
   "network-packet-analyzers": "#E3F1ED",
   "agent-browser-tools": "#E7EEFF",
   "browsers": "#E8EFF5",
+  "telegram-desktop-clients": "#E5F3F4",
   "transactional-email": "#E5F1ED",
   "backend-as-a-service": "#E5F1EB",
   "web-hosting": "#E5EDF4",
