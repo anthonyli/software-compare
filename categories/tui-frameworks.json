@@ -177,6 +177,57 @@
         "https://textual.textualize.io/guide/testing/",
         "https://github.com/Textualize/textual/blob/v8.2.8/docs/guide/devtools.md#serve"
       ]
+    },
+    {
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-25",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "id": "terminal-gui",
+      "name": "Terminal.Gui",
+      "official_url": "https://tui-cs.github.io/Terminal.Gui/",
+      "github_url": "https://github.com/tui-cs/Terminal.Gui",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "MIT",
+      "summary": "面向 .NET 的跨平台终端界面库，支持内联或全屏应用，内置菜单、表格、树和对话框。",
+      "price_summary": "核心库免费开源，MIT 许可；无需购买服务即可使用。",
+      "free_tier_limits": "NuGet 2.6.0 以 .NET 10 为目标；个别键鼠能力取决于终端和驱动。",
+      "features": {
+        "tui_layout": {
+          "value": "yes",
+          "note": "可使用内联布局或全屏模式。"
+        },
+        "tui_widgets": {
+          "value": "yes",
+          "note": "内置菜单、表格、树、表单和对话框。"
+        },
+        "tui_input": {
+          "value": "yes",
+          "note": "支持键盘和鼠标事件；具体键鼠能力取决于终端和驱动。"
+        },
+        "tui_testing": {
+          "value": "yes",
+          "note": "ANSI 驱动支持注入键鼠输入和捕获绘制缓冲区，不等同于覆盖全部真实终端驱动。"
+        },
+        "tui_web": {
+          "value": "unknown",
+          "note": "官方资料未确认浏览器运行；内联指在终端滚动区内运行。"
+        }
+      },
+      "sources": [
+        "https://github.com/tui-cs/Terminal.Gui/blob/v2.6.0/LICENSE",
+        "https://github.com/tui-cs/Terminal.Gui/blob/v2.6.0/README.md",
+        "https://www.nuget.org/packages/Terminal.Gui/2.6.0",
+        "https://tui-cs.github.io/Terminal.Gui/api/Terminal.Gui.Drivers.html"
+      ]
     }
   ]
 }

@@ -10,7 +10,7 @@ test('TUI category preserves capabilities and translations across screen sizes',
       await page.goto('/c/tui-frameworks/');
       await page.locator(`[data-lang="${lang}"]`).click();
       const products = page.locator(width === 1280 ? '#matrix' : '#card-list');
-      for (const id of ['bubble-tea', 'ratatui', 'textual']) {
+      for (const id of ['bubble-tea', 'ratatui', 'textual', 'terminal-gui']) {
         await expect(products.locator(`[data-product-id="${id}"]`)).toBeVisible();
       }
       await expect(page.locator('h1')).toContainText(english ? 'Terminal UI frameworks' : '终端交互界面框架');
@@ -29,6 +29,11 @@ test('TUI category preserves capabilities and translations across screen sizes',
         await expect(row.getByText(note, { exact: false }).filter({ visible: true })).toBeVisible();
         expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
       }
+      await page.goto('/p/tui-frameworks/terminal-gui/');
+      await page.locator(`[data-lang="${lang}"]`).click();
+      await expect(page.locator('.feature-row').nth(3).getByText(english ? 'render buffer capture' : '捕获绘制缓冲区', { exact: false }).filter({ visible: true })).toBeVisible();
+      await expect(page.locator('.feature-row').nth(4).getByText(english ? 'Browser support was not confirmed' : '未确认浏览器运行', { exact: false }).filter({ visible: true })).toBeVisible();
+      expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
     }
   }
 });
