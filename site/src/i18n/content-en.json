@@ -3979,5 +3979,11 @@
   "以 Java 编写的 JVM 命令行开发库，支持注解或编程 API、参数、嵌套子命令和自动帮助；也可从 Kotlin、Groovy、Scala 使用。": "A JVM CLI library written in Java, with annotation and programmatic APIs, arguments, nested subcommands and generated help. It is also usable from Kotlin, Groovy and Scala.",
   "需满足应用的 JVM 或原生构建工具链要求；宿主支持不代表所有 Shell 的补全都可用。": "Use the JVM or native build toolchain your application requires. Host compatibility does not imply completion for every shell.",
   "核心库可为 Bash 和 Zsh 生成脚本，需要安装或加载；未核实 Fish 和 PowerShell 补全。": "The core library generates Bash and Zsh scripts, which must be installed or loaded. Fish and PowerShell completion are unverified.",
-  "支持在终端提示输入选项或位置参数的值；不是多步表单、菜单或完整 TUI。": "Can prompt for an option or positional argument value in the terminal. This is not a multi-step form, menu system or full TUI."
+  "支持在终端提示输入选项或位置参数的值；不是多步表单、菜单或完整 TUI。": "Can prompt for an option or positional argument value in the terminal. This is not a multi-step form, menu system or full TUI.",
+  "macOS 原生终端，支持标签页、分屏、可切换配置档和 tmux 集成。": "A native macOS terminal with tabs, split panes, switchable profiles and tmux integration.",
+  "官方稳定版 3.7.9 要求 macOS 13+。源码声明为 GPL v2 或更高；项目注明受 Apache-2.0 依赖影响，组合发行实际按 GPL v3 分发。": "The 3.7.9 stable build requires macOS 13+. The source declares GPL v2 or later; the project notes that the combined distribution effectively uses GPL v3 because of Apache-2.0 dependencies.",
+  "本地标签页与横向、纵向分屏；也可使用 tmux 集成。": "Supports local tabs and horizontal or vertical splits, plus tmux integration.",
+  "Profiles 可配置字体和配色预设。": "Profiles offer font settings and color presets.",
+  "可选 GPU 渲染；文档指出耗电可能增加，未比较性能或续航。": "Optional GPU rendering. The documentation notes that it may use more energy; no performance or battery comparison was made.",
+  "官方提供 Profiles 和 Python API，不是 WezTerm 式 Lua 配置。": "The official configuration uses Profiles and offers a Python API, not WezTerm-style Lua configuration."
 }

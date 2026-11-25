@@ -13,7 +13,7 @@ test('terminal emulators render distinct, bilingual rows and details on desktop 
       await page.locator(`[data-lang="${lang}"]`).click();
       await expect(page.locator('h1')).toContainText(title);
       const products = page.locator(width === 1280 ? '#matrix' : '#card-list');
-      for (const id of ['kaku', 'ghostty', 'wezterm']) {
+      for (const id of ['kaku', 'ghostty', 'wezterm', 'iterm2']) {
         await expect(products.locator(`[data-product-id="${id}"]`)).toBeVisible();
       }
       await expect(products.locator('[data-product-id="ratatui"]')).toHaveCount(0);
@@ -25,6 +25,11 @@ test('terminal emulators render distinct, bilingual rows and details on desktop 
       await expect(page.getByText(windowsNote, { exact: false }).filter({ visible: true })).toBeVisible();
       const lua = page.locator('.feature-row').nth(3);
       await expect(lua.locator('.feat')).toHaveAttribute('title', lang === 'en' ? 'No' : '不支持');
+
+      await page.goto('/p/terminal-emulators/iterm2/');
+      await page.locator(`[data-lang="${lang}"]`).click();
+      await expect(page.getByText(lang==='en'?'combined distribution effectively uses GPL v3':'组合发行实际按 GPL v3',{exact:false}).filter({visible:true}).first()).toBeVisible();
+      await expect(page.locator('.feature-row').nth(3).getByText('Python API',{exact:false}).filter({visible:true})).toBeVisible();
 
       await page.goto('/p/terminal-emulators/kaku/');
       await page.locator(`[data-lang="${lang}"]`).click();
