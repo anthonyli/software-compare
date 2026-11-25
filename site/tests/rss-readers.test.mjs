@@ -1,0 +1,54 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+
+const read = path => fs.readFileSync(new URL('../../' + path, import.meta.url), 'utf8');
+const data = JSON.parse(read('categories/rss-readers.json'));
+const en = JSON.parse(read('site/src/i18n/content-en.json'));
+const [nnw, fluent, fresh] = data.products;
+const keys = ['rss_direct','rss_opml','rss_offline','rss_sync','rss_fulltext','rss_selfhost'];
+
+test('client subscriptions, downloaded content, web extraction and self-hosted aggregation are separate', () => {
+  assert.deepEqual(data.features.map(f => f.key), keys);
+  assert.deepEqual(data.products.map(p => p.id), ['netnewswire','fluent-reader','freshrss']);
+  assert.deepEqual(data.products.map(p => keys.map(k => p.features[k].value)), [
+    ['yes','yes','partial','yes','yes','no'],
+    ['yes','yes','partial','yes','yes','no'],
+    ['no','yes','no','yes','yes','yes'],
+  ]);
+  for (const p of data.products) assert.deepEqual(Object.keys(p.features), keys);
+  assert.match(data.notes, /无需同步账号不等于无需联网.*不比较音乐串流/);
+  assert.match(nnw.features.rss_offline.note, /本机账号.*未下载.*刷新订阅源仍需网络/);
+  assert.match(nnw.features.rss_fulltext.note, /Feedbin 托管的服务器.*与选择 Feedbin 同步账号是两件事/);
+  assert.match(nnw.features.rss_direct.note, /不收集应用使用统计.*可选择提交崩溃日志.*第三方.*分析/);
+  assert.match(fluent.features.rss_fulltext.note, /Mercury Parser.*不能保证/);
+  assert.match(fresh.features.rss_fulltext.note, /CSS 选择器.*自己的服务器/);
+  assert.match(fresh.features.rss_offline.note, /需要连接自己的 FreshRSS 实例.*第三方客户端/);
+});
+
+test('NetNewsWire tagged builds supersede stale Reddit and OS guidance; costs and platforms are scoped', () => {
+  assert.deepEqual(data.products.map(p => [p.license,p.latest_release,p.latest_release_date,p.platforms]), [
+    ['MIT','7.3.1',null,['macOS','iOS','iPadOS']],
+    ['BSD-3-Clause','v1.3.2','2026-10-30',['macOS','Windows','Linux']],
+    ['AGPL-3.0','1.31.0','2026-11-23',['Web','Linux']],
+  ]);
+  assert.match(nnw.free_tier_limits, /Mac 7\.3\.1 需 macOS 15\+.*iOS 7\.3\.1（7244）.*iOS\/iPadOS 18\+.*官网却写 iOS 26\+.*两个发布说明.*停止刷新 Reddit/);
+  assert(nnw.sources.some(s => s.endsWith('/mac-7.3.1')));
+  assert(nnw.sources.some(s => s.endsWith('/iOS-7.3.1-7244')));
+  assert(nnw.sources.some(s => s.endsWith('/NetNewsWire_project.xcconfig')));
+  assert.match(nnw.price_summary, /应用免费.*所需账号、托管或订阅费用各自计算/);
+  assert.match(fluent.free_tier_limits, /不包含另有发布渠道的移动项目/);
+  assert.match(fresh.price_summary, /机器、存储与托管费用自理/);
+});
+
+test('office group and localized landing preserve the prior three categories', () => {
+  const strings = v => typeof v === 'string' ? [v] : v && typeof v === 'object' ? Object.values(v).flatMap(strings) : [];
+  for (const s of strings(data).filter(s => /[\u4e00-\u9fff]/.test(s))) {
+    assert.equal(typeof en[s], 'string', s);
+    assert.doesNotMatch(en[s], /[\u4e00-\u9fff]/, s);
+  }
+  assert.match(read('site/src/config.ts'), /"quick-translation-ocr".*"input-source-switchers".*"chinese-input-methods".*"rss-readers"/);
+  assert.match(read('site/src/i18n/labels.ts'), /"rss-readers": \{ zh: "RSS 阅读器", en: "RSS readers" \}/);
+  assert.match(read('site/src/pages/c/[slug].astro'), /category.slug === "rss-readers".*data-rss-reader-notes.*tr\(category.notes\)/);
+  assert.match(read('site/public/categories/rss-readers.svg'), /viewBox="0 0 480 260"/);
+});

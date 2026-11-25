@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Original illustration for Compare / 软件对比. No third-party marks. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" fill="none" role="img" aria-hidden="true">
+  <rect width="480" height="260" fill="#F9EDDF"/>
+  <defs>
+    <linearGradient id="wash-rss-readers" x1="12" y1="0" x2="467" y2="256" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFAF3" stop-opacity="0"/>
+      <stop offset="1" stop-color="#E8BF9C" stop-opacity=".43"/>
+    </linearGradient>
+    <filter id="soft-rss-readers" x="-20%" y="-20%" width="145%" height="155%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#111111" flood-opacity=".11"/>
+    </filter>
+    <pattern id="dots-rss-readers" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="translate(18 16)">
+      <circle cx="1.2" cy="1.2" r="1.05" fill="#111111" opacity=".35"/>
+    </pattern>
+  </defs>
+  <rect width="480" height="260" fill="url(#wash-rss-readers)"/>
+  <ellipse cx="38" cy="212" rx="68" ry="46" fill="#FFFFFF" opacity=".37"/>
+  <ellipse cx="437" cy="35" rx="73" ry="53" fill="#FFFFFF" opacity=".34"/>
+  <rect width="480" height="260" fill="url(#dots-rss-readers)" opacity=".45"/>
+  <path d="M101 90a58 58 0 0 1 0 80m28-97a83 83 0 0 1 0 114" stroke="#DC9566" stroke-opacity=".72" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="83" cy="129" r="7" fill="#111111"/>
+  <g filter="url(#soft-rss-readers)">
+    <rect x="249" y="48" width="126" height="90" rx="16" fill="#FFFAF4"/>
+    <rect x="216" y="69" width="156" height="109" rx="17" fill="#FFFDF9"/>
+    <rect x="177" y="95" width="188" height="112" rx="19" fill="#FFFFFF"/>
+    <rect x="198" y="116" width="55" height="68" rx="9" fill="#F3DAC5"/>
+  </g>
+  <path d="M267 121h73m-73 13h60m-60 13h67m-67 19h54m-54 13h41M208 170l11-16 8 8 10-15 8 23" stroke="#111111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="214" cy="138" r="5" fill="#DC9566"/>
+</svg>
