@@ -211,6 +211,73 @@
         "https://apps.apple.com/us/app/dato/id1470584107?mt=12",
         "https://sindresorhus.com/dato/privacy-policy"
       ]
+    },
+    {
+      "id": "calendar-366",
+      "name": "Calendar 366",
+      "official_url": "https://calendar366.com/",
+      "github_url": null,
+      "platforms": [
+        "macOS",
+        "iOS",
+        "iPadOS",
+        "watchOS"
+      ],
+      "license": "专有许可",
+      "open_source": false,
+      "pricing_model": "免费增值",
+      "price_summary": "基础日程和任务查看、搜索与编辑免费，Pro 可试用 7 天。美国 Mac App Store 列出 Pro 年订阅 US$19.99、Pro 一次性内购 US$49.99。",
+      "prices": [
+        {
+          "plan": "Pro",
+          "price": "19.99",
+          "currency": "USD",
+          "period": "year"
+        },
+        {
+          "plan": "Pro",
+          "price": "49.99",
+          "currency": "USD",
+          "period": "once"
+        }
+      ],
+      "free_tier_limits": "新版要求 macOS 14.6+；旧版 Calendar 366 II 单独提供下载。绑卡和试用期结束后的扣费流程未核实。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-25",
+      "summary": "原生菜单栏与独立窗口可查看日程和任务；同一应用也支持 iPhone、iPad 与 Apple Watch。",
+      "features": {
+        "mbcal_clock": {
+          "value": "partial",
+          "note": "默认显示彩色日期；支持菜单栏图标或日期时间文本，部分图标样式需 Pro。未确认能替代系统时钟。"
+        },
+        "mbcal_agenda": {
+          "value": "yes",
+          "note": "可使用系统日历，需授予 macOS 日历权限；Google 等服务可由用户另行连接。"
+        },
+        "mbcal_create": {
+          "value": "yes",
+          "note": "基础日程创建、编辑及移动不需要 Pro；实际写入仍取决于日历权限。"
+        },
+        "mbcal_meeting": {
+          "value": "yes",
+          "note": "可从日程打开线上会议链接；未确认有独立全局加入快捷键。"
+        },
+        "mbcal_world": {
+          "value": "unknown",
+          "note": "已确认可设置日程时区，未确认同时显示多个时区时钟。"
+        },
+        "mbcal_reminders": {
+          "value": "yes",
+          "note": "可查看系统提醒事项，需授予 macOS 提醒事项权限。"
+        }
+      },
+      "sources": [
+        "https://calendar366.com/",
+        "https://calendar366.com/help/index.html",
+        "https://apps.apple.com/us/app/calendar-366-events-tasks/id6502818600?platform=mac"
+      ]
     }
   ]
 }

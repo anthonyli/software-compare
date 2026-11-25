@@ -15,12 +15,12 @@ test('menu-bar calendar pricing, compatible builds and privacy render in both la
       await expect(page.locator('h1')).toContainText(title);
       await expect(page.locator('[data-menu-bar-calendar-notes]').getByText(boundary, { exact: false }).filter({ visible: true })).toBeVisible();
       const products = page.locator(width === 1280 ? '#matrix' : '#card-list');
-      await expect(products.locator('[data-product-id]')).toHaveCount(3);
-      for (const id of ['top-calendar','itsycal','dato']) {
+      await expect(products.locator('[data-product-id]')).toHaveCount(4);
+      for (const id of ['top-calendar','itsycal','dato','calendar-366']) {
         await expect(products.locator(`[data-product-id="${id}"]`)).toBeVisible();
       }
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
-      for (const [id,notes] of [['top-calendar',[region,min]],['itsycal',[legacy]],['dato',[privacy]]] as const) {
+      for (const [id,notes] of [['top-calendar',[region,min]],['itsycal',[legacy]],['dato',[privacy]],['calendar-366',['US$49.99','Calendar 366 II']]] as const) {
         await page.goto(`/p/menu-bar-calendars/${id}/`);
         await page.locator(locale).click();
         for (const note of notes) await expect(page.getByText(note, { exact:false }).filter({ visible:true }).first()).toBeVisible();
