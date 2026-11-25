@@ -1,0 +1,284 @@
+{
+  "category_slug": "music-streaming",
+  "category_name_zh": "音乐串流订阅",
+  "collected_at": "2026-11-24",
+  "timezone": "Asia/Shanghai",
+  "notes": "比较音乐串流服务的目录、地区订阅和可用的聆听方式，不是本地文件播放器。订阅下载不等于买下可移走的文件；目录支持无损也不保证每首歌、浏览器或耳机连接都无损。",
+  "features": [
+    {
+      "key": "music_free_catalog",
+      "label": "常驻免费目录"
+    },
+    {
+      "key": "music_offline",
+      "label": "目录音乐离线下载"
+    },
+    {
+      "key": "music_lossless",
+      "label": "原生客户端无损"
+    },
+    {
+      "key": "music_web",
+      "label": "浏览器播放"
+    },
+    {
+      "key": "music_weblossless",
+      "label": "浏览器无损"
+    },
+    {
+      "key": "music_family",
+      "label": "家庭多人订阅"
+    }
+  ],
+  "products": [
+    {
+      "id": "apple-music",
+      "name": "Apple Music",
+      "official_url": "https://www.apple.com.cn/apple-music/",
+      "github_url": null,
+      "platforms": [
+        "macOS",
+        "Windows",
+        "iOS",
+        "iPadOS",
+        "Android",
+        "Web"
+      ],
+      "license": "专有许可",
+      "open_source": false,
+      "pricing_model": "订阅",
+      "prices": [
+        {
+          "plan": "中国大陆个人",
+          "price": "12",
+          "currency": "CNY",
+          "period": "month",
+          "note": "中国大陆 Apple 公开标价，不是免费试听价。"
+        },
+        {
+          "plan": "中国大陆家庭",
+          "price": "20",
+          "currency": "CNY",
+          "period": "month",
+          "note": "最多六位家庭成员，含订阅者。"
+        },
+        {
+          "plan": "中国大陆学生",
+          "price": "7",
+          "currency": "CNY",
+          "period": "month",
+          "note": "须核实高校学生资格。"
+        }
+      ],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-24",
+      "summary": "Apple 的音乐目录订阅，在 iPhone、iPad、Mac、Windows、Android 和网页都有入口；各端的音频和下载能力不同。",
+      "price_summary": "中国大陆 Apple 官网：学生 ¥7/月、个人 ¥12/月、家庭 ¥20/月。以 Apple 账号地区与实际结算为准，不把中国大陆价格当全球价。",
+      "free_tier_limits": "中国大陆官网列个人/家庭新订阅用户 1 个月试听；3 个月需符合设备和新订阅资格。试听不是常驻免费版；不承诺账号符合条件。",
+      "features": {
+        "music_free_catalog": {
+          "value": "no",
+          "note": "这里的目录按订阅提供；试听或免费电台不等于免费点播完整订阅目录。"
+        },
+        "music_offline": {
+          "value": "yes",
+          "note": "在支持的 Apple Music 应用中可下载目录歌曲；订阅到期后目录下载不能继续播放，原本设备已有的本地音乐是另一回事。"
+        },
+        "music_lossless": {
+          "value": "yes",
+          "note": "支持的 App 提供 ALAC 无损，最高档可至 24 位/192 kHz。普通蓝牙不传输无损；Apple 文档另列特定 AirPods Max 的 USB 有线路径和 Vision Pro 的兼容无线设备。除所列 MacBook Pro 外，其他 Mac 超过 48 kHz 需外接数模转换器。"
+        },
+        "music_web": {
+          "value": "yes",
+          "note": "可通过网页播放器听歌，不需要为播放安装桌面客户端。"
+        },
+        "music_weblossless": {
+          "value": "unknown",
+          "note": "官方确认网页播放，但无损指南列的是兼容设备与 App；未确认网页可选无损，不把客户端规格外推至浏览器。"
+        },
+        "music_family": {
+          "value": "yes",
+          "note": "通过家人共享，订阅者可与另外最多五位家庭成员分享；个人和学生方案不是六人订阅。"
+        }
+      },
+      "sources": [
+        "https://www.apple.com.cn/apple-music/",
+        "https://support.apple.com/zh-cn/118295",
+        "https://support.apple.com/zh-cn/118516",
+        "https://support.apple.com/zh-cn/118399",
+        "https://music.apple.com/",
+        "https://support.apple.com/en-us/118399"
+      ]
+    },
+    {
+      "id": "spotify",
+      "name": "Spotify",
+      "official_url": "https://www.spotify.com/us/premium/",
+      "github_url": null,
+      "platforms": [
+        "macOS",
+        "Windows",
+        "iOS",
+        "iPadOS",
+        "Android",
+        "Web"
+      ],
+      "license": "专有许可",
+      "open_source": false,
+      "pricing_model": "免费增值",
+      "prices": [
+        {
+          "plan": "美国 Premium Individual",
+          "price": "12.99",
+          "currency": "USD",
+          "period": "month",
+          "note": "美国官网常规月费，促销另计。"
+        },
+        {
+          "plan": "美国 Premium Family",
+          "price": "21.99",
+          "currency": "USD",
+          "period": "month",
+          "note": "美国官网价格，须满足同住等家庭条件。"
+        },
+        {
+          "plan": "美国 Premium Student",
+          "price": "6.99",
+          "currency": "USD",
+          "period": "month",
+          "note": "美国官网价格，须符合学生资格。"
+        }
+      ],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-24",
+      "summary": "音乐串流服务，有广告支持的 Free 和付费 Premium；付费 App 有离线下载和受支持的无损播放。",
+      "price_summary": "美国官网常规月费：Premium Individual US$12.99、Family US$21.99、Student US$6.99。另有 Duo 等方案，不代表中国大陆可订阅或同价。",
+      "free_tier_limits": "Free 免费目录和 Premium 促销须分别判断。美国官网此时展示个人新用户条件试听，结束后按常规费率收费；未验证特定账号、税费或其他地区。",
+      "features": {
+        "music_free_catalog": {
+          "value": "yes",
+          "note": "Free 由广告支持；播放控制、目录离线下载和无损不能视作与 Premium 等同。"
+        },
+        "music_offline": {
+          "value": "yes",
+          "note": "Premium 可下载音乐；Free 可下载播客但不是订阅目录歌曲。官方要求至少每 30 天联网一次才能保留下载。"
+        },
+        "music_lossless": {
+          "value": "yes",
+          "note": "支持的手机、平板、桌面 App 与 Spotify Connect 设备可用 Premium 无损，最高 24 位/44.1 kHz；普通蓝牙或不兼容设备可能降级。"
+        },
+        "music_web": {
+          "value": "yes",
+          "note": "Spotify 有网页播放器，音质上限与原生客户端下载或播放不同。"
+        },
+        "music_weblossless": {
+          "value": "no",
+          "note": "Spotify 官方音质表列网页为 Free AAC 128 kbps、Premium AAC 256 kbps；不能把原生 App 的无损档当作网页支持。"
+        },
+        "music_family": {
+          "value": "yes",
+          "note": "美国 Family 支持最多六人，面向同住家庭成员，按 Spotify 的地址条件核验。"
+        }
+      },
+      "sources": [
+        "https://www.spotify.com/us/premium/",
+        "https://support.spotify.com/us/article/audio-quality/",
+        "https://support.spotify.com/us/article/your-premium-benefits/",
+        "https://support.spotify.com/us/article/listen-offline/",
+        "https://support.spotify.com/us/article/supported-devices-for-spotify/",
+        "https://support.spotify.com/us/article/where-spotify-is-available/"
+      ]
+    },
+    {
+      "id": "tidal",
+      "name": "TIDAL",
+      "official_url": "https://tidal.com/pricing",
+      "github_url": null,
+      "platforms": [
+        "macOS",
+        "Windows",
+        "iOS",
+        "iPadOS",
+        "Android",
+        "Web"
+      ],
+      "license": "专有许可",
+      "open_source": false,
+      "pricing_model": "订阅",
+      "prices": [
+        {
+          "plan": "美国美元参考 Individual",
+          "price": "11.99",
+          "currency": "USD",
+          "period": "month",
+          "note": "官方美元月费参考，地区及税费可能不同。"
+        },
+        {
+          "plan": "美国美元参考 Family",
+          "price": "19.99",
+          "currency": "USD",
+          "period": "month",
+          "note": "官方美元月费参考；家庭成员账号须同国家。"
+        },
+        {
+          "plan": "美国美元参考 Student",
+          "price": "6.99",
+          "currency": "USD",
+          "period": "month",
+          "note": "官方美元月费参考，须符合学生资格。"
+        }
+      ],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-24",
+      "summary": "以无损串流为重点的音乐订阅服务，支持桌面、移动端和网页；网页也有官方确认的 HiRes FLAC 路径。",
+      "price_summary": "TIDAL 美国英语帮助页列美元参考：Individual US$11.99/月、Family US$19.99/月、Student US$6.99/月；地点、税费和实际结算可能不同，不是中国大陆报价。",
+      "free_tier_limits": "仅在服务支持地区提供订阅。官方宣传对符合条件的新用户提供试听；未核实账号资格，不把试听或优惠当永久免费。",
+      "features": {
+        "music_free_catalog": {
+          "value": "no",
+          "note": "官方当前公开套餐是付费订阅和条件试听，并非长期免费点播目录。"
+        },
+        "music_offline": {
+          "value": "yes",
+          "note": "离线使用限兼容的移动 App，包括 iPhone、iPad 和 Android 设备；桌面端和浏览器不能按此指南下载目录歌曲。"
+        },
+        "music_lossless": {
+          "value": "yes",
+          "note": "Max 档对有相应母带的曲目可至 HiRes FLAC 24 位/192 kHz；具体质量取决于曲目、设置和播放设备。"
+        },
+        "music_web": {
+          "value": "yes",
+          "note": "浏览器可登录网页播放器；不是可独立导出的本地文件库。"
+        },
+        "music_weblossless": {
+          "value": "yes",
+          "note": "官方明确 Web 可串流 HiRes FLAC，并有 Max 设置，但 Firefox 不支持 Max。不代表每个浏览器、耳机连接或曲目都达 24 位/192 kHz。"
+        },
+        "music_family": {
+          "value": "yes",
+          "note": "家庭套餐最多六人；成员账号必须与主账号位于同一国家。"
+        }
+      },
+      "sources": [
+        "https://tidal.com/pricing",
+        "https://support.tidal.com/hc/en-us/articles/115003662825-Subscription-Types",
+        "https://support.tidal.com/hc/en-us/articles/202453191-Where-Tidal-is-Available",
+        "https://support.tidal.com/hc/en-us/articles/17412130162961-HiRes-FLAC-audio",
+        "https://support.tidal.com/hc/en-us/articles/360003650917-Change-sound-quality-level",
+        "https://support.tidal.com/hc/en-us/articles/115005871525-Authorize-a-Device",
+        "https://support.tidal.com/hc/en-us/articles/360004405337-Family-Plan",
+        "https://apps.apple.com/us/app/tidal-music-hifi-sound/id913943275?platform=ipad",
+        "https://support.tidal.com/hc/en-us/articles/115005872445-System-Requirements"
+      ]
+    }
+  ]
+}

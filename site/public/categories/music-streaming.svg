@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Original illustration for Compare / 软件对比. No third-party marks. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" fill="none" role="img" aria-hidden="true">
+  <rect width="480" height="260" fill="#F0E8F8"/>
+  <defs>
+    <linearGradient id="wash-music-streaming" x1="12" y1="0" x2="467" y2="256" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFBFF" stop-opacity="0"/>
+      <stop offset="1" stop-color="#CAB8E7" stop-opacity=".43"/>
+    </linearGradient>
+    <filter id="soft-music-streaming" x="-20%" y="-20%" width="145%" height="155%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#111111" flood-opacity=".11"/>
+    </filter>
+    <pattern id="dots-music-streaming" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="translate(18 16)">
+      <circle cx="1.2" cy="1.2" r="1.05" fill="#111111" opacity=".35"/>
+    </pattern>
+  </defs>
+  <rect width="480" height="260" fill="url(#wash-music-streaming)"/>
+  <ellipse cx="38" cy="212" rx="68" ry="46" fill="#FFFFFF" opacity=".37"/>
+  <ellipse cx="437" cy="35" rx="73" ry="53" fill="#FFFFFF" opacity=".34"/>
+  <rect width="480" height="260" fill="url(#dots-music-streaming)" opacity=".45"/>
+  <g filter="url(#soft-music-streaming)">
+    <rect x="176" y="118" width="215" height="80" rx="20" fill="#FFFFFF"/>
+    <circle cx="350" cy="158" r="22" fill="#EADDF5"/>
+    <path d="M99 121c0-36 28-66 64-66s65 30 65 66v22h-19v-22c0-27-20-47-46-47s-45 20-45 47v22H99z" fill="#FFFFFF" stroke="#111111" stroke-width="3" stroke-linejoin="round"/>
+    <rect x="88" y="126" width="40" height="56" rx="14" fill="#FFFFFF" stroke="#111111" stroke-width="3"/>
+    <rect x="197" y="126" width="40" height="56" rx="14" fill="#FFFFFF" stroke="#111111" stroke-width="3"/>
+    <rect x="96" y="134" width="13" height="40" rx="6" fill="#EADDF5"/>
+    <rect x="216" y="134" width="13" height="40" rx="6" fill="#EADDF5"/>
+  </g>
+  <path d="M254 153v10m10-19v28m10-37v46m10-37v28m10-21v14m10-15v16m10-12v8" stroke="#111111" stroke-width="3" stroke-linecap="round"/>
+  <path d="m346 149 12 9-12 9z" fill="#111111"/>
+</svg>
