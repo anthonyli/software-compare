@@ -15,3 +15,15 @@ test('3D and CAD additions preserve sourced bilingual feature boundaries',()=>{
  assert(!p('cinema-4d').platforms.includes('Linux'));assert.match(p('maya').free_tier_limits,/不支持 Mac/);
  const q=read('cad').products.find(p=>p.id==='qcad-ce');assert.equal(q.features.dwg.value,'paid');assert.equal(q.features.vector_export.value,'partial');assert.match(q.features.dxf.note,/R15/);
 });
+
+test('Spline distinguishes skeletal playback, glTF export and full self-hosting',()=>{
+ const c=read('animation-3d');
+ const p=c.products.find(p=>p.id==='spline');
+ assert.deepEqual(p.platforms,['Web','macOS','Windows']);
+ assert.deepEqual(Object.keys(p.features),c.features.map(f=>f.key));
+ assert.equal(p.features.rigging_3d.value,'partial');
+ assert.match(p.features.rigging_3d.note,/导入并播放带骨骼动画.*未确认在 Spline 内创建骨骼/);
+ assert.match(p.price_summary,/带水印.*Hobby.*Pro.*完整自托管包需 Enterprise/);
+ assert.match(p.free_tier_limits,/glTF 导出不会保留 Spline 的状态、事件或交互/);
+ for(const s of [p.summary,p.price_summary,p.free_tier_limits,...Object.values(p.features).map(f=>f.note)]) assert(en[s],s);
+});

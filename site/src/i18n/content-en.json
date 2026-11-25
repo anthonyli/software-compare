@@ -3985,5 +3985,12 @@
   "本地标签页与横向、纵向分屏；也可使用 tmux 集成。": "Supports local tabs and horizontal or vertical splits, plus tmux integration.",
   "Profiles 可配置字体和配色预设。": "Profiles offer font settings and color presets.",
   "可选 GPU 渲染；文档指出耗电可能增加，未比较性能或续航。": "Optional GPU rendering. The documentation notes that it may use more energy; no performance or battery comparison was made.",
-  "官方提供 Profiles 和 Python API，不是 WezTerm 式 Lua 配置。": "The official configuration uses Profiles and offers a Python API, not WezTerm-style Lua configuration."
+  "官方提供 Profiles 和 Python API，不是 WezTerm 式 Lua 配置。": "The official configuration uses Profiles and offers a Python API, not WezTerm-style Lua configuration.",
+  "浏览器和桌面 3D 设计工具，侧重可交互场景、实时预览及网页交付，不是完整角色动画或离线渲染套件。": "A browser and desktop 3D design tool for interactive scenes, real-time previews and web publishing, not a full character animation or offline rendering suite.",
+  "Free 可编辑限量文件并发布带水印的 3D 网页。年付折合 Hobby USD 12、Pro USD 25/席位/月。3D 网页去水印从 Hobby 起，视频和带色彩纹理的 glTF 从 Pro 起，完整自托管包需 Enterprise。": "Free includes limited editable files and watermarked 3D web publishing. Annual billing is equivalent to USD 12/seat/month for Hobby or USD 25 for Pro. Watermark-free 3D web exports start at Hobby; video and color-and-texture glTF start at Pro; full self-hosting requires Enterprise.",
+  "Free 的个人文件数量及绑卡要求未核实。3D 网页发布、下载代码和打包所有资源自托管是不同选项；常规 glTF 导出不会保留 Spline 的状态、事件或交互。": "The Free personal-file count and payment-card requirements are unverified. Web publishing, code download and bundling all assets for self-hosting are distinct. Standard glTF export does not retain Spline states, events or interactivity.",
+  "在编辑器中建模、编辑材质并组织场景。": "Model objects, edit materials and compose scenes in the editor.",
+  "可导入并播放带骨骼动画的 FBX 或 glTF/GLB；已核对的官方文档未确认在 Spline 内创建骨骼、蒙皮或权重。": "Imports and plays skeletal animation in FBX or glTF/GLB. The checked documentation does not establish in-editor bone creation, skinning or weight painting.",
+  "提供关键帧时间轴、状态及事件；glTF 的时间轴动画转换只保留位置、旋转与缩放，不包含交互。": "Includes a keyframe timeline, states and events. glTF timeline animation is limited to position, rotation and scale; interactivity is not exported.",
+  "支持图像导出与实时网页预览；视频导出从 Pro 起。未将其视为 Blender 式离线渲染。": "Supports image export and real-time web previews; video export starts at Pro. This is not treated as Blender-style offline rendering."
 }
