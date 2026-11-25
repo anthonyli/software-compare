@@ -83,8 +83,8 @@ test('AI navigation has exactly the three requested categories and retains local
 test('file backup distinguishes default checks, external scheduling and optional Borg encryption', () => {
  const category = categories.find(c => slug(c) === 'file-backup');
  const [restic, kopia, borg] = category.products;
- assert.deepEqual(category.products.map(p => p.id), ['restic', 'kopia', 'borgbackup', 'time-machine', 'windows-file-history', 'arq-7']);
- assert.deepEqual(category.products.map(p => p.features.backup_schedule.value), ['no', 'yes', 'no', 'yes', 'yes', 'yes']);
+ assert.deepEqual(category.products.map(p => p.id), ['restic', 'kopia', 'borgbackup', 'time-machine', 'windows-file-history', 'arq-7', 'duplicati']);
+ assert.deepEqual(category.products.map(p => p.features.backup_schedule.value), ['no', 'yes', 'no', 'yes', 'yes', 'yes', 'yes']);
  assert.match(restic.features.backup_verify.note, /默认.*--read-data/);
  assert.match(kopia.features.backup_verify.note, /默认.*--verify-files-percent=100/);
  assert.equal(borg.features.backup_encryption.value, 'partial');
@@ -124,6 +124,17 @@ test('Arq separates optional cloud recall, storage plans and destination-depende
  assert.equal(p.features.backup_encryption.value, 'partial');
  assert.equal(p.features.backup_verify.value, 'partial');
  assert.match(p.features.backup_verify.note, /NAS 或 SFTP/);
+});
+
+test('Duplicati keeps the local client, hosted Console and recovery credentials separate', () => {
+ const p = categories.find(c => slug(c) === 'file-backup').products.find(p => p.id === 'duplicati');
+ assert.deepEqual(p.platforms, ['Windows', 'macOS', 'Linux']);
+ assert.equal(p.license, 'MIT');
+ assert.match(p.price_summary, /免费且不限容量.*Console.*2 台机器.*200 次备份/);
+ assert.match(p.free_tier_limits, /配置文件口令可能不同/);
+ assert.equal(p.features.backup_encryption.value, 'partial');
+ assert.match(p.features.backup_restore.note, /没有原机的本地数据库.*存储访问凭据及备份口令/);
+ assert.match(p.features.backup_verify.note, /抽样验证.*不等于.*实际恢复文件/);
 });
 
 test('Harmony confirms separate 2D editions without guessing store prices', () => {
