@@ -491,6 +491,67 @@
         "https://docs.spline.design/exporting-your-scene/files/exporting-as-an-image",
         "https://docs.spline.design/exporting-your-scene/web/exporting-as-self-hosted-project"
       ]
+    },
+    {
+      "id": "needle-engine",
+      "name": "Needle Engine",
+      "official_url": "https://engine.needle.tools/",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "免费增值",
+      "price_summary": "Hobby 仅限符合条件的非商用项目，带 Needle 品牌。官方年付 Pro 每席位 EUR 588（折合 EUR 49/月），支持商用、去品牌和自托管；Enterprise 询价。",
+      "prices": [
+        {
+          "plan": "Hobby",
+          "price": "免费",
+          "currency": null,
+          "period": null
+        },
+        {
+          "plan": "Pro",
+          "price": "588",
+          "currency": "EUR",
+          "period": "year",
+          "note": "每席位按年付费，商用、去品牌和自托管。"
+        }
+      ],
+      "free_tier_limits": "Hobby 含 1 个 Needle Cloud 项目；绑卡要求未核实。一般 Vite 输出是多文件 dist/；singleHtml 可选打包为单个 HTML，makeFilesLocal 可内置受支持的外部资产，不保证任意项目可在 file:// 全离线运行。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-25",
+      "summary": "把 Blender 或 Unity 场景做成交互网页的 3D 运行时，不是独立建模软件。",
+      "features": {
+        "modeling_3d": {
+          "value": "no",
+          "note": "在 Blender 或 Unity 中制作或布置资产；Needle 不是独立网格建模器。"
+        },
+        "rigging_3d": {
+          "value": "no",
+          "note": "在源工具完成骨骼绑定，不把网页运行时算作编辑骨骼或蒙皮的工具。"
+        },
+        "animation_3d": {
+          "value": "yes",
+          "note": "可播放动画片段、状态机和时间轴。交互组件依赖 Needle 运行时对自定义 glTF 扩展的处理，不是普通 glTF 阅读器的通用能力。"
+        },
+        "rendering_3d": {
+          "value": "partial",
+          "note": "提供浏览器实时渲染与交互发布，不等于离线逐帧渲染；定价表中自托管从 Pro 起。"
+        }
+      },
+      "sources": [
+        "https://engine.needle.tools/docs/blender/",
+        "https://engine.needle.tools/docs/technical-overview/",
+        "https://engine.needle.tools/docs/project-structure.html",
+        "https://engine.needle.tools/docs/reference/needle-vite-plugin",
+        "https://engine.needle.tools/docs/reference/faq/",
+        "https://cloud.needle.tools//pricing",
+        "https://cloud.needle.tools/eula"
+      ]
     }
   ]
 }

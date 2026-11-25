@@ -27,3 +27,19 @@ test('Spline distinguishes skeletal playback, glTF export and full self-hosting'
  assert.match(p.free_tier_limits,/glTF 导出不会保留 Spline 的状态、事件或交互/);
  for(const s of [p.summary,p.price_summary,p.free_tier_limits,...Object.values(p.features).map(f=>f.note)]) assert(en[s],s);
 });
+
+test('Needle separates web publishing from authoring and offline delivery', () => {
+ const product = read('animation-3d').products.find(p => p.id === 'needle-engine');
+ assert(product);
+ assert.equal(product.open_source, false);
+ assert.deepEqual(Object.values(product.features).map(f => f.value), ['no', 'no', 'yes', 'partial']);
+ assert.match(product.features.animation_3d.note, /自定义 glTF 扩展/);
+ assert.match(product.free_tier_limits, /多文件 dist\/.*singleHtml.*makeFilesLocal.*不保证/);
+ assert.match(product.price_summary, /非商用.*588.*自托管/);
+ assert.deepEqual(product.prices[1].period, 'year');
+ const en = JSON.parse(fs.readFileSync(new URL('../src/i18n/content-en.json', import.meta.url)));
+ for (const key of [product.summary, product.price_summary, product.free_tier_limits,
+   product.prices[1].note, ...Object.values(product.features).map(f => f.note)]) {
+   assert(typeof en[key] === 'string', key);
+ }
+});
