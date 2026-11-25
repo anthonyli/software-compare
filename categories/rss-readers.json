@@ -1,0 +1,208 @@
+{
+  "category_slug": "rss-readers",
+  "category_name_zh": "RSS 阅读器",
+  "collected_at": "2026-11-24",
+  "timezone": "Asia/Shanghai",
+  "notes": "比较订阅并阅读网站更新的工具。无需同步账号不等于无需联网；阅读已保存的文章、提取网页全文与跨设备同步也不是同一功能。本类不比较音乐串流。",
+  "features": [
+    {
+      "key": "rss_direct",
+      "label": "客户端直接订阅"
+    },
+    {
+      "key": "rss_opml",
+      "label": "OPML 导入与导出"
+    },
+    {
+      "key": "rss_offline",
+      "label": "离线阅读已获取内容"
+    },
+    {
+      "key": "rss_sync",
+      "label": "跨设备状态同步"
+    },
+    {
+      "key": "rss_fulltext",
+      "label": "尝试提取全文"
+    },
+    {
+      "key": "rss_selfhost",
+      "label": "可自托管聚合服务器"
+    }
+  ],
+  "products": [
+    {
+      "id": "netnewswire",
+      "name": "NetNewsWire",
+      "official_url": "https://netnewswire.com/",
+      "github_url": "https://github.com/Ranchero-Software/NetNewsWire",
+      "platforms": [
+        "macOS",
+        "iOS",
+        "iPadOS"
+      ],
+      "license": "MIT",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": "7.3.1",
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-24",
+      "summary": "苹果设备上的开源 RSS 阅读器，可用本机订阅，也可选 iCloud 或兼容的同步服务。",
+      "price_summary": "应用免费，源代码采用 MIT 许可。另选 Feedbin、FreshRSS 等同步方式，所需账号、托管或订阅费用各自计算。",
+      "free_tier_limits": "Mac 7.3.1 需 macOS 15+；iOS 7.3.1（7244）发布标签的构建设置与美国 App Store 均指向 iOS/iPadOS 18+，官网却写 iOS 26+，以具体发行渠道为准。两个发布说明均写明停止刷新 Reddit 订阅源，不能沿用旧帮助的 Reddit 支持说明。",
+      "features": {
+        "rss_direct": {
+          "value": "yes",
+          "note": "本机订阅账号无需第三方同步账号；刷新还要连接来源。开发者说明不收集应用使用统计，但可选择提交崩溃日志，第三方订阅内容也可能有自己的分析。"
+        },
+        "rss_opml": {
+          "value": "yes",
+          "note": "可导入和导出 OPML 订阅列表；列表并非文章、已读记录或收藏的完整备份。"
+        },
+        "rss_offline": {
+          "value": "partial",
+          "note": "本机账号将订阅数据存于设备；不能从离线缓存取得未下载的图片或网页全文，刷新订阅源仍需网络。"
+        },
+        "rss_sync": {
+          "value": "yes",
+          "note": "选用 iCloud 可同步订阅、已读和星标；另支持 Feedbin、FreshRSS 等选项。选择同步服务改变数据路径，不等于本机模式也同步。"
+        },
+        "rss_fulltext": {
+          "value": "yes",
+          "note": "Reader View 可尝试提取正文；官方 FAQ 说它会调用 Feedbin 托管的服务器。与选择 Feedbin 同步账号是两件事；并非所有页面都可提取。"
+        },
+        "rss_selfhost": {
+          "value": "no",
+          "note": "NetNewsWire 是客户端；能连到自己运行的 FreshRSS，不等于它本身提供聚合服务器。"
+        }
+      },
+      "sources": [
+        "https://netnewswire.com/",
+        "https://github.com/Ranchero-Software/NetNewsWire",
+        "https://github.com/Ranchero-Software/NetNewsWire/releases/tag/mac-7.3.1",
+        "https://github.com/Ranchero-Software/NetNewsWire/releases/tag/iOS-7.3.1-7244",
+        "https://github.com/Ranchero-Software/NetNewsWire/blob/iOS-7.3.1-7244/xcconfig/NetNewsWire_project.xcconfig",
+        "https://apps.apple.com/us/app/netnewswire-rss-reader/id1480640210",
+        "https://netnewswire.com/help/mac/5.1/en/on-my-mac.html",
+        "https://netnewswire.com/help/ios/6.0/en/import-opml.html",
+        "https://netnewswire.com/frequently-asked-questions.html",
+        "https://netnewswire.com/privacypolicy.html"
+      ]
+    },
+    {
+      "id": "fluent-reader",
+      "name": "Fluent Reader",
+      "official_url": "https://hyliu.me/fluent-reader/",
+      "github_url": "https://github.com/yang991178/fluent-reader",
+      "platforms": [
+        "macOS",
+        "Windows",
+        "Linux"
+      ],
+      "license": "BSD-3-Clause",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": "v1.3.2",
+      "latest_release_date": "2026-10-30",
+      "maintenance_status": null,
+      "collected_at": "2026-11-24",
+      "summary": "跨平台桌面 RSS 阅读器，可本机订阅、全文阅读，也可连接外部同步服务。",
+      "price_summary": "GitHub 桌面发行版公开下载，源码采用 BSD-3-Clause；商店与所连阅读服务的价格另核。",
+      "free_tier_limits": "本条仅比较 macOS、Windows、Linux 桌面 Fluent Reader，不包含另有发布渠道的移动项目。各平台下载以 v1.3.2 资产为准。",
+      "features": {
+        "rss_direct": {
+          "value": "yes",
+          "note": "可直接订阅或从 OPML 导入后在本机阅读，不必注册同步服务。"
+        },
+        "rss_opml": {
+          "value": "yes",
+          "note": "支持 OPML 导入导出，也支持另行备份及恢复应用数据。"
+        },
+        "rss_offline": {
+          "value": "partial",
+          "note": "支持本机阅读和数据备份；只有已经获取的内容可作为离线材料，外部页面、未取图片及刷新不在此范围。"
+        },
+        "rss_sync": {
+          "value": "yes",
+          "note": "可用 Feedbin、Inoreader 或兼容 Fever、Google Reader API 的服务；同步覆盖与费用由该服务决定，不等于应用提供云账号。"
+        },
+        "rss_fulltext": {
+          "value": "yes",
+          "note": "可在阅读器中查看订阅提供的全文；如果只提供摘要，可用 Mercury Parser 尝试提取，或打开原网页。不能保证能取得任何页面全文。"
+        },
+        "rss_selfhost": {
+          "value": "no",
+          "note": "桌面应用可以用兼容的自托管服务同步，本身不提供多设备聚合服务器。"
+        }
+      },
+      "sources": [
+        "https://hyliu.me/fluent-reader/",
+        "https://github.com/yang991178/fluent-reader/releases/tag/v1.3.2",
+        "https://github.com/yang991178/fluent-reader/blob/v1.3.2/README.md",
+        "https://github.com/yang991178/fluent-reader/blob/v1.3.2/LICENSE"
+      ]
+    },
+    {
+      "id": "freshrss",
+      "name": "FreshRSS",
+      "official_url": "https://freshrss.org/",
+      "github_url": "https://github.com/FreshRSS/FreshRSS",
+      "platforms": [
+        "Web",
+        "Linux"
+      ],
+      "license": "AGPL-3.0",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": "1.31.0",
+      "latest_release_date": "2026-11-23",
+      "maintenance_status": null,
+      "collected_at": "2026-11-24",
+      "summary": "自托管订阅聚合器，有浏览器阅读界面及客户端接口。服务端刷新和存储订阅，与原生离线客户端不同。",
+      "price_summary": "软件免费开源，采用 AGPL-3.0；机器、存储与托管费用自理，本条不包含第三方托管订阅。",
+      "free_tier_limits": "浏览器可打开自有实例；Linux 指常见自托管服务器，不是原生桌面客户端。远程访问宜使用 HTTPS，客户端如何缓存和处理数据取决于具体客户端。",
+      "features": {
+        "rss_direct": {
+          "value": "no",
+          "note": "自有实例可以不依赖第三方同步服务，但订阅仍由 FreshRSS 服务器管理；它没有无服务器本机订阅模式。"
+        },
+        "rss_opml": {
+          "value": "yes",
+          "note": "支持导入和导出 OPML 订阅列表；另有其他数据导出机制，不能把 OPML 当作整台实例备份。"
+        },
+        "rss_offline": {
+          "value": "no",
+          "note": "内置网页阅读器需要连接自己的 FreshRSS 实例；第三方客户端可能有离线缓存，但不是服务器自带的离线阅读承诺。"
+        },
+        "rss_sync": {
+          "value": "yes",
+          "note": "浏览器或兼容的 Google Reader API、Fever 客户端可对接同一实例；权限和状态由实例与客户端配合，不是 FreshRSS 公有云。"
+        },
+        "rss_fulltext": {
+          "value": "yes",
+          "note": "可在订阅设置为文章原页配置 CSS 选择器，把匹配正文抓取到自己的服务器；网站改版或阻挡时可能失败。"
+        },
+        "rss_selfhost": {
+          "value": "yes",
+          "note": "可自己运行服务器和存储，并对接兼容阅读客户端。自托管减少托管商这一环，但刷新或抓取仍会连接来源网站。"
+        }
+      },
+      "sources": [
+        "https://freshrss.org/",
+        "https://github.com/FreshRSS/FreshRSS/releases/tag/1.31.0",
+        "https://github.com/FreshRSS/FreshRSS/blob/1.31.0/LICENSE.txt",
+        "https://freshrss.github.io/FreshRSS/en/",
+        "https://freshrss.github.io/FreshRSS/en/users/04_Subscriptions.html",
+        "https://freshrss.github.io/FreshRSS/en/admins/02_Prerequisites.html",
+        "https://freshrss.github.io/FreshRSS/en/users/06_Mobile_access.html"
+      ]
+    }
+  ]
+}
