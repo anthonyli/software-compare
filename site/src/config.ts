@@ -22,7 +22,7 @@ export const categoryGroups: { id: string; name: string; slugs: string[] }[] = [
   {
     id: "office",
     name: "办公效率",
-    slugs: ["word-processors", "spreadsheets", "presentation-tools", "note-taking", "screenshot-tools", "pdf-tools", "launchers", "clipboard-managers"],
+    slugs: ["word-processors", "spreadsheets", "presentation-tools", "note-taking", "screenshot-tools", "quick-translation-ocr", "pdf-tools", "launchers", "clipboard-managers"],
   },
   {
     id: "media",
@@ -119,6 +119,7 @@ export const categoryMonograms: Record<string, string> = {
   "note-taking": "记",
   "screenshot-tools": "截",
   "pdf-tools": "档",
+  "quick-translation-ocr": "译",
   "launchers": "启",
   "screen-recorders": "录",
   "video-editors": "剪",
@@ -185,6 +186,7 @@ export const categoryTints: Record<string, string> = {
   "note-taking": "#E8F1FF",
   "screenshot-tools": "#E8F8F0",
   "pdf-tools": "#FFF3C9",
+  "quick-translation-ocr": "#F8EAF1",
   "launchers": "#F1E9FF",
   "screen-recorders": "#D9F3EA",
   "video-editors": "#FFE4EA",
