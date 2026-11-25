@@ -1,7 +1,7 @@
 {
   "category_slug": "image-uploaders",
   "category_name_zh": "图片与文件上传工具",
-  "collected_at": "2026-11-24",
+  "collected_at": "2026-11-25",
   "timezone": "Asia/Shanghai",
   "notes": "比较把图片或文件上传并复制链接的桌面客户端，不把客户端当存储或 CDN。上传会向所选服务发送文件；存储、带宽、访问权限与链接寿命由服务决定，Markdown 链接本身不证明文件是私密的。",
   "features": [
@@ -45,20 +45,27 @@
           "currency": "USD",
           "period": "once",
           "note": "美国商店付费下载标价，不包括任何存储服务。"
+        },
+        {
+          "plan": "中国大陆 Mac App Store 一次性购买",
+          "price": "38",
+          "currency": "CNY",
+          "period": "once",
+          "note": "中国大陆 Mac 商店付费下载标价，图床费用另算。"
         }
       ],
       "github_stars": null,
       "latest_release": "1.4.9",
       "latest_release_date": "2026-06-13",
       "maintenance_status": null,
-      "collected_at": "2026-11-24",
-      "summary": "macOS 菜单栏图片和文件上传工具，可从剪贴板、拖放或 Finder 选取内容，返回指定格式的链接。",
-      "price_summary": "美国 Mac App Store 当前 US$4.99 一次性下载，未核实中国大陆商店价格。GitHub 的 LICENSE 是 Apache-2.0，但 README 页脚写 MIT；应核对源码的许可原文，不把它当作商店二进制许可。图床或存储费用另算。",
+      "collected_at": "2026-11-25",
+      "summary": "macOS 菜单栏图片和文件上传工具，可用剪贴板、拖放或 Finder 的系统共享菜单上传，返回指定格式的链接。",
+      "price_summary": "美国 Mac App Store 当前 US$4.99、中国大陆 ¥38，均为一次性下载。GitHub 的 LICENSE 是 Apache-2.0，但 README 页脚写 MIT；应核对源码的许可原文，不把它当作商店二进制许可。图床或存储费用另算。",
       "free_tier_limits": "美国 Mac App Store 当前 1.4.9 需 macOS 13+，版本记录将 SM.MS 改为 S.EE；GitHub 最后一个现成安装包 v0.21.1 来自 2020 年，不能套用新版功能。商店的“不收集数据”是开发者披露；上传仍进入所选图床，未验证凭据存储实现。",
       "features": {
         "imupload_input": {
           "value": "yes",
-          "note": "发布方列拖放、复制的文件或图片、截图等入口，新版商店还记录系统分享扩展。未核实各入口所需系统授权。"
+          "note": "发布方列拖放、复制的文件或图片、截图等入口。Mac 商店 1.4.6 发布说明称，Finder 专用右键上传项改为系统共享菜单；未实测系统权限。"
         },
         "imupload_files": {
           "value": "yes",
@@ -79,6 +86,7 @@
       },
       "sources": [
         "https://apps.apple.com/us/app/upic-a-powerful-hosting-tool/id1549159979?mt=12",
+        "https://apps.apple.com/cn/app/upic-%E5%BC%BA%E5%A4%A7%E7%9A%84%E5%9B%BE%E5%BA%8A%E5%B7%A5%E5%85%B7/id1549159979?mt=12",
         "https://github.com/gee1k/uPic/blob/master/LICENSE",
         "https://github.com/gee1k/uPic/blob/master/README.md",
         "https://github.com/gee1k/uPic/releases/tag/v0.21.1"
@@ -102,9 +110,9 @@
       "latest_release": "v3.0.4",
       "latest_release_date": "2026-11-13",
       "maintenance_status": null,
-      "collected_at": "2026-11-24",
+      "collected_at": "2026-11-25",
       "summary": "跨平台、开源的图片和文件上传客户端。可选自有图床、社区插件或另设账号的 PicGo Cloud 托管服务。",
-      "price_summary": "客户端 MIT 免费，不必订阅 PicGo Cloud；自选存储、带宽和插件按各自规则。PicGo Cloud 是可选托管，免费档列 500 MB 存储、单文件 10 MB，付费升级和到期规则单独计算。",
+      "price_summary": "客户端 MIT 免费，不必订阅 PicGo Cloud；自选存储、带宽和插件按各自规则。PicGo Cloud 是可选托管，免费档列最多 200 个文件、500 MB 存储、单文件 10 MB，付费升级和到期规则单独计算。",
       "free_tier_limits": "v3.0.4 发布列 Windows、macOS Intel/Apple 芯片、Linux 构建。若开启付费云相册自动归集，非 Cloud 上传的 URL、文件名等元数据也可能进入 PicGo Cloud，原文件留在所选目的地。不开启该功能时不能把云相册规则套用到客户端。",
       "features": {
         "imupload_input": {
@@ -168,10 +176,10 @@
       "latest_release": "1.8.4",
       "latest_release_date": "2024-07-13",
       "maintenance_status": null,
-      "collected_at": "2026-11-24",
+      "collected_at": "2026-11-25",
       "summary": "macOS 图片与文件上传工具，支持服务菜单、剪贴板或拖放输入，并生成 Markdown 链接。",
-      "price_summary": "默认图床可免费使用；美国 Mac App Store 的 Pro 为 US$0.99/月或 US$9.99/年，用于连接其他存储。商店列 7 天条件试用及自动续订；须至少提前 24 小时取消以避免续费。外部存储费用不含。",
-      "free_tier_limits": "美国商店当前 1.8.4 的最低系统字段是 macOS 10.13+；这不是在任意当前系统实测。商店隐私标签是开发者自报，文件仍发到配置的图床；未核实当前默认图床运营方或应用源码许可。",
+      "price_summary": "默认图床可免费使用；美国 Mac App Store 的 Pro 为 US$0.99/月或 US$9.99/年，用于连接其他存储。美国商店列 7 天条件试用及自动续订；须至少提前 24 小时取消以避免续费。外部存储费用不含。中国大陆商店列 ¥6 和 ¥58，购买列表未标明各自周期。",
+      "free_tier_limits": "美国商店当前 1.8.4 的最低系统字段是 macOS 10.13+；这不是在任意当前系统实测。商店隐私标签是开发者自报，文件仍发到配置的图床；未核实应用源码许可。",
       "features": {
         "imupload_input": {
           "value": "yes",
@@ -191,12 +199,13 @@
         },
         "imupload_hosted": {
           "value": "partial",
-          "note": "商店提供默认免费图床，但未核实当前运营方、额度、链接寿命或是否长期保留。"
+          "note": "商店提供默认免费图床；中国大陆商店 1.7.8 发布说明称默认图片上传改用 Backblaze B2。未实测当前上传端点，也未核实额度、链接寿命或长期保留。"
         }
       },
       "sources": [
         "https://en.toolinbox.net/iPic/",
         "https://apps.apple.com/us/app/ipic-image-file-upload-tool/id1101244278?mt=12",
+        "https://apps.apple.com/cn/app/ipic-image-file-upload-tool/id1101244278?mt=12",
         "https://en.toolinbox.net/html/privacy.html",
         "https://en.toolinbox.net/html/terms.html"
       ]
