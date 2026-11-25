@@ -1,0 +1,35 @@
+---
+// SPDX-License-Identifier: Apache-2.0
+import T from './T.astro';
+
+const fees = [
+  { id: 'porkbun', name: 'Porkbun', zh: 'USD 200，另付普通续费。', en: 'USD 200 plus the normal renewal fee.', url: 'https://porkbun.com/products/domains/com' },
+  { id: 'namecheap', name: 'Namecheap', zh: 'USD 89.98 含续费；价目表另标注 USD 0.20 ICANN 费用。', en: 'USD 89.98 includes renewal; the price table separately flags a USD 0.20 ICANN fee.', url: 'https://www.namecheap.com/domains/redemption-pricing/' },
+  { id: 'tencent', name: 'Tencent Cloud', zh: '中国站标价 CNY 1,000；是否包含续费未核实。', en: 'CNY 1,000 on the China price list; renewal inclusion not verified.', url: 'https://buy.cloud.tencent.com/domain/price' },
+  { id: 'aliyun', name: 'Alibaba Cloud', zh: '中国站金额未核实；支付金额包含恢复费和一年续费。', en: 'China price not verified; the payment covers restoration and one year of renewal.', url: 'https://help.aliyun.com/zh/dws/user-guide/redeem-a-domain-name' },
+  { id: 'cloudflare', name: 'Cloudflare', zh: '金额未核实；可能在续费之外收取恢复费。', en: 'Amount not verified; a restoration fee may apply in addition to renewal.', url: 'https://developers.cloudflare.com/registrar/faq/' },
+];
+---
+
+<section id="domain-recovery" class="mt-5 rounded-xl border border-line p-4 sm:p-5" aria-labelledby="domain-recovery-title">
+  <h2 id="domain-recovery-title" class="font-bold text-ink">
+    <T zh="普通 .com 过期后：续费与赎回" en="After a standard .com expires: renewal and redemption" />
+  </h2>
+  <p class="mt-2 text-sm text-muted">
+    <T zh="续费宽限期内通常仍可续费，窗口由注册商决定。注册局赎回期通常从域名被删除起算 30 天，不是从到期日算；进入等待删除状态后不能赎回。"
+       en="Ordinary renewal may still be available during the registrar’s renewal grace period. The registry’s 30-day redemption window starts when the domain is deleted, not when it expires. A pending-delete domain can no longer be restored." />
+    <a class="prose-link ml-1" href="https://www.icann.org/resources/pages/domain-name-renewal-expiration-faqs-2018-12-07-en/"><T zh="ICANN 到期说明" en="ICANN expiration FAQ" /></a>
+  </p>
+  <dl class="mt-3 grid gap-3 text-sm sm:grid-cols-2 lg:grid-cols-3">
+    {fees.map(({ id, name, zh, en, url }) => (
+      <div data-recovery-registrar={id}>
+        <dt><a class="prose-link font-semibold" href={url}>{name}</a></dt>
+        <dd class="mt-0.5 text-muted"><T zh={zh} en={en} /></dd>
+      </div>
+    ))}
+  </dl>
+  <p class="mt-3 text-xs text-muted">
+    <T zh="核对于 2026-11-25。仅比较普通非溢价 .com 赎回，不适用其他后缀；实际状态和结算金额以注册商为准。"
+       en="Checked 2026-11-25. This comparison covers standard, non-premium .com only. Confirm eligibility and the final amount with the registrar." />
+  </p>
+</section>

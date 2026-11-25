@@ -1,5 +1,6 @@
 ---
 // SPDX-License-Identifier: Apache-2.0
+import DomainRecoveryGuide from '../../components/DomainRecoveryGuide.astro';
 import AiComparisonGuide from '../../components/AiComparisonGuide.astro';
 import Layout from "../../layouts/Layout.astro";
 import ExtLinks from "../../components/ExtLinks.astro";
@@ -108,6 +109,7 @@ const sortedProducts = [...category.products].sort((a, b) => {
         <a class="prose-link font-semibold" href="/guides/mac-free-screen-recorders/"><T zh="Mac 免费录屏怎么选？对比系统声音、麦克风和水印" en="Choosing a free Mac screen recorder for desktop sound, narration and watermark-free exports" /></a>
       </p>}
       <AiComparisonGuide slug={category.slug}/>
+      {category.slug === "domain-registration" && <DomainRecoveryGuide />}
     </header>
   </div>
 
