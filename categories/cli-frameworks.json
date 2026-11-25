@@ -355,6 +355,54 @@
         "https://github.com/apple/swift-argument-parser/blob/1.8.2/Package.swift",
         "https://github.com/apple/swift-argument-parser/blob/1.8.2/Sources/ArgumentParser/Documentation.docc/Articles/InstallingCompletionScripts.md"
       ]
+    },
+    {
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-25",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "id": "picocli",
+      "name": "picocli",
+      "official_url": "https://picocli.info/",
+      "github_url": "https://github.com/remkop/picocli",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "Apache-2.0",
+      "summary": "以 Java 编写的 JVM 命令行开发库，支持注解或编程 API、参数、嵌套子命令和自动帮助；也可从 Kotlin、Groovy、Scala 使用。",
+      "price_summary": "开发库免费开源；依赖各有许可，应用分发、托管和第三方服务费用另计。",
+      "free_tier_limits": "需满足应用的 JVM 或原生构建工具链要求；宿主支持不代表所有 Shell 的补全都可用。",
+      "features": {
+        "argument_parsing": {
+          "value": "yes"
+        },
+        "subcommands": {
+          "value": "yes"
+        },
+        "automatic_help": {
+          "value": "yes"
+        },
+        "shell_completion": {
+          "value": "yes",
+          "note": "核心库可为 Bash 和 Zsh 生成脚本，需要安装或加载；未核实 Fish 和 PowerShell 补全。"
+        },
+        "interactive_prompts": {
+          "value": "partial",
+          "note": "支持在终端提示输入选项或位置参数的值；不是多步表单、菜单或完整 TUI。"
+        }
+      },
+      "sources": [
+        "https://picocli.info/",
+        "https://picocli.info/autocomplete.html",
+        "https://github.com/remkop/picocli/blob/v4.7.7/LICENSE",
+        "https://picocli.info/apidocs/picocli/CommandLine.Option.html"
+      ]
     }
   ]
 }
