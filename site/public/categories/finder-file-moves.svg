@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Original illustration for Compare / 软件对比. No third-party marks. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" fill="none" role="img" aria-hidden="true">
+  <rect width="480" height="260" fill="#E9F1EE"/>
+  <defs>
+    <linearGradient id="wash-finder-file-moves" x1="12" y1="0" x2="467" y2="256" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FDFB" stop-opacity="0"/>
+      <stop offset="1" stop-color="#ACCCBE" stop-opacity=".43"/>
+    </linearGradient>
+    <filter id="soft-finder-file-moves" x="-20%" y="-20%" width="145%" height="155%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#111111" flood-opacity=".11"/>
+    </filter>
+    <pattern id="dots-finder-file-moves" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="translate(18 16)">
+      <circle cx="1.2" cy="1.2" r="1.05" fill="#111111" opacity=".35"/>
+    </pattern>
+  </defs>
+  <rect width="480" height="260" fill="url(#wash-finder-file-moves)"/>
+  <ellipse cx="38" cy="212" rx="68" ry="46" fill="#FFFFFF" opacity=".37"/>
+  <ellipse cx="437" cy="35" rx="73" ry="53" fill="#FFFFFF" opacity=".34"/>
+  <rect width="480" height="260" fill="url(#dots-finder-file-moves)" opacity=".45"/>
+  <g filter="url(#soft-finder-file-moves)">
+    <path d="M84 105a13 13 0 0 1 13-13h43l17 15h43a13 13 0 0 1 13 13v64a13 13 0 0 1-13 13H97a13 13 0 0 1-13-13z" fill="#FFFFFF"/>
+    <path d="M88 129h118v49a12 12 0 0 1-12 12h-94a12 12 0 0 1-12-12z" fill="#D9E8E2"/>
+    <path d="M277 111a12 12 0 0 1 12-12h42l17 15h36a12 12 0 0 1 12 12v59a12 12 0 0 1-12 12h-95a12 12 0 0 1-12-12z" fill="#FFFFFF"/>
+    <path d="M290 136h111a8 8 0 0 1 8 10l-12 43a11 11 0 0 1-11 8H288a8 8 0 0 1-8-10l10-47z" fill="#DCEBE4"/>
+    <path d="M214 63a8 8 0 0 1 8-8h33l17 17v41a8 8 0 0 1-8 8h-42a8 8 0 0 1-8-8z" fill="#FFFFFF"/>
+    <path d="M255 55v17h17" stroke="#BFD4CA" stroke-width="2.5" stroke-linejoin="round"/>
+  </g>
+  <path d="M229 82h14m-14 11h27m-27 11h21m-21 48h37m-11-10 11 10-11 10" stroke="#111111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

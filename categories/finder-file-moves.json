@@ -1,0 +1,132 @@
+{
+  "category_slug": "finder-file-moves",
+  "category_name_zh": "Finder 文件移动快捷键",
+  "collected_at": "2026-11-24",
+  "timezone": "Asia/Shanghai",
+  "notes": "比较在同一个 Finder 中用键盘把选中的文件或文件夹移到另一个位置。Command X 改的是快捷键手势，实际移动仍由 Finder 执行。不是比较替代文件管理器、云同步或普通文本剪切。",
+  "features": [
+    {
+      "key": "findermove_selection",
+      "label": "在 Finder 移动选中文件或文件夹"
+    },
+    {
+      "key": "findermove_cutpaste",
+      "label": "使用 ⌘X 后 ⌘V"
+    },
+    {
+      "key": "findermove_wait",
+      "label": "在目标处确认后才移动"
+    },
+    {
+      "key": "findermove_no_permission",
+      "label": "无需给额外工具授予辅助功能"
+    }
+  ],
+  "products": [
+    {
+      "id": "command-x",
+      "name": "Command X",
+      "official_url": "https://sindresorhus.com/command-x",
+      "github_url": null,
+      "platforms": [
+        "macOS"
+      ],
+      "license": "专有许可",
+      "open_source": false,
+      "pricing_model": "付费",
+      "prices": [
+        {
+          "plan": "中国大陆 Mac App Store",
+          "price": "28",
+          "currency": "CNY",
+          "period": "once",
+          "note": "该店一次性购买，非换算。"
+        },
+        {
+          "plan": "美国 Mac App Store",
+          "price": "4",
+          "currency": "USD",
+          "period": "once",
+          "note": "该店一次性购买，非换算。"
+        }
+      ],
+      "github_stars": null,
+      "latest_release": "1.7.2",
+      "latest_release_date": "2026-11-14",
+      "maintenance_status": null,
+      "collected_at": "2026-11-24",
+      "summary": "Sindre Sorhus 的 Mac 后台工具，让 Finder 支持熟悉的 ⌘X 剪切、⌘V 移动手势；不替换 Finder，也不自行移动文件。",
+      "price_summary": "当前中国大陆 Mac App Store ¥28、美国 Mac App Store US$4，一次性购买。官网另给免费旧版 1.6.2（macOS 15）、1.4.7（14）和 1.3.1（13），不能把它们当作当前系统的免费版。",
+      "free_tier_limits": "当前 1.7.2 需 macOS 26+。开发者称不收集个人信息，但崩溃时会向 Sentry 发送技术报告；不是零联网。发布者记录了 Finder 的文件名编辑和搜索框中 ⌘X 不能剪切文本，可使用菜单中的剪切。未安装或实测。",
+      "features": {
+        "findermove_selection": {
+          "value": "yes",
+          "note": "前台 Finder 中，工具把快捷键转换成系统复制和移动命令；文件操作由 Finder 完成，仍受所选源和目标位置的权限约束。"
+        },
+        "findermove_cutpaste": {
+          "value": "yes",
+          "note": "选择文件或文件夹按 ⌘X，进入目标文件夹后按 ⌘V。对比的是文件移动快捷键，不是对文本剪切作保证。"
+        },
+        "findermove_wait": {
+          "value": "yes",
+          "note": "按 ⌘X 后若没有在目标处粘贴，文件仍在原位。不要把“剪切”理解为立刻删除。"
+        },
+        "findermove_no_permission": {
+          "value": "no",
+          "note": "后台接管手势需给 Command X 授权；开发者说明 macOS 26 及更早系统称为「辅助功能」，新面板称为 Device Control and Data Access。未验证实际授权提示。"
+        }
+      },
+      "sources": [
+        "https://sindresorhus.com/command-x",
+        "https://sindresorhus.com/command-x/privacy-policy",
+        "https://apps.apple.com/cn/app/command-x/id6448461551?mt=12",
+        "https://apps.apple.com/us/app/command-x/id6448461551?mt=12",
+        "https://support.apple.com/en-us/102650"
+      ]
+    },
+    {
+      "id": "finder-native",
+      "name": "macOS Finder",
+      "official_url": "https://support.apple.com/en-us/102650",
+      "github_url": null,
+      "platforms": [
+        "macOS"
+      ],
+      "license": "专有许可",
+      "open_source": false,
+      "pricing_model": "系统内置",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-24",
+      "summary": "Mac 随附的 Finder 已能用原生键盘操作移动文件；不需要安装额外的快捷键工具。",
+      "price_summary": "随 macOS 内置，同一台 Mac 不用为这些功能单独付费；不是另售或可安装到其他平台的独立应用。",
+      "free_tier_limits": "作为系统内置基线，随 macOS 更新而不是单独发布。本条使用 Apple 文档说明的键盘操作，不承诺能移动所有受保护文件或目标文件夹。",
+      "features": {
+        "findermove_selection": {
+          "value": "yes",
+          "note": "Apple 文档：⌘C 复制 Finder 中选中的项目；到目标文件夹后 ⌥⌘V 把剪贴板中的文件从原位置移到当前位置。"
+        },
+        "findermove_cutpaste": {
+          "value": "no",
+          "note": "原生移动序列是 ⌘C 再 ⌥⌘V，而非对选中文件用 ⌘X 再 ⌘V。普通文本的剪切快捷键是另外一回事。"
+        },
+        "findermove_wait": {
+          "value": "yes",
+          "note": "⌘C 只把项目放入剪贴板，移动在目标文件夹执行 ⌥⌘V 时发生。若用普通 ⌘V，则是粘贴副本而非这条移动命令。"
+        },
+        "findermove_no_permission": {
+          "value": "yes",
+          "note": "使用系统内置快捷键不需要给第三方工具额外授权；Finder 的正常文件权限仍适用。"
+        }
+      },
+      "sources": [
+        "https://support.apple.com/en-us/102650",
+        "https://support.apple.com/en-euro/guide/mac-help/mh26885/27/mac/27",
+        "https://support.apple.com/en-gb/guide/mac-help/-mchlp1203/mac"
+      ]
+    }
+  ]
+}
