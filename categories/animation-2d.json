@@ -325,7 +325,7 @@
       "github_stars": null,
       "latest_release": "1.0.0",
       "latest_release_date": "2026-11-08",
-      "summary": "矢量优先的二维动效软件，支持位图素材动画、关键帧及 SVG 动画输出；基于 enve 分支，不是 After Effects 项目的无损替代。",
+      "summary": "矢量优先的二维动效软件，支持位图素材动画、关键帧及 SVG 动画输出；基于 enve 分支，不是 After Effects 项目的无损替代。官网于 2026-11-08 公告稳定版 1.0.0，新增 WebM 预设和独立图像序列导出窗口，并修复部分 macOS 26+ 兼容问题。",
       "features": {
         "vector_animation": {
           "value": "yes"

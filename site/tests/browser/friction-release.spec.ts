@@ -11,7 +11,8 @@ test('Friction presents the published stable version and platform boundary', asy
     await page.goto('/p/animation-2d/friction/');
     await page.locator(`[data-lang="${lang}"]`).click();
     await expect(page.locator('h1')).toContainText('Friction');
-    await expect(page.locator('dd').filter({ hasText: '2026-11-08' })).toContainText('1.0.0');
+    const announced = lang === 'en' ? 'announced stable 1.0.0 on 2026-11-08' : '2026-11-08 公告稳定版 1.0.0';
+    await expect(page.locator('body')).toContainText(announced, { useInnerText: true });
     await expect(page.locator('body')).toContainText(boundary, { useInnerText: true });
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   }

@@ -153,5 +153,6 @@ test('Friction records the stable release and does not count experimental Androi
  assert.deepEqual(p.platforms, ['Windows', 'macOS', 'Linux']);
  assert.match(p.free_tier_limits, /不提供内置 Lottie.*GLES3.*不是 Android 安装包/);
  assert.match(p.latest_release_date_note, /WebM.*图像序列.*macOS 26/);
+ assert.match(p.summary, /2026-11-08 公告稳定版 1\.0\.0.*WebM/);
  assert(p.sources.includes('https://friction.graphics/releases/friction-100.html'));
 });
