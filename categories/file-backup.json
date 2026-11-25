@@ -279,6 +279,63 @@
         "https://support.apple.com/guide/mac-help/verify-your-backup-disk-mh26840/mac",
         "https://support.apple.com/en-sg/102551"
       ]
+    },
+    {
+      "id": "windows-file-history",
+      "name": "Windows File History",
+      "official_url": "https://support.microsoft.com/en-us/windows/experience/backup-recovery/backup-and-restore-with-file-history",
+      "github_url": null,
+      "platforms": [
+        "Windows"
+      ],
+      "open_source": false,
+      "license": "专有许可",
+      "pricing_model": "系统内置",
+      "price_summary": "Windows 内置，无需另付软件费；外接硬盘或网络存储自备。",
+      "prices": [],
+      "free_tier_limits": "主要备份库和桌面等常用位置；其他文件夹可加入库。不是 OneDrive 同步或系统映像。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "collected_at": "2026-11-25",
+      "summary": "Windows 控制面板里的自动文件备份，适合用外接盘或网络位置找回个人文件的旧版本。",
+      "features": {
+        "backup_snapshots": {
+          "value": "partial",
+          "note": "保存文件的历史版本；官方用户文档未说明内容去重。"
+        },
+        "backup_encryption": {
+          "value": "unknown",
+          "note": "官方文件历史记录文档未说明内置的备份仓库加密，不把目标盘自身的加密算作工具能力。"
+        },
+        "backup_destinations": {
+          "value": "yes",
+          "note": "支持外接盘或网络位置，不直连 S3。"
+        },
+        "backup_retention": {
+          "value": "yes",
+          "note": "Microsoft 文档列出一直保留、空间不足时清理，以及按版本最低保留期限清理等策略。"
+        },
+        "backup_schedule": {
+          "value": "yes"
+        },
+        "backup_gui": {
+          "value": "yes"
+        },
+        "backup_restore": {
+          "value": "yes",
+          "note": "可恢复旧版文件或文件夹，也可还原到其他位置以免覆盖当前版本。"
+        },
+        "backup_verify": {
+          "value": "unknown",
+          "note": "官方用户文档未说明对整个备份执行全量读回校验。"
+        }
+      },
+      "sources": [
+        "https://support.microsoft.com/en-us/windows/experience/backup-recovery/backup-and-restore-with-file-history",
+        "https://support.microsoft.com/en-us/windows/experience/backup-recovery/backup-restore-and-recovery-in-windows",
+        "https://learn.microsoft.com/en-us/windows/win32/api/fhcfg/ne-fhcfg-fh_retention_types"
+      ]
     }
   ]
 }
