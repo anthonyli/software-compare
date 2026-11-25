@@ -4099,5 +4099,7 @@
   "可部署和调试 Android 真机；iOS 真机开发需配对 Mac，并满足 Apple 的签名和设备设置要求。": "Deploy and debug on physical Android devices. Physical iOS development needs a paired Mac plus Apple signing and device setup.",
   "支持 .NET MAUI 的 XAML Live Preview，官方列出 Android 真机和模拟器；不把它当作各平台通用的拖拽设计器。": ".NET MAUI XAML Live Preview lists Android devices and emulators. It is not a universal drag-and-drop designer for all platforms.",
   "Microsoft 有 Android 和 iOS 的 dotnet-trace 工作流，不把外部命令行采样算作 IDE 内置移动性能分析。": "Microsoft documents a dotnet-trace workflow for Android and iOS; external command-line profiling is not counted as built-in IDE mobile profiling.",
-  "Visual Studio 可运行配置好的 .NET 单元测试；这不等于内置、免配置的真机 UI 自动化。": "Visual Studio runs configured .NET unit tests; this is not built-in, zero-configuration UI automation on physical devices."
+  "Visual Studio 可运行配置好的 .NET 单元测试；这不等于内置、免配置的真机 UI 自动化。": "Visual Studio runs configured .NET unit tests; this is not built-in, zero-configuration UI automation on physical devices.",
+  "原生采用 SVG/SMIL，不提供内置 Lottie 支持；素材绘制通常配合外部工具。官方列 Windows 和 Linux x86_64、macOS Intel 与 Apple Silicon；GLES3 仅为源码试验，不是 Android 安装包。未实测。": "Native SVG/SMIL output without built-in Lottie support. Artwork is generally drawn in another tool. The vendor lists x86_64 for Windows and Linux, and both Intel and Apple Silicon for macOS. GLES3 is a source-only experiment, not an Android installer. Not hands-on tested.",
+  "1.0.0 增加 WebM 渲染预设和独立图像序列导出窗口，并修复部分 macOS 26+ 兼容问题。日期采用官网公告。": "Version 1.0.0 adds a WebM rendering preset and a dedicated image-sequence export dialog, and fixes some macOS 26+ compatibility issues. The date is from the official announcement."
 }
