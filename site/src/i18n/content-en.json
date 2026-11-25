@@ -3939,5 +3939,14 @@
   "Swift 命令行开发库，使用属性包装器定义选项和参数，通过 ParsableCommand 声明命令和子命令，并自动生成帮助。": "A Swift CLI library that uses property wrappers for options and arguments and ParsableCommand for commands, subcommands and generated help.",
   "已核对的 1.8.2 需要 Swift 6 工具链；旧工具链应选兼容版本。应用的构建与分发仍取决于目标系统及依赖。": "The checked 1.8.2 release requires Swift 6; use a compatible version with older toolchains. Building and distributing an app still depends on the target system and dependencies.",
   "核心库可生成 Bash、Zsh、Fish 的脚本，用户仍需安装或加载；未将 PowerShell 列为支持。": "The core library generates Bash, Zsh and Fish scripts; users still need to install or load them. PowerShell is not listed as supported.",
-  "参数解析和错误提示并不是交互问答；官方核心文档未确认内建提示输入或确认组件。": "Argument parsing and error messages are not interactive prompts. The core documentation does not confirm built-in prompt or confirmation widgets."
+  "参数解析和错误提示并不是交互问答；官方核心文档未确认内建提示输入或确认组件。": "Argument parsing and error messages are not interactive prompts. The core documentation does not confirm built-in prompt or confirmation widgets.",
+  "个人非商业免费 / 商业订阅": "Free for personal non-commercial use / commercial subscription",
+  "面向 .NET MAUI 的跨平台 IDE，可在配置相应 SDK 后运行和调试 Android、iOS 应用；不是 MAUI 框架本身。": "A cross-platform IDE for .NET MAUI that runs and debugs Android and iOS apps with the appropriate SDKs. It is not the MAUI framework itself.",
+  "个人非商业用途免费，商用需购买订阅；官方提供 30 天试用。商业结算价因地区和授权类型而异，本条未核实。": "Free for personal non-commercial use; commercial use requires a subscription. JetBrains offers a 30-day trial. Regional commercial checkout prices are not verified here.",
+  "Android 需要 SDK 和 Rider Android Support 插件，虚拟设备另需配置 Android Emulator。iOS 本地运行需要 Mac 和 Xcode；Linux 上的 MAUI 移动开发限 Android。个人非商业许可不适用于公司或组织。": "Android requires its SDK and the Rider Android Support plugin; virtual devices also need Android Emulator. Local iOS runs require a Mac and Xcode; MAUI mobile development on Linux is limited to Android. Personal non-commercial licenses do not apply to companies or organizations.",
+  "可使用 Android Emulator；在 Mac 上可使用 Xcode 的 iOS 模拟器。Rider 并不自带这两套平台工具。": "Use Android Emulator or, on macOS, the iOS Simulator from Xcode. Rider does not bundle those platform tools.",
+  "可调试 Android 真机；在 Mac 上调试 iOS 真机还需 Xcode 配置和签名。": "Android device debugging is supported. Debugging a physical iOS device on Mac also requires Xcode setup and signing.",
+  "没有内置 MAUI XAML 设计器或预览器；XAML Hot Reload 是在模拟器或真机上查看运行中的界面变化。": "There is no built-in MAUI XAML designer or previewer. XAML Hot Reload shows updates in the running app on an emulator or device.",
+  "官方 MAUI 指南的集成 profiling 指桌面 Mac Catalyst 和 Windows；未核实等价的移动端集成性能分析。Android Logcat 不等于性能分析。": "The MAUI guide documents integrated profiling for desktop Mac Catalyst and Windows. Equivalent integrated mobile profiling is unverified. Android Logcat is not a profiler.",
+  "集成常规 .NET 单元测试；不把它等同于开箱即用的 MAUI 真机 UI 测试。": "Integrated .NET unit testing is available, but that is not out-of-the-box on-device MAUI UI testing."
 }

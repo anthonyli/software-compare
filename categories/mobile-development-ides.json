@@ -119,6 +119,59 @@
         "https://developer.apple.com/support/terms/",
         "https://developer.apple.com/documentation/safari-developer-tools/installing-xcode-and-simulators"
       ]
+    },
+    {
+      "prices": [],
+      "github_url": null,
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-25",
+      "id": "jetbrains-rider",
+      "name": "JetBrains Rider",
+      "official_url": "https://www.jetbrains.com/rider/",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": false,
+      "license": "专有软件",
+      "pricing_model": "个人非商业免费 / 商业订阅",
+      "summary": "面向 .NET MAUI 的跨平台 IDE，可在配置相应 SDK 后运行和调试 Android、iOS 应用；不是 MAUI 框架本身。",
+      "price_summary": "个人非商业用途免费，商用需购买订阅；官方提供 30 天试用。商业结算价因地区和授权类型而异，本条未核实。",
+      "free_tier_limits": "Android 需要 SDK 和 Rider Android Support 插件，虚拟设备另需配置 Android Emulator。iOS 本地运行需要 Mac 和 Xcode；Linux 上的 MAUI 移动开发限 Android。个人非商业许可不适用于公司或组织。",
+      "features": {
+        "virtual_device": {
+          "value": "partial",
+          "note": "可使用 Android Emulator；在 Mac 上可使用 Xcode 的 iOS 模拟器。Rider 并不自带这两套平台工具。"
+        },
+        "device_debug": {
+          "value": "yes",
+          "note": "可调试 Android 真机；在 Mac 上调试 iOS 真机还需 Xcode 配置和签名。"
+        },
+        "ui_preview": {
+          "value": "no",
+          "note": "没有内置 MAUI XAML 设计器或预览器；XAML Hot Reload 是在模拟器或真机上查看运行中的界面变化。"
+        },
+        "profiling": {
+          "value": "partial",
+          "note": "官方 MAUI 指南的集成 profiling 指桌面 Mac Catalyst 和 Windows；未核实等价的移动端集成性能分析。Android Logcat 不等于性能分析。"
+        },
+        "testing": {
+          "value": "partial",
+          "note": "集成常规 .NET 单元测试；不把它等同于开箱即用的 MAUI 真机 UI 测试。"
+        }
+      },
+      "sources": [
+        "https://www.jetbrains.com/rider/",
+        "https://www.jetbrains.com/rider/buy/",
+        "https://www.jetbrains.com/help/rider/MAUI.html",
+        "https://www.jetbrains.com/help/rider/Unit_Testing__Index.html",
+        "https://www.jetbrains.com/guide/dotnet/tutorials/maui-development/debug-maui-apps/",
+        "https://sales.jetbrains.com/hc/en-gb/articles/18950890312210-The-free-non-commercial-licensing-FAQ"
+      ]
     }
   ]
 }
