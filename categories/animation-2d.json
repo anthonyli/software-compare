@@ -549,6 +549,54 @@
         "https://moho.lostmarble.com/pages/features"
       ],
       "collected_at": "2026-11-22"
+    },
+    {
+      "id": "toon-boom-harmony",
+      "name": "Toon Boom Harmony",
+      "official_url": "https://www.toonboom.com/products/harmony",
+      "github_url": null,
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "open_source": false,
+      "license": "Proprietary",
+      "pricing_model": "订阅",
+      "price_summary": "Essentials、Advanced、Premium 按档订阅。产品页列月付与年付入口；实时商店金额未核实。",
+      "prices": [],
+      "summary": "专业二维动画工具，覆盖手绘逐帧、角色绑定与合成；选版本时要区分基础矢量、原生位图和节点工作流。",
+      "free_tier_limits": "官网提供试用，不是永久免费；试用期限、是否需绑卡及当前金额本轮未核实。Harmony 25 激活需联网；Linux 仅按官方列出的工作站发行版与条件核对。",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "features": {
+        "vector_animation": {
+          "value": "yes",
+          "note": "Essentials 提供基础绘画、上色和动画工具，包含矢量绘制。"
+        },
+        "raster_animation": {
+          "value": "partial",
+          "note": "Advanced 有原生位图图层和绘画工具；仅导入位图素材不等于可在位图图层上绘画。"
+        },
+        "bone_animation": {
+          "value": "partial",
+          "note": "Advanced 面向简单剪纸动画；Premium 提供更完整的角色绑定与变形流程。"
+        },
+        "node_effects": {
+          "value": "partial",
+          "note": "高级节点视图按 Premium 计，可组合绘图、绑定和合成特效；不把基础图层效果算成节点编辑。"
+        }
+      },
+      "sources": [
+        "https://www.toonboom.com/products/harmony",
+        "https://shop.toonboom.com/en/products/harmony",
+        "https://docs.toonboom.com/help/harmony-25/advanced/drawing/about-drawing-tool.html",
+        "https://docs.toonboom.com/help/harmony-25/premium/nodes/about-node-view.html",
+        "https://docs.toonboom.com/help/harmony-25/premium/system-requirements/harmony-25.html"
+      ],
+      "collected_at": "2026-11-25"
     }
   ]
 }

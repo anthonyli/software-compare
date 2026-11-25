@@ -4075,5 +4075,12 @@
   "支持外接盘、NAS、SFTP、兼容的对象存储或 Premium 云存储。对象锁取决于目的地和配置。": "Supports external drives, NAS, SFTP, compatible object storage, or Premium cloud storage. Object lock depends on the destination and configuration.",
   "默认保留全部历史记录，可自定义逐步减少旧版本；也可设存储上限，最近一次备份仍保留。": "Keeps all versions by default. Configure thinning or a storage limit; the newest backup is retained.",
   "可在新设备安装 Arq 后从备份记录恢复文件，不是启动盘克隆。": "Install Arq on a replacement device to recover files from a backup record. This is not a boot-disk clone.",
-  "手动读回校验适用于不提供校验和接口的目的地，如 NAS 或 SFTP，下载可能产生费用；不等于恢复演练。": "Manual readback validation applies to destinations without a checksum API, such as NAS or SFTP. Downloads can cost extra, and validation is not a restore drill."
+  "手动读回校验适用于不提供校验和接口的目的地，如 NAS 或 SFTP，下载可能产生费用；不等于恢复演练。": "Manual readback validation applies to destinations without a checksum API, such as NAS or SFTP. Downloads can cost extra, and validation is not a restore drill.",
+  "Essentials、Advanced、Premium 按档订阅。产品页列月付与年付入口；实时商店金额未核实。": "Essentials, Advanced, and Premium are subscription tiers. The product page lists monthly and annual billing; current store prices were not verified.",
+  "官网提供试用，不是永久免费；试用期限、是否需绑卡及当前金额本轮未核实。Harmony 25 激活需联网；Linux 仅按官方列出的工作站发行版与条件核对。": "The vendor offers a trial, not a permanent free tier. Trial duration, card requirements, and current prices were not verified. Harmony 25 requires internet access for activation; check the vendor’s workstation requirements for supported Linux distributions and conditions.",
+  "专业二维动画工具，覆盖手绘逐帧、角色绑定与合成；选版本时要区分基础矢量、原生位图和节点工作流。": "A professional 2D animation tool for hand-drawn animation, character rigs, and compositing. Compare editions for vector drawing, native bitmap tools, and node workflows.",
+  "Essentials 提供基础绘画、上色和动画工具，包含矢量绘制。": "Essentials offers core drawing, painting, and animation tools, including vector drawing.",
+  "Advanced 有原生位图图层和绘画工具；仅导入位图素材不等于可在位图图层上绘画。": "Advanced includes native bitmap layers and drawing tools. Importing bitmap assets is not the same as drawing on a bitmap layer.",
+  "Advanced 面向简单剪纸动画；Premium 提供更完整的角色绑定与变形流程。": "Advanced supports simple cut-out animation; Premium offers more extensive rigging and deformation workflows.",
+  "高级节点视图按 Premium 计，可组合绘图、绑定和合成特效；不把基础图层效果算成节点编辑。": "Premium’s Node View connects drawing, rigs, and compositing effects. Basic layer effects are not counted as node editing."
 }
