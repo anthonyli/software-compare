@@ -16,10 +16,11 @@ test('terminal emulators compare desktop apps, not libraries, AI agents, or fram
     ['kaku', ['macOS'], 'V0.30.0', '2026-11-16', 'yes'],
     ['ghostty', ['macOS', 'Linux', 'FreeBSD'], '1.4.0', '2026-10-27', 'no'],
     ['wezterm', ['macOS', 'Linux', 'Windows', 'FreeBSD', 'NetBSD'], '20240203-110809-5046fc22', '2024-02-04', 'yes'],
+    ['iterm2', ['macOS'], '3.7.9', null, 'no'],
   ];
   assert.deepEqual(data.products.map(p => [p.id, p.platforms, p.latest_release, p.latest_release_date, p.features.terminal_lua.value]), expected);
   for (const p of data.products) {
-    assert.equal(p.license, 'MIT');
+    assert.equal(p.license, p.id === 'iterm2' ? 'GPL-2.0-or-later' : 'MIT');
     assert.equal(p.open_source, true);
     assert.equal(p.pricing_model, '免费开源');
     assert(p.sources.some(source => /\/LICENSE(?:\.md)?$/.test(source)));
@@ -41,4 +42,11 @@ test('terminal emulator copy and category wiring are bilingual and distinct from
   assert.match(read('site/src/config.ts'), /"cli-frameworks", "tui-frameworks", "terminal-emulators"/);
   assert.match(read('site/src/i18n/labels.ts'), /"terminal-emulators": \{ zh: "终端模拟器", en: "Terminal emulators" \}/);
   assert.match(read('site/public/categories/terminal-emulators.svg'), /viewBox="0 0 480 260"/);
+});
+
+test('iTerm2 distinguishes its source license from the combined distribution and Python from Lua',()=>{
+ const p=data.products.find(p=>p.id==='iterm2');
+ assert.match(p.free_tier_limits,/macOS 13\+.*GPL v2 或更高.*组合发行实际按 GPL v3/);
+ assert.match(p.features.terminal_lua.note,/Python API.*不是.*Lua/);
+ assert(p.sources.includes('https://github.com/gnachman/iTerm2/blob/v3.7.9/COPYING'));
 });

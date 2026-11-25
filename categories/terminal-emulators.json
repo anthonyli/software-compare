@@ -162,6 +162,54 @@
         "https://wezterm.org/config/files.html",
         "https://wezterm.org/multiplexing.html"
       ]
+    },
+    {
+      "id": "iterm2",
+      "name": "iTerm2",
+      "official_url": "https://iterm2.com/",
+      "github_url": "https://github.com/gnachman/iTerm2",
+      "platforms": [
+        "macOS"
+      ],
+      "license": "GPL-2.0-or-later",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": "3.7.9",
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-25",
+      "summary": "macOS 原生终端，支持标签页、分屏、可切换配置档和 tmux 集成。",
+      "price_summary": "终端本体免费开源。",
+      "free_tier_limits": "官方稳定版 3.7.9 要求 macOS 13+。源码声明为 GPL v2 或更高；项目注明受 Apache-2.0 依赖影响，组合发行实际按 GPL v3 分发。",
+      "features": {
+        "terminal_tabs_splits": {
+          "value": "yes",
+          "note": "本地标签页与横向、纵向分屏；也可使用 tmux 集成。"
+        },
+        "terminal_fonts_themes": {
+          "value": "yes",
+          "note": "Profiles 可配置字体和配色预设。"
+        },
+        "terminal_gpu": {
+          "value": "yes",
+          "note": "可选 GPU 渲染；文档指出耗电可能增加，未比较性能或续航。"
+        },
+        "terminal_lua": {
+          "value": "no",
+          "note": "官方提供 Profiles 和 Python API，不是 WezTerm 式 Lua 配置。"
+        }
+      },
+      "sources": [
+        "https://github.com/gnachman/iTerm2/blob/v3.7.9/COPYING",
+        "https://github.com/gnachman/iTerm2/blob/v3.7.9/LICENSE",
+        "https://iterm2.com/downloads.html",
+        "https://iterm2.com/documentation-one-page.html",
+        "https://iterm2.com/documentation-preferences-profiles.html",
+        "https://iterm2.com/documentation-preferences-general.html",
+        "https://iterm2.com/python-api/"
+      ]
     }
   ]
 }
