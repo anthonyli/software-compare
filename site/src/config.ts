@@ -27,7 +27,7 @@ export const categoryGroups: { id: string; name: string; slugs: string[] }[] = [
   {
     id: "media",
     name: "影音媒体",
-    slugs: ["screen-recorders", "video-editors", "audio-editors", "audio-recorders", "transcription-tools", "converters"],
+    slugs: ["screen-recorders", "video-editors", "audio-editors", "audio-recorders", "transcription-tools", "converters", "music-streaming"],
   },
   {
     id: "files",
@@ -125,6 +125,7 @@ export const categoryMonograms: Record<string, string> = {
   "rss-readers": "阅",
   "launchers": "启",
   "screen-recorders": "录",
+  "music-streaming": "听",
   "video-editors": "剪",
   "audio-editors": "音",
   "converters": "转",
@@ -195,6 +196,7 @@ export const categoryTints: Record<string, string> = {
   "rss-readers": "#F9EDDF",
   "launchers": "#F1E9FF",
   "screen-recorders": "#D9F3EA",
+  "music-streaming": "#F0E8F8",
   "video-editors": "#FFE4EA",
   "audio-editors": "#E9F0FF",
   "converters": "#FFF0D6",
