@@ -307,6 +307,54 @@
         "https://github.com/oclif/plugin-autocomplete",
         "https://oclif.io/docs/user_experience/"
       ]
+    },
+    {
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-25",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "id": "swift-argument-parser",
+      "name": "Swift Argument Parser",
+      "official_url": "https://swiftpackageindex.com/apple/swift-argument-parser/documentation",
+      "github_url": "https://github.com/apple/swift-argument-parser",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "Apache-2.0 WITH Swift-exception",
+      "summary": "Swift 命令行开发库，使用属性包装器定义选项和参数，通过 ParsableCommand 声明命令和子命令，并自动生成帮助。",
+      "price_summary": "开发库免费开源；依赖各有许可，应用分发、托管和第三方服务费用另计。",
+      "free_tier_limits": "已核对的 1.8.2 需要 Swift 6 工具链；旧工具链应选兼容版本。应用的构建与分发仍取决于目标系统及依赖。",
+      "features": {
+        "argument_parsing": {
+          "value": "yes"
+        },
+        "subcommands": {
+          "value": "yes"
+        },
+        "automatic_help": {
+          "value": "yes"
+        },
+        "shell_completion": {
+          "value": "yes",
+          "note": "核心库可生成 Bash、Zsh、Fish 的脚本，用户仍需安装或加载；未将 PowerShell 列为支持。"
+        },
+        "interactive_prompts": {
+          "value": "unknown",
+          "note": "参数解析和错误提示并不是交互问答；官方核心文档未确认内建提示输入或确认组件。"
+        }
+      },
+      "sources": [
+        "https://github.com/apple/swift-argument-parser/blob/1.8.2/README.md",
+        "https://github.com/apple/swift-argument-parser/blob/1.8.2/LICENSE.txt",
+        "https://github.com/apple/swift-argument-parser/blob/1.8.2/Package.swift",
+        "https://github.com/apple/swift-argument-parser/blob/1.8.2/Sources/ArgumentParser/Documentation.docc/Articles/InstallingCompletionScripts.md"
+      ]
     }
   ]
 }

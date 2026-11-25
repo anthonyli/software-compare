@@ -4,11 +4,15 @@ test('CLI framework core and plugin boundaries across languages and widths',asyn
  for(const width of [1280,390]){await page.setViewportSize({width,height:900});
   for(const lang of ['en','zh-CN']){
    await page.goto('/c/cli-frameworks/');await page.locator(`[data-lang="${lang}"]`).click();
-   for(const id of ['cobra','clap','commander','click','typer','oclif'])await expect(page.locator(width===1280?'#matrix':'#card-list').locator(`[data-product-id="${id}"]`)).toBeVisible();
+   for(const id of ['cobra','clap','commander','click','typer','oclif','swift-argument-parser'])await expect(page.locator(width===1280?'#matrix':'#card-list').locator(`[data-product-id="${id}"]`)).toBeVisible();
    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
-   for(const [id,state] of [['cobra','Yes'],['clap','Partial'],['commander','Unknown'],['click','Yes'],['typer','Yes'],['oclif','Partial']]){
+   for(const [id,state] of [['cobra','Yes'],['clap','Partial'],['commander','Unknown'],['click','Yes'],['typer','Yes'],['oclif','Partial'],['swift-argument-parser','Yes']]){
     await page.goto(`/p/cli-frameworks/${id}/`);await page.locator(`[data-lang="${lang}"]`).click();
     await expect(page.locator('.feature-row').nth(3).locator(state==='Unknown'?'.feat-empty':'.feat')).toHaveAttribute('title',lang==='en'?state:({'Yes':'支持','Partial':'部分支持','Unknown':'未知'}[state]!));
+    if(id==='swift-argument-parser'){
+     await expect(page.locator('.feature-row').nth(3).getByText(lang==='en'?'Bash, Zsh and Fish':'Bash、Zsh、Fish',{exact:false})).toBeVisible();
+     await expect(page.getByText(lang==='en'?'requires Swift 6':'需要 Swift 6',{exact:false}).filter({visible:true}).first()).toBeVisible();
+    }
     if(id==='clap'){
      const shellRow=page.locator('.feature-row').nth(3);
      for(const text of lang==='en'
