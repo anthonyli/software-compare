@@ -3948,5 +3948,16 @@
   "可调试 Android 真机；在 Mac 上调试 iOS 真机还需 Xcode 配置和签名。": "Android device debugging is supported. Debugging a physical iOS device on Mac also requires Xcode setup and signing.",
   "没有内置 MAUI XAML 设计器或预览器；XAML Hot Reload 是在模拟器或真机上查看运行中的界面变化。": "There is no built-in MAUI XAML designer or previewer. XAML Hot Reload shows updates in the running app on an emulator or device.",
   "官方 MAUI 指南的集成 profiling 指桌面 Mac Catalyst 和 Windows；未核实等价的移动端集成性能分析。Android Logcat 不等于性能分析。": "The MAUI guide documents integrated profiling for desktop Mac Catalyst and Windows. Equivalent integrated mobile profiling is unverified. Android Logcat is not a profiler.",
-  "集成常规 .NET 单元测试；不把它等同于开箱即用的 MAUI 真机 UI 测试。": "Integrated .NET unit testing is available, but that is not out-of-the-box on-device MAUI UI testing."
+  "集成常规 .NET 单元测试；不把它等同于开箱即用的 MAUI 真机 UI 测试。": "Integrated .NET unit testing is available, but that is not out-of-the-box on-device MAUI UI testing.",
+  "开源 Mac 录屏与编辑器，可在本机录制、剪辑和导出；启用分享后，可用同一链接替换成编辑过的视频。": "An open-source Mac recorder and editor. Record, edit and export locally; with sharing enabled, replace the video under the same URL after editing.",
+  "本机录制、编辑和无水印导出免费。自带存储桶无需付 Reelbird 托管费，存储服务另计；发布文档列可选 Pro 托管 USD 5/月，未核实当前结账价。": "Local recording, editing and watermark-free export are free. Bring-your-own storage avoids Reelbird hosting fees; storage provider charges are separate. Release documentation lists optional Pro hosting at USD 5/month; the current checkout price is unverified.",
+  "发布版面向 Apple 芯片、macOS 15+。维护者称可为兼容的 Intel Mac 编译，但未实测。可完全本地使用；自带桶的费用、额度按服务商，Pro 的容量、超额和绑卡规则未核实。": "The published build targets Apple silicon on macOS 15+. The maintainer says compatible Intel Macs can compile it but were not tested. Local use needs no cloud. Bucket costs and allowances depend on the provider; Pro storage allowances, overage and card requirements are unverified.",
+  "摄像头是独立轨道，录完可移动或调整画中画。": "The camera is a separate track; reposition or adjust the overlay after recording.",
+  "系统声音与麦克风分轨录制，无需虚拟音频驱动。": "System sound and microphone are recorded as separate tracks without a virtual audio driver.",
+  "支持本机剪辑、自动缩放、可编辑字幕和光标调整。": "Supports local trimming, auto-zoom, editable captions and cursor adjustments.",
+  "未核实 4K 与 60 fps 能否同时用于录制；录中分享文档列的是 1080p。": "Simultaneous 4K and 60 fps capture is unverified; documented share-while-recording output is 1080p.",
+  "可边录边上传供停止后快速分享；没有核实常规直播推流能力。": "Can upload while capturing for a quick link after stopping; conventional live broadcasting is not verified.",
+  "编辑器支持箭头、框、标签、高亮和模糊。": "The editor offers arrows, boxes, labels, highlighting and blur.",
+  "可选自有 S3 兼容桶或 Pro 托管。开启录中分享会在编辑前上传；持链接者可看。编辑之后可更新视频而保留原链接。": "Choose an S3-compatible bucket or Pro hosting. Share while recording uploads before editing; anyone with the link can view. Replace the video later without changing its URL.",
+  "不启用分享也能在本机录制、剪辑和导出，无水印。": "Record, edit and export locally with no watermark and no need to enable sharing."
 }
