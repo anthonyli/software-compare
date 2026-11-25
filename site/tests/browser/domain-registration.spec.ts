@@ -15,21 +15,25 @@ test('domain registrars render bilingually at desktop and mobile widths',async({
    ['porkbun','USD 200，另付普通续费','USD 200 plus the normal renewal fee'],
    ['namecheap','USD 89.98 含续费','USD 89.98 includes renewal'],
    ['tencent','CNY 1,000；是否包含续费未核实','CNY 1,000 on the China price list; renewal inclusion not verified'],
-   ['aliyun','包含恢复费和一年续费','covers restoration and one year of renewal'],
+   ['aliyun','中国站公开表价 CNY 1,200，含一年续费','CNY 1,200 on the public China price list, including one year of renewal'],
    ['cloudflare','可能在续费之外收取恢复费','a restoration fee may apply in addition to renewal'],
   ];
   await expect(recovery.locator('h2 .t-zh')).toBeVisible();
   for(const [id,zh] of fees){
-   const row=recovery.locator(`[data-recovery-registrar="${id}"] .t-zh`);
+   const row=recovery.locator(`[data-recovery-registrar="${id}"] dd > .t-zh`);
    await expect(row).toBeVisible();await expect(row).toContainText(zh);
   }
+  const aliyun=recovery.locator('[data-recovery-registrar="aliyun"]');
+  await expect(aliyun.locator('dt a')).toHaveAttribute('href','https://wanwang.aliyun.com/help/price.html');
+  await expect(aliyun.getByRole('link',{name:'计费说明'})).toHaveAttribute('href','https://help.aliyun.com/zh/dws/user-guide/redeem-a-domain-name');
   const list=page.locator(width===1280?'#matrix':'#card-list');
   for(const id of ['cloudflare-registrar','porkbun','namecheap-domains','aliyun-domains','tencent-domains'])await expect(list.locator(`[data-product-id="${id}"]`)).toBeVisible();
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
   await page.locator('[data-lang="en"]').click();await expect(page.locator('body')).toContainText('Domain registration');
   await expect(recovery.locator('h2 .t-en')).toBeVisible();
+  await expect(aliyun.getByRole('link',{name:'Fee details'})).toBeVisible();
   for(const [id,,en] of fees){
-   const row=recovery.locator(`[data-recovery-registrar="${id}"] .t-en`);
+   const row=recovery.locator(`[data-recovery-registrar="${id}"] dd > .t-en`);
    await expect(row).toBeVisible();await expect(row).toContainText(en);
   }
   for(const [id,name] of [['aliyun-domains','Alibaba Cloud Wanwang Domains'],['tencent-domains','Tencent Cloud Domains']]){
