@@ -228,6 +228,60 @@
         "https://www.nuget.org/packages/Terminal.Gui/2.6.0",
         "https://tui-cs.github.io/Terminal.Gui/api/Terminal.Gui.Drivers.html"
       ]
+    },
+    {
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-26",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "id": "spectre-console",
+      "name": "Spectre.Console",
+      "official_url": "https://spectreconsole.net/console/",
+      "github_url": "https://github.com/spectreconsole/spectre.console",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "MIT",
+      "summary": "面向 .NET 的富文本终端输出与轻量交互库，适合为 CLI 增加表格、实时状态和键盘提示；命令解析属于独立的 Spectre.Console.Cli。",
+      "price_summary": "核心库免费开源，MIT 许可；不依赖付费服务，依赖包许可另计。",
+      "free_tier_limits": "NuGet 0.57.2 面向 .NET 8.0 与 .NET Standard 2.0；应用需要兼容的运行时和终端。",
+      "features": {
+        "tui_layout": {
+          "value": "yes",
+          "note": "可组合布局并原地刷新；终端支持时可切换备用屏幕。实时显示不是线程安全的，不应与提示或进度显示同时使用。"
+        },
+        "tui_widgets": {
+          "value": "yes",
+          "note": "内置表格、树、面板、图表与进度显示，不等同于完整桌面控件体系。"
+        },
+        "tui_input": {
+          "value": "partial",
+          "note": "支持方向键选择、文本输入和确认；官方资料未确认通用鼠标事件分发。"
+        },
+        "tui_testing": {
+          "value": "yes",
+          "note": "独立 Spectre.Console.Testing 包提供 TestConsole，可捕获输出及预置输入，不需要真实终端。"
+        },
+        "tui_web": {
+          "value": "unknown",
+          "note": "官方资料未确认原生浏览器运行；终端控件和 NuGet 兼容列表不是浏览器运行证明。"
+        }
+      },
+      "sources": [
+        "https://github.com/spectreconsole/spectre.console/blob/0.57.2/LICENSE.md",
+        "https://www.nuget.org/packages/Spectre.Console/0.57.2",
+        "https://spectreconsole.net/console/live/live-display/",
+        "https://spectreconsole.net/console/reference/api/Spectre.Console.AnsiConsoleExtensions/",
+        "https://spectreconsole.net/console/prompts/selection-prompt/",
+        "https://spectreconsole.net/console/how-to/testing-console-output/",
+        "https://spectreconsole.net/cli/"
+      ]
     }
   ]
 }
