@@ -5,16 +5,17 @@ import fs from 'node:fs';
 const read = path => fs.readFileSync(new URL('../../' + path, import.meta.url), 'utf8');
 const data = JSON.parse(read('categories/rss-readers.json'));
 const en = JSON.parse(read('site/src/i18n/content-en.json'));
-const [nnw, fluent, fresh] = data.products;
+const [nnw, fluent, fresh, guard] = data.products;
 const keys = ['rss_direct','rss_opml','rss_offline','rss_sync','rss_fulltext','rss_selfhost'];
 
 test('client subscriptions, downloaded content, web extraction and self-hosted aggregation are separate', () => {
   assert.deepEqual(data.features.map(f => f.key), keys);
-  assert.deepEqual(data.products.map(p => p.id), ['netnewswire','fluent-reader','freshrss']);
+  assert.deepEqual(data.products.map(p => p.id), ['netnewswire','fluent-reader','freshrss','rss-guard']);
   assert.deepEqual(data.products.map(p => keys.map(k => p.features[k].value)), [
     ['yes','yes','partial','yes','yes','no'],
     ['yes','yes','partial','yes','yes','no'],
     ['no','yes','no','yes','yes','yes'],
+    ['yes','yes','partial','yes','yes','no'],
   ]);
   for (const p of data.products) assert.deepEqual(Object.keys(p.features), keys);
   assert.match(data.notes, /无需同步账号不等于无需联网.*不比较音乐串流/);
@@ -31,6 +32,7 @@ test('NetNewsWire tagged builds supersede stale Reddit and OS guidance; costs an
     ['MIT','7.3.1',null,['macOS','iOS','iPadOS']],
     ['BSD-3-Clause','v1.3.2','2026-10-30',['macOS','Windows','Linux']],
     ['AGPL-3.0','1.31.0','2026-11-23',['Web','Linux']],
+    ['GPL-3.0','5.3.0',null,['macOS','Windows','Linux']],
   ]);
   assert.match(nnw.free_tier_limits, /Mac 7\.3\.1 需 macOS 15\+.*iOS 7\.3\.1（7244）.*iOS\/iPadOS 18\+.*官网却写 iOS 26\+.*两个发布说明.*停止刷新 Reddit/);
   assert(nnw.sources.some(s => s.endsWith('/mac-7.3.1')));
@@ -51,4 +53,11 @@ test('office group and localized landing preserve the prior three categories', (
   assert.match(read('site/src/i18n/labels.ts'), /"rss-readers": \{ zh: "RSS 阅读器", en: "RSS readers" \}/);
   assert.match(read('site/src/pages/c/[slug].astro'), /category.slug === "rss-readers".*data-rss-reader-notes.*tr\(category.notes\)/);
   assert.match(read('site/public/categories/rss-readers.svg'), /viewBox="0 0 480 260"/);
+});
+
+test('RSS Guard distinguishes local reading from service-backed sync and hosting', () => {
+  assert.match(guard.features.rss_offline.note, /保存已获取.*仍需联网/);
+  assert.match(guard.features.rss_sync.note, /本机账号状态不自动跨设备.*Google Reader API/);
+  assert.match(guard.features.rss_selfhost.note, /本身不是聚合服务器/);
+  assert(guard.sources.some(s => s.endsWith('/5.3.0/LICENSE.md')));
 });

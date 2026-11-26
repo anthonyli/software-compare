@@ -15,10 +15,16 @@ test('RSS readers retain source, extraction, offline and sync boundaries on desk
       await expect(page.locator('h1')).toContainText(title);
       await expect(page.locator('[data-rss-reader-notes]').getByText(boundary, { exact: false }).filter({ visible: true })).toBeVisible();
       const products = page.locator(width === 1280 ? '#matrix' : '#card-list');
-      await expect(products.locator('[data-product-id]')).toHaveCount(3);
-      for (const id of ['netnewswire','fluent-reader','freshrss']) {
+      await expect(products.locator('[data-product-id]')).toHaveCount(4);
+      for (const id of ['netnewswire','fluent-reader','freshrss','rss-guard']) {
         await expect(products.locator(`[data-product-id="${id}"]`)).toBeVisible();
       }
+      expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+      await page.goto('/p/rss-readers/rss-guard/');
+      await page.locator(locale).click();
+      const sync = page.locator('.feature-row').nth(3);
+      await expect(sync.locator(lang === 'en' ? 'p .t-en' : 'p .t-zh').filter({ hasText: 'Google Reader API' })).toBeVisible();
+      await expect(sync.locator(lang === 'en' ? 'p .t-zh' : 'p .t-en').filter({ hasText: 'Google Reader API' })).toBeHidden();
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
       for (const [id,notes] of [['netnewswire',[reddit,reader]],['fluent-reader',[fluent]],['freshrss',[fresh]]] as const) {
         await page.goto(`/p/rss-readers/${id}/`);
