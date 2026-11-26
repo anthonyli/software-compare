@@ -5,18 +5,19 @@ import fs from 'node:fs';
 const read = path => fs.readFileSync(new URL('../../' + path, import.meta.url), 'utf8');
 const data = JSON.parse(read('categories/rss-readers.json'));
 const en = JSON.parse(read('site/src/i18n/content-en.json'));
-const [nnw, fluent, fresh, guard, miniflux, newsflash] = data.products;
+const [nnw, fluent, fresh, guard, miniflux, newsflash, capy] = data.products;
 const keys = ['rss_direct','rss_opml','rss_offline','rss_sync','rss_fulltext','rss_selfhost'];
 
 test('client subscriptions, downloaded content, web extraction and self-hosted aggregation are separate', () => {
   assert.deepEqual(data.features.map(f => f.key), keys);
-  assert.deepEqual(data.products.map(p => p.id), ['netnewswire','fluent-reader','freshrss','rss-guard','miniflux','newsflash']);
+  assert.deepEqual(data.products.map(p => p.id), ['netnewswire','fluent-reader','freshrss','rss-guard','miniflux','newsflash','capy-reader']);
   assert.deepEqual(data.products.map(p => keys.map(k => p.features[k].value)), [
     ['yes','yes','partial','yes','yes','no'],
     ['yes','yes','partial','yes','yes','no'],
     ['no','yes','no','yes','yes','yes'],
     ['yes','yes','partial','yes','yes','no'],
     ['no','yes','no','yes','yes','yes'],
+    ['yes','yes','partial','yes','yes','no'],
     ['yes','yes','partial','yes','yes','no'],
   ]);
   for (const p of data.products) assert.deepEqual(Object.keys(p.features), keys);
@@ -37,6 +38,7 @@ test('NetNewsWire tagged builds supersede stale Reddit and OS guidance; costs an
     ['GPL-3.0','5.3.0',null,['macOS','Windows','Linux']],
     ['Apache-2.0','2.3.5',null,['Web','Linux']],
     ['GPL-3.0-or-later','6.0.2','2026-11-04',['Linux']],
+    ['GPL-3.0-only','2026.11.1217',null,['Android']],
   ]);
   assert.match(nnw.free_tier_limits, /Mac 7\.3\.1 需 macOS 15\+.*iOS 7\.3\.1（7244）.*iOS\/iPadOS 18\+.*官网却写 iOS 26\+.*两个发布说明.*停止刷新 Reddit/);
   assert(nnw.sources.some(s => s.endsWith('/mac-7.3.1')));
@@ -81,4 +83,13 @@ test('Newsflash is a Linux client with local feeds, backend-specific syncing and
   assert.match(newsflash.features.rss_offline.note, /已存到本机.*未缓存.*仍需要联网/);
   assert.match(newsflash.features.rss_sync.note, /Miniflux.*FreshRSS.*本机模式不自动跨设备同步/);
   assert.match(newsflash.features.rss_selfhost.note, /不是聚合服务器/);
+});
+
+test('Capy Reader distinguishes local feeds, cached reading and native Miniflux authorization', () => {
+  assert.match(capy.free_tier_limits, /Android 11.*崩溃报告由用户选择开启/);
+  assert.match(capy.features.rss_direct.note, /不需要同步账号/);
+  assert.match(capy.features.rss_offline.note, /已缓存.*未缓存.*仍需要网络/);
+  assert.match(capy.features.rss_sync.note, /原生 API.*API 令牌.*Google Reader 兼容连接是两种方式/);
+  assert.match(capy.features.rss_selfhost.note, /本身不是聚合服务器/);
+  assert(capy.sources.some(s => s.endsWith('/discussions/1749')));
 });

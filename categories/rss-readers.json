@@ -371,6 +371,62 @@
         "https://github.com/flathub/io.gitlab.news_flash.NewsFlash/blob/master/io.gitlab.news_flash.NewsFlash.json",
         "https://gitlab.com/api/v4/projects/8320003/packages/generic/newsflash/6.0.2/newsflash-6.0.2.tar.xz"
       ]
+    },
+    {
+      "id": "capy-reader",
+      "name": "Capy Reader",
+      "official_url": "https://capyreader.com/",
+      "github_url": "https://github.com/jocmp/capyreader",
+      "platforms": [
+        "Android"
+      ],
+      "license": "GPL-3.0-only",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": "2026.11.1217",
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-26",
+      "summary": "面向 Android 的 RSS 阅读器，可在本机订阅，也可使用 Feedbin、FreshRSS 或 Miniflux 同步。",
+      "price_summary": "应用免费开源，无广告和应用内购买；第三方服务或自托管费用另计。",
+      "free_tier_limits": "需要 Android 11 或更新版本。按官方隐私说明，崩溃报告由用户选择开启；外部订阅或同步服务有各自的隐私规则。",
+      "features": {
+        "rss_direct": {
+          "value": "yes",
+          "note": "本机模式不需要同步账号，直接从订阅源获取内容。"
+        },
+        "rss_opml": {
+          "value": "yes",
+          "note": "支持 OPML 导入、导出订阅列表；不是文章或已读状态的完整备份。"
+        },
+        "rss_offline": {
+          "value": "partial",
+          "note": "可离线阅读已缓存内容，未缓存的媒体、订阅刷新及获取原始正文仍需要网络。"
+        },
+        "rss_sync": {
+          "value": "yes",
+          "note": "专用 Miniflux 账号使用原生 API，支持 API 令牌及已读、星标同步；它与 Google Reader 兼容连接是两种方式。"
+        },
+        "rss_fulltext": {
+          "value": "yes",
+          "note": "全文模式可向原始网页请求完整文章，效果取决于页面，不能保证每篇都成功。"
+        },
+        "rss_selfhost": {
+          "value": "no",
+          "note": "可连接自托管 FreshRSS 或 Miniflux；Capy Reader 本身不是聚合服务器。"
+        }
+      },
+      "sources": [
+        "https://capyreader.com/faq",
+        "https://capyreader.com/privacy",
+        "https://f-droid.org/packages/com.capyreader.app/",
+        "https://github.com/jocmp/capyreader/releases/tag/2026.11.1217",
+        "https://github.com/jocmp/capyreader/blob/2026.11.1217/CLAUDE.md",
+        "https://github.com/jocmp/capyreader/discussions/1749",
+        "https://github.com/FreshRSS/FreshRSS/blob/edge/README.md"
+      ]
     }
   ]
 }

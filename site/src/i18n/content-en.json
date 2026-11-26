@@ -4205,5 +4205,14 @@
   "可离线读已存到本机的文章；刷新订阅、提取原文和加载未缓存的远程媒体仍需要联网。": "Locally stored articles can be read offline. Refreshing feeds, extracting original articles and loading uncached remote media still need a connection.",
   "可通过 Miniflux 或 FreshRSS 等服务同步状态，支持范围随服务而异；本机模式不自动跨设备同步。": "Can sync status through services such as Miniflux and FreshRSS, depending on the backend. Local mode does not sync across devices by itself.",
   "桌面构建支持尝试抓取网页正文，效果取决于原始页面，不能保证所有文章都可提取。": "The desktop build can attempt to extract article text from the original page. Results depend on the source, and extraction is not guaranteed.",
-  "可以连接自托管的 Miniflux 或 FreshRSS 实例；Newsflash 本身是桌面客户端，不是聚合服务器。": "Can connect to a self-hosted Miniflux or FreshRSS instance. Newsflash is a desktop client, not an aggregation server."
+  "可以连接自托管的 Miniflux 或 FreshRSS 实例；Newsflash 本身是桌面客户端，不是聚合服务器。": "Can connect to a self-hosted Miniflux or FreshRSS instance. Newsflash is a desktop client, not an aggregation server.",
+  "面向 Android 的 RSS 阅读器，可在本机订阅，也可使用 Feedbin、FreshRSS 或 Miniflux 同步。": "RSS reader for Android with local subscriptions or optional sync through Feedbin, FreshRSS or Miniflux.",
+  "应用免费开源，无广告和应用内购买；第三方服务或自托管费用另计。": "The app is free and open source, with no ads or in-app purchases. Third-party services and self-hosting may cost extra.",
+  "需要 Android 11 或更新版本。按官方隐私说明，崩溃报告由用户选择开启；外部订阅或同步服务有各自的隐私规则。": "Requires Android 11 or later. The app privacy policy describes opt-in crash reporting; external feeds and sync services have their own privacy practices.",
+  "本机模式不需要同步账号，直接从订阅源获取内容。": "Local mode fetches feeds directly without a sync account.",
+  "支持 OPML 导入、导出订阅列表；不是文章或已读状态的完整备份。": "Imports and exports an OPML subscription list, not a full backup of articles or read status.",
+  "可离线阅读已缓存内容，未缓存的媒体、订阅刷新及获取原始正文仍需要网络。": "Read cached content offline. Uncached media, feed refreshes and fetching original article text still require a network connection.",
+  "专用 Miniflux 账号使用原生 API，支持 API 令牌及已读、星标同步；它与 Google Reader 兼容连接是两种方式。": "The dedicated Miniflux account uses its native API with token support and read/star sync. This is distinct from the Google Reader-compatible connection.",
+  "全文模式可向原始网页请求完整文章，效果取决于页面，不能保证每篇都成功。": "Full content mode can attempt to retrieve the full article from the original website. Results vary by page.",
+  "可连接自托管 FreshRSS 或 Miniflux；Capy Reader 本身不是聚合服务器。": "Can connect to self-hosted FreshRSS or Miniflux. Capy Reader is not itself an aggregation server."
 }
