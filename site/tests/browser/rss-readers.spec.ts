@@ -62,3 +62,28 @@ test('RSS readers retain source, extraction, offline and sync boundaries on desk
     }
   }
 });
+
+test('RSS detail notes keep public capability clauses and their translations', async ({ page }) => {
+  const cases = [
+    ['freshrss', [[4, '把匹配正文存到自己的服务器', 'onto your server'],
+                 [5, '刷新订阅或提取正文仍会连接来源网站', 'still connects to feed or article sources']]],
+    ['rss-guard', [[4, '尝试从原页提取正文', 'retrieve the main text from an original page']]],
+    ['miniflux', [[0, '由 Miniflux 服务器获取', 'The Miniflux server fetches RSS, Atom and JSON Feed']]],
+    ['newsflash', [[4, '桌面版可尝试提取网页正文', 'extract article text from the original page']]],
+  ] as const;
+  for (const [id, notes] of cases) {
+    await page.goto(`/p/rss-readers/${id}/`);
+    for (const lang of ['zh-CN', 'en'] as const) {
+      await page.locator(`[data-lang="${lang}"]`).click();
+      const en = lang === 'en';
+      for (const [idx, zh, english] of notes) {
+        const row = page.locator('.feature-row').nth(idx);
+        const visible = row.locator(en ? 'p .t-en' : 'p .t-zh');
+        const hidden = row.locator(en ? 'p .t-zh' : 'p .t-en');
+        await expect(visible).toContainText(en ? english : zh);
+        await expect(visible).toBeVisible();
+        await expect(hidden).toBeHidden();
+      }
+    }
+  }
+});
