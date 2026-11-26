@@ -1,0 +1,52 @@
+---
+// SPDX-License-Identifier: Apache-2.0
+import sources from "../lib/product-logo-sources.json";
+
+interface Props {
+  id: string;
+  name: string;
+  size?: 24 | 28 | 44;
+}
+
+const { id, name, size = 24 } = Astro.props;
+const src = /^[a-z0-9-]+$/.test(id) && Object.hasOwn(sources, id)
+  ? `/product-logos/${id}.webp`
+  : null;
+const initial = Array.from(name.trim())[0]?.toLocaleUpperCase("en") ?? "·";
+---
+<span
+  class="product-logo"
+  data-product-logo={src ? "verified" : "placeholder"}
+  aria-hidden="true"
+  style={`--product-logo-size: ${size}px`}
+>
+  {src
+    ? <img src={src} alt="" width={size} height={size} loading={size === 44 ? "eager" : "lazy"} decoding="async" />
+    : <span>{initial}</span>}
+</span>
+
+<style>
+  .product-logo {
+    display: inline-grid;
+    width: var(--product-logo-size);
+    height: var(--product-logo-size);
+    flex: 0 0 var(--product-logo-size);
+    place-items: center;
+    border: 1px solid var(--color-line);
+    border-radius: 24%;
+    background: #fff;
+    color: var(--color-ink-soft);
+    font-size: calc(var(--product-logo-size) * .48);
+    font-weight: 700;
+    letter-spacing: normal;
+    line-height: 1;
+    vertical-align: middle;
+    overflow: hidden;
+  }
+  img {
+    display: block;
+    width: 82%;
+    height: 82%;
+    object-fit: contain;
+  }
+</style>

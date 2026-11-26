@@ -3,6 +3,7 @@
 import Layout from "../../../layouts/Layout.astro";
 import ExtLinks from "../../../components/ExtLinks.astro";
 import T from "../../../components/T.astro";
+import ProductLogo from "../../../components/ProductLogo.astro";
 import VoteButton from '../../../components/VoteButton.astro';
 import VoteStatus from '../../../components/VoteStatus.astro';
 import GitHubFreshness from '../../../components/GitHubFreshness.astro';
@@ -89,7 +90,10 @@ const hostNoteZh = cleanPublicText(product.source_host_note);
     </nav>
 
     <header class="detail-hero mt-6">
-      <h1 class="text-3xl font-extrabold tracking-tight sm:text-4xl"><T zh={product.name}/></h1>
+      <div class="flex items-center gap-3">
+        <ProductLogo id={product.id} name={product.name} size={44} />
+        <h1 class="text-3xl font-extrabold tracking-tight sm:text-4xl"><T zh={product.name}/></h1>
+      </div>
       {summaryZh && (
         <p class="mt-3 max-w-2xl text-[1.02rem] leading-relaxed text-ink-soft">
           <T zh={summaryZh} en={summaryEn || summaryZh} />
