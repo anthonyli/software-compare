@@ -83,8 +83,8 @@ test('AI navigation has exactly the three requested categories and retains local
 test('file backup distinguishes default checks, external scheduling and optional Borg encryption', () => {
  const category = categories.find(c => slug(c) === 'file-backup');
  const [restic, kopia, borg] = category.products;
- assert.deepEqual(category.products.map(p => p.id), ['restic', 'kopia', 'borgbackup', 'time-machine', 'windows-file-history', 'arq-7', 'duplicati', 'deja-dup', 'pika-backup']);
- assert.deepEqual(category.products.map(p => p.features.backup_schedule.value), ['no', 'yes', 'no', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes']);
+ assert.deepEqual(category.products.map(p => p.id), ['restic', 'kopia', 'borgbackup', 'time-machine', 'windows-file-history', 'arq-7', 'duplicati', 'deja-dup', 'pika-backup', 'vorta']);
+ assert.deepEqual(category.products.map(p => p.features.backup_schedule.value), ['no', 'yes', 'no', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes']);
  assert.match(restic.features.backup_verify.note, /默认.*--read-data/);
  assert.match(kopia.features.backup_verify.note, /默认.*--verify-files-percent=100/);
  assert.equal(borg.features.backup_encryption.value, 'partial');
@@ -157,6 +157,17 @@ test('Pika Backup separates Borg destinations and restore permissions from app v
  assert.match(p.features.backup_schedule.note, /外接盘.*桌面门户/);
  assert.match(p.features.backup_restore.note, /GNOME Files.*不会保留权限/);
  assert.equal(p.features.backup_verify.value, 'unknown');
+});
+
+test('Vorta separates program scheduling, archive mounting and Borg data verification', () => {
+ const p = categories.find(c => slug(c) === 'file-backup').products.find(p => p.id === 'vorta');
+ assert.deepEqual(p.platforms, ['macOS', 'Linux']);
+ assert.equal(p.license, 'GPL-3.0-only');
+ assert.match(p.free_tier_limits, /WSL.*并非 Windows 原生/);
+ assert.match(p.features.backup_schedule.note, /应用需保持运行/);
+ assert.match(p.features.backup_restore.note, /解包.*macFUSE/);
+ assert.equal(p.features.backup_verify.value, 'partial');
+ assert.match(p.features.backup_verify.note, /不带 --verify-data/);
 });
 
 test('Harmony confirms separate 2D editions without guessing store prices', () => {

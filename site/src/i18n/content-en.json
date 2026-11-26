@@ -4136,5 +4136,16 @@
   "按小时、天、周或月调度；外接盘缺席时可在重新连接后启动，后台运行依赖桌面门户。": "Schedule backups hourly, daily, weekly, or monthly. A missing external drive can trigger a deferred backup when reconnected; scheduling needs the desktop background portal.",
   "GNOME 图形界面配置任务、计划与保留规则，并从文件管理器浏览归档。": "The GNOME interface configures jobs, scheduling, and retention, and opens archives in the file manager.",
   "按归档日期浏览并复制文件；官方提醒用 GNOME Files 复制不会保留权限。也可用兼容的 Borg 工具访问归档。": "Browse archives by date to copy files. GNOME Files does not preserve permissions when copying from archives. Compatible Borg tools can also access the data.",
-  "Borg 命令行可验证数据；Pika 0.8.4 的界面是否提供同等全读校验未核实。": "Borg CLI can verify data. Equivalent full-data verification in the Pika 0.8.4 interface was not confirmed."
+  "Borg 命令行可验证数据；Pika 0.8.4 的界面是否提供同等全读校验未核实。": "Borg CLI can verify data. Equivalent full-data verification in the Pika 0.8.4 interface was not confirmed.",
+  "桌面客户端免费开源，不需要订阅 BorgBase；自备磁盘、服务器或选择第三方托管，费用另计。": "The desktop client is free and open source and does not require a BorgBase subscription. Disks, servers, and optional hosted storage are separate.",
+  "Windows 文档指向 WSL，并非 Windows 原生客户端；不是整机镜像。需使用兼容的 Borg 版本和仓库。": "Windows documentation points to WSL, not a native Windows client. This is not a system imaging tool. Use a compatible Borg version and repository.",
+  "macOS 和 Linux 的 Borg 图形客户端，可用独立配置管理本地或远端文件备份，适合希望保留 Borg 仓库同时使用图形界面的用户。": "A macOS and Linux desktop client with profiles for local or remote file backups, for people who want a graphical interface while keeping Borg repositories.",
+  "经 Borg 建立去重的文件归档，可按日期查看版本。": "Creates deduplicated file archives through Borg and lists versions by date.",
+  "加密由 Borg 仓库模式决定；恢复时需要所选模式对应的凭据。": "Encryption depends on the Borg repository mode. Restoration needs the credentials appropriate for that mode.",
+  "支持本地目录、可移除磁盘和通过 SSH 的 Borg 远端，不要求 BorgBase，也不把 Borg 1.4 计为原生 S3。": "Uses local directories, removable disks, and Borg over SSH. BorgBase is optional; native S3 is not counted for Borg 1.4.",
+  "归档可以手动按保留规则清理，也可配置每次备份后执行。": "Prune archives by retention rules manually or after each scheduled backup.",
+  "由 Vorta 自行触发计划，应用需保持运行，可设置登录后启动。": "Vorta must stay running to execute scheduled jobs; it can start automatically after login.",
+  "桌面界面提供备份、归档、配置及调度，是独立的 Borg 前端。": "The desktop UI manages backups, archives, profiles, and scheduling. Vorta is a separate Borg frontend.",
+  "可以直接解包到指定目录，也可挂载归档后挑选文件；macOS 挂载浏览需 macFUSE 与支持 FUSE 的 Borg 构建。": "Extract to a chosen folder or mount an archive to browse individual files. On macOS, mount-and-browse needs macFUSE and a FUSE-enabled Borg build.",
+  "v0.12.2 的图形检查调用 Borg 一致性检查，不带 --verify-data；不等同于 Borg CLI 的归档内容密码学校验。": "The v0.12.2 UI calls Borg consistency check without --verify-data. That is not the CLI’s cryptographic archive data verification."
 }
