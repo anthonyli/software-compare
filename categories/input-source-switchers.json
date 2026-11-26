@@ -54,7 +54,7 @@
         },
         "inputswitch_url": {
           "value": "yes",
-          "note": "在受支持的浏览器中依据网址切换；官网列举 Safari、Chrome、Edge、Firefox、Brave、Vivaldi 和 Arc，版本日志另有新增。"
+          "note": "2.14.0 的网址规则支持 Helium、Comet 等已列浏览器。ego(lite) 不在网址规则列表，可按应用设置默认输入源。"
         },
         "inputswitch_lock": {
           "value": "unknown",
@@ -74,7 +74,9 @@
         "https://github.com/runjuu/InputSourcePro/releases/tag/2.14.0",
         "https://github.com/runjuu/InputSourcePro/blob/2.14.0/LICENSE",
         "https://github.com/runjuu/InputSourcePro/blob/2.14.0/Input%20Source%20Pro/Models/PermissionsVM.swift",
-        "https://github.com/runjuu/InputSourcePro/blob/2.14.0/Input%20Source%20Pro/Models/FeedbackVM.swift"
+        "https://github.com/runjuu/InputSourcePro/blob/2.14.0/Input%20Source%20Pro/Models/FeedbackVM.swift",
+        "https://inputsource.pro/changelog",
+        "https://github.com/runjuu/InputSourcePro/blob/2.14.0/Input%20Source%20Pro/Utilities/BrowserURL.swift"
       ]
     },
     {
