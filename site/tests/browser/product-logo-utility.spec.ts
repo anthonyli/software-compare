@@ -6,6 +6,8 @@ test.use({ extraHTTPHeaders: { 'CF-Connecting-IP': '198.51.100.204' } });
 const apps = [
   { category: 'clipboard-managers', id: 'maccy', name: 'Maccy' },
   { category: 'quick-translation-ocr', id: 'easydict', name: 'Easydict' },
+  { category: 'terminal-emulators', id: 'kaku', name: 'Kaku' },
+  { category: 'menu-bar-calendars', id: 'itsycal', name: 'Itsycal' },
 ];
 
 for (const app of apps) {
