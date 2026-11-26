@@ -1,10 +1,10 @@
 import {test} from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';
 const read=p=>JSON.parse(fs.readFileSync(new URL('../../'+p,import.meta.url),'utf8'));const c=read('categories/cli-frameworks.json'),en=read('site/src/i18n/content-en.json');
 test('CLI frameworks retain licenses and core versus add-on boundaries',()=>{
- assert.deepEqual(c.products.map(p=>p.id),['cobra','clap','commander','click','typer','oclif','swift-argument-parser','picocli','system-commandline']);
- assert.deepEqual(c.products.map(p=>p.license),['Apache-2.0','MIT OR Apache-2.0','MIT','BSD-3-Clause','MIT','MIT','Apache-2.0 WITH Swift-exception','Apache-2.0','MIT']);
- assert.deepEqual(c.products.map(p=>p.features.shell_completion.value),['yes','partial','unknown','yes','yes','partial','yes','yes','yes']);
- assert.deepEqual(c.products.map(p=>p.features.interactive_prompts.value),['unknown','unknown','unknown','yes','yes','partial','unknown','partial','unknown']);
+ assert.deepEqual(c.products.map(p=>p.id),['cobra','clap','commander','click','typer','oclif','swift-argument-parser','picocli','system-commandline','cyclopts']);
+ assert.deepEqual(c.products.map(p=>p.license),['Apache-2.0','MIT OR Apache-2.0','MIT','BSD-3-Clause','MIT','MIT','Apache-2.0 WITH Swift-exception','Apache-2.0','MIT','Apache-2.0']);
+ assert.deepEqual(c.products.map(p=>p.features.shell_completion.value),['yes','partial','unknown','yes','yes','partial','yes','yes','yes','yes']);
+ assert.deepEqual(c.products.map(p=>p.features.interactive_prompts.value),['unknown','unknown','unknown','yes','yes','partial','unknown','partial','unknown','partial']);
  assert.match(c.products[5].features.interactive_prompts.note,/Inquirer/);
  assert.match(c.products[3].free_tier_limits,/python script.py/);assert.match(c.notes,/不是 AI/);
  for(const p of c.products){assert.equal(p.open_source,true);assert.deepEqual(Object.keys(p.features),c.features.map(f=>f.key));assert(p.sources.length>=2);for(const k of ['github_stars','latest_release','latest_release_date','maintenance_status'])assert.equal(p[k],null);}
@@ -49,4 +49,12 @@ test('System.CommandLine documents shell setup separately from prompts',()=>{
  assert.match(en[p.features.shell_completion.note],/Bash, Zsh and PowerShell.*dotnet-suggest.*executable registration/);
  assert.equal(p.features.interactive_prompts.value,'unknown');
  assert.match(en[p.features.interactive_prompts.note],/Argument validation is not interactive input/);
+});
+
+test('Cyclopts distinguishes static completion, runtime callbacks and the command shell',()=>{
+ const p=c.products.find(p=>p.id==='cyclopts');
+ assert.match(p.free_tier_limits,/5\.5\.3.*Python 3\.11/);
+ assert.match(p.features.shell_completion.note,/Bash、Zsh、Fish 和 PowerShell.*静态.*运行时.*PATH/);
+ assert.match(p.features.interactive_prompts.note,/interactive_shell.*不是交互表单/);
+ assert.match(en[p.features.interactive_prompts.note],/interactive_shell.*not an interactive form/);
 });

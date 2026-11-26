@@ -452,6 +452,54 @@
         "https://learn.microsoft.com/en-us/dotnet/standard/commandline/syntax",
         "https://learn.microsoft.com/en-us/dotnet/standard/commandline/how-to-enable-tab-completion"
       ]
+    },
+    {
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-26",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "id": "cyclopts",
+      "name": "Cyclopts",
+      "official_url": "https://cyclopts.readthedocs.io/en/stable/",
+      "github_url": "https://github.com/BrianPugh/cyclopts",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "Apache-2.0",
+      "summary": "基于类型注解和文档字符串构建 Python CLI，支持参数转换、嵌套子命令和自动帮助。",
+      "price_summary": "开发库免费开源；依赖各有许可，应用分发、托管和第三方服务费用另计。",
+      "free_tier_limits": "PyPI 5.5.3 要求 Python 3.11 或更新版本；Shell 补全的实际用法随 Shell 和应用安装方式而异。",
+      "features": {
+        "argument_parsing": {
+          "value": "yes"
+        },
+        "subcommands": {
+          "value": "yes"
+        },
+        "automatic_help": {
+          "value": "yes"
+        },
+        "shell_completion": {
+          "value": "yes",
+          "note": "可为 Bash、Zsh、Fish 和 PowerShell 生成静态补全脚本；运行时补全回调需将应用安装为 PATH 中的命令。"
+        },
+        "interactive_prompts": {
+          "value": "partial",
+          "note": "内置 interactive_shell 可连续输入并执行命令；它不是交互表单，未核实核心库提供独立的确认组件。"
+        }
+      },
+      "sources": [
+        "https://pypi.org/project/cyclopts/5.5.3/",
+        "https://cyclopts.readthedocs.io/en/stable/commands.html",
+        "https://cyclopts.readthedocs.io/en/stable/shell_completion.html",
+        "https://cyclopts.readthedocs.io/en/stable/cookbook/interactive_help.html"
+      ]
     }
   ]
 }
