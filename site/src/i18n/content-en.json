@@ -4214,5 +4214,14 @@
   "可离线阅读已缓存内容，未缓存的媒体、订阅刷新及获取原始正文仍需要网络。": "Read cached content offline. Uncached media, feed refreshes and fetching original article text still require a network connection.",
   "专用 Miniflux 账号使用原生 API，支持 API 令牌及已读、星标同步；它与 Google Reader 兼容连接是两种方式。": "The dedicated Miniflux account uses its native API with token support and read/star sync. This is distinct from the Google Reader-compatible connection.",
   "全文模式可向原始网页请求完整文章，效果取决于页面，不能保证每篇都成功。": "Full content mode can attempt to retrieve the full article from the original website. Results vary by page.",
-  "可连接自托管 FreshRSS 或 Miniflux；Capy Reader 本身不是聚合服务器。": "Can connect to self-hosted FreshRSS or Miniflux. Capy Reader is not itself an aggregation server."
+  "可连接自托管 FreshRSS 或 Miniflux；Capy Reader 本身不是聚合服务器。": "Can connect to self-hosted FreshRSS or Miniflux. Capy Reader is not itself an aggregation server.",
+  "在终端中阅读 RSS 和 Atom，可管理本机订阅，也可接入 Miniflux 等服务。": "RSS and Atom reader for the terminal, with local subscriptions or optional services such as Miniflux.",
+  "终端客户端免费开源，采用 MIT 许可；可选同步服务和自托管费用另计。": "The terminal client is free and open source under MIT. Optional sync services or self-hosting may cost extra.",
+  "此条比较终端客户端。Homebrew 提供部分 macOS 和 Linux 版本的预构建包，其他环境需核对安装渠道。": "This entry covers the terminal client. Homebrew provides binaries for selected macOS and Linux releases; check package availability elsewhere.",
+  "本机订阅列表直接读取 RSS 和 Atom，不需要同步账号。": "The local subscription list reads RSS and Atom directly without a sync account.",
+  "可导入、导出 OPML 订阅列表；OPML 2.0 可以包含标签，不是文章缓存的完整备份。": "Supports OPML import and export. OPML 2.0 can include tags but is not a complete backup of cached articles.",
+  "可在终端读取本机缓存中的文章，刷新或打开未缓存的原页仍需网络。": "Read locally cached articles in the terminal. Refreshing feeds or opening uncached original pages still requires a network connection.",
+  "可配置 Miniflux 同步，支持 API 令牌；默认本机订阅不会自动跨设备。": "Can synchronize with Miniflux using an API token. Default local subscriptions do not sync across devices automatically.",
+  "内置 HTML 渲染器显示订阅源提供的内容；原页可用外部浏览器打开，基础阅读流程不会自动提取原页正文。": "The built-in HTML renderer displays feed-provided content. An external browser can open the original page; the basic reader does not automatically extract its full text.",
+  "可连接自托管 Miniflux 实例；Newsboat 本身不是聚合服务器。": "Can connect to a self-hosted Miniflux instance. Newsboat is not itself an aggregation server."
 }

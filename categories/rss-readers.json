@@ -427,6 +427,61 @@
         "https://github.com/jocmp/capyreader/discussions/1749",
         "https://github.com/FreshRSS/FreshRSS/blob/edge/README.md"
       ]
+    },
+    {
+      "id": "newsboat",
+      "name": "Newsboat",
+      "official_url": "https://newsboat.org/",
+      "github_url": "https://github.com/newsboat/newsboat",
+      "platforms": [
+        "Linux",
+        "macOS"
+      ],
+      "license": "MIT",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": "2.45.1",
+      "latest_release_date": "2026-11-05",
+      "maintenance_status": null,
+      "collected_at": "2026-11-26",
+      "summary": "在终端中阅读 RSS 和 Atom，可管理本机订阅，也可接入 Miniflux 等服务。",
+      "price_summary": "终端客户端免费开源，采用 MIT 许可；可选同步服务和自托管费用另计。",
+      "free_tier_limits": "此条比较终端客户端。Homebrew 提供部分 macOS 和 Linux 版本的预构建包，其他环境需核对安装渠道。",
+      "features": {
+        "rss_direct": {
+          "value": "yes",
+          "note": "本机订阅列表直接读取 RSS 和 Atom，不需要同步账号。"
+        },
+        "rss_opml": {
+          "value": "yes",
+          "note": "可导入、导出 OPML 订阅列表；OPML 2.0 可以包含标签，不是文章缓存的完整备份。"
+        },
+        "rss_offline": {
+          "value": "partial",
+          "note": "可在终端读取本机缓存中的文章，刷新或打开未缓存的原页仍需网络。"
+        },
+        "rss_sync": {
+          "value": "yes",
+          "note": "可配置 Miniflux 同步，支持 API 令牌；默认本机订阅不会自动跨设备。"
+        },
+        "rss_fulltext": {
+          "value": "no",
+          "note": "内置 HTML 渲染器显示订阅源提供的内容；原页可用外部浏览器打开，基础阅读流程不会自动提取原页正文。"
+        },
+        "rss_selfhost": {
+          "value": "no",
+          "note": "可连接自托管 Miniflux 实例；Newsboat 本身不是聚合服务器。"
+        }
+      },
+      "sources": [
+        "https://newsboat.org/",
+        "https://github.com/newsboat/newsboat/blob/r2.45.1/doc/newsboat.asciidoc",
+        "https://github.com/newsboat/newsboat/blob/r2.45.1/doc/faq.asciidoc",
+        "https://github.com/newsboat/newsboat/blob/r2.45.1/LICENSE",
+        "https://formulae.brew.sh/formula/newsboat"
+      ]
     }
   ]
 }
