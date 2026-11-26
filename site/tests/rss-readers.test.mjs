@@ -5,17 +5,18 @@ import fs from 'node:fs';
 const read = path => fs.readFileSync(new URL('../../' + path, import.meta.url), 'utf8');
 const data = JSON.parse(read('categories/rss-readers.json'));
 const en = JSON.parse(read('site/src/i18n/content-en.json'));
-const [nnw, fluent, fresh, guard] = data.products;
+const [nnw, fluent, fresh, guard, miniflux] = data.products;
 const keys = ['rss_direct','rss_opml','rss_offline','rss_sync','rss_fulltext','rss_selfhost'];
 
 test('client subscriptions, downloaded content, web extraction and self-hosted aggregation are separate', () => {
   assert.deepEqual(data.features.map(f => f.key), keys);
-  assert.deepEqual(data.products.map(p => p.id), ['netnewswire','fluent-reader','freshrss','rss-guard']);
+  assert.deepEqual(data.products.map(p => p.id), ['netnewswire','fluent-reader','freshrss','rss-guard','miniflux']);
   assert.deepEqual(data.products.map(p => keys.map(k => p.features[k].value)), [
     ['yes','yes','partial','yes','yes','no'],
     ['yes','yes','partial','yes','yes','no'],
     ['no','yes','no','yes','yes','yes'],
     ['yes','yes','partial','yes','yes','no'],
+    ['no','yes','no','yes','yes','yes'],
   ]);
   for (const p of data.products) assert.deepEqual(Object.keys(p.features), keys);
   assert.match(data.notes, /无需同步账号不等于无需联网.*不比较音乐串流/);
@@ -33,6 +34,7 @@ test('NetNewsWire tagged builds supersede stale Reddit and OS guidance; costs an
     ['BSD-3-Clause','v1.3.2','2026-10-30',['macOS','Windows','Linux']],
     ['AGPL-3.0','1.31.0','2026-11-23',['Web','Linux']],
     ['GPL-3.0','5.3.0',null,['macOS','Windows','Linux']],
+    ['Apache-2.0','2.3.5',null,['Web','Linux']],
   ]);
   assert.match(nnw.free_tier_limits, /Mac 7\.3\.1 需 macOS 15\+.*iOS 7\.3\.1（7244）.*iOS\/iPadOS 18\+.*官网却写 iOS 26\+.*两个发布说明.*停止刷新 Reddit/);
   assert(nnw.sources.some(s => s.endsWith('/mac-7.3.1')));
@@ -60,4 +62,12 @@ test('RSS Guard distinguishes local reading from service-backed sync and hosting
   assert.match(guard.features.rss_sync.note, /本机账号状态不自动跨设备.*Google Reader API/);
   assert.match(guard.features.rss_selfhost.note, /本身不是聚合服务器/);
   assert(guard.sources.some(s => s.endsWith('/5.3.0/LICENSE.md')));
+});
+
+test('Miniflux is a PostgreSQL server with a partial client API and no web article cache', () => {
+  assert.match(miniflux.free_tier_limits, /自托管版.*PostgreSQL 11/);
+  assert.match(miniflux.features.rss_opml.note, /完整实例备份.*PostgreSQL/);
+  assert.match(miniflux.features.rss_sync.note, /NetNewsWire.*RSS Guard.*部分 Google Reader API/);
+  assert.match(miniflux.features.rss_offline.note, /只缓存离线提示页，不缓存文章/);
+  assert(miniflux.sources.some(s => s.endsWith('/2.3.5/internal/ui/static/js/service_worker.js')));
 });
