@@ -22,3 +22,20 @@ test('verified product logos load locally on desktop, mobile and detail pages', 
   await expect(image).toBeVisible();
   await expect.poll(() => image.evaluate((node: HTMLImageElement) => node.naturalWidth)).toBeGreaterThan(0);
 });
+
+test('browser comparison shows verified logos on desktop and mobile', async ({ page }) => {
+  for (const width of [1280, 390]) {
+    await page.setViewportSize({ width, height: 900 });
+    await page.goto('/c/browsers/');
+    const container = page.locator(width === 1280 ? '#matrix' : '#card-list');
+    for (const id of ['brave', 'dia', 'ego-lite', 'helium']) {
+      const badge = container.locator(`[data-product-id="${id}"] [data-product-logo="verified"]`);
+      await expect(badge).toBeVisible();
+      await expect(badge.locator('img')).toHaveAttribute('src', `/product-logos/${id}.webp`);
+    }
+  }
+  await page.goto('/p/browsers/ego-lite/');
+  const image = page.locator('.detail-hero [data-product-logo="verified"] img');
+  await expect(image).toBeVisible();
+  await expect.poll(() => image.evaluate((node: HTMLImageElement) => node.naturalWidth)).toBeGreaterThan(0);
+});
