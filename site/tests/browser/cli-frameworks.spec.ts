@@ -18,7 +18,8 @@ test('CLI framework core and plugin boundaries across languages and widths',asyn
      await expect(page.locator('.feature-row').nth(4).getByText(lang==='en'?'not a multi-step form':'不是多步表单',{exact:false})).toBeVisible();
     }
     if(id==='system-commandline'){
-     await expect(page.locator('.feature-row').nth(3).getByText('dotnet-suggest',{exact:false})).toBeVisible();
+     const shellSetup = lang === 'en' ? 'uses dotnet-suggest, a shell shim' : '安装 dotnet-suggest、加载对应 Shell 脚本';
+     await expect(page.locator('.feature-row').nth(3).getByText(shellSetup,{exact:false})).toBeVisible();
      await expect(page.locator('.feature-row').nth(4).locator('.feat-empty')).toHaveAttribute('title',lang==='en'?'Unknown':'未知');
     }
     if(id==='clap'){
