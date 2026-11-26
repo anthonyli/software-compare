@@ -260,6 +260,63 @@
         "https://rssguard.readthedocs.io/en/stable/services/google-reader-api.html",
         "https://rssguard.readthedocs.io/en/latest/features/extractor.html"
       ]
+    },
+    {
+      "id": "miniflux",
+      "name": "Miniflux",
+      "official_url": "https://miniflux.app/",
+      "github_url": "https://github.com/miniflux/v2",
+      "platforms": [
+        "Web",
+        "Linux"
+      ],
+      "license": "Apache-2.0",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": "2.3.5",
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-26",
+      "summary": "轻量自托管 RSS 聚合服务器，提供响应式网页和供兼容阅读器连接的接口。",
+      "price_summary": "自托管软件免费开源，采用 Apache-2.0；服务器、数据库和备份费用自理。",
+      "free_tier_limits": "此条只比较自托管版。需要 PostgreSQL 11 或更新版本；网页用现代浏览器访问，服务端主要在 Linux 上测试。",
+      "features": {
+        "rss_direct": {
+          "value": "no",
+          "note": "RSS、Atom 和 JSON Feed 由 Miniflux 服务器抓取，内置网页不在本机直接订阅。"
+        },
+        "rss_opml": {
+          "value": "yes",
+          "note": "支持 OPML 导入和导出；完整实例备份需要备份 PostgreSQL 数据库。"
+        },
+        "rss_offline": {
+          "value": "no",
+          "note": "2.3.5 的内置网页只缓存离线提示页，不缓存文章供离线阅读；第三方客户端可另有缓存。"
+        },
+        "rss_sync": {
+          "value": "yes",
+          "note": "服务器保存阅读状态；NetNewsWire 和 RSS Guard 可通过兼容接口连接，但只实现部分 Google Reader API。"
+        },
+        "rss_fulltext": {
+          "value": "yes",
+          "note": "服务端可尝试用 Readability 提取正文，支持按订阅源自定义 CSS 选择器；不保证所有页面可提取。"
+        },
+        "rss_selfhost": {
+          "value": "yes",
+          "note": "可以运行自己的实例，用 PostgreSQL 存储订阅和阅读数据。"
+        }
+      },
+      "sources": [
+        "https://miniflux.app/features.html",
+        "https://miniflux.app/docs/requirements.html",
+        "https://miniflux.app/docs/google_reader.html",
+        "https://miniflux.app/faq.html#how-do-i-back-up-my-data",
+        "https://github.com/miniflux/v2/releases/tag/2.3.5",
+        "https://github.com/miniflux/v2/blob/2.3.5/LICENSE",
+        "https://github.com/miniflux/v2/blob/2.3.5/internal/ui/static/js/service_worker.js"
+      ]
     }
   ]
 }
