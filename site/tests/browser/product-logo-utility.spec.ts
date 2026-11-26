@@ -8,6 +8,7 @@ const apps = [
   { category: 'quick-translation-ocr', id: 'easydict', name: 'Easydict' },
   { category: 'terminal-emulators', id: 'kaku', name: 'Kaku' },
   { category: 'menu-bar-calendars', id: 'itsycal', name: 'Itsycal' },
+  { category: 'image-uploaders', id: 'picgo', name: 'PicGo' },
 ];
 
 for (const app of apps) {
