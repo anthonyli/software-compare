@@ -239,7 +239,13 @@ a:visited {
   border: 1px solid var(--color-line-strong);
 }
 
-.chip-oss,
+.product-oss-label {
+  color: #356257;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
 .chip-free {
   color: #111;
   border-color: #d4d4d8;

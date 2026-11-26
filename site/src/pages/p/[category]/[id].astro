@@ -65,6 +65,7 @@ const priceSummaryZh = priceZh.summary && !isUnknownish(priceZh.summary) ? clean
 
 const showLicense = licenseText && !isUnknownish(licenseText);
 const showStatus = product.maintenance_status && !isUnknownish(product.maintenance_status);
+const statusPending = !!product.maintenance_status?.includes("未评估");
 const showStars = product.github_stars != null;
 const showRelease = !isUnknownish(product.latest_release) || !isUnknownish(product.latest_release_date);
 const hasMeta = product.open_source || showLicense || showStatus || showStars || showRelease;
@@ -233,7 +234,7 @@ const hostNoteZh = cleanPublicText(product.source_host_note);
           {showStatus && (
             <>
               <dt><T zh="维护状态（资料采集时）" en="Maintenance at collection" /></dt>
-              <dd><T zh={product.maintenance_status!} en={maintenanceEn(product.maintenance_status)} /></dd>
+              <dd data-product-maintenance><T zh={statusPending ? "尚未核实" : product.maintenance_status!} en={statusPending ? "Not yet verified" : maintenanceEn(product.maintenance_status)} /></dd>
             </>
           )}
           {showStars && (

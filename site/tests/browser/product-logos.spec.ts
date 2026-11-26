@@ -76,3 +76,20 @@ test('logo rows have no outer tile and mixed rows align without boxed initials',
     await expect(page.locator('.detail-hero [data-product-logo]')).toHaveCount(0);
   }
 });
+
+test('license and maintenance use different emphasis in comparison rows', async ({ page }) => {
+  await page.route('**/api/**', (route) => route.fulfill({ status: 503, body: '' }));
+  for (const width of [1280, 390]) {
+    await page.setViewportSize({ width, height: 960 });
+    await page.goto('/c/browsers/');
+    const container = page.locator(width === 1280 ? '#matrix' : '#card-list');
+    const brave = container.locator('[data-product-id="brave"]');
+    await expect(brave.locator('.product-oss-label')).toBeVisible();
+    await expect(brave.locator('.product-oss-label')).toHaveCSS('border-top-width', '0px');
+    await expect(brave.locator('.chip-warn')).toHaveCount(0);
+    await expect(container.locator('[data-product-id="safari"] .product-oss-label')).toHaveCount(0);
+  }
+
+  await page.goto('/p/browsers/brave/');
+  await expect(page.locator('[data-product-maintenance]')).toContainText('尚未核实');
+});
