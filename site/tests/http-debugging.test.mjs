@@ -1,5 +1,5 @@
 import {test} from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';
-const read=p=>JSON.parse(fs.readFileSync(new URL('../../'+p,import.meta.url),'utf8'));const c=read('categories/http-debugging.json'),en=read('site/src/i18n/content-en.json');
+const read=p=>JSON.parse(fs.readFileSync(new URL('../../'+p,import.meta.url),'utf8'));const c=read('categories/http-debugging.json'),en={...read('site/src/i18n/content-en.json'),...read('site/src/i18n/public-content-en.json')};
 test('HTTP debugging keeps five identities and sourced subscription boundaries',()=>{
  assert.deepEqual(c.products.map(p=>p.id),['mitmproxy','charles','proxyman','http-toolkit','fiddler-everywhere']);
  for(const p of c.products){assert.deepEqual(Object.keys(p.features),c.features.map(f=>f.key));assert.deepEqual(p.platforms,['Windows','macOS','Linux']);assert.equal(p.collected_at,p.id==='fiddler-everywhere'?'2026-11-25':'2026-11-19');assert(p.sources.length>=4);for(const k of ['github_stars','latest_release','latest_release_date','maintenance_status'])assert.equal(p[k],null);}

@@ -133,7 +133,7 @@
       "pricing_model": "免费试用 / 付费许可",
       "summary": "跨平台桌面 HTTP 调试代理，提供断点、请求重放及 Map Local；另有独立移动应用。",
       "price_summary": "个人永久许可含一年更新，可继续使用已获版本；团队另有按年计费订阅，移动席位随套餐而异。",
-      "free_tier_limits": "可免费开始使用；完整 SSL Proxying、断点和 Map Local 列为付费功能。本次未确认试用全部限额，不能视为无限免费；不同平台功能可能有差异。",
+      "free_tier_limits": "可免费开始使用，无需绑卡。官方定价表列明 Starter 的调试规则限 1 条，不含断点和 Map Local；功能可能因平台而异。",
       "features": {
         "https_inspect": {
           "value": "paid"
