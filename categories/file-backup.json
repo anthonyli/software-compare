@@ -684,6 +684,68 @@
         "https://raw.githubusercontent.com/borgbase/vorta/v0.12.2/src/vorta/borg/check.py",
         "https://borgbackup.readthedocs.io/en/1.4-maint/usage/check.html"
       ]
+    },
+    {
+      "id": "back-in-time",
+      "name": "Back In Time",
+      "official_url": "https://backintime.readthedocs.io/en/latest/",
+      "github_url": "https://github.com/bit-team/backintime",
+      "platforms": [
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-2.0-or-later",
+      "pricing_model": "免费开源",
+      "price_summary": "桌面工具免费开源，不需要订阅；备份磁盘或远端主机由用户自备，费用另计。",
+      "prices": [],
+      "free_tier_limits": "面向 GNU/Linux；不是整机镜像。目标文件系统需支持硬链接，SSH 远端也需要可用的 rsync。",
+      "github_stars": null,
+      "latest_release": "1.6.2",
+      "latest_release_date": "2026-10-14",
+      "collected_at": "2026-11-26",
+      "summary": "面向 GNU/Linux 的 rsync 文件快照工具，为未变文件复用硬链接，适合希望用文件管理器直接查看未加密历史的桌面用户。",
+      "features": {
+        "backup_snapshots": {
+          "value": "yes",
+          "note": "每个快照有独立目录，未变文件通过硬链接复用，不是块级去重。"
+        },
+        "backup_encryption": {
+          "value": "partial",
+          "note": "SSH 保护传输，不等于静态加密。稳定版 1.6.2 不建议新建本地 gocryptfs 配置；旧 EncFS 处于淘汰过渡期。"
+        },
+        "backup_destinations": {
+          "value": "yes",
+          "note": "可保存到支持硬链接的本地目录或经 SSH 备份至远端；普通 SSHFS 挂载不支持所需的硬链接。"
+        },
+        "backup_retention": {
+          "value": "yes",
+          "note": "可按时间保留和清理旧快照；1.6.2 修复了按年龄清理规则。"
+        },
+        "backup_schedule": {
+          "value": "yes",
+          "note": "配置中可设定自动计划，多数定时模式依赖系统 cron；固定时点和可补跑模式不同。"
+        },
+        "backup_gui": {
+          "value": "yes",
+          "note": "官方提供 Qt 桌面图形界面，也可用命令行。"
+        },
+        "backup_restore": {
+          "value": "yes",
+          "note": "可从应用恢复选定快照；未加密快照也可用文件管理器浏览并复制文件。"
+        },
+        "backup_verify": {
+          "value": "unknown",
+          "note": "已核实 rsync 快照与恢复流程，未核实独立读取整份快照内容的校验功能；不要把 rsync 变更检测当作完整校验。"
+        }
+      },
+      "sources": [
+        "https://github.com/bit-team/backintime/blob/v1.6.2/README.md",
+        "https://backintime.readthedocs.io/en/latest/",
+        "https://backintime.readthedocs.io/en/latest/manage-profiles.html",
+        "https://github.com/bit-team/backintime/releases/tag/v1.6.2",
+        "https://raw.githubusercontent.com/bit-team/backintime/v1.6.2/common/snapshots.py",
+        "https://raw.githubusercontent.com/bit-team/backintime/v1.6.2/doc/ENCRYPT_TRANSITION.md"
+      ]
     }
   ]
 }

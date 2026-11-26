@@ -83,8 +83,8 @@ test('AI navigation has exactly the three requested categories and retains local
 test('file backup distinguishes default checks, external scheduling and optional Borg encryption', () => {
  const category = categories.find(c => slug(c) === 'file-backup');
  const [restic, kopia, borg] = category.products;
- assert.deepEqual(category.products.map(p => p.id), ['restic', 'kopia', 'borgbackup', 'time-machine', 'windows-file-history', 'arq-7', 'duplicati', 'deja-dup', 'pika-backup', 'vorta']);
- assert.deepEqual(category.products.map(p => p.features.backup_schedule.value), ['no', 'yes', 'no', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes']);
+ assert.deepEqual(category.products.map(p => p.id), ['restic', 'kopia', 'borgbackup', 'time-machine', 'windows-file-history', 'arq-7', 'duplicati', 'deja-dup', 'pika-backup', 'vorta', 'back-in-time']);
+ assert.deepEqual(category.products.map(p => p.features.backup_schedule.value), ['no', 'yes', 'no', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes']);
  assert.match(restic.features.backup_verify.note, /默认.*--read-data/);
  assert.match(kopia.features.backup_verify.note, /默认.*--verify-files-percent=100/);
  assert.equal(borg.features.backup_encryption.value, 'partial');
@@ -199,4 +199,16 @@ test('Friction records the stable release and does not count experimental Androi
  assert.match(p.latest_release_date_note, /WebM.*图像序列.*macOS 26/);
  assert.match(p.summary, /2026-11-08 公告稳定版 1\.0\.0.*WebM/);
  assert(p.sources.includes('https://friction.graphics/releases/friction-100.html'));
+});
+
+test('Back In Time distinguishes file-level reuse, SSH transport and full verification', () => {
+ const p = categories.find(c => slug(c) === 'file-backup').products.find(p => p.id === 'back-in-time');
+ assert.deepEqual(p.platforms, ['Linux']);
+ assert.equal(p.license, 'GPL-2.0-or-later');
+ assert.equal(p.latest_release, '1.6.2');
+ assert.match(p.features.backup_snapshots.note, /硬链接复用，不是块级去重/);
+ assert.equal(p.features.backup_encryption.value, 'partial');
+ assert.match(p.features.backup_encryption.note, /SSH 保护传输.*不建议新建本地 gocryptfs/);
+ assert.match(p.features.backup_schedule.note, /系统 cron/);
+ assert.equal(p.features.backup_verify.value, 'unknown');
 });
