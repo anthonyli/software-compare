@@ -50,7 +50,7 @@
       "latest_release_date": null,
       "maintenance_status": null,
       "collected_at": "2026-11-24",
-      "summary": "苹果设备上的开源 RSS 阅读器，可用本机订阅，也可选 iCloud 或兼容的同步服务。",
+      "summary": "苹果设备上的开源 RSS 阅读器，可用本机订阅，也可选 iCloud 或兼容的同步服务。Mac、iPhone 和 iPad 支持第三方文章主题，例如为中文阅读优化的妙言主题。",
       "price_summary": "应用免费，源代码采用 MIT 许可。另选 Feedbin、FreshRSS 等同步方式，所需账号、托管或订阅费用各自计算。",
       "free_tier_limits": "Mac 7.3.1 需 macOS 15+；iOS 7.3.1（7244）发布标签的构建设置与美国 App Store 均指向 iOS/iPadOS 18+，官网却写 iOS 26+，以具体发行渠道为准。两个发布说明均写明停止刷新 Reddit 订阅源，不能沿用旧帮助的 Reddit 支持说明。",
       "features": {
@@ -89,7 +89,10 @@
         "https://netnewswire.com/help/mac/5.1/en/on-my-mac.html",
         "https://netnewswire.com/help/ios/6.0/en/import-opml.html",
         "https://netnewswire.com/frequently-asked-questions.html",
-        "https://netnewswire.com/privacypolicy.html"
+        "https://netnewswire.com/privacypolicy.html",
+        "https://netnewswire.com/help/mac/6.1/en/themes.html",
+        "https://netnewswire.com/help/ios/6.1/en/themes.html",
+        "https://github.com/tw93/MiaoYan-NetNewsWire-Theme"
       ]
     },
     {

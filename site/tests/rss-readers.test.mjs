@@ -4,7 +4,7 @@ import fs from 'node:fs';
 
 const read = path => fs.readFileSync(new URL('../../' + path, import.meta.url), 'utf8');
 const data = JSON.parse(read('categories/rss-readers.json'));
-const en = JSON.parse(read('site/src/i18n/content-en.json'));
+const en = { ...JSON.parse(read('site/src/i18n/content-en.json')), ...JSON.parse(read('site/src/i18n/public-content-en.json')) };
 const [nnw, fluent, fresh, guard, miniflux, newsflash, capy, newsboat] = data.products;
 const keys = ['rss_direct','rss_opml','rss_offline','rss_sync','rss_fulltext','rss_selfhost'];
 
@@ -101,4 +101,14 @@ test('Newsboat distinguishes a terminal HTML renderer from original-page extract
   assert.match(newsboat.features.rss_sync.note, /Miniflux.*API 令牌.*不会自动跨设备/);
   assert.match(newsboat.features.rss_offline.note, /本机缓存.*未缓存.*需网络/);
   assert(newsboat.sources.some(s => s.endsWith('/r2.45.1/LICENSE')));
+});
+
+test('NetNewsWire article themes link to the official guides and original MiaoYan theme', () => {
+  assert.match(nnw.summary, /Mac、iPhone 和 iPad.*第三方文章主题.*妙言/);
+  assert.match(en[nnw.summary], /Mac, iPhone, and iPad.*third-party article themes.*MiaoYan/);
+  for (const source of [
+    'https://netnewswire.com/help/mac/6.1/en/themes.html',
+    'https://netnewswire.com/help/ios/6.1/en/themes.html',
+    'https://github.com/tw93/MiaoYan-NetNewsWire-Theme',
+  ]) assert(nnw.sources.includes(source));
 });
