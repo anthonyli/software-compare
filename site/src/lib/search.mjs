@@ -29,9 +29,20 @@ export function oneEditAway(a, b) {
   return a.length > b.length ? a.slice(i + 1) === b.slice(i) : a.slice(i) === b.slice(i + 1);
 }
 
+// Exact task aliases only; normal keyword, product and typo search is unchanged.
+const SCROLLING_CAPTURE_QUERIES = new Set([
+  '长截图', '滚动截图', '滚动长截图',
+  'scrolling screenshot', 'scrolling screenshots', 'scrolling capture',
+]);
+
 export function searchCatalog(index, query, limit = 12) {
   const normalized = normalizeSearch(query);
   if (!normalized || normalized.length > 200) return [];
+  if (SCROLLING_CAPTURE_QUERIES.has(normalized)) {
+    return index.filter(({ item }) => item.scrolling_capture === true)
+      .sort((a, b) => a.item.name.localeCompare(b.item.name, 'zh-CN'))
+      .slice(0, limit).map(({ item }) => item);
+  }
   const tokens = [...new Set(normalized.split(' '))];
   return index.map(entry => {
     let score = 0;
