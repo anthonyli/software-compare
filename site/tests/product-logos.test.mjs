@@ -34,7 +34,7 @@ test('the eight first-batch RSS readers retain their sourced logos', () => {
   for (const id of ['capy-reader', 'fluent-reader', 'freshrss', 'miniflux', 'netnewswire', 'newsboat', 'newsflash', 'rss-guard']) {
     assert.ok(ids.has(id) && Object.hasOwn(sources, id), id);
   }
-  // Later catalog entries can use the initials fallback until their logos are available.
+  // Later catalog entries can remain unbadged until their logos are available.
 });
 
 test('the four first-batch browsers have their own sourced logos', () => {

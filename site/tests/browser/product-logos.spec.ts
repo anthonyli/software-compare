@@ -39,3 +39,36 @@ test('browser comparison shows verified logos on desktop and mobile', async ({ p
   await expect(image).toBeVisible();
   await expect.poll(() => image.evaluate((node: HTMLImageElement) => node.naturalWidth)).toBeGreaterThan(0);
 });
+
+test('logo rows have no outer tile and mixed rows align without boxed initials', async ({ page }) => {
+  await page.route('**/api/**', (route) => route.fulfill({ status: 503, body: '' }));
+  let unillustratedHref: string | null = null;
+  for (const width of [1280, 390]) {
+    await page.setViewportSize({ width, height: 900 });
+    await page.goto('/c/browsers/');
+    const container = page.locator(width === 1280 ? '#matrix' : '#card-list');
+    const verified = container.locator('[data-product-id="brave"]');
+    const icon = verified.locator('[data-product-logo="verified"]');
+    await expect(icon).toHaveCSS('border-top-width', '0px');
+    await expect(icon).toHaveCSS('background-color', 'rgba(0, 0, 0, 0)');
+    const unverified = container.locator('[data-product-id]').filter({
+      has: page.locator('[data-product-logo="placeholder"]'),
+    }).first();
+    if (!(await unverified.count())) continue; // The catalog can eventually have full coverage.
+    const emptySlot = unverified.locator('[data-product-logo="placeholder"]');
+    await expect(emptySlot).toBeEmpty();
+    await expect(emptySlot).toHaveAttribute('aria-hidden', 'true');
+    const namedLink = width === 1280 ? '.product-name' : '.card-title';
+    const verifiedLeft = (await verified.locator(namedLink).boundingBox())?.x;
+    const unverifiedLink = unverified.locator(namedLink);
+    expect(verifiedLeft).toBeDefined();
+    expect((await unverifiedLink.boundingBox())?.x).toBe(verifiedLeft);
+    unillustratedHref = await unverifiedLink.getAttribute('href');
+  }
+
+  if (unillustratedHref) {
+    await page.goto(unillustratedHref);
+    await expect(page.locator('.detail-hero h1')).toBeVisible();
+    await expect(page.locator('.detail-hero [data-product-logo]')).toHaveCount(0);
+  }
+});

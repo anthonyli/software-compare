@@ -7,6 +7,7 @@ import ExtLinks from "../../components/ExtLinks.astro";
 import FilterMenu from "../../components/FilterMenu.astro";
 import T from "../../components/T.astro";
 import ProductLogo from "../../components/ProductLogo.astro";
+import productLogoSources from "../../lib/product-logo-sources.json";
 import VoteButton from '../../components/VoteButton.astro';
 import VoteStatus from '../../components/VoteStatus.astro';
 import GitHubFreshness from '../../components/GitHubFreshness.astro';
@@ -39,6 +40,7 @@ export function getStaticPaths() {
 }
 
 const { category } = Astro.props as { category: Category };
+const hasProductLogos = category.products.some((product) => Object.hasOwn(productLogoSources, product.id));
 const catNames = catPair(category.slug, category.name);
 const groupNames = groupPair(category.groupId, category.groupName);
 const platforms = [...new Set(category.products.flatMap((p) => p.platforms))].sort((a, b) =>
@@ -212,28 +214,28 @@ const sortedProducts = [...category.products].sort((a, b) => {
                 >
                   <td class="sticky-col">
                     <div class="flex items-start justify-between gap-2">
-                      <div class="min-w-0">
-                        <div class="flex items-center gap-2">
-                          <ProductLogo id={p.id} name={p.name} />
+                      <div class="flex min-w-0 items-start gap-2">
+                        <ProductLogo id={p.id} reserve={hasProductLogos} />
+                        <div class="min-w-0">
                           <a href={p.href} class="product-name" title={p.name} data-i18n="title" data-zh={p.name} data-en={tr(p.name)}><T zh={p.name}/></a>
+                          <div class="mt-1 flex flex-wrap items-center gap-1">
+                            {p.open_source && <span class="chip chip-oss"><T zh={ui.zh.openSource} en={ui.en.openSource} /></span>}
+                            {p.pricing_model === "完全免费" && <span class="chip chip-free"><T zh={ui.zh.fullyFree} en={ui.en.fullyFree} /></span>}
+                            {warn && <span class="chip chip-warn"><T zh={warn} en={maintenanceEn(warn)} /></span>}
+                            {p.github_stars != null && (
+                              <span
+                                class="stars-quiet"
+                                title={`${p.github_stars.toLocaleString("zh-CN")} 星`}
+                                data-i18n="title"
+                                data-zh={uiT("starsCount", "zh", { n: p.github_stars.toLocaleString("zh-CN") })}
+                                data-en={uiT("starsCount", "en", { n: p.github_stars.toLocaleString("en-US") })}
+                              >
+                                ★ <span class="t-zh">{formatStars(p.github_stars, "zh")}</span><span class="t-en">{formatStars(p.github_stars, "en")}</span>
+                              </span>
+                            )}
+                          </div>
+                          <VoteButton id={p.id} name={p.name}/>
                         </div>
-                        <div class="mt-1 flex flex-wrap items-center gap-1">
-                          {p.open_source && <span class="chip chip-oss"><T zh={ui.zh.openSource} en={ui.en.openSource} /></span>}
-                          {p.pricing_model === "完全免费" && <span class="chip chip-free"><T zh={ui.zh.fullyFree} en={ui.en.fullyFree} /></span>}
-                          {warn && <span class="chip chip-warn"><T zh={warn} en={maintenanceEn(warn)} /></span>}
-                          {p.github_stars != null && (
-                            <span
-                              class="stars-quiet"
-                              title={`${p.github_stars.toLocaleString("zh-CN")} 星`}
-                              data-i18n="title"
-                              data-zh={uiT("starsCount", "zh", { n: p.github_stars.toLocaleString("zh-CN") })}
-                              data-en={uiT("starsCount", "en", { n: p.github_stars.toLocaleString("en-US") })}
-                            >
-                              ★ <span class="t-zh">{formatStars(p.github_stars, "zh")}</span><span class="t-en">{formatStars(p.github_stars, "en")}</span>
-                            </span>
-                          )}
-                        </div>
-                        <VoteButton id={p.id} name={p.name}/>
                       </div>
                       <ExtLinks official={p.official_url} github={p.github_url} sourceUrl={src?.url} sourceLabel={src?.label} iconOnly />
                     </div>
@@ -303,7 +305,7 @@ const sortedProducts = [...category.products].sort((a, b) => {
           >
             <div class="flex items-start justify-between gap-3">
               <div class="flex min-w-0 items-center gap-2">
-                <ProductLogo id={p.id} name={p.name} size={28} />
+                <ProductLogo id={p.id} size={24} reserve={hasProductLogos} />
                 <a href={p.href} class="card-title" title={p.name} data-i18n="title" data-zh={p.name} data-en={tr(p.name)}><T zh={p.name}/></a>
               </div>
               {p.github_stars != null && (
