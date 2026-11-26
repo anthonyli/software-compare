@@ -408,7 +408,7 @@
       "features": {
         "activity_import": {
           "value": "unknown",
-          "note": "已核实训练课表导入，不等于可导入任意历史活动文件；后者本轮未核实。"
+          "note": "可创建结构化训练课表，也可下载在 MyWhoosh 里记录的历史骑行 FIT 文件。第三方历史活动的导入支持尚未确认。"
         },
         "power_analysis": {
           "value": "unknown",
@@ -430,7 +430,9 @@
         "https://mywhoosh.com/docs/which-devices-work-with-mywhoosh/",
         "https://mywhoosh.com/docs/what-are-free-slots/",
         "https://mywhoosh.com/docs/what-do-i-get-with-a-subscription/",
-        "https://mywhoosh.com/privacy-policy/"
+        "https://mywhoosh.com/privacy-policy/",
+        "https://mywhoosh.com/docs/where-can-i-create-workouts/",
+        "https://mywhoosh.com/docs/how-do-i-view-my-past-rides-on-mywhoosh/"
       ]
     },
     {
