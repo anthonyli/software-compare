@@ -29,12 +29,20 @@ for (const locale of ['zh', 'en'] as const) {
   });
 }
 
-test('UU Remote table and detail preserve freemium without invented prices', async ({ page }) => {
+test('UU Remote keeps freemium and displays scoped mainland China iOS subscriptions', async ({ page }) => {
   await page.goto('/c/remote-desktop/');
   const row = page.locator('#matrix [data-product-id="uu-remote"]');
   await expect(row).toContainText('免费增值');
   await expect(row).not.toContainText('完全免费');
   await page.goto('/p/remote-desktop/uu-remote/');
   await expect(page.locator('main')).toContainText('免费增值');
-  await expect(page.locator('main')).toContainText('付费会员和增值服务');
+  const main = page.locator('main');
+  await expect(main).toContainText('中国大陆 iOS App Store');
+  await expect(main.getByRole('row').filter({ hasText: 'VIP（中国大陆 iOS，自动续费）' }).filter({ hasText: '¥24' })).toHaveCount(1);
+  await expect(main.getByRole('row').filter({ hasText: 'SVIP（中国大陆 iOS，自动续费）' })).toContainText('¥88');
+  await page.getByRole('button', { name: 'EN', exact: true }).click();
+  await expect(main).toContainText('Freemium');
+  await expect(main).toContainText('Mainland China iOS App Store: VIP ¥24/month and SVIP ¥88/month');
+  await expect(main.getByRole('row').filter({ hasText: 'VIP (mainland China iOS, auto-renewing)' }).filter({ hasText: '¥24' })).toHaveCount(1);
+  await expect(main.getByRole('row').filter({ hasText: 'SVIP (mainland China iOS, auto-renewing)' })).toContainText('¥88');
 });

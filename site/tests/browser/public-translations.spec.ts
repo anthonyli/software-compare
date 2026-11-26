@@ -8,7 +8,7 @@ import type { Product } from '../../src/lib/load-data';
 const uu = remote.products.find(p => p.id === 'uu-remote')!;
 
 test('UU translations use explicitly reviewed public keys after cleaning', () => {
-  const sources = [uu.price_summary, uu.latest_release_date_note, uu.features.e2e_encryption.note, uu.features.free_for_commercial.note];
+  const sources = [uu.latest_release_date_note, uu.features.e2e_encryption.note, uu.features.free_for_commercial.note];
   for (const source of sources) {
     const cleaned = cleanPublicText(source);
     expect(cleaned).not.toBe(source);
@@ -16,7 +16,8 @@ test('UU translations use explicitly reviewed public keys after cleaning', () =>
     expect(tr(cleaned)).toBe(publicTranslations[cleaned as keyof typeof publicTranslations]);
     expect(tr(cleaned)).not.toMatch(/[\u4e00-\u9fff]/);
   }
-  expect(formatPriceDisplay(uu as unknown as Product, 'en').summary).toBe(tr(cleanPublicText(uu.price_summary)));
+  expect(cleanPublicText(uu.price_summary)).toBe(uu.price_summary);
+  expect(formatPriceDisplay(uu as unknown as Product, 'en').summary).toBe(tr(uu.price_summary));
   expect(formatPriceDisplay(uu as unknown as Product, 'zh').summary).toBe(cleanPublicText(uu.price_summary));
 });
 
@@ -36,7 +37,7 @@ test('UU detail toggles languages without untranslated cleaned explanations', as
   await page.goto('/p/remote-desktop/uu-remote/');
   await page.getByRole('button', { name: 'EN', exact: true }).click();
   const main = page.locator('main');
-  await expect(main).toContainText(publicTranslations[cleanPublicText(uu.price_summary)]);
+  await expect(main).toContainText(tr(uu.price_summary));
   await expect(main).toContainText(publicTranslations[cleanPublicText(uu.features.e2e_encryption.note)]);
   await expect(main).toContainText(publicTranslations[cleanPublicText(uu.features.free_for_commercial.note)]);
   await expect(main).not.toContainText('本轮');
