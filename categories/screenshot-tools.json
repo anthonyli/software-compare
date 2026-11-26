@@ -1185,7 +1185,7 @@
         },
         "scrolling_capture": {
           "value": "yes",
-          "note": "官网：scrolling screenshots；可截长网页或对话"
+          "note": "仅支持纵向滚动截图。Terminal、iTerm2 或 VS Code 自动滚动出现拼接问题时，可改用手动滚动模式。"
         },
         "delay_timer": {
           "value": "yes"
@@ -1217,7 +1217,8 @@
         "https://shottr.cc",
         "https://shottr.cc/purchase.html",
         "https://shottr.cc/kb/faq",
-        "https://shottr.cc/kb/urlschemes"
+        "https://shottr.cc/kb/urlschemes",
+        "https://shottr.cc/kb/scrollingcapture"
       ]
     },
     {

@@ -33,5 +33,6 @@
   "官方 FAQ 明确当前不支持自定义事件。": "The official FAQ says custom events are not supported.",
   "Web Analytics 不提供基于页面及自定义事件的产品漏斗。": "Web Analytics does not offer product funnels built from pages and custom events.",
   "报告真实用户的核心网页性能指标。": "Reports Core Web Vitals from real users.",
-  "这是 Cloudflare 托管服务，非可下载的自建软件。": "A Cloudflare-hosted service, not downloadable self-hosted software."
+  "这是 Cloudflare 托管服务，非可下载的自建软件。": "A Cloudflare-hosted service, not downloadable self-hosted software.",
+  "仅支持纵向滚动截图。Terminal、iTerm2 或 VS Code 自动滚动出现拼接问题时，可改用手动滚动模式。": "Vertical scrolling capture only. If automatic capture stitches poorly in Terminal, iTerm2, or VS Code, try manual scrolling mode."
 }
