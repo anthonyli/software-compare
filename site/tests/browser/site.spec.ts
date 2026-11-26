@@ -73,12 +73,27 @@ test('views, GitHub header, dates, language and mobile layout',async({page})=>{
  await page.locator('[data-view="table"]').click();await expect(page.locator('#matrix')).toBeVisible();
 });
 test('failed vote does not invent a count and retry restores service',async({page})=>{
+ // Keep the real recovery request independent of other newly created test sessions.
+ // This address is reserved for documentation; the suite only runs on localhost.
+ await page.setExtraHTTPHeaders({'CF-Connecting-IP':'203.0.113.246'});
  await page.route('**/api/votes*',route=>route.fulfill({status:503,contentType:'application/json',body:'{"error":"unavailable"}'}));
  await page.goto('/p/screenshot-tools/flameshot/');
  await expect(page.locator('[data-vote-status]')).toBeVisible();
  await expect(page.locator('[data-vote-count]')).toHaveText('—');
  await expect(page.locator('[data-vote-id]')).toBeDisabled();
- await page.unroute('**/api/votes*');await page.locator('[data-vote-retry]').click();
+ await page.unroute('**/api/votes*');
+ const [retry] = await Promise.all([
+  page.waitForResponse(response => response.request().method() === 'GET' &&
+    new URL(response.url()).pathname === '/api/votes' &&
+    new URL(response.url()).searchParams.get('ids') === 'flameshot'),
+  page.locator('[data-vote-retry]').click(),
+ ]);
+ expect(retry.status(), 'Real vote retry GET should return HTTP 200 after the mocked 503').toBe(200);
+ const recovered = await retry.json();
+ expect(recovered.votes, 'Real retry should return a valid Flameshot vote').toEqual([
+  {id:'flameshot',count:expect.any(Number),liked:false},
+ ]);
+ await expect(page.locator('[data-vote-status]')).toBeHidden();
  await expect(page.locator('[data-vote-id]')).toBeEnabled();
  const before=await page.locator('[data-vote-count]').innerText();
  await page.route('**/api/votes',route=>route.fulfill({status:503,contentType:'application/json',body:'{}'}));
