@@ -1,0 +1,71 @@
+[
+  {
+    "slug": "indie-developer",
+    "tone": "lime",
+    "title": {"zh": "独立开发者", "en": "Indie developer"},
+    "description": {"zh": "从写第一行代码，到把站点交给用户。", "en": "From the first line of code to a site people can use."},
+    "steps": [
+      {
+        "category": "code-editors", "products": ["vscode", "zed"],
+        "title": {"zh": "写代码", "en": "Write code"},
+        "decision": {"zh": "已有常用扩展，先确认兼容性；更看重协作，就比较共享编辑和项目支持。", "en": "Check support for the extensions you rely on, or compare shared editing and project support if collaboration comes first."}
+      },
+      {
+        "category": "http-debugging", "products": ["mitmproxy", "proxyman"],
+        "title": {"zh": "调试接口", "en": "Debug requests"},
+        "decision": {"zh": "需要终端扩展和脚本时看 mitmproxy；喜欢图形界面时，先核对 Proxyman 断点和本地模拟的套餐限制。", "en": "Consider mitmproxy for terminal and scripting workflows. If you prefer a graphical UI, check Proxyman's plan limits for breakpoints and local mocking."}
+      },
+      {
+        "category": "web-hosting", "products": ["vercel", "cloudflare-pages"],
+        "title": {"zh": "部署上线", "en": "Deploy the site"},
+        "decision": {"zh": "先分清静态站还是要跑函数，再看免费档的计算额度与商用条款。", "en": "Decide whether the site needs functions or is purely static, then check compute allowances and commercial-use terms."}
+      }
+    ]
+  },
+  {
+    "slug": "content-creator",
+    "tone": "peach",
+    "title": {"zh": "内容创作者", "en": "Content creator"},
+    "description": {"zh": "录一段讲解，剪掉废话，再做一张封面。", "en": "Record a walkthrough, trim it down and make a cover."},
+    "steps": [
+      {
+        "category": "screen-recorders", "products": ["obs-studio", "screen-studio"],
+        "title": {"zh": "录教程和演示", "en": "Record a walkthrough"},
+        "decision": {"zh": "需要跨平台、直播或多场景时看 OBS；在 Mac 上要快速做带缩放和光标效果的演示时看 Screen Studio。", "en": "Consider OBS for cross-platform recording, streaming or multiple scenes. Consider Screen Studio for Mac demos with zoom and cursor effects."}
+      },
+      {
+        "category": "video-editors", "products": ["kdenlive", "davinci-resolve"],
+        "title": {"zh": "剪辑和调色", "en": "Edit and grade"},
+        "decision": {"zh": "比较开源剪辑流程和一站式调色需求，先拿一段自己的素材确认编码兼容。", "en": "Compare open-source editing with an all-in-one grading workflow, and check codec compatibility with one of your own clips."}
+      },
+      {
+        "category": "image-editors", "products": ["gimp", "photopea"],
+        "title": {"zh": "制作发布封面", "en": "Make a cover"},
+        "decision": {"zh": "需要桌面修图和合成时看 GIMP；要在浏览器里打开 PSD 时，先用一份实际模板验证图层效果。", "en": "Consider GIMP for desktop editing and compositing. If working with PSDs in the browser, test the layers in a template you actually use."}
+      }
+    ]
+  },
+  {
+    "slug": "privacy-first",
+    "tone": "blue",
+    "title": {"zh": "重视隐私的效率用户", "en": "Privacy-minded power user"},
+    "description": {"zh": "先想清楚数据放哪，再选笔记、密码和阅读工具。", "en": "Decide where your data should live before choosing notes, passwords and reading tools."},
+    "steps": [
+      {
+        "category": "password-managers", "products": ["keepassxc", "bitwarden"],
+        "title": {"zh": "管理密码", "en": "Manage passwords"},
+        "decision": {"zh": "对比自己保管 KDBX 文件和跨设备同步两种方式，也想好设备丢失时怎么恢复。", "en": "Compare keeping your own KDBX file with cross-device sync, and plan how to recover access if a device is lost."}
+      },
+      {
+        "category": "note-taking", "products": ["obsidian", "joplin"],
+        "title": {"zh": "记录和迁移笔记", "en": "Take and move notes"},
+        "decision": {"zh": "先试导出和重新导入，再比较本地 Markdown、同步方式和附件能否一起迁移。", "en": "Try an export and reimport first. Compare local Markdown, sync options and whether attachments move with your notes."}
+      },
+      {
+        "category": "rss-readers", "products": ["netnewswire", "miniflux"],
+        "title": {"zh": "订阅和阅读", "en": "Subscribe and read"},
+        "decision": {"zh": "只在苹果设备读，可从本机客户端开始；想自己管跨设备订阅和状态，再考虑自托管聚合器。", "en": "Start with a local client if you read on Apple devices. Consider a self-hosted aggregator if you want to manage subscriptions and reading state across devices."}
+      }
+    ]
+  }
+]
