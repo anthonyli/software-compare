@@ -4162,5 +4162,13 @@
   ".NET 命令行开发库，提供参数与选项解析、嵌套子命令和自动帮助。": ".NET library for building CLIs, with argument and option parsing, nested subcommands, and automatic help.",
   "NuGet 稳定版 3.0.0 面向 .NET 10.0 和 .NET Standard 2.0；部署还取决于应用选择的运行时和目标平台。": "NuGet stable release 3.0.0 targets .NET 10.0 and .NET Standard 2.0; deployment depends on the application's runtime and target platform.",
   "支持动态补全候选。官方为第三方应用列出 Bash、Zsh 和 PowerShell 的配置步骤：安装 dotnet-suggest、加载对应 Shell 脚本并注册可执行文件。": "Supports dynamic completion candidates. For third-party apps, the official Bash, Zsh and PowerShell setup uses dotnet-suggest, a shell shim and executable registration.",
-  "参数校验不等于交互式输入；官方资料未确认核心库内置提问或确认组件。": "Argument validation is not interactive input; the official docs do not confirm built-in prompts or confirmation controls in the core library."
+  "参数校验不等于交互式输入；官方资料未确认核心库内置提问或确认组件。": "Argument validation is not interactive input; the official docs do not confirm built-in prompts or confirmation controls in the core library.",
+  "面向 .NET 的富文本终端输出与轻量交互库，适合为 CLI 增加表格、实时状态和键盘提示；命令解析属于独立的 Spectre.Console.Cli。": ".NET library for rich terminal output and lightweight interaction, including tables, live status and keyboard prompts. Command parsing belongs to the separate Spectre.Console.Cli package.",
+  "核心库免费开源，MIT 许可；不依赖付费服务，依赖包许可另计。": "The core library is free and open source under MIT, with no paid service required. Dependencies have their own licenses.",
+  "NuGet 0.57.2 面向 .NET 8.0 与 .NET Standard 2.0；应用需要兼容的运行时和终端。": "NuGet 0.57.2 targets .NET 8.0 and .NET Standard 2.0; the app needs a compatible runtime and terminal.",
+  "可组合布局并原地刷新；终端支持时可切换备用屏幕。实时显示不是线程安全的，不应与提示或进度显示同时使用。": "Compose layouts and refresh in place; an alternate screen is available when the terminal supports it. Live display is not thread-safe and should not run concurrently with prompts or progress displays.",
+  "内置表格、树、面板、图表与进度显示，不等同于完整桌面控件体系。": "Includes tables, trees, panels, charts and progress displays, not a full desktop widget system.",
+  "支持方向键选择、文本输入和确认；官方资料未确认通用鼠标事件分发。": "Supports arrow-key selection, text input and confirmation; the official docs do not confirm general mouse event dispatch.",
+  "独立 Spectre.Console.Testing 包提供 TestConsole，可捕获输出及预置输入，不需要真实终端。": "The separate Spectre.Console.Testing package provides TestConsole to capture output and queue input without a real terminal.",
+  "官方资料未确认原生浏览器运行；终端控件和 NuGet 兼容列表不是浏览器运行证明。": "Native browser operation is not confirmed by official documentation; terminal widgets and NuGet compatibility listings are not proof of browser support."
 }

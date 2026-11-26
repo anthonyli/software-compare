@@ -16,6 +16,7 @@ test('TUI list separates core support from companion packages and backends', () 
     ['ratatui', ['yes', 'yes', 'partial', 'yes', 'unknown'], /Rust 1\.88/, /ratatui-v0\.30\.2/],
     ['textual', ['yes', 'yes', 'yes', 'yes', 'partial'], /Python \^3\.9/, /v8\.2\.8/],
     ['terminal-gui', ['yes', 'yes', 'yes', 'yes', 'unknown'], /\.NET 10/, /v2\.6\.0/],
+    ['spectre-console', ['yes', 'yes', 'partial', 'yes', 'unknown'], /\.NET 8\.0.*\.NET Standard 2\.0/, /\/0\.57\.2\//],
   ];
   assert.equal(category.products.length, expected.length);
   for (const [i, [id, statuses, runtime, version]] of expected.entries()) {
@@ -26,16 +27,19 @@ test('TUI list separates core support from companion packages and backends', () 
     assert.equal(product.github_stars, null);
     assert.equal(product.latest_release, null);
     assert.match(product.free_tier_limits, runtime);
-    assert(product.sources.some(source => version.test(source) && source.endsWith('/LICENSE')));
+    assert(product.sources.some(source => version.test(source) && /\/LICENSE(?:\.md)?$/.test(source)));
     assert.deepEqual(Object.keys(product.features), cells);
     assert.deepEqual(cells.map(key => product.features[key].value), statuses);
   }
-  const [bubbleTea, ratatui, textual, terminalGui] = category.products;
+  const [bubbleTea, ratatui, textual, terminalGui, spectre] = category.products;
   assert.match(bubbleTea.features.tui_widgets.note, /独立 Bubbles/);
   assert.match(ratatui.features.tui_input.note, /后端读取/);
   assert.match(textual.features.tui_web.note, /另启服务/);
   assert.match(terminalGui.features.tui_testing.note, /键鼠输入和捕获绘制缓冲区/);
   assert.match(terminalGui.features.tui_web.note, /未确认浏览器运行/);
+  assert.match(spectre.summary, /独立的 Spectre\.Console\.Cli/);
+  assert.match(spectre.features.tui_input.note, /方向键.*未确认通用鼠标事件/);
+  assert.match(spectre.features.tui_testing.note, /独立 Spectre\.Console\.Testing.*TestConsole/);
 });
 
 test('TUI feature labels, notes and product descriptions have English translations', () => {

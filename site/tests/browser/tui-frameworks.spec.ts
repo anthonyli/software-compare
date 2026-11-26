@@ -10,7 +10,7 @@ test('TUI category preserves capabilities and translations across screen sizes',
       await page.goto('/c/tui-frameworks/');
       await page.locator(`[data-lang="${lang}"]`).click();
       const products = page.locator(width === 1280 ? '#matrix' : '#card-list');
-      for (const id of ['bubble-tea', 'ratatui', 'textual', 'terminal-gui']) {
+      for (const id of ['bubble-tea', 'ratatui', 'textual', 'terminal-gui', 'spectre-console']) {
         await expect(products.locator(`[data-product-id="${id}"]`)).toBeVisible();
       }
       await expect(page.locator('h1')).toContainText(english ? 'Terminal UI frameworks' : '终端交互界面框架');
@@ -29,6 +29,16 @@ test('TUI category preserves capabilities and translations across screen sizes',
         await expect(row.getByText(note, { exact: false }).filter({ visible: true })).toBeVisible();
         expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
       }
+      await page.goto('/p/tui-frameworks/spectre-console/');
+      await page.locator(`[data-lang="${lang}"]`).click();
+      const input = page.locator('.feature-row').nth(2);
+      await expect(input.locator('.feat')).toHaveAttribute('title', english ? 'Partial' : '部分支持');
+      const testing = page.locator('.feature-row').nth(3);
+      const active = testing.locator(english ? 'p .t-en' : 'p .t-zh').filter({ hasText: 'TestConsole' });
+      const inactive = testing.locator(english ? 'p .t-zh' : 'p .t-en').filter({ hasText: 'TestConsole' });
+      await expect(active).toBeVisible();
+      await expect(inactive).toBeHidden();
+      expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
       await page.goto('/p/tui-frameworks/terminal-gui/');
       await page.locator(`[data-lang="${lang}"]`).click();
       await expect(page.locator('.feature-row').nth(3).getByText(english ? 'render buffer capture' : '捕获绘制缓冲区', { exact: false }).filter({ visible: true })).toBeVisible();
