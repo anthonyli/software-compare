@@ -4170,5 +4170,9 @@
   "内置表格、树、面板、图表与进度显示，不等同于完整桌面控件体系。": "Includes tables, trees, panels, charts and progress displays, not a full desktop widget system.",
   "支持方向键选择、文本输入和确认；官方资料未确认通用鼠标事件分发。": "Supports arrow-key selection, text input and confirmation; the official docs do not confirm general mouse event dispatch.",
   "独立 Spectre.Console.Testing 包提供 TestConsole，可捕获输出及预置输入，不需要真实终端。": "The separate Spectre.Console.Testing package provides TestConsole to capture output and queue input without a real terminal.",
-  "官方资料未确认原生浏览器运行；终端控件和 NuGet 兼容列表不是浏览器运行证明。": "Native browser operation is not confirmed by official documentation; terminal widgets and NuGet compatibility listings are not proof of browser support."
+  "官方资料未确认原生浏览器运行；终端控件和 NuGet 兼容列表不是浏览器运行证明。": "Native browser operation is not confirmed by official documentation; terminal widgets and NuGet compatibility listings are not proof of browser support.",
+  "基于类型注解和文档字符串构建 Python CLI，支持参数转换、嵌套子命令和自动帮助。": "Build Python CLIs from type hints and docstrings, with argument conversion, nested subcommands, and automatic help.",
+  "PyPI 5.5.3 要求 Python 3.11 或更新版本；Shell 补全的实际用法随 Shell 和应用安装方式而异。": "PyPI 5.5.3 requires Python 3.11 or later; shell completion usage depends on the shell and how the application is installed.",
+  "可为 Bash、Zsh、Fish 和 PowerShell 生成静态补全脚本；运行时补全回调需将应用安装为 PATH 中的命令。": "Generates static completion scripts for Bash, Zsh, Fish, and PowerShell; runtime completion callbacks require the app to be installed as a command on PATH.",
+  "内置 interactive_shell 可连续输入并执行命令；它不是交互表单，未核实核心库提供独立的确认组件。": "The built-in interactive_shell runs commands in a loop; it is not an interactive form, and a separate built-in confirmation control was not verified."
 }
