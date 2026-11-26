@@ -29,6 +29,7 @@ export const categoryNames: Record<string, { zh: string; en: string }> = {
   "transactional-email": { zh: "事务邮件", en: "Transactional email" },
   "backend-as-a-service": { zh: "后端即服务（BaaS）", en: "Backend as a service (BaaS)" },
   "cloud-sql-databases": { zh: "云 SQL 数据库", en: "Cloud SQL databases" },
+  "web-analytics": { zh: "网站统计", en: "Web analytics" },
   "web-hosting": { zh: "网站部署", en: "Website deployment" },
   "cdn-edge-security": { zh: "CDN 与边缘安全", en: "CDN and edge security" },
   "international-payments": { zh: "国外支付平台", en: "International payment platforms" },
@@ -106,6 +107,12 @@ export const groupNames: Record<string, { zh: string; en: string }> = {
 
 /** Feature column labels keyed by "slug:key". */
 export const featureColumns: Record<string, { zh: string; en: string }> = {
+  "web-analytics:traffic": { zh: "流量与来源", en: "Traffic and referrers" },
+  "web-analytics:utm": { zh: "UTM 推广归因", en: "UTM campaign attribution" },
+  "web-analytics:custom_events": { zh: "自定义事件", en: "Custom events" },
+  "web-analytics:behavior_funnel": { zh: "行为漏斗", en: "Behavior funnels" },
+  "web-analytics:web_vitals": { zh: "网页性能指标", en: "Web performance metrics" },
+  "web-analytics:self_host": { zh: "可自建统计", en: "Self-hosted analytics" },
   "backend-as-a-service:free_quota": { zh: "免费额度与范围", en: "Free quotas and scope" },
   "backend-as-a-service:overage": { zh: "超额与费用控制", en: "Overages and cost controls" },
   "backend-as-a-service:always_on": { zh: "免费项目持续运行", en: "Always-on free projects" },

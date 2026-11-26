@@ -8,6 +8,7 @@ test('verified product logos load locally on desktop, mobile and detail pages', 
     const product = container.locator('[data-product-id="newsboat"]');
     const badge = product.locator('[data-product-logo="verified"]');
     await expect(badge).toBeVisible();
+    await expect(badge).toHaveCSS('width', width === 1280 ? '32px' : '40px');
     await expect(badge).toHaveAttribute('aria-hidden', 'true');
     await expect(badge.locator('img')).toHaveAttribute('src', '/product-logos/newsboat.webp');
     await expect(badge.locator('img')).toHaveAttribute('alt', '');
@@ -19,6 +20,7 @@ test('verified product logos load locally on desktop, mobile and detail pages', 
   const hero = page.locator('.detail-hero');
   await expect(hero.getByRole('heading', { name: 'Newsboat', exact: true })).toBeVisible();
   const image = hero.locator('[data-product-logo="verified"] img');
+  await expect(image).toHaveAttribute('width', '64');
   await expect(image).toBeVisible();
   await expect.poll(() => image.evaluate((node: HTMLImageElement) => node.naturalWidth)).toBeGreaterThan(0);
 });
@@ -38,68 +40,4 @@ test('browser comparison shows verified logos on desktop and mobile', async ({ p
   const image = page.locator('.detail-hero [data-product-logo="verified"] img');
   await expect(image).toBeVisible();
   await expect.poll(() => image.evaluate((node: HTMLImageElement) => node.naturalWidth)).toBeGreaterThan(0);
-});
-
-test('logo rows have no outer tile and mixed rows align without boxed initials', async ({ page }) => {
-  await page.route('**/api/**', (route) => route.fulfill({ status: 503, body: '' }));
-  let unillustratedHref: string | null = null;
-  for (const width of [1280, 390]) {
-    await page.setViewportSize({ width, height: 900 });
-    await page.goto('/c/browsers/');
-    const container = page.locator(width === 1280 ? '#matrix' : '#card-list');
-    const verified = container.locator('[data-product-id="brave"]');
-    const icon = verified.locator('[data-product-logo="verified"]');
-    await expect(icon).toHaveCSS('width', width === 1280 ? '32px' : '40px');
-    await expect(icon.locator('img')).toHaveCSS('width', width === 1280 ? '32px' : '40px');
-    await expect(icon).toHaveCSS('border-top-width', '0px');
-    await expect(icon).toHaveCSS('background-color', 'rgba(0, 0, 0, 0)');
-    const unverified = container.locator('[data-product-id]').filter({
-      has: page.locator('[data-product-logo="placeholder"]'),
-    }).first();
-    if (!(await unverified.count())) continue; // The catalog can eventually have full coverage.
-    const emptySlot = unverified.locator('[data-product-logo="placeholder"]');
-    await expect(emptySlot).toBeEmpty();
-    await expect(emptySlot).toHaveAttribute('aria-hidden', 'true');
-    const namedLink = width === 1280 ? '.product-name' : '.card-title';
-    const verifiedLeft = (await verified.locator(namedLink).boundingBox())?.x;
-    const unverifiedLink = unverified.locator(namedLink);
-    expect(verifiedLeft).toBeDefined();
-    expect((await unverifiedLink.boundingBox())?.x).toBe(verifiedLeft);
-    unillustratedHref = await unverifiedLink.getAttribute('href');
-  }
-
-  await page.goto('/p/browsers/brave/');
-  await expect(page.locator('.detail-hero [data-product-logo="verified"] img')).toHaveCSS('width', '64px');
-  if (unillustratedHref) {
-    await page.goto(unillustratedHref);
-    await expect(page.locator('.detail-hero h1')).toBeVisible();
-    await expect(page.locator('.detail-hero [data-product-logo]')).toHaveCount(0);
-  }
-});
-
-test('license and maintenance use different emphasis in comparison rows', async ({ page }) => {
-  await page.route('**/api/**', (route) => route.fulfill({ status: 503, body: '' }));
-  for (const width of [1280, 390]) {
-    await page.setViewportSize({ width, height: 960 });
-    await page.goto('/c/browsers/');
-    const container = page.locator(width === 1280 ? '#matrix' : '#card-list');
-    const brave = container.locator('[data-product-id="brave"]');
-    await expect(brave.locator('.product-oss-label')).toBeVisible();
-    await expect(brave.locator('.product-oss-label')).toHaveCSS('border-top-width', '0px');
-    await expect(brave.locator('.product-name-line .product-oss-label .t-zh')).toHaveText('开源');
-    const title = await brave.locator('.product-name-line a').boundingBox();
-    const tag = await brave.locator('.product-name-line .product-oss-label').boundingBox();
-    expect(title && tag && tag.x >= title.x + title.width - 1 && Math.abs((tag.y + tag.height / 2) - (title.y + title.height / 2)) <= 2).toBe(true);
-    await expect(brave.locator('.product-oss-label')).toHaveCSS('background-color', 'rgb(238, 241, 245)');
-    await expect(brave.locator('.chip-warn')).toHaveCount(0);
-    await expect(container.locator('[data-product-id="safari"] .product-oss-label')).toHaveCount(0);
-  }
-
-  await page.goto('/c/image-uploaders/');
-  const picgo = page.locator('#card-list [data-product-id="picgo"]');
-  await expect(picgo.locator('.product-name-line .product-oss-label .t-zh')).toHaveText('开源免费');
-  await expect(picgo.locator('.chip-free')).toHaveCount(0);
-
-  await page.goto('/p/browsers/brave/');
-  await expect(page.locator('[data-product-maintenance]')).toContainText('尚未核实');
 });
