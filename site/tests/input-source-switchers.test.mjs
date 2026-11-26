@@ -4,7 +4,10 @@ import fs from 'node:fs';
 
 const read = path => fs.readFileSync(new URL('../../' + path, import.meta.url), 'utf8');
 const data = JSON.parse(read('categories/input-source-switchers.json'));
-const en = JSON.parse(read('site/src/i18n/content-en.json'));
+const en = {
+  ...JSON.parse(read('site/src/i18n/content-en.json')),
+  ...JSON.parse(read('site/src/i18n/public-content-en.json')),
+};
 const [pro, lock, holder] = data.products;
 const keys = ['inputswitch_app','inputswitch_url','inputswitch_lock','inputswitch_indicator','inputswitch_shortcuts'];
 
@@ -22,6 +25,8 @@ test('context rules, restoring a previous source and continuously locking are se
     assert(p.sources.length >= 3);
   }
   assert.match(data.notes, /不提供拼音词库或输入法引擎.*切换一次，不等于.*自动切回/);
+  assert.match(pro.features.inputswitch_url.note, /2\.14\.0.*Helium.*Comet.*ego\(lite\).*按应用/);
+  assert(pro.sources.some(source => /\/2\.14\.0\/.*\/BrowserURL\.swift$/.test(source)));
   assert.match(lock.features.inputswitch_lock.note, /输入源偏离时切回.*只切换模式保留手动调整/);
   assert.match(lock.features.inputswitch_url.note, /完整网址正则.*顺序匹配/);
   assert.match(holder.features.inputswitch_app.note, /记住每个应用上次输入法/);
