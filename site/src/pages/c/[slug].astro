@@ -223,11 +223,13 @@ const sortedProducts = [...category.products].sort((a, b) => {
                       <div class="flex min-w-0 items-start gap-2">
                         <ProductLogo id={p.id} reserve={hasProductLogos} />
                         <div class="min-w-0">
-                          <a href={p.href} class="product-name" title={p.name} data-i18n="title" data-zh={p.name} data-en={tr(p.name)}><T zh={p.name}/></a>
-                          <div class="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1">
+                          <div class="product-name-line">
+                            <a href={p.href} class="product-name" title={p.name} data-i18n="title" data-zh={p.name} data-en={tr(p.name)}><T zh={p.name}/></a>
                             {p.open_source && <span class="product-oss-label">
                               <T zh={openFreePricing.has(p.pricing_model) ? "开源免费" : ui.zh.openSource} en={openFreePricing.has(p.pricing_model) ? "Free & open source" : ui.en.openSource} />
                             </span>}
+                          </div>
+                          <div class="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1">
                             {!p.open_source && p.pricing_model === "完全免费" && <span class="chip chip-free"><T zh={ui.zh.fullyFree} en={ui.en.fullyFree} /></span>}
                             {warn && <span class="chip chip-warn"><T zh={warn} en={maintenanceEn(warn)} /></span>}
                             {p.github_stars != null && (
@@ -314,16 +316,18 @@ const sortedProducts = [...category.products].sort((a, b) => {
             <div class="flex items-center justify-between gap-3">
               <div class="flex min-w-0 items-center gap-2.5">
                 <ProductLogo id={p.id} size={40} reserve={hasProductLogos} />
-                <a href={p.href} class="card-title" title={p.name} data-i18n="title" data-zh={p.name} data-en={tr(p.name)}><T zh={p.name}/></a>
+                <div class="product-name-line">
+                  <a href={p.href} class="card-title" title={p.name} data-i18n="title" data-zh={p.name} data-en={tr(p.name)}><T zh={p.name}/></a>
+                  {p.open_source && <span class="product-oss-label">
+                    <T zh={openFreePricing.has(p.pricing_model) ? "开源免费" : ui.zh.openSource} en={openFreePricing.has(p.pricing_model) ? "Free & open source" : ui.en.openSource} />
+                  </span>}
+                </div>
               </div>
               {p.github_stars != null && (
                 <span class="stars-quiet shrink-0">★ <span class="t-zh">{formatStars(p.github_stars, "zh")}</span><span class="t-en">{formatStars(p.github_stars, "en")}</span></span>
               )}
             </div>
             <div class="mt-1.5 flex flex-wrap items-center gap-x-2 gap-y-1">
-              {p.open_source && <span class="product-oss-label">
-                <T zh={openFreePricing.has(p.pricing_model) ? "开源免费" : ui.zh.openSource} en={openFreePricing.has(p.pricing_model) ? "Free & open source" : ui.en.openSource} />
-              </span>}
               {!p.open_source && p.pricing_model === "完全免费" && <span class="chip chip-free"><T zh={ui.zh.fullyFree} en={ui.en.fullyFree} /></span>}
               {warn && <span class="chip chip-warn"><T zh={warn} en={maintenanceEn(warn)} /></span>}
             </div>

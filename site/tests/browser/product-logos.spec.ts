@@ -86,7 +86,10 @@ test('license and maintenance use different emphasis in comparison rows', async 
     const brave = container.locator('[data-product-id="brave"]');
     await expect(brave.locator('.product-oss-label')).toBeVisible();
     await expect(brave.locator('.product-oss-label')).toHaveCSS('border-top-width', '0px');
-    await expect(brave.locator('.product-oss-label .t-zh')).toHaveText('开源');
+    await expect(brave.locator('.product-name-line .product-oss-label .t-zh')).toHaveText('开源');
+    const title = await brave.locator('.product-name-line a').boundingBox();
+    const tag = await brave.locator('.product-name-line .product-oss-label').boundingBox();
+    expect(title && tag && tag.x >= title.x + title.width - 1 && Math.abs((tag.y + tag.height / 2) - (title.y + title.height / 2)) <= 2).toBe(true);
     await expect(brave.locator('.product-oss-label')).toHaveCSS('background-color', 'rgb(238, 241, 245)');
     await expect(brave.locator('.chip-warn')).toHaveCount(0);
     await expect(container.locator('[data-product-id="safari"] .product-oss-label')).toHaveCount(0);
@@ -94,7 +97,7 @@ test('license and maintenance use different emphasis in comparison rows', async 
 
   await page.goto('/c/image-uploaders/');
   const picgo = page.locator('#card-list [data-product-id="picgo"]');
-  await expect(picgo.locator('.product-oss-label .t-zh')).toHaveText('开源免费');
+  await expect(picgo.locator('.product-name-line .product-oss-label .t-zh')).toHaveText('开源免费');
   await expect(picgo.locator('.chip-free')).toHaveCount(0);
 
   await page.goto('/p/browsers/brave/');
