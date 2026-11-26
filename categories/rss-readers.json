@@ -203,6 +203,63 @@
         "https://freshrss.github.io/FreshRSS/en/admins/02_Prerequisites.html",
         "https://freshrss.github.io/FreshRSS/en/users/06_Mobile_access.html"
       ]
+    },
+    {
+      "id": "rss-guard",
+      "name": "RSS Guard",
+      "official_url": "https://rssguard.readthedocs.io/en/stable/",
+      "github_url": "https://github.com/martinrotter/rssguard",
+      "platforms": [
+        "macOS",
+        "Windows",
+        "Linux"
+      ],
+      "license": "GPL-3.0",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": "5.3.0",
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-26",
+      "summary": "跨平台桌面 RSS 阅读器，可直接订阅，也可连接兼容的在线或自托管聚合服务。",
+      "price_summary": "客户端免费开源，GPL-3.0；可选的同步服务或自托管机器费用另计。",
+      "free_tier_limits": "此条比较桌面客户端；同步账号的权限、额度和连接方式由所选服务决定。",
+      "features": {
+        "rss_direct": {
+          "value": "yes",
+          "note": "本机账号直接读取 RSS、Atom 和 JSON Feed，不要求外部同步账号。"
+        },
+        "rss_opml": {
+          "value": "yes",
+          "note": "本机订阅支持 OPML 导入与导出；OPML 不是文章内容或阅读状态的完整备份。"
+        },
+        "rss_offline": {
+          "value": "partial",
+          "note": "本机数据库保存已获取的文章内容；刷新、打开原页或加载未保存的远程媒体仍需联网。"
+        },
+        "rss_sync": {
+          "value": "yes",
+          "note": "本机账号状态不自动跨设备；使用兼容的 Google Reader API 服务可同步已读状态，具体能力取决于服务。"
+        },
+        "rss_fulltext": {
+          "value": "yes",
+          "note": "可用自带的文章提取工具尝试从原页抓取正文，不保证所有页面或远程媒体均能获取。"
+        },
+        "rss_selfhost": {
+          "value": "no",
+          "note": "可连接 FreshRSS、Miniflux 等兼容服务；RSS Guard 桌面应用本身不是聚合服务器。"
+        }
+      },
+      "sources": [
+        "https://github.com/martinrotter/rssguard",
+        "https://github.com/martinrotter/rssguard/releases/tag/5.3.0",
+        "https://github.com/martinrotter/rssguard/blob/5.3.0/LICENSE.md",
+        "https://rssguard.readthedocs.io/en/stable/services/standard.html",
+        "https://rssguard.readthedocs.io/en/stable/services/google-reader-api.html",
+        "https://rssguard.readthedocs.io/en/latest/features/extractor.html"
+      ]
     }
   ]
 }

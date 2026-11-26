@@ -4178,5 +4178,14 @@
   "面向 .NET 的命令行解析库，提供类型化参数、命令分支和自动帮助；与负责终端绘制的 Spectre.Console 是不同的包。": ".NET command-line parser with typed arguments, command branches, and automatic help. It is separate from the Spectre.Console terminal renderer.",
   "NuGet 0.57.2 面向 .NET 8.0 与 .NET Standard 2.0；依赖 Spectre.Console，运行需要兼容环境。": "NuGet 0.57.2 targets .NET 8.0 and .NET Standard 2.0, depends on Spectre.Console, and needs a compatible runtime.",
   "可导出 OpenCLI 命令元数据；这不等于生成或安装 Shell 补全脚本，未核实核心库内置补全。": "Exports OpenCLI command metadata. That is not equivalent to generating or installing shell completion scripts; built-in completion was not verified.",
-  "应用可通过依赖 Spectre.Console 使用文本提示、选项选择和确认；这些组件不属于命令解析包本身。": "Apps can use the Spectre.Console dependency for text prompts, selection and confirmation. These controls are not part of the parser package itself."
+  "应用可通过依赖 Spectre.Console 使用文本提示、选项选择和确认；这些组件不属于命令解析包本身。": "Apps can use the Spectre.Console dependency for text prompts, selection and confirmation. These controls are not part of the parser package itself.",
+  "跨平台桌面 RSS 阅读器，可直接订阅，也可连接兼容的在线或自托管聚合服务。": "Cross-platform desktop RSS reader for direct subscriptions or compatible online and self-hosted aggregation services.",
+  "客户端免费开源，GPL-3.0；可选的同步服务或自托管机器费用另计。": "The GPL-3.0 client is free and open source. Optional sync services and self-hosting infrastructure may cost extra.",
+  "此条比较桌面客户端；同步账号的权限、额度和连接方式由所选服务决定。": "This entry covers the desktop client. Sync account permissions, quotas and connection setup depend on the chosen service.",
+  "本机账号直接读取 RSS、Atom 和 JSON Feed，不要求外部同步账号。": "A local account reads RSS, Atom and JSON Feed directly and does not require an external sync account.",
+  "本机订阅支持 OPML 导入与导出；OPML 不是文章内容或阅读状态的完整备份。": "Local subscriptions support OPML import and export. OPML is not a full backup of articles or reading state.",
+  "本机数据库保存已获取的文章内容；刷新、打开原页或加载未保存的远程媒体仍需联网。": "The local database stores fetched article content; refreshing, opening original pages and loading unsaved remote media still require a network connection.",
+  "本机账号状态不自动跨设备；使用兼容的 Google Reader API 服务可同步已读状态，具体能力取决于服务。": "Local account state does not sync by itself. Compatible Google Reader API services can sync read state; capabilities depend on the service.",
+  "可用自带的文章提取工具尝试从原页抓取正文，不保证所有页面或远程媒体均能获取。": "The bundled article extractor can try to retrieve the main text from an original page; not every page or remote media asset can be fetched.",
+  "可连接 FreshRSS、Miniflux 等兼容服务；RSS Guard 桌面应用本身不是聚合服务器。": "Can connect to compatible services such as FreshRSS and Miniflux; the RSS Guard desktop app is not itself an aggregation server."
 }
