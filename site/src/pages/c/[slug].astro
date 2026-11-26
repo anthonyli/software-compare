@@ -303,9 +303,9 @@ const sortedProducts = [...category.products].sort((a, b) => {
             data-platforms={p.platforms.join(",")}
             data-status={p.maintenance_status || ""}
           >
-            <div class="flex items-start justify-between gap-3">
-              <div class="flex min-w-0 items-center gap-2">
-                <ProductLogo id={p.id} size={24} reserve={hasProductLogos} />
+            <div class="flex items-center justify-between gap-3">
+              <div class="flex min-w-0 items-center gap-2.5">
+                <ProductLogo id={p.id} size={40} reserve={hasProductLogos} />
                 <a href={p.href} class="card-title" title={p.name} data-i18n="title" data-zh={p.name} data-en={tr(p.name)}><T zh={p.name}/></a>
               </div>
               {p.github_stars != null && (

@@ -49,6 +49,8 @@ test('logo rows have no outer tile and mixed rows align without boxed initials',
     const container = page.locator(width === 1280 ? '#matrix' : '#card-list');
     const verified = container.locator('[data-product-id="brave"]');
     const icon = verified.locator('[data-product-logo="verified"]');
+    await expect(icon).toHaveCSS('width', width === 1280 ? '32px' : '40px');
+    await expect(icon.locator('img')).toHaveCSS('width', width === 1280 ? '32px' : '40px');
     await expect(icon).toHaveCSS('border-top-width', '0px');
     await expect(icon).toHaveCSS('background-color', 'rgba(0, 0, 0, 0)');
     const unverified = container.locator('[data-product-id]').filter({
@@ -66,6 +68,8 @@ test('logo rows have no outer tile and mixed rows align without boxed initials',
     unillustratedHref = await unverifiedLink.getAttribute('href');
   }
 
+  await page.goto('/p/browsers/brave/');
+  await expect(page.locator('.detail-hero [data-product-logo="verified"] img')).toHaveCSS('width', '64px');
   if (unillustratedHref) {
     await page.goto(unillustratedHref);
     await expect(page.locator('.detail-hero h1')).toBeVisible();

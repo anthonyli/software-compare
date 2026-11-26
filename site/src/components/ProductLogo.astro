@@ -4,11 +4,11 @@ import sources from "../lib/product-logo-sources.json";
 
 interface Props {
   id: string;
-  size?: 20 | 24 | 40;
+  size?: 32 | 40 | 64;
   reserve?: boolean;
 }
 
-const { id, size = 20, reserve = false } = Astro.props;
+const { id, size = 32, reserve = false } = Astro.props;
 const src = /^[a-z0-9-]+$/.test(id) && Object.hasOwn(sources, id)
   ? `/product-logos/${id}.webp`
   : null;
@@ -19,7 +19,7 @@ const src = /^[a-z0-9-]+$/.test(id) && Object.hasOwn(sources, id)
   aria-hidden="true"
   style={`--product-logo-size: ${size}px`}
 >
-  {src && <img src={src} alt="" width={size} height={size} loading={size === 40 ? "eager" : "lazy"} decoding="async" />}
+  {src && <img src={src} alt="" width={size} height={size} loading={size === 64 ? "eager" : "lazy"} decoding="async" />}
 </span>}
 
 <style>
