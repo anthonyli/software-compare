@@ -9,6 +9,7 @@ const apps = [
   { category: 'terminal-emulators', id: 'kaku', name: 'Kaku' },
   { category: 'menu-bar-calendars', id: 'itsycal', name: 'Itsycal' },
   { category: 'image-uploaders', id: 'picgo', name: 'PicGo' },
+  { category: 'code-editors', id: 'zed', name: 'Zed' },
 ];
 
 for (const app of apps) {
