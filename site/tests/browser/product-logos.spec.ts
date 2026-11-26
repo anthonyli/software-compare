@@ -87,7 +87,7 @@ test('license and maintenance use different emphasis in comparison rows', async 
     await expect(brave.locator('.product-oss-label')).toBeVisible();
     await expect(brave.locator('.product-oss-label')).toHaveCSS('border-top-width', '0px');
     await expect(brave.locator('.product-oss-label .t-zh')).toHaveText('开源');
-    await expect(brave.locator('.product-oss-label')).toHaveCSS('background-color', 'rgb(18, 36, 34)');
+    await expect(brave.locator('.product-oss-label')).toHaveCSS('background-color', 'rgb(238, 241, 245)');
     await expect(brave.locator('.chip-warn')).toHaveCount(0);
     await expect(container.locator('[data-product-id="safari"] .product-oss-label')).toHaveCount(0);
   }
