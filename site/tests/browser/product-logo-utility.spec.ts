@@ -7,6 +7,7 @@ const apps = [
   { category: 'clipboard-managers', id: 'maccy', name: 'Maccy' },
   { category: 'quick-translation-ocr', id: 'easydict', name: 'Easydict' },
   { category: 'terminal-emulators', id: 'kaku', name: 'Kaku' },
+  { category: 'terminal-emulators', id: 'wezterm', name: 'WezTerm' },
   { category: 'menu-bar-calendars', id: 'itsycal', name: 'Itsycal' },
   { category: 'image-uploaders', id: 'picgo', name: 'PicGo' },
   { category: 'code-editors', id: 'zed', name: 'Zed' },
