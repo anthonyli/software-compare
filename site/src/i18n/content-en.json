@@ -4174,5 +4174,9 @@
   "基于类型注解和文档字符串构建 Python CLI，支持参数转换、嵌套子命令和自动帮助。": "Build Python CLIs from type hints and docstrings, with argument conversion, nested subcommands, and automatic help.",
   "PyPI 5.5.3 要求 Python 3.11 或更新版本；Shell 补全的实际用法随 Shell 和应用安装方式而异。": "PyPI 5.5.3 requires Python 3.11 or later; shell completion usage depends on the shell and how the application is installed.",
   "可为 Bash、Zsh、Fish 和 PowerShell 生成静态补全脚本；运行时补全回调需将应用安装为 PATH 中的命令。": "Generates static completion scripts for Bash, Zsh, Fish, and PowerShell; runtime completion callbacks require the app to be installed as a command on PATH.",
-  "内置 interactive_shell 可连续输入并执行命令；它不是交互表单，未核实核心库提供独立的确认组件。": "The built-in interactive_shell runs commands in a loop; it is not an interactive form, and a separate built-in confirmation control was not verified."
+  "内置 interactive_shell 可连续输入并执行命令；它不是交互表单，未核实核心库提供独立的确认组件。": "The built-in interactive_shell runs commands in a loop; it is not an interactive form, and a separate built-in confirmation control was not verified.",
+  "面向 .NET 的命令行解析库，提供类型化参数、命令分支和自动帮助；与负责终端绘制的 Spectre.Console 是不同的包。": ".NET command-line parser with typed arguments, command branches, and automatic help. It is separate from the Spectre.Console terminal renderer.",
+  "NuGet 0.57.2 面向 .NET 8.0 与 .NET Standard 2.0；依赖 Spectre.Console，运行需要兼容环境。": "NuGet 0.57.2 targets .NET 8.0 and .NET Standard 2.0, depends on Spectre.Console, and needs a compatible runtime.",
+  "可导出 OpenCLI 命令元数据；这不等于生成或安装 Shell 补全脚本，未核实核心库内置补全。": "Exports OpenCLI command metadata. That is not equivalent to generating or installing shell completion scripts; built-in completion was not verified.",
+  "应用可通过依赖 Spectre.Console 使用文本提示、选项选择和确认；这些组件不属于命令解析包本身。": "Apps can use the Spectre.Console dependency for text prompts, selection and confirmation. These controls are not part of the parser package itself."
 }

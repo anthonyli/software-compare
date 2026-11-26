@@ -500,6 +500,56 @@
         "https://cyclopts.readthedocs.io/en/stable/shell_completion.html",
         "https://cyclopts.readthedocs.io/en/stable/cookbook/interactive_help.html"
       ]
+    },
+    {
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-26",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "id": "spectre-console-cli",
+      "name": "Spectre.Console.Cli",
+      "official_url": "https://spectreconsole.net/cli/",
+      "github_url": "https://github.com/spectreconsole/spectre.console.cli",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "MIT",
+      "summary": "面向 .NET 的命令行解析库，提供类型化参数、命令分支和自动帮助；与负责终端绘制的 Spectre.Console 是不同的包。",
+      "price_summary": "开发库免费开源；依赖各有许可，应用分发、托管和第三方服务费用另计。",
+      "free_tier_limits": "NuGet 0.57.2 面向 .NET 8.0 与 .NET Standard 2.0；依赖 Spectre.Console，运行需要兼容环境。",
+      "features": {
+        "argument_parsing": {
+          "value": "yes"
+        },
+        "subcommands": {
+          "value": "yes"
+        },
+        "automatic_help": {
+          "value": "yes"
+        },
+        "shell_completion": {
+          "value": "unknown",
+          "note": "可导出 OpenCLI 命令元数据；这不等于生成或安装 Shell 补全脚本，未核实核心库内置补全。"
+        },
+        "interactive_prompts": {
+          "value": "partial",
+          "note": "应用可通过依赖 Spectre.Console 使用文本提示、选项选择和确认；这些组件不属于命令解析包本身。"
+        }
+      },
+      "sources": [
+        "https://www.nuget.org/packages/Spectre.Console.Cli/0.57.2",
+        "https://github.com/spectreconsole/spectre.console.cli/blob/0.57.2/LICENSE.md",
+        "https://spectreconsole.net/cli/",
+        "https://spectreconsole.net/cli/how-to/customizing-help-text-and-usage/",
+        "https://spectreconsole.net/cli/reference/built-in-command-behaviors/",
+        "https://spectreconsole.net/console/how-to/prompting-for-user-input/"
+      ]
     }
   ]
 }
