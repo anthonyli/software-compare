@@ -4158,5 +4158,9 @@
   "配置中可设定自动计划，多数定时模式依赖系统 cron；固定时点和可补跑模式不同。": "Configure recurring backups in the profile; most timed modes use system cron. Fixed-time schedules differ from catch-up modes.",
   "官方提供 Qt 桌面图形界面，也可用命令行。": "The project provides a Qt desktop GUI and a command-line interface.",
   "可从应用恢复选定快照；未加密快照也可用文件管理器浏览并复制文件。": "Restore from a selected snapshot in the app, or browse and copy files from unencrypted snapshots in a file manager.",
-  "已核实 rsync 快照与恢复流程，未核实独立读取整份快照内容的校验功能；不要把 rsync 变更检测当作完整校验。": "The rsync snapshot and restore workflow is documented, but no independent full-snapshot content verification was confirmed. Rsync change detection is not equivalent to a full audit."
+  "已核实 rsync 快照与恢复流程，未核实独立读取整份快照内容的校验功能；不要把 rsync 变更检测当作完整校验。": "The rsync snapshot and restore workflow is documented, but no independent full-snapshot content verification was confirmed. Rsync change detection is not equivalent to a full audit.",
+  ".NET 命令行开发库，提供参数与选项解析、嵌套子命令和自动帮助。": ".NET library for building CLIs, with argument and option parsing, nested subcommands, and automatic help.",
+  "NuGet 稳定版 3.0.0 面向 .NET 10.0 和 .NET Standard 2.0；部署还取决于应用选择的运行时和目标平台。": "NuGet stable release 3.0.0 targets .NET 10.0 and .NET Standard 2.0; deployment depends on the application's runtime and target platform.",
+  "支持动态补全候选。官方为第三方应用列出 Bash、Zsh 和 PowerShell 的配置步骤：安装 dotnet-suggest、加载对应 Shell 脚本并注册可执行文件。": "Supports dynamic completion candidates. For third-party apps, the official Bash, Zsh and PowerShell setup uses dotnet-suggest, a shell shim and executable registration.",
+  "参数校验不等于交互式输入；官方资料未确认核心库内置提问或确认组件。": "Argument validation is not interactive input; the official docs do not confirm built-in prompts or confirmation controls in the core library."
 }

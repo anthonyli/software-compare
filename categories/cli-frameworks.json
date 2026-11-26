@@ -403,6 +403,55 @@
         "https://github.com/remkop/picocli/blob/v4.7.7/LICENSE",
         "https://picocli.info/apidocs/picocli/CommandLine.Option.html"
       ]
+    },
+    {
+      "prices": [],
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": null,
+      "collected_at": "2026-11-26",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "id": "system-commandline",
+      "name": "System.CommandLine",
+      "official_url": "https://learn.microsoft.com/en-us/dotnet/standard/commandline/",
+      "github_url": "https://github.com/dotnet/command-line-api",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "MIT",
+      "summary": ".NET 命令行开发库，提供参数与选项解析、嵌套子命令和自动帮助。",
+      "price_summary": "开发库免费开源；依赖各有许可，应用分发、托管和第三方服务费用另计。",
+      "free_tier_limits": "NuGet 稳定版 3.0.0 面向 .NET 10.0 和 .NET Standard 2.0；部署还取决于应用选择的运行时和目标平台。",
+      "features": {
+        "argument_parsing": {
+          "value": "yes"
+        },
+        "subcommands": {
+          "value": "yes"
+        },
+        "automatic_help": {
+          "value": "yes"
+        },
+        "shell_completion": {
+          "value": "yes",
+          "note": "支持动态补全候选。官方为第三方应用列出 Bash、Zsh 和 PowerShell 的配置步骤：安装 dotnet-suggest、加载对应 Shell 脚本并注册可执行文件。"
+        },
+        "interactive_prompts": {
+          "value": "unknown",
+          "note": "参数校验不等于交互式输入；官方资料未确认核心库内置提问或确认组件。"
+        }
+      },
+      "sources": [
+        "https://www.nuget.org/packages/System.CommandLine/3.0.0",
+        "https://github.com/dotnet/command-line-api/blob/main/LICENSE.md",
+        "https://learn.microsoft.com/en-us/dotnet/standard/commandline/",
+        "https://learn.microsoft.com/en-us/dotnet/standard/commandline/syntax",
+        "https://learn.microsoft.com/en-us/dotnet/standard/commandline/how-to-enable-tab-completion"
+      ]
     }
   ]
 }

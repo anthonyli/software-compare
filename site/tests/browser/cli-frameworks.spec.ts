@@ -4,9 +4,9 @@ test('CLI framework core and plugin boundaries across languages and widths',asyn
  for(const width of [1280,390]){await page.setViewportSize({width,height:900});
   for(const lang of ['en','zh-CN']){
    await page.goto('/c/cli-frameworks/');await page.locator(`[data-lang="${lang}"]`).click();
-   for(const id of ['cobra','clap','commander','click','typer','oclif','swift-argument-parser','picocli'])await expect(page.locator(width===1280?'#matrix':'#card-list').locator(`[data-product-id="${id}"]`)).toBeVisible();
+   for(const id of ['cobra','clap','commander','click','typer','oclif','swift-argument-parser','picocli','system-commandline'])await expect(page.locator(width===1280?'#matrix':'#card-list').locator(`[data-product-id="${id}"]`)).toBeVisible();
    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
-   for(const [id,state] of [['cobra','Yes'],['clap','Partial'],['commander','Unknown'],['click','Yes'],['typer','Yes'],['oclif','Partial'],['swift-argument-parser','Yes'],['picocli','Yes']]){
+   for(const [id,state] of [['cobra','Yes'],['clap','Partial'],['commander','Unknown'],['click','Yes'],['typer','Yes'],['oclif','Partial'],['swift-argument-parser','Yes'],['picocli','Yes'],['system-commandline','Yes']]){
     await page.goto(`/p/cli-frameworks/${id}/`);await page.locator(`[data-lang="${lang}"]`).click();
     await expect(page.locator('.feature-row').nth(3).locator(state==='Unknown'?'.feat-empty':'.feat')).toHaveAttribute('title',lang==='en'?state:({'Yes':'支持','Partial':'部分支持','Unknown':'未知'}[state]!));
     if(id==='swift-argument-parser'){
@@ -16,6 +16,11 @@ test('CLI framework core and plugin boundaries across languages and widths',asyn
     if(id==='picocli'){
      await expect(page.locator('.feature-row').nth(3).getByText(lang==='en'?'Bash and Zsh scripts':'Bash 和 Zsh',{exact:false})).toBeVisible();
      await expect(page.locator('.feature-row').nth(4).getByText(lang==='en'?'not a multi-step form':'不是多步表单',{exact:false})).toBeVisible();
+    }
+    if(id==='system-commandline'){
+     const shellSetup = lang === 'en' ? 'uses dotnet-suggest, a shell shim' : '安装 dotnet-suggest、加载对应 Shell 脚本';
+     await expect(page.locator('.feature-row').nth(3).getByText(shellSetup,{exact:false})).toBeVisible();
+     await expect(page.locator('.feature-row').nth(4).locator('.feat-empty')).toHaveAttribute('title',lang==='en'?'Unknown':'未知');
     }
     if(id==='clap'){
      const shellRow=page.locator('.feature-row').nth(3);
