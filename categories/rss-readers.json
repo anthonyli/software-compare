@@ -317,6 +317,60 @@
         "https://github.com/miniflux/v2/blob/2.3.5/LICENSE",
         "https://github.com/miniflux/v2/blob/2.3.5/internal/ui/static/js/service_worker.js"
       ]
+    },
+    {
+      "id": "newsflash",
+      "name": "Newsflash",
+      "official_url": "https://flathub.org/en/apps/io.gitlab.news_flash.NewsFlash",
+      "source_url": "https://gitlab.com/news-flash/news_flash_gtk",
+      "github_url": null,
+      "platforms": [
+        "Linux"
+      ],
+      "license": "GPL-3.0-or-later",
+      "open_source": true,
+      "pricing_model": "免费开源",
+      "prices": [],
+      "github_stars": null,
+      "latest_release": "6.0.2",
+      "latest_release_date": "2026-11-04",
+      "maintenance_status": null,
+      "collected_at": "2026-11-26",
+      "summary": "面向 GNOME 的 Linux 桌面 RSS 阅读器，可选择本机订阅或连接兼容的同步服务。",
+      "price_summary": "客户端免费开源，采用 GPL-3.0-or-later；第三方订阅服务及自托管费用另计。",
+      "free_tier_limits": "此条比较 Flathub 的 Linux 桌面版；本机模式无需同步账号，使用外部服务时遵循其账号和功能限制。",
+      "features": {
+        "rss_direct": {
+          "value": "yes",
+          "note": "本机模式直接订阅 RSS 和 Atom，无需第三方同步账号。"
+        },
+        "rss_opml": {
+          "value": "yes",
+          "note": "可导出 OPML 订阅列表；导入要求当前账号支持管理订阅。OPML 不包含文章的完整备份。"
+        },
+        "rss_offline": {
+          "value": "partial",
+          "note": "可离线读已存到本机的文章；刷新订阅、提取原文和加载未缓存的远程媒体仍需要联网。"
+        },
+        "rss_sync": {
+          "value": "yes",
+          "note": "可通过 Miniflux 或 FreshRSS 等服务同步状态，支持范围随服务而异；本机模式不自动跨设备同步。"
+        },
+        "rss_fulltext": {
+          "value": "yes",
+          "note": "桌面构建支持尝试抓取网页正文，效果取决于原始页面，不能保证所有文章都可提取。"
+        },
+        "rss_selfhost": {
+          "value": "no",
+          "note": "可以连接自托管的 Miniflux 或 FreshRSS 实例；Newsflash 本身是桌面客户端，不是聚合服务器。"
+        }
+      },
+      "sources": [
+        "https://flathub.org/en/apps/io.gitlab.news_flash.NewsFlash",
+        "https://gitlab.com/news-flash/news_flash_gtk",
+        "https://github.com/flathub/io.gitlab.news_flash.NewsFlash/blob/master/io.gitlab.news_flash.NewsFlash.json",
+        "https://gitlab.com/api/v4/projects/8320003/packages/generic/newsflash/6.0.2/newsflash-6.0.2.tar.xz"
+      ]
     }
   ]
 }

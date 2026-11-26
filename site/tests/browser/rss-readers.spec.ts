@@ -15,8 +15,8 @@ test('RSS readers retain source, extraction, offline and sync boundaries on desk
       await expect(page.locator('h1')).toContainText(title);
       await expect(page.locator('[data-rss-reader-notes]').getByText(boundary, { exact: false }).filter({ visible: true })).toBeVisible();
       const products = page.locator(width === 1280 ? '#matrix' : '#card-list');
-      await expect(products.locator('[data-product-id]')).toHaveCount(5);
-      for (const id of ['netnewswire','fluent-reader','freshrss','rss-guard','miniflux']) {
+      await expect(products.locator('[data-product-id]')).toHaveCount(6);
+      for (const id of ['netnewswire','fluent-reader','freshrss','rss-guard','miniflux','newsflash']) {
         await expect(products.locator(`[data-product-id="${id}"]`)).toBeVisible();
       }
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
@@ -36,6 +36,14 @@ test('RSS readers retain source, extraction, offline and sync boundaries on desk
       await expect(offline.locator(visible)).toBeVisible();
       await expect(offline.locator(hidden)).toBeHidden();
       await expect(page.locator('.feature-row').nth(3).locator(visible)).toContainText(isEnglish ? 'only a subset of the Google Reader API' : '只实现部分 Google Reader API');
+      expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+      await page.goto('/p/rss-readers/newsflash/');
+      await page.locator(locale).click();
+      const newsflashSync = page.locator('.feature-row').nth(3);
+      await expect(newsflashSync.locator(visible)).toContainText(isEnglish ? 'Local mode does not sync' : '本机模式不自动跨设备同步');
+      await expect(newsflashSync.locator(visible)).toBeVisible();
+      await expect(newsflashSync.locator(hidden)).toBeHidden();
+      await expect(page.locator('.feature-row').nth(5).locator(visible)).toContainText(isEnglish ? 'not an aggregation server' : '不是聚合服务器');
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
       for (const [id,notes] of [['netnewswire',[reddit,reader]],['fluent-reader',[fluent]],['freshrss',[fresh]]] as const) {
         await page.goto(`/p/rss-readers/${id}/`);

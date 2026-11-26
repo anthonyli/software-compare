@@ -4196,5 +4196,14 @@
   "2.3.5 的内置网页只缓存离线提示页，不缓存文章供离线阅读；第三方客户端可另有缓存。": "In 2.3.5 the built-in web reader caches an offline fallback, not articles for offline reading. Third-party clients may cache articles independently.",
   "服务器保存阅读状态；NetNewsWire 和 RSS Guard 可通过兼容接口连接，但只实现部分 Google Reader API。": "The server keeps reading state. NetNewsWire and RSS Guard can connect, but Miniflux implements only a subset of the Google Reader API.",
   "服务端可尝试用 Readability 提取正文，支持按订阅源自定义 CSS 选择器；不保证所有页面可提取。": "The server can try Readability extraction with optional per-feed CSS selectors; extraction is not guaranteed on every page.",
-  "可以运行自己的实例，用 PostgreSQL 存储订阅和阅读数据。": "Run your own instance with subscriptions and reading data stored in PostgreSQL."
+  "可以运行自己的实例，用 PostgreSQL 存储订阅和阅读数据。": "Run your own instance with subscriptions and reading data stored in PostgreSQL.",
+  "面向 GNOME 的 Linux 桌面 RSS 阅读器，可选择本机订阅或连接兼容的同步服务。": "Linux RSS reader for the GNOME desktop, with local subscriptions or a compatible sync service.",
+  "客户端免费开源，采用 GPL-3.0-or-later；第三方订阅服务及自托管费用另计。": "The client is free and open source under GPL-3.0-or-later. Third-party subscriptions and self-hosting may cost extra.",
+  "此条比较 Flathub 的 Linux 桌面版；本机模式无需同步账号，使用外部服务时遵循其账号和功能限制。": "This entry covers the Flathub Linux desktop build. Local mode needs no sync account; external services have their own account requirements and capabilities.",
+  "本机模式直接订阅 RSS 和 Atom，无需第三方同步账号。": "Local mode subscribes directly to RSS and Atom without a third-party sync account.",
+  "可导出 OPML 订阅列表；导入要求当前账号支持管理订阅。OPML 不包含文章的完整备份。": "Exports an OPML subscription list. Import requires a backend that supports feed management. OPML is not a full article backup.",
+  "可离线读已存到本机的文章；刷新订阅、提取原文和加载未缓存的远程媒体仍需要联网。": "Locally stored articles can be read offline. Refreshing feeds, extracting original articles and loading uncached remote media still need a connection.",
+  "可通过 Miniflux 或 FreshRSS 等服务同步状态，支持范围随服务而异；本机模式不自动跨设备同步。": "Can sync status through services such as Miniflux and FreshRSS, depending on the backend. Local mode does not sync across devices by itself.",
+  "桌面构建支持尝试抓取网页正文，效果取决于原始页面，不能保证所有文章都可提取。": "The desktop build can attempt to extract article text from the original page. Results depend on the source, and extraction is not guaranteed.",
+  "可以连接自托管的 Miniflux 或 FreshRSS 实例；Newsflash 本身是桌面客户端，不是聚合服务器。": "Can connect to a self-hosted Miniflux or FreshRSS instance. Newsflash is a desktop client, not an aggregation server."
 }
