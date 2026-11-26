@@ -616,6 +616,74 @@
         "https://world.pages.gitlab.gnome.org/pika-backup/help/C/recovery-other.html",
         "https://borgbackup.readthedocs.io/en/1.4-maint/usage/check.html"
       ]
+    },
+    {
+      "id": "vorta",
+      "name": "Vorta",
+      "official_url": "https://vorta.borgbase.com/",
+      "github_url": "https://github.com/borgbase/vorta",
+      "platforms": [
+        "macOS",
+        "Linux"
+      ],
+      "open_source": true,
+      "license": "GPL-3.0-only",
+      "pricing_model": "免费开源",
+      "price_summary": "桌面客户端免费开源，不需要订阅 BorgBase；自备磁盘、服务器或选择第三方托管，费用另计。",
+      "prices": [],
+      "free_tier_limits": "Windows 文档指向 WSL，并非 Windows 原生客户端；不是整机镜像。需使用兼容的 Borg 版本和仓库。",
+      "github_stars": null,
+      "latest_release": "0.12.2",
+      "latest_release_date": null,
+      "collected_at": "2026-11-26",
+      "summary": "macOS 和 Linux 的 Borg 图形客户端，可用独立配置管理本地或远端文件备份，适合希望保留 Borg 仓库同时使用图形界面的用户。",
+      "features": {
+        "backup_snapshots": {
+          "value": "yes",
+          "note": "经 Borg 建立去重的文件归档，可按日期查看版本。"
+        },
+        "backup_encryption": {
+          "value": "partial",
+          "note": "加密由 Borg 仓库模式决定；恢复时需要所选模式对应的凭据。"
+        },
+        "backup_destinations": {
+          "value": "yes",
+          "note": "支持本地目录、可移除磁盘和通过 SSH 的 Borg 远端，不要求 BorgBase，也不把 Borg 1.4 计为原生 S3。"
+        },
+        "backup_retention": {
+          "value": "yes",
+          "note": "归档可以手动按保留规则清理，也可配置每次备份后执行。"
+        },
+        "backup_schedule": {
+          "value": "yes",
+          "note": "由 Vorta 自行触发计划，应用需保持运行，可设置登录后启动。"
+        },
+        "backup_gui": {
+          "value": "yes",
+          "note": "桌面界面提供备份、归档、配置及调度，是独立的 Borg 前端。"
+        },
+        "backup_restore": {
+          "value": "yes",
+          "note": "可以直接解包到指定目录，也可挂载归档后挑选文件；macOS 挂载浏览需 macFUSE 与支持 FUSE 的 Borg 构建。"
+        },
+        "backup_verify": {
+          "value": "partial",
+          "note": "v0.12.2 的图形检查调用 Borg 一致性检查，不带 --verify-data；不等同于 Borg CLI 的归档内容密码学校验。"
+        }
+      },
+      "sources": [
+        "https://vorta.borgbase.com/",
+        "https://vorta.borgbase.com/usage/",
+        "https://vorta.borgbase.com/usage/remote/",
+        "https://vorta.borgbase.com/usage/prune/",
+        "https://vorta.borgbase.com/usage/restore/",
+        "https://vorta.borgbase.com/install/macos/",
+        "https://vorta.borgbase.com/install/windows/",
+        "https://github.com/borgbase/vorta/releases/tag/v0.12.2",
+        "https://raw.githubusercontent.com/borgbase/vorta/v0.12.2/pyproject.toml",
+        "https://raw.githubusercontent.com/borgbase/vorta/v0.12.2/src/vorta/borg/check.py",
+        "https://borgbackup.readthedocs.io/en/1.4-maint/usage/check.html"
+      ]
     }
   ]
 }

@@ -19,7 +19,7 @@ test('file backup exposes its original cover and recovery boundaries', async ({ 
     await page.goto('/c/file-backup/');
     await expect(page.locator('h1')).toContainText(title);
     const table = page.locator(width === 1280 ? '#matrix' : '#card-list');
-    for (const id of ['restic', 'kopia', 'borgbackup', 'time-machine', 'windows-file-history', 'arq-7', 'duplicati', 'deja-dup', 'pika-backup']) {
+    for (const id of ['restic', 'kopia', 'borgbackup', 'time-machine', 'windows-file-history', 'arq-7', 'duplicati', 'deja-dup', 'pika-backup', 'vorta']) {
       await expect(table.locator(`[data-product-id="${id}"]`)).toBeVisible();
     }
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
@@ -45,5 +45,9 @@ test('file backup exposes its original cover and recovery boundaries', async ({ 
     await page.goto('/p/file-backup/pika-backup/');
     await expect(page.locator('h1')).toContainText('Pika Backup');
     await expect(page.locator('body')).toContainText(lang === 'en' ? 'GNOME Files does not preserve permissions' : '用 GNOME Files 复制不会保留权限');
+    await page.goto('/p/file-backup/vorta/');
+    await expect(page.locator('h1')).toContainText('Vorta');
+    await expect(page.locator('body')).toContainText(lang === 'en' ? 'Vorta must stay running' : '应用需保持运行');
+    await expect(page.locator('body')).toContainText(lang === 'en' ? 'without --verify-data' : '不带 --verify-data');
   }
 });
