@@ -406,7 +406,7 @@
       "features": {
         "raw": {
           "value": "unknown",
-          "note": "支持存储或预览 RAW 不等于专业 RAW 显影，本轮未核实显影工作流。"
+          "note": "官方列出 .raw 和 .rw2 格式，生成预览时可使用文件内嵌的预览图（如有）。这不等于专业 RAW 显影。"
         },
         "catalog": {
           "value": "yes"
@@ -423,7 +423,9 @@
         "https://github.com/immich-app/immich/blob/main/LICENSE",
         "https://docs.immich.app/install/requirements/",
         "https://docs.immich.app/features/editing/",
-        "https://docs.immich.app/guides/remote-access/"
+        "https://docs.immich.app/guides/remote-access/",
+        "https://docs.immich.app/features/supported-formats/",
+        "https://docs.immich.app/administration/system-settings/"
       ]
     },
     {

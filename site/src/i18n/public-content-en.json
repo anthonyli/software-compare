@@ -5,5 +5,7 @@
   "各平台版本不同，仅核实官方文档，未安装客户端。": "Versions differ by platform. This entry is based on official documentation; the client has not been tested.",
   "可免费开始使用，无需绑卡。官方定价表列明 Starter 的调试规则限 1 条，不含断点和 Map Local；功能可能因平台而异。": "Free to start with no credit card required. The official pricing table lists a one-rule limit for Starter and excludes Breakpoint and Map Local. Features may vary by platform.",
   "浏览器下载面板支持部分流媒体，但不支持带有复制保护的流，也不保证支持所有 M3U8 链接。": "The browser download panel supports some streams but does not support copy-protected streams or guarantee support for every M3U8 link.",
-  "在已集成的浏览器中播放受支持的视频时，可用视频下载面板；仅添加网页地址不会下载视频。": "The video download panel is available when playing supported videos in an integrated browser. Adding a webpage address alone does not download the video."
+  "在已集成的浏览器中播放受支持的视频时，可用视频下载面板；仅添加网页地址不会下载视频。": "The video download panel is available when playing supported videos in an integrated browser. Adding a webpage address alone does not download the video.",
+  "官方列出 .raw 和 .rw2 格式，生成预览时可使用文件内嵌的预览图（如有）。这不等于专业 RAW 显影。": "Official docs list .raw and .rw2 formats. Preview generation can use an embedded preview if one is available. That is different from professional RAW development.",
+  "可创建结构化训练课表，也可下载在 MyWhoosh 里记录的历史骑行 FIT 文件。第三方历史活动的导入支持尚未确认。": "You can create structured workouts and download FIT files of rides recorded in MyWhoosh. Support for importing third-party activity history has not been verified."
 }

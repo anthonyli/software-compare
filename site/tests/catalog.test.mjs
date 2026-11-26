@@ -7,7 +7,7 @@ const categories = [...read('data.json').categories, ...fs.readdirSync(new URL('
 const added = ['ai-assistants','image-editors','vector-graphics','photo-management','desktop-publishing','ai-coding','ai-image-workflows','animation-3d','animation-2d','compositing','database-clients','api-clients','audio-recorders','transcription-tools','fitness-training','cycling-tools','outdoor-navigation','file-backup'];
 const slug = c => c.category_slug || c.id;
 const config = fs.readFileSync(new URL('site/src/config.ts', root), 'utf8');
-const translations = read('site/src/i18n/content-en.json');
+const translations = { ...read('site/src/i18n/content-en.json'), ...read('site/src/i18n/public-content-en.json') };
 test('catalog category and product routes are unique', () => {
  assert.equal(new Set(categories.map(slug)).size, categories.length);
  for (const c of categories) {
