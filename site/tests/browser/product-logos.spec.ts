@@ -86,9 +86,16 @@ test('license and maintenance use different emphasis in comparison rows', async 
     const brave = container.locator('[data-product-id="brave"]');
     await expect(brave.locator('.product-oss-label')).toBeVisible();
     await expect(brave.locator('.product-oss-label')).toHaveCSS('border-top-width', '0px');
+    await expect(brave.locator('.product-oss-label .t-zh')).toHaveText('开源');
+    await expect(brave.locator('.product-oss-label')).toHaveCSS('background-color', 'rgb(18, 36, 34)');
     await expect(brave.locator('.chip-warn')).toHaveCount(0);
     await expect(container.locator('[data-product-id="safari"] .product-oss-label')).toHaveCount(0);
   }
+
+  await page.goto('/c/image-uploaders/');
+  const picgo = page.locator('#card-list [data-product-id="picgo"]');
+  await expect(picgo.locator('.product-oss-label .t-zh')).toHaveText('开源免费');
+  await expect(picgo.locator('.chip-free')).toHaveCount(0);
 
   await page.goto('/p/browsers/brave/');
   await expect(page.locator('[data-product-maintenance]')).toContainText('尚未核实');
