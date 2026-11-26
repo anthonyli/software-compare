@@ -4147,5 +4147,16 @@
   "由 Vorta 自行触发计划，应用需保持运行，可设置登录后启动。": "Vorta must stay running to execute scheduled jobs; it can start automatically after login.",
   "桌面界面提供备份、归档、配置及调度，是独立的 Borg 前端。": "The desktop UI manages backups, archives, profiles, and scheduling. Vorta is a separate Borg frontend.",
   "可以直接解包到指定目录，也可挂载归档后挑选文件；macOS 挂载浏览需 macFUSE 与支持 FUSE 的 Borg 构建。": "Extract to a chosen folder or mount an archive to browse individual files. On macOS, mount-and-browse needs macFUSE and a FUSE-enabled Borg build.",
-  "v0.12.2 的图形检查调用 Borg 一致性检查，不带 --verify-data；不等同于 Borg CLI 的归档内容密码学校验。": "The v0.12.2 UI calls Borg consistency check without --verify-data. That is not the CLI’s cryptographic archive data verification."
+  "v0.12.2 的图形检查调用 Borg 一致性检查，不带 --verify-data；不等同于 Borg CLI 的归档内容密码学校验。": "The v0.12.2 UI calls Borg consistency check without --verify-data. That is not the CLI’s cryptographic archive data verification.",
+  "桌面工具免费开源，不需要订阅；备份磁盘或远端主机由用户自备，费用另计。": "The open-source desktop tool is free without a subscription. Supply your own backup disk or remote host; those costs are separate.",
+  "面向 GNU/Linux；不是整机镜像。目标文件系统需支持硬链接，SSH 远端也需要可用的 rsync。": "For GNU/Linux; not a full-system image. The destination filesystem must support hard links, and SSH destinations also need rsync.",
+  "面向 GNU/Linux 的 rsync 文件快照工具，为未变文件复用硬链接，适合希望用文件管理器直接查看未加密历史的桌面用户。": "A GNU/Linux rsync snapshot tool that reuses hard links for unchanged files, suited to desktop users who want to browse unencrypted history in a file manager.",
+  "每个快照有独立目录，未变文件通过硬链接复用，不是块级去重。": "Each snapshot has its own directory; unchanged files share hard links, not block-level deduplication.",
+  "SSH 保护传输，不等于静态加密。稳定版 1.6.2 不建议新建本地 gocryptfs 配置；旧 EncFS 处于淘汰过渡期。": "SSH protects data in transit, not at rest. Stable 1.6.2 advises against new local gocryptfs profiles; legacy EncFS is being phased out.",
+  "可保存到支持硬链接的本地目录或经 SSH 备份至远端；普通 SSHFS 挂载不支持所需的硬链接。": "Use a local directory that supports hard links or back up to a remote host over SSH. Ordinary SSHFS mounts do not support the required hard links.",
+  "可按时间保留和清理旧快照；1.6.2 修复了按年龄清理规则。": "Keep or remove historical snapshots by age; 1.6.2 fixed the age-based cleanup rule.",
+  "配置中可设定自动计划，多数定时模式依赖系统 cron；固定时点和可补跑模式不同。": "Configure recurring backups in the profile; most timed modes use system cron. Fixed-time schedules differ from catch-up modes.",
+  "官方提供 Qt 桌面图形界面，也可用命令行。": "The project provides a Qt desktop GUI and a command-line interface.",
+  "可从应用恢复选定快照；未加密快照也可用文件管理器浏览并复制文件。": "Restore from a selected snapshot in the app, or browse and copy files from unencrypted snapshots in a file manager.",
+  "已核实 rsync 快照与恢复流程，未核实独立读取整份快照内容的校验功能；不要把 rsync 变更检测当作完整校验。": "The rsync snapshot and restore workflow is documented, but no independent full-snapshot content verification was confirmed. Rsync change detection is not equivalent to a full audit."
 }
