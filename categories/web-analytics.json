@@ -1,0 +1,173 @@
+{
+  "category_slug": "web-analytics",
+  "category_name_zh": "网站统计",
+  "collected_at": "2026-11-26",
+  "collected_at_timezone": "Asia/Shanghai",
+  "features": [
+    {
+      "key": "traffic",
+      "label": "流量与来源"
+    },
+    {
+      "key": "utm",
+      "label": "UTM 推广归因"
+    },
+    {
+      "key": "custom_events",
+      "label": "自定义事件"
+    },
+    {
+      "key": "behavior_funnel",
+      "label": "行为漏斗"
+    },
+    {
+      "key": "web_vitals",
+      "label": "网页性能指标"
+    },
+    {
+      "key": "self_host",
+      "label": "可自建统计"
+    }
+  ],
+  "products": [
+    {
+      "id": "umami",
+      "name": "Umami",
+      "official_url": "https://umami.is/",
+      "github_url": "https://github.com/umami-software/umami",
+      "platforms": [
+        "Web"
+      ],
+      "open_source": true,
+      "license": "MIT",
+      "pricing_model": "免费增值",
+      "summary": "开源网站与产品分析工具，可按流量、来源和行为事件分析，并支持自建。",
+      "price_summary": "自建软件免费，服务器和 PostgreSQL 自备；官方云版 Hobby 每月 0 美元，Pro 每月 20 美元。",
+      "prices": [
+        {
+          "plan": "Cloud Hobby",
+          "price": "0",
+          "currency": "USD",
+          "period": "月",
+          "note": "1 个网站，每月 10 万事件，数据保留 6 个月。"
+        },
+        {
+          "plan": "Cloud Pro",
+          "price": "20",
+          "currency": "USD",
+          "period": "月",
+          "note": "按月价格，含每月 100 万事件；额外事件每次 0.00003 美元。"
+        },
+        {
+          "plan": "自建版",
+          "price": "0",
+          "currency": "USD",
+          "period": null,
+          "note": "仅软件免费，需自行承担服务器、数据库和运维成本。"
+        }
+      ],
+      "free_tier_limits": "Hobby 最多 1 个网站，每月 10 万事件，保留 6 个月。页面访问、自定义事件和部分属性都会计量，不等于访客数。官方定价未列 Hobby 超额购买；超限后的处理及支付卡要求未核实。",
+      "features": {
+        "traffic": {
+          "value": "yes",
+          "note": "统计页面浏览、设备与流量来源。"
+        },
+        "utm": {
+          "value": "yes",
+          "note": "使用 UTM 参数区分推广链接。"
+        },
+        "custom_events": {
+          "value": "yes",
+          "note": "可定义点击和下载等事件；需在站点添加事件采集。"
+        },
+        "behavior_funnel": {
+          "value": "yes",
+          "note": "可用页面浏览或已埋点的事件构建漏斗。"
+        },
+        "web_vitals": {
+          "value": "yes",
+          "note": "可在统计脚本中手动启用 Core Web Vitals 采集。"
+        },
+        "self_host": {
+          "value": "yes",
+          "note": "可自行部署，需要 PostgreSQL。"
+        }
+      },
+      "sources": [
+        "https://umami.is/pricing",
+        "https://github.com/umami-software/umami/blob/master/LICENSE",
+        "https://docs.umami.is/docs/install",
+        "https://docs.umami.is/docs/cloud/faq",
+        "https://umami.is/product-analytics",
+        "https://docs.umami.is/docs/track-events",
+        "https://docs.umami.is/docs/funnel",
+        "https://docs.umami.is/docs/performance"
+      ],
+      "collected_at": "2026-11-26",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": "未知"
+    },
+    {
+      "id": "cloudflare-web-analytics",
+      "name": "Cloudflare Web Analytics",
+      "official_url": "https://developers.cloudflare.com/web-analytics/",
+      "github_url": null,
+      "platforms": [
+        "Web"
+      ],
+      "open_source": false,
+      "license": "商业服务条款",
+      "pricing_model": "完全免费",
+      "summary": "Cloudflare 提供的免费网站统计，覆盖页面浏览、流量来源与真实访客性能。",
+      "price_summary": "Web Analytics 免费，不要求切换 DNS 或启用 Cloudflare 代理。",
+      "prices": [
+        {
+          "plan": "Web Analytics",
+          "price": "0",
+          "currency": "USD",
+          "period": "月",
+          "note": "仅指 Web Analytics，不代表 Cloudflare 其他服务免费。"
+        }
+      ],
+      "free_tier_limits": "官方 FAQ 列出每个账户 10 个站点的软限制，可申请调整。未核实报表保留期及支付卡要求。",
+      "features": {
+        "traffic": {
+          "value": "yes",
+          "note": "通过浏览器脚本统计页面和来源。"
+        },
+        "utm": {
+          "value": "no",
+          "note": "不记录 URL 查询参数，因此不提供 UTM 报表。"
+        },
+        "custom_events": {
+          "value": "no",
+          "note": "官方 FAQ 明确当前不支持自定义事件。"
+        },
+        "behavior_funnel": {
+          "value": "no",
+          "note": "Web Analytics 不提供基于页面及自定义事件的产品漏斗。"
+        },
+        "web_vitals": {
+          "value": "yes",
+          "note": "报告真实用户的核心网页性能指标。"
+        },
+        "self_host": {
+          "value": "no",
+          "note": "这是 Cloudflare 托管服务，非可下载的自建软件。"
+        }
+      },
+      "sources": [
+        "https://developers.cloudflare.com/web-analytics/about/",
+        "https://developers.cloudflare.com/web-analytics/faq/",
+        "https://developers.cloudflare.com/web-analytics/get-started/"
+      ],
+      "collected_at": "2026-11-26",
+      "github_stars": null,
+      "latest_release": null,
+      "latest_release_date": null,
+      "maintenance_status": "未知"
+    }
+  ]
+}
