@@ -32,3 +32,19 @@ test('real mail catalog descriptions contain requested keywords',()=>{
  assert.deepEqual(new Set(searchCatalog(real,'邮件').map(p=>p.id)),new Set(['resend','mailersend','brevo','smtp2go','postmark','amazon-ses','sendgrid']));
  assert.equal(searchCatalog(real,'验证邮件')[0].id,'resend');
 });
+
+test('scrolling capture task aliases match confirmed capability rather than descriptions', () => {
+ const real = prepareSearchIndex([
+  {name:'Flameshot',summary:'不支持滚动长截图 / does not support scrolling screenshots'},
+  {name:'Greenshot',summary:'scrolling capture only in IE'},
+  {name:'PixPin',summary:'长截图',scrolling_capture:true},
+  {name:'Shottr',summary:'滚动截图',scrolling_capture:true},
+  ...items,
+ ]);
+ for (const query of ['长截图','滚动截图','滚动长截图',' SCROLLING SCREENSHOT ','scrolling screenshots','scrolling capture']) {
+  assert.deepEqual(searchCatalog(real,query).map(p=>p.name),['PixPin','Shottr']);
+ }
+ assert.deepEqual(searchCatalog(real,'滚动长截图',1).map(p=>p.name),['PixPin']);
+ assert.deepEqual(searchCatalog(real,'Flameshot').map(p=>p.name),['Flameshot']);
+ assert.deepEqual(searchCatalog(real,'邮件').map(p=>p.name),names('邮件'));
+});

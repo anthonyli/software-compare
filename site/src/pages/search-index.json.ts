@@ -24,6 +24,10 @@ export const GET: APIRoute = () => {
         pricing_model: p.pricing_model,
         pricing_model_en: pricingEn(p.pricing_model) || p.pricing_model,
         open_source: p.open_source,
+        // Capability search must use a verified rating, not mentions in a description.
+        ...(c.slug === "screenshot-tools" && p.features.scrolling_capture?.value === "yes"
+          ? { scrolling_capture: true }
+          : {}),
       };
     }),
   );
