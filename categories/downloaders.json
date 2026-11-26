@@ -714,11 +714,11 @@
         },
         "stream_m3u8": {
           "value": "partial",
-          "note": "可抓取部分流媒体，能力边界未打开功能页"
+          "note": "浏览器下载面板支持部分流媒体，但不支持带有复制保护的流，也不保证支持所有 M3U8 链接。"
         },
         "video_site": {
           "value": "partial",
-          "note": "浏览器视频抓取，不是 yt-dlp 式站点解析器"
+          "note": "在已集成的浏览器中播放受支持的视频时，可用视频下载面板；仅添加网页地址不会下载视频。"
         },
         "schedule": {
           "value": "yes"
@@ -743,7 +743,9 @@
       "sources": [
         "https://www.internetdownloadmanager.com/",
         "https://secure.internetdownloadmanager.com/buy_idm.html",
-        "https://www.internetdownloadmanager.com/support/idm-scheduler/idm_scheduler.html"
+        "https://www.internetdownloadmanager.com/support/idm-scheduler/idm_scheduler.html",
+        "https://www.internetdownloadmanager.com/register/new_faq/video5.html",
+        "https://www.internetdownloadmanager.com/register/new_faq/video7.html"
       ]
     },
     {

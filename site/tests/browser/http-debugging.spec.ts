@@ -11,6 +11,10 @@ test('HTTP debugging category and paid boundaries in both languages and widths',
     await page.goto(`/p/http-debugging/${id}/`);await page.locator(`[data-lang="${lang}"]`).click();
     const paid=id==='charles'||id==='proxyman'||id==='fiddler-everywhere';
     await expect(page.locator('.feature-row').nth(0).locator('.feat')).toHaveAttribute('title',paid?(lang==='en'?'On paid plans':'付费档提供'):(lang==='en'?'Yes':'支持'));
+    if(id==='proxyman'){
+     const limit=lang==='en'?'The official pricing table lists a one-rule limit for Starter and excludes Breakpoint and Map Local.':'官方定价表列明 Starter 的调试规则限 1 条，不含断点和 Map Local';
+     await expect(page.getByText(limit,{exact:false}).filter({visible:true})).toBeVisible();
+    }
     if(id==='fiddler-everywhere'){
      const rows=page.locator('.feature-row');
      await expect(rows.nth(1).getByText(lang==='en'?'start with Pro':'从 Pro 起，Lite 不含',{exact:false})).toBeVisible();
