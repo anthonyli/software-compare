@@ -1,5 +1,8 @@
 import { expect, test } from '@playwright/test';
 
+// Isolate local page requests from tests that exercise vote quotas.
+test.use({ extraHTTPHeaders: { 'CF-Connecting-IP': '198.51.100.201' } });
+
 const cases = [
   {
     route: '/p/photo-management/immich/',

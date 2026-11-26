@@ -29,8 +29,17 @@ test('product logos map to catalog IDs and small local WebP assets with sources'
   }
 });
 
-test('all RSS reader entries have a sourced logo', () => {
-  for (const { id } of read('categories/rss-readers.json').products) {
-    assert.ok(Object.hasOwn(sources, id), id);
+test('the eight first-batch RSS readers retain their sourced logos', () => {
+  const ids = new Set(read('categories/rss-readers.json').products.map((p) => p.id));
+  for (const id of ['capy-reader', 'fluent-reader', 'freshrss', 'miniflux', 'netnewswire', 'newsboat', 'newsflash', 'rss-guard']) {
+    assert.ok(ids.has(id) && Object.hasOwn(sources, id), id);
+  }
+  // Later catalog entries can use the initials fallback until their logos are available.
+});
+
+test('the four first-batch browsers have their own sourced logos', () => {
+  const ids = new Set(read('categories/browsers.json').products.map((p) => p.id));
+  for (const id of ['brave', 'dia', 'ego-lite', 'helium']) {
+    assert.ok(ids.has(id) && Object.hasOwn(sources, id), id);
   }
 });

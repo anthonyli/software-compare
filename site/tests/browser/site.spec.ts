@@ -40,7 +40,8 @@ test('anonymous votes persist, share across categories and change ranking',async
  await second.close();
 });
 test('API is idempotent, rejects forged identity, cross-origin and unknown IDs',async({playwright})=>{
- const api=await playwright.request.newContext({baseURL:origin});
+ // This local fixture should not depend on other tests' shared vote quota.
+ const api=await playwright.request.newContext({baseURL:origin,extraHTTPHeaders:{'CF-Connecting-IP':'198.51.100.202'}});
  let response=await api.get('/api/votes?ids=rustdesk');expect(response.status()).toBe(200);
  expect(response.headers()['cache-control']).toContain('no-store');
  const initial=(await response.json()).votes[0].count;
