@@ -263,3 +263,20 @@ NormCap 使用[上游 Flatpak 打包应用图标](https://github.com/dynobo/norm
 - [esearch](https://github.com/xushengfeng/eSearch/blob/1d3490cd288d583fd397f174d026a072ceda8d95/assets/icon.svg)（GPL-3.0）：上游安装资源内专用图标，非网站标题图或相似产品图案。
 
 保持原图比例、颜色和现有界面。上游声明与转换说明随静态资源分发，原稿随站或可从固定版本来源取得。
+
+### 启动器、分析及远程工具批次
+
+- [raycast](https://www.raycast.com/press)（Official editorial brand reference）：品牌资料提供的桌面 App 图标用于指称原应用；没有改色，不使用手机端图标或其他 Raycast 产品的商标。
+- [turso](https://turso.tech/brand)（Official brand reference）：官方品牌页公开供介绍 Turso 时使用的深色独立标志，不是数据库应用类别的通用图。
+- [2fas-auth](https://github.com/twofas/2fas-android/blob/4ad83b2b94967993db55dd36dcb2e258646eb7b6/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png)（GPL-3.0 / official media reporting）：Android 主应用的正式 2FAS Auth 图标，区别 2FAS Pass 和内部测试版本；官方媒体资料 https://2fas.com/press-kit/
+- [umami](https://github.com/umami-software/umami/blob/dbb8d606fbd4e99220fb83bcb4abad3e0f97f42a/src/assets/logo.svg)（MIT）：上游分析应用自己的 SVG 图形，区别同名非相关网站。
+- [spectre-console-cli](https://github.com/spectreconsole/spectre.console/blob/04b5dac6398dce0838c48cc3a3b6d1cc8a7f1747/resources/nuget/logo.png)（MIT）：NuGet 构建在 src/Directory.Build.props 中指定的官方包图标，适用于 Spectre.Console.Cli 包，不采用其他软件的终端图形。
+- [fittrackee](https://github.com/SamR1/FitTrackee/blob/2129e443363a231c936fc339a44cd533acc7e4cb/fittrackee_client/src/assets/logo.png)（AGPL-3.0-only）：官方项目镜像内网页应用实际用图，而非托管平台头像。
+- [vlc](https://github.com/videolan/vlc/blob/f7235210e5d55e165dcfef616cd19e940603473d/share/icons/256x256/vlc.png)（VideoLAN product-logo reference grant）：发行项目内的 VLC 橙色圆锥应用图标；VideoLAN 官方允许标志用于识别该项目或其产品，不代表背书。
+- [transmission](https://github.com/transmission/transmission/blob/f6d6c7f80bba2a4bee391a6fc62d2bcaf0c37d92/macosx/Images/Images.xcassets/AppIcon.appiconset/icon_256x256.png)（GPL-2.0 / GPL-3.0）：现行应用源码的 macOS AppIcon 资源，不使用相似的下载文件类型图标。
+- [rustdesk](https://github.com/rustdesk/rustdesk/blob/45e34a69239c2c2467fd02af8ee97263ff26ef23/flutter/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024%401x.png)（AGPL-3.0）：官方客户端的完整 app 标志，仅标识原应用，不作为定制客户端或转售品牌使用。
+- [sunshine](https://github.com/LizardByte/Sunshine/blob/b12662e562b319f942f459404fe766a79748bb6a/sunshine.svg)（GPL-3.0）：官方根目录的应用商标，打包也使用同一 SUNSHINE 应用图，不使用 Steam 或 Moonlight 图标。
+- [iterm2](https://commons.wikimedia.org/wiki/File:ITerm2_v3.4_icon.png)（CC BY-SA 4.0）：iTerm2 正式版本的原始配色与终端图案，采用许可定版，不误用仅仅外框细节略有差异的新预览图或 Beta 标志。WebP 与原稿同为 CC BY-SA 4.0，文件内含署名及许可。
+- [amnezia](https://github.com/amnezia-vpn/amnezia-client/blob/4f0fa34449439428619aeb89d6d8622671dffbbb/client/images/app.ico)（GPL-3.0）：开源 Windows 客户端编译时使用的产品原图，区别于付费套餐品牌和状态图标。
+
+保持原图比例、颜色和现有界面。上游声明与转换说明随静态资源分发，原稿随站或可从固定版本来源取得。

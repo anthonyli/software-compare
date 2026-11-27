@@ -1,0 +1,34 @@
+spectre-console-cli logo
+Credit: Spectre.Console contributors
+License: MIT
+License reference: https://github.com/spectreconsole/spectre.console/blob/04b5dac6398dce0838c48cc3a3b6d1cc8a7f1747/LICENSE.md
+Source: https://github.com/spectreconsole/spectre.console/blob/04b5dac6398dce0838c48cc3a3b6d1cc8a7f1747/resources/nuget/logo.png
+Original: spectre-console-cli-source.png
+SHA-256 of supplied original: 90e9e4cb23ea73e927f6da93d403f56e15230126f4453691d619068a6da1aac2
+Display conversion by Software Compare: original rasterized when needed, resized proportionately to a 96px long edge and encoded as WebP. No intentional recolor or geometry edits. The mark identifies the original product only and does not indicate sponsorship or endorsement.
+
+NuGet 构建在 src/Directory.Build.props 中指定的官方包图标，适用于 Spectre.Console.Cli 包，不采用其他软件的终端图形。
+
+Upstream license or artwork-use reference follows.
+
+MIT License
+
+Copyright (c) 2020 Patrik Svensson, Phil Scott, Nils Andresen
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
