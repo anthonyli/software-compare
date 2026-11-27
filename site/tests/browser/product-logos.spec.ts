@@ -52,7 +52,7 @@ test('browser comparison shows verified logos on desktop and mobile', async ({ p
 });
 
 test('screenshot tools show local app icons on both comparison layouts and product details', async ({ page }) => {
-  const ids = ['ksnip', 'normcap', 'satty', 'snow-shot', 'cleanshot-x'];
+  const ids = ['ksnip', 'normcap', 'satty', 'snow-shot', 'cleanshot-x', 'flameshot'];
   for (const width of [1280, 390]) {
     await page.setViewportSize({ width, height: 900 });
     await page.goto('/c/screenshot-tools/');
@@ -73,7 +73,7 @@ test('screenshot tools show local app icons on both comparison layouts and produ
 });
 
 for (const [category, ids] of [
-  ['note-taking', ['qownnotes', 'cherrytree']],
+  ['note-taking', ['qownnotes', 'cherrytree', 'zim', 'triliumnext']],
   ['launchers', ['rofi']],
 ] as const) {
   test(`additional ${category} icons load on both layouts and on details`, async ({ page }) => {
