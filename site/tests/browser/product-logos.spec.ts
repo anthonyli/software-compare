@@ -62,3 +62,28 @@ test('screenshot tools show local app icons on both comparison layouts and produ
     await expect.poll(() => image.evaluate((node: HTMLImageElement) => node.naturalWidth)).toBe(96);
   }
 });
+
+for (const [category, ids] of [
+  ['note-taking', ['qownnotes', 'cherrytree']],
+  ['launchers', ['rofi']],
+] as const) {
+  test(`additional ${category} icons load on both layouts and on details`, async ({ page }) => {
+    for (const width of [1280, 390]) {
+      await page.setViewportSize({ width, height: 900 });
+      await page.goto(`/c/${category}/`);
+      const container = page.locator(width === 1280 ? '#matrix' : '#card-list');
+      for (const id of ids) {
+        const image = container.locator(`[data-product-id="${id}"] [data-product-logo="verified"] img`);
+        await image.scrollIntoViewIfNeeded();
+        await expect(image).toHaveAttribute('src', `/product-logos/${id}.webp`);
+        await expect.poll(() => image.evaluate((node: HTMLImageElement) => node.naturalWidth)).toBe(96);
+      }
+    }
+    for (const id of ids) {
+      await page.goto(`/p/${category}/${id}/`);
+      const image = page.locator('.detail-hero [data-product-logo="verified"] img');
+      await expect(image).toHaveAttribute('alt', '');
+      await expect.poll(() => image.evaluate((node: HTMLImageElement) => node.naturalWidth)).toBe(96);
+    }
+  });
+}
