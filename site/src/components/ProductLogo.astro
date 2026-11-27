@@ -12,16 +12,18 @@ const { id, name, size = 24 } = Astro.props;
 const src = /^[a-z0-9-]+$/.test(id) && Object.hasOwn(sources, id)
   ? `/product-logos/${id}.webp`
   : null;
+const verifiedSizes = { 24: 32, 28: 40, 44: 64 } as const;
+const displaySize = src ? verifiedSizes[size] : size;
 const initial = Array.from(name.trim())[0]?.toLocaleUpperCase("en") ?? "·";
 ---
 <span
   class="product-logo"
   data-product-logo={src ? "verified" : "placeholder"}
   aria-hidden="true"
-  style={`--product-logo-size: ${size}px`}
+  style={`--product-logo-size: ${displaySize}px`}
 >
   {src
-    ? <img src={src} alt="" width={size} height={size} loading={size === 44 ? "eager" : "lazy"} decoding="async" />
+    ? <img src={src} alt="" width={displaySize} height={displaySize} loading={size === 44 ? "eager" : "lazy"} decoding="async" />
     : <span>{initial}</span>}
 </span>
 

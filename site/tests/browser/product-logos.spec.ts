@@ -8,6 +8,7 @@ test('verified product logos load locally on desktop, mobile and detail pages', 
     const product = container.locator('[data-product-id="newsboat"]');
     const badge = product.locator('[data-product-logo="verified"]');
     await expect(badge).toBeVisible();
+    await expect(badge).toHaveCSS('width', width === 1280 ? '32px' : '40px');
     await expect(badge).toHaveAttribute('aria-hidden', 'true');
     await expect(badge.locator('img')).toHaveAttribute('src', '/product-logos/newsboat.webp');
     await expect(badge.locator('img')).toHaveAttribute('alt', '');
@@ -19,6 +20,7 @@ test('verified product logos load locally on desktop, mobile and detail pages', 
   const hero = page.locator('.detail-hero');
   await expect(hero.getByRole('heading', { name: 'Newsboat', exact: true })).toBeVisible();
   const image = hero.locator('[data-product-logo="verified"] img');
+  await expect(image).toHaveAttribute('width', '64');
   await expect(image).toBeVisible();
   await expect.poll(() => image.evaluate((node: HTMLImageElement) => node.naturalWidth)).toBeGreaterThan(0);
 });
