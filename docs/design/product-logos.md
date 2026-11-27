@@ -167,3 +167,25 @@ NormCap 使用[上游 Flatpak 打包应用图标](https://github.com/dynobo/norm
 - [speech-note](https://github.com/mkiol/dsnote/blob/0f93c30f7460da9892e2802523ef4bd98537539b/desktop/icons/dsnote.svg)（MPL-2.0）：采用 Speech Note 的桌面应用矢量图标，不是托盘、模型或第三方图标。
 
 保持原图比例、颜色和现有界面。上游声明与转换说明随静态资源分发，原稿随站或可从固定版本来源取得。
+
+### 启动器、录屏、数据库和运动工具批次
+
+- [materialcraft](https://github.com/storytold/materialcraft/blob/e7ec9cb6bd9789514ac5889f07f9e70df7bd35c5/assets/app-icon/hicolor/128x128/apps/ai.storyteller.materialcraft.png)（MIT）：产品图标目录明确允许此发行图标按 MIT 或 Apache-2.0 使用，不使用 ArtCraft 品牌标志。
+- [gpxsee](https://github.com/tumic0/GPXSee/blob/a62907670c005e80a8b8e66c8735a748b55d85af/icons/app/hicolor/scalable/apps/gpxsee.svg)（GPL-3.0-only）：采用上游 Hicolor 应用图标，不使用项目注明独立授权的工具栏主题或文件类型图标。
+- [kap](https://github.com/wulkano/Kap/blob/c42692fa63ac71ed192e01684beb78a1b864aa88/renderer/public/static/kap-icon.png)（MIT）：采用上游桌面程序资源内的 Kap 应用图标。
+- [kooha](https://github.com/SeaDve/Kooha/blob/f25e284045460c8de5032a4efdbc30a66a80f651/data/icons/io.github.seadve.Kooha.svg)（GPL-3.0-or-later）：采用 README 展示的正常应用图标，不使用开发版或 symbolic 图标。
+- [qtractor](https://github.com/rncbc/qtractor/blob/b548099d3412f3139cbc72c9db54887cd0132b07/src/images/qtractor.svg)（GPL-2.0-or-later）：采用上游桌面应用资源专用标志，而非轨道、插件或会话格式的图标。
+- [material-maker](https://github.com/RodZill4/Material-Maker/blob/7d6daae3c74c09720afe4138ce09699ab3591ce1/icon.ico)（MIT）：项目声明未另有说明的文件采用 MIT，使用根目录应用图标。
+- [wox](https://github.com/Wox-launcher/Wox/blob/69faef0fa93d361fbfc651b5ba7bd67e5e5c22b9/assets/app.ico)（GPL-3.0）：采用上游应用发行资源的正式 Wox 标志。
+- [db-browser-sqlite](https://github.com/sqlitebrowser/sqlitebrowser/blob/2206215d21123c09a4a6c24d9332ce5d051379a8/images/logo.svg)（MPL-2.0）：采用上游正式应用 Logo，README 记录该图基于公共域 Tango 图标，由 John T. Haller 创作。
+- [gopass](https://github.com/gopasspw/gopass/blob/a4082fade9a7d7b051b3f7a3441923c7c580f6c3/docs/logo.png)（MIT）：采用上游 docs 的项目图形标志，不用第三方同名项目或网站图标。
+- [padloc](https://github.com/padloc/padloc/blob/d19096ce90c65cdc7815cbd95d98a427b9c76b6c/assets/app-icon.ico)（AGPL-3.0）：使用社区客户端应用资源，不取 enterprise 目录商用源码或第三方服务图标。
+- [helio](https://github.com/helio-fm/helio-sequencer/blob/a458d9505bf4b020ded6c21407183bb2fee43fcd/Projects/iOS/Helio/Images.xcassets/AppIcon.appiconset/Icon-AppStore-1024.png)（CC-BY-4.0）：采用官方应用分发图标；README 明确作品作者及 CC BY 4.0。
+- [goldencheetah](https://github.com/GoldenCheetah/GoldenCheetah/blob/4472fed4e4d99cea21a8e5fff777f252d1948caa/doc/wiki/GC_logo.png)（GPL-3.0）：采用项目 Wiki 随源码发布的 GoldenCheetah 产品图形原图。
+- [liftosaur](https://github.com/astashov/liftosaur/blob/c062ede0697166f0dc91b3e9593878c188174f3e/images/logo-square.png)（AGPL-3.0）：采用上游产品自己的方形标志，非官网社交平台图标。
+- [heidisql](https://github.com/HeidiSQL/HeidiSQL/blob/45a0ee7ee015ab7f579b1e22fbad8d1689625149/res/Assets/Square150x150Logo.scale-100.png)（GPL-2.0）：采用官方 Windows 打包资产中的 HeidiSQL 应用标志，非依赖组件图标。
+- [quicksilver](https://github.com/Quicksilver/Quicksilver/blob/12d754357c538fd15dfa874970df99d378229f6d/Quicksilver/Resources/Images/Quicksilver.icns)（Apache-2.0）：采用主应用打包资源中的 Quicksilver 图标，不使用插件、磁盘映像或旧格式图标。
+- [sonobus](https://github.com/sonosaurus/sonobus/blob/35f1062dab196b9838a4bb529c4bf6592b7f5987/images/sonobus_icon_mac_256.png)（GPL-3.0）：采用上游正式 SonoBus Mac 图标，不使用内置 JUCE 依赖或演示应用资源。
+- [zrythm](https://github.com/zrythm/zrythm/blob/13b16ed351bd06dd1762252a1f0827e8cc1ff9d1/src/gui/resources/icons/zrythm-dark/scalable/apps/zrythm.svg)（LicenseRef-ZrythmLogoLicense）：上游资产专用许可引用品牌政策，明确允许仅用图形准确指代未修改的 Zrythm，不表示赞助或关联。
+
+保持原图比例、颜色和现有界面。上游声明与转换说明随静态资源分发，原稿随站或可从固定版本来源取得。
