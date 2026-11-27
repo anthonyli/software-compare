@@ -395,3 +395,28 @@ NormCap 使用[上游 Flatpak 打包应用图标](https://github.com/dynobo/norm
 - [greenshot](https://raw.githubusercontent.com/greenshot/greenshot/2c1d38a3258ca71b063024ab2e6f5f4cbd43fa18/src/Greenshot.Base/Resources/GreenshotResources/Greenshot.Icon.ico)（[来源与授权](https://getgreenshot.org/faq/may-i-use-greenshot-trademark-or-logo/)）：Original 256px image from the official Windows executable icon. Its ICO is byte-identical to the portable package application icon. The project’s FAQ permits fair editorial reviews; this is not a promotional asset or a logo for another product.
 - [continue](https://raw.githubusercontent.com/continuedev/continue/5522c6f44ca0ac3528b37244818fbfa39b5af470/extensions/vscode/media/icon.png)（[来源与授权](https://github.com/continuedev/continue/blob/5522c6f44ca0ac3528b37244818fbfa39b5af470/LICENSE)）：Official product PNG used by the Continue VS Code extension manifest in the same Apache-2.0 source tree. Not a provider logo or the mark of another project. Used only to identify the original Continue tool.
 - [ollama](https://raw.githubusercontent.com/ollama/ollama/8ae8acb81afba9c3c67adf08190964eb7d1207ef/app/darwin/Ollama.app/Contents/Resources/icon.icns)（[来源与授权](https://github.com/ollama/ollama/blob/8ae8acb81afba9c3c67adf08190964eb7d1207ef/LICENSE)）：The official macOS application icon packaged by Ollama in the MIT-licensed app source, rendered from its largest provided frame. Not a generic favicon, third-party model mark, or mark of a different llama project.
+
+### 品牌方要求保留的原始 PNG
+
+这些 PNG 原样存放，服务端不改色、重采样或编码。文件哈希随配置校验，浏览器仍使用相同尺寸的图标槽；不扩大原有 WebP 预算。
+
+- [netlify](https://www.netlify.com/assets/logos/netlify-logo-monogram.zip)（[品牌规范](https://www.netlify.com/about/#brand-assets)）：The light-surface monogram from logo-netlify-monogram-lightmode.png in the official media archive. The compact badge next to Netlify’s written product name uses the supplied monogram, without changing the file.
+- [open-webui](https://docs.openwebui.com/assets/files/open-webui-icon-115aa34b938cd4b21063a0a1da4c06e0.png)（[品牌规范](https://docs.openwebui.com/brand/)）：Official primary Open WebUI PNG for compact placements with the product name nearby. Independent comparison only, not an Open WebUI distribution, integration logo, or co-branding.
+- [supabase-cloud](https://supabase.com/brand-assets/supabase-icon-green-transparent.png)（[品牌规范](https://supabase.com/brand)）：Official compact green mark for Supabase, used only for the hosted Supabase product. The downloaded PNG is unaltered and appears adjacent to the product name.
+- [dodo-payments](https://dodopayments.com/brand-assets.zip)（[品牌规范](https://dodopayments.com/brand)）：Standalone Brandmark.png from the official Dodo Payments media kit, which is supplied for publications and media coverage. Unmodified bytes/native palette; no wordmark recreation, co-branding, or implied endorsement.
+
+### 中文输入法引擎
+
+- [rime](https://raw.githubusercontent.com/rime/librime/d5fb48f3fad1b50399b0eb728bf84bdcbd6d501c/doc/rime-icon.png)（[BSD 3-Clause](https://github.com/rime/librime/blob/d5fb48f3fad1b50399b0eb728bf84bdcbd6d501c/LICENSE)）：The official librime documentation project icon, not Squirrel or Weasel; byte-identical decoded RGBA after lossless WebP encoding.
+
+### 官方应用包图标
+
+- [utm](https://raw.githubusercontent.com/utmapp/UTM/3d4b8d8cb1ce93a8b1a9610695c12487685f0c15/Platform/Assets.xcassets/AppIcon.appiconset/icon_128pt.png)（[Apache-2.0](https://github.com/utmapp/UTM/blob/3d4b8d8cb1ce93a8b1a9610695c12487685f0c15/LICENSE)）：Default UTM icon from the 128pt macOS slot of AppIcon.appiconset, independently checked against its Contents.json. This is the bundled UTM asset, not the companion UTM Remote or a community redesign.
+- [comfyui](https://raw.githubusercontent.com/Comfy-Org/desktop/e2d964b7456cea8423c7b9d3371c612313c06baa/assets/UI/Comfy_Logo_x128.png)（[GPL-3.0-only](https://github.com/Comfy-Org/desktop/blob/e2d964b7456cea8423c7b9d3371c612313c06baa/LICENSE)）：Official standalone ComfyUI icon from its GPL-licensed Desktop distribution. This identifies ComfyUI itself, not a custom node, third-party image model or provider.
+- [organic-maps](https://raw.githubusercontent.com/organicmaps/organicmaps.github.io/03a7e35175938d9b8b6988d1ca2ab8c7ea052563/static/logos/green-on-transparent.svg)（[官网资源许可](https://github.com/organicmaps/organicmaps.github.io/blob/03a7e35175938d9b8b6988d1ca2ab8c7ea052563/LICENSE)）：Official green standalone logo from the website’s project assets, not from the application UI or map datasets.
+
+### 运动应用媒体包图标
+
+- [jefit](https://www.jefit.com/press-media/jefit-media-kit-2026-09.zip)（[媒体素材](https://www.jefit.com/press-media)）：Official blue 1024px Jefit app icon from jefit-media-kit-2026-09/app-icon/jefit-app-icon-blue-1024.png. Provided by Jefit for coverage of the official application.
+- [fitbod](https://fitbod.pressdeck.io/storage/images/fitbod-uaw-N.png)（[媒体素材](https://fitbod.pressdeck.io/media/logos)）：Original square press-kit icon supplied by Fitbod; design and palette cross-checked against the 512px app artwork distributed for Fitbod Inc. App Store ID 1041517543.
+- [trainerroad](https://www.dropbox.com/sh/7oz6tjqobdqk5hs/AACKcU-PUvZmB7CTrkVPI5Uxa?dl=1)（[媒体包和品牌规范](https://www.trainerroad.com/press)）：Official red TrainerRoad logo badge (Branding/Logos/Web/TrainerRoad-Logo-Primary.png). Original bytes; product name is nearby. Keep the square red badge intact with the ¼-inch minimum display height and one third of the badge height clear from the product name, per the supplied guide.
