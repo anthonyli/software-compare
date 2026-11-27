@@ -54,3 +54,21 @@ NormCap 使用[上游 Flatpak 打包应用图标](https://github.com/dynobo/norm
 - Lite XL：[MIT 来源素材](https://github.com/lite-xl/lite-xl/blob/27093a73dcc9382c866a6b1b1ead77fb20ff980a/resources/icons/lite-xl.svg)。
 
 仅使用同站图标；每项上游来源、转换说明与适用许可见素材清单和随附通知。Bruno 的 WebP 保留 OpenMoji / Bruno 来源、转换说明和 CC BY-SA 4.0 元数据。
+
+### 下载、压缩、剪贴板和编辑工具批次
+
+- [motrix](https://github.com/agalwood/Motrix/blob/d488364d26adbfaad60f1545b0db23dc7100ceae/public/app-icon.png)（MIT）：上游 README 使用的产品应用标识。
+- [gopeed](https://github.com/GopeedLab/gopeed/blob/82ca3ea0147978aa3b06762efb763d9974c97992/ui/flutter/assets/icon/icon_512.png)（GPL-3.0）：采用 Flutter 产品自身的彩色应用图标，不使用独立的 agent 图标。
+- [ab-download-manager](https://github.com/amir1376/ab-download-manager/blob/f15b691c8606774653a49ee65562146e4102320d/desktop/app/icons/icon.png)（Apache-2.0）：采用桌面安装包配置中的应用图标，用于识别原产品，不表示背书。
+- [persepolis](https://github.com/persepolisdm/persepolis/blob/109e95261fa2827bf7bf1b24173328d90235a53e/resources/com.github.persepolisdm.persepolis.svg)（GPL-3.0）：使用项目安装的 reverse-DNS 桌面应用 SVG，不使用系统托盘图标。
+- [peazip](https://github.com/peazip/PeaZip/blob/ded9d2d94100969a48c8ccfe934c4b6e358b697f/peazip-sources/dev/peazip.ico)（LGPL-3.0）：采用项目开发资源中的 PeaZip 程序 ICO，不使用档案格式关联图标。
+- [ark](https://github.com/KDE/ark/blob/1e4ce458a1170b962f455102e11ec89578ea871b/app/icons/sc-apps-ark.svg)（LGPL-3.0-only）：上游 app/icons/ 版图，适用 REUSE.toml 明示的文件级许可。保留 Oxygen 版权通知。
+- [file-roller](https://github.com/GNOME/file-roller/blob/ce1e6579b5e8885aee6f865b892eda4cfec7b2ca/data/icons/hicolor/scalable/apps/org.gnome.FileRoller.svg)（CC BY-SA 4.0）：采用正式版应用 SVG，文件内包含 GNOME Design Team 及 CC BY-SA 4.0 声明。
+- [copyq](https://github.com/hluk/CopyQ/blob/1975a4d19086f3501ceeb5e531da509dc6b7ef99/src/images/icon.svg)（GPL-3.0）：采用项目应用资源中的独立彩色 SVG。
+- [ditto](https://github.com/sabrogden/Ditto/blob/a80fd3536bc407cac8cce43b5682022282ace983/res/Ditto2.ico)（GPL-3.0）：CP_Main.rc 将 Ditto2.ico 注册为 IDR_MAINFRAME，非旧版 Ditto.ico 或不同状态的托盘图。
+- [emacs](https://github.com/emacs-mirror/emacs/blob/636f166cfc86aa90d63f592fd99f3fdd9ef95ebd/etc/images/icons/hicolor/scalable/apps/emacs.svg)（GPL-3.0-or-later）：正式标签应用 SVG 和同目录 artwork README 都直接声明作者及许可。
+- [kate](https://github.com/KDE/kate/blob/6d59387789f1a3d57cb9b93e23138606381be36e/apps/kate/icons/unix/sc-apps-kate.svg)（LGPL-3.0-or-later）：正式标签安装用 SVG 与 KDE Breeze 的 icons/apps/48/kate.svg 字节一致，适用 Breeze 文件级 artwork license。
+- [neovim](https://neovim.io/logos/neovim-logos.zip)（CC BY 3.0）：官方品牌 ZIP 中的 neovim-mark.svg，全色独立标识，不使用横向文字标识。
+- [pulsar](https://github.com/pulsar-edit/pulsar/blob/91b5956469f54f79429323a6b01a5d84e5e7f8ef/resources/app-icons/beta.svg)（MIT）：正式版本的 electron-builder 脚本使用资源文件 beta.svg，尽管文件名如此，它仍是正式包应用图标。
+
+保持原图比例、颜色和现有界面。上游声明与转换说明随静态资源分发，原稿随站或可从固定版本来源取得；Neovim 和 File Roller 的转换图同时保留署名与许可元数据。
