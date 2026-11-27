@@ -9,7 +9,6 @@ for (const [category, ids] of [
   ['image-editors', ['drawing', 'photodemon']],
   ['video-editors', ['filmcraft', 'pitivi']],
   ['code-editors', ['notepad-plus-plus', 'vim']],
-  ['animation-2d', ['wick-editor']],
   ['api-clients', ['yaak']],
   ['remote-desktop', ['meshcentral']],
   ['downloaders', ['qbittorrent']],

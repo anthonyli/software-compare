@@ -218,8 +218,7 @@ NormCap 使用[上游 Flatpak 打包应用图标](https://github.com/dynobo/norm
 - [pitivi](https://github.com/pitivi/pitivi/blob/a6473c5844353eefd2495aa60584538a0b33661e/data/icons/hicolor/scalable/apps/org.pitivi.Pitivi.svg)（LGPL-2.1-or-later）：采用随上游应用分发的产品图标，非关联文档或 symbolic 图标。
 - [notepad-plus-plus](https://github.com/notepad-plus-plus/notepad-plus-plus/blob/1149a23f579a5c82696c5fa458b779633e867019/PowerEditor/misc/chameleon/chameleon-pencil-200.png)（GPL-3.0）：采用上游标志目录中单独的变色龙铅笔图形，不使用插件、发行地域横幅或文字。
 - [vim](https://github.com/vim/vim/blob/6c201ec5d890c649ada74bd1c1975fdf65a54d7f/runtime/vimlogo.svg)（Vim）：上游 READMEdir/README_vimlogo.txt 明确该独立 SVG 使用 Vim 许可；保留未修改的原 SVG。
-- [wick-editor](https://github.com/Wicklets/wick-editor/blob/f34f0d9512d7165e74c1910ea1aba9173ab8dec2/public/icon.png)（GPL-3.0）：采用上游编辑器正式应用资源中的图标，而不是赞助平台图标。
-- [yaak](https://github.com/mountain-loop/yaak/blob/6196bf2a21ecac4f8ba3e3c8d4a2d1e7496ab452/crates-tauri/yaak-app-client/icons/release/icon.png)（MIT）：使用桌面客户端 release 版图标，不用 dev 版或代理图标。
+- [yaak](https://github.com/mountain-loop/yaak/blob/6196bf2a21ecac4f8ba3e3c8d4a2d1e7496ab452/crates-tauri/yaak-app-client/icons/release/128x128.png)（MIT）：使用 Tauri 正式打包配置指定的 release 版 128 像素图标，不用 dev 版或代理图标。
 - [meshcentral](https://github.com/Ylianst/MeshCentral/blob/bf9af130ba42dad7afb416f9f1551cef074b9e6b/public/favicon-303x303.png)（Apache-2.0）：使用上游独立 303px MeshCentral 产品品牌资源，与官方界面的标识相符，非 noVNC 或系统通用图标。
 - [bleachbit](https://github.com/bleachbit/bleachbit/blob/5f7d20abb110cb88e7cf2df8df9939e0c472db73/windows/bleachbit.ico)（GPL-3.0）：使用上游 Windows 应用打包图标，不使用第三方下载站或普通回收站图标。
 - [czkawka](https://github.com/qarmin/czkawka/blob/9945e3521593e5c17247062942906aa0cc04b60e/data/icons/com.github.qarmin.czkawka.svg)（CC-BY-4.0）：上游图标许可证逐项列明该正式应用 SVG 及作者；不使用它的开发版或 Krokiet 标记。

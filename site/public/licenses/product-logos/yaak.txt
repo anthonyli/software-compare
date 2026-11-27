@@ -2,12 +2,12 @@ yaak logo
 Credit: Yaak and contributors
 License: MIT
 License reference: https://github.com/mountain-loop/yaak/blob/6196bf2a21ecac4f8ba3e3c8d4a2d1e7496ab452/LICENSE
-Source: https://github.com/mountain-loop/yaak/blob/6196bf2a21ecac4f8ba3e3c8d4a2d1e7496ab452/crates-tauri/yaak-app-client/icons/release/icon.png
-Original: Exact original at pinned source above (no duplicate copy).
-SHA-256 of supplied original: d4887e0dc5263b45c01590b4af472c3df972efffd32576d1420151e0574c403d
+Source: https://github.com/mountain-loop/yaak/blob/6196bf2a21ecac4f8ba3e3c8d4a2d1e7496ab452/crates-tauri/yaak-app-client/icons/release/128x128.png
+Original: yaak-source.png
+SHA-256 of supplied original: b773e399baae5f56d17537da1cbf16a97cb5d48d3b52ed08362d5d9dfc5a6474
 Display conversion by Software Compare: original rasterized when needed, resized proportionately to a 96px long edge and encoded as WebP. No intentional recolor or geometry edits. The mark identifies the original product only and does not indicate sponsorship or endorsement.
 
-使用桌面客户端 release 版图标，不用 dev 版或代理图标。
+使用 Tauri 正式打包配置指定的 release 版 128 像素图标，不用 dev 版或代理图标。
 
 Upstream license follows.
 
