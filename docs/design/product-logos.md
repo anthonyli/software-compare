@@ -72,3 +72,23 @@ NormCap 使用[上游 Flatpak 打包应用图标](https://github.com/dynobo/norm
 - [pulsar](https://github.com/pulsar-edit/pulsar/blob/91b5956469f54f79429323a6b01a5d84e5e7f8ef/resources/app-icons/beta.svg)（MIT）：正式版本的 electron-builder 脚本使用资源文件 beta.svg，尽管文件名如此，它仍是正式包应用图标。
 
 保持原图比例、颜色和现有界面。上游声明与转换说明随静态资源分发，原稿随站或可从固定版本来源取得；Neovim 和 File Roller 的转换图同时保留署名与许可元数据。
+
+### 文件备份、同步和影音工具批次
+
+- [deja-dup](https://gitlab.gnome.org/World/deja-dup/-/blob/dab65ba3c2887d98c11a8e6c1b0ac0a6b4629b1a/data/icons/org.gnome.DejaDup.svg)（CC BY-SA 4.0）：采用已经安装的正式 GNOME 图标，SVG 中直接声明作者及许可。
+- [pika-backup](https://gitlab.gnome.org/World/pika-backup/-/blob/7f3581950eca0bd56260cdaac3d3a1fe77c3f756/data/app.svg)（CC BY-SA 4.0）：使用 Meson 安装的正式图标，不使用含辅助图形的绘制画板；上游 Source SVG 保留版权及许可元数据。
+- [back-in-time](https://github.com/bit-team/backintime/blob/022ec6aec81ad3cf6dc42b7987394ae5160ac1e6/qt/icons/scalable/apps/backintime.svg)（GPL-2.0-or-later）：采用上游桌面应用 SVG，文件单独声明作者及 GPL-2.0-or-later。
+- [kopia](https://github.com/kopia/kopia/blob/065be1129eceab2a8ba5ddc46eb2795ef25791db/app/public/logo512.png)（Apache-2.0）：采用 Kopia UI 应用自有标识，非通用浏览器图标。
+- [duplicati](https://github.com/duplicati/duplicati/blob/0fe4eba7c017dbca80b38c1fb3c031618bad6ac8/Assets/application%20icon/application_icon.svg)（MIT）：采用普通分发目录中的主程序图标，处于 MIT 条款适用范围，非 proprietary 素材。
+- [vorta](https://github.com/borgbase/vorta/blob/e91997c92ca2de88deddda9d256e9cc8cf8f2f89/package/icon.icns)（GPL-3.0）：使用上游 macOS 应用 ICNS，图案与项目 README 的应用标识一致，不使用 Fork Awesome 或 Material Design 内部控件图标。
+- [syncthing](https://github.com/syncthing/syncthing/blob/1107b3cd11dbe267a8b80bbe1f89fb86a070b5c3/assets/logo-only.svg)（MPL-2.0）：Debian 构建安装此 SVG，上游维护者确认产品标志与代码同许可；仅标识原软件，不暗示官方关系。
+- [flowblade](https://github.com/jliljebl/flowblade/blob/0051e2bb93a96850d7d49238f9ad06561e714960/flowblade-trunk/installdata/io.github.jliljebl.Flowblade.png)（GPL-3.0）：使用与上游桌面启动文件同名的安装图标，不使用批处理工具图标。
+- [olive](https://github.com/olive-editor/olive/blob/7e0e94abf6610026aebb9ddce8564c39522fac6e/app/packaging/windows/olive.ico)（GPL-3.0）：使用 Windows 打包主图标，非安装器或 OVE 文档图标。
+- [losslesscut](https://github.com/mifi/lossless-cut/blob/a30b05393768002f52a14b02fa8da374471c25a0/src/renderer/src/icon.svg)（GPL-2.0）：上游打包脚本生成 Windows/Linux 应用图标使用的原 SVG。
+- [avidemux](https://github.com/mean00/avidemux2/blob/367da14a394cafd258824b2240c0600cdea39f45/avidemux/qt4/ADM_userInterfaces/ADM_gui/pics/avidemux_window_icon_linux.png)（GPL-2.0）：使用 Qt 主窗口程序图标，不使用 jobs 子程序或安装器图片。
+- [lmms](https://github.com/LMMS/artwork/blob/4bdcc1421bb84964c150d519d73e1bef4cd9c820/Icon%20%26%20Mimetypes/lmms-64x64.svg)（CC0-1.0）：主项目 README 直接指向此 SVG，采用独立 Artwork 仓库的 CC0，不把程序许可当成素材许可。
+- [hydrogen](https://github.com/hydrogen-music/hydrogen/blob/00509be4aae5d4ca64a95428c9f33d08210e4f96/data/img/h2-icon.ico)（GPL-2.0）：采用打包应用可辨识的 H₂ 图标，不使用设置界面内的 MIDI 图标。
+- [tenacity](https://codeberg.org/tenacityteam/assets/src/commit/aa50ac96535dd7bda4600092cabf98e0243a07a7/PNG/tenacity-icon-light-256.png)（CC BY 4.0）：采用官方品牌资源仓库中色彩适合浅色背景的正式版独立标识，使用素材 CC BY 而非程序 GPL。
+- [dust3d](https://github.com/huxingyi/dust3d/blob/02a0fc749453a389d12bdbce866fa19dde6e77e5/application/dust3d.icns)（MIT）：采用官方 macOS 应用包中的完整项目图标，用于识别 Dust3D。
+
+保持原图比例、颜色和现有界面。上游声明与转换说明随静态资源分发，原稿随站或可从固定版本来源取得。CC BY 与 BY-SA 图标保留图内署名及许可元数据。
