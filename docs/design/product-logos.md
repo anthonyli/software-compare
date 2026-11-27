@@ -246,3 +246,20 @@ NormCap 使用[上游 Flatpak 打包应用图标](https://github.com/dynobo/norm
 - [opencode](https://github.com/anomalyco/opencode/blob/b64f928fd005c8d1ba24800f5364882bf492da79/packages/desktop/icons/prod/128x128.png)（MIT / editorial brand reference）：仅用上游生产版桌面应用图标，保留官方完整图案及内边距。媒体介绍用途见 https://opencode.ai/press 及 https://opencode.ai/brand
 
 保持原图比例、颜色和现有界面。上游声明与转换说明随静态资源分发，原稿随站或可从固定版本来源取得。
+
+### 录屏、文档和备份工具批次
+
+- [sharex](https://github.com/ShareX/sharex.github.io/blob/e5aa9231533a08fd760ce8f31ec49cac2c3752cf/img/ShareX_Icon.ico)（GPL-3.0 / official brand asset）：官方品牌资料所列默认应用图标，非 favicon 或独立 Logo 版本。256px 内嵌 PNG 的 SHA-256 为 c51799a5af8b5ef7722dd301a74125616f8941243c434b9d2445712ce776dd6f；https://getsharex.com/brand-assets
+- [vokoscreenng](https://github.com/vkohaupt/vokoscreenNG/blob/28ad1035459a6163063eead4874158ab28a2f6a5/src/pictures/logo/logo.png)（Public Domain）：上游为原始标志单独发布 Public Domain 声明。使用对应目录原图，不套用其它资源的许可。
+- [ardour](https://github.com/Ardour/ardour/blob/eb8afaddfae2eedb6a8c34b546b1f0b310f09343/gtk2_ardour/icons/ardour-app-icon_osx.png)（GPL-2.0 / project artwork reuse）：上游 macOS 应用图标。项目维护者确认可用于与 Ardour 相关的展示，保留标识用途和开发者署名。https://discourse.ardour.org/t/permissions-for-using-image/84415
+- [quickrecorder](https://github.com/lihaoyun6/QuickRecorder/blob/e82051787f013ec2e811fcceab2d7de80e9d4dbe/QuickRecorder/Assets.xcassets/AppIcon.appiconset/icon_128x128.png)（AGPL-3.0）：macOS 项目安装时使用的正式 AppIcon，非站点图标。
+- [captura](https://github.com/MathewSachin/Captura/blob/3fdf41529bf4d50cd7a85aedd856f30e34279a47/src/Captura/Images/Captura.ico)（MIT）：Captura 上游发布的 Windows 应用标志，不使用暂停或录制按钮图标。
+- [openshot](https://github.com/OpenShot/openshot-qt/blob/c43a9f9171342beead5b83c5b64cf942c80ac182/xdg/icon/256/openshot-qt.png)（GPL-3.0-or-later）：上游 Linux 桌面包的 256px 应用图标，保留原比例与颜色。
+- [7zip](https://github.com/ip7z/7zip/blob/d3296e39e1f1f92c7b41c0c3848e65640428d42d/CPP/7zip/UI/FileManager/7zipLogo.ico)（LGPL-2.1-or-later / project artwork）：7-Zip 项目文件管理器自带的正式黑白标志。权利人曾在第三方软件选介请求中指向官方标志；此处只作原产品识别，不称合作或背书。https://sourceforge.net/p/sevenzip/discussion/45797/thread/320fac95/
+- [sumatra-pdf](https://github.com/sumatrapdfreader/sumatrapdf/blob/e278d6194298553b44f564c4c2073de48f74076e/src/ng/linux/icons/sumatrapdf-256.png)（GPL-3.0）：原项目打包的 256px 应用图标，黄色 PDF 标志而不是通用文件图标。图标作者详见 https://github.com/sumatrapdfreader/sumatrapdf/blob/master/AUTHORS
+- [borgbackup](https://github.com/borgbackup/borg/blob/6ff424880c7931eb2306626b26a73b02fedb1959/docs/_static/logo.png)（BSD-3-Clause）：项目文档中的官方短字标，不是 BorgBase 标志。字标使用的 Black Ops One 字体另见 docs/_static/logo_font.txt。
+- [picocli](https://github.com/remkop/picocli/blob/10509c0af89aa3254ca14ba90d9b3b7168e57994/docs/images/logo/icon-square-160x160.png)（Apache-2.0）：项目自身发布的方形图标，避免用横版文字宣传图。
+- [opentracks](https://commons.wikimedia.org/wiki/File:OpenTracks_logo.svg)（CC BY-SA 4.0）：项目作者亲自发布及许可的 OpenTracks 标志；显示原色原比例，WebP 同许可证，包含 XMP 署名及静态法律文本。
+- [esearch](https://github.com/xushengfeng/eSearch/blob/1d3490cd288d583fd397f174d026a072ceda8d95/assets/icon.svg)（GPL-3.0）：上游安装资源内专用图标，非网站标题图或相似产品图案。
+
+保持原图比例、颜色和现有界面。上游声明与转换说明随静态资源分发，原稿随站或可从固定版本来源取得。
