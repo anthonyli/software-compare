@@ -229,3 +229,20 @@ NormCap 使用[上游 Flatpak 打包应用图标](https://github.com/dynobo/norm
 - [librechat](https://github.com/danny-avila/LibreChat/blob/4700c44eb77c142b4f9f8b87476924f22890eb39/client/public/assets/logo.svg)（MIT）：采用上游应用随站分发且主 README 展示的 LibreChat 原图。
 
 保持原图比例、颜色和现有界面。上游声明与转换说明随静态资源分发，原稿随站或可从固定版本来源取得。
+
+### 摄影、户外和开发工具批次
+
+- [ansel](https://github.com/aurelienpierreeng/ansel/blob/06e94d5a53d30a8f07cb42ae0702faa709bc68b2/data/pixmaps/scalable/ansel.svg)（GPL-3.0）：项目 CMake 安装的专用 Ansel 图标，不用兼容目录中的 darktable 老图。https://ansel.photos/en/
+- [art](https://github.com/artpixls/ART/blob/62b37f16a819e0c6a0c0331152f968b3a611e1d9/data/images/ART-logo.svg)（GPL-3.0-or-later）：ART 上游图形；原 SVG 内置的 PNG 已单独校验，不加载外部资源。
+- [darktable](https://github.com/darktable-org/darktable/blob/c247126f9a7a2c3cdfc0f675a7698c24710438ca/data/pixmaps/scalable/darktable.svg)（GPL-3.0-or-later）：上游应用安装图标；非网站文章素材。https://www.darktable.org/about/
+- [digikam](https://github.com/KDE/digikam/blob/33d0457e20adda97c003f3dee652a1749406ff9f/core/data/icons/apps/256-apps-digikam.png)（GPL-2.0-or-later）：digiKam 上游应用图标，不是 KDE 标记或 Showfoto 图标。https://metadata.neon.kde.org/appstream/stable_noble/html/noble/main/metainfo/digikam.html
+- [rawtherapee](https://github.com/RawTherapee/RawTherapee/blob/3458b9a1813f26b99c8dcf22aad7cc24deffdbae/rtdata/icons/hicolor/scalable/apps/rawtherapee.svg)（GPL-3.0）：取应用安装所用的植物图形，不用站点字标。https://www.rawtherapee.com/
+- [comaps](https://github.com/comaps/comaps/blob/019e445829e959dd3d5a2e6fd1b3166c100025a0/android/app/src/fdroid/play/listings/en-US/graphics/icon/logo.png)（Apache-2.0）：正式应用商店图标；附上游 NOTICE，作者及发布说明见 https://www.comaps.app/news/2025-09-06/how-i-designed-the-logo-for-comaps-and-lessons-it-taught-me/
+- [qmapshack](https://github.com/Maproom/qmapshack/blob/8cf370f03cf866ccd2eb87e1af8162f89d064a86/src/icons/qmapshack/hicolor/192x192/apps/QMapShack.png)（GPL-3.0）：上游桌面安装的 192px 图标，在静态说明中附上项目可编辑 SVG 的固定版本链接及校验值。
+- [opensnitch](https://github.com/evilsocket/opensnitch/blob/a1353848ba1b660320e90cefea782c3fba272c00/ui/opensnitch/res/icon.png)（GPL-3.0）：取 Linux 应用的原始 UI 资源；不是任意警告符号或通用安全图标。
+- [aider](https://github.com/Aider-AI/aider/blob/5dc9490bb35f9729ef2c95d00a19ccd30c26339c/aider/website/assets/icons/android-chrome-384x384.png)（Apache-2.0）：维护者针对演讲中的第三方介绍明确指向这一高分辨率品牌图；https://github.com/Aider-AI/aider/issues/1100
+- [cline](https://github.com/cline/cline/blob/cbc7d1419a74464c622117a740fdfe87a5e0a7b2/apps/cline-hub/src/webview/public/cline-logo-filled.svg)（Apache-2.0）：官方应用内图标；品牌页提供供应用目录使用的图标及独立机器人图案。https://cline.bot/brand
+- [immich](https://github.com/immich-app/immich/blob/a51a43856df89b83266fc312b822cadd7afb6fcf/design/immich-logo.svg)（AGPL-3.0）：上游设计库的 Immich 图案，仅在第三方资料中标识软件，不作为转售或集成。https://docs.immich.app/FAQ/#commercial-guidelines
+- [opencode](https://github.com/anomalyco/opencode/blob/b64f928fd005c8d1ba24800f5364882bf492da79/packages/desktop/icons/prod/128x128.png)（MIT / editorial brand reference）：仅用上游生产版桌面应用图标，保留官方完整图案及内边距。媒体介绍用途见 https://opencode.ai/press 及 https://opencode.ai/brand
+
+保持原图比例、颜色和现有界面。上游声明与转换说明随静态资源分发，原稿随站或可从固定版本来源取得。
