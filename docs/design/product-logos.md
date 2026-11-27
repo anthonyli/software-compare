@@ -147,3 +147,23 @@ NormCap 使用[上游 Flatpak 打包应用图标](https://github.com/dynobo/norm
 - [notesnook](https://github.com/streetwriters/notesnook/blob/18c27502454c5ea2f408098124a2e51245fac7c3/apps/desktop/assets/icons/256x256.png)（GPL-3.0）：采用官方桌面分发图标，不使用开机图或应用内服务图标。
 
 保持原图比例、颜色和现有界面。上游声明与转换说明随静态资源分发，原稿随站或可从固定版本来源取得。
+
+### 动画、转录、CAD 与媒体工具批次
+
+- [anicraft](https://github.com/storytold/anicraft/blob/259566a0338706a8545b4bc19506ef49c1fbab71/assets/app-icon/hicolor/128x128/apps/ai.storyteller.anicraft.png)（MIT）：应用图标目录的单独声明许可原画及其 hicolor 衍生资源使用 MIT 或 Apache-2.0；采用发行图标。
+- [effectcraft](https://github.com/storytold/effectcraft/blob/bfe6878d6535573401aebd0217221afcda85ecc6/assets/app-icon/hicolor/128x128/apps/ai.storyteller.effectcraft.png)（MIT）：应用图标目录的单独声明涵盖发行图标；不使用另有限制的 ArtCraft 品牌素材。
+- [buzz](https://github.com/chidiwilliams/buzz/blob/e4f79345d9f8d6c1df1f340216e4f4679cdedbd5/buzz/assets/buzz-icon-1024.png)（MIT）：采用上游桌面应用项目自身的 Buzz 图标。
+- [vibe](https://github.com/thewh1teagle/vibe/blob/8de9b2181c4c65f8c06e68732d5352c91ea27436/design/logo.svg)（MIT）：采用上游 design 中与 README 标明的 Vibe 产品标识对应的矢量原稿。
+- [subtitle-edit](https://github.com/SubtitleEdit/subtitleedit/blob/83a6c339bd69395cee487675657bd6d0834dc711/installer/macBundle/SE_icon_source.svg)（MIT）：采用上游 Mac 安装包的应用矢量原稿，不使用通用字幕文件格式图标。
+- [noscribe](https://github.com/kaixxx/noScribe/blob/1e146c3bd8a00218fdda3fea090a1c79a62faab3/img/noScribeLogo.png)（GPL-3.0-or-later）：使用上游 noScribeLogo；README 明示 GPL 第 3 版或以后版本。
+- [opentoonz](https://github.com/opentoonz/opentoonz/blob/7ccd773ee646e99debd14917436550c5c3b94655/toonz/sources/toonz/OpenToonz.icns)（BSD-3-Clause）：采用 OpenToonz 应用打包图标；项目许可声明涵盖此打包目录。
+- [pencil2d](https://github.com/pencil2d/pencil/blob/7d1f719669526b71b6b66916cb50a72fbf95a3bd/app/data/icons/icon.png)（GPL-2.0）：采用 Pencil2D 客户端中的应用图标，而不是工程文件图标或网站徽标。
+- [tahoma2d](https://github.com/tahoma2d/tahoma2d/blob/0ca33cb8af95d8b1648889d336e50e23dd9cfb2b/toonz/sources/xdg-data/tahoma2d_logo_128.png)（BSD-3-Clause）：采用上游 XDG 应用标志；项目许可声明涵盖此目录。
+- [glaxnimate](https://github.com/KDE/glaxnimate/blob/0b3899ad164c33b4699252ec10cc297ee552a49b/data/logo/logo.svg)（CC-BY-SA-4.0）：采用上游 Glaxnimate 图形标志；REUSE.toml 对 data 内的 SVG 明确声明 CC BY-SA 4.0。
+- [librecad](https://github.com/LibreCAD/LibreCAD/blob/b91fbdcf1adeee764938a183018978416d0a8c90/desktop/media/icons/librecad_icon.svg)（CC-BY-SA-3.0）：采用上游独立应用图标，SVG RDF 元数据明确标明作者及独立 CC BY-SA 3.0 许可。
+- [solvespace](https://github.com/solvespace/solvespace/blob/5553e843a9c33f79aca175f329c9c0d38d85bd11/res/freedesktop/solvespace-scalable.svg)（GPL-3.0）：采用上游 README 使用且供桌面安装的 SolveSpace 原图。
+- [freac](https://github.com/enzo1982/freac/blob/529fa3a0923a063127e117633057071ae4fb3ace/icons/freac.svg)（GPL-2.0）：采用上游 fre:ac 独立产品矢量图标，不是捐助或第三方服务图标。
+- [natron](https://github.com/NatronGitHub/Natron/blob/fd29d5037709c7402db80ab9354b1eb3b682fdd4/Gui/Resources/Images/natronIcon256_windows.ico)（GPL-2.0）：采用上游 Windows 正式应用图标，而非工程文件图标。
+- [speech-note](https://github.com/mkiol/dsnote/blob/0f93c30f7460da9892e2802523ef4bd98537539b/desktop/icons/dsnote.svg)（MPL-2.0）：采用 Speech Note 的桌面应用矢量图标，不是托盘、模型或第三方图标。
+
+保持原图比例、颜色和现有界面。上游声明与转换说明随静态资源分发，原稿随站或可从固定版本来源取得。
