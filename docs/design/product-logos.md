@@ -37,3 +37,20 @@ NormCap 使用[上游 Flatpak 打包应用图标](https://github.com/dynobo/norm
 截图工具与笔记：Flameshot 使用[官方项目 SVG](https://github.com/flameshot-org/flameshot/blob/dcc3bd3175495e04832c4aac0868f1dd15aba2ca/data/img/app/flameshot.svg)，原作者 lupoDharkael 见 [Debian 版权记录](https://sources.debian.org/src/flameshot/12.1.0%2Bds-2/debian/copyright/#L24)，将作者、原稿及 Free Art License 1.3 写入素材元数据和独立许可文件。Zim 使用 [0.77.2 打包应用图标](https://github.com/zim-desktop-wiki/zim-desktop-wiki/blob/51937eb4afce1047e445b605289810cc39fd176c/icons/zim48.svg)；Trilium Notes 使用 [v0.107.0 客户端图标](https://github.com/TriliumNext/Trilium/blob/d83d7151f1c6d4292be88d8d34008f409b252f7f/apps/client/src/assets/icon.svg)，与该版本的桌面包标识一致，保留设计者 Sarah Hussein 的署名和 AGPL 许可。原始 SVG 及许可随静态素材分发。
 
 设计与剪辑：GIMP 采用[官方引用页](https://www.gimp.org/about/linking.html#wilber-the-gimp-mascot)所指向的 Wilber（Aryeom Han，CC BY-SA 4.0，原稿 SHA-256 `f16e91ac7ad855e30e5bf7b14eb734ece683ea65c743fb5ccdb7514aa2f549c6`），保留原稿、独立许可和图内归属元数据；Kdenlive 采用 [上游应用 SVG](https://github.com/KDE/kdenlive/blob/a5eba1730ac524c83b64715d1da10b158d7dbef7/data/icons/sc-apps-kdenlive.svg)，按该版本 [REUSE 声明](https://github.com/KDE/kdenlive/blob/a5eba1730ac524c83b64715d1da10b158d7dbef7/REUSE.toml)保留版权与 LGPL 通知；Krita 采用[官方媒体包](https://krita.org/en/about/press/)内 `press/1024-apps-krita.png`（SHA-256 `ed460a515eada0e991f223c7b72c984fb7faa912250a224ba08a27bec8416ddd`），按[名称与标识使用规则](https://krita.org/en/posts/2013/krita-trademark-policy/)仅指认原版软件；Shotcut 采用[官方媒体包](https://shotcut.org/media/)的 512px 无字应用图标（SHA-256 `47f5cc105a14c7c793c2502080640370646215f84278e3b1d01c7d97780178d4`）。图标保持原色和比例，不暗示合作或背书。
+
+### 开发工具批次（数据库、API、编辑器）
+
+- DBX：[Apache-2.0 来源素材](https://github.com/t8y2/dbx/blob/b2fae8d501ceed1579cb048981b3a87f6211c572/src-tauri/icons/128x128.png)。
+- Antares SQL：[MIT 来源素材](https://github.com/antares-sql/antares/blob/1a9ccc7ba957cc435ad4beb86b56c1f19c2c830e/assets/linux/128x128.png)。
+- Sequel Ace：[MIT 来源素材](https://github.com/Sequel-Ace/Sequel-Ace/blob/412173edf913e4cbf3b144a3987ae71992fd1a2d/Resources/Images.xcassets/AppIcon.appiconset/icon_128x128.png)。
+- Bruno：[CC BY-SA 4.0 来源素材](https://github.com/usebruno/bruno/blob/14d5a00db60758bc931fc9271a993d46b6de4ad6/packages/bruno-electron/resources/icons/png/128x128.png)。
+- Hoppscotch：[MIT 来源素材](https://github.com/hoppscotch/hoppscotch/blob/6177eae1875ea4cc8fc46604d65bf85478912d85/packages/hoppscotch-desktop/src-tauri/icons/icon.png)。
+- Hurl：[Apache-2.0 来源素材](https://github.com/Orange-OpenSource/hurl/blob/08733868e9225cb2fc59b88ddeb107cf715d0ff1/bin/windows/logo.png)。
+- VSCodium：[MIT 来源素材](https://github.com/VSCodium/vscodium/blob/ca7f7b44b5e5c3faa663f6cdc043998f71936653/icons/stable/codium_cnl.svg)。
+- Helix：[MPL-2.0 来源素材](https://github.com/helix-editor/helix/blob/1a3fdfda6dfdda4567af6093a6249bb2bb422fc6/logo.svg)。
+- Lapce：[Apache-2.0 来源素材](https://github.com/lapce/lapce/blob/9e8317c84e9540ac0b09689dd9f9d4fafe44ac00/extra/images/logo.svg)。
+- micro：[MIT 来源素材](https://github.com/micro-editor/micro/blob/0e01c1a432ef3d0851b430cbdfdd75da452e99c1/assets/micro-logo-mark.svg)。
+- Geany：[GPL 来源素材](https://github.com/geany/geany/blob/0e02cc52a7634d1fed8511bd44730ea0ab791d9f/icons/scalable/geany.svg)。
+- Lite XL：[MIT 来源素材](https://github.com/lite-xl/lite-xl/blob/27093a73dcc9382c866a6b1b1ead77fb20ff980a/resources/icons/lite-xl.svg)。
+
+仅使用同站图标；每项上游来源、转换说明与适用许可见素材清单和随附通知。Bruno 的 WebP 保留 OpenMoji / Bruno 来源、转换说明和 CC BY-SA 4.0 元数据。
