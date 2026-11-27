@@ -23,3 +23,7 @@ WezTerm 使用作者维护的[上游应用图标](https://github.com/wezterm/wez
 ksnip 使用 v1.9.2 [Snap 打包清单](https://github.com/ksnip/ksnip/blob/c7ca5ad91253c948e2df67b0c7b2f7e2cc577de0/snap/snapcraft.yaml) 指定的应用图标（非工具栏单色图标）。仅转成 96 px WebP；同站的 `/licenses/product-logos/` 保留上游 SVG、许可原文、版权与转换说明。该版本的打包版权文件注明 GPL-2.0-or-later。
 
 NormCap 使用[上游 Flatpak 打包应用图标](https://github.com/dynobo/normcap/blob/acaccb7604d548a56d80a91209647026ec1a9165/bundle/flatpak/com.github.dynobo.normcap.svg)，与该版本官方文档图标一致。仅等比例转成 96 px WebP；上游 SVG、版权和 GPL-3.0-or-later 许可说明随静态资产分发。
+
+笔记批次：妙言与 MarkText 使用各自官方开源项目 README 显示的标识，不使用商店版素材或软件目录转存。妙言采用 [Mac 开源项目标识](https://github.com/tw93/MiaoYan/blob/123df4e3842138c9d469a3aa2507eb08b2e5ad42/Resources/app.icon/Assets/43.png)，不是系统合成的完整 macOS App 图标。MarkText 使用 [项目标识](https://github.com/marktext/marktext/blob/95a14e5c9b3049c465eeb8b01ac94bb7678cc845/docs/assets/logo-small.png)。二者仅等比例转为 WebP，上游 MIT 版权与许可随静态资产分发。
+
+启动器批次：Flow Launcher 使用 v2.1.4 的官方 [PNG](https://github.com/Flow-Launcher/Flow.Launcher/blob/9fe822b398ad9541a1a35fb1c688a006a27f2f9d/Artworks/Logo/logo512.png)，保留 MIT 许可与 Flow-Launcher、Wox 的版权通知。Ulauncher 使用 5.16.1 [打包应用图标](https://github.com/Ulauncher/Ulauncher/blob/d05fbe3b58e7ef7b8c2268231cff749f64523bb8/data/media/icons/hicolor/ulauncher.svg)，转换不加载外部 DTD，静态分发保留原始 SVG、转换说明、版权及 GPL 许可。

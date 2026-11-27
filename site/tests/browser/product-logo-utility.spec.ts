@@ -4,6 +4,10 @@ import { expect, test } from '@playwright/test';
 test.use({ extraHTTPHeaders: { 'CF-Connecting-IP': '198.51.100.204' } });
 
 const apps = [
+  { category: 'launchers', id: 'flow-launcher', name: 'Flow Launcher' },
+  { category: 'launchers', id: 'ulauncher', name: 'Ulauncher' },
+  { category: 'note-taking', id: 'miaoyan', name: '妙言（MiaoYan）' },
+  { category: 'note-taking', id: 'marktext', name: 'MarkText' },
   { category: 'clipboard-managers', id: 'maccy', name: 'Maccy' },
   { category: 'quick-translation-ocr', id: 'easydict', name: 'Easydict' },
   { category: 'terminal-emulators', id: 'kaku', name: 'Kaku' },
