@@ -2,7 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 const read=(p)=>JSON.parse(fs.readFileSync(new URL(p,import.meta.url)));
-const en=read('../src/i18n/content-en.json');
+const en={...read('../src/i18n/content-en.json'),...read('../src/i18n/public-content-en.json')};
 const ds=['note-taking','browsers','launchers'].map((slug)=>read('../../categories/'+slug+'.json'));
 const rows=ds.map((c,i)=>c.products.find((p)=>p.id===['miaoyan','helium','tinycast'][i]));
 const all=(v)=>typeof v==='string'?[v]:v&&typeof v==='object'?Object.values(v).flatMap(all):[];
@@ -32,8 +32,8 @@ test('Tinycast distinguishes optional extensions and AI from clipboard and file 
  assert(p);assert.equal(p.license,'AGPL-3.0-or-later');
  assert.equal(p.features.plugins.value,'partial');assert.equal(p.features.ai_features.value,'yes');
  assert.match(en[p.free_tier_limits],/macOS 26 or later.*Intel Macs.*opt-in/);
- assert.match(en[p.features.file_search.note],/file and folder names in chosen folders.*Full Disk Access/);
- assert.match(en[p.features.clipboard_history.note],/Enabled by default.*three months.*pinned items/);
+ assert.match(en[p.features.file_search.note],/Off by default.*Full Disk Access.*file and folder names in selected folders/);
+ assert.match(en[p.features.clipboard_history.note],/On by default.*three months.*Pinned entries/);
  assert.match(en[p.features.ai_features.note],/off by default.*local models.*usage costs/);
 });
 test('all three rows preserve category feature keys and have public English translations',()=>{
@@ -42,4 +42,17 @@ test('all three rows preserve category feature keys and have public English tran
   assert(p.sources.length>=5);
   for(const v of all(p).filter((s)=>/[\u4e00-\u9fff]/.test(s)))assert(en[v],v);
  }
+});
+
+test('Tinycast distinguishes Raycast import from separately enabled file search', () => {
+  const [,,tinycast] = rows;
+  const { hotkey, clipboard_history, file_search } = tinycast.features;
+  assert.match(hotkey.note, /加密 \.rayconfig.*应用快捷键.*重新打开/);
+  assert.match(clipboard_history.note, /本地保留.*Raycast 2\.0.*图片文件.*执行导入的 Mac/);
+  assert.match(file_search.note, /默认关闭.*单独开启.*完全磁盘访问权限/);
+  assert.match(en[hotkey.note], /encrypted Raycast 2\.0.*Quit and reopen/);
+  assert.match(en[clipboard_history.note], /images.*files.*Mac running the import/);
+  assert.match(en[file_search.note], /Off by default.*Full Disk Access/);
+  assert(tinycast.sources.includes('https://tinycast.dev/docs/reference/import-from-raycast/'));
+  assert(tinycast.sources.includes('https://tinycast.dev/docs/features/file-search/'));
 });
