@@ -110,3 +110,22 @@ NormCap 使用[上游 Flatpak 打包应用图标](https://github.com/dynobo/norm
 - [upic](https://github.com/gee1k/uPic/blob/5d6b01949823223255acbec4bde94ec53a2669ed/uPic/uPic.icon/Assets/Frame%202.png)（Apache-2.0）：采用 Xcode 配置引用的 uPic 原生图标图层，非系统合成的完整图标和第三方上传服务标识。
 
 保持原图比例、颜色和现有界面。上游声明与转换说明随静态资源分发，原稿随站或可从固定版本来源取得。CC BY 与 BY-SA 图标保留图内署名及许可元数据。
+
+### 网页归档、设计、写作与图像工具批次
+
+- [monolith](https://github.com/Y2Z/monolith/blob/26de8a664452c0ec0323892ab7f3ee1a9bb31830/assets/icon/icon-128.png)（0BSD）：采用项目在资产目录提供的完整 128px Monolith 标识，不使用下载网站的通用图标。
+- [singlefile](https://github.com/gildas-lormeau/SingleFile/blob/6367ef41bab2c789a696acc4774dd3ac8ce10198/src/ui/resources/icon_128.png)（AGPL-3.0-or-later）：浏览器扩展 manifest 直接指定的正式 128px 图标，不使用保存进度动画帧。
+- [vectorcraft](https://github.com/storytold/vectorcraft/blob/02c80000d3cd8512d725170cc4459a53ec425df0/assets/app-icon/hicolor/128x128/apps/ai.storyteller.vectorcraft.png)（MIT）：使用素材许可明确覆盖的正式应用图标，非 ArtCraft 品牌标识。
+- [figcraft](https://github.com/storytold/figcraft/blob/f6638e15bf7f5561d57f15043a25c5692dc72747/assets/app-icon/hicolor/128x128/apps/ai.storyteller.figcraft.png)（MIT）：使用素材许可明确覆盖的正式应用图标，非 Nightly 或 ArtCraft 品牌标识。
+- [designcraft](https://github.com/storytold/designcraft/blob/b86e6236e46241ba0723406120dbb0e7e09dafab/assets/app-icon/hicolor/128x128/apps/ai.storyteller.designcraft.png)（MIT）：使用素材许可明确覆盖的正式应用图标，非 Nightly 或 ArtCraft 品牌标识。
+- [focuswriter](https://github.com/gottcode/focuswriter/blob/f130812777fd1704020b92b02317b36ce720200c/resources/images/icons/hicolor/scalable/apps/focuswriter.svg)（GPL-3.0）：使用 SVG 元数据中明确署名 Graeme Gott 和 GPL-3.0 的桌面安装图标。
+- [manuskript](https://github.com/olivierkes/manuskript/blob/83ea0707bf9fb50558062900b53dd79779aac73a/icons/Manuskript/icon-128px.png)（GPL-3.0）：采用项目独立应用图标，不使用拼写插件或横向名称图。
+- [lightcraft](https://github.com/storytold/lightcraft/blob/5973d956dfbb44ed96b83e53edcc04733f3f1ceb/assets/app-icon/hicolor/128x128/apps/ai.storyteller.lightcraft.png)（MIT）：使用素材许可明确覆盖的正式应用图标，非 Nightly 或 ArtCraft 品牌标识。
+- [photocraft](https://github.com/storytold/photocraft/blob/702da02787db0e1daeb4502c2cb355cd08a7bb2d/assets/app-icon/hicolor/128x128/apps/ai.storyteller.photocraft.png)（MIT）：使用素材许可明确覆盖的正式应用图标，非 Nightly 或 ArtCraft 品牌标识。
+- [pinta](https://github.com/PintaProject/Pinta/blob/b7f527a3d5f716b4f81903c39d5ea02579a5bd3b/Pinta.Resources/icons/hicolor/scalable/apps/com.github.PintaProject.Pinta.svg)（CC BY-SA 2.0）：用 Pinta 正式安装的应用图标，其 SVG 元数据单独注明 Jakub Steiner 与 CC BY-SA 2.0。
+- [pixelitor](https://github.com/lbalazscs/Pixelitor/blob/debde893ef3ade2ec68579d18aefd641cbb2ddd6/src/main/resources/images/pixelitor_icon256.png)（GPL-3.0）：使用应用资源中的 256px Pixelitor 图标，不使用浏览器 favicon 或节目演示 Logo。
+- [lazpaint](https://github.com/bgrabitmap/lazpaint/blob/0d4498315527345ae10b8722046e5134045ac8f4/resources/icon/128x128.png)（GPL-3.0）：采用上游应用打包的 128px 图标，非工具栏图像。
+- [mypaint](https://github.com/mypaint/mypaint/blob/fb6f7d6b12238d125294496b105f5f36e658bc61/desktop/icons/hicolor/scalable/apps/org.mypaint.MyPaint.svg)（Public domain）：采用桌面应用图标，Licenses.dep5 将对应目录的素材标明为版权人释放到公有领域。
+- [pixelorama](https://github.com/Orama-Interactive/Pixelorama/blob/9d8823a7bb1ddaf5ea23fe0c4bc640de770cea7a/assets/graphics/icons/icon.png)（MIT）：采用 Pixelorama 项目默认应用图标，不使用 Godot 项目或样例笔刷标志。
+
+保持原图比例、颜色和现有界面。上游声明与转换说明随静态资源分发，原稿随站或可从固定版本来源取得。CC BY 与 BY-SA 图标保留图内署名及许可元数据。
