@@ -189,3 +189,22 @@ NormCap 使用[上游 Flatpak 打包应用图标](https://github.com/dynobo/norm
 - [zrythm](https://github.com/zrythm/zrythm/blob/13b16ed351bd06dd1762252a1f0827e8cc1ff9d1/src/gui/resources/icons/zrythm-dark/scalable/apps/zrythm.svg)（LicenseRef-ZrythmLogoLicense）：上游资产专用许可引用品牌政策，明确允许仅用图形准确指代未修改的 Zrythm，不表示赞助或关联。
 
 保持原图比例、颜色和现有界面。上游声明与转换说明随静态资源分发，原稿随站或可从固定版本来源取得。
+
+### 绘图、数据库与通信工具批次
+
+- [bforartists](https://github.com/Bforartists/Bforartists/blob/f48f4f8667f1f6c2115120ffdf8b6a4f6c764f42/release/freedesktop/icons/scalable/apps/bforartists.svg)（GPL-2.0-or-later）：采用上游桌面打包的 Bforartists 标志，不将分支自带的 Blender 文档标志用作产品图标。
+- [blockbench](https://github.com/JannisX11/blockbench/blob/ec0b2827104d0799c153bfb5f867579c0c44652f/build/icon.icns)（GPL-3.0）：采用 Blockbench 构建内正式应用图标，非 Netlify 标记或模型文件图标。
+- [wings-3d](https://github.com/dgud/wings/blob/2f6672721d83af7bc39717c86deb12a2970ade9f/macosx/wings3d.icns)（Wings 3D License）：上游许可明确通常适用于与软件相关的文件；采用 macOS 应用图标而不是关联文档图标。
+- [svgedit](https://github.com/SVG-Edit/svgedit/blob/c44f061d2f9a626d2771cc931298af5a45522d87/src/editor/images/logo.svg)（MIT）：采用 SVG-Edit 自带的编辑器产品标志，不使用演示或第三方图标。
+- [shutter](https://github.com/shutter-project/shutter/blob/cb78390f546e7ad93690ab64a8afb72a66e6128c/share/icons/hicolor/scalable/apps/shutter.svg)（GPL-3.0）：采用随包安装的 Hicolor 应用标志，非系统面板或高对比版本。
+- [lyx](https://github.com/cburschka/lyx/blob/3a02e477a00077e5442d8e34e92690d26a7ed4ae/development/MacOSX/LyX.icns)（GPL-2.0-or-later）：采用上游 LyX Mac 打包资源中的程序图标。
+- [pgadmin](https://github.com/pgadmin-org/pgadmin4/blob/3b6b9b208a16241b736866b4c7561459a2d45b49/docs/en_US/images/logo-128.png)（PostgreSQL）：采用上游官方手册的 pgAdmin 4 应用标志，不使用数据库驱动图标。
+- [dbeaver-community](https://github.com/dbeaver/dbeaver/blob/47352838a29f932713a21fc73c895a417042c74f/product/community/icons/dbeaver.png)（Apache-2.0）：采用 DBeaver 社区版安装产品资源中的应用标志，不混用商业版本图标。
+- [ayugram-desktop](https://github.com/AyuGram/AyuGramDesktop/blob/0f2a31bb420de98f331990432265b131b8d836b5/Telegram/Resources/art/ayu/default/app.svg)（GPL-3.0）：采用 AyuGram 自己的默认应用标志，不使用替代主题、其他客户端或 Telegram 官方标志。
+- [telegram-desktop](https://telegram.org/tour/screenshots)（Telegram media-use permission）：采用 Telegram 官方媒体包中现行的 Logo.svg 来标识官方桌面客户端，不暗示本站代表 Telegram。
+- [unison](https://github.com/bcpierce00/unison/blob/8772d26a2eb77cfd0cb6da81807e81f24f51044c/src/uimac/Unison.icns)（GPL-3.0）：采用上游 macOS 主应用图标，不使用创作人员旧版或菜单状态符号。
+- [clash-verge-rev](https://github.com/clash-verge-rev/clash-verge-rev/blob/1daee71a9e10f2394b8a47f1e34aa3acd2dce931/src-tauri/icons/128x128.png)（GPL-3.0）：采用项目打包的正式图标，不混用旧 Clash Verge 或代理内核标志。
+- [clash-party](https://github.com/mihomo-party-org/clash-party/blob/1458f9626ad4b223424260bf083435b26b435d73/build/icon.ico)（GPL-3.0）：采用上游 Windows 安装包的产品图标，非代理状态或彩色托盘替代图标。
+- [v2rayn](https://github.com/2dust/v2rayN/blob/9f4fc1e67bd55f324ea83cf3b9367eda1dc1f2d3/v2rayN/v2rayN.Desktop/Assets/v2rayN.ico)（GPL-3.0）：只采用 v2rayN 桌面主应用图标，不取代理内核或状态图标。
+
+保持原图比例、颜色和现有界面。上游声明与转换说明随静态资源分发，原稿随站或可从固定版本来源取得。
