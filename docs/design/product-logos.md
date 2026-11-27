@@ -208,3 +208,24 @@ NormCap 使用[上游 Flatpak 打包应用图标](https://github.com/dynobo/norm
 - [v2rayn](https://github.com/2dust/v2rayN/blob/9f4fc1e67bd55f324ea83cf3b9367eda1dc1f2d3/v2rayN/v2rayN.Desktop/Assets/v2rayN.ico)（GPL-3.0）：只采用 v2rayN 桌面主应用图标，不取代理内核或状态图标。
 
 保持原图比例、颜色和现有界面。上游声明与转换说明随静态资源分发，原稿随站或可从固定版本来源取得。
+
+### 编辑器、维护和下载工具批次
+
+- [bulk-crap-uninstaller](https://github.com/Klocman/Bulk-Crap-Uninstaller/blob/30da609384c98ba6e35c6530129541ea4ff3970a/source/BulkCrapUninstaller/Resources/logo.ico)（Apache-2.0）：采用正式桌面客户端资源中的 BCU 产品图标。
+- [drawing](https://github.com/maoschanz/drawing/blob/dd687db64a62354a7ff8a135845733df5f0f699a/data/icons/hicolor/scalable/apps/com.github.maoschanz.drawing.svg)（GPL-3.0-or-later）：采用程序包应用 ID 对应的正式图标，不使用系统工具栏图标。
+- [filmcraft](https://github.com/storytold/filmcraft/blob/7b8e522d63f2e2c1617dea4939feb48e769d6f2f/assets/app-icon/hicolor/128x128/apps/ai.storyteller.filmcraft.png)（MIT）：应用图标目录明确以 MIT 或 Apache-2.0 许可本产品图标，不取 ArtCraft 品牌素材。
+- [photodemon](https://github.com/tannerhelland/PhotoDemon/blob/f46e2ad4fa2391d36e6db269639290419c18007e/Resources/Assets/pd_icons_new.ico)（BSD-2-Clause）：采用用于可执行文件的程序资源；保留原作者版权和 BSD 条款。
+- [pitivi](https://github.com/pitivi/pitivi/blob/a6473c5844353eefd2495aa60584538a0b33661e/data/icons/hicolor/scalable/apps/org.pitivi.Pitivi.svg)（LGPL-2.1-or-later）：采用随上游应用分发的产品图标，非关联文档或 symbolic 图标。
+- [notepad-plus-plus](https://github.com/notepad-plus-plus/notepad-plus-plus/blob/1149a23f579a5c82696c5fa458b779633e867019/PowerEditor/misc/chameleon/chameleon-pencil-200.png)（GPL-3.0）：采用上游标志目录中单独的变色龙铅笔图形，不使用插件、发行地域横幅或文字。
+- [vim](https://github.com/vim/vim/blob/6c201ec5d890c649ada74bd1c1975fdf65a54d7f/runtime/vimlogo.svg)（Vim）：上游 READMEdir/README_vimlogo.txt 明确该独立 SVG 使用 Vim 许可；保留未修改的原 SVG。
+- [yaak](https://github.com/mountain-loop/yaak/blob/6196bf2a21ecac4f8ba3e3c8d4a2d1e7496ab452/crates-tauri/yaak-app-client/icons/release/128x128.png)（MIT）：使用 Tauri 正式打包配置指定的 release 版 128 像素图标，不用 dev 版或代理图标。
+- [meshcentral](https://github.com/Ylianst/MeshCentral/blob/bf9af130ba42dad7afb416f9f1551cef074b9e6b/public/favicon-303x303.png)（Apache-2.0）：使用上游独立 303px MeshCentral 产品品牌资源，与官方界面的标识相符，非 noVNC 或系统通用图标。
+- [bleachbit](https://github.com/bleachbit/bleachbit/blob/5f7d20abb110cb88e7cf2df8df9939e0c472db73/windows/bleachbit.ico)（GPL-3.0）：使用上游 Windows 应用打包图标，不使用第三方下载站或普通回收站图标。
+- [czkawka](https://github.com/qarmin/czkawka/blob/9945e3521593e5c17247062942906aa0cc04b60e/data/icons/com.github.qarmin.czkawka.svg)（CC-BY-4.0）：上游图标许可证逐项列明该正式应用 SVG 及作者；不使用它的开发版或 Krokiet 标记。
+- [optimizer](https://github.com/hellzerg/optimizer/blob/475ff86ca13db27aef665eee6ac6614b4a5a6097/Optimizer/Resources/Assets/logo.png)（GPL-3.0）：采用上游桌面程序主图标，不混同其他同名程序。
+- [stacer](https://github.com/oguzhaninan/Stacer/blob/a44d0565a05c996b1058f950f1d308e1964c8320/stacer/static/logo.png)（GPL-3.0）：采用上游应用资源内的 Stacer 正式产品标志。
+- [windirstat](https://github.com/windirstat/windirstat/blob/832a63b514a9d8b7f4e61c48e4aff0c134ef3976/windirstat/logos/logo_256px.png)（CC-BY-3.0）：README 的授权条款明确 Logo 和衍生品使用 CC BY 3.0，不按代码的 GPL 处理图形。
+- [qbittorrent](https://github.com/qbittorrent/qBittorrent/blob/e6b69eb4b532146b34177b405734d36ff7624762/dist/unix/menuicons/128x128/apps/qbittorrent.png)（GPL-2.0-or-later）：使用上游桌面应用打包标志，不使用托盘变体、文件关联或网络站点图标。
+- [librechat](https://github.com/danny-avila/LibreChat/blob/4700c44eb77c142b4f9f8b87476924f22890eb39/client/public/assets/logo.svg)（MIT）：采用上游应用随站分发且主 README 展示的 LibreChat 原图。
+
+保持原图比例、颜色和现有界面。上游声明与转换说明随静态资源分发，原稿随站或可从固定版本来源取得。
