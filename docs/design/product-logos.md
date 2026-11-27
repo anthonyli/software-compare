@@ -92,3 +92,21 @@ NormCap 使用[上游 Flatpak 打包应用图标](https://github.com/dynobo/norm
 - [dust3d](https://github.com/huxingyi/dust3d/blob/02a0fc749453a389d12bdbce866fa19dde6e77e5/application/dust3d.icns)（MIT）：采用官方 macOS 应用包中的完整项目图标，用于识别 Dust3D。
 
 保持原图比例、颜色和现有界面。上游声明与转换说明随静态资源分发，原稿随站或可从固定版本来源取得。CC BY 与 BY-SA 图标保留图内署名及许可元数据。
+
+### PDF、密码管理与图片上传工具批次
+
+- [stirling-pdf](https://github.com/Stirling-Tools/Stirling-PDF/blob/24bb50dbde0cc83e2a3d970c33f8fd15ae585fe3/frontend/src-tauri/icons/Square107x107Logo.png)（MIT）：采用桌面应用商店包图标，所在目录不在根许可列出的专有例外内。
+- [pdfsam](https://github.com/torakiki/pdfsam/blob/a47cd53637eb8e7cfecd4b86a6e755b5fbad4a88/pdfsam-basic/src/msix/Assets/Square150x150Logo.png)（AGPL-3.0）：使用 PDFsam Basic 官方 MSIX 应用图标，非付费版本标识。
+- [pdfarranger](https://github.com/pdfarranger/pdfarranger/blob/ee35719b6ee68537c098858e693264e803e82c87/data/icons/hicolor/scalable/apps/com.github.jeromerobert.pdfarranger.svg)（GPL-3.0）：使用桌面应用安装图标，不使用工具栏或第三方主题图标。
+- [xournalpp](https://github.com/xournalpp/xournalpp/blob/c9e7786a8a63bbce3a90fad67e8dd07ec138c07d/ui/pixmaps/com.github.xournalpp.xournalpp.svg)（CC BY-SA 4.0）：官方 copyright.txt 明确列出该程序图标、作者及许可。
+- [naps2](https://github.com/cyanfish/naps2/blob/f233ffb5437efae8662dd639315cfbfe391e903b/NAPS2.Lib/Icons/favicon.ico)（GPL-2.0-or-later）：虽然名为 favicon.ico，上游 WinForms 工程将该文件指定为桌面程序 ApplicationIcon。
+- [pdfcraft](https://github.com/storytold/pdfcraft/blob/d492d88902e3bf723f650b8eaf93958cf8904c56/assets/app-icon/hicolor/scalable/apps/ai.storyteller.pdfcraft.svg)（MIT）：选用项目所有者为 PdfCraft 绘制并在素材级明确开放的应用图标，不使用另有商标使用限制的 ArtCraft 标识。
+- [sioyek](https://github.com/ahrm/sioyek/blob/1e2f8037353724a83ccb10a697e28e295383e017/resources/sioyek-icon-linux.png)（GPL-3.0）：使用上游 Linux 应用包标识。
+- [zathura](https://github.com/pwmt/zathura/blob/dd6c32f5932f645ac8c4a4563936d0aafcd366b1/data/org.pwmt.zathura.svg)（Zlib）：使用源文件含 SPDX Zlib 声明的项目桌面图标。
+- [keeweb](https://github.com/keeweb/keeweb/blob/ad7891de92cf666400a6b4c859eeb731b0f68761/app/icons/android-chrome-192x192.png)（MIT）：采用 Web 应用的完整可安装图标，不使用页面通用小图标。
+- [authpass](https://github.com/authpass/authpass/blob/de7422a9f0962e9f522692f0d4cbf1dda8a73f2d/_docs/authpass-logo.svg)（GPL-3.0）：采用 AuthPass 仓库项目文档中的专用作品标识。
+- [keepassxc](https://github.com/keepassxreboot/keepassxc/blob/cd42236540c1cfca332c0f051d981acfdacf7b4e/share/icons/application/scalable/apps/keepassxc.svg)（LGPL-2（上游标注））：采用上游 COPYING 明确列出的应用 SVG，保留 LGPL-2 原标注和作者。
+- [aegis](https://github.com/beemdevelopment/Aegis/blob/182e91f524dea300c8e7e8a5bc9e3a9f4e45721e/app/src/main/res/drawable/app_icon.png)（GPL-3.0）：只使用 Aegis 应用资源中的本体图标，不使用内置服务图标。
+- [upic](https://github.com/gee1k/uPic/blob/5d6b01949823223255acbec4bde94ec53a2669ed/uPic/uPic.icon/Assets/Frame%202.png)（Apache-2.0）：采用 Xcode 配置引用的 uPic 原生图标图层，非系统合成的完整图标和第三方上传服务标识。
+
+保持原图比例、颜色和现有界面。上游声明与转换说明随静态资源分发，原稿随站或可从固定版本来源取得。CC BY 与 BY-SA 图标保留图内署名及许可元数据。
