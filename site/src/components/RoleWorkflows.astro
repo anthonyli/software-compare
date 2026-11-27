@@ -1,0 +1,43 @@
+---
+// SPDX-License-Identifier: Apache-2.0
+import T from "./T.astro";
+import { roleWorkflows } from "../lib/role-workflows";
+---
+
+<section id="role-workflows" class="mx-auto max-w-6xl scroll-mt-24 px-4 pb-8 pt-9 sm:px-5" aria-labelledby="role-workflows-title">
+  <p class="role-eyebrow"><T zh="选型路线" en="WORKFLOWS" /></p>
+  <h2 id="role-workflows-title" class="mt-1 text-2xl font-extrabold tracking-tight"><T zh="按角色找工具" en="Find tools for your workflow" /></h2>
+  <p class="mt-2 max-w-prose text-sm text-ink-soft"><T zh="选一个接近你的角色，从手上的任务出发，不用先猜软件在哪个分类。" en="Pick a role that fits and start with the task at hand, without guessing which category to open." /></p>
+  <ul class="mt-5 grid gap-3 sm:grid-cols-3">
+    {roleWorkflows.map((role, index) => (
+      <li class="min-w-0">
+        <a href={`/workflows/${role.slug}/`} class="role-card" data-role={role.slug} data-tone={role.tone}>
+          <span class="role-card-top">
+            <span class="role-index" aria-hidden="true">0{index + 1}</span>
+            <span aria-hidden="true">↗</span>
+          </span>
+          <h3><T zh={role.title.zh} en={role.title.en} /></h3>
+          <p><T zh={role.description.zh} en={role.description.en} /></p>
+          <span class="role-card-tasks">
+            {role.steps.map((step) => <span><T zh={step.title.zh} en={step.title.en} /></span>)}
+          </span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</section>
+
+<style>
+  .role-eyebrow { font: 600 .7rem/1.35 var(--font-mono, monospace); letter-spacing: .12em; color: #555b4b; }
+  .role-card { display: block; height: 100%; border: 1px solid #dce1d3; border-radius: 1rem; padding: 1rem; color: #20231d; background: #fff; text-decoration: none; }
+  .role-card:hover, .role-card:focus-visible { border-color: #657153; box-shadow: 0 4px 16px #26311c10; }
+  .role-card:focus-visible { outline: 2px solid #657153; outline-offset: 3px; }
+  .role-card-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: .85rem; }
+  .role-index { display: inline-grid; place-items: center; border-radius: .6rem; width: 2.1rem; height: 2.1rem; font: 700 .8rem/1 var(--font-mono, monospace); background: #e5f4d1; }
+  .role-card[data-tone="peach"] .role-index { background: #ffe5d5; }
+  .role-card[data-tone="blue"] .role-index { background: #dfebff; }
+  .role-card h3 { font-weight: 800; line-height: 1.25; overflow-wrap: anywhere; }
+  .role-card p { margin-top: .4rem; color: #54594f; font-size: .875rem; }
+  .role-card-tasks { display: flex; flex-wrap: wrap; gap: .3rem; margin-top: .85rem; font-size: .72rem; }
+  .role-card-tasks > span { border-radius: .4rem; background: #f2f4ed; padding: .25rem .4rem; }
+</style>

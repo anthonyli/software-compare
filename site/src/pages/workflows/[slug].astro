@@ -1,0 +1,69 @@
+---
+// SPDX-License-Identifier: Apache-2.0
+import Layout from "../../layouts/Layout.astro";
+import T from "../../components/T.astro";
+import { catPair, platformEn, pricingEn, tr } from "../../i18n";
+import { loadRoleWorkflows } from "../../lib/role-workflows";
+
+export function getStaticPaths() {
+  return loadRoleWorkflows().map((role) => ({ params: { slug: role.slug }, props: { role } }));
+}
+
+const { role } = Astro.props as { role: ReturnType<typeof loadRoleWorkflows>[number] };
+---
+
+<Layout
+  title={`${role.title.zh}的选型路线`}
+  titleEn={`${role.title.en} workflow`}
+  description={role.description.zh}
+  descriptionEn={role.description.en}
+  canonicalPath={`/workflows/${role.slug}/`}
+>
+  <article class="mx-auto max-w-4xl px-4 pb-14 pt-6 sm:px-5" data-workflow={role.slug}>
+    <a href="/#role-workflows" class="workflow-back"><T zh="← 所有角色" en="← All workflows" /></a>
+    <header class="mt-6">
+      <p class="workflow-eyebrow"><T zh="角色选型路线" en="WORKFLOW" /></p>
+      <h1 class="mt-1 text-3xl font-extrabold tracking-tight sm:text-4xl"><T zh={role.title.zh} en={role.title.en} /></h1>
+      <p class="mt-2 max-w-prose text-ink-soft"><T zh={role.description.zh} en={role.description.en} /></p>
+      <p class="mt-3 text-sm text-ink-soft"><T zh="这是一条选型路线，不是必装清单。先看任务需要什么，再对照功能、平台和价格。" en="This is a starting point, not a must-install list. Start with the task, then compare features, platforms and pricing." /></p>
+    </header>
+    <ol class="mt-8 grid gap-4">
+      {role.steps.map((step, index) => {
+        const category = catPair(step.category.slug, step.category.name);
+        return (
+          <li class="workflow-step" data-workflow-step={step.category.slug}>
+            <h2 class="flex items-center gap-2 text-xl font-extrabold">
+              <span class="step-index" aria-hidden="true">0{index + 1}</span>
+              <T zh={step.title.zh} en={step.title.en} />
+            </h2>
+            <p class="mt-3 max-w-prose text-sm text-ink-soft"><T zh={step.decision.zh} en={step.decision.en} /></p>
+            <ul class="mt-4 grid gap-2 sm:grid-cols-2">
+              {step.products.map((product) => (
+                <li class="workflow-product">
+                  <a href={product.href} class="workflow-product-link font-bold"><T zh={product.name} /></a>
+                  <p class="mt-1 text-xs text-ink-soft">
+                    <T zh={product.platforms.join(" · ")} en={product.platforms.map(platformEn).join(" · ")} />
+                    {product.platforms.length > 0 && product.pricing_model && <span aria-hidden="true"> · </span>}
+                    <T zh={product.pricing_model} en={pricingEn(product.pricing_model) || tr(product.pricing_model)} />
+                  </p>
+                </li>
+              ))}
+            </ul>
+            <a class="workflow-category mt-4 inline-block" href={step.category.href}>
+              <T zh={`比较${category.zh} →`} en={`Compare ${category.en} →`} />
+            </a>
+          </li>
+        );
+      })}
+    </ol>
+  </article>
+</Layout>
+
+<style>
+  .workflow-back, .workflow-category { color: #47583b; font-size: .875rem; font-weight: 700; text-decoration: underline; text-underline-offset: .2em; }
+  .workflow-eyebrow { color: #59654e; font: 600 .74rem/1.3 var(--font-mono, monospace); letter-spacing: .12em; }
+  .workflow-step { min-width: 0; border: 1px solid #dce1d3; border-radius: 1rem; background: #fff; padding: clamp(1rem, 2.5vw, 1.5rem); }
+  .step-index { display: inline-grid; place-items: center; width: 1.9rem; height: 1.9rem; flex: 0 0 auto; border-radius: .5rem; background: #e5f4d1; color: #30432c; font: 700 .75rem/1 var(--font-mono, monospace); }
+  .workflow-product { min-width: 0; border-radius: .6rem; padding: .65rem .75rem; background: #f3f5ef; overflow-wrap: anywhere; }
+  .workflow-product-link { color: #1e2619; text-decoration: underline; text-underline-offset: .19em; }
+</style>
