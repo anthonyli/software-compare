@@ -297,3 +297,20 @@ NormCap 使用[上游 Flatpak 打包应用图标](https://github.com/dynobo/norm
 - [proton-drive](https://proton.me/media/kit)（Proton media kit reference grant）：采用 Proton Drive 产品图，非 Proton 通用标志；产品详情保留官网链接 https://proton.me/drive 。
 
 保持原图比例、颜色和现有界面。上游声明与转换说明随静态资源分发，原稿随站或可从固定版本来源取得。
+
+### 演示、桌面工具与健身应用批次
+
+- [friction](https://github.com/friction2d/friction-icon-theme/blob/b9a08f67f1eda58014fe465e0887ee92c3e0de90/friction-icon.svg)（CC BY-SA 4.0）：上游图标主题明确注明 Friction 标志作者 Nic Kraneis 与 CC BY-SA 4.0 授权。
+- [marp-cli](https://github.com/marp-team/marp-cli/blob/ffc4128626cbc64965fe1cc805717c6d4438c384/src/assets/win-icon.ico)（MIT）：Marp CLI 自己仓库内的 Windows 应用原图，不使用 Marp for VS Code 的图案。
+- [freerdp](https://github.com/FreeRDP/FreeRDP/blob/5993fc75de802cd12186db9bf3e04934c9fb1dfe/resources/FreeRDP_Icon.svg)（Apache-2.0）：FreeRDP 官方项目的独立兔子图案，仅用作识别原项目。
+- [liftlog](https://github.com/LiamMorrow/LiftLog/blob/1b950c9020eeddba8c94ee7faeec9849316585ec/app/assets/icon.png)（AGPL-3.0）：上游移动应用正式图标，不使用商店徽章或健身动作插画。
+- [shutter-encoder](https://github.com/paulpacifico/shutter-encoder/blob/33d48a96a65b59dfc1ba1da2f9f2f0dfb0f92f86/src/resources/icon.png)（GPL-3.0）：官方 Shutter Encoder 应用内产品图案，不使用 FFmpeg 或可选插件标志。
+- [ivpn](https://github.com/ivpn/desktop-app/blob/8e8bee5287a7b1c113e58b550c35b8d7b520c627/ui/buildResources/appicons/icons/256x256.png)（GPL-3.0）：官方开源桌面客户端打包资源，只用于标识目录对应工具。
+- [omi](https://github.com/BasedHardware/omi/blob/55e6012e1e21cdccb9efa9266fab759ade2b17d6/app/ios/Runner/Assets.xcassets/prodAppIcon.appiconset/OmiAppIcon-60%403x.png)（MIT）：iOS 正式版本的对应 Omi 应用图标，与开发版、手表和设备实物区别。
+- [affine](https://github.com/toeverything/AFFiNE/blob/5444d929c22b6114fbb1519ccb3ea180c2cd84d4/packages/frontend/apps/electron/resources/icons/icon.png)（MIT）：官方客户端打包资源。根 LICENSE 明确这一路径不在非 MIT 后端例外目录内。
+- [jan](https://github.com/janhq/jan/blob/49a84bdeaebdfc0f36c00f252eb638f516a48432/src-tauri/icons-macos/icon.png)（Apache-2.0）：正式 macOS 应用图标，区别于单独维护的 beta 或 nightly 图案。
+- [lockime](https://github.com/oomol-lab/LockIME/blob/456500e819f10db18709369904826e56370682f8/Sources/LockIME/Assets.xcassets/AppIcon.appiconset/icon_256.png)（GPL-3.0）：正式 macOS 应用图标，不使用菜单栏模板或解锁状态图。
+- [input-source-pro](https://github.com/runjuu/InputSourcePro/blob/b9cd70febe07316c21ff64e958ec6fbab9ce5838/Input%20Source%20Pro/Resources/Assets.xcassets/AppIcon.appiconset/256.png)（GPL-3.0）：正式 macOS 应用图标，不使用第三方输入法或应用小图。
+- [ultravnc](https://github.com/ultravnc/UltraVNC/blob/3842e3438d00e884639b3e20b489c8b326154526/vncviewer/res/vncviewer.ico)（GPL-3.0）：官方 UltraVNC Viewer Windows 应用 ICO 的 256px 图层，区别于服务端及系统托盘图标。
+
+保持原图比例、颜色和现有界面。上游声明与转换说明随静态资源分发，原稿随站或可从固定版本来源取得。
