@@ -1,4 +1,7 @@
 {
+  "默认关闭，需单独开启并手动授予完全磁盘访问权限。仅索引所选文件夹中文件和文件夹的名称，不使用 Spotlight。": "Off by default. Enable it separately and grant Full Disk Access. It indexes file and folder names in selected folders and does not use Spotlight.",
+  "默认开启，本地保留 3 个月；置顶不受自动清理影响，默认排除钥匙串访问和密码应用。可从 Raycast 2.0 及以上版本的加密 .rayconfig 导入剪贴板历史；图片文件必须仍在执行导入的 Mac 上。": "On by default, with three months of local history. Pinned entries are exempt from cleanup; Keychain Access and password apps are excluded by default. Imports history from encrypted Raycast 2.0 or later .rayconfig exports. Clipboard images are imported only if their files are still on the Mac running the import.",
+  "可从 Raycast 2.0 及以上版本的加密 .rayconfig 导入应用快捷键；导入后需要退出并重新打开 Tinycast。": "Imports app shortcuts from encrypted Raycast 2.0 or later .rayconfig exports. Quit and reopen Tinycast after importing.",
   "苹果设备上的开源 RSS 阅读器，可用本机订阅，也可选 iCloud 或兼容的同步服务。Mac、iPhone 和 iPad 支持第三方文章主题，例如为中文阅读优化的妙言主题。": "An open-source RSS reader for Apple devices, with a local account and optional iCloud or compatible provider sync. Mac, iPhone, and iPad support third-party article themes, such as MiaoYan, which is designed for reading Chinese.",
   "基本远程控制免费。中国大陆 iOS App Store：VIP ¥24/月、SVIP ¥88/月，均为自动续费。官网、其他地区价格及会员权益差异未核实。": "Basic remote control is free. Mainland China iOS App Store: VIP ¥24/month and SVIP ¥88/month, both auto-renewing. Website and other regional prices and membership benefits have not been verified.",
   "VIP（中国大陆 iOS，自动续费）": "VIP (mainland China iOS, auto-renewing)",
