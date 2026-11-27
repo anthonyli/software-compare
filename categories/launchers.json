@@ -1043,6 +1043,7 @@
         "https://tinycast.dev/docs/extensions/",
         "https://tinycast.dev/docs/launcher/commands/",
         "https://tinycast.dev/docs/reference/hotkeys/",
+        "https://tinycast.dev/docs/reference/import-from-raycast/",
         "https://tinycast.dev/docs/launcher/quicklinks/",
         "https://tinycast.dev/docs/ai/",
         "https://github.com/abue-ammar/tinycast/blob/v0.12.15/LICENSE",
@@ -1055,11 +1056,11 @@
         },
         "file_search": {
           "value": "yes",
-          "note": "开启后索引所选文件夹内文件和文件夹的名称，不使用 Spotlight；需要手动授予完全磁盘访问权限。"
+          "note": "默认关闭，需单独开启并手动授予完全磁盘访问权限。仅索引所选文件夹中文件和文件夹的名称，不使用 Spotlight。"
         },
         "clipboard_history": {
           "value": "yes",
-          "note": "默认开启，本地保留 3 个月；置顶不受自动清理影响，默认排除钥匙串访问和密码应用。"
+          "note": "默认开启，本地保留 3 个月；置顶不受自动清理影响，默认排除钥匙串访问和密码应用。可从 Raycast 2.0 及以上版本的加密 .rayconfig 导入剪贴板历史；图片文件必须仍在执行导入的 Mac 上。"
         },
         "calculator": {
           "value": "yes"
@@ -1069,7 +1070,8 @@
           "note": "可选运行部分 Raycast 扩展；Raycast 的 AI、浏览器扩展和窗口管理服务 API 不兼容，不等同于完整 Raycast 环境。"
         },
         "hotkey": {
-          "value": "yes"
+          "value": "yes",
+          "note": "可从 Raycast 2.0 及以上版本的加密 .rayconfig 导入应用快捷键；导入后需要退出并重新打开 Tinycast。"
         },
         "window_management": {
           "value": "yes"

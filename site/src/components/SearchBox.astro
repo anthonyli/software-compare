@@ -55,6 +55,14 @@ const listId = `${inputId}-list`;
     hidden
   >
   </div>
+  <div class="search-results" data-search-error hidden>
+    <div class="flex flex-wrap items-center justify-between gap-2 px-3 py-3">
+      <p class="text-sm text-muted" data-search-error-message role="status"></p>
+      <button type="button" class="btn btn-ghost btn-sm" data-search-retry>
+        <span class="t-zh">重试</span><span class="t-en">Retry</span>
+      </button>
+    </div>
+  </div>
 </div>
 
 <script>
@@ -71,6 +79,7 @@ const listId = `${inputId}-list`;
     pricing_model: string;
     pricing_model_en?: string;
     open_source: boolean;
+    scrolling_capture?: true;
   };
 
   function currentLang(): string {
@@ -160,6 +169,8 @@ const listId = `${inputId}-list`;
     const box = root.querySelector("[data-search-results]") as HTMLElement;
     const input = root.querySelector("[data-search-input]") as HTMLInputElement;
     box.hidden = true;
+    const error = root.querySelector("[data-search-error]") as HTMLElement;
+    error.hidden = true;
     box.innerHTML = "";
     root.classList.remove("is-open");
     input.setAttribute("aria-expanded", "false");
@@ -176,6 +187,8 @@ const listId = `${inputId}-list`;
       return;
     }
     box.hidden = false;
+    const error = root.querySelector("[data-search-error]") as HTMLElement;
+    error.hidden = true;
     root.classList.add("is-open");
     input.setAttribute("aria-expanded", "true");
     if (!hits.length) {
@@ -207,8 +220,12 @@ const listId = `${inputId}-list`;
 
   document.querySelectorAll("[data-search]").forEach((root) => {
     const input = root.querySelector("[data-search-input]") as HTMLInputElement;
+    const error = root.querySelector("[data-search-error]") as HTMLElement;
+    const errorMessage = root.querySelector("[data-search-error-message]") as HTMLElement;
+    const retry = root.querySelector("[data-search-retry]") as HTMLButtonElement;
     let timer = 0;
     let composing = false;
+    let suppressFocusSearch = false;
     const run = async (keepActive = false) => {
       const q = input.value;
       if (composing) return;
@@ -229,17 +246,11 @@ const listId = `${inputId}-list`;
       } catch {
         if (!isCurrent()) return;
         closeBox(root);
-        const box = root.querySelector("[data-search-results]") as HTMLElement;
-        box.hidden = false;
+        error.hidden = false;
         root.classList.add("is-open");
-        input.setAttribute("aria-expanded", "true");
-        const message = document.createElement("div");
-        message.className = "px-3 py-3 text-sm text-muted";
-        message.setAttribute("role", "status");
-        message.textContent = currentLang() === "en"
-          ? "Search is unavailable. Type again to retry."
-          : "搜索暂时不可用，请重新输入重试。";
-        box.replaceChildren(message);
+        errorMessage.textContent = currentLang() === "en"
+          ? "Search is temporarily unavailable."
+          : "搜索暂时不可用。";
       }
     };
     input.addEventListener("compositionstart", () => {
@@ -257,7 +268,22 @@ const listId = `${inputId}-list`;
       closeBox(root);
       if (!composing) timer = window.setTimeout(() => run(false), 80);
     });
-    input.addEventListener("focus", () => run(true));
+    input.addEventListener("focus", () => {
+      if (!suppressFocusSearch) run(true);
+    });
+    retry.addEventListener("click", () => {
+      window.clearTimeout(timer);
+      if (document.activeElement === input) run(false);
+      else input.focus(); // The focus handler retries the current query.
+    });
+    retry.addEventListener("keydown", (e) => {
+      if (e.key !== "Escape") return;
+      e.preventDefault();
+      closeBox(root);
+      suppressFocusSearch = true;
+      input.focus();
+      suppressFocusSearch = false;
+    });
     input.addEventListener("keydown", (e) => {
       if (composing || e.isComposing || e.keyCode === 229) return;
       const st = states.get(root);
@@ -265,7 +291,7 @@ const listId = `${inputId}-list`;
       if (e.key === "Escape") {
         e.preventDefault();
         window.clearTimeout(timer);
-        if (!box.hidden) closeBox(root);
+        if (!box.hidden || !error.hidden) closeBox(root);
         else input.blur();
         return;
       }

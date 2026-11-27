@@ -1,5 +1,11 @@
 {
-  "官网宣传远程控制免费，App Store 列为免费；服务协议保留付费会员和增值服务条款，具体后续资费以平台规则为准": "The official site advertises free remote control and the App Store lists the app as free. The service terms reserve paid membership and value-added services; applicable pricing remains subject to the platform's rules.",
+  "默认关闭，需单独开启并手动授予完全磁盘访问权限。仅索引所选文件夹中文件和文件夹的名称，不使用 Spotlight。": "Off by default. Enable it separately and grant Full Disk Access. It indexes file and folder names in selected folders and does not use Spotlight.",
+  "默认开启，本地保留 3 个月；置顶不受自动清理影响，默认排除钥匙串访问和密码应用。可从 Raycast 2.0 及以上版本的加密 .rayconfig 导入剪贴板历史；图片文件必须仍在执行导入的 Mac 上。": "On by default, with three months of local history. Pinned entries are exempt from cleanup; Keychain Access and password apps are excluded by default. Imports history from encrypted Raycast 2.0 or later .rayconfig exports. Clipboard images are imported only if their files are still on the Mac running the import.",
+  "可从 Raycast 2.0 及以上版本的加密 .rayconfig 导入应用快捷键；导入后需要退出并重新打开 Tinycast。": "Imports app shortcuts from encrypted Raycast 2.0 or later .rayconfig exports. Quit and reopen Tinycast after importing.",
+  "苹果设备上的开源 RSS 阅读器，可用本机订阅，也可选 iCloud 或兼容的同步服务。Mac、iPhone 和 iPad 支持第三方文章主题，例如为中文阅读优化的妙言主题。": "An open-source RSS reader for Apple devices, with a local account and optional iCloud or compatible provider sync. Mac, iPhone, and iPad support third-party article themes, such as MiaoYan, which is designed for reading Chinese.",
+  "基本远程控制免费。中国大陆 iOS App Store：VIP ¥24/月、SVIP ¥88/月，均为自动续费。官网、其他地区价格及会员权益差异未核实。": "Basic remote control is free. Mainland China iOS App Store: VIP ¥24/month and SVIP ¥88/month, both auto-renewing. Website and other regional prices and membership benefits have not been verified.",
+  "VIP（中国大陆 iOS，自动续费）": "VIP (mainland China iOS, auto-renewing)",
+  "SVIP（中国大陆 iOS，自动续费）": "SVIP (mainland China iOS, auto-renewing)",
   "官网及官方应用介绍声明端到端加密；不能推导为零数据收集。": "The official website and app description claim end-to-end encryption; this does not imply zero data collection.",
   "免费远控宣传不能替代明确商业授权": "Free remote-control marketing does not establish an explicit commercial-use license.",
   "各平台版本不同，仅核实官方文档，未安装客户端。": "Versions differ by platform. This entry is based on official documentation; the client has not been tested.",
@@ -31,5 +37,7 @@
   "官方 FAQ 明确当前不支持自定义事件。": "The official FAQ says custom events are not supported.",
   "Web Analytics 不提供基于页面及自定义事件的产品漏斗。": "Web Analytics does not offer product funnels built from pages and custom events.",
   "报告真实用户的核心网页性能指标。": "Reports Core Web Vitals from real users.",
-  "这是 Cloudflare 托管服务，非可下载的自建软件。": "A Cloudflare-hosted service, not downloadable self-hosted software."
+  "这是 Cloudflare 托管服务，非可下载的自建软件。": "A Cloudflare-hosted service, not downloadable self-hosted software.",
+  "仅支持纵向滚动截图。Terminal、iTerm2 或 VS Code 自动滚动出现拼接问题时，可改用手动滚动模式。": "Vertical scrolling capture only. If automatic capture stitches poorly in Terminal, iTerm2, or VS Code, try manual scrolling mode.",
+  "2.14.0 的网址规则支持 Helium、Comet 等已列浏览器。ego(lite) 不在网址规则列表，可按应用设置默认输入源。": "Version 2.14.0 supports per-site rules in listed browsers including Helium and Comet. ego(lite) is not on that list; use an app-wide input source default."
 }

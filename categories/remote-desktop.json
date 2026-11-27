@@ -1276,13 +1276,25 @@
       "license": "专有软件",
       "pricing_model": "免费增值",
       "collected_at": "2026-11-14",
-      "price_summary": "官网宣传远程控制免费，App Store 列为免费；服务协议保留付费会员和增值服务条款，具体后续资费以平台规则为准，本轮未核实付费金额。",
+      "price_summary": "基本远程控制免费。中国大陆 iOS App Store：VIP ¥24/月、SVIP ¥88/月，均为自动续费。官网、其他地区价格及会员权益差异未核实。",
       "prices": [
         {
           "plan": "远程控制（官网宣传）",
           "price": "免费",
           "currency": null,
           "period": null
+        },
+        {
+          "plan": "VIP（中国大陆 iOS，自动续费）",
+          "price": "24",
+          "currency": "CNY",
+          "period": "月"
+        },
+        {
+          "plan": "SVIP（中国大陆 iOS，自动续费）",
+          "price": "88",
+          "currency": "CNY",
+          "period": "月"
         }
       ],
       "free_tier_limits": "官方应用介绍称不限连接时长和次数；不据此承诺永久全功能免费或免费商业授权。连接质量受设备、网络和权限影响。",

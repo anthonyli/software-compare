@@ -41,3 +41,24 @@ test('browser comparison shows verified logos on desktop and mobile', async ({ p
   await expect(image).toBeVisible();
   await expect.poll(() => image.evaluate((node: HTMLImageElement) => node.naturalWidth)).toBeGreaterThan(0);
 });
+
+test('screenshot tools show local app icons on both comparison layouts and product details', async ({ page }) => {
+  const ids = ['ksnip', 'normcap'];
+  for (const width of [1280, 390]) {
+    await page.setViewportSize({ width, height: 900 });
+    await page.goto('/c/screenshot-tools/');
+    const container = page.locator(width === 1280 ? '#matrix' : '#card-list');
+    for (const id of ids) {
+      const image = container.locator(`[data-product-id="${id}"] [data-product-logo="verified"] img`);
+      await image.scrollIntoViewIfNeeded();
+      await expect(image).toHaveAttribute('src', `/product-logos/${id}.webp`);
+      await expect.poll(() => image.evaluate((node: HTMLImageElement) => node.naturalWidth)).toBe(96);
+    }
+  }
+  for (const id of ids) {
+    await page.goto(`/p/screenshot-tools/${id}/`);
+    const image = page.locator('.detail-hero [data-product-logo="verified"] img');
+    await expect(image).toHaveAttribute('alt', '');
+    await expect.poll(() => image.evaluate((node: HTMLImageElement) => node.naturalWidth)).toBe(96);
+  }
+});
