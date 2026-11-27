@@ -14,7 +14,19 @@ test('Pages serves assets and API separately without exposing the worker bundle'
  expect(await unknown.json()).toEqual({error:'not_found'});
 });
 test('anonymous votes persist, share across categories and change ranking',async({page,browser})=>{
- await page.goto('/c/screenshot-tools/');
+ // Each anonymous visitor uses a reserved test address, separate from
+ // unrelated browser fixtures sharing this local server's session quota.
+ await page.setExtraHTTPHeaders({'CF-Connecting-IP':'198.51.100.218'});
+ const voteSummary = (id: string) => (response: import('@playwright/test').Response) => {
+  const url = new URL(response.url());
+  return url.origin === origin && url.pathname === '/api/votes' &&
+   response.request().method() === 'GET' && (url.searchParams.get('ids') || '').split(',').includes(id);
+ };
+ const [initialSummary] = await Promise.all([
+  page.waitForResponse(voteSummary('sharex')),
+  page.goto('/c/screenshot-tools/'),
+ ]);
+ expect(initialSummary.status(), 'First anonymous vote summary response').toBe(200);
  const vote=page.locator('#matrix [data-vote-id="sharex"]');
  await expect(vote).toBeEnabled();
  await vote.click();
@@ -25,8 +37,12 @@ test('anonymous votes persist, share across categories and change ranking',async
  await page.getByRole('button',{name:'卡片',exact:true}).click();
  await expect(page.locator('#matrix')).toBeHidden();
  await expect(page.locator('#card-list [data-vote-id="sharex"]')).toHaveAttribute('aria-pressed','true');
- const second=await browser.newContext();const visitor=await second.newPage();
- await visitor.goto('/p/screen-recorders/sharex/');
+ const second=await browser.newContext({extraHTTPHeaders:{'CF-Connecting-IP':'198.51.100.219'}});const visitor=await second.newPage();
+ const [secondSummary] = await Promise.all([
+  visitor.waitForResponse(voteSummary('sharex')),
+  visitor.goto('/p/screen-recorders/sharex/'),
+ ]);
+ expect(secondSummary.status(), 'Second anonymous vote summary response').toBe(200);
  await expect(visitor.locator('[data-vote-id="sharex"] [data-vote-count]')).toHaveText(String(count));
  await expect(visitor.locator('[data-vote-id="sharex"]')).toHaveAttribute('aria-pressed','false');
  await visitor.locator('[data-vote-id="sharex"]').click();

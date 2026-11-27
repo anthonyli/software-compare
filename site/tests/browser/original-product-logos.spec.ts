@@ -3,6 +3,9 @@ import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import { expect, test } from '@playwright/test';
 
+// The gallery checks do not share the anonymous vote fixture's session quota.
+test.use({ extraHTTPHeaders: { 'CF-Connecting-IP': '198.51.100.217' } });
+
 const originalPng = JSON.parse(readFileSync(new URL('../../src/lib/product-logo-original-png.json', import.meta.url), 'utf8')) as Record<string, string>;
 
 for (const [category, id, dimensions] of [
