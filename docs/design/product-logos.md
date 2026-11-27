@@ -347,3 +347,19 @@ NormCap 使用[上游 Flatpak 打包应用图标](https://github.com/dynobo/norm
 - [gpu-screen-recorder](https://github.com/flathub/com.dec05eba.gpu_screen_recorder/blob/abad74035a4f006670fd720d69c3cb3a673a9573/com.dec05eba.gpu_screen_recorder.yml)（GPL-3.0-only）：从 Flathub 发布清单锁定且 SHA-512 一致的上游归档中取 128px 产品应用图标，非托盘录制状态图。
 
 保持原图比例、颜色和现有界面。上游声明与转换说明随静态资源分发，原稿随站或可从固定版本来源取得。
+
+### 设计、录制与实用工具批次
+
+- [armorpaint](https://github.com/armory3d/armorpaint/blob/deac70436ea784308180071e576d1f8e66c57b74/paint/icon.png)（Zlib）：官方 ArmorPaint 桌面产品图标，与官方手册的独立红底 P 标识一致，不使用 Armory 引擎图标。
+- [maestro-cli](https://github.com/mobile-dev-inc/maestro/blob/81492bbb1f57d4aa4745d4b985a422f2c738e211/.idea/icon.svg)（Apache-2.0）：Maestro CLI 开源项目的方形产品图案，与官方仓库展示的 Maestro 标识一致，不使用测试 App 或云套餐图标。
+- [mitmproxy](https://github.com/mitmproxy/mitmproxy/blob/046618526875cad96d23043bef78b3ffd422b033/release/windows-installer/Assets/logo.150x150.png)（MIT）：mitmproxy 正式 Windows 安装资源中的产品图标，不使用第三方主题或工具图。
+- [reelbird](https://github.com/btahir/reelbird/blob/c50ca417ad0593e882f63cf6b33c0523b6641a0e/brand/icon.svg)（MIT）：项目自带应用图标原稿，不是插画、录制状态或演示截图。
+- [wireshark](https://github.com/wireshark/wireshark/blob/c8417a804b4ecbfcc1a51ca3e77af9663714140d/resources/icons/wsicon256.png)（GPL-2.0-or-later）：Wireshark 官方开发者指南指向发行资源中的应用图标；只标识 Wireshark，不使用 Stratoshark、捕捉状态或文件图标。
+- [screenpal](https://screenpal.com/media-assets)（ScreenPal media assets guidelines）：官方媒体素材的彩色独立图案，保留注册标记、比例和原色，在原有纯白图标区展示。
+- [screen-studio](https://screen.studio/brand-materials)（Screen Studio published brand materials）：官网品牌材料的单独 Screen Studio 标志，保持原有比例与颜色，不使用带字横幅。
+- [sketch](https://www.sketch.com/about-us/#press-information)（Sketch media kit guidelines）：官方媒体套件专用浅色应用图标，内置留白且不改其中的钻石标记，不用企业横排字标。
+- [arq-7](https://www.arqbackup.com/press/)（Arq published press artwork）：Arq Backup 官方媒体页的 512px Arq App Logo，专用于介绍现有 Arq 7 产品。
+- [audio-hijack](https://www.rogueamoeba.com/company/presskit/#audiohijack)（Rogue Amoeba published press artwork）：Rogue Amoeba 专供报道的 Audio Hijack 独立应用图标，不使用公司品牌或旧 Audio Hijack Pro 图案。
+- [piezo](https://www.rogueamoeba.com/company/presskit/#piezo)（Rogue Amoeba published press artwork）：Rogue Amoeba 专供报道的 Piezo 独立应用图标，不使用 Audio Hijack 或公司标志。
+
+保持原图比例、颜色和现有界面。上游声明与转换说明随静态资源分发，原稿随站或可从固定版本来源取得。
