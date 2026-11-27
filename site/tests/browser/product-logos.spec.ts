@@ -1,5 +1,14 @@
 import { test, expect } from '@playwright/test';
 
+// Logo checks do not vote. Avoid creating anonymous sessions in unrelated
+// tests; the voting integration suite uses the real local Pages worker.
+test.beforeEach(async ({ page }) => {
+  await page.route('**/api/votes?*', route => {
+    const ids = new URL(route.request().url()).searchParams.get('ids')?.split(',') ?? [];
+    return route.fulfill({ json: { votes: ids.map(id => ({ id, count: 0, liked: false })) } });
+  });
+});
+
 test('verified product logos load locally on desktop, mobile and detail pages', async ({ page }) => {
   for (const width of [1280, 390]) {
     await page.setViewportSize({ width, height: 900 });
