@@ -280,3 +280,20 @@ NormCap 使用[上游 Flatpak 打包应用图标](https://github.com/dynobo/norm
 - [amnezia](https://github.com/amnezia-vpn/amnezia-client/blob/4f0fa34449439428619aeb89d6d8622671dffbbb/client/images/app.ico)（GPL-3.0）：开源 Windows 客户端编译时使用的产品原图，区别于付费套餐品牌和状态图标。
 
 保持原图比例、颜色和现有界面。上游声明与转换说明随静态资源分发，原稿随站或可从固定版本来源取得。
+
+### 桌面应用、录屏与隐私工具批次
+
+- [t3-code](https://github.com/pingdotgg/t3code/blob/88107272fffccc561599b4498b73fa0ec25a9ac4/apps/marketing/src/assets/icon.webp)（MIT）：上游站点直接展示的正式 T3 Code 应用图标，不用 nightly 版或集成图标。
+- [orca](https://github.com/stablyai/orca/blob/d8f451ae0c861fe7098accb646c6e130cb0b1312/resources/build/icon.png)（MIT）：Orca 编辑器官方安装包图案，项目对应 https://orca.dev/ ，不同于同名屏幕阅读器或 3D 打印切片软件。
+- [standard-notes](https://github.com/standardnotes/app/blob/e147ae79f6459464a936687b967a8d8e1170a84c/packages/desktop/app/icon/Icon-256x256.png)（AGPL-3.0）：Standard Notes 正式桌面图标，非其开发构建或 Proton 其它产品标志。
+- [http-toolkit](https://github.com/httptoolkit/httptoolkit-desktop/blob/4494a2cf1b30c9490a955b48aa69b86a38b46339/src/icons/icon.icns)（AGPL-3.0）：官方桌面发行项目图标，仅在对比页面用于识别此产品。
+- [portmaster](https://github.com/safing/portmaster/blob/f6d4471bbb13d886e4dcdcd01e38e94f25b4518f/assets/data/icons/pm_dark_256.png)（GPL-3.0）：适合现有浅背景的 Portmaster 安装资源，未使用通知与状态衍生图。
+- [scribus](https://commons.wikimedia.org/wiki/File:Scribus_logo.svg)（CC BY-SA 3.0）：采用作者明确许可的 Scribus 官方笔尖标志，图案和配色未改变，WebP 沿用同一许可并带署名。
+- [gnumeric](https://github.com/GNOME/gnumeric/blob/0fa001fce6b533914174cca5716df31cbf3d9ddb/icons/256x256/apps/org.gnumeric.gnumeric.png)（GPL-2.0-or-later）：桌面入口 org.gnumeric.gnumeric 引用的 256px 官方图，非 GNOME 基金会图标或通用表格标志。
+- [staxrip](https://github.com/staxrip/staxrip/blob/2283bfd0a892542feecdbb813b1fcda144f7d610/Source/Black.ico)（MIT）：StaxRip.vbproj 中指定的 Windows 应用图案，未用主题可选图。
+- [simplescreenrecorder](https://github.com/MaartenBaert/ssr/blob/e73e07664121ac30836872bca76194c6570e04c8/data/icons/256/simplescreenrecorder.png)（GPL-3.0）：官方桌面启动条目对应的图标，区别等待和正在录制等状态图案。
+- [cap](https://github.com/CapSoftware/Cap/blob/2bffa46a4de88647354bc162e730e2bce0a12792/apps/desktop-gpui/icons/macos/icon.icns)（AGPL-3.0）：Cap 桌面打包图标，来源许可证覆盖未明文排除的内容，仅用于编辑性比较，不用于我们的品牌。
+- [proton-pass](https://proton.me/media/kit)（Proton media kit reference grant）：采用 Proton Pass 产品图，非 Proton 通用标志；产品详情保留官网链接 https://proton.me/pass 。
+- [proton-drive](https://proton.me/media/kit)（Proton media kit reference grant）：采用 Proton Drive 产品图，非 Proton 通用标志；产品详情保留官网链接 https://proton.me/drive 。
+
+保持原图比例、颜色和现有界面。上游声明与转换说明随静态资源分发，原稿随站或可从固定版本来源取得。
