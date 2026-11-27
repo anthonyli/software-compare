@@ -314,3 +314,20 @@ NormCap 使用[上游 Flatpak 打包应用图标](https://github.com/dynobo/norm
 - [ultravnc](https://github.com/ultravnc/UltraVNC/blob/3842e3438d00e884639b3e20b489c8b326154526/vncviewer/res/vncviewer.ico)（GPL-3.0）：官方 UltraVNC Viewer Windows 应用 ICO 的 256px 图层，区别于服务端及系统托盘图标。
 
 保持原图比例、颜色和现有界面。上游声明与转换说明随静态资源分发，原稿随站或可从固定版本来源取得。
+
+### 录屏、清理与专业工具批次
+
+- [ente-auth](https://github.com/ente-io/ente/blob/2e2b3716476a158be01561edc1aa2b47a4fe2831/mobile/apps/auth/android/app/src/main/res/mipmap-xxxhdpi/launcher_icon.png)（AGPL-3.0）：Ente Auth 正式 Android 应用入口图标，不使用开发版或 Ente Photos 图标。
+- [pearcleaner](https://github.com/alienator88/Pearcleaner/blob/7724df7111bff82ae243301cf701992ef05ecf19/Pear%20Resources/Icons/icon_256x256.png)（Apache-2.0 with Commons Clause）：官方桌面客户端项目内原始产品图标，仅用于对应工具的识别，不销售素材，不做衍生客户端。
+- [letos](https://github.com/pawelsalawa/letos/blob/bb2bcaa9cfea1277a6a9bfcba16542b3e9fe9581/Letos/gui/img/letos.svg)（GPL-3.0-or-later）：Letos 官方图形客户端资源清单使用的图案，不使用同仓库旧 SQLiteStudio 文档图。
+- [okular](https://github.com/KDE/okular/blob/04d2a9b72d9ab89afefe6dd6ba775f54a85b456e/icons/128-apps-okular.png)（GPL-2.0-or-later）：Okular 桌面包构建安装的应用图标，区别于 KDE 组织标志和 PDF 注释工具图。
+- [obs-studio](https://github.com/obsproject/obs-studio/blob/60a50017d70136375c78da5e15433597c9f3af7c/frontend/cmake/linux/icons/obs-logo-256.png)（GPL-2.0-or-later）：OBS Studio 正式 Linux 发行项目应用原图，仅标识目录中的 OBS Studio，不作为本站、插件、推广或合作标志；同一图标也覆盖录音分类。
+- [qcad-ce](https://github.com/qcad/qcad/blob/556998d77501cf2c74949588645110528a037944/src/run/qcad.ico)（GPL-3.0 with QCAD exceptions）：社区版开源代码中的 QCAD Windows 应用程序图标，非文档文件、Pro 试用或站点品牌横幅。
+- [invokeai](https://github.com/invoke-ai/InvokeAI/blob/ecae7e7b6f7b521bd75c9539b4840f645be91a0b/invokeai/frontend/webv2/public/invoke-icon.svg)（Apache-2.0）：Invoke 官方项目新 Web 客户端内置独立图标，区别于模型、扩展和商业横幅。
+- [dupeguru](https://github.com/arsenetar/dupeguru/blob/7466154c23b823e51cd678eae2f94cf87356dc26/images/dgse_logo_128.png)（GPL-3.0）：官方标准版应用图标，区别于 Music 和 Picture 版以及工具栏图标。
+- [lulu](https://github.com/objective-see/LuLu/blob/88479660fe27086ff6572f859376c852d283dd25/LuLu/App/Assets.xcassets/AppIcon.appiconset/icon_256x256.png)（GPL-3.0）：LuLu 原生桌面客户端正式应用图标，区别于菜单栏状态图。
+- [peek](https://github.com/phw/peek/blob/dab07c27d7e3cc5959a61685b3aaff8956333239/data/icons/com.uploadedlobster.peek.svg)（CC BY-SA 4.0）：官方桌面包装清单中的 Peek 彩色图标，保留原稿内 CC 标记和 GNOME Design Team 署名，不用桌面主题替代或单色状态变体。
+- [cobra](https://github.com/spf13/cobra/blob/adbc8813901bba65827259daa8e22ff94ec1f30e/assets/CobraMain.png)（Apache-2.0）：Cobra CLI 框架仓库 README 的官方图案，仅用于同名条目，不使用站点公司标识。
+- [imagemagick](https://imagemagick.org/license/)（ImageMagick License）：官方 README 以 ImageMagick logo 标示的官方巫师图案；上游维护者说明图案在文章中按 ImageMagick 许可使用。
+
+保持原图比例、颜色和现有界面。上游声明与转换说明随静态资源分发，原稿随站或可从固定版本来源取得。
