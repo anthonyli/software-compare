@@ -331,3 +331,19 @@ NormCap 使用[上游 Flatpak 打包应用图标](https://github.com/dynobo/norm
 - [imagemagick](https://imagemagick.org/license/)（ImageMagick License）：官方 README 以 ImageMagick logo 标示的官方巫师图案；上游维护者说明图案在文章中按 ImageMagick 许可使用。
 
 保持原图比例、颜色和现有界面。上游声明与转换说明随静态资源分发，原稿随站或可从固定版本来源取得。
+
+### 云服务、浏览器工具与桌面应用批次
+
+- [texturecraft](https://github.com/storytold/texturecraft/blob/429d705884d81048c35cc9a4528bd78607f0dd7d/assets/app-icon/hicolor/256x256/apps/ai.storyteller.texturecraft.png)（MIT）：上游明确授权的 TextureCraft 正式斑马应用原图，不使用 ArtCraft 品牌、临时占位或 nightly 变体。
+- [stagehand](https://github.com/browserbase/stagehand/blob/97ff3e1189d3205bee10127fdde992f3313ef228/packages/docs/favicon.svg)（MIT）：官方文档的独立绿色 S 产品符号，与官方 Stagehand 完整 Logo 中的字形一致，不是通用网页 favicon。
+- [seafile](https://github.com/haiwen/seafile-client/blob/7b5a95acfbd1f7f1a9519341ba1b095fd974682e/seafile.ico)（Apache-2.0）：官方 Seafile 桌面项目打包使用的独立应用图标，不使用 SeaDrive 或其他分支图案。
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp/blob/da452a569fb3d04091468d920f9b9e68512e0373/devscripts/logo.ico)（Unlicense）：官方 Windows 打包资源使用的 yt-dlp 产品 ICO。选用 256px 图层，不使用 YouTube 或原版 youtube-dl 标志。
+- [insomnia](https://github.com/Kong/insomnia/blob/adc07b84dcbf1282e324fcee15c3e423a800defd/packages/insomnia/src/icons/icon.ico)（Apache-2.0）：Insomnia 桌面发行包正式应用图标，区别于 Kong 公司品牌和 Inso CLI。
+- [clamav](https://github.com/Cisco-Talos/clamav/blob/cad7b18a3e6505195fe08db1412449a18fc9f012/logo.png)（GPL-2.0）：官方项目 README 使用的 ClamAV 标识图 Maeve，只用作目录产品识别，不暗示 Cisco 背书。
+- [vercel](https://vercel.com/geist/brands)（Vercel brand reference guidelines）：官方品牌指南针对空间有限的列表允许单独展示 Vercel 三角符号，保持官方原色、形状和官方原稿。
+- [neon-cloud](https://neon.com/brand)（Neon brand reference guidelines）：官方品牌指南针对空间有限的列表使用浅底全色 Neon 独立标记，不替换为 Databricks 公司标志。
+- [render](https://render.com/newsroom)（Render newsroom brand kit）：官方品牌素材包的浅底黑色独立标志，在现有留白位置用来识别 Render，不使用员工照片和品牌横幅。
+- [capacitor](https://github.com/ionic-team/capacitor-site/blob/fa69bbd1872fc82526c79dbb0ce6031b66457e4d/src/assets/img/favicon.png)（MIT）：官方项目站的 Capacitor 蓝底电容符号，核对与官方字标的电容符号一致，不使用 Ionic 公司图标或通用 favicon。
+- [gpu-screen-recorder](https://github.com/flathub/com.dec05eba.gpu_screen_recorder/blob/abad74035a4f006670fd720d69c3cb3a673a9573/com.dec05eba.gpu_screen_recorder.yml)（GPL-3.0-only）：从 Flathub 发布清单锁定且 SHA-512 一致的上游归档中取 128px 产品应用图标，非托盘录制状态图。
+
+保持原图比例、颜色和现有界面。上游声明与转换说明随静态资源分发，原稿随站或可从固定版本来源取得。
