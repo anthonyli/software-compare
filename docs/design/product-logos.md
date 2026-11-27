@@ -129,3 +129,21 @@ NormCap 使用[上游 Flatpak 打包应用图标](https://github.com/dynobo/norm
 - [pixelorama](https://github.com/Orama-Interactive/Pixelorama/blob/9d8823a7bb1ddaf5ea23fe0c4bc640de770cea7a/assets/graphics/icons/icon.png)（MIT）：采用 Pixelorama 项目默认应用图标，不使用 Godot 项目或样例笔刷标志。
 
 保持原图比例、颜色和现有界面。上游声明与转换说明随静态资源分发，原稿随站或可从固定版本来源取得。CC BY 与 BY-SA 图标保留图内署名及许可元数据。
+
+### 远程桌面、开发框架和笔记工具批次
+
+- [moonlight](https://github.com/moonlight-stream/moonlight-qt/blob/de2467e433821664cdd2224aad8c89a625be1ad9/app/res/moonlight.svg)（GPL-3.0）：上游 v6.2.0 的 app.pro 安装此 PC 客户端图标，不使用移动版或第三方客户端图标。
+- [tigervnc](https://commons.wikimedia.org/wiki/File:TigerVNC_logo.svg)（GPL-2.0-or-later）：采用创作者直接发布的 GPL 源图，与当前官方桌面程序和官网标识逐图比对一致。
+- [detox](https://github.com/wix/Detox/blob/667efcb6e7dda59b390f1707ceeb546414869a97/website/static/img/logo.png)（MIT）：官方项目主页使用的 Detox 机器人头像，不使用 Wix 公司标志或示例应用标志。
+- [ratatui](https://github.com/ratatui/ratatui/blob/87417f360e497cad3fe517a6013675ca81d9c295/assets/logo-simple.svg)（MIT）：采用上游已有的小尺寸专用简版，不自行裁剪字标。
+- [terminal-gui](https://github.com/tui-cs/Terminal.Gui/blob/abb61ab115ff82074a4687c6098dd1082ae17ea6/docfx/images/logo.png)（MIT）：采用官方文档的 Terminal.Gui 产品标志，而非 .NET 品牌标志。
+- [spectre-console](https://github.com/spectreconsole/spectre.console/blob/04b5dac6398dce0838c48cc3a3b6d1cc8a7f1747/resources/nuget/logo.png)（MIT）：采用上游 NuGet 包的正式项目标志。
+- [click](https://github.com/pallets/click/blob/08b803cf32ceb2ae6a772c62d5da42757a897d44/docs/_static/click-logo.svg)（BSD-3-Clause）：采用上游文档自有 Click 标识；生成位图时不解析外部 DTD，保留原 SVG。
+- [typer](https://github.com/fastapi/typer/blob/6d6383fca42f7f451cc04c49b7bf828e18245a53/docs/img/icon-square.svg)（MIT）：采用 Typer 项目正式方形标志，非 FastAPI 或 Click 标志。
+- [cyclopts](https://github.com/BrianPugh/cyclopts/blob/30ba0e6e2957c50f6cce8cbd5928f585d45c8ec1/assets/logo.png)（Apache-2.0）：采用上游项目标志本体，不使用 README 字标或通用网站图标。
+- [logseq](https://github.com/logseq/logseq/blob/c09c65d0093531047a670a92917d9a5be83b609b/resources/img/logo.png)（AGPL-3.0）：采用项目自身资源中的当前 Logo，非论坛提案或第三方图标。
+- [appflowy](https://github.com/AppFlowy-IO/AppFlowy/blob/8fcee27d9bd93aad4ee0191d5d8d915d6a9a4e93/frontend/appflowy_flutter/assets/images/flowy_logo.svg)（AGPL-3.0）：采用 AppFlowy 客户端的独立产品标识，不使用企业版字标。
+- [siyuan](https://github.com/siyuan-note/siyuan/blob/c901a60323f3ad22867145f16ace0cface627b5a/app/appx/assets/Square150x150Logo.targetsize-150_altform-unplated.png)（AGPL-3.0）：采用思源 Windows 应用打包资源内的正式标志。
+- [notesnook](https://github.com/streetwriters/notesnook/blob/18c27502454c5ea2f408098124a2e51245fac7c3/apps/desktop/assets/icons/256x256.png)（GPL-3.0）：采用官方桌面分发图标，不使用开机图或应用内服务图标。
+
+保持原图比例、颜色和现有界面。上游声明与转换说明随静态资源分发，原稿随站或可从固定版本来源取得。
