@@ -24,6 +24,10 @@ ksnip 使用 v1.9.2 [Snap 打包清单](https://github.com/ksnip/ksnip/blob/c7ca
 
 NormCap 使用[上游 Flatpak 打包应用图标](https://github.com/dynobo/normcap/blob/acaccb7604d548a56d80a91209647026ec1a9165/bundle/flatpak/com.github.dynobo.normcap.svg)，与该版本官方文档图标一致。仅等比例转成 96 px WebP；上游 SVG、版权和 GPL-3.0-or-later 许可说明随静态资产分发。
 
+截图工具：CleanShot X 使用 [官方媒体包](https://cleanshot.com/contact)内的 `CleanShot Press Kit/logo/logo.svg`（SHA-256 `05d6fca46a34dd94fe59399a46ba19c4cd8075488a181c13a22c28ec45a9e169`），只等比例转换，用于指认产品，不暗示合作或背书。Satty 使用 [MPL-2.0 项目的打包图标](https://github.com/Satty-org/Satty/blob/395395dca481465c7a467aacccc87d8a1209225b/assets/satty.svg)；Snow Shot 使用 [GPL-3.0-or-later 子项目的应用图标](https://github.com/mg-chao/snow-apps/blob/ea4f48680b6613b40ef8ec7dff22313f326b8159/snow_shot/resources/app-icon.svg)，与同一提交的 Windows 安装图标核对一致。两款均只等比例转换；原始 SVG、许可与转换说明随静态资产分发。
+
+启动器：Tinycast 使用 [官方 README 所示的应用 PNG](https://github.com/abue-ammar/tinycast/blob/c2690533874e22df6bef89e8288b2e4e246bc258/docs/images/icon.png)，保留原图及 AGPL 通知；Ueli 使用 [Electron 打包图标](https://github.com/oliverschwendener/ueli/blob/5ccca7addbd9bc3ee6e6bc5c738a0ba6989f554f/build/icons/512x512.png)，保留 MIT 版权与许可。两款均只等比例转换。
+
 笔记批次：妙言与 MarkText 使用各自官方开源项目 README 显示的标识，不使用商店版素材或软件目录转存。妙言采用 [Mac 开源项目标识](https://github.com/tw93/MiaoYan/blob/123df4e3842138c9d469a3aa2507eb08b2e5ad42/Resources/app.icon/Assets/43.png)，不是系统合成的完整 macOS App 图标。MarkText 使用 [项目标识](https://github.com/marktext/marktext/blob/95a14e5c9b3049c465eeb8b01ac94bb7678cc845/docs/assets/logo-small.png)。二者仅等比例转为 WebP，上游 MIT 版权与许可随静态资产分发。
 
 启动器批次：Flow Launcher 使用 v2.1.4 的官方 [PNG](https://github.com/Flow-Launcher/Flow.Launcher/blob/9fe822b398ad9541a1a35fb1c688a006a27f2f9d/Artworks/Logo/logo512.png)，保留 MIT 许可与 Flow-Launcher、Wox 的版权通知。Ulauncher 使用 5.16.1 [打包应用图标](https://github.com/Ulauncher/Ulauncher/blob/d05fbe3b58e7ef7b8c2268231cff749f64523bb8/data/media/icons/hicolor/ulauncher.svg)，转换不加载外部 DTD，静态分发保留原始 SVG、转换说明、版权及 GPL 许可。
