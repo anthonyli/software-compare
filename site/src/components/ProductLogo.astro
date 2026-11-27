@@ -1,6 +1,7 @@
 ---
 // SPDX-License-Identifier: Apache-2.0
 import sources from "../lib/product-logo-sources.json";
+import originalPng from "../lib/product-logo-original-png.json";
 
 interface Props {
   id: string;
@@ -10,7 +11,7 @@ interface Props {
 
 const { id, name, size = 24 } = Astro.props;
 const src = /^[a-z0-9-]+$/.test(id) && Object.hasOwn(sources, id)
-  ? `/product-logos/${id}.webp`
+  ? `/product-logos/${id}.${Object.hasOwn(originalPng, id) ? "png" : "webp"}`
   : null;
 const verifiedSizes = { 24: 32, 28: 40, 44: 64 } as const;
 const displaySize = src ? verifiedSizes[size] : size;
